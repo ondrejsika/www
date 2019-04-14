@@ -8,7 +8,9 @@
     "clean": "git clean -X -f -d",
     "dev-archetype": "yarn --cwd packages/archetype-web dev -p 3001",
     "dev-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz dev -p 3002",
+    "dev-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz dev -p 3003",
     "static-archetype": "yarn --cwd packages/archetype-web build && yarn --cwd packages/archetype-web export",
-    "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz build && yarn --cwd packages/skoleni-docker.cz export"
+    "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz build && yarn --cwd packages/skoleni-docker.cz export",
+    "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz build && yarn --cwd packages/skoleni-kubernetes.cz export"
   }
 }
