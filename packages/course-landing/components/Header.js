@@ -5,7 +5,7 @@ const Header = (props) => (
         <div className="container">
             <div className="row">
                 <div className="col-md-9 ">
-                    <div class="header-inner">
+                    <div className="header-inner">
                         <span className="site-header">
                             <a href="/"><h1 className="mb-0">{props.websiteHeader}</h1></a>
                         </span>
@@ -14,7 +14,7 @@ const Header = (props) => (
                     </div>
                 </div>
                 <div className="col-md-3 ">
-                    <img src={props.logoUrl} class="img-responsive d-none d-lg-block" />
+                    <img src={props.logoUrl} className="img-responsive d-none d-lg-block" />
                 </div>
             </div>
         </div>
