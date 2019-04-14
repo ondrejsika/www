@@ -1,6 +1,67 @@
-h1 {
-  color: tomato;
-}
-body {
-  background-color: azure !important;
-}
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: "Source Code Pro", monospace; }
+body h1 {
+  color: white;
+  font-size: 60px;
+  padding: 0; }
+body h2 {
+  p: 10px;
+  pl: 0;
+  color: black;
+  font: "Source Code Pro", monospace; }
+body .header {
+  background-color: #0070ec;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  body .header a, body .header p {
+    color: white; }
+  body .header img {
+    height: 13em; }
+body .header-inner {
+  padding-top: 30px; }
+body .header-container {
+  padding-right: 0;
+  padding-left: 0; }
+body .site-header a:hover {
+  text-decoration: none; }
+body blockquote {
+  font-size: 14px; }
+body a {
+  color: #0070ec; }
+body hr {
+  background-color: #0070ec;
+  opacity: 0.1;
+  margin-top: 10px;
+  margin-bottom: 30px; }
+body .footer {
+  background-color: #0070ec;
+  padding-top: 1rem;
+  padding-bottom: 2em; }
+body .footer, body .footer a, body .footer h2, body .footert h3, body .footer h4, body .footer h5, body .footer p, body .footer li {
+  color: white; }
+body .mybutton-outline, body .mybutton:hover {
+  color: #0070ec;
+  background-color: white;
+  border-color: #0070ec; }
+body .mybutton, body .mybutton-outline:hover {
+  color: white;
+  background-color: #0070ec;
+  border-color: white; }
+body .header .mybutton-outline, body .header .mybutton:hover {
+  color: #0070ec;
+  background-color: white;
+  border-color: #0070ec; }
+body .header .mybutton, body .header .mybutton-outline:hover {
+  color: white;
+  background-color: #0070ec;
+  border-color: white; }
+body .karta {
+  height: 100%;
+  margin-bottom: 1em;
+  padding-top: 1em; }
+  body .karta .company {
+    text-align: left; }
+body .karta1 {
+  border-right: 1px solid #dfdfdf; }

@@ -12,9 +12,7 @@ class CourseLandingDocument extends Document {
         <Head>
         </Head>
         <body>
-          <div className="container">
-            <Main />
-          </div>
+          <Main />
           <NextScript />
         </body>
       </Html>
