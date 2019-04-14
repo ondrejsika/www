@@ -1,0 +1,6 @@
+.next
+node_modules
+*.log
+out
+package-lock.json
+yarn.lock
