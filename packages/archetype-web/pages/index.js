@@ -1,4 +1,4 @@
-import 'archetype-theme/css'
+import '../css'
 import Footer from 'archetype-theme/components/Footer'
 import Alert from 'archetype-theme/components/Alert'
 import Person from 'archetype-theme/components/Person'
