@@ -12,11 +12,17 @@
     "dev-skoleni-git.cz": "yarn --cwd packages/skoleni-git.cz dev -p 3004",
     "dev-ansible-skoleni.cz": "yarn --cwd packages/ansible-skoleni.cz dev -p 3005",
     "dev-gitlab-ci.cz": "yarn --cwd packages/gitlab-ci.cz dev -p 3006",
+    "dev-ansible-schulung.de": "yarn --cwd packages/ansible-schulung.de dev -p 3007",
+    "dev-kubernetes-schulung.de": "yarn --cwd packages/kubernetes-schulung.de dev -p 3008",
+    "dev-dockerschulung.de": "yarn --cwd packages/dockerschulung.de dev -p 3009",
     "static-archetype": "yarn --cwd packages/archetype-web build && yarn --cwd packages/archetype-web export",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz build && yarn --cwd packages/skoleni-docker.cz export",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz build && yarn --cwd packages/skoleni-kubernetes.cz export",
     "static-skoleni-git.cz": "yarn --cwd packages/skoleni-git.cz build && yarn --cwd packages/skoleni-git.cz export",
     "static-ansible-skoleni.cz": "yarn --cwd packages/ansible-skoleni.cz build && yarn --cwd packages/ansible-skoleni.cz export",
-    "static-gitlab-ci.cz": "yarn --cwd packages/gitlab-ci.cz build && yarn --cwd packages/gitlab-ci.cz export"
+    "static-gitlab-ci.cz": "yarn --cwd packages/gitlab-ci.cz build && yarn --cwd packages/gitlab-ci.cz export",
+    "static-ansible-schulung.de": "yarn --cwd packages/kubernetes-schulung.de build && yarn --cwd packages/kubernetes-schulung.de export",
+    "static-kubernetes-schulung.de": "yarn --cwd packages/kubernetes-schulung.de build && yarn --cwd packages/kubernetes-schulung.de export",
+    "static-dockerschulung.de": "yarn --cwd packages/dockerschulung.de build && yarn --cwd packages/dockerschulung.de export"
   }
 }
