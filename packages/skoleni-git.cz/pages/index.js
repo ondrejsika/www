@@ -14,6 +14,7 @@ import martinkylian from 'course-landing/components/References/martinkylian.jpg'
 import TwoCol from 'course-landing/components/TwoCol';
 import Navigation from 'course-landing/components/Navigation';
 import ButtonOutline from 'course-landing/components/ButtonOutline';
+import Contact from 'course-landing/components/Contact'
 
 const Index = () => (
   <div>
@@ -119,42 +120,7 @@ const Index = () => (
         Otevřený termín (company funded): 6 999 CZK bez DPH<br />
         Firemní školení (ve firmě): 18 000 CZK bez DPH
       </TextFrame>
-
-      <ThreeCol
-        col1={
-          <>
-            <h4>Ondřej Sika</h4>
-            <p>
-              <a href="maitlo:ondrej@ondrejsika.com">ondrej@ondrejsika.com</a>
-              <br /><a href="https://ondrej-sika.cz">ondrej-sika.cz</a>
-              <br /><a href="tel:+420773452376">+420 773 452 376</a>
-            </p>
-          </>
-        }
-        col2={
-          <>
-          <h4>Fakturační údaje</h4>
-          <p>Ondrej Sika<br /><br />
-          Klatovská třída 1532/71<br />
-          301 00 Plzeň<br />
-          Česká Republika<br /><br />
-          IC: 88114163<br />
-          DIC: CZ9302252102<br />
-          </p>
-          </>
-        }
-        col3={
-          <>
-            <h4>Platební údaje</h4>
-            <p>
-            CZ(CZK): 2500171198 / 2010<br />
-            SK(EUR): 2500171198 / 8330<br /><br />
-            IBAN: CZ0620100000002500171198<br />
-            BIC code / SWIFT: FIOBCZPPXXX
-            </p>
-          </>
-        }
-      />
+      <Contact />
       <TextFrame header="Navazující kurzy">
         <a href="https://ondrej-sika.cz/skoleni/gitlab-ci">Gitlab CI</a>
       </TextFrame>
