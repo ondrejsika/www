@@ -1,0 +1,21 @@
+- id: vse
+  name: Matěj Kučera
+  role:
+    en: Web Application Developer
+    cs: Vývojář Aplikací
+  company: University of Ecenomics, Prague
+  photo: img/matejkucera.jpg
+  company_logo:
+  text:
+    en: It was Great!
+    cs: |
+      Poté, co jsem absolvoval Ondrovo školení Dockeru, nám byl na VŠE pomoct s nasazením Dockeru a Gitlab CI do našeho workflow. Je vidět, že se v tom co dělá vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce na kterou jsem následně navázal a dostal jsem do dockeru během dalších pár dní další aplikace a to absolutně bez problémů. Vřele doporučuji. :)
+- id: spel
+  name: Jiří Horák
+  role:
+    en:
+    cs:
+  company: SPEL a.s.
+  text:
+    cs: |
+      Ondřej u nás školil Docker/Docker-compose/Swarm dva dny. Úvod do teoerie včetně vysvětlení. Ondřej srozumitelně ukazuje na praktických příkladech formou workshopu, který je dle mě nejlepším možným způsobem, jak se můžete něco nového naučit. Je vidět, že Ondra má se všemi technologiemi a jejich nasazením praktické zkušenosti, okamžitě na naše dotazy reagoval s možným způsobem řešení, což bylo pro nás zvlášť důležité. Rád bych také ocenil přátelský přístup, za mě nejlepší školení za několik posledních let.

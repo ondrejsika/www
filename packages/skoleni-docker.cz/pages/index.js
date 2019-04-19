@@ -14,6 +14,11 @@ import martinkylian from 'course-landing/components/References/martinkylian.jpg'
 import TwoCol from 'course-landing/components/TwoCol';
 import Navigation from 'course-landing/components/Navigation';
 import ButtonOutline from 'course-landing/components/ButtonOutline';
+import Recommendation from 'course-landing/components/Recommendation'
+
+let site = {
+  lang: 'cs'
+}
 
 const Index = () => (
   <div>
@@ -81,12 +86,7 @@ const Index = () => (
 
       <ThreeCol header="Reference"
         col1={
-          <References
-            imgRefer={someone}
-            nameRefer="Jan Safka"
-            position="Dimension Data"
-            reference="Thank you for very good training on Docker. Course was interesting and Ondrej has deep knowledge on this topic. Training was very useful. Looking forward to working with Ondrej again."
-          />
+          <Recommendation id="vse" lang={site.lang}/>
         }
         col2={
           <References
