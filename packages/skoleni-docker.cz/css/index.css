@@ -1,3 +1,25 @@
-h1 {
-  color: blue;
+.header {
+  background-color: #0070ec;
 }
+a {
+color: black
+}
+a:hover {
+  color: #0070ec}
+
+body .mybutton-outline, body .mybutton:hover {
+  color: #0070ec;
+  background-color: white;
+  border-color: #0070ec; }
+body .mybutton, body .mybutton-outline:hover {
+  color: white;
+  background-color: #0070ec;
+  border-color: white; }
+body .header .mybutton-outline, body .header .mybutton:hover {
+  color: #0070ec;
+  background-color: white;
+  border-color: #0070ec; }
+body .header .mybutton, body .header .mybutton-outline:hover {
+  color: white;
+  background-color: #0070ec;
+  border-color: white; }

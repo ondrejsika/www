@@ -1,16 +1,54 @@
-body h1, body h2, body h3, body h4, body h5 {
-  font-family: "Source Code Pro", monospace; }
+.container-nav {
+    width: 100%;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-bar {
+  overflow: hidden;
+}
+
+.nav-bar li {
+  display: inline;
+  /* margin-right: 40px;
+  margin-top: 10px; */
+}
+.nav-bar ul {
+  padding-inline-start: 0px;
+}
+.nav-bar a {
+  font-family: 'Inconsolata', monospace;
+  float: left;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 45px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
 body h1 {
   color: white;
   font-size: 60px;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Inconsolata', monospace;}
+.site-header a:hover{
+  text-decoration: none !important;
+}
 body h2 {
-  p: 10px;
-  pl: 0;
+  padding:  10px;
+  padding-left:  0;
   color: black;
-  font: "Source Code Pro", monospace; }
+  font-family: 'Inconsolata', monospace;}
+h3, h4, h5, h6 {
+  font-family: 'Inconsolata', monospace;}
+p, a {
+  font-family: 'Montserrat', sans-serif;
+}
 body .header {
-  background-color: #0070ec;
+  /* background-color: #0070ec; */
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 20px;
@@ -24,12 +62,14 @@ body .header-inner {
 body .header-container {
   padding-right: 0;
   padding-left: 0; }
-body .site-header a:hover {
+
+body .container-width {
+  max-width: 1000px;
+}
+body .site-header {
   text-decoration: none; }
 body blockquote {
   font-size: 14px; }
-body a {
-  color: #0070ec; }
 body hr {
   background-color: #0070ec;
   opacity: 0.1;
@@ -41,7 +81,7 @@ body .footer {
   padding-bottom: 2em; }
 body .footer, body .footer a, body .footer h2, body .footert h3, body .footer h4, body .footer h5, body .footer p, body .footer li {
   color: white; }
-body .mybutton-outline, body .mybutton:hover {
+/* body .mybutton-outline, body .mybutton:hover {
   color: #0070ec;
   background-color: white;
   border-color: #0070ec; }
@@ -56,7 +96,7 @@ body .header .mybutton-outline, body .header .mybutton:hover {
 body .header .mybutton, body .header .mybutton-outline:hover {
   color: white;
   background-color: #0070ec;
-  border-color: white; }
+  border-color: white; } */
 body .karta {
   height: 100%;
   margin-bottom: 1em;
@@ -65,3 +105,5 @@ body .karta {
     text-align: left; }
 body .karta1 {
   border-right: 1px solid #dfdfdf; }
+
+

@@ -1,0 +1,18 @@
+module.exports = {
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' }
+    }
+  },
+  transpileModules: [
+    'archetype-theme',
+    'course-landing'
+  ]
+}
+
+const withCSS = require('@zeit/next-css')
+module.exports = withCSS(module.exports)
+const withTM = require('next-transpile-modules')
+module.exports = withTM(module.exports)
+const withImages = require('next-images')
+module.exports = withImages(module.exports)

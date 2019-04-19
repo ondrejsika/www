@@ -1,42 +1,162 @@
 import '../css'
 
 import Footer from 'course-landing/components/Footer'
-import Alert from 'archetype-theme/components/Alert'
-import Person from 'archetype-theme/components/Person'
 import Header from 'course-landing/components/Header'
 import HeaderLink from 'course-landing/components/HeaderLink'
 import TextFrame from 'course-landing/components/TextFrame';
 import TextFrameWithImage from 'course-landing/components/TextFrameWithImage';
+import MyClients from 'course-landing/components/MyClients';
+import References from 'course-landing/components/References';
+import ThreeCol from 'course-landing/components/ThreeCol';
+import someone from 'course-landing/components/References/someone.jpg'
+import jurajboldis from 'course-landing/components/References/jurajboldis.jpg'
+import martinkylian from 'course-landing/components/References/martinkylian.jpg'
+import TwoCol from 'course-landing/components/TwoCol';
+import Navigation from 'course-landing/components/Navigation';
 
 const Index = () => (
   <div>
+    <Navigation/>
     <Header
       websiteHeader="Školení Dockeru"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
-      logoUrl="/static/docker.png"
+      logoUrl="/static/docker-w.svg"
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
     </Header>
-    <div className="container">
+    <div className="container container-width">
       <TextFrame header="Co je to Docker">
         Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
+      </TextFrame>
+      <TextFrame header="Jak školení probíhá">
+        Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
+      </TextFrame>
+      <TextFrame header="Co Vás naučím">
+        <ul>
+          <li>Teoretický úvod do Dockeru</li>
+          <li>Instalace Dockeru (pro ty kteří nenainstalovali doma)</li>
+          <li>Práce s kontejnery</li>
+          <li>Práce s obrazy</li>
+          <li>Docker Compose - vicekontejnerove aplikace v Dockeru</li>
+          <li>Deployment do Swarmu</li>
+          <li>Ukázka deploymentu do Kubernetes</li>
+        </ul>
+      </TextFrame>
+      <TextFrame header="Pro koho je školení určeno">
+        Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
+        <TwoCol
+          col1={
+            <>
+              <h4>Předchozí znalosti</h4>
+              <ul>
+                <li>Základy práce s Linuxem</li>
+                <li>Základy práce v terminálu</li>
+              </ul>
+            </>
+          }
+          col2={
+            <>
+              <h4>Technické požadavky</h4>
+              <ul>
+                <li>Nainstalovaný Docker,  <a href="https://www.ondrej-sika.cz/docker/instalace/">návod na instalaci</a></li>
+                <li>Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči</li>
+              </ul>
+            </>
+          }
+        />
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
         imgUrl="/static/ondrejsika.jpg"
-      >
+        >
         Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
-       <br />
+       <br /><br />
         Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
       </TextFrameWithImage>
-      <Alert>Hello</Alert>
-      <Person
-        name='Ondrej Sika'
-        imgSrc='https://ondrejsika.com/ondrej/photo/ondrejsika3_200px.jpg'
-        bio='Hacker from Prague'
+
+      <MyClients HeaderClients="Moji nejvýznamější klienti"/>
+
+      <ThreeCol header="Reference"
+        col1={
+          <References
+            imgRefer={someone}
+            nameRefer="Jan Safka"
+            position="Dimension Data"
+            reference="Thank you for very good training on Docker. Course was interesting and Ondrej has deep knowledge on this topic. Training was very useful. Looking forward to working with Ondrej again."
+          />
+        }
+        col2={
+          <References
+            imgRefer={jurajboldis}
+            nameRefer="Juraj Boldiš"
+            position="CIO @ Bohemia Energy"
+            reference="I consulted with Ondrej topics including Blockchain, GIT and development standards. I appreciate Ondrej's knowledge and experience in these areas. Ondrej is open minded person and discussions with him I found very fruitful"/>
+        }
+        col3={
+          <References
+            imgRefer={martinkylian}
+            nameRefer="Martin Kylián"
+            position="Network Security Engineer, SIT of city Pilsen"
+            reference="Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej'sknowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes."
+          />
+        }
       />
+
+      <TextFrame header="Mám zájem o školení"
+        ApplicationBtn="nezávazně poptat školení Dockeru"
+        ApplicationBtnUrl="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz"
+        >
+        Pokud máte zájem o školení, neváhejte mě kontaktovat
+      </TextFrame>
+
+      <TextFrame header="Cena">
+        Pokud máte zájem o školení u vás ve firmě, <a href="https://ondrej-sika.cz/skoleni/docker/poptavka/" className="btn btn-large mybutton-outline">nezávazně jej poptejte</a> nebo mi napište email na <a href="/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0">
+        <span className="__cf_email__" data-cfemail="2e41404a5c4b446e41404a5c4b445d47454f004d4143">ondrej@ondrejsika.com</span>
+        </a>
+        <br/>
+        Otevřený termín (self funded): 9 999 CZK bez DPH<br />
+        Otevřený termín (company funded): 14 999 CZK bez DPH<br />
+        Firemní školení (ve firmě): 36 000 CZK bez DPH
+      </TextFrame>
+
+      <ThreeCol
+        col1={
+          <>
+            <h4>Ondřej Sika</h4>
+            <p>
+              <a href="maitlo:ondrej@ondrejsika.com">ondrej@ondrejsika.com</a>
+              <br /><a href="https://ondrej-sika.cz">ondrej-sika.cz</a>
+              <br /><a href="tel:+420773452376">+420 773 452 376</a>
+            </p>
+          </>
+        }
+        col2={
+          <>
+          <h4>Fakturační údaje</h4>
+          <p>Ondrej Sika<br /><br />
+          Klatovská třída 1532/71<br />
+          301 00 Plzeň<br />
+          Česká Republika<br /><br />
+          IC: 88114163<br />
+          DIC: CZ9302252102<br />
+          </p>
+          </>
+        }
+        col3={
+          <>
+            <h4>Platební údaje</h4>
+            <p>
+            CZ(CZK): 2500171198 / 2010<br />
+            SK(EUR): 2500171198 / 8330<br /><br />
+            IBAN: CZ0620100000002500171198<br />
+            BIC code / SWIFT: FIOBCZPPXXX
+            </p>
+          </>
+        }
+      />
+
       <Footer />
     </div>
   </div>
