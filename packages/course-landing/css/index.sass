@@ -1,0 +1,109 @@
+$main-color: red!default
+$transient-left: red!default
+$transient-right: red!default
+
+.bg, .header
+  background: $transient-left
+  background: -webkit-linear-gradient(to right, $transient-left, $transient-right)
+  background: linear-gradient(to right, $transient-left, $transient-right)
+
+.nav-bar
+  overflow: hidden
+
+.nav-bar li
+  display: inline
+
+.nav-bar ul
+  padding-inline-start: 0px
+
+.nav-bar a
+  font-family: 'Inconsolata', monospace
+  float: left
+  text-align: center
+  padding-bottom: 10px
+  padding-right: 45px
+  font-size: 17px
+
+body h1
+  color: white
+  font-size: 60px
+  padding: 0
+  font-family: 'Inconsolata', monospace
+
+.site-header a:hover
+  text-decoration: none
+
+body h2
+  padding:  10px
+  padding-left: 0
+  color: black
+  font-family: 'Inconsolata', monospace
+h3, h4, h5, h6
+  font-family: 'Inconsolata', monospace
+p, a
+  font-family: 'Montserrat', sans-serif
+
+body .header
+  margin-top: 20px
+  margin-bottom: 20px
+  padding-top: 20px
+  padding-bottom: 20px
+
+body .header a, body .header p
+  color: white
+
+body .header img
+  height: 13em
+
+body .header-inner
+  padding-top: 30px
+
+body .header-container
+  padding-right: 0
+  padding-left: 0
+
+body .container-width
+  max-width: 1000px
+
+body .site-header
+  text-decoration: none
+body .footer, body .footer a, body .footer p, body .footer li
+  color: white
+
+body .karta
+  height: 100%
+  margin-bottom: 1em
+  padding-top: 1em
+  body .karta .company
+    text-align: left
+
+body .karta1
+  border-right: 1px solid #dfdfdf
+
+a, a:hover
+  color: $main-color
+body .mybutton-outline, body .mybutton:hover
+  color: $main-color
+  background-color: white
+  border-color: $main-color
+body .mybutton, body .mybutton-outline:hover
+  color: white
+  background-color: $main-color
+  border-color: white
+body .header .mybutton-outline, body .header .mybutton:hover
+  color: $main-color
+  background-color: white
+  border-color: $main-color
+body .header .mybutton, body .header .mybutton-outline:hover
+  color: white
+  background-color: transparent
+  border-color: white
+
+.text-center
+  text-align: center !important
+
+.text-white
+  color: white!important
+
+.p-no-bottom
+  margin-bottom: 0!important

@@ -1,2 +1,2 @@
 import "course-landing/css"
-import "./index.css"
+import "./index.sass"
