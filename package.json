@@ -15,6 +15,8 @@
     "dev-ansible-schulung.de": "yarn --cwd packages/ansible-schulung.de dev -p 3007",
     "dev-kubernetes-schulung.de": "yarn --cwd packages/kubernetes-schulung.de dev -p 3008",
     "dev-dockerschulung.de": "yarn --cwd packages/dockerschulung.de dev -p 3009",
+    "dev-ondrej-sika.cz": "yarn --cwd packages/ondrej-sika.cz dev -p 3010",
+    "dev-sika-kraml.de": "yarn --cwd packages/sika-kraml.de dev -p 3011",
     "static-archetype": "yarn --cwd packages/archetype-web build && yarn --cwd packages/archetype-web export",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz build && yarn --cwd packages/skoleni-docker.cz export",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz build && yarn --cwd packages/skoleni-kubernetes.cz export",
@@ -23,6 +25,8 @@
     "static-gitlab-ci.cz": "yarn --cwd packages/gitlab-ci.cz build && yarn --cwd packages/gitlab-ci.cz export",
     "static-ansible-schulung.de": "yarn --cwd packages/kubernetes-schulung.de build && yarn --cwd packages/kubernetes-schulung.de export",
     "static-kubernetes-schulung.de": "yarn --cwd packages/kubernetes-schulung.de build && yarn --cwd packages/kubernetes-schulung.de export",
-    "static-dockerschulung.de": "yarn --cwd packages/dockerschulung.de build && yarn --cwd packages/dockerschulung.de export"
+    "static-dockerschulung.de": "yarn --cwd packages/dockerschulung.de build && yarn --cwd packages/dockerschulung.de export",
+    "static-ondrej-sika.cz": "yarn --cwd packages/ondrej-sika.cz build && yarn --cwd packages/ondrej-sika.cz export",
+    "static-sika-kraml.de": "yarn --cwd packages/sika-kraml.de build && yarn --cwd packages/sika-kraml.de export"
   }
 }
