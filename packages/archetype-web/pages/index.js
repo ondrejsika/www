@@ -3,6 +3,11 @@ import Footer from 'archetype-theme/components/Footer'
 import Alert from 'archetype-theme/components/Alert'
 import Person from 'archetype-theme/components/Person'
 import ReactMarkdown from 'react-markdown'
+import DemoTable from 'archetype-theme/components/DemoTable';
+
+import jsonData from '../data/data.json'
+import yamlData from '../data/data.yml'
+
 
 const Index = () => (
   <div>
@@ -20,6 +25,8 @@ const Index = () => (
 #### Header h4
 ##### Header h5
     `} />
+    <DemoTable data={jsonData} />
+    <DemoTable data={yamlData} />
     <Footer />
   </div>
 )
