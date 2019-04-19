@@ -5,7 +5,12 @@ a {
 color: black
 }
 a:hover {
-  color: #0070ec}
+  color: #0070ec;
+}
+
+.bg {
+  background-color: #0070ec;
+}
 
 body .mybutton-outline, body .mybutton:hover {
   color: #0070ec;

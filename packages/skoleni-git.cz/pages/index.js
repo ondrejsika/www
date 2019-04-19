@@ -158,9 +158,8 @@ const Index = () => (
       <TextFrame header="Navazující kurzy">
         <a href="https://ondrej-sika.cz/skoleni/gitlab-ci">Gitlab CI</a>
       </TextFrame>
-
-      <Footer />
     </div>
+    <Footer />
   </div>
 )
 

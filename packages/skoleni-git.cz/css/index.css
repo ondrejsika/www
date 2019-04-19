@@ -1,20 +1,13 @@
 .header {
   background-color: #CB4C2B;
 }
-.nav-bar li {
-  display: inline;
-  margin-right: 40px;
-  margin-top: 10px;
-}
-.nav-bar ul {
-  padding-inline-start: 0px;
-}
-.nav-bar a {
-  font-family: 'Inconsolata', monospace;
-  color: black
-}
+
 .header a {
   color: white;
+}
+
+.bg {
+  background-color: #CB4C2B;
 }
 
 a, a:hover {

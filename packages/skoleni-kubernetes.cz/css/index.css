@@ -5,6 +5,10 @@
 a {
   color: #6392EC;
 }
+
+.bg {
+  background-color: #6392EC;
+}
 a:hover {
   color: #326DE6;}
 body .mybutton-outline, body .mybutton:hover {

@@ -156,9 +156,8 @@ const Index = () => (
           </>
         }
       />
-
-      <Footer />
     </div>
+    <Footer />
   </div>
 )
 

@@ -1,10 +1,10 @@
-.container-nav {
+/* .container-nav {
     width: 100%;
     padding-right: 15px;
-    /* padding-left: 15px; */
+    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
 .nav-bar {
   overflow: hidden;
@@ -22,8 +22,7 @@
   font-family: 'Inconsolata', monospace;
   float: left;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-right: 45px;
   text-decoration: none;
   font-size: 17px;
@@ -106,4 +105,19 @@ body .karta {
 body .karta1 {
   border-right: 1px solid #dfdfdf; }
 
+/* .footer {
+  padding-top: 5px;
+} */
 
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-white {
+  color: white!important;
+}
+
+.p-no-bottom {
+  margin-bottom: 0!important;
+}

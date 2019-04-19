@@ -1,6 +1,6 @@
 const Navigation = (props) => (
   <div className='container-fluid'>
-    <div className="container-nav container-width">
+    <div className="container container-width">
       <div className='nav-bar'>
         <ul className='mt-2 mb-2'>
         <p>
