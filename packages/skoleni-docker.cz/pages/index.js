@@ -13,6 +13,7 @@ import jurajboldis from 'course-landing/components/References/jurajboldis.jpg'
 import martinkylian from 'course-landing/components/References/martinkylian.jpg'
 import TwoCol from 'course-landing/components/TwoCol';
 import Navigation from 'course-landing/components/Navigation';
+import ButtonOutline from 'course-landing/components/ButtonOutline';
 
 const Index = () => (
   <div>
@@ -104,11 +105,12 @@ const Index = () => (
         }
       />
 
-      <TextFrame header="Mám zájem o školení"
-        ApplicationBtn="nezávazně poptat školení Dockeru"
-        ApplicationBtnUrl="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz"
-        >
+      <TextFrame header="Mám zájem o školení">
         Pokud máte zájem o školení, neváhejte mě kontaktovat
+        <ButtonOutline
+          btnUrl='https://ondrej-sika.cz/skoleni/docker/poptavka/'>
+          Nezávazně poptat školení
+        </ButtonOutline>
       </TextFrame>
 
       <TextFrame header="Cena">
