@@ -9,7 +9,7 @@
   text:
     en: It was Great!
     cs: |
-      Poté, co jsem absolvoval Ondrovo školení Dockeru, nám byl na VŠE pomoct s nasazením Dockeru a Gitlab CI do našeho workflow. Je vidět, že se v tom co dělá vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce na kterou jsem následně navázal a dostal jsem do dockeru během dalších pár dní další aplikace a to absolutně bez problémů. Vřele doporučuji. :)
+      Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
 - id: spel
   name: Jiří Horák
   role:

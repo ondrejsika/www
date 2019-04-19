@@ -28,11 +28,11 @@ const Index = () => (
     <Header
       websiteHeader="Školení Ansible"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
+      byUrl="https://ondrej-sika.cz/?x_source=ansible-skoleni.cz"
       logoUrl="/static/ansible.png"
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.cz/skoleni/ansible/poptavka/?x_source=ansible-skoleni.cz">Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=ansible-skoleni.cz">Kontaktovat</HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame header="Popis technologie">
@@ -68,7 +68,7 @@ const Index = () => (
             <>
               <h4>Technické požadavky</h4>
               <ReactMarkdown source={`
-- Nainstalovaný Ansible, <a href="https://www.ondrej-sika.cz/ansible/instalace/">návod na instalaci</a>
+- Nainstalovaný Ansible, <a href="https://www.ondrej-sika.cz/skoleni/ansible/instalace/">návod na instalaci</a>
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
               `} escapeHtml={false}/>
             </>
@@ -108,15 +108,13 @@ const Index = () => (
       <TextFrame header="Mám zájem o školení">
         Pokud máte zájem o školení, neváhejte mě kontaktovat
         <ButtonOutline
-          btnUrl='https://ondrej-sika.cz/skoleni/docker/poptavka/'>
+          btnUrl='https://ondrej-sika.cz/skoleni/ansible/poptavka/'>
           Nezávazně poptat školení
         </ButtonOutline>
       </TextFrame>
 
       <TextFrame header="Cena">
-        Pokud máte zájem o školení u vás ve firmě, <a href="https://ondrej-sika.cz/skoleni/docker/poptavka/" className="btn btn-large mybutton-outline">nezávazně jej poptejte</a> nebo mi napište email na <a href="/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0">
-        <span className="__cf_email__" data-cfemail="2e41404a5c4b446e41404a5c4b445d47454f004d4143">ondrej@ondrejsika.com</span>
-        </a>
+        Pokud máte zájem o školení u vás ve firmě, <a href="https://ondrej-sika.cz/skoleni/ansible/poptavka/" className="btn btn-large mybutton-outline">nezávazně jej poptejte</a> nebo mi napište email na <a href="mailto:ondrej@ondrejsika.com">ondrej@ondrejsika.com</a>
         <br/>
         Otevřený termín (self funded): 9 999 CZK bez DPH<br />
         Otevřený termín (company funded): 14 999 CZK bez DPH<br />

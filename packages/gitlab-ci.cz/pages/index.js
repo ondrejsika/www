@@ -44,7 +44,7 @@ const Index = () => (
       <TextFrame header="Co Vás naučím">
       <ReactMarkdown source={`
 - Obecný úvod do CI
-- Úvoď do Gitlab CI
+- Úvod do Gitlab CI
 - Instalace Gitlab CI Runneru
 - Práce s CI joby
 - Tvorba CI pipelines
