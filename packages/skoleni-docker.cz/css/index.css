@@ -1,5 +1,9 @@
 .header {
-  background-color: #0070ec;
+  /* background-color: #0070ec; */
+  background: #00d2ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 a {
 color: black
@@ -9,7 +13,9 @@ a:hover {
 }
 
 .bg {
-  background-color: #0070ec;
+  background: #00d2ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body .mybutton-outline, body .mybutton:hover {
@@ -26,5 +32,5 @@ body .header .mybutton-outline, body .header .mybutton:hover {
   border-color: #0070ec; }
 body .header .mybutton, body .header .mybutton-outline:hover {
   color: white;
-  background-color: #0070ec;
+  background-color: transparent;
   border-color: white; }
