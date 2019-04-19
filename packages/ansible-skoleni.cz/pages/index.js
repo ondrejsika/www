@@ -1,5 +1,6 @@
 import '../css'
 
+import ReactMarkdown from 'react-markdown'
 import Footer from 'course-landing/components/Footer'
 import Header from 'course-landing/components/Header'
 import HeaderLink from 'course-landing/components/HeaderLink'
@@ -28,48 +29,48 @@ const Index = () => (
       websiteHeader="Školení Ansible"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
-      logoUrl="/static/docker-w.svg"
+      logoUrl="/static/ansible.png"
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
     </Header>
     <div className="container container-width">
-      <TextFrame header="Co je to Docker">
-        Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
+      <TextFrame header="Popis technologie">
+        Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám ze ztratíte přehled kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
       </TextFrame>
       <TextFrame header="Jak školení probíhá">
-        Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
+        Školení probíhá formou workshopu, vše si prakticky vyzkoušíme a osaháme. Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní koncepty. Zkusíme si nastavit server (testovací na DigitalOceanu) a nasadit aplikaci od začátku až do konce. Od instalace systémových balíčku, prez stažení aplikace z Gitu, po vytvoření šablon konfiguračních skriptu a nastavení secrets (například hesel). Po absolvování kurzu budete schopni používat Ansible na denní bázi a zjednodušit si nasazovací a konfigurační rutiny.
       </TextFrame>
       <TextFrame header="Co Vás naučím">
-        <ul>
-          <li>Teoretický úvod do Dockeru</li>
-          <li>Instalace Dockeru (pro ty kteří nenainstalovali doma)</li>
-          <li>Práce s kontejnery</li>
-          <li>Práce s obrazy</li>
-          <li>Docker Compose - vicekontejnerove aplikace v Dockeru</li>
-          <li>Deployment do Swarmu</li>
-          <li>Ukázka deploymentu do Kubernetes</li>
-        </ul>
+        <ReactMarkdown source={`
+- Základní koncept Ansible
+- Instalace Ansible (pro ty kteří nenainstalovali doma)
+- Základní ovládání Ansible
+- Playbooks
+- Moduly
+- Šablony
+- Secrets
+        `} escapeHtml={false}/>
       </TextFrame>
       <TextFrame header="Pro koho je školení určeno">
-        Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
+        Školení je převážně určeno adminum a DevOps, kteří chtějí začít Ansible používat. Zároveň je vhodné i pro vývojáře, kteří občas nasazují (i do testovacích prostředí) svoje aplikace a chtějí zjednodušit tento proces.
         <TwoCol
           col1={
             <>
               <h4>Předchozí znalosti</h4>
-              <ul>
-                <li>Základy práce s Linuxem</li>
-                <li>Základy práce v terminálu</li>
-              </ul>
+              <ReactMarkdown source={`
+- Základy práce s Linuxem
+- Základy práce v terminálu
+              `} escapeHtml={false}/>
             </>
           }
           col2={
             <>
               <h4>Technické požadavky</h4>
-              <ul>
-                <li>Nainstalovaný Docker,  <a href="https://www.ondrej-sika.cz/docker/instalace/">návod na instalaci</a></li>
-                <li>Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči</li>
-              </ul>
+              <ReactMarkdown source={`
+- Nainstalovaný Ansible, <a href="https://www.ondrej-sika.cz/ansible/instalace/">návod na instalaci</a>
+- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+              `} escapeHtml={false}/>
             </>
           }
         />
@@ -78,9 +79,7 @@ const Index = () => (
         header="Lektor: Ondřej Šika"
         imgUrl="/static/ondrejsika.jpg"
         >
-        Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
-       <br /><br />
-        Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
+        Jmenují se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vědu osobně. Ansible používám jako nástroj na správu serverů i osobních počítačů (těch s Linuxem, dříve jsem používal Puppet ale přešel jsem na Ansible). Krom toho se snažím Ansible používat na správu úplně všeho, od uživatelů v databázích po DNS záznamy na Cloudflare.
       </TextFrameWithImage>
 
       <MyClients HeaderClients="Moji nejvýznamější klienti"/>
