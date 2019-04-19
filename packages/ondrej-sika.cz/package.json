@@ -14,6 +14,7 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "bootstrap-css-only": "^4.3.1",
+    "js-yaml": "^3.13.1",
     "js-yaml-loader": "^1.0.1",
     "next": "^8.1.0",
     "next-images": "^1.1.1",

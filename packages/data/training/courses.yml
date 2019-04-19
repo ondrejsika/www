@@ -1,0 +1,10 @@
+- id: docker
+  name:
+    cs: Skoleni Dockeru
+    en: Docker Training
+    de: Docker Schulung
+- id: Kubernetes
+  name:
+    cs: Skoleni Kubernetes
+    en: Kubernetes Training
+    de: Kubernetes Schulung

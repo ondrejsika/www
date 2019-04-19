@@ -1,0 +1,23 @@
+- id: docker-praha-1-2-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Skoleni Dockeru
+  city: Praha
+  price: 9999 CZK
+  venue_id: paralelni-polis
+  length: 2 dny
+  date_from: 1.2.2020
+  date_to: 2.2.2020
+- id: docker-berlin-1-2-2020
+  country: de
+  active: true
+  course_id: docker
+  lang: en
+  name: Public Docker Training in Berlin
+  city: Berlin
+  price: 300 EUR
+  length: 2 days
+  date_from: 1.2.2020
+  date_to: 2.2.2020

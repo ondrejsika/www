@@ -1,0 +1,9 @@
+- id: paralelni-polis
+  name: Paralelní Polis
+  address: Dělnická 43, 170 00 Praha 7
+- id: rootcz
+  name: ROOT.cz
+  address: Milady Horákové 116/109, 160 00 Praha 6
+- id: anywhere
+  name: Anywhere
+  address: Jaselská 6, 160 00 Praha 6

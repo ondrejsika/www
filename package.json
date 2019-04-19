@@ -59,6 +59,7 @@
     "static-gitlab-utbildning.se": "yarn --cwd packages/gitlab-utbildning.se static",
     "static-docker-utbildning.se": "yarn --cwd packages/docker-utbildning.se static",
     "static-kubernetes-utbildning.se": "yarn --cwd packages/kubernetes-utbildning.se static",
-    "static-ansible-utbildning.se": "yarn --cwd packages/ansible-utbildning.se static"
+    "static-ansible-utbildning.se": "yarn --cwd packages/ansible-utbildning.se static",
+    "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   }
 }
