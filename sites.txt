@@ -1,0 +1,11 @@
+ansible-schulung.de
+ansible-skoleni.cz
+archetype-web
+dockerschulung.de
+gitlab-ci.cz
+kubernetes-schulung.de
+ondrej-sika.cz
+sika-kraml.de
+skoleni-docker.cz
+skoleni-git.cz
+skoleni-kubernetes.cz
