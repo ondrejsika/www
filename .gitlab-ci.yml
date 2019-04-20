@@ -1,0 +1,25 @@
+image: ondrejsika/ci
+
+stages:
+  - build
+  - deploy
+
+.build:
+  stage: build
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - ./docker-build.sh
+    - ./docker-push.sh
+
+deploy:
+  stage: deploy
+  variables:
+    SITES: ansible-schulung.de ansible-skoleni.cz archetype-web dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz
+  script: |
+    for SITE in $SITES
+    do
+    echo curl "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/$SITE&domain=$SITE&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    curl "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/$SITE&domain=$SITE&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    done
+
+
