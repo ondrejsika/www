@@ -6,7 +6,7 @@
   "scripts": {
     "link-next": "cd node_modules/.bin && ln -s ../next/dist/bin/next .",
     "clean": "git clean -X -f -d",
-    "dev-archetype": "yarn --cwd packages/archetype-web dev -p 3001",
+    "dev-archetype-web": "yarn --cwd packages/archetype-web dev -p 3001",
     "dev-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz dev -p 3002",
     "dev-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz dev -p 3003",
     "dev-skoleni-git.cz": "yarn --cwd packages/skoleni-git.cz dev -p 3004",
@@ -17,7 +17,7 @@
     "dev-dockerschulung.de": "yarn --cwd packages/dockerschulung.de dev -p 3009",
     "dev-ondrej-sika.cz": "yarn --cwd packages/ondrej-sika.cz dev -p 3010",
     "dev-sika-kraml.de": "yarn --cwd packages/sika-kraml.de dev -p 3011",
-    "static-archetype": "yarn --cwd packages/archetype-web build && yarn --cwd packages/archetype-web export",
+    "static-archetype-web": "yarn --cwd packages/archetype-web build && yarn --cwd packages/archetype-web export",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz build && yarn --cwd packages/skoleni-docker.cz export",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz build && yarn --cwd packages/skoleni-kubernetes.cz export",
     "static-skoleni-git.cz": "yarn --cwd packages/skoleni-git.cz build && yarn --cwd packages/skoleni-git.cz export",
