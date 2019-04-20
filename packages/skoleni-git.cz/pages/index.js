@@ -15,6 +15,7 @@ import TwoCol from 'course-landing/components/TwoCol';
 import Navigation from 'course-landing/components/Navigation';
 import ButtonOutline from 'course-landing/components/ButtonOutline';
 import Contact from 'course-landing/components/Contact'
+import FooterOndrejSika from 'course-landing/components/FooterOndrejSika';
 
 const Index = () => (
   <div>
@@ -125,7 +126,7 @@ const Index = () => (
         <a href="https://ondrej-sika.cz/skoleni/gitlab-ci">Gitlab CI</a>
       </TextFrame>
     </div>
-    <Footer />
+    <FooterOndrejSika />
   </div>
 )
 

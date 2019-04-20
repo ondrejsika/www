@@ -1,8 +1,18 @@
-const Footer = () => (
+let style = {
+  fontSize: '0.8em',
+  margin: '0',
+}
+
+const Footer = (props) => (
   <div>
     <div className="container-fluid bg">
       <div className="container">
-        <p className="text-center p-no-bottom pt-3 pb-3 text-white">2019 <a href="https://ondrej-sika.cz" className="text-white">Ondrej Sika</a></p>
+        <div className="text-center p-no-bottom pt-3 pb-3 text-white">
+          {props.children}
+          <p style={style}>
+            Website by <a href="https://zuzjes.com" className="text-white"><strong>Zuzana Jesche</strong></a>
+          </p>
+        </div>
       </div>
     </div>
   </div>

@@ -1,7 +1,6 @@
 import '../css'
 
 import ReactMarkdown from 'react-markdown'
-import Footer from 'course-landing/components/Footer'
 import Header from 'course-landing/components/Header'
 import HeaderLink from 'course-landing/components/HeaderLink'
 import TextFrame from 'course-landing/components/TextFrame';
@@ -17,6 +16,7 @@ import Navigation from 'course-landing/components/Navigation';
 import ButtonOutline from 'course-landing/components/ButtonOutline';
 import Recommendation from 'course-landing/components/Recommendation'
 import Contact from 'course-landing/components/Contact'
+import FooterOndrejSika from 'course-landing/components/FooterSikaKraml';
 
 let site = {
   lang: 'cs'
@@ -125,7 +125,7 @@ const Index = () => (
       </TextFrame>
       <Contact />
     </div>
-    <Footer />
+    <FooterOndrejSika />
   </div>
 )
 

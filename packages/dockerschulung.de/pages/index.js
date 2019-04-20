@@ -1,6 +1,6 @@
 import '../css'
 
-import Footer from 'course-landing/components/Footer'
+import FooterSikaKraml from 'course-landing/components/FooterSikaKraml'
 import Header from 'course-landing/components/Header'
 import HeaderLink from 'course-landing/components/HeaderLink'
 import TextFrame from 'course-landing/components/TextFrame';
@@ -125,7 +125,7 @@ const Index = () => (
       </TextFrame>
       <Contact />
     </div>
-    <Footer />
+    <FooterSikaKraml />
   </div>
 )
 

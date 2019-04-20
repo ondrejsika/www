@@ -17,6 +17,7 @@ import Navigation from 'course-landing/components/Navigation';
 import ButtonOutline from 'course-landing/components/ButtonOutline';
 import Recommendation from 'course-landing/components/Recommendation'
 import Contact from 'course-landing/components/Contact'
+import FooterOndrejSika from 'course-landing/components/FooterOndrejSika';
 
 let site = {
   lang: 'cs'
@@ -122,7 +123,7 @@ const Index = () => (
       </TextFrame>
       <Contact />
     </div>
-    <Footer />
+    <FooterOndrejSika />
   </div>
 )
 
