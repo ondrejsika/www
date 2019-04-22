@@ -17,6 +17,7 @@ import ButtonOutline from 'course-landing/components/ButtonOutline';
 import Recommendation from 'course-landing/components/Recommendation'
 import Contact from 'course-landing/components/Contact'
 import FooterOndrejSika from 'course-landing/components/FooterOndrejSika';
+import Head from 'next/head'
 
 let site = {
   lang: 'cs'
@@ -24,6 +25,9 @@ let site = {
 
 const Index = () => (
   <div>
+    <Head>
+        <title>Školení , Ondrej Sika - ansible-skoleni.cz</title>
+    </Head>
     <Navigation/>
     <Header
       websiteHeader="Školení Gitlab CI"

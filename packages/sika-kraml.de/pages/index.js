@@ -16,6 +16,7 @@ import Navigation from 'course-landing/components/Navigation';
 import ButtonOutline from 'course-landing/components/ButtonOutline';
 import Recommendation from 'course-landing/components/Recommendation'
 import Contact from 'course-landing/components/Contact'
+import Head from 'next/head'
 
 let site = {
   lang: 'cs'
@@ -23,6 +24,9 @@ let site = {
 
 const Index = () => (
   <div>
+    <Head>
+        <title>Sika Kraml Schulungen GbR.</title>
+    </Head>
     <Navigation/>
     <Header
       websiteHeader="Sika Kraml Schulungen GbR."

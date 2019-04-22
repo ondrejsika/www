@@ -15,9 +15,13 @@ import TwoCol from 'course-landing/components/TwoCol';
 import Navigation from 'course-landing/components/Navigation';
 import ButtonOutline from 'course-landing/components/ButtonOutline';
 import Contact from 'course-landing/components/Contact'
+import Head from 'next/head'
 
 const Index = () => (
   <div>
+    <Head>
+        <title>Školení Kuberneres, Ondrej Sika - skoleni-kubernetes.cz</title>
+    </Head>
     <Navigation/>
     <Header
       websiteHeader="Školení Kubernetes"

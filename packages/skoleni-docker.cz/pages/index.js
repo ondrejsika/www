@@ -16,6 +16,7 @@ import ButtonOutline from 'course-landing/components/ButtonOutline';
 import Recommendation from 'course-landing/components/Recommendation'
 import Contact from 'course-landing/components/Contact'
 import FooterOndrejSika from 'course-landing/components/FooterSikaKraml';
+import Head from 'next/head'
 
 let site = {
   lang: 'cs'
@@ -23,6 +24,9 @@ let site = {
 
 const Index = () => (
   <div>
+    <Head>
+        <title>Školení Docker, Ondrej Sika - skoleni-docker.cz</title>
+    </Head>
     <Navigation/>
     <Header
       websiteHeader="Školení Dockeru"

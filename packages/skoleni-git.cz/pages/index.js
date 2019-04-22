@@ -16,9 +16,13 @@ import Navigation from 'course-landing/components/Navigation';
 import ButtonOutline from 'course-landing/components/ButtonOutline';
 import Contact from 'course-landing/components/Contact'
 import FooterOndrejSika from 'course-landing/components/FooterOndrejSika';
+import Head from 'next/head'
 
 const Index = () => (
   <div>
+    <Head>
+        <title>Školení Git, Ondrej Sika - skoleni-git.cz</title>
+    </Head>
     <Navigation />
     <Header
       websiteHeader="Školení Git"
