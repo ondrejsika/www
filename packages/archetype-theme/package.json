@@ -1,5 +1,6 @@
 {
-  "name": "archetype-theme",
+  "name": "@app/archetype-theme",
+  "private": true,
   "version": "0.0.0",
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",

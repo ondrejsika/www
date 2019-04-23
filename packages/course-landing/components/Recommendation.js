@@ -1,7 +1,7 @@
 import React from 'react'
 import References from './References'
 
-import recommendations from '../../../data/training/recommendations/recommendations.yaml'
+import recommendations from '@app/data/training/recommendations/recommendations.yaml'
 
 let recommendation_id_map = {}
 recommendations.map((element, i) => {
@@ -11,7 +11,7 @@ recommendations.map((element, i) => {
 class Recommendation extends React.Component {
   render() {
     let recommendation = recommendations[recommendation_id_map[this.props.id]]
-    let img = require(`../../../data/training/recommendations/`+recommendation.photo)
+    let img = require(`@app/data/training/recommendations/`+recommendation.photo)
     return (
       <References
         imgRefer={img}

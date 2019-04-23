@@ -1,2 +1,2 @@
 import './index.sass'
-import 'archetype-theme/css'
+import '@app/archetype-theme/css'

@@ -5,8 +5,7 @@ module.exports = {
     }
   },
   transpileModules: [
-    'archetype-theme',
-    'course-landing'
+    '@app',
   ]
 }
 

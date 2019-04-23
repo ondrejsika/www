@@ -1,5 +1,6 @@
 {
-  "name": "kubernetes-schulung.de",
+  "name": "@app/kubernetes-schulung.de",
+  "private": true,
   "version": "0.0.0",
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",

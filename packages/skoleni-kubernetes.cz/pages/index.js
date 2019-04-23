@@ -1,20 +1,20 @@
 import '../css'
 
-import FooterOndrejSika from 'course-landing/components/FooterOndrejSika';
-import Header from 'course-landing/components/Header';
-import HeaderLink from 'course-landing/components/HeaderLink';
-import TextFrame from 'course-landing/components/TextFrame';
-import TextFrameWithImage from 'course-landing/components/TextFrameWithImage';
-import MyClients from 'course-landing/components/MyClients';
-import References from 'course-landing/components/References';
-import ThreeCol from 'course-landing/components/ThreeCol';
-import someone from 'course-landing/components/References/someone.jpg'
-import jurajhantak from 'course-landing/components/References/jurajhantak.jpg'
-import martinkylian from 'course-landing/components/References/martinkylian.jpg'
-import TwoCol from 'course-landing/components/TwoCol';
-import Navigation from 'course-landing/components/Navigation';
-import ButtonOutline from 'course-landing/components/ButtonOutline';
-import Contact from 'course-landing/components/Contact'
+import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
+import Header from '@app/course-landing/components/Header';
+import HeaderLink from '@app/course-landing/components/HeaderLink';
+import TextFrame from '@app/course-landing/components/TextFrame';
+import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
+import MyClients from '@app/course-landing/components/MyClients';
+import References from '@app/course-landing/components/References';
+import ThreeCol from '@app/course-landing/components/ThreeCol';
+import someone from '@app/course-landing/components/References/someone.jpg'
+import jurajhantak from '@app/course-landing/components/References/jurajhantak.jpg'
+import martinkylian from '@app/course-landing/components/References/martinkylian.jpg'
+import TwoCol from '@app/course-landing/components/TwoCol';
+import Navigation from '@app/course-landing/components/Navigation';
+import ButtonOutline from '@app/course-landing/components/ButtonOutline';
+import Contact from '@app/course-landing/components/Contact'
 import Head from 'next/head'
 
 const Index = () => (

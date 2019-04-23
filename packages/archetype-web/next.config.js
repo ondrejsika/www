@@ -13,7 +13,9 @@ module.exports = {
     )
     return config
   },
-  transpileModules: ['archetype-theme']
+  transpileModules: [
+    '@app',
+  ]
 }
 
 const withCSS = require('@zeit/next-css')

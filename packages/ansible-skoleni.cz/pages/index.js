@@ -1,23 +1,23 @@
 import '../css'
 
 import ReactMarkdown from 'react-markdown'
-import Footer from 'course-landing/components/Footer'
-import Header from 'course-landing/components/Header'
-import HeaderLink from 'course-landing/components/HeaderLink'
-import TextFrame from 'course-landing/components/TextFrame';
-import TextFrameWithImage from 'course-landing/components/TextFrameWithImage';
-import MyClients from 'course-landing/components/MyClients';
-import References from 'course-landing/components/References';
-import ThreeCol from 'course-landing/components/ThreeCol';
-import someone from 'course-landing/components/References/someone.jpg'
-import jurajboldis from 'course-landing/components/References/jurajboldis.jpg'
-import martinkylian from 'course-landing/components/References/martinkylian.jpg'
-import TwoCol from 'course-landing/components/TwoCol';
-import Navigation from 'course-landing/components/Navigation';
-import ButtonOutline from 'course-landing/components/ButtonOutline';
-import Recommendation from 'course-landing/components/Recommendation'
-import Contact from 'course-landing/components/Contact'
-import FooterOndrejSika from 'course-landing/components/FooterOndrejSika';
+import Footer from '@app/course-landing/components/Footer'
+import Header from '@app/course-landing/components/Header'
+import HeaderLink from '@app/course-landing/components/HeaderLink'
+import TextFrame from '@app/course-landing/components/TextFrame';
+import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
+import MyClients from '@app/course-landing/components/MyClients';
+import References from '@app/course-landing/components/References';
+import ThreeCol from '@app/course-landing/components/ThreeCol';
+import someone from '@app/course-landing/components/References/someone.jpg'
+import jurajboldis from '@app/course-landing/components/References/jurajboldis.jpg'
+import martinkylian from '@app/course-landing/components/References/martinkylian.jpg'
+import TwoCol from '@app/course-landing/components/TwoCol';
+import Navigation from '@app/course-landing/components/Navigation';
+import ButtonOutline from '@app/course-landing/components/ButtonOutline';
+import Recommendation from '@app/course-landing/components/Recommendation'
+import Contact from '@app/course-landing/components/Contact'
+import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head'
 
 let site = {
@@ -87,7 +87,7 @@ const Index = () => (
         Jmenují se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vědu osobně. Ansible používám jako nástroj na správu serverů i osobních počítačů (těch s Linuxem, dříve jsem používal Puppet ale přešel jsem na Ansible). Krom toho se snažím Ansible používat na správu úplně všeho, od uživatelů v databázích po DNS záznamy na Cloudflare.
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti"/>
+      <MyClients lang={site.lang}/>
 
       <ThreeCol header="Reference"
         col1={

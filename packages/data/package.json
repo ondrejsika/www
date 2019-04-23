@@ -1,14 +1,11 @@
 {
-  "name": "@app/course-landing",
+  "name": "@app/data",
   "private": true,
   "version": "0.0.0",
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",
   "license": "MIT",
   "dependencies": {
-    "bootstrap-css-only": "^4.3.1",
-    "next": "^8.0.4",
-    "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

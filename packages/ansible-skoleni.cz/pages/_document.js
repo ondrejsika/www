@@ -1,3 +1,3 @@
-import CourseLandingDocument from "course-landing/document";
+import CourseLandingDocument from "@app/course-landing/document";
 
 export default CourseLandingDocument

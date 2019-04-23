@@ -1,4 +1,4 @@
-import ThreeCol from 'course-landing/components/ThreeCol';
+import ThreeCol from '@app/course-landing/components/ThreeCol';
 import ReactMarkdown from 'react-markdown'
 
 const Contact = (props) => (

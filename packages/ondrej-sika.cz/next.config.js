@@ -14,8 +14,7 @@ module.exports = {
     return config
   },
   transpileModules: [
-    'archetype-theme',
-    'course-landing'
+    '@app',
   ]
 }
 

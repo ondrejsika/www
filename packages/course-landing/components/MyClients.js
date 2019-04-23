@@ -5,10 +5,19 @@ import fio from './MyClients/fio.png'
 import o2 from './MyClients/o2.png'
 import ceska_pojistovna from './MyClients/ceska_pojistovna.jpg'
 
+import Translate from '@app/common/components/Translate'
+
 const MyClients = (props) => (
   <div>
     <div className="card p-3 mb-4">
-      <h3>{props.HeaderClients}</h3>
+      <h3>
+        <Translate
+          lang={props.lang}
+          en="My Clients"
+          de="My Clients"
+          cs="Moji nejvýznamější klienti"
+        />
+      </h3>
       <div className="d-flex row text-center pt-3 pb-3">
         <div className="col-lg-2 col-md-4 col-sm-4 col-6">
           <img src={termo_fish} className="img-fluid" alt="default" />

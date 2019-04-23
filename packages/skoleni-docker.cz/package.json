@@ -1,5 +1,6 @@
 {
-  "name": "skoleni-docker.cz",
+  "name": "@app/skoleni-docker.cz",
+  "private": true,
   "version": "0.0.0",
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",

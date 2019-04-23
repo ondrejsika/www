@@ -1,3 +1,3 @@
-import ArchetypeThemeDocument from "archetype-theme/document";
+import ArchetypeThemeDocument from "@app/archetype-theme/document";
 
 export default ArchetypeThemeDocument

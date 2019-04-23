@@ -1,5 +1,6 @@
 {
-  "name": "sika-kraml.de",
+  "name": "@app/sika-kraml.de",
+  "private": true,
   "version": "0.0.0",
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",
