@@ -4,7 +4,7 @@ stages:
   - build
   - deploy
 
-.build:
+build:
   stage: build
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
