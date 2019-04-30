@@ -14,7 +14,7 @@ build:
 deploy:
   stage: deploy
   variables:
-    SITES: ansible-schulung.de ansible-skoleni.cz archetype-web dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz
+    SITES: ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz
   script: |
     for SITE in $SITES
     do
