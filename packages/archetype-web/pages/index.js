@@ -5,6 +5,8 @@ import Person from '@app/archetype-theme/components/Person'
 import ReactMarkdown from 'react-markdown'
 import DemoTable from '@app/archetype-theme/components/DemoTable';
 import Translate from '@app/common/components/Translate'
+import BootstrapJS from '@app/common/components/BootstrapJS'
+import BootstrapComponentWithJS from '@app/archetype-theme/components/BootstrapComponentWithJS';
 
 import jsonData from '../data/data.json'
 import yamlData from '../data/data.yml'
@@ -31,9 +33,11 @@ const Index = () => (
 #### Header h4
 ##### Header h5
     `} />
+    <BootstrapComponentWithJS />
     <DemoTable data={jsonData} />
     <DemoTable data={yamlData} />
     <Footer />
+    <BootstrapJS />
   </div>
 )
 
