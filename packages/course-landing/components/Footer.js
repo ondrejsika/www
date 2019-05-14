@@ -10,7 +10,7 @@ const Footer = (props) => (
         <div className="text-center p-no-bottom pt-3 pb-3 text-white">
           {props.children}
           <p style={style}>
-            Website by <a href="https://zuzjes.com" className="text-white"><strong>Zuzana Jesche</strong></a>
+            Website by <a href="https://zuzjes.com" className="text-white"><strong>Zuzana Jeschke</strong></a>
           </p>
         </div>
       </div>

@@ -10,12 +10,118 @@
     en: It was Great!
     cs: |
       Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
+    de: |
+      Deutschland, Deutschland über alles,
+      Über alles in der Welt,
+      Wenn es stets zu Schutz und Trutze
+      Brüderlich zusammenhält.
+      Von der Maas bis an die Memel,
+      Von der Etsch bis an den Belt,
+      Deutschland, Deutschland über alles,
+      Über alles in der Welt!
 - id: spel
   name: Jiří Horák
   role:
     en:
     cs:
   company: SPEL a.s.
+  photo: img/matejkucera.jpg
   text:
     cs: |
       Ondřej u nás školil Docker/Docker-compose/Swarm dva dny. Úvod do teoerie včetně vysvětlení. Ondřej srozumitelně ukazuje na praktických příkladech formou workshopu, který je dle mě nejlepším možným způsobem, jak se můžete něco nového naučit. Je vidět, že Ondra má se všemi technologiemi a jejich nasazením praktické zkušenosti, okamžitě na naše dotazy reagoval s možným způsobem řešení, což bylo pro nás zvlášť důležité. Rád bych také ocenil přátelský přístup, za mě nejlepší školení za několik posledních let.
+    de: |
+      Deutsche Frauen, deutsche Treue,
+      Deutscher Wein und deutscher Sang
+      Sollen in der Welt behalten
+      Ihren alten schönen Klang,
+      Uns zu edler Tat begeistern
+      Unser ganzes Leben lang.
+      Deutsche Frauen, deutsche Treue,
+      Deutscher Wein und deutscher Sang!
+- id: bohemiaenergy
+  name: Juraj Boldiš
+  role:
+    en:
+    cs:
+  company: Bohemia Energy
+  photo: img/jurajboldis.jpg
+  text:
+    cs: |
+      I consulted with Ondrej topics including Blockchain, GIT and development standards. I appreciate Ondrej's knowledge and experience in these areas. Ondrej is open minded person and discussions with him I found very fruitful
+    de: |
+      Deutsche Frauen, deutsche Treue,
+      Deutscher Wein und deutscher Sang
+      Sollen in der Welt behalten
+      Ihren alten schönen Klang,
+      Uns zu edler Tat begeistern
+      Unser ganzes Leben lang.
+      Deutsche Frauen, deutsche Treue,
+      Deutscher Wein und deutscher Sang!
+- id: oxyshop
+  name: Ivo Kašpárek
+  role:
+    en: System Administrator team leader
+    cs: System Administrator team leader
+  company: oXy Online
+  photo: img/ivokasparek.jpg
+  text:
+    cs: |
+      Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy ať už ohledně gitu, dockeru a kubernetes.
+    de: |
+      germany
+- id: dimensiondata
+  name: Jan Šafka
+  role:
+    en: Service System Innovation Senior Manager
+    cs: Service System Innovation Senior Manager
+  company: Dimension Data
+  photo: img/person.svg
+  text:
+    cs: |
+      Moc děkuji za skvělé školení Dockeru. Školení bylo zajímavé a je vidět, že má Ondřej velmi dobrou znalost daného tématu. Školení mi dalo hodně a těším se na další spolupráci.
+    en: |
+      Thank you for very good training on Docker. Course was interesting and Ondrej has deep knowledge on this topic. Training was very useful. Looking forward to working with Ondrej again.
+    de: |
+      germany
+- id: webglobe-yegon
+  name: Juraj Hanták
+  role:
+    en: Co-owner Webglobe-Yegon
+    cs: Co-owner Webglobe-Yegon
+  company: Webglobe-Yegon
+  photo: img/jurajhantak.jpg
+  text:
+    cs: |
+      Ondřej u nás strávil tři dny a během této doby nás uvedl do problematiky Dockeru. Následně jsme přešli ke Kubernetes od instalace až k provozování aplikací. Školení naplnilo naše očakávání.
+    sk: |
+      Ondrej u nás strávil tri dni a počas tejto doby nás uviedol do problematiky dockeru. Následne sme si prešli kubernetes od inštalácie až po prevádzku aplikácií. Školenie naplnilo naše očakávania.
+    de: |
+      germany
+- id: sit
+  name: Martin Kylián
+  role:
+    en: Network Security Engineer, SIT MP
+    cs: Network Security Engineer, SIT MP
+  company: SIT MP
+  photo: img/martinkylian.jpg
+  text:
+    cs: |
+      Ondřej nám přijet školit Git a Docker, školení bylo perfektní. Ondřej má velmi dobrou znalost devops. Velmi doporučuji jeho školení, pomohl nám automatizovat každodenní rutinní procesy.
+    en: |
+      Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej'sknowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes.
+    de: |
+      germany
+- id: webglobne-yegon
+  name: Juraj Hanták
+  role:
+    en: Co-owner Webglobe-Yegon
+    cs: Co-owner Webglobe-Yegon
+  company: Webglobe-Yegon
+  photo: img/jurajhantak.jpg
+  text:
+    cs: |
+      Ondrej u nás strávil tri dni a počas tejto doby nás uviedol do problematiky dockeru. Následne sme si prešli kubernetes od inštalácie až po prevádzku aplikácií. Školenie naplnilo naše očakávania.
+    sk: |
+      Ondrej u nás strávil tri dni a počas tejto doby nás uviedol do problematiky dockeru. Následne sme si prešli kubernetes od inštalácie až po prevádzku aplikácií. Školenie naplnilo naše očakávania.
+    de: |
+      germany

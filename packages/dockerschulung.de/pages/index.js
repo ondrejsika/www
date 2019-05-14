@@ -17,6 +17,9 @@ import ButtonOutline from '@app/course-landing/components/ButtonOutline';
 import Recommendation from '@app/course-landing/components/Recommendation'
 import Contact from '@app/course-landing/components/Contact'
 import Head from 'next/head'
+import ReactMarkdown from 'react-markdown'
+import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
+
 
 let site = {
   lang: 'de'
@@ -25,12 +28,12 @@ let site = {
 const Index = () => (
   <div>
     <Head>
-        <title>Docker Schulung, Sika Kraml - dockerschulung.de</title>
+        <title>Docker Schulung</title>
     </Head>
     <Navigation/>
     <Header
       websiteHeader="Docker Schulung"
-      byName="Sika Kraml GbR"
+      byName="Ondrej Sika"
       byUrl="https://sika-kraml.de/kontakt/?x_source=dockerschulung.de"
       logoUrl="/static/docker-w.svg"
     >
@@ -38,43 +41,49 @@ const Index = () => (
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
     </Header>
     <div className="container container-width">
-      <TextFrame header="Co je to Docker">
-        Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
+      <TextFrame>
+        <ReactMarkdown source={`
+## Co je to Docker
+Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
+      `}/>
+</TextFrame>
+      <TextFrame>
+        <ReactMarkdown source={`
+### Jak školení probíhá
+Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
+        `}/>
       </TextFrame>
-      <TextFrame header="Jak školení probíhá">
-        Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
+      <TextFrame>
+        <ReactMarkdown source={`
+### Co Vás naučím
+- Teoretický úvod do Dockeru
+- Instalace Dockeru (pro ty kteří nenainstalovali doma)
+- Práce s kontejnery
+- Práce s obrazy
+- Docker Compose - vicekontejnerove aplikace v Dockeru
+- Deployment do Swarmu
+- Ukázka deploymentu do Kubernetes
+        `}/>
       </TextFrame>
-      <TextFrame header="Co Vás naučím">
-        <ul>
-          <li>Teoretický úvod do Dockeru</li>
-          <li>Instalace Dockeru (pro ty kteří nenainstalovali doma)</li>
-          <li>Práce s kontejnery</li>
-          <li>Práce s obrazy</li>
-          <li>Docker Compose - vicekontejnerove aplikace v Dockeru</li>
-          <li>Deployment do Swarmu</li>
-          <li>Ukázka deploymentu do Kubernetes</li>
-        </ul>
-      </TextFrame>
-      <TextFrame header="Pro koho je školení určeno">
-        Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
+      <TextFrame>
+        <ReactMarkdown source={`
+### Pro koho je školení určeno
+Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
+        `}/>
         <TwoCol
           col1={
-            <>
-              <h4>Předchozí znalosti</h4>
-              <ul>
-                <li>Základy práce s Linuxem</li>
-                <li>Základy práce v terminálu</li>
-              </ul>
-            </>
+            <ReactMarkdown source={`
+#### Předchozí znalosti
+- Základy práce s Linuxem
+- Základy práce v terminálu
+            `}/>
           }
           col2={
-            <>
-              <h4>Technické požadavky</h4>
-              <ul>
-                <li>Nainstalovaný Docker,  <a href="https://www.ondrej-sika.cz/docker/instalace/">návod na instalaci</a></li>
-                <li>Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči</li>
-              </ul>
-            </>
+            <ReactMarkdown source={`
+#### Technické požadavky
+- Nainstalovaný Docker, [návod na instalaci](https://www.ondrej-sika.cz/docker/instalace/)
+- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+            `}/>
           }
         />
       </TextFrame>
@@ -82,36 +91,30 @@ const Index = () => (
         header="Lektor: Ondřej Šika"
         imgUrl="/static/ondrejsika.jpg"
         >
-        Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
-       <br /><br />
-        Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
+        <ReactMarkdown source={`
+Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
+Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
+        `}/>
       </TextFrameWithImage>
 
       <MyClients HeaderClients="Moji nejvýznamější klienti"/>
-
       <ThreeCol header="Reference"
         col1={
           <Recommendation id="vse" lang={site.lang}/>
         }
         col2={
-          <References
-            imgRefer={jurajboldis}
-            nameRefer="Juraj Boldiš"
-            position="CIO @ Bohemia Energy"
-            reference="I consulted with Ondrej topics including Blockchain, GIT and development standards. I appreciate Ondrej's knowledge and experience in these areas. Ondrej is open minded person and discussions with him I found very fruitful"/>
+          <Recommendation id="spel" lang={site.lang}/>
         }
         col3={
-          <References
-            imgRefer={martinkylian}
-            nameRefer="Martin Kylián"
-            position="Network Security Engineer, SIT of city Pilsen"
-            reference="Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej'sknowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes."
-          />
+          <Recommendation id="vse" lang={site.lang}/>
         }
       />
 
-      <TextFrame header="Mám zájem o školení">
-        Pokud máte zájem o školení, neváhejte mě kontaktovat
+      <TextFrame>
+        <ReactMarkdown source={`
+### Mám zájem o školení
+Pokud máte zájem o školení, neváhejte mě kontaktovat
+        `}/>
         <ButtonOutline
           btnUrl='https://ondrej-sika.cz/skoleni/docker/poptavka/'>
           Nezávazně poptat školení
@@ -129,7 +132,7 @@ const Index = () => (
       </TextFrame>
       <Contact />
     </div>
-    <FooterSikaKraml />
+    <FooterOndrejSika/>
   </div>
 )
 

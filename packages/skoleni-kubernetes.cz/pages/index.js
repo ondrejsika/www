@@ -6,16 +6,17 @@ import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import References from '@app/course-landing/components/References';
 import ThreeCol from '@app/course-landing/components/ThreeCol';
-import someone from '@app/course-landing/components/References/someone.jpg'
-import jurajhantak from '@app/course-landing/components/References/jurajhantak.jpg'
-import martinkylian from '@app/course-landing/components/References/martinkylian.jpg'
+import Recommendation from '@app/course-landing/components/Recommendation';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
-import ButtonOutline from '@app/course-landing/components/ButtonOutline';
 import Contact from '@app/course-landing/components/Contact'
 import Head from 'next/head'
+import ReactMarkdown from 'react-markdown'
+
+let site = {
+  lang: 'cs'
+}
 
 const Index = () => (
   <div>
@@ -33,45 +34,51 @@ const Index = () => (
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">Kontaktovat</HeaderLink>
     </Header>
     <div className="container container-width">
-      <TextFrame header="Popis technologie">
-        Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
+      <TextFrame>
+        <ReactMarkdown source={`
+### Popis technologie
+Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
+        `}/>
       </TextFrame>
-      <TextFrame header="Jak školení probíhá">
-        Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+      <TextFrame>
+        <ReactMarkdown source={`
+### Jak školení probíhá
+Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+`}/>
       </TextFrame>
-      <TextFrame header="Co Vás naučím">
-        <ul>
-          <li>Teoretický úvod do Kubernetes</li>
-          <li>Instalace Minikube a kubectl (pro ty kteří nenainstalovali doma)</li>
-          <li>Popis Kubernetes komponent</li>
-          <li>Deployment do Kubernetes</li>
-          <li>Práce s právy v Kubernetes clusteru</li>
-          <li>Teoretický úvod do Helm balíčku</li>
-          <li>Instalace / Deployment pomocí Helmu</li>
-          <li>Psaní vlastního Helm balíčku</li>
-        </ul>
+      <TextFrame>
+        <ReactMarkdown source={`
+### Co Vás naučím
+- Teoretický úvod do Kubernetes
+- Instalace Minikube a kubectl (pro ty kteří nenainstalovali doma)
+- Popis Kubernetes komponent
+- Deployment do Kubernetes
+- Práce s právy v Kubernetes clusteru
+- Teoretický úvod do Helm balíčku
+- Instalace / Deployment pomocí Helmu
+- Psaní vlastního Helm balíčku
+        `}/>
       </TextFrame>
-      <TextFrame header="Pro koho je školení určeno">
-        Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.
+      <TextFrame>
+        <ReactMarkdown source={`
+### Pro koho je školení určeno
+Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.
+`}/>
         <TwoCol
           col1={
-            <>
-              <h4>Předchozí znalosti</h4>
-              <ul>
-                <li>Základy práce s Dockerem</li>
-                <li>Základy práce s Linuxem</li>
-                <li>Základy práce v terminálu</li>
-              </ul>
-            </>
+            <ReactMarkdown source={`
+#### Předchozí znalosti
+- Základy práce s Dockerem
+- Základy práce s Linuxem
+- Základy práce v terminálu
+            `}/>
           }
           col2={
-            <>
-              <h4>Technické požadavky</h4>
-              <ul>
-                <li>Nainstalovaný Kubernetes, návod na instalaci: <a href="https://www.ondrej-sika.cz/kubernetes/instalace/">ondrej-sika.cz/kubernetes/instalace/</a></li>
-                <li>Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči</li>
-              </ul>
-            </>
+            <ReactMarkdown source={`
+#### Technické požadavky
+- Nainstalovaný Kubernetes, návod na instalaci: [zde](https://www.ondrej-sika.cz/kubernetes/instalace/)
+- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+`}/>
           }
         />
       </TextFrame>
@@ -83,50 +90,35 @@ const Index = () => (
         Všechny kurzy vedu osobně. Kubernetes používám jako platformu pro většinu svých projektů a je to jeden z nejjednodušších způsobů jak provozovat Docker kontejnery.
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti"/>
-
+      <MyClients lang={site.lang}/>
       <ThreeCol header="Reference"
         col1={
-          <References
-            imgRefer={someone}
-            nameRefer="Jan Safka"
-            position="Dimension Data"
-            reference="Thank you for very good training on Docker. Course was interesting and Ondrej has deep knowledge on this topic. Training was very useful. Looking forward to working with Ondrej again."
-          />
+          <Recommendation id="dimensiondata" lang={site.lang}/>
         }
         col2={
-          <References
-            imgRefer={jurajhantak}
-            nameRefer="Juraj Hanták"
-            position="Webglobe - Yegon"
-            reference="Ondrej u nás strávil tri dni a počas tejto doby nás uviedol do problematiky dockeru. Následne sme si prešli kubernetes od inštalácie až po prevádzku aplikácií. Školenie naplnilo naše očakávania."
-          />
+          <Recommendation id="webglobe-yegon" lang={site.lang}/>
         }
         col3={
-          <References
-            imgRefer={martinkylian}
-            nameRefer="Martin Kylián"
-            position="Network Security Engineer, SIT of city Pilsen"
-            reference="Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej'sknowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes."
-          />
+          <Recommendation id="sit" lang={site.lang}/>
         }
       />
 
-      <TextFrame header="Mám zájem o školení"
-        ApplicationBtn="nezávazně poptat školení Dockeru"
-        ApplicationBtnUrl="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz"
-        >
-        Pokud máte zájem o školení, neváhejte mě kontaktovat
+      <TextFrame>
+        <ReactMarkdown source={`
+### Mám zájem o školení
+Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/)
+`}/>
       </TextFrame>
+      <TextFrame>
+        <ReactMarkdown source={`
+### Cena
 
-      <TextFrame header="Cena">
-        Pokud máte zájem o školení u vás ve firmě, <a href="https://ondrej-sika.cz/skoleni/docker/poptavka/" className="btn btn-large mybutton-outline">nezávazně jej poptejte</a> nebo mi napište email na <a href="/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0">
-        <span className="__cf_email__" data-cfemail="2e41404a5c4b446e41404a5c4b445d47454f004d4143">ondrej@ondrejsika.com</span>
-        </a>
-        <br/>
-        Otevřený termín (self funded): 9 999 CZK bez DPH<br />
-        Otevřený termín (company funded): 14 999 CZK bez DPH<br />
-        Firemní školení (ve firmě): 36 000 CZK bez DPH
+Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
+
+- Otevřený termín (self funded): 9 999 CZK bez DPH
+- Otevřený termín (company funded): 14 999 CZK bez DPH
+- Firemní školení (ve firmě): 36 000 CZK bez DPH
+`}/>
       </TextFrame>
       <Contact />
     </div>
