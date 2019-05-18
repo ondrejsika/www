@@ -7,6 +7,7 @@ import DemoTable from '@app/archetype-theme/components/DemoTable';
 import Translate from '@app/common/components/Translate'
 import BootstrapJS from '@app/common/components/BootstrapJS'
 import BootstrapComponentWithJS from '@app/archetype-theme/components/BootstrapComponentWithJS';
+import Former2 from '@app/common/components/Former2'
 
 import jsonData from '../data/data.json'
 import yamlData from '../data/data.yml'
@@ -35,6 +36,10 @@ const Index = () => (
       imgSrc='https://ondrejsika.com/ondrej/photo/ondrejsika3_200px.jpg'
       bio='Hacker from Prague'
     />
+    <Former2 site={site} redirect_path="/?submitted=true" name="demo form">
+      <input type="text" name="data" defaultValue="Example form value" />
+      <input type="submit" value="Submit" />
+    </Former2>
     <ReactMarkdown source={`
 # Header h1
 ## Header h2
