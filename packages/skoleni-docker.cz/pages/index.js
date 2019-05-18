@@ -15,7 +15,7 @@ import Navigation from '@app/course-landing/components/Navigation';
 import ButtonOutline from '@app/course-landing/components/ButtonOutline';
 import Recommendation from '@app/course-landing/components/Recommendation'
 import Contact from '@app/course-landing/components/Contact'
-import FooterOndrejSika from '@app/course-landing/components/FooterSikaKraml';
+import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head'
 
 let site = {
