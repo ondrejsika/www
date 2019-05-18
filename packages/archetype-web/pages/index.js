@@ -11,9 +11,18 @@ import BootstrapComponentWithJS from '@app/archetype-theme/components/BootstrapC
 import jsonData from '../data/data.json'
 import yamlData from '../data/data.yml'
 
+import site from '@app/archetype-web/config'
 
 const Index = () => (
   <div>
+    <code style={{fontSize: '0.8em', color: 'gray'}}>
+      {
+    
+        Object.entries(site).map(function(el, i){
+          return <span key={i}>{el[0] + ': ' + el[1]}, </span>
+        })
+      }
+    </code>
     <h1>Ondrej Sika Webs / Archetype</h1>
     <p>
       <Translate lang="en" en="Hello" cs="Ahoj"/>
