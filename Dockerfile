@@ -16,7 +16,6 @@ COPY ./packages/kubernetes-schulung.de/package.json ./packages/kubernetes-schulu
 COPY ./packages/dockerschulung.de/package.json ./packages/dockerschulung.de/package.json
 RUN yarn install
 COPY . .
-# TODO: solve yarn install properly
 RUN yarn install
 ARG SITE=archetype-web
 RUN yarn run static-$SITE
