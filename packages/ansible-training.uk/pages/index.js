@@ -36,56 +36,56 @@ const Index = () => (
     <div className="container container-width">
       <TextFrame>
         <ReactMarkdown source={`
-### Popis technologie
-Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám ze ztratíte přehled kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
+### What is Ansible?
+Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about in which state the server or applications are now; Ansible will take care of the desired result (benefits of declarative syntax - e.g., shell script is imperative - carry out the following x and y). The entire configuration is versioned using Git, and it won't happen that you would lose view of where is deployed what or that you would miss any critical step. Ansible will help with application deployment and quicker and safer server administration.
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Jak školení probíhá
-Školení probíhá formou workshopu, vše si prakticky vyzkoušíme a osaháme. Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní koncepty. Zkusíme si nastavit server (testovací na DigitalOceanu) a nasadit aplikaci od začátku až do konce. Od instalace systémových balíčku, přes stažení aplikace z Gitu, po vytvoření šablon konfiguračních skriptu a nastavení secrets (například hesel). Po absolvování kurzu budete schopni používat Ansible na denní bázi a zjednodušit si nasazovací a konfigurační rutiny.
+### Course Description
+The training is run as a workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and what are the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from beginning to end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Co Vás naučím
-- Základní koncept Ansible
-- Instalace Ansible (pro ty kteří nenainstalovali doma)
-- Základní ovládání Ansible
+### Course Outline
+- Basic insights into Ansible
+- Ansible installation (for those who did not install at home)
+- Basic Ansible controls
 - Playbooks
 - Moduly
-- Šablony
+- Templates
 - Secrets
         `} escapeHtml={false}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Pro koho je školení určeno
-Školení je převážně určeno adminum a DevOps, kteří chtějí začít Ansible používat. Zároveň je vhodné i pro vývojáře, kteří občas nasazují (i do testovacích prostředí) svoje aplikace a chtějí zjednodušit tento proces.
+### Who Should Attend
+This training is primarily aimed at admins and DevOps who want to start using Ansible. At the same time, developers who deploy their applications (even into test environments) and want to simplify this process, will also find it useful.
         `}/>
         <TwoCol
           col1={
             <ReactMarkdown source={`
-#### Předchozí znalosti
-- Základy práce s Linuxem
-- Základy práce v terminálu
+#### Skill Requirements
+- Basic Linux knowledge
+- Basic Terminal knowledge
             `} escapeHtml={false}/>
           }
           col2={
             <ReactMarkdown source={`
-#### Technické požadavky
-- Nainstalovaný Ansible, [návod na instalaci](https://www.ondrej-sika.cz/skoleni/ansible/instalace/)
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+#### Technical Requirements
+- Have Ansible installed, instructions: [here](https://www.ondrej-sika.uk/ansible/install/)
+- Access to the internet - ideally without corporate proxy, or proxy set up in Docker
             `} escapeHtml={false}/>
           }
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg"
         >
         <ReactMarkdown source={`
-Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vědu osobně. Ansible používám jako nástroj na správu serverů i osobních počítačů (těch s Linuxem, dříve jsem používal Puppet ale přešel jsem na Ansible). Krom toho se snažím Ansible používat na správu úplně všeho, od uživatelů v databázích po DNS záznamy na Cloudflare.
+A little bit of background about myself, I am a software developer for Slush Pool and a trainer. I use Ansible as a tool for server administration and for PC administration (tech with Linux, I was using Puppet as the drive, but I transferred to Ansible). I try to use Ansible for the administration of everything I can - from database users to DNS records on Cloudflare.
         `}/>
       </TextFrameWithImage>
 
@@ -110,12 +110,13 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Cena
+### Pricing
 Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/ansible/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
 
-Otevřený termín (self funded): 9 999 CZK bez DPH<br>
-Otevřený termín (company funded): 14 999 CZK bez DPH<br>
-Firemní školení (ve firmě): 36 000 CZK bez DPH<br>
+Open to public (self-funded): GBP excl. VAT
+Open to public (company-funded): GBP excl. VAT
+Workplace training (on-site): GBP excl. VAT
+
 `} escapeHtml={false}/>
       </TextFrame>
       <Contact />

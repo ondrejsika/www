@@ -36,62 +36,68 @@ const Index = () => (
     <div className="container container-width">
       <TextFrame>
       <ReactMarkdown source={`
-### Popis technologie
-Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
+### What is CI?
+Continuous Integration (abbr. CI or CI/CD) is a tool that automates routine tasks such as running tests, code quality or deployment. It allows faster adoption of changes to master and quicker deployment. The compelling advantage of Gitlab CI is its Docker support; you can easily combine Docker images or run tests in containers.
+
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Jak školení probíhá
-Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.
+### Course Description
+This course is run in the form of a workshop where you will learn the importance of CI, the different versions of Gitlab CI and practice writing CI script for a sample project. The outcome will be a script for a simple project containing application build jobs, from tests to deployment.
 `}/>
       </TextFrame>
-      <TextFrame header="Co Vás naučím">
+      <TextFrame>
       <ReactMarkdown source={`
-- Obecný úvod do CI
-- Úvod do Gitlab CI
-- Instalace Gitlab CI Runneru
-- Práce s CI joby
-- Tvorba CI pipelines
-- Automatické nasazování
-- Docker a CI
+### Course outline
+- Generic introduction to CI
+- Introduction to Gitlab CI
+- Installation of Gitlab CI Runner
+- Work with CI Jobs
+- Creation of CI Pipelines
+- Deployment Automatisation
+- Docker and CI
         `} escapeHtml={false}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Pro koho je školení určeno">
-Školení je primárně určeno vývojářům kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.
+### Who Should Attend
+The course is primarily aimed at developers who are using Gitlab and are wanting to start using Gitlab CI. At the same time, Gitlab CI might be the reason why people are transferring onto Gitlab. The course is also useful for DevOps who want to simplify their routine tasks with deployment automatisation.
         `}/>
         <TwoCol
           col1={
             <ReactMarkdown source={`
-#### Předchozí znalosti
-- Základy práce s Linuxem
-- Základy práce v terminálu
-- Základní znalost Gitu výhodou - [Školení Git](https://ondrej-sika.cz/skoleni/git/)
+#### Skill Requirements
+- Basic Linux knowledge
+- Basic Terminal knowledge
+- Basic Git knowledge is of benefit - [Git training](https://ondrej-sika.uk/git/)
+- The [Gitlab Course](https://ondrej-sika.uk/gitlab-ci/install/) is of benefit
             `} escapeHtml={false}/>
           }
           col2={
             <ReactMarkdown source={`
-#### Technické požadavky
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+#### Technical Requirements
+- Access to the internet - ideally without corporate proxy, or proxy set up in Docker
             `} escapeHtml={false}/>
           }
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header="Lektor: Ondřej Sika"
         imgUrl="/static/ondrejsika.jpg"
         >
         <ReactMarkdown source={`
-Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu <a href="https://ondrej-sika.cz">ondrej-sika.cz</a>.<br /><br />
-Všechny kurzy vedu osobně. S Gitlab CI mám zkušenosti z mnoha různých projektů a firem. Téměř všechny projekty na kterých pracuji využívají Gitlab CI. Gitlab CI mi velmi ulehčuje a zrychluje práci - nemusím se starat o rutijni akce jako nasazování nebo build aplikace a mohu se věnovat vývoji a činnostem které mi přinášejí zisk.
+A little bit of background about myself, I am a software developer for Slush Pool and a trainer. The Gitlab CI course is the second most popular training after Docker; the two are closely related. I lead all the courses myself. I am experienced in Gitlab CI from multiple projects and businesses. Almost all projects that I am working on are using Gitlab CI. Gitlab CI is making my work simpler and quicker - I don't have to worry about routine tasks such as deployment or application building, and I can spend time on tasks that generate returns.
+<br/><br/>
+For more information on all my courses that I offer, visit ondrej-sika.cz.
+<br/><br/>
+Get in touch if you have any questions - happy hearing from you!
         `} escapeHtml={false}/>
       </TextFrameWithImage>
 
       <MyClients HeaderClients="Moji nejvýznamější klienti"/>
 
-      <ThreeCol header="Reference"
+      <ThreeCol header="References"
         col1={
           <Recommendation id="bohemiaenergy" lang={site.lang}/>
         }
@@ -110,11 +116,11 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Cena
+### Pricing
 Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
-- Otevřený termín (self funded): 4 999 CZK bez DPH
-- Otevřený termín (company funded): 6 999 CZK bez DPH
-- Firemní školení (ve firmě): 18 000 CZK bez DPH
+- Open to public (self funded): xxxx GBP excl. VAT
+- Open to public (company funded): xxxx GBP excl. VAT
+- Firemní školení (ve firmě): xxxx GBP excl. VAT
 `}/>
       </TextFrame>
       <Contact />

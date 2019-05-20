@@ -36,69 +36,66 @@ const Index = () => (
     <div className="container container-width">
     <TextFrame>
         <ReactMarkdown source={`
-### Co je to Docker
-Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
+### What is Docker?
+Docker can make your life easier through simplifying the process of R&D, testing, and software usage in your business. Run everything, everywhere. Don’t lose your time waiting for server setups or random library updates. Have the environment as a part of your application.
 `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Jak školení probíhá
-
-Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
+### Course Description
+During the Introduction to Docker in the Workplace, you’ll be shown everything you need to be able to use Docker - from creating a custom container to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
 `}/>
       </TextFrame>
       <TextFrame header="">
         <ReactMarkdown source={`
-### Co Vás naučím
-
-- Teoretický úvod do Dockeru
-- Instalace Dockeru (pro ty kteří nenainstalovali doma)
-- Práce s kontejnery
-- Práce s obrazy
-- Docker Compose - vicekontejnerove aplikace v Dockeru
-- Deployment do Swarmu
-- Ukázka deploymentu do Kubernetes
+### Course Outline
+- Theory introduction to Docker
+- How to install Docker at home or work (for those who did not - do so)
+- Basics of Containerisation
+- Basics of Images
+- Docker Compose - multi-container applications
+- Deployment to Swarm
+- Preview of deployment to Kubernetes
 `}/>
       </TextFrame>
       <TextFrame header="">
         <ReactMarkdown source={`
-### Pro koho je školení určeno
-
-Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
+### Who Should Attend
+This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it's something they can implement.
 `}/>
         <TwoCol
           col1={
             <ReactMarkdown source={`
-#### Předchozí znalosti
-
-- Základy práce s Linuxem
-- Základy práce v terminálu
+#### Skill Requirements
+- Basic Linux knowledge
+- Basic Terminal knowledge
 `}/>
           }
           col2={
             <ReactMarkdown source={`
-#### Technické požadavky
-
-- Nainstalovaný Docker, [návod na instalaci](https://www.ondrej-sika.cz/docker/instalace/)
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+#### Technical Requirements
+- Have Docker installed, instructions: [here](https://www.ondrej-sika.uk/docker/install/)
+- Access to the internet - ideally without corporate proxy, or proxy set up in Docker
 `}/>
           }
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg"
         >
           <ReactMarkdown source={`
-Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
-
-Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
+A little bit of background about myself, I am a software developer for Slush Pool and a trainer. I lead mostly Docker courses and CI; they are both closely interrelated.I have four years of experience with Docker on the commercial development side. Other than that I use it daily for development, as well as production, and I cannot imagine working without it.
+<br/><br/>
+For more information on all my courses that I offer, visit [ondrej-sika.uk](ondrej-sika.uk).
+<br/><br/>
+Get in touch if you have any questions - Happy to hearing from you!
 `}/>
       </TextFrameWithImage>
 
       <MyClients HeaderClients="Moji nejvýznamější klienti"/>
 
-      <ThreeCol header="Reference"
+      <ThreeCol header="References"
         col1={
           <Recommendation id="bohemiaenergy" lang={site.lang}/>
         }
@@ -119,11 +116,12 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
 
       <TextFrame>
         <ReactMarkdown source={`
-### Cena
+### Pricing
+
 Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/docker/poptavka/) nebo mi napište email na ondrej@ondrejsika.com
-- Otevřený termín (self funded): 9 999 CZK bez DPH
-- Otevřený termín (company funded): 14 999 CZK bez DPH
-- Firemní školení (ve firmě): 36 000 CZK bez DPH
+- Open to public (self funded): GBP excl. VAT
+- Open to public (company funded): GBP excl. VAT
+- Workplace training (on-site): GBP excl. VAT
         `}/>
       </TextFrame>
       <Contact />
