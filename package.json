@@ -17,16 +17,16 @@
     "dev-dockerschulung.de": "yarn --cwd packages/dockerschulung.de dev -p 3009",
     "dev-ondrej-sika.cz": "yarn --cwd packages/ondrej-sika.cz dev -p 3010",
     "dev-sika-kraml.de": "yarn --cwd packages/sika-kraml.de dev -p 3011",
-    "static-archetype-web": "yarn --cwd packages/archetype-web build && yarn --cwd packages/archetype-web export",
-    "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz build && yarn --cwd packages/skoleni-docker.cz export",
-    "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz build && yarn --cwd packages/skoleni-kubernetes.cz export",
-    "static-skoleni-git.cz": "yarn --cwd packages/skoleni-git.cz build && yarn --cwd packages/skoleni-git.cz export",
-    "static-ansible-skoleni.cz": "yarn --cwd packages/ansible-skoleni.cz build && yarn --cwd packages/ansible-skoleni.cz export",
-    "static-gitlab-ci.cz": "yarn --cwd packages/gitlab-ci.cz build && yarn --cwd packages/gitlab-ci.cz export",
-    "static-ansible-schulung.de": "yarn --cwd packages/kubernetes-schulung.de build && yarn --cwd packages/kubernetes-schulung.de export",
-    "static-kubernetes-schulung.de": "yarn --cwd packages/kubernetes-schulung.de build && yarn --cwd packages/kubernetes-schulung.de export",
-    "static-dockerschulung.de": "yarn --cwd packages/dockerschulung.de build && yarn --cwd packages/dockerschulung.de export",
-    "static-ondrej-sika.cz": "yarn --cwd packages/ondrej-sika.cz build && yarn --cwd packages/ondrej-sika.cz export",
-    "static-sika-kraml.de": "yarn --cwd packages/sika-kraml.de build && yarn --cwd packages/sika-kraml.de export"
+    "static-archetype-web": "yarn --cwd packages/archetype-web static",
+    "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
+    "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
+    "static-skoleni-git.cz": "yarn --cwd packages/skoleni-git.cz static",
+    "static-ansible-skoleni.cz": "yarn --cwd packages/ansible-skoleni.cz static",
+    "static-gitlab-ci.cz": "yarn --cwd packages/gitlab-ci.cz static",
+    "static-ansible-schulung.de": "yarn --cwd packages/kubernetes-schulung.de static",
+    "static-kubernetes-schulung.de": "yarn --cwd packages/kubernetes-schulung.de static",
+    "static-dockerschulung.de": "yarn --cwd packages/dockerschulung.de static",
+    "static-ondrej-sika.cz": "yarn --cwd packages/ondrej-sika.cz static",
+    "static-sika-kraml.de": "yarn --cwd packages/sika-kraml.de static"
   }
 }
