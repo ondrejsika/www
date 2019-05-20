@@ -18,7 +18,6 @@ RUN yarn install
 COPY . .
 # TODO: solve yarn install properly
 RUN yarn install
-RUN yarn run link-next
 ARG SITE=archetype-web
 RUN yarn run static-$SITE
 
