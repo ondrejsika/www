@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "now-build": "yarn run static-$TARGET",
     "link-next": "cd node_modules/.bin && ln -s ../next/dist/bin/next .",
     "clean": "git clean -X -f -d",
     "dev-archetype-web": "yarn --cwd packages/archetype-web dev -p 3001",
