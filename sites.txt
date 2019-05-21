@@ -9,3 +9,8 @@ sika-kraml.de
 skoleni-docker.cz
 skoleni-git.cz
 skoleni-kubernetes.cz
+git-training.uk
+docker-training.uk
+kubernetes-training.uk
+ansible-training.uk
+gitlab-training.uk
