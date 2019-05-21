@@ -110,17 +110,11 @@ Get in touch if you have any questions - happy hearing from you!
       />
       <TextFrame>
         <ReactMarkdown source={`
-### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/)
-`}/>
-      </TextFrame>
-      <TextFrame>
-        <ReactMarkdown source={`
 ### Pricing
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
-- Open to public (self funded): xxxx GBP excl. VAT
-- Open to public (company funded): xxxx GBP excl. VAT
-- Firemní školení (ve firmě): xxxx GBP excl. VAT
+Price for one days training
+- Open to public (self-funded): 800 GBP excl. VAT
+- Open to public (company-funded): 1 000 GBP excl. VAT
+- On-site training (on-site): 3 000 GBP excl. VAT
 `}/>
       </TextFrame>
       <Contact />

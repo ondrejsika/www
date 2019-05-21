@@ -102,13 +102,11 @@ A little bit of background about myself, I am a software developer for Slush Poo
           <Recommendation id="vse" lang={site.lang}/>
         }
       />
-
       <TextFrame>
         <ReactMarkdown source={`
 ### Pricing
 
 Price for two days training
-
 - Open to public (self-funded): 800 GBP excl. VAT
 - Open to public (company-funded): 1000 GBP excl. VAT
 - On-site training (on-site): 3000 GBP excl. VAT
@@ -120,9 +118,8 @@ Price for two days training
 ### Contact
 
 #### Ondrej Sika
-
 <ondrej@ondrejsika.com>
-<br>[ondrej-sika.cz](https://ondrej-sika.cz)
+<br>[ondrej-sika.com](https://ondrej-sika.com)
 <br>[+420 773 452 376](tel:+420773452376)
 `} escapeHtml={false}/>
       </TextFrame>

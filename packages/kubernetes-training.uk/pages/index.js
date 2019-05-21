@@ -91,7 +91,7 @@ A little bit of background about myself, I am a software developer for Slush Poo
 For more information on all my courses that I offer, visit ondrej-sika.cz.
 <br/><br/>
 Get in touch if you have any questions - happy hearing from you!
-        `}/>
+`} escapeHtml={false}/>
       </TextFrameWithImage>
 
       <MyClients lang={site.lang}/>
@@ -109,18 +109,11 @@ Get in touch if you have any questions - happy hearing from you!
 
       <TextFrame>
         <ReactMarkdown source={`
-### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/)
-`}/>
-      </TextFrame>
-      <TextFrame>
-        <ReactMarkdown source={`
 ### Pricing
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
-
-- Open to public (self funded): xxxx GBP excl. VAT
-- Open to public (company funded): xxxx GBP excl. VAT
-- Firemní školení (ve firmě): xxxx GBP excl. VAT
+Price for one days training
+- Open to public (self-funded): 1 600 GBP excl. VAT
+- Open to public (company-funded): 2 000 GBP excl. VAT
+- On-site training (on-site): 6 000 GBP excl. VAT
 `}/>
       </TextFrame>
       <Contact />
