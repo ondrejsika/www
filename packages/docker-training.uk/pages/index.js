@@ -93,7 +93,7 @@ Get in touch if you have any questions - Happy to hearing from you!
 `}/>
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti"/>
+      <MyClients HeaderClients="My clients"/>
 
       <ThreeCol header="References"
         col1={

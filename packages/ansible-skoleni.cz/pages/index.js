@@ -74,7 +74,7 @@ Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklaruj
           col2={
             <ReactMarkdown source={`
 #### Technické požadavky
-- Nainstalovaný Ansible, [návod na instalaci](https://www.ondrej-sika.cz/skoleni/ansible/instalace/)
+- Nainstalovaný Ansible, [návod na instalaci](https://www.ondrej-sika.cz/ansible/instalace/)
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
             `} escapeHtml={false}/>
           }
@@ -95,23 +95,23 @@ Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny
           <Recommendation id="bohemiaenergy" lang={site.lang}/>
         }
         col2={
-          <Recommendation id="sit" lang={site.lang}/>
+          <Recommendation id="vse" lang={site.lang}/>
         }
         col3={
-          <Recommendation id="vse" lang={site.lang}/>
+          <Recommendation id="sit" lang={site.lang}/>
         }
       />
 
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/ansible/poptavka/)
+Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/ansible/poptavka/)
 `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
 ### Cena
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/ansible/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
+Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/ansible/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
 
 Otevřený termín (self funded): 9 999 CZK bez DPH<br>
 Otevřený termín (company funded): 14 999 CZK bez DPH<br>

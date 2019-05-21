@@ -1,13 +1,13 @@
 const References = (props) => (
   <>
     <p>{props.reference}</p>
-    <div class="row">
-      <div class="col-4">
-        <img src={props.imgRefer} class="img-fluid rounded-circle" alt="" />
+    <div className="row">
+      <div className="col-4">
+        <img src={props.imgRefer} className="img-fluid rounded-circle" alt="" />
       </div>
-      <div class="col-8">
+      <div className="col-8">
         <p><strong>{props.nameRefer}</strong></p>
-        <p class="company">{props.position}</p>
+        <p className="company">{props.position}</p>
       </div>
     </div>
   </>
