@@ -28,7 +28,7 @@
     "static-skoleni-git.cz": "yarn --cwd packages/skoleni-git.cz static",
     "static-ansible-skoleni.cz": "yarn --cwd packages/ansible-skoleni.cz static",
     "static-gitlab-ci.cz": "yarn --cwd packages/gitlab-ci.cz static",
-    "static-ansible-schulung.de": "yarn --cwd packages/kubernetes-schulung.de static",
+    "static-ansible-schulung.de": "yarn --cwd packages/ansible-schulung.de static",
     "static-kubernetes-schulung.de": "yarn --cwd packages/kubernetes-schulung.de static",
     "static-dockerschulung.de": "yarn --cwd packages/dockerschulung.de static",
     "static-ondrej-sika.cz": "yarn --cwd packages/ondrej-sika.cz static",
