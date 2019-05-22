@@ -100,13 +100,13 @@ Get in touch if you have any questions - happy hearing from you!
       <MyClients HeaderClients="References" />
       <ThreeCol header="Reference"
         col1={
-          <Recommendation id="dimensiondata" lang={site.lang}/>
+          <Recommendation id="NMS" lang={site.lang}/>
         }
         col2={
           <Recommendation id="bohemiaenergy" lang={site.lang}/>
         }
         col3={
-          <Recommendation id="sit" lang={site.lang}/>
+          <Recommendation id="fio" lang={site.lang}/>
         }
       />
 

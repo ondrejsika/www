@@ -7,7 +7,8 @@
   photo: img/matejkucera.jpg
   company_logo:
   text:
-    en: It was Great!
+    en: |
+      Ondrej came to help us with deployment Docker and Gitlab CI. Ondrej is very good in his field and I can just reccomend him. We did lot of thing in very short time, and we would'n be able to do it without him. I recommend him.
     cs: |
       Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
     de: |
@@ -94,11 +95,13 @@
   photo: img/jurajhantak.jpg
   text:
     cs: |
-      Ondřej u nás strávil tři dny a během této doby nás uvedl do problematiky Dockeru. Následně jsme přešli ke Kubernetes od instalace až k provozování aplikací. Školení naplnilo naše očakávání.
+      Ondřej u nás strávil tři dny a během této doby nás uvedl do problematiky Dockeru. Následně jsme přešli ke Kubernetes, začali s instalací a došli až k provozování aplikací. Školení naplnilo naše očakávání.
     sk: |
       Ondrej u nás strávil tri dni a počas tejto doby nás uviedol do problematiky dockeru. Následne sme si prešli kubernetes od inštalácie až po prevádzku aplikácií. Školenie naplnilo naše očakávania.
     de: |
       germany
+    en: |
+      Ondrej was with us for three days to introduce us to Docker. Subsequently, we moved onto Kubernetes - from installation to application preview. The training fulfilled our expectations.
 - id: sit
   name: Martin Kylián
   role:
@@ -113,17 +116,32 @@
       Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej'sknowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes.
     de: |
       germany
-- id: webglobne-yegon
-  name: Juraj Hanták
+- id: fio
+  name: Adrian Kantor
   role:
-    en: Co-owner Webglobe-Yegon
-    cs: Co-owner Webglobe-Yegon
-  company: Webglobe-Yegon
-  photo: img/jurajhantak.jpg
+    en: Head of IT FIO Prague
+    cs: Head of IT FIO Prague
+  company: FIO
+  photo: img/person.svg
   text:
     cs: |
-      Ondrej u nás strávil tri dni a počas tejto doby nás uviedol do problematiky dockeru. Následne sme si prešli kubernetes od inštalácie až po prevádzku aplikácií. Školenie naplnilo naše očakávania.
-    sk: |
-      Ondrej u nás strávil tri dni a počas tejto doby nás uviedol do problematiky dockeru. Následne sme si prešli kubernetes od inštalácie až po prevádzku aplikácií. Školenie naplnilo naše očakávania.
+      Ondřej školil git, ale bez problémů na místě objasnil i mnoho našich specifických otázek kolem celého vývojového cyklu. A neztratil se ani v ad hoc dotazech, které už s gitem souvisely jen volně, ale pro nás byly důležité.
+      Bylo velmi přínosné strávit čas s člověkem, který tématu rozumí do hloubky i do šířky a zároveň se je schopen podívat na problém z vaší perspektivy.
+    en: |
+      Ondrej came in to train us in Git, on the spot he also helped us with situational questions specific to our business surrounding the whole development cycle. He did not fail even with our ad hoc questions which were related to Git only loosely, but for our business essential. It was beneficial to spend time with a person who has a deep understanding of the topic and industry and at the same time is able to look at the problem from our perspective.
     de: |
       germany
+- id: NMS
+  name: František Vodsloň
+  role:
+    en: Software Development Manager
+    cs: Software Development Manager
+  company: NMS Market Research
+  photo: img/frantisekvodslon.jpg
+  text:
+    cs: |
+      Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč, a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
+      Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma Dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd.
+      Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo"
+    en: |
+      We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
