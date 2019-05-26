@@ -31,32 +31,34 @@ const Index = () => (
       logoUrl="/static/ansible.png"
     >
       <HeaderLink url="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-skoleni.uk">Ask for a training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=ansible-training.uk">Contact</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=ansible-training.uk">Contact me</HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
         <ReactMarkdown source={`
 ### What is Ansible?
-Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about in which state the server or applications are now; Ansible will take care of the desired result (benefits of declarative syntax - e.g., shell script is imperative - carry out the following x and y). The entire configuration is versioned using Git, and it won't happen that you would lose view of where is deployed what or that you would miss any critical step. Ansible will help with application deployment and quicker and safer server administration.
+Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about in which state the server or applications are now; Ansible turns it into desired state. The entire configuration is versioned using Git, and it won't happen that you would lose view of where is deployed what or that you would miss any critical step. Ansible will help with application deployment and quicker and safer server administration.
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-The training is run as a two days workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and what are the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from beginning to end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
+The training is run as a two days hands-on workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and what are the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from beginning to end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Outline
 
+- Basic insights into automation
 - Basic insights into Ansible
 - Ansible installation (for those who did not install at home)
 - Basic Ansible controls
 - Playbooks
-- Modules
 - Templates
 - Secrets
+- Writing own modules
+- Ansible & CI/CD (Gitlab CI)
         `} escapeHtml={false}/>
       </TextFrame>
       <TextFrame>
@@ -75,7 +77,7 @@ This training is primarily aimed at admins and DevOps who want to start using An
           col2={
             <ReactMarkdown source={`
 #### Technical Requirements
-- Have Ansible installed, instructions: [here](https://www.ondrej-sika.uk/ansible/install/)
+- Have Ansible installed, instructions: [here](https://ondrej-sika.uk/ansible/install/)
 - Access to the internet (https, ssh) - better without corporate proxy
             `} escapeHtml={false}/>
           }
@@ -86,7 +88,7 @@ This training is primarily aimed at admins and DevOps who want to start using An
         imgUrl="/static/ondrejsika.jpg"
         >
         <ReactMarkdown source={`
-A little bit of background about myself, I am a software developer for Slush Pool and a trainer. I use Ansible as a tool for server administration. I try to use Ansible for the administration of everything I can - from database users to DNS records on Cloudflare.
+A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I use Ansible as a tool for server administration. I try to use Ansible for the administration of everything I can - from database users to DNS records on Cloudflare.
         `}/>
       </TextFrameWithImage>
 
@@ -106,7 +108,8 @@ A little bit of background about myself, I am a software developer for Slush Poo
         <ReactMarkdown source={`
 ### Pricing
 
-Price for two days training
+Price for two days hands-on Ansible training
+
 - Open to public (self-funded): 800 GBP excl. VAT
 - Open to public (company-funded): 1000 GBP excl. VAT
 - On-site training (on-site): 3000 GBP excl. VAT
@@ -119,21 +122,28 @@ Price for two days training
 
 #### Ondrej Sika
 <ondrej@ondrejsika.com>
-<br>[ondrej-sika.com](https://ondrej-sika.com)
+<br>[ondrej-sika.uk](https://ondrej-sika.uk)
 <br>[+420 773 452 376](tel:+420773452376)
 `} escapeHtml={false}/>
       </TextFrame>
 
       <TextFrame>
         <ReactMarkdown source={`
-### I Want the Training
+### I Want the Ansible Training
 
-If you are interested in training or any questions, let me know.
+If you are interested in Ansible workshop or any questions, let me know.
 
 `}/>
         <p className="text-center">
           <a href="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-training.uk" className="btn btn-large btn-success">Inquire Ansible Training</a>
         </p>
+      </TextFrame>
+      <TextFrame>
+        <ReactMarkdown source={`
+### Related Courses
+
+[Gitlab CI](https://ondrej-sika.uk/training/gitlab-ci)
+`}/>
       </TextFrame>
     </div>
     <FooterOndrejSika />

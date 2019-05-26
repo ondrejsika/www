@@ -21,17 +21,17 @@ let site = {
 const Index = () => (
   <div>
     <Head>
-        <title>Docker training, Ondrej Sika - docker-training.uk</title>
+        <title>Docker Training, Ondrej Sika - docker-training.uk</title>
     </Head>
     <Navigation/>
     <Header
-      websiteHeader="Docker training"
+      websiteHeader="Docker Training"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=docker-training.cz"
       logoUrl="/static/docker-w.svg"
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/training/docker/inquiry/?x_source=kubernetes-training.uk">Ask for a training</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk">Contact me</HeaderLink>
     </Header>
     <div className="container container-width">
     <TextFrame>
@@ -43,13 +43,13 @@ Docker can make your life easier through simplifying the process of R&D, testing
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-During the Introduction to Docker in the Workplace, you’ll be shown everything you need to be able to use Docker - from creating a custom container to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
+During the two days workshop, you’ll be shown everything you need to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
 `}/>
       </TextFrame>
       <TextFrame header="">
         <ReactMarkdown source={`
 ### Course Outline
-- Theory introduction to Docker
+- Theory introduction to containers & Docker
 - How to install Docker at home or work (for those who did not - do so)
 - Basics of Containerisation
 - Basics of Images
@@ -74,7 +74,7 @@ This training course is primarily aimed at complete beginners who have either no
           col2={
             <ReactMarkdown source={`
 #### Technical Requirements
-- Have Docker installed, instructions: [here](https://www.ondrej-sika.uk/docker/install/)
+- Have Docker installed, instructions: [here](https://ondrej-sika.uk/docker/install/)
 - Access to the internet - ideally without corporate proxy, or proxy set up in Docker
 `}/>
           }
@@ -85,9 +85,7 @@ This training course is primarily aimed at complete beginners who have either no
         imgUrl="/static/ondrejsika.jpg"
         >
           <ReactMarkdown source={`
-A little bit of background about myself, I am a software developer for Slush Pool and a trainer. I lead mostly Docker courses and CI; they are both closely interrelated.I have four years of experience with Docker on the commercial development side. Other than that I use it daily for development, as well as production, and I cannot imagine working without it.
-<br/><br/>
-For more information on all my courses that I offer, visit [ondrej-sika.uk](ondrej-sika.uk).
+A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have four years of experience with Docker on the commercial development side. Other than that I use it daily for development, as well as production, and I cannot imagine working without it.
 <br/><br/>
 Get in touch if you have any questions - Happy to hearing from you!
 `} escapeHtml={false}/>
@@ -109,13 +107,30 @@ Get in touch if you have any questions - Happy to hearing from you!
       <TextFrame>
         <ReactMarkdown source={`
 ### Pricing
-Price for one days training
-- Open to public (self-funded): 1 600 GBP excl. VAT
-- Open to public (company-funded): 2 000 GBP excl. VAT
-- On-site training (on-site): 6 000 GBP excl. VAT
-        `}/>
+Price for two days Docker training
+- Open to public (self-funded): 800 GBP excl. VAT
+- Open to public (company-funded): 1 000 GBP excl. VAT
+- On-site training (on-site): 3 000 GBP excl. VAT
+`}/>
       </TextFrame>
-      <Contact />
+      <TextFrame>
+        <ReactMarkdown source={`
+### I Want the Docker Training
+
+If you are interested in Docker workshop or any questions, let me know.
+
+`}/>
+        <p className="text-center">
+          <a href="https://ondrej-sika.uk/training/docker/inquiry/?x_source=git-training.uk" className="btn btn-large btn-success">Inquire Docker Training</a>
+        </p>
+      </TextFrame>
+      <TextFrame>
+        <ReactMarkdown source={`
+### Related Courses
+
+[Kubernetes](https://ondrej-sika.uk/training/kubernetes)
+`} escapeHtml={false}/>
+      </TextFrame>
     </div>
     <FooterOndrejSika />
   </div>

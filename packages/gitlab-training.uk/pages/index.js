@@ -21,30 +21,29 @@ let site = {
 const Index = () => (
   <div>
     <Head>
-        <title>Gitlab training, Ondrej Sika - gitlab-training.uk</title>
+        <title>Gitlab CI Training, Ondrej Sika - gitlab-training.uk</title>
     </Head>
-    <Navigation/>
+    <Navigation location='UK'/>
     <Header
-      websiteHeader="Gitlab CI training"
+      websiteHeader="Gitlab CI Training"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=gitlab-training.uk"
       logoUrl="/static/gitlab-ci.svg"
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/?x_source=skoleni-gitlab-ci.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-gitlab-ci.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=gitlab-training.uk">Ask for a training</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=gitlab-training.uk">Contact me</HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
       <ReactMarkdown source={`
 ### What is CI?
 Continuous Integration (abbr. CI or CI/CD) is a tool that automates routine tasks such as running tests, code quality or deployment. It allows faster adoption of changes to master and quicker deployment. The compelling advantage of Gitlab CI is its Docker support; you can easily combine Docker images or run tests in containers.
-
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-This course is run in the form of a workshop where you will learn the importance of CI, the different versions of Gitlab CI and practice writing CI script for a sample project. The outcome will be a script for a simple project containing application build jobs, from tests to deployment.
+This course is run in the form of a one day hands-on workshop where you will learn the importance of CI, the different versions of Gitlab CI and practice writing CI script for a sample project. The outcome will be a script for a simple project containing application build jobs, from tests to deployment.
 `}/>
       </TextFrame>
       <TextFrame>
@@ -70,26 +69,25 @@ The course is primarily aimed at developers who are using Gitlab and are wanting
 #### Skill Requirements
 - Basic Linux knowledge
 - Basic Terminal knowledge
-- Basic Git knowledge is of benefit - [Git training](https://ondrej-sika.uk/git/)
-- The [Gitlab Course](https://ondrej-sika.uk/gitlab-ci/install/) is of benefit
+- Basic Git knowledge is of benefit - [Git training](https://ondrej-sika.uk/training/git/)
+- Docker knowledge is of benefit - [Docker training](https://ondrej-sika.uk/training/docker/)
+
             `} escapeHtml={false}/>
           }
           col2={
             <ReactMarkdown source={`
 #### Technical Requirements
-- Access to the internet - ideally without corporate proxy, or proxy set up in Docker
+- Access to the internet - ideally without corporate proxy
             `} escapeHtml={false}/>
           }
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Sika"
+        header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg"
         >
         <ReactMarkdown source={`
-A little bit of background about myself, I am a software developer for Slush Pool and a trainer. The Gitlab CI course is the second most popular training after Docker; the two are closely related. I lead all the courses myself. I am experienced in Gitlab CI from multiple projects and businesses. Almost all projects that I am working on are using Gitlab CI. Gitlab CI is making my work simpler and quicker - I don't have to worry about routine tasks such as deployment or application building, and I can spend time on tasks that generate returns.
-<br/><br/>
-For more information on all my courses that I offer, visit ondrej-sika.cz.
+A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. The Gitlab CI course is the second most popular training after [Docker](https://ondrej-sika.uk/training/docker); the two are closely related. I lead all the courses myself. I am experienced in Gitlab CI from multiple projects and businesses. Almost all projects that I am working on are using Gitlab CI. Gitlab CI is making my work simpler and quicker - I don't have to worry about routine tasks such as deployment or application building, and I can spend time on tasks that generate profit.
 <br/><br/>
 Get in touch if you have any questions - happy hearing from you!
         `} escapeHtml={false}/>
@@ -111,13 +109,33 @@ Get in touch if you have any questions - happy hearing from you!
       <TextFrame>
         <ReactMarkdown source={`
 ### Pricing
-Price for one days training
-- Open to public (self-funded): 800 GBP excl. VAT
-- Open to public (company-funded): 1 000 GBP excl. VAT
-- On-site training (on-site): 3 000 GBP excl. VAT
+
+Price for one day hands-on Git training
+
+- Open to public (self-funded): 400 GBP excl. VAT
+- Open to public (company-funded): 500 GBP excl. VAT
+- On-site training (on-site): 1 500 GBP excl. VAT
 `}/>
       </TextFrame>
-      <Contact />
+      <TextFrame>
+        <ReactMarkdown source={`
+### I Want the Gitlab CI Training
+
+If you are interested in Gitlab CI workshop or any questions, let me know.
+
+`}/>
+        <p className="text-center">
+          <a href="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=git-training.uk" className="btn btn-large btn-success">Inquire Gitlab CI Training</a>
+        </p>
+      </TextFrame>
+      <TextFrame>
+        <ReactMarkdown source={`
+### Related Courses
+
+[Git](https://ondrej-sika.uk/training/gitlab-ci)
+<br>[Docker](https://ondrej-sika.uk/training/docker)
+`} escapeHtml={false}/>
+      </TextFrame>
     </div>
     <FooterOndrejSika />
   </div>

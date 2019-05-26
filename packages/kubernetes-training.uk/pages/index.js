@@ -21,36 +21,36 @@ let site = {
 const Index = () => (
   <div>
     <Head>
-        <title>Kuberneres training, Ondrej Sika - kubernetes-training.uk</title>
+        <title>Kuberneres Training, Ondrej Sika - kubernetes-training.uk</title>
     </Head>
     <Navigation/>
     <Header
-      websiteHeader="Kuberneres training"
+      websiteHeader="Kuberneres Training"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=kubernetes-training.uk"
       logoUrl="/static/kubernetes.png"
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=kubernetes-training.uk">Ask for a training</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk">Contact me</HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
         <ReactMarkdown source={`
 ### What is Kubernetes?
-Kubernetes is one of the most used platforms for hosting Docker containers and is supported by key market leaders (Google, Amazon, Microsoft, etc.) via Cloud Native Computing Foundation. Kubernetes is being used by businesses of all scales, from startups to corporations.
+Kubernetes is one of the most used platforms for running your Docker containers and it is supported by key market leaders (Google, Amazon, Microsoft, etc.) via Cloud Native Computing Foundation. Kubernetes is being used by businesses of all scales, from startups to corporations.
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-This course is run in the form of a workshop where you will be able to practice everything you learn. You will be shown how to run Kubernetes locally (for development) and on a cloud platform, Digital Ocean. You will also find out the basic structure of Kubernetes, including its components. You will learn how to create a Kubernetes Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
+This course is run in the form of a two days hands-on workshop where you will be able to practice everything you learn. You will be shown how to run Kubernetes locally (for development) and on a cloud platform, Digital Ocean. You will also find out the basic structure of Kubernetes, including its components. You will learn how to create a Kubernetes Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
 `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Outline
 - Theory introduction to Kubernetes
-- How to install Minikube and kubectl at home or work (for those who did not do so)
+- How to install locally (minikube and kubectl)
 - Description of Kubernetes components
 - Deployment to Kubernetes
 - Working with permissions in the Kubernetes cluster
@@ -68,7 +68,7 @@ This course is primarily aimed at people (developers & DevOps), who want to main
           col1={
             <ReactMarkdown source={`
 #### Skill Requirements
-- Basic [Docker](https://www.ondrej-sika.uk/kubernetes/install/) knowledge
+- Basic [Docker](https://ondrej-sika.uk/training/docker/) knowledge
 - Basic Linux knowledge
 - Basic Terminal knowledge
             `}/>
@@ -76,8 +76,8 @@ This course is primarily aimed at people (developers & DevOps), who want to main
           col2={
             <ReactMarkdown source={`
 #### Technical Requirements
-- Have Docker installed, instructions: [here](https://ondrej-sika.uk/docker/install)
-- Access to the internet - ideally without corporate proxy, or proxy set up in Docker
+- Have Kubernetes installed & running, instruction [here](https://ondrej-sika.uk/kubernetes/install)
+- Access to the internet - ideally without corporate proxy
 `}/>
           }
         />
@@ -86,9 +86,7 @@ This course is primarily aimed at people (developers & DevOps), who want to main
         header="Course Leader: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg" >
         <ReactMarkdown source={`
-A little bit of background about myself, I am a software developer for Slush Pool and a trainer. I have trained Kubernetes in firms like CGI or Webglobe - Yergeon. I am specialised mostly in Docker training which is closely related to Kubernetes. I use Kubernetes as a platform for most of my projects. It is one of the simplest ways of running Docker containers.
-<br/><br/>
-For more information on all my courses that I offer, visit ondrej-sika.cz.
+A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I have trained Kubernetes in firms like CGI or Webglobe - Yergeon. I am specialised mostly in Docker training which is closely related to Kubernetes. I use Kubernetes as a platform for most of my projects. It is one of the simplest ways of running Docker containers.
 <br/><br/>
 Get in touch if you have any questions - happy hearing from you!
 `} escapeHtml={false}/>
@@ -110,13 +108,30 @@ Get in touch if you have any questions - happy hearing from you!
       <TextFrame>
         <ReactMarkdown source={`
 ### Pricing
-Price for one days training
-- Open to public (self-funded): 1 600 GBP excl. VAT
-- Open to public (company-funded): 2 000 GBP excl. VAT
-- On-site training (on-site): 6 000 GBP excl. VAT
+Price for two days Kubernetes training
+- Open to public (self-funded): 800 GBP excl. VAT
+- Open to public (company-funded): 1 000 GBP excl. VAT
+- On-site training (on-site): 3 000 GBP excl. VAT
 `}/>
       </TextFrame>
-      <Contact />
+      <TextFrame>
+        <ReactMarkdown source={`
+### I Want the Kubernetes Training
+
+If you are interested in Kubernetes workshop or any questions, let me know.
+
+`}/>
+        <p className="text-center">
+          <a href="https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=git-training.uk" className="btn btn-large btn-success">Inquire Kubernetes Training</a>
+        </p>
+      </TextFrame>
+      <TextFrame>
+        <ReactMarkdown source={`
+### Related Courses
+
+[Docker](https://ondrej-sika.uk/training/docker)
+`} escapeHtml={false}/>
+      </TextFrame>
     </div>
     <FooterOndrejSika />
   </div>
