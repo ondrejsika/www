@@ -14,3 +14,8 @@ docker-training.uk
 kubernetes-training.uk
 ansible-training.uk
 gitlab-training.uk
+skolenie-git.sk
+skolenie-gitlab.sk
+skolenie-docker.sk
+skolenie.kubernetes.sk
+skolenie-ansible.sk

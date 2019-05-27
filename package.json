@@ -23,6 +23,12 @@
     "dev-docker-training.uk": "yarn --cwd packages/docker-training.uk dev -p 3014",
     "dev-kubernetes-training.uk": "yarn --cwd packages/kubernetes-training.uk dev -p 3015",
     "dev-ansible-training.uk": "yarn --cwd packages/ansible-training.uk dev -p 3016",
+    "dev-skolenie-git.sk": "yarn --cwd packages/skolenie-git.sk dev -p 3017",
+    "dev-skolenie-gitlab.sk": "yarn --cwd packages/skolenie-gitlab.sk dev -p 3018",
+    "dev-skolenie-docker.sk": "yarn --cwd packages/skolenie-docker.sk dev -p 3019",
+    "dev-skolenie.kubernetes.sk": "yarn --cwd packages/skolenie.kubernetes.sk dev -p 3020",
+    "dev-skolenie-ansible.sk": "yarn --cwd packages/skolenie-ansible.sk dev -p 3021",
+
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -38,6 +44,11 @@
     "static-gitlab-training.uk": "yarn --cwd packages/gitlab-training.uk static",
     "static-docker-training.uk": "yarn --cwd packages/docker-training.uk static",
     "static-kubernetes-training.uk": "yarn --cwd packages/kubernetes-training.uk static",
-    "static-ansible-training.uk": "yarn --cwd packages/ansible-training.uk static"
+    "static-ansible-training.uk": "yarn --cwd packages/ansible-training.uk static",
+    "static-skolenie-git.sk": "yarn --cwd packages/skolenie-git.sk static",
+    "static-skolenie-gitlab.sk": "yarn --cwd packages/skolenie-gitlab.sk static",
+    "static-skolenie-docker.sk": "yarn --cwd packages/skolenie-docker.sk static",
+    "static-skolenie.kubernetes.sk": "yarn --cwd packages/skolenie.kubernetes.sk static",
+    "static-skolenie-ansible.sk": "yarn --cwd packages/skolenie-ansible.sk dev static"
   }
 }
