@@ -19,3 +19,8 @@ skolenie-gitlab.sk
 skolenie-docker.sk
 skolenie.kubernetes.sk
 skolenie-ansible.sk
+ansible-utbildning.se
+docker-utbildning.se
+git-utbildning.se
+gitlab-utbildning.se
+kubernetes-utbildning.se

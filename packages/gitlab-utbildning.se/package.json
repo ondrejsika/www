@@ -1,0 +1,25 @@
+{
+  "name": "@app/gitlab-utbildning.se",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Ondrej Sika",
+  "author_email": "ondrej@ondrejsika.com",
+  "scripts": {
+    "dev": "NODE_ENV=development next",
+    "build": "next build",
+    "export": "next export",
+    "static": "yarn run build && yarn run export"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "bootstrap-css-only": "^4.3.1",
+    "js-yaml-loader": "^1.0.1",
+    "next": "^8.1.0",
+    "next-images": "^1.1.1",
+    "next-transpile-modules": "^2.0.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
