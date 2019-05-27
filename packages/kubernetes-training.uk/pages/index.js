@@ -23,7 +23,7 @@ const Index = () => (
     <Head>
         <title>Kuberneres Training, Ondrej Sika - kubernetes-training.uk</title>
     </Head>
-    <Navigation/>
+    <Navigation location='uk'/>
     <Header
       websiteHeader="Kuberneres Training"
       byName="Ondrej Sika"

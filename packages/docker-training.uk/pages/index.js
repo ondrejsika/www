@@ -23,7 +23,7 @@ const Index = () => (
     <Head>
         <title>Docker Training, Ondrej Sika - docker-training.uk</title>
     </Head>
-    <Navigation/>
+    <Navigation location='uk'/>
     <Header
       websiteHeader="Docker Training"
       byName="Ondrej Sika"

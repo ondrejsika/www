@@ -23,7 +23,7 @@ const Index = () => (
     <Head>
         <title>Gitlab CI Training, Ondrej Sika - gitlab-training.uk</title>
     </Head>
-    <Navigation location='UK'/>
+    <Navigation location='uk'/>
     <Header
       websiteHeader="Gitlab CI Training"
       byName="Ondrej Sika"
