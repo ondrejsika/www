@@ -6,6 +6,7 @@
   "scripts": {
     "now-build": "yarn run static-$TARGET",
     "clean": "git clean -X -f -d",
+    "dev-all": "./run-dev-all.sh",
     "dev-archetype-web": "yarn --cwd packages/archetype-web dev -p 3001",
     "dev-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz dev -p 3002",
     "dev-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz dev -p 3003",
