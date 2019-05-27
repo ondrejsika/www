@@ -43,7 +43,7 @@ Kubernetes is one of the most used platforms for running your Docker containers 
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-This course is run in the form of a two days hands-on workshop where you will be able to practice everything you learn. You will be shown how to run Kubernetes locally (for development) and on a cloud platform, Digital Ocean. You will also find out the basic structure of Kubernetes, including its components. You will learn how to create a Kubernetes Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
+This course is ran in the form of a two-day hands-on workshop where you will be able to practice everything you learn. You will be shown how to run Kubernetes locally (for development) and on a cloud platform, Digital Ocean. You will also find out the basic structure of Kubernetes, including its components. You will learn how to create a Kubernetes Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
 `}/>
       </TextFrame>
       <TextFrame>
@@ -108,7 +108,7 @@ Get in touch if you have any questions - happy hearing from you!
       <TextFrame>
         <ReactMarkdown source={`
 ### Pricing
-Price for two days Kubernetes training
+Price for the two-day Kubernetes training
 - Open to public (self-funded): 800 GBP excl. VAT
 - Open to public (company-funded): 1 000 GBP excl. VAT
 - On-site training (on-site): 3 000 GBP excl. VAT
@@ -118,7 +118,7 @@ Price for two days Kubernetes training
         <ReactMarkdown source={`
 ### I Want the Kubernetes Training
 
-If you are interested in Kubernetes workshop or any questions, let me know.
+If you are interested in Kubernetes workshop or have any questions, please let me know.
 
 `}/>
         <p className="text-center">

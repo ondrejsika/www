@@ -43,7 +43,7 @@ Docker can make your life easier through simplifying the process of R&D, testing
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-During the two days workshop, you’ll be shown everything you need to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
+During the two-day workshop, you’ll be shown everything you need to know to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
 `}/>
       </TextFrame>
       <TextFrame header="">
@@ -61,7 +61,7 @@ During the two days workshop, you’ll be shown everything you need to be able t
       <TextFrame header="">
         <ReactMarkdown source={`
 ### Who Should Attend
-This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it's something they can implement.
+This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it is something they can implement.
 `}/>
         <TwoCol
           col1={
@@ -117,7 +117,7 @@ Price for two days Docker training
         <ReactMarkdown source={`
 ### I Want the Docker Training
 
-If you are interested in Docker workshop or any questions, let me know.
+If you are interested in Docker workshop or have any questions, please let me know.
 
 `}/>
         <p className="text-center">

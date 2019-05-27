@@ -37,13 +37,13 @@ const Index = () => (
       <TextFrame>
         <ReactMarkdown source={`
 ### What is Ansible?
-Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about in which state the server or applications are now; Ansible turns it into desired state. The entire configuration is versioned using Git, and it won't happen that you would lose view of where is deployed what or that you would miss any critical step. Ansible will help with application deployment and quicker and safer server administration.
+Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about the state the current server or applications are in now; Ansible turns it into desired state. The entire configuration is versioned using Git, and you will never lose view of where everything is being deployed or miss any critical steps during the process. Ansible will help you with application deployment and quicker and safer server administration.
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-The training is run as a two days hands-on workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and what are the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from beginning to end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
+The training is ran as a two-day hands-on workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and introduce the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from the beginning to the end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts, and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
         `}/>
       </TextFrame>
       <TextFrame>
@@ -108,7 +108,7 @@ A little bit of background about myself, I am a software engineer at Slush Pool 
         <ReactMarkdown source={`
 ### Pricing
 
-Price for two days hands-on Ansible training
+Price for the two-day hands-on Ansible training
 
 - Open to public (self-funded): 800 GBP excl. VAT
 - Open to public (company-funded): 1000 GBP excl. VAT
@@ -131,7 +131,7 @@ Price for two days hands-on Ansible training
         <ReactMarkdown source={`
 ### I Want the Ansible Training
 
-If you are interested in Ansible workshop or any questions, let me know.
+If you are interested in Ansible workshop or have any questions, please let me know.
 
 `}/>
         <p className="text-center">

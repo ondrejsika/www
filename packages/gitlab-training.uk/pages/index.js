@@ -43,7 +43,7 @@ Continuous Integration (abbr. CI or CI/CD) is a tool that automates routine task
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-This course is run in the form of a one day hands-on workshop where you will learn the importance of CI, the different versions of Gitlab CI and practice writing CI script for a sample project. The outcome will be a script for a simple project containing application build jobs, from tests to deployment.
+This course is ran in the form of a one day hands-on workshop where you will learn the importance of CI, the different versions of Gitlab CI and practice writing CI script for a sample project. The outcome will be a script for a simple project containing application build jobs, from tests to deployment.
 `}/>
       </TextFrame>
       <TextFrame>
@@ -121,7 +121,7 @@ Price for one day hands-on Git training
         <ReactMarkdown source={`
 ### I Want the Gitlab CI Training
 
-If you are interested in Gitlab CI workshop or any questions, let me know.
+If you are interested in Gitlab CI workshop or have any questions, please let me know.
 
 `}/>
         <p className="text-center">

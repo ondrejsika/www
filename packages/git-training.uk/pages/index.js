@@ -42,7 +42,7 @@ Git is a modern versioning tool that has become an industry standard among devel
       <TextFrame>
         <ReactMarkdown source={`
 ### Course Description
-During this one day hands-on workshop, you will find out why it is beneficial to use Git, how it works (why there are no substitutes) and best practice. You will be shown everything from the installation and basic Git setup, simple individual work in one branch to work in a team with multiple branches using merge strategies (merge, rebase) and Gitlab. The pros and cons of both will be explained, and you can choose which one is better suited for your needs. Also, you will be shown how to get out of unexpected situations like 'I deleted everything by accident' etc.
+During this one day hands-on workshop, you will find out why it is beneficial to use Git, how it works (why there are no substitutes) and best practices. You will be shown everything from the installation and basic Git setup, simple individual work in a one branch to work in a team with multiple branches using merge strategies (merge, rebase) and Gitlab. The pros and cons of both will be explained, and you can choose which one is better suited for your needs. Also, you will be shown how to get out of unexpected situations like 'I deleted everything by accident' etc.
 `}/>
       </TextFrame>
       <TextFrame>
@@ -123,7 +123,7 @@ Price for one day hands-on Git training
         <ReactMarkdown source={`
 ### I Want the Git Training
 
-If you are interested in Git workshop or any questions, let me know.
+If you are interested in Git workshop or have any questions, please let me know.
 
 `}/>
         <p className="text-center">
