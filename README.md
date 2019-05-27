@@ -36,6 +36,14 @@ CZ
 - [skoleni-docker.cz](packages/skoleni-docker.cz/pages/index.js)
 - [skoleni-kubernetes.cz](packages/skoleni-kubernetes.cz/pages/index.js)
 
+SK
+
+- [skolenie-ansible.sk](packages/skolenie-ansible.sk/pages/index.js)
+- [skolenie-git.sk](packages/skolenie-git.sk/pages/index.js)
+- [skolenie-gitlab.sk](packages/skolenie-gitlab.sk/pages/index.js)
+- [skolenie-docker.sk](packages/skolenie-docker.sk/pages/index.js)
+- [skolenie.kubernetes.sk](packages/skolenie.kubernetes.sk/pages/index.js)
+
 
 ### Add New Site
 
