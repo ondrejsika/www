@@ -35,3 +35,13 @@ CZ
 - [gitlab-ci.cz](packages/gitlab-ci.cz/pages/index.js)
 - [skoleni-docker.cz](packages/skoleni-docker.cz/pages/index.js)
 - [skoleni-kubernetes.cz](packages/skoleni-kubernetes.cz/pages/index.js)
+
+
+### Add New Site
+
+You probably copy some course landing site (skoleni-docker.cz) or website (ondrej-sika.cz). You have to:
+
+- update package name in `package.json` located in site directory `packages/<site>/package.json`
+- add dev & build script into global `package.json`
+- add site to `sites.txt`
+- update just pages settings `packages/<site>/config.js` and headers (site name, title, ..) in first commit, content update in next one
