@@ -12,6 +12,8 @@
 
 ### Locations of Sites Sources
 
+Those links also works in VS Code
+
 #### UK
 
 - [ansible-training.uk](packages/ansible-training.uk/pages/index.js)
