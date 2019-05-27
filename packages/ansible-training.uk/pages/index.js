@@ -30,7 +30,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.uk/?x_source=ansible-training.uk"
       logoUrl="/static/ansible.png"
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-skoleni.uk">Ask for a training</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-skoleni.uk">Request training</HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=ansible-training.uk">Contact me</HeaderLink>
     </Header>
     <div className="container container-width">

@@ -30,7 +30,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.uk/?x_source=gitlab-training.uk"
       logoUrl="/static/gitlab-ci.svg"
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=gitlab-training.uk">Ask for a training</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=gitlab-training.uk">Request a training</HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=gitlab-training.uk">Contact me</HeaderLink>
     </Header>
     <div className="container container-width">

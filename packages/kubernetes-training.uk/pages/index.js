@@ -30,7 +30,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.uk/?x_source=kubernetes-training.uk"
       logoUrl="/static/kubernetes.png"
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=kubernetes-training.uk">Ask for a training</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=kubernetes-training.uk">Request training</HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk">Contact me</HeaderLink>
     </Header>
     <div className="container container-width">
