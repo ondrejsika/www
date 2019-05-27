@@ -12,7 +12,7 @@
 
 ### Locations of Sites Sources
 
-UK
+#### UK
 
 - [ansible-training.uk](packages/ansible-training.uk/pages/index.js)
 - [git-training.uk](packages/git-training.uk/pages/index.js)
@@ -20,14 +20,14 @@ UK
 - [docker-training.uk](packages/docker-training.uk/pages/index.js)
 - [kubernetes-training.uk](packages/kubernetes-training.uk/pages/index.js)
 
-DE
+#### DE
 
 - [sika-kraml.de](packages/sika-kraml.de/pages)
 - [ansible-schulung.de](packages/ansible-schulung.de/pages/index.js)
 - [dockerschulung.de](packages/dockerschulung.de/pages/index.js)
 - [kubernetes-schulung.de](packages/kubernetes-schulung.de/pages/index.js)
 
-CZ
+#### CZ
 
 - [ondrej-sika.cz](packages/ondrej-sika.cz/pages)
 - [ansible-skoleni.cz](packages/ansible-skoleni.cz/pages/index.js)
@@ -36,7 +36,7 @@ CZ
 - [skoleni-docker.cz](packages/skoleni-docker.cz/pages/index.js)
 - [skoleni-kubernetes.cz](packages/skoleni-kubernetes.cz/pages/index.js)
 
-SK
+#### SK
 
 - [skolenie-ansible.sk](packages/skolenie-ansible.sk/pages/index.js)
 - [skolenie-git.sk](packages/skolenie-git.sk/pages/index.js)
@@ -44,6 +44,13 @@ SK
 - [skolenie-docker.sk](packages/skolenie-docker.sk/pages/index.js)
 - [skolenie.kubernetes.sk](packages/skolenie.kubernetes.sk/pages/index.js)
 
+#### SE
+
+- [ansible-utbildning.se](packages/ansible-utbildning.se/pages/index.js)
+- [git-utbildning.se](packages/git-utbildning.se/pages/index.js)
+- [gitlab-utbildning.se](packages/gitlab-utbildning.se/pages/index.js)
+- [docker-utbildning.se](packages/docker-utbildning.se/pages/index.js)
+- [kubernetes-utbildning.se](packages/kubernetes-utbildning.se/pages/index.js)
 
 ### Add New Site
 
