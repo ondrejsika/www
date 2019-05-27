@@ -26,8 +26,6 @@ deploy_dev:
   variables:
     SITES:  git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk skolenie-ansible.sk
     SUFFIX: .xsika.cz
-  except:
-    - master
 
 deploy_prod:
   <<: *deploy_template
