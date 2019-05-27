@@ -49,6 +49,6 @@
     "static-skolenie-gitlab.sk": "yarn --cwd packages/skolenie-gitlab.sk static",
     "static-skolenie-docker.sk": "yarn --cwd packages/skolenie-docker.sk static",
     "static-skolenie.kubernetes.sk": "yarn --cwd packages/skolenie.kubernetes.sk static",
-    "static-skolenie-ansible.sk": "yarn --cwd packages/skolenie-ansible.sk dev static"
+    "static-skolenie-ansible.sk": "yarn --cwd packages/skolenie-ansible.sk static"
   }
 }
