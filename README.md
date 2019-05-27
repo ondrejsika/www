@@ -4,6 +4,12 @@
 
 ## Development Guide
 
+### Run in Development Mode
+
+1. Clone repository & select branch
+2. `yarn install` - install dependencies
+3. `yarn run dev-<site>` - where `<site>` is website domain, like ondrej-sika.cz. eg.: `yarn run dev-ondrej-sika.cz`
+
 ### Locations of Sites Sources
 
 UK
