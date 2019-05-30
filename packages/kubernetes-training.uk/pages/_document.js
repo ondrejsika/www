@@ -3,8 +3,9 @@ import CourseLandingDocument from "@app/course-landing/document";
 import site from '../config'
 
 class Document extends CourseLandingDocument {
-  static getInitialProps(ctx) {
-    return {site: site};
+  constructor(...args){
+    super(...args)
+    this.site = site
   }
 }
 
