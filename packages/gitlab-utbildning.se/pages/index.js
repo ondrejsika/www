@@ -13,17 +13,14 @@ import Recommendation from '@app/course-landing/components/Recommendation'
 import Contact from '@app/course-landing/components/Contact'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head'
-
-let site = {
-  lang: 'se'
-}
+import site from '@app/gitlab-utbildning.se/config'
 
 const Index = () => (
   <div>
     <Head>
         <title>Gitlab CI Utbildning, Ondrej Sika - gitlab-utbildning.se</title>
     </Head>
-    <Navigation location='se'/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Gitlab CI Utbildning"
       byName="Ondrej Sika"

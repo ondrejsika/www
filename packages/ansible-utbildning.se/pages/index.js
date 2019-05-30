@@ -12,18 +12,16 @@ import Navigation from '@app/course-landing/components/Navigation';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-import Head from 'next/head'
+import Head from 'next/head';
+import site from '@app/ansible-utbildning.se/config';
 
-let site = {
-  lang: 'se'
-}
 
 const Index = () => (
   <div>
     <Head>
         <title>Ansible Utbildning, Ondrej Sika - ansible-utbildning.se</title>
     </Head>
-    <Navigation location="se" />
+    <Navigation location={site.location} />
     <Header
       websiteHeader="Ansible Utbildning"
       byName="Ondrej Sika"

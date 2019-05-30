@@ -1,35 +1,32 @@
 import '../css'
 
-import FooterSikaKraml from '@app/course-landing/components/FooterSikaKraml'
-import Header from '@app/course-landing/components/Header'
-import HeaderLink from '@app/course-landing/components/HeaderLink'
+import FooterSikaKraml from '@app/course-landing/components/FooterSikaKraml';
+import Header from '@app/course-landing/components/Header';
+import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
 import References from '@app/course-landing/components/References';
 import ThreeCol from '@app/course-landing/components/ThreeCol';
-import someone from '@app/course-landing/components/References/someone.jpg'
-import jurajboldis from '@app/course-landing/components/References/jurajboldis.jpg'
-import martinkylian from '@app/course-landing/components/References/martinkylian.jpg'
+import someone from '@app/course-landing/components/References/someone.jpg';
+import jurajboldis from '@app/course-landing/components/References/jurajboldis.jpg';
+import martinkylian from '@app/course-landing/components/References/martinkylian.jpg';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import ButtonOutline from '@app/course-landing/components/ButtonOutline';
-import Recommendation from '@app/course-landing/components/Recommendation'
-import Contact from '@app/course-landing/components/Contact'
-import Head from 'next/head'
-import ReactMarkdown from 'react-markdown'
+import Recommendation from '@app/course-landing/components/Recommendation';
+import Contact from '@app/course-landing/components/Contact';
+import Head from 'next/head';
+import ReactMarkdown from 'react-markdown';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-
-let site = {
-  lang: 'de'
-}
+import site from '@app/ansible-schulung.de/config';
 
 const Index = () => (
   <div>
     <Head>
         <title>Ansible Schulung, Sika Kraml - ansibleschulung.de</title>
     </Head>
-    <Navigation/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Ansible Schulung"
       byName="Ondrej Sika"

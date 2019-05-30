@@ -1,8 +1,8 @@
 import '../css'
 
-import ReactMarkdown from 'react-markdown'
-import Header from '@app/course-landing/components/Header'
-import HeaderLink from '@app/course-landing/components/HeaderLink'
+import ReactMarkdown from 'react-markdown';
+import Header from '@app/course-landing/components/Header';
+import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
@@ -12,18 +12,16 @@ import Navigation from '@app/course-landing/components/Navigation';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-import Head from 'next/head'
+import Head from 'next/head';
+import site from '@app/ansible-training.uk/config';
 
-let site = {
-  lang: 'en'
-}
 
 const Index = () => (
   <div>
     <Head>
         <title>Ansible Training, Ondrej Sika - ansible-training.uk</title>
     </Head>
-    <Navigation location="uk" />
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Ansible Training"
       byName="Ondrej Sika"

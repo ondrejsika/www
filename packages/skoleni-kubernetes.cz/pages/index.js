@@ -11,19 +11,16 @@ import Recommendation from '@app/course-landing/components/Recommendation';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import Contact from '@app/course-landing/components/Contact'
-import Head from 'next/head'
-import ReactMarkdown from 'react-markdown'
-
-let site = {
-  lang: 'cs'
-}
+import Head from 'next/head';
+import ReactMarkdown from 'react-markdown';
+import site from '@app/skoleni-kubernetes.cz/config'
 
 const Index = () => (
   <div>
     <Head>
         <title>Školení Kuberneres, Ondrej Sika - skoleni-kubernetes.cz</title>
     </Head>
-    <Navigation/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Školení Kubernetes"
       byName="Ondrej Sika"

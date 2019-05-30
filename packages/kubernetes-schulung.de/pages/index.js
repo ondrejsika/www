@@ -13,17 +13,14 @@ import Contact from '@app/course-landing/components/Contact'
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-
-let site = {
-  lang: 'de'
-}
+import site from '@app/kubernetes-schulung.de/config'
 
 const Index = () => (
   <div>
     <Head>
         <title>Kuberneres Schulungen, Sika Kraml - kubernetes-schulungen.de</title>
     </Head>
-    <Navigation/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Kubernetes Schulung"
       byName="Sika Kraml GbR"

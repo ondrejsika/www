@@ -8,21 +8,18 @@ import MyClients from '@app/course-landing/components/MyClients';
 import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Head from 'next/head';
-
-let site = {
-  lang: 'se'
-}
+import site from '@app/git-utbildning.se/config';
 
 const Index = () => (
   <div>
     <Head>
         <title>Git Utbildning, Ondrej Sika - git-utbildning.se</title>
     </Head>
-    <Navigation location='se' />
+    <Navigation location={site.location} />
     <Header
       websiteHeader="Git Utbildning"
       byName="Ondrej Sika"

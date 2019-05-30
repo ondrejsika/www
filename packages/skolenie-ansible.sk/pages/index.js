@@ -13,17 +13,14 @@ import Recommendation from '@app/course-landing/components/Recommendation';
 import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head'
-
-let site = {
-  lang: 'sk'
-}
+import site from '@app/skolenie-ansible.sk/config'
 
 const Index = () => (
   <div>
     <Head>
         <title>Ansible Skolenie, Ondrej Sika - skolenie-ansible.sk</title>
     </Head>
-    <Navigation/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Skolenie Ansible"
       byName="Ondrej Sika"

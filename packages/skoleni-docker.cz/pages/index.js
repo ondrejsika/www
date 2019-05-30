@@ -1,7 +1,7 @@
 import '../css'
 
-import Header from '@app/course-landing/components/Header'
-import HeaderLink from '@app/course-landing/components/HeaderLink'
+import Header from '@app/course-landing/components/Header';
+import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
@@ -13,17 +13,14 @@ import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
-
-let site = {
-  lang: 'cs'
-}
+import site from '@app/skoleni-docker.cz/config';
 
 const Index = () => (
   <div>
     <Head>
         <title>Školení Docker, Ondrej Sika - skoleni-docker.cz</title>
     </Head>
-    <Navigation/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Školení Dockeru"
       byName="Ondrej Sika"

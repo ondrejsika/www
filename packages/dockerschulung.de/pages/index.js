@@ -19,18 +19,15 @@ import Contact from '@app/course-landing/components/Contact'
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
+import site from '@app/dockerschulung.de/config';
 
-
-let site = {
-  lang: 'de'
-}
 
 const Index = () => (
   <div>
     <Head>
         <title>Docker Schulung</title>
     </Head>
-    <Navigation/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Docker Schulung"
       byName="Ondrej Sika"

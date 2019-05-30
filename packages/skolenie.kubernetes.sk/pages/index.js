@@ -10,20 +10,17 @@ import ThreeCol from '@app/course-landing/components/ThreeCol';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
-import Contact from '@app/course-landing/components/Contact'
-import Head from 'next/head'
-import ReactMarkdown from 'react-markdown'
-
-let site = {
-  lang: 'sk'
-}
+import Contact from '@app/course-landing/components/Contact';
+import Head from 'next/head';
+import ReactMarkdown from 'react-markdown';
+import site from '@app/skolenie.kubernetes.sk/config';
 
 const Index = () => (
   <div>
     <Head>
         <title>Skolenie Kuberneres, Ondrej Sika - skolenie.kubernetes.sk</title>
     </Head>
-    <Navigation/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Skolenie Kubernetes"
       byName="Ondrej Sika"

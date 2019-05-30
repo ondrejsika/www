@@ -13,17 +13,15 @@ import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
+import site from '@app/docker-utbildning.se/config';
 
-let site = {
-  lang: 'se'
-}
 
 const Index = () => (
   <div>
     <Head>
         <title>Docker Utbildning, Ondrej Sika - docker-utbildning.se</title>
     </Head>
-    <Navigation location="se"/>
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Docker Utbildning"
       byName="Ondrej Sika"

@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Gauges from '@app/common/components/Gauges';
+import GoogleAnalytics from '@app/common/components/GoogleAnalytics';
 
 let DevelopmentBar = ()=> {
   if (process.env.NODE_ENV == 'development') {
@@ -30,6 +32,9 @@ class CourseLandingDocument extends Document {
           <DevelopmentBar />
           <Main />
           <NextScript />
+          <Gauges gauges_site_id={this.props.site.gauges_site_id} />
+          <GoogleAnalytics google_analytics_site_id={this.props.site.google_analytics_site_id} />
+
         </body>
       </Html>
     );

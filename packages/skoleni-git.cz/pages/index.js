@@ -12,17 +12,14 @@ import ReactMarkdown from 'react-markdown'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Head from 'next/head';
-
-let site = {
-  lang: 'cs'
-}
+import site from '@app/skoleni-git.cz/config';
 
 const Index = () => (
   <div>
     <Head>
         <title>Školení Git, Ondrej Sika - skoleni-git.cz</title>
     </Head>
-    <Navigation />
+    <Navigation location={site.location}/>
     <Header
       websiteHeader="Školení Git"
       byName="Ondrej Sika"
