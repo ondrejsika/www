@@ -136,7 +136,7 @@ Om du är intresserad av Ansible workshop eller om ni har några frågor, kontak
 
 `}/>
         <p className="text-center">
-          <a href="https://ondrej-sika.se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se" className="btn btn-large btn-success">Inquire Ansible Training</a>
+          <a href="https://ondrej-sika.se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se" className="btn btn-large btn-success">Frågor om Ansible utbildning</a>
         </p>
       </TextFrame>
       <TextFrame>

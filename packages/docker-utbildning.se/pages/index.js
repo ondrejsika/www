@@ -120,7 +120,7 @@ Om du är intresserad av Docker workshop eller om ni har några frågor, kontakt
 
 `}/>
         <p className="text-center">
-          <a href="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=git-utbildning.se" className="btn btn-large btn-success">Inquire Docker Training</a>
+          <a href="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=git-utbildning.se" className="btn btn-large btn-success">Frågor om Docker utbildning</a>
         </p>
       </TextFrame>
       <TextFrame>
