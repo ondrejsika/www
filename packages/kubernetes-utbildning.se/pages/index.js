@@ -27,54 +27,54 @@ const Index = () => (
       byUrl="https://ondrej-sika.se/?x_source=kubernetes-utbildning.se"
       logoUrl="/static/kubernetes.png"
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/kubernetes/forfragan/?x_source=kubernetes-utbildning.se">Ask for a training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/contact/?x_source=kubernetes-utbildning.se">Contact me</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.se/utbildning/kubernetes/forfragan/?x_source=kubernetes-utbildning.se">Fråga efter en träning</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.se/contact/?x_source=kubernetes-utbildning.se">Kontaka mig</HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
         <ReactMarkdown source={`
-### What is Kubernetes?
-Kubernetes is one of the most used platforms for running your Docker containers and it is supported by key market leaders (Google, Amazon, Microsoft, etc.) via Cloud Native Computing Foundation. Kubernetes is being used by businesses of all scales, from startups to corporations.
+### Vad är Kubernetes?
+Kubernetes är en av de mest använda plattformarna för att driva Docker-containers och stöds av viktiga marknadsledare (Google, Amazon, Microsoft, etc.) via Cloud Native Computing Foundation. Kubernetes används av företag av alla storlekar, från startups till bolag.
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Course Description
-This course is run in the form of a two days hands-on workshop where you will be able to practice everything you learn. You will be shown how to run Kubernetes locally (for development) and on a cloud platform, Digital Ocean. You will also find out the basic structure of Kubernetes, including its components. You will learn how to create a Kubernetes Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
+### Kursbeskrivning
+Kursen drivs i form av en två-dagars praktisk workshop där du kommer att kunna använda allt du lär dig. Du kommer att lära dig hur man kör Kubernetes lokalt (för utveckling) och på en molnplattform, Digital Ocean. Du kommer också att lära dig den grundläggande strukturen i Kubernetes, inklusive dess komponenter. Du lär dig att skapa en Kubernetes Manifest och installationsprogram i Docker. Du kommer också att lära dig hur man arbetar med behörigheter och hur man använder (och skapar) paket i Helm.
 `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Course Outline
-- Theory introduction to Kubernetes
-- How to install locally (minikube and kubectl)
-- Description of Kubernetes components
-- Deployment to Kubernetes
-- Working with permissions in the Kubernetes cluster
-- Theory introduction to Helm packages
-- Installation/Deployment using Helm
-- Creating a custom Helm package
+### Kursplan
+- Teori-introduktion till Kubernetes
+- Så här installeras lokalt (minikube och kubectl)
+- Beskrivning av Kubernetes-komponenter
+- Distribution till Kubernetes
+- Arbeta med behörigheter i Kubernetes-kluster
+- Teori introduktion till Helm paket
+- Installation / Distribution med hjälp av Helm
+- Skapa ett anpassat Helm-paket
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Who Should Attend
-This course is primarily aimed at people (developers & DevOps), who want to maintain their applications in Kubernetes.
+### Vem ska delta
+Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina applikationer i Kubernetes.
 `}/>
         <TwoCol
           col1={
             <ReactMarkdown source={`
-#### Skill Requirements
-- Basic [Docker](https://ondrej-sika.se/utbildning/docker/) knowledge
-- Basic Linux knowledge
-- Basic Terminal knowledge
+#### Skicklighetskrav
+- Basic [Docker](https://ondrej-sika.se/utbildning/docker/) kunskap
+- Grundläggande Linux-kunskap
+- Grundläggande terminalkunskap
             `}/>
           }
           col2={
             <ReactMarkdown source={`
-#### Technical Requirements
-- Have Kubernetes installed & running, instruction [here](https://ondrej-sika.se/kubernetes/install)
-- Access to the internet - ideally without corporate proxy
+            	#### Tekniska krav
+- Har Kubernetes installerat, instruktioner: [här] (https://ondrej-sika.se/kubernetes/install/)
+- Tillgång till internet (https, ssh) - bättre utan företags-proxy
 `}/>
           }
         />
@@ -83,9 +83,9 @@ This course is primarily aimed at people (developers & DevOps), who want to main
         header="Course Leader: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg" >
         <ReactMarkdown source={`
-A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I have trained Kubernetes in firms like CGI or Webglobe - Yergeon. I am specialised mostly in Docker training which is closely related to Kubernetes. I use Kubernetes as a platform for most of my projects. It is one of the simplest ways of running Docker containers.
+En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
-Get in touch if you have any questions - happy hearing from you!
+Om du har några frågor - glatt att höra från dig!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
 
@@ -104,27 +104,28 @@ Get in touch if you have any questions - happy hearing from you!
 
       <TextFrame>
         <ReactMarkdown source={`
-### Pricing
-Price for two days Kubernetes training
-- Open to public (self-funded): 800 GBP excl. VAT
-- Open to public (company-funded): 1 000 GBP excl. VAT
-- On-site training (on-site): 3 000 GBP excl. VAT
+### Prissättning
+Pris för två dagars hands-on Kubernetes-utbildning
+- Öppet för allmänheten (självfinansierad): 800 GBP exkl. MOMS
+- Öppet för allmänheten (företagsfinansierad): 1000 GBP exkl. MOMS
+- Utbildning på plats (på plats): 3000 GBP exkl. MOMS
 `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### I Want the Kubernetes training
+### Jag vill ha Kubernetes-utbildning
 
-If you are interested in Kubernetes workshop or any questions, let me know.
+Om du är intresserad av Kubernetes workshop eller om ni har några frågor, kontakta mig gärna.
+
 
 `}/>
         <p className="text-center">
-          <a href="https://ondrej-sika.se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se" className="btn btn-large btn-success">Inquire Kubernetes training</a>
+          <a href="https://ondrej-sika.se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se" className="btn btn-large btn-success">Frågor om Kubernetes utbildning</a>
         </p>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Related Courses
+### Relaterade Kurser
 
 [Docker](https://ondrej-sika.se/utbildning/docker)
 `} escapeHtml={false}/>
