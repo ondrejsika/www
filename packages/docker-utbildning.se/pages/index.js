@@ -59,7 +59,7 @@ Under denna  två-dagars workshopen så kommer du att bli visad allt du behöver
       <TextFrame header="">
         <ReactMarkdown source={`
 
-### Vem ska delta
+### Vem bör delta
 Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller väldigt lite erfarenhet med Docker. Mest av allt, utvecklare och / eller devOps (serveradministratörer), eller de som vill använda Docker i praktiken eller vill veta mer om sitt syfte och om det är något de kan genomföra.
 `}/>
         <TwoCol
@@ -86,7 +86,7 @@ Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller 
           <ReactMarkdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
-Om du har några frågor - glatt att höra från dig!
+Om du har några frågor - hör gärna från dig!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
 
@@ -116,7 +116,7 @@ Pris för två dagars hands-on docker-utbildning
         <ReactMarkdown source={`
 ### Jag vill ha Docker-utbildning
 
-Om du är intresserad av Docker workshop eller om ni har några frågor, kontakta mig gärna.
+Om du är intresserad i vår Docker workshop eller om ni har några frågor, kontakta mig gärna.
 
 `}/>
         <p className="text-center">

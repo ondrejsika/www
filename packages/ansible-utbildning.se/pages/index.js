@@ -61,7 +61,7 @@ Utbildningen drivs som under en två-dagars praktisk workshop där du kan testa 
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Vem ska delta
+### Vem bör delta
 This training is primarily aimed at admins and DevOps who want to start using Ansible. At the same time, developers who deploy their applications (even into test environments) and want to simplify this process, will also find it useful.
 Denna utbildning riktar sig främst till administratörer och DevOps som vill börja använda Ansible. Kursen är också användbart för utvecklare som distribuerar sina applikationer (även i testmiljöer) och vill förenkla denna process.
         `}/>
@@ -132,7 +132,7 @@ Pris för två dagars hands-on Ansibleträning
 
 ### Jag vill ha Ansible-träning
 
-Om du är intresserad av Ansible workshop eller om ni har några frågor, kontakta mig gärna.
+Om du är intresserad i vår Ansible workshop eller om ni har några frågor, kontakta mig gärna.
 
 `}/>
         <p className="text-center">

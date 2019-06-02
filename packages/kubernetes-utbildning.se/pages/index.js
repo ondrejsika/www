@@ -58,7 +58,7 @@ Kursen drivs i form av en två-dagars praktisk workshop där du kommer att kunna
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Vem ska delta
+### Vem bör delta
 Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina applikationer i Kubernetes.
 `}/>
         <TwoCol
@@ -85,7 +85,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
         <ReactMarkdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
-Om du har några frågor - glatt att höra från dig!
+Om du har några frågor - hör gärna från dig!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
 
@@ -115,7 +115,7 @@ Pris för två dagars hands-on Kubernetes-utbildning
         <ReactMarkdown source={`
 ### Jag vill ha Kubernetes-utbildning
 
-Om du är intresserad av Kubernetes workshop eller om ni har några frågor, kontakta mig gärna.
+Om du är intresserad i vår Kubernetes workshop eller om ni har några frågor, kontakta mig gärna.
 
 
 `}/>
