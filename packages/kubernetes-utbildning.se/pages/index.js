@@ -72,7 +72,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
           }
           col2={
             <ReactMarkdown source={`
-            	#### Tekniska krav
+#### Tekniska krav
 - Har Kubernetes installerat, instruktioner: [här] (https://ondrej-sika.se/kubernetes/install/)
 - Tillgång till internet (https, ssh) - bättre utan företags-proxy
 `}/>
@@ -80,7 +80,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Course Leader: Ondrej Sika"
+        header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg" >
         <ReactMarkdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
