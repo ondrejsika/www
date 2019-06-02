@@ -28,52 +28,53 @@ const Index = () => (
       byUrl="https://ondrej-sika.uk/?x_source=docker-utbildning.se"
       logoUrl="/static/docker-w.svg"
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">Ask for a training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=docker-utbildning.se">Contact me</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">Fråga efter en träning</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=docker-utbildning.se">Kontakta mig</HeaderLink>
     </Header>
     <div className="container container-width">
     <TextFrame>
         <ReactMarkdown source={`
-### What is Docker?
-Docker can make your life easier through simplifying the process of R&D, testing, and software usage in your business. Run everything, everywhere. Don’t lose your time waiting for server setups or random library updates. Have the environment as a part of your application.
+### Vad är Docker?
+Docker kan göra ditt liv enklare genom att förenkla processen för FoU, testning, och programvara i din verksamhet. Kör allt, överallt. Du beöver inte spendera tid på att vänta på serveruppsättningar eller slumpmässiga biblioteks-uppdateringar. Ha miljön som en del av din applikation.
 `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Course Description
-During the two days workshop, you’ll be shown everything you need to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
+### Kursbeskrivning
+Under denna  två-dagars workshopen så kommer du att bli visad allt du behöver för att kunna använda Docker - från att skapa en anpassad containerbild till Swarm-utnyttjande. Kursen är väldigt praktisk, och du kommer att kunna använda allt du lär dig.
 `}/>
       </TextFrame>
       <TextFrame header="">
         <ReactMarkdown source={`
-### Course Outline
-- Theory introduction to containers & Docker
-- How to install Docker at home or work (for those who did not - do so)
-- Basics of Containerisation
-- Basics of Images
-- Docker Compose - multi-container applications
-- Deployment to Swarm
-- Preview of deployment to Kubernetes
+### Kursplan
+- Teori-introduktion av containrar & Docker
+- Hur man installerar Docker hemma eller på jobbet (för dem som inte gjorde det)
+- Grunderen av containering
+- Grunder i bilder
+- Docker Compose - multi-container applikationer
+- Driftsättning till Swarm
+- Förhandsvisning av distribuering till Kubernetes
 `}/>
       </TextFrame>
       <TextFrame header="">
         <ReactMarkdown source={`
-### Who Should Attend
-This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it's something they can implement.
+
+### Vem ska delta
+Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller väldigt lite erfarenhet med Docker. Mest av allt, utvecklare och / eller devOps (serveradministratörer), eller de som vill använda Docker i praktiken eller vill veta mer om sitt syfte och om det är något de kan genomföra.
 `}/>
         <TwoCol
           col1={
             <ReactMarkdown source={`
-#### Skill Requirements
-- Basic Linux knowledge
-- Basic Terminal knowledge
+#### Skicklighetskrav
+- Grundläggande Linux kunskap
+- Grundläggande terminalkunskap
 `}/>
           }
           col2={
             <ReactMarkdown source={`
-#### Technical Requirements
-- Have Docker installed, instructions: [here](https://ondrej-sika.se/docker/install/)
-- Access to the internet - ideally without corporate proxy, or proxy set up in Docker
+#### Tekniska krav
+- Har Docker installerat, instruktioner: [här] (https://ondrej-sika.se/docker/install/)
+- Tillgång till internet (https, ssh) - bättre utan företags-proxy, eller proxy i Docker
 `}/>
           }
         />
@@ -83,9 +84,9 @@ This training course is primarily aimed at complete beginners who have either no
         imgUrl="/static/ondrejsika.jpg"
         >
           <ReactMarkdown source={`
-A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have four years of experience with Docker on the commercial development side. Other than that I use it daily for development, as well as production, and I cannot imagine working without it.
+En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
-Get in touch if you have any questions - Happy to hearing from you!
+Om du har några frågor - glatt att höra från dig!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
 
@@ -104,18 +105,18 @@ Get in touch if you have any questions - Happy to hearing from you!
       />
       <TextFrame>
         <ReactMarkdown source={`
-### Pricing
-Price for two days Docker training
-- Open to public (self-funded): 800 GBP excl. VAT
-- Open to public (company-funded): 1 000 GBP excl. VAT
-- On-site training (on-site): 3 000 GBP excl. VAT
+### Prissättning
+Pris för två dagars hands-on docker-utbildning
+- Öppet för allmänheten (självfinansierad): 800 GBP exkl. MOMS
+- Öppet för allmänheten (företagsfinansierad): 1000 GBP exkl. MOMS
+- Utbildning på plats (på plats): 3000 GBP exkl. MOMS
 `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### I Want the Docker Training
+### Jag vill ha Docker-utbildning
 
-If you are interested in Docker workshop or any questions, let me know.
+Om du är intresserad av Docker workshop eller om ni har några frågor, kontakta mig gärna.
 
 `}/>
         <p className="text-center">
@@ -124,7 +125,7 @@ If you are interested in Docker workshop or any questions, let me know.
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Related Courses
+### Relaterade Kurser
 
 [Kubernetes](https://ondrej-sika.se/utbildning/kubernetes)
 `} escapeHtml={false}/>
