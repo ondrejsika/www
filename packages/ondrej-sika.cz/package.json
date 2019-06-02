@@ -11,17 +11,7 @@
     "static": "yarn run build && yarn run export"
   },
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "@zeit/next-sass": "^1.0.1",
-    "bootstrap-css-only": "^4.3.1",
-    "js-yaml": "^3.13.1",
-    "js-yaml-loader": "^1.0.1",
-    "next": "^8.1.0",
-    "next-images": "^1.1.1",
-    "next-transpile-modules": "^2.0.0",
-    "node-sass": "^4.11.0",
-    "popper.js": "^1.15.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "@app/course-landing": "^0.0.0",
+    "popper.js": "^1.15.0"
   }
 }
