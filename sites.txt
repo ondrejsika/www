@@ -24,3 +24,4 @@ docker-utbildning.se
 git-utbildning.se
 gitlab-utbildning.se
 kubernetes-utbildning.se
+ondrej-sika.uk

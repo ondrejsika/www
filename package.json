@@ -33,6 +33,7 @@
     "dev-docker-utbildning.se": "yarn --cwd packages/docker-utbildning.se dev -p 3024",
     "dev-kubernetes-utbildning.se": "yarn --cwd packages/kubernetes-utbildning.se dev -p 3025",
     "dev-ansible-utbildning.se": "yarn --cwd packages/ansible-utbildning.se dev -p 3026",
+    "dev-ondrej-sika.uk": "yarn --cwd packages/ondrej-sika.uk dev -p 3027",
 
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
@@ -60,6 +61,7 @@
     "static-docker-utbildning.se": "yarn --cwd packages/docker-utbildning.se static",
     "static-kubernetes-utbildning.se": "yarn --cwd packages/kubernetes-utbildning.se static",
     "static-ansible-utbildning.se": "yarn --cwd packages/ansible-utbildning.se static",
+    "static-ondrej-sika.uk": "yarn --cwd packages/ondrej-sika.uk static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   }
 }
