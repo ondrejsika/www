@@ -27,18 +27,22 @@ const Index = () => (
       byUrl="https://ondrej-sika.se/?x_source=gitlab-utbildning.se"
       logoUrl="/static/gitlab-ci.svg"
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/gitlab-ci/forfragan/?x_source=gitlab-utbildning.se">Ask for a training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=gitlab-utbildning.se">Contact me</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.se/utbildning/gitlab-ci/forfragan/?x_source=gitlab-utbildning.se">Fråga efter en träning</HeaderLink>
+      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=gitlab-utbildning.se">Kontaka mig</HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
       <ReactMarkdown source={`
-### What is CI?
-Continuous Integration (abbr. CI or CI/CD) is a tool that automates routine tasks such as running tests, code quality or deployment. It allows faster adoption of changes to master and quicker deployment. The compelling advantage of Gitlab CI is its Docker support; you can easily combine Docker images or run tests in containers.
+### Vad är Cl?
+Kontinuerlig integration (Continuous Integration på enelska; CI eller CI / CD) är ett verktyg som automatiserar rutinmässiga uppgifter som körtest, kodkvalitet, eller implementering. Det möjliggör snabbare ändringar i master och snabbare implementering. EN stor fördel med Gitlab CI är dess Docker-support; du kan enkelt kombinera Docker-bilder eller köra test i containers.
         `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
+
+### Kursbeskrivning
+Kursen drivs i form av en en-dags hands-on-workshop där du lär dig vikten av CI, de olika versionerna av Gitlab CI och övningar att skriva CI-script för ett testprojekt. Resultatet kommer att vara en skript för ett enkelt projekt som innehåller applikationsbyggnadsjobb, från test till implementering.
+
 ### Course Description
 This course is run in the form of a one day hands-on workshop where you will learn the importance of CI, the different versions of Gitlab CI and practice writing CI script for a sample project. The outcome will be a script for a simple project containing application build jobs, from tests to deployment.
 `}/>
@@ -57,24 +61,23 @@ This course is run in the form of a one day hands-on workshop where you will lea
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### Who Should Attend
-The course is primarily aimed at developers who are using Gitlab and are wanting to start using Gitlab CI. At the same time, Gitlab CI might be the reason why people are transferring onto Gitlab. The course is also useful for DevOps who want to simplify their routine tasks with deployment automatisation.
+### Vem bör delta
+Kursen riktar sig främst till utvecklare som använder Gitlab och vill börja använda Gitlab CI. Samtidigt så kan Gitlab CI vara anledningen till att folk överför till Gitlab. Kursen är också användbar för DevOps som vill förenkla sina rutinuppgifter med implementeringsautomatisering.
         `}/>
         <TwoCol
           col1={
             <ReactMarkdown source={`
-#### Skill Requirements
-- Basic Linux knowledge
-- Basic Terminal knowledge
-- Basic Git knowledge is of benefit - [Git training](https://ondrej-sika.se/training/git/)
-- Docker knowledge is of benefit - [Docker training](https://ondrej-sika.se/training/docker/)
-
+#### Skicklighetskrav
+- Grundläggande Linux-kunskap
+- Grundläggande terminalkunskap
+- Git-kunskap behövs icke, men hjälper - [Git utbildning](https://ondrej-sika.se/training/git/)
+- Docker-kunskap behövs icke, men hjälper - [Docker utbildning](https://ondrej-sika.se/training/docker/)
             `} escapeHtml={false}/>
           }
           col2={
             <ReactMarkdown source={`
-#### Technical Requirements
-- Access to the internet - ideally without corporate proxy
+#### Tekniska krav
+- Tillgång till internet - bättre utan företags-proxy
             `} escapeHtml={false}/>
           }
         />
@@ -84,9 +87,9 @@ The course is primarily aimed at developers who are using Gitlab and are wanting
         imgUrl="/static/ondrejsika.jpg"
         >
         <ReactMarkdown source={`
-A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. The Gitlab CI course is the second most popular training after [Docker](https://ondrej-sika.se/utbildning/docker); the two are closely related. I lead all the courses myself. I am experienced in Gitlab CI from multiple projects and businesses. Almost all projects that I am working on are using Gitlab CI. Gitlab CI is making my work simpler and quicker - I don't have to worry about routine tasks such as deployment or application building, and I can spend time on tasks that generate profit.
+En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
-Get in touch if you have any questions - happy hearing from you!
+Om du har några frågor - hör gärna från dig!
         `} escapeHtml={false}/>
       </TextFrameWithImage>
 
@@ -105,20 +108,20 @@ Get in touch if you have any questions - happy hearing from you!
       />
       <TextFrame>
         <ReactMarkdown source={`
-### Pricing
+### Prissättning
 
-Price for one day hands-on Git training
+Pris för två dagars hands-on Git-utbildning
 
-- Open to public (self-funded): 400 GBP excl. VAT
-- Open to public (company-funded): 500 GBP excl. VAT
-- On-site training (on-site): 1 500 GBP excl. VAT
+- Öppet för allmänheten (självfinansierad): 800 GBP exkl. MOMS
+- Öppet för allmänheten (företagsfinansierad): 1000 GBP exkl. MOMS
+- Utbildning på plats (på plats): 3000 GBP exkl. MOMS
 `}/>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
-### I Want the Gitlab CI training
+### Jag vill ha Gitlab CI-utbildning
 
-If you are interested in Gitlab CI workshop or any questions, let me know.
+Om du är intresserad i vår Gitlab CI workshop eller om ni har några frågor, kontakta mig gärna.
 
 `}/>
         <p className="text-center">
