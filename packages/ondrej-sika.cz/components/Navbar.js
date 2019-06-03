@@ -23,14 +23,14 @@ const Navbar = (props) => (
                   }
                   else {
                     return (
-                      <li className="nav-item dropdown">
+                      <li key={i} className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           {link[0]}</a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                           {
                             link[1].map((sub_link, i) => {
                               return (
-                                <a className="dropdown-item" href={sub_link[1]}>{sub_link[0]}</a>
+                                <a key={i} className="dropdown-item" href={sub_link[1]}>{sub_link[0]}</a>
                               )
                             })
                           }
