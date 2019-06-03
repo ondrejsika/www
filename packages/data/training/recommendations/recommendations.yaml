@@ -213,15 +213,3 @@
       Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč, a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
       Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd.
       Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo".
-- id: sit
-  name: Martin Kylián
-  role:
-    en: Network Security Engineer in SIT of city Pilsen p.o.
-    cs: Network Security Engineer ve společnosti SIT města Plzně p.o.
-  company: SIT
-  photo: img/martinkylian.jpg
-  date:
-    cs: 4. června 2018
-  text:
-    cs: |
-      Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej's knowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes.
