@@ -21,7 +21,8 @@ let style = {
 const Install = () => (
   <div>
     <Head>
-    </Head>
+          <title>Lektorská spolupráce - Ondrej Sika</title>
+        </Head>
     <MainBar
       MainBarHeader='LEKTORSKA SPOLUPRACE'>
     </MainBar>

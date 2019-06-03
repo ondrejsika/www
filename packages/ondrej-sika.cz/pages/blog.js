@@ -27,6 +27,9 @@ class Blog extends React.Component {
   render() {
     return (
       <div>
+        <Head>
+          <title>Blog - Ondrej Sika</title>
+        </Head>
         <MainBar
           MainBarHeader='Blog'>
         </MainBar>

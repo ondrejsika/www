@@ -18,6 +18,7 @@ let site = {
 const Index = () => (
   <div>
     <Head>
+      <title>Poptávka Školení Ansible - Ondřej Šika</title>
     </Head>
     <Header
       websiteHeader='Poptávka Školení Ansible'

@@ -23,6 +23,7 @@ let style = {
 const Index = () => (
   <div>
     <Head>
+      <title>Školení - Ondřej Šika</title>
     </Head>
     <MainBar
       MainBarHeader='Nabídka Školení'

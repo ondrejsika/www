@@ -21,6 +21,7 @@ let style = {
 const Install = () => (
   <div>
     <Head>
+    <title>Git - Ondřej Šika</title>
     </Head>
     <MainBar
       MainBarHeader='Git'>

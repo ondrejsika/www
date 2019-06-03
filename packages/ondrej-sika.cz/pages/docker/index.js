@@ -21,6 +21,7 @@ let style = {
 const Install = () => (
   <div>
     <Head>
+      <title>Docker - Ondřej Šika</title>
     </Head>
     <MainBar
       MainBarHeader='Docker'>

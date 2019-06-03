@@ -25,6 +25,7 @@ let style = {
 const Index = () => (
   <div>
     <Head>
+      <title>Veřejné termíny - Ondrej Sika</title>
     </Head>
     <MainBar MainBarHeader='Veřejné termíny školení'/>
     <div className="container">

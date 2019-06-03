@@ -18,6 +18,7 @@ let site = {
 const Index = () => (
   <div>
     <Head>
+      <title>Git - Ondrej Sika</title>
     </Head>
     <Header
       websiteHeader='Školení Git'

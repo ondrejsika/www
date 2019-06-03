@@ -18,6 +18,7 @@ let site = {
 const Index = () => (
   <div>
     <Head>
+      <title>Poptávka Školení Gitlab CI - Ondřej Šika</title>
     </Head>
     <Header
       websiteHeader='Poptávka Školení Gitlab CI'

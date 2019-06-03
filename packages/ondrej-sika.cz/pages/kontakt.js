@@ -18,10 +18,14 @@ import Contact from '@app/course-landing/components/Contact'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Former2 from "@app/common/components/Former2"
 import site from "@app/ondrej-sika.cz/config"
+import Head from 'next/head'
 
 
 const Index = () => (
   <div>
+    <Head>
+      <title>Kontakty - Ondrej Sika</title>
+    </Head>
     <div className="bar-header">
       <div className='container'>
         <div className='pt-4 pb-4'>
@@ -33,7 +37,6 @@ const Index = () => (
       <h3 className='pt-4 pb-2'>Ondřej Šika</h3>
       <div className='row'>
         <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
-          {/* <h4 className='pt-4 pt-md-0'>Kontakt</h4> */}
           <p className=''>
         <a href="tel:+420773452376">+420 773 452 376</a> (<a href="https://t.me/ondrejsika">Telegram</a>)
         <br /><a href="mailto:ondrej@ondrejsika.com?subject=Poptavka skoleni">ondrej@ondrejsika.com</a> (<a href="/pgp">PGP</a>)

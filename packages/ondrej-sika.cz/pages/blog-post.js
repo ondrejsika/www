@@ -34,6 +34,9 @@ class BlogPost extends React.Component {
     let post = posts[posts_id_map[this.props.router.query.post_id]]
     return (
       <div>
+        <Head>
+          <title>{post.title} - Ondřej Šika</title>
+        </Head>
         <MainBar
           MainBarHeader={post.title}>
         </MainBar>

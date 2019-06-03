@@ -21,6 +21,7 @@ let style = {
 const Install = () => (
   <div>
     <Head>
+      <title>Návody - Ondrej Sika</title>
     </Head>
     <MainBar
       MainBarHeader='Návody'>

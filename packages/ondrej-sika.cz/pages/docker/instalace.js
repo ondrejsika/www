@@ -21,6 +21,7 @@ let style = {
 const Install = () => (
   <div>
     <Head>
+      <title>Instalace Docker - Ondřej Šika</title>
     </Head>
     <MainBar
       MainBarHeader='Instalace Dockeru'>

@@ -18,6 +18,7 @@ let site = {
 const Index = () => (
   <div>
     <Head>
+      <title>Docker - Ondrej Sika</title>
     </Head>
     <Header
       websiteHeader='Školení Docker'

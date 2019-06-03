@@ -21,6 +21,7 @@ let style = {
 const Install = () => (
   <div>
     <Head>
+      <title>Instalace Kubernetes - Ondřej Šika</title>
     </Head>
     <MainBar
       MainBarHeader='Instalace Kubernetes pro lokalni vyvoj'>
