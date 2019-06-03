@@ -50,7 +50,7 @@ const Index = () => (
         <h4>Školení</h4>
         Předně se věnuji školení, všechny kurzy jsou formou workshopů (hands-on) a stavím je na svých dlouholetých znalostech a zkušenostech z vývoje, testování a provozování softwarových projektů.
         <br/><br/>
-        Nástroje jako <a href='/git'>Git</a>, <a href='/docker'>Docker</a>, <a href='/kubernetes'>Kubernetes</a>, <a href='/ansible'>Ansible</a> nebo <a href='/gitlab-ci'>CI</a> používám na denní bázi, vše co školím jsem použil v reálných projektech a mám s technologií osobní zkušenost.
+        Nástroje jako <a href='/skoleni/git'>Git</a>, <a href='/skoleni/docker'>Docker</a>, <a href='/skoleni/kubernetes'>Kubernetes</a>, <a href='/skoleni/ansible'>Ansible</a> nebo <a href='/skoleni/gitlab-ci'>CI</a> používám na denní bázi, vše co školím jsem použil v reálných projektech a mám s technologií osobní zkušenost.
         <br/><br/>
         Všechny kurzy a školení dělám v českém nebo anglickém jazyce.
       </TextWithImg>
