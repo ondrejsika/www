@@ -22,7 +22,7 @@ const H3 = (props) => (
 const Index = () => (
   <div>
     <Head>
-      <title>Ansible - Ondrej Sika</title>
+      <title>Školení Ansible - Ondrej Sika</title>
     </Head>
     <Header
       websiteHeader='Školení Ansible'
