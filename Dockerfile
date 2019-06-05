@@ -14,6 +14,7 @@ COPY ./packages/sika-kraml.de/package.json ./packages/sika-kraml.de/package.json
 COPY ./packages/ansible-schulung.de/package.json ./packages/ansible-schulung.de/package.json
 COPY ./packages/kubernetes-schulung.de/package.json ./packages/kubernetes-schulung.de/package.json
 COPY ./packages/dockerschulung.de/package.json ./packages/dockerschulung.de/package.json
+COPY ./packages/ondrejsikalabs.com/package.json ./packages/ondrejsikalabs.com/package.json
 RUN yarn install
 COPY . .
 RUN yarn install
