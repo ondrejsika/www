@@ -1,3 +1,15 @@
+- id: docker-praha-17-7-2019
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Skoleni Dockeru
+  city: Praha
+  price: 9999 CZK
+  venue_id: anywhere
+  length: 2 dny
+  date_from: 17.7.2019
+  date_to: 18.7.2019
 - id: docker-praha-1-2-2020
   active: true
   country: cz
