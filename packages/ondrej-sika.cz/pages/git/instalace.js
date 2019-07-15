@@ -47,6 +47,11 @@ Pokud nemate __brew__, muzete ho naistalovat z oficialniho webu [brew.sh](https:
 ### Windows
 
 Stahnout installer z oficialnich stranek [git-scm.com](https://git-scm.com)
+
+nebo pouzit package manager [Chocolatey](https://chocolatey.org/)
+
+    choco install git
+
 `} escapeHtml={false}/>
     </div>
   </div>
