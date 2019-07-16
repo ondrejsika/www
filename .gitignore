@@ -3,7 +3,6 @@ node_modules
 *.log
 out
 package-lock.json
-yarn.lock
 report.*.json
 .DS_Store
 .idea
