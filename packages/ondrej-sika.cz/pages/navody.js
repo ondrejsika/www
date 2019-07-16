@@ -41,6 +41,10 @@ const Install = () => (
 
 - [Instalace](/git/instalace)
 - [Rebase](/git/rebase)
+
+### Ostatní
+
+- [Brew (Homebrew)](/navody/brew)
 `} escapeHtml={false}/>
     </div>
   </div>
