@@ -2,6 +2,7 @@
 
 DEV_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk skolenie-ansible.sk ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrej-sika.uk ondrejsikalabs.com"
 PROD_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrejsikalabs.com"
+DEV_SUFFIX=".xsika.cz"
 
 
 cat << EOF > .gitlab-ci.yml
@@ -43,13 +44,11 @@ build $SITE:
 EOF
 
 if printf '%s\n' ${DEV_SITES[@]} | grep "$SITE" > /dev/null; then
+SUFFIX=$DEV_SUFFIX
 cat << EOF >> .gitlab-ci.yml
 deploy dev $SITE:
   stage: deploy_dev
-  variables:
-    SUFFIX: .xsika.cz
   script:
-    - echo curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE\$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
     - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE\$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
   only:
     changes:
@@ -57,23 +56,30 @@ deploy dev $SITE:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/$SITE/**/*
+  environment:
+    name: dev $SITE
+    url: https://$SITE$SUFFIX
 
 EOF
 fi;
 
 
 if printf '%s\n' ${PROD_SITES[@]} | grep "$SITE" > /dev/null; then
+SUFFIX=""
 cat << EOF >> .gitlab-ci.yml
 deploy prod $SITE:
   stage: deploy_prod
   script:
-    - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE\$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
+    - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/$SITE/**/*
+  environment:
+    name: prod $SITE
+    url: https://$SITE
 
 EOF
 fi;
