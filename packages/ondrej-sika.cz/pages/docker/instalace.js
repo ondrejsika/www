@@ -35,9 +35,21 @@ Budeme používat Docker CE (Community Edition). Pro mě školení i drtivou vě
 
 #### Windows 10 Pro a vyšší (s podporou Hyper-V)
 
-Tyto Windows podporují Docker for Windows, stáhněte jej zde: [Docker pro Windows](https://sika.link/docker-for-windows)
-Při instalaci nechte defaultní nastavení, při výběru typu kontejneru nechte vybrané Linuxové kontejnery.<br/><br/>
-Po instalaci spuste Docker do do terminalu napiste: docker run ondrejsika/verify-docker a meli by jste dostat:
+__Manuálně__
+
+Tyto Windows podporují Docker for Windows, stáhněte jej zde: [Docker Desktop](https://sika.link/docker-for-windows)
+Při instalaci nechte defaultní nastavení, při výběru typu kontejneru nechte vybrané Linuxové kontejnery.
+
+__Pomocí Chocolatey__
+
+Pokud používáte [Chocolatey](https://chocolatey.org), můžete Docker nainstalovat příkazem
+
+    choco install docker-desktop
+
+Tyto Windows podporují Docker for Windows, stáhněte jej zde: [Docker Desktop](https://sika.link/docker-for-windows)
+Při instalaci nechte defaultní nastavení, při výběru typu kontejneru nechte vybrané Linuxové kontejnery.
+
+Po instalaci spuste Docker do do terminalu napiste: \`docker run ondrejsika/verify-docker\` a meli by jste dostat:
 
     sika@sika-x250:~$ docker run ondrejsika/verify-docker
     Unable to find image 'ondrejsika/verify-docker:latest' locally
@@ -55,18 +67,39 @@ Návod na instalaci Dockeru pro Windows na oficiálních stránkách Dockeru: [z
 
 Pokud máte Windows, které nepodporují Hyper-V, musíte použít Docker Toolbox. Docker Toolbox je balíček Dockeru a Virtualboxu (pokud již VirtualBox máte, použije ten Váš), který vám spustí Docker ve virtuálním stroji.
 
+__Manuálně__
 
 Stáhnout si jej můžete zde: [Docker Toolbox](https://sika.link/docker-toolbox-windows)
+
+__Pomocí Chocolatey__
+
+Pokud používáte [Chocolatey](https://chocolatey.org), můžete Docker nainstalovat příkazem
+
+    choco install docker-toolbox
 
 Po instalaci spusťte program Docker Quikstart Terminál, počkejte až se Vám spustí VM a pak spusťte: docker run ondrejsika/verify-docker a měli by jste dostat stejný výstup (Your Docker is working) jako při použití Docker pro Windows.
 
 ### Mac OS
 
-Na Macu jsou opět 2 varianty Dockeru: Docker  Mac a Docker Toolbox. Použijte Docker pro Mac, pokud nemáte podporu xhive (zjistíte takž že do terminálu napíšete \`sysctl kern.hv_support\`) použijte Toolbox.
+Na Macu jsou opět 2 varianty Dockeru: Docker Desktop a Docker Toolbox. Použijte Docker pro Mac, pokud nemáte podporu xhive (zjistíte takž že do terminálu napíšete \`sysctl kern.hv_support\`) použijte Toolbox.
 
-stáhněte si Docker pro Mac: [zde](https://sika.link/docker-for-mac)
-<br/>případně Toolbox: [zde](https://sika.link/docker-toolbox-mac)
+Můžete je nainstalovat přez Homebrew nebo manuálně
 
+#### Brew
+
+__Docker Desktop__
+
+    brew cask install docker
+
+__Docker Toolbox__
+
+    brew cask install docker-toolbox
+
+
+#### Manuálně
+
+Stáhněte si Docker Desktop: [zde](https://sika.link/docker-for-mac)
+<br/>Případně Docker Toolbox: [zde](https://sika.link/docker-toolbox-mac)
 
 Po instalaci spustě Docker do do terminálu napište: \`docker run ondrejsika/verify-docker\` a měli by jste dostat:
 
@@ -79,6 +112,7 @@ Po instalaci spustě Docker do do terminálu napište: \`docker run ondrejsika/v
     Your Docker is working :)
 
 ### Linux
+
 Na Linuxu nepoužívejte Docker z distribučních balíčků, je tam starý. Postupujte podle oficiálního návodu na: [zde](https://docs.docker.com/install/linux/docker-ce/debian/) pro Debian, případně si vyberte svoji distribuci v levém menu.
 
 
