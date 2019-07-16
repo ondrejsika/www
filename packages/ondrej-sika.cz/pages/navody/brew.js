@@ -20,7 +20,7 @@ export default () => (
       <title>Brew (Homebrew) - Ondřej Šika</title>
     </Head>
     <MainBar
-      MainBarHeader='Brew (Homebrew)'>
+      MainBarHeader='Brew (Homebrew) - Package manager pro Mac'>
     </MainBar>
 
     <div className="container pt-4 pb-2">

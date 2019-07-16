@@ -44,7 +44,7 @@ const Install = () => (
 
 ### Ostatní
 
-- [Brew (Homebrew)](/navody/brew)
+- [Brew (Homebrew)](/navody/brew) - Package manager pro Mac
 `} escapeHtml={false}/>
     </div>
   </div>
