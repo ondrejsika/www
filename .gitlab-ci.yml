@@ -43,6 +43,8 @@ deploy prod ansible-schulung.de:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-schulung.de&domain=ansible-schulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -84,6 +86,8 @@ deploy prod ansible-skoleni.cz:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz&domain=ansible-skoleni.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -138,6 +142,8 @@ deploy prod dockerschulung.de:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/dockerschulung.de&domain=dockerschulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -179,6 +185,8 @@ deploy prod gitlab-ci.cz:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-ci.cz&domain=gitlab-ci.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -220,6 +228,8 @@ deploy prod kubernetes-schulung.de:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de&domain=kubernetes-schulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -261,6 +271,8 @@ deploy prod ondrej-sika.cz:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.cz&domain=ondrej-sika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -315,6 +327,8 @@ deploy prod skoleni-docker.cz:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-docker.cz&domain=skoleni-docker.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -356,6 +370,8 @@ deploy prod skoleni-git.cz:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-git.cz&domain=skoleni-git.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -397,6 +413,8 @@ deploy prod skoleni-kubernetes.cz:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz&domain=skoleni-kubernetes.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -438,6 +456,8 @@ deploy prod git-training.uk:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.uk&domain=git-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -479,6 +499,8 @@ deploy prod docker-training.uk:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.uk&domain=docker-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -520,6 +542,8 @@ deploy prod kubernetes-training.uk:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-training.uk&domain=kubernetes-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -561,6 +585,8 @@ deploy prod ansible-training.uk:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-training.uk&domain=ansible-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -602,6 +628,8 @@ deploy prod gitlab-training.uk:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-training.uk&domain=gitlab-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -778,6 +806,8 @@ deploy prod ansible-utbildning.se:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-utbildning.se&domain=ansible-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -819,6 +849,8 @@ deploy prod docker-utbildning.se:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-utbildning.se&domain=docker-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -860,6 +892,8 @@ deploy prod git-utbildning.se:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-utbildning.se&domain=git-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -901,6 +935,8 @@ deploy prod gitlab-utbildning.se:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se&domain=gitlab-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -942,6 +978,8 @@ deploy prod kubernetes-utbildning.se:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se&domain=kubernetes-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1010,6 +1048,8 @@ deploy prod ondrejsikalabs.com:
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com&domain=ondrejsikalabs.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
