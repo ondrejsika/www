@@ -3,8 +3,28 @@
     cs: Skoleni Dockeru
     en: Docker Training
     de: Docker Schulung
-- id: Kubernetes
+- id: kubernetes
   name:
     cs: Skoleni Kubernetes
     en: Kubernetes Training
     de: Kubernetes Schulung
+- id: git
+  name:
+    cs: Skoleni Gitu
+    en: Git Training
+    de: Git Schulung
+- id: gitlab-ci
+  name:
+    cs: Skoleni Gitlab CI
+    en: Gitlab CI Training
+    de: Gitlab CI Schulung
+- id: ansible
+  name:
+    cs: Skoleni Ansible
+    en: Ansible Training
+    de: Ansible Schulung
+- id: terraform
+  name:
+    cs: Skoleni Terraformu
+    en: Terraform Training
+    de: Terraform Schulung
