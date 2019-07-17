@@ -6,3 +6,4 @@ package-lock.json
 report.*.json
 .DS_Store
 .idea
+ci/docker/out

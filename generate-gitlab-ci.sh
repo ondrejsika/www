@@ -15,7 +15,8 @@ cat << EOF >> .gitlab-ci.yml
 image: ondrejsika/ci
 
 stages:
-  - build
+  - build_js
+  - build_docker
   - deploy_dev
   - deploy_prod
 
@@ -28,11 +29,37 @@ for SITE in $(cat sites.txt)
 do
 
 cat << EOF >> .gitlab-ci.yml
-build $SITE:
-  stage: build
+build js $SITE:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-$SITE
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/$SITE/**/*
+  artifacts:
+    name: $SITE
+    paths:
+      - packages/$SITE/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker $SITE:
+  dependencies:
+    - build js $SITE
+  stage: build_docker
   script:
     - docker login \$CI_REGISTRY -u \$CI_REGISTRY_USER -p \$CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/$SITE --build-arg SITE=$SITE .
+    - cp -r packages/$SITE/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/$SITE ci/docker
     - docker push registry.sikahq.com/www/www/$SITE
   only:
     changes:
