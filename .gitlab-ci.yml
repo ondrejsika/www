@@ -4,18 +4,45 @@
 image: ondrejsika/ci
 
 stages:
-  - build
+  - build_js
+  - build_docker
   - deploy_dev
   - deploy_prod
 
 variables:
   DOCKER_BUILDKIT: '1'
 
-build ansible-schulung.de:
-  stage: build
+build js ansible-schulung.de:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-ansible-schulung.de
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ansible-schulung.de/**/*
+  artifacts:
+    name: ansible-schulung.de
+    paths:
+      - packages/ansible-schulung.de/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker ansible-schulung.de:
+  dependencies:
+    - build js ansible-schulung.de
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/ansible-schulung.de --build-arg SITE=ansible-schulung.de .
+    - cp -r packages/ansible-schulung.de/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/ansible-schulung.de ci/docker
     - docker push registry.sikahq.com/www/www/ansible-schulung.de
   only:
     changes:
@@ -54,11 +81,37 @@ deploy prod ansible-schulung.de:
     name: prod ansible-schulung.de
     url: https://ansible-schulung.de
 
-build ansible-skoleni.cz:
-  stage: build
+build js ansible-skoleni.cz:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-ansible-skoleni.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ansible-skoleni.cz/**/*
+  artifacts:
+    name: ansible-skoleni.cz
+    paths:
+      - packages/ansible-skoleni.cz/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker ansible-skoleni.cz:
+  dependencies:
+    - build js ansible-skoleni.cz
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/ansible-skoleni.cz --build-arg SITE=ansible-skoleni.cz .
+    - cp -r packages/ansible-skoleni.cz/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/ansible-skoleni.cz ci/docker
     - docker push registry.sikahq.com/www/www/ansible-skoleni.cz
   only:
     changes:
@@ -97,11 +150,37 @@ deploy prod ansible-skoleni.cz:
     name: prod ansible-skoleni.cz
     url: https://ansible-skoleni.cz
 
-build archetype-web:
-  stage: build
+build js archetype-web:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-archetype-web
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/archetype-web/**/*
+  artifacts:
+    name: archetype-web
+    paths:
+      - packages/archetype-web/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker archetype-web:
+  dependencies:
+    - build js archetype-web
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/archetype-web --build-arg SITE=archetype-web .
+    - cp -r packages/archetype-web/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/archetype-web ci/docker
     - docker push registry.sikahq.com/www/www/archetype-web
   only:
     changes:
@@ -110,11 +189,37 @@ build archetype-web:
       - packages/course-landing/**/*
       - packages/archetype-web/**/*
 
-build dockerschulung.de:
-  stage: build
+build js dockerschulung.de:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-dockerschulung.de
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/dockerschulung.de/**/*
+  artifacts:
+    name: dockerschulung.de
+    paths:
+      - packages/dockerschulung.de/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker dockerschulung.de:
+  dependencies:
+    - build js dockerschulung.de
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/dockerschulung.de --build-arg SITE=dockerschulung.de .
+    - cp -r packages/dockerschulung.de/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/dockerschulung.de ci/docker
     - docker push registry.sikahq.com/www/www/dockerschulung.de
   only:
     changes:
@@ -153,11 +258,37 @@ deploy prod dockerschulung.de:
     name: prod dockerschulung.de
     url: https://dockerschulung.de
 
-build gitlab-ci.cz:
-  stage: build
+build js gitlab-ci.cz:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-gitlab-ci.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/gitlab-ci.cz/**/*
+  artifacts:
+    name: gitlab-ci.cz
+    paths:
+      - packages/gitlab-ci.cz/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker gitlab-ci.cz:
+  dependencies:
+    - build js gitlab-ci.cz
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/gitlab-ci.cz --build-arg SITE=gitlab-ci.cz .
+    - cp -r packages/gitlab-ci.cz/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/gitlab-ci.cz ci/docker
     - docker push registry.sikahq.com/www/www/gitlab-ci.cz
   only:
     changes:
@@ -196,11 +327,37 @@ deploy prod gitlab-ci.cz:
     name: prod gitlab-ci.cz
     url: https://gitlab-ci.cz
 
-build kubernetes-schulung.de:
-  stage: build
+build js kubernetes-schulung.de:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-kubernetes-schulung.de
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/kubernetes-schulung.de/**/*
+  artifacts:
+    name: kubernetes-schulung.de
+    paths:
+      - packages/kubernetes-schulung.de/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker kubernetes-schulung.de:
+  dependencies:
+    - build js kubernetes-schulung.de
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/kubernetes-schulung.de --build-arg SITE=kubernetes-schulung.de .
+    - cp -r packages/kubernetes-schulung.de/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/kubernetes-schulung.de ci/docker
     - docker push registry.sikahq.com/www/www/kubernetes-schulung.de
   only:
     changes:
@@ -239,11 +396,37 @@ deploy prod kubernetes-schulung.de:
     name: prod kubernetes-schulung.de
     url: https://kubernetes-schulung.de
 
-build ondrej-sika.cz:
-  stage: build
+build js ondrej-sika.cz:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-ondrej-sika.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrej-sika.cz/**/*
+  artifacts:
+    name: ondrej-sika.cz
+    paths:
+      - packages/ondrej-sika.cz/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker ondrej-sika.cz:
+  dependencies:
+    - build js ondrej-sika.cz
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.cz --build-arg SITE=ondrej-sika.cz .
+    - cp -r packages/ondrej-sika.cz/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.cz ci/docker
     - docker push registry.sikahq.com/www/www/ondrej-sika.cz
   only:
     changes:
@@ -282,11 +465,37 @@ deploy prod ondrej-sika.cz:
     name: prod ondrej-sika.cz
     url: https://ondrej-sika.cz
 
-build sika-kraml.de:
-  stage: build
+build js sika-kraml.de:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-sika-kraml.de
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika-kraml.de/**/*
+  artifacts:
+    name: sika-kraml.de
+    paths:
+      - packages/sika-kraml.de/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker sika-kraml.de:
+  dependencies:
+    - build js sika-kraml.de
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/sika-kraml.de --build-arg SITE=sika-kraml.de .
+    - cp -r packages/sika-kraml.de/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/sika-kraml.de ci/docker
     - docker push registry.sikahq.com/www/www/sika-kraml.de
   only:
     changes:
@@ -295,11 +504,37 @@ build sika-kraml.de:
       - packages/course-landing/**/*
       - packages/sika-kraml.de/**/*
 
-build skoleni-docker.cz:
-  stage: build
+build js skoleni-docker.cz:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-skoleni-docker.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-docker.cz/**/*
+  artifacts:
+    name: skoleni-docker.cz
+    paths:
+      - packages/skoleni-docker.cz/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker skoleni-docker.cz:
+  dependencies:
+    - build js skoleni-docker.cz
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/skoleni-docker.cz --build-arg SITE=skoleni-docker.cz .
+    - cp -r packages/skoleni-docker.cz/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/skoleni-docker.cz ci/docker
     - docker push registry.sikahq.com/www/www/skoleni-docker.cz
   only:
     changes:
@@ -338,11 +573,37 @@ deploy prod skoleni-docker.cz:
     name: prod skoleni-docker.cz
     url: https://skoleni-docker.cz
 
-build skoleni-git.cz:
-  stage: build
+build js skoleni-git.cz:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-skoleni-git.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-git.cz/**/*
+  artifacts:
+    name: skoleni-git.cz
+    paths:
+      - packages/skoleni-git.cz/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker skoleni-git.cz:
+  dependencies:
+    - build js skoleni-git.cz
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/skoleni-git.cz --build-arg SITE=skoleni-git.cz .
+    - cp -r packages/skoleni-git.cz/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/skoleni-git.cz ci/docker
     - docker push registry.sikahq.com/www/www/skoleni-git.cz
   only:
     changes:
@@ -381,11 +642,37 @@ deploy prod skoleni-git.cz:
     name: prod skoleni-git.cz
     url: https://skoleni-git.cz
 
-build skoleni-kubernetes.cz:
-  stage: build
+build js skoleni-kubernetes.cz:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-skoleni-kubernetes.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-kubernetes.cz/**/*
+  artifacts:
+    name: skoleni-kubernetes.cz
+    paths:
+      - packages/skoleni-kubernetes.cz/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker skoleni-kubernetes.cz:
+  dependencies:
+    - build js skoleni-kubernetes.cz
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/skoleni-kubernetes.cz --build-arg SITE=skoleni-kubernetes.cz .
+    - cp -r packages/skoleni-kubernetes.cz/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/skoleni-kubernetes.cz ci/docker
     - docker push registry.sikahq.com/www/www/skoleni-kubernetes.cz
   only:
     changes:
@@ -424,11 +711,37 @@ deploy prod skoleni-kubernetes.cz:
     name: prod skoleni-kubernetes.cz
     url: https://skoleni-kubernetes.cz
 
-build git-training.uk:
-  stage: build
+build js git-training.uk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-git-training.uk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/git-training.uk/**/*
+  artifacts:
+    name: git-training.uk
+    paths:
+      - packages/git-training.uk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker git-training.uk:
+  dependencies:
+    - build js git-training.uk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/git-training.uk --build-arg SITE=git-training.uk .
+    - cp -r packages/git-training.uk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/git-training.uk ci/docker
     - docker push registry.sikahq.com/www/www/git-training.uk
   only:
     changes:
@@ -467,11 +780,37 @@ deploy prod git-training.uk:
     name: prod git-training.uk
     url: https://git-training.uk
 
-build docker-training.uk:
-  stage: build
+build js docker-training.uk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-docker-training.uk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.uk/**/*
+  artifacts:
+    name: docker-training.uk
+    paths:
+      - packages/docker-training.uk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker docker-training.uk:
+  dependencies:
+    - build js docker-training.uk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/docker-training.uk --build-arg SITE=docker-training.uk .
+    - cp -r packages/docker-training.uk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/docker-training.uk ci/docker
     - docker push registry.sikahq.com/www/www/docker-training.uk
   only:
     changes:
@@ -510,11 +849,37 @@ deploy prod docker-training.uk:
     name: prod docker-training.uk
     url: https://docker-training.uk
 
-build kubernetes-training.uk:
-  stage: build
+build js kubernetes-training.uk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-kubernetes-training.uk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/kubernetes-training.uk/**/*
+  artifacts:
+    name: kubernetes-training.uk
+    paths:
+      - packages/kubernetes-training.uk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker kubernetes-training.uk:
+  dependencies:
+    - build js kubernetes-training.uk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/kubernetes-training.uk --build-arg SITE=kubernetes-training.uk .
+    - cp -r packages/kubernetes-training.uk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/kubernetes-training.uk ci/docker
     - docker push registry.sikahq.com/www/www/kubernetes-training.uk
   only:
     changes:
@@ -553,11 +918,37 @@ deploy prod kubernetes-training.uk:
     name: prod kubernetes-training.uk
     url: https://kubernetes-training.uk
 
-build ansible-training.uk:
-  stage: build
+build js ansible-training.uk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-ansible-training.uk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ansible-training.uk/**/*
+  artifacts:
+    name: ansible-training.uk
+    paths:
+      - packages/ansible-training.uk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker ansible-training.uk:
+  dependencies:
+    - build js ansible-training.uk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/ansible-training.uk --build-arg SITE=ansible-training.uk .
+    - cp -r packages/ansible-training.uk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/ansible-training.uk ci/docker
     - docker push registry.sikahq.com/www/www/ansible-training.uk
   only:
     changes:
@@ -596,11 +987,37 @@ deploy prod ansible-training.uk:
     name: prod ansible-training.uk
     url: https://ansible-training.uk
 
-build gitlab-training.uk:
-  stage: build
+build js gitlab-training.uk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-gitlab-training.uk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/gitlab-training.uk/**/*
+  artifacts:
+    name: gitlab-training.uk
+    paths:
+      - packages/gitlab-training.uk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker gitlab-training.uk:
+  dependencies:
+    - build js gitlab-training.uk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/gitlab-training.uk --build-arg SITE=gitlab-training.uk .
+    - cp -r packages/gitlab-training.uk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/gitlab-training.uk ci/docker
     - docker push registry.sikahq.com/www/www/gitlab-training.uk
   only:
     changes:
@@ -639,11 +1056,37 @@ deploy prod gitlab-training.uk:
     name: prod gitlab-training.uk
     url: https://gitlab-training.uk
 
-build skolenie-git.sk:
-  stage: build
+build js skolenie-git.sk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-skolenie-git.sk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie-git.sk/**/*
+  artifacts:
+    name: skolenie-git.sk
+    paths:
+      - packages/skolenie-git.sk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker skolenie-git.sk:
+  dependencies:
+    - build js skolenie-git.sk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/skolenie-git.sk --build-arg SITE=skolenie-git.sk .
+    - cp -r packages/skolenie-git.sk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/skolenie-git.sk ci/docker
     - docker push registry.sikahq.com/www/www/skolenie-git.sk
   only:
     changes:
@@ -666,11 +1109,37 @@ deploy dev skolenie-git.sk:
     name: dev skolenie-git.sk
     url: https://skolenie-git.sk.xsika.cz
 
-build skolenie-gitlab.sk:
-  stage: build
+build js skolenie-gitlab.sk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-skolenie-gitlab.sk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie-gitlab.sk/**/*
+  artifacts:
+    name: skolenie-gitlab.sk
+    paths:
+      - packages/skolenie-gitlab.sk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker skolenie-gitlab.sk:
+  dependencies:
+    - build js skolenie-gitlab.sk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/skolenie-gitlab.sk --build-arg SITE=skolenie-gitlab.sk .
+    - cp -r packages/skolenie-gitlab.sk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/skolenie-gitlab.sk ci/docker
     - docker push registry.sikahq.com/www/www/skolenie-gitlab.sk
   only:
     changes:
@@ -693,11 +1162,37 @@ deploy dev skolenie-gitlab.sk:
     name: dev skolenie-gitlab.sk
     url: https://skolenie-gitlab.sk.xsika.cz
 
-build skolenie-docker.sk:
-  stage: build
+build js skolenie-docker.sk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-skolenie-docker.sk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie-docker.sk/**/*
+  artifacts:
+    name: skolenie-docker.sk
+    paths:
+      - packages/skolenie-docker.sk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker skolenie-docker.sk:
+  dependencies:
+    - build js skolenie-docker.sk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/skolenie-docker.sk --build-arg SITE=skolenie-docker.sk .
+    - cp -r packages/skolenie-docker.sk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/skolenie-docker.sk ci/docker
     - docker push registry.sikahq.com/www/www/skolenie-docker.sk
   only:
     changes:
@@ -720,11 +1215,37 @@ deploy dev skolenie-docker.sk:
     name: dev skolenie-docker.sk
     url: https://skolenie-docker.sk.xsika.cz
 
-build skolenie.kubernetes.sk:
-  stage: build
+build js skolenie.kubernetes.sk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-skolenie.kubernetes.sk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie.kubernetes.sk/**/*
+  artifacts:
+    name: skolenie.kubernetes.sk
+    paths:
+      - packages/skolenie.kubernetes.sk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker skolenie.kubernetes.sk:
+  dependencies:
+    - build js skolenie.kubernetes.sk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/skolenie.kubernetes.sk --build-arg SITE=skolenie.kubernetes.sk .
+    - cp -r packages/skolenie.kubernetes.sk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/skolenie.kubernetes.sk ci/docker
     - docker push registry.sikahq.com/www/www/skolenie.kubernetes.sk
   only:
     changes:
@@ -747,11 +1268,37 @@ deploy dev skolenie.kubernetes.sk:
     name: dev skolenie.kubernetes.sk
     url: https://skolenie.kubernetes.sk.xsika.cz
 
-build skolenie-ansible.sk:
-  stage: build
+build js skolenie-ansible.sk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-skolenie-ansible.sk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie-ansible.sk/**/*
+  artifacts:
+    name: skolenie-ansible.sk
+    paths:
+      - packages/skolenie-ansible.sk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker skolenie-ansible.sk:
+  dependencies:
+    - build js skolenie-ansible.sk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/skolenie-ansible.sk --build-arg SITE=skolenie-ansible.sk .
+    - cp -r packages/skolenie-ansible.sk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/skolenie-ansible.sk ci/docker
     - docker push registry.sikahq.com/www/www/skolenie-ansible.sk
   only:
     changes:
@@ -774,11 +1321,37 @@ deploy dev skolenie-ansible.sk:
     name: dev skolenie-ansible.sk
     url: https://skolenie-ansible.sk.xsika.cz
 
-build ansible-utbildning.se:
-  stage: build
+build js ansible-utbildning.se:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-ansible-utbildning.se
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ansible-utbildning.se/**/*
+  artifacts:
+    name: ansible-utbildning.se
+    paths:
+      - packages/ansible-utbildning.se/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker ansible-utbildning.se:
+  dependencies:
+    - build js ansible-utbildning.se
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/ansible-utbildning.se --build-arg SITE=ansible-utbildning.se .
+    - cp -r packages/ansible-utbildning.se/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/ansible-utbildning.se ci/docker
     - docker push registry.sikahq.com/www/www/ansible-utbildning.se
   only:
     changes:
@@ -817,11 +1390,37 @@ deploy prod ansible-utbildning.se:
     name: prod ansible-utbildning.se
     url: https://ansible-utbildning.se
 
-build docker-utbildning.se:
-  stage: build
+build js docker-utbildning.se:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-docker-utbildning.se
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-utbildning.se/**/*
+  artifacts:
+    name: docker-utbildning.se
+    paths:
+      - packages/docker-utbildning.se/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker docker-utbildning.se:
+  dependencies:
+    - build js docker-utbildning.se
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/docker-utbildning.se --build-arg SITE=docker-utbildning.se .
+    - cp -r packages/docker-utbildning.se/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/docker-utbildning.se ci/docker
     - docker push registry.sikahq.com/www/www/docker-utbildning.se
   only:
     changes:
@@ -860,11 +1459,37 @@ deploy prod docker-utbildning.se:
     name: prod docker-utbildning.se
     url: https://docker-utbildning.se
 
-build git-utbildning.se:
-  stage: build
+build js git-utbildning.se:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-git-utbildning.se
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/git-utbildning.se/**/*
+  artifacts:
+    name: git-utbildning.se
+    paths:
+      - packages/git-utbildning.se/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker git-utbildning.se:
+  dependencies:
+    - build js git-utbildning.se
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/git-utbildning.se --build-arg SITE=git-utbildning.se .
+    - cp -r packages/git-utbildning.se/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/git-utbildning.se ci/docker
     - docker push registry.sikahq.com/www/www/git-utbildning.se
   only:
     changes:
@@ -903,11 +1528,37 @@ deploy prod git-utbildning.se:
     name: prod git-utbildning.se
     url: https://git-utbildning.se
 
-build gitlab-utbildning.se:
-  stage: build
+build js gitlab-utbildning.se:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-gitlab-utbildning.se
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/gitlab-utbildning.se/**/*
+  artifacts:
+    name: gitlab-utbildning.se
+    paths:
+      - packages/gitlab-utbildning.se/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker gitlab-utbildning.se:
+  dependencies:
+    - build js gitlab-utbildning.se
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/gitlab-utbildning.se --build-arg SITE=gitlab-utbildning.se .
+    - cp -r packages/gitlab-utbildning.se/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/gitlab-utbildning.se ci/docker
     - docker push registry.sikahq.com/www/www/gitlab-utbildning.se
   only:
     changes:
@@ -946,11 +1597,37 @@ deploy prod gitlab-utbildning.se:
     name: prod gitlab-utbildning.se
     url: https://gitlab-utbildning.se
 
-build kubernetes-utbildning.se:
-  stage: build
+build js kubernetes-utbildning.se:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-kubernetes-utbildning.se
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/kubernetes-utbildning.se/**/*
+  artifacts:
+    name: kubernetes-utbildning.se
+    paths:
+      - packages/kubernetes-utbildning.se/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker kubernetes-utbildning.se:
+  dependencies:
+    - build js kubernetes-utbildning.se
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/kubernetes-utbildning.se --build-arg SITE=kubernetes-utbildning.se .
+    - cp -r packages/kubernetes-utbildning.se/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/kubernetes-utbildning.se ci/docker
     - docker push registry.sikahq.com/www/www/kubernetes-utbildning.se
   only:
     changes:
@@ -989,11 +1666,37 @@ deploy prod kubernetes-utbildning.se:
     name: prod kubernetes-utbildning.se
     url: https://kubernetes-utbildning.se
 
-build ondrej-sika.uk:
-  stage: build
+build js ondrej-sika.uk:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-ondrej-sika.uk
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrej-sika.uk/**/*
+  artifacts:
+    name: ondrej-sika.uk
+    paths:
+      - packages/ondrej-sika.uk/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker ondrej-sika.uk:
+  dependencies:
+    - build js ondrej-sika.uk
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.uk --build-arg SITE=ondrej-sika.uk .
+    - cp -r packages/ondrej-sika.uk/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.uk ci/docker
     - docker push registry.sikahq.com/www/www/ondrej-sika.uk
   only:
     changes:
@@ -1016,11 +1719,37 @@ deploy dev ondrej-sika.uk:
     name: dev ondrej-sika.uk
     url: https://ondrej-sika.uk.xsika.cz
 
-build ondrejsikalabs.com:
-  stage: build
+build js ondrejsikalabs.com:
+  stage: build_js
+  image: node
+  script:
+    - yarn
+    - yarn run static-ondrejsikalabs.com
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrejsikalabs.com/**/*
+  artifacts:
+    name: ondrejsikalabs.com
+    paths:
+      - packages/ondrejsikalabs.com/out
+  cache:
+    paths:
+      - node_modules/**/*
+      - packages/*/node_modules/**/*
+      - packages/*/.next/**/*
+
+
+build docker ondrejsikalabs.com:
+  dependencies:
+    - build js ondrejsikalabs.com
+  stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build -t registry.sikahq.com/www/www/ondrejsikalabs.com --build-arg SITE=ondrejsikalabs.com .
+    - cp -r packages/ondrejsikalabs.com/out ci/docker/out
+    - docker build -t registry.sikahq.com/www/www/ondrejsikalabs.com ci/docker
     - docker push registry.sikahq.com/www/www/ondrejsikalabs.com
   only:
     changes:
