@@ -66,7 +66,15 @@ class UpcomingSessions extends React.Component {
                 <tr key={i}>
                   <td scope="row">{course.name}</td>
                   <td>{course.city}</td>
-                  <td>{course.date_from}</td>
+                  <td>
+                    {
+                      (()=>{
+                        if (course.date_from != course.date_to)
+                          return course.date_from + ` - ` + course.date_to;
+                        return course.date_from;
+                      })()
+                    }
+                  </td>
                   <td>{course.price}</td>
                   <td>{course.length}</td>
                 </tr>
