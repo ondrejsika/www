@@ -57,6 +57,7 @@ class UpcomingSessions extends React.Component {
               cs='DÉLKA'
             />
           </th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -64,7 +65,9 @@ class UpcomingSessions extends React.Component {
           sessions.map((course, i) => {
               return (
                 <tr key={i}>
-                  <td scope="row">{course.name}</td>
+                  <td scope="row">
+                    {course.name}
+                  </td>
                   <td>{course.city}</td>
                   <td>
                     {
@@ -77,7 +80,10 @@ class UpcomingSessions extends React.Component {
                   </td>
                   <td>{course.price}</td>
                   <td>{course.length}</td>
-                </tr>
+                  <td scope="row">
+                    <a href={`/registrace?`+course.id} className="btn btn-success btn-sm">Registrovat</a>
+                  </td>
+              </tr>
             )
           })
         }
