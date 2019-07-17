@@ -27,7 +27,7 @@ build ansible-schulung.de:
 deploy dev ansible-schulung.de:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-schulung.de&domain=ansible-schulung.de$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-schulung.de&domain=ansible-schulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -68,7 +68,7 @@ build ansible-skoleni.cz:
 deploy dev ansible-skoleni.cz:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz&domain=ansible-skoleni.cz$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz&domain=ansible-skoleni.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -122,7 +122,7 @@ build dockerschulung.de:
 deploy dev dockerschulung.de:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/dockerschulung.de&domain=dockerschulung.de$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/dockerschulung.de&domain=dockerschulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -163,7 +163,7 @@ build gitlab-ci.cz:
 deploy dev gitlab-ci.cz:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-ci.cz&domain=gitlab-ci.cz$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-ci.cz&domain=gitlab-ci.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -204,7 +204,7 @@ build kubernetes-schulung.de:
 deploy dev kubernetes-schulung.de:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de&domain=kubernetes-schulung.de$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de&domain=kubernetes-schulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -245,7 +245,7 @@ build ondrej-sika.cz:
 deploy dev ondrej-sika.cz:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.cz&domain=ondrej-sika.cz$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.cz&domain=ondrej-sika.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -299,7 +299,7 @@ build skoleni-docker.cz:
 deploy dev skoleni-docker.cz:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-docker.cz&domain=skoleni-docker.cz$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-docker.cz&domain=skoleni-docker.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -340,7 +340,7 @@ build skoleni-git.cz:
 deploy dev skoleni-git.cz:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-git.cz&domain=skoleni-git.cz$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-git.cz&domain=skoleni-git.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -381,7 +381,7 @@ build skoleni-kubernetes.cz:
 deploy dev skoleni-kubernetes.cz:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz&domain=skoleni-kubernetes.cz$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz&domain=skoleni-kubernetes.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -422,7 +422,7 @@ build git-training.uk:
 deploy dev git-training.uk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.uk&domain=git-training.uk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.uk&domain=git-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -463,7 +463,7 @@ build docker-training.uk:
 deploy dev docker-training.uk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.uk&domain=docker-training.uk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.uk&domain=docker-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -504,7 +504,7 @@ build kubernetes-training.uk:
 deploy dev kubernetes-training.uk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-training.uk&domain=kubernetes-training.uk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-training.uk&domain=kubernetes-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -545,7 +545,7 @@ build ansible-training.uk:
 deploy dev ansible-training.uk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-training.uk&domain=ansible-training.uk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-training.uk&domain=ansible-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -586,7 +586,7 @@ build gitlab-training.uk:
 deploy dev gitlab-training.uk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-training.uk&domain=gitlab-training.uk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-training.uk&domain=gitlab-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -627,7 +627,7 @@ build skolenie-git.sk:
 deploy dev skolenie-git.sk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-git.sk&domain=skolenie-git.sk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-git.sk&domain=skolenie-git.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -654,7 +654,7 @@ build skolenie-gitlab.sk:
 deploy dev skolenie-gitlab.sk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk&domain=skolenie-gitlab.sk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk&domain=skolenie-gitlab.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -681,7 +681,7 @@ build skolenie-docker.sk:
 deploy dev skolenie-docker.sk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-docker.sk&domain=skolenie-docker.sk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-docker.sk&domain=skolenie-docker.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -708,7 +708,7 @@ build skolenie.kubernetes.sk:
 deploy dev skolenie.kubernetes.sk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk&domain=skolenie.kubernetes.sk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk&domain=skolenie.kubernetes.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -735,7 +735,7 @@ build skolenie-ansible.sk:
 deploy dev skolenie-ansible.sk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-ansible.sk&domain=skolenie-ansible.sk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-ansible.sk&domain=skolenie-ansible.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -762,7 +762,7 @@ build ansible-utbildning.se:
 deploy dev ansible-utbildning.se:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-utbildning.se&domain=ansible-utbildning.se$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-utbildning.se&domain=ansible-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -803,7 +803,7 @@ build docker-utbildning.se:
 deploy dev docker-utbildning.se:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-utbildning.se&domain=docker-utbildning.se$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-utbildning.se&domain=docker-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -844,7 +844,7 @@ build git-utbildning.se:
 deploy dev git-utbildning.se:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-utbildning.se&domain=git-utbildning.se$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-utbildning.se&domain=git-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -885,7 +885,7 @@ build gitlab-utbildning.se:
 deploy dev gitlab-utbildning.se:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se&domain=gitlab-utbildning.se$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se&domain=gitlab-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -926,7 +926,7 @@ build kubernetes-utbildning.se:
 deploy dev kubernetes-utbildning.se:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se&domain=kubernetes-utbildning.se$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se&domain=kubernetes-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -967,7 +967,7 @@ build ondrej-sika.uk:
 deploy dev ondrej-sika.uk:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.uk&domain=ondrej-sika.uk$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.uk&domain=ondrej-sika.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
@@ -994,7 +994,7 @@ build ondrejsikalabs.com:
 deploy dev ondrejsikalabs.com:
   stage: deploy_dev
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com&domain=ondrejsikalabs.com$SUFFIX&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com&domain=ondrejsikalabs.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   only:
     changes:
       - packages/data/**/*
