@@ -26,7 +26,7 @@ const Index = () => (
       <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
     </Head>
     <MainBar
-      MainBarHeader='IT Školení, konzultace a workshopy'
+      MainBarHeader='IT & DevOps školení, konzultace a workshopy'
       MainBarText='Zlepšuji práci vývojářských týmu zaváděním efektivních procesu ve vývoji a použitím prověřených nástrojů a technologií, které vedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.'>
     </MainBar>
     <StatisticBar
