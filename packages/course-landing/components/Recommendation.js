@@ -11,6 +11,9 @@ recommendations.map((element, i) => {
 class Recommendation extends React.Component {
   render() {
     let recommendation = recommendations[recommendation_id_map[this.props.id]]
+    if (recommendation == undefined){
+      throw new Error(`There is no recommendation with id "${this.props.id}" in file "@app/data/training/recommendations/recommendations.yaml"`)
+    }
     let img = require(`@app/data/training/recommendations/`+recommendation.photo)
     return (
       <References

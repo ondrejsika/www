@@ -15,7 +15,10 @@ class References extends React.Component {
           {
             this.props.ids.map((id, i) => {
               let recommendation = recommendations[recommendation_id_map[id]]
-              let img = require(`@app/data/training/recommendations/` + recommendation.photo)
+              if (recommendation == undefined){
+                throw new Error(`There is no recommendation with id "${this.props.id}" in file "@app/data/training/recommendations/recommendations.yaml"`)
+              }
+              let img = require(`@app/data/training/recommendations/`+recommendation.photo)
               return (
                 <div key={i}>
                   {
