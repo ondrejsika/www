@@ -25,9 +25,6 @@ variables:
 
 EOF
 
-for SITE in $(cat sites.txt)
-do
-
 cat << EOF >> .gitlab-ci.yml
 build js $SITE:
   stage: build_js
