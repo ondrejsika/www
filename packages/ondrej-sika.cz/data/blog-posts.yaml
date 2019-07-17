@@ -139,8 +139,7 @@
     commit 8f160534070012c87c409e5b19028ad0062f0310
     Author: root <root@debian>
     Date: Wed Jun 26 17:16:31 2013 +0000
-    blocks.pickle, peers.pickle added to .gitignore commit 96e83891bfdcad41c545220e1957fba1ba72c2cd
-    Author: root&#8230;
+    blocks.pickle, peers.pickle added to .gitignore
     ```
     Asi to znate. Ale nastavit uzivatele a email na serveru neni nejlepsi reseni, protoze muze pristupovat vice lidi a kazdy chce vytvaret commity pod svym jmenem.
 
@@ -153,6 +152,7 @@
         export GIT_AUTHOR_EMAIL="ondrej@ondrejsika.com"
         export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
         export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
+
     a je jestě nutné tyto proměnné posílat při SSH spojení. To se dá globálně povolit v SSH konfigu (.ssh/config) takto:
         Host *
             SendEnv GIT_*
