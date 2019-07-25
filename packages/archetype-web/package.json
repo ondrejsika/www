@@ -11,6 +11,7 @@
     "static": "yarn run build && yarn run export"
   },
   "dependencies": {
-    "@app/archetype-theme": "^0.0.0"
+    "@app/archetype-theme": "^0.0.0",
+    "react-twitter-embed": "^2.0.8"
   }
 }

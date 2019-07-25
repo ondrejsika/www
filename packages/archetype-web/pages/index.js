@@ -9,6 +9,8 @@ import BootstrapJS from '@app/common/components/BootstrapJS'
 import BootstrapComponentWithJS from '@app/archetype-theme/components/BootstrapComponentWithJS';
 import Former2 from '@app/common/components/Former2'
 import Gauges from '@app/common/components/Gauges'
+import { TwitterTweetEmbed } from 'react-twitter-embed';
+
 
 import jsonData from '../data/data.json'
 import yamlData from '../data/data.yml'
@@ -52,6 +54,9 @@ const Index = () => (
     <BootstrapComponentWithJS />
     <DemoTable data={jsonData} />
     <DemoTable data={yamlData} />
+    <TwitterTweetEmbed
+      tweetId={'70261648811761665'}
+    />
     <Footer />
     <BootstrapJS />
     <Gauges gauges_site_id={site.gauges_site_id} />
