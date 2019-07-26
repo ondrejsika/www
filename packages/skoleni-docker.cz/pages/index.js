@@ -15,6 +15,7 @@ import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import site from '@app/skoleni-docker.cz/config';
 import UpcomingSessions from '@app/course-landing/components/UpcomingSessions'
+import TwitterRecommendations from '@app/course-landing/components/TwitterRecommendations';
 
 
 const Index = () => (
@@ -109,7 +110,12 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
           <Recommendation id="sit" lang={site.lang}/>
         }
       />
-
+      <TextFrame>
+      <ReactMarkdown source={`
+### Ohlasy z Twitteru
+`}/>
+      <TwitterRecommendations rec1="jan-novotny-docker" rec2="tomas-ligenza-docker" />
+      </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení
