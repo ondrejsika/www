@@ -7,8 +7,10 @@ import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
 import References from '@app/ondrej-sika.cz/components/References';
 import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
+import "@app/course-landing/components/TwitterRecommendations";
 
 import Head from 'next/head'
+import TwitterRecommendations from '@app/course-landing/components/TwitterRecommendations';
 
 
 let site = {
@@ -59,6 +61,10 @@ Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytv
       />
     </div>
     <References ids={[ 'sit', 'vse']} lang={site.lang} />
+    <div className='container mb-4 mt-4'>
+      <h3>Ohlasy z Twitteru</h3>
+      <TwitterRecommendations rec1="jan-novotny-docker" rec2="tomas-ligenza-docker" rec3="lubos-klokner-docker" />
+    </div>
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>
