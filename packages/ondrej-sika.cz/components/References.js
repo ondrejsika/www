@@ -10,8 +10,8 @@ recommendations.map((element, i) => {
 class References extends React.Component {
   render() {
     return (
-      <div>
-        <div className='container border mb-4 mt-4'>
+      <div className="container">
+        <div className=' mb-4 mt-4 border'>
           {
             this.props.ids.map((id, i) => {
               let recommendation = recommendations[recommendation_id_map[id]]
@@ -28,7 +28,7 @@ class References extends React.Component {
                       }
                     })()
                   }
-                  <div className='row pt-3'>
+                  <div className='row p-3'>
                     <div className='col-1 pt-2 d-none d-lg-block d-xl-block'>
                       <img src={img} className='img-fluid rounded-circle' />
                     </div>
