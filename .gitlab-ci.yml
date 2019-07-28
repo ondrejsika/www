@@ -12,7 +12,7 @@ stages:
 variables:
   DOCKER_BUILDKIT: '1'
 
-build js ansible-schulung.de:
+ansible-schulung.de build js:
   stage: build_js
   image: node
   script:
@@ -35,9 +35,9 @@ build js ansible-schulung.de:
       - packages/*/.next/**/*
 
 
-build docker ansible-schulung.de:
+ansible-schulung.de build docker:
   dependencies:
-    - build js ansible-schulung.de
+    - ansible-schulung.de build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -51,7 +51,7 @@ build docker ansible-schulung.de:
       - packages/course-landing/**/*
       - packages/ansible-schulung.de/**/*
 
-deploy dev ansible-schulung.de:
+ansible-schulung.de dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-schulung.de&domain=ansible-schulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -65,7 +65,7 @@ deploy dev ansible-schulung.de:
     name: dev ansible-schulung.de
     url: https://ansible-schulung.de.xsika.cz
 
-deploy prod ansible-schulung.de:
+ansible-schulung.de prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-schulung.de&domain=ansible-schulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -81,7 +81,7 @@ deploy prod ansible-schulung.de:
     name: prod ansible-schulung.de
     url: https://ansible-schulung.de
 
-build js ansible-skoleni.cz:
+ansible-skoleni.cz build js:
   stage: build_js
   image: node
   script:
@@ -104,9 +104,9 @@ build js ansible-skoleni.cz:
       - packages/*/.next/**/*
 
 
-build docker ansible-skoleni.cz:
+ansible-skoleni.cz build docker:
   dependencies:
-    - build js ansible-skoleni.cz
+    - ansible-skoleni.cz build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -120,7 +120,7 @@ build docker ansible-skoleni.cz:
       - packages/course-landing/**/*
       - packages/ansible-skoleni.cz/**/*
 
-deploy dev ansible-skoleni.cz:
+ansible-skoleni.cz dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz&domain=ansible-skoleni.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -134,7 +134,7 @@ deploy dev ansible-skoleni.cz:
     name: dev ansible-skoleni.cz
     url: https://ansible-skoleni.cz.xsika.cz
 
-deploy prod ansible-skoleni.cz:
+ansible-skoleni.cz prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz&domain=ansible-skoleni.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -150,7 +150,7 @@ deploy prod ansible-skoleni.cz:
     name: prod ansible-skoleni.cz
     url: https://ansible-skoleni.cz
 
-build js archetype-web:
+archetype-web build js:
   stage: build_js
   image: node
   script:
@@ -173,9 +173,9 @@ build js archetype-web:
       - packages/*/.next/**/*
 
 
-build docker archetype-web:
+archetype-web build docker:
   dependencies:
-    - build js archetype-web
+    - archetype-web build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -189,7 +189,7 @@ build docker archetype-web:
       - packages/course-landing/**/*
       - packages/archetype-web/**/*
 
-build js dockerschulung.de:
+dockerschulung.de build js:
   stage: build_js
   image: node
   script:
@@ -212,9 +212,9 @@ build js dockerschulung.de:
       - packages/*/.next/**/*
 
 
-build docker dockerschulung.de:
+dockerschulung.de build docker:
   dependencies:
-    - build js dockerschulung.de
+    - dockerschulung.de build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -228,7 +228,7 @@ build docker dockerschulung.de:
       - packages/course-landing/**/*
       - packages/dockerschulung.de/**/*
 
-deploy dev dockerschulung.de:
+dockerschulung.de dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/dockerschulung.de&domain=dockerschulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -242,7 +242,7 @@ deploy dev dockerschulung.de:
     name: dev dockerschulung.de
     url: https://dockerschulung.de.xsika.cz
 
-deploy prod dockerschulung.de:
+dockerschulung.de prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/dockerschulung.de&domain=dockerschulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -258,7 +258,7 @@ deploy prod dockerschulung.de:
     name: prod dockerschulung.de
     url: https://dockerschulung.de
 
-build js gitlab-ci.cz:
+gitlab-ci.cz build js:
   stage: build_js
   image: node
   script:
@@ -281,9 +281,9 @@ build js gitlab-ci.cz:
       - packages/*/.next/**/*
 
 
-build docker gitlab-ci.cz:
+gitlab-ci.cz build docker:
   dependencies:
-    - build js gitlab-ci.cz
+    - gitlab-ci.cz build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -297,7 +297,7 @@ build docker gitlab-ci.cz:
       - packages/course-landing/**/*
       - packages/gitlab-ci.cz/**/*
 
-deploy dev gitlab-ci.cz:
+gitlab-ci.cz dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-ci.cz&domain=gitlab-ci.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -311,7 +311,7 @@ deploy dev gitlab-ci.cz:
     name: dev gitlab-ci.cz
     url: https://gitlab-ci.cz.xsika.cz
 
-deploy prod gitlab-ci.cz:
+gitlab-ci.cz prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-ci.cz&domain=gitlab-ci.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -327,7 +327,7 @@ deploy prod gitlab-ci.cz:
     name: prod gitlab-ci.cz
     url: https://gitlab-ci.cz
 
-build js kubernetes-schulung.de:
+kubernetes-schulung.de build js:
   stage: build_js
   image: node
   script:
@@ -350,9 +350,9 @@ build js kubernetes-schulung.de:
       - packages/*/.next/**/*
 
 
-build docker kubernetes-schulung.de:
+kubernetes-schulung.de build docker:
   dependencies:
-    - build js kubernetes-schulung.de
+    - kubernetes-schulung.de build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -366,7 +366,7 @@ build docker kubernetes-schulung.de:
       - packages/course-landing/**/*
       - packages/kubernetes-schulung.de/**/*
 
-deploy dev kubernetes-schulung.de:
+kubernetes-schulung.de dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de&domain=kubernetes-schulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -380,7 +380,7 @@ deploy dev kubernetes-schulung.de:
     name: dev kubernetes-schulung.de
     url: https://kubernetes-schulung.de.xsika.cz
 
-deploy prod kubernetes-schulung.de:
+kubernetes-schulung.de prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de&domain=kubernetes-schulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -396,7 +396,7 @@ deploy prod kubernetes-schulung.de:
     name: prod kubernetes-schulung.de
     url: https://kubernetes-schulung.de
 
-build js ondrej-sika.cz:
+ondrej-sika.cz build js:
   stage: build_js
   image: node
   script:
@@ -419,9 +419,9 @@ build js ondrej-sika.cz:
       - packages/*/.next/**/*
 
 
-build docker ondrej-sika.cz:
+ondrej-sika.cz build docker:
   dependencies:
-    - build js ondrej-sika.cz
+    - ondrej-sika.cz build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -435,7 +435,7 @@ build docker ondrej-sika.cz:
       - packages/course-landing/**/*
       - packages/ondrej-sika.cz/**/*
 
-deploy dev ondrej-sika.cz:
+ondrej-sika.cz dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.cz&domain=ondrej-sika.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -449,7 +449,7 @@ deploy dev ondrej-sika.cz:
     name: dev ondrej-sika.cz
     url: https://ondrej-sika.cz.xsika.cz
 
-deploy prod ondrej-sika.cz:
+ondrej-sika.cz prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.cz&domain=ondrej-sika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -465,7 +465,7 @@ deploy prod ondrej-sika.cz:
     name: prod ondrej-sika.cz
     url: https://ondrej-sika.cz
 
-build js sika-kraml.de:
+sika-kraml.de build js:
   stage: build_js
   image: node
   script:
@@ -488,9 +488,9 @@ build js sika-kraml.de:
       - packages/*/.next/**/*
 
 
-build docker sika-kraml.de:
+sika-kraml.de build docker:
   dependencies:
-    - build js sika-kraml.de
+    - sika-kraml.de build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -504,7 +504,7 @@ build docker sika-kraml.de:
       - packages/course-landing/**/*
       - packages/sika-kraml.de/**/*
 
-build js skoleni-docker.cz:
+skoleni-docker.cz build js:
   stage: build_js
   image: node
   script:
@@ -527,9 +527,9 @@ build js skoleni-docker.cz:
       - packages/*/.next/**/*
 
 
-build docker skoleni-docker.cz:
+skoleni-docker.cz build docker:
   dependencies:
-    - build js skoleni-docker.cz
+    - skoleni-docker.cz build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -543,7 +543,7 @@ build docker skoleni-docker.cz:
       - packages/course-landing/**/*
       - packages/skoleni-docker.cz/**/*
 
-deploy dev skoleni-docker.cz:
+skoleni-docker.cz dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-docker.cz&domain=skoleni-docker.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -557,7 +557,7 @@ deploy dev skoleni-docker.cz:
     name: dev skoleni-docker.cz
     url: https://skoleni-docker.cz.xsika.cz
 
-deploy prod skoleni-docker.cz:
+skoleni-docker.cz prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-docker.cz&domain=skoleni-docker.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -573,7 +573,7 @@ deploy prod skoleni-docker.cz:
     name: prod skoleni-docker.cz
     url: https://skoleni-docker.cz
 
-build js skoleni-git.cz:
+skoleni-git.cz build js:
   stage: build_js
   image: node
   script:
@@ -596,9 +596,9 @@ build js skoleni-git.cz:
       - packages/*/.next/**/*
 
 
-build docker skoleni-git.cz:
+skoleni-git.cz build docker:
   dependencies:
-    - build js skoleni-git.cz
+    - skoleni-git.cz build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -612,7 +612,7 @@ build docker skoleni-git.cz:
       - packages/course-landing/**/*
       - packages/skoleni-git.cz/**/*
 
-deploy dev skoleni-git.cz:
+skoleni-git.cz dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-git.cz&domain=skoleni-git.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -626,7 +626,7 @@ deploy dev skoleni-git.cz:
     name: dev skoleni-git.cz
     url: https://skoleni-git.cz.xsika.cz
 
-deploy prod skoleni-git.cz:
+skoleni-git.cz prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-git.cz&domain=skoleni-git.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -642,7 +642,7 @@ deploy prod skoleni-git.cz:
     name: prod skoleni-git.cz
     url: https://skoleni-git.cz
 
-build js skoleni-kubernetes.cz:
+skoleni-kubernetes.cz build js:
   stage: build_js
   image: node
   script:
@@ -665,9 +665,9 @@ build js skoleni-kubernetes.cz:
       - packages/*/.next/**/*
 
 
-build docker skoleni-kubernetes.cz:
+skoleni-kubernetes.cz build docker:
   dependencies:
-    - build js skoleni-kubernetes.cz
+    - skoleni-kubernetes.cz build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -681,7 +681,7 @@ build docker skoleni-kubernetes.cz:
       - packages/course-landing/**/*
       - packages/skoleni-kubernetes.cz/**/*
 
-deploy dev skoleni-kubernetes.cz:
+skoleni-kubernetes.cz dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz&domain=skoleni-kubernetes.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -695,7 +695,7 @@ deploy dev skoleni-kubernetes.cz:
     name: dev skoleni-kubernetes.cz
     url: https://skoleni-kubernetes.cz.xsika.cz
 
-deploy prod skoleni-kubernetes.cz:
+skoleni-kubernetes.cz prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz&domain=skoleni-kubernetes.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -711,7 +711,7 @@ deploy prod skoleni-kubernetes.cz:
     name: prod skoleni-kubernetes.cz
     url: https://skoleni-kubernetes.cz
 
-build js git-training.uk:
+git-training.uk build js:
   stage: build_js
   image: node
   script:
@@ -734,9 +734,9 @@ build js git-training.uk:
       - packages/*/.next/**/*
 
 
-build docker git-training.uk:
+git-training.uk build docker:
   dependencies:
-    - build js git-training.uk
+    - git-training.uk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -750,7 +750,7 @@ build docker git-training.uk:
       - packages/course-landing/**/*
       - packages/git-training.uk/**/*
 
-deploy dev git-training.uk:
+git-training.uk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.uk&domain=git-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -764,7 +764,7 @@ deploy dev git-training.uk:
     name: dev git-training.uk
     url: https://git-training.uk.xsika.cz
 
-deploy prod git-training.uk:
+git-training.uk prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.uk&domain=git-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -780,7 +780,7 @@ deploy prod git-training.uk:
     name: prod git-training.uk
     url: https://git-training.uk
 
-build js docker-training.uk:
+docker-training.uk build js:
   stage: build_js
   image: node
   script:
@@ -803,9 +803,9 @@ build js docker-training.uk:
       - packages/*/.next/**/*
 
 
-build docker docker-training.uk:
+docker-training.uk build docker:
   dependencies:
-    - build js docker-training.uk
+    - docker-training.uk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -819,7 +819,7 @@ build docker docker-training.uk:
       - packages/course-landing/**/*
       - packages/docker-training.uk/**/*
 
-deploy dev docker-training.uk:
+docker-training.uk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.uk&domain=docker-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -833,7 +833,7 @@ deploy dev docker-training.uk:
     name: dev docker-training.uk
     url: https://docker-training.uk.xsika.cz
 
-deploy prod docker-training.uk:
+docker-training.uk prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.uk&domain=docker-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -849,7 +849,7 @@ deploy prod docker-training.uk:
     name: prod docker-training.uk
     url: https://docker-training.uk
 
-build js kubernetes-training.uk:
+kubernetes-training.uk build js:
   stage: build_js
   image: node
   script:
@@ -872,9 +872,9 @@ build js kubernetes-training.uk:
       - packages/*/.next/**/*
 
 
-build docker kubernetes-training.uk:
+kubernetes-training.uk build docker:
   dependencies:
-    - build js kubernetes-training.uk
+    - kubernetes-training.uk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -888,7 +888,7 @@ build docker kubernetes-training.uk:
       - packages/course-landing/**/*
       - packages/kubernetes-training.uk/**/*
 
-deploy dev kubernetes-training.uk:
+kubernetes-training.uk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-training.uk&domain=kubernetes-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -902,7 +902,7 @@ deploy dev kubernetes-training.uk:
     name: dev kubernetes-training.uk
     url: https://kubernetes-training.uk.xsika.cz
 
-deploy prod kubernetes-training.uk:
+kubernetes-training.uk prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-training.uk&domain=kubernetes-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -918,7 +918,7 @@ deploy prod kubernetes-training.uk:
     name: prod kubernetes-training.uk
     url: https://kubernetes-training.uk
 
-build js ansible-training.uk:
+ansible-training.uk build js:
   stage: build_js
   image: node
   script:
@@ -941,9 +941,9 @@ build js ansible-training.uk:
       - packages/*/.next/**/*
 
 
-build docker ansible-training.uk:
+ansible-training.uk build docker:
   dependencies:
-    - build js ansible-training.uk
+    - ansible-training.uk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -957,7 +957,7 @@ build docker ansible-training.uk:
       - packages/course-landing/**/*
       - packages/ansible-training.uk/**/*
 
-deploy dev ansible-training.uk:
+ansible-training.uk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-training.uk&domain=ansible-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -971,7 +971,7 @@ deploy dev ansible-training.uk:
     name: dev ansible-training.uk
     url: https://ansible-training.uk.xsika.cz
 
-deploy prod ansible-training.uk:
+ansible-training.uk prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-training.uk&domain=ansible-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -987,7 +987,7 @@ deploy prod ansible-training.uk:
     name: prod ansible-training.uk
     url: https://ansible-training.uk
 
-build js gitlab-training.uk:
+gitlab-training.uk build js:
   stage: build_js
   image: node
   script:
@@ -1010,9 +1010,9 @@ build js gitlab-training.uk:
       - packages/*/.next/**/*
 
 
-build docker gitlab-training.uk:
+gitlab-training.uk build docker:
   dependencies:
-    - build js gitlab-training.uk
+    - gitlab-training.uk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1026,7 +1026,7 @@ build docker gitlab-training.uk:
       - packages/course-landing/**/*
       - packages/gitlab-training.uk/**/*
 
-deploy dev gitlab-training.uk:
+gitlab-training.uk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-training.uk&domain=gitlab-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1040,7 +1040,7 @@ deploy dev gitlab-training.uk:
     name: dev gitlab-training.uk
     url: https://gitlab-training.uk.xsika.cz
 
-deploy prod gitlab-training.uk:
+gitlab-training.uk prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-training.uk&domain=gitlab-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1056,7 +1056,7 @@ deploy prod gitlab-training.uk:
     name: prod gitlab-training.uk
     url: https://gitlab-training.uk
 
-build js skolenie-git.sk:
+skolenie-git.sk build js:
   stage: build_js
   image: node
   script:
@@ -1079,9 +1079,9 @@ build js skolenie-git.sk:
       - packages/*/.next/**/*
 
 
-build docker skolenie-git.sk:
+skolenie-git.sk build docker:
   dependencies:
-    - build js skolenie-git.sk
+    - skolenie-git.sk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1095,7 +1095,7 @@ build docker skolenie-git.sk:
       - packages/course-landing/**/*
       - packages/skolenie-git.sk/**/*
 
-deploy dev skolenie-git.sk:
+skolenie-git.sk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-git.sk&domain=skolenie-git.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1109,7 +1109,7 @@ deploy dev skolenie-git.sk:
     name: dev skolenie-git.sk
     url: https://skolenie-git.sk.xsika.cz
 
-build js skolenie-gitlab.sk:
+skolenie-gitlab.sk build js:
   stage: build_js
   image: node
   script:
@@ -1132,9 +1132,9 @@ build js skolenie-gitlab.sk:
       - packages/*/.next/**/*
 
 
-build docker skolenie-gitlab.sk:
+skolenie-gitlab.sk build docker:
   dependencies:
-    - build js skolenie-gitlab.sk
+    - skolenie-gitlab.sk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1148,7 +1148,7 @@ build docker skolenie-gitlab.sk:
       - packages/course-landing/**/*
       - packages/skolenie-gitlab.sk/**/*
 
-deploy dev skolenie-gitlab.sk:
+skolenie-gitlab.sk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk&domain=skolenie-gitlab.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1162,7 +1162,7 @@ deploy dev skolenie-gitlab.sk:
     name: dev skolenie-gitlab.sk
     url: https://skolenie-gitlab.sk.xsika.cz
 
-build js skolenie-docker.sk:
+skolenie-docker.sk build js:
   stage: build_js
   image: node
   script:
@@ -1185,9 +1185,9 @@ build js skolenie-docker.sk:
       - packages/*/.next/**/*
 
 
-build docker skolenie-docker.sk:
+skolenie-docker.sk build docker:
   dependencies:
-    - build js skolenie-docker.sk
+    - skolenie-docker.sk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1201,7 +1201,7 @@ build docker skolenie-docker.sk:
       - packages/course-landing/**/*
       - packages/skolenie-docker.sk/**/*
 
-deploy dev skolenie-docker.sk:
+skolenie-docker.sk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-docker.sk&domain=skolenie-docker.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1215,7 +1215,7 @@ deploy dev skolenie-docker.sk:
     name: dev skolenie-docker.sk
     url: https://skolenie-docker.sk.xsika.cz
 
-build js skolenie.kubernetes.sk:
+skolenie.kubernetes.sk build js:
   stage: build_js
   image: node
   script:
@@ -1238,9 +1238,9 @@ build js skolenie.kubernetes.sk:
       - packages/*/.next/**/*
 
 
-build docker skolenie.kubernetes.sk:
+skolenie.kubernetes.sk build docker:
   dependencies:
-    - build js skolenie.kubernetes.sk
+    - skolenie.kubernetes.sk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1254,7 +1254,7 @@ build docker skolenie.kubernetes.sk:
       - packages/course-landing/**/*
       - packages/skolenie.kubernetes.sk/**/*
 
-deploy dev skolenie.kubernetes.sk:
+skolenie.kubernetes.sk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk&domain=skolenie.kubernetes.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1268,7 +1268,7 @@ deploy dev skolenie.kubernetes.sk:
     name: dev skolenie.kubernetes.sk
     url: https://skolenie.kubernetes.sk.xsika.cz
 
-build js skolenie-ansible.sk:
+skolenie-ansible.sk build js:
   stage: build_js
   image: node
   script:
@@ -1291,9 +1291,9 @@ build js skolenie-ansible.sk:
       - packages/*/.next/**/*
 
 
-build docker skolenie-ansible.sk:
+skolenie-ansible.sk build docker:
   dependencies:
-    - build js skolenie-ansible.sk
+    - skolenie-ansible.sk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1307,7 +1307,7 @@ build docker skolenie-ansible.sk:
       - packages/course-landing/**/*
       - packages/skolenie-ansible.sk/**/*
 
-deploy dev skolenie-ansible.sk:
+skolenie-ansible.sk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-ansible.sk&domain=skolenie-ansible.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1321,7 +1321,7 @@ deploy dev skolenie-ansible.sk:
     name: dev skolenie-ansible.sk
     url: https://skolenie-ansible.sk.xsika.cz
 
-build js ansible-utbildning.se:
+ansible-utbildning.se build js:
   stage: build_js
   image: node
   script:
@@ -1344,9 +1344,9 @@ build js ansible-utbildning.se:
       - packages/*/.next/**/*
 
 
-build docker ansible-utbildning.se:
+ansible-utbildning.se build docker:
   dependencies:
-    - build js ansible-utbildning.se
+    - ansible-utbildning.se build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1360,7 +1360,7 @@ build docker ansible-utbildning.se:
       - packages/course-landing/**/*
       - packages/ansible-utbildning.se/**/*
 
-deploy dev ansible-utbildning.se:
+ansible-utbildning.se dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-utbildning.se&domain=ansible-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1374,7 +1374,7 @@ deploy dev ansible-utbildning.se:
     name: dev ansible-utbildning.se
     url: https://ansible-utbildning.se.xsika.cz
 
-deploy prod ansible-utbildning.se:
+ansible-utbildning.se prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-utbildning.se&domain=ansible-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1390,7 +1390,7 @@ deploy prod ansible-utbildning.se:
     name: prod ansible-utbildning.se
     url: https://ansible-utbildning.se
 
-build js docker-utbildning.se:
+docker-utbildning.se build js:
   stage: build_js
   image: node
   script:
@@ -1413,9 +1413,9 @@ build js docker-utbildning.se:
       - packages/*/.next/**/*
 
 
-build docker docker-utbildning.se:
+docker-utbildning.se build docker:
   dependencies:
-    - build js docker-utbildning.se
+    - docker-utbildning.se build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1429,7 +1429,7 @@ build docker docker-utbildning.se:
       - packages/course-landing/**/*
       - packages/docker-utbildning.se/**/*
 
-deploy dev docker-utbildning.se:
+docker-utbildning.se dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-utbildning.se&domain=docker-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1443,7 +1443,7 @@ deploy dev docker-utbildning.se:
     name: dev docker-utbildning.se
     url: https://docker-utbildning.se.xsika.cz
 
-deploy prod docker-utbildning.se:
+docker-utbildning.se prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-utbildning.se&domain=docker-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1459,7 +1459,7 @@ deploy prod docker-utbildning.se:
     name: prod docker-utbildning.se
     url: https://docker-utbildning.se
 
-build js git-utbildning.se:
+git-utbildning.se build js:
   stage: build_js
   image: node
   script:
@@ -1482,9 +1482,9 @@ build js git-utbildning.se:
       - packages/*/.next/**/*
 
 
-build docker git-utbildning.se:
+git-utbildning.se build docker:
   dependencies:
-    - build js git-utbildning.se
+    - git-utbildning.se build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1498,7 +1498,7 @@ build docker git-utbildning.se:
       - packages/course-landing/**/*
       - packages/git-utbildning.se/**/*
 
-deploy dev git-utbildning.se:
+git-utbildning.se dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-utbildning.se&domain=git-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1512,7 +1512,7 @@ deploy dev git-utbildning.se:
     name: dev git-utbildning.se
     url: https://git-utbildning.se.xsika.cz
 
-deploy prod git-utbildning.se:
+git-utbildning.se prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-utbildning.se&domain=git-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1528,7 +1528,7 @@ deploy prod git-utbildning.se:
     name: prod git-utbildning.se
     url: https://git-utbildning.se
 
-build js gitlab-utbildning.se:
+gitlab-utbildning.se build js:
   stage: build_js
   image: node
   script:
@@ -1551,9 +1551,9 @@ build js gitlab-utbildning.se:
       - packages/*/.next/**/*
 
 
-build docker gitlab-utbildning.se:
+gitlab-utbildning.se build docker:
   dependencies:
-    - build js gitlab-utbildning.se
+    - gitlab-utbildning.se build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1567,7 +1567,7 @@ build docker gitlab-utbildning.se:
       - packages/course-landing/**/*
       - packages/gitlab-utbildning.se/**/*
 
-deploy dev gitlab-utbildning.se:
+gitlab-utbildning.se dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se&domain=gitlab-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1581,7 +1581,7 @@ deploy dev gitlab-utbildning.se:
     name: dev gitlab-utbildning.se
     url: https://gitlab-utbildning.se.xsika.cz
 
-deploy prod gitlab-utbildning.se:
+gitlab-utbildning.se prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se&domain=gitlab-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1597,7 +1597,7 @@ deploy prod gitlab-utbildning.se:
     name: prod gitlab-utbildning.se
     url: https://gitlab-utbildning.se
 
-build js kubernetes-utbildning.se:
+kubernetes-utbildning.se build js:
   stage: build_js
   image: node
   script:
@@ -1620,9 +1620,9 @@ build js kubernetes-utbildning.se:
       - packages/*/.next/**/*
 
 
-build docker kubernetes-utbildning.se:
+kubernetes-utbildning.se build docker:
   dependencies:
-    - build js kubernetes-utbildning.se
+    - kubernetes-utbildning.se build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1636,7 +1636,7 @@ build docker kubernetes-utbildning.se:
       - packages/course-landing/**/*
       - packages/kubernetes-utbildning.se/**/*
 
-deploy dev kubernetes-utbildning.se:
+kubernetes-utbildning.se dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se&domain=kubernetes-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1650,7 +1650,7 @@ deploy dev kubernetes-utbildning.se:
     name: dev kubernetes-utbildning.se
     url: https://kubernetes-utbildning.se.xsika.cz
 
-deploy prod kubernetes-utbildning.se:
+kubernetes-utbildning.se prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se&domain=kubernetes-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1666,7 +1666,7 @@ deploy prod kubernetes-utbildning.se:
     name: prod kubernetes-utbildning.se
     url: https://kubernetes-utbildning.se
 
-build js ondrej-sika.uk:
+ondrej-sika.uk build js:
   stage: build_js
   image: node
   script:
@@ -1689,9 +1689,9 @@ build js ondrej-sika.uk:
       - packages/*/.next/**/*
 
 
-build docker ondrej-sika.uk:
+ondrej-sika.uk build docker:
   dependencies:
-    - build js ondrej-sika.uk
+    - ondrej-sika.uk build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1705,7 +1705,7 @@ build docker ondrej-sika.uk:
       - packages/course-landing/**/*
       - packages/ondrej-sika.uk/**/*
 
-deploy dev ondrej-sika.uk:
+ondrej-sika.uk dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.uk&domain=ondrej-sika.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1719,7 +1719,7 @@ deploy dev ondrej-sika.uk:
     name: dev ondrej-sika.uk
     url: https://ondrej-sika.uk.xsika.cz
 
-build js ondrejsikalabs.com:
+ondrejsikalabs.com build js:
   stage: build_js
   image: node
   script:
@@ -1742,9 +1742,9 @@ build js ondrejsikalabs.com:
       - packages/*/.next/**/*
 
 
-build docker ondrejsikalabs.com:
+ondrejsikalabs.com build docker:
   dependencies:
-    - build js ondrejsikalabs.com
+    - ondrejsikalabs.com build js
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1758,7 +1758,7 @@ build docker ondrejsikalabs.com:
       - packages/course-landing/**/*
       - packages/ondrejsikalabs.com/**/*
 
-deploy dev ondrejsikalabs.com:
+ondrejsikalabs.com dev deploy:
   stage: deploy_dev
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com&domain=ondrejsikalabs.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
@@ -1772,7 +1772,7 @@ deploy dev ondrejsikalabs.com:
     name: dev ondrejsikalabs.com
     url: https://ondrejsikalabs.com.xsika.cz
 
-deploy prod ondrejsikalabs.com:
+ondrejsikalabs.com prod deploy:
   stage: deploy_prod
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com&domain=ondrejsikalabs.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
