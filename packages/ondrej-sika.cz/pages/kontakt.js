@@ -82,16 +82,20 @@ const Index = () => (
                 <td>CZ0620100000002301432033</td>
               </tr>
               <tr>
-                <td>BIC code:&nbsp;&nbsp;&nbsp;<br />SWIFT</td>
-                <td valign='top'>FIOBCZPPXXX</td>
+                <td>BIC / SWIFT:</td>
+                <td>FIOBCZPPXXX</td>
+              </tr>
+              <tr>
+                <td className="pt-3" valign='top'>Adresa&nbsp;Banky:&nbsp;&nbsp;&nbsp;</td>
+                <td className="pt-3">
+                  Fio banka, a.s.,<br/>
+                  V Celnici 1028/10,<br/>
+                  Praha 1,<br/>
+                  Česká Republika
+                </td>
               </tr>
             </tbody>
           </table>
-          <p className="mt-3"><b>Adresa Banky</b><br/>
-          Fio banka, a.s.,<br/>
-          V Celnici 1028/10,<br/>
-          Praha 1,<br/>
-          Česká Republika</p>
         </div>
       </div>
     </div>
