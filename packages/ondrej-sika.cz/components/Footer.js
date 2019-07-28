@@ -7,7 +7,7 @@ const Footer = (props) => (
     <div className='footer mt-4'>
       <div className='container pt-4 pb-4'>
         <div className='row'>
-          <div className='col-md-4 col-sm-7 col-8 text-white'>
+          <div className='col-md-3 col-sm-7 col-8 text-white'>
             <h3 className='text-white'>{props.col1_name}</h3>
             <p>
               <a href='mailto:ondrej@ondrejsika.com' className='a-underline'>{props.col1_mail}</a>
@@ -40,15 +40,6 @@ const Footer = (props) => (
               <li><a href='/skoleni/ansible' className='a-underline'>Ansible</a></li>
             </ul>
           </div>
-
-          <div className='col-md-2 col-sm-12'>
-            <a href='https://www.facebook.com/sikaondrej'><img src='/static/fb-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://www.instagram.com/ondrejsika/'><img src='/static/insta-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://www.linkedin.com/in/ondrejsika/'><img src='/static/linkedin-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://twitter.com/ondrejsika'><img src='/static/twitter-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://github.com/ondrejsika'><img src='/static/github-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='mailto:ondrej@ondrejsika.com'><img src='/static/mail-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-          </div>
           <div className='col-md-4 col-sm-12 pt-4 pt-md-0'>
             <h3 className='text-white'>{props.col4_NewsHeader}</h3>
             <p className='text-white'>{props.col4_NewsText}</p>
@@ -60,6 +51,14 @@ const Footer = (props) => (
                 </div>
               </Former2>
             </div>
+          </div>
+          <div className='col-md-2 offset-md-1 col-sm-12'>
+            <a href='https://www.facebook.com/sikaondrej'><img src='/static/fb-hex.svg' className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://www.instagram.com/ondrejsika/'><img src='/static/insta-hex.svg' className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://www.linkedin.com/in/ondrejsika/'><img src='/static/linkedin-hex.svg' className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://twitter.com/ondrejsika'><img src='/static/twitter-hex.svg' className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://github.com/ondrejsika'><img src='/static/github-hex.svg' className='pl-2 pr-2 pt-1'/></a>
+            <a href='mailto:ondrej@ondrejsika.com'><img src='/static/mail-hex.svg' className='pl-2 pr-2 pt-1'/></a>
           </div>
         </div>
         <p className='text-center'>
