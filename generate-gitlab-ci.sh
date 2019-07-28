@@ -75,6 +75,8 @@ SUFFIX=$DEV_SUFFIX
 cat << EOF >> .gitlab-ci.yml
 $SITE dev deploy:
   stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
   script:
     - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
   only:
@@ -96,6 +98,8 @@ SUFFIX=""
 cat << EOF >> .gitlab-ci.yml
 $SITE prod deploy:
   stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
   script:
     - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
   only:
