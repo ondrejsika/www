@@ -7,17 +7,38 @@ const Footer = (props) => (
     <div className='footer mt-4'>
       <div className='container pt-4 pb-4'>
         <div className='row'>
-          <div className='col-md-4 col-sm-7 col-8'>
+          <div className='col-md-4 col-sm-7 col-8 text-white'>
             <h3 className='text-white'>{props.col1_name}</h3>
-            <p><a href='mailto:ondrej@ondrejsika.com' className='a-underline'>{props.col1_mail}</a><br></br>
-            <a href='tel:+420773452376' className='a-underline'>{props.col1_phone}</a></p>
+            <p>
+              <a href='mailto:ondrej@ondrejsika.com' className='a-underline'>{props.col1_mail}</a>
+              <br/><a href='tel:+420773452376' className='a-underline'>{props.col1_phone}</a>
+            </p>
+            <table class="contact-table table-borderless">
+            <tbody>
+              <tr>
+                <td>IČ:</td>
+                <td>88114163</td>
+              </tr>
+              <tr>
+                <td>DIČ:</td>
+                <td>CZ9302252102</td>
+              </tr>
+              <tr>
+                <td>Účet:&nbsp;&nbsp;&nbsp;</td>
+                <td>2301432033/2010 (Fio)</td>
+              </tr>
+            </tbody>
+          </table>
           </div>
           <div className='col-md-2 col-sm-5 col-4'>
-            <p><a href='/skoleni/docker' className='a-underline'>Docker</a></p>
-            <p><a href='/skoleni/git' className='a-underline'>Git</a></p>
-            <p><a href='/skoleni/kubernetes' className='a-underline'>Kubernetes</a></p>
-            <p><a href='/skoleni/gitlab-ci' className='a-underline'>Gitlab CI</a></p>
-            <p><a href='/skoleni/ansible' className='a-underline'>Ansible</a></p>
+            <h3 className='text-white'>Moje Kurzy</h3>
+            <ul className="text-white">
+              <li><a href='/skoleni/docker' className='a-underline'>Docker</a></li>
+              <li><a href='/skoleni/kubernetes' className='a-underline'>Kubernetes</a></li>
+              <li><a href='/skoleni/gitlab-ci' className='a-underline'>Gitlab CI</a></li>
+              <li><a href='/skoleni/git' className='a-underline'>Git</a></li>
+              <li><a href='/skoleni/ansible' className='a-underline'>Ansible</a></li>
+            </ul>
           </div>
 
           <div className='col-md-2 col-sm-12'>
