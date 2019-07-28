@@ -29,7 +29,7 @@ for SITE in $(cat sites.txt)
 do
 
 cat << EOF >> .gitlab-ci.yml
-build js $SITE:
+$SITE build js:
   stage: build_js
   image: node
   script:
@@ -52,9 +52,9 @@ build js $SITE:
       - packages/*/.next/**/*
 
 
-build docker $SITE:
+$SITE build docker:
   dependencies:
-    - build js $SITE
+    - $SITE build js
   stage: build_docker
   script:
     - docker login \$CI_REGISTRY -u \$CI_REGISTRY_USER -p \$CI_REGISTRY_PASSWORD
@@ -73,7 +73,7 @@ EOF
 if printf '%s\n' ${DEV_SITES[@]} | grep "$SITE" > /dev/null; then
 SUFFIX=$DEV_SUFFIX
 cat << EOF >> .gitlab-ci.yml
-deploy dev $SITE:
+$SITE dev deploy:
   stage: deploy_dev
   script:
     - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
@@ -94,7 +94,7 @@ fi;
 if printf '%s\n' ${PROD_SITES[@]} | grep "$SITE" > /dev/null; then
 SUFFIX=""
 cat << EOF >> .gitlab-ci.yml
-deploy prod $SITE:
+$SITE prod deploy:
   stage: deploy_prod
   script:
     - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
