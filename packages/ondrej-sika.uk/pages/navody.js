@@ -1,5 +1,3 @@
-import '@app/ondrej-sika.cz/css'
-
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';

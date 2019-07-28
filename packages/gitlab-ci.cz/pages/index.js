@@ -1,5 +1,3 @@
-import '../css'
-
 import ReactMarkdown from 'react-markdown'
 import Header from '@app/course-landing/components/Header'
 import HeaderLink from '@app/course-landing/components/HeaderLink'

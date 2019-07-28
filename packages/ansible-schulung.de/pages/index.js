@@ -1,5 +1,3 @@
-import '../css'
-
 import FooterSikaKraml from '@app/course-landing/components/FooterSikaKraml';
 import Header from '@app/course-landing/components/Header';
 import HeaderLink from '@app/course-landing/components/HeaderLink';

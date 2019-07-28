@@ -1,5 +1,3 @@
-import '@app/ondrej-sika.cz/css'
-
 import { withRouter } from 'next/router'
 import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
 import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';

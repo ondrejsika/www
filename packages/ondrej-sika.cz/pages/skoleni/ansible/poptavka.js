@@ -1,5 +1,3 @@
-import '@app/ondrej-sika.cz/css'
-
 import ReactMarkdown from 'react-markdown'
 import Header from '@app/ondrej-sika.cz/components/Header'
 import TextArea from '@app/ondrej-sika.cz/components/TextArea';

@@ -1,5 +1,3 @@
-import '@app/ondrej-sika.cz/css'
-
 import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
 import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
