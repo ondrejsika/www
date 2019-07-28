@@ -57,8 +57,11 @@ class OndrejSikaDocument extends Document {
                 ['ANSIBLE', '/skoleni/ansible'],
               ]],
               ['TERMÍNY', '/verejne-terminy'],
-              ['BLOG', '/blog'],
-              ['NÁVODY', '/navody'],
+              ['NÁVODY & ČLÁNKY', [
+                ['BLOG', '/blog'],
+                ['NÁVODY', '/navody'],
+                ['ČLÁNKY', '/clanky'],
+              ]],
               ['KONTAKT', '/kontakt'],
             ]}
           />
