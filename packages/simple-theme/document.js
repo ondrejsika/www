@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class SimpleThemeDocument extends Document {
   // static async getInitialProps(ctx) {
@@ -9,8 +9,7 @@ class SimpleThemeDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-        </Head>
+        <Head></Head>
         <body>
           <div className="container">
             <Main />
@@ -22,4 +21,4 @@ class SimpleThemeDocument extends Document {
   }
 }
 
-export default SimpleThemeDocument
+export default SimpleThemeDocument;

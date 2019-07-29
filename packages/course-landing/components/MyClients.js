@@ -1,13 +1,13 @@
-import termo_fish from './MyClients/thermo_fish.jpg'
-import aaa_auto from './MyClients/aaa_auto.png'
-import kb from './MyClients/kb.png'
-import fio from './MyClients/fio.png'
-import o2 from './MyClients/o2.png'
-import ceska_pojistovna from './MyClients/ceska_pojistovna.jpg'
+import termo_fish from "./MyClients/thermo_fish.jpg";
+import aaa_auto from "./MyClients/aaa_auto.png";
+import kb from "./MyClients/kb.png";
+import fio from "./MyClients/fio.png";
+import o2 from "./MyClients/o2.png";
+import ceska_pojistovna from "./MyClients/ceska_pojistovna.jpg";
 
-import Translate from '@app/common/components/Translate'
+import Translate from "@app/common/components/Translate";
 
-const MyClients = (props) => (
+const MyClients = props => (
   <div>
     <div className="card p-3 mb-4">
       <h3>
@@ -40,5 +40,5 @@ const MyClients = (props) => (
       </div>
     </div>
   </div>
-)
-export default MyClients
+);
+export default MyClients;

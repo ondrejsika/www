@@ -16,7 +16,11 @@ export default () => (
     <Header websiteHeader="Registrace na Školení" />
     <div className="container course-page">
       <TextArea TextParagraph="Pole označené * jsou povinné.">
-        <Former2 site={site} name="Course Registration" redirect_path="/odeslano">
+        <Former2
+          site={site}
+          name="Course Registration"
+          redirect_path="/odeslano"
+        >
           <input type="hidden" id="form-session" name="course" />
           <div className="form-group">
             <div className="col-md-4 mb-3 pl-0">
@@ -26,14 +30,12 @@ export default () => (
                 className="form-control-border"
                 id="validationDefault01"
                 name="name"
-                placeholder='Jmeno'
+                placeholder="Jmeno"
                 required
               />
             </div>
             <div className="col-md-4 mb-3 pl-0">
-              <label htmlFor="validationDefault02">
-                Společnost
-              </label>
+              <label htmlFor="validationDefault02">Společnost</label>
               <input
                 type="text"
                 className="form-control-border"
@@ -68,9 +70,14 @@ export default () => (
           <button className="btn btn-succes mb-4" type="submit">
             Registrovat se na kurz
           </button>
-          <script type="text/javascript" dangerouslySetInnerHTML={{__html: `
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
             document.getElementById("form-session").value = location.search;
-          `}} />
+          `
+            }}
+          />
         </Former2>
       </TextArea>
     </div>

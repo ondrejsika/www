@@ -1,2 +1,2 @@
-import './index.sass'
-import '@app/simple-theme/css'
+import "./index.sass";
+import "@app/simple-theme/css";

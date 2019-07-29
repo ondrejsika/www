@@ -1,38 +1,41 @@
-import MainBar from '@app/ondrej-sika.cz/components/MainBar';
-import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
-import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
-import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
-import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
+import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
+import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
+import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
+import CompaniesBar1 from "@app/ondrej-sika.cz/static/webglobe-yegon-sq.png";
 import Markdown from "@app/common/components/Markdown";
 
-import Head from 'next/head'
+import Head from "next/head";
 
 let site = {
-  lang: 'cs'
-}
+  lang: "cs"
+};
 
 let style = {
-  fontSize: '1.4em',
-  fontWeight: 'bold',
-}
+  fontSize: "1.4em",
+  fontWeight: "bold"
+};
 
 const Install = () => (
   <div>
     <Head>
       <title>Práce - Ondrej Sika</title>
     </Head>
-    <MainBar
-      MainBarHeader='NABIDKA (SPOLU)PRACE'>
-    </MainBar>
+    <MainBar MainBarHeader="NABIDKA (SPOLU)PRACE"></MainBar>
 
-    <style dangerouslySetInnerHTML={{__html: `
+    <style
+      dangerouslySetInnerHTML={{
+        __html: `
        .post-body img {
         width: 30%;
       }
-    `}} />
+    `
+      }}
+    />
 
     <div className="container pt-4 pb-2 post-body">
-      <Markdown source={`
+      <Markdown
+        source={`
 FAQ: Je tato nabidka aktualni? Ano.
 
 ## Technicky asistent
@@ -87,9 +90,10 @@ Nejsem zrovna dobry v agende a planovani. A potrebuji nekoho kdo mi s tim pomuze
 - Svobodu a rust
 
 Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>
-`}/>
+`}
+      />
     </div>
   </div>
-)
+);
 
-export default Install
+export default Install;

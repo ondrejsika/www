@@ -12,28 +12,29 @@ function get_by_id(id) {
 }
 
 export default props => {
-  if (props.rec3) return (
-    <div className="container-flex mb-4 row">
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <TwitterTweetEmbed
-          tweetId={get_by_id(props.rec1).tweet_id}
-          options={{ conversation: "none" }}
-        />
+  if (props.rec3)
+    return (
+      <div className="container-flex mb-4 row">
+        <div className="col-lg-4 col-md-4 col-sm-12">
+          <TwitterTweetEmbed
+            tweetId={get_by_id(props.rec1).tweet_id}
+            options={{ conversation: "none" }}
+          />
+        </div>
+        <div className="col-lg-4 col-md-4 col-sm-12">
+          <TwitterTweetEmbed
+            tweetId={get_by_id(props.rec2).tweet_id}
+            options={{ conversation: "none" }}
+          />
+        </div>
+        <div className="col-lg-4 col-md-4 col-sm-12">
+          <TwitterTweetEmbed
+            tweetId={get_by_id(props.rec3).tweet_id}
+            options={{ conversation: "none" }}
+          />
+        </div>
       </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <TwitterTweetEmbed
-          tweetId={get_by_id(props.rec2).tweet_id}
-          options={{ conversation: "none" }}
-        />
-      </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <TwitterTweetEmbed
-          tweetId={get_by_id(props.rec3).tweet_id}
-          options={{ conversation: "none" }}
-        />
-      </div>
-    </div>
-  );
+    );
   return (
     <div className="container-flex mb-4 row">
       <div className="col-lg-6 col-md-6 col-sm-12">

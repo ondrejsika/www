@@ -1,19 +1,22 @@
-import ThreeCol from '@app/course-landing/components/ThreeCol';
+import ThreeCol from "@app/course-landing/components/ThreeCol";
 import Markdown from "@app/common/components/Markdown";
 
-const Contact = (props) => (
+const Contact = props => (
   <ThreeCol
     col1={
-      <Markdown source={`
+      <Markdown
+        source={`
 #### Ondřej Sika
 
 <ondrej@ondrejsika.com>
 <br>[ondrej-sika.cz](https://ondrej-sika.cz)
 <br>[+420 773 452 376](tel:+420773452376)
-    `}/>
+    `}
+      />
     }
     col2={
-      <Markdown source={`
+      <Markdown
+        source={`
 #### Fakturační údaje
 
 Ondrej Sika
@@ -23,10 +26,12 @@ Ondrej Sika
 
 IC: 88114163
 <br>DIC: CZ9302252102
-    `}/>
+    `}
+      />
     }
     col3={
-      <Markdown source={`
+      <Markdown
+        source={`
 #### Platební údaje
 
 CZ(CZK): 2500171198 / 2010
@@ -34,9 +39,10 @@ CZ(CZK): 2500171198 / 2010
 
 IBAN: CZ0620100000002500171198
 <br>BIC code / SWIFT: FIOBCZPPXXX
-    `}/>
+    `}
+      />
     }
   />
-)
+);
 
-export default Contact
+export default Contact;

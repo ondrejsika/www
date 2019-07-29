@@ -1,4 +1,4 @@
-const References = (props) => (
+const References = props => (
   <>
     <p>{props.reference}</p>
     <div className="row">
@@ -6,11 +6,13 @@ const References = (props) => (
         <img src={props.imgRefer} className="img-fluid rounded-circle" alt="" />
       </div>
       <div className="col-8">
-        <p><strong>{props.nameRefer}</strong></p>
+        <p>
+          <strong>{props.nameRefer}</strong>
+        </p>
         <p className="company">{props.position}</p>
       </div>
     </div>
   </>
-)
+);
 
-export default References
+export default References;

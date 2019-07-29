@@ -1,32 +1,31 @@
-import MainBar from '@app/ondrej-sika.cz/components/MainBar';
-import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
-import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
-import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
-import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
+import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
+import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
+import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
+import CompaniesBar1 from "@app/ondrej-sika.cz/static/webglobe-yegon-sq.png";
 import Markdown from "@app/common/components/Markdown";
 
-import Head from 'next/head'
+import Head from "next/head";
 
 let site = {
-  lang: 'cs'
-}
+  lang: "cs"
+};
 
 let style = {
-  fontSize: '1.4em',
-  fontWeight: 'bold',
-}
+  fontSize: "1.4em",
+  fontWeight: "bold"
+};
 
 const Install = () => (
   <div>
     <Head>
       <title>Instalace Docker - Ondřej Šika</title>
     </Head>
-    <MainBar
-      MainBarHeader='Instalace Dockeru'>
-    </MainBar>
+    <MainBar MainBarHeader="Instalace Dockeru"></MainBar>
 
     <div className="container pt-4 pb-2">
-      <Markdown source={`
+      <Markdown
+        source={`
 Budeme používat Docker CE (Community Edition). Pro mě školení i drtivou většinou práce stačí.
 
 ### Windows
@@ -115,9 +114,10 @@ Na Linuxu nepoužívejte Docker z distribučních balíčků, je tam starý. Pos
 
 
 Pokud máte problém s instalací a nebo jakýkoliv dotaz, neváhejte mě napsat na [ondrej@ondrejsika.com](ondrej@ondrejsika.com)
-`}/>
+`}
+      />
     </div>
   </div>
-)
+);
 
-export default Install
+export default Install;

@@ -1,12 +1,8 @@
 const style = {
   padding: 10,
-  border: '3px solid red'
-}
+  border: "3px solid red"
+};
 
-const Alert = props => (
-  <div style={style}>
-    {props.children}
-  </div>
-)
+const Alert = props => <div style={style}>{props.children}</div>;
 
-export default Alert
+export default Alert;

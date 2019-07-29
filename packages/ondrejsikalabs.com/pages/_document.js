@@ -1,3 +1,3 @@
 import SimpleThemeDocument from "@app/simple-theme/document";
 
-export default SimpleThemeDocument
+export default SimpleThemeDocument;

@@ -4,6 +4,6 @@ const Person = props => (
     <h2>{props.name}</h2>
     <p>{props.bio}</p>
   </div>
-)
+);
 
-export default Person
+export default Person;

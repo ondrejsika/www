@@ -1,17 +1,16 @@
 import Markdown from "@app/common/components/Markdown";
-import Header from '@app/ondrej-sika.cz/components/Header'
-import TextArea from '@app/ondrej-sika.cz/components/TextArea'
-import TwoCol from '@app/ondrej-sika.cz/components/TwoCol'
-import References from '@app/ondrej-sika.cz/components/References'
-import Price from '@app/ondrej-sika.cz/components/Price'
-import Form from '@app/ondrej-sika.cz/components/Form'
+import Header from "@app/ondrej-sika.cz/components/Header";
+import TextArea from "@app/ondrej-sika.cz/components/TextArea";
+import TwoCol from "@app/ondrej-sika.cz/components/TwoCol";
+import References from "@app/ondrej-sika.cz/components/References";
+import Price from "@app/ondrej-sika.cz/components/Price";
+import Form from "@app/ondrej-sika.cz/components/Form";
 
-import Head from 'next/head'
-
+import Head from "next/head";
 
 let site = {
-  lang: 'cs'
-}
+  lang: "cs"
+};
 
 const Index = () => (
   <div>
@@ -19,12 +18,13 @@ const Index = () => (
       <title>Školení Kubernetes - Ondrej Sika</title>
     </Head>
     <Header
-      websiteHeader='Školení Kubernetes'
-      inquiryBtn='Nezávazně poptat školení'
-      logo='/static/kubernetes.png'>
-    </Header>
-    <div className='container course-page'>
-    <Markdown source={`
+      websiteHeader="Školení Kubernetes"
+      inquiryBtn="Nezávazně poptat školení"
+      logo="/static/kubernetes.png"
+    ></Header>
+    <div className="container course-page">
+      <Markdown
+        source={`
 ### Co je to Kubernetes
 Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
 ### Jak školení probíhá
@@ -39,54 +39,58 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
 - Instalace / Deployment pomocí Helmu
 - Psaní vlastního Helm balíčku
 #### Pro koho je školení určeno
-Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.`}/>
+Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.`}
+      />
       <TwoCol
         col1={
-          <Markdown source={`
+          <Markdown
+            source={`
 #### Předchozí znalosti
 - Základy práce s Linuxemm
 - Základy práce v terminálu
 - Základy práce s Dockerem
-          `}/>
+          `}
+          />
         }
         col2={
-          <Markdown source={`
+          <Markdown
+            source={`
 #### Technické požadavky
 - Nainstalovaný Kubernetes
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
-          `}/>
+          `}
+          />
         }
       />
     </div>
-    <References ids={[ 'oxy', 'oxyCTO']} lang={site.lang} />
-    <Price
-      PriceHeader='Cena za školení'
-      PriceBtn='Nezávazně poptat školení'>
-      Otevřený termín (self funded): 9 999 CZK bez DPH<br/>
-      Otevřený termín (company funded): 14 999 CZK bez DPH<br/>
+    <References ids={["oxy", "oxyCTO"]} lang={site.lang} />
+    <Price PriceHeader="Cena za školení" PriceBtn="Nezávazně poptat školení">
+      Otevřený termín (self funded): 9 999 CZK bez DPH
+      <br />
+      Otevřený termín (company funded): 14 999 CZK bez DPH
+      <br />
       Firemní školení (ve firmě): 40 000 CZK bez DPH
     </Price>
-    <div className='container'>
+    <div className="container">
       <TextArea
-        TextHeader='Poptávka firemního školeni Kubernetes'
-        TextParagraph='Pole označené * jsou povinné.'>
+        TextHeader="Poptávka firemního školeni Kubernetes"
+        TextParagraph="Pole označené * jsou povinné."
+      >
         <Form
-          course='Kubernetes'
-          FormName='Jméno *'
-          FromNamePlaceholder='Anton Hrabiš'
-          FormCompany='Společnost'
-          FormCompanyPlaceholder='Drůbežárny'
-          FormEmail='Email *'
-          FormEmailPlaceholder='anton@hrabis.cz'
-          FormPhone='Telefon *'
-          FormPhonePlaceholder='+420111222333'
-          FormSent='Odeslat'
+          course="Kubernetes"
+          FormName="Jméno *"
+          FromNamePlaceholder="Anton Hrabiš"
+          FormCompany="Společnost"
+          FormCompanyPlaceholder="Drůbežárny"
+          FormEmail="Email *"
+          FormEmailPlaceholder="anton@hrabis.cz"
+          FormPhone="Telefon *"
+          FormPhonePlaceholder="+420111222333"
+          FormSent="Odeslat"
         />
       </TextArea>
-
-
     </div>
   </div>
-)
+);
 
-export default Index
+export default Index;

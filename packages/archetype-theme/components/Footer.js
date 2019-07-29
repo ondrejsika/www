@@ -3,6 +3,6 @@ const Footer = () => (
     <hr />
     <p>2019 Ondrej Sika Webs / Archetype Theme</p>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

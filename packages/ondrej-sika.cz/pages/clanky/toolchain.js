@@ -15,13 +15,16 @@ let style = {
 export default () => (
   <div>
     <Head>
-      <title>Nastroje, ktere pouzivam a zjednodusuji mi praci a zivot - Ondřej Šika</title>
+      <title>
+        Nastroje, ktere pouzivam a zjednodusuji mi praci a zivot - Ondřej Šika
+      </title>
     </Head>
     <MainBar MainBarHeader="Nastroje, ktere pouzivam a zjednodusuji mi praci a zivot" />
 
     <div className="container pt-4 pb-2">
-      <p style={{color: 'gray'}} className="container mb-4">
-        Odkaz na tento clanek je take <a href="https://sika.link/toolchain">sika.link/toolchain</a>
+      <p style={{ color: "gray" }} className="container mb-4">
+        Odkaz na tento clanek je take{" "}
+        <a href="https://sika.link/toolchain">sika.link/toolchain</a>
       </p>
       <Markdown
         source={`

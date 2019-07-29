@@ -1,28 +1,27 @@
-import MainBar from '@app/ondrej-sika.cz/components/MainBar';
+import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 
-import Head from 'next/head'
+import Head from "next/head";
 
 let site = {
-  lang: 'cs'
-}
+  lang: "cs"
+};
 
 let style = {
-  fontSize: '1.4em',
-  fontWeight: 'bold',
-}
+  fontSize: "1.4em",
+  fontWeight: "bold"
+};
 
 export default () => (
   <div>
     <Head>
       <title>Proc by kazdy mel mit svoji domenu - Ondřej Šika</title>
     </Head>
-    <MainBar
-      MainBarHeader='Proc by kazdy mel mit svoji domenu'>
-    </MainBar>
+    <MainBar MainBarHeader="Proc by kazdy mel mit svoji domenu"></MainBar>
 
     <div className="container pt-4 pb-2">
-      <Markdown source={`
+      <Markdown
+        source={`
 Proc by kazdy mel mit svoji domenu? Mozna to zni jako overhead, ale mam k tomu par duvodu. Ve zkratce, byt vice nezavysly - svobodnejsi.
 
 Kdyz pouzivam klasicky Gmail, muj email muze byt \`ondrejsika@gmail.com\`. Vadi mi to nejak? Na prvni pohled to tak nemusi vypadat, ale kdyz se podivame podrobneji, zjistime ze tomu tak skutecne je.
@@ -53,7 +52,8 @@ Pokud chcete pouzivat email na vlastni domene, doporucuji Vam tyto poskytovatele
 - [Seznam Email Profi](https://www.emailprofi.cz/) - Email na vlastni domene od Seznamu, do 10 uzivatelu zdarma
 
 Zaverem chci zduraznit, ze vlastni email email je jista forma svobody a vypada to lepe. I diky tomu ze email jako \`jmenoprijmeni@gmail.com\` uz bude nejspis obsazene. Pokud mate nejaky dotaz, nebo chcete pomoc, dejte vedet.
-`}/>
+`}
+      />
     </div>
   </div>
-)
+);

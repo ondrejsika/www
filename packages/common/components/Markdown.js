@@ -22,6 +22,6 @@ let Markdown = props => {
       renderers={{ heading: HeadingRenderer }}
     />
   );
-}
+};
 
-export default Markdown
+export default Markdown;
