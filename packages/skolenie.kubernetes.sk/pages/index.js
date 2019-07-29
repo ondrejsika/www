@@ -10,7 +10,7 @@ import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import Contact from '@app/course-landing/components/Contact';
 import Head from 'next/head';
-import ReactMarkdown from 'react-markdown';
+import Markdown from "@app/common/components/Markdown";
 import site from '@app/skolenie.kubernetes.sk/config';
 
 const Index = () => (
@@ -30,19 +30,19 @@ const Index = () => (
     </Header>
     <div className="container container-width">
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Popis technologie
 Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Jak školení probíhá
 Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Co Vás naučím
 - Teoretický úvod do Kubernetes
 - Instalace Minikube a kubectl (pro ty kteří nenainstalovali doma)
@@ -55,13 +55,13 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Pro koho je školení určeno
 Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.
 `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Předchozí znalosti
 - Základy práce s Dockerem
 - Základy práce s Linuxem
@@ -69,7 +69,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
             `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Technické požadavky
 - Nainstalovaný Kubernetes, návod na instalaci: [zde](https://www.ondrej-sika.cz/kubernetes/instalace/)
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
@@ -99,13 +99,13 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
       />
 
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Mám zájem o školení
 Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/)
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Cena
 
 Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>

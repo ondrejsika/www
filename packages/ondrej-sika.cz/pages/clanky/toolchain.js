@@ -1,5 +1,5 @@
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import ReactMarkdown from "react-markdown";
+import Markdown from "@app/common/components/Markdown";
 
 import Head from "next/head";
 
@@ -23,7 +23,7 @@ export default () => (
       <p style={{color: 'gray'}} className="container mb-4">
         Odkaz na tento clanek je take <a href="https://sika.link/toolchain">sika.link/toolchain</a>
       </p>
-      <ReactMarkdown
+      <Markdown
         source={`
 Pro ty kdo me neznaji, jsem IT Konzultant, Lektor, a Architekt se zamerenim na DevOps a programator. Hodne cestuji a pracuji na cestach. Chci mit kancelar co nejvice mobilni a automatizovanou.
 
@@ -139,7 +139,6 @@ Pro sdileni hesel v teamu pouzivam [Passbolt](https://passbolt.com) na vlastnim 
 
 Malo dulezita hesla mam ulozena v Apple a v Google. Je to proste jednodusi a kdyz mi Google kompromituje heslo do Alzy, neni to tak strasny.
 `}
-        escapeHtml={false}
       />
     </div>
   </div>

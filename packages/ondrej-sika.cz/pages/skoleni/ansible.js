@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Header from '@app/ondrej-sika.cz/components/Header'
 import TextArea from '@app/ondrej-sika.cz/components/TextArea';
 import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
@@ -28,7 +28,7 @@ const Index = () => (
       logo='/static/ansible.png'>
     </Header>
     <div className='container course-page'>
-    <ReactMarkdown source={`
+    <Markdown source={`
 ### K čemu se používá?
 
 Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám ze ztratíte přehled kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
@@ -54,20 +54,20 @@ Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní kon
 
   <TwoCol
     col1={
-      <ReactMarkdown source={`
+      <Markdown source={`
 #### Předchozí znalosti
 
 - Základy práce s Linuxemm
 - Základy práce v terminálu
-      `} escapeHtml={false}/>
+      `}/>
     }
     col2={
-      <ReactMarkdown source={`
+      <Markdown source={`
 #### Technické požadavky
 
 - Nainstalovaný Ansible
 - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
-      `} escapeHtml={false}/>
+      `}/>
     }
   />
 

@@ -10,7 +10,7 @@ import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import Contact from '@app/course-landing/components/Contact';
 import Head from 'next/head';
-import ReactMarkdown from 'react-markdown';
+import Markdown from "@app/common/components/Markdown";
 import site from '@app/kubernetes-utbildning.se/config';
 
 const Index = () => (
@@ -30,19 +30,19 @@ const Index = () => (
     </Header>
     <div className="container container-width">
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Vad är Kubernetes?
 Kubernetes är en av de mest använda plattformarna för att driva Docker-containers och stöds av viktiga marknadsledare (Google, Amazon, Microsoft, etc.) via Cloud Native Computing Foundation. Kubernetes används av företag av alla storlekar, från startups till bolag.
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Kursbeskrivning
 Kursen drivs i form av en två-dagars praktisk workshop där du kommer att kunna använda allt du lär dig. Du kommer att lära dig hur man kör Kubernetes lokalt (för utveckling) och på en molnplattform, Digital Ocean. Du kommer också att lära dig den grundläggande strukturen i Kubernetes, inklusive dess komponenter. Du lär dig att skapa en Kubernetes Manifest och installationsprogram i Docker. Du kommer också att lära dig hur man arbetar med behörigheter och hur man använder (och skapar) paket i Helm.
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Kursplan
 - Teori-introduktion till Kubernetes
 - Så här installeras lokalt (minikube och kubectl)
@@ -55,13 +55,13 @@ Kursen drivs i form av en två-dagars praktisk workshop där du kommer att kunna
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Vem bör delta
 Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina applikationer i Kubernetes.
 `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Skicklighetskrav
 - Basic [Docker](https://ondrej-sika.se/utbildning/docker/) kunskap
 - Grundläggande Linux-kunskap
@@ -69,7 +69,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
             `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Tekniska krav
 - Har Kubernetes installerat, instruktioner: [här] (https://ondrej-sika.se/kubernetes/install/)
 - Tillgång till internet (https, ssh) - bättre utan företags-proxy
@@ -80,11 +80,11 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg" >
-        <ReactMarkdown source={`
+        <Markdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
 Om du har några frågor - hör gärna från dig!
-`} escapeHtml={false}/>
+`}/>
       </TextFrameWithImage>
 
       <MyClients lang={site.lang}/>
@@ -101,7 +101,7 @@ Om du har några frågor - hör gärna från dig!
       />
 
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Prissättning
 Pris för två dagars hands-on Kubernetes-utbildning
 - Öppet för allmänheten (självfinansierad): 800 GBP exkl. MOMS
@@ -110,7 +110,7 @@ Pris för två dagars hands-on Kubernetes-utbildning
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Jag vill ha Kubernetes-utbildning
 
 Om du är intresserad i vår Kubernetes workshop eller om ni har några frågor, kontakta mig gärna.
@@ -122,11 +122,11 @@ Om du är intresserad i vår Kubernetes workshop eller om ni har några frågor,
         </p>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Relaterade Kurser
 
 [Docker](https://ondrej-sika.se/utbildning/docker)
-`} escapeHtml={false}/>
+`}/>
       </TextFrame>
     </div>
     <FooterOndrejSika />

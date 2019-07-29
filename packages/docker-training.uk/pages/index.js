@@ -10,7 +10,7 @@ import Recommendation from '@app/course-landing/components/Recommendation';
 import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
-import ReactMarkdown from 'react-markdown';
+import Markdown from "@app/common/components/Markdown";
 import site from '@app/docker-training.uk/config';
 
 
@@ -31,19 +31,19 @@ const Index = () => (
     </Header>
     <div className="container container-width">
     <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### What is Docker?
 Docker can make your life easier through simplifying the process of R&D, testing, and software usage in your business. Run everything, everywhere. Don’t lose your time waiting for server setups or random library updates. Have the environment as a part of your application.
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Course Description
 During the two-day workshop, you’ll be shown everything you need to know to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
 `}/>
       </TextFrame>
       <TextFrame header="">
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Course Outline
 - Theory introduction to containers & Docker
 - How to install Docker at home or work (for those who did not - do so)
@@ -55,20 +55,20 @@ During the two-day workshop, you’ll be shown everything you need to know to be
 `}/>
       </TextFrame>
       <TextFrame header="">
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Who Should Attend
 This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it is something they can implement.
 `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Skill Requirements
 - Basic Linux knowledge
 - Basic Terminal knowledge
 `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Technical Requirements
 - Have Docker installed, instructions: [here](https://ondrej-sika.uk/docker/install/)
 - Access to the internet - ideally without corporate proxy, or proxy set up in Docker
@@ -80,11 +80,11 @@ This training course is primarily aimed at complete beginners who have either no
         header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg"
         >
-          <ReactMarkdown source={`
+          <Markdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have four years of experience with Docker on the commercial development side. Other than that I use it daily for development, as well as production, and I cannot imagine working without it.
 <br/><br/>
 Get in touch if you have any questions - Happy to hearing from you!
-`} escapeHtml={false}/>
+`}/>
       </TextFrameWithImage>
 
       <MyClients HeaderClients="My clients"/>
@@ -101,7 +101,7 @@ Get in touch if you have any questions - Happy to hearing from you!
         }
       />
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Pricing
 Price for two days Docker training
 - Open to public (self-funded): 800 GBP excl. VAT
@@ -110,7 +110,7 @@ Price for two days Docker training
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### I Want the Docker Training
 
 If you are interested in Docker workshop or have any questions, please let me know.
@@ -121,11 +121,11 @@ If you are interested in Docker workshop or have any questions, please let me kn
         </p>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Related Courses
 
 [Kubernetes](https://ondrej-sika.uk/training/kubernetes)
-`} escapeHtml={false}/>
+`}/>
       </TextFrame>
     </div>
     <FooterOndrejSika />

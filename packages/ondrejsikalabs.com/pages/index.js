@@ -1,5 +1,5 @@
 import '../css'
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Gauges from '@app/common/components/Gauges'
 import GoogleAnalytics from '@app/common/components/GoogleAnalytics';
 import Head from 'next/head'
@@ -11,7 +11,7 @@ const Index = () => (
       <title>Ondrej Sika Labs</title>
     </Head>
     <div className="mt-4">
-      <ReactMarkdown source={`
+      <Markdown source={`
 # Ondrej Sika Labs
 
 __Company which supports [Ondrej Sika](https://ondrejsika.com)'s freelance activities, mostly IT & DevOps trainings and consulting.__

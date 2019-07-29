@@ -3,7 +3,7 @@ import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 
 import Head from 'next/head'
 
@@ -32,7 +32,7 @@ const Install = () => (
     `}} />
 
     <div className="container pt-4 pb-2 post-body">
-      <ReactMarkdown source={`
+      <Markdown source={`
 Nabízím možnost spolupráce jako Váš externí lektor. Mohu pro Vás školit své stávající kurzy a workshopy, mohu pro Vás připravit kurz na přání nebo školit nějaký Váš stávající kurz.
 
 Moje cena je 20 000 CZK za den školení, ale jsem otevřen diskuzi.
@@ -44,7 +44,7 @@ Mám zkušenosti v oblastech:
 - Docker, Kubernetes, Ansible
 
 Nebo cokoliv co skolim – [vsechny kurzy](/skoleni).  Každé školení Vám mohu upravit na míru.
-`} escapeHtml={false}/>
+`}/>
     </div>
   </div>
 )

@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Header from '@app/ondrej-sika.cz/components/Header'
 import TextArea from '@app/ondrej-sika.cz/components/TextArea'
 import TwoCol from '@app/ondrej-sika.cz/components/TwoCol'
@@ -24,7 +24,7 @@ const Index = () => (
       logo='/static/kubernetes.png'>
     </Header>
     <div className='container course-page'>
-    <ReactMarkdown source={`
+    <Markdown source={`
 ### Co je to Kubernetes
 Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
 ### Jak školení probíhá
@@ -42,19 +42,19 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
 Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.`}/>
       <TwoCol
         col1={
-          <ReactMarkdown source={`
+          <Markdown source={`
 #### Předchozí znalosti
 - Základy práce s Linuxemm
 - Základy práce v terminálu
 - Základy práce s Dockerem
-          `} escapeHtml={false}/>
+          `}/>
         }
         col2={
-          <ReactMarkdown source={`
+          <Markdown source={`
 #### Technické požadavky
 - Nainstalovaný Kubernetes
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
-          `} escapeHtml={false}/>
+          `}/>
         }
       />
     </div>

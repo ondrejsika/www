@@ -6,7 +6,7 @@ import MyClients from '@app/course-landing/components/MyClients';
 import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
-import ReactMarkdown from 'react-markdown';
+import Markdown from "@app/common/components/Markdown";
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Head from 'next/head';
@@ -29,19 +29,19 @@ const Index = () => (
     </Header>
     <div className="container container-width">
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### What is Git?
 Git is a modern versioning tool that has become an industry standard among developers. Individuals, startups and corporations use it on a daily basis. Git offers a simple simultaneous collaboration with more people on different parts of a project. You won't face the issue of disrupting each other's work or not being able to access the latest versions. The collaboration on a project can also be improved using Gitlab, a platform for the design, development and running of software projects.
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Course Description
 During this one day hands-on workshop, you will find out why it is beneficial to use Git, how it works (why there are no substitutes) and best practice. You will be shown everything from the installation and basic Git setup, simple individual work in one branch to work in a team with multiple branches using merge strategies (merge, rebase) and Gitlab. The pros and cons of both will be explained, and you can choose which one is better suited for your needs. Also, you will be shown how to get out of unexpected situations like 'I deleted everything by accident' etc.
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Course Outline
 - Installation and Configuration
 - New Repository
@@ -56,14 +56,14 @@ During this one day hands-on workshop, you will find out why it is beneficial to
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Who Should Attend
 This training course is primarily aimed at developers who don't do versioning or aren't using Git. Also, for those who make use of Git for 100% (git commit, git pull, git push). You can find a use for Git when it comes to a plentitude of projects, like small websites or bigger projects. Also, the course is useful for people that don't code frequently like DevOps.
 
 `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Skill Requirements
 - Basic Terminal knowledge
 - Basic Git knowledge beneficial
@@ -71,7 +71,7 @@ This training course is primarily aimed at developers who don't do versioning or
             `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Technical Requirements
 - Have Git installed
 - Access to the internet (https) - ideally without corporate proxy
@@ -84,11 +84,11 @@ This training course is primarily aimed at developers who don't do versioning or
         header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg"
       >
-        <ReactMarkdown source={`
+        <Markdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I have more than 7 years of experience with Git on daily basis of software development. I can't imagine the day-to-day work without Git. Next to source codes, I also version configuration and infrastucture (yes, using Terraform). I train the topics surrounding versioning and software development for over five years. This course is the one that I started with and is still popular.
 <br/><br/>
 Get in touch if you have any questions - happy hearing from you!
-`} escapeHtml={false}/>
+`}/>
         </TextFrameWithImage>
 
       <MyClients HeaderClients="References" />
@@ -105,7 +105,7 @@ Get in touch if you have any questions - happy hearing from you!
       />
 
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Pricing
 Price for one day hands-on Git training
 
@@ -115,7 +115,7 @@ Price for one day hands-on Git training
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### I Want the Git Training
 
 If you are interested in Git workshop or any questions, let me know.
@@ -126,7 +126,7 @@ If you are interested in Git workshop or any questions, let me know.
         </p>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Related Courses
 
 [Gitlab CI](https://ondrej-sika.se/utbildning/gitlab-ci)

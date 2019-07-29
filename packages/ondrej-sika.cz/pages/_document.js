@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Header from '@app/ondrej-sika.cz/components/Header'
 import TextArea from '@app/ondrej-sika.cz/components/TextArea';
 import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';

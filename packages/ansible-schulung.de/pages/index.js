@@ -15,7 +15,7 @@ import ButtonOutline from '@app/course-landing/components/ButtonOutline';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Contact from '@app/course-landing/components/Contact';
 import Head from 'next/head';
-import ReactMarkdown from 'react-markdown';
+import Markdown from "@app/common/components/Markdown";
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import site from '@app/ansible-schulung.de/config';
 
@@ -36,19 +36,19 @@ const Index = () => (
     </Header>
     <div className="container container-width">
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Co je to Ansible
 Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Jak školení probíhá
 Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Co Vás naučím
 - Teoretický úvod do Dockeru
 - Instalace Dockeru (pro ty kteří nenainstalovali doma)
@@ -60,20 +60,20 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Pro koho je školení určeno
 Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
         `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Předchozí znalosti
 - Základy práce s Linuxem
 - Základy práce v terminálu
             `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Technické požadavky
 - Nainstalovaný Docker, [návod na instalaci](https://www.ondrej-sika.cz/docker/instalace/)
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
@@ -85,7 +85,7 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
         header="Lektor: Ondřej Šika"
         imgUrl="/static/ondrejsika.jpg"
         >
-        <ReactMarkdown source={`
+        <Markdown source={`
 Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
 Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
         `}/>
@@ -106,7 +106,7 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
       />
 
       <TextFrame>
-      <ReactMarkdown source={`
+      <Markdown source={`
 ### Mám zájem o školení">
 Pokud máte zájem o školení, neváhejte mě kontaktovat
         `}/>

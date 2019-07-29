@@ -6,7 +6,7 @@ import MyClients from '@app/course-landing/components/MyClients';
 import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Head from 'next/head';
@@ -29,19 +29,19 @@ const Index = () => (
     </Header>
     <div className="container container-width">
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Co je to Git?
 Git je moderní verzovaci nástroj, který se stal defaco standatem mezi vývojáři. Používají jej na denní bazy jednotlivci, startupy i korporace. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně ani by jste si zasahovali do rozdělaných věcí nebo je jinak narušovali. Spolupráci na vývoji projektu ještě zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software (více o Gitlabu v samostatném kurzu).
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Jak školení probíhá
 Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise. Ukážeme si vše od instalace a základního nastavení Gitu, přez jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacich strategii (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako omylem jsem si všechno smazal a podobně.
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Co Vás naučím
 - Instalace a konfigurace GITu
 - Vytvořit nový repozitář
@@ -53,13 +53,13 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Pro koho je školení určeno
 Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.
 `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Předchozí znalosti
 - Základy programování
 - Základy práce v terminálu výhodou
@@ -67,7 +67,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
             `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Technické požadavky
 - Nainstalovaný Git
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
@@ -79,7 +79,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
         header="Lektor: Ondřej Šika"
         imgUrl="/static/ondrejsika.jpg"
       >
-        <ReactMarkdown source={`
+        <Markdown source={`
 Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vedu osobně. S GITem mám více než 7 let zkušeností v rámci komerčního vývoje software. Práci bez Gitu si dnes nedokážu vůbec představit. Kromě zdrojových kódů verzuji konfiguraci, nastavení sertveru, …Problematiku kolem verzování a vývoje software obecně školím více než 3 roky. Git je kurz se, kterým jsem začínal a pořád je populární.
         `}/>
         </TextFrameWithImage>
@@ -97,14 +97,14 @@ Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny 
         }
       />
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Mám zájem o školení
 Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/git/poptavka/)
 `}/>
       </TextFrame>
 
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Cena
 Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/git/poptavka/) nebo mi napište email na ondrej@ondrejsika.com
 - Otevřený termín (self funded): 4 999 CZK bez DPH

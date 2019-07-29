@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Header from '@app/ondrej-sika.cz/components/Header'
 import TextArea from '@app/ondrej-sika.cz/components/TextArea';
 import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
@@ -24,7 +24,7 @@ const Index = () => (
       logo='/static/git.svg'>
     </Header>
     <div className='container course-page'>
-      <ReactMarkdown source={`
+      <Markdown source={`
 ### Co je to Git
 Git je moderní verzovaci nástroj, který se stal defaco standatem mezi vývojáři. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně, aniž by jste si zasahovali do rozdělaných projektů nebo je jinak narušovali. Spolupráci na vývoji projektu dále zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software.
 ### Jak školení probíhá
@@ -41,19 +41,19 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
 Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.`}/>
       <TwoCol
         col1={
-          <ReactMarkdown source={`
+          <Markdown source={`
 #### Předchozí znalosti
 - Základy práce s Linuxemm
 - Základy práce v terminálu
 - Základní znalost Gitu výhodou
-          `} escapeHtml={false}/>
+          `}/>
         }
         col2={
-          <ReactMarkdown source={`
+          <Markdown source={`
 #### Technické požadavky
 - Nainstalovaný Git
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
-          `} escapeHtml={false}/>
+          `}/>
         }
       />
     </div>

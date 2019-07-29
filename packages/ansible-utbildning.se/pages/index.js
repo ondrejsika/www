@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Header from '@app/course-landing/components/Header'
 import HeaderLink from '@app/course-landing/components/HeaderLink'
 import TextFrame from '@app/course-landing/components/TextFrame';
@@ -31,19 +31,19 @@ const Index = () => (
     </Header>
     <div className="container container-width">
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Vad är Ansible?
 Ansible är ett verktyg för mass-konfiguration och installations-hantering. Du deklarerar din önskade ställning av servern och tjänsterna, och Ansible kommer att verkställa det. Ni behöver inte oroa er vilken skick servern och applikationerna är just nu; Ansible omvandlar dem till den önskade ställningen. Hela konfigurationen är driven av Git, så ni kommer aldrig att missa vad som är distribuerat någonstans och ni kommer inte missa några viktiga åtgärder. Ansible kommer att hjälpa er med applikationsinstallationer samt snabbare och säkrare server-administration.
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Kursbeskrivning
 Utbildningen drivs som under en två-dagars praktisk workshop där du kan testa vad du lär dig i praktiken. Vi installerar Ansible tillsammans och beskriver hur det fungerar och vad är de grundläggande begreppen. Vi går igenom hur du konfigurerar en server (tester på DigitalOcean) och distribuerar ett program från start till slut. Från och med installationen av systempaket, nedladdning av program från Git, skapande av mallar för konfigurationsskript och konfiguration av hemligheter (t.ex. lösenord). Efter denna kurs kommer du att kunna använda Ansible dagligen och förenkla installations- och konfigurationsrutiner.
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Kursplan
 
 - Grundläggande insikter i automatisering
@@ -55,29 +55,29 @@ Utbildningen drivs som under en två-dagars praktisk workshop där du kan testa 
 - Secrets
 - Skriva egna moduler
 - Ansible & CI / CD (Gitlab CI)
-        `} escapeHtml={false}/>
+        `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Vem bör delta
 This training is primarily aimed at admins and DevOps who want to start using Ansible. At the same time, developers who deploy their applications (even into test environments) and want to simplify this process, will also find it useful.
 Denna utbildning riktar sig främst till administratörer och DevOps som vill börja använda Ansible. Kursen är också användbart för utvecklare som distribuerar sina applikationer (även i testmiljöer) och vill förenkla denna process.
         `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Skicklighetskrav
 - Grundläggande Linux kunskap
 - Grundläggande terminalkunskap
-            `} escapeHtml={false}/>
+            `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 
 #### Tekniska krav
 - Har Ansible installerat, instruktioner: [här] (https://ondrej-sika.se/ansible/install/)
 - Tillgång till internet (https, ssh) - bättre utan företags-proxy
-            `} escapeHtml={false}/>
+            `}/>
           }
         />
       </TextFrame>
@@ -85,7 +85,7 @@ Denna utbildning riktar sig främst till administratörer och DevOps som vill b�
         header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg"
         >
-        <ReactMarkdown source={`
+        <Markdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
         `}/>
       </TextFrameWithImage>
@@ -103,7 +103,7 @@ En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt D
         }
       />
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Prissättning
 
 Pris för två dagars hands-on Ansibleträning
@@ -111,22 +111,22 @@ Pris för två dagars hands-on Ansibleträning
 - Öppet för allmänheten (självfinansierad): 800 GBP exkl. MOMS
 - Öppet för allmänheten (företagsfinansierad): 1000 GBP exkl. MOMS
 - Utbildning på plats (på plats): 3000 GBP exkl. MOMS
-`} escapeHtml={false}/>
+`}/>
       </TextFrame>
 
       <TextFrame>
-      <ReactMarkdown source={`
+      <Markdown source={`
 ### Kontakt
 
 #### Ondrej Sika
 <ondrej@ondrejsika.com>
 <br>[ondrej-sika.se](https://ondrej-sika.se)
 <br>[+420 773 452 376](tel:+420773452376)
-`} escapeHtml={false}/>
+`}/>
       </TextFrame>
 
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 
 ### Jag vill ha Ansible-träning
 
@@ -138,7 +138,7 @@ Om du är intresserad i vår Ansible workshop eller om ni har några frågor, ko
         </p>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Relaterade Kurser
 
 [Gitlab CI](https://ondrej-sika.se/utbildning/gitlab-ci)

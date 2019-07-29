@@ -1,5 +1,5 @@
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 
 import Head from 'next/head'
 
@@ -22,11 +22,11 @@ export default () => (
     </MainBar>
 
     <div className="container pt-4 pb-2">
-      <ReactMarkdown source={`
+      <Markdown source={`
 - [Nastroje, ktere pouzivam a zjednodusuji mi praci a zivot](/clanky/toolchain)
 - [Proc by kazdy mel mit svoji domenu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/)
 - [Vyber osobni wiki](/clanky/vyber-osobni-wiki)
-`} escapeHtml={false}/>
+`}/>
     </div>
   </div>
 )

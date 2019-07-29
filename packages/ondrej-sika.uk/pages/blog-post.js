@@ -6,7 +6,7 @@ import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 
 
 import Head from 'next/head'
@@ -38,7 +38,7 @@ class BlogPost extends React.Component {
         </MainBar>
 
         <div className="container pt-4">
-          <ReactMarkdown source={post.content} escapeHtml={false}/>
+          <Markdown source={post.content}/>
         </div>
       </div>
     );

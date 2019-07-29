@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Header from '@app/ondrej-sika.cz/components/Header'
 import TextArea from '@app/ondrej-sika.cz/components/TextArea';
 import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
@@ -23,7 +23,7 @@ const Index = () => (
       logo='/static/docker.svg'>
     </Header>
     <div className='container course-page'>
-      <ReactMarkdown source={`
+      <Markdown source={`
 ### K čemu se používá?
 Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
 ### Jak školení probíhá
@@ -40,18 +40,18 @@ Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytv
 Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.`}/>
       <TwoCol
         col1={
-          <ReactMarkdown source={`
+          <Markdown source={`
 #### Předchozí znalosti
 - Základy práce s Linuxemm
 - Základy práce v terminálu
-          `} escapeHtml={false}/>
+          `}/>
         }
         col2={
-          <ReactMarkdown source={`
+          <Markdown source={`
 #### Technické požadavky
 - Nainstalovány Docker
 - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
-          `} escapeHtml={false}/>
+          `}/>
         }
       />
     </div>

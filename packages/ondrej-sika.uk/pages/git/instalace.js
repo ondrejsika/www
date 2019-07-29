@@ -3,7 +3,7 @@ import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 
 import Head from 'next/head'
 
@@ -25,7 +25,7 @@ const Install = () => (
     </MainBar>
 
     <div className="container pt-4 pb-2">
-      <ReactMarkdown source={`
+      <Markdown source={`
 ### Linux
 
 Prikazem
@@ -44,7 +44,7 @@ Pokud nemate __brew__, muzete ho naistalovat z oficialniho webu [brew.sh](https:
 ### Windows
 
 Stahnout installer z oficialnich stranek [git-scm.com](https://git-scm.com)
-`} escapeHtml={false}/>
+`}/>
     </div>
   </div>
 )

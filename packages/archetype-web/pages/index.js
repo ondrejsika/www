@@ -2,7 +2,7 @@ import '../css'
 import Footer from '@app/archetype-theme/components/Footer'
 import Alert from '@app/archetype-theme/components/Alert'
 import Person from '@app/archetype-theme/components/Person'
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import DemoTable from '@app/archetype-theme/components/DemoTable';
 import Translate from '@app/common/components/Translate'
 import BootstrapJS from '@app/common/components/BootstrapJS'
@@ -44,7 +44,7 @@ const Index = () => (
       <input type="text" name="data" defaultValue="Example form value" />
       <input type="submit" value="Submit" />
     </Former2>
-    <ReactMarkdown source={`
+    <Markdown source={`
 # Header h1
 ## Header h2
 ### Header h3

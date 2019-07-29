@@ -1,5 +1,5 @@
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 
 import Head from 'next/head'
 
@@ -22,7 +22,7 @@ export default () => (
     </MainBar>
 
     <div className="container pt-4 pb-2">
-      <ReactMarkdown source={`
+      <Markdown source={`
 ### Co je Brew
 
 Homebrew je balickovaci system pro Mac, podobny jako je Apt nebo Yum na Linuxu. Vice informaci naleznete na [brew.sh](https://brew.sh).
@@ -72,7 +72,7 @@ Pro instalaci balicku z \`Brewfile\` pouzijte prikaz
     brew bundle
 
 Ja mam tento soubor ([Brewfile](https://github.com/ondrejsika/dotfiles/blob/master/mac/brew/Brewfile)) verzovany v repozitari [dotfiles](https://github.com/ondrejsika/dotfiles), pak dva skripty, jednim jej [aktualizuji](https://github.com/ondrejsika/dotfiles/blob/master/brew-save.sh) a druhym z nej [instaluji](https://github.com/ondrejsika/dotfiles/blob/master/brew-install.sh).
-`} escapeHtml={false}/>
+`}/>
     </div>
   </div>
 )

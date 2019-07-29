@@ -1,5 +1,5 @@
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 
 import Head from 'next/head'
 
@@ -22,9 +22,9 @@ export default () => (
     </MainBar>
 
     <div className="container pt-4 pb-2">
-      <ReactMarkdown source={`
+      <Markdown source={`
 Na clanku pracuji ...
-`} escapeHtml={false}/>
+`}/>
     </div>
   </div>
 )

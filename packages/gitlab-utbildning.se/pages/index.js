@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Header from '@app/course-landing/components/Header'
 import HeaderLink from '@app/course-landing/components/HeaderLink'
 import TextFrame from '@app/course-landing/components/TextFrame';
@@ -30,13 +30,13 @@ const Index = () => (
     </Header>
     <div className="container container-width">
       <TextFrame>
-      <ReactMarkdown source={`
+      <Markdown source={`
 ### Vad är Cl?
 Kontinuerlig integration (Continuous Integration på enelska; CI eller CI / CD) är ett verktyg som automatiserar rutinmässiga uppgifter som körtest, kodkvalitet, eller implementering. Det möjliggör snabbare ändringar i master och snabbare implementering. EN stor fördel med Gitlab CI är dess Docker-support; du kan enkelt kombinera Docker-bilder eller köra test i containers.
         `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 
 ### Kursbeskrivning
 Kursen drivs i form av en en-dags hands-on-workshop där du lär dig vikten av CI, de olika versionerna av Gitlab CI och övningar att skriva CI-script för ett testprojekt. Resultatet kommer att vara en skript för ett enkelt projekt som innehåller applikationsbyggnadsjobb, från test till implementering.
@@ -46,7 +46,7 @@ This course is run in the form of a one day hands-on workshop where you will lea
 `}/>
       </TextFrame>
       <TextFrame>
-      <ReactMarkdown source={`
+      <Markdown source={`
 ### Course outline
 - Generic introduction to CI
 - Introduction to Gitlab CI
@@ -55,28 +55,28 @@ This course is run in the form of a one day hands-on workshop where you will lea
 - Creation of CI Pipelines
 - Deployment Automatisation
 - Docker and CI
-        `} escapeHtml={false}/>
+        `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Vem bör delta
 Kursen riktar sig främst till utvecklare som använder Gitlab och vill börja använda Gitlab CI. Samtidigt så kan Gitlab CI vara anledningen till att folk överför till Gitlab. Kursen är också användbar för DevOps som vill förenkla sina rutinuppgifter med implementeringsautomatisering.
         `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Skicklighetskrav
 - Grundläggande Linux-kunskap
 - Grundläggande terminalkunskap
 - Git-kunskap behövs icke, men hjälper - [Git utbildning](https://ondrej-sika.se/training/git/)
 - Docker-kunskap behövs icke, men hjälper - [Docker utbildning](https://ondrej-sika.se/training/docker/)
-            `} escapeHtml={false}/>
+            `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Tekniska krav
 - Tillgång till internet - bättre utan företags-proxy
-            `} escapeHtml={false}/>
+            `}/>
           }
         />
       </TextFrame>
@@ -84,11 +84,11 @@ Kursen riktar sig främst till utvecklare som använder Gitlab och vill börja a
         header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg"
         >
-        <ReactMarkdown source={`
+        <Markdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
 Om du har några frågor - hör gärna från dig!
-        `} escapeHtml={false}/>
+        `}/>
       </TextFrameWithImage>
 
       <MyClients HeaderClients="Moji nejvýznamější klienti"/>
@@ -105,7 +105,7 @@ Om du har några frågor - hör gärna från dig!
         }
       />
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Prissättning
 
 Pris för två dagars hands-on Git-utbildning
@@ -116,7 +116,7 @@ Pris för två dagars hands-on Git-utbildning
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Jag vill ha Gitlab CI-utbildning
 
 Om du är intresserad i vår Gitlab CI workshop eller om ni har några frågor, kontakta mig gärna.
@@ -127,12 +127,12 @@ Om du är intresserad i vår Gitlab CI workshop eller om ni har några frågor, 
         </p>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Related Courses
 
 [Git](https://ondrej-sika.se/utbildning/gitlab-ci)
 <br>[Docker](https://ondrej-sika.se/utbildning/docker)
-`} escapeHtml={false}/>
+`}/>
       </TextFrame>
     </div>
     <FooterOndrejSika />

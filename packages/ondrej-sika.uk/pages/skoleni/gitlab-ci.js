@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown'
+import Markdown from "@app/common/components/Markdown";
 import Header from '@app/ondrej-sika.cz/components/Header'
 import TextArea from '@app/ondrej-sika.cz/components/TextArea';
 import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
@@ -23,7 +23,7 @@ const Index = () => (
       logo='/static/gitlab-ci.svg'>
     </Header>
     <div className='container course-page'>
-    <ReactMarkdown source={`
+    <Markdown source={`
 ### K čemu se používá ?
 Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
 ### Jak školení probíhá
@@ -40,18 +40,18 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
 Školení je primárně určeno vývojářům kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.`}/>
       <TwoCol
         col1={
-          <ReactMarkdown source={`
+          <Markdown source={`
 #### Předchozí znalosti
 - Základy práce s Linuxem
 - Základy práce v terminálu
 - Základní znalost Gitu výhodou - [Školení Git](/skoleni/git)
-          `} escapeHtml={false}/>
+          `}/>
         }
         col2={
-          <ReactMarkdown source={`
+          <Markdown source={`
 #### Technické požadavky
 - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
-          `} escapeHtml={false}/>
+          `}/>
         }
       />
     </div>

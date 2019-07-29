@@ -10,7 +10,7 @@ import Recommendation from '@app/course-landing/components/Recommendation';
 import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
-import ReactMarkdown from 'react-markdown';
+import Markdown from "@app/common/components/Markdown";
 import site from '@app/docker-utbildning.se/config';
 
 
@@ -31,19 +31,19 @@ const Index = () => (
     </Header>
     <div className="container container-width">
     <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Vad är Docker?
 Docker kan göra ditt liv enklare genom att förenkla processen för FoU, testning, och programvara i din verksamhet. Kör allt, överallt. Du beöver inte spendera tid på att vänta på serveruppsättningar eller slumpmässiga biblioteks-uppdateringar. Ha miljön som en del av din applikation.
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Kursbeskrivning
 Under denna  två-dagars workshopen så kommer du att bli visad allt du behöver för att kunna använda Docker - från att skapa en anpassad containerbild till Swarm-utnyttjande. Kursen är väldigt praktisk, och du kommer att kunna använda allt du lär dig.
 `}/>
       </TextFrame>
       <TextFrame header="">
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Kursplan
 - Teori-introduktion av containrar & Docker
 - Hur man installerar Docker hemma eller på jobbet (för dem som inte gjorde det)
@@ -55,21 +55,21 @@ Under denna  två-dagars workshopen så kommer du att bli visad allt du behöver
 `}/>
       </TextFrame>
       <TextFrame header="">
-        <ReactMarkdown source={`
+        <Markdown source={`
 
 ### Vem bör delta
 Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller väldigt lite erfarenhet med Docker. Mest av allt, utvecklare och / eller devOps (serveradministratörer), eller de som vill använda Docker i praktiken eller vill veta mer om sitt syfte och om det är något de kan genomföra.
 `}/>
         <TwoCol
           col1={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Skicklighetskrav
 - Grundläggande Linux kunskap
 - Grundläggande terminalkunskap
 `}/>
           }
           col2={
-            <ReactMarkdown source={`
+            <Markdown source={`
 #### Tekniska krav
 - Har Docker installerat, instruktioner: [här] (https://ondrej-sika.se/docker/install/)
 - Tillgång till internet (https, ssh) - bättre utan företags-proxy, eller proxy i Docker
@@ -81,11 +81,11 @@ Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller 
         header="Lektor: Ondrej Sika"
         imgUrl="/static/ondrejsika.jpg"
         >
-          <ReactMarkdown source={`
+          <Markdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
 Om du har några frågor - hör gärna från dig!
-`} escapeHtml={false}/>
+`}/>
       </TextFrameWithImage>
 
       <MyClients HeaderClients="My clients"/>
@@ -102,7 +102,7 @@ Om du har några frågor - hör gärna från dig!
         }
       />
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Prissättning
 Pris för två dagars hands-on docker-utbildning
 - Öppet för allmänheten (självfinansierad): 800 GBP exkl. MOMS
@@ -111,7 +111,7 @@ Pris för två dagars hands-on docker-utbildning
 `}/>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Jag vill ha Docker-utbildning
 
 Om du är intresserad i vår Docker workshop eller om ni har några frågor, kontakta mig gärna.
@@ -122,11 +122,11 @@ Om du är intresserad i vår Docker workshop eller om ni har några frågor, kon
         </p>
       </TextFrame>
       <TextFrame>
-        <ReactMarkdown source={`
+        <Markdown source={`
 ### Relaterade Kurser
 
 [Kubernetes](https://ondrej-sika.se/utbildning/kubernetes)
-`} escapeHtml={false}/>
+`}/>
       </TextFrame>
     </div>
     <FooterOndrejSika />
