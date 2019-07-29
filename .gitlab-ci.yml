@@ -15,6 +15,8 @@ variables:
 ansible-schulung.de build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-ansible-schulung.de
@@ -24,20 +26,18 @@ ansible-schulung.de build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-schulung.de/**/*
+      - yarn.lock
   artifacts:
     name: ansible-schulung.de
     paths:
       - packages/ansible-schulung.de/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 ansible-schulung.de build docker:
   dependencies:
     - ansible-schulung.de build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -50,6 +50,7 @@ ansible-schulung.de build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-schulung.de/**/*
+      - yarn.lock
 
 ansible-schulung.de dev deploy:
   stage: deploy_dev
@@ -63,6 +64,7 @@ ansible-schulung.de dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-schulung.de/**/*
+      - yarn.lock
   environment:
     name: dev ansible-schulung.de
     url: https://ansible-schulung.de.xsika.cz
@@ -81,6 +83,7 @@ ansible-schulung.de prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-schulung.de/**/*
+      - yarn.lock
   environment:
     name: prod ansible-schulung.de
     url: https://ansible-schulung.de
@@ -88,6 +91,8 @@ ansible-schulung.de prod deploy:
 ansible-skoleni.cz build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-ansible-skoleni.cz
@@ -97,20 +102,18 @@ ansible-skoleni.cz build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-skoleni.cz/**/*
+      - yarn.lock
   artifacts:
     name: ansible-skoleni.cz
     paths:
       - packages/ansible-skoleni.cz/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 ansible-skoleni.cz build docker:
   dependencies:
     - ansible-skoleni.cz build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -123,6 +126,7 @@ ansible-skoleni.cz build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-skoleni.cz/**/*
+      - yarn.lock
 
 ansible-skoleni.cz dev deploy:
   stage: deploy_dev
@@ -136,6 +140,7 @@ ansible-skoleni.cz dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-skoleni.cz/**/*
+      - yarn.lock
   environment:
     name: dev ansible-skoleni.cz
     url: https://ansible-skoleni.cz.xsika.cz
@@ -154,6 +159,7 @@ ansible-skoleni.cz prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-skoleni.cz/**/*
+      - yarn.lock
   environment:
     name: prod ansible-skoleni.cz
     url: https://ansible-skoleni.cz
@@ -161,6 +167,8 @@ ansible-skoleni.cz prod deploy:
 archetype-web build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-archetype-web
@@ -170,20 +178,18 @@ archetype-web build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/archetype-web/**/*
+      - yarn.lock
   artifacts:
     name: archetype-web
     paths:
       - packages/archetype-web/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 archetype-web build docker:
   dependencies:
     - archetype-web build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -196,10 +202,13 @@ archetype-web build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/archetype-web/**/*
+      - yarn.lock
 
 dockerschulung.de build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-dockerschulung.de
@@ -209,20 +218,18 @@ dockerschulung.de build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/dockerschulung.de/**/*
+      - yarn.lock
   artifacts:
     name: dockerschulung.de
     paths:
       - packages/dockerschulung.de/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 dockerschulung.de build docker:
   dependencies:
     - dockerschulung.de build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -235,6 +242,7 @@ dockerschulung.de build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/dockerschulung.de/**/*
+      - yarn.lock
 
 dockerschulung.de dev deploy:
   stage: deploy_dev
@@ -248,6 +256,7 @@ dockerschulung.de dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/dockerschulung.de/**/*
+      - yarn.lock
   environment:
     name: dev dockerschulung.de
     url: https://dockerschulung.de.xsika.cz
@@ -266,6 +275,7 @@ dockerschulung.de prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/dockerschulung.de/**/*
+      - yarn.lock
   environment:
     name: prod dockerschulung.de
     url: https://dockerschulung.de
@@ -273,6 +283,8 @@ dockerschulung.de prod deploy:
 gitlab-ci.cz build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-gitlab-ci.cz
@@ -282,20 +294,18 @@ gitlab-ci.cz build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-ci.cz/**/*
+      - yarn.lock
   artifacts:
     name: gitlab-ci.cz
     paths:
       - packages/gitlab-ci.cz/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 gitlab-ci.cz build docker:
   dependencies:
     - gitlab-ci.cz build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -308,6 +318,7 @@ gitlab-ci.cz build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-ci.cz/**/*
+      - yarn.lock
 
 gitlab-ci.cz dev deploy:
   stage: deploy_dev
@@ -321,6 +332,7 @@ gitlab-ci.cz dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-ci.cz/**/*
+      - yarn.lock
   environment:
     name: dev gitlab-ci.cz
     url: https://gitlab-ci.cz.xsika.cz
@@ -339,6 +351,7 @@ gitlab-ci.cz prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-ci.cz/**/*
+      - yarn.lock
   environment:
     name: prod gitlab-ci.cz
     url: https://gitlab-ci.cz
@@ -346,6 +359,8 @@ gitlab-ci.cz prod deploy:
 kubernetes-schulung.de build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-kubernetes-schulung.de
@@ -355,20 +370,18 @@ kubernetes-schulung.de build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-schulung.de/**/*
+      - yarn.lock
   artifacts:
     name: kubernetes-schulung.de
     paths:
       - packages/kubernetes-schulung.de/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 kubernetes-schulung.de build docker:
   dependencies:
     - kubernetes-schulung.de build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -381,6 +394,7 @@ kubernetes-schulung.de build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-schulung.de/**/*
+      - yarn.lock
 
 kubernetes-schulung.de dev deploy:
   stage: deploy_dev
@@ -394,6 +408,7 @@ kubernetes-schulung.de dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-schulung.de/**/*
+      - yarn.lock
   environment:
     name: dev kubernetes-schulung.de
     url: https://kubernetes-schulung.de.xsika.cz
@@ -412,6 +427,7 @@ kubernetes-schulung.de prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-schulung.de/**/*
+      - yarn.lock
   environment:
     name: prod kubernetes-schulung.de
     url: https://kubernetes-schulung.de
@@ -419,6 +435,8 @@ kubernetes-schulung.de prod deploy:
 ondrej-sika.cz build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-ondrej-sika.cz
@@ -428,20 +446,18 @@ ondrej-sika.cz build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.cz/**/*
+      - yarn.lock
   artifacts:
     name: ondrej-sika.cz
     paths:
       - packages/ondrej-sika.cz/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 ondrej-sika.cz build docker:
   dependencies:
     - ondrej-sika.cz build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -454,6 +470,7 @@ ondrej-sika.cz build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.cz/**/*
+      - yarn.lock
 
 ondrej-sika.cz dev deploy:
   stage: deploy_dev
@@ -467,6 +484,7 @@ ondrej-sika.cz dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.cz/**/*
+      - yarn.lock
   environment:
     name: dev ondrej-sika.cz
     url: https://ondrej-sika.cz.xsika.cz
@@ -485,6 +503,7 @@ ondrej-sika.cz prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.cz/**/*
+      - yarn.lock
   environment:
     name: prod ondrej-sika.cz
     url: https://ondrej-sika.cz
@@ -492,6 +511,8 @@ ondrej-sika.cz prod deploy:
 sika-kraml.de build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-sika-kraml.de
@@ -501,20 +522,18 @@ sika-kraml.de build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/sika-kraml.de/**/*
+      - yarn.lock
   artifacts:
     name: sika-kraml.de
     paths:
       - packages/sika-kraml.de/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 sika-kraml.de build docker:
   dependencies:
     - sika-kraml.de build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -527,10 +546,13 @@ sika-kraml.de build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/sika-kraml.de/**/*
+      - yarn.lock
 
 skoleni-docker.cz build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-skoleni-docker.cz
@@ -540,20 +562,18 @@ skoleni-docker.cz build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-docker.cz/**/*
+      - yarn.lock
   artifacts:
     name: skoleni-docker.cz
     paths:
       - packages/skoleni-docker.cz/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 skoleni-docker.cz build docker:
   dependencies:
     - skoleni-docker.cz build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -566,6 +586,7 @@ skoleni-docker.cz build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-docker.cz/**/*
+      - yarn.lock
 
 skoleni-docker.cz dev deploy:
   stage: deploy_dev
@@ -579,6 +600,7 @@ skoleni-docker.cz dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-docker.cz/**/*
+      - yarn.lock
   environment:
     name: dev skoleni-docker.cz
     url: https://skoleni-docker.cz.xsika.cz
@@ -597,6 +619,7 @@ skoleni-docker.cz prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-docker.cz/**/*
+      - yarn.lock
   environment:
     name: prod skoleni-docker.cz
     url: https://skoleni-docker.cz
@@ -604,6 +627,8 @@ skoleni-docker.cz prod deploy:
 skoleni-git.cz build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-skoleni-git.cz
@@ -613,20 +638,18 @@ skoleni-git.cz build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-git.cz/**/*
+      - yarn.lock
   artifacts:
     name: skoleni-git.cz
     paths:
       - packages/skoleni-git.cz/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 skoleni-git.cz build docker:
   dependencies:
     - skoleni-git.cz build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -639,6 +662,7 @@ skoleni-git.cz build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-git.cz/**/*
+      - yarn.lock
 
 skoleni-git.cz dev deploy:
   stage: deploy_dev
@@ -652,6 +676,7 @@ skoleni-git.cz dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-git.cz/**/*
+      - yarn.lock
   environment:
     name: dev skoleni-git.cz
     url: https://skoleni-git.cz.xsika.cz
@@ -670,6 +695,7 @@ skoleni-git.cz prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-git.cz/**/*
+      - yarn.lock
   environment:
     name: prod skoleni-git.cz
     url: https://skoleni-git.cz
@@ -677,6 +703,8 @@ skoleni-git.cz prod deploy:
 skoleni-kubernetes.cz build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-skoleni-kubernetes.cz
@@ -686,20 +714,18 @@ skoleni-kubernetes.cz build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-kubernetes.cz/**/*
+      - yarn.lock
   artifacts:
     name: skoleni-kubernetes.cz
     paths:
       - packages/skoleni-kubernetes.cz/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 skoleni-kubernetes.cz build docker:
   dependencies:
     - skoleni-kubernetes.cz build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -712,6 +738,7 @@ skoleni-kubernetes.cz build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-kubernetes.cz/**/*
+      - yarn.lock
 
 skoleni-kubernetes.cz dev deploy:
   stage: deploy_dev
@@ -725,6 +752,7 @@ skoleni-kubernetes.cz dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-kubernetes.cz/**/*
+      - yarn.lock
   environment:
     name: dev skoleni-kubernetes.cz
     url: https://skoleni-kubernetes.cz.xsika.cz
@@ -743,6 +771,7 @@ skoleni-kubernetes.cz prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-kubernetes.cz/**/*
+      - yarn.lock
   environment:
     name: prod skoleni-kubernetes.cz
     url: https://skoleni-kubernetes.cz
@@ -750,6 +779,8 @@ skoleni-kubernetes.cz prod deploy:
 git-training.uk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-git-training.uk
@@ -759,20 +790,18 @@ git-training.uk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-training.uk/**/*
+      - yarn.lock
   artifacts:
     name: git-training.uk
     paths:
       - packages/git-training.uk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 git-training.uk build docker:
   dependencies:
     - git-training.uk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -785,6 +814,7 @@ git-training.uk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-training.uk/**/*
+      - yarn.lock
 
 git-training.uk dev deploy:
   stage: deploy_dev
@@ -798,6 +828,7 @@ git-training.uk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-training.uk/**/*
+      - yarn.lock
   environment:
     name: dev git-training.uk
     url: https://git-training.uk.xsika.cz
@@ -816,6 +847,7 @@ git-training.uk prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-training.uk/**/*
+      - yarn.lock
   environment:
     name: prod git-training.uk
     url: https://git-training.uk
@@ -823,6 +855,8 @@ git-training.uk prod deploy:
 docker-training.uk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-docker-training.uk
@@ -832,20 +866,18 @@ docker-training.uk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.uk/**/*
+      - yarn.lock
   artifacts:
     name: docker-training.uk
     paths:
       - packages/docker-training.uk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 docker-training.uk build docker:
   dependencies:
     - docker-training.uk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -858,6 +890,7 @@ docker-training.uk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.uk/**/*
+      - yarn.lock
 
 docker-training.uk dev deploy:
   stage: deploy_dev
@@ -871,6 +904,7 @@ docker-training.uk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.uk/**/*
+      - yarn.lock
   environment:
     name: dev docker-training.uk
     url: https://docker-training.uk.xsika.cz
@@ -889,6 +923,7 @@ docker-training.uk prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.uk/**/*
+      - yarn.lock
   environment:
     name: prod docker-training.uk
     url: https://docker-training.uk
@@ -896,6 +931,8 @@ docker-training.uk prod deploy:
 kubernetes-training.uk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-kubernetes-training.uk
@@ -905,20 +942,18 @@ kubernetes-training.uk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-training.uk/**/*
+      - yarn.lock
   artifacts:
     name: kubernetes-training.uk
     paths:
       - packages/kubernetes-training.uk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 kubernetes-training.uk build docker:
   dependencies:
     - kubernetes-training.uk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -931,6 +966,7 @@ kubernetes-training.uk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-training.uk/**/*
+      - yarn.lock
 
 kubernetes-training.uk dev deploy:
   stage: deploy_dev
@@ -944,6 +980,7 @@ kubernetes-training.uk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-training.uk/**/*
+      - yarn.lock
   environment:
     name: dev kubernetes-training.uk
     url: https://kubernetes-training.uk.xsika.cz
@@ -962,6 +999,7 @@ kubernetes-training.uk prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-training.uk/**/*
+      - yarn.lock
   environment:
     name: prod kubernetes-training.uk
     url: https://kubernetes-training.uk
@@ -969,6 +1007,8 @@ kubernetes-training.uk prod deploy:
 ansible-training.uk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-ansible-training.uk
@@ -978,20 +1018,18 @@ ansible-training.uk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-training.uk/**/*
+      - yarn.lock
   artifacts:
     name: ansible-training.uk
     paths:
       - packages/ansible-training.uk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 ansible-training.uk build docker:
   dependencies:
     - ansible-training.uk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1004,6 +1042,7 @@ ansible-training.uk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-training.uk/**/*
+      - yarn.lock
 
 ansible-training.uk dev deploy:
   stage: deploy_dev
@@ -1017,6 +1056,7 @@ ansible-training.uk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-training.uk/**/*
+      - yarn.lock
   environment:
     name: dev ansible-training.uk
     url: https://ansible-training.uk.xsika.cz
@@ -1035,6 +1075,7 @@ ansible-training.uk prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-training.uk/**/*
+      - yarn.lock
   environment:
     name: prod ansible-training.uk
     url: https://ansible-training.uk
@@ -1042,6 +1083,8 @@ ansible-training.uk prod deploy:
 gitlab-training.uk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-gitlab-training.uk
@@ -1051,20 +1094,18 @@ gitlab-training.uk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-training.uk/**/*
+      - yarn.lock
   artifacts:
     name: gitlab-training.uk
     paths:
       - packages/gitlab-training.uk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 gitlab-training.uk build docker:
   dependencies:
     - gitlab-training.uk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1077,6 +1118,7 @@ gitlab-training.uk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-training.uk/**/*
+      - yarn.lock
 
 gitlab-training.uk dev deploy:
   stage: deploy_dev
@@ -1090,6 +1132,7 @@ gitlab-training.uk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-training.uk/**/*
+      - yarn.lock
   environment:
     name: dev gitlab-training.uk
     url: https://gitlab-training.uk.xsika.cz
@@ -1108,6 +1151,7 @@ gitlab-training.uk prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-training.uk/**/*
+      - yarn.lock
   environment:
     name: prod gitlab-training.uk
     url: https://gitlab-training.uk
@@ -1115,6 +1159,8 @@ gitlab-training.uk prod deploy:
 skolenie-git.sk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-skolenie-git.sk
@@ -1124,20 +1170,18 @@ skolenie-git.sk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-git.sk/**/*
+      - yarn.lock
   artifacts:
     name: skolenie-git.sk
     paths:
       - packages/skolenie-git.sk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 skolenie-git.sk build docker:
   dependencies:
     - skolenie-git.sk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1150,6 +1194,7 @@ skolenie-git.sk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-git.sk/**/*
+      - yarn.lock
 
 skolenie-git.sk dev deploy:
   stage: deploy_dev
@@ -1163,6 +1208,7 @@ skolenie-git.sk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-git.sk/**/*
+      - yarn.lock
   environment:
     name: dev skolenie-git.sk
     url: https://skolenie-git.sk.xsika.cz
@@ -1170,6 +1216,8 @@ skolenie-git.sk dev deploy:
 skolenie-gitlab.sk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-skolenie-gitlab.sk
@@ -1179,20 +1227,18 @@ skolenie-gitlab.sk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-gitlab.sk/**/*
+      - yarn.lock
   artifacts:
     name: skolenie-gitlab.sk
     paths:
       - packages/skolenie-gitlab.sk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 skolenie-gitlab.sk build docker:
   dependencies:
     - skolenie-gitlab.sk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1205,6 +1251,7 @@ skolenie-gitlab.sk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-gitlab.sk/**/*
+      - yarn.lock
 
 skolenie-gitlab.sk dev deploy:
   stage: deploy_dev
@@ -1218,6 +1265,7 @@ skolenie-gitlab.sk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-gitlab.sk/**/*
+      - yarn.lock
   environment:
     name: dev skolenie-gitlab.sk
     url: https://skolenie-gitlab.sk.xsika.cz
@@ -1225,6 +1273,8 @@ skolenie-gitlab.sk dev deploy:
 skolenie-docker.sk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-skolenie-docker.sk
@@ -1234,20 +1284,18 @@ skolenie-docker.sk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-docker.sk/**/*
+      - yarn.lock
   artifacts:
     name: skolenie-docker.sk
     paths:
       - packages/skolenie-docker.sk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 skolenie-docker.sk build docker:
   dependencies:
     - skolenie-docker.sk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1260,6 +1308,7 @@ skolenie-docker.sk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-docker.sk/**/*
+      - yarn.lock
 
 skolenie-docker.sk dev deploy:
   stage: deploy_dev
@@ -1273,6 +1322,7 @@ skolenie-docker.sk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-docker.sk/**/*
+      - yarn.lock
   environment:
     name: dev skolenie-docker.sk
     url: https://skolenie-docker.sk.xsika.cz
@@ -1280,6 +1330,8 @@ skolenie-docker.sk dev deploy:
 skolenie.kubernetes.sk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-skolenie.kubernetes.sk
@@ -1289,20 +1341,18 @@ skolenie.kubernetes.sk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie.kubernetes.sk/**/*
+      - yarn.lock
   artifacts:
     name: skolenie.kubernetes.sk
     paths:
       - packages/skolenie.kubernetes.sk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 skolenie.kubernetes.sk build docker:
   dependencies:
     - skolenie.kubernetes.sk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1315,6 +1365,7 @@ skolenie.kubernetes.sk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie.kubernetes.sk/**/*
+      - yarn.lock
 
 skolenie.kubernetes.sk dev deploy:
   stage: deploy_dev
@@ -1328,6 +1379,7 @@ skolenie.kubernetes.sk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie.kubernetes.sk/**/*
+      - yarn.lock
   environment:
     name: dev skolenie.kubernetes.sk
     url: https://skolenie.kubernetes.sk.xsika.cz
@@ -1335,6 +1387,8 @@ skolenie.kubernetes.sk dev deploy:
 skolenie-ansible.sk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-skolenie-ansible.sk
@@ -1344,20 +1398,18 @@ skolenie-ansible.sk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-ansible.sk/**/*
+      - yarn.lock
   artifacts:
     name: skolenie-ansible.sk
     paths:
       - packages/skolenie-ansible.sk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 skolenie-ansible.sk build docker:
   dependencies:
     - skolenie-ansible.sk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1370,6 +1422,7 @@ skolenie-ansible.sk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-ansible.sk/**/*
+      - yarn.lock
 
 skolenie-ansible.sk dev deploy:
   stage: deploy_dev
@@ -1383,6 +1436,7 @@ skolenie-ansible.sk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-ansible.sk/**/*
+      - yarn.lock
   environment:
     name: dev skolenie-ansible.sk
     url: https://skolenie-ansible.sk.xsika.cz
@@ -1390,6 +1444,8 @@ skolenie-ansible.sk dev deploy:
 ansible-utbildning.se build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-ansible-utbildning.se
@@ -1399,20 +1455,18 @@ ansible-utbildning.se build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-utbildning.se/**/*
+      - yarn.lock
   artifacts:
     name: ansible-utbildning.se
     paths:
       - packages/ansible-utbildning.se/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 ansible-utbildning.se build docker:
   dependencies:
     - ansible-utbildning.se build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1425,6 +1479,7 @@ ansible-utbildning.se build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-utbildning.se/**/*
+      - yarn.lock
 
 ansible-utbildning.se dev deploy:
   stage: deploy_dev
@@ -1438,6 +1493,7 @@ ansible-utbildning.se dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: dev ansible-utbildning.se
     url: https://ansible-utbildning.se.xsika.cz
@@ -1456,6 +1512,7 @@ ansible-utbildning.se prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: prod ansible-utbildning.se
     url: https://ansible-utbildning.se
@@ -1463,6 +1520,8 @@ ansible-utbildning.se prod deploy:
 docker-utbildning.se build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-docker-utbildning.se
@@ -1472,20 +1531,18 @@ docker-utbildning.se build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-utbildning.se/**/*
+      - yarn.lock
   artifacts:
     name: docker-utbildning.se
     paths:
       - packages/docker-utbildning.se/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 docker-utbildning.se build docker:
   dependencies:
     - docker-utbildning.se build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1498,6 +1555,7 @@ docker-utbildning.se build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-utbildning.se/**/*
+      - yarn.lock
 
 docker-utbildning.se dev deploy:
   stage: deploy_dev
@@ -1511,6 +1569,7 @@ docker-utbildning.se dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: dev docker-utbildning.se
     url: https://docker-utbildning.se.xsika.cz
@@ -1529,6 +1588,7 @@ docker-utbildning.se prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: prod docker-utbildning.se
     url: https://docker-utbildning.se
@@ -1536,6 +1596,8 @@ docker-utbildning.se prod deploy:
 git-utbildning.se build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-git-utbildning.se
@@ -1545,20 +1607,18 @@ git-utbildning.se build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-utbildning.se/**/*
+      - yarn.lock
   artifacts:
     name: git-utbildning.se
     paths:
       - packages/git-utbildning.se/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 git-utbildning.se build docker:
   dependencies:
     - git-utbildning.se build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1571,6 +1631,7 @@ git-utbildning.se build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-utbildning.se/**/*
+      - yarn.lock
 
 git-utbildning.se dev deploy:
   stage: deploy_dev
@@ -1584,6 +1645,7 @@ git-utbildning.se dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: dev git-utbildning.se
     url: https://git-utbildning.se.xsika.cz
@@ -1602,6 +1664,7 @@ git-utbildning.se prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: prod git-utbildning.se
     url: https://git-utbildning.se
@@ -1609,6 +1672,8 @@ git-utbildning.se prod deploy:
 gitlab-utbildning.se build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-gitlab-utbildning.se
@@ -1618,20 +1683,18 @@ gitlab-utbildning.se build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-utbildning.se/**/*
+      - yarn.lock
   artifacts:
     name: gitlab-utbildning.se
     paths:
       - packages/gitlab-utbildning.se/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 gitlab-utbildning.se build docker:
   dependencies:
     - gitlab-utbildning.se build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1644,6 +1707,7 @@ gitlab-utbildning.se build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-utbildning.se/**/*
+      - yarn.lock
 
 gitlab-utbildning.se dev deploy:
   stage: deploy_dev
@@ -1657,6 +1721,7 @@ gitlab-utbildning.se dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: dev gitlab-utbildning.se
     url: https://gitlab-utbildning.se.xsika.cz
@@ -1675,6 +1740,7 @@ gitlab-utbildning.se prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: prod gitlab-utbildning.se
     url: https://gitlab-utbildning.se
@@ -1682,6 +1748,8 @@ gitlab-utbildning.se prod deploy:
 kubernetes-utbildning.se build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-kubernetes-utbildning.se
@@ -1691,20 +1759,18 @@ kubernetes-utbildning.se build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-utbildning.se/**/*
+      - yarn.lock
   artifacts:
     name: kubernetes-utbildning.se
     paths:
       - packages/kubernetes-utbildning.se/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 kubernetes-utbildning.se build docker:
   dependencies:
     - kubernetes-utbildning.se build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1717,6 +1783,7 @@ kubernetes-utbildning.se build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-utbildning.se/**/*
+      - yarn.lock
 
 kubernetes-utbildning.se dev deploy:
   stage: deploy_dev
@@ -1730,6 +1797,7 @@ kubernetes-utbildning.se dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: dev kubernetes-utbildning.se
     url: https://kubernetes-utbildning.se.xsika.cz
@@ -1748,6 +1816,7 @@ kubernetes-utbildning.se prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-utbildning.se/**/*
+      - yarn.lock
   environment:
     name: prod kubernetes-utbildning.se
     url: https://kubernetes-utbildning.se
@@ -1755,6 +1824,8 @@ kubernetes-utbildning.se prod deploy:
 ondrej-sika.uk build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-ondrej-sika.uk
@@ -1764,20 +1835,18 @@ ondrej-sika.uk build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.uk/**/*
+      - yarn.lock
   artifacts:
     name: ondrej-sika.uk
     paths:
       - packages/ondrej-sika.uk/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 ondrej-sika.uk build docker:
   dependencies:
     - ondrej-sika.uk build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1790,6 +1859,7 @@ ondrej-sika.uk build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.uk/**/*
+      - yarn.lock
 
 ondrej-sika.uk dev deploy:
   stage: deploy_dev
@@ -1803,6 +1873,7 @@ ondrej-sika.uk dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.uk/**/*
+      - yarn.lock
   environment:
     name: dev ondrej-sika.uk
     url: https://ondrej-sika.uk.xsika.cz
@@ -1810,6 +1881,8 @@ ondrej-sika.uk dev deploy:
 ondrejsikalabs.com build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-ondrejsikalabs.com
@@ -1819,20 +1892,18 @@ ondrejsikalabs.com build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrejsikalabs.com/**/*
+      - yarn.lock
   artifacts:
     name: ondrejsikalabs.com
     paths:
       - packages/ondrejsikalabs.com/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 ondrejsikalabs.com build docker:
   dependencies:
     - ondrejsikalabs.com build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
@@ -1845,6 +1916,7 @@ ondrejsikalabs.com build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrejsikalabs.com/**/*
+      - yarn.lock
 
 ondrejsikalabs.com dev deploy:
   stage: deploy_dev
@@ -1858,6 +1930,7 @@ ondrejsikalabs.com dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrejsikalabs.com/**/*
+      - yarn.lock
   environment:
     name: dev ondrejsikalabs.com
     url: https://ondrejsikalabs.com.xsika.cz
@@ -1876,6 +1949,7 @@ ondrejsikalabs.com prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrejsikalabs.com/**/*
+      - yarn.lock
   environment:
     name: prod ondrejsikalabs.com
     url: https://ondrejsikalabs.com
