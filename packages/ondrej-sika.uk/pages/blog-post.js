@@ -30,6 +30,7 @@ posts.map((element, i) => {
 class BlogPost extends React.Component {
   render() {
     let post = posts[posts_id_map[this.props.router.query.post_id]]
+    if (!post) return <></>;
     return (
       <div>
         <MainBar
