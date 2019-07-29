@@ -41,7 +41,7 @@ class Blog extends React.Component {
                       }
                     })()
                   }
-                  <a style={{color: 'black'}}><Link as={`${post.url}`} href={`/blog-post?post_id=${post.id}`}><h3 className='pt-4 bold'>{post.title}</h3></Link></a>
+                  <Link as={`${post.url}`} href={`/blog-post?post_id=${post.id}`}><a style={{color: 'black'}}><h3 className='pt-4 bold'>{post.title}</h3></a></Link>
                   <p>{post.date}</p>
                   <p className='pb-4'>{post.perex} <Link as={`${post.url}`} href={`/blog-post?post_id=${post.id}`}><a>číst dále</a></Link></p>
                 </div>
