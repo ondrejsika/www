@@ -48,11 +48,6 @@ $SITE build js:
     name: $SITE
     paths:
       - packages/$SITE/out
-  cache:
-    paths:
-      - node_modules/**/*
-      - packages/*/node_modules/**/*
-      - packages/*/.next/**/*
 
 
 $SITE build docker:
