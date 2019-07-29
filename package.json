@@ -6,6 +6,8 @@
   "scripts": {
     "now-build": "yarn run static-$TARGET",
     "clean": "git clean -X -f -d",
+    "prettier-check": "prettier -l \"**/*.js\"",
+    "prettier-write": "prettier --write \"**/*.js\"",
     "dev-all": "./run-dev-all.sh",
     "dev-archetype-web": "yarn --cwd packages/archetype-web dev -p 3001",
     "dev-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz dev -p 3002",
@@ -64,5 +66,8 @@
     "static-ondrej-sika.uk": "yarn --cwd packages/ondrej-sika.uk static",
     "static-ondrejsikalabs.com": "yarn --cwd packages/ondrejsikalabs.com static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
+  },
+  "devDependencies": {
+    "prettier": "1.18.2"
   }
 }
