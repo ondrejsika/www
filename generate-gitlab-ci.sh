@@ -41,6 +41,7 @@ $SITE build js:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/$SITE/**/*
+      - yarn.lock
   artifacts:
     name: $SITE
     paths:
@@ -67,6 +68,7 @@ $SITE build docker:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/$SITE/**/*
+      - yarn.lock
 
 EOF
 
@@ -85,6 +87,7 @@ $SITE dev deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/$SITE/**/*
+      - yarn.lock
   environment:
     name: dev $SITE
     url: https://$SITE$SUFFIX
@@ -110,6 +113,7 @@ $SITE prod deploy:
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/$SITE/**/*
+      - yarn.lock
   environment:
     name: prod $SITE
     url: https://$SITE
