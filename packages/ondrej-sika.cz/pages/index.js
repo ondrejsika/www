@@ -24,7 +24,7 @@ const Index = () => (
     </Head>
     <MainBar
       MainBarHeader="IT & DevOps školení, konzultace a workshopy"
-      MainBarText="Zlepšuji práci vývojářských týmu zaváděním efektivních procesu ve vývoji a použitím prověřených nástrojů a technologií, které vedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
+      MainBarText="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
     ></MainBar>
     <StatisticBar
       NumberOfPeople="500+"
