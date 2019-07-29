@@ -29,8 +29,9 @@ let DevelopmentBar = ()=> {
 }
 
 class OndrejSikaDocument extends Document {
-  static getInitialProps(ctx) {
-    return {site: site};
+  constructor(...args){
+    super(...args)
+    this.site = site
   }
 
   render() {
@@ -75,8 +76,8 @@ class OndrejSikaDocument extends Document {
           ></Footer>
           <NextScript />
           <BootstrapJS />
-          <Gauges gauges_site_id={this.props.site.gauges_site_id} />
-          <GoogleAnalytics google_analytics_site_id={this.props.site.google_analytics_site_id} />
+          <Gauges gauges_site_id={this.site.gauges_site_id} />;
+          <GoogleAnalytics google_analytics_site_id={this.site.google_analytics_site_id} />
         </body>
       </Html>
     );

@@ -1,6 +1,6 @@
 import App from "next/app";
 
 // Imported CSS
-import "@app/ondrej-sika.cz/css";
+import "../css";
 
 export default App;
