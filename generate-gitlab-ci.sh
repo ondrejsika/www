@@ -32,6 +32,8 @@ cat << EOF >> .gitlab-ci.yml
 $SITE build js:
   stage: build_js
   image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - yarn run static-$SITE
@@ -56,6 +58,8 @@ $SITE build js:
 $SITE build docker:
   dependencies:
     - $SITE build js
+  variables:
+    GIT_STRATEGY: none
   stage: build_docker
   script:
     - docker login \$CI_REGISTRY -u \$CI_REGISTRY_USER -p \$CI_REGISTRY_PASSWORD
