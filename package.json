@@ -35,7 +35,6 @@
     "dev-ansible-utbildning.se": "yarn --cwd packages/ansible-utbildning.se dev -p 3026",
     "dev-ondrej-sika.uk": "yarn --cwd packages/ondrej-sika.uk dev -p 3027",
     "dev-ondrejsikalabs.com": "yarn --cwd packages/ondrejsikalabs.com dev -p 3028",
-
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
