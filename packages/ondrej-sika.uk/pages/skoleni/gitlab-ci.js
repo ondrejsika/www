@@ -61,7 +61,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
       PriceBtn='Nezávazně poptat školení'>
       Otevřený termín (self funded): 4 999 CZK bez DPH<br/>
       Otevřený termín (company funded): 6 999 CZK bez DPH<br/>
-      Firemní školení (ve firmě): 18 000 CZK bez DPH
+      Firemní školení (ve firmě): 20 000 CZK bez DPH
     </Price>
     <div className='container'>
       <TextArea
