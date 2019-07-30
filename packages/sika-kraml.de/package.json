@@ -11,6 +11,7 @@
     "static": "yarn run build && yarn run export"
   },
   "dependencies": {
-    "@app/course-landing": "^0.0.0"
+    "@app/course-landing": "^0.0.0",
+    "next-yaml": "^1.0.0"
   }
 }

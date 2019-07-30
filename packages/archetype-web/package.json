@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@app/archetype-theme": "^0.0.0",
+    "next-yaml": "^1.0.1",
     "react-twitter-embed": "^2.0.8"
   }
 }
