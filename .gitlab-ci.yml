@@ -19,6 +19,7 @@ ansible-schulung.de build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/ansible-schulung.de/out
     - yarn run static-ansible-schulung.de
   only:
     changes:
@@ -41,8 +42,9 @@ ansible-schulung.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/ansible-schulung.de/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/ansible-schulung.de ci/docker
+    - cp ci/docker/Dockerfile packages/ansible-schulung.de/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/ansible-schulung.de packages/ansible-schulung.de
+    - rm packages/ansible-schulung.de/Dockerfile
     - docker push registry.sikahq.com/www/www/ansible-schulung.de
   only:
     changes:
@@ -95,6 +97,7 @@ ansible-skoleni.cz build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/ansible-skoleni.cz/out
     - yarn run static-ansible-skoleni.cz
   only:
     changes:
@@ -117,8 +120,9 @@ ansible-skoleni.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/ansible-skoleni.cz/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/ansible-skoleni.cz ci/docker
+    - cp ci/docker/Dockerfile packages/ansible-skoleni.cz/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/ansible-skoleni.cz packages/ansible-skoleni.cz
+    - rm packages/ansible-skoleni.cz/Dockerfile
     - docker push registry.sikahq.com/www/www/ansible-skoleni.cz
   only:
     changes:
@@ -171,6 +175,7 @@ archetype-web build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/archetype-web/out
     - yarn run static-archetype-web
   only:
     changes:
@@ -193,8 +198,9 @@ archetype-web build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/archetype-web/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/archetype-web ci/docker
+    - cp ci/docker/Dockerfile packages/archetype-web/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/archetype-web packages/archetype-web
+    - rm packages/archetype-web/Dockerfile
     - docker push registry.sikahq.com/www/www/archetype-web
   only:
     changes:
@@ -211,6 +217,7 @@ dockerschulung.de build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/dockerschulung.de/out
     - yarn run static-dockerschulung.de
   only:
     changes:
@@ -233,8 +240,9 @@ dockerschulung.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/dockerschulung.de/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/dockerschulung.de ci/docker
+    - cp ci/docker/Dockerfile packages/dockerschulung.de/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/dockerschulung.de packages/dockerschulung.de
+    - rm packages/dockerschulung.de/Dockerfile
     - docker push registry.sikahq.com/www/www/dockerschulung.de
   only:
     changes:
@@ -287,6 +295,7 @@ gitlab-ci.cz build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/gitlab-ci.cz/out
     - yarn run static-gitlab-ci.cz
   only:
     changes:
@@ -309,8 +318,9 @@ gitlab-ci.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/gitlab-ci.cz/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/gitlab-ci.cz ci/docker
+    - cp ci/docker/Dockerfile packages/gitlab-ci.cz/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/gitlab-ci.cz packages/gitlab-ci.cz
+    - rm packages/gitlab-ci.cz/Dockerfile
     - docker push registry.sikahq.com/www/www/gitlab-ci.cz
   only:
     changes:
@@ -363,6 +373,7 @@ kubernetes-schulung.de build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/kubernetes-schulung.de/out
     - yarn run static-kubernetes-schulung.de
   only:
     changes:
@@ -385,8 +396,9 @@ kubernetes-schulung.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/kubernetes-schulung.de/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/kubernetes-schulung.de ci/docker
+    - cp ci/docker/Dockerfile packages/kubernetes-schulung.de/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/kubernetes-schulung.de packages/kubernetes-schulung.de
+    - rm packages/kubernetes-schulung.de/Dockerfile
     - docker push registry.sikahq.com/www/www/kubernetes-schulung.de
   only:
     changes:
@@ -439,6 +451,7 @@ ondrej-sika.cz build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/ondrej-sika.cz/out
     - yarn run static-ondrej-sika.cz
   only:
     changes:
@@ -461,8 +474,9 @@ ondrej-sika.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/ondrej-sika.cz/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.cz ci/docker
+    - cp ci/docker/Dockerfile packages/ondrej-sika.cz/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.cz packages/ondrej-sika.cz
+    - rm packages/ondrej-sika.cz/Dockerfile
     - docker push registry.sikahq.com/www/www/ondrej-sika.cz
   only:
     changes:
@@ -515,6 +529,7 @@ sika-kraml.de build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/sika-kraml.de/out
     - yarn run static-sika-kraml.de
   only:
     changes:
@@ -537,8 +552,9 @@ sika-kraml.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/sika-kraml.de/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/sika-kraml.de ci/docker
+    - cp ci/docker/Dockerfile packages/sika-kraml.de/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/sika-kraml.de packages/sika-kraml.de
+    - rm packages/sika-kraml.de/Dockerfile
     - docker push registry.sikahq.com/www/www/sika-kraml.de
   only:
     changes:
@@ -555,6 +571,7 @@ skoleni-docker.cz build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/skoleni-docker.cz/out
     - yarn run static-skoleni-docker.cz
   only:
     changes:
@@ -577,8 +594,9 @@ skoleni-docker.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/skoleni-docker.cz/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/skoleni-docker.cz ci/docker
+    - cp ci/docker/Dockerfile packages/skoleni-docker.cz/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skoleni-docker.cz packages/skoleni-docker.cz
+    - rm packages/skoleni-docker.cz/Dockerfile
     - docker push registry.sikahq.com/www/www/skoleni-docker.cz
   only:
     changes:
@@ -631,6 +649,7 @@ skoleni-git.cz build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/skoleni-git.cz/out
     - yarn run static-skoleni-git.cz
   only:
     changes:
@@ -653,8 +672,9 @@ skoleni-git.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/skoleni-git.cz/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/skoleni-git.cz ci/docker
+    - cp ci/docker/Dockerfile packages/skoleni-git.cz/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skoleni-git.cz packages/skoleni-git.cz
+    - rm packages/skoleni-git.cz/Dockerfile
     - docker push registry.sikahq.com/www/www/skoleni-git.cz
   only:
     changes:
@@ -707,6 +727,7 @@ skoleni-kubernetes.cz build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/skoleni-kubernetes.cz/out
     - yarn run static-skoleni-kubernetes.cz
   only:
     changes:
@@ -729,8 +750,9 @@ skoleni-kubernetes.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/skoleni-kubernetes.cz/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/skoleni-kubernetes.cz ci/docker
+    - cp ci/docker/Dockerfile packages/skoleni-kubernetes.cz/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skoleni-kubernetes.cz packages/skoleni-kubernetes.cz
+    - rm packages/skoleni-kubernetes.cz/Dockerfile
     - docker push registry.sikahq.com/www/www/skoleni-kubernetes.cz
   only:
     changes:
@@ -783,6 +805,7 @@ git-training.uk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/git-training.uk/out
     - yarn run static-git-training.uk
   only:
     changes:
@@ -805,8 +828,9 @@ git-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/git-training.uk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/git-training.uk ci/docker
+    - cp ci/docker/Dockerfile packages/git-training.uk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/git-training.uk packages/git-training.uk
+    - rm packages/git-training.uk/Dockerfile
     - docker push registry.sikahq.com/www/www/git-training.uk
   only:
     changes:
@@ -859,6 +883,7 @@ docker-training.uk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/docker-training.uk/out
     - yarn run static-docker-training.uk
   only:
     changes:
@@ -881,8 +906,9 @@ docker-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/docker-training.uk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/docker-training.uk ci/docker
+    - cp ci/docker/Dockerfile packages/docker-training.uk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/docker-training.uk packages/docker-training.uk
+    - rm packages/docker-training.uk/Dockerfile
     - docker push registry.sikahq.com/www/www/docker-training.uk
   only:
     changes:
@@ -935,6 +961,7 @@ kubernetes-training.uk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/kubernetes-training.uk/out
     - yarn run static-kubernetes-training.uk
   only:
     changes:
@@ -957,8 +984,9 @@ kubernetes-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/kubernetes-training.uk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/kubernetes-training.uk ci/docker
+    - cp ci/docker/Dockerfile packages/kubernetes-training.uk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/kubernetes-training.uk packages/kubernetes-training.uk
+    - rm packages/kubernetes-training.uk/Dockerfile
     - docker push registry.sikahq.com/www/www/kubernetes-training.uk
   only:
     changes:
@@ -1011,6 +1039,7 @@ ansible-training.uk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/ansible-training.uk/out
     - yarn run static-ansible-training.uk
   only:
     changes:
@@ -1033,8 +1062,9 @@ ansible-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/ansible-training.uk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/ansible-training.uk ci/docker
+    - cp ci/docker/Dockerfile packages/ansible-training.uk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/ansible-training.uk packages/ansible-training.uk
+    - rm packages/ansible-training.uk/Dockerfile
     - docker push registry.sikahq.com/www/www/ansible-training.uk
   only:
     changes:
@@ -1087,6 +1117,7 @@ gitlab-training.uk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/gitlab-training.uk/out
     - yarn run static-gitlab-training.uk
   only:
     changes:
@@ -1109,8 +1140,9 @@ gitlab-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/gitlab-training.uk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/gitlab-training.uk ci/docker
+    - cp ci/docker/Dockerfile packages/gitlab-training.uk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/gitlab-training.uk packages/gitlab-training.uk
+    - rm packages/gitlab-training.uk/Dockerfile
     - docker push registry.sikahq.com/www/www/gitlab-training.uk
   only:
     changes:
@@ -1163,6 +1195,7 @@ skolenie-git.sk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/skolenie-git.sk/out
     - yarn run static-skolenie-git.sk
   only:
     changes:
@@ -1185,8 +1218,9 @@ skolenie-git.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/skolenie-git.sk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/skolenie-git.sk ci/docker
+    - cp ci/docker/Dockerfile packages/skolenie-git.sk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skolenie-git.sk packages/skolenie-git.sk
+    - rm packages/skolenie-git.sk/Dockerfile
     - docker push registry.sikahq.com/www/www/skolenie-git.sk
   only:
     changes:
@@ -1220,6 +1254,7 @@ skolenie-gitlab.sk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/skolenie-gitlab.sk/out
     - yarn run static-skolenie-gitlab.sk
   only:
     changes:
@@ -1242,8 +1277,9 @@ skolenie-gitlab.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/skolenie-gitlab.sk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/skolenie-gitlab.sk ci/docker
+    - cp ci/docker/Dockerfile packages/skolenie-gitlab.sk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skolenie-gitlab.sk packages/skolenie-gitlab.sk
+    - rm packages/skolenie-gitlab.sk/Dockerfile
     - docker push registry.sikahq.com/www/www/skolenie-gitlab.sk
   only:
     changes:
@@ -1277,6 +1313,7 @@ skolenie-docker.sk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/skolenie-docker.sk/out
     - yarn run static-skolenie-docker.sk
   only:
     changes:
@@ -1299,8 +1336,9 @@ skolenie-docker.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/skolenie-docker.sk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/skolenie-docker.sk ci/docker
+    - cp ci/docker/Dockerfile packages/skolenie-docker.sk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skolenie-docker.sk packages/skolenie-docker.sk
+    - rm packages/skolenie-docker.sk/Dockerfile
     - docker push registry.sikahq.com/www/www/skolenie-docker.sk
   only:
     changes:
@@ -1334,6 +1372,7 @@ skolenie.kubernetes.sk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/skolenie.kubernetes.sk/out
     - yarn run static-skolenie.kubernetes.sk
   only:
     changes:
@@ -1356,8 +1395,9 @@ skolenie.kubernetes.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/skolenie.kubernetes.sk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/skolenie.kubernetes.sk ci/docker
+    - cp ci/docker/Dockerfile packages/skolenie.kubernetes.sk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skolenie.kubernetes.sk packages/skolenie.kubernetes.sk
+    - rm packages/skolenie.kubernetes.sk/Dockerfile
     - docker push registry.sikahq.com/www/www/skolenie.kubernetes.sk
   only:
     changes:
@@ -1391,6 +1431,7 @@ skolenie-ansible.sk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/skolenie-ansible.sk/out
     - yarn run static-skolenie-ansible.sk
   only:
     changes:
@@ -1413,8 +1454,9 @@ skolenie-ansible.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/skolenie-ansible.sk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/skolenie-ansible.sk ci/docker
+    - cp ci/docker/Dockerfile packages/skolenie-ansible.sk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skolenie-ansible.sk packages/skolenie-ansible.sk
+    - rm packages/skolenie-ansible.sk/Dockerfile
     - docker push registry.sikahq.com/www/www/skolenie-ansible.sk
   only:
     changes:
@@ -1448,6 +1490,7 @@ ansible-utbildning.se build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/ansible-utbildning.se/out
     - yarn run static-ansible-utbildning.se
   only:
     changes:
@@ -1470,8 +1513,9 @@ ansible-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/ansible-utbildning.se/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/ansible-utbildning.se ci/docker
+    - cp ci/docker/Dockerfile packages/ansible-utbildning.se/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/ansible-utbildning.se packages/ansible-utbildning.se
+    - rm packages/ansible-utbildning.se/Dockerfile
     - docker push registry.sikahq.com/www/www/ansible-utbildning.se
   only:
     changes:
@@ -1524,6 +1568,7 @@ docker-utbildning.se build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/docker-utbildning.se/out
     - yarn run static-docker-utbildning.se
   only:
     changes:
@@ -1546,8 +1591,9 @@ docker-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/docker-utbildning.se/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/docker-utbildning.se ci/docker
+    - cp ci/docker/Dockerfile packages/docker-utbildning.se/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/docker-utbildning.se packages/docker-utbildning.se
+    - rm packages/docker-utbildning.se/Dockerfile
     - docker push registry.sikahq.com/www/www/docker-utbildning.se
   only:
     changes:
@@ -1600,6 +1646,7 @@ git-utbildning.se build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/git-utbildning.se/out
     - yarn run static-git-utbildning.se
   only:
     changes:
@@ -1622,8 +1669,9 @@ git-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/git-utbildning.se/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/git-utbildning.se ci/docker
+    - cp ci/docker/Dockerfile packages/git-utbildning.se/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/git-utbildning.se packages/git-utbildning.se
+    - rm packages/git-utbildning.se/Dockerfile
     - docker push registry.sikahq.com/www/www/git-utbildning.se
   only:
     changes:
@@ -1676,6 +1724,7 @@ gitlab-utbildning.se build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/gitlab-utbildning.se/out
     - yarn run static-gitlab-utbildning.se
   only:
     changes:
@@ -1698,8 +1747,9 @@ gitlab-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/gitlab-utbildning.se/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/gitlab-utbildning.se ci/docker
+    - cp ci/docker/Dockerfile packages/gitlab-utbildning.se/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/gitlab-utbildning.se packages/gitlab-utbildning.se
+    - rm packages/gitlab-utbildning.se/Dockerfile
     - docker push registry.sikahq.com/www/www/gitlab-utbildning.se
   only:
     changes:
@@ -1752,6 +1802,7 @@ kubernetes-utbildning.se build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/kubernetes-utbildning.se/out
     - yarn run static-kubernetes-utbildning.se
   only:
     changes:
@@ -1774,8 +1825,9 @@ kubernetes-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/kubernetes-utbildning.se/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/kubernetes-utbildning.se ci/docker
+    - cp ci/docker/Dockerfile packages/kubernetes-utbildning.se/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/kubernetes-utbildning.se packages/kubernetes-utbildning.se
+    - rm packages/kubernetes-utbildning.se/Dockerfile
     - docker push registry.sikahq.com/www/www/kubernetes-utbildning.se
   only:
     changes:
@@ -1828,6 +1880,7 @@ ondrej-sika.uk build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/ondrej-sika.uk/out
     - yarn run static-ondrej-sika.uk
   only:
     changes:
@@ -1850,8 +1903,9 @@ ondrej-sika.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/ondrej-sika.uk/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.uk ci/docker
+    - cp ci/docker/Dockerfile packages/ondrej-sika.uk/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.uk packages/ondrej-sika.uk
+    - rm packages/ondrej-sika.uk/Dockerfile
     - docker push registry.sikahq.com/www/www/ondrej-sika.uk
   only:
     changes:
@@ -1885,6 +1939,7 @@ ondrejsikalabs.com build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/ondrejsikalabs.com/out
     - yarn run static-ondrejsikalabs.com
   only:
     changes:
@@ -1907,8 +1962,9 @@ ondrejsikalabs.com build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp -r packages/ondrejsikalabs.com/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/ondrejsikalabs.com ci/docker
+    - cp ci/docker/Dockerfile packages/ondrejsikalabs.com/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/ondrejsikalabs.com packages/ondrejsikalabs.com
+    - rm packages/ondrejsikalabs.com/Dockerfile
     - docker push registry.sikahq.com/www/www/ondrejsikalabs.com
   only:
     changes:
