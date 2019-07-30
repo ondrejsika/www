@@ -37,6 +37,7 @@ function buildExportPathMap(custom_exclude_paths) {
 }
 
 module.exports = {
+  exportTrailingSlash: true,
   exportPathMap: function() {
     return buildExportPathMap(["/blog-post"]);
   },

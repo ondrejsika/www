@@ -1,6 +1,7 @@
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  exportTrailingSlash: true,
   exportPathMap: function() {
     return {
       "/": { page: "/" }
