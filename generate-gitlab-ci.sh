@@ -36,6 +36,7 @@ $SITE build js:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
+    - rm -rf packages/$SITE/out
     - yarn run static-$SITE
   only:
     changes:
@@ -58,8 +59,9 @@ $SITE build docker:
   stage: build_docker
   script:
     - docker login \$CI_REGISTRY -u \$CI_REGISTRY_USER -p \$CI_REGISTRY_PASSWORD
-    - cp -r packages/$SITE/out ci/docker/out
-    - docker build -t registry.sikahq.com/www/www/$SITE ci/docker
+    - cp ci/docker/Dockerfile packages/$SITE/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/$SITE packages/$SITE
+    - rm packages/$SITE/Dockerfile
     - docker push registry.sikahq.com/www/www/$SITE
   only:
     changes:
