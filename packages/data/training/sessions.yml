@@ -43,7 +43,7 @@
   city: Praha
   price: 4999 CZK
   venue_id: rootcz
-  length: 2 dny
+  length: 1 den
   date_from: 7.8.2019
   date_to: 7.8.2019
 - id: docker-praha-5-8-2019
