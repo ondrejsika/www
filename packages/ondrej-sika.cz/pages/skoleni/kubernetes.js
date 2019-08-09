@@ -7,6 +7,7 @@ import Price from "@app/ondrej-sika.cz/components/Price";
 import Form from "@app/ondrej-sika.cz/components/Form";
 
 import Head from "next/head";
+import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 
 let site = {
   lang: "cs"
@@ -64,6 +65,12 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
       />
     </div>
     <References ids={["oxy", "oxyCTO"]} lang={site.lang} />
+    <div className="container mb-4 mt-4">
+      <h3>Ohlasy z Twitteru</h3>
+      <TwitterRecommendations
+        rec1="pavel-mattivi-kubernetes"
+      />
+    </div>
     <Price PriceHeader="Cena za školení" PriceBtn="Nezávazně poptat školení">
       Otevřený termín (self funded): 9 999 CZK bez DPH
       <br />

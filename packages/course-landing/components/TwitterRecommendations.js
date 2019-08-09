@@ -35,17 +35,28 @@ export default props => {
         </div>
       </div>
     );
+  if (props.rec2)
+    return (
+      <div className="container-flex mb-4 row">
+        <div className="col-lg-6 col-md-6 col-sm-12">
+          <TwitterTweetEmbed
+            tweetId={get_by_id(props.rec1).tweet_id}
+            options={{ conversation: "none" }}
+          />
+        </div>
+        <div className="col-lg-6 col-md-6 col-sm-12">
+          <TwitterTweetEmbed
+            tweetId={get_by_id(props.rec2).tweet_id}
+            options={{ conversation: "none" }}
+          />
+        </div>
+      </div>
+    );
   return (
     <div className="container-flex mb-4 row">
       <div className="col-lg-6 col-md-6 col-sm-12">
         <TwitterTweetEmbed
           tweetId={get_by_id(props.rec1).tweet_id}
-          options={{ conversation: "none" }}
-        />
-      </div>
-      <div className="col-lg-6 col-md-6 col-sm-12">
-        <TwitterTweetEmbed
-          tweetId={get_by_id(props.rec2).tweet_id}
           options={{ conversation: "none" }}
         />
       </div>
