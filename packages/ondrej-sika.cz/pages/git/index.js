@@ -28,6 +28,7 @@ const Install = () => (
         source={`
 - [Instalace](/git/instalace)
 - [Rebase](/git/rebase)
+- [Hooks](/git/hooks)
 `}
       />
     </div>

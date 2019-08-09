@@ -38,6 +38,7 @@ const Install = () => (
 
 - [Instalace](/git/instalace)
 - [Rebase](/git/rebase)
+- [Hooks](/git/hooks)
 
 ### Ostatní
 
