@@ -1,30 +1,13 @@
-import Markdown from "@app/common/components/Markdown";
-import Header from "@app/ondrej-sika.cz/components/Header";
-import TextArea from "@app/ondrej-sika.cz/components/TextArea";
-import TwoCol from "@app/ondrej-sika.cz/components/TwoCol";
-import References from "@app/ondrej-sika.cz/components/References";
-import Price from "@app/ondrej-sika.cz/components/Price";
-import Form from "@app/ondrej-sika.cz/components/Form";
-import "@app/course-landing/components/TwitterRecommendations";
+import Course from "@app/ondrej-sika.cz/layouts/Course";
 
-import Head from "next/head";
-import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
-
-import site from "@app/ondrej-sika.cz/config";
-
-const Index = () => (
-  <div>
-    <Head>
-      <title>Školení Docker - Ondrej Sika</title>
-    </Head>
-    <Header
-      websiteHeader="Školení Docker"
-      inquiryBtn="Nezávazně poptat školení"
-      logo="/static/docker.svg"
-    ></Header>
-    <div className="container course-page">
-      <Markdown
-        source={`
+export default () => (
+  <Course
+    course_title="Školení Docker"
+    logo="/static/docker.svg"
+    price_self_funded="9 999 CZK"
+    price_company_funded="14 999 CZK"
+    price_in_house="40 000 CZK"
+    description={`
 ### K čemu se používá?
 Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
 ### Jak školení probíhá
@@ -38,65 +21,23 @@ Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytv
 - Deployment do Swarmu
 - Ukázka deploymentu do Kubernetes
 ### Pro koho je školení určeno
-Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.`}
-      />
-      <TwoCol
-        col1={
-          <Markdown
-            source={`
+Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
+`}
+    col1={`
 #### Předchozí znalosti
 - Základy práce s Linuxemm
 - Základy práce v terminálu
-          `}
-          />
-        }
-        col2={
-          <Markdown
-            source={`
+`}
+    col2={`
 #### Technické požadavky
 - Nainstalovány Docker
 - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
-          `}
-          />
-        }
-      />
-    </div>
-    <References ids={["sit", "vse"]} lang={site.lang} />
-    <div className="container mb-4 mt-4">
-      <h3>Ohlasy z Twitteru</h3>
-      <TwitterRecommendations
-        rec1="jan-novotny-docker"
-        rec2="tomas-ligenza-docker"
-        rec3="lubos-klokner-docker"
-      />
-    </div>
-    <Price PriceHeader="Cena za školení" PriceBtn="Nezávazně poptat školení">
-      Otevřený termín (self funded): 9 999 CZK bez DPH
-      <br />
-      Otevřený termín (company funded): 14 999 CZK bez DPH
-      <br />
-      Firemní školení (ve firmě): 40 000 CZK bez DPH
-    </Price>
-    <div className="container">
-      <TextArea
-        TextHeader="Poptávka firemního školení Dockeru"
-        TextParagraph="Pole označené * jsou povinné."
-      >
-        <Form
-          course="Docker"
-          FormName="Jméno *"
-          FromNamePlaceholder="Anton Hrabiš"
-          FormCompany="Společnost"
-          FormCompanyPlaceholder="Drůbežárny"
-          FormEmail="Email *"
-          FormEmailPlaceholder="anton@hrabis.cz"
-          FormPhone="Telefon *"
-          FormPhonePlaceholder="+420111222333"
-          FormSent="Odeslat"
-        />
-      </TextArea>
-    </div>
-  </div>
+`}
+    recommendations={["sit", "vse"]}
+    twitter_recommendations={[
+      "jan-novotny-docker",
+      "tomas-ligenza-docker",
+      "lubos-klokner-docker"
+    ]}
+  />
 );
-
-export default Index;
