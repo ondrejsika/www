@@ -1,14 +1,8 @@
-import Markdown from "@app/common/components/Markdown";
 import Header from "@app/ondrej-sika.cz/components/Header";
 import TextArea from "@app/ondrej-sika.cz/components/TextArea";
-import TwoCol from "@app/ondrej-sika.cz/components/TwoCol";
-import References from "@app/ondrej-sika.cz/components/References";
-import Price from "@app/ondrej-sika.cz/components/Price";
 import Form from "@app/ondrej-sika.cz/components/Form";
 
 import Head from "next/head";
-
-import site from "@app/ondrej-sika.cz/config";
 
 const Index = () => (
   <div>

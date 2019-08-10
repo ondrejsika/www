@@ -7,13 +7,6 @@ import Markdown from "@app/common/components/Markdown";
 
 import Head from "next/head";
 
-import site from "@app/ondrej-sika.cz/config";
-
-let style = {
-  fontSize: "1.4em",
-  fontWeight: "bold"
-};
-
 const Install = () => (
   <div>
     <Head>

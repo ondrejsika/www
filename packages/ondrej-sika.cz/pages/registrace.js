@@ -2,7 +2,6 @@ import "@app/ondrej-sika.cz/css";
 
 import Header from "@app/ondrej-sika.cz/components/Header";
 import TextArea from "@app/ondrej-sika.cz/components/TextArea";
-import Form from "@app/ondrej-sika.cz/components/Form";
 import Former2 from "@app/common/components/Former2";
 import site from "@app/ondrej-sika.cz/config";
 

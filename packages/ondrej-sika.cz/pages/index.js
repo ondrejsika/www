@@ -8,13 +8,6 @@ import CompaniesBar1 from "@app/ondrej-sika.cz/static/webglobe-yegon-sq.png";
 
 import Head from "next/head";
 
-import site from "@app/ondrej-sika.cz/config";
-
-let style = {
-  fontSize: "1.4em",
-  fontWeight: "bold"
-};
-
 const Index = () => (
   <div>
     <Head>

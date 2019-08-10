@@ -10,8 +10,6 @@ import Head from "next/head";
 
 import site from "@app/ondrej-sika.cz/config";
 
-const H3 = props => <h3 className="pt-4 pb-2">{props.children}</h3>;
-
 const Index = () => (
   <div>
     <Head>

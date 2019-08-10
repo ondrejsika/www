@@ -1,9 +1,6 @@
-import "@app/ondrej-sika.cz/css";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 import Head from "next/head";
-
-import site from "@app/ondrej-sika.cz/config";
 
 const Index = () => (
   <div>

@@ -1,19 +1,8 @@
 import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
 import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
-import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
-import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
-import CompaniesBar1 from "@app/ondrej-sika.cz/static/webglobe-yegon-sq.png";
 
 import Head from "next/head";
-
-import site from "@app/ondrej-sika.cz/config";
-
-let style = {
-  fontSize: "1.4em",
-  fontWeight: "bold"
-};
 
 const Index = () => (
   <div>
