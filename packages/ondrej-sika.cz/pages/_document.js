@@ -62,7 +62,8 @@ class OndrejSikaDocument extends Document {
                   ["GITLAB CI", "/skoleni/gitlab-ci"],
                   ["DOCKER", "/skoleni/docker"],
                   ["KUBERNETES", "/skoleni/kubernetes"],
-                  ["ANSIBLE", "/skoleni/ansible"]
+                  ["ANSIBLE", "/skoleni/ansible"],
+                  ["REACT & NEXT.JS", "/skoleni/react"]
                 ]
               ],
               ["TERMÍNY", "/verejne-terminy"],
