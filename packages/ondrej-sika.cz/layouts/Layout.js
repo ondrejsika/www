@@ -2,28 +2,13 @@ import Head from "next/head";
 import React from "react";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
-
+import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import Navbar from "@app/ondrej-sika.cz/components/Navbar";
 import Footer from "@app/ondrej-sika.cz/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
-
-let DevelopmentBar = () => {
-  if (process.env.NODE_ENV == "development") {
-    return (
-      <div
-        style={{
-          backgroundColor: "red",
-          height: "0.2em"
-        }}
-      ></div>
-    );
-  } else {
-    return <></>;
-  }
-};
 
 export default props => (
   <div>
