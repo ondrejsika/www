@@ -9,9 +9,7 @@ import Form from "@app/ondrej-sika.cz/components/Form";
 import Head from "next/head";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 
-let site = {
-  lang: "cs"
-};
+import site from "@app/ondrej-sika.cz/config";
 
 const Index = () => (
   <div>

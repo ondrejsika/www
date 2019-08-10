@@ -8,9 +8,7 @@ import Form from "@app/ondrej-sika.cz/components/Form";
 
 import Head from "next/head";
 
-let site = {
-  lang: "cs"
-};
+import site from "@app/ondrej-sika.cz/config";
 
 const H3 = props => <h3 className="pt-4 pb-2">{props.children}</h3>;
 

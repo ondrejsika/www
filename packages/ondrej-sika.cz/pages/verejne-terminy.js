@@ -10,9 +10,7 @@ import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
 
 import Head from "next/head";
 
-let site = {
-  lang: "cs"
-};
+import site from "@app/ondrej-sika.cz/config";
 
 let style = {
   fontSize: "1.4em",
