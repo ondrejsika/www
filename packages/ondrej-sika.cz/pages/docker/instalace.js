@@ -1,18 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-import Head from "next/head";
-
-const Install = () => (
-  <div>
-    <Head>
-      <title>Instalace Docker - Ondřej Šika</title>
-    </Head>
-    <MainBar MainBarHeader="Instalace Dockeru"></MainBar>
-
-    <div className="container pt-4 pb-2">
-      <Markdown
-        source={`
+export default () => (
+  <Article
+    title="Instalace Dockeru"
+    markdown={`
 Budeme používat Docker CE (Community Edition). Pro mě školení i drtivou většinou práce stačí.
 
 ### Windows
@@ -102,9 +93,5 @@ Na Linuxu nepoužívejte Docker z distribučních balíčků, je tam starý. Pos
 
 Pokud máte problém s instalací a nebo jakýkoliv dotaz, neváhejte mě napsat na [ondrej@ondrejsika.com](ondrej@ondrejsika.com)
 `}
-      />
-    </div>
-  </div>
+  />
 );
-
-export default Install;

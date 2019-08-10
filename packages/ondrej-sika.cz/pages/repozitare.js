@@ -1,19 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-import Head from "next/head";
-
-export default () => {
-  return (
-    <div>
-      <Head>
-        <title>Repozitáře - Ondrej Sika</title>
-      </Head>
-      <MainBar MainBarHeader="Repozitáře"></MainBar>
-
-      <div className="container pt-4 pb-2">
-        <Markdown
-          source={`
+export default () => (
+  <Article
+    title="Repozitáře"
+    markdown={`
   Zde jsou ukazky repozitaru vseho mozneho na Githubu. Inspirujte se, pridaveje stars, issues a pull requesty :)
 
 ## Docker
@@ -58,8 +48,5 @@ export default () => {
 - Ukazkovy React & Next.js projekt ke skoleni - https://github.com/ondrejsika/react-example
 - Repozitar mych webu (monorepo) v Next.js - https://github.com/ondrejsika/ondrejsikawebs
 `}
-        />
-      </div>
-    </div>
-  );
-};
+  />
+);

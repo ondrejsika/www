@@ -1,28 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-import Head from "next/head";
-
-const Install = () => (
-  <div>
-    <Head>
-      <title>Git Hooks - Ondřej Šika</title>
-    </Head>
-    <MainBar MainBarHeader="Git Hooks"></MainBar>
-
-    <style
-      dangerouslySetInnerHTML={{
-        __html: `
-       .post-body img {
-        width: 60%;
-      }
-    `
-      }}
-    />
-
-    <div className="container pt-4 pb-2 post-body">
-      <Markdown
-        source={`
+export default () => (
+  <Article
+    title="Git Hooks"
+    markdown={`
 ## Co jsou to Git hooky? A k cemu vlastne slouzi?
 
 To si vysvetlime v nasledujicim clanku. Diky Git hookum budete napriklad commitovat cistejsi kod.
@@ -74,9 +55,15 @@ Zdroje:
 - <https://git-scm.com/docs/githooks>
 - <https://githooks.com/>
 `}
-      />
-    </div>
-  </div>
+  >
+    <style
+      dangerouslySetInnerHTML={{
+        __html: `
+   .container img {
+    width: 60%;
+  }
+`
+      }}
+    />
+  </Article>
 );
-
-export default Install;

@@ -1,18 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
-
-import Head from "next/head";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
 export default () => (
-  <div>
-    <Head>
-      <title>Chocolatey - Package manager pro Windows - Ondřej Šika</title>
-    </Head>
-    <MainBar MainBarHeader="Chocolatey - Package manager pro Windows"></MainBar>
-
-    <div className="container pt-4 pb-2">
-      <Markdown
-        source={`
+  <Article
+    title="Chocolatey - Package Manager pro Windows"
+    markdown={`
 ### Co je Chocolatey
 
 Chocolatey je balickovaci system pro Windows, podobny jako je [Brew](/navody/brew) na Macu. Vice informaci naleznete na [chocolatey.org](https://chocolatey.org).
@@ -42,9 +33,6 @@ Napriklad
 
     choco install docker-desktop
 
-
 `}
-      />
-    </div>
-  </div>
+  />
 );

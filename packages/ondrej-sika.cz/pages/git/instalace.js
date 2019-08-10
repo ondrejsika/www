@@ -1,18 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-import Head from "next/head";
-
-const Install = () => (
-  <div>
-    <Head>
-      <title>Instalace Git- Ondřej Šika</title>
-    </Head>
-    <MainBar MainBarHeader="Instalace Gitu"></MainBar>
-
-    <div className="container pt-4 pb-2">
-      <Markdown
-        source={`
+export default () => (
+  <Article
+    title="Instalace Gitu"
+    markdown={`
 ### Linux
 
 Prikazem
@@ -37,9 +28,5 @@ nebo pouzit package manager [Chocolatey](https://chocolatey.org/)
     choco install git
 
 `}
-      />
-    </div>
-  </div>
+  />
 );
-
-export default Install;

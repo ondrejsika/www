@@ -1,28 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-import Head from "next/head";
-
-const Install = () => (
-  <div>
-    <Head>
-      <title>Git Rebase - Ondřej Šika</title>
-    </Head>
-    <MainBar MainBarHeader="Git Rebase"></MainBar>
-
-    <style
-      dangerouslySetInnerHTML={{
-        __html: `
-       .post-body img {
-        width: 30%;
-      }
-    `
-      }}
-    />
-
-    <div className="container pt-4 pb-2 post-body">
-      <Markdown
-        source={`
+export default () => (
+  <Article
+    title="Git Rebase"
+    markdown={`
 Mam 2 vetve, vetev master a experiment. Stav repozitare vypada takto:
 
 ![](/static/rebase/basic-rebase-1.png)
@@ -56,9 +37,15 @@ Vysledek pak vypada takto:
 
 ![](/static/rebase/basic-rebase-4.png)
 `}
-      />
-    </div>
-  </div>
+  >
+    <style
+      dangerouslySetInnerHTML={{
+        __html: `
+       .container img {
+        width: 30%;
+      }
+    `
+      }}
+    />
+  </Article>
 );
-
-export default Install;

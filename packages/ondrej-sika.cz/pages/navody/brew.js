@@ -1,18 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
-
-import Head from "next/head";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
 export default () => (
-  <div>
-    <Head>
-      <title>Brew (Homebrew) - Ondřej Šika</title>
-    </Head>
-    <MainBar MainBarHeader="Brew (Homebrew) - Package manager pro Mac"></MainBar>
-
-    <div className="container pt-4 pb-2">
-      <Markdown
-        source={`
+  <Article
+    title="Brew (Homebrew) - Package Manager pro Mac"
+    markdown={`
 ### Co je Brew
 
 Homebrew je balickovaci system pro Mac, podobny jako je Apt nebo Yum na Linuxu. Vice informaci naleznete na [brew.sh](https://brew.sh).
@@ -63,7 +54,5 @@ Pro instalaci balicku z \`Brewfile\` pouzijte prikaz
 
 Ja mam tento soubor ([Brewfile](https://github.com/ondrejsika/dotfiles/blob/master/mac/brew/Brewfile)) verzovany v repozitari [dotfiles](https://github.com/ondrejsika/dotfiles), pak dva skripty, jednim jej [aktualizuji](https://github.com/ondrejsika/dotfiles/blob/master/brew-save.sh) a druhym z nej [instaluji](https://github.com/ondrejsika/dotfiles/blob/master/brew-install.sh).
 `}
-      />
-    </div>
-  </div>
+  />
 );

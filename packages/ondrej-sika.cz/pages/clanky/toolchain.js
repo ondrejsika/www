@@ -1,24 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
-
-import Head from "next/head";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
 export default () => (
-  <div>
-    <Head>
-      <title>
-        Nastroje, ktere pouzivam a zjednodusuji mi praci a zivot - Ondřej Šika
-      </title>
-    </Head>
-    <MainBar MainBarHeader="Nastroje, ktere pouzivam a zjednodusuji mi praci a zivot" />
-
-    <div className="container pt-4 pb-2">
-      <p style={{ color: "gray" }} className="container mb-4">
-        Odkaz na tento clanek je take{" "}
-        <a href="https://sika.link/toolchain">sika.link/toolchain</a>
-      </p>
-      <Markdown
-        source={`
+  <Article
+    title="Nastroje, ktere pouzivam a zjednodusuji mi praci a zivot"
+    markdown={`
 Pro ty kdo me neznaji, jsem IT Konzultant, Lektor, a Architekt se zamerenim na DevOps a programator. Hodne cestuji a pracuji na cestach. Chci mit kancelar co nejvice mobilni a automatizovanou.
 
 ## Apple
@@ -133,7 +118,5 @@ Pro sdileni hesel v teamu pouzivam [Passbolt](https://passbolt.com) na vlastnim 
 
 Malo dulezita hesla mam ulozena v Apple a v Google. Je to proste jednodusi a kdyz mi Google kompromituje heslo do Alzy, neni to tak strasny.
 `}
-      />
-    </div>
-  </div>
+  />
 );
