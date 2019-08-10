@@ -62,6 +62,11 @@ const Footer = props => (
                   Ansible
                 </a>
               </li>
+              <li>
+                <a href="/skoleni/react" className="a-underline">
+                  React & Next.js
+                </a>
+              </li>
             </ul>
           </div>
           <div className="col-md-4 col-sm-12 pt-4 pt-md-0">
