@@ -71,7 +71,8 @@ class OndrejSikaDocument extends Document {
                 [
                   ["BLOG", "/blog"],
                   ["NÁVODY", "/navody"],
-                  ["ČLÁNKY", "/clanky"]
+                  ["ČLÁNKY", "/clanky"],
+                  ["REPOZITÁŘE", "/repozitare"]
                 ]
               ],
               ["KONTAKT", "/kontakt"]
