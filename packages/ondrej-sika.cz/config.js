@@ -1,6 +1,4 @@
 const site = {
-  gauges_site_id: "GAUGES-XXX-DEMO",
-  google_analytics_site_id: "GOOGLE-ANALYTICS-XXX-DEMO",
   former2_url:
     process.env.NODE_ENV == "development"
       ? "https://former2-ond-local.xsika.cz"
