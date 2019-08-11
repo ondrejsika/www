@@ -2,6 +2,7 @@ import Course from "@app/ondrej-sika.cz/layouts/Course";
 
 export default () => (
   <Course
+    lang={props.site.lang}
     course_title="Školení React"
     logo="/static/react.svg"
     price_self_funded="9 999 CZK"
