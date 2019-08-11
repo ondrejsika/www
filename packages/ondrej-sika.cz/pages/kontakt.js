@@ -1,19 +1,3 @@
-import TextFrame from "@app/course-landing/components/TextFrame";
-import TextFrameWithImage from "@app/course-landing/components/TextFrameWithImage";
-import MyClients from "@app/course-landing/components/MyClients";
-import References from "@app/course-landing/components/References";
-import ThreeCol from "@app/course-landing/components/ThreeCol";
-import someone from "@app/course-landing/components/References/someone.jpg";
-import jurajboldis from "@app/course-landing/components/References/jurajboldis.jpg";
-import martinkylian from "@app/course-landing/components/References/martinkylian.jpg";
-import TwoCol from "@app/course-landing/components/TwoCol";
-import Navigation from "@app/course-landing/components/Navigation";
-import ButtonOutline from "@app/course-landing/components/ButtonOutline";
-import Recommendation from "@app/course-landing/components/Recommendation";
-import Contact from "@app/course-landing/components/Contact";
-import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
-import Former2 from "@app/common/components/Former2";
-import site from "@app/ondrej-sika.cz/config";
 import Head from "next/head";
 
 const Index = () => (
