@@ -18,9 +18,7 @@ const Form = props => (
           />
         </div>
         <div className="col-md-4 mb-3 pl-0">
-          <label htmlFor="validationDefault02">
-            {props.FormCompany}Společnost
-          </label>
+          <label htmlFor="validationDefault02">{props.FormCompany}</label>
           <input
             type="text"
             className="form-control-border"
