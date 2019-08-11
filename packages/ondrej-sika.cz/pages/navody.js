@@ -1,18 +1,9 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Markdown from "@app/common/components/Markdown";
+import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-import Head from "next/head";
-
-const Install = () => (
-  <div>
-    <Head>
-      <title>Návody - Ondrej Sika</title>
-    </Head>
-    <MainBar MainBarHeader="Návody"></MainBar>
-
-    <div className="container pt-4 pb-2">
-      <Markdown
-        source={`
+export default () => (
+  <Article
+    title="Návody"
+    markdown={`
 ### Docker
 
 - [Instalace](/docker/instalace)
@@ -32,9 +23,5 @@ const Install = () => (
 - [Brew (Homebrew)](/navody/brew) - Package manager pro Mac
 - [Chocolatey](/navody/chocolatey) - Package manager pro Windows
 `}
-      />
-    </div>
-  </div>
+  />
 );
-
-export default Install;
