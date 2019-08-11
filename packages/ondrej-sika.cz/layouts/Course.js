@@ -6,11 +6,10 @@ import References from "@app/ondrej-sika.cz/components/References";
 import Price from "@app/ondrej-sika.cz/components/Price";
 import Form from "@app/ondrej-sika.cz/components/Form";
 import "@app/course-landing/components/TwitterRecommendations";
+import Translate from "@app/common/components/Translate";
 
 import Head from "next/head";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
-
-import site from "@app/ondrej-sika.cz/config";
 
 export default props => (
   <div>
@@ -19,7 +18,13 @@ export default props => (
     </Head>
     <Header
       websiteHeader={props.course_title}
-      inquiryBtn="Nezávazně poptat školení"
+      inquiryBtn={
+        <Translate
+          lang={props.lang}
+          cs="Nezávazně poptat školení"
+          en="Ask for a training"
+        />
+      }
       logo={props.logo}
     ></Header>
     <div className="container course-page">
@@ -32,7 +37,7 @@ export default props => (
     </div>
     {(() => {
       if (props.recommendations)
-        return <References ids={props.recommendations} lang={site.lang} />;
+        return <References ids={props.recommendations} lang={props.lang} />;
     })()}
     <div className="container mb-4 mt-4">
       {(() => {
@@ -45,29 +50,72 @@ export default props => (
           );
       })()}
     </div>
-    <Price PriceHeader="Cena za školení" PriceBtn="Nezávazně poptat školení">
-      Otevřený termín (self funded): {props.price_self_funded} bez DPH
+    <Price
+      PriceHeader={
+        <Translate lang={props.lang} cs="Cena za školení" en="Price" />
+      }
+      PriceBtn={
+        <Translate
+          lang={props.lang}
+          cs="Nezávazně poptat školení"
+          en="Request Training"
+        />
+      }
+    >
+      <Translate
+        lang={props.lang}
+        cs="Otevřený termín (self funded)"
+        en="Public session (self funded)"
+      />
+      : {props.price_self_funded}{" "}
+      <Translate lang={props.lang} cs="bez DPH" en="excl. VAT" />
       <br />
-      Otevřený termín (company funded): {props.price_company_funded} bez DPH
+      <Translate
+        lang={props.lang}
+        cs="Otevřený termín (company funded)"
+        en="Public session (company funded)"
+      />
+      : {props.price_company_funded}{" "}
+      <Translate lang={props.lang} cs="bez DPH" en="excl. VAT" />
       <br />
-      Firemní školení (ve firmě): {props.price_in_house} CZK bez DPH
+      <Translate
+        lang={props.lang}
+        cs="Firemní školení (ve firmě)"
+        en="Company traning (in-house)"
+      />
+      : {props.price_in_house}{" "}
+      <Translate lang={props.lang} cs="bez DPH" en="excl. VAT" />
     </Price>
     <div className="container">
       <TextArea
-        TextHeader="Poptávka firemního školení"
-        TextParagraph="Pole označené * jsou povinné."
+        TextHeader={
+          <Translate
+            lang={props.lang}
+            cs="Poptávka firemního školení"
+            en="Request in-house Training"
+          />
+        }
+        TextParagraph={
+          <Translate
+            lang={props.lang}
+            cs="Pole označené * jsou povinné."
+            en="Fields marked * as required."
+          />
+        }
       >
         <Form
           course={props.course_title}
-          FormName="Jméno *"
+          FormName={<Translate lang={props.lang} cs="Jméno *" en="Name *" />}
           FromNamePlaceholder="Anton Hrabiš"
-          FormCompany="Společnost"
+          FormCompany={
+            <Translate lang={props.lang} cs="Společnost" en="Company" />
+          }
           FormCompanyPlaceholder="Drůbežárny"
-          FormEmail="Email *"
+          FormEmail={<Translate lang={props.lang} cs="Email *" en="Email * " />}
           FormEmailPlaceholder="anton@hrabis.cz"
-          FormPhone="Telefon *"
+          FormPhone={<Translate lang={props.lang} cs="Telefon *" en="Phone" />}
           FormPhonePlaceholder="+420111222333"
-          FormSent="Odeslat"
+          FormSent={<Translate lang={props.lang} cs="Odeslat" en="Send" />}
         />
       </TextArea>
     </div>
