@@ -26,3 +26,4 @@ gitlab-utbildning.se
 kubernetes-utbildning.se
 ondrej-sika.uk
 ondrejsikalabs.com
+sika.io
