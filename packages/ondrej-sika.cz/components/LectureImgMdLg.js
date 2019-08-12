@@ -56,6 +56,29 @@ const LectureImg = props => (
             <img src="/static/ansible.png" className="img img-fluid p-3"></img>
           </a>
         </div>
+        <div className="box " id="terraform">
+          <h4 className="text-center text-white course-header pt-3">
+            <a href="/skolebni/terraform" className="course-header">
+              TERRAFORM
+            </a>
+          </h4>
+          <a href="/skoleni/terraform">
+            <img
+              src="/static/terraform-white.png"
+              className="img img-fluid p-3"
+            ></img>
+          </a>
+        </div>
+        <div className="box " id="react">
+          <h4 className="text-center text-white course-header pt-3">
+            <a href="/skoleni/react" className="course-header">
+              REACT
+            </a>
+          </h4>
+          <a href="/skoleni/react">
+            <img src="/static/react.svg" className="img img-fluid p-3"></img>
+          </a>
+        </div>
       </div>
     </div>
   </div>
