@@ -1,6 +1,6 @@
 import Course from "@app/ondrej-sika.cz/layouts/Course";
 
-export default () => (
+export default props => (
   <Course
     lang={props.site.lang}
     course_title="Školení React"
