@@ -34,6 +34,7 @@ export default props => (
             ["DOCKER", "/skoleni/docker"],
             ["KUBERNETES", "/skoleni/kubernetes"],
             ["ANSIBLE", "/skoleni/ansible"],
+            ["TERRAFORM", "/skoleni/terraform"],
             ["REACT & NEXT.JS", "/skoleni/react"]
           ]
         ],
