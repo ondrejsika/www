@@ -56,7 +56,7 @@ const LectureImg = props => (
         <div className="col-12">
           <div className="row">
             <div className="col-4 box box-git">
-              <a href="/git">
+              <a href="/skoleni/git">
                 <img
                   src="/static/git-w.svg"
                   id="git"

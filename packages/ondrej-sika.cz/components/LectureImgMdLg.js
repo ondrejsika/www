@@ -5,7 +5,7 @@ const LectureImg = props => (
       <div className="d-flex flex-row">
         <div className="box" id="docker">
           <h4 className="text-center text-white course-header pt-3">
-            <a href="/docker" className="course-header">
+            <a href="/skoleni/docker" className="course-header">
               DOCKER
             </a>
           </h4>
@@ -15,7 +15,7 @@ const LectureImg = props => (
         </div>
         <div className="box" id="kubernetes">
           <h4 className="text-center text-white course-header pt-3">
-            <a href="/kubernetes" className="course-header">
+            <a href="/skoleni/kubernetes" className="course-header">
               KUBERNETES
             </a>
           </h4>
@@ -25,7 +25,7 @@ const LectureImg = props => (
         </div>
         <div className="box" id="git">
           <h4 className="text-center text-white course-header pt-3">
-            <a href="/git" className="course-header">
+            <a href="/skoleni/git" className="course-header">
               GIT
             </a>
           </h4>
@@ -35,7 +35,7 @@ const LectureImg = props => (
         </div>
         <div className="box" id="gitlab-ci">
           <h4 className="text-center text-white course-header pt-3">
-            <a href="/gitlab-ci" className="course-header">
+            <a href="/skoleni/gitlab-ci" className="course-header">
               GITLAB-CI
             </a>
           </h4>
@@ -48,7 +48,7 @@ const LectureImg = props => (
         </div>
         <div className="box " id="ansible">
           <h4 className="text-center text-white course-header pt-3">
-            <a href="/ansible" className="course-header">
+            <a href="/skoleni/ansible" className="course-header">
               ANSIBLE
             </a>
           </h4>
