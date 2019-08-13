@@ -10,7 +10,7 @@ export default props => (
     </Head>
     <MainBar MainBarHeader={props.title}></MainBar>
 
-    <div className="container pt-4 pb-2">
+    <div className="container pt-4 pb-2 article-body">
       {props.children}
       {(() => {
         if (props.markdown) return <Markdown source={props.markdown} />;
