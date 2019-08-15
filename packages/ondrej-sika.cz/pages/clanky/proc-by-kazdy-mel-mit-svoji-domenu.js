@@ -4,36 +4,39 @@ export default () => (
   <Article
     title="Proc by kazdy mel mit svoji domenu"
     markdown={`
-Proc by kazdy mel mit svoji domenu? Mozna to zni jako overhead, ale mam k tomu par duvodu. Ve zkratce, byt vice nezavysly - svobodnejsi.
+Domena je zaklad pro osobni brand a svobodu online. O emailu na vlstni domene jsem napsal clanek [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene).
 
-Kdyz pouzivam klasicky Gmail, muj email muze byt \`ondrejsika@gmail.com\`. Vadi mi to nejak? Na prvni pohled to tak nemusi vypadat, ale kdyz se podivame podrobneji, zjistime ze tomu tak skutecne je.
+### Jak si vybral domenu a nebo domeny
 
-Vratme se o par (rekneme patnact) let zpet. Gmail tehdy neexitoval a vsichni v Cesku pouzivali seznam. Zalozim si tedy email \`ondrejsika@seznam.cz\`.
+Pri vyberu domeny postupuji nasledovne. Zkusim prvni variantu a pokud je obsazena, jdu na dalsi. Muzete napriklad takto:
 
-Kdyz prisel Gmail, chtel jsem ho zacit pouzivat, ale musel bych zmenit emailovou adresu. To nechci delat z vice duvodu. Chci aby mi lide mohli napsat i po dlouhe dobe, nechci pri zmene poskytovatele emailu menit vsechny sluzby, ktere jej pouzivaji a rikat lidem ze mam novy email. Rikate si ze Google tu bude vecne? Kdo vi ...
+Nejdrive se snazim sehnat domenu pouze jmena.
 
-No, to se da vyresit preposilanim. Ale, pokud poskytovatel zkocni, zdrazi nebo zmeni smluvni podminky, chci se presunout hned. A to bez sve domeny neudelam. A navic, vlastni domena vypada profesionalne a podporuje vasi osobni znacku, ktera v dnesnich dnech nabyva na vyznamu pro vsechny (nejen pro freelancery, ale i pro zamestnance), mnohem vice nez univerzitni titul.
+- \`sika.com\` - \`.com\` je kral
+- \`sika.cz\`
+- \`sika.io\` - \`.org\` je take pouzitelna
 
-Dobre, chci email na vlastni domene, jakou domenu si mam koupit a jaky email pouzit. Pri vyberu domeny postupuji nasledovne. Zkusim prvni variantu a pokud je obsazena, jdu na dalsi. Muzete napriklad takto:
+Pokud nejsou tyto domeny k dispozici, zkousim domeny jmeno + prijmeni.
 
-- \`sika.com\` s emailem \`ondrej@sika.com\` - \`.com\` je kral
-- \`sika.cz\` s emailem \`ondrej@sika.cz\`
-- \`sika.io\` s emailem \`ondrej@sika.io\` - \`.org\` je take pouzitelna
 - \`ondrejsika.com\` s emailem \`ondrej@ondrejsika.com\`
 - \`ondrejsika.cz\` s emailem \`ondrej@ondrejsika.cz\`
 
-Nepouzival bych nove domeny jako je napriklad \`.email\`, protoze nektere sluzby Vam neumozni zadat email s touto domenou.
+Pokud je moznost koupit domenu \`jmeno.com\` a i \`jmenoprijmeni.com\`, kupte si obje. Cena 12 USD za domenu navic je zanedbatelna castka. Web muzete mit na \`jmenoprijmeni.com\` a \`jmeno@prijmeni.com\`.
 
-Pokud nechcete domenu pouzivat i pro web, doporucuji ji presmerovat napriklad na LinkedIn nebo Facebook.
+Stejne to plati i pokud mate moznost koupit \`.com\` i \`.cz\`. Ostatni kombinace asi nema smysl kupovat dohromady.
 
-Pokud chcete pouzivat email na vlastni domene, doporucuji Vam tyto poskytovatele:
+### Dalsi domeny, pokud jsou vsechny predchozi obsazene.
 
-- [Google G Suite](https://gsuite.google.com/) - Propojeni s Google Kalendarem a dalsimy Google sluzbami je super, dnes skoro standart
-- [Fast Mail](https://fastmail.com) - Spolehlivy poskytovatel pokud nechcete Google
-- [Proton Mail](https://protonmail.com) - Sifrovany email, ma vyhody i nevyhody. Je hodne bezpecny, ale napriklad jej nemuzete dat do aplikace Mail na iPhone (nebojte, maji svoji appku).
-- [Seznam Email Profi](https://www.emailprofi.cz/) - Email na vlastni domene od Seznamu, do 10 uzivatelu zdarma
+Pokud je vsechno obsazene, muzte si vybrat z techto moznosti:
 
-Zaverem chci zduraznit, ze vlastni email email je jista forma svobody a vypada to lepe. I diky tomu ze email jako \`jmenoprijmeni@gmail.com\` uz bude nejspis obsazene. Pokud mate nejaky dotaz, nebo chcete pomoc, dejte vedet.
+- \`jmeno-prijemni.com\`
+- \`jmeno.com\`
+- \`jmenop.com\`
+- \`jprijmeni.com\`
+- \`prijmenijmeno.com\`
+- \`prijmeni-jmeno.com\`
+
+Za me bych asi zase postupoval ze zhora dolu.
 `}
   />
 );

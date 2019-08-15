@@ -6,6 +6,7 @@ export default () => (
     markdown={`
 - [Nastroje, ktere pouzivam a zjednodusuji mi praci a zivot](/clanky/toolchain)
 - [Proc by kazdy mel mit svoji domenu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/)
+- [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene)
 - [Vyber osobni wiki](/clanky/vyber-osobni-wiki)
 `}
   />
