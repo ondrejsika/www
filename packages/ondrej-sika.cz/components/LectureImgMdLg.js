@@ -58,7 +58,7 @@ const LectureImg = props => (
         </div>
         <div className="box " id="terraform">
           <h4 className="text-center text-white course-header pt-3">
-            <a href="/skolebni/terraform" className="course-header">
+            <a href="/skoleni/terraform" className="course-header">
               TERRAFORM
             </a>
           </h4>
