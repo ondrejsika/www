@@ -27,3 +27,4 @@ kubernetes-utbildning.se
 ondrej-sika.uk
 ondrejsikalabs.com
 sika.io
+docker-training.de

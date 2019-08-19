@@ -28,6 +28,8 @@ Those links also works in VS Code
 - [ansible-schulung.de](packages/ansible-schulung.de/pages/index.js)
 - [dockerschulung.de](packages/dockerschulung.de/pages/index.js)
 - [kubernetes-schulung.de](packages/kubernetes-schulung.de/pages/index.js)
+- [docker-training.de](packages/docker-training.de/pages/index.js)
+
 
 #### CZ
 

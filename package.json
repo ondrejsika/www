@@ -38,6 +38,7 @@
     "dev-ondrej-sika.uk": "yarn --cwd packages/ondrej-sika.uk dev -p 3027",
     "dev-ondrejsikalabs.com": "yarn --cwd packages/ondrejsikalabs.com dev -p 3028",
     "dev-sika.io": "yarn --cwd packages/sika.io dev -p 3030",
+    "dev-docker-training.de": "yarn --cwd packages/docker-training.de dev -p 3031",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -67,6 +68,7 @@
     "static-ondrej-sika.uk": "yarn --cwd packages/ondrej-sika.uk static",
     "static-ondrejsikalabs.com": "yarn --cwd packages/ondrejsikalabs.com static",
     "static-sika.io": "yarn --cwd packages/sika.io static",
+    "static-docker-training.de": "yarn --cwd packages/docker-training.de static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   },
   "devDependencies": {
