@@ -2088,3 +2088,45 @@ sika.io prod deploy:
     name: prod sika.io
     url: https://sika.io
 
+docker-training.de build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/docker-training.de/out
+    - yarn run static-docker-training.de
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.de/**/*
+      - yarn.lock
+  artifacts:
+    name: docker-training.de
+    paths:
+      - packages/docker-training.de/out
+
+
+docker-training.de build docker:
+  dependencies:
+    - docker-training.de build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/docker-training.de/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/docker-training.de packages/docker-training.de
+    - rm packages/docker-training.de/Dockerfile
+    - docker push registry.sikahq.com/www/www/docker-training.de
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.de/**/*
+      - yarn.lock
+
