@@ -11,7 +11,7 @@ import Contact from "@app/course-landing/components/Contact";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
-import site from "@app/docker-training.uk/config";
+import site from "@app/docker-training.at/config";
 
 const Index = () => (
   <div>
