@@ -92,6 +92,7 @@ $SITE dev deploy:
   environment:
     name: dev $SITE
     url: https://$SITE$SUFFIX
+  dependencies: []
 
 EOF
 fi;
@@ -118,6 +119,7 @@ $SITE prod deploy:
   environment:
     name: prod $SITE
     url: https://$SITE
+  dependencies: []
 
 EOF
 fi;
