@@ -1976,6 +1976,86 @@ ondrej-sika.uk dev deploy:
     url: https://ondrej-sika.uk.xsika.cz
   dependencies: []
 
+ondrej-sika.de build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/ondrej-sika.de/out
+    - yarn run static-ondrej-sika.de
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrej-sika.de/**/*
+      - yarn.lock
+  artifacts:
+    name: ondrej-sika.de
+    paths:
+      - packages/ondrej-sika.de/out
+
+
+ondrej-sika.de build docker:
+  dependencies:
+    - ondrej-sika.de build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/ondrej-sika.de/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.de packages/ondrej-sika.de
+    - rm packages/ondrej-sika.de/Dockerfile
+    - docker push registry.sikahq.com/www/www/ondrej-sika.de
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrej-sika.de/**/*
+      - yarn.lock
+
+ondrej-sika.de dev deploy:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.de&domain=ondrej-sika.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrej-sika.de/**/*
+      - yarn.lock
+  environment:
+    name: dev ondrej-sika.de
+    url: https://ondrej-sika.de.xsika.cz
+  dependencies: []
+
+ondrej-sika.de prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.de&domain=ondrej-sika.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrej-sika.de/**/*
+      - yarn.lock
+  environment:
+    name: prod ondrej-sika.de
+    url: https://ondrej-sika.de
+  dependencies: []
+
 ondrejsikalabs.com build js:
   stage: build_js
   image: node
