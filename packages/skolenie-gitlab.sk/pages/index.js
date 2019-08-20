@@ -20,7 +20,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Skolenie Gitlab CI"
+      websiteHeader="Skolenie Gitlab CI Slovensko 🇸🇰"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-gitlab-ci.cz"
       logoUrl="/static/gitlab-ci.svg"

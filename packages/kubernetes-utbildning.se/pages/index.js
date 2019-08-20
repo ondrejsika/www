@@ -22,7 +22,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Kuberneres Utbildning"
+      websiteHeader="Kuberneres Utbildning Sverige 🇸🇪"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.se/?x_source=kubernetes-utbildning.se"
       logoUrl="/static/kubernetes.png"

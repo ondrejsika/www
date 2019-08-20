@@ -22,7 +22,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Kubernetes Schulung"
+      websiteHeader="Kubernetes Schulung Deutschland 🇩🇪"
       byName="Sika Kraml GbR"
       byUrl="https://sika-kraml.de/kontakt/?x_source=kubernetes-schulung.de"
       logoUrl="/static/kubernetes.png"

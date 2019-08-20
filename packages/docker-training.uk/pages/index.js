@@ -20,7 +20,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Docker Training"
+      websiteHeader="Docker Training UK 🇬🇧"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=docker-training.cz"
       logoUrl="/static/docker-w.svg"

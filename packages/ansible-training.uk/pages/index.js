@@ -20,7 +20,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Ansible Training"
+      websiteHeader="Ansible Training UK 🇬🇧"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=ansible-training.uk"
       logoUrl="/static/ansible.png"

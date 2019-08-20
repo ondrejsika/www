@@ -19,7 +19,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Git Training"
+      websiteHeader="Git Training Netherlands 🇳🇱"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.com/?x_source=git-training.nl"
       logoUrl="/static/git.svg"

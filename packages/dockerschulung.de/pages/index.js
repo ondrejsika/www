@@ -26,7 +26,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Docker Schulung"
+      websiteHeader="Docker Schulung Deutschland 🇩🇪"
       byName="Ondrej Sika"
       byUrl="https://sika-kraml.de/kontakt/?x_source=dockerschulung.de"
       logoUrl="/static/docker-w.svg"
