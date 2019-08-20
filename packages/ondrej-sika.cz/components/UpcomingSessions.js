@@ -1,28 +1,19 @@
 import React from "react";
-import ButtonOutline from "@app/course-landing/components/ButtonOutline";
-
 import StaticDB from "@app/common/staticdb";
-
+import Translate from "@app/common/components/Translate";
 import sessions_file from "@app/data/training/sessions.yml";
-
-let db = new StaticDB();
-db.add("sessions", sessions_file);
-db.setCursor("sessions");
-db.filter("country", "cz");
-db.filter("active", true);
-let sessions = db.get();
-
-const Translate = props => {
-  return <>{props[props.lang]}</>;
-};
 
 class UpcomingSessions extends React.Component {
   render() {
-    let course = this.props.course;
-    let lang = this.props.lang;
+    let db = new StaticDB();
+    db.add("sessions", sessions_file);
+    db.setCursor("sessions");
+    db.filter("country", this.props.location || "cz");
+    db.filter("active", true);
+    let sessions = db.get();
 
     return (
-      <table class="table table-hover mt-4">
+      <table className="table table-hover mt-4">
         <thead>
           <tr>
             <th scope="col" className="col-main">
@@ -40,7 +31,7 @@ class UpcomingSessions extends React.Component {
             <th scope="col" className="col-min">
               <Translate lang={this.props.lang} cs="DÉLKA" />
             </th>
-            <th></th>
+            <th />
           </tr>
         </thead>
         <tbody>
