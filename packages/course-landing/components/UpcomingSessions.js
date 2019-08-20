@@ -1,46 +1,59 @@
 import React from "react";
+import StaticDB from "@app/common/staticdb";
+import Translate from "@app/common/components/Translate";
+import sessions_file from "@app/data/training/sessions.yml";
 import ButtonOutline from "@app/course-landing/components/ButtonOutline";
-
-import courses from "@app/data/training/courses.yml";
-import sessions from "@app/data/training/sessions.yml";
-
-const Translate = props => {
-  return <>{props[props.lang]}</>;
-};
 
 class UpcomingSessions extends React.Component {
   render() {
-    let course = this.props.course;
-    let lang = this.props.lang;
+    let db = new StaticDB();
+    db.add("sessions", sessions_file);
+    db.setCursor("sessions");
+    db.filter("country", this.props.location || "cz");
+    db.filter("course_id", this.props.course);
+    db.filter("active", true);
+    let sessions = db.get();
 
     return (
-      <table className="table">
-        <tr>
-          <th>
-            <Translate lang={this.props.lang} en="Course" cs="Kurz" />
-          </th>
-          <th>
-            <Translate lang={this.props.lang} en="City" cs="Mesto" />
-          </th>
-          <th>
-            <Translate lang={this.props.lang} en="Price" cs="Cena" />
-          </th>
-          <th></th>
-        </tr>
-        {sessions.map((element, i) => {
-          return (
-            <tr key={i}>
-              <td>{element.name}</td>
-              <td>{element.city}</td>
-              <td>{element.price}</td>
-              <td>
-                <ButtonOutline btnUrl="https://ondrej-sika.cz/skoleni/docker/poptavka/">
-                  Nezávazně poptat školení
-                </ButtonOutline>
-              </td>
-            </tr>
-          );
-        })}
+      <table className="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col" className="col-main">
+              <Translate lang={this.props.lang} cs="NÁZEV ŠKOLENÍ" />
+            </th>
+            <th scope="col" className="col-min">
+              <Translate lang={this.props.lang} cs="MÍSTO" />
+            </th>
+            <th scope="col" className="col-min">
+              <Translate lang={this.props.lang} cs="DATUM" />
+            </th>
+            <th scope="col" className="col-min">
+              <Translate lang={this.props.lang} cs="CENA" />
+            </th>
+            <th scope="col" className="col-min">
+              <Translate lang={this.props.lang} cs="DÉLKA" />
+            </th>
+            <th />
+          </tr>
+        </thead>
+        <tbody>
+          {sessions.map((course, i) => {
+            return (
+              <tr key={i}>
+                <td>{course.name}</td>
+                <td>{course.city}</td>
+                <td>{course.date_from}</td>
+                <td>{course.price}</td>
+                <td>{course.length}</td>
+                <td>
+                  <ButtonOutline btnUrl="https://ondrej-sika.cz/skoleni/docker/poptavka/">
+                    Nezávazně poptat školení
+                  </ButtonOutline>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     );
   }
