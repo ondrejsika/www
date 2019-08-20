@@ -2130,3 +2130,171 @@ docker-training.de build docker:
       - packages/docker-training.de/**/*
       - yarn.lock
 
+docker-training.ch build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/docker-training.ch/out
+    - yarn run static-docker-training.ch
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.ch/**/*
+      - yarn.lock
+  artifacts:
+    name: docker-training.ch
+    paths:
+      - packages/docker-training.ch/out
+
+
+docker-training.ch build docker:
+  dependencies:
+    - docker-training.ch build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/docker-training.ch/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/docker-training.ch packages/docker-training.ch
+    - rm packages/docker-training.ch/Dockerfile
+    - docker push registry.sikahq.com/www/www/docker-training.ch
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.ch/**/*
+      - yarn.lock
+
+docker-training.at build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/docker-training.at/out
+    - yarn run static-docker-training.at
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.at/**/*
+      - yarn.lock
+  artifacts:
+    name: docker-training.at
+    paths:
+      - packages/docker-training.at/out
+
+
+docker-training.at build docker:
+  dependencies:
+    - docker-training.at build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/docker-training.at/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/docker-training.at packages/docker-training.at
+    - rm packages/docker-training.at/Dockerfile
+    - docker push registry.sikahq.com/www/www/docker-training.at
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.at/**/*
+      - yarn.lock
+
+docker-training.nl build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/docker-training.nl/out
+    - yarn run static-docker-training.nl
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.nl/**/*
+      - yarn.lock
+  artifacts:
+    name: docker-training.nl
+    paths:
+      - packages/docker-training.nl/out
+
+
+docker-training.nl build docker:
+  dependencies:
+    - docker-training.nl build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/docker-training.nl/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/docker-training.nl packages/docker-training.nl
+    - rm packages/docker-training.nl/Dockerfile
+    - docker push registry.sikahq.com/www/www/docker-training.nl
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.nl/**/*
+      - yarn.lock
+
+git-training.nl build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/git-training.nl/out
+    - yarn run static-git-training.nl
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/git-training.nl/**/*
+      - yarn.lock
+  artifacts:
+    name: git-training.nl
+    paths:
+      - packages/git-training.nl/out
+
+
+git-training.nl build docker:
+  dependencies:
+    - git-training.nl build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/git-training.nl/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/git-training.nl packages/git-training.nl
+    - rm packages/git-training.nl/Dockerfile
+    - docker push registry.sikahq.com/www/www/git-training.nl
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/git-training.nl/**/*
+      - yarn.lock
+
