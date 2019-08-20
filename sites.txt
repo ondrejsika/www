@@ -25,6 +25,7 @@ git-utbildning.se
 gitlab-utbildning.se
 kubernetes-utbildning.se
 ondrej-sika.uk
+ondrej-sika.de
 ondrejsikalabs.com
 sika.io
 docker-training.de
