@@ -16,45 +16,45 @@ Those links also works in VS Code
 
 #### UK
 
-- [ansible-training.uk](packages/ansible-training.uk/pages/index.js)
-- [git-training.uk](packages/git-training.uk/pages/index.js)
-- [gitlab-training.uk](packages/gitlab-training.uk/pages/index.js)
-- [docker-training.uk](packages/docker-training.uk/pages/index.js)
-- [kubernetes-training.uk](packages/kubernetes-training.uk/pages/index.js)
+- [ansible-training.uk](packages/ansible-training.uk/pages/index.js) ([live](https://ansible-training.uk))
+- [git-training.uk](packages/git-training.uk/pages/index.js) ([live](https://git-training.uk))
+- [gitlab-training.uk](packages/gitlab-training.uk/pages/index.js) ([live](https://gitlab-training.uk))
+- [docker-training.uk](packages/docker-training.uk/pages/index.js) ([live](https://docker-training.uk))
+- [kubernetes-training.uk](packages/kubernetes-training.uk/pages/index.js) ([live](https://kuberbnetes-training.uk))
 
 #### DE
 
-- [sika-kraml.de](packages/sika-kraml.de/pages)
-- [ansible-schulung.de](packages/ansible-schulung.de/pages/index.js)
-- [dockerschulung.de](packages/dockerschulung.de/pages/index.js)
-- [kubernetes-schulung.de](packages/kubernetes-schulung.de/pages/index.js)
-- [docker-training.de](packages/docker-training.de/pages/index.js)
+- [sika-kraml.de](packages/sika-kraml.de/pages) ([live](https://sika-kraml.de))
+- [ansible-schulung.de](packages/ansible-schulung.de/pages/index.js) ([live](https://ansible-schulung.de))
+- [dockerschulung.de](packages/dockerschulung.de/pages/index.js) ([live](https://dockerschulung.de))
+- [kubernetes-schulung.de](packages/kubernetes-schulung.de/pages/index.js) ([live](https://kubernetes-schulung.de))
+- [docker-training.de](packages/docker-training.de/pages/index.js) ([live](https://docker-training.de))
 
 
 #### CZ
 
-- [ondrej-sika.cz](packages/ondrej-sika.cz/pages)
-- [ansible-skoleni.cz](packages/ansible-skoleni.cz/pages/index.js)
-- [skoleni-git.cz](packages/skoleni-git.cz/pages/index.js)
-- [gitlab-ci.cz](packages/gitlab-ci.cz/pages/index.js)
-- [skoleni-docker.cz](packages/skoleni-docker.cz/pages/index.js)
-- [skoleni-kubernetes.cz](packages/skoleni-kubernetes.cz/pages/index.js)
+- [ondrej-sika.cz](packages/ondrej-sika.cz/pages) ([live](https://ondrej-sika.cz))
+- [ansible-skoleni.cz](packages/ansible-skoleni.cz/pages/index.js) ([live](https://ansible-skoleni.cz))
+- [skoleni-git.cz](packages/skoleni-git.cz/pages/index.js) ([live](https://skoleni-git.cz))
+- [gitlab-ci.cz](packages/gitlab-ci.cz/pages/index.js) ([live](https://gitlab-ci.cz))
+- [skoleni-docker.cz](packages/skoleni-docker.cz/pages/index.js) ([live](https://skoleni-docker.cz))
+- [skoleni-kubernetes.cz](packages/skoleni-kubernetes.cz/pages/index.js) ([live](https://skoleni-kubernetes.cz))
 
 #### SK
 
-- [skolenie-ansible.sk](packages/skolenie-ansible.sk/pages/index.js)
-- [skolenie-git.sk](packages/skolenie-git.sk/pages/index.js)
-- [skolenie-gitlab.sk](packages/skolenie-gitlab.sk/pages/index.js)
-- [skolenie-docker.sk](packages/skolenie-docker.sk/pages/index.js)
-- [skolenie.kubernetes.sk](packages/skolenie.kubernetes.sk/pages/index.js)
+- [skolenie-ansible.sk](packages/skolenie-ansible.sk/pages/index.js) ([live](https://skolenie-ansible.sk))
+- [skolenie-git.sk](packages/skolenie-git.sk/pages/index.js) ([live](https://skolenie-git.sk))
+- [skolenie-gitlab.sk](packages/skolenie-gitlab.sk/pages/index.js) ([live](https://skolenie-gitlab.sk))
+- [skolenie-gitlab.sk](packages/skolenie-docker.sk/pages/index.js) ([live](https://skolenie-gitlab.sk))
+- [skolenie.kubernetes.sk](packages/skolenie.kubernetes.sk/pages/index.js) ([live](https://skolenie.kubernetes.sk))
 
 #### SE
 
-- [ansible-utbildning.se](packages/ansible-utbildning.se/pages/index.js)
-- [git-utbildning.se](packages/git-utbildning.se/pages/index.js)
-- [gitlab-utbildning.se](packages/gitlab-utbildning.se/pages/index.js)
-- [docker-utbildning.se](packages/docker-utbildning.se/pages/index.js)
-- [kubernetes-utbildning.se](packages/kubernetes-utbildning.se/pages/index.js)
+- [ansible-utbildning.se](packages/ansible-utbildning.se/pages/index.js) ([live](https://ansible-utbildning.se))
+- [git-utbildning.se](packages/git-utbildning.se/pages/index.js) ([live](https://git-utbildning.se))
+- [git-utbildning.se](packages/gitlab-utbildning.se/pages/index.js) ([live](https://git-utbildning.se))
+- [docker-utbildning.se](packages/docker-utbildning.se/pages/index.js) ([live](https://docker-utbildning.se))
+- [kubernetes-utbildning.se](packages/kubernetes-utbildning.se/pages/index.js) ([live](https://kubernetes-utbildning.se))
 
 ### Add New Site
 
