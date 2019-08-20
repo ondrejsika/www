@@ -66,7 +66,8 @@ Those links also works in VS Code
 
 #### NL
 
-- [docker-training.at](packages/docker-training.at/pages/index.js) ([live](https://docker-training.at))
+- [docker-training.nl](packages/docker-training.nl/pages/index.js) ([live](https://docker-training.nl))
+- [git-training.nl](packages/git-training.nl/pages/index.js) ([live](https://git-training.nl))
 
 ### Add New Site
 
