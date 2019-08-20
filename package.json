@@ -37,6 +37,7 @@
     "dev-ansible-utbildning.se": "yarn --cwd packages/ansible-utbildning.se dev -p 3026",
     "dev-ondrej-sika.uk": "yarn --cwd packages/ondrej-sika.uk dev -p 3027",
     "dev-ondrejsikalabs.com": "yarn --cwd packages/ondrejsikalabs.com dev -p 3028",
+    "dev-ondrej-sika.de": "yarn --cwd packages/ondrej-sika.de dev -p 3029",
     "dev-sika.io": "yarn --cwd packages/sika.io dev -p 3030",
     "dev-docker-training.de": "yarn --cwd packages/docker-training.de dev -p 3031",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
@@ -67,6 +68,7 @@
     "static-ansible-utbildning.se": "yarn --cwd packages/ansible-utbildning.se static",
     "static-ondrej-sika.uk": "yarn --cwd packages/ondrej-sika.uk static",
     "static-ondrejsikalabs.com": "yarn --cwd packages/ondrejsikalabs.com static",
+    "static-ondrej-sika.de": "yarn --cwd packages/ondrej-sika.de static",
     "static-sika.io": "yarn --cwd packages/sika.io static",
     "static-docker-training.de": "yarn --cwd packages/docker-training.de static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
