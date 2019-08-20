@@ -127,8 +127,7 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
 `}
         />
         <TwitterRecommendations
-          rec1="jan-novotny-docker"
-          rec2="tomas-ligenza-docker"
+          ids={["jan-novotny-docker", "tomas-ligenza-docker"]}
         />
       </TextFrame>
       <TextFrame>
