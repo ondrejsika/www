@@ -1,7 +1,7 @@
 #!/bin/sh
 
-DEV_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk skolenie-ansible.sk ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrej-sika.uk ondrejsikalabs.com sika.io"
-PROD_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrejsikalabs.com sika.io"
+DEV_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk skolenie-ansible.sk ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrej-sika.uk ondrejsikalabs.com sika.io ondrej-sika.de"
+PROD_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrejsikalabs.com sika.io ondrej-sika.de"
 DEV_SUFFIX=".xsika.cz"
 
 
