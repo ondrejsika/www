@@ -9,6 +9,7 @@ const Index = () => (
   <>
     <Head>
       <title>Ondrej Sika | sika.io</title>
+      <meta http-equiv="refresh" content="3; url=https://ondrejsika.com" />
     </Head>
     <div className="mt-4">
       <Markdown
