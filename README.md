@@ -56,6 +56,10 @@ Those links also works in VS Code
 - [docker-utbildning.se](packages/docker-utbildning.se/pages/index.js) ([live](https://docker-utbildning.se))
 - [kubernetes-utbildning.se](packages/kubernetes-utbildning.se/pages/index.js) ([live](https://kubernetes-utbildning.se))
 
+#### CH
+
+- [docker-training.ch](packages/docker-training.ch/pages/index.js) ([live](https://docker-training.ch))
+
 ### Add New Site
 
 You probably copy some course landing site (skoleni-docker.cz) or website (ondrej-sika.cz). You have to:

@@ -28,3 +28,4 @@ ondrej-sika.uk
 ondrejsikalabs.com
 sika.io
 docker-training.de
+docker-training.ch
