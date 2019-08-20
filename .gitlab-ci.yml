@@ -70,6 +70,7 @@ ansible-schulung.de dev deploy:
   environment:
     name: dev ansible-schulung.de
     url: https://ansible-schulung.de.xsika.cz
+  dependencies: []
 
 ansible-schulung.de prod deploy:
   stage: deploy_prod
@@ -89,6 +90,7 @@ ansible-schulung.de prod deploy:
   environment:
     name: prod ansible-schulung.de
     url: https://ansible-schulung.de
+  dependencies: []
 
 ansible-skoleni.cz build js:
   stage: build_js
@@ -148,6 +150,7 @@ ansible-skoleni.cz dev deploy:
   environment:
     name: dev ansible-skoleni.cz
     url: https://ansible-skoleni.cz.xsika.cz
+  dependencies: []
 
 ansible-skoleni.cz prod deploy:
   stage: deploy_prod
@@ -167,6 +170,7 @@ ansible-skoleni.cz prod deploy:
   environment:
     name: prod ansible-skoleni.cz
     url: https://ansible-skoleni.cz
+  dependencies: []
 
 archetype-web build js:
   stage: build_js
@@ -268,6 +272,7 @@ dockerschulung.de dev deploy:
   environment:
     name: dev dockerschulung.de
     url: https://dockerschulung.de.xsika.cz
+  dependencies: []
 
 dockerschulung.de prod deploy:
   stage: deploy_prod
@@ -287,6 +292,7 @@ dockerschulung.de prod deploy:
   environment:
     name: prod dockerschulung.de
     url: https://dockerschulung.de
+  dependencies: []
 
 gitlab-ci.cz build js:
   stage: build_js
@@ -346,6 +352,7 @@ gitlab-ci.cz dev deploy:
   environment:
     name: dev gitlab-ci.cz
     url: https://gitlab-ci.cz.xsika.cz
+  dependencies: []
 
 gitlab-ci.cz prod deploy:
   stage: deploy_prod
@@ -365,6 +372,7 @@ gitlab-ci.cz prod deploy:
   environment:
     name: prod gitlab-ci.cz
     url: https://gitlab-ci.cz
+  dependencies: []
 
 kubernetes-schulung.de build js:
   stage: build_js
@@ -424,6 +432,7 @@ kubernetes-schulung.de dev deploy:
   environment:
     name: dev kubernetes-schulung.de
     url: https://kubernetes-schulung.de.xsika.cz
+  dependencies: []
 
 kubernetes-schulung.de prod deploy:
   stage: deploy_prod
@@ -443,6 +452,7 @@ kubernetes-schulung.de prod deploy:
   environment:
     name: prod kubernetes-schulung.de
     url: https://kubernetes-schulung.de
+  dependencies: []
 
 ondrej-sika.cz build js:
   stage: build_js
@@ -502,6 +512,7 @@ ondrej-sika.cz dev deploy:
   environment:
     name: dev ondrej-sika.cz
     url: https://ondrej-sika.cz.xsika.cz
+  dependencies: []
 
 ondrej-sika.cz prod deploy:
   stage: deploy_prod
@@ -521,6 +532,7 @@ ondrej-sika.cz prod deploy:
   environment:
     name: prod ondrej-sika.cz
     url: https://ondrej-sika.cz
+  dependencies: []
 
 sika-kraml.de build js:
   stage: build_js
@@ -622,6 +634,7 @@ skoleni-docker.cz dev deploy:
   environment:
     name: dev skoleni-docker.cz
     url: https://skoleni-docker.cz.xsika.cz
+  dependencies: []
 
 skoleni-docker.cz prod deploy:
   stage: deploy_prod
@@ -641,6 +654,7 @@ skoleni-docker.cz prod deploy:
   environment:
     name: prod skoleni-docker.cz
     url: https://skoleni-docker.cz
+  dependencies: []
 
 skoleni-git.cz build js:
   stage: build_js
@@ -700,6 +714,7 @@ skoleni-git.cz dev deploy:
   environment:
     name: dev skoleni-git.cz
     url: https://skoleni-git.cz.xsika.cz
+  dependencies: []
 
 skoleni-git.cz prod deploy:
   stage: deploy_prod
@@ -719,6 +734,7 @@ skoleni-git.cz prod deploy:
   environment:
     name: prod skoleni-git.cz
     url: https://skoleni-git.cz
+  dependencies: []
 
 skoleni-kubernetes.cz build js:
   stage: build_js
@@ -778,6 +794,7 @@ skoleni-kubernetes.cz dev deploy:
   environment:
     name: dev skoleni-kubernetes.cz
     url: https://skoleni-kubernetes.cz.xsika.cz
+  dependencies: []
 
 skoleni-kubernetes.cz prod deploy:
   stage: deploy_prod
@@ -797,6 +814,7 @@ skoleni-kubernetes.cz prod deploy:
   environment:
     name: prod skoleni-kubernetes.cz
     url: https://skoleni-kubernetes.cz
+  dependencies: []
 
 git-training.uk build js:
   stage: build_js
@@ -856,6 +874,7 @@ git-training.uk dev deploy:
   environment:
     name: dev git-training.uk
     url: https://git-training.uk.xsika.cz
+  dependencies: []
 
 git-training.uk prod deploy:
   stage: deploy_prod
@@ -875,6 +894,7 @@ git-training.uk prod deploy:
   environment:
     name: prod git-training.uk
     url: https://git-training.uk
+  dependencies: []
 
 docker-training.uk build js:
   stage: build_js
@@ -934,6 +954,7 @@ docker-training.uk dev deploy:
   environment:
     name: dev docker-training.uk
     url: https://docker-training.uk.xsika.cz
+  dependencies: []
 
 docker-training.uk prod deploy:
   stage: deploy_prod
@@ -953,6 +974,7 @@ docker-training.uk prod deploy:
   environment:
     name: prod docker-training.uk
     url: https://docker-training.uk
+  dependencies: []
 
 kubernetes-training.uk build js:
   stage: build_js
@@ -1012,6 +1034,7 @@ kubernetes-training.uk dev deploy:
   environment:
     name: dev kubernetes-training.uk
     url: https://kubernetes-training.uk.xsika.cz
+  dependencies: []
 
 kubernetes-training.uk prod deploy:
   stage: deploy_prod
@@ -1031,6 +1054,7 @@ kubernetes-training.uk prod deploy:
   environment:
     name: prod kubernetes-training.uk
     url: https://kubernetes-training.uk
+  dependencies: []
 
 ansible-training.uk build js:
   stage: build_js
@@ -1090,6 +1114,7 @@ ansible-training.uk dev deploy:
   environment:
     name: dev ansible-training.uk
     url: https://ansible-training.uk.xsika.cz
+  dependencies: []
 
 ansible-training.uk prod deploy:
   stage: deploy_prod
@@ -1109,6 +1134,7 @@ ansible-training.uk prod deploy:
   environment:
     name: prod ansible-training.uk
     url: https://ansible-training.uk
+  dependencies: []
 
 gitlab-training.uk build js:
   stage: build_js
@@ -1168,6 +1194,7 @@ gitlab-training.uk dev deploy:
   environment:
     name: dev gitlab-training.uk
     url: https://gitlab-training.uk.xsika.cz
+  dependencies: []
 
 gitlab-training.uk prod deploy:
   stage: deploy_prod
@@ -1187,6 +1214,7 @@ gitlab-training.uk prod deploy:
   environment:
     name: prod gitlab-training.uk
     url: https://gitlab-training.uk
+  dependencies: []
 
 skolenie-git.sk build js:
   stage: build_js
@@ -1246,6 +1274,7 @@ skolenie-git.sk dev deploy:
   environment:
     name: dev skolenie-git.sk
     url: https://skolenie-git.sk.xsika.cz
+  dependencies: []
 
 skolenie-gitlab.sk build js:
   stage: build_js
@@ -1305,6 +1334,7 @@ skolenie-gitlab.sk dev deploy:
   environment:
     name: dev skolenie-gitlab.sk
     url: https://skolenie-gitlab.sk.xsika.cz
+  dependencies: []
 
 skolenie-docker.sk build js:
   stage: build_js
@@ -1364,6 +1394,7 @@ skolenie-docker.sk dev deploy:
   environment:
     name: dev skolenie-docker.sk
     url: https://skolenie-docker.sk.xsika.cz
+  dependencies: []
 
 skolenie.kubernetes.sk build js:
   stage: build_js
@@ -1423,6 +1454,7 @@ skolenie.kubernetes.sk dev deploy:
   environment:
     name: dev skolenie.kubernetes.sk
     url: https://skolenie.kubernetes.sk.xsika.cz
+  dependencies: []
 
 skolenie-ansible.sk build js:
   stage: build_js
@@ -1482,6 +1514,7 @@ skolenie-ansible.sk dev deploy:
   environment:
     name: dev skolenie-ansible.sk
     url: https://skolenie-ansible.sk.xsika.cz
+  dependencies: []
 
 ansible-utbildning.se build js:
   stage: build_js
@@ -1541,6 +1574,7 @@ ansible-utbildning.se dev deploy:
   environment:
     name: dev ansible-utbildning.se
     url: https://ansible-utbildning.se.xsika.cz
+  dependencies: []
 
 ansible-utbildning.se prod deploy:
   stage: deploy_prod
@@ -1560,6 +1594,7 @@ ansible-utbildning.se prod deploy:
   environment:
     name: prod ansible-utbildning.se
     url: https://ansible-utbildning.se
+  dependencies: []
 
 docker-utbildning.se build js:
   stage: build_js
@@ -1619,6 +1654,7 @@ docker-utbildning.se dev deploy:
   environment:
     name: dev docker-utbildning.se
     url: https://docker-utbildning.se.xsika.cz
+  dependencies: []
 
 docker-utbildning.se prod deploy:
   stage: deploy_prod
@@ -1638,6 +1674,7 @@ docker-utbildning.se prod deploy:
   environment:
     name: prod docker-utbildning.se
     url: https://docker-utbildning.se
+  dependencies: []
 
 git-utbildning.se build js:
   stage: build_js
@@ -1697,6 +1734,7 @@ git-utbildning.se dev deploy:
   environment:
     name: dev git-utbildning.se
     url: https://git-utbildning.se.xsika.cz
+  dependencies: []
 
 git-utbildning.se prod deploy:
   stage: deploy_prod
@@ -1716,6 +1754,7 @@ git-utbildning.se prod deploy:
   environment:
     name: prod git-utbildning.se
     url: https://git-utbildning.se
+  dependencies: []
 
 gitlab-utbildning.se build js:
   stage: build_js
@@ -1775,6 +1814,7 @@ gitlab-utbildning.se dev deploy:
   environment:
     name: dev gitlab-utbildning.se
     url: https://gitlab-utbildning.se.xsika.cz
+  dependencies: []
 
 gitlab-utbildning.se prod deploy:
   stage: deploy_prod
@@ -1794,6 +1834,7 @@ gitlab-utbildning.se prod deploy:
   environment:
     name: prod gitlab-utbildning.se
     url: https://gitlab-utbildning.se
+  dependencies: []
 
 kubernetes-utbildning.se build js:
   stage: build_js
@@ -1853,6 +1894,7 @@ kubernetes-utbildning.se dev deploy:
   environment:
     name: dev kubernetes-utbildning.se
     url: https://kubernetes-utbildning.se.xsika.cz
+  dependencies: []
 
 kubernetes-utbildning.se prod deploy:
   stage: deploy_prod
@@ -1872,6 +1914,7 @@ kubernetes-utbildning.se prod deploy:
   environment:
     name: prod kubernetes-utbildning.se
     url: https://kubernetes-utbildning.se
+  dependencies: []
 
 ondrej-sika.uk build js:
   stage: build_js
@@ -1931,6 +1974,7 @@ ondrej-sika.uk dev deploy:
   environment:
     name: dev ondrej-sika.uk
     url: https://ondrej-sika.uk.xsika.cz
+  dependencies: []
 
 ondrejsikalabs.com build js:
   stage: build_js
@@ -1990,6 +2034,7 @@ ondrejsikalabs.com dev deploy:
   environment:
     name: dev ondrejsikalabs.com
     url: https://ondrejsikalabs.com.xsika.cz
+  dependencies: []
 
 ondrejsikalabs.com prod deploy:
   stage: deploy_prod
@@ -2009,6 +2054,7 @@ ondrejsikalabs.com prod deploy:
   environment:
     name: prod ondrejsikalabs.com
     url: https://ondrejsikalabs.com
+  dependencies: []
 
 sika.io build js:
   stage: build_js
@@ -2068,6 +2114,7 @@ sika.io dev deploy:
   environment:
     name: dev sika.io
     url: https://sika.io.xsika.cz
+  dependencies: []
 
 sika.io prod deploy:
   stage: deploy_prod
@@ -2087,6 +2134,7 @@ sika.io prod deploy:
   environment:
     name: prod sika.io
     url: https://sika.io
+  dependencies: []
 
 docker-training.de build js:
   stage: build_js
