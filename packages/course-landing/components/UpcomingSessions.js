@@ -46,7 +46,9 @@ class UpcomingSessions extends React.Component {
                 <td>{course.price}</td>
                 <td>{course.length}</td>
                 <td>
-                  <ButtonOutline btnUrl="https://ondrej-sika.cz/skoleni/docker/poptavka/">
+                  <ButtonOutline
+                    btnUrl={`https://ondrej-sika.cz/registrace/?${course.id}`}
+                  >
                     Nezávazně poptat školení
                   </ButtonOutline>
                 </td>

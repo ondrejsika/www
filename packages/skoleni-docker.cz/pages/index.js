@@ -35,7 +35,11 @@ const Index = () => (
       </HeaderLink>
     </Header>
     <div className="container container-width">
-      {/* <UpcomingSessions lang={site.lang}/> */}
+      <UpcomingSessions
+        lang={site.lang}
+        course="docker"
+        location={site.location}
+      />
       <TextFrame>
         <Markdown
           source={`
