@@ -1,0 +1,27 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+  {{ if .Values.changeCause }}
+  annotations:
+    kubernetes.io/change-cause: {{ .Values.changeCause }}
+  {{ end }}
+  labels:
+    release: {{ .Release.Name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: {{ .Values.image }}
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
