@@ -13,7 +13,7 @@ class UpcomingSessions extends React.Component {
     let sessions = db.get();
 
     return (
-      <table className="table table-hover mt-4">
+      <table className="table table-hover">
         <thead>
           <tr>
             <th scope="col" className="col-main">
