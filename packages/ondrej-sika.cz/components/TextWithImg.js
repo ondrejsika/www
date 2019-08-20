@@ -1,8 +1,8 @@
 const TextWithImg = props => (
   <div>
-    <h3 className="pt-4 pb-2" id="about-me">
+    <h2 className="pt-4 pb-2" id="about-me">
       {props.TextWithImgHeader}
-    </h3>
+    </h2>
     <div className="row">
       <div className="col-lg-7 col-md-12">
         <p>{props.children}</p>

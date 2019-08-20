@@ -1,6 +1,6 @@
 const CompaniesBar = props => (
   <div>
-    <h3 className="pt-4 pb-2">{props.CompaniesBarHeader}</h3>
+    <h2 className="pt-4 pb-2">{props.CompaniesBarHeader}</h2>
     <div className="d-flex row text-center">
       <div className="col-lg-2 col-md-2 col-sm-4 col-4 pl-0 pr-0">
         <img src={props.CompaniesBar1} className="img-fluid bw" alt="default" />

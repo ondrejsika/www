@@ -2,7 +2,7 @@ const Price = props => (
   <div>
     <div className="price bg-grey pb-3">
       <div className="container">
-        <h3 className="pt-4 pb-2">{props.PriceHeader}</h3>
+        <h2 className="pt-4 pb-2">{props.PriceHeader}</h2>
         <div className="row">
           <div className="col-sm-9 col-12">
             <p className="">{props.children}</p>
