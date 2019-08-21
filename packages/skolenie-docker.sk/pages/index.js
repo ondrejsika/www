@@ -20,12 +20,20 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
+<<<<<<< HEAD
       websiteHeader="Školenie Dockeru 🇸🇰"
+=======
+      websiteHeader="Školenie Dockeru"
+>>>>>>> skoleni-docker.sk - text translation to slovak
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
       logoUrl="/static/docker-w.svg"
     >
+<<<<<<< HEAD
       <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
+=======
+      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">
+>>>>>>> skoleni-docker.sk - text translation to slovak
         Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">
@@ -46,7 +54,11 @@ Docker je technológia, ktorá dnes veľmi zjednodušuje proces vývoja, testova
           source={`
 ### Ako školenie prebieha
 
+<<<<<<< HEAD
 Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s Dockerom pracovať od vytvorenia vlastných kontajnerov až po jeho prevádzku v Swarme. Všetko si aj prakticky vyskúšame.
+=======
+Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s Dockerom pracovať od vytvorenia vlastných kontajnerov až po jeho prevádzku v Swarme. Všetko si aj prakticky vyskúšame.
+>>>>>>> skoleni-docker.sk - text translation to slovak
 `}
         />
       </TextFrame>
@@ -56,10 +68,17 @@ Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s 
 ### Čo Vás naučím
 
 - Teoretický úvod do Dockeru
+<<<<<<< HEAD
 - Inštaláciu Dockeru (tých, ktorí ho nenainštalovali doma)
 - Prácu s kontajnermi
 - Prácu s obrazmi
 - Docker Compose - multikontajnerové aplikácie v Dockeri
+=======
+- Inštaláciu Dockeru (tých ktorý ho nenainštalovali doma)
+- Prácu s kontajnermi
+- Prácu s obrazmi
+- Docker Compose - viackontajnerové aplikácie v Dockeri
+>>>>>>> skoleni-docker.sk - text translation to slovak
 - Deployment do Swarmu
 - Ukážka deploymentu do Kubernetes
 `}
@@ -131,10 +150,17 @@ Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýta�
         <Markdown
           source={`
 ### Cena
+<<<<<<< HEAD
 Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/docker/poptavka/) alebo mi napíšte email na ondrej@sika.io
 - Otvorený termín (self funded): 389 EUR bez DPH
 - Otvorený termín (company funded): 589 EUR bez DPH
 - Firemné školenie (vo firme): 1550 EUR bez DPH
+=======
+Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/docker/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
+- Otvorený termín (self funded): 389 EUR bez DPH
+- Otvorený termín (company funded): 589 EUR bez DPH
+- Firemní školení (vo firme): 1550 EUR bez DPH
+>>>>>>> skoleni-docker.sk - text translation to slovak
         `}
         />
       </TextFrame>
