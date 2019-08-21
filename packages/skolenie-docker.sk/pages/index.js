@@ -20,20 +20,12 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-<<<<<<< HEAD
       websiteHeader="Školenie Dockeru 🇸🇰"
-=======
-      websiteHeader="Školenie Dockeru"
->>>>>>> skoleni-docker.sk - text translation to slovak
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
       logoUrl="/static/docker-w.svg"
     >
-<<<<<<< HEAD
       <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
-=======
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">
->>>>>>> skoleni-docker.sk - text translation to slovak
         Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">
@@ -54,11 +46,7 @@ Docker je technológia, ktorá dnes veľmi zjednodušuje proces vývoja, testova
           source={`
 ### Ako školenie prebieha
 
-<<<<<<< HEAD
 Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s Dockerom pracovať od vytvorenia vlastných kontajnerov až po jeho prevádzku v Swarme. Všetko si aj prakticky vyskúšame.
-=======
-Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s Dockerom pracovať od vytvorenia vlastných kontajnerov až po jeho prevádzku v Swarme. Všetko si aj prakticky vyskúšame.
->>>>>>> skoleni-docker.sk - text translation to slovak
 `}
         />
       </TextFrame>
@@ -69,12 +57,16 @@ Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s 
 
 - Teoretický úvod do Dockeru
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Inštaláciu Dockeru (tých, ktorí ho nenainštalovali doma)
 - Prácu s kontajnermi
 - Prácu s obrazmi
 - Docker Compose - multikontajnerové aplikácie v Dockeri
 =======
 - Inštaláciu Dockeru (tých ktorý ho nenainštalovali doma)
+=======
+- Inštaláciu Dockeru (tých, ktorí ho nenainštalovali doma)
+>>>>>>> skolenie-kubernetes.sk - text translation to svk + minor translation fixes in other courses
 - Prácu s kontajnermi
 - Prácu s obrazmi
 - Docker Compose - viackontajnerové aplikácie v Dockeri
