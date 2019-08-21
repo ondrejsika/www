@@ -16,81 +16,81 @@ import site from "@app/skolenie-docker.sk/config";
 const Index = () => (
   <div>
     <Head>
-      <title>Skolenie Docker, Ondrej Sika - skolenie-docker.sk</title>
+      <title>Školenie Docker, Ondrej Sika - skolenie-docker.sk</title>
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Skolenie Dockeru Slovensko 🇸🇰"
+      websiteHeader="Školenie Dockeru 🇸🇰"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
       logoUrl="/static/docker-w.svg"
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">
-        Nezávazně poptat školení
+        Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">
-        Kontaktovat
+        Kontaktovať
       </HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
         <Markdown
           source={`
-### Co je to Docker
-Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
+### Čo je to Docker
+Docker je technológia, ktorá dnes veľmi zjednodušuje proces vývoja, testovania a prevádzky softvéru. Prevádzkujte čokoľvek a kdekoľvek. Už nečakajte na nastavenie vášho serveru alebo na aktualizáciu nejakej knižnice. Majte prostredie ako súčasť vašej aplikácie.
 `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Jak školení probíhá
+### Ako školenie prebieha
 
-Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
+Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s Dockerom pracovať od vytvorenia vlastných kontajnerov až po jeho prevádzku v Swarme. Všetko si aj prakticky vyskúšame.
 `}
         />
       </TextFrame>
       <TextFrame header="">
         <Markdown
           source={`
-### Co Vás naučím
+### Čo Vás naučím
 
 - Teoretický úvod do Dockeru
-- Instalace Dockeru (pro ty kteří nenainstalovali doma)
-- Práce s kontejnery
-- Práce s obrazy
-- Docker Compose - vicekontejnerove aplikace v Dockeru
+- Inštaláciu Dockeru (tých ktorý ho nenainštalovali doma)
+- Prácu s kontajnermi
+- Prácu s obrazmi
+- Docker Compose - viackontajnerové aplikácie v Dockeri
 - Deployment do Swarmu
-- Ukázka deploymentu do Kubernetes
+- Ukážka deploymentu do Kubernetes
 `}
         />
       </TextFrame>
       <TextFrame header="">
         <Markdown
           source={`
-### Pro koho je školení určeno
+### Pre koho je školenie určené
 
-Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
+Školenie je primárne určené ľuďom, ktorí nemajú s Dockerom žiadne (alebo len malé) skúsenosti. Účasť na školení nie je podmienená predchádzajúcimi znalosťami Dockeru. Je vhodné pre vývojárov alebo DevOps (serverových administrátorov), ktorí chcú Docker využívať v praxi alebo chcú získť prehľad o tom čo Docker rieši a kde by ho mohli použiť.
 `}
         />
         <TwoCol
           col1={
             <Markdown
               source={`
-#### Předchozí znalosti
+#### Predchádzajúce znalosti
 
-- Základy práce s Linuxem
-- Základy práce v terminálu
+- Základy práce s Linuxom
+- Základy práce v terminále
 `}
             />
           }
           col2={
             <Markdown
               source={`
-#### Technické požadavky
+#### Technické požiadavky
 
-- Nainstalovaný Docker, [návod na instalaci](https://www.ondrej-sika.cz/docker/instalace/)
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+- Nainštalovaný Docker, [návod na inštaláciu](https://www.ondrej-sika.cz/docker/instalace/)
+- Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
 `}
             />
           }
@@ -102,14 +102,14 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
       >
         <Markdown
           source={`
-Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
+Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/).
 
-Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
+Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť.
 `}
         />
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti" />
+      <MyClients HeaderClients="Moji najvýznamejší klienti" />
 
       <ThreeCol
         header="Reference"
@@ -121,8 +121,8 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
       <TextFrame>
         <Markdown
           source={`
-### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/docker/poptavka/)
+### Mám záujem o školenie
+Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýtať školenie](https://ondrej-sika.cz/skoleni/docker/poptavka/)
 `}
         />
       </TextFrame>
@@ -131,10 +131,10 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
         <Markdown
           source={`
 ### Cena
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/docker/poptavka/) nebo mi napište email na ondrej@ondrejsika.com
-- Otevřený termín (self funded): 9 999 CZK bez DPH
-- Otevřený termín (company funded): 14 999 CZK bez DPH
-- Firemní školení (ve firmě): 40 000 CZK bez DPH
+Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/docker/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
+- Otvorený termín (self funded): 389 EUR bez DPH
+- Otvorený termín (company funded): 589 EUR bez DPH
+- Firemní školení (vo firme): 1550 EUR bez DPH
         `}
         />
       </TextFrame>
