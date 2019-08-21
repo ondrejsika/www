@@ -16,7 +16,7 @@ import site from "@app/skolenie-ansible.sk/config";
 const Index = () => (
   <div>
     <Head>
-      <title>Ansible Skolenie, Ondrej Sika - skolenie-ansible.sk</title>
+      <title>Školenie Ansible, Ondrej Sika - skolenie-ansible.sk</title>
     </Head>
     <Navigation location={site.location} />
     <Header
@@ -26,39 +26,39 @@ const Index = () => (
       logoUrl="/static/ansible.png"
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/ansible/poptavka/?x_source=ansible-skoleni.cz">
-        Nezávazně poptat školení
+        Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=ansible-skoleni.cz">
-        Kontaktovat
+        Kontaktovať
       </HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
         <Markdown
           source={`
-### Popis technologie
-Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám ze ztratíte přehled kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
+### Popis technológie
+Ansible je nástroj na hromadnú správu konfigurácií a nasadzovanie. Vy deklarujete výsledný stav serveru a služieb a Ansible sa postará o vykonanie. Nemusíte riešiť v akom stave je server alebo aplikácia aktuálne, Ansible vám zariadi požadovaný výsledok (výhoda deklaratívnej syntax, napríklad shell script je imperatívny - vykonaj to a to . ..). Akúkoľvek konfiguráciu máte verzovanú Gitom a nestane sa Vám, že stratíte prehľad o tom, čo kde máte alebo že vynecháte nejaký dôležitý krok. Ansible Vám pomôže nasadzovať aplikácie a spravovať servery rýchlejšie a bezpečnejšie.
         `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Jak školení probíhá
-Školení probíhá formou workshopu, vše si prakticky vyzkoušíme a osaháme. Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní koncepty. Zkusíme si nastavit server (testovací na DigitalOceanu) a nasadit aplikaci od začátku až do konce. Od instalace systémových balíčku, přes stažení aplikace z Gitu, po vytvoření šablon konfiguračních skriptu a nastavení secrets (například hesel). Po absolvování kurzu budete schopni používat Ansible na denní bázi a zjednodušit si nasazovací a konfigurační rutiny.
+### Ako školenie prebieha
+Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ansible si spoločne nainštalujeme, popíšeme si ako pracuje a základné koncepty. Skúsime si nastaviť server (tetovací na DiditalOcean) a nasadiť aplikáciu od začiatku až do konca. Od inštalácie systémových balíčkov, cez stiahnutie aplikácie z Gitu, po vytvorenie šablón konfiguračných skriptov a nastavenie secretes (napríklad hesiel). Po absolvovaní kurzu budete schopní používať Ansible na dennej báze a zjednodušiť si nasadzovanie a konfiguračné rutiny.
         `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Co Vás naučím
-- Základní koncept Ansible
-- Instalace Ansible (pro ty kteří nenainstalovali doma)
-- Základní ovládání Ansible
+### Čo Vás naučím
+- Základný koncept Ansible
+- Inštaláciu Ansible (tých ktorý ho nenainštalovali doma)
+- Základné ovládanie Ansible
 - Playbooks
 - Moduly
-- Šablony
+- Šablóny
 - Secrets
         `}
         />
@@ -66,26 +66,26 @@ Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklaruj
       <TextFrame>
         <Markdown
           source={`
-### Pro koho je školení určeno
-Školení je převážně určeno adminum a DevOps, kteří chtějí začít Ansible používat. Zároveň je vhodné i pro vývojáře, kteří občas nasazují (i do testovacích prostředí) svoje aplikace a chtějí zjednodušit tento proces.
+### Pre koho je školenie určené
+Školenie je určené hlavne adminom a DevOps (serverovým administrátorom), ktorí chcú začať Ansible používať. Zároveň je vhodné i pre vývojárov, ktorí občas nasadzujú (aj do testovacích prostredí) svoje aplikácie a chcú si tento proces zjednodušiť.
         `}
         />
         <TwoCol
           col1={
             <Markdown
               source={`
-#### Předchozí znalosti
-- Základy práce s Linuxem
-- Základy práce v terminálu
+#### Predchádzajúce znalosti
+- Základy práce s Linuxom
+- Základy práce v terminále
             `}
             />
           }
           col2={
             <Markdown
               source={`
-#### Technické požadavky
-- Nainstalovaný Ansible, [návod na instalaci](https://www.ondrej-sika.cz/ansible/instalace/)
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+#### Technické požiadavky
+- Nainštalovaný Ansible, [návod na inštaláciu](https://www.ondrej-sika.cz/ansible/instalace/)
+- Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
             `}
             />
           }
@@ -97,7 +97,7 @@ Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklaruj
       >
         <Markdown
           source={`
-Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vědu osobně. Ansible používám jako nástroj na správu serverů i osobních počítačů (těch s Linuxem, dříve jsem používal Puppet ale přešel jsem na Ansible). Krom toho se snažím Ansible používat na správu úplně všeho, od uživatelů v databázích po DNS záznamy na Cloudflare.
+Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Všetky kurzy vediem osobne. Ansible používam ako nástroj na správu serverov i osobných počítačov (tých s Linuxom, predtým som používal Puppet ale prešiel som na Ansible). Okrem toho sa snažím používať Ansible na správu takmer všetkého, od užívateľov v databázach až po DNS záznamy na Cloudflare.
         `}
         />
       </TextFrameWithImage>
@@ -113,8 +113,8 @@ Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny
       <TextFrame>
         <Markdown
           source={`
-### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/ansible/poptavka/)
+### Mám záujem o školenie
+Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýtať školenie](https://ondrej-sika.cz/ansible/poptavka/)
 `}
         />
       </TextFrame>
@@ -122,11 +122,10 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
         <Markdown
           source={`
 ### Cena
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/ansible/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
-
-Otevřený termín (self funded): 9 999 CZK bez DPH<br>
-Otevřený termín (company funded): 14 999 CZK bez DPH<br>
-Firemní školení (ve firmě): 40 000 CZK bez DPH<br>
+Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/ansible/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
+- Otvorený termín (self funded): 389 EUR bez DPH
+- Otvorený termín (company funded): 589 EUR bez DPH
+- Firemní školení (vo firme): 1550 EUR bez DPH
 `}
         />
       </TextFrame>
