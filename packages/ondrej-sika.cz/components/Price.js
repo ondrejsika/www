@@ -7,9 +7,9 @@ const Price = props => (
           <div className="col-sm-9 col-12">
             <p className="">{props.children}</p>
           </div>
-          <div className="col-sm-3 col-12">
+          {/* <div className="col-sm-3 col-12">
             <div className="btn btn-succes">{props.PriceBtn}</div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
