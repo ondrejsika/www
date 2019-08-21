@@ -26,7 +26,7 @@ const Index = () => (
       logoUrl="/static/kubernetes.png"
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz">
-      Nezáväzne popýtať školenie
+        Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">
         Kontaktovať
@@ -99,11 +99,14 @@ Kubernetes je dnes najrozšírenejšou platformou na hostovanie Docker kontajner
       >
         Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím.
         Kubernetes som školil vo firmách ako je CGI alebo Webglobe - Yegon.
-        Školím prevažne Docker, ktorý s Kubernetes veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://www.ondrej-sika.cz/).
+        Školím prevažne Docker, ktorý s Kubernetes veľmi úzko súvisí. Ďalšie
+        školenia nájdete na mojom webe
+        [ondrej-sika.cz](https://www.ondrej-sika.cz/).
         <br />
         <br />
         Všetky kurzy vediem osobne. Kubernetes používam ako platformu pre
-        väčšínu svojich projektov a je to jeden z najjednoduchších spôsobov ako prevádzkovať Docker kontajnery.
+        väčšínu svojich projektov a je to jeden z najjednoduchších spôsobov ako
+        prevádzkovať Docker kontajnery.
       </TextFrameWithImage>
 
       <MyClients lang={site.lang} />
