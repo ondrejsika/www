@@ -7,7 +7,7 @@ import ThreeCol from "@app/course-landing/components/ThreeCol";
 import TwoCol from "@app/course-landing/components/TwoCol";
 import Navigation from "@app/course-landing/components/Navigation";
 import Recommendation from "@app/course-landing/components/Recommendation";
-import Contact from "@app/course-landing/components/Contact";
+import Contact from "@app/course-landing/components/ContactSK";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
@@ -59,7 +59,7 @@ Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s 
 - Inštaláciu Dockeru (tých, ktorí ho nenainštalovali doma)
 - Prácu s kontajnermi
 - Prácu s obrazmi
-- Docker Compose - viackontajnerové aplikácie v Dockeri
+- Docker Compose - multikontajnerové aplikácie v Dockeri
 - Deployment do Swarmu
 - Ukážka deploymentu do Kubernetes
 `}
@@ -112,7 +112,7 @@ Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v
       <MyClients HeaderClients="Moji najvýznamejší klienti" />
 
       <ThreeCol
-        header="Reference"
+        header="Referencie"
         col1={<Recommendation id="bohemiaenergy" lang={site.lang} />}
         col2={<Recommendation id="vse" lang={site.lang} />}
         col3={<Recommendation id="sit" lang={site.lang} />}
@@ -134,7 +134,7 @@ Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýta�
 Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/docker/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
 - Otvorený termín (self funded): 389 EUR bez DPH
 - Otvorený termín (company funded): 589 EUR bez DPH
-- Firemní školení (vo firme): 1550 EUR bez DPH
+- Firemné školenie (vo firme): 1550 EUR bez DPH
         `}
         />
       </TextFrame>

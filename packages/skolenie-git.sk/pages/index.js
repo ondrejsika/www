@@ -6,6 +6,7 @@ import MyClients from "@app/course-landing/components/MyClients";
 import ThreeCol from "@app/course-landing/components/ThreeCol";
 import TwoCol from "@app/course-landing/components/TwoCol";
 import Navigation from "@app/course-landing/components/Navigation";
+import Contact from "@app/course-landing/components/ContactSK";
 import Markdown from "@app/common/components/Markdown";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Recommendation from "@app/course-landing/components/Recommendation";
@@ -15,7 +16,7 @@ import site from "@app/skolenie-git.sk/config";
 const Index = () => (
   <div>
     <Head>
-      <title>Skolenie Git, Ondrej Sika - skolenie-git.sk</title>
+      <title>Školenie Git, Ondrej Sika - skolenie-git.sk</title>
     </Head>
     <Navigation location={site.location} />
     <Header
@@ -25,67 +26,67 @@ const Index = () => (
       logoUrl="/static/git.svg"
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz">
-        Nezávazně poptat školení
+        Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">
-        Kontaktovat
+        Kontaktovať
       </HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
         <Markdown
           source={`
-### Co je to Git?
-Git je moderní verzovaci nástroj, který se stal defaco standatem mezi vývojáři. Používají jej na denní bazy jednotlivci, startupy i korporace. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně ani by jste si zasahovali do rozdělaných věcí nebo je jinak narušovali. Spolupráci na vývoji projektu ještě zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software (více o Gitlabu v samostatném kurzu).
+### Čo je to Git?
+Git je moderný verzovací nástroj, ktorý sa stal de facto štandardom medzi vývojármi. Na dennej báze ho používajú jednotlivci, startupy aj korporácie. Vďaka Gitu je kolaborácia viacerých ľudí na jednom projekte jednoduchá, a to aj v prípade, že pracujete spoločne na niekoľkých častiach projektu súčasne. Dokonca bez toho, aby ste si do rozpracovaných vecí nechcene zasahovali. Spoluprácu na vývoji projektu ešte zlepšuje Gitlab, kolaboratívna platforma, ktorá slúži na návrh, vývoj a prevádzku softvéru (viac o Gitlabe v samostatnom kurze).
 `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Jak školení probíhá
-Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise. Ukážeme si vše od instalace a základního nastavení Gitu, přez jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacich strategii (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako omylem jsem si všechno smazal a podobně.
+### Ako školenie prebieha
+Na školení si formou workshopu vysvetlíme prečo je dobré Git používať, ako funguje, prečo dnes nemá konkurenciu a best practice. Ukážeme si všetko od inštalácie a základného nastavenia Gitu, cez jednoduchú prácu na jednej vetve až po prácu v teame a s viacerými vetvami za pomoci rôznych mergovacích stratégií (merge, rebase). Ukážeme si ich výhody a nevýhody a bude len na Vás ako sa rozhodnete s nimi pracovať. Tiež si ukážeme, ako sa dostať z nepríjemných situácií, ako napríklad, keď si omylom všetko vymažete a pod.
 `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Co Vás naučím
-- Instalace a konfigurace GITu
-- Vytvořit nový repozitář
-- Základní ovládání GITu
-- Práce v jedné větvi
-- Práce ve větvích - merge, rebase (silná stránka Gitu)
-- Práce se vzdálenými repozitáři
-- Záchrana smazaných dat z repozitáře
+### Čo Vás naučím
+- Inštalácia a konfigurácia GITu
+- Vytvorenie nového repozitára
+- Základné ovládanie GITu
+- Práca na jednej vetve
+- Práca s viacerými vetvami - merge, rebase (silná stránka Gitu)
+- Práca so vzdialenými repozitármi
+- Záchrana zmazaných dát z repozitára
 `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Pro koho je školení určeno
-Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.
+### Pre koho je školenie určené
+Školenie je určené primárne pre vývojárov, ktorí vôbec neverzujú alebo nepoužívajú Git. Zároveň je vhodné pre tých, ktori Git nevyužívajú na 100% (git commit, git pull, git push). Či už ide o malé weby, alebo veľké projekty, Git si nájde svoje uplatnenie. Kurz je vhodný aj pre tých, ktorí nepíšu kód často, ale občas potrebujú niečo zaverzovať, napríklad nejaké migračné skripty DB alebo konfiguráciu serveru. Git pomôže i DBA (databázovým administrátorom) alebo DevOps (serverovým administrátorom).
 `}
         />
         <TwoCol
           col1={
             <Markdown
               source={`
-#### Předchozí znalosti
-- Základy programování
-- Základy práce v terminálu výhodou
-- Základní znalost Gitu výhodou
+#### Predchádzajúce znalosti
+- Základy programovania
+- Základy práce v terminále výhodou
+- Základná znalosť Gitu výhodou
             `}
             />
           }
           col2={
             <Markdown
               source={`
-#### Technické požadavky
-- Nainstalovaný Git
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+#### Technické požiadavky
+- Nainštalovaný Git
+- Prístup na internet - ideálne bez korporátnej proxy, prípadne s nastavenou proxy v prehliadači
             `}
             />
           }
@@ -97,14 +98,14 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
       >
         <Markdown
           source={`
-Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vedu osobně. S GITem mám více než 7 let zkušeností v rámci komerčního vývoje software. Práci bez Gitu si dnes nedokážu vůbec představit. Kromě zdrojových kódů verzuji konfiguraci, nastavení sertveru, …Problematiku kolem verzování a vývoje software obecně školím více než 3 roky. Git je kurz se, kterým jsem začínal a pořád je populární.
+Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Všetky kurzy vediem osobne. S Gitom mám viac ako 7 ročné skúsenosti v rámci komerčného vývoja softvéru. Pracovať bez Gitu si dnes už vôbec nedokážem predstaviť. Okrem zdrojových kódov verzujem konfiguráciu i nastavenie serveru. Problematiku verzovania a vývoja softvéru školím viac ako 3 roky. Git je kurz s ktorým som začínal a je stále veľmi populárny.
         `}
         />
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti" />
+      <MyClients HeaderClients="Moji najvýznamejší klienti" />
       <ThreeCol
-        header="Reference"
+        header="Referencie"
         col1={<Recommendation id="dimensiondata" lang={site.lang} />}
         col2={<Recommendation id="bohemiaenergy" lang={site.lang} />}
         col3={<Recommendation id="sit" lang={site.lang} />}
@@ -112,8 +113,8 @@ Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny 
       <TextFrame>
         <Markdown
           source={`
-### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/git/poptavka/)
+### Mám záujem o školenie
+Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýtať školenie](https://ondrej-sika.cz/skoleni/git/poptavka/)
 `}
         />
       </TextFrame>
@@ -122,16 +123,17 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
         <Markdown
           source={`
 ### Cena
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/git/poptavka/) nebo mi napište email na ondrej@ondrejsika.com
-- Otevřený termín (self funded): 4 999 CZK bez DPH
-- Otevřený termín (company funded): 6 999 CZK bez DPH
-- Firemní školení (ve firmě): 20 000 CZK bez DPH
+Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/git/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
+- Otvorený termín (self funded): 199 EUR bez DPH
+- Otvorený termín (company funded): 279 EUR bez DPH
+- Firemné školenie (vo firme): 779 EUR bez DPH
         `}
         />
       </TextFrame>
       <TextFrame header="Navazující kurzy">
         <a href="https://ondrej-sika.cz/skoleni/gitlab-ci">Gitlab CI</a>
       </TextFrame>
+      <Contact />
     </div>
     <FooterOndrejSika />
   </div>

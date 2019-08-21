@@ -8,7 +8,7 @@ import ThreeCol from "@app/course-landing/components/ThreeCol";
 import Recommendation from "@app/course-landing/components/Recommendation";
 import TwoCol from "@app/course-landing/components/TwoCol";
 import Navigation from "@app/course-landing/components/Navigation";
-import Contact from "@app/course-landing/components/Contact";
+import Contact from "@app/course-landing/components/ContactSK";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import site from "@app/skoleni-kubernetes.cz/config";
@@ -111,7 +111,7 @@ Kubernetes je dnes najrozšírenejšou platformou na hostovanie Docker kontajner
 
       <MyClients lang={site.lang} />
       <ThreeCol
-        header="Reference"
+        header="Referencie"
         col1={<Recommendation id="dimensiondata" lang={site.lang} />}
         col2={<Recommendation id="webglobe-yegon" lang={site.lang} />}
         col3={<Recommendation id="sit" lang={site.lang} />}
@@ -132,7 +132,7 @@ Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýta�
 Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/kubernetes/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
 - Otvorený termín (self funded): 389 EUR bez DPH
 - Otvorený termín (company funded): 589 EUR bez DPH
-- Firemní školení (vo firme): 1550 EUR bez DPH
+- Firemné školenie (vo firme): 1550 EUR bez DPH
 `}
         />
       </TextFrame>

@@ -7,8 +7,8 @@ import MyClients from "@app/course-landing/components/MyClients";
 import ThreeCol from "@app/course-landing/components/ThreeCol";
 import TwoCol from "@app/course-landing/components/TwoCol";
 import Navigation from "@app/course-landing/components/Navigation";
+import Contact from "@app/course-landing/components/ContactSK";
 import Recommendation from "@app/course-landing/components/Recommendation";
-import Contact from "@app/course-landing/components/Contact";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import site from "@app/skolenie-gitlab.sk/config";
@@ -16,49 +16,49 @@ import site from "@app/skolenie-gitlab.sk/config";
 const Index = () => (
   <div>
     <Head>
-      <title>Skolenie Gitlab CI, Ondrej Sika - skolenie-gitlab.sk</title>
+      <title>Školenie Gitlab CI, Ondrej Sika - skolenie-gitlab.sk</title>
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Skolenie Gitlab CI Slovensko 🇸🇰"
+      websiteHeader="Skolenie Gitlab CI 🇸🇰"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-gitlab-ci.cz"
       logoUrl="/static/gitlab-ci.svg"
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/?x_source=skoleni-gitlab-ci.cz">
-        Nezávazně poptat školení
+        Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-gitlab-ci.cz">
-        Kontaktovat
+        Kontaktovať
       </HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
         <Markdown
           source={`
-### Popis technologie
-Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
+### Popis technológie
+Continuous Integration (skrátene CI nebo CI/CD) je nástroj, ktorý za Vás automatizuje rutinné úlohy ako je púšťanie testov, kontrola kvality kódu alebo nasadzovanie. Umožní Vám rýchlejšie začleňovať zmeny do masteru a rýchlejšie nasadzovať. Výhodou Gitlab CI je veľmi dobrá podpora Dockeru. Môžete veľmi jednoducho skladať Docker images alebo púšťať testy v kontajneroch.
         `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Jak školení probíhá
-Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.
+### Ako školenie prebieha
+Na školení si formou workshopu vysvetlíme prečo je dobré CI používať, ukážeme si možnosti Gitlab CI a vyskúšame si napísať CI skript pre ukážkový projekt. Výsledkom bude CI skript pre jednoduchý projekt obsahujúci joby od buildu aplikácie, cez testy až po deployment. 
 `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-#### Co Vás naučím
-- Obecný úvod do CI
+#### Čo Vás naučím
+- Všeobecný úvod do CI
 - Úvod do Gitlab CI
-- Instalace Gitlab CI Runneru
-- Práce s CI joby
+- Inštalácia Gitlab CI Runneru
+- Práca s CI jobmi
 - Tvorba CI pipelines
-- Automatické nasazování
+- Automatické nasadzovanie
 - Docker a CI
         `}
         />
@@ -66,26 +66,26 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
       <TextFrame>
         <Markdown
           source={`
-### Pro koho je školení určeno
-Školení je primárně určeno vývojářům kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.
+### Pre koho je školenie určené
+Školenie je primárne určené vývojárom, ktorí používajú Gitlab a chcú začať používať Gitlab CI. Zároveň práve Gitlab CI môže byť dôvodom prechodu na GitLab. Školenie je tiež vhodné pre DevOps (serverových administrátorov), ktorí si chcú ulahčiť prácu s automatizáciou nasadzovania.
         `}
         />
         <TwoCol
           col1={
             <Markdown
               source={`
-#### Předchozí znalosti
-- Základy práce s Linuxem
-- Základy práce v terminálu
-- Základní znalost Gitu výhodou - [Školení Git](https://ondrej-sika.cz/skoleni/git/)
+#### Predchádzajúce znalosti
+- Základy práce s Linuxom
+- Základy práce v terminále
+- Základná znalosť Gitu výhodou - [Školenie Git](https://ondrej-sika.cz/skoleni/git/)
             `}
             />
           }
           col2={
             <Markdown
               source={`
-#### Technické požadavky
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+#### Technické požiadavky
+- Prístup na internet - ideálne bez korporátnej proxy, prípadne s nastavenou proxy v prehliadači
             `}
             />
           }
@@ -97,16 +97,16 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
       >
         <Markdown
           source={`
-Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu <a href="https://ondrej-sika.cz">ondrej-sika.cz</a>.<br /><br />
-Všechny kurzy vedu osobně. S Gitlab CI mám zkušenosti z mnoha různých projektů a firem. Téměř všechny projekty na kterých pracuji využívají Gitlab CI. Gitlab CI mi velmi ulehčuje a zrychluje práci - nemusím se starat o rutijni akce jako nasazování nebo build aplikace a mohu se věnovat vývoji a činnostem které mi přinášejí zisk.
+Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím hlavne Docker a CI, ktorý s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://www.ondrej-sika.cz/).
+Všetky kurzy vediem osobne. S Gitlab CI mám skúsenosti z mnohých projektov a firiem. Takmer všetky projekty na ktorých pracujem využívaju Gitlab CI. Gitlab CI mi veľmi uľahčuje a zrýchľuje prácu pretože sa nemusím starať o rutinné akcie ako nasadzovanie alebo build aplikácie a môžem sa venovať vývoju a činnostiam ktoré mi prinášajú zisk.
         `}
         />
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti" />
+      <MyClients HeaderClients="Moji najvýznamejší klienti" />
 
       <ThreeCol
-        header="Reference"
+        header="Referencie"
         col1={<Recommendation id="bohemiaenergy" lang={site.lang} />}
         col2={<Recommendation id="vse" lang={site.lang} />}
         col3={<Recommendation id="sit" lang={site.lang} />}
@@ -114,8 +114,8 @@ Všechny kurzy vedu osobně. S Gitlab CI mám zkušenosti z mnoha různých proj
       <TextFrame>
         <Markdown
           source={`
-### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/)
+### Mám záujem o školenie
+Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýtať školenie](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/)
 `}
         />
       </TextFrame>
@@ -123,10 +123,10 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
         <Markdown
           source={`
 ### Cena
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
-- Otevřený termín (self funded): 4 999 CZK bez DPH
-- Otevřený termín (company funded): 6 999 CZK bez DPH
-- Firemní školení (ve firmě): 20 000 CZK bez DPH
+Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/git/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
+- Otvorený termín (self funded): 199 EUR bez DPH
+- Otvorený termín (company funded): 279 EUR bez DPH
+- Firemné školenie (vo firme): 779 EUR bez DPH
 `}
         />
       </TextFrame>
