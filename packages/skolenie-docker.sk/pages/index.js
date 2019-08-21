@@ -56,7 +56,7 @@ Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s 
 ### Čo Vás naučím
 
 - Teoretický úvod do Dockeru
-- Inštaláciu Dockeru (tých ktorý ho nenainštalovali doma)
+- Inštaláciu Dockeru (tých, ktorí ho nenainštalovali doma)
 - Prácu s kontajnermi
 - Prácu s obrazmi
 - Docker Compose - viackontajnerové aplikácie v Dockeri

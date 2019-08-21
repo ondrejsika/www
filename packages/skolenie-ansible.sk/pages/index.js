@@ -54,7 +54,7 @@ Ansible je nástroj na hromadnú správu konfigurácií a nasadzovanie. Vy dekla
           source={`
 ### Čo Vás naučím
 - Základný koncept Ansible
-- Inštaláciu Ansible (tých ktorý ho nenainštalovali doma)
+- Inštaláciu Ansible (tých, ktorí ho nenainštalovali doma)
 - Základné ovládanie Ansible
 - Playbooks
 - Moduly

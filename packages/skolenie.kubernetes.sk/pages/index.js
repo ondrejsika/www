@@ -11,83 +11,83 @@ import Navigation from "@app/course-landing/components/Navigation";
 import Contact from "@app/course-landing/components/Contact";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
-import site from "@app/skolenie.kubernetes.sk/config";
+import site from "@app/skoleni-kubernetes.cz/config";
 
 const Index = () => (
   <div>
     <Head>
-      <title>Skolenie Kuberneres, Ondrej Sika - skolenie.kubernetes.sk</title>
+      <title>Školenie Kuberneres, Ondrej Sika - skoleni-kubernetes.cz</title>
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Skolenie Kubernetes Slovensko 🇸🇰"
+      websiteHeader="Školenie Kubernetes Slovensko 🇸🇰"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-kubernetes.cz"
       logoUrl="/static/kubernetes.png"
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz">
-        Nezávazně poptat školení
+      Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">
-        Kontaktovat
+        Kontaktovať
       </HeaderLink>
     </Header>
     <div className="container container-width">
       <TextFrame>
         <Markdown
           source={`
-### Popis technologie
-Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
+### Popis technológie
+Kubernetes je dnes najrozšírenejšou platformou na hostovanie Docker kontajnerov a je podporovaná velkými hráčmi na trhu (Google, Amazon, Microsoft) cez Cloud Native Computing Foundation. Kubernetes bežne používajú firmy rôznych veľkostí, od startupov až po korporácie.
         `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Jak školení probíhá
-Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+### Ako školenie prebieha
+Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ukážeme si ako spustiť Kubernetes lokálne (pre vývoj) a na cloudové platforme Digital Ocean. Povieme si o základnej štruktúre Kubernetes a prejdeme si jeho kompomenty. Naučíme sa ako napísať Kubernetes manifest a ako pomocou neho nasadiť aplikáciu v Dockeri. Ďalej si ukážeme ako pracovať s právami v Kubernetes a ako používať (a písať) Kubernetes balíčky v Helme.
 `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Co Vás naučím
+### Čo Vás naučím
 - Teoretický úvod do Kubernetes
-- Instalace Minikube a kubectl (pro ty kteří nenainstalovali doma)
-- Popis Kubernetes komponent
+- Inštalácia Minikube a kubectl (tých, ktorí ho nenainštalovali doma)
+- Popis Kubernetes komponentov
 - Deployment do Kubernetes
-- Práce s právy v Kubernetes clusteru
+- Pracovať s právami v Kubernetes clusteri
 - Teoretický úvod do Helm balíčku
-- Instalace / Deployment pomocí Helmu
-- Psaní vlastního Helm balíčku
+- Inštalácia / Deployment pomocí Helmu
+- Písanie vlastného Helm balíčku
         `}
         />
       </TextFrame>
       <TextFrame>
         <Markdown
           source={`
-### Pro koho je školení určeno
-Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.
+### Pre koho je školenie určené
+Školenie je určené pre ľudí (vývojárov a DevOps), ktorí majú záujem prevádzkovať svoje Docker aplikácie v Kubernetes.
 `}
         />
         <TwoCol
           col1={
             <Markdown
               source={`
-#### Předchozí znalosti
-- Základy práce s Dockerem
-- Základy práce s Linuxem
-- Základy práce v terminálu
+#### Predchádzajúce znalosti
+- Základy práce s Dockerom
+- Základy práce s Linuxom
+- Základy práce v terminále
             `}
             />
           }
           col2={
             <Markdown
               source={`
-#### Technické požadavky
-- Nainstalovaný Kubernetes, návod na instalaci: [zde](https://www.ondrej-sika.cz/kubernetes/instalace/)
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+#### Technické požiadavky
+- Nainštalovaný Kubernetes, návod na inštaláciu: [tu](https://www.ondrej-sika.cz/kubernetes/instalace/)
+- Přístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
 `}
             />
           }
@@ -97,15 +97,13 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
         header="Lektor: Ondřej Šika"
         imgUrl="/static/ondrejsika.jpg"
       >
-        Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím.
-        Kubernetes jsem školil ve firmách jako je CGI nebo Webglobe - Yegon.
-        Školím převážně Docker, který s Kubernetes velmi úzce souvisí. Další
-        školení naleznete na mém webu ondrej-sika.cz.
+        Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím.
+        Kubernetes som školil vo firmách ako je CGI alebo Webglobe - Yegon.
+        Školím prevažne Docker, ktorý s Kubernetes veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://www.ondrej-sika.cz/).
         <br />
         <br />
-        Všechny kurzy vedu osobně. Kubernetes používám jako platformu pro
-        většinu svých projektů a je to jeden z nejjednodušších způsobů jak
-        provozovat Docker kontejnery.
+        Všetky kurzy vediem osobne. Kubernetes používam ako platformu pre
+        väčšínu svojich projektov a je to jeden z najjednoduchších spôsobov ako prevádzkovať Docker kontajnery.
       </TextFrameWithImage>
 
       <MyClients lang={site.lang} />
@@ -119,8 +117,8 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
       <TextFrame>
         <Markdown
           source={`
-### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/)
+### Mám záujem o školenie
+Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýtať školenie](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/)
 `}
         />
       </TextFrame>
@@ -128,12 +126,10 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
         <Markdown
           source={`
 ### Cena
-
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
-
-- Otevřený termín (self funded): 9 999 CZK bez DPH
-- Otevřený termín (company funded): 14 999 CZK bez DPH
-- Firemní školení (ve firmě): 40 000 CZK bez DPH
+Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/kubernetes/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
+- Otvorený termín (self funded): 389 EUR bez DPH
+- Otvorený termín (company funded): 589 EUR bez DPH
+- Firemní školení (vo firme): 1550 EUR bez DPH
 `}
         />
       </TextFrame>
