@@ -56,21 +56,13 @@ Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s 
 ### Čo Vás naučím
 
 - Teoretický úvod do Dockeru
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Inštaláciu Dockeru (tých, ktorí ho nenainštalovali doma)
 - Prácu s kontajnermi
 - Prácu s obrazmi
-- Docker Compose - multikontajnerové aplikácie v Dockeri
-=======
-- Inštaláciu Dockeru (tých ktorý ho nenainštalovali doma)
-=======
 - Inštaláciu Dockeru (tých, ktorí ho nenainštalovali doma)
->>>>>>> skolenie-kubernetes.sk - text translation to svk + minor translation fixes in other courses
 - Prácu s kontajnermi
 - Prácu s obrazmi
 - Docker Compose - viackontajnerové aplikácie v Dockeri
->>>>>>> skoleni-docker.sk - text translation to slovak
 - Deployment do Swarmu
 - Ukážka deploymentu do Kubernetes
 `}
@@ -142,17 +134,11 @@ Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýta�
         <Markdown
           source={`
 ### Cena
-<<<<<<< HEAD
 Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/docker/poptavka/) alebo mi napíšte email na ondrej@sika.io
 - Otvorený termín (self funded): 389 EUR bez DPH
 - Otvorený termín (company funded): 589 EUR bez DPH
 - Firemné školenie (vo firme): 1550 EUR bez DPH
-=======
-Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/docker/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
-- Otvorený termín (self funded): 389 EUR bez DPH
-- Otvorený termín (company funded): 589 EUR bez DPH
-- Firemní školení (vo firme): 1550 EUR bez DPH
->>>>>>> skoleni-docker.sk - text translation to slovak
+- Firemné školenie (vo firme): 1550 EUR bez DPH
         `}
         />
       </TextFrame>
