@@ -10,6 +10,10 @@ const Index = () => (
     <Head>
       <title>Ondrej Sika | sika.io</title>
       <meta http-equiv="refresh" content="3; url=https://ondrejsika.com" />
+      <meta
+        name="google-site-verification"
+        content="KKm2K2qwgCk2Pc9F5eefmYl6UYoATpMPSBRzpa78w4Q"
+      />
     </Head>
     <div className="mt-4">
       <Markdown
