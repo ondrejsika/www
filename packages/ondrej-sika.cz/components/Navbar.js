@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = props => (
   <div>
     <div className="container-fluid">
@@ -26,9 +28,9 @@ const Navbar = props => (
                 if (typeof link[1] == "string") {
                   return (
                     <li className="nav-item" key={i}>
-                      <a className="nav-link" href={link[1]}>
-                        {link[0]}
-                      </a>
+                      <Link href={link[1]}>
+                        <a className="nav-link">{link[0]}</a>
+                      </Link>
                     </li>
                   );
                 } else {
@@ -51,13 +53,11 @@ const Navbar = props => (
                       >
                         {link[1].map((sub_link, i) => {
                           return (
-                            <a
-                              key={i}
-                              className="dropdown-item"
-                              href={sub_link[1]}
-                            >
-                              {sub_link[0]}
-                            </a>
+                            <Link href={sub_link[1]}>
+                              <a key={i} className="dropdown-item">
+                                {sub_link[0]}
+                              </a>
+                            </Link>
                           );
                         })}
                       </div>
