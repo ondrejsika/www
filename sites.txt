@@ -37,3 +37,6 @@ sika-kaplan.com
 bootstrap-web
 trainera.io
 salzburgdevops.com
+training.kubernetes.is
+training.kubernetes.lu
+
