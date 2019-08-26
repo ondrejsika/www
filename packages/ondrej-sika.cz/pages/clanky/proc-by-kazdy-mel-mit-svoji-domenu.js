@@ -14,7 +14,7 @@ Nejdrive se snazim sehnat domenu pouze jmena.
 
 - \`sika.com\` - \`.com\` je kral
 - \`sika.cz\`
-- \`sika.io\` - \`.org\` je take pouzitelna
+- \`sika.io\` - \`.org\` je take pouzitelna, pro "nerdy" / IT lidi je dobra i \`.sh\`
 
 Pokud nejsou tyto domeny k dispozici, zkousim domeny jmeno + prijmeni.
 
