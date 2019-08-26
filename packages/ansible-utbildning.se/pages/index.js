@@ -22,13 +22,13 @@ const Index = () => (
     <Header
       websiteHeader="Ansible Utbildning Sverige 🇸🇪"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.se/?x_source=ansible-utbildning.se"
+      byUrl="https://ondrej-sika.com/se/?x_source=ansible-utbildning.se"
       logoUrl="/static/ansible.png"
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/ansible/inquiry/?x_source=ansible-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/utbildning/ansible/inquiry/?x_source=ansible-utbildning.se">
         Fråga efter en träning
       </HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=ansible-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/kontakta/?x_source=ansible-utbildning.se">
         Kontakta mig
       </HeaderLink>
     </Header>
@@ -89,7 +89,7 @@ Denna utbildning riktar sig främst till administratörer och DevOps som vill b�
               source={`
 
 #### Tekniska krav
-- Har Ansible installerat, instruktioner: [här] (https://ondrej-sika.se/ansible/install/)
+- Har Ansible installerat, instruktioner: [här] (https://ondrej-sika.com/se/ansible/install/)
 - Tillgång till internet (https, ssh) - bättre utan företags-proxy
             `}
             />
@@ -153,7 +153,7 @@ Om du är intresserad i vår Ansible workshop eller om ni har några frågor, ko
         />
         <p className="text-center">
           <a
-            href="https://ondrej-sika.se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se"
+            href="https://ondrej-sika.com/se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se"
             className="btn btn-large btn-success"
           >
             Frågor om Ansible utbildning
@@ -165,7 +165,7 @@ Om du är intresserad i vår Ansible workshop eller om ni har några frågor, ko
           source={`
 ### Relaterade Kurser
 
-[Gitlab CI](https://ondrej-sika.se/utbildning/gitlab-ci)
+[Gitlab CI](https://ondrej-sika.com/se/utbildning/gitlab-ci)
 `}
         />
       </TextFrame>

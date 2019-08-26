@@ -22,13 +22,13 @@ const Index = () => (
     <Header
       websiteHeader="Gitlab CI Utbildning Sverige 🇸🇪"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.se/?x_source=gitlab-utbildning.se"
+      byUrl="https://ondrej-sika.com/se/?x_source=gitlab-utbildning.se"
       logoUrl="/static/gitlab-ci.svg"
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/gitlab-ci/forfragan/?x_source=gitlab-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/utbildning/gitlab-ci/forfragan/?x_source=gitlab-utbildning.se">
         Fråga efter en träning
       </HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=gitlab-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/kontakta/?x_source=gitlab-utbildning.se">
         Kontaka mig
       </HeaderLink>
     </Header>
@@ -81,8 +81,8 @@ Kursen riktar sig främst till utvecklare som använder Gitlab och vill börja a
 #### Skicklighetskrav
 - Grundläggande Linux-kunskap
 - Grundläggande terminalkunskap
-- Git-kunskap behövs icke, men hjälper - [Git utbildning](https://ondrej-sika.se/training/git/)
-- Docker-kunskap behövs icke, men hjälper - [Docker utbildning](https://ondrej-sika.se/training/docker/)
+- Git-kunskap behövs icke, men hjälper - [Git utbildning](https://ondrej-sika.com/se/training/git/)
+- Docker-kunskap behövs icke, men hjälper - [Docker utbildning](https://ondrej-sika.com/se/training/docker/)
             `}
             />
           }
@@ -141,7 +141,7 @@ Om du är intresserad i vår Gitlab CI workshop eller om ni har några frågor, 
         />
         <p className="text-center">
           <a
-            href="https://ondrej-sika.se/utbildning/gitlab-ci/forfragan/?x_source=git-utbildning.se"
+            href="https://ondrej-sika.com/se/utbildning/gitlab-ci/forfragan/?x_source=git-utbildning.se"
             className="btn btn-large btn-success"
           >
             Inquire Gitlab CI training
@@ -153,8 +153,8 @@ Om du är intresserad i vår Gitlab CI workshop eller om ni har några frågor, 
           source={`
 ### Related Courses
 
-[Git](https://ondrej-sika.se/utbildning/gitlab-ci)
-<br>[Docker](https://ondrej-sika.se/utbildning/docker)
+[Git](https://ondrej-sika.com/se/utbildning/git)
+<br>[Docker](https://ondrej-sika.com/se/utbildning/docker)
 `}
         />
       </TextFrame>

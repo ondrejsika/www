@@ -21,13 +21,13 @@ const Index = () => (
     <Header
       websiteHeader="Git Utbildning Sverige 🇸🇪"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.se/?x_source=git-utbildning.se"
+      byUrl="https://ondrej-sika.com/se/?x_source=git-utbildning.se"
       logoUrl="/static/git.svg"
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/git/forfragan/?x_source=git-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/utbildning/git/forfragan/?x_source=git-utbildning.se">
         Ask for a training
       </HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=git-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/kontakta/?x_source=git-utbildning.se">
         Contact me
       </HeaderLink>
     </Header>
@@ -140,7 +140,7 @@ If you are interested in Git workshop or any questions, let me know.
         />
         <p className="text-center">
           <a
-            href="https://ondrej-sika.se/utbildning/git/forfragan/?x_source=git-utbildning.se"
+            href="https://ondrej-sika.com/se/utbildning/git/forfragan/?x_source=git-utbildning.se"
             className="btn btn-large btn-success"
           >
             Inquire Git Training
@@ -152,7 +152,7 @@ If you are interested in Git workshop or any questions, let me know.
           source={`
 ### Related Courses
 
-[Gitlab CI](https://ondrej-sika.se/utbildning/gitlab-ci)
+[Gitlab CI](https://ondrej-sika.com/se/utbildning/gitlab-ci)
 `}
         />
       </TextFrame>

@@ -24,13 +24,13 @@ const Index = () => (
     <Header
       websiteHeader="Kuberneres Utbildning Sverige 🇸🇪"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.se/?x_source=kubernetes-utbildning.se"
+      byUrl="https://ondrej-sika.com/se/?x_source=kubernetes-utbildning.se"
       logoUrl="/static/kubernetes.png"
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/kubernetes/forfragan/?x_source=kubernetes-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/utbildning/kubernetes/forfragan/?x_source=kubernetes-utbildning.se">
         Fråga efter en träning
       </HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/contact/?x_source=kubernetes-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/contact/?x_source=kubernetes-utbildning.se">
         Kontaka mig
       </HeaderLink>
     </Header>
@@ -78,7 +78,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
             <Markdown
               source={`
 #### Skicklighetskrav
-- Basic [Docker](https://ondrej-sika.se/utbildning/docker/) kunskap
+- Basic [Docker](https://ondrej-sika.com/se/utbildning/docker/) kunskap
 - Grundläggande Linux-kunskap
 - Grundläggande terminalkunskap
             `}
@@ -88,7 +88,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
             <Markdown
               source={`
 #### Tekniska krav
-- Har Kubernetes installerat, instruktioner: [här] (https://ondrej-sika.se/kubernetes/install/)
+- Har Kubernetes installerat, instruktioner: [här] (https://ondrej-sika.com/se/kubernetes/install/)
 - Tillgång till internet (https, ssh) - bättre utan företags-proxy
 `}
             />
@@ -139,7 +139,7 @@ Om du är intresserad i vår Kubernetes workshop eller om ni har några frågor,
         />
         <p className="text-center">
           <a
-            href="https://ondrej-sika.se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se"
+            href="https://ondrej-sika.com/se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se"
             className="btn btn-large btn-success"
           >
             Frågor om Kubernetes utbildning
@@ -151,7 +151,7 @@ Om du är intresserad i vår Kubernetes workshop eller om ni har några frågor,
           source={`
 ### Relaterade Kurser
 
-[Docker](https://ondrej-sika.se/utbildning/docker)
+[Docker](https://ondrej-sika.com/se/utbildning/docker)
 `}
         />
       </TextFrame>

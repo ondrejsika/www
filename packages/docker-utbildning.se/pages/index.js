@@ -22,13 +22,13 @@ const Index = () => (
     <Header
       websiteHeader="Docker Utbildning Sverige 🇸🇪"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.uk/?x_source=docker-utbildning.se"
+      byUrl="https://ondrej-sika.com/se/?x_source=docker-utbildning.se"
       logoUrl="/static/docker-w.svg"
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">
         Fråga efter en träning
       </HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=docker-utbildning.se">
+      <HeaderLink url="https://ondrej-sika.com/se/kontakta/?x_source=docker-utbildning.se">
         Kontakta mig
       </HeaderLink>
     </Header>
@@ -85,7 +85,7 @@ Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller 
             <Markdown
               source={`
 #### Tekniska krav
-- Har Docker installerat, instruktioner: [här] (https://ondrej-sika.se/docker/install/)
+- Har Docker installerat, instruktioner: [här] (https://ondrej-sika.com/se/docker/install/)
 - Tillgång till internet (https, ssh) - bättre utan företags-proxy, eller proxy i Docker
 `}
             />
@@ -135,7 +135,7 @@ Om du är intresserad i vår Docker workshop eller om ni har några frågor, kon
         />
         <p className="text-center">
           <a
-            href="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=docker-utbildning.se"
+            href="https://ondrej-sika.com/se/utbildning/docker/forfragan/?x_source=docker-utbildning.se"
             className="btn btn-large btn-success"
           >
             Frågor om Docker utbildning
@@ -147,7 +147,7 @@ Om du är intresserad i vår Docker workshop eller om ni har några frågor, kon
           source={`
 ### Relaterade Kurser
 
-[Kubernetes](https://ondrej-sika.se/utbildning/kubernetes)
+[Kubernetes](https://ondrej-sika.com/se/utbildning/kubernetes)
 `}
         />
       </TextFrame>
