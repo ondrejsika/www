@@ -44,6 +44,7 @@ export default () => (
 
 ## React & Next.js
 
+- Ukazkovy osobni web v Next.js a Reactu ([live](https://next-simple-website.ondrejsika.now.sh/)) - <https://github.com/ondrejsika/next-simple-website>
 - Skoleni Reactu (in progress) - https://github.com/ondrejsika/react-training
 - Ukazkovy React & Next.js projekt ke skoleni - https://github.com/ondrejsika/react-example
 - Repozitar mych webu (monorepo) v Next.js - https://github.com/ondrejsika/ondrejsikawebs
