@@ -18,6 +18,7 @@ import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import site from "@app/dockerschulung.de/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -131,21 +132,15 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat
 
       <TextFrame header="Cena">
         Pokud máte zájem o školení u vás ve firmě,{" "}
-        <a
-          href="https://ondrej-sika.cz/skoleni/docker/poptavka/"
-          className="btn btn-large mybutton-outline"
-        >
-          nezávazně jej poptejte
-        </a>{" "}
+        <Link href="https://ondrej-sika.cz/skoleni/docker/poptavka/">
+          <a className="btn btn-large mybutton-outline">
+            nezávazně jej poptejte
+          </a>
+        </Link>{" "}
         nebo mi napište email na{" "}
-        <a href="/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0">
-          <span
-            className="__cf_email__"
-            data-cfemail="2e41404a5c4b446e41404a5c4b445d47454f004d4143"
-          >
-            ondrej@sika.io
-          </span>
-        </a>
+        <Link>
+          <a href="mailto:ondrej@sika.io">ondrej@sika.io</a>
+        </Link>
         <br />
         Otevřený termín (self funded): 9 999 CZK bez DPH
         <br />

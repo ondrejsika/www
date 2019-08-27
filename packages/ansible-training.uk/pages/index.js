@@ -12,6 +12,7 @@ import Contact from "@app/course-landing/components/Contact";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import site from "@app/ansible-training.uk/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -149,12 +150,11 @@ If you are interested in Ansible workshop or have any questions, please let me k
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-training.uk"
-            className="btn btn-large btn-success"
-          >
-            Inquire Ansible Training
-          </a>
+          <Link href="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-training.uk">
+            <a className="btn btn-large btn-success">
+              Inquire Ansible Training
+            </a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>

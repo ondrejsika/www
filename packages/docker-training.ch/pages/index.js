@@ -12,6 +12,7 @@ import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import site from "@app/docker-training.ch/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -20,7 +21,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Docker Training Switzeland 🇨🇭"
+      websiteHeader="Docker Training Switzerland 🇨🇭"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.com/?x_source=docker-training.ch"
       logoUrl="/static/docker-w.svg"
@@ -133,12 +134,9 @@ If you are interested in Docker workshop or have any questions, please let me kn
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.com/training/docker/inquiry/?x_source=docker-training.ch"
-            className="btn btn-large btn-success"
-          >
-            Inquire Docker Training
-          </a>
+          <Link href="https://ondrej-sika.com/training/docker/inquiry/?x_source=docker-training.ch">
+            <a className="btn btn-large btn-success">Inquire Docker Training</a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>

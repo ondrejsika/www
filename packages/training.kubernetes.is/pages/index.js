@@ -12,6 +12,7 @@ import Contact from "@app/course-landing/components/Contact";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import site from "@app/training.kubernetes.is/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -135,12 +136,11 @@ If you are interested in Kubernetes workshop or have any questions, please let m
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.com/is/training/kubernetes/inquiry/?x_source=training.kubernetes.is"
-            className="btn btn-large btn-success"
-          >
-            Inquire Kubernetes Training
-          </a>
+          <Link href="https://ondrej-sika.com/is/training/kubernetes/inquiry/?x_source=training.kubernetes.is">
+            <a className="btn btn-large btn-success">
+              Inquire Kubernetes Training
+            </a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>

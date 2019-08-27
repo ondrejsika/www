@@ -12,6 +12,7 @@ import Contact from "@app/course-landing/components/Contact";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import site from "@app/ansible-utbildning.se/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -152,12 +153,11 @@ Om du är intresserad i vår Ansible workshop eller om ni har några frågor, ko
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.com/se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se"
-            className="btn btn-large btn-success"
-          >
-            Frågor om Ansible utbildning
-          </a>
+          <Link href="https://ondrej-sika.com/se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se">
+            <a className="btn btn-large btn-success">
+              Frågor om Ansible utbildning
+            </a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>

@@ -18,6 +18,7 @@ import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import site from "@app/ansible-schulung.de/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -132,12 +133,11 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat
 
       <TextFrame header="Cena">
         Pokud máte zájem o školení u vás ve firmě,{" "}
-        <a
-          href="https://ondrej-sika.cz/skoleni/docker/poptavka/"
-          className="btn btn-large mybutton-outline"
-        >
-          nezávazně jej poptejte
-        </a>{" "}
+        <Link href="https://ondrej-sika.cz/skoleni/docker/poptavka/">
+          <a className="btn btn-large mybutton-outline">
+            nezávazně jej poptejte
+          </a>
+        </Link>{" "}
         nebo mi napište email na{" "}
         <a href="/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0">
           <span

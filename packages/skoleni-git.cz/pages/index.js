@@ -11,6 +11,7 @@ import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Recommendation from "@app/course-landing/components/Recommendation";
 import Head from "next/head";
 import site from "@app/skoleni-git.cz/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -130,7 +131,9 @@ Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](http
         />
       </TextFrame>
       <TextFrame header="Navazující kurzy">
-        <a href="https://ondrej-sika.cz/skoleni/gitlab-ci">Gitlab CI</a>
+        <Link href="https://ondrej-sika.cz/skoleni/gitlab-ci">
+          <a>Gitlab CI</a>
+        </Link>
       </TextFrame>
     </div>
     <FooterOndrejSika />

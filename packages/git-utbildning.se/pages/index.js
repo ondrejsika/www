@@ -11,6 +11,7 @@ import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Recommendation from "@app/course-landing/components/Recommendation";
 import Head from "next/head";
 import site from "@app/git-utbildning.se/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -139,12 +140,9 @@ If you are interested in Git workshop or any questions, let me know.
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.com/se/utbildning/git/forfragan/?x_source=git-utbildning.se"
-            className="btn btn-large btn-success"
-          >
-            Inquire Git Training
-          </a>
+          <Link href="https://ondrej-sika.com/se/utbildning/git/forfragan/?x_source=git-utbildning.se">
+            <a className="btn btn-large btn-success">Inquire Git Training</a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>

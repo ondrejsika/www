@@ -12,6 +12,7 @@ import Contact from "@app/course-landing/components/Contact";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import site from "@app/kubernetes-utbildning.se/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -138,12 +139,11 @@ Om du är intresserad i vår Kubernetes workshop eller om ni har några frågor,
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.com/se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se"
-            className="btn btn-large btn-success"
-          >
-            Frågor om Kubernetes utbildning
-          </a>
+          <Link href="https://ondrej-sika.com/se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se">
+            <a className="btn btn-large btn-success">
+              Frågor om Kubernetes utbildning
+            </a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>

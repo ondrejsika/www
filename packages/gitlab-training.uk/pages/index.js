@@ -12,6 +12,7 @@ import Contact from "@app/course-landing/components/Contact";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import site from "@app/gitlab-training.uk/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -137,12 +138,11 @@ If you are interested in Gitlab CI workshop or have any questions, please let me
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=git-training.uk"
-            className="btn btn-large btn-success"
-          >
-            Inquire Gitlab CI Training
-          </a>
+          <Link href="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=git-training.uk">
+            <a className="btn btn-large btn-success">
+              Inquire Gitlab CI Training
+            </a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>

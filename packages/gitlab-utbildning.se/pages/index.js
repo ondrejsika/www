@@ -12,6 +12,7 @@ import Contact from "@app/course-landing/components/Contact";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import site from "@app/gitlab-utbildning.se/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -140,12 +141,11 @@ Om du är intresserad i vår Gitlab CI workshop eller om ni har några frågor, 
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.com/se/utbildning/gitlab-ci/forfragan/?x_source=git-utbildning.se"
-            className="btn btn-large btn-success"
-          >
-            Inquire Gitlab CI training
-          </a>
+          <Link href="https://ondrej-sika.com/se/utbildning/gitlab-ci/forfragan/?x_source=git-utbildning.se">
+            <a className="btn btn-large btn-success">
+              Inquire Gitlab CI training
+            </a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>

@@ -12,6 +12,7 @@ import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import site from "@app/docker-utbildning.se/config";
+import Link from "next/link";
 
 const Index = () => (
   <div>
@@ -134,12 +135,11 @@ Om du är intresserad i vår Docker workshop eller om ni har några frågor, kon
 `}
         />
         <p className="text-center">
-          <a
-            href="https://ondrej-sika.com/se/utbildning/docker/forfragan/?x_source=docker-utbildning.se"
-            className="btn btn-large btn-success"
-          >
-            Frågor om Docker utbildning
-          </a>
+          <Link href="https://ondrej-sika.com/se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">
+            <a className="btn btn-large btn-success">
+              Frågor om Docker utbildning
+            </a>
+          </Link>
         </p>
       </TextFrame>
       <TextFrame>
