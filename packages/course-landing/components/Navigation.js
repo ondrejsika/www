@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const links = {
   git: {
@@ -58,19 +59,29 @@ class Navigation extends React.Component {
             <ul className="mt-2 mb-2">
               <p>
                 <li>
-                  <a href={links.git[location]}>Docker</a>
+                  <Link href={links.git[location]}>
+                    <a>Docker</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href={links.kubernetes[location]}>Kubernetes</a>
+                  <Link href={links.kubernetes[location]}>
+                    <a>Kubernetes</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href={links.ansible[location]}>Ansible</a>
+                  <Link href={links.ansible[location]}>
+                    <a>Ansible</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href={links.git[location]}>Git</a>
+                  <Link href={links.git[location]}>
+                    <a>Git</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href={links.gitlabci[location]}>Gitlab CI</a>
+                  <Link href={links.gitlabci[location]}>
+                    <a>Gitlab CI</a>
+                  </Link>
                 </li>
               </p>
             </ul>
