@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 const HeaderLink = props => (
-  <a href={props.url} className="btn mybutton mb-2 mr-3">
-    {props.children}
-  </a>
+  <Link href={props.url}>
+    <a className="btn mybutton mb-2 mr-3">{props.children}</a>
+  </Link>
 );
 
 export default HeaderLink;
