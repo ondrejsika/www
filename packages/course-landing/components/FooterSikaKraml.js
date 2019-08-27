@@ -1,16 +1,21 @@
+import Link from "next/link";
 import Footer from "./Footer";
 
 const FooterOndrejSika = () => (
   <Footer>
     <p>
       2019{" "}
-      <a href="https://sika-kraml.de" className="text-white">
-        <strong>Sika Kraml Schulungen GbR.</strong>
-      </a>
+      <Link href="https://sika-kraml.de">
+        <a className="text-white">
+          <strong>Sika Kraml Schulungen GbR.</strong>
+        </a>
+      </Link>
       <br />
-      <a href="https://ondrej-sika.de" className="text-white">
-        <strong>Ondrej Sika</strong>
-      </a>{" "}
+      <Link href="https://ondrej-sika.de">
+        <a className="text-white">
+          <strong>Ondrej Sika</strong>
+        </a>
+      </Link>{" "}
       &amp; Jiri Kraml
     </p>
   </Footer>
