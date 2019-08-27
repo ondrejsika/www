@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 let style = {
   fontSize: "0.8em",
   margin: "0"
@@ -11,9 +13,11 @@ const Footer = props => (
           {props.children}
           <p style={style}>
             Website by{" "}
-            <a href="https://zuzjes.com" className="text-white">
-              <strong>Zuzana Jeschke</strong>
-            </a>
+            <Link href="https://zuzjes.com">
+              <a className="text-white">
+                <strong>Zuzana Jeschke</strong>
+              </a>
+            </Link>
           </p>
         </div>
       </div>
