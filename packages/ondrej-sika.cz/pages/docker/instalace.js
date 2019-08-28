@@ -86,6 +86,12 @@ Po instalaci spustě Docker do do terminálu napište: \`docker run ondrejsika/v
     Status: Downloaded newer image for ondrejsika/verify-docker:latest
     Your Docker is working :)
 
+
+#### Bash Completion na Mac
+
+Pekne popsane v clanku: <https://blog.alexellis.io/docker-mac-bash-completion/>
+
+
 ### Linux
 
 Na Linuxu nepoužívejte Docker z distribučních balíčků, je tam starý. Postupujte podle oficiálního návodu na: [zde](https://docs.docker.com/install/linux/docker-ce/debian/) pro Debian, případně si vyberte svoji distribuci v levém menu.
