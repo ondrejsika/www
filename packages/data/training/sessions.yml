@@ -1,3 +1,15 @@
+- id: docker-brno-5-9-2019
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Skoleni Dockeru
+  city: Brno
+  price: 9999 CZK
+  venue_id: rootcz-brno
+  length: 2 dny
+  date_from: 5.9.2019
+  date_to: 6.9.2019
 - id: docker-praha-7-10-2019
   active: true
   country: cz
