@@ -11,8 +11,8 @@ export default props => (
             <a href="tel:+49 XXX XXX XXX">+49 XXX XXX XXX</a> (
             <a href="https://t.me/ondrejsika">Telegram</a>)
             <br />
-            <a href="mailto:ondrej@ondrejsika.com?subject=Training Inquiry">
-              ondrej@ondrejsika.com
+            <a href="mailto:ondrej@sika.io?subject=Training Inquiry">
+              ondrej@sika.io
             </a>{" "}
             (<a href="/pgp">PGP</a>)
           </p>

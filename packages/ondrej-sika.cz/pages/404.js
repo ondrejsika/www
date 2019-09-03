@@ -18,7 +18,7 @@ export default () => {
           source={`
 ## Nenašli jste co hledáte ...
 
-Napište mi email na <ondrej@ondrejsika.com> a dejte mi vědět co potřebujete. Rád Vám pomohu.
+Napište mi email na <ondrej@sika.io> a dejte mi vědět co potřebujete. Rád Vám pomohu.
 `}
         />
         <LectureImgMdLg LectureImgHeader="... nebo se podivejte na kurzy co školím" />
@@ -26,7 +26,7 @@ Napište mi email na <ondrej@ondrejsika.com> a dejte mi vědět co potřebujete.
         <div className="mt-5" />
         <Markdown
           source={`
-Pokud něco nefunguje, dejte mi vědět na <ondrej@ondrejsika.com>
+Pokud něco nefunguje, dejte mi vědět na <ondrej@sika.io>
 `}
         />
       </div>

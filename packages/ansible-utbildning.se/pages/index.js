@@ -134,7 +134,7 @@ Pris för två dagars hands-on Ansibleträning
 ### Kontakt
 
 #### Ondrej Sika
-<ondrej@ondrejsika.com>
+<ondrej@sika.io>
 <br>[ondrej-sika.se](https://ondrej-sika.se)
 <br>[+420 773 452 376](tel:+420773452376)
 `}

@@ -8,7 +8,7 @@ const Contact = props => (
         source={`
 #### Ondřej Šika
 
-<ondrej@ondrejsika.com>
+<ondrej@sika.io>
 <br>[ondrej-sika.cz](https://ondrej-sika.cz)
 <br>[+420 773 452 376](tel:+420773452376)
     `}

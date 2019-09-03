@@ -63,7 +63,7 @@ Vse potrebne ti vysvetlim, pokud prijdes s vlastnimi napady, budu jen rad.
 - Puppet, Continues Integration
 - Student IT (CVUT)
 
-Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>
+Pokud te nabidka zaujala, napis mi email na <ondrej@sika.io>
 
 ## Asistentka
 Nejsem zrovna dobry v agende a planovani. A potrebuji nekoho kdo mi s tim pomuze.
@@ -87,7 +87,7 @@ Nejsem zrovna dobry v agende a planovani. A potrebuji nekoho kdo mi s tim pomuze
 - praci odkudkoliv
 - Svobodu a rust
 
-Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>
+Pokud te nabidka zaujala, napis mi email na <ondrej@sika.io>
 `}
       />
     </div>

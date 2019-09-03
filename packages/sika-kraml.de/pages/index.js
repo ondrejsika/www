@@ -155,7 +155,7 @@ const Index = () => (
             className="__cf_email__"
             data-cfemail="2e41404a5c4b446e41404a5c4b445d47454f004d4143"
           >
-            ondrej@ondrejsika.com
+            ondrej@sika.io
           </span>
         </a>
         <br />

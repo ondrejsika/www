@@ -9,8 +9,8 @@ const Footer = props => (
           <div className="col-md-3 col-sm-7 col-8 text-white">
             <h3 className="text-white">Ondrej Sika</h3>
             <p>
-              <a href="mailto:ondrej@ondrejsika.com" className="a-underline">
-                ondrej@ondrejsika.com
+              <a href="mailto:ondrej@sika.io" className="a-underline">
+                ondrej@sika.io
               </a>
               <br />
               <a href="tel:+44 XXX XXX XXX" className="a-underline">
@@ -107,7 +107,7 @@ const Footer = props => (
             <a href="https://github.com/ondrejsika">
               <img src="/static/github-hex.svg" className="pl-2 pr-2 pt-1" />
             </a>
-            <a href="mailto:ondrej@ondrejsika.com">
+            <a href="mailto:ondrej@sika.io">
               <img src="/static/mail-hex.svg" className="pl-2 pr-2 pt-1" />
             </a>
           </div>

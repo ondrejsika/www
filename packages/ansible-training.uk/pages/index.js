@@ -132,7 +132,7 @@ Price for the two-day hands-on Ansible training
 ### Contact
 
 #### Ondrej Sika
-<ondrej@ondrejsika.com>
+<ondrej@sika.io>
 <br>[ondrej-sika.uk](https://ondrej-sika.uk)
 <br>[+420 773 452 376](tel:+420773452376)
 `}

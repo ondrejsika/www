@@ -26,7 +26,7 @@ const TextWithImg = props => (
         <a href="https://github.com/ondrejsika">
           <img src="/static/github-hex.svg" />
         </a>
-        <a href="mailto:ondrej@ondrejsika.com">
+        <a href="mailto:ondrej@sika.io">
           <img src="/static/mail-hex.svg" />
         </a>
       </div>

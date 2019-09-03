@@ -133,7 +133,7 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
           source={`
 ### Cena
 
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
+Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/kubernetes/poptavka/) nebo mi napište email na <ondrej@sika.io>
 
 - Otevřený termín (self funded): 9 999 CZK bez DPH
 - Otevřený termín (company funded): 14 999 CZK bez DPH

@@ -42,7 +42,7 @@ Po instalaci spuste Docker do do terminalu napiste: docker run ondrejsika/verify
     Status: Downloaded newer image for ondrejsika/verify-docker:latest
     Your Docker is working :)
 
-Pokud vám Docker vypíše něco jiného, dejte mi vědět na email ondrej@ondrejsika.com.
+Pokud vám Docker vypíše něco jiného, dejte mi vědět na email ondrej@sika.io.
 
 Návod na instalaci Dockeru pro Windows na oficiálních stránkách Dockeru: [zde] (https://docs.docker.com/docker-for-windows/install/)
 
@@ -77,7 +77,7 @@ Po instalaci spustě Docker do do terminálu napište: \`docker run ondrejsika/v
 Na Linuxu nepoužívejte Docker z distribučních balíčků, je tam starý. Postupujte podle oficiálního návodu na: [zde](https://docs.docker.com/install/linux/docker-ce/debian/) pro Debian, případně si vyberte svoji distribuci v levém menu.
 
 
-Pokud máte problém s instalací a nebo jakýkoliv dotaz, neváhejte mě napsat na [ondrej@ondrejsika.com](ondrej@ondrejsika.com)
+Pokud máte problém s instalací a nebo jakýkoliv dotaz, neváhejte mě napsat na [ondrej@sika.io](ondrej@sika.io)
 `}
       />
     </div>

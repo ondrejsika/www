@@ -13,7 +13,7 @@ const Index = () => (
         source={`
 Brzy se Vám ozvu.
 
-V případě jakýchkoliv dotazů pište na <ondrej@ondrejsika.com>.
+V případě jakýchkoliv dotazů pište na <ondrej@sika.io>.
 `}
       />
       <div style={{ height: "100px" }}></div>

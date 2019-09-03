@@ -54,7 +54,7 @@ export default props => (
     <div className="content">{props.children}</div>
     <Footer
       col1_name="Ondřej Šika"
-      col1_mail="ondrej@ondrejsika.com"
+      col1_mail="ondrej@sika.io"
       col1_phone="+420 773 452 376"
       col4_NewsHeader="Zajímají Vás novinky?"
       col4_NewsText="Odebírejte můj newsletter a budete v obraze!"

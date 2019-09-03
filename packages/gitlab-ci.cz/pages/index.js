@@ -123,7 +123,7 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
         <Markdown
           source={`
 ### Cena
-Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/) nebo mi napište email na <ondrej@ondrejsika.com>
+Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/) nebo mi napište email na <ondrej@sika.io>
 - Otevřený termín (self funded): 4 999 CZK bez DPH
 - Otevřený termín (company funded): 6 999 CZK bez DPH
 - Firemní školení (ve firmě): 20 000 CZK bez DPH

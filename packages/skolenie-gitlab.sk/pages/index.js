@@ -45,7 +45,7 @@ Continuous Integration (skrátene CI nebo CI/CD) je nástroj, ktorý za Vás aut
         <Markdown
           source={`
 ### Ako školenie prebieha
-Na školení si formou workshopu vysvetlíme prečo je dobré CI používať, ukážeme si možnosti Gitlab CI a vyskúšame si napísať CI skript pre ukážkový projekt. Výsledkom bude CI skript pre jednoduchý projekt obsahujúci joby od buildu aplikácie, cez testy až po deployment. 
+Na školení si formou workshopu vysvetlíme prečo je dobré CI používať, ukážeme si možnosti Gitlab CI a vyskúšame si napísať CI skript pre ukážkový projekt. Výsledkom bude CI skript pre jednoduchý projekt obsahujúci joby od buildu aplikácie, cez testy až po deployment.
 `}
         />
       </TextFrame>
@@ -123,7 +123,7 @@ Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýta�
         <Markdown
           source={`
 ### Cena
-Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/git/poptavka/) alebo mi napíšte email na ondrej@ondrejsika.com
+Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/git/poptavka/) alebo mi napíšte email na ondrej@sika.io
 - Otvorený termín (self funded): 199 EUR bez DPH
 - Otvorený termín (company funded): 279 EUR bez DPH
 - Firemné školenie (vo firme): 779 EUR bez DPH

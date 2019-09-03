@@ -20,8 +20,8 @@ const Index = () => (
             <a href="tel:+420773452376">+420 773 452 376</a> (
             <a href="https://t.me/ondrejsika">Telegram</a>)
             <br />
-            <a href="mailto:ondrej@ondrejsika.com?subject=Poptavka skoleni">
-              ondrej@ondrejsika.com
+            <a href="mailto:ondrej@sika.io?subject=Poptavka skoleni">
+              ondrej@sika.io
             </a>{" "}
             (<a href="/pgp">PGP</a>)
           </p>
