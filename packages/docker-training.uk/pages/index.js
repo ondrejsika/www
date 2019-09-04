@@ -26,7 +26,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.uk/?x_source=docker-training.cz"
       logoUrl="/static/docker-w.svg"
     >
-      <HeaderLink url="ondrej@sika.io">
+      <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
         Request a training
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=docker-training.uk">

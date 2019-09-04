@@ -26,7 +26,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-git.cz"
       logoUrl="/static/git.svg"
     >
-      <HeaderLink url="ondrej@sika.io">
+      <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
         Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">

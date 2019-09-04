@@ -32,7 +32,7 @@ const Index = () => (
       byUrl="https://sika-kraml.de/kontakt/?x_source=ansible-schulung.de"
       logoUrl="/static/ansible.png"
     >
-      <HeaderLink url="ondrej@sika.io">
+      <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
         Nezávazně poptat školení
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">
