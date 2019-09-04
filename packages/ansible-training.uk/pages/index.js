@@ -26,7 +26,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.uk/?x_source=ansible-training.uk"
       logoUrl="/static/ansible.png"
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-skoleni.uk">
+      <HeaderLink url="ondrej@sika.io">
         Request training
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=ansible-training.uk">

@@ -25,7 +25,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.com/?x_source=git-training.nl"
       logoUrl="/static/git.svg"
     >
-      <HeaderLink url="https://ondrej-sika.com/training/git/inquiry/?x_source=git-training.nl">
+      <HeaderLink url="ondrej@sika.io">
         Request a training
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.com/contact/?x_source=git-training.nl">

@@ -26,7 +26,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.com/is/?x_source=training.kubernetes.is"
       logoUrl="/static/kubernetes.png"
     >
-      <HeaderLink url="https://ondrej-sika.com/is/training/kubernetes/inquiry/?x_source=training.kubernetes.is">
+      <HeaderLink url="ondrej@sika.io">
         Request training
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.com/is/contact/?x_source=training.kubernetes.is">

@@ -25,7 +25,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
       logoUrl="/static/docker-w.svg"
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">
+      <HeaderLink url="ondrej@sika.io">
         Nezáväzne popýtať školenie
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">

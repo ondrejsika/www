@@ -27,7 +27,7 @@ const Index = () => (
       byUrl="https://sika-kraml.de/kontakt/?x_source=kubernetes-schulung.de"
       logoUrl="/static/kubernetes.png"
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">
+      <HeaderLink url="ondrej@sika.io">
         Nezávazně poptat školení
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">
