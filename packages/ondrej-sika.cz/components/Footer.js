@@ -3,7 +3,7 @@ import site from "@app/ondrej-sika.cz/config";
 
 const Footer = props => (
   <div>
-    <div className="footer mt-4">
+    <div className="footer">
       <div className="container pt-4 pb-4">
         <div className="row">
           <div className="col-md-3 col-sm-7 col-8 text-white">
