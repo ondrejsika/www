@@ -14,15 +14,15 @@ Musim rict, ze jsem naprosto spokojen a uz bych nemenil.
 
 #### Mac
 
-Na Mac jsem presel z Linuxu a zacatky byli tezke, ale zvladl jsem to. Ted musim rict, ze jsem to mel udelat uz driv.
+Na Mac jsem presel z Linuxu a zacatky byly tezke, ale zvladl jsem to. Ted musim rict, ze jsem to mel udelat uz driv.
 
-Nejlepsi na Macu je ze proste funguje. A to z pohledu programatora, managera i uzivatele. Vsechny tyto role se celkem dobre skloubi, zvlast kdyz mam od Apple skoro vsechno.
+Nejlepsi na Macu je, ze proste funguje. A to z pohledu programatora, managera i uzivatele. Vsechny tyto role se celkem dobre skloubi, zvlast kdyz mam od Apple skoro vsechno.
 
-Na Macu me funguji veci, ktere potrebuji pro vyvoj jako Git, yarn, VS Code, ... A daji se instalovat prez balickovaci manager [brew](/navody/brew) podobne jako na Linuxu. Dale na Macu fungiji veci jako Skype for Business, jsou pro nej aplikace jako Notion (s offline podporou) a celkove veci, ktere zacinam pouzivat.
+Na Macu mi funguji veci, ktere potrebuji pro vyvoj jako Git, yarn, VS Code, ... A daji se instalovat prez balickovaci manager [brew](/navody/brew) podobne jako na Linuxu. Dale na Macu fungiji veci jako Skype for Business, jsou pro nej aplikace jako Notion (s offline podporou) a celkove veci, ktere zacinam pouzivat.
 
 A v neposledni rade to ze funguji tiskarny "z krabice" a ze mam synchronizovane kontakty v pocitaci s temi v telefonu. Take to ze na nem mohu jednoduse upravovat fotky a to nejen z iPhone.
 
-Akorat me chybitiling window manager [i3](https://i3wm.org), ale zvykl jsem si.
+Akorat mi chybi tiling window manager [i3](https://i3wm.org), ale zvykl jsem si.
 
 #### iPad Pro LTE
 
@@ -35,14 +35,14 @@ Priplatil jsem si za LTE verzi a dobre vim proc. Chci mit LTE primo v iPadu a ne
 
 #### Apple Watch
 
-Kdyz jsem si porizoval Apple watch, premyslel jsem zda to ma smysl, cca po pul roce pouzivani musim rici ze to byl dobry napad. Zvlaste po te co Revolut spustil Apple Pay.
+Kdyz jsem si porizoval Apple watch, premyslel jsem zda to ma smysl, cca po pul roce pouzivani musim rici, ze to byl dobry napad. Zvlaste po te co Revolut spustil Apple Pay.
 
 Na hodinkach vyuzivam prevazne tyto funkce, v poradi jak jsou zde uvedeny:
 
 - __Apple Pay__ - naprosto dokonale, nemusim vytahovat penezenku ani telefon - neni to zadny boost produktivity, ale super pohodlne
 - __Apple Health__ - monitoring a upozorneni abych se hybal - jako programator potrebuji. Take mi to hlida abych se kazdou hodinu zvednul a trosku prosel.
 - __Zvednuti hovoru na hodinkach__ - Skvele v Aute (bez CarPlay), na kole nebo v horach kdy mam telefon v batohu. Nebo kdyz ho mam nekde po byte.
-- __Psani SMS__ - muzu odeslat SMS bez toho abych musel hledat a vyndavat telefon. Zase super v aute.
+- __Psani SMS__ - muzu odeslat SMS bez toho, abych musel hledat a vyndavat telefon. Zase super v aute.
 - Hledani telefonu
 - Zaznamenavani sportu - Lezeni, behani
 
@@ -76,20 +76,20 @@ U Todoistu se da skvele pouzivat free verze, ja si platim PRO (cca 30 USD rocne)
 
 ## Notion
 
-[Notion](https://notion.so) je pro me primarne nastroj na knowledge base - misto kam si pisu vsechno co potrebuji vedet a i snekym sdilet. S teamem v praci i s rodinou.
+[Notion](https://notion.so) je pro me primarne nastroj na knowledge base - misto kam si pisu vsechno co potrebuji vedet a i s nekym sdilet. S teamem v praci i s rodinou.
 
-Proc jsem si vybral notion pisu v clanku [Vyber osobni wiki](/clanky/vyber-osobni-wiki).
+Proc jsem si vybral notion, pisu v clanku [Vyber osobni wiki](/clanky/vyber-osobni-wiki).
 
 Notion obsahuje dokumenty, ktere se mezi sebou daji linkovat a prochazet (ne jako Google Docs) i jednoduche tabulky, ktere se mezi sebou dali linkovat - neco jako [AirTable](https://airtable.com).
 
-Je tam hromada pluginu na vsechno, jako napriklad integrace s Google Docs nebo mapamy.
+Je tam hromada pluginu na vsechno, jako napriklad integrace s Google Docs nebo mapami.
 
 Notion je novy projekt a rychle se vyvyji.
 
 
 ## Calendly
 
-Drive drtiva vetsina emailu co jsem si vymenil s klienty a nejvice casu co jsem stravil na domlouvani zakazky - skoleni bylo ohledne domlouvani terminu. To [Calendly](https://calendly.com) resi. Kazdy si muze zarezervovat volny termin prez Calendly sam. Calendly si samo zjistuje z kalendare kdy mam cas. Kazdy si muze termin prez Calendly vybrat termin jaky chce a ja nemusim resit komu jsem jaky termin rezervoval a co si nakonec vybral.
+Drive drtiva vetsina emailu, co jsem si vymenil s klienty a nejvice casu co jsem stravil na domlouvani zakazky - skoleni bylo ohledne domlouvani terminu. To [Calendly](https://calendly.com) resi. Kazdy si muze zarezervovat volny termin prez Calendly sam. Calendly si samo zjistuje z kalendare, kdy mam cas. Kazdy si muze termin pres Calendly vybrat termin jaky chce a ja nemusim resit komu jsem jaky termin rezervoval a co si nakonec vybral.
 
 
 ## Fakturoid
@@ -99,7 +99,7 @@ Drive drtiva vetsina emailu co jsem si vymenil s klienty a nejvice casu co jsem 
 
 ## Toggl
 
-[Toggl](https://toggl.com) je jednoduchy nastroj na mereni casu. Naprosto jednoduchy a dostacujici i ve verzy zdarma. Jedine co mi na nem chybi je aplikace pro Apple Watch.
+[Toggl](https://toggl.com) je jednoduchy nastroj na mereni casu. Naprosto jednoduchy a dostacujici i ve verzi zdarma. Jedine co mi na nem chybi je aplikace pro Apple Watch.
 
 
 ## Password managery
