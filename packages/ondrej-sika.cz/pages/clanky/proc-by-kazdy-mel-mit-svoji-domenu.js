@@ -21,7 +21,7 @@ Pokud nejsou tyto domeny k dispozici, zkousim domeny jmeno + prijmeni.
 - \`ondrejsika.com\` s emailem \`ondrej@ondrejsika.com\`
 - \`ondrejsika.cz\` s emailem \`ondrej@ondrejsika.cz\`
 
-Pokud je moznost koupit domenu \`jmeno.com\` a i \`jmenoprijmeni.com\`, kupte si obje. Cena 12 USD za domenu navic je zanedbatelna castka. Web muzete mit na \`jmenoprijmeni.com\` a \`jmeno@prijmeni.com\`.
+Pokud je moznost koupit domenu \`jmeno.com\` a i \`jmenoprijmeni.com\`, kupte si obe. Cena 12 USD za domenu navic je zanedbatelna castka. Web muzete mit na \`jmenoprijmeni.com\` a \`jmeno@prijmeni.com\`.
 
 Stejne to plati i pokud mate moznost koupit \`.com\` i \`.cz\`. Ostatni kombinace asi nema smysl kupovat dohromady.
 
