@@ -1,0 +1,12 @@
+name: Push to Gitlab
+on: [push]
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: |
+        export BRANCH=$(echo $GITHUB_REF | sed 's/refs\/heads\///g')
+        git remote add gitlab ${{ secrets.REPOSITORY_URL }}
+        git branch $BRANCH
+        git push gitlab $BRANCH -f
