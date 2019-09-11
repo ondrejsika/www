@@ -39,6 +39,7 @@ Those links also works in VS Code
 - [gitlab-ci.cz](packages/gitlab-ci.cz/pages/index.js) ([live](https://gitlab-ci.cz))
 - [skoleni-docker.cz](packages/skoleni-docker.cz/pages/index.js) ([live](https://skoleni-docker.cz))
 - [skoleni-kubernetes.cz](packages/skoleni-kubernetes.cz/pages/index.js) ([live](https://skoleni-kubernetes.cz))
+- [sika-kaplan.com](packages/sika-kaplan.com/pages) ([live](https://sika-kaplan.com))
 
 #### SK
 
