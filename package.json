@@ -44,6 +44,7 @@
     "dev-docker-training.at": "yarn --cwd packages/docker-training.at dev -p 3033",
     "dev-docker-training.nl": "yarn --cwd packages/docker-training.nl dev -p 3034",
     "dev-git-training.nl": "yarn --cwd packages/git-training.nl dev -p 3035",
+    "dev-sika-kaplan.com": "yarn --cwd packages/sika-kaplan.com dev -p 3036",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -79,6 +80,7 @@
     "static-docker-training.at": "yarn --cwd packages/docker-training.at static",
     "static-docker-training.nl": "yarn --cwd packages/docker-training.nl static",
     "static-git-training.nl": "yarn --cwd packages/git-training.nl static",
+    "static-sika-kaplan.com": "yarn --cwd packages/sika-kaplan.com static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   },
   "devDependencies": {

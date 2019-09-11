@@ -33,3 +33,4 @@ docker-training.ch
 docker-training.at
 docker-training.nl
 git-training.nl
+sika-kaplan.com
