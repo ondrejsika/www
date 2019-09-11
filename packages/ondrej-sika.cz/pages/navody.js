@@ -8,10 +8,12 @@ export default () => (
 
 - [Instalace](/docker/instalace)
 - [Docker s TLS](/docker/docker-s-tls)
+- [Priprava na skoleni Dockeru](/skoleni/docker/priprava-na-skoleni) - vice informaci o skoleni [zde](/skoleni/docker)
 
 ### Kubernetes
 
 - [Instalace](/kubernetes/instalace)
+- [Priprava na skoleni Kubernetes](/skoleni/kubernetes/priprava-na-skoleni) - vice informaci o skoleni [zde](/skoleni/kubernetes)
 
 ### Git
 

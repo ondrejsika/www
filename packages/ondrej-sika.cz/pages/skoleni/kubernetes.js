@@ -34,6 +34,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
 #### Technické požadavky
 - Nainstalovaný Kubernetes
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+- [Priprava na skoleni Kubernetes](/skoleni/kubernetes/priprava-na-skoleni)
 `}
     recommendations={["oxy", "oxyCTO"]}
   />

@@ -33,6 +33,7 @@ Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytv
 #### Technické požadavky
 - Nainstalovány Docker
 - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
+- [Priprava na skoleni Dockeru](/skoleni/docker/priprava-na-skoleni)
 `}
     recommendations={["sit", "vse"]}
     twitter_recommendations={[
