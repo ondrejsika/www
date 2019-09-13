@@ -4,7 +4,9 @@ import Footer from "../components/Footer";
 
 export default props => (
   <Layout>
-    <Header />
+    <div className="mt-5">
+      <Header />
+    </div>
     {props.children}
     <Footer />
   </Layout>
