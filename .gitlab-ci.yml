@@ -2586,3 +2586,45 @@ sika-kaplan.com prod deploy:
     url: https://sika-kaplan.com
   dependencies: []
 
+bootstrap-web build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/bootstrap-web/out
+    - yarn run static-bootstrap-web
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/bootstrap-web/**/*
+      - yarn.lock
+  artifacts:
+    name: bootstrap-web
+    paths:
+      - packages/bootstrap-web/out
+
+
+bootstrap-web build docker:
+  dependencies:
+    - bootstrap-web build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/bootstrap-web/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/bootstrap-web packages/bootstrap-web
+    - rm packages/bootstrap-web/Dockerfile
+    - docker push registry.sikahq.com/www/www/bootstrap-web
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/bootstrap-web/**/*
+      - yarn.lock
+
