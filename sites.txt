@@ -35,3 +35,4 @@ docker-training.nl
 git-training.nl
 sika-kaplan.com
 bootstrap-web
+trainera.io
