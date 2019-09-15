@@ -55,6 +55,14 @@ Zdroje:
 - <https://git-scm.com/docs/githooks>
 - <https://githooks.com/>
 `}
+    after={
+      <div className="alert alert-primary mt-5 text-center" role="alert">
+        <h2>Zajimate se o Git? Zkuste me skoleni Gitu!</h2>
+        <a className="btn btn-large btn-primary m-3" href="/skoleni/git">
+          Ukazat skoleni Gitu
+        </a>
+      </div>
+    }
   >
     <style
       dangerouslySetInnerHTML={{
