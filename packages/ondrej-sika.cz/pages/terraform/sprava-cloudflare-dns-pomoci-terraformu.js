@@ -8,5 +8,13 @@ Kazdy kdo delal neco okolo webu se setkal vice ci mene se spravou DNS. Pokud pou
 
 Na clanku pracuji ...
 `}
+    after={
+      <div className="alert alert-success mt-5 text-center" role="alert">
+        <h2>Zajimate se o Terraform? Zkuste me skoleni Terraformu!</h2>
+        <a className="btn btn-large btn-success m-3" href="/skoleni/terraform">
+          Ukazat skoleni Terraformu
+        </a>
+      </div>
+    }
   />
 );
