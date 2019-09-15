@@ -68,6 +68,31 @@ nebo pomoci promennych
     export DOCKER_TLS_VERIFY=1
     docker version
 `}
+    after={
+      <div className="row">
+        <div className="col-6">
+          <div className="alert alert-success mt-5 text-center" role="alert">
+            <h3>Zajimate se o Docker? Zkuste me skoleni Dockeru!</h3>
+            <a className="btn btn-large btn-success m-3" href="/skoleni/docker">
+              Ukazat skoleni Dockeru
+            </a>
+          </div>
+        </div>
+        <div className="col-6">
+          <div className="alert alert-primary mt-5 text-center" role="alert">
+            <h3>
+              Chcete dostavat nove clanky do emailu? Prihlaste se k newsletteru!
+            </h3>
+            <a
+              className="btn btn-large btn-primary m-3"
+              href="https://sika.link/newsletter"
+            >
+              Prihlasit se k odberu
+            </a>
+          </div>
+        </div>
+      </div>
+    }
   >
     <style jsx global>{`
       .article-body img {
