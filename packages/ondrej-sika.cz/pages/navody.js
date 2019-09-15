@@ -10,10 +10,14 @@ export default () => (
 - [Docker s TLS](/docker/docker-s-tls)
 - [Priprava na skoleni Dockeru](/skoleni/docker/priprava-na-skoleni) - vice informaci o skoleni [zde](/skoleni/docker)
 
+Pokud Vas zajima Docker, podivejte se na me [Skoleni Dockeru](/skoleni/docker)
+
 ### Kubernetes
 
 - [Instalace](/kubernetes/instalace)
 - [Priprava na skoleni Kubernetes](/skoleni/kubernetes/priprava-na-skoleni) - vice informaci o skoleni [zde](/skoleni/kubernetes)
+
+Pokud Vas zajima Kubernetes, podivejte se na me [Skoleni Kubernetes](/skoleni/kubernetes)
 
 ### Terraform
 
@@ -22,11 +26,15 @@ export default () => (
 - [Sprava Cloudflare DNS pomoci Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
 
 
+Pokud Vas zajima Terraform, podivejte se na me [Skoleni Terraformu](/skoleni/terraform)
+
 ### Git
 
 - [Instalace](/git/instalace)
 - [Rebase](/git/rebase)
 - [Hooks](/git/hooks)
+
+Pokud Vas zajima Git, podivejte se na me [Skoleni Gitu](/skoleni/git)
 
 ### Ostatní
 
