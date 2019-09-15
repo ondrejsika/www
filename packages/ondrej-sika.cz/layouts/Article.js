@@ -15,6 +15,9 @@ export default props => (
       {(() => {
         if (props.markdown) return <Markdown source={props.markdown} />;
       })()}
+      {(() => {
+        if (props.after) return props.after;
+      })()}
     </div>
   </div>
 );
