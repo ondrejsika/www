@@ -15,6 +15,13 @@ export default () => (
 - [Instalace](/kubernetes/instalace)
 - [Priprava na skoleni Kubernetes](/skoleni/kubernetes/priprava-na-skoleni) - vice informaci o skoleni [zde](/skoleni/kubernetes)
 
+### Terraform
+
+- [Co je Terraform](/terraform)
+- [Instalace Terraformu](/terraform/instalace)
+- [Sprava Cloudflare DNS pomoci Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
+
+
 ### Git
 
 - [Instalace](/git/instalace)
