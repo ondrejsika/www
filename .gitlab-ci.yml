@@ -2708,3 +2708,83 @@ trainera.io prod deploy:
     url: https://trainera.io
   dependencies: []
 
+salzburgdevops.com build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/salzburgdevops.com/out
+    - yarn run static-salzburgdevops.com
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/salzburgdevops.com/**/*
+      - yarn.lock
+  artifacts:
+    name: salzburgdevops.com
+    paths:
+      - packages/salzburgdevops.com/out
+
+
+salzburgdevops.com build docker:
+  dependencies:
+    - salzburgdevops.com build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/salzburgdevops.com/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/salzburgdevops.com packages/salzburgdevops.com
+    - rm packages/salzburgdevops.com/Dockerfile
+    - docker push registry.sikahq.com/www/www/salzburgdevops.com
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/salzburgdevops.com/**/*
+      - yarn.lock
+
+salzburgdevops.com dev deploy:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/salzburgdevops.com&domain=salzburgdevops.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/salzburgdevops.com/**/*
+      - yarn.lock
+  environment:
+    name: dev salzburgdevops.com
+    url: https://salzburgdevops.com.xsika.cz
+  dependencies: []
+
+salzburgdevops.com prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/salzburgdevops.com&domain=salzburgdevops.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/salzburgdevops.com/**/*
+      - yarn.lock
+  environment:
+    name: prod salzburgdevops.com
+    url: https://salzburgdevops.com
+  dependencies: []
+
