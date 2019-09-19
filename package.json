@@ -47,6 +47,7 @@
     "dev-sika-kaplan.com": "yarn --cwd packages/sika-kaplan.com dev -p 3036",
     "dev-bootstrap-web": "yarn --cwd packages/bootstrap-web dev -p 3037",
     "dev-trainera.io": "yarn --cwd packages/trainera.io dev -p 3038",
+    "dev-salzburgdevops.com": "yarn --cwd packages/salzburgdevops.com dev -p 3039",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -85,6 +86,7 @@
     "static-sika-kaplan.com": "yarn --cwd packages/sika-kaplan.com static",
     "static-bootstrap-web": "yarn --cwd packages/bootstrap-web static",
     "static-trainera.io": "yarn --cwd packages/trainera.io static",
+    "static-salzburgdevops.com": "yarn --cwd packages/salzburgdevops.com static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   },
   "devDependencies": {

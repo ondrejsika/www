@@ -1,0 +1,10 @@
+{
+  "name": "@app/meetup-theme",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Ondrej Sika",
+  "author_email": "ondrej@ondrejsika.com",
+  "dependencies": {
+    "@app/bootstrap-theme": "^0.0.0"
+  }
+}
