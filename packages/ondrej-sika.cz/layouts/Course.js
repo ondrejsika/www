@@ -10,6 +10,7 @@ import Translate from "@app/common/components/Translate";
 
 import Head from "next/head";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
+import PipedriveContactForm from "../components/PipedriveContactForm";
 
 export default props => (
   <div>
@@ -87,37 +88,7 @@ export default props => (
       <Translate lang={props.lang} cs="bez DPH" en="excl. VAT" />
     </Price>
     <div className="container">
-      <TextArea
-        TextHeader={
-          <Translate
-            lang={props.lang}
-            cs="Poptávka firemního školení"
-            en="Request in-house Training"
-          />
-        }
-        TextParagraph={
-          <Translate
-            lang={props.lang}
-            cs="Pole označené * jsou povinné."
-            en="Fields marked * as required."
-          />
-        }
-      >
-        <Form
-          course={props.course_title}
-          FormName={<Translate lang={props.lang} cs="Jméno *" en="Name *" />}
-          FromNamePlaceholder="Anton Hrabiš"
-          FormCompany={
-            <Translate lang={props.lang} cs="Společnost" en="Company" />
-          }
-          FormCompanyPlaceholder="Drůbežárny"
-          FormEmail={<Translate lang={props.lang} cs="Email *" en="Email * " />}
-          FormEmailPlaceholder="anton@hrabis.cz"
-          FormPhone={<Translate lang={props.lang} cs="Telefon *" en="Phone" />}
-          FormPhonePlaceholder="+420111222333"
-          FormSent={<Translate lang={props.lang} cs="Odeslat" en="Send" />}
-        />
-      </TextArea>
+      <PipedriveContactForm />
     </div>
   </div>
 );
