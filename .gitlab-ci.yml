@@ -2788,3 +2788,163 @@ salzburgdevops.com prod deploy:
     url: https://salzburgdevops.com
   dependencies: []
 
+training.kubernetes.is build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/training.kubernetes.is/out
+    - yarn run static-training.kubernetes.is
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.is/**/*
+      - yarn.lock
+  artifacts:
+    name: training.kubernetes.is
+    paths:
+      - packages/training.kubernetes.is/out
+
+
+training.kubernetes.is build docker:
+  dependencies:
+    - training.kubernetes.is build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/training.kubernetes.is/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/training.kubernetes.is packages/training.kubernetes.is
+    - rm packages/training.kubernetes.is/Dockerfile
+    - docker push registry.sikahq.com/www/www/training.kubernetes.is
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.is/**/*
+      - yarn.lock
+
+training.kubernetes.is dev deploy:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/training.kubernetes.is&domain=training.kubernetes.is.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.is/**/*
+      - yarn.lock
+  environment:
+    name: dev training.kubernetes.is
+    url: https://training.kubernetes.is.xsika.cz
+  dependencies: []
+
+training.kubernetes.is prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/training.kubernetes.is&domain=training.kubernetes.is&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.is/**/*
+      - yarn.lock
+  environment:
+    name: prod training.kubernetes.is
+    url: https://training.kubernetes.is
+  dependencies: []
+
+training.kubernetes.lu build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/training.kubernetes.lu/out
+    - yarn run static-training.kubernetes.lu
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.lu/**/*
+      - yarn.lock
+  artifacts:
+    name: training.kubernetes.lu
+    paths:
+      - packages/training.kubernetes.lu/out
+
+
+training.kubernetes.lu build docker:
+  dependencies:
+    - training.kubernetes.lu build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/training.kubernetes.lu/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/training.kubernetes.lu packages/training.kubernetes.lu
+    - rm packages/training.kubernetes.lu/Dockerfile
+    - docker push registry.sikahq.com/www/www/training.kubernetes.lu
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.lu/**/*
+      - yarn.lock
+
+training.kubernetes.lu dev deploy:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/training.kubernetes.lu&domain=training.kubernetes.lu.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.lu/**/*
+      - yarn.lock
+  environment:
+    name: dev training.kubernetes.lu
+    url: https://training.kubernetes.lu.xsika.cz
+  dependencies: []
+
+training.kubernetes.lu prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/training.kubernetes.lu&domain=training.kubernetes.lu&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.lu/**/*
+      - yarn.lock
+  environment:
+    name: prod training.kubernetes.lu
+    url: https://training.kubernetes.lu
+  dependencies: []
+
