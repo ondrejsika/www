@@ -576,6 +576,44 @@ sika-kraml.de build docker:
       - packages/sika-kraml.de/**/*
       - yarn.lock
 
+sika-kraml.de dev deploy:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika-kraml.de&domain=sika-kraml.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika-kraml.de/**/*
+      - yarn.lock
+  environment:
+    name: dev sika-kraml.de
+    url: https://sika-kraml.de.xsika.cz
+  dependencies: []
+
+sika-kraml.de prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika-kraml.de&domain=sika-kraml.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika-kraml.de/**/*
+      - yarn.lock
+  environment:
+    name: prod sika-kraml.de
+    url: https://sika-kraml.de
+  dependencies: []
+
 skoleni-docker.cz build js:
   stage: build_js
   image: node
