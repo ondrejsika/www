@@ -4,6 +4,7 @@
     en: Web Application Developer
     se: Webapplikationsutvecklare
     cs: Vývojář Aplikací
+    de: Web Application Developer
   company: University of Ecenomics, Prague
   photo: img/matejkucera.jpg
   company_logo:
@@ -16,6 +17,7 @@
     cs: |
       Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
   date:
+    de: 7. 5. 2019
     cs: 7. kvetna 2019
 - id: spel
   name: Tomáš Havlín
@@ -23,6 +25,7 @@
     en: CTO
     se: CTO
     cs: CTO
+    de: CTO
   company: SPEL a.s.
   date:
     cs: 7. kvetna 2019
@@ -152,6 +155,9 @@
     en: Software Development Manager
     se: Software Development Manager
     cs: Software Development Manager
+    de: Software Development Manager
+  date:
+    de: 1. 1. 2019
   company: NMS Market Research
   photo: img/frantisekvodslon.jpg
   text:
@@ -164,6 +170,8 @@
       Ondrejs erfarenhet har ett bra djup och bredd inom på alla områden i mjukvaruutveckling och drift - vi har fokuserat på Docker, lastbalansering, säkerhet, git-arbetsflöde, övervakning, och mer.
       Hans samråd var till stor nytta för vårt team och tack vare dem undviker vi mycket arbete med "blind" groping.
     en: |
+      We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
+    de: |
       We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
 - id: vistag
   name: Tomas Ruzicka

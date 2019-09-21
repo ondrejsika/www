@@ -11,7 +11,9 @@
     "static": "yarn run build && yarn run export"
   },
   "dependencies": {
-    "@app/course-landing": "^0.0.0",
-    "next-yaml": "^1.0.0"
+    "@app/ondrej-sika.cz": "^0.0.0"
+  },
+  "devDependencies": {
+    "common-tags": "~1.8.0"
   }
 }

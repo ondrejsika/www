@@ -1,173 +1,148 @@
-import FooterSikaKraml from "@app/course-landing/components/FooterSikaKraml";
-import Header from "@app/course-landing/components/Header";
-import HeaderLink from "@app/course-landing/components/HeaderLink";
-import TextFrame from "@app/course-landing/components/TextFrame";
-import TextFrameWithImage from "@app/course-landing/components/TextFrameWithImage";
-import MyClients from "@app/course-landing/components/MyClients";
-import References from "@app/course-landing/components/References";
-import ThreeCol from "@app/course-landing/components/ThreeCol";
-import someone from "@app/course-landing/components/References/someone.jpg";
-import jurajboldis from "@app/course-landing/components/References/jurajboldis.jpg";
-import martinkylian from "@app/course-landing/components/References/martinkylian.jpg";
-import TwoCol from "@app/course-landing/components/TwoCol";
-import Navigation from "@app/course-landing/components/Navigation";
-import ButtonOutline from "@app/course-landing/components/ButtonOutline";
-import Recommendation from "@app/course-landing/components/Recommendation";
-import Contact from "@app/course-landing/components/Contact";
+import "@app/sika-kraml.de/css";
+import ReactMarkdown from "@app/common/components/Markdown";
+import LectureInnerLg from "@app/sika-kraml.de/components/LectureInnerLg";
+import LectureSectionLg from "@app/sika-kraml.de/components/LectureSectionLg";
+import MainBar from "@app/sika-kraml.de/components/MainBar";
+import TextWithImg from "@app/sika-kraml.de/components/TextWithImg";
+import site from "@app/ondrej-sika.cz/config";
 import Head from "next/head";
+import docker_img from "@app/data/pictures/courses/docker.svg";
+import git_img from "@app/data/pictures/courses/git.svg";
+import kubernetes_img from "@app/data/pictures/courses/kubernetes.svg";
+import gitlab_img from "@app/data/pictures/courses/gitlab-ci.svg";
+import ansible_img from "@app/data/pictures/courses/ansible.svg";
+import sikaKraml from "@app/data/pictures/it.jpg";
+import LectureSectionMdSm from "@app/sika-kraml.de/components/LectureSectionMdSm";
+import LectureInnerMdSm from "@app/sika-kraml.de/components/LectureInnerMdSm";
+import { stripIndent } from "common-tags";
 
-let site = {
-  lang: "cs"
+let style = {
+  fontSize: "1.4em",
+  fontWeight: "bold"
+};
+
+var white = {
+  color: "white"
+};
+
+var colorText = {
+  color: "#09AEAB"
 };
 
 const Index = () => (
   <div>
-    <Head>
-      <title>Sika Kraml Schulungen GbR.</title>
-    </Head>
-    <Navigation />
-    <Header
-      websiteHeader="Sika Kraml Schulungen GbR."
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
-      logoUrl="/static/docker-w.svg"
-    >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">
-        Nezávazně poptat školení
-      </HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">
-        Kontaktovat
-      </HeaderLink>
-    </Header>
-    <div className="container container-width">
-      <TextFrame header="Co je to Docker">
-        Docker je dnes technologie, která proces vývoje, testování a provozování
-        softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte
-        na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte
-        prostředí jako součást vaší aplikace.
-      </TextFrame>
-      <TextFrame header="Jak školení probíhá">
-        Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem
-        pracovat od vytvoření vlastního kontejnerů po jeho provozování ve
-        Swarmu. Vše si prakticky vyzkoušíme a osaháme.
-      </TextFrame>
-      <TextFrame header="Co Vás naučím">
-        <ul>
-          <li>Teoretický úvod do Dockeru</li>
-          <li>Instalace Dockeru (pro ty kteří nenainstalovali doma)</li>
-          <li>Práce s kontejnery</li>
-          <li>Práce s obrazy</li>
-          <li>Docker Compose - vicekontejnerove aplikace v Dockeru</li>
-          <li>Deployment do Swarmu</li>
-          <li>Ukázka deploymentu do Kubernetes</li>
-        </ul>
-      </TextFrame>
-      <TextFrame header="Pro koho je školení určeno">
-        Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo
-        malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je
-        vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí
-        Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by
-        jej mohli použít.
-        <TwoCol
-          col1={
-            <>
-              <h4>Předchozí znalosti</h4>
-              <ul>
-                <li>Základy práce s Linuxem</li>
-                <li>Základy práce v terminálu</li>
-              </ul>
-            </>
-          }
-          col2={
-            <>
-              <h4>Technické požadavky</h4>
-              <ul>
-                <li>
-                  Nainstalovaný Docker,{" "}
-                  <a href="https://www.ondrej-sika.cz/docker/instalace/">
-                    návod na instalaci
-                  </a>
-                </li>
-                <li>
-                  Přístup na internet - ideálně bez korporátní proxy, případně
-                  nastavenou proxy v prohlížeči
-                </li>
-              </ul>
-            </>
-          }
+    <Head></Head>
+    <MainBar
+      MainBarHeader="IT Schulungen, Workshops und Beratung"
+      MainBarText="
+        Wir bieten Schulungen und Beratung im DevOps-Umfeld an.
+        Für uns steht die Verbesserung Ihrer Softwareentwicklung und Operationsabläufe an erster Stelle.
+        Wie steigern Ihre Produktivität und Effizienz und senken zusätzlich noch Ihre Ausgaben."
+    ></MainBar>
+    <div className="container">
+      <LectureSectionLg LectureImgHeader="Unsere Schulungen">
+        <LectureInnerLg
+          link="/schulung/docker"
+          title="DOCKER"
+          image={docker_img}
+          first={true}
         />
-      </TextFrame>
-      <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
-      >
-        Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím
-        převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení
-        naleznete na mém webu ondrej-sika.cz.
-        <br />
-        <br />
-        Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností
-        v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji,
-        tak i na produkci a práci bez něj nedovedu už ani představit.
-      </TextFrameWithImage>
+        <LectureInnerLg link="/schulung/git" title="GIT" image={git_img} />
+        <LectureInnerLg
+          link="/schulung/kubernetes"
+          title="KUBERNETES"
+          image={kubernetes_img}
+        />
+        <LectureInnerLg
+          link="/schulung/ansible"
+          title="ANSIBLE"
+          image={ansible_img}
+        />
+        <LectureInnerLg
+          link="/schulung/gitlab-ci"
+          title="GITLAB-CI"
+          image={gitlab_img}
+        />
+      </LectureSectionLg>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti" />
-
-      <ThreeCol
-        header="Reference"
-        col1={<Recommendation id="vse" lang={site.lang} />}
-        col2={
-          <References
-            imgRefer={jurajboldis}
-            nameRefer="Juraj Boldiš"
-            position="CIO @ Bohemia Energy"
-            reference="I consulted with Ondrej topics including Blockchain, GIT and development standards. I appreciate Ondrej's knowledge and experience in these areas. Ondrej is open minded person and discussions with him I found very fruitful"
-          />
-        }
-        col3={
-          <References
-            imgRefer={martinkylian}
-            nameRefer="Martin Kylián"
-            position="Network Security Engineer, SIT of city Pilsen"
-            reference="Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej'sknowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes."
-          />
-        }
+      {/* TODO @Zuzka what does the following element do? */}
+      <LectureSectionMdSm LectureImgHeader="Unsere Schulungen">
+        <LectureInnerMdSm
+          link="/schulung/docker"
+          title="DOCKER"
+          image={docker_img}
+          text=""
+        />
+        <LectureInnerMdSm
+          link="/schulung/git"
+          title="GIT"
+          image={git_img}
+          text=""
+        />
+        <LectureInnerMdSm
+          link="/schulung/kubernetes"
+          title="KUBERNETES"
+          image={kubernetes_img}
+          text=""
+        />
+        <LectureInnerMdSm
+          link="/schulung/ansible"
+          title="ANSIBLE"
+          image={ansible_img}
+          text=""
+        />
+        <LectureInnerMdSm
+          link="/schulung/gitlab-ci"
+          title="GITLAB-CI"
+          image={gitlab_img}
+          text=""
+          last={true}
+        />
+      </LectureSectionMdSm>
+      <ReactMarkdown
+        source={stripIndent`
+        #### Schulung
+        Alle Kurse werden als Hands-On-Workshops durchgeführt.
+        Sie basieren auf unserem tiefgründigen Verständnis der jeweiligen Technologien und
+        unserer langjährigen Erfahrung mit Entwicklung, Test und Betrieb von Softwareprojekten.
+        `}
       />
-
-      <TextFrame header="Mám zájem o školení">
-        Pokud máte zájem o školení, neváhejte mě kontaktovat
-        <ButtonOutline btnUrl="https://ondrej-sika.cz/skoleni/docker/poptavka/">
-          Nezávazně poptat školení
-        </ButtonOutline>
-      </TextFrame>
-
-      <TextFrame header="Cena">
-        Pokud máte zájem o školení u vás ve firmě,{" "}
-        <a
-          href="https://ondrej-sika.cz/skoleni/docker/poptavka/"
-          className="btn btn-large mybutton-outline"
-        >
-          nezávazně jej poptejte
-        </a>{" "}
-        nebo mi napište email na{" "}
-        <a href="/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0">
-          <span
-            className="__cf_email__"
-            data-cfemail="2e41404a5c4b446e41404a5c4b445d47454f004d4143"
-          >
-            ondrej@sika.io
-          </span>
-        </a>
-        <br />
-        Otevřený termín (self funded): 9 999 CZK bez DPH
-        <br />
-        Otevřený termín (company funded): 14 999 CZK bez DPH
-        <br />
-        Firemní školení (ve firmě): 40 000 CZK bez DPH
-      </TextFrame>
-      <Contact />
     </div>
-    <FooterSikaKraml />
+    <div style={{ background: "#4EA9A5" }}>
+      <div className="d-flex flex-row container pt-3 pb-3">
+        <div className="col-4 pr-5" style={{ borderLeft: "1px solid white" }}>
+          <h3 className="center pt-5 pb-5 text-white">WORKSHOPS</h3>
+        </div>
+        <div className="col-4 pr-5" style={{ borderLeft: "1px solid white" }}>
+          <h3 className="center pt-5 pb-5 text-white">SCHULUNGEN</h3>
+        </div>
+        <div
+          className="col-4 pr-5"
+          style={{
+            borderLeft: "1px solid white",
+            borderRight: "1px solid white"
+          }}
+        >
+          <h3 className="center pt-5 pb-5 text-white">KURZPROJEKTE</h3>
+        </div>
+      </div>
+    </div>
+    <div className="container">
+      <TextWithImg TextWithImgHeader="About us" img={sikaKraml}>
+        {/* TODO translate */}
+        POTŘEBA NAPSAT TEXT O NÁS A O SKOLENI (uveden jen priklad od Ondry)
+        <br />
+        <br />
+        My name is Ondrej, I am a software engineer and DevOps consultant,
+        architect & lecturer. I lead mostly Docker courses and CI; they are both
+        closely interrelated. I have worked for small companies,startups to big
+        corporations. I have four years of experience with schulung.
+        <br />
+        Venujeme se skolenim a dale take workshopum, short term kontraktum.
+        <br />
+        <br />
+      </TextWithImg>
+    </div>
   </div>
 );
 
