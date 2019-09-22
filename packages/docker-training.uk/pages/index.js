@@ -23,10 +23,10 @@ const Index = () => (
     <Header
       websiteHeader="Docker Training UK 🇬🇧"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.uk/?x_source=docker-training.cz"
+      byUrl="https://ondrej-sika.uk/?x_source=docker-training.uk"
       logoUrl="/static/docker-w.svg"
     >
-      <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
+      <HeaderLink url="mailto:ondrej@sika.io?subject=[docker-training.uk] Docker Training Inquiry">
         Request a training
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=docker-training.uk">

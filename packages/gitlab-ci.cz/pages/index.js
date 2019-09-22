@@ -25,7 +25,7 @@ const Index = () => (
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-gitlab-ci.cz"
       logoUrl="/static/gitlab-ci.svg"
     >
-      <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
+      <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni Gitlab CI">
         Nezávazně poptat školení
       </HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-gitlab-ci.cz">

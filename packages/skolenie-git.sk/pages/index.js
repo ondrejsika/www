@@ -23,13 +23,13 @@ const Index = () => (
     <Header
       websiteHeader="Skolenie Gitu 🇸🇰"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=skoleni-git.cz"
+      byUrl="https://ondrej-sika.cz/?x_source=skolenie-git.sk"
       logoUrl="/static/git.svg"
     >
-      <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
+      <HeaderLink url="mailto:ondrej@sika.io?subject=[skolenie-git.sk] Poptavka firemniho skoleni Gitu">
         Nezáväzne popýtať školenie
       </HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">
+      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skolenie-git.sk">
         Kontaktovať
       </HeaderLink>
     </Header>

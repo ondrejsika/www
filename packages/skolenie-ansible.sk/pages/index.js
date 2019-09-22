@@ -22,13 +22,13 @@ const Index = () => (
     <Header
       websiteHeader="Skolenie Ansible Slovensko 🇸🇰"
       byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=ansible-skoleni.cz"
+      byUrl="https://ondrej-sika.cz/?x_source=skolenie-ansible.sk"
       logoUrl="/static/ansible.png"
     >
-      <HeaderLink url="mailto:ondrej@sika.io?subject=[ondrej-sika.cz] Poptavka firemniho skoleni xxx">
+      <HeaderLink url="mailto:ondrej@sika.io?subject=[skolenie-ansible.sk] Poptavka firemniho skoleni Ansible">
         Nezáväzne popýtať školenie
       </HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=ansible-skoleni.cz">
+      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skolenie-ansible.sk">
         Kontaktovať
       </HeaderLink>
     </Header>
