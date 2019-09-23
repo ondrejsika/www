@@ -84,7 +84,7 @@ class Navigation extends React.Component {
             <ul className="mt-2 mb-2">
               <p>
                 <li>
-                  <Link href={links.git[location]}>
+                  <Link href={links.docker[location]}>
                     <a>Docker</a>
                   </Link>
                 </li>
