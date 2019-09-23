@@ -150,11 +150,17 @@ If you are interested in Ansible workshop or have any questions, please let me k
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-training.uk">
+          {/* <Link href="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-training.uk">
             <a className="btn btn-large btn-success">
               Inquire Ansible Training
             </a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[ansible-training.uk] Ansible Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Inquire Ansible Training
+          </a>
         </p>
       </TextFrame>
       <TextFrame>

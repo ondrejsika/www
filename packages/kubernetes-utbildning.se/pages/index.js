@@ -139,11 +139,17 @@ Om du är intresserad i vår Kubernetes workshop eller om ni har några frågor,
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.com/se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se">
+          {/* <Link href="https://ondrej-sika.com/se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se">
             <a className="btn btn-large btn-success">
               Frågor om Kubernetes utbildning
             </a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[kubernetes-utbildning.se] Kubernetes Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Frågor om Kubernetes utbildning
+          </a>
         </p>
       </TextFrame>
       <TextFrame>

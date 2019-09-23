@@ -153,11 +153,17 @@ Om du är intresserad i vår Ansible workshop eller om ni har några frågor, ko
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.com/se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se">
+          {/* <Link href="https://ondrej-sika.com/se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se">
             <a className="btn btn-large btn-success">
               Frågor om Ansible utbildning
             </a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[ansible-utbildning.se] Ansible Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Frågor om Ansible utbildning
+          </a>
         </p>
       </TextFrame>
       <TextFrame>

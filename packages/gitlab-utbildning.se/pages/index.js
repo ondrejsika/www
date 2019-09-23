@@ -141,11 +141,17 @@ Om du är intresserad i vår Gitlab CI workshop eller om ni har några frågor, 
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.com/se/utbildning/gitlab-ci/forfragan/?x_source=git-utbildning.se">
+          {/* <Link href="https://ondrej-sika.com/se/utbildning/gitlab-ci/forfragan/?x_source=git-utbildning.se">
             <a className="btn btn-large btn-success">
               Inquire Gitlab CI training
             </a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[gitlab-utbildning.se] Gitlab CI Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Inquire Gitlab CI training
+          </a>
         </p>
       </TextFrame>
       <TextFrame>

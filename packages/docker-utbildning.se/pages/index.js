@@ -135,11 +135,17 @@ Om du är intresserad i vår Docker workshop eller om ni har några frågor, kon
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.com/se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">
+          {/* <Link href="https://ondrej-sika.com/se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">
             <a className="btn btn-large btn-success">
               Frågor om Docker utbildning
             </a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[docker-utbildning.se] Docker Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Frågor om Docker utbildning
+          </a>
         </p>
       </TextFrame>
       <TextFrame>

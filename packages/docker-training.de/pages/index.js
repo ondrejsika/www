@@ -134,9 +134,15 @@ If you are interested in Docker workshop or have any questions, please let me kn
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.de/training/docker/inquiry/?x_source=docker-training.de">
+          {/* <Link href="https://ondrej-sika.de/training/docker/inquiry/?x_source=docker-training.de">
             <a className="btn btn-large btn-success">Inquire Docker Training</a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[docker-training.de] Docker Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Inquire Docker Training
+          </a>
         </p>
       </TextFrame>
       <TextFrame>

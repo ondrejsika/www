@@ -138,11 +138,17 @@ If you are interested in Gitlab CI workshop or have any questions, please let me
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=git-training.uk">
+          {/* <Link href="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=git-training.uk">
             <a className="btn btn-large btn-success">
               Inquire Gitlab CI Training
             </a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[gitlab-training.uk] Gitlab CI Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Inquire Gitlab CI Training
+          </a>
         </p>
       </TextFrame>
       <TextFrame>

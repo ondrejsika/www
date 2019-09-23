@@ -136,11 +136,17 @@ If you are interested in Kubernetes workshop or have any questions, please let m
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.com/lu/training/kubernetes/inquiry/?x_source=training.kubernetes.lu">
+          {/* <Link href="https://ondrej-sika.com/lu/training/kubernetes/inquiry/?x_source=training.kubernetes.lu">
             <a className="btn btn-large btn-success">
               Inquire Kubernetes Training
             </a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[kubernetes.lu] Kubernetes Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Inquire Kubernetes Training
+          </a>
         </p>
       </TextFrame>
       <TextFrame>

@@ -140,9 +140,15 @@ If you are interested in Git workshop or have any questions, please let me know.
 `}
         />
         <p className="text-center">
-          <Link href="https://ondrej-sika.com/training/git/inquiry/?x_source=git-training.nl">
+          {/* <Link href="https://ondrej-sika.com/training/git/inquiry/?x_source=git-training.nl">
             <a className="btn btn-large btn-success">Inquire Git Training</a>
-          </Link>
+          </Link> */}
+          <a
+            href="mailto:ondrej@sika.io?subject=[git-training.nl] Git Training Inquiry"
+            className="btn btn-large btn-success"
+          >
+            Inquire Git Training
+          </a>
         </p>
       </TextFrame>
       <TextFrame>
