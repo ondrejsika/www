@@ -49,5 +49,18 @@ export default () => (
 - Ukazkovy React & Next.js projekt ke skoleni - https://github.com/ondrejsika/react-example
 - Repozitar mych webu (monorepo) v Next.js - https://github.com/ondrejsika/ondrejsikawebs
 `}
+    after={
+      <div className="alert alert-primary mt-5 text-center" role="alert">
+        <h3>
+          Chcete dostavat nove clanky do emailu? Prihlaste se k newsletteru!
+        </h3>
+        <a
+          className="btn btn-large btn-primary m-3"
+          href="https://sika.link/newsletter"
+        >
+          Prihlasit se k odberu
+        </a>
+      </div>
+    }
   />
 );
