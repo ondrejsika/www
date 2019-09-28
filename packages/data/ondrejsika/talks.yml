@@ -1,0 +1,4 @@
+- id: terraform-introduction
+  title: Manage your infrastructure as a code with Terraform
+  bio: I'm a DevOps engineer and consultant form Prague. I help companies to set up or improve their DevOps to deliver easier, faster and more reliable their software products.
+  perex: Do you like somebody's open-source code? Just fork it. What about infrastructure? You can fork it too. Terraform is way how to treat your infrastructure on the various cloud providers as a code. With Terraform you can version, fork even merge your infrastructure.
