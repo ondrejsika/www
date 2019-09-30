@@ -11,7 +11,7 @@
   date_from: 5.9.2019
   date_to: 6.9.2019
 - id: docker-praha-7-10-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
@@ -23,7 +23,7 @@
   date_from: 7.10.2019
   date_to: 8.10.2019
 - id: kubernetes-praha-18-9-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
@@ -35,7 +35,7 @@
   date_from: 18.9.2019
   date_to: 19.9.2019
 - id: kubernetes-praha-8-8-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
@@ -47,7 +47,7 @@
   date_from: 8.8.2019
   date_to: 9.8.2019
 - id: gitlab-ci-praha-7-9-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: gitlab-ci
@@ -59,7 +59,7 @@
   date_from: 7.8.2019
   date_to: 7.8.2019
 - id: docker-praha-5-8-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
@@ -83,7 +83,7 @@
   date_from: 17.7.2019
   date_to: 18.7.2019
 - id: docker-praha-1-2-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
