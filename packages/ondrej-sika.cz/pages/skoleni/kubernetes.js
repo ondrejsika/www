@@ -37,5 +37,9 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
 - [Priprava na skoleni Kubernetes](/skoleni/kubernetes/priprava-na-skoleni)
 `}
     recommendations={["oxy", "oxyCTO"]}
+    twitter_recommendations={[
+      "petr-todorov-kubernetes",
+      "pavel-mattivi-kubernetes"
+    ]}
   />
 );

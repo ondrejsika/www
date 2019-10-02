@@ -12,6 +12,7 @@ import Contact from "@app/course-landing/components/Contact";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import site from "@app/skoleni-kubernetes.cz/config";
+import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 
 const Index = () => (
   <div>
@@ -115,7 +116,16 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
         col2={<Recommendation id="webglobe-yegon" lang={site.lang} />}
         col3={<Recommendation id="sit" lang={site.lang} />}
       />
-
+      <TextFrame>
+        <Markdown
+          source={`
+### Ohlasy z Twitteru
+`}
+        />
+        <TwitterRecommendations
+          ids={["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]}
+        />
+      </TextFrame>
       <TextFrame>
         <Markdown
           source={`
