@@ -25,3 +25,6 @@
 - id: jan-novotny-docker
   course: docker
   tweet_id: '1110150113345835010'
+- id: petr-todorov-kubernetes
+  course: kubernetes
+  tweet_id: '1179136403889954817'
