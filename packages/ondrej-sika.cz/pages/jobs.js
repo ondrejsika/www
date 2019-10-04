@@ -13,9 +13,9 @@ let style = {
 const Install = () => (
   <div>
     <Head>
-      <title>Práce - Ondrej Sika</title>
+      <title>Hledám parťáky na spolupráci - Ondrej Sika</title>
     </Head>
-    <MainBar MainBarHeader="NABIDKA (SPOLU)PRACE"></MainBar>
+    <MainBar MainBarHeader="Hledám parťáky na spolupráci"></MainBar>
 
     <style
       dangerouslySetInnerHTML={{
