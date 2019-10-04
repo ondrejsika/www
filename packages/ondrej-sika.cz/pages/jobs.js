@@ -32,58 +32,44 @@ const Install = () => (
         source={`
 FAQ: Je tato nabidka aktualni? Ano.
 
-## Technicky asistent
+## Hledam partaka na skoleni a konzultace DevOps
 
-Shanim nekoho kdo mi pomuze pripravovat skoleni a kurzy ohledne programovani, vyvoje software a dev ops. Expanduji v Cechach a hlavne v zahranici (zapad Evropy) a potrebuji pomoct.
+Shanim nekoho kdo mi pomuze se skolenimi a workshopy na DevOps temata. Skolim a konzultuji tyto nastroje a praci s nimi.
 
-Tvym ukolem bude sledovat novinky, psat technicke clanky a zaroven muzes premysled nad novymi kurzy nebo vylepsenim tech soucasnych. Dale se budes starat o weby kurzu, jako je tento, skoleni-git.cz nebo skoleni-docker.cz. Postupem casu i skolit. Zde jsou veci co delam: <https://ondrej-sika.cz/skoleni/>
+- Git
+- Gitlab
+- Gitlab CI
+- Docker
+- Kubernetes
+- Terraform
+- Ansible
+- ELK / EFK
+- Sentry
 
-Vse potrebne ti vysvetlim, pokud prijdes s vlastnimi napady, budu jen rad.
+Pokud pracujes s jinymi technologiemi jako je napriklad AWS, Azure, ... nevadi. Urcite se domluvime.
+
+Moji klienti jsou startupy i korporace. Napriklad O2, AirBank, Satoshi Labs, E.ON, AAA Auto, ...
 
 ### Nabizim
 
-- Mentoring od nejlepsich
-- Zajimavou praci kterou muzes delat odkudkoliv
-- Profesni rust a podil na zisku
-- Zajimavy plat (DPP nebo IC spoluprace)
-- Moznost odmena v BTC
+- Plat az 13 000 CZK za jeden skolici den
+- Moznost rustu
+- Prace na zajimavych projektech
+- Maly (punk) team
 
 ### Pozadavky
-- Samostatnost
+
+- Prakticke zkusenosti s nastroji, ktere budes skolit
 - Motivace a chut se ucit nove veci ohledne IT a DevOps.
 - Cestina, Anglictina
-- Podvedomi o technologiich jako je Git, Docker, …
+- Samostatnost
 
 ### Vyhodou
+
 - Praha – obcas se budem muset potkat osobne
-- Puppet, Continues Integration
 - Student IT (CVUT)
 
-Pokud te nabidka zaujala, napis mi email na <ondrej@sika.io>
-
-## Asistentka
-Nejsem zrovna dobry v agende a planovani. A potrebuji nekoho kdo mi s tim pomuze.
-
-### Napln prace
-
-- Osobni a firemni agenda
-- Planovani a organizace casu
-- Faktury, sprava klientu, …
-- Propagaci kurzu a skoleni
-
-### Pozaduji
-- samostatnost
-- chut se ucit
-- idealne studentka VS (nebo gymnazia)
-
-### Co nabizim
-- zajimavy plat
-- min 10hod tydne, horni hranice je takrka neomezena
-- Zajimave projekty v CZ, EU, UAE
-- praci odkudkoliv
-- Svobodu a rust
-
-Pokud te nabidka zaujala, napis mi email na <ondrej@sika.io>
+Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>
 `}
       />
     </div>
