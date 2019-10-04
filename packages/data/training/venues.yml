@@ -4,8 +4,11 @@
 - id: rootcz
   name: ROOT.cz Praha
   address: Milady Horákové 116/109, 160 00 Praha 6
+- id: rootcz-praha-3
+  name: Praha
+  address: Šrobárova 13, 130 00 Praha 3
 - id: rootcz-brno
-  name: ROOT.cz Brno
+  name: Brno
   address: NOSRETI reality a.s., Křenová 409/52, Brno
 - id: anywhere
   name: Anywhere
