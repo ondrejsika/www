@@ -1,3 +1,12 @@
+- id: terminy-skoleni-podzim-2019
+  url: /blog/2019/terminy-skoleni-podzim-2019
+  title: Terminy skoleni na podzim 2019
+  date: 4. 10. 2019
+  perex: |
+    Mate zajem o nejake me skoleni? Zde jsou terminy do konce roku 2019.
+  content: |
+    Tento rok uz mam skoro cely vybookovany a tak nabizim terminy kdy mam vypsane verejne terminy kam se muzete prihlasit pripadne kam muzete poslat vase vyvojare. Vypsane mam terminy Dockeru, Kubernetes a Gitlab CI, muzete se podivat na stranku [Verejne Terminy](/verejne-terminy). Pokud mate zajem o jiny kurz, napiste mi mail a domluvime se.
+
 - id: mac-os-vs-debian-i3
   url: /blog/2019/mac-os-vs-debian-i3
   title: Mac OS vs Debian + i3
