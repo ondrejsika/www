@@ -1,3 +1,31 @@
+- id: terraform-prednaska-linuxdays-2019
+  url: /blog/2019/terraform-prednaska-linuxdays-2019
+  title: Terraform prednaska na LinuxDays 2019
+  date: 6. 10. 2019
+  perex: |
+    Slides, video a ukazka kodu z me prednasky o Terraformu.
+  content: |
+    <script async class="speakerdeck-embed" data-id="e1108e7e2b2c449dacd2e2d7370e8234" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+    Slides z prednasky na Speaker Deck: <https://speakerdeck.com/ondrejsika/terraform-infrastructure-as-a-code>
+
+    Ukazkovy projekt: [ondrejsika/linuxdays2019-terraform](https://github.com/ondrejsika/linuxdays2019-terraform)
+
+    Zajima vas Terraform? Muzete prijit na moje [Skoleni Terraformu](/skoleni/terraform)
+
+- id: react-next-workshop-linuxdays-2019
+  url: /blog/2019/react-next-workshop-linuxdays-2019
+  title: React & Next.js Workshop na LinuxDays 2019
+  date: 5. 10. 2019
+  perex: |
+    Dnes jsem mel workshop na LinuxDays, zde jesou materialy a ukazkovy projekt.
+  content: |
+    "Slides" pro workshop: [ondrejsika/linuxdays2019-react](https://github.com/ondrejsika/linuxdays2019-react)
+
+    Ukazkovy projekt: [ondrejsika/linuxdays2019-react--example](https://github.com/ondrejsika/linuxdays2019-react--example)
+
+    Nestihli jste workshop na LinuxDays? Nevadi, muzete prijit na moje [Skoleni Reactu](/skoleni/react)
+
 - id: terminy-skoleni-podzim-2019
   url: /blog/2019/terminy-skoleni-podzim-2019
   title: Terminy skoleni na podzim 2019
