@@ -28,3 +28,6 @@
 - id: petr-todorov-kubernetes
   course: kubernetes
   tweet_id: '1179136403889954817'
+- id: tomas-peterka-terraform
+  course: terraform
+  tweet_id: '1180763644059176960'
