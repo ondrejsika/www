@@ -4,12 +4,22 @@ import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import Head from "next/head";
 import site from "@app/archetype-web/config";
+import DevelopmentBar from "@app/common/components/DevelopmentBar";
 
-const Index = () => (
+const Index = props => (
   <>
     <Head>
       <title>Ondrej Sika | sika.io</title>
-      <meta http-equiv="refresh" content="3; url=https://which.sika.io" />
+      {(() => {
+        if (!process.env.NODE_ENV == "development") {
+          return (
+            <meta http-equiv="refresh" content="3; url=https://which.sika.io" />
+          );
+        } else {
+          return <DevelopmentBar />;
+        }
+      })()}
+      }
       <meta
         name="google-site-verification"
         content="KKm2K2qwgCk2Pc9F5eefmYl6UYoATpMPSBRzpa78w4Q"
