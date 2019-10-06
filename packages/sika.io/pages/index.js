@@ -30,9 +30,14 @@ const Index = props => (
         source={`
 # Ondrej Sika
 
-[+420 773 452 376](tel:+420773452376) ([Telegram](https://t.me/ondrejsika))
+[__ondrej@sika.io__](mailto:ondrej@sika.io) (freelance)
 <br>
-[ondrej@sika.io](mailto:ondrej@sika.io)
+[ondrej@ondrejsika.com](mailto:ondrej@ondrejsika.com) (primary, personal)
+<br>
+[+420 773 452 376](tel:+420773452376)
+<br>
+[t.me/ondrejsika](https://t.me/ondrejsika) (Telegram)
+
       `}
       />
       <Gauges gauges_site_id={site.gauges_site_id} />
