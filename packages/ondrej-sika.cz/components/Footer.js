@@ -63,6 +63,11 @@ const Footer = props => (
                 </a>
               </li>
               <li>
+                <a href="/skoleni/terraform" className="a-underline">
+                  Terraform
+                </a>
+              </li>
+              <li>
                 <a href="/skoleni/react" className="a-underline">
                   React & Next.js
                 </a>
