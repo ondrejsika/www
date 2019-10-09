@@ -1,3 +1,5 @@
 import InquiryInhouse from "../../../layouts/InquiryInhouse";
 
-export default () => <InquiryInhouse course_name="Skoleni Ansible" />;
+export default props => (
+  <InquiryInhouse lang={props.lang} course_name="Skoleni Ansible" />
+);

@@ -88,7 +88,7 @@ export default props => (
       <Translate lang={props.lang} cs="bez DPH" en="excl. VAT" />
     </Price>
     <div className="container">
-      <PipedriveContactForm />
+      <PipedriveContactForm lang={props.lang} />
     </div>
   </div>
 );

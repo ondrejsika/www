@@ -1,7 +1,7 @@
 import Head from "next/head";
 import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
 
-const Index = () => (
+const Index = props => (
   <div>
     <Head>
       <title>Kontakty - Ondrej Sika</title>
@@ -96,7 +96,7 @@ const Index = () => (
           </table>
         </div>
       </div>
-      <PipedriveContactForm />
+      <PipedriveContactForm lang={props.lang} />
     </div>
   </div>
 );

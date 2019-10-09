@@ -12,7 +12,7 @@ export default props => (
       websiteHeaderCenter={"Poptávka firemního " + props.course_name}
     ></Header>
     <div className="container course-page">
-      <PipedriveContactForm />
+      <PipedriveContactForm lang={props.lang} />
     </div>
   </div>
 );

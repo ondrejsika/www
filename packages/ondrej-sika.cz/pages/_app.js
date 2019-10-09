@@ -17,7 +17,7 @@ class MyApp extends App {
     return (
       <Container>
         <Layout {...pageProps}>
-          <Component {...pageProps} />
+          <Component lang={site.lang} {...pageProps} />
         </Layout>
       </Container>
     );
