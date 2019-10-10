@@ -1,0 +1,18 @@
+- id: ondrejsika
+  name: Ondrej Sika
+  billing_address: |
+    Klatovska 71
+    301 00 Plzen
+    Czech Republic
+  company_id: 88114163
+  vat_id: CZ9302252102
+  bank_account_cz: 2301432033/2010
+- id: trainera
+  name: Trainera s.r.o.
+  billing_address: |
+    Bělehradská 858/23,
+    120 00 Praha 2
+    Czech Republic
+  company_id: 08591491
+  vat_id: CZ08591491
+  bank_account_cz: ---
