@@ -5,7 +5,7 @@ import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContac
 const Index = props => (
   <div>
     <Head>
-      <title>Kontakty - Ondrej Sika</title>
+      <title>Kontakty - Ondřej Šika</title>
     </Head>
     <div className="bar-header">
       <div className="container">
