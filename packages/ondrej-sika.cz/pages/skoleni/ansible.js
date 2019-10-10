@@ -7,7 +7,7 @@ export default props => (
     logo="/static/ansible.png"
     price_self_funded="4 999 CZK"
     price_company_funded="7 999 CZK"
-    price_in_house="20 000 CZK"
+    price_in_house="25 000 CZK"
     description={`
 ### K čemu se používá?
 

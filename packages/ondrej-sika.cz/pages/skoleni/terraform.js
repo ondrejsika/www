@@ -7,7 +7,7 @@ export default props => (
     logo="/static/terraform-color.png"
     price_self_funded="3 999 CZK"
     price_company_funded="7 999 CZK"
-    price_in_house="20 000 CZK"
+    price_in_house="25 000 CZK"
   >
     <div className="alert alert-danger mt-5" role="alert">
       <h2>Pripravuji ...</h2>

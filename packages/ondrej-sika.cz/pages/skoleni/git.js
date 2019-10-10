@@ -7,7 +7,7 @@ export default props => (
     logo="/static/git.svg"
     price_self_funded="4 999 CZK"
     price_company_funded="7 999 CZK"
-    price_in_house="20 000 CZK"
+    price_in_house="25 000 CZK"
     description={`
 ### Co je to Git
 Git je moderní verzovaci nástroj, který se stal defaco standatem mezi vývojáři. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně, aniž by jste si zasahovali do rozdělaných projektů nebo je jinak narušovali. Spolupráci na vývoji projektu dále zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software.
