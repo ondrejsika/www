@@ -50,7 +50,7 @@ const Index = props => (
               </tr>
               <tr>
                 <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-                <td>???/2010 (Fio)</td>
+                <td>2801705982/2010 (Fio)</td>
               </tr>
             </tbody>
           </table>
@@ -61,15 +61,15 @@ const Index = props => (
             <tbody>
               <tr>
                 <td>ČR (CZK):</td>
-                <td>??? / 2010</td>
+                <td>2801705982 / 2010</td>
               </tr>
               <tr>
                 <td>SK (EUR):</td>
-                <td>??? / 8330</td>
+                <td>2801705982 / 8330</td>
               </tr>
               <tr>
                 <td>IBAN:</td>
-                <td>???</td>
+                <td>CZ4920100000002801705982</td>
               </tr>
               <tr>
                 <td>BIC / SWIFT:</td>
