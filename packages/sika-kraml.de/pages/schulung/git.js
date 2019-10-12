@@ -14,49 +14,53 @@ let site = {
   lang: "de"
 };
 
-{
-  /* TODO translate */
-}
-
 const Index = () => (
   <div>
     <Head></Head>
     <Header
       websiteHeader="Git Training"
-      inquiryBtn="Ask for a company training"
+      inquiryBtn="Anfragen"
       logo={git}
     ></Header>
     <div className="container course-page">
       <ReactMarkdown
         source={stripIndent`
-        ### What is Git?
-        Git is a modern versioning tool that has become an industry standard among developers. Individuals, startups and corporations use it on a daily basis. Git offers a simple simultaneous collaboration with more people on different parts of a project. You won't face the issue of disrupting each other's work or not being able to access the latest versions. The collaboration on a project can also be improved using Gitlab, a platform for the design, development and running of software projects.
+        ### Was ist Git?
+        Git ist als modernes Versionierungswerkzeug mittlerweile der Standard unter Softwareentwicklern.
+        Freelancer, Startups und große Konzerne nutzen es täglich.
+        Git ermöglicht eine einfache simultane Zusammenarbeit an Projekten, ohne dass man sich in die Quere kommt oder einem der Zugriff auf den aktuellen Stand erschwert wird. 
+        Die Zusammenarbeit wird durch Gitlab, einer Plattform für Design, Entwicklung und Betrieb von Softwareprojekten, noch weiter verbessert.
         
-        ### Course Description
-        During this one day hands-on workshop, you will find out why it is beneficial to use Git, how it works (why there are no substitutes) and best practices. You will be shown everything from the installation and basic Git setup, simple individual work in a one branch to work in a team with multiple branches using merge strategies (merge, rebase) and Gitlab. The pros and cons of both will be explained, and you can choose which one is better suited for your needs. Also, you will be shown how to get out of unexpected situations like 'I deleted everything by accident' etc.
+        ### Kursbeschreibung
+        Der Kurs wird als eintägiger Workshop abgehalten.
+        Sie lernen die Vorteile von Git kennen, werden verstehen, wie es funktioniert und warum es keine angemessenen Altenativen gibt.
+        Wir zeigen Ihnen alles von der Installation und Einrichtung an, über einfache individuelle Arbeit auf einem Branch bis zu kollektiver Entwicklung
+        in mehreren Branches mit verschiedenen Merge Strategien (merge/rebase).
+        Die Vor- und Nachteile beider Strategien werden erläutert, damit Sie entscheiden können, welche besser zu Ihren Anforderungen passt.
+        Es werden auch Auswege aus unerwartete Situationen wie "Oh, ich habe alle gelöscht" gezeigt.
         
-        ### Course Outline
-        - Installation and Configuration
-        - New Repository
-        - Basic Git controls
-        - Work in one branch
-        - Work in branches - merge, rebase (strength of Git)
-        - Work with remote repositories
-        - Workflow with Gitlab
-        - Recovery of erased data from the repository
-        - Tips
+        ### Stichpunkte
+        - Installation und Einrichtung
+        - Neues Repository
+        - Einfache Git Befehle
+        - Arbeit auf einem Branch
+        - Arbeit auf mehreren Branches - merge, rebase (Gits Stärke)
+        - Arbeit mit remote Repositories
+        - Workflow mit Gitlab
+        - Wiederherstellung gelöschter Daten aus dem Repository
+        - Tipps
         
-        ### Who Should Attend
-        This training course is primarily aimed at developers who don't do versioning or aren't using Git. Also,for those who make use of Git for 100% (git commit, git pull, git push). You can find a use for Git when it comes to a plentitude of projects, like small websites or bigger projects. Also, the course is useful for people that don't code frequently like DevOps.
+        ### Für wen der Kurs bestimmt ist
+        Der Kurs ist in erster Linie für Entwickler gedacht, die noch keine Versionierung verwenden oder Git noch nicht benutzen.
+        Der Kurs ist auch für jene nützlich, die nicht täglich Code schreiben, etwa DevOps.
         `}
       />
       <TwoCol
         col1={
           <ReactMarkdown
             source={stripIndent`
-            #### Skill Requirements
-            - Basic Terminal knowledge
-            - Basic Git knowledge beneficial
+            #### Notwendige Vorkenntnisse
+            - Grundlegender Umwang mit der Kommandozeile
             `}
             escapeHtml={false}
           />
@@ -64,9 +68,9 @@ const Index = () => (
         col2={
           <ReactMarkdown
             source={stripIndent`
-            #### Technical Requirements
-            - Have Git installed
-            - Access to the internet (https) - ideally without corporate proxy
+            #### Technische Vorraussetzungen
+            - Gitinstallation
+            - Internetzugang (https) - vorzugsweise ohne Proxy
             `}
             escapeHtml={false}
           />
