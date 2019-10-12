@@ -128,17 +128,14 @@ const Index = () => (
       </div>
     </div>
     <div className="container">
-      <TextWithImg TextWithImgHeader="About us" img={sikaKraml}>
-        {/* TODO translate */}
-        POTŘEBA NAPSAT TEXT O NÁS A O SKOLENI (uveden jen priklad od Ondry)
+      <TextWithImg TextWithImgHeader="Über uns" img={sikaKraml}>
+        Wir sind Ondrej und Jiri, diese Schulungen sind unser gemeinsames Joint-Venture.
+        Wir sind beide Softwareentwickler, der eine bei Slush Pool, der andere bei ZIGPOS.
+        Uns verbindet eine Leidenschaft für das Leiten von Workshops, die uns bereits in kleine Unternehmen
+        und große Konzerne geführt hat.
         <br />
-        <br />
-        My name is Ondrej, I am a software engineer and DevOps consultant,
-        architect & lecturer. I lead mostly Docker courses and CI; they are both
-        closely interrelated. I have worked for small companies,startups to big
-        corporations. I have four years of experience with schulung.
-        <br />
-        Venujeme se skolenim a dale take workshopum, short term kontraktum.
+        Neben Workshops und Vorträgen bieten wir auch Consulting und an.
+        Für kleinere Projekte sind wir auch zu haben.
         <br />
         <br />
       </TextWithImg>
