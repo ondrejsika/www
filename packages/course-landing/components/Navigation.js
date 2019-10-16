@@ -71,6 +71,19 @@ const links = {
     at: "https://ondrej-sika.com/training/ansible?x_source=headline",
     ch: "https://ondrej-sika.com/training/ansible?x_source=headline",
     nl: "https://ondrej-sika.com/training/ansible?x_source=headline"
+  },
+  terraform: {
+    cz: "https://ondrej-sika.cz/skoleni/terraform?x_source=headline",
+    sk: "https://ondrej-sika.cz/skoleni/terraform?x_source=headline",
+    de: "https://ondrej-sika.de/training/terraform?x_source=headline",
+    // de: "https://teraform-schulung.de",
+    uk: "https://ondrej-sika.uk/training/terraform?x_source=headline",
+    // uk: "https://terraform-training.uk",
+    se: "https://ondrej-sika.se/utbildning/terraform?x_source=headline",
+    // se: "https://terraform-utbildning.se",
+    at: "https://ondrej-sika.com/training/terraform?x_source=headline",
+    ch: "https://ondrej-sika.com/training/terraform?x_source=headline",
+    nl: "https://ondrej-sika.com/training/terraform?x_source=headline"
   }
 };
 
@@ -91,6 +104,11 @@ class Navigation extends React.Component {
                 <li>
                   <Link href={links.kubernetes[location]}>
                     <a>Kubernetes</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={links.terraform[location]}>
+                    <a>Terraform</a>
                   </Link>
                 </li>
                 <li>
