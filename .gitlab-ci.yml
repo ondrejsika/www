@@ -2986,3 +2986,83 @@ training.kubernetes.lu prod deploy:
     url: https://training.kubernetes.lu
   dependencies: []
 
+skoleni-terraform.cz build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/skoleni-terraform.cz/out
+    - yarn run static-skoleni-terraform.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-terraform.cz/**/*
+      - yarn.lock
+  artifacts:
+    name: skoleni-terraform.cz
+    paths:
+      - packages/skoleni-terraform.cz/out
+
+
+skoleni-terraform.cz build docker:
+  dependencies:
+    - skoleni-terraform.cz build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/Dockerfile packages/skoleni-terraform.cz/Dockerfile
+    - docker build -t registry.sikahq.com/www/www/skoleni-terraform.cz packages/skoleni-terraform.cz
+    - rm packages/skoleni-terraform.cz/Dockerfile
+    - docker push registry.sikahq.com/www/www/skoleni-terraform.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-terraform.cz/**/*
+      - yarn.lock
+
+skoleni-terraform.cz dev deploy:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz&domain=skoleni-terraform.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-terraform.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev skoleni-terraform.cz
+    url: https://skoleni-terraform.cz.xsika.cz
+  dependencies: []
+
+skoleni-terraform.cz prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz&domain=skoleni-terraform.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-terraform.cz/**/*
+      - yarn.lock
+  environment:
+    name: prod skoleni-terraform.cz
+    url: https://skoleni-terraform.cz
+  dependencies: []
+
