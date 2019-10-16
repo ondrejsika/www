@@ -1,6 +1,3 @@
-import Former2 from "@app/common/components/Former2";
-import site from "@app/ondrej-sika.cz/config";
-
 const Footer = props => (
   <div>
     <div className="footer">
@@ -78,26 +75,12 @@ const Footer = props => (
             <h3 className="text-white">{props.col4_NewsHeader}</h3>
             <p className="text-white">{props.col4_NewsText}</p>
             <div className="input-group pt-3">
-              <Former2
-                site={site}
-                name="Newsletter Subscription"
-                redirect_path="/odeslano"
+              <a
+                className="btn btn-outline-header"
+                href="https://sika.link/newsletter"
               >
-                <div className="input-group-append">
-                  <input
-                    type="email"
-                    name="email"
-                    className="form-control"
-                    id="validationDefault03"
-                    placeholder="e-mail"
-                  />
-                  <input
-                    type="submit"
-                    className="btn btn-outline-header"
-                    value={props.NewsletterBtn}
-                  />
-                </div>
-              </Former2>
+                Přihlásit se k odběru článků a novinek
+              </a>
             </div>
           </div>
           <div className="col-md-2 offset-md-1 col-sm-12">
