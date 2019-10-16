@@ -129,13 +129,14 @@ const Index = () => (
     </div>
     <div className="container">
       <TextWithImg TextWithImgHeader="Über uns" img={sikaKraml}>
-        Wir sind Ondrej und Jiri, diese Schulungen sind unser gemeinsames Joint-Venture.
-        Wir sind beide Softwareentwickler, der eine bei Slush Pool, der andere bei ZIGPOS.
-        Uns verbindet eine Leidenschaft für das Leiten von Workshops, die uns bereits in kleine Unternehmen
-        und große Konzerne geführt hat.
+        Wir sind Ondrej und Jiri, diese Schulungen sind unser gemeinsames
+        Joint-Venture. Wir sind beide Softwareentwickler, der eine bei Slush
+        Pool, der andere bei ZIGPOS. Uns verbindet eine Leidenschaft für das
+        Leiten von Workshops, die uns bereits in kleine Unternehmen und große
+        Konzerne geführt hat.
         <br />
-        Neben Workshops und Vorträgen bieten wir auch Consulting und an.
-        Für kleinere Projekte sind wir auch zu haben.
+        Neben Workshops und Vorträgen bieten wir auch Consulting und an. Für
+        kleinere Projekte sind wir auch zu haben.
         <br />
         <br />
       </TextWithImg>
