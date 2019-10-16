@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = props => (
   <div>
     <div className="footer">
@@ -34,41 +36,23 @@ const Footer = props => (
           <div className="col-md-2 col-sm-5 col-4">
             <h3 className="text-white">Moje Kurzy</h3>
             <ul className="text-white">
-              <li>
-                <a href="/skoleni/docker" className="a-underline">
-                  Docker
-                </a>
-              </li>
-              <li>
-                <a href="/skoleni/kubernetes" className="a-underline">
-                  Kubernetes
-                </a>
-              </li>
-              <li>
-                <a href="/skoleni/gitlab-ci" className="a-underline">
-                  Gitlab CI
-                </a>
-              </li>
-              <li>
-                <a href="/skoleni/git" className="a-underline">
-                  Git
-                </a>
-              </li>
-              <li>
-                <a href="/skoleni/ansible" className="a-underline">
-                  Ansible
-                </a>
-              </li>
-              <li>
-                <a href="/skoleni/terraform" className="a-underline">
-                  Terraform
-                </a>
-              </li>
-              <li>
-                <a href="/skoleni/react" className="a-underline">
-                  React & Next.js
-                </a>
-              </li>
+              {[
+                ["Docker", "/skoleni/docker"],
+                ["Kubernetes", "/skoleni/kubernetes"],
+                ["Gitlab CI", "/skoleni/gitlab-ci"],
+                ["Git", "/skoleni/git"],
+                ["Ansible", "/skoleni/ansible"],
+                ["Terraform", "/skoleni/terraform"],
+                ["React & Next.js", "/skoleni/react"]
+              ].map((el, i) => {
+                return (
+                  <li key={i}>
+                    <Link href={el[1]}>
+                      <a className="a-underline">{el[0]}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="col-md-4 col-sm-12 pt-4 pt-md-0">
