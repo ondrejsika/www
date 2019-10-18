@@ -100,6 +100,10 @@ const Footer = props => (
           <a href="/obchodni-spoluprace" className="a-underline">
             Obchodní Spolupráce
           </a>
+          <span className="text-white">&nbsp;|&nbsp;</span>
+          <a href="/doporucte-me-prosim" className="a-underline">
+            Doporučte mě prosím
+          </a>
         </p>
         <p className="text-center text-white fs-9 pt-4">
           Website by{" "}
