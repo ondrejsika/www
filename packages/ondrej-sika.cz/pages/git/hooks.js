@@ -16,7 +16,7 @@ My se zamerime na jeden a to na __pre-commit__ hook. Ostatni hooky se delaji obd
 
 Kdyz chceme vytvorit hook, ve slozce \`.git/hooks/\` v repozitari vytvorime spustitelny soubor s nazvem \`pre-commit\` (typicky shell script).
 
-Obsah tohoto skriptu je na nas, pred commitem se skript spusti a pokud zkonci navratovym kodem 0, pokracuje se s commitem, pokud zkonci s chybou (nenulovy navratovy kod), commit nepovoli.
+Obsah tohoto skriptu je na nas, pred commitem se skript spusti a pokud skonci navratovym kodem 0, pokracuje se s commitem, pokud skonci s chybou (nenulovy navratovy kod), commit nepovoli.
 
 Pre commit hook muzete napriklad pouzit jako chceck formatovani kodu, ukazka hooku pro JavaScript a Prettier zde:
 

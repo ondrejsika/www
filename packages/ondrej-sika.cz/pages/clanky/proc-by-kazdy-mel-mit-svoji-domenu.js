@@ -4,13 +4,13 @@ export default () => (
   <Article
     title="Proc by kazdy mel mit svoji domenu"
     markdown={`
-Domena je zaklad pro osobni brand a svobodu online. O emailu na vlstni domene jsem napsal clanek [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene).
+Domena je zaklad pro osobni brand a svobodu online. O emailu na vlastni domene jsem napsal clanek [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene).
 
-### Jak si vybral domenu a nebo domeny
+### Jak si vybrat domenu a nebo domeny
 
 Pri vyberu domeny postupuji nasledovne. Zkusim prvni variantu a pokud je obsazena, jdu na dalsi. Muzete napriklad takto:
 
-Nejdrive se snazim sehnat domenu pouze jmena.
+Nejdrive se snazim sehnat domenu pouze prijmeni. Napriklad:
 
 - \`sika.com\` - \`.com\` je kral
 - \`sika.cz\`
@@ -21,7 +21,7 @@ Pokud nejsou tyto domeny k dispozici, zkousim domeny jmeno + prijmeni.
 - \`ondrejsika.com\` s emailem \`ondrej@ondrejsika.com\`
 - \`ondrejsika.cz\` s emailem \`ondrej@ondrejsika.cz\`
 
-Pokud je moznost koupit domenu \`jmeno.com\` a i \`jmenoprijmeni.com\`, kupte si obe. Cena 12 USD za domenu navic je zanedbatelna castka. Web muzete mit na \`jmenoprijmeni.com\` a \`jmeno@prijmeni.com\`.
+Pokud je moznost koupit domenu \`prijmeni.com\` a i \`jmenoprijmeni.com\`, kupte si obe. Cena 12 USD za domenu navic je zanedbatelna castka. Web muzete mit na \`jmenoprijmeni.com\` a \`jmeno@prijmeni.com\`.
 
 Stejne to plati i pokud mate moznost koupit \`.com\` i \`.cz\`. Ostatni kombinace asi nema smysl kupovat dohromady.
 
