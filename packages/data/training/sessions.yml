@@ -35,7 +35,7 @@
   date_from: 14.11.2019
   date_to: 15.11.2019
 - id: docker-praha-16-10-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
@@ -47,7 +47,7 @@
   date_from: 16.10.2019
   date_to: 17.10.2019
 - id: kubernetes-praha-14-10-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
