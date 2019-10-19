@@ -59,9 +59,10 @@ $SITE build docker:
   stage: build_docker
   script:
     - docker login \$CI_REGISTRY -u \$CI_REGISTRY_USER -p \$CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/$SITE/Dockerfile
+    - cp ci/docker/* packages/$SITE/
     - docker build -t registry.sikahq.com/www/www/$SITE packages/$SITE
     - rm packages/$SITE/Dockerfile
+    - rm packages/$SITE/nginx-site.conf
     - docker push registry.sikahq.com/www/www/$SITE
   only:
     changes:
