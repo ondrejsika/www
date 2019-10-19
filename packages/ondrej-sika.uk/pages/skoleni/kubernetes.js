@@ -67,7 +67,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
       <br />
       Otevřený termín (company funded): 14 999 CZK bez DPH
       <br />
-      Firemní školení (ve firmě): 40 000 CZK bez DPH
+      Firemní školení (ve firmě): 50 000 CZK bez DPH
     </Price>
     <div className="container">
       <TextArea

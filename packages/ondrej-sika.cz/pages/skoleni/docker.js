@@ -7,7 +7,7 @@ export default props => (
     logo="/static/docker.svg"
     price_self_funded="9 999 CZK"
     price_company_funded="14 999 CZK"
-    price_in_house="40 000 CZK"
+    price_in_house="50 000 CZK"
     description={`
 ### K čemu se používá?
 Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.

@@ -143,7 +143,7 @@ Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](http
 
 - Otevřený termín (self funded): 9 999 CZK bez DPH
 - Otevřený termín (company funded): 14 999 CZK bez DPH
-- Firemní školení (ve firmě): 40 000 CZK bez DPH
+- Firemní školení (ve firmě): 50 000 CZK bez DPH
 `}
         />
       </TextFrame>

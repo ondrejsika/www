@@ -26,7 +26,7 @@ Akorat mi chybi tiling window manager [i3](https://i3wm.org), ale zvykl jsem si.
 
 #### iPad Pro LTE
 
-Kdyz jsem si za skoro 40 000 CZK kupoval iPad Pro 11" s LTE a klavesnici, rikal jsem si zda to neni zbytecne moc (muj Macbook 15" i7 16GB stal 32 000 CZK). Ale ukazalo se ze iPad Pro je skvely pracovni nastroj (i bez iPad OS) a to hlavne na cestach.
+Kdyz jsem si za skoro 50 000 CZK kupoval iPad Pro 11" s LTE a klavesnici, rikal jsem si zda to neni zbytecne moc (muj Macbook 15" i7 16GB stal 32 000 CZK). Ale ukazalo se ze iPad Pro je skvely pracovni nastroj (i bez iPad OS) a to hlavne na cestach.
 
 Klavesnice je uplne v pohode na psani emailu i praci v terminalu, chybi mi na ni escape, ale da se to zvladnout. Ve Vimu se da escape nahradit __ctrl+[__.
 
