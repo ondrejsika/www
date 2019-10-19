@@ -42,9 +42,10 @@ ansible-schulung.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/ansible-schulung.de/Dockerfile
+    - cp ci/docker/* packages/ansible-schulung.de/
     - docker build -t registry.sikahq.com/www/www/ansible-schulung.de packages/ansible-schulung.de
     - rm packages/ansible-schulung.de/Dockerfile
+    - rm packages/ansible-schulung.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ansible-schulung.de
   only:
     changes:
@@ -122,9 +123,10 @@ ansible-skoleni.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/ansible-skoleni.cz/Dockerfile
+    - cp ci/docker/* packages/ansible-skoleni.cz/
     - docker build -t registry.sikahq.com/www/www/ansible-skoleni.cz packages/ansible-skoleni.cz
     - rm packages/ansible-skoleni.cz/Dockerfile
+    - rm packages/ansible-skoleni.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ansible-skoleni.cz
   only:
     changes:
@@ -202,9 +204,10 @@ archetype-web build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/archetype-web/Dockerfile
+    - cp ci/docker/* packages/archetype-web/
     - docker build -t registry.sikahq.com/www/www/archetype-web packages/archetype-web
     - rm packages/archetype-web/Dockerfile
+    - rm packages/archetype-web/nginx-site.conf
     - docker push registry.sikahq.com/www/www/archetype-web
   only:
     changes:
@@ -244,9 +247,10 @@ dockerschulung.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/dockerschulung.de/Dockerfile
+    - cp ci/docker/* packages/dockerschulung.de/
     - docker build -t registry.sikahq.com/www/www/dockerschulung.de packages/dockerschulung.de
     - rm packages/dockerschulung.de/Dockerfile
+    - rm packages/dockerschulung.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/dockerschulung.de
   only:
     changes:
@@ -324,9 +328,10 @@ gitlab-ci.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/gitlab-ci.cz/Dockerfile
+    - cp ci/docker/* packages/gitlab-ci.cz/
     - docker build -t registry.sikahq.com/www/www/gitlab-ci.cz packages/gitlab-ci.cz
     - rm packages/gitlab-ci.cz/Dockerfile
+    - rm packages/gitlab-ci.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/gitlab-ci.cz
   only:
     changes:
@@ -404,9 +409,10 @@ kubernetes-schulung.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/kubernetes-schulung.de/Dockerfile
+    - cp ci/docker/* packages/kubernetes-schulung.de/
     - docker build -t registry.sikahq.com/www/www/kubernetes-schulung.de packages/kubernetes-schulung.de
     - rm packages/kubernetes-schulung.de/Dockerfile
+    - rm packages/kubernetes-schulung.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/kubernetes-schulung.de
   only:
     changes:
@@ -484,9 +490,10 @@ ondrej-sika.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/ondrej-sika.cz/Dockerfile
+    - cp ci/docker/* packages/ondrej-sika.cz/
     - docker build -t registry.sikahq.com/www/www/ondrej-sika.cz packages/ondrej-sika.cz
     - rm packages/ondrej-sika.cz/Dockerfile
+    - rm packages/ondrej-sika.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrej-sika.cz
   only:
     changes:
@@ -564,9 +571,10 @@ sika-kraml.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/sika-kraml.de/Dockerfile
+    - cp ci/docker/* packages/sika-kraml.de/
     - docker build -t registry.sikahq.com/www/www/sika-kraml.de packages/sika-kraml.de
     - rm packages/sika-kraml.de/Dockerfile
+    - rm packages/sika-kraml.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika-kraml.de
   only:
     changes:
@@ -644,9 +652,10 @@ skoleni-docker.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skoleni-docker.cz/Dockerfile
+    - cp ci/docker/* packages/skoleni-docker.cz/
     - docker build -t registry.sikahq.com/www/www/skoleni-docker.cz packages/skoleni-docker.cz
     - rm packages/skoleni-docker.cz/Dockerfile
+    - rm packages/skoleni-docker.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-docker.cz
   only:
     changes:
@@ -724,9 +733,10 @@ skoleni-git.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skoleni-git.cz/Dockerfile
+    - cp ci/docker/* packages/skoleni-git.cz/
     - docker build -t registry.sikahq.com/www/www/skoleni-git.cz packages/skoleni-git.cz
     - rm packages/skoleni-git.cz/Dockerfile
+    - rm packages/skoleni-git.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-git.cz
   only:
     changes:
@@ -804,9 +814,10 @@ skoleni-kubernetes.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skoleni-kubernetes.cz/Dockerfile
+    - cp ci/docker/* packages/skoleni-kubernetes.cz/
     - docker build -t registry.sikahq.com/www/www/skoleni-kubernetes.cz packages/skoleni-kubernetes.cz
     - rm packages/skoleni-kubernetes.cz/Dockerfile
+    - rm packages/skoleni-kubernetes.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-kubernetes.cz
   only:
     changes:
@@ -884,9 +895,10 @@ git-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/git-training.uk/Dockerfile
+    - cp ci/docker/* packages/git-training.uk/
     - docker build -t registry.sikahq.com/www/www/git-training.uk packages/git-training.uk
     - rm packages/git-training.uk/Dockerfile
+    - rm packages/git-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/git-training.uk
   only:
     changes:
@@ -964,9 +976,10 @@ docker-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/docker-training.uk/Dockerfile
+    - cp ci/docker/* packages/docker-training.uk/
     - docker build -t registry.sikahq.com/www/www/docker-training.uk packages/docker-training.uk
     - rm packages/docker-training.uk/Dockerfile
+    - rm packages/docker-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.uk
   only:
     changes:
@@ -1044,9 +1057,10 @@ kubernetes-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/kubernetes-training.uk/Dockerfile
+    - cp ci/docker/* packages/kubernetes-training.uk/
     - docker build -t registry.sikahq.com/www/www/kubernetes-training.uk packages/kubernetes-training.uk
     - rm packages/kubernetes-training.uk/Dockerfile
+    - rm packages/kubernetes-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/kubernetes-training.uk
   only:
     changes:
@@ -1124,9 +1138,10 @@ ansible-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/ansible-training.uk/Dockerfile
+    - cp ci/docker/* packages/ansible-training.uk/
     - docker build -t registry.sikahq.com/www/www/ansible-training.uk packages/ansible-training.uk
     - rm packages/ansible-training.uk/Dockerfile
+    - rm packages/ansible-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ansible-training.uk
   only:
     changes:
@@ -1204,9 +1219,10 @@ gitlab-training.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/gitlab-training.uk/Dockerfile
+    - cp ci/docker/* packages/gitlab-training.uk/
     - docker build -t registry.sikahq.com/www/www/gitlab-training.uk packages/gitlab-training.uk
     - rm packages/gitlab-training.uk/Dockerfile
+    - rm packages/gitlab-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/gitlab-training.uk
   only:
     changes:
@@ -1284,9 +1300,10 @@ skolenie-git.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skolenie-git.sk/Dockerfile
+    - cp ci/docker/* packages/skolenie-git.sk/
     - docker build -t registry.sikahq.com/www/www/skolenie-git.sk packages/skolenie-git.sk
     - rm packages/skolenie-git.sk/Dockerfile
+    - rm packages/skolenie-git.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie-git.sk
   only:
     changes:
@@ -1364,9 +1381,10 @@ skolenie-gitlab.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skolenie-gitlab.sk/Dockerfile
+    - cp ci/docker/* packages/skolenie-gitlab.sk/
     - docker build -t registry.sikahq.com/www/www/skolenie-gitlab.sk packages/skolenie-gitlab.sk
     - rm packages/skolenie-gitlab.sk/Dockerfile
+    - rm packages/skolenie-gitlab.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie-gitlab.sk
   only:
     changes:
@@ -1444,9 +1462,10 @@ skolenie-docker.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skolenie-docker.sk/Dockerfile
+    - cp ci/docker/* packages/skolenie-docker.sk/
     - docker build -t registry.sikahq.com/www/www/skolenie-docker.sk packages/skolenie-docker.sk
     - rm packages/skolenie-docker.sk/Dockerfile
+    - rm packages/skolenie-docker.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie-docker.sk
   only:
     changes:
@@ -1524,9 +1543,10 @@ skolenie.kubernetes.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skolenie.kubernetes.sk/Dockerfile
+    - cp ci/docker/* packages/skolenie.kubernetes.sk/
     - docker build -t registry.sikahq.com/www/www/skolenie.kubernetes.sk packages/skolenie.kubernetes.sk
     - rm packages/skolenie.kubernetes.sk/Dockerfile
+    - rm packages/skolenie.kubernetes.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie.kubernetes.sk
   only:
     changes:
@@ -1604,9 +1624,10 @@ skolenie-ansible.sk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skolenie-ansible.sk/Dockerfile
+    - cp ci/docker/* packages/skolenie-ansible.sk/
     - docker build -t registry.sikahq.com/www/www/skolenie-ansible.sk packages/skolenie-ansible.sk
     - rm packages/skolenie-ansible.sk/Dockerfile
+    - rm packages/skolenie-ansible.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie-ansible.sk
   only:
     changes:
@@ -1664,9 +1685,10 @@ ansible-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/ansible-utbildning.se/Dockerfile
+    - cp ci/docker/* packages/ansible-utbildning.se/
     - docker build -t registry.sikahq.com/www/www/ansible-utbildning.se packages/ansible-utbildning.se
     - rm packages/ansible-utbildning.se/Dockerfile
+    - rm packages/ansible-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ansible-utbildning.se
   only:
     changes:
@@ -1744,9 +1766,10 @@ docker-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/docker-utbildning.se/Dockerfile
+    - cp ci/docker/* packages/docker-utbildning.se/
     - docker build -t registry.sikahq.com/www/www/docker-utbildning.se packages/docker-utbildning.se
     - rm packages/docker-utbildning.se/Dockerfile
+    - rm packages/docker-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-utbildning.se
   only:
     changes:
@@ -1824,9 +1847,10 @@ git-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/git-utbildning.se/Dockerfile
+    - cp ci/docker/* packages/git-utbildning.se/
     - docker build -t registry.sikahq.com/www/www/git-utbildning.se packages/git-utbildning.se
     - rm packages/git-utbildning.se/Dockerfile
+    - rm packages/git-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/git-utbildning.se
   only:
     changes:
@@ -1904,9 +1928,10 @@ gitlab-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/gitlab-utbildning.se/Dockerfile
+    - cp ci/docker/* packages/gitlab-utbildning.se/
     - docker build -t registry.sikahq.com/www/www/gitlab-utbildning.se packages/gitlab-utbildning.se
     - rm packages/gitlab-utbildning.se/Dockerfile
+    - rm packages/gitlab-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/gitlab-utbildning.se
   only:
     changes:
@@ -1984,9 +2009,10 @@ kubernetes-utbildning.se build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/kubernetes-utbildning.se/Dockerfile
+    - cp ci/docker/* packages/kubernetes-utbildning.se/
     - docker build -t registry.sikahq.com/www/www/kubernetes-utbildning.se packages/kubernetes-utbildning.se
     - rm packages/kubernetes-utbildning.se/Dockerfile
+    - rm packages/kubernetes-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/kubernetes-utbildning.se
   only:
     changes:
@@ -2064,9 +2090,10 @@ ondrej-sika.uk build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/ondrej-sika.uk/Dockerfile
+    - cp ci/docker/* packages/ondrej-sika.uk/
     - docker build -t registry.sikahq.com/www/www/ondrej-sika.uk packages/ondrej-sika.uk
     - rm packages/ondrej-sika.uk/Dockerfile
+    - rm packages/ondrej-sika.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrej-sika.uk
   only:
     changes:
@@ -2124,9 +2151,10 @@ ondrej-sika.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/ondrej-sika.de/Dockerfile
+    - cp ci/docker/* packages/ondrej-sika.de/
     - docker build -t registry.sikahq.com/www/www/ondrej-sika.de packages/ondrej-sika.de
     - rm packages/ondrej-sika.de/Dockerfile
+    - rm packages/ondrej-sika.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrej-sika.de
   only:
     changes:
@@ -2204,9 +2232,10 @@ ondrejsikalabs.com build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/ondrejsikalabs.com/Dockerfile
+    - cp ci/docker/* packages/ondrejsikalabs.com/
     - docker build -t registry.sikahq.com/www/www/ondrejsikalabs.com packages/ondrejsikalabs.com
     - rm packages/ondrejsikalabs.com/Dockerfile
+    - rm packages/ondrejsikalabs.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrejsikalabs.com
   only:
     changes:
@@ -2284,9 +2313,10 @@ sika.io build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/sika.io/Dockerfile
+    - cp ci/docker/* packages/sika.io/
     - docker build -t registry.sikahq.com/www/www/sika.io packages/sika.io
     - rm packages/sika.io/Dockerfile
+    - rm packages/sika.io/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika.io
   only:
     changes:
@@ -2364,9 +2394,10 @@ docker-training.de build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/docker-training.de/Dockerfile
+    - cp ci/docker/* packages/docker-training.de/
     - docker build -t registry.sikahq.com/www/www/docker-training.de packages/docker-training.de
     - rm packages/docker-training.de/Dockerfile
+    - rm packages/docker-training.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.de
   only:
     changes:
@@ -2406,9 +2437,10 @@ docker-training.ch build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/docker-training.ch/Dockerfile
+    - cp ci/docker/* packages/docker-training.ch/
     - docker build -t registry.sikahq.com/www/www/docker-training.ch packages/docker-training.ch
     - rm packages/docker-training.ch/Dockerfile
+    - rm packages/docker-training.ch/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.ch
   only:
     changes:
@@ -2448,9 +2480,10 @@ docker-training.at build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/docker-training.at/Dockerfile
+    - cp ci/docker/* packages/docker-training.at/
     - docker build -t registry.sikahq.com/www/www/docker-training.at packages/docker-training.at
     - rm packages/docker-training.at/Dockerfile
+    - rm packages/docker-training.at/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.at
   only:
     changes:
@@ -2490,9 +2523,10 @@ docker-training.nl build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/docker-training.nl/Dockerfile
+    - cp ci/docker/* packages/docker-training.nl/
     - docker build -t registry.sikahq.com/www/www/docker-training.nl packages/docker-training.nl
     - rm packages/docker-training.nl/Dockerfile
+    - rm packages/docker-training.nl/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.nl
   only:
     changes:
@@ -2532,9 +2566,10 @@ git-training.nl build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/git-training.nl/Dockerfile
+    - cp ci/docker/* packages/git-training.nl/
     - docker build -t registry.sikahq.com/www/www/git-training.nl packages/git-training.nl
     - rm packages/git-training.nl/Dockerfile
+    - rm packages/git-training.nl/nginx-site.conf
     - docker push registry.sikahq.com/www/www/git-training.nl
   only:
     changes:
@@ -2574,9 +2609,10 @@ sika-kaplan.com build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/sika-kaplan.com/Dockerfile
+    - cp ci/docker/* packages/sika-kaplan.com/
     - docker build -t registry.sikahq.com/www/www/sika-kaplan.com packages/sika-kaplan.com
     - rm packages/sika-kaplan.com/Dockerfile
+    - rm packages/sika-kaplan.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika-kaplan.com
   only:
     changes:
@@ -2654,9 +2690,10 @@ bootstrap-web build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/bootstrap-web/Dockerfile
+    - cp ci/docker/* packages/bootstrap-web/
     - docker build -t registry.sikahq.com/www/www/bootstrap-web packages/bootstrap-web
     - rm packages/bootstrap-web/Dockerfile
+    - rm packages/bootstrap-web/nginx-site.conf
     - docker push registry.sikahq.com/www/www/bootstrap-web
   only:
     changes:
@@ -2696,9 +2733,10 @@ trainera.io build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/trainera.io/Dockerfile
+    - cp ci/docker/* packages/trainera.io/
     - docker build -t registry.sikahq.com/www/www/trainera.io packages/trainera.io
     - rm packages/trainera.io/Dockerfile
+    - rm packages/trainera.io/nginx-site.conf
     - docker push registry.sikahq.com/www/www/trainera.io
   only:
     changes:
@@ -2776,9 +2814,10 @@ salzburgdevops.com build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/salzburgdevops.com/Dockerfile
+    - cp ci/docker/* packages/salzburgdevops.com/
     - docker build -t registry.sikahq.com/www/www/salzburgdevops.com packages/salzburgdevops.com
     - rm packages/salzburgdevops.com/Dockerfile
+    - rm packages/salzburgdevops.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/salzburgdevops.com
   only:
     changes:
@@ -2856,9 +2895,10 @@ training.kubernetes.is build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/training.kubernetes.is/Dockerfile
+    - cp ci/docker/* packages/training.kubernetes.is/
     - docker build -t registry.sikahq.com/www/www/training.kubernetes.is packages/training.kubernetes.is
     - rm packages/training.kubernetes.is/Dockerfile
+    - rm packages/training.kubernetes.is/nginx-site.conf
     - docker push registry.sikahq.com/www/www/training.kubernetes.is
   only:
     changes:
@@ -2936,9 +2976,10 @@ training.kubernetes.lu build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/training.kubernetes.lu/Dockerfile
+    - cp ci/docker/* packages/training.kubernetes.lu/
     - docker build -t registry.sikahq.com/www/www/training.kubernetes.lu packages/training.kubernetes.lu
     - rm packages/training.kubernetes.lu/Dockerfile
+    - rm packages/training.kubernetes.lu/nginx-site.conf
     - docker push registry.sikahq.com/www/www/training.kubernetes.lu
   only:
     changes:
@@ -3016,9 +3057,10 @@ skoleni-terraform.cz build docker:
   stage: build_docker
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/Dockerfile packages/skoleni-terraform.cz/Dockerfile
+    - cp ci/docker/* packages/skoleni-terraform.cz/
     - docker build -t registry.sikahq.com/www/www/skoleni-terraform.cz packages/skoleni-terraform.cz
     - rm packages/skoleni-terraform.cz/Dockerfile
+    - rm packages/skoleni-terraform.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-terraform.cz
   only:
     changes:
