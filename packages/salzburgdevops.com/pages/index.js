@@ -1,4 +1,3 @@
-import Head from "next/head";
 import MeetupPage from "@app/meetup-theme/layouts/MeetupPage";
 
 const Index = () => (

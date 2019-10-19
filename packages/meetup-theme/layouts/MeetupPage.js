@@ -1,3 +1,4 @@
+import Head from "next/head";
 import HeaderBar from "@app/meetup-theme/components/HeaderBar";
 import HeaderLarge from "@app/meetup-theme/components/HeaderLarge";
 import Section from "@app/meetup-theme/components/Section";
@@ -5,6 +6,9 @@ import Section from "@app/meetup-theme/components/Section";
 export default props => {
   return (
     <div>
+      <Head>
+        <title>{props.meetup_name}</title>
+      </Head>
       <div className="mt-3">
         <HeaderBar></HeaderBar>
       </div>
