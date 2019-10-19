@@ -17,10 +17,7 @@ No, to se da vyresit preposilanim. Ale, pokud poskytovatel skocni, zdrazi nebo z
 Dobre, chci email na vlastni domene, jakou domenu si mam koupit a jaky email pouzit. Pri vyberu domeny postupuji nasledovne. Zkusim prvni variantu a pokud je obsazena, jdu na dalsi. Muzete napriklad takto:
 
 - \`sika.com\` s emailem \`ondrej@sika.com\`
-- \`sika.cz\` s emailem \`ondrej@sika.cz\`
-- \`sika.io\` s emailem \`ondrej@sika.io\`
 - \`ondrejsika.com\` s emailem \`ondrej@ondrejsika.com\`
-- \`ondrejsika.cz\` s emailem \`ondrej@ondrejsika.cz\`
 
 Zde je clanek jak si vybrat domenu [Proc by kazdy mel mit svoji domenu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/).
 
