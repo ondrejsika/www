@@ -10,24 +10,24 @@
   length: 1 den
   date_from: 26.11.2019
   date_to: 26.11.2019
-- id: docker-brno-18-11-2019
-  active: true
-  country: cz
-  lang: cs
-  course_id: docker
-  name: Skoleni Docker
-  city: Brno
-  price: 9999 CZK
-  venue_id: rootcz-brno
-  length: 2 dny
-  date_from: 19.11.2019
-  date_to: 20.11.2019
-- id: kubernetes-brno-14-11-2019
+- id: kubernetes-brno-18-11-2019
   active: true
   country: cz
   lang: cs
   course_id: kubernetes
   name: Skoleni Kubernetes
+  city: Brno
+  price: 9999 CZK
+  venue_id: rootcz-brno
+  length: 2 dny
+  date_from: 18.11.2019
+  date_to: 19.11.2019
+- id: docker-brno-14-11-2019
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Skoleni Docker
   city: Brno
   price: 9999 CZK
   venue_id: rootcz-brno
