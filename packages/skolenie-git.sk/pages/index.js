@@ -126,7 +126,6 @@ Ak máte záujem o školenie, neváhajte ma kontaktovať - [Nezáväzne popýta�
 ### Cena
 Ak máte záujem o školenie u vás vo firme, [nezáväzne ho popýtajte](https://ondrej-sika.cz/skoleni/git/poptavka/) alebo mi napíšte email na ondrej@sika.io
 - Otvorený termín (self funded): 199 EUR bez DPH
-- Otvorený termín (company funded): 279 EUR bez DPH
 - Firemné školenie (vo firme): 779 EUR bez DPH
         `}
         />
