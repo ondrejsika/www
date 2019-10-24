@@ -1,4 +1,4 @@
-import App, { Container } from "next/app";
+import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
 
 import Layout from "@app/ondrej-sika.cz/layouts/Layout";
@@ -15,11 +15,9 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     pageProps.site = this.site;
     return (
-      <Container>
-        <Layout {...pageProps}>
-          <Component lang={site.lang} {...pageProps} />
-        </Layout>
-      </Container>
+      <Layout {...pageProps}>
+        <Component lang={site.lang} {...pageProps} />
+      </Layout>
     );
   }
 }
