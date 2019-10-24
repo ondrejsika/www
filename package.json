@@ -51,6 +51,7 @@
     "dev-training.kubernetes.is": "yarn --cwd packages/training.kubernetes.is dev -p 3040",
     "dev-training.kubernetes.lu": "yarn --cwd packages/training.kubernetes.lu dev -p 3041",
     "dev-skoleni-terraform.cz": "yarn --cwd packages/skoleni-terraform.cz dev -p 3042",
+    "dev-sika-training.com": "yarn --cwd packages/sika-training.com dev -p 3043",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -93,6 +94,7 @@
     "static-training.kubernetes.is": "yarn --cwd packages/training.kubernetes.is static",
     "static-training.kubernetes.lu": "yarn --cwd packages/training.kubernetes.lu static",
     "static-skoleni-terraform.cz": "yarn --cwd packages/skoleni-terraform.cz static",
+    "static-sika-training.com": "yarn --cwd packages/sika-training.com static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   },
   "devDependencies": {
