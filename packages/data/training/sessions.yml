@@ -58,6 +58,68 @@
   length: 2 dny
   date_from: 11.2.2020
   date_to: 12.2.2020
+# Praha Root.cz Unor-Brezen
+- id: docker-praha-24-02-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Skoleni Docker
+  city: Praha
+  price: 9999 CZK
+  venue_id: rootcz
+  length: 2 dny
+  date_from: 24.2.2020
+  date_to: 25.2.2020
+- id: gitlab-ci-praha-26-02-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: gitlab-ci
+  name: Skoleni Gitlab CI
+  city: Praha
+  price: 4999 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 26.2.2020
+  date_to: 26.2.2020
+- id: kubernetes-praha-27-02-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: kubernetes
+  name: Skoleni Kubernetes
+  city: Praha
+  price: 9999 CZK
+  venue_id: rootcz
+  length: 2 dny
+  date_from: 27.2.2020
+  date_to: 28.2.2020
+- id: proxmox-praha-06-03-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: proxmox
+  name: Skoleni Proxmox
+  city: Praha
+  price: 5999 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 6.3.2020
+  date_to: 6.3.2020
+- id: terraform-praha-13-03-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: terraform
+  name: Skoleni Terraform
+  city: Praha
+  price: 5999 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 13.3.2020
+  date_to: 13.3.2020
+# BRNO Anywhere Kubernetes&Docker + Root.cz Kveten-Cerven
 - id: kubernetes-praha-21-05-2020
   active: true
   country: cz
@@ -82,6 +144,189 @@
   length: 2 dny
   date_from: 21.5.2020
   date_to: 22.5.2020
+- id: docker-brno-25-05-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Skoleni Docker
+  city: Brno
+  price: 9999 CZK
+  venue_id: rootcz-brno
+  length: 2 dny
+  date_from: 25.5.2020
+  date_to: 26.5.2020
+- id: gitlab-ci-brno-27-05-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: gitlab-ci
+  name: Skoleni Gitlab CI
+  city: Brno
+  price: 4999 CZK
+  venue_id: rootcz-brno
+  length: 1 den
+  date_from: 27.5.2020
+  date_to: 27.5.2020
+- id: kubernetes-brno-28-05-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: kubernetes
+  name: Skoleni Kubernetes
+  city: Brno
+  price: 9999 CZK
+  venue_id: rootcz-brno
+  length: 2 dny
+  date_from: 28.5.2020
+  date_to: 29.5.2020
+- id: proxmox-brno-04-06-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: proxmox
+  name: Skoleni Proxmox
+  city: Brno
+  price: 5999 CZK
+  venue_id: rootcz-brno
+  length: 1 den
+  date_from: 4.6.2020
+  date_to: 4.6.2020
+- id: terraform-brno-05-06-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: terraform
+  name: Skoleni Terraform
+  city: Brno
+  price: 5999 CZK
+  venue_id: rootcz-brno
+  length: 1 den
+  date_from: 5.6.2020
+  date_to: 5.6.2020
+# Praha Root.cz Zari
+- id: proxmox-praha-11-09-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: proxmox
+  name: Skoleni Proxmox
+  city: Praha
+  price: 5999 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 11.9.2020
+  date_to: 11.9.2020
+- id: docker-praha-14-09-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Skoleni Docker
+  city: Praha
+  price: 9999 CZK
+  venue_id: rootcz
+  length: 2 dny
+  date_from: 14.9.2020
+  date_to: 15.9.2020
+- id: gitlab-ci-praha-16-09-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: gitlab-ci
+  name: Skoleni Gitlab CI
+  city: Praha
+  price: 4999 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 16.9.2020
+  date_to: 16.9.2020
+- id: kubernetes-praha-17-09-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: kubernetes
+  name: Skoleni Kubernetes
+  city: Praha
+  price: 9999 CZK
+  venue_id: rootcz
+  length: 2 dny
+  date_from: 17.9.2020
+  date_to: 18.9.2020
+- id: terraform-praha-25-09-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: terraform
+  name: Skoleni Terraform
+  city: Praha
+  price: 5999 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 25.9.2020
+  date_to: 25.9.2020
+# Brno Root.cz Listopad
+- id: docker-brno-02-11-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Skoleni Docker
+  city: Brno
+  price: 9999 CZK
+  venue_id: rootcz-brno
+  length: 2 dny
+  date_from: 2.11.2020
+  date_to: 3.11.2020
+- id: gitlab-ci-brno-4-11-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: gitlab-ci
+  name: Skoleni Gitlab CI
+  city: Brno
+  price: 4999 CZK
+  venue_id: rootcz-brno
+  length: 1 den
+  date_from: 4.11.2020
+  date_to: 4.11.2020
+- id: kubernetes-brno-05-11-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: kubernetes
+  name: Skoleni Kubernetes
+  city: Brno
+  price: 9999 CZK
+  venue_id: rootcz-brno
+  length: 2 dny
+  date_from: 5.11.2020
+  date_to: 6.11.2020
+- id: proxmox-brno-20-11-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: proxmox
+  name: Skoleni Proxmox
+  city: Brno
+  price: 5999 CZK
+  venue_id: rootcz-brno
+  length: 1 den
+  date_from: 20.11.2020
+  date_to: 20.11.2020
+- id: terraform-brno-27-11-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: terraform
+  name: Skoleni Terraform
+  city: Brno
+  price: 5999 CZK
+  venue_id: rootcz-brno
+  length: 1 den
+  date_from: 27.11.2020
+  date_to: 27.11.2020
+#OLD
 - id: docker-praha-16-10-2019
   active: false
   country: cz
