@@ -31,7 +31,7 @@ const Index = () => (
       <LectureImgSm LectureImgHeader="Kurzy co školím" />
       <TextWithImg TextWithImgHeader="O mně">
         Jmenuji se Ondřej, vývojem softwaru se zabývám od roku 2009 a od roku
-        2013 předávám své zkušenosti na školích. Pracoval jsem pro malé firmy,
+        2013 předávám své zkušenosti na školeních. Pracoval jsem pro malé firmy,
         startupy i velké korporace s cílem zefektivnit jim proces vývoje,
         testování a nasazování software.
         <br />
