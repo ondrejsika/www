@@ -10,7 +10,7 @@ export default () => (
 
 - Traefik proxy s Let's Encrypt pro Docker - https://github.com/ondrejsika/traefik-le
 - Docker Registry za Traefik proxy - https://github.com/ondrejsika/docker-registry-traefik
-- Ukazky ke [Skoleni Dockeru](/skoleni/docker) - https://github.com/ondrejsika/docker-training-examples
+- Ukazky ke [Skoleni Dockeru](/skoleni/docker) - https://github.com/ondrejsika/docker-training
 
 
 ## Gitlab CI
