@@ -63,17 +63,13 @@ export default props => (
         />
       }
     >
-      <Translate
-        lang={props.lang}
-        cs="Otevřený termín (self funded)"
-        en="Public session (self funded)"
-      />
-      : {props.price_self_funded}{" "}
+      <Translate lang={props.lang} cs="Otevřený termín" en="Public session" />:{" "}
+      {props.price_self_funded}{" "}
       <Translate lang={props.lang} cs="bez DPH" en="excl. VAT" />
       <br />
       <Translate
         lang={props.lang}
-        cs="Firemní školení (ve firmě)"
+        cs="Firemní školení"
         en="Company traning (in-house)"
       />
       : {props.price_in_house}{" "}

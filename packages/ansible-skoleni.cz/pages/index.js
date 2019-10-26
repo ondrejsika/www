@@ -124,8 +124,8 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
 ### Cena
 Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/ansible/poptavka/) nebo mi napište email na <ondrej@sika.io>
 
-Otevřený termín (self funded): 11 999 CZK bez DPH<br>
-Firemní školení (ve firmě): 50 000 CZK bez DPH<br>
+Otevřený termín: 11 999 CZK bez DPH<br>
+Firemní školení: 50 000 CZK bez DPH<br>
 `}
         />
       </TextFrame>

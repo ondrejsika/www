@@ -142,9 +142,9 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat
           <a href="mailto:ondrej@sika.io">ondrej@sika.io</a>
         </Link>
         <br />
-        Otevřený termín (self funded): 11 999 CZK bez DPH
+        Otevřený termín: 11 999 CZK bez DPH
         <br />
-        Firemní školení (ve firmě): 50 000 CZK bez DPH
+        Firemní školení: 50 000 CZK bez DPH
       </TextFrame>
       <Contact />
     </div>

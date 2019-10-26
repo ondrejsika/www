@@ -74,9 +74,9 @@ Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní kon
     </div>
     <References ids={["oxy", "oxyCTO"]} lang={site.lang} />
     <Price PriceHeader="Cena za školení" PriceBtn="Nezávazně poptat školení">
-      Otevřený termín (self funded): 11 999 CZK bez DPH
+      Otevřený termín: 11 999 CZK bez DPH
       <br />
-      Firemní školení (ve firmě): 50 000 CZK bez DPH
+      Firemní školení: 50 000 CZK bez DPH
     </Price>
     <div className="container">
       <TextArea

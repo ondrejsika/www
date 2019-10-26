@@ -61,9 +61,9 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
     </div>
     <References ids={["CMS", "vse"]} lang={site.lang} />
     <Price PriceHeader="Cena za školení" PriceBtn="Nezávazně poptat školení">
-      Otevřený termín (self funded): 5 999 CZK bez DPH
+      Otevřený termín: 5 999 CZK bez DPH
       <br />
-      Firemní školení (ve firmě): 25 000 CZK bez DPH
+      Firemní školení: 25 000 CZK bez DPH
     </Price>
     <div className="container">
       <TextArea
