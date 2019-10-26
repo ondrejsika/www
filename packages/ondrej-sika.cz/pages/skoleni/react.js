@@ -5,7 +5,7 @@ export default props => (
     lang={props.site.lang}
     course_title="Školení React"
     logo="/static/react.svg"
-    price_self_funded="9 999 CZK"
+    price_self_funded="11 999 CZK"
     price_company_funded="14 999 CZK"
     price_in_house="50 000 CZK"
   >

@@ -61,7 +61,7 @@ Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytv
     </div>
     <References ids={["sit", "vse"]} lang={site.lang} />
     <Price PriceHeader="Cena za školení" PriceBtn="Nezávazně poptat školení">
-      Otevřený termín (self funded): 9 999 CZK bez DPH
+      Otevřený termín (self funded): 11 999 CZK bez DPH
       <br />
       Firemní školení (ve firmě): 50 000 CZK bez DPH
     </Price>

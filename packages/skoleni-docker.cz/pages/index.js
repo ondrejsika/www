@@ -148,7 +148,7 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat
           source={`
 ### Cena
 Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](https://ondrej-sika.cz/skoleni/docker/poptavka/) nebo mi napište email na ondrej@sika.io
-- Otevřený termín (self funded): 9 999 CZK bez DPH
+- Otevřený termín (self funded): 11 999 CZK bez DPH
 - Firemní školení (ve firmě): 50 000 CZK bez DPH
         `}
         />
