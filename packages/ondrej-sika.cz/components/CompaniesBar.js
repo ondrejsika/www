@@ -1,5 +1,5 @@
 const CompaniesBar = props => (
-  <div>
+  <div className="pb-2">
     <h2 className="pt-5 pb-2">{props.CompaniesBarHeader}</h2>
     <div className="d-flex row text-center">
       <div className="col-lg-2 col-md-2 col-sm-4 col-4 pl-0 pr-0">

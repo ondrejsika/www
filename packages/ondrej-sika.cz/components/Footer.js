@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => (
   <div>
-    <div className="footer">
+    <div className="footer mt-5">
       <div className="container pt-4 pb-4">
         <div className="row">
           <div className="col-md-3 col-sm-7 col-8 text-white">
