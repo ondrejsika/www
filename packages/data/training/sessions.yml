@@ -29,7 +29,7 @@
   course_id: docker
   name: Školení Gitlab CI
   city: Brno
-  price: 4999 CZK
+  price: 5999 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 26.11.2019
@@ -78,7 +78,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Praha
-  price: 4999 CZK
+  price: 5999 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 26.2.2020
@@ -163,7 +163,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Brno
-  price: 4999 CZK
+  price: 5999 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 27.5.2020
@@ -236,7 +236,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Praha
-  price: 4999 CZK
+  price: 5999 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 16.9.2020
@@ -285,7 +285,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Brno
-  price: 4999 CZK
+  price: 5999 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 4.11.2020
@@ -418,7 +418,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Praha
-  price: 4999 CZK
+  price: 5999 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 7.8.2019
