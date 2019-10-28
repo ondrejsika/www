@@ -38,6 +38,9 @@ class StaticDB {
       return el[key] == val;
     }));
   }
+  limit(lim) {
+    this._cursor = this._cursor.slice(0, lim);
+  }
 }
 
 export default StaticDB;
