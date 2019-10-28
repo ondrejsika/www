@@ -33,7 +33,7 @@ export default props => (
             <br />
             UK
           </p>
-          <table class="contact-table table-borderless">
+          <table className="contact-table table-borderless">
             <tbody>
               <tr>
                 <td>Company ID:</td>
@@ -52,7 +52,7 @@ export default props => (
         </div>
         <div className="col-lg-4 col-md-9 col-sm-12 col-12">
           <h4 className="pt-4 pt-md-0">Payment Information</h4>
-          <table class="contact-table table-borderless">
+          <table className="contact-table table-borderless">
             <tbody>
               <tr>
                 <td>ČR (CZK):</td>

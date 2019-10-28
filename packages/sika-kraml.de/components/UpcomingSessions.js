@@ -24,7 +24,7 @@ class UpcomingSessions extends React.Component {
       /* TODO should be merged back into ondrej-sika.cz/UpcomingSessions */
     }
     return (
-      <table class="table table-hover mt-4">
+      <table className="table table-hover mt-4">
         <thead>
           <tr>
             <th scope="col" className="col-main">

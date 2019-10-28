@@ -42,7 +42,7 @@ const Index = () => (
             <br />
             Czech Republic
           </p>
-          <table class="contact-table table-borderless">
+          <table className="contact-table table-borderless">
             <tbody>
               <tr>
                 <td>Trader Identification Number:</td>
@@ -61,7 +61,7 @@ const Index = () => (
         </div>
         <div className="col-lg-4 col-md-9 col-sm-12 col-12">
           <h4 className="pt-4 pt-md-0">Payment information</h4>
-          <table class="contact-table table-borderless">
+          <table className="contact-table table-borderless">
             <tbody>
               <tr>
                 <td>UK (GBR):</td>

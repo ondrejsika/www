@@ -16,7 +16,7 @@ const Footer = () => (
                 +420 773 452 376
               </a>
             </p>
-            <table class="contact-table table-borderless">
+            <table className="contact-table table-borderless">
               <tbody>
                 <tr>
                   <td>IČ:</td>

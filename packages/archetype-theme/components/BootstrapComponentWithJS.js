@@ -2,7 +2,7 @@ const BootstrapComponentWithJS = props => (
   <div>
     <p>
       <a
-        class="btn btn-primary"
+        className="btn btn-primary"
         data-toggle="collapse"
         href="#collapseExample"
         role="button"
@@ -12,29 +12,29 @@ const BootstrapComponentWithJS = props => (
         Collapse Example
       </a>
     </p>
-    <div class="collapse" id="collapseExample">
-      <div class="card card-body">
+    <div className="collapse" id="collapseExample">
+      <div className="card card-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
         terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
         labore wes anderson cred nesciunt sapiente ea proident.
       </div>
     </div>
-    <div class="btn-group" role="group">
+    <div className="btn-group" role="group">
       <button
         id="btnGroupDrop1"
         type="button"
-        class="btn btn-secondary dropdown-toggle"
+        className="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
       >
         Dropdown
       </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-        <a class="dropdown-item" href="#">
+      <div className="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a className="dropdown-item" href="#">
           Dropdown link
         </a>
-        <a class="dropdown-item" href="#">
+        <a className="dropdown-item" href="#">
           Dropdown link
         </a>
       </div>

@@ -55,7 +55,7 @@ const Index = () => (
             <br />
             Česká Republika
           </p>
-          <table class="contact-table table-borderless">
+          <table className="contact-table table-borderless">
             <tbody>
               <tr>
                 <td>IČ:</td>
@@ -74,7 +74,7 @@ const Index = () => (
         </div>
         <div className="col-lg-4 col-md-9 col-sm-12 col-12">
           <h4 className="pt-4 pt-md-0">Platební údaje</h4>
-          <table class="contact-table table-borderless">
+          <table className="contact-table table-borderless">
             <tbody>
               <tr>
                 <td>ČR (CZK):</td>
