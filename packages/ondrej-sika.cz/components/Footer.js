@@ -1,19 +1,19 @@
 import Link from "next/link";
 
-const Footer = props => (
+const Footer = () => (
   <div>
     <div className="footer">
       <div className="container pt-4 pb-4">
         <div className="row">
           <div className="col-md-3 col-sm-7 col-8 text-white">
-            <h3 className="text-white">{props.col1_name}</h3>
+            <h3 className="text-white">Ondřej Šika</h3>
             <p>
               <a href="mailto:ondrej@sika.io" className="a-underline">
-                {props.col1_mail}
+                ondrej@sika.io
               </a>
               <br />
               <a href="tel:+420773452376" className="a-underline">
-                {props.col1_phone}
+                +420 773 452 376
               </a>
             </p>
             <table class="contact-table table-borderless">
@@ -56,8 +56,10 @@ const Footer = props => (
             </ul>
           </div>
           <div className="col-md-4 col-sm-12 pt-4 pt-md-0">
-            <h3 className="text-white">{props.col4_NewsHeader}</h3>
-            <p className="text-white">{props.col4_NewsText}</p>
+            <h3 className="text-white">Zajímají Vás novinky?</h3>
+            <p className="text-white">
+              Odebírejte můj newsletter a budete v obraze!
+            </p>
             <div className="input-group pt-3">
               <a
                 className="btn btn-outline-header"
