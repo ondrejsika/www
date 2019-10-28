@@ -7,6 +7,7 @@ import Price from "@app/ondrej-sika.cz/components/Price";
 import OrderBtn from "@app/ondrej-sika.cz/components/OrderBtn";
 import "@app/course-landing/components/TwitterRecommendations";
 import Translate from "@app/common/components/Translate";
+import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
 
 import Head from "next/head";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
@@ -28,7 +29,28 @@ export default props => (
       }
       logo={props.logo}
     ></Header>
-    <div className="container course-page">
+    <div className="container course-page mt-3">
+      {(() => {
+        if (props.show_sessions) {
+          return (
+            <>
+              <h2>
+                <Translate
+                  lang={props.lang}
+                  cs="Vypsané termíny"
+                  en="Public session"
+                />
+              </h2>
+              <UpcomingSessions
+                lang={props.lang}
+                course_id={props.course_id}
+                limit={3}
+              />
+            </>
+          );
+        }
+      })()}
+
       {props.children}
       <Markdown source={props.description} />
       <TwoCol
