@@ -53,10 +53,8 @@ const Navbar = props => (
                       >
                         {link[1].map((sub_link, i) => {
                           return (
-                            <Link href={sub_link[1]}>
-                              <a key={i} className="dropdown-item">
-                                {sub_link[0]}
-                              </a>
+                            <Link key={i} href={sub_link[1]}>
+                              <a className="dropdown-item">{sub_link[0]}</a>
                             </Link>
                           );
                         })}
