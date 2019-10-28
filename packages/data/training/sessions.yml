@@ -3,7 +3,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Docker
+  name: Školení Docker
   city: Brno
   price: 11999 CZK
   venue_id: rootcz-brno
@@ -15,7 +15,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Brno
   price: 11999 CZK
   venue_id: rootcz-brno
@@ -27,7 +27,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Gitlab CI
+  name: Školení Gitlab CI
   city: Brno
   price: 4999 CZK
   venue_id: rootcz-brno
@@ -39,7 +39,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Praha
   price: 11999 CZK
   venue_id: anywhere
@@ -51,7 +51,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Docker
+  name: Školení Docker
   city: Praha
   price: 11999 CZK
   venue_id: anywhere
@@ -64,7 +64,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Docker
+  name: Školení Docker
   city: Praha
   price: 11999 CZK
   venue_id: rootcz
@@ -76,7 +76,7 @@
   country: cz
   lang: cs
   course_id: gitlab-ci
-  name: Skoleni Gitlab CI
+  name: Školení Gitlab CI
   city: Praha
   price: 4999 CZK
   venue_id: rootcz
@@ -88,7 +88,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Praha
   price: 11999 CZK
   venue_id: rootcz
@@ -100,7 +100,7 @@
   country: cz
   lang: cs
   course_id: proxmox
-  name: Skoleni Proxmox
+  name: Školení Proxmox
   city: Praha
   price: 5999 CZK
   venue_id: rootcz
@@ -112,7 +112,7 @@
   country: cz
   lang: cs
   course_id: terraform
-  name: Skoleni Terraform
+  name: Školení Terraform
   city: Praha
   price: 5999 CZK
   venue_id: rootcz
@@ -125,7 +125,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Praha
   price: 11999 CZK
   venue_id: anywhere
@@ -137,7 +137,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Docker
+  name: Školení Docker
   city: Praha
   price: 11999 CZK
   venue_id: anywhere
@@ -149,7 +149,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Docker
+  name: Školení Docker
   city: Brno
   price: 11999 CZK
   venue_id: rootcz-brno
@@ -161,7 +161,7 @@
   country: cz
   lang: cs
   course_id: gitlab-ci
-  name: Skoleni Gitlab CI
+  name: Školení Gitlab CI
   city: Brno
   price: 4999 CZK
   venue_id: rootcz-brno
@@ -173,7 +173,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Brno
   price: 11999 CZK
   venue_id: rootcz-brno
@@ -185,7 +185,7 @@
   country: cz
   lang: cs
   course_id: proxmox
-  name: Skoleni Proxmox
+  name: Školení Proxmox
   city: Brno
   price: 5999 CZK
   venue_id: rootcz-brno
@@ -197,7 +197,7 @@
   country: cz
   lang: cs
   course_id: terraform
-  name: Skoleni Terraform
+  name: Školení Terraform
   city: Brno
   price: 5999 CZK
   venue_id: rootcz-brno
@@ -210,7 +210,7 @@
   country: cz
   lang: cs
   course_id: proxmox
-  name: Skoleni Proxmox
+  name: Školení Proxmox
   city: Praha
   price: 5999 CZK
   venue_id: rootcz
@@ -222,7 +222,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Docker
+  name: Školení Docker
   city: Praha
   price: 11999 CZK
   venue_id: rootcz
@@ -234,7 +234,7 @@
   country: cz
   lang: cs
   course_id: gitlab-ci
-  name: Skoleni Gitlab CI
+  name: Školení Gitlab CI
   city: Praha
   price: 4999 CZK
   venue_id: rootcz
@@ -246,7 +246,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Praha
   price: 11999 CZK
   venue_id: rootcz
@@ -258,7 +258,7 @@
   country: cz
   lang: cs
   course_id: terraform
-  name: Skoleni Terraform
+  name: Školení Terraform
   city: Praha
   price: 5999 CZK
   venue_id: rootcz
@@ -271,7 +271,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Docker
+  name: Školení Docker
   city: Brno
   price: 11999 CZK
   venue_id: rootcz-brno
@@ -283,7 +283,7 @@
   country: cz
   lang: cs
   course_id: gitlab-ci
-  name: Skoleni Gitlab CI
+  name: Školení Gitlab CI
   city: Brno
   price: 4999 CZK
   venue_id: rootcz-brno
@@ -295,7 +295,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Brno
   price: 11999 CZK
   venue_id: rootcz-brno
@@ -307,7 +307,7 @@
   country: cz
   lang: cs
   course_id: proxmox
-  name: Skoleni Proxmox
+  name: Školení Proxmox
   city: Brno
   price: 5999 CZK
   venue_id: rootcz-brno
@@ -319,7 +319,7 @@
   country: cz
   lang: cs
   course_id: terraform
-  name: Skoleni Terraform
+  name: Školení Terraform
   city: Brno
   price: 5999 CZK
   venue_id: rootcz-brno
@@ -332,7 +332,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Docker
+  name: Školení Docker
   city: Praha
   price: 11999 CZK
   venue_id: anywhere
@@ -344,7 +344,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Praha
   price: 11999 CZK
   venue_id: rootcz-praha-3
@@ -356,7 +356,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Dockeru
+  name: Školení Dockeru
   city: Praha
   price: 11999 CZK
   venue_id: rootcz-praha-3
@@ -368,7 +368,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Dockeru
+  name: Školení Dockeru
   city: Brno
   price: 11999 CZK
   venue_id: rootcz-brno
@@ -380,7 +380,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Dockeru
+  name: Školení Dockeru
   city: Praha
   price: 11999 CZK
   venue_id: rootcz
@@ -392,7 +392,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Praha
   price: 11999 CZK
   venue_id: anywhere
@@ -404,7 +404,7 @@
   country: cz
   lang: cs
   course_id: kubernetes
-  name: Skoleni Kubernetes
+  name: Školení Kubernetes
   city: Praha
   price: 11999 CZK
   venue_id: rootcz
@@ -416,7 +416,7 @@
   country: cz
   lang: cs
   course_id: gitlab-ci
-  name: Skoleni Gitlab CI
+  name: Školení Gitlab CI
   city: Praha
   price: 4999 CZK
   venue_id: rootcz
@@ -428,7 +428,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Dockeru
+  name: Školení Dockeru
   city: Praha
   price: 11999 CZK
   venue_id: rootcz
@@ -440,7 +440,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Dockeru
+  name: Školení Dockeru
   city: Praha
   price: 11999 CZK
   venue_id: anywhere
@@ -452,7 +452,7 @@
   country: cz
   lang: cs
   course_id: docker
-  name: Skoleni Dockeru
+  name: Školení Dockeru
   city: Praha
   price: 11999 CZK
   venue_id: paralelni-polis
