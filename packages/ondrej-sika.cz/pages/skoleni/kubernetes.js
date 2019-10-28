@@ -3,6 +3,8 @@ import Course from "@app/ondrej-sika.cz/layouts/Course";
 export default props => (
   <Course
     lang={props.site.lang}
+    course_id="kubernetes"
+    show_sessions={true}
     course_title="Školení Kubernetes"
     logo="/static/kubernetes.png"
     price_self_funded="11 999 CZK"

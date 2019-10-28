@@ -3,6 +3,8 @@ import Course from "@app/ondrej-sika.cz/layouts/Course";
 export default props => (
   <Course
     lang={props.site.lang}
+    course_id="gitlab-ci"
+    show_sessions={true}
     course_title="Školení Gitlab CI"
     logo="/static/gitlab-ci.svg"
     price_self_funded="5 999 CZK"

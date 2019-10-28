@@ -2,6 +2,8 @@ import Course from "@app/ondrej-sika.cz/layouts/Course";
 
 export default props => (
   <Course
+    course_id="react"
+    show_sessions={true}
     lang={props.site.lang}
     course_title="Školení React"
     logo="/static/react.svg"

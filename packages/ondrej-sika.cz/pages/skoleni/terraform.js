@@ -2,6 +2,8 @@ import Course from "@app/ondrej-sika.cz/layouts/Course";
 
 export default props => (
   <Course
+    course_id="terraform"
+    show_sessions={true}
     lang={props.site.lang}
     course_title="Školení Terraform"
     logo="/static/terraform-color.png"
