@@ -4,7 +4,6 @@ import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
 import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
 import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
-import CompaniesBar1 from "@app/ondrej-sika.cz/static/webglobe-yegon-sq.png";
 
 import Head from "next/head";
 
@@ -53,15 +52,7 @@ const Index = () => (
         <br />
         Všechny kurzy a školení dělám v českém nebo anglickém jazyce.
       </TextWithImg>
-      <CompaniesBar
-        CompaniesBarHeader="Firmy se kterými spolupracuji"
-        CompaniesBar1="../static/webglobe-yegon-sq.png"
-        CompaniesBar2="../static/eltodo-sq.png"
-        CompaniesBar3="../static/eon-sq.jpg"
-        CompaniesBar4="../static/kb-sq.jpg"
-        CompaniesBar5="../static/dimension-data-sq.png"
-        CompaniesBar6="../static/aaa-auto-sq.png"
-      ></CompaniesBar>
+      <CompaniesBar />
     </div>
   </div>
 );
