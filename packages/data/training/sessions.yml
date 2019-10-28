@@ -26,7 +26,7 @@
   active: true
   country: cz
   lang: cs
-  course_id: docker
+  course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Brno
   price: 5999 CZK
