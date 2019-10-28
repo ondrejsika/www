@@ -9,7 +9,9 @@ class UpcomingSessions extends React.Component {
     db.add("sessions", sessions_file);
     db.setCursor("sessions");
     db.filter("country", this.props.location || "cz");
+    if (this.props.course_id) db.filter("course_id", this.props.course_id);
     db.filter("active", true);
+    if (this.props.limit) db.limit(this.props.limit);
     let sessions = db.get();
 
     return (
