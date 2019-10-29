@@ -4,15 +4,15 @@ import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 
 import Head from "next/head";
 
-const Index = () => (
+const Index = props => (
   <div>
     <Head>
-      <title>Školení - Ondřej Šika</title>
+      <title>Training - Ondřej Šika</title>
     </Head>
-    <MainBar MainBarHeader="Nabídka Školení" />
+    <MainBar MainBarHeader="Training" />
     <div className="container">
-      <LectureImgMdLg LectureImgHeader="Kurzy co školím" />
-      <LectureImgSm LectureImgHeader="Kurzy co školím" />
+      <LectureImgMdLg lang={props.site.lang} LectureImgHeader="My Training" />
+      <LectureImgSm lang={props.site.lang} LectureImgHeader="My Training" />
     </div>
   </div>
 );

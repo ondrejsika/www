@@ -4,29 +4,35 @@ import Markdown from "@app/common/components/Markdown";
 import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
 import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
 
-export default () => {
+export default props => {
   return (
     <>
       <Head>
-        <title>404 Stránka nenalezena - Ondrej Sika | ondrej-sika.cz</title>
+        <title>404 Not Found - Ondrej Sika | ondrej-sika.cz</title>
       </Head>
       <div className="bar-grey p-5">
-        <h1 className="text-center text-white">404 Stránka nenalezena</h1>
+        <h1 className="text-center text-white">404 Not Found</h1>
       </div>
       <div className="container pt-5">
         <Markdown
           source={`
-## Nenašli jste co hledáte ...
+## Don't found you are looking for ...
 
-Napište mi email na <ondrej@sika.io> a dejte mi vědět co potřebujete. Rád Vám pomohu.
+Send me and email <ondrej@sika.io> and let me know what you need. I'd like to help you.
 `}
         />
-        <LectureImgMdLg LectureImgHeader="... nebo se podivejte na kurzy co školím" />
-        <LectureImgSm LectureImgHeader="... nebo se podivejte na kurzy co školím" />
+        <LectureImgMdLg
+          lang={props.site.lang}
+          LectureImgHeader="... or look for my training"
+        />
+        <LectureImgSm
+          lang={props.site.lang}
+          LectureImgHeader="... or look for my training"
+        />
         <div className="mt-5" />
         <Markdown
           source={`
-Pokud něco nefunguje, dejte mi vědět na <ondrej@sika.io>
+If something doesnt work, report to me on <ondrej@sika.io>
 `}
         />
       </div>

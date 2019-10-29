@@ -7,52 +7,40 @@ import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
 
 import Head from "next/head";
 
-const Index = () => (
+const Index = props => (
   <div>
     <Head>
       <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
     </Head>
     <MainBar
-      MainBarHeader="IT & DevOps školení, konzultace a workshopy"
-      MainBarText="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
+      MainBarHeader="IT Training, Consulting and Workshops in Europe"
+      MainBarText="I'm boosting effectivity & productivity of software development teame by using tools which lead to faster development and reliable operation of software products."
     ></MainBar>
     <StatisticBar
       NumberOfPeople="650+"
-      NumberOfPeopleHeader="Počet odškolených lidí"
+      NumberOfPeopleHeader="Training attendees"
       NumberOfCompanies="100+"
-      NumberOfCompaniesHeader="Počet firem ve spolupráci"
+      NumberOfCompaniesHeader="Companies trained"
       NumberOfLectures="150+"
-      NumberOfLecturesHeader="Počet uskutečněných školení"
+      NumberOfLecturesHeader="Training sessions"
     />
 
     <div className="container">
-      <LectureImgMdLg LectureImgHeader="Kurzy co školím" />
-      <LectureImgSm LectureImgHeader="Kurzy co školím" />
-      <TextWithImg TextWithImgHeader="O mně">
-        Jmenuji se Ondřej, vývojem softwaru se zabývám od roku 2009 a od roku
-        2013 předávám své zkušenosti na školeních. Pracoval jsem pro malé firmy,
-        startupy i velké korporace s cílem zefektivnit jim proces vývoje,
-        testování a nasazování software.
+      <LectureImgMdLg lang={props.site.lang} LectureImgHeader="My Training" />
+      <LectureImgSm lang={props.site.lang} LectureImgHeader="My Training" />
+      <TextWithImg TextWithImgHeader="About me">
+        My name is Ondrej, I am a software engineer and DevOps consultant,
+        architect &amp; lecturer. I lead mostly Docker courses and CI; they are
+        both closely interrelated. I have worked for small companies, startups
+        to big corporations. I have four years of experience with training.
         <br />
         <br />
-        <h4>Školení</h4>
-        Předně se věnuji školení, všechny kurzy jsou formou workshopů (hands-on)
-        a stavím je na svých dlouholetých znalostech a zkušenostech z vývoje,
-        testování a provozování softwarových projektů.
-        <br />
-        <br />
-        Nástroje jako <a href="/skoleni/git">Git</a>,{" "}
-        <a href="/skoleni/docker">Docker</a>,{" "}
-        <a href="/skoleni/kubernetes">Kubernetes</a>,{" "}
-        <a href="/skoleni/ansible">Ansible</a> nebo{" "}
-        <a href="/skoleni/gitlab-ci">CI</a> používám na denní bázi, vše co
-        školím jsem použil v reálných projektech a mám s technologií osobní
-        zkušenost.
-        <br />
-        <br />
-        Všechny kurzy a školení dělám v českém nebo anglickém jazyce.
+        <h4>Training</h4>
+        All courses are perform as workshops (hands-on). They are build on my
+        long-term knowledge and experience in developing, testing and running
+        software projects.
       </TextWithImg>
-      <CompaniesBar />
+      <CompaniesBar lang={props.site.lang} />
     </div>
   </div>
 );

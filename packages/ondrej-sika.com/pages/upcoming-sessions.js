@@ -4,21 +4,14 @@ import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
 
 import Head from "next/head";
 
-import site from "@app/ondrej-sika.cz/config";
-
-let style = {
-  fontSize: "1.4em",
-  fontWeight: "bold"
-};
-
-const Index = () => (
+const Index = props => (
   <div>
     <Head>
-      <title>Veřejné termíny - Ondrej Sika</title>
+      <title>Upcoming Sessions - Ondrej Sika</title>
     </Head>
-    <MainBar MainBarHeader="Veřejné termíny školení" />
+    <MainBar MainBarHeader="Upcoming Sessions" />
     <div className="container pt-4">
-      <UpcomingSessions lang={site.lang} />
+      <UpcomingSessions lang={props.site.lang} />
     </div>
   </div>
 );

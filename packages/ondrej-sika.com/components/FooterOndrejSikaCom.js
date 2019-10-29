@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-const Footer = () => (
+const FooterOndrejSikaCom = () => (
   <div>
     <div className="footer mt-5">
       <div className="container pt-4 pb-4">
         <div className="row">
           <div className="col-md-3 col-sm-7 col-8 text-white">
-            <h3 className="text-white">Ondřej Šika</h3>
+            <h3 className="text-white">Ondrej Sika</h3>
             <p>
               <a href="mailto:ondrej@sika.io" className="a-underline">
                 ondrej@sika.io
@@ -19,31 +19,31 @@ const Footer = () => (
             <table className="contact-table table-borderless">
               <tbody>
                 <tr>
-                  <td>IČ:</td>
+                  <td style={{ paddingRight: "10px" }}>Company ID:</td>
                   <td>88114163</td>
                 </tr>
                 <tr>
-                  <td>DIČ:</td>
+                  <td>VAT ID:</td>
                   <td>CZ9302252102</td>
                 </tr>
-                <tr>
-                  <td>Účet:&nbsp;&nbsp;&nbsp;</td>
+                {/* <tr>
+                  <td>Bank Account:&nbsp;&nbsp;&nbsp;</td>
                   <td>2301432033/2010 (Fio)</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
           <div className="col-md-2 col-sm-5 col-4">
-            <h3 className="text-white">Moje Kurzy</h3>
+            <h3 className="text-white">Trainings</h3>
             <ul className="text-white">
               {[
-                ["Docker", "/skoleni/docker"],
-                ["Kubernetes", "/skoleni/kubernetes"],
-                ["Gitlab CI", "/skoleni/gitlab-ci"],
-                ["Git", "/skoleni/git"],
-                ["Ansible", "/skoleni/ansible"],
-                ["Terraform", "/skoleni/terraform"],
-                ["React & Next.js", "/skoleni/react"]
+                ["Docker", "/training/docker"],
+                ["Kubernetes", "/training/kubernetes"],
+                ["Gitlab CI", "/training/gitlab-ci"],
+                ["Git", "/training/git"],
+                ["Ansible", "/training/ansible"]
+                // ["Terraform", "/training/terraform"],
+                // ["React & Next.js", "/training/react"]
               ].map((el, i) => {
                 return (
                   <li key={i}>
@@ -56,16 +56,17 @@ const Footer = () => (
             </ul>
           </div>
           <div className="col-md-4 col-sm-12 pt-4 pt-md-0">
-            <h3 className="text-white">Zajímají Vás novinky?</h3>
+            <h3 className="text-white">Newsletter</h3>
             <p className="text-white">
-              Odebírejte můj newsletter a budete v obraze!
+              Are you interested in my work? Subscribe my newsletter and stay
+              update!
             </p>
             <div className="input-group pt-3">
               <a
                 className="btn btn-outline-header"
                 href="https://sika.link/newsletter"
               >
-                Přihlásit se k odběru článků a novinek
+                Subscribe my newsletter
               </a>
             </div>
           </div>
@@ -90,7 +91,7 @@ const Footer = () => (
             </a>
           </div>
         </div>
-        <p className="text-center">
+        {/* <p className="text-center">
           <a href="/lektorska-spoluprace" className="a-underline">
             Lektorska spoluprace
           </a>
@@ -106,7 +107,7 @@ const Footer = () => (
           <a href="/doporucte-me-prosim" className="a-underline">
             Doporučte mě prosím
           </a>
-        </p>
+        </p> */}
         <p className="text-center text-white fs-9 pt-4">
           Website by{" "}
           <a
@@ -122,4 +123,4 @@ const Footer = () => (
   </div>
 );
 
-export default Footer;
+export default FooterOndrejSikaCom;

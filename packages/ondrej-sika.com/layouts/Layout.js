@@ -4,7 +4,7 @@ import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import Navbar from "@app/ondrej-sika.cz/components/Navbar";
-import Footer from "@app/ondrej-sika.cz/components/Footer";
+import FooterOndrejSikaCom from "@app/ondrej-sika.com/components/FooterOndrejSikaCom";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 
 // Imported CSS
@@ -22,37 +22,37 @@ export default props => (
     </Head>
     <DevelopmentBar />
     <Navbar
-      NavName="Ondřej Šika"
-      NavUnderheader="Software {Engineer, Konzultant, Lektor}"
+      NavName="Ondrej Sika"
+      NavUnderheader="Software {Engineer, Consultant, Lecturer}"
       links={[
-        ["DOMŮ", "/"],
+        ["HOME", "/"],
         [
-          "KURZY",
+          "TRAINING",
           [
-            ["GIT", "/skoleni/git"],
-            ["GITLAB CI", "/skoleni/gitlab-ci"],
-            ["DOCKER", "/skoleni/docker"],
-            ["KUBERNETES", "/skoleni/kubernetes"],
-            ["ANSIBLE", "/skoleni/ansible"],
-            ["TERRAFORM", "/skoleni/terraform"],
-            ["REACT & NEXT.JS", "/skoleni/react"]
+            ["GIT", "/training/git"],
+            ["GITLAB CI", "/training/gitlab-ci"],
+            ["DOCKER", "/training/docker"],
+            ["KUBERNETES", "/training/kubernetes"],
+            ["ANSIBLE", "/training/ansible"]
+            // ["TERRAFORM", "/training/terraform"],
+            // ["REACT & NEXT.JS", "/training/react"]
           ]
         ],
-        ["TERMÍNY", "/verejne-terminy"],
-        [
-          "NÁVODY & ČLÁNKY",
-          [
-            ["BLOG", "/blog"],
-            ["NÁVODY", "/navody"],
-            ["ČLÁNKY", "/clanky"],
-            ["REPOZITÁŘE", "/repozitare"]
-          ]
-        ],
-        ["KONTAKT", "/kontakt"]
+        ["UPCOMING SESSIONS", "/upcoming-sessions"],
+        // [
+        //   "TUTORIALS & ARTICLES",
+        //   [
+        //     // ["BLOG", "/blog"],
+        //     ["TUTORIALS", "/tutorials"],
+        //     ["ARTICLES", "/articles"],
+        //     ["REPOSITORIES", "/repozitare"]
+        //   ]
+        // ],
+        ["CONTACT", "/contact"]
       ]}
     />
     <div className="content">{props.children}</div>
-    <Footer />
+    <FooterOndrejSikaCom />
     <BootstrapJS />
     <Gauges gauges_site_id={props.site.gauges_site_id} />
     <GoogleAnalytics
