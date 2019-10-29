@@ -1,0 +1,15 @@
+/blog/2019/terraform-prednaska-linuxdays-2019 /blog/terraform-prednaska-linuxdays-2019
+/blog/2019/react-next-workshop-linuxdays-2019 /blog/react-next-workshop-linuxdays-2019
+/blog/2019/terminy-skoleni-podzim-2019/ /blog/terminy-skoleni-podzim-2019
+/blog/2019/mac-os-vs-debian-i3 /blog/mac-os-vs-debian-i3
+/blog/2019/emaily-v-jedne-domene-na-google-i-na-svem-serveru /blog/emaily-v-jedne-domene-na-google-i-na-svem-serveru
+/blog/2018/talk-gitlab-ci-docker-linux-days-2018 /blog/talk-gitlab-ci-docker-linux-days-2018
+/blog/2019/talk-uvod-do-pouzivani-dockeru-teched-2018 /blog/talk-uvod-do-pouzivani-dockeru-teched-2018
+/blog/2018/talk-automatizace-pomoci-gitlab-gi-a-dockeru /blog/talk-automatizace-pomoci-gitlab-gi-a-dockeru
+/blog/2018/plzensky-barcamp-lightning-network-aneb-bitcoin-2.0 /blog/plzensky-barcamp-lightning-network-aneb-bitcoin-2.0
+/blog/2018/tunelovani-git-konfigurace-na-server-prez-ssh-aneb-konec-commitum-root-root@debian /blog/tunelovani-git-konfigurace-na-server-prez-ssh-aneb-konec-commitum-root-root@debian
+/blog/2018/python-libraries-for-bitcoin-and-ethereum-pycon-sk-2018 /blog/python-libraries-for-bitcoin-and-ethereum-pycon-sk-2018
+/blog/2018/i3–tiling-window-manager-install-fest-2018 /blog/i3–tiling-window-manager-install-fest-2018
+/blog/2018/jake-knapp-sprint /blog/jake-knapp-sprint
+/blog/2018/prednaska-o-dockeru-ve-zline-8-2-2018 /blog/prednaska-o-dockeru-ve-zline-8-2-2018
+/blog/2018/prednaska-o-dockeru-v-olomouci-30-1-2017 /blog/prednaska-o-dockeru-v-olomouci-30-1-2017

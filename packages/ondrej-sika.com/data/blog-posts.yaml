@@ -1,0 +1,279 @@
+- id: terraform-prednaska-linuxdays-2019
+  url: /blog/2019/terraform-prednaska-linuxdays-2019
+  title: Terraform prednaska na LinuxDays 2019
+  date: 6. 10. 2019
+  perex: |
+    Slides, video a ukazka kodu z me prednasky o Terraformu.
+  content: |
+
+    Slides z prednasky na Speaker Deck: <https://speakerdeck.com/ondrejsika/terraform-infrastructure-as-a-code>
+
+    Ukazkovy projekt: [ondrejsika/linuxdays2019-terraform](https://github.com/ondrejsika/linuxdays2019-terraform)
+
+    Video zaznam na YouTube: <https://www.youtube.com/watch?list=PLlTxFw5y5UZtIUJgYb-aEcjV21x8TGgLx&v=-u4OOoJd6ck>
+
+    Zajima vas Terraform? Muzete prijit na moje [Skoleni Terraformu](/skoleni/terraform)
+
+- id: react-next-workshop-linuxdays-2019
+  url: /blog/2019/react-next-workshop-linuxdays-2019
+  title: React & Next.js Workshop na LinuxDays 2019
+  date: 5. 10. 2019
+  perex: |
+    Dnes jsem mel workshop na LinuxDays, zde jesou materialy a ukazkovy projekt.
+  content: |
+    "Slides" pro workshop: [ondrejsika/linuxdays2019-react](https://github.com/ondrejsika/linuxdays2019-react)
+
+    Ukazkovy projekt: [ondrejsika/linuxdays2019-react--example](https://github.com/ondrejsika/linuxdays2019-react--example)
+
+    Nestihli jste workshop na LinuxDays? Nevadi, muzete prijit na moje [Skoleni Reactu](/skoleni/react)
+
+- id: terminy-skoleni-podzim-2019
+  url: /blog/2019/terminy-skoleni-podzim-2019
+  title: Terminy skoleni na podzim 2019
+  date: 4. 10. 2019
+  perex: |
+    Mate zajem o nejake me skoleni? Zde jsou terminy do konce roku 2019.
+  content: |
+    Tento rok uz mam skoro cely vybookovany a tak nabizim terminy kdy mam vypsane verejne terminy kam se muzete prihlasit pripadne kam muzete poslat vase vyvojare. Vypsane mam terminy Dockeru, Kubernetes a Gitlab CI, muzete se podivat na stranku [Verejne Terminy](/verejne-terminy). Pokud mate zajem o jiny kurz, napiste mi mail a domluvime se.
+
+- id: mac-os-vs-debian-i3
+  url: /blog/2019/mac-os-vs-debian-i3
+  title: Mac OS vs Debian + i3
+  date: 5. 2. 2019
+  perex: |
+    Chci si koupit Mac. Uz po čtvrtém jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkam, zda by pro me nebyl i MacOS. Předchozí tři pokusy byli neuspěšné, na Mac se mi nepodařilo přejít. Ted to zkouším po čtvrté.
+  content: |
+    Chci si koupit Mac. Uz po čtvrtém jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkam, zda by pro me nebyl i MacOS. Předchozí tři pokusy byli neuspěšné, na Mac se mi nepodařilo přejít. Ted to zkouším po čtvrté.
+
+    Chtěl bych zjistit zda to půjde. Začnu tím, proč bych na Mac přešel. Nebudu teď řešit cenu, ta je sice vyšší, ale jsem ochotny ji zaplatit.
+
+    ### Výhody Macu
+    - Synchronizace mezi zařízeními &#8211; Telefon, Počítač
+    - Funkční tiskárny, wifi, projektor, &#8230;
+    - Unifikované klávesové skratky (skrz aplikace, skrz zařízení)
+    - Hotspot
+
+    ### Výhody Debianu s i3
+    - Efektivní window manger (i3)
+    - Nativní Docker
+    - Mnohem větší výkon za lepší cenu
+
+    ### Nevýhody Macu
+    - Naprosto strašna práce s okny klávesnici
+    - Minimalni velikost oken
+
+    ### Nevýhody Debianu s i3
+    - Připojení monitoru
+    - Tiskárny
+
+    #### Window Manager i3
+
+    Tohle je asi nejdůležitější věc proč jsem nikdy nepřešel na Mac. i3 je prostě naprosto dokonalý, skvěle se ovládá, perfektně pracuje s více monitory. Nemám k němu žádnou výhradu.
+
+    #### Wifi Hotspot
+    Na Macu je skvěle sdílení internetu z iPhone a iPadu do Mácu. Otevřu Mac, kliknu na ikonu Wifi a výběru si zda chci internet z telefonu nebo iPadu. Nemusím nic vyndávat z kapes a pouštět hotspot. Prostě to funguje.
+
+- id: emaily-v-jedne-domene-na-google-i-na-svem-serveru
+  url: /blog/2019/emaily-v-jedne-domene-na-google-i-na-svem-serveru
+  title: Emaily v jedné doméně na Google i na svém serveru
+  date: 10. 1. 2019
+  perex: |
+    Chci si koupit Mac. Už po třetí jej testují. Mám iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkám, zda by pro mě nebyl i MacOS. Předchozí dva pokusí byli neúspěšně, na Mac se mi nepodařilo přejít. Ted to skousim po třetí.
+  content: |
+    Je možné mít emaily v jedné doméně jako ondrej@example.com na G Suite a monitoring@example.com na svém serverů? Ano, jde a není to těžké.
+
+    Používám G Suite z mnoha důvodů. Je to stabilní email, který fuguje i když zbytek mě infrastruktury spadne, doručuje se do inboxu a nemusím řešit spam listy, mám na Google kalendář, kontakty a G Suite. To jsou asi hlavní důvody proč jej používám.
+
+    Na druhou stranu, email účet stojí 4 EUR měsíčně a postu si organizují do více účtu. Dělám to zase z více důvodů, dobře se mi s tím pracuje a některé emaily chci sdílet s a některé ne. Nechci také stahovat všechny emaily na mobilů, zvlášť ty, které nemusím řešit akutně a chodí jich hodně. Stejně tak mi vadí filtrování Googlim způsobem narozdíl od standartniho Sieve. Není to možná nejlepší způsob, ale mě vyhovuje.
+
+    Dejme tomu že používám doménu example.com. Používat email ondrej@example.com jako hlavní, ondrejsika@example.com na většinu služeb a webu (jako například ondrejsika+alza@example.com nebo ondrejsika+netflix@example.com), monitoring@example.com pro notifikace z monitoringu, wp@example.com pro notifikace z Worpresu a podobně.
+
+    Jelikož Google chce za každý účet v G Suite 4 EUR, platil bych zbytečně moc za služby které nechci. U těchto emailu nemusím řešit ani spam, většinou z nich nic neposílám.
+
+    Moje dosavadní řešení bylo na svém serverů mít doménu int.example.com (int jako internal) a na ní mít tyto emaily (například ondrejsika@int.example.com, wp@int.example.com).
+
+    Toto řešení se mi nakonec přestalo líbit. Povedlo se mi totiž docílit toho, že emaily mohu mít v hezkém formátu (ondrejsika@example.com, wp@example.com) a nepoužívat více účtu v G Suitě. Ukážu Vám jak na to.
+
+    Provozují vlastní emailový server Poště.io. Je to jeden Docker kontejner, který obsahuje SMTP, IMAP, webmail a Admin. Vytvořili to češi, je to fakt super. V něm jsem si vytvořil virtuální doménu example.com, na které si vytvářím jednotlivé účty. Dále jsem si vytvoří doménu gin.example.com (Google INput, podobnost s alkoholem náhodná), kterou jsem přesměroval na example.com, což znamená že všechny emaily pro účty na gin.example.com se bude doručovat do schránek v doméně example.com. Používá se to například když máte alias domény s pomlčkou a chcete doručovat emaily na obě domény (například ondrej@my-domain.com -> ondrej@mydomain.com, alice@my-domain.com -> alice@mydomain.com).
+
+    MX DNS záznamy domény example.com nechám na Google a MX pro gin.example.com nastavím na můj mailserver. Vypadá to asi takto:
+
+        sika@sika-x250:~$ host example.com
+        example.com mail is handled by 10 aspmx.l.google.com.
+        example.com mail is handled by 20 alt1.aspmx.l.google.com.
+        sika@sika-x250:~$ host gin.example.com
+        gin.example.com mail is handled by 10 mail.example.com.
+        sika@sika-x250:~$
+
+    V G Suitě nastavím mému uživateli aliasy pro tyto jména (ondrejsika@example.com, wp@example.com) nebo doménový koš (akceptuje všechny emaly (cokoliv@example.com). Potom nastavím přesměrování těchto emailu na emaily v gin.example.com doméně (která je interně doručuje na example.com). Poště.io nedělá DNS resilution pro domény, se kterými pracuje a proto se nepodívá že example.com má být na Google, ale email doručí lokálnímu účtu. A to je celé. Stacu přidat nové emaily do mailoveho klienta.
+
+    Pokud mám správné nastavené SPF, mohu emaily z domény i odesílat a ano, budou ve složce odeslána pošta.
+- id: talk-gitlab-ci-docker-linux-days-2018
+  url: /blog/2018/talk-gitlab-ci-docker-linux-days-2018
+  title: |
+    Talk: Gitlab CI + Docker (Linux Days 2018)
+  date: 6. 10. 2018
+  perex: |
+      Slidy k přednášce a workshopu na Linux Days 2018.
+  content: |
+    DOPLNIT SLIDY
+    Repozitar: https://github.com/ondrejsika/linuxdays2018
+    Resources:
+
+    Setup of Gitlab Runner in Docker: [https://github.com/ondrejsika/gitlab-ci-runner](https://github.com/ondrejsika/gitlab-ci-runner)
+    Run Traefik with SSL: [https://github.com/ondrejsika/traefik-ssl](https://github.com/ondrejsika/traefik-ssl)
+    Docker image ondrejsika/ci: [https://github.com/ondrejsika/ondrejsika-ci-docker](https://github.com/ondrejsika/ondrejsika-ci-docker)
+- id: talk-uvod-do-pouzivani-dockeru-teched-2018
+  url: /blog/2019/talk-uvod-do-pouzivani-dockeru-teched-2018
+  title: |
+    Talk: Úvod do používání Dockeru, TechEd 2018
+  date: 16. 5. 2018
+  perex: |
+    Slidy a zdrojáky z mé přednášky na konferenci TechEd 2018.
+  content: |
+    DOPLNIT SLIDY
+
+    Demo: https://github.com/ondrejsika/teched18
+    Slides: https://speakerdeck.com/ondrejsika/teched-2018-introduction-to-docker
+- id: talk-automatizace-pomoci-gitlab-gi-a-dockeru
+  url: /blog/2018/talk-automatizace-pomoci-gitlab-gi-a-dockeru
+  title: |
+    Talk: Automatizace pomoci Gitlab CI a Dockeru
+  date: 21. 4. 2018
+  perex: Slides z přednášky na DevHeaven.
+  content: |
+    Zdroje:
+    - [https://github.com/ondrejsika/jekyll-demo](https://github.com/ondrejsika/jekyll-demo)
+    - [https://github.com/ondrejsika/traefik-ssl](https://github.com/ondrejsika/traefik-ssl)
+    - [https://github.com/ondrejsika/gitlab-ci-runner](https://github.com/ondrejsika/gitlab-ci-runner)
+    - [https://github.com/ondrejsika/ondrejsika-ci-docker](https://github.com/ondrejsika/ondrejsika-ci-docker)
+
+    Mate zajem o skoleni [Dockeru](/), [Gitu](/) nebo [CI](/)?
+
+- id: plzensky-barcamp-lightning-network-aneb-bitcoin-2.0
+  url: .blog/2018/plzensky-barcamp-lightning-network-aneb-bitcoin-2.0
+  title: |
+    Plzensky Barcamp: Lightning Network aneb Bitcoin 2.0
+  date: 7. 4. 2018
+  perex: |
+      Slidy a zdrojáky k demo ukázce LN na Plzeňském Barcampu.
+  content: |
+    Slides a zdrojáky k demo ukázce LN na Plzeňském Barcampu.
+    Zdrojové kódy ukázky:  [https://github.com/ondrejsika/lightning-example](https://github.com/ondrejsika/lightning-example)
+    Slides v PDF: [https://speakerd.s3.amazonaws.com/…/Lightning_Network_aneb_Bitcoin_2.0.pdf](https://speakerd.s3.amazonaws.com/…/Lightning_Network_aneb_Bitcoin_2.0.pdf)
+
+    DOPLNIT SLIDY
+
+- id: tunelovani-git-konfigurace-na-server-prez-ssh-aneb-konec-commitum-root-root@debian
+  url: /blog/2018/tunelovani-git-konfigurace-na-server-prez-ssh-aneb-konec-commitum-root-root@debian
+  title: Tunelovani GIT konfigurace na server prez SSH aneb konec commitum root root@debian
+  date: 21. 3. 2018
+  perex: |
+    Určitě se vám někdy stalo, že jste něco commitovali na serverů a do historie jste si zavlekly něco jako: commit 8f160534070012c87c409e5b19028ad0062f0310 Author: root <root@debian> Date: Wed Jun 26 17:16:31 2013 +0000 blocks.pickle, peers.pickle added to .gitignore commit 96e83891bfdcad41c545220e1957fba1ba72c2cd Author: root&#8230;
+  content: |
+    Urcite se vam nekdy stalo, ze jste neco commitovali na serveru a do historie jste si zavlekly neco jako:
+
+    ```
+    commit 8f160534070012c87c409e5b19028ad0062f0310
+    Author: root <root@debian>
+    Date: Wed Jun 26 17:16:31 2013 +0000
+    blocks.pickle, peers.pickle added to .gitignore
+    ```
+    Asi to znate. Ale nastavit uzivatele a email na serveru neni nejlepsi reseni, protoze muze pristupovat vice lidi a kazdy chce vytvaret commity pod svym jmenem.
+
+    ### SSH forward proměnných
+    Resenim muze byt posilani environment promenych po SSH. Vyzaduje to sice zmenu nastaveni SSH serveru, ale je to jediny zpusob jak nastavit prostredi Gitu automaticky pro konkretniho uzivatele.
+    #### Na lokalnim pocitaci
+    Na straně klienta musíme mít v bashrc vyexportované proměnné, které nastavují v Gitu jméno a email pro autora i commitera. Jsou to tyto proměnné:
+
+        export GIT_AUTHOR_NAME="Ondrej Sika"
+        export GIT_AUTHOR_EMAIL="ondrej@ondrejsika.com"
+        export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
+        export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
+
+    a je jestě nutné tyto proměnné posílat při SSH spojení. To se dá globálně povolit v SSH konfigu (.ssh/config) takto:
+        Host *
+            SendEnv GIT_*
+    A to je na straně klienta vše.
+    #### Na serveru
+    Na serverů je nutné povolit přijímání env proměnných Gitu. Do souboru /etc/ssh/sshd_config je nutné přidat následující řádku:
+    ```
+    AcceptEnv GIT_*
+    ```
+    A pak jen restartovat SSH server (service ssh restart), odpojit a připojit se znovu. Zda vše zafungovalo, zjistíte když si vypíšete proměnné prostředí pomoci:
+    ```
+    root@debian:~# env | grep GIT
+    GIT_COMMITTER_NAME=Ondrej Sika
+    GIT_COMMITTER_EMAIL=ondrej@ondrejsika.com
+    GIT_AUTHOR_NAME=Ondrej Sika
+    GIT_AUTHOR_EMAIL=ondrej@ondrejsika.com
+    ```
+    Ted uz vse funguje, dalsi commit na serveru bude uz se spravnym autorem.
+
+- id: python-libraries-for-bitcoin-and-ethereum-pycon-sk-2018
+  url: /blog/2018/python-libraries-for-bitcoin-and-ethereum-pycon-sk-2018
+  title: Python Libraries for Bitcoin and Ethereum (PyCon SK 2018)
+  date: 10. 3. 2018
+  perex: |
+    Slidy z přednášky o knihovnách pro práci s Bitcoinem a Ethereem z PyCon SK 2018
+  content: |
+    Slidy z přednášky o knihovnách pro práci s Bitcoinem a Ethereem z PyCon SK 2018
+
+    VLOZIT SLIDY
+
+    Code examples: [https://github.com/ondrejsika/examples–bitcoin-ethereum-python-tools](https://github.com/ondrejsika/examples–bitcoin-ethereum-python-tools)
+
+    Slides in PDF: [PDF](/)
+
+- id: i3–tiling-window-manager-install-fest-2018
+  url: /blog/2018/i3–tiling-window-manager-install-fest-2018
+  title: i3 – tiling window manager (Install Fest 2018)
+  date: 3. 3. 2018
+  perex: |
+    Slidy z mé přednášky o i3 windows manageru.
+  content: |
+    Slidy z mé přednášky o i3 windows manageru.
+
+    VLOZIT SLIDY
+
+    My i3 config: https://github.com/ondrejsika/i3-config
+
+    Slides: [https://speakerdeck.com/ondrejsika/i3-tiling-window-manager-install-fest-2018](https://speakerdeck.com/ondrejsika/i3-tiling-window-manager-install-fest-2018)<br/>
+    Slides [PDF]: [https://speakerd.s3.amazonaws.com/…/Install_Fest_2018_-_i3wm.pdf](https://speakerd.s3.amazonaws.com/presentations/0b309db6aa8140fd897065dd25d04f61/Install_Fest_2018_-_i3wm.pdf)
+
+- id: jake-knapp-sprint
+  url: /blog/2018/jake-knapp-sprint
+  title: |
+    Jake Knapp: Sprint
+  date: 18. 2. 2018
+  perex: |
+    Právě jsem dočetl knížku Sprint od lidí z Google Ventrures. Když jsem si knížku kupoval, myslel jsem si že si kupují návod jak ryche udělat nějaký projekt. Ale o tom knížka vůbec není … Kniha Sprint popisuje jak otestovat nápad…
+  content: |
+    Právě jsem dočetl knížku Sprint od lidí z Google Ventrures. Když jsem si knížku kupoval, myslel jsem si že si kupují návod jak ryche udělat nějaký projekt. Ale o tom knížka vůbec není …<br/>
+
+    Kniha Sprint popisuje jak otestovat nápad za týden. A nápad může být jakkoliv bláznivý. Vlastně čím bláznivější, tím je to téma vhodnější pro sprint. Riskují vlastně jen týden a v pátek budu mít hmatatelné výsledky, zda můj projekt může fungovat či nikoliv.<br/>
+
+    V knížce se dozvíte jak nápad vhodné zvolit, jak na něm v teamu pracovat, vytvořit prototyp a vyzkoušet na zákaznících. Je nutná trocha představivosti, ale sprintem můžete testovat prakticky všechno. Od navržení prodejny nebo ordinace, prez software nebo weby až po hardwarové produkty.<br/>
+
+    Mnohé techniky z knihy se dají použít i mimo týdenní sprint, třeba když potřebujete společně něco vymyslet. Jsou lepší metody než brainstorming – ten podle autorů vůbec nefunguje. Také kvalitiativni rozhovory se zákazníky jsou velmi zajímavá oblast.<br/>
+
+    Už se těším až sprint, nebo nějakou jeho část či upravenou variantu (i když to příliš nedoporučují) vyzkouším na nějakém reálném projektu. Přemýšlím i o použití ve skautském oddlilu. Až si udělám osobní zkušenost se sprintem jak ho popisují v knize, určitě o tom napíši.<br/>
+
+    Rád knihu půjčím: [https://distlib.com/ondrejsika/169/](https://distlib.com/ondrejsika/169/)<br/>
+    Nebo ji můžete zakoupit: [https://www.melvil.cz/kniha-sprint/](https://www.melvil.cz/kniha-sprint/)
+- id: prednaska-o-dockeru-ve-zline-8-2-2018
+  url: /blog/2018/prednaska-o-dockeru-ve-zline-8-2-2018
+  title: |
+    Přednáška o Dockeru ve Zlíně 8. 2. 2018
+  date: 8. 2. 2018
+  perex: |
+  content: |
+- id: prednaska-o-dockeru-v-olomouci-30-1-2017
+  url: /blog/2018/prednaska-o-dockeru-v-olomouci-30-1-2017
+  title: |
+    Přednáška o Dockeru v Olomouci 30. 11. 2017
+  date: 30. 11. 2017
+  perex: |
+  content: |
+
+
