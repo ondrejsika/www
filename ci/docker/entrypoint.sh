@@ -9,6 +9,7 @@ echo "map \$request_uri \$redirect_uri {" >> /etc/nginx/redirects.conf
 while read line; do
   [ -z "$line" ] && continue
   echo "$line;" >> /etc/nginx/redirects.conf
+  echo "$line;" | sed 's/ /\/ /g' >> /etc/nginx/redirects.conf
 done </usr/share/nginx/html/redirects.txt
 
 echo "}" >> /etc/nginx/redirects.conf
