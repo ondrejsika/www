@@ -1,14 +1,13 @@
-import Head from "next/head";
-import React from "react";
+import BootstrapJS from "@app/common/components/BootstrapJS";
+import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
-import DevelopmentBar from "@app/common/components/DevelopmentBar";
-import Navbar from "@app/ondrej-sika.cz/components/Navbar";
 import FooterOndrejSikaCom from "@app/ondrej-sika.com/components/FooterOndrejSikaCom";
-import BootstrapJS from "@app/common/components/BootstrapJS";
-
+import Navbar from "@app/ondrej-sika.cz/components/Navbar";
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
+import Head from "next/head";
+import React from "react";
 
 export default props => (
   <div>

@@ -1,9 +1,7 @@
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import Link from "next/link";
-
-import Head from "next/head";
-
 import posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
+import Head from "next/head";
+import Link from "next/link";
 
 class Blog extends React.Component {
   render() {

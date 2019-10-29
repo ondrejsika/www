@@ -1,7 +1,5 @@
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-
 import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
-
 import Head from "next/head";
 
 const Index = props => (

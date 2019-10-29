@@ -1,10 +1,9 @@
+import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
 import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
 import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
 import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
-import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
-
+import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
 import Head from "next/head";
 
 const Index = props => (

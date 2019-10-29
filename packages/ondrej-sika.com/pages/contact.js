@@ -1,6 +1,5 @@
-import Head from "next/head";
-import Link from "next/link";
 import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
+import Head from "next/head";
 
 const Index = props => (
   <div>
