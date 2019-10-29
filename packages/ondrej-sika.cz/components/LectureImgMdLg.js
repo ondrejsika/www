@@ -63,29 +63,43 @@ const LectureImg = props => {
               ></img>
             </a>
           </div>
-          <div className="box " id="terraform">
-            <h4 className="text-center text-white course-header pt-3">
-              <a href={`/${training}/terraform`} className="course-header">
-                TERRAFORM
-              </a>
-            </h4>
-            <a href={`/${training}/terraform`}>
-              <img
-                src="/static/terraform-white.png"
-                className="img img-fluid p-3"
-              ></img>
-            </a>
-          </div>
-          <div className="box " id="react">
-            <h4 className="text-center text-white course-header pt-3">
-              <a href={`/${training}/react`} className="course-header">
-                REACT
-              </a>
-            </h4>
-            <a href={`/${training}/react`}>
-              <img src="/static/react.svg" className="img img-fluid p-3"></img>
-            </a>
-          </div>
+          {(() => {
+            if (!props.lang || props.lang == "cs") {
+              return (
+                <>
+                  <div className="box " id="terraform">
+                    <h4 className="text-center text-white course-header pt-3">
+                      <a
+                        href={`/${training}/terraform`}
+                        className="course-header"
+                      >
+                        TERRAFORM
+                      </a>
+                    </h4>
+                    <a href={`/${training}/terraform`}>
+                      <img
+                        src="/static/terraform-white.png"
+                        className="img img-fluid p-3"
+                      ></img>
+                    </a>
+                  </div>
+                  <div className="box " id="react">
+                    <h4 className="text-center text-white course-header pt-3">
+                      <a href={`/${training}/react`} className="course-header">
+                        REACT
+                      </a>
+                    </h4>
+                    <a href={`/${training}/react`}>
+                      <img
+                        src="/static/react.svg"
+                        className="img img-fluid p-3"
+                      ></img>
+                    </a>
+                  </div>
+                </>
+              );
+            }
+          })()}
         </div>
       </div>
     </div>
