@@ -4,7 +4,6 @@ import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
 import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
 import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
-import CompaniesBar1 from "@app/ondrej-sika.cz/static/webglobe-yegon-sq.png";
 
 import Head from "next/head";
 import ContactPage from "../components/ContactPage";
@@ -56,15 +55,7 @@ const Index = () => (
         <br />
         <br />I offer open session and in-house training for all my courses.
       </TextWithImg>
-      <CompaniesBar
-        CompaniesBarHeader="I'm trusted by enterpises as well as startups"
-        CompaniesBar1="../static/webglobe-yegon-sq.png"
-        CompaniesBar2="../static/eltodo-sq.png"
-        CompaniesBar3="../static/eon-sq.jpg"
-        CompaniesBar4="../static/kb-sq.jpg"
-        CompaniesBar5="../static/dimension-data-sq.png"
-        CompaniesBar6="../static/aaa-auto-sq.png"
-      />
+      <CompaniesBar />
     </div>
     <ContactPage />
   </div>
