@@ -8,30 +8,37 @@ class UpcomingSessions extends React.Component {
     let db = new StaticDB();
     db.add("sessions", sessions_file);
     db.setCursor("sessions");
-    db.filter("country", this.props.location || "cz");
+    if (this.props.location) db.filter("country", this.props.location);
     if (this.props.course_id) db.filter("course_id", this.props.course_id);
     db.filter("active", true);
     if (this.props.limit) db.limit(this.props.limit);
     let sessions = db.get();
+
+    let site_name = this.props.site_name || "ondrej-sika";
+    let inquiry_email = this.props.inquiry_email || "ondrej@sika.io";
 
     return (
       <table className="table table-hover">
         <thead>
           <tr>
             <th scope="col" className="col-main">
-              <Translate lang={this.props.lang} cs="NÁZEV ŠKOLENÍ" />
+              <Translate
+                lang={this.props.lang}
+                cs="NÁZEV ŠKOLENÍ"
+                en="COURSE"
+              />
             </th>
             <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="MÍSTO" />
+              <Translate lang={this.props.lang} cs="MÍSTO" en="VENUE" />
             </th>
             <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="DATUM" />
+              <Translate lang={this.props.lang} cs="DATUM" en="DATE" />
             </th>
             <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="CENA" />
+              <Translate lang={this.props.lang} cs="CENA" en="PRICE" />
             </th>
             <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="DÉLKA" />
+              <Translate lang={this.props.lang} cs="DÉLKA" en="LEGTH" />
             </th>
             <th />
           </tr>
@@ -53,10 +60,14 @@ class UpcomingSessions extends React.Component {
                 <td>{course.length}</td>
                 <td scope="row">
                   <a
-                    href={`/registrace?` + course.id}
+                    href={`mailto:${inquiry_email}?subject=[${site_name}] Request for Training: ${course.name}, ${course.date_from} (${course.id})`}
                     className="btn btn-success btn-sm"
                   >
-                    Registrovat
+                    <Translate
+                      lang={this.props.lang}
+                      cs="Registrovat"
+                      en="Register"
+                    />
                   </a>
                 </td>
               </tr>
