@@ -24,8 +24,7 @@ const Index = props => (
             <br />
             <a href="mailto:ondrej@sika.io?subject=Poptavka skoleni">
               ondrej@sika.io
-            </a>{" "}
-            (<a href="/pgp">PGP</a>)
+            </a>
           </p>
           <p className="pb-4">
             <a href="https://linkedin.com/in/ondrejsika">
