@@ -26,9 +26,7 @@ function buildExportPathMap(custom_exclude_paths) {
   try {
     var posts = yaml.safeLoad(fs.readFileSync("data/blog-posts.yaml", "utf8"));
     posts.forEach(function(post) {
-      var path = post.url;
-
-      out[path] = { page: "/blog-post", query: { post_id: post.id } };
+      out[`/blog/${post.id}`] = { page: "/blog/[id]", query: { id: post.id } };
     });
   } catch (e) {
     console.log(e);
@@ -39,7 +37,7 @@ function buildExportPathMap(custom_exclude_paths) {
 module.exports = {
   exportTrailingSlash: true,
   exportPathMap: function() {
-    return buildExportPathMap(["/blog-post"]);
+    return buildExportPathMap(["/blog/[id]"]);
   },
   webpack: function(config) {
     config.plugins.push(
