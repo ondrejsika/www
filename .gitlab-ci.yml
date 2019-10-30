@@ -3344,3 +3344,86 @@ ondrej-sika.com prod deploy:
     url: https://ondrej-sika.com
   dependencies: []
 
+sikahq.com build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/sikahq.com/out
+    - yarn run static-sikahq.com
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sikahq.com/**/*
+      - yarn.lock
+  artifacts:
+    name: sikahq.com
+    paths:
+      - packages/sikahq.com/out
+
+
+sikahq.com build docker:
+  dependencies:
+    - sikahq.com build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/sikahq.com/
+    - docker build -t registry.sikahq.com/www/www/sikahq.com packages/sikahq.com
+    - rm packages/sikahq.com/Dockerfile
+    - rm packages/sikahq.com/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/sikahq.com
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sikahq.com/**/*
+      - yarn.lock
+
+sikahq.com dev deploy:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sikahq.com&domain=sikahq.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    - master
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sikahq.com/**/*
+      - yarn.lock
+  environment:
+    name: dev sikahq.com
+    url: https://sikahq.com.xsika.cz
+  dependencies: []
+
+sikahq.com prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sikahq.com&domain=sikahq.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sikahq.com/**/*
+      - yarn.lock
+  environment:
+    name: prod sikahq.com
+    url: https://sikahq.com
+  dependencies: []
+
