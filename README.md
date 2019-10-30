@@ -1,8 +1,15 @@
 # Ondrej Sika's Webs
 
     2019 Ondrej Sika <ondrej@ondrejsika.com>
+    https://github.com/ondrejsika/ondrejsikawebs
+    https://gitlab.sikahq.com/www/www
 
 ## Development Guide
+
+Development is on Gitlab - <https://gitlab.sikahq.com/www/www>
+
+- [Issues](https://gitlab.sikahq.com/www/www/issues)
+
 
 ### Run in Development Mode
 
