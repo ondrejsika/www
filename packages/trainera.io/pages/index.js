@@ -14,8 +14,8 @@ const Index = () => (
       <h2>Kontakt</h2>
       <p>
         Poptávky služeb školení a konzultace posílejte na{" "}
-        <a href="mailto:deals@trainera.io" style={{ fontWeight: "bold" }}>
-          deals@trainera.io
+        <a href="mailto:sales@trainera.io" style={{ fontWeight: "bold" }}>
+          sales@trainera.io
         </a>
       </p>
       <p>
