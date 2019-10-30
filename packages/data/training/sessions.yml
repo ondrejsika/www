@@ -34,6 +34,1591 @@
   length: 1 den
   date_from: 26.11.2019
   date_to: 26.11.2019
+
+# EuropeTour 2020 January
+# Germany
+# Berlin
+- id: docker-berlin-13-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Berlin
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 13.1.2020
+  date_to: 14.1.2020
+
+- id: kubernetes-berlin-15-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Berlin
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 15.1.2020
+  date_to: 16.1.2020
+
+- id: gitlab-ci-berlin-17-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Gitlab CI Training
+  city: Berlin
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 17.1.2020
+  date_to: 17.1.2020
+
+# Hamburg
+- id: docker-hamburg-20-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Hamburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 20.1.2020
+  date_to: 21.1.2020
+
+- id: kubernetes-hamburg-22-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Hamburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 22.1.2020
+  date_to: 23.1.2020
+
+- id: gitlab-ci-hamburg-24-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Hamburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 24.1.2020
+  date_to: 24.1.2020
+
+# Munich
+- id: docker-munich-27-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Munich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 27.1.2020
+  date_to: 28.1.2020
+
+- id: kubernetes-munich-29-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Munich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 29.1.2020
+  date_to: 30.1.2020
+
+- id: gitlab-ci-munich-31-01-2020
+  active: true
+  country: de
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Munich
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 31.1.2020
+  date_to: 31.1.2020
+
+# Austria
+# Vienna
+- id: docker-vienna-13-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Vienna
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 13.1.2020
+  date_to: 14.1.2020
+
+- id: kubernetes-vienna-15-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Vienna
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 15.1.2020
+  date_to: 16.1.2020
+
+- id: gitlab-ci-vienna-17-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Vienna
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 17.1.2020
+  date_to: 17.1.2020
+
+# Salzburg
+- id: docker-salzburg-20-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Salzburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 20.1.2020
+  date_to: 21.1.2020
+
+- id: kubernetes-salzburg-22-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Salzburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 22.1.2020
+  date_to: 23.1.2020
+
+- id: gitlab-ci-salzburg-24-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Salzburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 24.1.2020
+  date_to: 24.1.2020 
+
+# Graz
+- id: docker-graz-27-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Graz
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 27.1.2020
+  date_to: 28.1.2020
+
+- id: kubernetes-graz-29-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Graz
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 29.1.2020
+  date_to: 30.1.2020
+
+- id: gitlab-ci-graz-31-01-2020
+  active: true
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Graz
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 31.1.2020
+  date_to: 31.1.2020
+
+# Sweden
+# Stockholm
+- id: docker-stockholm-13-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Stockholm
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 13.1.2020
+  date_to: 14.1.2020
+
+- id: kubernetes-stockholm-15-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Stockholm
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 15.1.2020
+  date_to: 16.1.2020
+
+- id: gitlab-ci-stockholm-17-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Stockholm
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 17.1.2020
+  date_to: 17.1.2020
+
+# Malmo
+- id: docker-malmo-20-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Malmo
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 20.1.2020
+  date_to: 21.1.2020
+
+- id: kubernetes-malmo-22-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Malmo
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 22.1.2020
+  date_to: 23.1.2020
+
+- id: gitlab-ci-malmo-24-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Malmo
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 24.1.2020
+  date_to: 24.1.2020
+
+# Gothenburg
+- id: docker-gothenburg-27-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Gothenburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 27.1.2020
+  date_to: 28.1.2020
+
+- id: kubernetes-gothenburg-29-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Gothenburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 29.1.2020
+  date_to: 30.1.2020
+
+- id: gitlab-ci-gothenburg-31-01-2020
+  active: true
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Gothenburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 31.1.2020
+  date_to: 31.1.2020
+
+# Switzerland
+# Zurich
+- id: docker-zurich-13-01-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Zurich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 13.1.2020
+  date_to: 14.1.2020
+
+- id: kubernetes-zurich-15-01-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Zurich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 15.1.2020
+  date_to: 16.1.2020
+
+- id: gitlab-ci-zurich-17-01-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Zurich
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 17.1.2020
+  date_to: 17.1.2020
+
+# Geneva
+- id: docker-geneva-20-01-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Geneva
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 20.1.2020
+  date_to: 21.1.2020
+
+- id: kubernetes-geneva-22-01-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Geneva
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 22.1.2020
+  date_to: 23.1.2020
+
+- id: gitlab-ci-geneva-24-01-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Geneva
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 24.1.2020
+  date_to: 24.1.2020
+
+# Netherlands
+# Amsterdam
+- id: docker-amsterdam-13-01-2020
+  active: true
+  country: nl
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Amsterdam
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 13.1.2020
+  date_to: 14.1.2020
+
+- id: kubernetes-amsterdam-15-01-2020
+  active: true
+  country: nl
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Amsterdam
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 15.1.2020
+  date_to: 16.1.2020
+
+- id: gitlab-ci-amsterdam-17-01-2020
+  active: true
+  country: nl
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Amsterdam
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 17.1.2020
+  date_to: 17.1.2020
+
+# Denmark
+# Copenhagen
+- id: docker-copenhagen-13-01-2020
+  active: true
+  country: dk
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Copenhagen
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 13.1.2020
+  date_to: 14.1.2020
+
+- id: kubernetes-copenhagen-15-01-2020
+  active: true
+  country: dk
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Copenhagen
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 15.1.2020
+  date_to: 16.1.2020
+
+- id: gitlab-ci-copenhagen-17-01-2020
+  active: true
+  country: dk
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Copenhagen
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 17.1.2020
+  date_to: 17.1.2020
+
+
+# EuropeTour 2020 February
+# Germany
+# Berlin
+- id: docker-berlin-03-02-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Berlin
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 3.2.2020
+  date_to: 4.2.2020
+
+- id: kubernetes-berlin-05-02-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Berlin
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 5.2.2020
+  date_to: 6.2.2020
+
+- id: gitlab-ci-berlin-07-02-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Gitlab CI Training
+  city: Berlin
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 7.2.2020
+  date_to: 7.2.2020
+
+# Hamburg
+- id: docker-hamburg-
+  active: false
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Hamburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 
+  date_to: 
+
+- id: kubernetes-hamburg-
+  active: false
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Hamburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 
+  date_to:
+
+- id: gitlab-ci-hamburg-
+  active: false
+  country: de
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Hamburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Munich
+- id: docker-munich-17-02-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Munich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 17.2.2020
+  date_to: 18.2.2020
+
+- id: kubernetes-munich-19-02-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Munich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 19.2.2020
+  date_to: 20.2.2020
+
+- id: gitlab-ci-munich-21-02-2020
+  active: true
+  country: de
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Munich
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 21.2.2020
+  date_to: 21.2.2020
+
+# Austria
+# Vienna
+- id: docker-vienna-03-02-2020
+  active: true
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Vienna
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 3.2.2020
+  date_to: 4.2.2020
+
+- id: kubernetes-vienna-05-02-2020
+  active: true
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Vienna
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 5.2.2020
+  date_to: 6.2.2020
+
+- id: gitlab-ci-vienna-07-02-2020
+  active: true
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Vienna
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 7.2.2020
+  date_to: 7.2.2020
+
+# Salzburg
+- id: docker-salzburg-17-02-2020
+  active: true
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Salzburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 17.2.2020
+  date_to: 18.2.2020
+
+- id: kubernetes-salzburg-19-02-2020
+  active: true
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Salzburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 19.2.2020
+  date_to: 20.2.2020
+
+- id: gitlab-ci-salzburg-21-02-2020
+  active: true
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Salzburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 21.2.2020
+  date_to: 21.2.2020 
+
+# Graz
+- id: docker-graz-
+  active: false
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Graz
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 
+  date_to: 
+
+- id: kubernetes-graz-
+  active: false
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Graz
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 
+  date_to: 
+
+- id: gitlab-ci-graz-
+  active: false
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Graz
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Sweden
+# Stockholm
+- id: docker-stockholm-03-02-2020
+  active: true
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Stockholm
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 3.2.2020
+  date_to: 4.2.2020
+
+- id: kubernetes-stockholm-05-02-2020
+  active: true
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Stockholm
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 5.2.2020
+  date_to: 6.2.2020
+
+- id: gitlab-ci-stockholm-07-02-2020
+  active: true
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Stockholm
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 7.2.2020
+  date_to: 7.2.2020
+
+# Malmo
+- id: docker-malmo-17-02-2020
+  active: true
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Malmo
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 17.2.2020
+  date_to: 18.2.2020
+
+- id: kubernetes-malmo-19-02-2020
+  active: true
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Malmo
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 19.2.2020
+  date_to: 20.2.2020
+
+- id: gitlab-ci-malmo-21-02-2020
+  active: true
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Malmo
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 21.2.2020
+  date_to: 21.2.2020
+
+# Gothenburg
+- id: docker-gothenburg-
+  active: false
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Gothenburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from:
+  date_to: 
+
+- id: kubernetes-gothenburg-
+  active: false
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Gothenburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 
+  date_to: 
+
+- id: gitlab-ci-gothenburg-
+  active: false
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Gothenburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Switzerland
+# Zurich
+- id: docker-zurich-03-02-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Zurich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 3.2.2020
+  date_to: 4.2.2020
+
+- id: kubernetes-zurich-05-02-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Zurich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 5.2.2020
+  date_to: 6.2.2020
+
+- id: gitlab-ci-zurich-07-02-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Zurich
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 7.2.2020
+  date_to: 7.2.2020
+
+# Geneva
+- id: docker-geneva-17-02-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Geneva
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 17.2.2020
+  date_to: 18.2.2020
+
+- id: kubernetes-geneva-19-02-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Geneva
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 19.2.2020
+  date_to: 20.2.2020
+
+- id: gitlab-ci-geneva-21-02-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Geneva
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 21.2.2020
+  date_to: 21.2.2020
+
+# Netherlands
+# Amsterdam
+- id: docker-amsterdam-03-02-2020
+  active: true
+  country: nl
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Amsterdam
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 3.2.2020
+  date_to: 4.2.2020
+
+- id: kubernetes-amsterdam-05-02-2020
+  active: true
+  country: nl
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Amsterdam
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 5.2.2020
+  date_to: 6.2.2020
+
+- id: gitlab-ci-amsterdam-07-02-2020
+  active: true
+  country: nl
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Amsterdam
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 7.2.2020
+  date_to: 7.2.2020
+
+# Denmark
+# Copenhagen
+- id: docker-copenhagen-17-02-2020
+  active: true
+  country: dk
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Copenhagen
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 17.2.2020
+  date_to: 18.2.2020
+
+- id: kubernetes-copenhagen-19-02-2020
+  active: true
+  country: dk
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Copenhagen
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 19.2.2020
+  date_to: 20.2.2020
+
+- id: gitlab-ci-copenhagen-21-02-2020
+  active: true
+  country: dk
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Copenhagen
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 21.2.2020
+  date_to: 21.2.2020
+
+
+# EuropeTour 2020 March
+# Germany
+# Berlin
+- id: docker-berlin-02-03-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Berlin
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 2.3.2020
+  date_to: 3.3.2020
+
+- id: kubernetes-berlin-04-03-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Berlin
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 4.3.2020
+  date_to: 5.3.2020
+
+- id: gitlab-ci-berlin-
+  active: false
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Gitlab CI Training
+  city: Berlin
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Hamburg
+- id: docker-hamburg-16-03-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Hamburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 16.3.2020
+  date_to: 17.3.2020
+
+- id: kubernetes-hamburg-18-03-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Hamburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 18.3.2020
+  date_to: 19.3.2020
+
+- id: gitlab-ci-hamburg-20-03-2020
+  active: true
+  country: de
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Hamburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 20.3.2020
+  date_to: 20.3.2020
+
+# Munich
+- id: docker-munich-23-03-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Munich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 23.3.2020
+  date_to: 24.3.2020
+
+- id: kubernetes-munich-25-03-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Munich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 25.3.2020
+  date_to: 26.3.2020
+
+- id: gitlab-ci-munich-27-03-2020
+  active: true
+  country: de
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Munich
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 27.3.2020
+  date_to: 27.3.2020
+
+# Austria
+# Vienna
+- id: docker-vienna-02-03-2020
+  active: true
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Vienna
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 2.3.2020
+  date_to: 3.3.2020
+
+- id: kubernetes-vienna-04-03-2020
+  active: true
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Vienna
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 4.3.2020
+  date_to: 5.3.2020
+
+- id: gitlab-ci-
+  active: false
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Vienna
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Salzburg
+- id: docker-salzburg-16-03-2020
+  active: true
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Salzburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 16.3.2020
+  date_to: 17.3.2020
+
+- id: kubernetes-salzburg-18-03-2020
+  active: true
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Salzburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 18.3.2020
+  date_to: 19.3.2020
+
+- id: gitlab-ci-salzburg-20-03-2020
+  active: true
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Salzburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 20.3.2020
+  date_to: 20.3.2020
+
+# Graz
+- id: docker-graz-23-03-2020
+  active: true
+  country: at
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Graz
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 23.3.2020
+  date_to: 24.3.2020
+
+- id: kubernetes-graz-25-03-2020
+  active: true
+  country: at
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Graz
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 25.3.2020
+  date_to: 26.3.2020
+
+- id: gitlab-ci-graz-27-03-2020
+  active: true
+  country: at
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Graz
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 27.3.2020
+  date_to: 27.3.2020
+
+# Sweden
+# Stockholm
+- id: docker-stockholm-02-03-2020
+  active: true
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Stockholm
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 2.3.2020
+  date_to: 3.3.2020
+
+- id: kubernetes-stockholm-04-03-2020
+  active: true
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Stockholm
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 4.3.2020
+  date_to: 5.3.2020
+
+- id: gitlab-ci-stockholm-
+  active: false
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Stockholm
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Malmo
+- id: docker-malmo-16-03-2020
+  active: true
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Malmo
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 16.3.2020
+  date_to: 17.3.2020
+
+- id: kubernetes-malmo-18-03-2020
+  active: true
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Malmo
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 18.3.2020
+  date_to: 19.3.2020
+
+- id: gitlab-ci-malmo-20-03-2020
+  active: true
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Malmo
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 20.3.2020
+  date_to: 20.3.2020
+
+# Gothenburg
+- id: docker-gothenburg-23-03-2020
+  active: true
+  country: se
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Gothenburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 23.3.2020
+  date_to: 24.3.2020
+
+- id: kubernetes-gothenburg-25-03-2020
+  active: true
+  country: se
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Gothenburg
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 25.3.2020
+  date_to: 26.3.2020
+
+- id: gitlab-ci-gothenburg-27-03-2020
+  active: true
+  country: se
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Gothenburg
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 27.3.2020
+  date_to: 27.3.2020
+
+# Switzerland
+# Zurich
+- id: docker-zurich-02-03-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Zurich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 2.3.2020
+  date_to: 3.3.2020
+
+- id: kubernetes-zurich-04-03-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Zurich
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 4.3.2020
+  date_to: 5.3.2020
+
+- id: gitlab-ci-zurich-
+  active: false
+  country: ch
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Zurich
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Geneva
+- id: docker-geneva-16-03-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Geneva
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 16.3.2020
+  date_to: 17.3.2020
+
+- id: kubernetes-geneva-18-03-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Geneva
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 18.3.2020
+  date_to: 19.3.2020
+
+- id: gitlab-ci-geneva-20-03-2020
+  active: true
+  country: ch
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Geneva
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 20.3.2020
+  date_to: 20.3.2020
+
+# Netherlands
+# Amsterdam
+- id: docker-amsterdam-02-03-2020
+  active: true
+  country: nl
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Amsterdam
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 2.3.2020
+  date_to: 3.3.2020
+
+- id: kubernetes-amsterdam-04-03-2020
+  active: true
+  country: nl
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Amsterdam
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 4.3.2020
+  date_to: 5.3.2020
+
+- id: gitlab-ci-amsterdam-
+  active: false
+  country: nl
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Amsterdam
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Denmark
+# Copenhagen
+- id: docker-copenhagen-02-03-2020
+  active: true
+  country: dk
+  lang: en
+  course_id: docker
+  name: Docker  Training
+  city: Copenhagen
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 2.3.2020
+  date_to: 3.3.2020
+
+- id: kubernetes-copenhagen-04-03-2020
+  active: true
+  country: dk
+  lang: en
+  course_id: kubernetes
+  name: Kubernetes Training
+  city: Copenhagen
+  price: 799 EUR
+  venue_id: 
+  length: 2 days
+  date_from: 4.3.2020
+  date_to: 5.3.2020
+
+- id: gitlab-ci-copenhagen-
+  active: false
+  country: dk
+  lang: en
+  course_id: gitlab-ci
+  name: Gitlab CI Training
+  city: Copenhagen
+  price: 399 EUR
+  venue_id: 
+  length: 1 day
+  date_from: 
+  date_to: 
+
+# Czech Republic
 - id: kubernetes-praha-11-02-2020
   active: true
   country: cz
