@@ -3324,3 +3324,23 @@ ondrej-sika.com dev deploy:
     url: https://ondrej-sika.com.xsika.cz
   dependencies: []
 
+ondrej-sika.com prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.com&domain=ondrej-sika.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrej-sika.com/**/*
+      - yarn.lock
+  environment:
+    name: prod ondrej-sika.com
+    url: https://ondrej-sika.com
+  dependencies: []
+
