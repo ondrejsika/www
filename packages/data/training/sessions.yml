@@ -35,6 +35,21 @@
   date_from: 26.11.2019
   date_to: 26.11.2019
 
+# Czechia 2020
+- id: git-praha-10-01-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: git
+  name: Školení Git
+  city: Praha
+  price: 5999 CZK
+  venue_id: paralelni-polis
+  length: 1 den
+  date_from: 10.1.2020
+  date_to: 10.1.2020
+
+
 # EuropeTour 2020 January
 # Germany
 # Berlin
