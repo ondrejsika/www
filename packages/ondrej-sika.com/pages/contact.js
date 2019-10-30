@@ -21,7 +21,7 @@ const Index = props => (
             <a href="tel:+420773452376">+420 773 452 376</a> (
             <a href="https://t.me/ondrejsika">Telegram</a>)
             <br />
-            <a href="mailto:ondrej@sika.io?subject=Poptavka skoleni">
+            <a href="mailto:ondrej@sika.io?subject=Ask for Training">
               ondrej@sika.io
             </a>
           </p>
