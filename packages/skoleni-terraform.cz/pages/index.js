@@ -44,9 +44,9 @@ const Index = () => (
 
 Terraform je nástroj, který se používá ke správě infrastruktury v cloudu, jak veřejném (AWS, Azure, GCP), tak privátním (OpenStack, VMware vSphere).
 
-Terraform Vám umožní __spravovat infrastruktutru jako kód__, to znamená verzovanou v Gitu, přidávání resources pomocí merge (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředé přesně tak, jako je v produkci bez zbytečného úsilí. O všech komponentách máte přehled a můžete predikovat ceny. Konec klikání infrastruktury, zkuste Terraform.
+Terraform Vám umožní __spravovat infrastruktutru jako kód__, to znamená verzovanou v Gitu, přidávání resources pomocí merge (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředí přesně tak, jako je v produkci bez zbytečného úsilí. O všech komponentách máte přehled a můžete predikovat ceny. Konec klikání infrastruktury, zkuste Terraform.
 
-Terraform umožnuje spravat více cloudových providerů současne, zároveň umožnuje pracovat s hibridními cloudy (část v privátním cloudu, část ve veřejném).
+Terraform umožnuje spravat více cloudových providerů současně, zároveň umožnuje pracovat s hybridními cloudy (část v privátním cloudu, část ve veřejném).
         `}
         />
       </TextFrame>
@@ -55,7 +55,7 @@ Terraform umožnuje spravat více cloudových providerů současne, zároveň um
           source={`
 ### Jak školení probíhá
 
-Školení je formou workshopu, všechno si podrobně vyzkoušíme a vysvětlíme. Ukážeme si jak Terraform pracuje, jak jej používat v teamu a jak jím spravovat infrastukturu. Uděláme si příklad infrastruktury jednoduché aplikace, kde nastavíme vše - od DNS, přez Kubernetes cluster po S3 file storage.
+Školení je formou workshopu, všechno si podrobně vyzkoušíme a vysvětlíme. Ukážeme si jak Terraform pracuje, jak jej používat v teamu a jak jím spravovat infrastukturu. Uděláme si příklad infrastruktury jednoduché aplikace, kde nastavíme vše - od DNS, přes Kubernetes cluster po S3 file storage.
 `}
         />
       </TextFrame>
@@ -81,7 +81,7 @@ Terraform umožnuje spravat více cloudových providerů současne, zároveň um
           source={`
 ### Pro koho je školení určeno
 
-Školení je určeno pro DevOps a adminy, kteří chtějí lépe a efektivněji spravovat infrastrukturu. Zároveň také pro vývojáře, kteří se starají o nejakou infrastrukturu v cloudech.
+Školení je určeno pro DevOps a adminy, kteří chtějí lépe a efektivněji spravovat infrastrukturu. Zároveň také pro vývojáře, kteří se starají o nějakou infrastrukturu v cloudech.
 `}
         />
         <TwoCol
@@ -101,7 +101,7 @@ Terraform umožnuje spravat více cloudových providerů současne, zároveň um
 #### Technické požadavky
 
 - [Nainstalovaný Terraform](/terraform/instalace)
-- Přístup na internet (ideálně bez korporatni proxy)
+- Přístup na internet (ideálně bez korporátní proxy)
 - Vlastní účet v Digital Oceanu výhodou - [Registrace + 50 USD kredit](https://sika.link/do-ref)
 `}
             />
