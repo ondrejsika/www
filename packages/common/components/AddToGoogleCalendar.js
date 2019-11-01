@@ -25,8 +25,8 @@ const AddToGoogleCalendar = props => {
   let name = props.name;
   let from = props.from;
 
-  let toDate = new Date();
-  toDate.setDate(parseDate(props.to).getDate() + 1);
+  let toDate = parseDate(props.to);
+  toDate.setDate(toDate.getDate() + 1);
   let to = formatDate(toDate);
   let details = props.details || "";
   let location = props.location || "";

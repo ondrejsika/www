@@ -8,6 +8,7 @@ const date_for_google_calendar_link = dd_mm_yyyy =>
   dd_mm_yyyy
     .split(".")
     .reverse()
+    .map(x => (x.length == 1 ? `0${x}` : x))
     .join("");
 
 class UpcomingSessions extends React.Component {
