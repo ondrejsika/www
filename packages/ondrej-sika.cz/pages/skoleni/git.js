@@ -4,7 +4,7 @@ export default props => (
   <Course
     lang={props.site.lang}
     course_id="git"
-    // show_sessions={true}
+    show_sessions={true}
     course_title="Školení Gitu"
     logo="/static/git.svg"
     price_self_funded="5 999 CZK"
