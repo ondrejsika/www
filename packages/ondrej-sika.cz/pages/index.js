@@ -29,21 +29,26 @@ const Index = () => (
       <LectureImgMdLg LectureImgHeader="Kurzy co školím" />
       <LectureImgSm LectureImgHeader="Kurzy co školím" />
       <TextWithImg TextWithImgHeader="O mně">
-        Jmenuji se Ondřej, vývojem softwaru se zabývám od roku 2009 a od roku
-        2013 předávám své zkušenosti na školeních. Pracoval jsem pro malé firmy,
-        startupy i velké korporace s cílem zefektivnit jim proces vývoje,
-        testování a nasazování software.
+        Jmenuji se Ondřej Šika, od roku 2009 se zabývám vývojem software a
+        DevOps. Od roku 2013 předávám své praktické zkušenosti na školeních.
+        Pracoval jsem pro malé firmy, startupy i velké korporace s cílem
+        zefektivnit jim proces vývoje, testování a nasazování software. Dnes se
+        primárně věnuji DevOps: návrhem softwarového stacku, vývojového a
+        provozního prostředí ve firmách. Práci s nástroji jako Docker,
+        Kubernetes a Terraform se snažím co nejvíce automatizovat, aby lidé
+        nemuseli dělat rutiny, které můžou jednoduše dělat stroje.
         <br />
         <br />
         <h4>Školení</h4>
-        Předně se věnuji školení, všechny kurzy jsou formou workshopů (hands-on)
-        a stavím je na svých dlouholetých znalostech a zkušenostech z vývoje,
-        testování a provozování softwarových projektů.
+        Také se hodně věnuji školení, všechny kurzy jsou formou workshopů
+        (hands-on) a stavím je na svých dlouholetých znalostech a zkušenostech z
+        vývoje, testování a provozování softwarových projektů.
         <br />
         <br />
         Nástroje jako <a href="/skoleni/git">Git</a>,{" "}
         <a href="/skoleni/docker">Docker</a>,{" "}
         <a href="/skoleni/kubernetes">Kubernetes</a>,{" "}
+        <a href="/skoleni/terraform">Terraform</a>,{" "}
         <a href="/skoleni/ansible">Ansible</a> nebo{" "}
         <a href="/skoleni/gitlab-ci">CI</a> používám na denní bázi, vše co
         školím jsem použil v reálných projektech a mám s technologií osobní
