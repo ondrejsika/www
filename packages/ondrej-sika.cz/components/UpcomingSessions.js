@@ -2,6 +2,13 @@ import React from "react";
 import StaticDB from "@app/common/staticdb";
 import Translate from "@app/common/components/Translate";
 import sessions_file from "@app/data/training/sessions.yml";
+import AddToGoogleCalendar from "@app/common/components/AddToGoogleCalendar";
+
+const date_for_google_calendar_link = dd_mm_yyyy =>
+  dd_mm_yyyy
+    .split(".")
+    .reverse()
+    .join("");
 
 class UpcomingSessions extends React.Component {
   render() {
@@ -41,6 +48,7 @@ class UpcomingSessions extends React.Component {
               <Translate lang={this.props.lang} cs="DÉLKA" en="LEGTH" />
             </th>
             <th />
+            <th />
           </tr>
         </thead>
         <tbody>
@@ -69,6 +77,22 @@ class UpcomingSessions extends React.Component {
                       en="Register"
                     />
                   </a>
+                </td>
+                <td scope="row">
+                  <AddToGoogleCalendar
+                    name={`${course.name} - Ondrej Sika`}
+                    location={course.city}
+                    from={date_for_google_calendar_link(course.date_from)}
+                    to={date_for_google_calendar_link(course.date_to)}
+                  >
+                    <a className="btn btn-primary btn-sm" target="_blank">
+                      <Translate
+                        lang={this.props.lang}
+                        cs="Do&nbsp;kalendare"
+                        en="Add&nbsp;to&nbsp;Calendar"
+                      />
+                    </a>
+                  </AddToGoogleCalendar>
                 </td>
               </tr>
             );
