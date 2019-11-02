@@ -44,7 +44,7 @@ Terraform umožnuje spravovat více cloudových providerů současne, zároveň 
 
 - Základní znalost veřejných cloudů (AWS, Digital Ocean, Azure, ...)
 - Základy práce v terminálu
-`}ý
+`}
     col2={`
 #### Technické požadavky
 
