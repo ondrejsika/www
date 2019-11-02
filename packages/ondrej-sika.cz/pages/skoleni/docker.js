@@ -12,9 +12,9 @@ export default props => (
     price_in_house="50 000 CZK"
     description={`
 ### K čemu se používá?
-Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
+Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást Vaší aplikace.
 ### Jak školení probíhá
-Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytvoření vlastního kontejnerů, po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
+Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytvoření vlastního kontejneru, po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
 ### Co Vás naučím
 - Teoretický úvod do Dockeru
 - Instalace Dockeru (pro ty kteří nenainstalovali doma)
@@ -24,16 +24,16 @@ Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytv
 - Deployment do Swarmu
 - Ukázka deploymentu do Kubernetes
 ### Pro koho je školení určeno
-Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.
+Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled, co Docker řeší a kde by jej mohli použít.
 `}
     col1={`
 #### Předchozí znalosti
-- Základy práce s Linuxemm
+- Základy práce s Linuxem
 - Základy práce v terminálu
 `}
     col2={`
 #### Technické požadavky
-- Nainstalovány Docker
+- Nainstalovaný Docker
 - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
 - [Priprava na skoleni Dockeru](/skoleni/docker/priprava-na-skoleni)
 `}

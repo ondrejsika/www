@@ -17,11 +17,11 @@ Terraform je nástroj, který se používá ke správě infrastruktury v cloudu,
 
 Terraform Vám umožní __spravovat infrastruktutru jako kód__, to znamená verzovanou v Gitu, přidávání resources pomocí merge (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředé přesně tak, jako je v produkci bez zbytečného úsilí. O všech komponentách máte přehled a můžete predikovat ceny. Konec klikání infrastruktury, zkuste Terraform.
 
-Terraform umožnuje spravat více cloudových providerů současne, zároveň umožnuje pracovat s hibridními cloudy (část v privátním cloudu, část ve veřejném).
+Terraform umožnuje spravovat více cloudových providerů současne, zároveň umožnuje pracovat s hibridními cloudy (část v privátním cloudu, část ve veřejném).
 
 ### Jak školení probíhá
 
-Školení je formou workshopu, všechno si podrobně vyzkoušíme a vysvětlíme. Ukážeme si jak Terraform pracuje, jak jej používat v teamu a jak jím spravovat infrastukturu. Uděláme si příklad infrastruktury jednoduché aplikace, kde nastavíme vše - od DNS, přez Kubernetes cluster po S3 file storage.
+Školení je formou workshopu, všechno si podrobně vyzkoušíme a vysvětlíme. Ukážeme si jak Terraform pracuje, jak jej používat v teamu a jak jím spravovat infrastukturu. Uděláme si příklad infrastruktury jednoduché aplikace, kde nastavíme vše - od DNS, přes Kubernetes cluster po S3 file storage.
 
 ### Co Vás naučím
 
@@ -44,7 +44,7 @@ Terraform umožnuje spravat více cloudových providerů současne, zároveň um
 
 - Základní znalost veřejných cloudů (AWS, Digital Ocean, Azure, ...)
 - Základy práce v terminálu
-`}
+`}ý
     col2={`
 #### Technické požadavky
 

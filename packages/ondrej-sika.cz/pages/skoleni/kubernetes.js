@@ -14,7 +14,7 @@ export default props => (
 ### Co je to Kubernetes
 Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
 ### Jak školení probíhá
-Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean.
+Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme si jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean.
 ### Co Vás naučím
 - Teoretický úvod do Kubernetes
 - Instalace Minikube a kubectl (pro ty kteří nenainstalovali doma)

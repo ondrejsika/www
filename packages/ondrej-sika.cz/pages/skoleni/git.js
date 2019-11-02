@@ -14,7 +14,7 @@ export default props => (
 ### Co je to Git
 Git je moderní verzovaci nástroj, který se stal de facto standardem mezi vývojáři. Git Vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně, aniž by jste si zasahovali do rozdělaných projektů nebo je jinak narušovali. Spolupráci na vývoji projektu dále zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software.
 ### Jak školení probíhá
-Na školení formou workshopu si vysvětlíme, proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise.
+Na školení formou workshopu si vysvětlíme, proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practice.
 ### Co Vás naučím
 - Instalace a konfigurace GITu
 - Vytvořit nový repozitář
