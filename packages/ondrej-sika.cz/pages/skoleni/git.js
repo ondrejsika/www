@@ -12,9 +12,9 @@ export default props => (
     price_in_house="25 000 CZK"
     description={`
 ### Co je to Git
-Git je moderní verzovaci nástroj, který se stal defaco standatem mezi vývojáři. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně, aniž by jste si zasahovali do rozdělaných projektů nebo je jinak narušovali. Spolupráci na vývoji projektu dále zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software.
+Git je moderní verzovaci nástroj, který se stal de facto standardem mezi vývojáři. Git Vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně, aniž by jste si zasahovali do rozdělaných projektů nebo je jinak narušovali. Spolupráci na vývoji projektu dále zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software.
 ### Jak školení probíhá
-Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise.
+Na školení formou workshopu si vysvětlíme, proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise.
 ### Co Vás naučím
 - Instalace a konfigurace GITu
 - Vytvořit nový repozitář
@@ -27,7 +27,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
 Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.`}
     col1={`
 #### Předchozí znalosti
-- Základy práce s Linuxemm
+- Základy práce s Linuxem
 - Základy práce v terminálu
 - Základní znalost Gitu výhodou
 `}
