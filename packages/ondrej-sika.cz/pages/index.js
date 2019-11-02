@@ -29,14 +29,19 @@ const Index = () => (
       <LectureImgMdLg LectureImgHeader="Kurzy co školím" />
       <LectureImgSm LectureImgHeader="Kurzy co školím" />
       <TextWithImg TextWithImgHeader="O mně">
-        Jmenuji se Ondřej Šika, od roku 2009 se zabývám vývojem software a
-        DevOps. Od roku 2013 předávám své praktické zkušenosti na školeních.
+        Jmenuji se Ondřej Šika a od roku 2009 se zabývám vývojem software a
+        DevOps. Své praktické zkušenosti předávám na školeních od roku 2013.
+        <br />
+        <br />
         Pracoval jsem pro malé firmy, startupy i velké korporace s cílem
         zefektivnit jim proces vývoje, testování a nasazování software. Dnes se
         primárně věnuji DevOps: návrhem softwarového stacku, vývojového a
-        provozního prostředí ve firmách. Práci s nástroji jako Docker,
-        Kubernetes a Terraform se snažím co nejvíce automatizovat, aby lidé
-        nemuseli dělat rutiny, které můžou jednoduše dělat stroje.
+        provozního prostředí ve firmách.
+        <br />
+        <br />
+        Práci s nástroji jako Docker, Kubernetes a Terraform se snažím co
+        nejvíce automatizovat, aby lidé nemuseli dělat rutiny, které můžou
+        jednoduše dělat stroje.
         <br />
         <br />
         <h4>Školení</h4>
@@ -50,7 +55,7 @@ const Index = () => (
         <a href="/skoleni/kubernetes">Kubernetes</a>,{" "}
         <a href="/skoleni/terraform">Terraform</a>,{" "}
         <a href="/skoleni/ansible">Ansible</a> nebo{" "}
-        <a href="/skoleni/gitlab-ci">CI</a> používám na denní bázi, vše co
+        <a href="/skoleni/gitlab-ci">CI</a> používám na denní bázi. Vše co
         školím jsem použil v reálných projektech a mám s technologií osobní
         zkušenost.
         <br />
