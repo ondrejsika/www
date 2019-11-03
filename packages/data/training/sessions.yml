@@ -95,7 +95,7 @@
   active: true
   country: de
   lang: en
-  course_id: kubernetes
+  course_id: gitlab-ci
   name: Gitlab CI Training
   city: Berlin
   price: 399 EUR
