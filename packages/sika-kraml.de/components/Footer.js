@@ -132,7 +132,14 @@ const Footer = props => (
           })}
         </div>
         <p className="text-right text-white fs-9 pt-4">
-          Website by{" "}
+          <a
+            href="/impressum"
+            className="fs-11 text a-underline"
+            style={colorText}
+          >
+            Impressum
+          </a>{" "}
+          | Website by{" "}
           <a
             href="https://zuzjes.com"
             target="_blank"
