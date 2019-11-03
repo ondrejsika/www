@@ -34,22 +34,45 @@ class UpcomingSessions extends React.Component {
                 lang={this.props.lang}
                 cs="NÁZEV ŠKOLENÍ"
                 en="COURSE"
+                de="BEZEICHNUNG"
               />
             </th>
             <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="MÍSTO" en="VENUE" />
+              <Translate
+                lang={this.props.lang}
+                cs="MÍSTO"
+                en="VENUE"
+                de="ORT"
+              />
             </th>
             <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="DATUM" en="DATE" />
+              <Translate
+                lang={this.props.lang}
+                cs="DATUM"
+                en="DATE"
+                de="DATUM"
+              />
             </th>
             <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="CENA" en="PRICE" />
+              <Translate
+                lang={this.props.lang}
+                cs="CENA"
+                en="PRICE"
+                de="PREIS"
+              />
             </th>
             <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="DÉLKA" en="LEGTH" />
+              <Translate
+                lang={this.props.lang}
+                cs="DÉLKA"
+                en="LEGTH"
+                de="DAUER"
+              />
             </th>
             <th />
-            <th />
+            {(() => {
+              if (!this.props.hide_add_to_google_calendar) return <th />;
+            })()}
           </tr>
         </thead>
         <tbody>
@@ -76,25 +99,31 @@ class UpcomingSessions extends React.Component {
                       lang={this.props.lang}
                       cs="Registrovat"
                       en="Register"
+                      de="Registrieren"
                     />
                   </a>
                 </td>
-                <td scope="row">
-                  <AddToGoogleCalendar
-                    name={`${course.name} - Ondrej Sika`}
-                    location={course.city}
-                    from={date_for_google_calendar_link(course.date_from)}
-                    to={date_for_google_calendar_link(course.date_to)}
-                  >
-                    <a className="btn btn-primary btn-sm" target="_blank">
-                      <Translate
-                        lang={this.props.lang}
-                        cs="Do&nbsp;kalenádře"
-                        en="Add&nbsp;to&nbsp;Calendar"
-                      />
-                    </a>
-                  </AddToGoogleCalendar>
-                </td>
+                {(() => {
+                  if (!this.props.hide_add_to_google_calendar)
+                    return (
+                      <td scope="row">
+                        <AddToGoogleCalendar
+                          name={`${course.name} - Ondrej Sika`}
+                          location={course.city}
+                          from={date_for_google_calendar_link(course.date_from)}
+                          to={date_for_google_calendar_link(course.date_to)}
+                        >
+                          <a className="btn btn-primary btn-sm" target="_blank">
+                            <Translate
+                              lang={this.props.lang}
+                              cs="Do&nbsp;kalenádře"
+                              en="Add&nbsp;to&nbsp;Calendar"
+                            />
+                          </a>
+                        </AddToGoogleCalendar>
+                      </td>
+                    );
+                })()}
               </tr>
             );
           })}
