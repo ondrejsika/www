@@ -44,7 +44,7 @@ export default props => (
           ]
         ],
         ["TERMINE", "/dates"],
-        ["KONTAKT", "/contact"]
+        ["KONTAKT", "/kontakt"]
       ]}
     />
     <div className="content">{props.children}</div>
