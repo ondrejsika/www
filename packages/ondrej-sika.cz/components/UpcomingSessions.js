@@ -92,7 +92,7 @@ class UpcomingSessions extends React.Component {
                 <td>{course.length}</td>
                 <td scope="row">
                   <a
-                    href={`mailto:${inquiry_email}?subject=[${site_name}] Request for Training: ${course.name}, ${course.date_from} (${course.id})`}
+                    href={`mailto:${inquiry_email}?subject=[${site_name}] Request for Training: ${course.name} ${course.date_from} (${course.id})`}
                     className="btn btn-success btn-sm"
                   >
                     <Translate
