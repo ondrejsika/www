@@ -16,7 +16,10 @@ import PipedriveContactForm from "../components/PipedriveContactForm";
 export default props => (
   <div>
     <Head>
-      <title>{props.course_title} - Ondrej Sika</title>
+      <title>
+        {props.course_title} -{" "}
+        {(props.site && props.site.default_title) || "Ondrej Sika"}
+      </title>
     </Head>
     <Header
       websiteHeader={props.course_title}
@@ -44,6 +47,7 @@ export default props => (
                 />
               </h2>
               <UpcomingSessions
+                hide_add_to_google_calendar={props.hide_add_to_google_calendar}
                 lang={props.lang}
                 course_id={props.course_id}
                 limit={3}
