@@ -25,6 +25,7 @@ export default props => (
           lang={props.lang}
           cs="Nezávazně poptat školení"
           en="Ask for a training"
+          de="Schulung anfragen"
         />
       }
       logo={props.logo}
@@ -39,6 +40,7 @@ export default props => (
                   lang={props.lang}
                   cs="Vypsané termíny"
                   en="Public session"
+                  de="Termine"
                 />
               </h2>
               <UpcomingSessions
@@ -75,7 +77,12 @@ export default props => (
     </div>
     <Price
       PriceHeader={
-        <Translate lang={props.lang} cs="Cena za školení" en="Price" />
+        <Translate
+          lang={props.lang}
+          cs="Cena za školení"
+          en="Price"
+          de="Preis"
+        />
       }
       PriceBtn={
         <Translate
@@ -85,17 +92,33 @@ export default props => (
         />
       }
     >
-      <Translate lang={props.lang} cs="Otevřený termín" en="Public session" />:{" "}
-      {props.price_self_funded}{" "}
-      <Translate lang={props.lang} cs="bez DPH" en="excl. VAT" />
+      <Translate
+        lang={props.lang}
+        cs="Otevřený termín"
+        en="Public session"
+        de="Öffentlicher Termin"
+      />
+      : {props.price_self_funded}{" "}
+      <Translate
+        lang={props.lang}
+        cs="bez DPH"
+        en="excl. VAT"
+        de="zzgl. MwSt"
+      />
       <br />
       <Translate
         lang={props.lang}
         cs="Firemní školení"
         en="Company traning (in-house)"
+        de="On-Premise Schulung"
       />
       : {props.price_in_house}{" "}
-      <Translate lang={props.lang} cs="bez DPH" en="excl. VAT" />
+      <Translate
+        lang={props.lang}
+        cs="bez DPH"
+        en="excl. VAT"
+        de="zzgl. MwSt"
+      />
     </Price>
     <div className="container">
       <PipedriveContactForm lang={props.lang} />
