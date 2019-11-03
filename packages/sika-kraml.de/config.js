@@ -5,8 +5,8 @@ const site = {
       : "https://former2-idontlikedolphins.xsika.cz",
   origin:
     process.env.NODE_ENV == "development"
-      ? "http://127.0.0.1:3010"
-      : process.env.SITE_ORIGIN || "https://ondrej-sika.cz",
+      ? "http://127.0.0.1:3011"
+      : process.env.SITE_ORIGIN || "https://sika-kraml",
   name: "sika-kraml.de",
   lang: "de",
   default_title: "Sika Kraml DE - IT Schulungen, Workshops und Beratung",
