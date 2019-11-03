@@ -99,7 +99,7 @@ const Footer = props => (
               </a>
               <br></br>
               <a
-                href="tel:+4901773586458"
+                href="tel:+491773586458"
                 className="a-underline"
                 style={colorText}
               >
