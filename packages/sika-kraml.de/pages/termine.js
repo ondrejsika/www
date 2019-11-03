@@ -15,7 +15,7 @@ let style = {
 const Index = () => (
   <div>
     <Head></Head>
-    <Header websiteHeader="Public training - terms" />
+    <Header websiteHeader="Termine" />
     <div className="container">
       <UpcomingSessions lang={site.lang} />
     </div>

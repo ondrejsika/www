@@ -43,7 +43,7 @@ export default props => (
             ["ANSIBLE", "/schulung/ansible"]
           ]
         ],
-        ["TERMINE", "/dates"],
+        ["TERMINE", "/termine"],
         ["KONTAKT", "/kontakt"]
       ]}
     />
