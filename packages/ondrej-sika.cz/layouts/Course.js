@@ -49,6 +49,8 @@ export default props => (
               <UpcomingSessions
                 hide_add_to_google_calendar={props.hide_add_to_google_calendar}
                 lang={props.lang}
+                site_name={props.site && props.site.name}
+                location={props.location}
                 course_id={props.course_id}
                 limit={3}
               />
