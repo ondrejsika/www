@@ -4,7 +4,7 @@ import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import Navbar from "@app/ondrej-sika.cz/components/Navbar";
-import Footer from "@app/ondrej-sika.cz/components/Footer";
+import Footer from "@app/sika-kraml.de/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 import Newsletter from "@app/sika-kraml.de/components/Newsletter";
 import linkedin from "@app/data/pictures/social-networks/linkedin.svg";
