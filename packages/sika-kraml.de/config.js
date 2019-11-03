@@ -9,6 +9,7 @@ const site = {
       : process.env.SITE_ORIGIN || "https://ondrej-sika.cz",
   name: "sika-kraml.de",
   lang: "de",
+  default_title: "Sika Kraml DE - IT Schulungen, Workshops und Beratung",
   gauges_site_id: "5cf669363520f122cf0441d0",
   google_analytics_site_id: "UA-39461955-44"
 };
