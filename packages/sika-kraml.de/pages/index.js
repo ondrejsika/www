@@ -31,7 +31,9 @@ var colorText = {
 
 const Index = () => (
   <div>
-    <Head></Head>
+    <Head>
+      <title>Sika Kraml - IT Schulungen, Workshops und Beratung</title>
+    </Head>
     <MainBar
       MainBarHeader="IT Schulungen, Workshops und Beratung"
       MainBarText="

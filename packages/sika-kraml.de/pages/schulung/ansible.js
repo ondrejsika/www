@@ -16,7 +16,11 @@ let site = {
 
 const Index = () => (
   <div>
-    <Head></Head>
+    <Head>
+      <title>
+        Ansible Schulungen - Sika Kraml - IT Schulungen, Workshops und Beratung
+      </title>
+    </Head>
     <Header
       websiteHeader="Ansible Training"
       inquiryBtn="Anfragen"
@@ -29,9 +33,9 @@ const Index = () => (
       Ansible ermöglicht eine deklarative Beschreibung von Serverkonfigurationen und Deploymentprozessen.
       Sie beschreiben den gewünschten Zielzustand und Ansible erledigt den Rest.
       Dadurch behalten Sie stets die Übersicht und vergessen keine kritischen Prozessschritte.
-      Zudem lässt sich die textbasierte Konfiguration hervorragend mit Git versionieren. 
+      Zudem lässt sich die textbasierte Konfiguration hervorragend mit Git versionieren.
       Ansible hilft Ihnen, Anwendung schneller zu deployen und Server sicherer zu administieren.
-      
+
       ### Kursbeschreibung
       Der Kurs wird als zweitägiger Workshop abgehalten, damit Sie das Gelernte auch gleich praktisch ausprobieren können.
       Wir installieren Ansible und erläutern die grundlegenden Konzepte.
@@ -39,7 +43,7 @@ const Index = () => (
       Dies beinhaltet die Installation von Systempaketen, das Runterladen der Anwedung mit Git,
       das Erstellen von Konfiurationsdateien aus Templates und das einrichten von Credential (z.B. Passwörtern).
       Nach diesem Kurs werden Sie in der Lage sein, Ansible im täglichen Betrieb zu nutzen und Ihre Konfigurations- und Deploymentvorgänge zu vereinfachen.
-      
+
       ### Stichpunkte
       - Einführung in die Automatisierung
       - Einführung in Ansible
@@ -50,7 +54,7 @@ const Index = () => (
       - Secrets
       - Eigene Module schreiben
       - Ansible & CI/CD (Gitlab CI)
-      
+
       ### Für wen der Kurs bestimmt ist
       Der Kurs ist in erster Linie für Admins und DevOps gedacht, die in Ansible einsteigen wollen.
       Entwickler, die ihre eigenen Anwendungen deployen (auch in Testumgebungen) und diesen Vorgang vereinfachen wollen,
@@ -63,7 +67,7 @@ const Index = () => (
           <ReactMarkdown
             source={stripIndent`
             #### Notwendige Vorkenntnisse
-            - Grundlagenwissen Linux 
+            - Grundlagenwissen Linux
             - Vertrautheit mit der Kommandozeile
             `}
             escapeHtml={false}

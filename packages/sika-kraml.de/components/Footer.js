@@ -114,7 +114,13 @@ const Footer = props => (
               >
                 <img src={props.linkedinImg} />
               </a>
-              <a href='https://www.xing.com/profile/Jiri_Kraml' className='a-underline ' style={colorText}><img width="67" src={props.xingImg} className="ml-1" /></a>
+              <a
+                href="https://www.xing.com/profile/Jiri_Kraml"
+                className="a-underline "
+                style={colorText}
+              >
+                <img width="67" src={props.xingImg} className="ml-1" />
+              </a>
             </div>
           </div>
         </div>

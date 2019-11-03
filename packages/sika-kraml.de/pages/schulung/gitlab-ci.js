@@ -13,7 +13,9 @@ import site from "../../config";
 
 const Index = () => (
   <div>
-    <Head></Head>
+    <Head><title>
+        Gitlab CI Schulungen - Sika Kraml - IT Schulungen, Workshops und Beratung
+      </title></Head>
     <Header
       websiteHeader="Gitlab CI Schulung"
       inquiryBtn="Anfragen"

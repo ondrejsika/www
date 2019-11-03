@@ -16,7 +16,12 @@ let site = {
 
 const Index = () => (
   <div>
-    <Head></Head>
+    <Head>
+      <title>
+        Kubernetes Schulungen - Sika Kraml - IT Schulungen, Workshops und
+        Beratung
+      </title>
+    </Head>
     <Header
       websiteHeader="Kubernetes Schulung"
       inquiryBtn="Ask for training"
@@ -27,18 +32,18 @@ const Index = () => (
         source={stripIndent`
         ### Die Technologie
         Kubernetes ist heutzutage die an weitesten verbreitete Plattform zum Hosten von Docker Containern. Es wird von allen großen Spielern auf dem Markt (Google, Amazon, Microsoft) über die Cloud Native Computing Foundation unterstützt. Kuberneres wird von Unternehmen jeder Größenordnung produktiv eingesetzt - vom Startup bis zum Weltkonzern.
-        
+
         ### Kursbeschreibung
         Der Kurs hat die Form eines praktischen Hands-On-Workshops. Wir werden Kuberneres sowohl lokal (zum Entwickeln), als auch in der Cloud bei Digital Ocean aufsetzen. Nachdem wir uns eine Übersicht über die Grundstruktur verschafft haben, gehen wir die einzelnen Komponenten der Plattform durch. Wir lernen, wie man ein Kubernetes Manifest schreibt und wie man eine Dockeranwendung deployt. Des Weiteren sehen wir uns an, wie man in Kubernetes Rechte verwaltet und wie man Helm-Pakete schreibt und nutzt.
-        
+
         ### Ondrej Sika (englisch)
-        
+
         My name is Ondřej Šika, I develop software at Slush Pool and hold workshops.
         I've held Kubernetes workshops at companies like CGI or Webglobe - Yergeon.
         I mostly teach Docker which is very closely related to Kubernetes.
-        
+
         Kubernetes is the platform of choice for most of my projects, as it's one of the easiest ways of running Docker applications.
-        
+
         ### Inhalt
         - Theoretische Einführung in Kubernetes
         - Installation von Minikube und kubectl (für die, die es nicht schon zu Hause installiert haben)
@@ -48,7 +53,7 @@ const Index = () => (
         - Theoretische Einführung in Helm Pakete
         - Installation und Deployment mit Helm
         - Schreiben eingener Helm Pakete
-        
+
         #### Für wen die Schulung geeignet ist
         Die Schulung richtet sich an Entwickler und DevOps-Ingenieure, die ihre Dockeranwendungen in Kubernetes laufen lassen wollen.
         `}

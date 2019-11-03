@@ -16,7 +16,11 @@ let site = {
 
 const Index = () => (
   <div>
-    <Head></Head>
+    <Head>
+      <title>
+        Docker Schulungen - Sika Kraml - IT Schulungen, Workshops und Beratung
+      </title>
+    </Head>
     <Header
       websiteHeader="Docker Schulung"
       inquiryBtn="Ask for training"
@@ -27,20 +31,20 @@ const Index = () => (
         source={stripIndent`
         ### Die Technologie
         Docker ist eine Technologie, die die Entwicklungs- und Testprozesse stark vereinfacht. Betreiben Sie was Sie wollen und wo Sie es wollen. Warten Sie nicht mehr, bis Ihr Server konfiguriert oder ein Update durchgeführt ist. Verwalten Sie Ihre Luafzeitumgebung als Teil Ihres Projekts.
-        
+
         ### Course Description
         During the two-day workshop, you’ll be shown everything you need to know to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
-        
+
         ### Schulungsleiter
         #### Ondrej Sika (englisch)
-        
+
         My name is Ondřej Šika, I develop software at Slush Pool and hold workshops. I mostly teach Docker and Gitlab CI, which is closely related to Docker.
         I have over four years of commercial experience with Docker. I use it daily, both for development and production. I can't image working without it.
-        
+
         #### Jiri Kraml (deutsch)
-        
+
         Ich heiße Jiří Kraml und bin der Entwicklungsleiter bei Zigpos. Ob fürs Testing  oder Deployment - Docker ist stets eins der ersten Tools, die ich installiere. Die Reproduzierbarkeit von Prozessen hat uns schon so manchen Wochenendeinsatz erspart, denn mit Docker gehören Ausreden à la  "runs on my machine" der Vergangenheit an.
-        
+
         ### Inhalt
         - Theoretische Einführung in Dockeru
         - Installation von Dockeru (für die, die es nicht schon zu Hause installiert haben)
@@ -49,7 +53,7 @@ const Index = () => (
         - Docker Compose - Mehrcontaineranwendungen in Docker
         - Deployment in Swarm
         - Demo eines Kubernetesdeployments
-        
+
         ### Für wen die Schulung geeignet ist
         Die Schulung ist vorranging für Teilnehmer gedacht, die mit Docker keine oder nur geringe Erfahrungen gemacht haben. Vorkenntnisse von Docker sind nicht nötig. Die Schulung ist für Entwickler, DevOps und Administratoren geeignet, die Docker in der Praxis nutzen wollen oder mehr über die Möglichkeiten und Einsatzgebiete von Docker erfahren möchten.
         `}

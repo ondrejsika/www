@@ -16,7 +16,11 @@ let site = {
 
 const Index = () => (
   <div>
-    <Head></Head>
+    <Head>
+      <title>
+        Git Schulungen - Sika Kraml - IT Schulungen, Workshops und Beratung
+      </title>
+    </Head>
     <Header
       websiteHeader="Git Training"
       inquiryBtn="Anfragen"
@@ -28,9 +32,9 @@ const Index = () => (
         ### Was ist Git?
         Git ist als modernes Versionierungswerkzeug mittlerweile der Standard unter Softwareentwicklern.
         Freelancer, Startups und große Konzerne nutzen es täglich.
-        Git ermöglicht eine einfache simultane Zusammenarbeit an Projekten, ohne dass man sich in die Quere kommt oder einem der Zugriff auf den aktuellen Stand erschwert wird. 
+        Git ermöglicht eine einfache simultane Zusammenarbeit an Projekten, ohne dass man sich in die Quere kommt oder einem der Zugriff auf den aktuellen Stand erschwert wird.
         Die Zusammenarbeit wird durch Gitlab, einer Plattform für Design, Entwicklung und Betrieb von Softwareprojekten, noch weiter verbessert.
-        
+
         ### Kursbeschreibung
         Der Kurs wird als eintägiger Workshop abgehalten.
         Sie lernen die Vorteile von Git kennen, werden verstehen, wie es funktioniert und warum es keine angemessenen Altenativen gibt.
@@ -38,7 +42,7 @@ const Index = () => (
         in mehreren Branches mit verschiedenen Merge Strategien (merge/rebase).
         Die Vor- und Nachteile beider Strategien werden erläutert, damit Sie entscheiden können, welche besser zu Ihren Anforderungen passt.
         Es werden auch Auswege aus unerwartete Situationen wie "Oh, ich habe alle gelöscht" gezeigt.
-        
+
         ### Stichpunkte
         - Installation und Einrichtung
         - Neues Repository
@@ -49,7 +53,7 @@ const Index = () => (
         - Workflow mit Gitlab
         - Wiederherstellung gelöschter Daten aus dem Repository
         - Tipps
-        
+
         ### Für wen der Kurs bestimmt ist
         Der Kurs ist in erster Linie für Entwickler gedacht, die noch keine Versionierung verwenden oder Git noch nicht benutzen.
         Der Kurs ist auch für jene nützlich, die nicht täglich Code schreiben, etwa DevOps.
