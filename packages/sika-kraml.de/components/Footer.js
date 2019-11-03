@@ -114,8 +114,7 @@ const Footer = props => (
               >
                 <img src={props.linkedinImg} />
               </a>
-              {/*TODO icon won't display, fix that*/}
-              {/*<a href='https://www.xing.com/profile/Jiri_Kraml' className='a-underline' style={colorText}><img src={props.xingImg} /></a>*/}
+              <a href='https://www.xing.com/profile/Jiri_Kraml' className='a-underline ' style={colorText}><img width="67" src={props.xingImg} className="ml-1" /></a>
             </div>
           </div>
         </div>
