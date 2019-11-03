@@ -17,7 +17,7 @@ const Index = () => (
     <Head></Head>
     <Header websiteHeader="Termine" />
     <div className="container">
-      <UpcomingSessions hide_add_to_google_calendar={true} inquiry_email="schulungen@sika-kraml.de" lang={site.lang} location={site.lang} />
+      <UpcomingSessions hide_add_to_google_calendar={true} site_name="sika-kraml.de" inquiry_email="schulungen@sika-kraml.de" lang={site.lang} location={site.lang} />
     </div>
   </div>
 );
