@@ -34,16 +34,16 @@
   perex: |
     Mate zajem o nejake me skoleni? Zde jsou terminy do konce roku 2019.
   content: |
-    Tento rok uz mam skoro cely vybookovany a tak nabizim terminy kdy mam vypsane verejne terminy kam se muzete prihlasit pripadne kam muzete poslat vase vyvojare. Vypsane mam terminy Dockeru, Kubernetes a Gitlab CI, muzete se podivat na stranku [Verejne Terminy](/verejne-terminy). Pokud mate zajem o jiny kurz, napiste mi mail a domluvime se.
+    Tento rok uz mam skoro cely vybookovany a tak nabizim terminy, kdy mam vypsane verejne terminy, kam se muzete prihlasit pripadne, kam muzete poslat vase vyvojare. Vypsane mam terminy Dockeru, Kubernetes a Gitlab CI, muzete se podivat na stranku [Verejne Terminy](/verejne-terminy). Pokud mate zajem o jiny kurz, napiste mi mail a domluvime se.
 
 - id: mac-os-vs-debian-i3
   url: /blog/2019/mac-os-vs-debian-i3
   title: Mac OS vs Debian + i3
   date: 5. 2. 2019
   perex: |
-    Chci si koupit Mac. Uz po čtvrtém jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkam, zda by pro me nebyl i MacOS. Předchozí tři pokusy byli neuspěšné, na Mac se mi nepodařilo přejít. Ted to zkouším po čtvrté.
+    Chci si koupit Mac. Uz po čtvrté jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkam, zda by pro me nebyl i MacOS. Předchozí tři pokusy byli neuspěšné, na Mac se mi nepodařilo přejít. Ted to zkouším po čtvrté.
   content: |
-    Chci si koupit Mac. Uz po čtvrtém jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkam, zda by pro me nebyl i MacOS. Předchozí tři pokusy byli neuspěšné, na Mac se mi nepodařilo přejít. Ted to zkouším po čtvrté.
+    Chci si koupit Mac. Uz po čtvrté jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkam, zda by pro me nebyl i MacOS. Předchozí tři pokusy byli neuspěšné, na Mac se mi nepodařilo přejít. Ted to zkouším po čtvrté.
 
     Chtěl bych zjistit zda to půjde. Začnu tím, proč bych na Mac přešel. Nebudu teď řešit cenu, ta je sice vyšší, ale jsem ochotny ji zaplatit.
 
@@ -68,7 +68,7 @@
 
     #### Window Manager i3
 
-    Tohle je asi nejdůležitější věc proč jsem nikdy nepřešel na Mac. i3 je prostě naprosto dokonalý, skvěle se ovládá, perfektně pracuje s více monitory. Nemám k němu žádnou výhradu.
+    Tohle je asi nejdůležitější věc, proč jsem nikdy nepřešel na Mac. i3 je prostě naprosto dokonalý, skvěle se ovládá, perfektně pracuje s více monitory. Nemám k němu žádnou výhradu.
 
     #### Wifi Hotspot
     Na Macu je skvěle sdílení internetu z iPhone a iPadu do Mácu. Otevřu Mac, kliknu na ikonu Wifi a výběru si zda chci internet z telefonu nebo iPadu. Nemusím nic vyndávat z kapes a pouštět hotspot. Prostě to funguje.
@@ -78,13 +78,13 @@
   title: Emaily v jedné doméně na Google i na svém serveru
   date: 10. 1. 2019
   perex: |
-    Chci si koupit Mac. Už po třetí jej testují. Mám iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkám, zda by pro mě nebyl i MacOS. Předchozí dva pokusí byli neúspěšně, na Mac se mi nepodařilo přejít. Ted to skousim po třetí.
+    Chci si koupit Mac. Už potřetí jej testuji. Mám iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkám, zda by pro mě nebyl i MacOS. Předchozí dva pokusy byly neúspěšné, na Mac se mi nepodařilo přejít. Teď to zkouším potřetí.
   content: |
     Je možné mít emaily v jedné doméně jako ondrej@example.com na G Suite a monitoring@example.com na svém serverů? Ano, jde a není to těžké.
 
-    Používám G Suite z mnoha důvodů. Je to stabilní email, který fuguje i když zbytek mě infrastruktury spadne, doručuje se do inboxu a nemusím řešit spam listy, mám na Google kalendář, kontakty a G Suite. To jsou asi hlavní důvody proč jej používám.
+    Používám G Suite z mnoha důvodů. Je to stabilní email, který funguje i když zbytek mé infrastruktury spadne, doručuje se do inboxu a nemusím řešit spam listy, mám na Google kalendář, kontakty a G Suite. To jsou asi hlavní důvody, proč jej používám.
 
-    Na druhou stranu, email účet stojí 4 EUR měsíčně a postu si organizují do více účtu. Dělám to zase z více důvodů, dobře se mi s tím pracuje a některé emaily chci sdílet s a některé ne. Nechci také stahovat všechny emaily na mobilů, zvlášť ty, které nemusím řešit akutně a chodí jich hodně. Stejně tak mi vadí filtrování Googlim způsobem narozdíl od standartniho Sieve. Není to možná nejlepší způsob, ale mě vyhovuje.
+    Na druhou stranu, email účet stojí 4 EUR měsíčně a poštu si organizuji do více účtu. Dělám to zase z více důvodů, dobře se mi s tím pracuje a některé emaily chci sdílet a některé ne. Nechci také stahovat všechny emaily na mobilů, zvlášť ty, které nemusím řešit akutně a chodí jich hodně. Stejně tak mi vadí filtrování Googlim způsobem narozdíl od standartniho Sieve. Není to možná nejlepší způsob, ale mě vyhovuje.
 
     Dejme tomu že používám doménu example.com. Používat email ondrej@example.com jako hlavní, ondrejsika@example.com na většinu služeb a webu (jako například ondrejsika+alza@example.com nebo ondrejsika+netflix@example.com), monitoring@example.com pro notifikace z monitoringu, wp@example.com pro notifikace z Worpresu a podobně.
 
@@ -94,7 +94,7 @@
 
     Toto řešení se mi nakonec přestalo líbit. Povedlo se mi totiž docílit toho, že emaily mohu mít v hezkém formátu (ondrejsika@example.com, wp@example.com) a nepoužívat více účtu v G Suitě. Ukážu Vám jak na to.
 
-    Provozují vlastní emailový server Poště.io. Je to jeden Docker kontejner, který obsahuje SMTP, IMAP, webmail a Admin. Vytvořili to češi, je to fakt super. V něm jsem si vytvořil virtuální doménu example.com, na které si vytvářím jednotlivé účty. Dále jsem si vytvoří doménu gin.example.com (Google INput, podobnost s alkoholem náhodná), kterou jsem přesměroval na example.com, což znamená že všechny emaily pro účty na gin.example.com se bude doručovat do schránek v doméně example.com. Používá se to například když máte alias domény s pomlčkou a chcete doručovat emaily na obě domény (například ondrej@my-domain.com -> ondrej@mydomain.com, alice@my-domain.com -> alice@mydomain.com).
+    Provozují vlastní emailový server Poště.io. Je to jeden Docker kontejner, který obsahuje SMTP, IMAP, webmail a Admin. Vytvořili to češi, je to fakt super. V něm jsem si vytvořil virtuální doménu example.com, na které si vytvářím jednotlivé účty. Dále jsem si vytvořil doménu gin.example.com (Google INput, podobnost s alkoholem náhodná), kterou jsem přesměroval na example.com, což znamená, že všechny emaily pro účty na gin.example.com se bude doručovat do schránek v doméně example.com. Používá se to například, když máte alias domény s pomlčkou a chcete doručovat emaily na obě domény (například ondrej@my-domain.com -> ondrej@mydomain.com, alice@my-domain.com -> alice@mydomain.com).
 
     MX DNS záznamy domény example.com nechám na Google a MX pro gin.example.com nastavím na můj mailserver. Vypadá to asi takto:
 
@@ -247,17 +247,17 @@
     Jake Knapp: Sprint
   date: 18. 2. 2018
   perex: |
-    Právě jsem dočetl knížku Sprint od lidí z Google Ventrures. Když jsem si knížku kupoval, myslel jsem si že si kupují návod jak ryche udělat nějaký projekt. Ale o tom knížka vůbec není … Kniha Sprint popisuje jak otestovat nápad…
+    Právě jsem dočetl knížku Sprint od lidí z Google Ventrures. Když jsem si knížku kupoval, myslel jsem si, že si kupují návod, jak ryche udělat nějaký projekt. Ale o tom knížka vůbec není … Kniha Sprint popisuje, jak otestovat nápad…
   content: |
-    Právě jsem dočetl knížku Sprint od lidí z Google Ventrures. Když jsem si knížku kupoval, myslel jsem si že si kupují návod jak ryche udělat nějaký projekt. Ale o tom knížka vůbec není …<br/>
+    Právě jsem dočetl knížku Sprint od lidí z Google Ventrures. Když jsem si knížku kupoval, myslel jsem si, že si kupují návod, jak ryche udělat nějaký projekt. Ale o tom knížka vůbec není …<br/>
 
-    Kniha Sprint popisuje jak otestovat nápad za týden. A nápad může být jakkoliv bláznivý. Vlastně čím bláznivější, tím je to téma vhodnější pro sprint. Riskují vlastně jen týden a v pátek budu mít hmatatelné výsledky, zda můj projekt může fungovat či nikoliv.<br/>
+    Kniha Sprint popisuje, jak otestovat nápad za týden. A nápad může být jakkoliv bláznivý. Vlastně, čím bláznivější, tím je to téma vhodnější pro sprint. Riskují vlastně jen týden a v pátek budu mít hmatatelné výsledky, zda můj projekt může fungovat či nikoliv.<br/>
 
     V knížce se dozvíte jak nápad vhodné zvolit, jak na něm v teamu pracovat, vytvořit prototyp a vyzkoušet na zákaznících. Je nutná trocha představivosti, ale sprintem můžete testovat prakticky všechno. Od navržení prodejny nebo ordinace, prez software nebo weby až po hardwarové produkty.<br/>
 
     Mnohé techniky z knihy se dají použít i mimo týdenní sprint, třeba když potřebujete společně něco vymyslet. Jsou lepší metody než brainstorming – ten podle autorů vůbec nefunguje. Také kvalitiativni rozhovory se zákazníky jsou velmi zajímavá oblast.<br/>
 
-    Už se těším až sprint, nebo nějakou jeho část či upravenou variantu (i když to příliš nedoporučují) vyzkouším na nějakém reálném projektu. Přemýšlím i o použití ve skautském oddlilu. Až si udělám osobní zkušenost se sprintem jak ho popisují v knize, určitě o tom napíši.<br/>
+    Už se těším až sprint, nebo nějakou jeho část či upravenou variantu (i když to příliš nedoporučují) vyzkouším na nějakém reálném projektu. Přemýšlím i o použití ve skautském oddlilu. Až si udělám osobní zkušenost se sprintem, jak ho popisují v knize, určitě o tom napíši.<br/>
 
     Rád knihu půjčím: [https://distlib.com/ondrejsika/169/](https://distlib.com/ondrejsika/169/)<br/>
     Nebo ji můžete zakoupit: [https://www.melvil.cz/kniha-sprint/](https://www.melvil.cz/kniha-sprint/)
