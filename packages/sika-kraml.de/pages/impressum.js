@@ -1,3 +1,4 @@
+import React from 'react';
 import Article from "@app/sika-kraml.de/layouts/Article";
 
 export default () => (
