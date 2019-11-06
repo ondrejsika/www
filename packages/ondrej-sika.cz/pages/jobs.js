@@ -26,21 +26,19 @@ const Install = () => (
 FAQ: Je tato nabidka aktualni? Ano.
 
 - [__Konzultant a Skolitel DevOps__](#hledam-partaka-na-skoleni-a-konzultace-devops) HOT!
+- [Junion Frontend Developer (HTML & React)](#junion-frontend-developer--html---react-)
 - [Technicky asistent & Junior DevOps Engineer](#technicky-asistent---junior-devops-engineer)
 
 ## Hledam partaka na skoleni a konzultace DevOps
 
 Shanim nekoho kdo mi pomuze se skolenimi a workshopy na DevOps temata. Skolim a konzultuji tyto nastroje a praci s nimi.
 
-- Git
-- Gitlab
+- Git, Gitlab
 - Gitlab CI
-- Docker
-- Kubernetes
-- Terraform
-- Ansible
+- Docker, Kubernetes
+- Terraform, Ansible
 - ELK / EFK
-- Sentry
+- Prometheus, Sentry
 
 Pokud pracujes s jinymi technologiemi jako je napriklad AWS, Azure, ... nevadi. Urcite se domluvime.
 
@@ -65,6 +63,29 @@ Moji klienti jsou startupy i korporace. Napriklad O2, AirBank, Satoshi Labs, E.O
 - Praha – obcas se budem muset potkat osobne
 - Zkusenosti s prednasenim / lektorovanim
 
+
+Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>. Napada te nekdo kdo by mel zajem? Doporuc mu prosim tuto nabidku, diky.
+
+## Junion Frontend Developer (HTML & React)
+
+Mas zajem pracovat na spouste webu v Next.js a v Reactu? Zajima te Frontend, HTML, SEO, ... Posun se v Reactu a ziskej zkusenosti z praxe na realnych projektech.
+
+### Nabizim
+
+- Zajimave financni ohodnoceni
+- Moznost ucit se a rust
+- Prace odkudkoliv
+
+### Pozaduji
+
+- Znalost HTML
+- Znalost JavaScriptu
+- Zakladni znalost Reactu a React komponent
+- Zaklady SEO
+
+### Vyhodou
+
+- Znalost Next.js
 
 Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>. Napada te nekdo kdo by mel zajem? Doporuc mu prosim tuto nabidku, diky.
 
