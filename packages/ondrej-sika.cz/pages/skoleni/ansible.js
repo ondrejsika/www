@@ -3,7 +3,7 @@ import Course from "@app/ondrej-sika.cz/layouts/Course";
 export default props => (
   <Course
     course_id="ansible"
-    // show_sessions={true}
+    show_sessions={true}
     lang={props.site.lang}
     course_title="Školení Ansible"
     logo="/static/ansible.png"
