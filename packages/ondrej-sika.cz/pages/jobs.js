@@ -68,7 +68,7 @@ Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>. Napada te n
 
 ## Junion Frontend Developer (HTML & React)
 
-Mas zajem pracovat na spouste webu v Next.js a v Reactu? Zajima te Frontend, HTML, SEO, ... Posun se v Reactu a ziskej zkusenosti z praxe na realnych projektech.
+Mas zajem pracovat na spouste webu v Next.js a v Reactu? Koukni na ne na [Github](https://github.com/ondrejsika/ondrejsikawebs). Zajima te Frontend, HTML, SEO, ...? Posun se v Reactu a ziskej zkusenosti z praxe na realnych projektech.
 
 ### Nabizim
 
