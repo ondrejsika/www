@@ -3,28 +3,42 @@
     cs: Školení Dockeru
     en: Docker Training
     de: Docker Schulung
+  lecturers:
+    - ondrejsika
+    - martinstudna
 - id: kubernetes
   name:
     cs: Školení Kubernetes
     en: Kubernetes Training
     de: Kubernetes Schulung
+  lecturers:
+    - ondrejsika
 - id: git
   name:
     cs: Školení Gitu
     en: Git Training
     de: Git Schulung
+  lecturers:
+    - ondrejsika
+    - martinstudna
 - id: gitlab-ci
   name:
     cs: Školení Gitlab CI
     en: Gitlab CI Training
     de: Gitlab CI Schulung
+  lecturers:
+    - ondrejsika
 - id: ansible
   name:
     cs: Školení Ansible
     en: Ansible Training
     de: Ansible Schulung
+  lecturers:
+    - ondrejsika
 - id: terraform
   name:
     cs: Školení Terraformu
     en: Terraform Training
     de: Terraform Schulung
+  lecturers:
+    - ondrejsika
