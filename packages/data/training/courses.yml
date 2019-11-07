@@ -42,3 +42,17 @@
     de: Terraform Schulung
   lecturers:
     - ondrejsika
+- id: react
+  name:
+    cs: Školení Reactu
+    en: React Training
+    de: React Schulung
+  lecturers:
+    - martinstudna
+- id: react-native
+  name:
+    cs: Školení React Native
+    en: React Native Training
+    de: React Native Schulung
+  lecturers:
+    - martinstudna
