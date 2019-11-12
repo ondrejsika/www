@@ -116,7 +116,7 @@ class UpcomingSessions extends React.Component {
                           <a className="btn btn-primary btn-sm" target="_blank">
                             <Translate
                               lang={this.props.lang}
-                              cs="Do&nbsp;kalenádře"
+                              cs="Do&nbsp;kalendáře"
                               en="Add&nbsp;to&nbsp;Calendar"
                             />
                           </a>
