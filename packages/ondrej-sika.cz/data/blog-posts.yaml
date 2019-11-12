@@ -1,3 +1,19 @@
+- id: javadays2019
+  title: Docker & Kubernetes Talk @ JavaDays 2019
+  date: 12. 11. 2019
+  perex: |
+    Slides a ukazka kodu z me prednasky o Dockeru a Kubernetes.
+  content: |
+
+    Slides z prednasky na Speaker Deck: <https://speakerdeck.com/ondrejsika/introduction-to-docker-and-kubernetes-at-javadays-2019>
+
+    Ukazkovy projekt: [ondrejsika/javadays2019](https://github.com/ondrejsika/javadays2019)
+
+    Pokud se Vam prednaska libila budu rad kdyz o ni tweetnetes s `@ondrejsika` a `#javadayscz`. Diky.
+
+    Zajima vas Docker nebo Kubernetes? Muzete si objednat moje [Skoleni Dockeru](/skoleni/docker) a [Skoleni Kubernetes](/skoleni/kubernetes) nebo prijit na nejaky [otevreny termin](/verejne-terminy)
+
+
 - id: terraform-prednaska-linuxdays-2019
   url: /blog/2019/terraform-prednaska-linuxdays-2019
   title: Terraform prednaska na LinuxDays 2019
