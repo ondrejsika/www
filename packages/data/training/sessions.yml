@@ -11,7 +11,7 @@
   date_from: 14.11.2019
   date_to: 15.11.2019
 - id: kubernetes-brno-18-11-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
