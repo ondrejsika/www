@@ -2402,26 +2402,6 @@ sika.io dev deploy:
     url: https://sika.io.xsika.cz
   dependencies: []
 
-sika.io prod deploy:
-  stage: deploy_prod
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika.io&domain=sika.io&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  only:
-    refs:
-      - master
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/sika.io/**/*
-      - yarn.lock
-  environment:
-    name: prod sika.io
-    url: https://sika.io
-  dependencies: []
-
 docker-training.de build js:
   stage: build_js
   image: node
@@ -3488,25 +3468,5 @@ ondrejsika.io dev deploy:
   environment:
     name: dev ondrejsika.io
     url: https://ondrejsika.io.xsika.cz
-  dependencies: []
-
-ondrejsika.io prod deploy:
-  stage: deploy_prod
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsika.io&domain=ondrejsika.io&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  only:
-    refs:
-      - master
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ondrejsika.io/**/*
-      - yarn.lock
-  environment:
-    name: prod ondrejsika.io
-    url: https://ondrejsika.io
   dependencies: []
 
