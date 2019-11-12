@@ -10,6 +10,7 @@ export default props => (
     price_self_funded="11 999 CZK"
     price_company_funded="14 999 CZK"
     price_in_house="50 000 CZK"
+    location="cz"
   >
     <div className="alert alert-danger mt-5" role="alert">
       <h2>Pripravuji ...</h2>

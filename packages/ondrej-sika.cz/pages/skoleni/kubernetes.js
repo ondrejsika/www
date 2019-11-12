@@ -10,6 +10,7 @@ export default props => (
     price_self_funded="11 999 CZK"
     price_company_funded="14 999 CZK"
     price_in_house="50 000 CZK"
+    location="cz"
     description={`
 ### Co je to Kubernetes
 Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.

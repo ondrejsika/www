@@ -10,6 +10,7 @@ export default props => (
     price_self_funded="5 999 CZK"
     price_company_funded="7 999 CZK"
     price_in_house="25 000 CZK"
+    location="cz"
     description={`
 ### K čemu se používá?
 

@@ -10,6 +10,7 @@ export default props => (
     price_self_funded="5 999 CZK"
     price_company_funded="7 999 CZK"
     price_in_house="25 000 CZK"
+    location="cz"
     description={`
 ### K čemu se používá ?
 Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutinní úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní Vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
