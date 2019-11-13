@@ -123,7 +123,7 @@
     cs: 4. června 2018
   text:
     cs: |
-      Ondřej nám přijet školit Git a Docker, školení bylo perfektní. Ondřej má velmi dobrou znalost devops. Velmi doporučuji jeho školení, pomohl nám automatizovat každodenní rutinní procesy.
+      Ondřej nám přijel školit Git a Docker, školení bylo perfektní. Ondřej má velmi dobrou znalost devops. Velmi doporučuji jeho školení, pomohl nám automatizovat každodenní rutinní procesy.
     se: |
       Ondřej utbildade vårt team i Git och Docker, och vi fann träningen perfekt. Ondřej har en mycket god kunskap i DevOps. Jag rekommenderar hans träning, eftersom han hjälpte oss att automatisera vardagliga rutinprocesser.
     en: |
@@ -141,7 +141,7 @@
   text:
     cs: |
       Ondřej školil git, ale bez problémů na místě objasnil i mnoho našich specifických otázek kolem celého vývojového cyklu. A neztratil se ani v ad hoc dotazech, které už s gitem souvisely jen volně, ale pro nás byly důležité.
-      Bylo velmi přínosné strávit čas s člověkem, který tématu rozumí do hloubky i do šířky a zároveň se je schopen podívat na problém z vaší perspektivy.
+      Bylo velmi přínosné strávit čas s člověkem, který tématu rozumí do hloubky i do šířky a zároveň se je schopen podívat na problém z Vaší perspektivy.
     se: |
       Ondřej utbildade oss i Git, men han förklarade också många av våra specifika problem runt utvecklingscykeln utan några problem. Och det gick inte vilse i ad hoc-frågor som endast var löst relaterade till Git men var viktiga för oss.
       Det var mycket fördelaktigt att spendera tid med en person som förstår ämnet i djup och bredd, samtidigt som man kan titta på problemet utanför ditt egna perspektiv.
@@ -162,9 +162,9 @@
   photo: img/frantisekvodslon.jpg
   text:
     cs: |
-      Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč, a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
+      Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
       Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma Dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd.
-      Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo"
+      Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo."
     se: |
       Vi bjöd in Ondra som en konsultant för vårt företag angående integrationen av Gitlab CI i vår utvecklingsprocess. Trots vår okunnighet om frågan hittade vi snabbt ett gemensamt språk, och under en kort tid fick vi mest ut av Ondrejs kunskap och erfarenhet.
       Ondrejs erfarenhet har ett bra djup och bredd inom på alla områden i mjukvaruutveckling och drift - vi har fokuserat på Docker, lastbalansering, säkerhet, git-arbetsflöde, övervakning, och mer.
@@ -196,7 +196,7 @@
     cs: 6. května 2019
   text:
     cs: |
-      Pár školení už jsem zažil, ale takhle perfektně do detailu vyladěné Kubernetes školení mě vážně dostalo;) Pokud chcete jít z dobou a vůbec nevíte co k8s je, tak neváhejte a napište Ondrovi!!! Ještě jednou díky Ondro;) Bylo to super!
+      Pár školení už jsem zažil, ale takhle perfektně do detailu vyladěné Kubernetes školení mě vážně dostalo;) Pokud chcete jít s dobou a vůbec nevíte co k8s je, tak neváhejte a napište Ondrovi!!! Ještě jednou díky Ondro;) Bylo to super!
 - id: oxyCTO
   name: Ivo Kašpárek
   role:
@@ -208,7 +208,7 @@
     cs: 7. května 2019
   text:
     cs: |
-      Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy ať už ohledně gitu, dockeru a kubernetes.
+      Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy, ať už ohledně gitu, dockeru nebo kubernetes.
 - id: CMS
   name: František Vodsloň
   role:
