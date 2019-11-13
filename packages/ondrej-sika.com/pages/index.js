@@ -9,7 +9,7 @@ import Head from "next/head";
 const Index = props => (
   <div>
     <Head>
-      <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
+      <title>Ondrej Sika - IT Training, Consulting and Workshops in Europe</title>
     </Head>
     <MainBar
       MainBarHeader="IT Training, Consulting and Workshops in Europe"
