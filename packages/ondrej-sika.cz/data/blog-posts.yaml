@@ -189,6 +189,7 @@
   url: /blog/2018/tunelovani-git-konfigurace-na-server-prez-ssh-aneb-konec-commitum-root-root@debian
   title: Tunelovani GIT konfigurace na server prez SSH aneb konec commitum root root@debian
   date: 21. 3. 2018
+  ad: git
   perex: |
     Určitě se vám někdy stalo, že jste něco commitovali na serveru a do historie jste si zavlekly něco jako: commit 8f160534070012c87c409e5b19028ad0062f0310 Author: root <root@debian> Date: Wed Jun 26 17:16:31 2013 +0000 blocks.pickle, peers.pickle added to .gitignore commit 96e83891bfdcad41c545220e1957fba1ba72c2cd Author: root&#8230;
   content: |

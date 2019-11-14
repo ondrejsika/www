@@ -39,6 +39,10 @@ let Post = props => {
           if (post.ad) {
             // FIXME: Use YAML source
             let ads = {
+              git: {
+                about: "Git",
+                course_name: "Skoleni Gitu"
+              },
               docker: {
                 about: "Docker",
                 course_name: "Skoleni Dockeru"
