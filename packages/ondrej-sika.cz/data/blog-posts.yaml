@@ -1,16 +1,16 @@
 - id: helm3
-  title: Helm 3, Tilerless Helm
+  title: Helm 3, Tillerless Helm
   date: 14. 11. 2019
   ad: kubernetes
   tags:
     - kubernetes
     - helm
   perex: |
-    Helm3! Konečně! Tilerless Helm verze 3 je tady a tohle je jeho krátká recenze na základě jeho používání.
+    Helm3! Konečně! Tillerless Helm verze 3 je tady a tohle je jeho krátká recenze na základě jeho používání.
   content: |
     __Helm__ asi znáte, je to balíčkovací nastro pro __Kubernetes__. Ted ale přišel zásadní release v podobě verze 3 a já Vám ukážu novinky a rozdíly oproti předchozí verzi, které mě zaujali.
 
-    ### Tilerless Helm
+    ### Tillerless Helm
     Největší a asi i nejočekávanější novinkou je to že Helm 3 už je čistě client, nepotřebuje se instalovat do clusteru (Tiller). Pro mě je to skvělá zpráva a možnost začít používat Helm na plno.
 
     Dříve jsem Helm používal primárně jako Template engine, protože jsem nasazoval tímto stylem:
