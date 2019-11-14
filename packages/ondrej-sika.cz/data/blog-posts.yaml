@@ -1,5 +1,6 @@
 - id: javadays2019
   title: Docker & Kubernetes Talk @ JavaDays 2019
+  ad: docker
   date: 12. 11. 2019
   perex: |
     Slides a ukazka kodu z me prednasky o Dockeru a Kubernetes.
@@ -17,6 +18,7 @@
 - id: terraform-prednaska-linuxdays-2019
   url: /blog/2019/terraform-prednaska-linuxdays-2019
   title: Terraform prednaska na LinuxDays 2019
+  ad: terraform
   date: 6. 10. 2019
   perex: |
     Slides, video a ukazka kodu z me prednasky o Terraformu.
@@ -34,6 +36,7 @@
   url: /blog/2019/react-next-workshop-linuxdays-2019
   title: React & Next.js Workshop na LinuxDays 2019
   date: 5. 10. 2019
+  ad: react
   perex: |
     Dnes jsem mel workshop na LinuxDays, zde jesou materialy a ukazkovy projekt.
   content: |
@@ -129,6 +132,7 @@
   title: |
     Talk: Gitlab CI + Docker (Linux Days 2018)
   date: 6. 10. 2018
+  ad: gitlab-ci
   perex: |
       Slidy k přednášce a workshopu na Linux Days 2018.
   content: |
@@ -141,6 +145,7 @@
     Docker image ondrejsika/ci: [https://github.com/ondrejsika/ondrejsika-ci-docker](https://github.com/ondrejsika/ondrejsika-ci-docker)
 - id: talk-uvod-do-pouzivani-dockeru-teched-2018
   url: /blog/2019/talk-uvod-do-pouzivani-dockeru-teched-2018
+  ad: docker
   title: |
     Talk: Úvod do používání Dockeru, TechEd 2018
   date: 16. 5. 2018
@@ -279,6 +284,7 @@
     Nebo ji můžete zakoupit: [https://www.melvil.cz/kniha-sprint/](https://www.melvil.cz/kniha-sprint/)
 - id: prednaska-o-dockeru-ve-zline-8-2-2018
   url: /blog/2018/prednaska-o-dockeru-ve-zline-8-2-2018
+  ad: docker
   title: |
     Přednáška o Dockeru ve Zlíně 8. 2. 2018
   date: 8. 2. 2018
