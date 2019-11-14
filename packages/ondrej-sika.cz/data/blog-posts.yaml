@@ -1,3 +1,124 @@
+- id: helm3
+  title: Helm 3, Tilerless Helm
+  date: 14. 11. 2019
+  ad: kubernetes
+  tags:
+    - kubernetes
+    - helm
+  perex: |
+    Helm3! Konecne! Tilerless Helm verze 3 je tady a tohle je jeho kratka recenze na zaklade jeho pouzivani.
+  content: |
+    __Helm__ asi znate, je to balickovaci nastro pro __Kubernetes__. Ted ale prisel zasadni release v podobe verze 3 a ja Vam ukazu novinky a rozdily oproti predchozi verzi, ktere me zaujali.
+
+    ### Tilerless Helm
+
+    Nejvetsi a asi i nejocekavanejsi novinkou je to ze Helm 3 uz je ciste client, nepotrebuje se instalovat do clusteru (Tiller). Pro me je to skvela zprava a moznost zacit pouzivat Helm na plno.
+
+    Drive jsem Helm pouzival primarne jako Template engine, protoze jsem nasazoval timto stylem:
+
+    ```bash
+    helm template ./helm/myapp --name myapp.cz --set host=myapp.cz | kubectl apply -f -
+    ```
+
+    Vyhodou byla absence nutnosti Tilleru (casti Helmu bezici v clusteru) a nevyhodou bylo to ze se to nechovalo jako jeden balicek a porad jsem to musel spravovat rucne. Dalsi nevyhodou bylo to ze helm neumel vyrenderovat template z balicku v repozitari, take jsem musel mit zdrojaky soucasti repozitare, ktery z Gitlab CI nasazoval, a nebo nejak stazene.
+
+    To se ted meni. Muzu pouzivat Helm i jako sprave nasazenych aplikaci.
+
+    ### Nasazovani primo z Helmu
+
+    Kdyz nasazuji primo z Helmu, mam nekolik moznosti a vasechny jsou pekne:
+
+    #### Podle Chartu
+
+    ```
+    helm repo add ondrejsika https://helm.oxs.cz
+    helm install hello ondrejsika/one-image --set hello.k8s.sikademo.com
+    ```
+
+    #### Ze zdroje Chartu
+
+    ```
+    helm install hello2 ./helm/one-image --set hello2.k8s.sikademo.com
+    ```
+
+    #### Z archivu Chartu
+
+    ```
+    helm install hello3 ./one-image.tgz --set hello3.k8s.sikademo.com
+    ```
+
+    #### Z archivu Chartu na webu
+
+    ```
+    helm install hello4 https://helm.oxs.cz/one-image-1.1.1.tgz --set hello4.k8s.sikademo.com
+    ```
+
+    #### Z Chartu ve specifickem repozitari
+
+    ```
+    helm install hello5 --repo https://helm.oxs.cz one-image --set hello5.k8s.sikademo.com
+    ```
+
+    ### Helm Upgrade
+
+    Prikaz `helm upgrade` se chova stejne jako ve verzi 2, ale diky nove strukture `helm install` to cele dava vetsi smysl. Zaroven porad funguje parametr `--install` tazke muzete porad pouzivat klasicky install upgrade, coz je obdoba `helm template ... | kubectl apply ...`.
+
+    ```
+    helm upgrade --install nginx ondrejsika/one-image --set image=nginx --set host=nginx.k8s.sikademo.com
+    ```
+
+    a samotny upgrade:
+
+    ```
+    helm upgrade nginx ondrejsika/one-image --set image=nginx:alpine --set host=nginx.k8s.sikademo.com
+    ```
+
+    ### Helm Uninstall misto Helm Delete
+
+    Helm 3 ma prikaz `helm uninstall`, ktery nahrazuje `helm delete redis --purge`. Po odinstalovani muzete rovnou nasadit novy chart pod stejnym jmenem.
+
+    Pokud chcete zachovat historii (drive bez parametru `--purge`), ted musite pridat parametr `--keep-history`
+
+
+    ### Helm Status
+
+    Prikaz `helm status` neukazuje resources jak jsme byli zvykli z Helm 2, je to spis feature nez bug, ale podle diskuze na [Githubu](https://github.com/helm/helm/issues/5952) se tam mozna tato funkcionalita vrati.
+
+    Da se to vyresit pomoci techto zpusobu:
+
+    ```
+    helm get manifest hello | kubectl get -f -
+    ```
+
+    Nebo na to Marc Khouzam napsal plugin do Helmu, ktery vypise jak status tak ten `kubectl get ...`. Staci nainstalovat:
+
+    ```
+    helm plugin install https://github.com/marckhouzam/helm-fullstatus
+    ```
+
+    A pustit:
+
+    ```
+    helm fullstatus hello
+    ```
+
+    ### Ostatni zmeny v CLI
+
+    - `helm init` je odstranen, neni potreba ;)
+    - `helm inspect` -> `helm show`
+    - `helm fetch` -> `helm pull`
+
+    ### Zaver
+
+    Helm 3 je jednoznacne super, splnil vsechny me ocekavani. Myslim, ze rada lidi nechtela pouzivat Helm kvuli Tilleru, ted uz to neni duvod. Helm 3 pouzivam uz nejakou dobu jako beta & RC a jsem s nim naplno spokojeny.
+
+    ### Zdroje
+
+    - https://helm.sh/blog/helm-v3-beta/
+    - https://github.com/helm/helm/issues/5952
+
+
+
 - id: javadays2019
   title: Docker & Kubernetes Talk @ JavaDays 2019
   ad: docker
