@@ -44,8 +44,8 @@ export default props => (
           "NÁVODY & ČLÁNKY",
           [
             ["BLOG", "/blog"],
-            ["NÁVODY", "/navody"],
-            ["ČLÁNKY", "/clanky"],
+            ["NÁVODY (TECHNICKÉ)", "/navody"],
+            ["ČLÁNKY (RŮZNÉ)", "/clanky"],
             ["REPOZITÁŘE", "/repozitare"]
           ]
         ],
