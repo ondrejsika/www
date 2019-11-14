@@ -47,6 +47,10 @@ let Post = props => {
                 about: "Docker",
                 course_name: "Skoleni Dockeru"
               },
+              kubernetes: {
+                about: "Kubernetes",
+                course_name: "Skoleni Kubernetes"
+              },
               terraform: {
                 about: "Terraform",
                 course_name: "Skoleni Terraformu"
