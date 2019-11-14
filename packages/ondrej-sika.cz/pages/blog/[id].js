@@ -37,10 +37,23 @@ let Post = props => {
         <Markdown source={post.content} />
         {(() => {
           if (post.ad) {
+            // FIXME: Use YAML source
             let ads = {
               docker: {
                 about: "Docker",
                 course_name: "Skoleni Dockeru"
+              },
+              terraform: {
+                about: "Terraform",
+                course_name: "Skoleni Terraformu"
+              },
+              react: {
+                about: "React",
+                course_name: "Skoleni Reactu"
+              },
+              "gitlab-ci": {
+                about: "Gitlab CI",
+                course_name: "Skoleni Gitlab CI"
               }
             };
             return (
