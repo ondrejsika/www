@@ -16,6 +16,7 @@ Pokud Vas zajima Docker, podivejte se na me [Skoleni Dockeru](/skoleni/docker)
 
 - [Instalace](/kubernetes/instalace)
 - [Priprava na skoleni Kubernetes](/skoleni/kubernetes/priprava-na-skoleni) - vice informaci o skoleni [zde](/skoleni/kubernetes)
+- [Novinky v Helm 3](/blog/helm3) (blog post)
 
 Pokud Vas zajima Kubernetes, podivejte se na me [Skoleni Kubernetes](/skoleni/kubernetes)
 
