@@ -22,8 +22,14 @@ let Post = props => {
       <Head>
         <title>{post.title} - Ondřej Šika</title>
       </Head>
-      <MainBar MainBarHeader={post.title}></MainBar>
-
+      <MainBar
+        MainBarHeader={post.title}
+        MainBarText={post.tags && post.tags.map((tag, i) => (
+          <span key={i} style={{ fontSize: "0.8em" }}>
+            #{tag}{" "}
+          </span>
+        ))}
+      />
       <div className="container pt-4">
         <Markdown source={post.content} />
       </div>
