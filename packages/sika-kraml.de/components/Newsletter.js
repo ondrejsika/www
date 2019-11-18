@@ -11,7 +11,11 @@ const IntroBar = props => (
           <p className="text-white">Seien Sie immer im Bild</p>
         </div>
         <div className="col-4 pt-3">
-          <a className="btn btn-lg btn-outline-header" target="_blank" href="https://sika.link/newsletter-sika-kraml">
+          <a
+            className="btn btn-lg btn-outline-header"
+            target="_blank"
+            href="https://sika.link/newsletter-sika-kraml"
+          >
             Subscribe
           </a>
         </div>

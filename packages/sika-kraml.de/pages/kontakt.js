@@ -35,7 +35,7 @@ const Index = props => (
           <h3>Jiri Kraml</h3>
           <p>
             <a href="mailto:ondrej@sika-kraml.de">ondrej@sika-kraml.de</a>
-            <br/>
+            <br />
             <a href="tel:+49177358658">+49 (0) 177 358658</a>
           </p>
         </div>
