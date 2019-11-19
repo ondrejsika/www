@@ -7,7 +7,7 @@ export default props => (
     lang={props.site.lang}
     course_title="Školení Prometheus"
     // logo={}
-    price_self_funded="5 999 CZK"
+    price_self_funded="6800 CZK"
     price_in_house="25 000 CZK"
     location="cz"
   >

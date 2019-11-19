@@ -29,7 +29,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Brno
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 26.11.2019
@@ -43,7 +43,7 @@
   course_id: ansible
   name: Školení Ansible
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: paralelni-polis
   length: 1 den
   date_from: 9.1.2020
@@ -55,7 +55,7 @@
   course_id: git
   name: Školení Git
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: paralelni-polis
   length: 1 den
   date_from: 10.1.2020
@@ -1690,7 +1690,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 26.2.2020
@@ -1714,7 +1714,7 @@
   course_id: proxmox
   name: Školení Proxmox
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 6.3.2020
@@ -1726,7 +1726,7 @@
   course_id: terraform
   name: Školení Terraform
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 13.3.2020
@@ -1775,7 +1775,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Brno
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 27.5.2020
@@ -1799,7 +1799,7 @@
   course_id: proxmox
   name: Školení Proxmox
   city: Brno
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 4.6.2020
@@ -1811,7 +1811,7 @@
   course_id: terraform
   name: Školení Terraform
   city: Brno
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 5.6.2020
@@ -1824,7 +1824,7 @@
   course_id: proxmox
   name: Školení Proxmox
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 11.9.2020
@@ -1848,7 +1848,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 16.9.2020
@@ -1872,7 +1872,7 @@
   course_id: terraform
   name: Školení Terraform
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 25.9.2020
@@ -1897,7 +1897,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Brno
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 4.11.2020
@@ -1921,7 +1921,7 @@
   course_id: proxmox
   name: Školení Proxmox
   city: Brno
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 20.11.2020
@@ -1933,7 +1933,7 @@
   course_id: terraform
   name: Školení Terraform
   city: Brno
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
   date_from: 27.11.2020
@@ -2030,7 +2030,7 @@
   course_id: gitlab-ci
   name: Školení Gitlab CI
   city: Praha
-  price: 5999 CZK
+  price: 6800 CZK
   venue_id: rootcz
   length: 1 den
   date_from: 7.8.2019

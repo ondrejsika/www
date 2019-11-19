@@ -62,7 +62,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
     </div>
     <References ids={["vistag", "oxyCTO"]} lang={site.lang} />
     <Price PriceHeader="Cena za školení" PriceBtn="Nezávazně poptat školení">
-      Otevřený termín: 5 999 CZK bez DPH
+      Otevřený termín: 6800 CZK bez DPH
       <br />
       Firemní školení: 25 000 CZK bez DPH
     </Price>
