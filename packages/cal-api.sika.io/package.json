@@ -6,7 +6,7 @@
   "author_email": "ondrej@ondrejsika.com",
   "scripts": {
     "dev": "NODE_ENV=development node server.js",
-    "static": "node static.js"
+    "static": "rm -rf ./out && node static.js"
   },
   "dependencies": {
     "express": "^4.17.1",
