@@ -35,6 +35,7 @@ class UpcomingSessions extends React.Component {
                 cs="NÁZEV ŠKOLENÍ"
                 en="COURSE"
                 de="BEZEICHNUNG"
+                se="TRÄNNINGSNAMN"
               />
             </th>
             <th scope="col" className="col-min">
@@ -43,6 +44,7 @@ class UpcomingSessions extends React.Component {
                 cs="MÍSTO"
                 en="VENUE"
                 de="ORT"
+                se="MÖTESPLATS"
               />
             </th>
             <th scope="col" className="col-min">
@@ -51,6 +53,7 @@ class UpcomingSessions extends React.Component {
                 cs="DATUM"
                 en="DATE"
                 de="DATUM"
+                se="DATUM"
               />
             </th>
             <th scope="col" className="col-min">
@@ -59,6 +62,7 @@ class UpcomingSessions extends React.Component {
                 cs="CENA"
                 en="PRICE"
                 de="PREIS"
+                se="PRIS"
               />
             </th>
             <th scope="col" className="col-min">
@@ -67,6 +71,7 @@ class UpcomingSessions extends React.Component {
                 cs="DÉLKA"
                 en="LEGTH"
                 de="DAUER"
+                se="KURSLÄNGD"
               />
             </th>
             <th />
@@ -100,6 +105,7 @@ class UpcomingSessions extends React.Component {
                       cs="Registrovat"
                       en="Register"
                       de="Registrieren"
+                      se="Fråga efter en träning"
                     />
                   </a>
                 </td>
@@ -115,6 +121,7 @@ class UpcomingSessions extends React.Component {
                         >
                           <a className="btn btn-primary btn-sm" target="_blank">
                             <Translate
+                              default="en"
                               lang={this.props.lang}
                               cs="Do&nbsp;kalendáře"
                               en="Add&nbsp;to&nbsp;Calendar"
