@@ -2402,6 +2402,26 @@ sika.io dev deploy:
     url: https://sika.io.xsika.cz
   dependencies: []
 
+sika.io prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika.io&domain=sika.io&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika.io/**/*
+      - yarn.lock
+  environment:
+    name: prod sika.io
+    url: https://sika.io
+  dependencies: []
+
 docker-training.de build js:
   stage: build_js
   image: node
@@ -3468,5 +3488,88 @@ ondrejsika.io dev deploy:
   environment:
     name: dev ondrejsika.io
     url: https://ondrejsika.io.xsika.cz
+  dependencies: []
+
+cal-api.sika.io build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/cal-api.sika.io/out
+    - yarn run static-cal-api.sika.io
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/cal-api.sika.io/**/*
+      - yarn.lock
+  artifacts:
+    name: cal-api.sika.io
+    paths:
+      - packages/cal-api.sika.io/out
+
+
+cal-api.sika.io build docker:
+  dependencies:
+    - cal-api.sika.io build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/cal-api.sika.io/
+    - docker build -t registry.sikahq.com/www/www/cal-api.sika.io packages/cal-api.sika.io
+    - rm packages/cal-api.sika.io/Dockerfile
+    - rm packages/cal-api.sika.io/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/cal-api.sika.io
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/cal-api.sika.io/**/*
+      - yarn.lock
+
+cal-api.sika.io dev deploy:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/cal-api.sika.io&domain=cal-api.sika.io.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    - master
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/cal-api.sika.io/**/*
+      - yarn.lock
+  environment:
+    name: dev cal-api.sika.io
+    url: https://cal-api.sika.io.xsika.cz
+  dependencies: []
+
+cal-api.sika.io prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/cal-api.sika.io&domain=cal-api.sika.io&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/cal-api.sika.io/**/*
+      - yarn.lock
+  environment:
+    name: prod cal-api.sika.io
+    url: https://cal-api.sika.io
   dependencies: []
 
