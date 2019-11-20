@@ -32,7 +32,7 @@ function getCal() {
     let days = 1;
     if (event.date_from != event.date_to) days = 2;
     events.push({
-      start: [d.getFullYear(), d.getMonth() + 1, d.getDate(), 0, 0],
+      start: [d.getFullYear(), d.getMonth() + 1, d.getDate()],
       duration: { days: days },
       title: `${event.name}, ${event.city}`,
       description: `${event.name} in ${event.city}`,
