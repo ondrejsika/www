@@ -13,6 +13,7 @@ import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import site from "@app/ansible-utbildning.se/config";
 import Link from "next/link";
+import UpcomingSessions from "@app/course-landing/components/UpcomingSessions";
 
 const Index = () => (
   <div>
@@ -38,6 +39,12 @@ const Index = () => (
       </HeaderLink>
     </Header>
     <div className="container container-width">
+      <UpcomingSessions
+        site_name={site.name}
+        lang={site.lang}
+        course="ansible"
+        location={site.location}
+      />
       <TextFrame>
         <Markdown
           source={`

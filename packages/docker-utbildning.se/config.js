@@ -1,4 +1,5 @@
 const site = {
+  name: "docker-utbildning.se",
   lang: "se",
   location: "se",
   gauges_site_id: "5cefb1797fc5fd1cc33b5059",

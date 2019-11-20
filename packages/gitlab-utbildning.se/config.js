@@ -1,4 +1,5 @@
 const site = {
+  name: "gitlab-utbildning.se",
   lang: "se",
   location: "se",
   gauges_site_id: "5cefb7f76dcfe034ca02e27a",

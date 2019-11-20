@@ -11,6 +11,7 @@ import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Recommendation from "@app/course-landing/components/Recommendation";
 import Head from "next/head";
 import site from "@app/git-utbildning.se/config";
+import UpcomingSessions from "@app/course-landing/components/UpcomingSessions";
 import Link from "next/link";
 
 const Index = () => (
@@ -37,6 +38,12 @@ const Index = () => (
       </HeaderLink>
     </Header>
     <div className="container container-width">
+      <UpcomingSessions
+        site_name={site.name}
+        lang={site.lang}
+        course="git"
+        location={site.location}
+      />
       <TextFrame>
         <Markdown
           source={`

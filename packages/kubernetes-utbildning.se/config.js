@@ -1,4 +1,5 @@
 const site = {
+  name: "kubernetes-utbildnung.se",
   lang: "se",
   location: "se",
   gauges_site_id: "5cefb93c6dcfe049aa02e25a",
