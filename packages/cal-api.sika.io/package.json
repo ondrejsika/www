@@ -1,0 +1,16 @@
+{
+  "name": "@app/cal-api.sika.io",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Ondrej Sika",
+  "author_email": "ondrej@ondrejsika.com",
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js",
+    "static": "node static.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ics": "^2.18.0",
+    "js-yaml": "^3.13.1"
+  }
+}
