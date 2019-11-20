@@ -17,6 +17,10 @@ const Index = () => (
   <div>
     <Head>
       <title>Školení Ansible, Ondrej Sika - ansible-skoleni.cz</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet"
+      ></link>
     </Head>
     <Navigation location={site.location} />
     <Header

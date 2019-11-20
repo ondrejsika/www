@@ -18,6 +18,10 @@ const Index = () => (
   <div>
     <Head>
       <title>Kuberneres Training, Ondrej Sika - training.kubernetes.lu</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet"
+      ></link>
     </Head>
     <Navigation location={site.location} />
     <Header

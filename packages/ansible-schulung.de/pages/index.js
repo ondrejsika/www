@@ -24,6 +24,10 @@ const Index = () => (
   <div>
     <Head>
       <title>Ansible Schulung, Sika Kraml - ansibleschulung.de</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet"
+      ></link>
     </Head>
     <Navigation location={site.location} />
     <Header

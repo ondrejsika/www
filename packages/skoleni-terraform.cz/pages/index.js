@@ -21,6 +21,10 @@ const Index = () => (
   <div>
     <Head>
       <title>Školení Terraform, Ondrej Sika - skoleni-terraform.cz</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet"
+      ></link>
     </Head>
     <Navigation location={site.location} />
     <Header

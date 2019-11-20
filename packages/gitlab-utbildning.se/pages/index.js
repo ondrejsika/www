@@ -18,6 +18,10 @@ const Index = () => (
   <div>
     <Head>
       <title>Gitlab CI Utbildning, Ondrej Sika - gitlab-utbildning.se</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet"
+      ></link>
     </Head>
     <Navigation location={site.location} />
     <Header

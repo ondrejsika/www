@@ -19,6 +19,10 @@ const Index = () => (
       <title>
         Kuberneres Schulungen, Sika Kraml - kubernetes-schulungen.de
       </title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet"
+      ></link>
     </Head>
     <Navigation location={site.location} />
     <Header

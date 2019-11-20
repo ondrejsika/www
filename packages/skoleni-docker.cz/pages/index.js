@@ -19,6 +19,10 @@ const Index = () => (
   <div>
     <Head>
       <title>Školení Docker, Ondrej Sika - skoleni-docker.cz</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet"
+      ></link>
     </Head>
     <Navigation location={site.location} />
     <Header

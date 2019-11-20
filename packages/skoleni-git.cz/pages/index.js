@@ -17,6 +17,10 @@ const Index = () => (
   <div>
     <Head>
       <title>Školení Git, Ondrej Sika - skoleni-git.cz</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet"
+      ></link>
     </Head>
     <Navigation location={site.location} />
     <Header
