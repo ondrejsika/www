@@ -24,7 +24,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Git Utbildning Sverige 🇸🇪"
+      websiteHeader="Git Utbildning 🇸🇪"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.com/se/?x_source=git-utbildning.se"
       logoUrl="/static/git.svg"
