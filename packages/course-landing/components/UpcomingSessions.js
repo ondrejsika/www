@@ -2,7 +2,6 @@ import React from "react";
 import StaticDB from "@app/common/staticdb";
 import Translate from "@app/common/components/Translate";
 import sessions_file from "@app/data/training/sessions.yml";
-import ButtonOutline from "@app/course-landing/components/ButtonOutline";
 
 class UpcomingSessions extends React.Component {
   render() {
@@ -12,30 +11,14 @@ class UpcomingSessions extends React.Component {
     db.filter("country", this.props.location || "cz");
     db.filter("course_id", this.props.course);
     db.filter("active", true);
+    db.limit(3);
     let sessions = db.get();
+
+    let site_name = this.props.site_name || "course-landing";
+    let inquiry_email = this.props.inquiry_email || "ondrej@sika.io";
 
     return (
       <table className="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col" className="col-main">
-              <Translate lang={this.props.lang} cs="NÁZEV ŠKOLENÍ" />
-            </th>
-            <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="MÍSTO" />
-            </th>
-            <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="DATUM" />
-            </th>
-            <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="CENA" />
-            </th>
-            <th scope="col" className="col-min">
-              <Translate lang={this.props.lang} cs="DÉLKA" />
-            </th>
-            <th />
-          </tr>
-        </thead>
         <tbody>
           {sessions.map((course, i) => {
             return (
@@ -46,11 +29,18 @@ class UpcomingSessions extends React.Component {
                 <td>{course.price}</td>
                 <td>{course.length}</td>
                 <td>
-                  <ButtonOutline
-                    btnUrl={`https://ondrej-sika.cz/registrace/?${course.id}`}
+                  <a
+                    href={`mailto:${inquiry_email}?subject=[${site_name}] Request for Training: ${course.name} ${course.date_from} (${course.id})`}
+                    className="btn mybutton-outline btn-sm"
                   >
-                    Nezávazně poptat školení
-                  </ButtonOutline>
+                    <Translate
+                      lang={this.props.lang}
+                      cs="Registrovat"
+                      en="Register"
+                      de="Registrieren"
+                      se="Fråga efter en träning"
+                    />
+                  </a>
                 </td>
               </tr>
             );
