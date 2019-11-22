@@ -11,7 +11,7 @@ import Recommendation from "@app/course-landing/components/Recommendation";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
-import UpcomingSessions from "@app/course-landing/components/UpcomingSessions";
+import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import Translate from "@app/common/components/Translate";
 
@@ -66,9 +66,10 @@ const Page = props => {
           <Translate lang={site.lang} cs="Otevřené ternímy" />
         </h2>
         <UpcomingSessions
+          limit={3}
           site_name={site.name}
           lang={site.lang}
-          course={site.x_course}
+          course_id={site.x_course}
           location={site.location}
         />
         <div className="row">
