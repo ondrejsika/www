@@ -33,6 +33,9 @@ class StaticDB {
   get() {
     return this._cursor;
   }
+  getOne() {
+    return this._cursor[0];
+  }
   filter(key, val) {
     return (this._cursor = this._cursor.filter((el, i, array) => {
       return el[key] == val;
