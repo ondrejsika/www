@@ -2,9 +2,9 @@ import Article from "@app/ondrej-sika.cz/layouts/Article";
 
 export default () => (
   <Article
-    title="Vyber osobni wiki"
+    title="Výběr osobní wiki"
     markdown={`
-Na clanku pracuji ...
+Na článku pracuji ...
 `}
   />
 );

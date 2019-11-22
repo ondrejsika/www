@@ -4,7 +4,7 @@ export default () => (
   <Article
     title="Digitalni Detox"
     markdown={`
-Na clanku pracuji ...
+Na článku pracuji ...
     `}
   />
 );

@@ -4,35 +4,35 @@ export default () => (
   <Article
     title="Proč mít email na vlastní doméně"
     markdown={`
-Proc by kazdy mel mit email na vlastni domene? Mozna to zni jako overhead, ale mam k tomu par duvodu. Ve zkratce, byt vice nezavisly - svobodnejsi a pro osobni brand.
+Proč by každý měl mít email na vlastní doméně? Možná to zní jako overhead, ale mám k tomu pár důvodů. Ve zkratce, být více nezavislý - svobodnější a pro osobní brand.
 
-Kdyz pouzivam klasicky Gmail, muj email muze byt \`ondrejsika@gmail.com\`. Vadi mi to nejak? Na prvni pohled to tak nemusi vypadat, ale kdyz se podivame podrobneji, zjistime ze tomu tak skutecne je.
+Když používám klasicky Gmail, můj email může být \`ondrejsika@gmail.com\`. Vadí mi to nějak? Na první pohled to tak nemusí vypadat, ale když se podíváme podrobněji, zjistíme, že tomu tak skutečne je.
 
-Vratme se o par (rekneme patnact) let zpet. Gmail tehdy neexitoval a vsichni v Cesku pouzivali seznam. Zalozim si tedy email \`ondrejsika@seznam.cz\`.
+Vraťme se o pár (řekneme patnáct) let zpět. Gmail tehdy neexistoval a všichni v Česku používali seznam. Založím si tedy email \`ondrejsika@seznam.cz\`.
 
-Kdyz prisel Gmail, chtel jsem ho zacit pouzivat, ale musel bych zmenit emailovou adresu. To nechci delat z vice duvodu. Chci aby mi lide mohli napsat i po dlouhe dobe, nechci pri zmene poskytovatele emailu menit vsechny sluzby, ktere jej pouzivaji a rikat lidem ze mam novy email. Rikate si ze Google tu bude vecne? Kdo vi ...
+Když přišel Gmail, chtěl jsem ho začít používat, ale musel bych změnit emailovou adresu. To nechci dělat z více důvodů. Chci, aby mi lidé mohli napsat i po dlouhé době, nechci při změně poskytovatele emailu měnit všechny služby, které jej používají a říkat lidem, že mám nový email. Říkáte si, že Google tu bude věčně? Kdo ví ...
 
-No, to se da vyresit preposilanim. Ale, pokud poskytovatel skocni, zdrazi nebo zmeni smluvni podminky, chci se presunout hned. A to bez sve domeny neudelam. A navic, vlastni domena vypada profesionalne a podporuje vasi osobni znacku, ktera v dnesnich dnech nabyva na vyznamu pro vsechny (nejen pro freelancery, ale i pro zamestnance), mnohem vice nez univerzitni titul.
+No, to se dá vyřešit přeposíláním. Ale, pokud poskytovatel skončí, zdraží nebo změní smluvní podmínky, chci se přesunout hned. A to bez své domény neudělám. A navíc, vlastní doména vypadá profesionálně a podporuje vaši osobní značku, která v dnešních dnech nabýva na významu pro všechny (nejen pro freelancery, ale i pro zaměstnance), mnohem více než univerzitní titul.
 
-Dobre, chci email na vlastni domene, jakou domenu si mam koupit a jaky email pouzit. Pri vyberu domeny postupuji nasledovne. Zkusim prvni variantu a pokud je obsazena, jdu na dalsi. Muzete napriklad takto:
+Dobře, chci email na vlastní doméně, jakou doménu si mám koupit a jak email použít. Při vběru domény postupuji následovně. Zkusím první variantu a pokud je obsazená, jdu na další. Můžete například takto:
 
 - \`sika.com\` s emailem \`ondrej@sika.com\`
 - \`ondrejsika.com\` s emailem \`ondrej@ondrejsika.com\`
 
-Zde je clanek jak si vybrat domenu [Proc by kazdy mel mit svoji domenu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/).
+Zde je článek jak si vybrat doménu [Proc by kazdy mel mit svoji domenu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/).
 
-Nepouzival bych nove domeny jako je napriklad \`.email\`, protoze nektere sluzby Vam neumozni zadat email s touto domenou.
+Nepoužíval bych nové domény jako je například \`.email\`, protože některé služby Vám neumožní zadat email s touto doménou.
 
-Pokud nechcete domenu pouzivat i pro web, doporucuji ji presmerovat napriklad na LinkedIn nebo Facebook.
+Pokud nechcete doménu používat i pro web, doporučuji ji přesměrovat například na LinkedIn nebo Facebook.
 
-Pokud chcete pouzivat email na vlastni domene, doporucuji Vam tyto poskytovatele:
+Pokud chcete používat email na vlastní doméně, doporučuji Vám tyto poskytovatele:
 
-- [Google G Suite](https://gsuite.google.com/) - Propojeni s Google Kalendarem a dalsimy Google sluzbami je super, dnes skoro standard
-- [Fast Mail](https://fastmail.com) - Spolehlivy poskytovatel pokud nechcete Google
-- [Proton Mail](https://protonmail.com) - Sifrovany email, ma vyhody i nevyhody. Je hodne bezpecny, ale napriklad jej nemuzete dat do aplikace Mail na iPhone (nebojte, maji svoji appku).
-- [Seznam Email Profi](https://www.emailprofi.cz/) - Email na vlastni domene od Seznamu, do 10 uzivatelu zdarma
+- [Google G Suite](https://gsuite.google.com/) - Propojení s Google Kalendářem a dalšími Google službami je super, dnes skoro standard
+- [Fast Mail](https://fastmail.com) - Spolehlivý poskytovatel pokud nechcete Google
+- [Proton Mail](https://protonmail.com) - Šifrovaný email, má výhody i nevýhody. Je hodně bezpečný, ale například jej nemůžete dát do aplikace Mail na iPhone (nebojte, mají svoji appku).
+- [Seznam Email Profi](https://www.emailprofi.cz/) - Email na vlastní doméně od Seznamu, do 10 uživatelů zdarma
 
-Zaverem chci zduraznit, ze vlastni email je jista forma svobody a vypada to lepe. I diky tomu ze email jako \`jmenoprijmeni@gmail.com\` uz bude nejspis obsazene. Pokud mate nejaky dotaz, nebo chcete pomoc, dejte vedet.
+Závěrem chci zdůraznit, že vlastní email je jistá forma svobody a vypadá to lépe. I díky tomu, že email jako \`jmenoprijmeni@gmail.com\` už bude nejspíš obsazené. Pokud máte nějaky dotaz, nebo chcete pomoc, dejte vědet.
 `}
   />
 );

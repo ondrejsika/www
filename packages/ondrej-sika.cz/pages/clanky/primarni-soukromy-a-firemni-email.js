@@ -4,7 +4,7 @@ export default () => (
   <Article
     title="Primarni, soukromy a firemni email"
     markdown={`
-Na clanku pracuji ...
+Na článku pracuji ...
 `}
   />
 );
