@@ -93,11 +93,11 @@ const FooterOndrejSikaCom = () => (
         </div>
         {/* <p className="text-center">
           <a href="/lektorska-spoluprace" className="a-underline">
-            Lektorska spoluprace
+            Lektorská spolupráce
           </a>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <a href="/jobs" className="a-underline">
-            Nabidka (spolu)prace
+            Nabídka (spolu)práce
           </a>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <a href="/obchodni-spoluprace" className="a-underline">
