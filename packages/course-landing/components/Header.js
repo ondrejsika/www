@@ -4,7 +4,7 @@ const Header = props => (
   <div>
     <div className="container-fluid header-container">
       <div className="header mt-0">
-        <div className="container container-width">
+        <div className={props.wide ? "container" : "container container-width"}>
           <div className="row">
             <div className="col-md-9 ">
               <div className="header-inner">

@@ -92,7 +92,11 @@ class Navigation extends React.Component {
     let location = this.props.location || "cz";
     return (
       <div className="container-fluid">
-        <div className="container container-width">
+        <div
+          className={
+            this.props.wide ? "container" : "container container-width"
+          }
+        >
           <div className="nav-bar">
             <ul className="mt-2 mb-2">
               <p>
