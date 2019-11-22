@@ -202,7 +202,10 @@ const Page = props => {
             <Translate lang={lang} cs="Moji nejvýznamější klienti" />
           }
         />
-        <TwitterRecommendations ids={twitter_recommendations} />
+        {(() => {
+          if (twitter_recommendations)
+            <TwitterRecommendations ids={twitter_recommendations} />;
+        })()}
         <ThreeCol
           header={<Translate lang={lang} cs="Reference" />}
           col1={<Recommendation id={recommendations[0]} lang={site.lang} />}
