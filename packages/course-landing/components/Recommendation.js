@@ -21,6 +21,7 @@ class Recommendation extends React.Component {
     return (
       <References
         imgRefer={img}
+        maxImgSize={this.props.maxImgSize}
         nameRefer={recommendation.name}
         position={recommendation.company}
         reference={recommendation.text[this.props.lang]}

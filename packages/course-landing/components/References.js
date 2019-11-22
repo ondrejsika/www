@@ -3,7 +3,12 @@ const References = props => (
     <p>{props.reference}</p>
     <div className="row">
       <div className="col-4">
-        <img src={props.imgRefer} className="img-fluid rounded-circle" alt="" />
+        <img
+          src={props.imgRefer}
+          className="img-fluid rounded-circle"
+          alt=""
+          width={props.maxImgSize}
+        />
       </div>
       <div className="col-8">
         <p>

@@ -57,7 +57,7 @@ export default props => {
     );
   return (
     <div className="container-flex mb-4 row">
-      <div className="col-lg-6 col-md-6 col-sm-12">
+      <div className="col-lg-12 col-md-12 col-sm-12 text-center">
         <TwitterTweetEmbed
           tweetId={get_by_id(rec1).tweet_id}
           options={{ conversation: "none" }}
