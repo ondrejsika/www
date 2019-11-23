@@ -199,6 +199,7 @@ const Page = props => {
       </Bar>
       <div className="container">
         <MyClients
+          noBorder={true}
           HeaderClients={
             <Translate lang={lang} cs="Moji nejvýznamější klienti" />
           }

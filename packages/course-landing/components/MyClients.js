@@ -9,7 +9,7 @@ import Translate from "@app/common/components/Translate";
 
 const MyClients = props => (
   <div>
-    <div className="card p-3 mb-4">
+    <div className={props.noBorder ? "p-3 mb-4" : "card p-3 mb-4"}>
       <h3>
         <Translate
           lang={props.lang}
