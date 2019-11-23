@@ -14,6 +14,7 @@ import Markdown from "@app/common/components/Markdown";
 import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import Translate from "@app/common/components/Translate";
+import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 
 import courses_file from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
@@ -80,7 +81,7 @@ const Page = props => {
             <TextFrame>
               <div className="text-center">
                 <img
-                  src="/static/ondrejsika.jpg"
+                  src={ondrejsika}
                   className="img-fluid rounded-circle mb-3"
                   width="140"
                 />
