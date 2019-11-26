@@ -22,15 +22,15 @@
   length: 2 dny
   date_from: 18.11.2019
   date_to: 19.11.2019
-- id: gitlab-ci-brno-26-11-2019
+- id: gitlab-ci-praha-26-11-2019
   active: true
   country: cz
   lang: cs
   course_id: gitlab-ci
   name: Školení Gitlab CI
-  city: Brno
+  city: Praha
   price: 6800 CZK
-  venue_id: rootcz-brno
+  venue_id: rootcz
   length: 1 den
   date_from: 26.11.2019
   date_to: 26.11.2019
