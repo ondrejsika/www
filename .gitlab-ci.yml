@@ -55,26 +55,6 @@ ansible-schulung.de build docker:
       - packages/ansible-schulung.de/**/*
       - yarn.lock
 
-ansible-schulung.de dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-schulung.de&domain=ansible-schulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ansible-schulung.de/**/*
-      - yarn.lock
-  environment:
-    name: dev ansible-schulung.de
-    url: https://ansible-schulung.de.xsika.cz
-  dependencies: []
-
 ansible-schulung.de prod deploy:
   stage: deploy_prod
   variables:
@@ -137,26 +117,6 @@ ansible-skoleni.cz build docker:
       - packages/course-landing/**/*
       - packages/ansible-skoleni.cz/**/*
       - yarn.lock
-
-ansible-skoleni.cz dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz&domain=ansible-skoleni.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ansible-skoleni.cz/**/*
-      - yarn.lock
-  environment:
-    name: dev ansible-skoleni.cz
-    url: https://ansible-skoleni.cz.xsika.cz
-  dependencies: []
 
 ansible-skoleni.cz prod deploy:
   stage: deploy_prod
@@ -264,26 +224,6 @@ dockerschulung.de build docker:
       - packages/dockerschulung.de/**/*
       - yarn.lock
 
-dockerschulung.de dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/dockerschulung.de&domain=dockerschulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/dockerschulung.de/**/*
-      - yarn.lock
-  environment:
-    name: dev dockerschulung.de
-    url: https://dockerschulung.de.xsika.cz
-  dependencies: []
-
 dockerschulung.de prod deploy:
   stage: deploy_prod
   variables:
@@ -346,26 +286,6 @@ gitlab-ci.cz build docker:
       - packages/course-landing/**/*
       - packages/gitlab-ci.cz/**/*
       - yarn.lock
-
-gitlab-ci.cz dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-ci.cz&domain=gitlab-ci.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/gitlab-ci.cz/**/*
-      - yarn.lock
-  environment:
-    name: dev gitlab-ci.cz
-    url: https://gitlab-ci.cz.xsika.cz
-  dependencies: []
 
 gitlab-ci.cz prod deploy:
   stage: deploy_prod
@@ -430,26 +350,6 @@ kubernetes-schulung.de build docker:
       - packages/kubernetes-schulung.de/**/*
       - yarn.lock
 
-kubernetes-schulung.de dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de&domain=kubernetes-schulung.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/kubernetes-schulung.de/**/*
-      - yarn.lock
-  environment:
-    name: dev kubernetes-schulung.de
-    url: https://kubernetes-schulung.de.xsika.cz
-  dependencies: []
-
 kubernetes-schulung.de prod deploy:
   stage: deploy_prod
   variables:
@@ -512,26 +412,6 @@ ondrej-sika.cz build docker:
       - packages/course-landing/**/*
       - packages/ondrej-sika.cz/**/*
       - yarn.lock
-
-ondrej-sika.cz dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.cz&domain=ondrej-sika.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ondrej-sika.cz/**/*
-      - yarn.lock
-  environment:
-    name: dev ondrej-sika.cz
-    url: https://ondrej-sika.cz.xsika.cz
-  dependencies: []
 
 ondrej-sika.cz prod deploy:
   stage: deploy_prod
@@ -596,26 +476,6 @@ sika-kraml.de build docker:
       - packages/sika-kraml.de/**/*
       - yarn.lock
 
-sika-kraml.de dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika-kraml.de&domain=sika-kraml.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/sika-kraml.de/**/*
-      - yarn.lock
-  environment:
-    name: dev sika-kraml.de
-    url: https://sika-kraml.de.xsika.cz
-  dependencies: []
-
 sika-kraml.de prod deploy:
   stage: deploy_prod
   variables:
@@ -678,26 +538,6 @@ skoleni-docker.cz build docker:
       - packages/course-landing/**/*
       - packages/skoleni-docker.cz/**/*
       - yarn.lock
-
-skoleni-docker.cz dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-docker.cz&domain=skoleni-docker.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/skoleni-docker.cz/**/*
-      - yarn.lock
-  environment:
-    name: dev skoleni-docker.cz
-    url: https://skoleni-docker.cz.xsika.cz
-  dependencies: []
 
 skoleni-docker.cz prod deploy:
   stage: deploy_prod
@@ -762,26 +602,6 @@ skoleni-git.cz build docker:
       - packages/skoleni-git.cz/**/*
       - yarn.lock
 
-skoleni-git.cz dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-git.cz&domain=skoleni-git.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/skoleni-git.cz/**/*
-      - yarn.lock
-  environment:
-    name: dev skoleni-git.cz
-    url: https://skoleni-git.cz.xsika.cz
-  dependencies: []
-
 skoleni-git.cz prod deploy:
   stage: deploy_prod
   variables:
@@ -844,26 +664,6 @@ skoleni-kubernetes.cz build docker:
       - packages/course-landing/**/*
       - packages/skoleni-kubernetes.cz/**/*
       - yarn.lock
-
-skoleni-kubernetes.cz dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz&domain=skoleni-kubernetes.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/skoleni-kubernetes.cz/**/*
-      - yarn.lock
-  environment:
-    name: dev skoleni-kubernetes.cz
-    url: https://skoleni-kubernetes.cz.xsika.cz
-  dependencies: []
 
 skoleni-kubernetes.cz prod deploy:
   stage: deploy_prod
@@ -928,26 +728,6 @@ git-training.uk build docker:
       - packages/git-training.uk/**/*
       - yarn.lock
 
-git-training.uk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.uk&domain=git-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/git-training.uk/**/*
-      - yarn.lock
-  environment:
-    name: dev git-training.uk
-    url: https://git-training.uk.xsika.cz
-  dependencies: []
-
 git-training.uk prod deploy:
   stage: deploy_prod
   variables:
@@ -1010,26 +790,6 @@ docker-training.uk build docker:
       - packages/course-landing/**/*
       - packages/docker-training.uk/**/*
       - yarn.lock
-
-docker-training.uk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.uk&domain=docker-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/docker-training.uk/**/*
-      - yarn.lock
-  environment:
-    name: dev docker-training.uk
-    url: https://docker-training.uk.xsika.cz
-  dependencies: []
 
 docker-training.uk prod deploy:
   stage: deploy_prod
@@ -1094,26 +854,6 @@ kubernetes-training.uk build docker:
       - packages/kubernetes-training.uk/**/*
       - yarn.lock
 
-kubernetes-training.uk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-training.uk&domain=kubernetes-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/kubernetes-training.uk/**/*
-      - yarn.lock
-  environment:
-    name: dev kubernetes-training.uk
-    url: https://kubernetes-training.uk.xsika.cz
-  dependencies: []
-
 kubernetes-training.uk prod deploy:
   stage: deploy_prod
   variables:
@@ -1176,26 +916,6 @@ ansible-training.uk build docker:
       - packages/course-landing/**/*
       - packages/ansible-training.uk/**/*
       - yarn.lock
-
-ansible-training.uk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-training.uk&domain=ansible-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ansible-training.uk/**/*
-      - yarn.lock
-  environment:
-    name: dev ansible-training.uk
-    url: https://ansible-training.uk.xsika.cz
-  dependencies: []
 
 ansible-training.uk prod deploy:
   stage: deploy_prod
@@ -1260,26 +980,6 @@ gitlab-training.uk build docker:
       - packages/gitlab-training.uk/**/*
       - yarn.lock
 
-gitlab-training.uk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-training.uk&domain=gitlab-training.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/gitlab-training.uk/**/*
-      - yarn.lock
-  environment:
-    name: dev gitlab-training.uk
-    url: https://gitlab-training.uk.xsika.cz
-  dependencies: []
-
 gitlab-training.uk prod deploy:
   stage: deploy_prod
   variables:
@@ -1342,26 +1042,6 @@ skolenie-git.sk build docker:
       - packages/course-landing/**/*
       - packages/skolenie-git.sk/**/*
       - yarn.lock
-
-skolenie-git.sk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-git.sk&domain=skolenie-git.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/skolenie-git.sk/**/*
-      - yarn.lock
-  environment:
-    name: dev skolenie-git.sk
-    url: https://skolenie-git.sk.xsika.cz
-  dependencies: []
 
 skolenie-git.sk prod deploy:
   stage: deploy_prod
@@ -1426,26 +1106,6 @@ skolenie-gitlab.sk build docker:
       - packages/skolenie-gitlab.sk/**/*
       - yarn.lock
 
-skolenie-gitlab.sk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk&domain=skolenie-gitlab.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/skolenie-gitlab.sk/**/*
-      - yarn.lock
-  environment:
-    name: dev skolenie-gitlab.sk
-    url: https://skolenie-gitlab.sk.xsika.cz
-  dependencies: []
-
 skolenie-gitlab.sk prod deploy:
   stage: deploy_prod
   variables:
@@ -1509,26 +1169,6 @@ skolenie-docker.sk build docker:
       - packages/skolenie-docker.sk/**/*
       - yarn.lock
 
-skolenie-docker.sk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-docker.sk&domain=skolenie-docker.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/skolenie-docker.sk/**/*
-      - yarn.lock
-  environment:
-    name: dev skolenie-docker.sk
-    url: https://skolenie-docker.sk.xsika.cz
-  dependencies: []
-
 skolenie-docker.sk prod deploy:
   stage: deploy_prod
   variables:
@@ -1591,26 +1231,6 @@ skolenie.kubernetes.sk build docker:
       - packages/course-landing/**/*
       - packages/skolenie.kubernetes.sk/**/*
       - yarn.lock
-
-skolenie.kubernetes.sk dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk&domain=skolenie.kubernetes.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/skolenie.kubernetes.sk/**/*
-      - yarn.lock
-  environment:
-    name: dev skolenie.kubernetes.sk
-    url: https://skolenie.kubernetes.sk.xsika.cz
-  dependencies: []
 
 skolenie.kubernetes.sk prod deploy:
   stage: deploy_prod
@@ -1738,26 +1358,6 @@ ansible-utbildning.se build docker:
       - packages/ansible-utbildning.se/**/*
       - yarn.lock
 
-ansible-utbildning.se dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-utbildning.se&domain=ansible-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ansible-utbildning.se/**/*
-      - yarn.lock
-  environment:
-    name: dev ansible-utbildning.se
-    url: https://ansible-utbildning.se.xsika.cz
-  dependencies: []
-
 ansible-utbildning.se prod deploy:
   stage: deploy_prod
   variables:
@@ -1820,26 +1420,6 @@ docker-utbildning.se build docker:
       - packages/course-landing/**/*
       - packages/docker-utbildning.se/**/*
       - yarn.lock
-
-docker-utbildning.se dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-utbildning.se&domain=docker-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/docker-utbildning.se/**/*
-      - yarn.lock
-  environment:
-    name: dev docker-utbildning.se
-    url: https://docker-utbildning.se.xsika.cz
-  dependencies: []
 
 docker-utbildning.se prod deploy:
   stage: deploy_prod
@@ -1904,26 +1484,6 @@ git-utbildning.se build docker:
       - packages/git-utbildning.se/**/*
       - yarn.lock
 
-git-utbildning.se dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-utbildning.se&domain=git-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/git-utbildning.se/**/*
-      - yarn.lock
-  environment:
-    name: dev git-utbildning.se
-    url: https://git-utbildning.se.xsika.cz
-  dependencies: []
-
 git-utbildning.se prod deploy:
   stage: deploy_prod
   variables:
@@ -1987,26 +1547,6 @@ gitlab-utbildning.se build docker:
       - packages/gitlab-utbildning.se/**/*
       - yarn.lock
 
-gitlab-utbildning.se dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se&domain=gitlab-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/gitlab-utbildning.se/**/*
-      - yarn.lock
-  environment:
-    name: dev gitlab-utbildning.se
-    url: https://gitlab-utbildning.se.xsika.cz
-  dependencies: []
-
 gitlab-utbildning.se prod deploy:
   stage: deploy_prod
   variables:
@@ -2069,26 +1609,6 @@ kubernetes-utbildning.se build docker:
       - packages/course-landing/**/*
       - packages/kubernetes-utbildning.se/**/*
       - yarn.lock
-
-kubernetes-utbildning.se dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se&domain=kubernetes-utbildning.se.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/kubernetes-utbildning.se/**/*
-      - yarn.lock
-  environment:
-    name: dev kubernetes-utbildning.se
-    url: https://kubernetes-utbildning.se.xsika.cz
-  dependencies: []
 
 kubernetes-utbildning.se prod deploy:
   stage: deploy_prod
@@ -2216,26 +1736,6 @@ ondrej-sika.de build docker:
       - packages/ondrej-sika.de/**/*
       - yarn.lock
 
-ondrej-sika.de dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.de&domain=ondrej-sika.de.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ondrej-sika.de/**/*
-      - yarn.lock
-  environment:
-    name: dev ondrej-sika.de
-    url: https://ondrej-sika.de.xsika.cz
-  dependencies: []
-
 ondrej-sika.de prod deploy:
   stage: deploy_prod
   variables:
@@ -2299,26 +1799,6 @@ ondrejsikalabs.com build docker:
       - packages/ondrejsikalabs.com/**/*
       - yarn.lock
 
-ondrejsikalabs.com dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com&domain=ondrejsikalabs.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ondrejsikalabs.com/**/*
-      - yarn.lock
-  environment:
-    name: dev ondrejsikalabs.com
-    url: https://ondrejsikalabs.com.xsika.cz
-  dependencies: []
-
 ondrejsikalabs.com prod deploy:
   stage: deploy_prod
   variables:
@@ -2381,26 +1861,6 @@ sika.io build docker:
       - packages/course-landing/**/*
       - packages/sika.io/**/*
       - yarn.lock
-
-sika.io dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika.io&domain=sika.io.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/sika.io/**/*
-      - yarn.lock
-  environment:
-    name: dev sika.io
-    url: https://sika.io.xsika.cz
-  dependencies: []
 
 sika.io prod deploy:
   stage: deploy_prod
@@ -2806,26 +2266,6 @@ trainera.io build docker:
       - packages/trainera.io/**/*
       - yarn.lock
 
-trainera.io dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/trainera.io&domain=trainera.io.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/trainera.io/**/*
-      - yarn.lock
-  environment:
-    name: dev trainera.io
-    url: https://trainera.io.xsika.cz
-  dependencies: []
-
 trainera.io prod deploy:
   stage: deploy_prod
   variables:
@@ -2888,26 +2328,6 @@ salzburgdevops.com build docker:
       - packages/course-landing/**/*
       - packages/salzburgdevops.com/**/*
       - yarn.lock
-
-salzburgdevops.com dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/salzburgdevops.com&domain=salzburgdevops.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/salzburgdevops.com/**/*
-      - yarn.lock
-  environment:
-    name: dev salzburgdevops.com
-    url: https://salzburgdevops.com.xsika.cz
-  dependencies: []
 
 salzburgdevops.com prod deploy:
   stage: deploy_prod
@@ -2972,26 +2392,6 @@ training.kubernetes.is build docker:
       - packages/training.kubernetes.is/**/*
       - yarn.lock
 
-training.kubernetes.is dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/training.kubernetes.is&domain=training.kubernetes.is.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/training.kubernetes.is/**/*
-      - yarn.lock
-  environment:
-    name: dev training.kubernetes.is
-    url: https://training.kubernetes.is.xsika.cz
-  dependencies: []
-
 training.kubernetes.is prod deploy:
   stage: deploy_prod
   variables:
@@ -3054,26 +2454,6 @@ training.kubernetes.lu build docker:
       - packages/course-landing/**/*
       - packages/training.kubernetes.lu/**/*
       - yarn.lock
-
-training.kubernetes.lu dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/training.kubernetes.lu&domain=training.kubernetes.lu.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/training.kubernetes.lu/**/*
-      - yarn.lock
-  environment:
-    name: dev training.kubernetes.lu
-    url: https://training.kubernetes.lu.xsika.cz
-  dependencies: []
 
 training.kubernetes.lu prod deploy:
   stage: deploy_prod
@@ -3138,26 +2518,6 @@ skoleni-terraform.cz build docker:
       - packages/skoleni-terraform.cz/**/*
       - yarn.lock
 
-skoleni-terraform.cz dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz&domain=skoleni-terraform.cz.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/skoleni-terraform.cz/**/*
-      - yarn.lock
-  environment:
-    name: dev skoleni-terraform.cz
-    url: https://skoleni-terraform.cz.xsika.cz
-  dependencies: []
-
 skoleni-terraform.cz prod deploy:
   stage: deploy_prod
   variables:
@@ -3220,26 +2580,6 @@ sika-training.com build docker:
       - packages/course-landing/**/*
       - packages/sika-training.com/**/*
       - yarn.lock
-
-sika-training.com dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika-training.com&domain=sika-training.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/sika-training.com/**/*
-      - yarn.lock
-  environment:
-    name: dev sika-training.com
-    url: https://sika-training.com.xsika.cz
-  dependencies: []
 
 sika-training.com prod deploy:
   stage: deploy_prod
@@ -3304,26 +2644,6 @@ ondrej-sika.com build docker:
       - packages/ondrej-sika.com/**/*
       - yarn.lock
 
-ondrej-sika.com dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.com&domain=ondrej-sika.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ondrej-sika.com/**/*
-      - yarn.lock
-  environment:
-    name: dev ondrej-sika.com
-    url: https://ondrej-sika.com.xsika.cz
-  dependencies: []
-
 ondrej-sika.com prod deploy:
   stage: deploy_prod
   variables:
@@ -3386,26 +2706,6 @@ sikahq.com build docker:
       - packages/course-landing/**/*
       - packages/sikahq.com/**/*
       - yarn.lock
-
-sikahq.com dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sikahq.com&domain=sikahq.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/sikahq.com/**/*
-      - yarn.lock
-  environment:
-    name: dev sikahq.com
-    url: https://sikahq.com.xsika.cz
-  dependencies: []
 
 sikahq.com prod deploy:
   stage: deploy_prod
@@ -3470,26 +2770,6 @@ ondrejsika.io build docker:
       - packages/ondrejsika.io/**/*
       - yarn.lock
 
-ondrejsika.io dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsika.io&domain=ondrejsika.io.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/ondrejsika.io/**/*
-      - yarn.lock
-  environment:
-    name: dev ondrejsika.io
-    url: https://ondrejsika.io.xsika.cz
-  dependencies: []
-
 cal-api.sika.io build js:
   stage: build_js
   image: node
@@ -3532,26 +2812,6 @@ cal-api.sika.io build docker:
       - packages/course-landing/**/*
       - packages/cal-api.sika.io/**/*
       - yarn.lock
-
-cal-api.sika.io dev deploy:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/cal-api.sika.io&domain=cal-api.sika.io.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
-  except:
-    - master
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/cal-api.sika.io/**/*
-      - yarn.lock
-  environment:
-    name: dev cal-api.sika.io
-    url: https://cal-api.sika.io.xsika.cz
-  dependencies: []
 
 cal-api.sika.io prod deploy:
   stage: deploy_prod
@@ -3615,4 +2875,87 @@ skoleni-proxmox.cz build docker:
       - packages/course-landing/**/*
       - packages/skoleni-proxmox.cz/**/*
       - yarn.lock
+
+skoleni-proxmox.cz prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-proxmox.cz&domain=skoleni-proxmox.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-proxmox.cz/**/*
+      - yarn.lock
+  environment:
+    name: prod skoleni-proxmox.cz
+    url: https://skoleni-proxmox.cz
+  dependencies: []
+
+ydo.cz build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/ydo.cz/out
+    - yarn run static-ydo.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ydo.cz/**/*
+      - yarn.lock
+  artifacts:
+    name: ydo.cz
+    paths:
+      - packages/ydo.cz/out
+
+
+ydo.cz build docker:
+  dependencies:
+    - ydo.cz build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/ydo.cz/
+    - docker build -t registry.sikahq.com/www/www/ydo.cz packages/ydo.cz
+    - rm packages/ydo.cz/Dockerfile
+    - rm packages/ydo.cz/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/ydo.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ydo.cz/**/*
+      - yarn.lock
+
+ydo.cz prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ydo.cz&domain=ydo.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ydo.cz/**/*
+      - yarn.lock
+  environment:
+    name: prod ydo.cz
+    url: https://ydo.cz
+  dependencies: []
 
