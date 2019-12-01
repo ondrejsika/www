@@ -56,7 +56,7 @@
     "dev-sikahq.com": "yarn --cwd packages/sikahq.com dev -p 3045",
     "dev-ondrejsika.io": "yarn --cwd packages/ondrejsika.io dev -p 3046",
     "dev-cal-api.sika.io": "yarn --cwd packages/cal-api.sika.io dev -p 3047",
-    "dev-skoleni-proxmox.cz": "yarn --cwd packages/skoleni-proxmox.cz dev -p 3047",
+    "dev-skoleni-proxmox.cz": "yarn --cwd packages/skoleni-proxmox.cz dev -p 3048",
     "dev-ydo.cz": "yarn --cwd packages/ydo.cz dev -p 3049",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
