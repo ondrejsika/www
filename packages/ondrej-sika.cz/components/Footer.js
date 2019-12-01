@@ -44,6 +44,7 @@ const Footer = () => (
                 ["Ansible", "/skoleni/ansible"],
                 ["Terraform", "/skoleni/terraform"],
                 ["Prometheus", "/skoleni/prometheus"],
+                ["Proxmox", "/skoleni/proxmox"],
                 ["React & Next.js", "/skoleni/react"]
               ].map((el, i) => {
                 return (

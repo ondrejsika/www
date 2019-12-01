@@ -36,6 +36,7 @@ export default props => (
             ["ANSIBLE", "/skoleni/ansible"],
             ["TERRAFORM", "/skoleni/terraform"],
             ["PROMETHEUS", "/skoleni/prometheus"],
+            ["PROXMOX", "/skoleni/proxmox"],
             ["REACT & NEXT.JS", "/skoleni/react"]
           ]
         ],
