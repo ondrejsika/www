@@ -12,9 +12,7 @@ const Index = props => (
       <title>Ondrej Sika | sika.io</title>
       {(() => {
         if (!process.env.NODE_ENV == "development") {
-          return (
-            <meta http-equiv="refresh" content="3; url=https://which.sika.io" />
-          );
+          return <meta http-equiv="refresh" content="3; url=https://sika.io" />;
         } else {
           return <DevelopmentBar />;
         }

@@ -8,8 +8,8 @@ const Index = () => (
     <div className="container mt-4">
       <h1>
         Ondrej Sika's team for{" "}
-        <a href="https://which.sika.io">freelance training, consulting</a> and
-        other projects.
+        <a href="https://sika.io">freelance training, consulting</a> and other
+        projects.
       </h1>
     </div>
   </div>
