@@ -46,3 +46,4 @@ sikahq.com
 ondrejsika.io
 cal-api.sika.io
 skoleni-proxmox.cz
+ydo.cz
