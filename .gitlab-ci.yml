@@ -3573,3 +3573,46 @@ cal-api.sika.io prod deploy:
     url: https://cal-api.sika.io
   dependencies: []
 
+skoleni-proxmox.cz build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/skoleni-proxmox.cz/out
+    - yarn run static-skoleni-proxmox.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-proxmox.cz/**/*
+      - yarn.lock
+  artifacts:
+    name: skoleni-proxmox.cz
+    paths:
+      - packages/skoleni-proxmox.cz/out
+
+
+skoleni-proxmox.cz build docker:
+  dependencies:
+    - skoleni-proxmox.cz build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/skoleni-proxmox.cz/
+    - docker build -t registry.sikahq.com/www/www/skoleni-proxmox.cz packages/skoleni-proxmox.cz
+    - rm packages/skoleni-proxmox.cz/Dockerfile
+    - rm packages/skoleni-proxmox.cz/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/skoleni-proxmox.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-proxmox.cz/**/*
+      - yarn.lock
+
