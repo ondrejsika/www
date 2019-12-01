@@ -1,0 +1,16 @@
+{
+  "name": "@app/skoleni-proxmox.cz",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Ondrej Sika",
+  "author_email": "ondrej@ondrejsika.com",
+  "scripts": {
+    "dev": "NODE_ENV=development next",
+    "build": "next build",
+    "export": "next export",
+    "static": "yarn run build && yarn run export"
+  },
+  "dependencies": {
+    "@app/course-landing": "^0.0.0"
+  }
+}

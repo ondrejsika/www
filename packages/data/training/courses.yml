@@ -174,3 +174,51 @@
     de: React Native Schulung
   lecturers:
     - martinstudna
+
+- id: proxmox
+  name:
+    cs: Školení Proxmoxu
+    en: Proxmox Training
+    de: Proxmox Schulung
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 11 999 CZK
+    in_house:
+      cz: 50 000 CZK
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  description:
+    cs: |
+      ### Co je to Proxmox
+
+      Proxmox je open source nastavba KVM Virtualizace a LXC kontejneru. Prinasi enterprise virtualizaci a jednoduchou spravu virtualnich stroju a kontejneru na leta provereny virtualizacni stack na Linuxu.
+
+      ### Jak školení probíhá
+
+      Na školení probiha formou workshopu, vse si prakticky vyzkousime. Od instalace Proxmox serveru, po nastaveni HA pro virtualni servery.
+
+      ### Co Vás naučím
+
+      - Uvod do Virtualizace, Kontejnerizace a Proxmoxu
+      - Nastaveni Proxmoxu
+      - Nastaveni storage
+      - Prace s KVM virtualnimy servery
+      - Prace s LXC kontejnery (lightweight virtualizace)
+      - Backup, restore
+      - Migrace a HA
+
+      ### Pro koho je školení určeno
+
+      Školení je primárně určeno administratorum, kteří nemají s virtualizaci a Proxmoxem zadne nebo jen male zkusenosti.
+
+      #### Předchozí znalosti
+
+      Zakladni znalost administrace Linuxu.
+
+      #### Technické požadavky
+
+      Notebook s pristupem na internet. Nic vic neni potreba. Pokud mate nejaky testovaci Proxmox, muzete vyuzivat ten, ale pro absolvovani kurzu neni potreba.
