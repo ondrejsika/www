@@ -222,3 +222,43 @@
       #### Technické požadavky
 
       Notebook s pristupem na internet. Nic vic neni potreba. Pokud mate nejaky testovaci Proxmox, muzete vyuzivat ten, ale pro absolvovani kurzu neni potreba.
+
+- id: prometheus
+  name:
+    cs: Školení Prometheus
+    en: Prometheus Training
+    de: Prometheus Schulung
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 11 999 CZK
+    in_house:
+      cz: 50 000 CZK
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  description:
+    cs: |
+      ### Co je to Prometheus
+
+      Prometheus je moderni monitoringovy nastroj a metrics server. Umoznuje sbirat metricka data z vasi apliace a vetsiny komponent Vasi infrastruktury a nad temito daty delat grafy (v Grafane) a alerty. Prometheus spada pod CNCF, stejne jako Kubernetes.
+
+      ### Co Vás naučím
+      - Uvod do Prometheus ekosystemu
+      - Instalace Promethea a Alertmanageru
+      - Exportery
+      - Konfigurace
+      - Prace s PROMQL (dotazovaci jazyk promethea)
+      - Integrace s Grafanou
+
+      #### Pro koho je školení určeno
+      Školení je určeno pro vývojáře a devops, kteří chteji jednoduse a efektivne monitorovat aplikace.`}
+
+      #### Předchozí znalosti
+      - Základy práce s Linuxemm
+      - Základy práce v terminálu
+
+      #### Technické požadavky
+      - Notebook s pristupem na internet
