@@ -2266,15 +2266,15 @@ trainera.io build docker:
       - packages/trainera.io/**/*
       - yarn.lock
 
-trainera.io prod deploy:
-  stage: deploy_prod
+trainera.io dev deploy:
+  stage: deploy_dev
   variables:
     GIT_STRATEGY: none
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/trainera.io&domain=trainera.io&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/trainera.io&domain=trainera.io.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2282,8 +2282,8 @@ trainera.io prod deploy:
       - packages/trainera.io/**/*
       - yarn.lock
   environment:
-    name: prod trainera.io
-    url: https://trainera.io
+    name: dev trainera.io
+    url: https://trainera.io.xsika.cz
   dependencies: []
 
 salzburgdevops.com build js:
