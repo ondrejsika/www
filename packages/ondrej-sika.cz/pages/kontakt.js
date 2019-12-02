@@ -72,7 +72,7 @@ const Index = props => (
               </tr>
               <tr>
                 <td>IBAN:</td>
-                <td>CZ0620100000002301432033</td>
+                <td>CZ0820100000002301432033</td>
               </tr>
               <tr>
                 <td>BIC / SWIFT:</td>
