@@ -7,3 +7,5 @@ report.*.json
 .DS_Store
 .idea
 ci/docker/out
+deploy-now.env.sh
+
