@@ -60,6 +60,30 @@
   length: 1 den
   date_from: 10.1.2020
   date_to: 10.1.2020
+- id: proxmox-praha-17-01-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: proxmox
+  name: Školení Proxmox
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 17.1.2020
+  date_to: 17.1.2020
+- id: prometheus-praha-10-01-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: prometheus
+  name: Školení Prometheus
+  city: Praha
+  price: 6800 CZK
+  venue_id: paralelni-polis
+  length: 1 den
+  date_from: 31.1.2020
+  date_to: 31.1.2020
 
 
 # EuropeTour 2020 January
@@ -172,7 +196,7 @@
   date_to: 30.1.2020
 
 - id: gitlab-ci-munich-31-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: gitlab-ci
@@ -293,7 +317,7 @@
   date_to: 30.1.2020
 
 - id: gitlab-ci-graz-31-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: gitlab-ci
@@ -414,7 +438,7 @@
   date_to: 30.1.2020
 
 - id: gitlab-ci-gothenburg-31-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: gitlab-ci
