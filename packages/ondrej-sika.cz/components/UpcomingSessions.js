@@ -3,6 +3,8 @@ import StaticDB from "@app/common/staticdb";
 import Translate from "@app/common/components/Translate";
 import sessions_file from "@app/data/training/sessions.yml";
 import AddToGoogleCalendar from "@app/common/components/AddToGoogleCalendar";
+import Link from "next/link";
+import { throws } from "assert";
 
 const date_for_google_calendar_link = dd_mm_yyyy =>
   dd_mm_yyyy
@@ -24,6 +26,12 @@ class UpcomingSessions extends React.Component {
 
     let site_name = this.props.site_name || "ondrej-sika";
     let inquiry_email = this.props.inquiry_email || "ondrej@sika.io";
+
+    let course_page_prefix = {
+      cs: "skoleni",
+      en: "training",
+      de: "schulung"
+    }[this.props.lang || "cs"];
 
     return (
       <table className="table table-hover">
@@ -84,7 +92,19 @@ class UpcomingSessions extends React.Component {
           {sessions.map((course, i) => {
             return (
               <tr key={i}>
-                <td scope="row">{course.name}</td>
+                <td scope="row">
+                  {(() => {
+                    if (this.props.show_course_link)
+                      return (
+                        <Link
+                          href={`/${course_page_prefix}/${course.course_id}`}
+                        >
+                          <a>{course.name}</a>
+                        </Link>
+                      );
+                    return <span>{course.name}</span>;
+                  })()}
+                </td>
                 <td>{course.city}</td>
                 <td>
                   {(() => {

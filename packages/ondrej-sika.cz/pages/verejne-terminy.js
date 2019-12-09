@@ -18,7 +18,11 @@ const Index = () => (
     </Head>
     <MainBar MainBarHeader="Veřejné termíny školení" />
     <div className="container pt-4">
-      <UpcomingSessions lang={site.lang} location="cz" />
+      <UpcomingSessions
+        lang={site.lang}
+        location="cz"
+        show_course_link={true}
+      />
     </div>
   </div>
 );
