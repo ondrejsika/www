@@ -243,15 +243,17 @@
     cs: |
       ### Co je to Prometheus
 
-      Prometheus je moderni monitoringovy nastroj a metrics server. Umoznuje sbirat metricka data z vasi apliace a vetsiny komponent Vasi infrastruktury a nad temito daty delat grafy (v Grafane) a alerty. Prometheus spada pod CNCF, stejne jako Kubernetes.
+      Prométheus je moderní monitoringový nástroj a metrics server. Umožňuje sbírat metrická data z vaší aplikace a většiny komponent Váši infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prométheus spadá pod CNCF, stejně jako Kubernetes.
 
       ### Co Vás naučím
-      - Uvod do Prometheus ekosystemu
+      -	Úvod do Prometheus ekosystému
       - Instalace Promethea a Alertmanageru
-      - Exportery
-      - Konfigurace
-      - Prace s PROMQL (dotazovaci jazyk promethea)
+      - Exportéry – získávání dat
+      - Konfigurace Promethea a Alertmanageru
+      - Práce s PROMQL (dotazovací jazyk Promethea)
       - Integrace s Grafanou
+      - Prometheus Pushgateway
+      - Integrace s Dockerem, Kubernetes a vlastní aplikací
 
       #### Pro koho je školení určeno
       Školení je určeno pro vývojáře a devops, kteří chteji jednoduse a efektivne monitorovat aplikace.`}
