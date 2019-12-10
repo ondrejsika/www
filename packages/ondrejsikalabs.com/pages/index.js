@@ -15,11 +15,7 @@ const Index = () => (
         source={`
 # Ondrej Sika Labs
 
-__Company which supports [Ondrej Sika](https://ondrejsika.com)'s freelance activities, mostly IT & DevOps trainings and consulting.__
-
-#### Contact
-
-<info@ondrejsikalabs.com>
+__Company which supports [Ondrej Sika](https://sika.io)'s freelance activities, mostly IT & DevOps trainings and consulting.__
       `}
       />
       <Gauges gauges_site_id={site.gauges_site_id} />
