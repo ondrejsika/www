@@ -1,12 +1,12 @@
 - id: terraform-introduction
   title: Manage your infrastructure as a code with Terraform
-  bio: I'm a DevOps engineer and consultant form Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable their software products.
+  bio: I'm a DevOps engineer and consultant from Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable software products.
   perex: Do you like somebody's open-source code? Just fork it. What about infrastructure? You can fork it too. Terraform is way how to treat your infrastructure on the various cloud providers as a code. With Terraform you can version, fork even merge your infrastructure.
   submissions:
     - devopsbarcelona2020
 - id: setup-deploy-pipeline
   title: Setup Your Deployment Pipeline with Gitlab CI, Docker, and Kubernetes
-  bio: I'm a DevOps engineer and consultant form Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable their software products.
+  bio: I'm a DevOps engineer and consultant from Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable software products.
   perex: How easy is it to deploy your software in staging or production? How many manual actions do you have to do? I'll show you, how you can set up fast and reliable deployments to multiple environments with Gitlab CI, Docker, and Kubernetes. I'll show you the whole pipeline from static code analysis, through builds to deployment. Everything on unified infrastructure backed by Docker and Kubernetes.
   submissions:
     - devopsbarcelona2020
