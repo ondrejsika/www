@@ -1671,7 +1671,7 @@
 
 # Czech Republic
 - id: kubernetes-praha-11-02-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
@@ -1683,7 +1683,7 @@
   date_from: 11.2.2020
   date_to: 12.2.2020
 - id: docker-praha-11-02-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
@@ -1757,7 +1757,7 @@
   date_to: 13.3.2020
 # BRNO Anywhere Kubernetes&Docker + Root.cz Kveten-Cerven
 - id: kubernetes-praha-21-05-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
@@ -1769,7 +1769,7 @@
   date_from: 21.5.2020
   date_to: 22.5.2020
 - id: docker-praha-21-05-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
