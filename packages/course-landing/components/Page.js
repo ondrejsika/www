@@ -36,6 +36,10 @@ const Page = props => {
   let twitter_recommendations = course.twitter_recommendations[lang];
   let description = course.description[lang];
   let recommendations = course.recommendations[lang];
+  if (!recommendations[2])
+    throw new Error(
+      `course-landing/component/Page requires more than 3 recommendations`
+    );
   return (
     <div>
       <Head>
