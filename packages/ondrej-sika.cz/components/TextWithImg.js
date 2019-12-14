@@ -1,3 +1,10 @@
+import facebookhex from "@app/data/pictures/social-networks/fb-hex.svg";
+import instagramhex from "@app/data/pictures/social-networks/instagram-hex.svg";
+import linkedinhex from "@app/data/pictures/social-networks/linkedin-hex.svg";
+import twitterhex from "@app/data/pictures/social-networks/twitter-hex.svg";
+import githubhex from "@app/data/pictures/social-networks/github-hex.svg";
+import mailhex from "@app/data/pictures/social-networks/mail-hex.svg";
+
 const TextWithImg = props => (
   <div>
     <h2 className="pt-4 pb-2" id="about-me">
@@ -12,22 +19,22 @@ const TextWithImg = props => (
       </div>
       <div className="col-1">
         <a href="https://www.linkedin.com/in/ondrejsika/">
-          <img src="/static/linkedin-hex.svg" />
+          <img src={linkedinhex} />
         </a>
         <a href="https://twitter.com/ondrejsika">
-          <img src="/static/twitter-hex.svg" />
+          <img src={twitterhex} />
         </a>
         <a href="https://www.instagram.com/ondrejsika/">
-          <img src="/static/insta-hex.svg" />
+          <img src={instagramhex} />
         </a>
         <a href="https://www.facebook.com/sikaondrej">
-          <img src="/static/fb-hex.svg" />
+          <img src={facebookhex} />
         </a>
         <a href="https://github.com/ondrejsika">
-          <img src="/static/github-hex.svg" />
+          <img src={githubhex} />
         </a>
         <a href="mailto:ondrej@sika.io">
-          <img src="/static/mail-hex.svg" />
+          <img src={mailhex} />
         </a>
       </div>
     </div>
