@@ -97,7 +97,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`

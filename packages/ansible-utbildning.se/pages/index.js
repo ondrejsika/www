@@ -110,7 +110,7 @@ Denna utbildning riktar sig främst till administratörer och DevOps som vill b�
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`

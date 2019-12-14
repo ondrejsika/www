@@ -99,7 +99,7 @@ Na školení si formou workshopu vysvetlíme prečo je dobré Git používať, a
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`

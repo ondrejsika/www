@@ -106,7 +106,7 @@ Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller 
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`

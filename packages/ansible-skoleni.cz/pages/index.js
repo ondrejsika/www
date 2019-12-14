@@ -97,7 +97,7 @@ Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklaruj
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`

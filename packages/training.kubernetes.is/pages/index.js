@@ -100,7 +100,7 @@ This course is primarily aimed at people (developers & DevOps), who want to main
       </TextFrame>
       <TextFrameWithImage
         header="Course Leader: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`

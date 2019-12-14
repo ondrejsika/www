@@ -110,7 +110,7 @@ Kursen riktar sig främst till utvecklare som använder Gitlab och vill börja a
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`

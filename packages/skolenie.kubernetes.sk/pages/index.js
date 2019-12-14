@@ -99,7 +99,7 @@ Kubernetes je dnes najrozšírenejšou platformou na hostovanie Docker kontajner
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím.
         Kubernetes som školil vo firmách ako je CGI alebo Webglobe - Yegon.

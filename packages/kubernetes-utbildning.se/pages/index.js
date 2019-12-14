@@ -109,7 +109,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`

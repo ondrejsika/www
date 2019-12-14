@@ -105,7 +105,7 @@ Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s 
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={require("@app/data/pictures/ondrejsika.jpg")}
       >
         <Markdown
           source={`
