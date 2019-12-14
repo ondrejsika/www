@@ -146,6 +146,43 @@
     de: Gitlab CI Schulung
   lecturers:
     - ondrejsika
+  price:
+    open:
+      cz: 6 800 CZK
+    in_house:
+      cz: 25 000 CZK
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["CMS", "vse"]
+  description:
+    cs: |
+      ### K čemu se používá ?
+      Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutinní úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní Vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
+
+      ### Jak školení probíhá
+      Na školení formou workshopu si vysvětlíme, proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přes testy až po deployment.
+
+      ### Co Vás naučím
+      - Obecný úvod do CI
+      - Úvod do Gitlab CI
+      - Instalace Gitlab CI Runneru
+      - Práce s CI joby
+      - Tvorba CI pipelines
+      - Automatické nasazování
+      - Docker a CI
+
+      ### Pro koho je školení určeno
+      Školení je primárně určeno vývojářům, kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.`}
+
+      #### Předchozí znalosti
+      - Základy práce s Linuxem
+      - Základy práce v terminálu
+      - Základní znalost Gitu výhodou - [Školení Git](/skoleni/git)
+
+      #### Technické požadavky
+      - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
+
 - id: ansible
   name:
     cs: Školení Ansible
@@ -153,6 +190,49 @@
     de: Ansible Schulung
   lecturers:
     - ondrejsika
+  price:
+    open:
+      cz: 6 800 CZK
+    in_house:
+      cz: 25 000 CZK
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["oxy", "oxyCTO"]
+  description:
+    cs: |
+      ### K čemu se používá?
+
+      Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám, ze ztratíte přehled, kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
+
+      ### Jak školení probíhá
+
+      Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní koncepty. Zkusíme si nastavit server (testovací na DigitalOceanu) a nasadit aplikaci od začátku až do konce. Vše si prakticky ošaháme a ozkoušíme.
+
+      ### Co Vás naučím
+
+      - Základní koncept Ansible
+      - Instalace Ansible (pro ty kteří nenainstalovali doma)
+      - Základní ovládání Ansible
+      - Playbooks
+      - Moduly
+      - Šablony
+      - Secrets
+
+      ### Pro koho je školení určeno
+
+      Školení je převážně určeno adminum a DevOps, kteří chtějí začít Ansible používat. Zároveň je vhodné i pro vývojáře, kteří občas nasazují (i do testovacích prostředí) svoje aplikace a chtějí zjednodušit tento proces.
+
+      #### Předchozí znalosti
+
+      - Základy práce s Linuxemm
+      - Základy práce v terminálu
+
+      #### Technické požadavky
+
+      - Nainstalovaný Ansible
+      - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
+
 - id: terraform
   name:
     cs: Školení Terraformu
@@ -184,9 +264,9 @@
     - ondrejsika
   price:
     open:
-      cz: 11 999 CZK
+      cz: 6 800 CZK
     in_house:
-      cz: 50 000 CZK
+      cz: 25 000 CZK
   twitter_recommendations:
     cs: []
   recommendations:

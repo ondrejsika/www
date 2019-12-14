@@ -43,6 +43,8 @@
     se:
     cs:
   company: Bohemia Energy
+  date:
+    cs: 6. června 2017
   photo: img/jurajboldis.jpg
   text:
     cs: |
@@ -82,6 +84,8 @@
     se: Service System Innovation Senior Manager
     cs: Service System Innovation Senior Manager
   company: Dimension Data
+  date:
+    cs: 20. ledna 2018
   photo: img/person.svg
   text:
     cs: |
@@ -111,6 +115,8 @@
       germany
     en: |
       Ondrej was with us for three days to introduce us to Docker. Subsequently, we moved onto Kubernetes - from installation to application preview. The training fulfilled our expectations.
+  date:
+    cs: 30. ledna 2018
 - id: sit
   name: Martin Kylián
   role:
