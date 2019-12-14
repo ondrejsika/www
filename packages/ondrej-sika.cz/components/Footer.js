@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+import facebookhex from "@app/data/pictures/social-networks/fb-hex.svg";
+import instagramhex from "@app/data/pictures/social-networks/instagram-hex.svg";
+import linkedinhex from "@app/data/pictures/social-networks/linkedin-hex.svg";
+import twitterhex from "@app/data/pictures/social-networks/twitter-hex.svg";
+import githubhex from "@app/data/pictures/social-networks/github-hex.svg";
+import mailhex from "@app/data/pictures/social-networks/mail-hex.svg";
+
 const Footer = () => (
   <div>
     <div className="footer mt-5">
@@ -73,22 +80,22 @@ const Footer = () => (
           </div>
           <div className="col-md-2 offset-md-1 col-sm-12">
             <a href="https://www.facebook.com/sikaondrej">
-              <img src="/static/fb-hex.svg" className="pl-2 pr-2 pt-1" />
+              <img src={facebookhex} className="pl-2 pr-2 pt-1" />
             </a>
             <a href="https://www.instagram.com/ondrejsika/">
-              <img src="/static/insta-hex.svg" className="pl-2 pr-2 pt-1" />
+              <img src={instagramhex} className="pl-2 pr-2 pt-1" />
             </a>
             <a href="https://www.linkedin.com/in/ondrejsika/">
-              <img src="/static/linkedin-hex.svg" className="pl-2 pr-2 pt-1" />
+              <img src={linkedinhex} className="pl-2 pr-2 pt-1" />
             </a>
             <a href="https://twitter.com/ondrejsika">
-              <img src="/static/twitter-hex.svg" className="pl-2 pr-2 pt-1" />
+              <img src={twitterhex} className="pl-2 pr-2 pt-1" />
             </a>
             <a href="https://github.com/ondrejsika">
-              <img src="/static/github-hex.svg" className="pl-2 pr-2 pt-1" />
+              <img src={githubhex} className="pl-2 pr-2 pt-1" />
             </a>
             <a href="mailto:ondrej@sika.io">
-              <img src="/static/mail-hex.svg" className="pl-2 pr-2 pt-1" />
+              <img src={mailhex} className="pl-2 pr-2 pt-1" />
             </a>
           </div>
         </div>
