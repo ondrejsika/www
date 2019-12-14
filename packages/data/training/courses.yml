@@ -198,7 +198,7 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["oxy", "oxyCTO"]
+    cs: ["oxy", "oxyCTO", "sit"]
   description:
     cs: |
       ### K čemu se používá?
