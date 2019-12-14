@@ -61,10 +61,15 @@ export default props => (
 
       {props.children}
       <Markdown source={props.description} />
-      <TwoCol
-        col1={<Markdown source={props.col1} />}
-        col2={<Markdown source={props.col2} />}
-      />
+      {(() => {
+        if (props.col1 && props.col2)
+          return (
+            <TwoCol
+              col1={<Markdown source={props.col1} />}
+              col2={<Markdown source={props.col2} />}
+            />
+          );
+      })()}
     </div>
     {(() => {
       if (props.recommendations)
@@ -72,7 +77,11 @@ export default props => (
     })()}
     <div className="container mb-4 mt-4">
       {(() => {
-        if (props.twitter_recommendations)
+        console.log(props.twitter_recommendations);
+        if (
+          props.twitter_recommendations &&
+          props.twitter_recommendations.length
+        )
           return (
             <>
               <h3>Ohlasy z Twitteru</h3>
