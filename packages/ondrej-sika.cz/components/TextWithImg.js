@@ -4,6 +4,7 @@ import linkedinhex from "@app/data/pictures/social-networks/linkedin-hex.svg";
 import twitterhex from "@app/data/pictures/social-networks/twitter-hex.svg";
 import githubhex from "@app/data/pictures/social-networks/github-hex.svg";
 import mailhex from "@app/data/pictures/social-networks/mail-hex.svg";
+import ond from "@app/data/pictures/ond.jpg";
 
 const TextWithImg = props => (
   <div>
@@ -15,7 +16,7 @@ const TextWithImg = props => (
         <p>{props.children}</p>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-9 col-9">
-        <img src="/static/ond.jpg" className="img-fluid img-size-90" />
+        <img src={ond} className="img-fluid img-size-90" />
       </div>
       <div className="col-1">
         <a href="https://www.linkedin.com/in/ondrejsika/">
