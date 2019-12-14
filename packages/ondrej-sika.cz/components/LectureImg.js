@@ -25,12 +25,12 @@ const Card = props => {
 
 const LectureImg = props => {
   return (
-    <div className="d-none d-md-block d-lg-block">
+    <div className="">
       <h2 className="pt-4 pb-2" id="my-training">
         {props.LectureImgHeader}
       </h2>
       <div className="container-flex banner-courses">
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-wrap flex-sm-wrap flex-lg-nowrap d-lg-flex flex-row">
           <Card courseName="Docker" courseId="docker" courseImg={docker} />
           <Card courseName="Kubernetes" courseId="kubernetes" courseImg={k8s} />
           <Card courseName="Git" courseId="git" courseImg={git} />
