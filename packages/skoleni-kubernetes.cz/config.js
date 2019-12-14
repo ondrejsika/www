@@ -7,7 +7,7 @@ const site = {
   google_analytics_site_id: "UA-39461955-21",
 
   x_course: "kubernetes",
-  x_site_claim: "Nejlepší skolení Kubernetes v ČR",
+  x_site_claim: "Nejlepší školení Kubernetes v ČR",
   x_logo: logo,
   x_contact_link:
     "https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz",

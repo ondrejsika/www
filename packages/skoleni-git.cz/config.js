@@ -7,7 +7,7 @@ const site = {
   google_analytics_site_id: "UA-39461955-5",
 
   x_course: "git",
-  x_site_claim: "Nejlepší skolení Gitu v ČR",
+  x_site_claim: "Nejlepší školení Gitu v ČR",
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=skoleni-git.cz",
   x_inquiry_url:

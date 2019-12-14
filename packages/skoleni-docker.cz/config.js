@@ -8,7 +8,7 @@ const site = {
   google_analytics_site_id: "UA-39461955-7",
 
   x_course: "docker",
-  x_site_claim: "Nejlepší skolení Dockeru v ČR",
+  x_site_claim: "Nejlepší školení Dockeru v ČR",
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz",
   x_inquiry_url:
