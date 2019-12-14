@@ -1,3 +1,11 @@
+import docker from "@app/data/pictures/courses/docker-w.svg";
+import git from "@app/data/pictures/courses/git-w.svg";
+import gitlabci from "@app/data/pictures/courses/gitlab-ci.svg";
+import k8s from "@app/data/pictures/courses/kubernetes.png";
+import react from "@app/data/pictures/courses/react.svg";
+import terraform from "@app/data/pictures/courses/terraform-white.png";
+import ansible from "@app/data/pictures/courses/ansible.png";
+
 const LectureImg = props => {
   let training = { en: "training", cs: "skoleni" }[props.lang || "cs"];
   return (
@@ -14,7 +22,7 @@ const LectureImg = props => {
               </a>
             </h4>
             <a href={`/${training}/docker`}>
-              <img src="/static/docker-w.svg" className="img img-fluid p-3" />
+              <img src={docker} className="img img-fluid p-3" />
             </a>
           </div>
           <div className="box" id="kubernetes">
@@ -24,7 +32,7 @@ const LectureImg = props => {
               </a>
             </h4>
             <a href={`/${training}/kubernetes`}>
-              <img src="/static/kubernetes.png" className="img img-fluid p-3" />
+              <img src={k8s} className="img img-fluid p-3" />
             </a>
           </div>
           <div className="box" id="git">
@@ -34,7 +42,7 @@ const LectureImg = props => {
               </a>
             </h4>
             <a href={`/${training}/git`}>
-              <img src="/static/git-w.svg" className="img img-fluid p-3"></img>
+              <img src={git} className="img img-fluid p-3"></img>
             </a>
           </div>
           <div className="box" id="gitlab-ci">
@@ -44,10 +52,7 @@ const LectureImg = props => {
               </a>
             </h4>
             <a href={`/${training}/gitlab-ci`}>
-              <img
-                src="/static/gitlab-ci.svg"
-                className="img img-fluid p-3"
-              ></img>
+              <img src={gitlabci} className="img img-fluid p-3"></img>
             </a>
           </div>
           <div className="box " id="ansible">
@@ -57,10 +62,7 @@ const LectureImg = props => {
               </a>
             </h4>
             <a href={`/${training}/ansible`}>
-              <img
-                src="/static/ansible.png"
-                className="img img-fluid p-3"
-              ></img>
+              <img src={ansible} className="img img-fluid p-3"></img>
             </a>
           </div>
           {(() => {
@@ -77,10 +79,7 @@ const LectureImg = props => {
                       </a>
                     </h4>
                     <a href={`/${training}/terraform`}>
-                      <img
-                        src="/static/terraform-white.png"
-                        className="img img-fluid p-3"
-                      ></img>
+                      <img src={terraform} className="img img-fluid p-3"></img>
                     </a>
                   </div>
                   <div className="box " id="react">
@@ -90,10 +89,7 @@ const LectureImg = props => {
                       </a>
                     </h4>
                     <a href={`/${training}/react`}>
-                      <img
-                        src="/static/react.svg"
-                        className="img img-fluid p-3"
-                      ></img>
+                      <img src={react} className="img img-fluid p-3"></img>
                     </a>
                   </div>
                 </>
