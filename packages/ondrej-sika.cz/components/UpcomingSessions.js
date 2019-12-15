@@ -90,6 +90,8 @@ class UpcomingSessions extends React.Component {
         </thead>
         <tbody>
           {sessions.map((course, i) => {
+            let flag = { en: "🇬🇧", de: "🇩🇪", se: "🇸🇪", cs: "🇨🇿" }[course.lang];
+
             return (
               <tr key={i}>
                 <td scope="row">
@@ -99,10 +101,16 @@ class UpcomingSessions extends React.Component {
                         <Link
                           href={`/${course_page_prefix}/${course.course_id}`}
                         >
-                          <a>{course.name}</a>
+                          <a>
+                            {course.name} {flag}
+                          </a>
                         </Link>
                       );
-                    return <span>{course.name}</span>;
+                    return (
+                      <span>
+                        {course.name} {flag}
+                      </span>
+                    );
                   })()}
                 </td>
                 <td>{course.city}</td>
