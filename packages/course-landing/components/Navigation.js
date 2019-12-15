@@ -12,6 +12,8 @@ const links = {
     // ch: "https://ondrej-sika.com/training/git?x_source=headline",
     // nl: "https://ondrej-sika.com/training/git?x_source=headline"
     de: "https://ondrej-sika.com/training/git?x_source=headline",
+    is: "https://ondrej-sika.com/training/git?x_source=headline",
+    lu: "https://ondrej-sika.com/training/git?x_source=headline",
     uk: "https://git-training.uk",
     se: "https://git-utbildning.se",
     ch: "https://git-training.ch",
@@ -26,6 +28,8 @@ const links = {
     at: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline",
     ch: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline",
     nl: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline",
+    is: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline",
+    lu: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline",
     de: "https://gitlab-schulung.de",
     uk: "https://gitlab-training.uk",
     se: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline"
@@ -40,6 +44,8 @@ const links = {
     // ch: "https://ondrej-sika.com/training/docker?x_source=headline",
     // nl: "https://ondrej-sika.com/training/docker?x_source=headline"
     de: "https://ondrej-sika.com/training/docker?x_source=headline",
+    is: "https://ondrej-sika.com/training/docker?x_source=headline",
+    lu: "https://ondrej-sika.com/training/docker?x_source=headline",
     uk: "https://docker-training.uk",
     se: "https://docker-utbildning.se",
     at: "https://docker-training.at",
@@ -53,6 +59,8 @@ const links = {
     de: "https://kubernetes-schulung.de",
     // uk: "https://ondrej-sika.uk/training/kubernetes?x_source=headline",
     uk: "https://kubernetes-training.uk",
+    is: "https://training.kubernetes.is",
+    lu: "https://training.kubernetes.lu",
     // se: "https://ondrej-sika.se/utbildning/kubernetes?x_source=headline",
     se: "https://kubernetes-utbildning.se",
     at: "https://ondrej-sika.com/training/kubernetes?x_source=headline",
@@ -69,6 +77,8 @@ const links = {
     // se: "https://ondrej-sika.se/utbildning/ansible?x_source=headline",
     se: "https://ansible-utbildning.se",
     at: "https://ondrej-sika.com/training/ansible?x_source=headline",
+    is: "https://ondrej-sika.com/training/ansible?x_source=headline",
+    lu: "https://ondrej-sika.com/training/ansible?x_source=headline",
     ch: "https://ondrej-sika.com/training/ansible?x_source=headline",
     nl: "https://ondrej-sika.com/training/ansible?x_source=headline"
   },
@@ -82,6 +92,8 @@ const links = {
     se: "https://ondrej-sika.se/utbildning/terraform?x_source=headline",
     // se: "https://terraform-utbildning.se",
     at: "https://ondrej-sika.com/training/terraform?x_source=headline",
+    is: "https://ondrej-sika.com/training/terraform?x_source=headline",
+    lu: "https://ondrej-sika.com/training/terraform?x_source=headline",
     ch: "https://ondrej-sika.com/training/terraform?x_source=headline",
     nl: "https://ondrej-sika.com/training/terraform?x_source=headline"
   },
@@ -95,6 +107,8 @@ const links = {
     se: "https://ondrej-sika.se/utbildning/prometheus?x_source=headline",
     // se: "https://terraform-utbildning.se",
     at: "https://ondrej-sika.com/training/prometheus?x_source=headline",
+    is: "https://ondrej-sika.com/training/prometheus?x_source=headline",
+    lu: "https://ondrej-sika.com/training/prometheus?x_source=headline",
     ch: "https://ondrej-sika.com/training/prometheus?x_source=headline",
     nl: "https://ondrej-sika.com/training/prometheus?x_source=headline"
   },
@@ -108,6 +122,8 @@ const links = {
     se: "https://ondrej-sika.se/utbildning/proxmox?x_source=headline",
     // se: "https://terraform-utbildning.se",
     at: "https://ondrej-sika.com/training/proxmox?x_source=headline",
+    is: "https://ondrej-sika.com/training/proxmox?x_source=headline",
+    lu: "https://ondrej-sika.com/training/proxmox?x_source=headline",
     ch: "https://ondrej-sika.com/training/proxmox?x_source=headline",
     nl: "https://ondrej-sika.com/training/proxmox?x_source=headline"
   },
@@ -121,6 +137,8 @@ const links = {
     se: "https://ondrej-sika.se/utbildning/react?x_source=headline",
     // se: "https://terraform-utbildning.se",
     at: "https://ondrej-sika.com/training/react?x_source=headline",
+    is: "https://ondrej-sika.com/training/react?x_source=headline",
+    lu: "https://ondrej-sika.com/training/react?x_source=headline",
     ch: "https://ondrej-sika.com/training/react?x_source=headline",
     nl: "https://ondrej-sika.com/training/react?x_source=headline"
   }
