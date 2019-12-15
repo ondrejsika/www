@@ -84,6 +84,45 @@ const links = {
     at: "https://ondrej-sika.com/training/terraform?x_source=headline",
     ch: "https://ondrej-sika.com/training/terraform?x_source=headline",
     nl: "https://ondrej-sika.com/training/terraform?x_source=headline"
+  },
+  prometheus: {
+    cz: "https://ondrej-sika.cz/skoleni/prometheus?x_source=headline",
+    sk: "https://ondrej-sika.cz/skoleni/prometheus?x_source=headline",
+    de: "https://ondrej-sika.de/training/prometheus?x_source=headline",
+    // de: "https://teraform-schulung.de",
+    uk: "https://ondrej-sika.uk/training/prometheus?x_source=headline",
+    // uk: "https://terraform-training.uk",
+    se: "https://ondrej-sika.se/utbildning/prometheus?x_source=headline",
+    // se: "https://terraform-utbildning.se",
+    at: "https://ondrej-sika.com/training/prometheus?x_source=headline",
+    ch: "https://ondrej-sika.com/training/prometheus?x_source=headline",
+    nl: "https://ondrej-sika.com/training/prometheus?x_source=headline"
+  },
+  proxmox: {
+    cz: "https://ondrej-sika.cz/skoleni/proxmox?x_source=headline",
+    sk: "https://ondrej-sika.cz/skoleni/proxmox?x_source=headline",
+    de: "https://ondrej-sika.de/training/proxmox?x_source=headline",
+    // de: "https://teraform-schulung.de",
+    uk: "https://ondrej-sika.uk/training/proxmox?x_source=headline",
+    // uk: "https://terraform-training.uk",
+    se: "https://ondrej-sika.se/utbildning/proxmox?x_source=headline",
+    // se: "https://terraform-utbildning.se",
+    at: "https://ondrej-sika.com/training/proxmox?x_source=headline",
+    ch: "https://ondrej-sika.com/training/proxmox?x_source=headline",
+    nl: "https://ondrej-sika.com/training/proxmox?x_source=headline"
+  },
+  react: {
+    cz: "https://ondrej-sika.cz/skoleni/react?x_source=headline",
+    sk: "https://ondrej-sika.cz/skoleni/react?x_source=headline",
+    de: "https://ondrej-sika.de/training/react?x_source=headline",
+    // de: "https://teraform-schulung.de",
+    uk: "https://ondrej-sika.uk/training/react?x_source=headline",
+    // uk: "https://terraform-training.uk",
+    se: "https://ondrej-sika.se/utbildning/react?x_source=headline",
+    // se: "https://terraform-utbildning.se",
+    at: "https://ondrej-sika.com/training/react?x_source=headline",
+    ch: "https://ondrej-sika.com/training/react?x_source=headline",
+    nl: "https://ondrej-sika.com/training/react?x_source=headline"
   }
 };
 
@@ -128,6 +167,21 @@ class Navigation extends React.Component {
                 <li>
                   <Link href={links.gitlabci[location]}>
                     <a>Gitlab CI</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={links.prometheus[location]}>
+                    <a>Prometheus</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={links.proxmox[location]}>
+                    <a>Proxmox</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={links.react[location]}>
+                    <a>React</a>
                   </Link>
                 </li>
               </p>
