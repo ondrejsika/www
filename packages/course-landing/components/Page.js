@@ -60,15 +60,23 @@ const Page = props => {
         logoUrl={site.x_logo}
       >
         <HeaderLink url={site.x_inquiry_url}>
-          <Translate lang={site.lang} cs="Nezávazně poptat školení" />
+          <Translate
+            lang={site.lang}
+            cs="Nezávazně poptat školení"
+            sk="Nezáväzne popýtať školenie"
+          />
         </HeaderLink>
         <HeaderLink url={site.x_contact_link}>
-          <Translate lang={site.lang} cs="Kontaktovat" />
+          <Translate lang={site.lang} cs="Kontaktovat" sk="Kontaktovať" />
         </HeaderLink>
       </Header>
       <div className="container">
         <h2>
-          <Translate lang={site.lang} cs="Otevřené ternímy" />
+          <Translate
+            lang={site.lang}
+            cs="Otevřené ternímy"
+            sk="Otvorené termíny"
+          />
         </h2>
         <UpcomingSessions
           limit={3}
@@ -99,52 +107,75 @@ const Page = props => {
                 Naučím Vás používat prověřené nástroje a technologie, které
                 povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho
                 software."
+                  sk="Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
                 />
               </p>
             </TextFrame>
             <TextFrame>
               <div className="">
                 <h3>
-                  <Translate lang={lang} cs="Mám zájem o školení" />
+                  <Translate
+                    lang={lang}
+                    cs="Mám zájem o školení"
+                    sk="Mám záujem o školenie"
+                  />
                 </h3>
                 <p>
                   <Translate
                     lang={lang}
                     cs="Pokud máte zájem o školení, vyberte si variantu a pošlete
                   nezávaznou poptávku."
+                    sk="Ak máte záujem o školenie, neváhajte ma kontaktovať."
                   />
                 </p>
                 <div className="row text-center mt-4">
                   <div className="col-6">
-                    <h4>
-                      <Translate lang={lang} cs="Otevřený termín" />
-                    </h4>
+                    <h5>
+                      <Translate
+                        lang={lang}
+                        cs="Otevřený termín"
+                        sk="Otvorený termín"
+                      />
+                    </h5>
                     <div className="mb-2" style={{ fontSize: "1.3em" }}>
                       {price_open}
                     </div>
                     <ButtonOutline btnUrl={site.x_inquiry_url}>
-                      <Translate lang={lang} cs="Nezávazne poptat" />
+                      <Translate
+                        lang={lang}
+                        cs="Nezávazne poptat"
+                        sk="Nezáväzne popýtať"
+                      />
                     </ButtonOutline>
                   </div>
                   <div className="col-6">
                     <h5>
-                      <Translate lang={lang} cs="Firemní školení" />
+                      <Translate
+                        lang={lang}
+                        cs="Firemní školení"
+                        sk="Firemné školenia"
+                      />
                     </h5>
                     <div className="mb-2" style={{ fontSize: "1.3em" }}>
                       {price_in_house}
                     </div>
                     <ButtonOutline btnUrl={site.x_inquiry_url}>
-                      <Translate lang={lang} cs="Nezávazne poptat" />
+                      <Translate
+                        lang={lang}
+                        cs="Nezávazne poptat"
+                        sk="Nezáväzne popýtať"
+                      />
                     </ButtonOutline>
                   </div>
                 </div>
                 <div className="mt-4">
                   <h3>
-                    <Translate lang={lang} cs="Dotazy" />
+                    <Translate lang={lang} cs="Dotazy" sk="Dotazov" />
                   </h3>
                   <Translate
                     lang={lang}
                     cs="Pokud máte jakýkoliv dotaz, naváhejte mi napsat na"
+                    sk="Ak máte záujem o školenie, neváhajte ma kontaktovať"
                   />{" "}
                   <a
                     href={`mailto:ondrej@sika.io?subject=[${site.name}] Question about ${course_name}`}
@@ -173,7 +204,11 @@ const Page = props => {
       <Bar>
         <div className="text-center">
           <h2 style={{ color: "white", fontSize: "2.4em" }}>
-            <Translate lang={lang} cs="Statistiky kurzu" />
+            <Translate
+              lang={lang}
+              cs="Statistiky kurzu"
+              sk="Štatistiky kurzu"
+            />
           </h2>
         </div>
         <div className="row">
@@ -182,7 +217,11 @@ const Page = props => {
               {props.NumberOfPeople}150+
             </h2>
             <p className="text-white text-center statistic-bottom">
-              <Translate lang={lang} cs="účastníků proškoleno" />
+              <Translate
+                lang={lang}
+                cs="účastníků proškoleno"
+                sk="účastníkov"
+              />
             </p>
           </div>
           <div className="col-4">
@@ -190,13 +229,17 @@ const Page = props => {
               {props.NumberOfCompanies}15+
             </h2>
             <p className="text-white text-center statistic-bottom">
-              <Translate lang={lang} cs="firem proškoleno" />
+              <Translate
+                lang={lang}
+                cs="firem proškoleno"
+                sk="firiem preškolených"
+              />
             </p>
           </div>
           <div className="col-4">
             <h2 className="text-center text-white mb-0 text-huge">20+</h2>
             <p className="text-white text-center statistic-bottom">
-              <Translate lang={lang} cs="běhů školení" />
+              <Translate lang={lang} cs="běhů školení" sk="behov školení" />
             </p>
           </div>
         </div>
@@ -205,7 +248,11 @@ const Page = props => {
         <MyClients
           noBorder={true}
           HeaderClients={
-            <Translate lang={lang} cs="Moji nejvýznamější klienti" />
+            <Translate
+              lang={lang}
+              cs="Moji nejvýznamější klienti"
+              sk="Moji nejvýznamější klienti"
+            />
           }
         />
         {(() => {
