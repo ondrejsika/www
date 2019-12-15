@@ -4,11 +4,16 @@
     cs: Freelance IT architekt, konzultant a lektor se zamerenim na DevOps
     en: Freelance IT architect, consultant and lecturer focused on DevOps
     de: Berater @ Sika Kraml Schulungen GbR.
+    sk: Po slovenstine - Freelance IT architekt, konzultant a lektor se zamerenim na DevOps
+
   bio_long:
     cs: |
       Jmenuji se Ondřej Šika, od roku 2009 se zabývám vývojem software a DevOps. Od roku 2013 předávám své praktické zkušenosti na školeních. Pracoval jsem pro malé firmy, startupy i velké korporace s cílem zefektivnit jim proces vývoje, testování a nasazování software. Dnes se primárně věnuji DevOps: návrhem softwarového stacku, vývojového a provozního prostředí ve firmách. Práci s nástroji jako Docker, Kubernetes a Terraform se snažím co nejvíce automatizovat, aby lidé nemuseli dělat rutiny, které můžou jednoduše dělat stroje.
     en:
     de:
+    sk: |
+      Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť.
+
 - id: jirikraml
   name: Jiri Kraml
   bio:

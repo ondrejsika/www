@@ -3,18 +3,23 @@
     cs: Školení Dockeru
     en: Docker Training
     de: Docker Schulung
+    sk: Školenie Docker
   lecturers:
     - ondrejsika
     - martinstudna
   price:
     open:
       cz: 11 999 CZK
+      sk: 389 EUR
     in_house:
       cz: 50 000 CZK
+      sk: 1550 EUR
   twitter_recommendations:
     cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
+    sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
   recommendations:
     cs: ["spel", "vse", "sit"]
+    sk: ["spel", "vse", "sit"]
   description:
     cs: |
       ### Co je to Docker
@@ -47,6 +52,38 @@
 
       - Nainstalovaný Docker, [návod na instalaci](https://www.ondrej-sika.cz/docker/instalace/)
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+
+    sk: |
+      ### Čo je to Docker
+      Docker je technológia, ktorá dnes veľmi zjednodušuje proces vývoja, testovania a prevádzky softvéru. Prevádzkujte čokoľvek a kdekoľvek. Už nečakajte na nastavenie vášho serveru alebo na aktualizáciu nejakej knižnice. Majte prostredie ako súčasť vašej aplikácie.
+
+      ### Ako školenie prebieha
+
+      Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s Dockerom pracovať od vytvorenia vlastných kontajnerov až po jeho prevádzku v Swarme. Všetko si aj prakticky vyskúšame.
+
+      ### Čo Vás naučím
+
+      - Teoretický úvod do Dockeru
+      - Inštaláciu Dockeru (tých, ktorí ho nenainštalovali doma)
+      - Prácu s kontajnermi
+      - Prácu s obrazmi
+      - Docker Compose - viackontajnerové aplikácie v Dockeri
+      - Deployment do Swarmu
+      - Ukážka deploymentu do Kubernetes
+
+      ### Pre koho je školenie určené
+
+      Školenie je primárne určené ľuďom, ktorí nemajú s Dockerom žiadne (alebo len malé) skúsenosti. Účasť na školení nie je podmienená predchádzajúcimi znalosťami Dockeru. Je vhodné pre vývojárov alebo DevOps (serverových administrátorov), ktorí chcú Docker využívať v praxi alebo chcú získť prehľad o tom čo Docker rieši a kde by ho mohli použiť.
+
+      #### Predchádzajúce znalosti
+
+      - Základy práce s Linuxom
+      - Základy práce v terminále
+
+      #### Technické požiadavky
+
+      - Nainštalovaný Docker, [návod na inštaláciu](https://www.ondrej-sika.cz/docker/instalace/)
+      - Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
 
 - id: kubernetes
   name:
