@@ -1,5 +1,4 @@
-import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
-import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
+import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
 import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
@@ -31,8 +30,7 @@ const Index = () => (
     />
 
     <div className="container">
-      <LectureImgMdLg LectureImgHeader="My Training" />
-      <LectureImgSm LectureImgHeader="My Training" />
+      <LectureImg LectureImgHeader="My Training" />
       <SessionsPage lang={site.lang} location={site.location} />
 
       <TextWithImg TextWithImgHeader="About me">

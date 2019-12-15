@@ -1,5 +1,4 @@
-import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
-import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
+import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
 import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
@@ -24,8 +23,7 @@ const Index = () => (
     />
 
     <div className="container">
-      <LectureImgMdLg LectureImgHeader="Kurzy co školím" />
-      <LectureImgSm LectureImgHeader="Kurzy co školím" />
+      <LectureImg LectureImgHeader="Kurzy co školím" />
       <TextWithImg TextWithImgHeader="O mně">
         Jmenuji se Ondřej, vývojem softwaru se zabývám od roku 2009 a od roku
         2013 předávám své zkušenosti na školích. Pracoval jsem pro malé firmy,

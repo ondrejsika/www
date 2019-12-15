@@ -1,5 +1,4 @@
-import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
-import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
+import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 
 import Head from "next/head";
@@ -11,8 +10,7 @@ const Index = props => (
     </Head>
     <MainBar MainBarHeader="Training" />
     <div className="container">
-      <LectureImgMdLg lang={props.site.lang} LectureImgHeader="My Training" />
-      <LectureImgSm lang={props.site.lang} LectureImgHeader="My Training" />
+      <LectureImg lang={props.site.lang} LectureImgHeader="My Training" />
     </div>
   </div>
 );

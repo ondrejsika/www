@@ -1,6 +1,5 @@
 import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
-import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
-import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
+import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
 import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
@@ -27,8 +26,7 @@ const Index = props => (
     />
 
     <div className="container">
-      <LectureImgMdLg lang={props.site.lang} LectureImgHeader="My Training" />
-      <LectureImgSm lang={props.site.lang} LectureImgHeader="My Training" />
+      <LectureImg lang={props.site.lang} LectureImgHeader="My Training" />
       <TextWithImg TextWithImgHeader="About me">
         My name is Ondrej, I am a software engineer and DevOps consultant,
         architect &amp; lecturer. I lead mostly Docker courses and CI; they are
