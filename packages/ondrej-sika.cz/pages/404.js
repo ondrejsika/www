@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
-import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
-import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
+import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 
 export default () => {
   return (
@@ -21,8 +20,7 @@ export default () => {
 Napište mi email na <ondrej@sika.io> a dejte mi vědět co potřebujete. Rád Vám pomohu.
 `}
         />
-        <LectureImgMdLg LectureImgHeader="... nebo se podivejte na kurzy co školím" />
-        <LectureImgSm LectureImgHeader="... nebo se podivejte na kurzy co školím" />
+        <LectureImg LectureImgHeader="... nebo se podivejte na kurzy co školím" />
         <div className="mt-5" />
         <Markdown
           source={`

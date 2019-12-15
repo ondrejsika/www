@@ -1,5 +1,4 @@
-import LectureImgMdLg from "@app/ondrej-sika.cz/components/LectureImgMdLg";
-import LectureImgSm from "@app/ondrej-sika.cz/components/LectureImgSm";
+import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 
 import Head from "next/head";
@@ -11,8 +10,7 @@ const Index = () => (
     </Head>
     <MainBar MainBarHeader="Nabídka Školení" />
     <div className="container">
-      <LectureImgMdLg LectureImgHeader="Kurzy co školím" />
-      <LectureImgSm LectureImgHeader="Kurzy co školím" />
+      <LectureImg LectureImgHeader="Kurzy co školím" />
     </div>
   </div>
 );
