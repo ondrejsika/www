@@ -7,6 +7,6 @@
   "dependencies": {
     "@app/course-landing": "^0.0.0",
     "next-yaml": "^1.0.1",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.16.0"
   }
 }
