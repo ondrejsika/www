@@ -7,7 +7,7 @@ export default () => (
     <Head>
       <title>ccc.oxs.cz</title>
     </Head>
-    <h1>ccc.oxs.cz</h1>
+    <h1>36c3</h1>
     <h3>Main Links</h3>
     <LinksWrap>
       <Links
@@ -39,6 +39,15 @@ export default () => (
     <h3>Other Links</h3>
     <LinksWrap>
       <Links links={[["c3queue", "https://c3queue.de/"]]} />
+    </LinksWrap>
+    <h2>All Congreses</h2>
+    <LinksWrap>
+      <Links
+        links={[
+          ["Tickets", "https://tickets.events.ccc.de/"],
+          ["All Congresses (sika.link/ccc)", "https://events.ccc.de/congress/"]
+        ]}
+      />
     </LinksWrap>
   </div>
 );
