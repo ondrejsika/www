@@ -8,7 +8,7 @@ export default () => (
       <title>ccc.oxs.cz</title>
     </Head>
     <h1>ccc.oxs.cz</h1>
-    <h3>Links</h3>
+    <h3>Main Links</h3>
     <LinksWrap>
       <Links
         links={[
@@ -16,7 +16,11 @@ export default () => (
             "Main Page (sika.link/36c3)",
             "https://events.ccc.de/congress/2019/wiki/index.php/Main_Page"
           ],
-          ["Fahrplan", "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/"]
+          [
+            "Fahrplan",
+            "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/"
+          ],
+          ["c3nav", "https://c3nav.de/"]
         ]}
       />
     </LinksWrap>
@@ -31,6 +35,10 @@ export default () => (
           ]
         ]}
       />
+    </LinksWrap>
+    <h3>Other Links</h3>
+    <LinksWrap>
+      <Links links={[["c3queue", "https://c3queue.de/"]]} />
     </LinksWrap>
   </div>
 );
