@@ -48,6 +48,10 @@ export default () => (
 - Skoleni Reactu (in progress) - https://github.com/ondrejsika/react-training
 - Ukazkovy React & Next.js projekt ke skoleni - https://github.com/ondrejsika/react-example
 - Repozitar mych webu (monorepo) v Next.js - https://github.com/ondrejsika/ondrejsikawebs
+
+## Ansible
+
+- Docker Compose deployment pomoci Ansible - https://github.com/ondrejsika/ansible-docker-compose--example
 `}
     after={
       <div className="alert alert-primary mt-5 text-center" role="alert">
