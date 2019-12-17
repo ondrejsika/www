@@ -15,7 +15,8 @@ export default () => (
           [
             "Main Page (sika.link/36c3)",
             "https://events.ccc.de/congress/2019/wiki/index.php/Main_Page"
-          ]
+          ],
+          ["Fahrplan", "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/"]
         ]}
       />
     </LinksWrap>
