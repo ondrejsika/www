@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DEV_SITES="skolenie-ansible.sk ondrej-sika.uk sika-kaplan.com trainera.io"
-PROD_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrejsikalabs.com ondrej-sika.de skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk sika-kaplan.com salzburgdevops.com training.kubernetes.is training.kubernetes.lu sika-kraml.de skoleni-terraform.cz sika-training.com ondrej-sika.com sikahq.com cal-api.sika.io ydo.cz skoleni-proxmox.cz skoleni-prometheus.cz"
+PROD_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrejsikalabs.com ondrej-sika.de skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk sika-kaplan.com salzburgdevops.com training.kubernetes.is training.kubernetes.lu sika-kraml.de skoleni-terraform.cz sika-training.com ondrej-sika.com sikahq.com cal-api.sika.io ydo.cz skoleni-proxmox.cz skoleni-prometheus.cz ccc.oxs.cz"
 DEV_SUFFIX=".xsika.cz"
 
 
