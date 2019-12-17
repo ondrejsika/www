@@ -9,6 +9,9 @@
     "prettier-check": "prettier -l \"**/*.js\"",
     "prettier-write": "prettier --write \"**/*.js\"",
     "dev-all": "./run-dev-all.sh",
+    "ncu": "ncu -u --packageFile",
+    "ncu-packages": "find ./packages -name package.json -exec yarn run ncu {} \\;",
+    "ncu-all": "yarn run ncu package.json && yarn run ncu-packages",
     "dev-archetype-web": "yarn --cwd packages/archetype-web dev -p 3001",
     "dev-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz dev -p 3002",
     "dev-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz dev -p 3003",
@@ -112,6 +115,7 @@
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   },
   "devDependencies": {
+    "npm-check-updates": "^4.0.1",
     "prettier": "1.18.2"
   }
 }
