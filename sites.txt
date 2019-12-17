@@ -48,3 +48,4 @@ cal-api.sika.io
 skoleni-proxmox.cz
 ydo.cz
 skoleni-prometheus.cz
+ccc.oxs.cz

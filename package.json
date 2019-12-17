@@ -62,6 +62,7 @@
     "dev-skoleni-proxmox.cz": "yarn --cwd packages/skoleni-proxmox.cz dev -p 3048",
     "dev-ydo.cz": "yarn --cwd packages/ydo.cz dev -p 3049",
     "dev-skoleni-prometheus.cz": "yarn --cwd packages/skoleni-prometheus.cz dev -p 3050",
+    "dev-ccc.oxs.cz": "yarn --cwd packages/ccc.oxs.cz dev -p 3051",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -112,6 +113,7 @@
     "static-skoleni-proxmox.cz": "yarn --cwd packages/skoleni-proxmox.cz static",
     "static-ydo.cz": "yarn --cwd packages/ydo.cz static",
     "static-skoleni-prometheus.cz": "yarn --cwd packages/skoleni-prometheus.cz static",
+    "static-ccc.oxs.cz": "yarn --cwd packages/ccc.oxs.cz static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   },
   "devDependencies": {
