@@ -170,7 +170,7 @@ const Page = props => {
                 </div>
                 <div className="mt-4">
                   <h3>
-                    <Translate lang={lang} cs="Dotazy" sk="Dotazov" />
+                    <Translate lang={lang} cs="Dotazy" sk="Otázky" />
                   </h3>
                   <Translate
                     lang={lang}
@@ -239,7 +239,7 @@ const Page = props => {
           <div className="col-4">
             <h2 className="text-center text-white mb-0 text-huge">20+</h2>
             <p className="text-white text-center statistic-bottom">
-              <Translate lang={lang} cs="běhů školení" sk="behov školení" />
+              <Translate lang={lang} cs="běhů školení" sk="školení" />
             </p>
           </div>
         </div>
