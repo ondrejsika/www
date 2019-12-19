@@ -1925,6 +1925,26 @@ docker-training.de build docker:
       - packages/docker-training.de/**/*
       - yarn.lock
 
+docker-training.de prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.de&domain=docker-training.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.de/**/*
+      - yarn.lock
+  environment:
+    name: prod docker-training.de
+    url: https://docker-training.de
+  dependencies: []
+
 docker-training.ch build js:
   stage: build_js
   image: node
@@ -1967,6 +1987,26 @@ docker-training.ch build docker:
       - packages/course-landing/**/*
       - packages/docker-training.ch/**/*
       - yarn.lock
+
+docker-training.ch prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.ch&domain=docker-training.ch&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.ch/**/*
+      - yarn.lock
+  environment:
+    name: prod docker-training.ch
+    url: https://docker-training.ch
+  dependencies: []
 
 docker-training.at build js:
   stage: build_js
@@ -2011,6 +2051,26 @@ docker-training.at build docker:
       - packages/docker-training.at/**/*
       - yarn.lock
 
+docker-training.at prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.at&domain=docker-training.at&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.at/**/*
+      - yarn.lock
+  environment:
+    name: prod docker-training.at
+    url: https://docker-training.at
+  dependencies: []
+
 docker-training.nl build js:
   stage: build_js
   image: node
@@ -2053,6 +2113,26 @@ docker-training.nl build docker:
       - packages/course-landing/**/*
       - packages/docker-training.nl/**/*
       - yarn.lock
+
+docker-training.nl prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.nl&domain=docker-training.nl&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.nl/**/*
+      - yarn.lock
+  environment:
+    name: prod docker-training.nl
+    url: https://docker-training.nl
+  dependencies: []
 
 git-training.nl build js:
   stage: build_js
