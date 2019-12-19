@@ -2177,6 +2177,26 @@ git-training.nl build docker:
       - packages/git-training.nl/**/*
       - yarn.lock
 
+git-training.nl prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.nl&domain=git-training.nl&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/git-training.nl/**/*
+      - yarn.lock
+  environment:
+    name: prod git-training.nl
+    url: https://git-training.nl
+  dependencies: []
+
 sika-kaplan.com build js:
   stage: build_js
   image: node
