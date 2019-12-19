@@ -1,4 +1,5 @@
 import Course from "@app/ondrej-sika.cz/layouts/Course";
+import logo from "@app/data/pictures/courses/react.svg";
 
 export default props => (
   <Course
@@ -6,7 +7,7 @@ export default props => (
     show_sessions={true}
     lang={props.site.lang}
     course_title="Školení React"
-    logo="/static/react.svg"
+    logo={logo}
     price_self_funded="11 999 CZK"
     price_company_funded="14 999 CZK"
     price_in_house="50 000 CZK"
