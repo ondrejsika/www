@@ -1,242 +1,242 @@
-- id: vse
+- company: University of Ecenomics, Prague
+  company_logo: null
+  date:
+    cs: 7. kvetna 2019
+    de: 7. 5. 2019
+  id: vse
   name: Matěj Kučera
+  photo: img/matejkucera.jpg
   role:
-    en: Web Application Developer
-    se: Webapplikationsutvecklare
     cs: Vývojář Aplikací
     de: Web Application Developer
-  company: University of Ecenomics, Prague
-  photo: img/matejkucera.jpg
-  company_logo:
+    en: Web Application Developer
+    se: Webapplikationsutvecklare
   text:
+    cs: |
+      Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
+    de: Das ist perfekt!
     en: |
       Ondrej came to help us with deployment Docker and Gitlab CI. Ondrej is very good in his field and I can just reccomend him. We did lot of thing in very short time, and we would'n be able to do it without him. I recommend him.
     se: |
       Efter att ha deltagit i Ondras Docker-utbildning kom han till VŠE för att hjälpa oss att distribuera Docker och Gitlab CI i vårt arbetsflöde. Det kan ses att han vet vad han gör och jag anser hans utbildning som en stor tillgång. Vi lyckades göra mycket arbete på kort tid, och jag rekommenderar honom starkt.
-    de: Das ist perfekt!
-    cs: |
-      Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
     sk: |
       Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
+- company: SPEL a.s.
   date:
-    de: 7. 5. 2019
     cs: 7. kvetna 2019
-- id: spel
+  id: spel
   name: Tomáš Havlín
+  photo: img/person.svg
   role:
-    en: CTO
-    se: CTO
     cs: CTO
     de: CTO
-  company: SPEL a.s.
-  date:
-    cs: 7. kvetna 2019
-  photo: img/person.svg
+    en: CTO
+    se: CTO
   text:
     cs: |
       Ondřej u nás školil Docker/Docker-compose/Swarm dva dny. Úvod do teoerie včetně vysvětlení. Ondřej srozumitelně ukazuje na praktických příkladech formou workshopu, který je dle mě nejlepším možným způsobem, jak se můžete něco nového naučit. Je vidět, že Ondra má se všemi technologiemi a jejich nasazením praktické zkušenosti, okamžitě na naše dotazy reagoval s možným způsobem řešení, což bylo pro nás zvlášť důležité. Rád bych také ocenil přátelský přístup, za mě nejlepší školení za několik posledních let.
+    de: null
     se: |
       Ondřej visar tydligt praktiska exempel under hans workshop, som jag tycker är det bästa sättet att lära sig något nytt. Det kan ses att Ondrej har praktisk erfarenhet av tekniken han undervisade oss i och deras utplacering, och ham svarade omedelbart på våra frågor med lösningar, vilket var särskilt viktigt för oss. Jag vill också uppskatta det vänliga tillvägagångssättet, detta var nog den bästa utbildningen för mig i de senaste åren.
-    de:
     sk: |
       Ondřej u nás školil Docker/Docker-compose/Swarm dva dny. Úvod do teoerie včetně vysvětlení. Ondřej srozumitelně ukazuje na praktických příkladech formou workshopu, který je dle mě nejlepším možným způsobem, jak se můžete něco nového naučit. Je vidět, že Ondra má se všemi technologiemi a jejich nasazením praktické zkušenosti, okamžitě na naše dotazy reagoval s možným způsobem řešení, což bylo pro nás zvlášť důležité. Rád bych také ocenil přátelský přístup, za mě nejlepší školení za několik posledních let.
-- id: bohemiaenergy
-  name: Juraj Boldiš
-  role:
-    en:
-    se:
-    cs:
-  company: Bohemia Energy
+- company: Bohemia Energy
   date:
     cs: 6. června 2017
+  id: bohemiaenergy
+  name: Juraj Boldiš
   photo: img/jurajboldis.jpg
+  role:
+    cs: null
+    en: null
+    se: null
   text:
     cs: |
       S Ondřejem jsem konzultoval Blockchain, GIT a development standarts, v nichž je Ondřej velmi zkušený. Je to člověk s otevřenou myslí a diskuze s nim byly velmi obohacující.
-    se: |
-      Jag konsulterade med Ondřej i ämnen som Blockchain, GITm och utvecklingsstandarder, där Ondřej är mycket erfaren. Ondrej är uppriktig person och jag fann diskussioner med honom väldigt upplysande.
+    de: ""
     en: |
       I consulted with Ondrej topics including Blockchain, GIT and development standards. I appreciate Ondrej's knowledge and experience in these areas. Ondrej is open minded person and discussions with him I found very fruitful.
-    de: |
+    se: |
+      Jag konsulterade med Ondřej i ämnen som Blockchain, GITm och utvecklingsstandarder, där Ondřej är mycket erfaren. Ondrej är uppriktig person och jag fann diskussioner med honom väldigt upplysande.
     sk: |
       S Ondřejem jsem konzultoval Blockchain, GIT a development standarts, v nichž je Ondřej velmi zkušený. Je to člověk s otevřenou myslí a diskuze s nim byly velmi obohacující.
-- id: oxyshop
+- company: oXy Online
+  id: oxyshop
   name: Ivo Kašpárek
+  photo: img/ivokasparek.jpg
   role:
+    cs: System Administrator team leader
     en: System Administrator team leader
     se: Systemadministratörsteamledare
-    cs: System Administrator team leader
-  company: oXy Online
-  photo: img/ivokasparek.jpg
   text:
     cs: |
       Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy ať už ohledně gitu, dockeru a kubernetes.
+    de: null
     se: |
       Utbildningen var väldigt trevlig, och bra anpassat till våra behov. Ondra var redo och villig att svara på alla våra frågor, oavsett om det gäller Git, Docker, eller Kubernetes.
-    de:
     sk: |
       Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy ať už ohledně gitu, dockeru a kubernetes.
-- id: dimensiondata
-  name: Jan Šafka
-  role:
-    en: Service System Innovation Senior Manager
-    se: Service System Innovation Senior Manager
-    cs: Service System Innovation Senior Manager
-  company: Dimension Data
+- company: Dimension Data
   date:
     cs: 20. ledna 2018
+  id: dimensiondata
+  name: Jan Šafka
   photo: img/person.svg
+  role:
+    cs: Service System Innovation Senior Manager
+    en: Service System Innovation Senior Manager
+    se: Service System Innovation Senior Manager
   text:
     cs: |
       Moc děkuji za skvělé školení Dockeru. Školení bylo zajímavé a je vidět, že má Ondřej velmi dobrou znalost daného tématu. Školení mi dalo hodně a těším se na další spolupráci.
-    se: |
-      Tack så mycket för den mycket bra utbildningen i Docker. Utbildningen var intressant och du kan se att Ondřej har en mycket bra kunskap om ämnet. Utbildningen gav mig mycket och jag ser fram emot ytterligare samarbete.
+    de: null
     en: |
       Thank you for very good training on Docker. Course was interesting and Ondrej has deep knowledge on this topic. Training was very useful. Looking forward to working with Ondrej again.
-    de:
+    se: |
+      Tack så mycket för den mycket bra utbildningen i Docker. Utbildningen var intressant och du kan se att Ondřej har en mycket bra kunskap om ämnet. Utbildningen gav mig mycket och jag ser fram emot ytterligare samarbete.
     sk: |
       Moc děkuji za skvělé školení Dockeru. Školení bylo zajímavé a je vidět, že má Ondřej velmi dobrou znalost daného tématu. Školení mi dalo hodně a těším se na další spolupráci.
-- id: webglobe-yegon
+- company: Webglobe-Yegon
+  date:
+    cs: 30. ledna 2018
+  id: webglobe-yegon
   name: Juraj Hanták
+  photo: img/jurajhantak.jpg
   role:
+    cs: Co-owner Webglobe-Yegon
     en: Co-owner Webglobe-Yegon
     se: Delägare Webglobe-Yegon
-    cs: Co-owner Webglobe-Yegon
-  company: Webglobe-Yegon
-  photo: img/jurajhantak.jpg
   text:
     cs: |
       Ondřej u nás strávil tři dny a během této doby nás uvedl do problematiky Dockeru. Následně jsme přešli ke Kubernetes, začali s instalací a došli až k provozování aplikací. Školení naplnilo naše očakávání.
-    se: |
-      Ondřej tillbringade tre dagar med oss och under denna tid introducerade han oss till Docker. Därefter bytte vi till Kubernetes, startade installationen och körde applikationerna. Träning uppfyllde våra förväntningar.
     de: |
       germany
     en: |
       Ondrej was with us for three days to introduce us to Docker. Subsequently, we moved onto Kubernetes - from installation to application preview. The training fulfilled our expectations.
+    se: |
+      Ondřej tillbringade tre dagar med oss och under denna tid introducerade han oss till Docker. Därefter bytte vi till Kubernetes, startade installationen och körde applikationerna. Träning uppfyllde våra förväntningar.
     sk: |
       Ondřej u nás strávil tři dny a během této doby nás uvedl do problematiky Dockeru. Následně jsme přešli ke Kubernetes, začali s instalací a došli až k provozování aplikací. Školení naplnilo naše očakávání.
-  date:
-    cs: 30. ledna 2018
-- id: sit
-  name: Martin Kylián
-  role:
-    en: Network Security Engineer, SIT MP
-    se: Nätverkssäkerhetsingenjör, SIT MP
-    cs: Network Security Engineer, SIT MP
-  company: SIT MP
-  photo: img/martinkylian.jpg
+- company: SIT MP
   date:
     cs: 4. června 2018
+  id: sit
+  name: Martin Kylián
+  photo: img/martinkylian.jpg
+  role:
+    cs: Network Security Engineer, SIT MP
+    en: Network Security Engineer, SIT MP
+    se: Nätverkssäkerhetsingenjör, SIT MP
   text:
     cs: |
       Ondřej nám přijel školit Git a Docker, školení bylo perfektní. Ondřej má velmi dobrou znalost devops. Velmi doporučuji jeho školení, pomohl nám automatizovat každodenní rutinní procesy.
-    se: |
-      Ondřej utbildade vårt team i Git och Docker, och vi fann träningen perfekt. Ondřej har en mycket god kunskap i DevOps. Jag rekommenderar hans träning, eftersom han hjälpte oss att automatisera vardagliga rutinprocesser.
+    de: null
     en: |
       Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej'sknowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes.
-    de:
+    se: |
+      Ondřej utbildade vårt team i Git och Docker, och vi fann träningen perfekt. Ondřej har en mycket god kunskap i DevOps. Jag rekommenderar hans träning, eftersom han hjälpte oss att automatisera vardagliga rutinprocesser.
     sk: |
       Ondřej nám přijel školit Git a Docker, školení bylo perfektní. Ondřej má velmi dobrou znalost devops. Velmi doporučuji jeho školení, pomohl nám automatizovat každodenní rutinní procesy.
-- id: fio
+- company: FIO
+  id: fio
   name: Adrian Kantor
+  photo: img/person.svg
   role:
+    cs: Head of IT FIO Prague
     en: Head of IT FIO Prague
     se: Chef för IT FIO Prag
-    cs: Head of IT FIO Prague
-  company: FIO
-  photo: img/person.svg
   text:
     cs: |
       Ondřej školil git, ale bez problémů na místě objasnil i mnoho našich specifických otázek kolem celého vývojového cyklu. A neztratil se ani v ad hoc dotazech, které už s gitem souvisely jen volně, ale pro nás byly důležité.
       Bylo velmi přínosné strávit čas s člověkem, který tématu rozumí do hloubky i do šířky a zároveň se je schopen podívat na problém z Vaší perspektivy.
+    de: null
+    en: |
+      Ondrej came in to train us in Git, on the spot he also helped us with situational questions specific to our business surrounding the whole development cycle. He did not fail even with our ad hoc questions which were related to Git only loosely, but for our business essential. It was beneficial to spend time with a person who has a deep understanding of the topic and industry and at the same time is able to look at the problem from our perspective.
     se: |
       Ondřej utbildade oss i Git, men han förklarade också många av våra specifika problem runt utvecklingscykeln utan några problem. Och det gick inte vilse i ad hoc-frågor som endast var löst relaterade till Git men var viktiga för oss.
       Det var mycket fördelaktigt att spendera tid med en person som förstår ämnet i djup och bredd, samtidigt som man kan titta på problemet utanför ditt egna perspektiv.
-    en: |
-      Ondrej came in to train us in Git, on the spot he also helped us with situational questions specific to our business surrounding the whole development cycle. He did not fail even with our ad hoc questions which were related to Git only loosely, but for our business essential. It was beneficial to spend time with a person who has a deep understanding of the topic and industry and at the same time is able to look at the problem from our perspective.
-    de:
     sk: |
       Ondřej školil git, ale bez problémů na místě objasnil i mnoho našich specifických otázek kolem celého vývojového cyklu. A neztratil se ani v ad hoc dotazech, které už s gitem souvisely jen volně, ale pro nás byly důležité.
       Bylo velmi přínosné strávit čas s člověkem, který tématu rozumí do hloubky i do šířky a zároveň se je schopen podívat na problém z Vaší perspektivy.
-- id: NMS
-  name: František Vodsloň
-  role:
-    en: Software Development Manager
-    se: Software Development Manager
-    cs: Software Development Manager
-    de: Software Development Manager
+- company: NMS Market Research
   date:
     de: 1. 1. 2019
-  company: NMS Market Research
+  id: NMS
+  name: František Vodsloň
   photo: img/frantisekvodslon.jpg
+  role:
+    cs: Software Development Manager
+    de: Software Development Manager
+    en: Software Development Manager
+    se: Software Development Manager
   text:
     cs: |
       Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
       Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma Dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd.
       Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo."
+    de: |
+      We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
+    en: |
+      We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
     se: |
       Vi bjöd in Ondra som en konsultant för vårt företag angående integrationen av Gitlab CI i vår utvecklingsprocess. Trots vår okunnighet om frågan hittade vi snabbt ett gemensamt språk, och under en kort tid fick vi mest ut av Ondrejs kunskap och erfarenhet.
       Ondrejs erfarenhet har ett bra djup och bredd inom på alla områden i mjukvaruutveckling och drift - vi har fokuserat på Docker, lastbalansering, säkerhet, git-arbetsflöde, övervakning, och mer.
       Hans samråd var till stor nytta för vårt team och tack vare dem undviker vi mycket arbete med "blind" groping.
-    en: |
-      We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
-    de: |
-      We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
     sk: |
       Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
       Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma Dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd.
       Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo."
-- id: vistag
-  name: Tomas Ruzicka
-  role:
-    en: Vistag project CTO
-    cs: Vistag project CTO
-  company: VISTAG
-  photo: img/tomasruzicka.jpg
+- company: VISTAG
   date:
     cs: 1. říjen 2017
+  id: vistag
+  name: Tomas Ruzicka
+  photo: img/tomasruzicka.jpg
+  role:
+    cs: Vistag project CTO
+    en: Vistag project CTO
   text:
     cs: |
       Klíčové školení pro náš IT tým. Ondra je expert v oblastech, kde my tápeme. Nejen, že nás v rámci školení naučil používat GIT, ale nakopl nás dalšími typy, kde zlepšit efektivitu naší práce. Myslím, že spolupráce tímto nekončí. Musím také ocenit pohodový a přátelský přístup.
     sk: |
       Klíčové školení pro náš IT tým. Ondra je expert v oblastech, kde my tápeme. Nejen, že nás v rámci školení naučil používat GIT, ale nakopl nás dalšími typy, kde zlepšit efektivitu naší práce. Myslím, že spolupráce tímto nekončí. Musím také ocenit pohodový a přátelský přístup.
-- id: oxy
-  name: Marek Kudláček
-  role:
-    en: Administrator in oXy shop
-    cs: Systémový specialista v oXy shop
-  company: oXy Shop
-  photo: img/marekkudlacek.jpg
+- company: oXy Shop
   date:
     cs: 6. května 2019
+  id: oxy
+  name: Marek Kudláček
+  photo: img/marekkudlacek.jpg
+  role:
+    cs: Systémový specialista v oXy shop
+    en: Administrator in oXy shop
   text:
     cs: |
       Pár školení už jsem zažil, ale takhle perfektně do detailu vyladěné Kubernetes školení mě vážně dostalo;) Pokud chcete jít s dobou a vůbec nevíte co k8s je, tak neváhejte a napište Ondrovi!!! Ještě jednou díky Ondro;) Bylo to super!
     sk: |
       Pár školení už jsem zažil, ale takhle perfektně do detailu vyladěné Kubernetes školení mě vážně dostalo;) Pokud chcete jít s dobou a vůbec nevíte co k8s je, tak neváhejte a napište Ondrovi!!! Ještě jednou díky Ondro;) Bylo to super!
-- id: oxyCTO
-  name: Ivo Kašpárek
-  role:
-    en: Vistag project CTO
-    cs: System Administrator team leader
-  company: oXy SHOP
-  photo: img/ivokasparek.jpg
+- company: oXy SHOP
   date:
     cs: 7. května 2019
+  id: oxyCTO
+  name: Ivo Kašpárek
+  photo: img/ivokasparek.jpg
+  role:
+    cs: System Administrator team leader
+    en: Vistag project CTO
   text:
     cs: |
       Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy, ať už ohledně gitu, dockeru nebo kubernetes.
     sk: |
       Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy, ať už ohledně gitu, dockeru nebo kubernetes.
-- id: CMS
-  name: František Vodsloň
-  role:
-    en: Software Development Manager at NMS Market Research
-    cs: Software Development Manager at NMS Market Research
-  company: NMS Market Research
-  photo: img/frantisekvodslon.jpg
+- company: NMS Market Research
   date:
     cs: 11. prosince 2017
+  id: CMS
+  name: František Vodsloň
+  photo: img/frantisekvodslon.jpg
+  role:
+    cs: Software Development Manager at NMS Market Research
+    en: Software Development Manager at NMS Market Research
   text:
     cs: |
       Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč, a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
@@ -246,3 +246,704 @@
       Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč, a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
       Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd.
       Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo".
+- company: University of Ecenomics, Prague
+  date:
+    cs: 7. kvetna 2019
+    de: 7. 5. 2019
+    en: May 7, 2019
+  id: vse
+  name: Matěj Kučera
+  photo: img/matejkucera.jpg
+  role:
+    cs: Vývojář Aplikací
+    de: Web Application Developer
+    en: Web Application Developer
+    se: Webapplikationsutvecklare
+  text:
+    cs: |
+      Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
+    de: Das ist perfekt!
+    en: |
+      Ondrej came to help us with deployment Docker and Gitlab CI. Ondrej is very good in his field and I can just reccomend him. We did lot of thing in very short time, and we would'n be able to do it without him. I recommend him.
+    se: |
+      Efter att ha deltagit i Ondras Docker-utbildning kom han till VŠE för att hjälpa oss att distribuera Docker och Gitlab CI i vårt arbetsflöde. Det kan ses att han vet vad han gör och jag anser hans utbildning som en stor tillgång. Vi lyckades göra mycket arbete på kort tid, och jag rekommenderar honom starkt.
+- company: 100MEGA Distribution s.r.o.
+  date:
+    cs: 10. ledna 2017
+    en: January 10, 2017
+  id: 100MEGA
+  name: Michal Rampula
+  photo: img/michalrampula.jpg
+  role:
+    cs: Technický ředitel
+    en: Technical Director
+  text:
+    cs: "Ondra u nas ve firme skolil verzovaci system GIT. Uz od prvniho okamziku
+      bylo poznat, ze disponuje rozsahlymi znalostmi a pochopenim problematiky. Skoleni
+      bylo provadeno s durazem na individualni pristup, profesionalitu a maximalni
+      pokryti probirane latky. Prakticky neexistovala otazka, na kterou by nam nebyl
+      schopny odpovedet. Ondra je ochotny konzultovat oblasti i nad ramec puvodne
+      dohodnuteho skoleni, zejmena ohledne softwaroveho vyvoje. Urcite bych ho za
+      nasi spolecnost doporucil komukoliv a myslim, ze ho vyuzijeme opakovane."
+    en: "Ondra has trained GIT versioning system in our company. From the very first
+      moment it was clear that he had extensive knowledge and understanding of the
+      issue. The training was carried out with an emphasis on individual approach,
+      professionalism and maximum coverage of the subject matter. There was no question
+      he couldn't answer. Ondra is willing to consult the areas above the scope of
+      the originally agreed training, especially regarding software development. I
+      would definitely recommend it to anyone."
+- company: Intelis s.r.o.
+  date:
+    cs: 27. července 2017
+    de: 27. 7. 2017
+  id: intelis
+  name: Tomáš Kuba
+  photo: img/tomaskuba.jpg
+  role:
+    cs: Operations Manager
+    en: Operations Manager
+  text:
+    cs: |
+      Ondru jsme si pozvali na praktické školení Docker-u. Ondra byl perfektně připraven, odpověděl na všechny naše dotazy a dal nám také spoustu užitečných rad. Skvělý start jak začít s novou technologií.
+    en: "We invited Ondra to a practical Docker training. Ondra was perfectly prepared,
+      answered all our questions and gave us a lot of useful advice. Great start to
+      start with new technology."
+- company: LBMS s.r.o.
+  date:
+    cs: 28. července 2017
+    en: July 28, 2017
+  id: lbms
+  name: Vít Kolář
+  photo: img/person.svg
+  role:
+    cs: Konzultant
+    en: Consultant
+  text:
+    cs: |
+      Hned při prvním setkání bylo zřejmé, že Ondřej má mnoho praktických zkušeností s Git. Jeho školení určitě splnilo moje očekávání. Pomohl mi pochopit hlavní rozdíly mezi Git a centralizovanými systémy, vyškolil jeho užívání a k tomu poradil, čemu se v praxi vyvarovat. Zároveň nebyl problém upravit školení na míru našim specifickým potřebám a v neposlední řadě nám pomohl se srovnáním webových implementací (GitLab, GitHub, ...). Do budoucna určitě plánujeme další spolupráci.
+    en: |
+      Right at the first meeting it was clear that Ondřej had a lot of practical experience with Git. His training certainly met my expectations. He helped me understand the main differences between Git and centralized systems, trained its use, and advised what to avoid in practice. At the same time it was no problem to tailor training to our specific needs and helped us to compare web implementations (GitLab, GitHub, ...). We are definitely planning further cooperation in the future.
+- company: Colosys s.r.o.
+  date:
+    cs: 19. září 2017
+    en: 19. 9. 2017
+  id: colosys
+  name: Jan Semkovič
+  photo: img/jansemkovic.jpeg
+  text:
+    cs: |
+      Když absolvujete školení, očekáváte od něj, že vás to v rámci školeného tématu posune kupředu, že se dozvíte něco nového, že vám to ulehčí práci, přinese nové možnosti. Pokud se tak stane, pak bylo školení úspěšné. Co už se dá ale očekávat méně je to, že by vaše nové poznatky měly překročit hranice školeného tématu. Nám se to však s Ondrou při školení Dockeru stalo. A ještě jedno doporučení případným zájemcům - nebojte se Ondry ptát. Ondra se totiž nebojí odpovídat. A že mu to jde dobře…
+    en: |
+      As you complete your training, you expect it to move you forward, learn something new, make it easier for you, bring new opportunities. If this happens, then the training was successful. What you can expect less is that your new knowledge should go beyond the trained topic. But it happened with Ondra during the training of Docker. And one more recommendation to potential candidates - do not be afraid to ask Ondra. Ondra is not afraid to answer. And that he's doing well ...
+- company: VISTAG
+  date:
+    cs: 1. říjen 2017
+    en: October 1, 2017
+  id: vistag
+  name: Tomas Ruzicka
+  photo: img/tomasruzicka.jpg
+  role:
+    cs: Vistag project CTO
+    en: Vistag project CTO
+  text:
+    cs: |
+      Klíčové školení pro náš IT tým. Ondra je expert v oblastech, kde my tápeme. Nejen, že nás v rámci školení naučil používat GIT, ale nakopl nás dalšími typy, kde zlepšit efektivitu naší práce. Myslím, že spolupráce tímto nekončí. Musím také ocenit pohodový a přátelský přístup.
+    en: "Key training for our IT team. Ondra is an expert in areas where we are groping.
+      Not only did he teach us how to use GIT in training, but he kicked us in with
+      other types of ways to improve the efficiency of our work. I think that cooperation
+      does not stop there. I also have to appreciate the relaxed and friendly approach."
+- company: DataSeed Solutions
+  id: dataseed
+  name: Filip Joanidis
+  photo: img/person.svg
+  role:
+    cs: Solution Architect
+    en: Solution Architect
+  text:
+    cs: 30. října 2017
+    en: |
+      Ondra provided Docker training for us. His approach significantly deviates from standardized training - great preparation, maximum openness, relaxed approach, expert knowledge based on practice, clarity. During my 20-year practice I have gone through a number of trainings, but Ondra is one of the best.
+- company: Edhouse s.r.o.
+  date:
+    cs: 8. prosince 2017
+    en: December 8, 2017
+  id: edhouse
+  name: Tomas Sara
+  photo: img/person.svg
+  role:
+    cs: Software Engineer
+    en: Software Engineer
+  text:
+    cs: |
+      Školení o dockeru jsme absolvovali jako součást aktivity CZJUG. Ondra měl školení skvěle připravené i odprezentované. Velmi kladně hodnotím strukturu školení. Kdy jsme se o dockeru nejdřív dozvěděli něco teoreticky a ve druhé části nám Ondra ukázal většinu možností dockeru na příkladech. Pokud plánujete docker používat, toto školení velmi doporučuju.
+    en: |
+      We completed the docking training as part of the CZJUG activity. Ondra had training perfectly prepared and presented. I rate the training structure very positively. When we first learned something about the docker theoretically and in the second part Ondra showed us most of the possibilities of the docker with examples. If you plan to use the docker, I highly recommend this training.
+- company: NMS Market Research
+  date:
+    cs: 11. prosince 2017
+    de: 11. 12. 2017
+  id: NMS
+  name: František Vodsloň
+  photo: img/frantisekvodslon.jpg
+  role:
+    cs: Software Development Manager
+    de: Software Development Manager
+    en: Software Development Manager
+    se: Software Development Manager
+  text:
+    cs: |
+      Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
+      Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma Dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd.
+      Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo."
+    de: |
+      We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
+    en: |
+      We have invited Ondrej as a consultant to help with the incorporation of Gitlab CI to our development processes. Even though we were not skilled in the subject, we were able to start understanding the language pretty quick thanks to Ondrej, and in the short period, we were able to get back maximum knowledge. Ondrej is experienced in many diverse areas of software development and adoption - topics like Docker, load balancing, security, git workflow, monitoring, etc. His consultation was a valuable addition to our team and thanks to it we were able to lose time trying to figure out how things work and making unnecessary mistakes.
+    se: |
+      Vi bjöd in Ondra som en konsultant för vårt företag angående integrationen av Gitlab CI i vår utvecklingsprocess. Trots vår okunnighet om frågan hittade vi snabbt ett gemensamt språk, och under en kort tid fick vi mest ut av Ondrejs kunskap och erfarenhet.
+      Ondrejs erfarenhet har ett bra djup och bredd inom på alla områden i mjukvaruutveckling och drift - vi har fokuserat på Docker, lastbalansering, säkerhet, git-arbetsflöde, övervakning, och mer.
+      Hans samråd var till stor nytta för vårt team och tack vare dem undviker vi mycket arbete med "blind" groping.
+- company: GEM System a.s.
+  date:
+    cs: 9. ledna 2018
+    en: 9. 1. 2018
+  id: gem
+  name: Petr Vepřovský
+  photo: img/person.svg
+  role:
+    cs: IT Colsuntant
+    en: IT Colsuntant
+  text:
+    cs: |
+      U Ondry jsem absolvoval školení na téma Docker, Compose & Swarm. Jednalo se o výborně připravené školení s bezkonkurenčním poměrem cena/výkon, kdy si hned můžete prakticky vyzkoušet nově nabyté znalosti. Na Ondrovi je vidět, že témata, která školí, prakticky velmi dobře zná a přibližuje je v širších souvislostech v kontextu vazby na moderní přístupy v IT. Také oceňuji, že pokud vás zajímají i trochu jiná témata s vazbou na školenou technologii a zároveň zbude nějaký čas, Ondra je schopen i tyto body diskutovat aniž by se rigidně držel harmonogramu původního školení (např. demonstroval použití Dockeru v rámci CI/CD s vazbou na cloud řešení ). Pokud se chcete školit na Docker, GIT, CI/CD nebo Cloudfare, Ondru doporučuji všemi deseti
+    en: |
+      I attended training with Ondra on Docker, Compose & Swarm. It was a perfectly prepared training with an unbeatable price / performance ratio, where you can practically try out the newly acquired knowledge. Ondra shows that he knows the topics he trains practically very well and describes them in a broader context in the context of links to modern IT approaches. I also appreciate that if you are interested in slightly different topics related to trained technology and at the same time there is some time left, Ondra is able to discuss these points without rigidly sticking to the schedule of the original training on cloud solutions). If you want to train on Docker, GIT, CI / CD or Cloudfare, I recommend Ondra with all ten
+- company: Vyšší odborná škola požární ochrany
+  date:
+    cs: 8. února 2018
+    en: 8. 2. 2018
+  id: VOŠ PO
+  name: David Lucák
+  photo: img/davidlucak.jpeg
+  role:
+    cs: Správce ICT
+    en: ICT administrator
+  text:
+    cs: |
+      Ondrovo školení Git bylo pro nás obrovským přínosem. Celkové pojetí výkladu s hromadou praktických ukázek nás posunulo o velký krok vpřed. Ondrovi díky, za skvělý přístup a profesionalitu. Doufám, že budeme mít možnost od něj někdy v budoucnu získat další znalosti. Moc díky.
+    en: |
+      Ondra's Git training was a huge asset for us. The overall concept of interpretation with a lot of practical demonstrations has taken us a great step forward. Ondra thanks for the great approach and professionalism. I hope that we will have the opportunity to learn more from him sometime in the future. Thanks a lot.
+- company: Sykora Data Center s.r.o.
+  date:
+    cs: 5. března 2018
+    en: 5. 3. 2018
+  id: Sykora data center
+  name: Jiří Sýkora
+  photo: img/person.svg
+  role:
+    cs: Správce sítě
+    en: Network manager
+  text:
+    cs: |
+      Ondra ovládá git a je schopen na školení předat své znalosti.
+    en: |
+      Ondra controls git and is able to transfer his knowledge to the training.
+- company: SIT MP
+  date:
+    cs: 4. června 2018
+    de: 4. 6. 2018
+    en: June 4, 2018
+  id: sit
+  name: Martin Kylián
+  photo: img/martinkylian.jpg
+  role:
+    cs: Network Security Engineer, SIT MP
+    en: Network Security Engineer, SIT MP
+    se: Nätverkssäkerhetsingenjör, SIT MP
+  text:
+    cs: |
+      Ondřej nám přijel školit Git a Docker, školení bylo perfektní. Ondřej má velmi dobrou znalost devops. Velmi doporučuji jeho školení, pomohl nám automatizovat každodenní rutinní procesy.
+    en: |
+      Ondrej trained our team in using Git and using the Docker. The course was excellent. Ondrej'sknowledge of devops is great. I highly recommend his courses. They have pushed us forward to automate daily processes.
+    se: |
+      Ondřej utbildade vårt team i Git och Docker, och vi fann träningen perfekt. Ondřej har en mycket god kunskap i DevOps. Jag rekommenderar hans träning, eftersom han hjälpte oss att automatisera vardagliga rutinprocesser.
+- company: Bohemia Energy
+  date:
+    cs: 21. června
+    de: 21. 6. 2018
+    en: June 21, 2018
+  id: bohemiaenergy
+  name: Juraj Boldiš
+  photo: img/jurajboldis.jpg
+  role:
+    cs: Architect
+    de: Architect
+    en: Architect
+    se: Architect
+  text:
+    cs: |
+      S Ondřejem jsem konzultoval Blockchain, GIT a development standarts, v nichž je Ondřej velmi zkušený. Je to člověk s otevřenou myslí a diskuze s nim byly velmi obohacující.
+    de: |
+      Deutsche Frauen, deutsche Treue,
+      Deutscher Wein und deutscher Sang
+      Sollen in der Welt behalten
+      Ihren alten schönen Klang,
+      Uns zu edler Tat begeistern
+      Unser ganzes Leben lang.
+      Deutsche Frauen, deutsche Treue,
+      Deutscher Wein und deutscher Sang!
+    en: |
+      I consulted with Ondrej topics including Blockchain, GIT and development standards. I appreciate Ondrej's knowledge and experience in these areas. Ondrej is open minded person and discussions with him I found very fruitful.
+    se: |
+      Jag konsulterade med Ondřej i ämnen som Blockchain, GITm och utvecklingsstandarder, där Ondřej är mycket erfaren. Ondrej är uppriktig person och jag fann diskussioner med honom väldigt upplysande.
+- company: STAND CZ
+  date:
+    cs: 25. června 2018
+    en: June 25, 2018
+  id: Stand cz
+  name: Jan Matýšek
+  photo: img/janmatysek.jpeg
+  role:
+    cs: CEO
+    en: CEO
+  text:
+    cs: |
+      Ondra pro nás připravil školení GITu, k naší plné spokojenosti. Školení mělo dobrou strukturu, výklad byl srozumitelný a plný praktických ukázek. Bylo znát, že problematice opravdu rozumí a nechybělo ani nadšení :-). Určitě bychom jeho služeb využili znovu.
+    en: |
+      Ondra has prepared GIT training for us to our full satisfaction. The training was well structured, the interpretation was understandable and full of practical demonstrations. It was obvious that he really understood the issue and there was no enthusiasm :-). We would certainly use his services again.
+- company: AŽD Praha
+  date:
+    cs: 30. července 2018
+    en: July 30, 2018
+  id: AZD praha
+  name: Radek Wagner
+  photo: img/radekwagner.jpeg
+  role:
+    cs: Vývojový pracovník
+    en: Developer
+  text:
+    cs: |
+      školení v Dockeru bylo velmi názorné a inspirující. Bylo vidět, že přednášející je profesionál a dokázal odpovědět na všechny naše dotazy. Mohu jen doporučit.
+    en: |
+      Training the Docker was very illustrative and ispirational. The lecturer was professional and answered all our questions. I can recommend.
+- company: Webglobe-Yegon
+  date:
+    cs: 18. října 2018
+    en: October 18, 2018
+  id: webglobe-yegon
+  name: Juraj Hanták
+  photo: img/jurajhantak.jpg
+  role:
+    cs: Co-owner Webglobe-Yegon
+    en: Co-owner Webglobe-Yegon
+    se: Delägare Webglobe-Yegon
+  text:
+    cs: |
+      Ondřej u nás strávil tři dny a během této doby nás uvedl do problematiky Dockeru. Následně jsme přešli ke Kubernetes, začali s instalací a došli až k provozování aplikací. Školení naplnilo naše očakávání.
+    en: |
+      Ondrej was with us for three days to introduce us to Docker. Subsequently, we moved onto Kubernetes - from installation to application preview. The training fulfilled our expectations.
+    se: |
+      Ondřej tillbringade tre dagar med oss och under denna tid introducerade han oss till Docker. Därefter bytte vi till Kubernetes, startade installationen och körde applikationerna. Träning uppfyllde våra förväntningar.
+    sk: |
+      Ondrej u nás strávil tri dni a počas tejto doby nás uviedol do problematiky dockeru. Následne sme si prešli kubernetes od inštalácie až po prevádzku aplikácií. Školenie naplnilo naše očakávania.
+- company: FIO
+  date:
+    cs: 7. listopadu 2018
+    en: November 7, 2018
+  id: fio
+  name: Adrian Kantor
+  photo: img/person.svg
+  role:
+    cs: Head of IT FIO Prague
+    en: Head of IT FIO Prague
+    se: Chef för IT FIO Prag
+  text:
+    cs: |
+      Ondřej školil git, ale bez problémů na místě objasnil i mnoho našich specifických otázek kolem celého vývojového cyklu. A neztratil se ani v ad hoc dotazech, které už s gitem souvisely jen volně, ale pro nás byly důležité.
+      Bylo velmi přínosné strávit čas s člověkem, který tématu rozumí do hloubky i do šířky a zároveň se je schopen podívat na problém z Vaší perspektivy.
+    en: |
+      Ondrej came in to train us in Git, on the spot he also helped us with situational questions specific to our business surrounding the whole development cycle. He did not fail even with our ad hoc questions which were related to Git only loosely, but for our business essential. It was beneficial to spend time with a person who has a deep understanding of the topic and industry and at the same time is able to look at the problem from our perspective.
+    se: |
+      Ondřej utbildade oss i Git, men han förklarade också många av våra specifika problem runt utvecklingscykeln utan några problem. Och det gick inte vilse i ad hoc-frågor som endast var löst relaterade till Git men var viktiga för oss.
+      Det var mycket fördelaktigt att spendera tid med en person som förstår ämnet i djup och bredd, samtidigt som man kan titta på problemet utanför ditt egna perspektiv.
+- company: Dimension Data
+  date:
+    cs: 17. listopadu 2018
+    en: November 17, 2018
+    se: 17. 11. 2018
+  id: dimensiondata
+  name: Jan Šafka
+  photo: img/person.svg
+  role:
+    cs: Service System Innovation Senior Manager
+    en: Service System Innovation Senior Manager
+    se: Service System Innovation Senior Manager
+  text:
+    cs: |
+      Moc děkuji za skvělé školení Dockeru. Školení bylo zajímavé a je vidět, že má Ondřej velmi dobrou znalost daného tématu. Školení mi dalo hodně a těším se na další spolupráci.
+    en: |
+      Thank you for very good training on Docker. Course was interesting and Ondrej has deep knowledge on this topic. Training was very useful. Looking forward to working with Ondrej again.
+    se: |
+      Tack så mycket för den mycket bra utbildningen i Docker. Utbildningen var intressant och du kan se att Ondřej har en mycket bra kunskap om ämnet. Utbildningen gav mig mycket och jag ser fram emot ytterligare samarbete.
+- company: Boxtrap security s.r.o.
+  date:
+    cs: 31. ledna 2019
+    en: January 31, 2019
+  id: boxtrap
+  name: Jan Potužník
+  photo: img/janpotuznik.jpeg
+  role:
+    cs: DevOps & Full stack developer
+    en: DevOps & Full stack developer
+  text:
+    cs: |
+      Školení Dockeru bylo skvělé, naučil jsem se toho hodně a byla to zábava. Proto jsem také dále navštívil školení Kubernetes i to mě moc potěšilo.
+    en: |
+      The docker training was great, i learned a lot and it was fun. I also attended the Kubernetes training which was great too.
+- date:
+    cs: 1. března 2019
+    en: March 1, 2019
+  id: kalfus
+  name: Jan Kalfus
+  photo: img/jankalfus.jpeg
+  role:
+    cs: Software Developer
+    en: Software Developer
+  text:
+    cs: |
+      Navštívil jsem Ondrova školení Docker a Kubernetes. Bylo to velmi zajímavé a praktické. Zvládl zodpovědět všechny mé otázky a vše mi objasnit. Rozhodně doporučuji.
+    en: |
+      I attended Docker and Kubernetes training ran by Ondrej. It was very interesting, practical, and straight to the point. He managed to answer all of my questions and gave many examples. Definitely recommended.
+- company: OSA - Ochranný svaz autorský pro práva k dílům hudebním z.s.
+  date:
+    cs: 10. dubna 2019
+    en: April 10, 2019
+  id: OSA
+  name: Franišek Janošek
+  photo: img/frantisekjanosek.jpeg
+  role:
+    cs: System Administrator
+    en: System Administrator
+  text:
+    cs: |
+      Školení na Docker od Ondřeje u ROOT.CZ bylo velice zajímavé a přínosné. Ondra toho zná opravdu dost a není problém se na cokoliv zeptat i z jiného tématu. Školení byla dost praktická. K tomu provozuje na Githubu spoustu příkladů, volně přístupné registry, blog a Slack. Není problém se na Ondru obrátit s dotazy i kdykoliv po školení, takže školením to u něj nekončí. Zatím jedno z nejvíce profesionálních školení co jsem absolvoval.
+    en: |
+      Training for Docker by Ondřej at ROOT.CZ was very interesting and beneficial. Ondra really knows a lot and there is no problem to ask anything from another topic. The training was quite practical. To do this, he runs a lot of examples on Github, freely accessible registers, a blog, and Slack. There is no problem to contact Ondra with questions at any time after training, so training does not end there. So far one of the most professional trainings I have attended.
+- company: FG Forrest
+  date:
+    cs: 11. dubna 2019
+    en: April 11, 2019
+  id: FG forrest
+  name: Jan Novotný
+  photo: img/jannovotny.jpeg
+  role:
+    cs: Senior application developer
+    en: Senior application developer
+  text:
+    cs: |
+      Já a mí společníci z FG Forrest jsme absolvovali Ondřejovo školení na Docker. Skvělé bylo, že jsme si mohli nadiktovat oblasti, které nás zajímaví a Ondra pro nás školení uzpůsobil na míru. Nemuseli jsme se tak prokousávat úplnými základy, které jsme znali a spíš jsme se zaměřili na to, s čím jsme sami bojovali. Na konci dvoudenního školení nám Ondra navrhnul a předvedl kompletní cyklus použití Dockeru od vývoje, přes Gitlab pipeliny až k nasazení na testovací prostředí (a případně i produkci). To považuji za nejpřínosnější bod školení. Ondrovo školení mohu jen doporučit.
+    en: |
+      Me and my FG Forrest partners attended Ondřej's training at Docker. It was great that we could dictate the areas of interest and Ondra tailored the training for us. We did not have to go through the very basics we knew, but rather focused on what we fought ourselves. At the end of the two-day training, Ondra designed and demonstrated a complete cycle of using Docker from development, through Gitlab pipelines to deployment on test environments (and possibly production). I consider this to be the most beneficial point of training. I can only recommend Ondra's training. I and my associates from FG Forrest have attended Ondřej's training at Docker. It was great that we could dictate the areas of interest and Ondra tailored the training for us. We did not have to go through the very basics we knew, but rather focused on what we fought ourselves. At the end of the two-day training, Ondra designed and demonstrated a complete cycle of using Docker from development, through Gitlab pipelines to deployment on test environments (and possibly production). I consider this to be the most beneficial point of training. I can only recommend Ondra's training.
+- company: SPEL a.s.
+  date:
+    cs: 11. dubna 2019
+    en: April 10, 2019
+  id: spel
+  name: Jiří Horák
+  photo: img/jirihorak.jpeg
+  role:
+    cs: Servisní technik
+    en: service engineer
+  text:
+    cs: "Ondřej u nás školil Docker/Docker-compose/Swarm dva dny. Úvod do teoerie
+      včetně vysvětlení. Ondřej srozumitelně ukazuje na praktických příkladech formou
+      workshopu, který je dle mě nejlepším možným způsobem, jak se můžete něco nového
+      naučit. Je vidět, že Ondra má se všemi technologiemi a jejich nasazením praktické
+      zkušenosti, okamžitě na naše dotazy reagoval s možným způsobem řešení, což bylo
+      pro nás zvlášť důležité. Rád bych také ocenil přátelský přístup, za mě nejlepší
+      školení za několik posledních let."
+    en: |
+      Ondřej trained Docker / Docker-compose / Swarm for two days. Introduction to theory including explanation. Ondřej clearly demonstrates on practical examples in the form of a workshop, which I think is the best possible way to learn something new. It can be seen that Ondra has practical experience with all technologies and their deployment. I would also like to appreciate the friendly approach, the best training for me in the last few years.
+- company: University of Ecenomics, Prague
+  date:
+    cs: 7. kvetna 2019
+    de: 7. 5. 2019
+    en: May 7, 2019
+  id: vse
+  name: Matěj Kučera
+  photo: img/matejkucera.jpg
+  role:
+    cs: Vývojář Aplikací
+    de: Web Application Developer
+    en: Web Application Developer
+    se: Webapplikationsutvecklare
+  text:
+    cs: |
+      Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
+    de: Das ist perfekt!
+    en: |
+      Ondrej came to help us with deployment Docker and Gitlab CI. Ondrej is very good in his field and I can just reccomend him. We did lot of thing in very short time, and we would'n be able to do it without him. I recommend him.
+    se: |
+      Efter att ha deltagit i Ondras Docker-utbildning kom han till VŠE för att hjälpa oss att distribuera Docker och Gitlab CI i vårt arbetsflöde. Det kan ses att han vet vad han gör och jag anser hans utbildning som en stor tillgång. Vi lyckades göra mycket arbete på kort tid, och jag rekommenderar honom starkt.
+- company: oXy Shop
+  date:
+    cs: 6. května 2019
+    en: May 6, 2019
+  id: oxy
+  name: Marek Kudláček
+  photo: img/marekkudlacek.jpg
+  role:
+    cs: Systémový specialista v oXy shop
+    en: Administrator in oXy shop
+  text:
+    cs: |
+      Pár školení už jsem zažil, ale takhle perfektně do detailu vyladěné Kubernetes školení mě vážně dostalo;) Pokud chcete jít s dobou a vůbec nevíte co k8s je, tak neváhejte a napište Ondrovi!!! Ještě jednou díky Ondro;) Bylo to super!
+    en: |
+      I've had a couple of training sessions, but this perfectly tuned Kubernetes training really got me;) If you want to go with the times and you don't know what k8s is, don't hesitate to write to Ondra !!! Thanks again Ondra;) It was great!
+- company: oXy SHOP
+  date:
+    cs: 7. května 2019
+    en: May 7, 2019
+  id: oxyCTO
+  name: Ivo Kašpárek
+  photo: img/ivokasparek.jpg
+  role:
+    cs: System Administrator team leader
+    en: Vistag project CTO
+  text:
+    cs: |
+      Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy, ať už ohledně gitu, dockeru nebo kubernetes.
+    en: |
+      The training was very nice, especially tailored to our needs. Ondra was ready and willing to answer all our questions, whether about git, Kubernetes or Docker.
+- company: Univerzita Pardubice
+  date:
+    cs: 25. července  2019
+    en: June 25, 2019
+  id: Univerzita Pardubice
+  name: Bratronicek Tomas
+  photo: img/bartonicektomas.jpeg
+  role:
+    cs: IT administrátor
+    en: IT administrator
+  text:
+    cs: |
+      Ondra přijel k nám na Univerzitu Pardubice a velmi prakticky ukázal našemu různorodému týmu, jak lze využít Gitlab s CI. V průběhu také velmi ochotně reagoval na naše zvídavé dotazy a řešil s námi naše aktuální potřeby. Kolegové byli velmi spokojeni s průběhem školení a myslím, že u nás Ondra nebyl naposledy. Jednoznačně mohu Ondru doporučit, v technologiích se bravurně orientuje.
+    en: |
+      Ondra came to us at the University of Pardubice and showed practically our diverse team how to use Gitlab with CI. He also responded very willingly to our inquiring questions and addressed our current needs with us. My colleagues were very satisfied with the course of the training and I think that Ondra was not here for the last time. I can definitely recommend Ondra, he has a brilliant orientation in technology
+- company: Univerzita Pardubice
+  date:
+    cs: 25. července 2019
+    en: July 25, 2019
+  id: UP
+  name: Martin Šindelář
+  photo: img/sindelarmartin.jpeg
+  text:
+    cs: |
+      U Ondry jsem absolvoval skoleni na GitLab CI a mohu vsem jen doporucit. Skvely kurz, profik skolitel, maximalni prisun informaci. Mockrat dekuji Ondro a tesim se na React.
+    en: |
+      With Ondra I have been trained on GitLab CI and I can only recommend it to everyone. Great course, professional trainer, maximum inflow of information. Thank you very much Ondro and I look forward to React.
+- company: O2 Czech Republic
+  date:
+    cs: 26. července 2019
+    en: July 26, 2019
+  id: o2
+  name: Petr Simik
+  photo: img/petrsimik.jpeg
+  role:
+    cs: Leading senior spec for NGIN/OCS
+    en: Leading senior spec for NGIN/OCS
+  text:
+    cs: |
+      Ondřej je úžasný profesionál, skutečný expert a výborný přednášející. Účastnil jsem se jeho 2 workshpů a byl jsem ohromený jeho dovednostmi a praktickému inovativnímu přístupu. Ondřej si zaslouží moje nejvyšší doporučení.
+    en: |
+      Ondrej is an amazing Professional, real expert and practicioner. I participated in 2 of his workshops, and I was impressed by the skills and practical innovative approach. Ondrej earns my highest recommendation.
+- company: Animatoc.cz
+  date:
+    cs: 15. srpna 2019
+    en: August 15, 2019
+  id: animato
+  name: Roman Vlček
+  photo: img/romanvlcek.jpeg
+  role:
+    cs: PHP programator
+    en: PHP programmer
+  text:
+    cs: |
+      Absolvovali jsme s Ondrou školení na GIT a Gitlab CI. Je vidět, že Ondra je do svého oboru zapálený a věcem rozumí, nebojí se výzev a dokáže poradit i v různých zapeklitých situacích.Pokud tedy máte ve firmě špatné postupy při vývoji tak rozhodně doporučuji začít tu změnu absolvováním některého z Ondrou nabízených školení. Školení pro nás bylo rozhodně přínosem a získané znalosti využijeme pro zlepšení procesů u nás ve firmě. Díky Ondro.
+    en: |
+      Ondra and I attended GIT and Gitlab CI training. It is obvious that Ondra is enthusiastic about his field and understands things, he is not afraid of challenges and is able to cope with various troublesome situations. The training was definitely beneficial for us and we will use the acquired knowledge to improve processes in our company. Thanks Ondro.
+- company: Netbox
+  date:
+    cs: 6. září 2019
+    en: September 6, 2019
+  id: netbox
+  name: Jan Odstrčil
+  photo: img/janodstrcil.jpeg
+  role:
+    cs: Software Architect
+    en: Software Architect
+  text:
+    cs: "Ondra nás školil na Kubernetes, školení bylo super. Uměl téma pěkně vysvětlit
+      a ukázat konkrétní použití v praxi. Každému poradil možnost použití v jeho projektech.
+      Můžu doporučit."
+    en: "Ondra trained us at Kubernetes, the training was great. He was able to explain
+      the topic nicely and show concrete use in practice. He advised everyone to use
+      them in his projects. I can recommend."
+- company: Czech IT Cluster
+  date:
+    cs: 1. října 2019
+    en: October 1, 2019
+  id: czech it cluster
+  name: Petr Todorov
+  photo: img/petrtodorov.jpeg
+  role:
+    cs: Business & IT Systems Analyst
+    en: Business & IT Systems Analyst
+  text:
+    cs: "Ondřej během interního školení poskytl naprosto ohromující vhled do Dockeru
+      a Kubernetes \U0001F44D Obzvláště jsem ocenil praktický přístup \U0001F468\U0001F3FB‍\U0001F4BB
+      také se širokou uživatelskou zkušeností. Mohu jen doporučit zúčastnit se kterékoli
+      z akcí pořádaných Ondřejem a skutečně se těším na další, které se budu moci
+      zúčastnit. \U0001F947."
+    en: "During an in-house training Ondřej delivered an absolutely stunning insight
+      into the realms of Docker and Kubernetes \U0001F44D I especially appreciated
+      the hands-on approach \U0001F468\U0001F3FB‍\U0001F4BB thx to which I was leaving
+      the course equipped not only with the necessary theoretical background, but
+      also with a broad user experience. I can only recommend to participate at any
+      of events held by Ondřej and actually look forward to next one I will have chance
+      to attend. \U0001F947."
+- company: Digiteq Automotive s.r.o.
+  date:
+    cs: 3. října 2019
+  id: Digiteq
+  name: Robert Urban
+  photo: img/roberturban.jpeg
+  role:
+    cs: Project Manager & communication specialists & IT Architect
+    en: Project Manager & communication specialists & IT Architect
+  text:
+    cs: |
+      Na doporučení našich obchodních partnerů jsme požádali Ondřeje o školení Dockeru. Celé dva dny splnily naše očekávání. Já a mí kolegové jsme si z toho odnesli víc, než se očekávalo. Skvělá otevřená atmosféra. Ondřeji, děkuji.
+    en: |
+      We asked Ondrej fot inhouse Docker training based on recommendation of our business partners. Training was "workshop" style by education on practical examples. Whole two days have met our expectation. Me and my colleagues got more than expectes. Great open atmosphere and a lot of discussed topic in mean time (CI, gitlab, best practices). Ondrej, thank you.
+- company: Státní Pokladna Centrum Sdílených Služeb
+  date:
+    cs: 15. října 2019
+  id: SPCSS
+  name: Jan Boháč
+  photo: img/person.svg
+  role:
+    cs: Administrátor senior
+    en: Senior Administrator
+  text:
+    cs: |
+      Ondrej nás naučil, jak ovládat Gitlab a během naší relace pro nás vytvořil logický rámec pro náš případ použití. Přinesl také nové nápady pro správu serverové infrastruktury. Ve finále byl jeho trénink tematický, dobře připravený a praktický. Velice jsme těžili z času stráveného s ním.
+    en: |
+      Ondrej trained us how to operate Gitlab and during our session he created for us logical framework for our use case. He also brought new ideas for our server infrastructure management. In final, his training was thematic, well prepared and practical. We have benefited greatly from time spent with him and our Gitlab project is now in clear mantinels.
+- company: Central Group
+  date:
+    cs: 25. října 2019
+    en: October 25, 2019
+  id: Centralgroup
+  name: Radek Erben
+  photo: img/person.svg
+  text:
+    cs: |
+      Ondra mě školil na Docker (docker,docker-compose a swarm), musím podotknout že školení formou workshopu mi velice vyhovovalo. Technické i prezentační znalosti Ondry jsou na vysoké úrovni. Tento dvoudenní workshop mi pomohl pochopit základy kontejnerizační technologie a její použití pro vývoj a nasazení v aplikací. Ukázal i pár tipů a triků jak tuto technologii používat, velice mě potěšila integrace s gitlabem CI/CD. Ondru mohu s klindým srdcem doporučit jako školitele.
+    en: |
+      Ondra trained me at Docker (docker, docker-compose and swarm), I have to say that training in the form of a workshop suited me very much. Ondra's technical and presentation skills are of a high standard. This two-day workshop helped me understand the basics of container technology and its use for application development and deployment. He also showed some tips and tricks on how to use this technology. I can recommend Ondra with a calm heart as a trainer.
+- company: Invasys a.s.
+  date:
+    cs: 1. listopadu 2019
+    en: November 1, 2019
+  id: invasys
+  name: Jan Zhanal
+  photo: img/janzhanal.jpeg
+  role:
+    cs: Senior System Administrator, group technical lead
+    en: Senior System Administrator, group technical lead
+  text:
+    cs: |
+      Ondřej v naší firmě prezentoval Docker. Bylo to dobře strukturované a jsem si jist, že z toho budeme mít prospěch jak ve vývoji, tak v IT části.
+    en: |
+      Ondrej presented Docker education in our company. It was well structured and I'm sure we will benefit from it in development as well as in IT part.
+- company: Invasys a.s.
+  date:
+    cs: 1. listopadu 2019
+    en: November 1, 2019
+  id: invasys
+  name: Ladislav Geppert
+  photo: img/ladislavgeppert.jpeg
+  role:
+    cs: SysAdmin
+    en: SysAdmin
+  text:
+    cs: |
+      Zúčastnili jsme se Ondřejova školení Dockeru. Dva dny intenzivního tréninku a živých demonstrací.Skvělá věc je, že všechny materiály jsou publikovány na Ondřejovém githubu, takže nemusíte dělat rozsáhlé poznámky ani ukládat aktuální práci pro pozdější použití. To vám umožní soustředit se více na průběh workshopu. Oceňuji také krátké zavítání k souvisejícím tématům, jako jsou Traefik + Let's Encrypt (SSL), GitLab (CI), Terraform (IaC). Vřele doporučuji Ondřeje každému, kdo chce o úroveň výš. Nezapomeňte na jeho blog s užitečnými nápady návody.
+    en: |
+      We have taken part of an in-house docker training lead by Ondřej.
+      Two days of an intensive practice and live demonstrations.
+
+      The great thing is all the materials are published on Ondřej github so you don't need to take wide notes or save your current work for later use. This allows you to focus more on your moment of a flow during the workshop. I do also appreciate a brief tour through related topics such as Traefik + Let's Encrypt (SSL) ,GitLab (CI), Terraform (IaC).
+
+      Happy to recommend Ondřej to everyone who demands to leveled up.
+      Make sure you don't miss his blog with useful ideas and howtos.
+- company: Invasys s.r.o.
+  date:
+    cs: 6. listopadu 2019
+    en: November 6, 2019
+  id: invasys
+  name: Robin Hornicek
+  photo: img/person.svg
+  role:
+    cs: Senior Malware analyst
+    en: Senior Malware analyst
+  text:
+    cs: |
+      Zúčastnil jsem se Ondřejova tréninku Dockeru. Bylo pro mě velkým potěšením zúčastnit se, protože byl dokonale připravený, velmi dobře strukturovaný a plný praktických příkladů a užitečných materiálů. Ondřej je skutečný profesionál se skvělými znalostmi.
+    en: |
+      I have participated in a Docker training lead by Ondrej. It was a real pleasure to attend as it was perfectly prepared, very well structured and full of practical examples and useful materials. Ondrej is a real professional with a great insight.
+- company: null
+  date:
+    cs: 8. listopadu 2019
+    en: November 8, 2019
+  id: freelancer
+  name: Jaroslav Leitl
+  photo: img/jaroslavleitl.jpeg
+  role:
+    cs: Freelancer Linux administrator & Java developer
+    en: Freelancer Linux administrator & Java developer
+  text:
+    cs: "S Ondrou jsem absolvoval kurz Gitlab-CI, každému vřele doporučuji. Profesionální
+      přístup, super knowledge base. Ještě jednou díky!"
+    en: |
+      I attended the Gitlab-CI course, I highly recommend to everyone. Professional approach, super knowledge base. Thank you once again!
+- company: Incinity
+  date:
+    cs: 9. listopadu 2019
+  id: incinity
+  name: Tomas Novosad
+  photo: img/tomasnovosad.jpeg
+  role:
+    cs: Node.js deeloper
+    en: Node.js developer
+  text:
+    cs: |
+      Ondřej je opravdový profesionál. Ohledně Dockeru má velkou řadu znalostí. Své vědomosti a zkušenosti umí velmi dobře předat.
+    en: |
+      Ondřej is a real professional. He has a deep knowledge of Docker. He can pass on this experience very well.
+- company: Invasys a.s.
+  date:
+    cs: 16. listopadu 2019
+    en: November 16, 2019
+  id: inasys
+  name: Kamil Chalupníček
+  photo: img/kamilchalupnicek.jpeg
+  role:
+    cs: Systémový integrátor
+    en: system integrator
+  text:
+    cs: |
+      Ondra je erudovaný a v oblastech, které školí se dobře orientuje. Mohu jej doporučit. Osobně jsem byl na dvou jeho školeních.
+    en: |
+      Ondra is erudite and he orients very well in the areas that he trains. I can recommend. I was personally on two his trainings.
