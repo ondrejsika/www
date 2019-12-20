@@ -1186,7 +1186,7 @@
 
 # Hamburg
 - id: docker-hamburg-16-03-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: docker
@@ -1199,7 +1199,7 @@
   date_to: 17.3.2020
 
 - id: kubernetes-hamburg-18-03-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: kubernetes
@@ -1212,7 +1212,7 @@
   date_to: 19.3.2020
 
 - id: gitlab-ci-hamburg-20-03-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: gitlab-ci
@@ -1307,7 +1307,7 @@
 
 # Salzburg
 - id: docker-salzburg-16-03-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: docker
@@ -1320,7 +1320,7 @@
   date_to: 17.3.2020
 
 - id: kubernetes-salzburg-18-03-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: kubernetes
@@ -1333,7 +1333,7 @@
   date_to: 19.3.2020
 
 - id: gitlab-ci-salzburg-20-03-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: gitlab-ci
@@ -1428,7 +1428,7 @@
 
 # Malmo
 - id: docker-malmo-16-03-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: docker
@@ -1441,7 +1441,7 @@
   date_to: 17.3.2020
 
 - id: kubernetes-malmo-18-03-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: kubernetes
@@ -1454,7 +1454,7 @@
   date_to: 19.3.2020
 
 - id: gitlab-ci-malmo-20-03-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: gitlab-ci
