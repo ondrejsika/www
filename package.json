@@ -124,8 +124,8 @@
     "now-ydo.sh": "yarn run static-ydo.sh && cd packages/ydo.sh/out && now --name ydo-sh"
   },
   "devDependencies": {
+    "now": "^16.7.0",
     "npm-check-updates": "^4.0.1",
     "prettier": "1.19.1"
   }
 }
-
