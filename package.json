@@ -63,6 +63,7 @@
     "dev-ydo.cz": "yarn --cwd packages/ydo.cz dev -p 3049",
     "dev-skoleni-prometheus.cz": "yarn --cwd packages/skoleni-prometheus.cz dev -p 3050",
     "dev-ccc.oxs.cz": "yarn --cwd packages/ccc.oxs.cz dev -p 3051",
+    "dev-sika.work": "yarn --cwd packages/sika.work dev -p 3052",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -114,8 +115,10 @@
     "static-ydo.cz": "yarn --cwd packages/ydo.cz static",
     "static-skoleni-prometheus.cz": "yarn --cwd packages/skoleni-prometheus.cz static",
     "static-ccc.oxs.cz": "yarn --cwd packages/ccc.oxs.cz static",
+    "static-sika.work": "yarn --cwd packages/sika.work static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)",
-    "now-ccc.oxs.cz": "yarn run static-ccc.oxs.cz && (cd packages/ccc.oxs.cz/out && now --name ccc-oxs-cz)"
+    "now-ccc.oxs.cz": "yarn run static-ccc.oxs.cz && (cd packages/ccc.oxs.cz/out && now --name ccc-oxs-cz)",
+    "now-sika.work": "yarn run static-sika.work && cd packages/sika.work/out && now --name sika-work"
   },
   "devDependencies": {
     "npm-check-updates": "^4.0.1",
