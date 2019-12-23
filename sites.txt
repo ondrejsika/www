@@ -50,3 +50,4 @@ ydo.cz
 skoleni-prometheus.cz
 ccc.oxs.cz
 sika.work
+ydo.sh
