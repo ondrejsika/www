@@ -40,6 +40,10 @@ export default () => (
 - NFS na Digital Ocean - https://github.com/ondrejsika/terraform-demo-nfs
 - Droplet na Digital Ocean - https://github.com/ondrejsika/terraform-do-droplet-example
 
+#### Custom Providers
+
+- Terraform Provider for Zeit - https://github.com/ondrejsika/terraform-provider-zeit
+
 [Vsechny repozitare tykajici se Terraformu na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=terraform&type=&language=)
 
 ## React & Next.js
@@ -53,6 +57,11 @@ export default () => (
 ## Ansible
 
 - Docker Compose deployment pomoci Ansible - https://github.com/ondrejsika/ansible-docker-compose--example
+
+## Zeit
+
+- Zeit API Mock server - https://github.com/ondrejsika/zeit-api-mock
+- Go client for Zeit API - https://github.com/ondrejsika/zeit-go
 `}
     after={
       <div className="alert alert-primary mt-5 text-center" role="alert">
