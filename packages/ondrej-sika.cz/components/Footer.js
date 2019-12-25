@@ -112,6 +112,10 @@ const Footer = () => (
             Obchodní Spolupráce
           </a>
           <span className="text-white">&nbsp;|&nbsp;</span>
+          <a href="/doporuceni" className="a-underline">
+            Doporucení
+          </a>
+          <span className="text-white">&nbsp;|&nbsp;</span>
           <a href="/doporucte-me-prosim" className="a-underline">
             Doporučte mě prosím
           </a>
