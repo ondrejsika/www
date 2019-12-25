@@ -27,6 +27,7 @@ export default () => (
 ## Kubernetes
 
 - [Skoleni Kubernetes](/skoleni/kubernetes) - https://github.com/ondrejsika/kubernetes-training
+- Jak nainstalovat Kubernetes na bare metal - https://github.com/ondrejsika/bare-metal-kubernetes
 - Kubernetes Ingress pomoci Traefiku - https://github.com/ondrejsika/kubernetes-ingress-traefik
 - Jednoduchy HELM balicek - https://github.com/ondrejsika/one-image-helm
 
