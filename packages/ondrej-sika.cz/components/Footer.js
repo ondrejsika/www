@@ -101,11 +101,11 @@ const Footer = () => (
         </div>
         <p className="text-center">
           <Link href="/lektorska-spoluprace">
-            <a className="a-underline">Lektorska spoluprace</a>
+            <a className="a-underline">Lektorská spolupráce</a>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/jobs">
-            <a className="a-underline">Nabidka (spolu)prace</a>
+            <a className="a-underline">Nabídka (spolu)práce</a>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/obchodni-spoluprace">
@@ -113,7 +113,7 @@ const Footer = () => (
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/doporuceni">
-            <a className="a-underline">Doporucení</a>
+            <a className="a-underline">Doporučení</a>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/doporucte-me-prosim">
