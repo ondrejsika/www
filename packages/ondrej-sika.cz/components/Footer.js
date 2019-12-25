@@ -100,25 +100,25 @@ const Footer = () => (
           </div>
         </div>
         <p className="text-center">
-          <a href="/lektorska-spoluprace" className="a-underline">
-            Lektorska spoluprace
-          </a>
+          <Link href="/lektorska-spoluprace">
+            <a className="a-underline">Lektorska spoluprace</a>
+          </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
-          <a href="/jobs" className="a-underline">
-            Nabidka (spolu)prace
-          </a>
+          <Link href="/jobs">
+            <a className="a-underline">Nabidka (spolu)prace</a>
+          </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
-          <a href="/obchodni-spoluprace" className="a-underline">
-            Obchodní Spolupráce
-          </a>
+          <Link href="/obchodni-spoluprace">
+            <a className="a-underline">Obchodní Spolupráce</a>
+          </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
-          <a href="/doporuceni" className="a-underline">
-            Doporucení
-          </a>
+          <Link href="/doporuceni">
+            <a className="a-underline">Doporucení</a>
+          </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
-          <a href="/doporucte-me-prosim" className="a-underline">
-            Doporučte mě prosím
-          </a>
+          <Link href="/doporucte-me-prosim">
+            <a className="a-underline">Doporučte mě prosím</a>
+          </Link>
         </p>
         <p className="text-center text-white fs-9 pt-4">
           Website by{" "}
