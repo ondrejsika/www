@@ -8,11 +8,6 @@ export default props => (
   <Article title="Doporučení z Twiteru a LinkedInu">
     <div className="row">
       <div className="col-6">
-        {twitter_recommendation_file.map(rec => (
-          <TwitterRecommendations ids={[rec.id]} />
-        ))}
-      </div>
-      <div className="col-6">
         <p className="mb-5 mt-2 alert alert-success">
           <strong>
             Doporučení z LinkedInu se bohužel nedají vložit do webu jako ty z
@@ -31,6 +26,11 @@ export default props => (
             />
             <hr className="mt-3" />
           </div>
+        ))}
+      </div>
+      <div className="col-6">
+        {twitter_recommendation_file.map(rec => (
+          <TwitterRecommendations ids={[rec.id]} />
         ))}
       </div>
     </div>
