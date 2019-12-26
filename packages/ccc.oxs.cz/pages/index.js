@@ -20,7 +20,9 @@ export default () => (
             "Fahrplan",
             "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/"
           ],
-          ["c3nav", "https://c3nav.de/"]
+          ["c3nav", "https://c3nav.de/"],
+          ["Venue (Google Maps)", "https://goo.gl/maps/KKBLWtA5AA53Jf1t8"],
+          ["Hotel (Google Maps)", "https://goo.gl/maps/s3jG8dXi1yZMp8JXA"]
         ]}
       />
     </LinksWrap>
