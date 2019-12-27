@@ -22,6 +22,7 @@ export default () => (
           ],
           ["c3nav", "https://c3nav.de/"],
           ["Venue (Google Maps)", "https://goo.gl/maps/KKBLWtA5AA53Jf1t8"],
+          ["Messe Hbf (Google Maps)", "https://goo.gl/maps/FbmgoXj6VCmgfHwL6"],
           ["Hotel (Google Maps)", "https://goo.gl/maps/s3jG8dXi1yZMp8JXA"]
         ]}
       />
