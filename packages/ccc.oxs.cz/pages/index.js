@@ -6,6 +6,8 @@ export default () => (
   <div>
     <Head>
       <title>ccc.oxs.cz</title>
+      <link rel="icon" href="/icon.png" type="image/png" />
+      <link rel="apple-touch-icon" href="/icon.png" />
     </Head>
     <h1>36c3</h1>
     <h3>Main Links</h3>
