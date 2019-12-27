@@ -41,7 +41,13 @@ export default () => (
     </LinksWrap>
     <h3>Other Links</h3>
     <LinksWrap>
-      <Links links={[["c3queue", "https://c3queue.de/"]]} />
+      <Links
+        links={[
+          ["c3queue", "https://c3queue.de/"],
+          ["Live Stream", "https://streaming.media.ccc.de/36c3/"],
+          ["Video Records", "https://media.ccc.de/c/36c3"]
+        ]}
+      />
     </LinksWrap>
     <h2>All Congreses</h2>
     <LinksWrap>
