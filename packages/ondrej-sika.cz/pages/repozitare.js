@@ -69,6 +69,10 @@ export default () => (
 
 - Zeit API Mock server - https://github.com/ondrejsika/zeit-api-mock
 - Go client for Zeit API - https://github.com/ondrejsika/zeit-go
+
+## Ostatní
+
+- Err.li - Url zkracovač pro chyby v repozitáři na Githubu - https://github.com/ondrejsika/err.li
 `}
     after={
       <div className="alert alert-primary mt-5 text-center" role="alert">
