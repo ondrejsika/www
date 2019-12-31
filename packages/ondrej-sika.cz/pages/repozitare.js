@@ -36,6 +36,8 @@ export default () => (
 
 ## Terraform
 
+#### Ukazky Infrastruktury
+
 - Kubernetes na Digital Ocean - https://github.com/ondrejsika/terraform-do-kubernetes-example
 - Gitlab na Digital Ocean - https://github.com/ondrejsika/terraform-demo-gitlab
 - NFS na Digital Ocean - https://github.com/ondrejsika/terraform-demo-nfs
@@ -44,6 +46,10 @@ export default () => (
 #### Custom Providers
 
 - Terraform Provider for Zeit - https://github.com/ondrejsika/terraform-provider-zeit
+
+#### Nástroje
+
+- tf.sh - Tool pro Terraform State in Git - https://github.com/ondrejsika/tf.sh
 
 [Vsechny repozitare tykajici se Terraformu na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=terraform&type=&language=)
 
