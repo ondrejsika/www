@@ -8,7 +8,7 @@ export default props => (
     <Head>
       <title>{props.title} - Ondřej Šika</title>
     </Head>
-    <MainBar MainBarHeader={props.title}></MainBar>
+    <MainBar MainBarHeader={props.header || props.title}></MainBar>
 
     <div className="container pt-4 pb-2 article-body">
       {props.children}
