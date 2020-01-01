@@ -7,9 +7,9 @@
   perex: |
     Projekt inspirovaný err.sh od Zeitu na jednoduché vkládání odkazu na chyby z repozitáře do chybových výstupu.
   content: |
-    Dobře vysvětlení chyb je základ. Bohužel ne vždy se celý popis vejde do chybového výstupu. Naštěstí můžeme vložit odkaz na popis chyby. Kde ty popisy mít uložené? Ideálně v Gitu. Ale odkazy na Githubu jsou dlouhé, zkracovat jeden po druhém je také ne moc reálné.
+    Správné vysvětlení chyb je základ. Bohužel ne vždy se celý popis vejde do chybového výstupu. Naštěstí můžeme vložit odkaz na popis chyby. Kde ty popisy mít uložené? Ideálně v Gitu. Ale odkazy na Githubu jsou dlouhé, zkracovat jeden po druhém není moc reálné.
 
-    Co s tím? S nápadem přišli lidí z [Zeit.co](https://zeit.co) a napsali [err.sh](https://err.sh), který dělá to že odkáže na konkrétní popis chyby v daném repozitáři. Například <https://err.sh/micro/path-missing> směřuje na <https://github.com/zeit/micro/blob/master/errors/path-missing.md>.
+    Co s tím? S nápadem přišli lidí z [Zeit.co](https://zeit.co) a napsali [err.sh](https://err.sh), který dělá to, že odkáže na konkrétní popis chyby v daném repozitáři. Například <https://err.sh/micro/path-missing> směřuje na <https://github.com/zeit/micro/blob/master/errors/path-missing.md>.
 
     Něco takového jsem udělal i já na svém [err.li](https://err.li).
 
@@ -21,7 +21,7 @@
 
     Funguje to úplně stejně, jen implementace je trošku jiná. Err.sh používá Node.js microservice ([source](https://github.com/zeit/err-sh)), já pouze funkcionalitu Zeit.co ([now.json](https://github.com/ondrejsika/err.li/blob/master/now.json)).
 
-    Ukázka na mém projektu zde: https://err.li/tf.sh/státě-is-locked
+    Ukázka mého projektu zde: https://err.li/tf.sh/state-is-locked
 
     #### Odkazy
 
