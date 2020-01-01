@@ -61,32 +61,32 @@
     #### Podle Chartu
 
     ```
-    helm řepo add ondrejsika https://helm.oxs.cz
-    helm install hello ondrejsika/oné-image --set hello.k8s.sikademo.com
+    helm repo add ondrejsika https://helm.oxs.cz
+    helm install hello ondrejsika/one-image --set hello.k8s.sikademo.com
     ```
 
     #### Ze zdroje Chartu
 
     ```
-    helm install hello2 ./helm/oné-image --set hello2.k8s.sikademo.com
+    helm install hello2 ./helm/one-image --set hello2.k8s.sikademo.com
     ```
 
     #### Z archivu Chartu
 
     ```
-    helm install hello3 ./oné-image.tgz --set hello3.k8s.sikademo.com
+    helm install hello3 ./one-image.tgz --set hello3.k8s.sikademo.com
     ```
 
     #### Z archivu Chartu na webu
 
     ```
-    helm install hello4 https://helm.oxs.cz/oné-image-1.1.1.tgz --set hello4.k8s.sikademo.com
+    helm install hello4 https://helm.oxs.cz/one-image-1.1.1.tgz --set hello4.k8s.sikademo.com
     ```
 
     #### Z Chartu ve specifickém repozitari
 
     ```
-    helm install hello5 --řepo https://helm.oxs.cz oné-image --set hello5.k8s.sikademo.com
+    helm install hello5 --řepo https://helm.oxs.cz one-image --set hello5.k8s.sikademo.com
     ```
 
     ### Helm Upgrade
@@ -94,13 +94,13 @@
     Příkaz `helm upgrade` se chová stejně jako ve verzi 2, ale díky nové struktuře `helm install` to celé dává větší smysl. Zároveň pořád funguje parametr `--install` tazke můžete pořád používat klasický install upgrade, což je obdoba `helm template ... | kubectl apply ...`.
 
     ```
-    helm upgrade --install nginx ondrejsika/oné-image --set image=nginx --set host=nginx.k8s.sikademo.com
+    helm upgrade --install nginx ondrejsika/one-image --set image=nginx --set host=nginx.k8s.sikademo.com
     ```
 
     a samotný upgrade:
 
     ```
-    helm upgrade nginx ondrejsika/oné-image --set image=nginx:alpíne --set host=nginx.k8s.sikademo.com
+    helm upgrade nginx ondrejsika/one-image --set image=nginx:alpíne --set host=nginx.k8s.sikademo.com
     ```
 
     ### Helm Uninstall místo Helm Delete
