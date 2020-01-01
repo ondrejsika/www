@@ -1,0 +1,122 @@
+import Article from "@app/ondrej-sika.cz/layouts/Article";
+import Link from "next/link";
+import { FaYoutube } from "react-icons/fa";
+
+import docker from "@app/data/pictures/courses/video/docker-screenshot.png";
+import kubernetes from "@app/data/pictures/courses/video/kubernetes-screenshot.png";
+import terraform from "@app/data/pictures/courses/video/terraform-screenshot.png";
+import gitlabCi from "@app/data/pictures/courses/video/gitlab-ci-screenshot.png";
+
+export default () => (
+  <Article
+    title="Videokurzy"
+    header={
+      <>
+        Videokurzy <FaYoutube />
+      </>
+    }
+  >
+    <div className="alert alert-success mt-3 mb-5" role="alert">
+      <p style={{ fontSize: "1.2em" }}>
+        Připravuji videokurzy mých nejpopulárnějších školení. Budou k dispozici
+        koncem Ledna. Pokud chcete napsat až budou venku,{" "}
+        <a
+          href="https://airtable.com/embed/shrIKXtFAlneUeI2e"
+          style={{ fontSize: "1em" }}
+        >
+          nechte mě email
+        </a>
+        .
+      </p>
+    </div>
+
+    <div className="row">
+      <div className="col-6">
+        <h2 className="text-center">Úvod od Dockeru</h2>
+        <p className="text-center">
+          Cena: <span>1000 CZK</span>
+        </p>
+        <img src={docker} className="img-fluid" />
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
+          }}
+        >
+          <Link href="/videokurzy/pripravuji">
+            <a>
+              <FaYoutube style={{ fontSize: "5em", color: "white" }} />
+            </a>
+          </Link>
+        </div>
+      </div>
+      <div className="col-6">
+        <h2 className="text-center">Úvod od Kubernetes</h2>
+        <p className="text-center">
+          Cena: <span>1000 CZK</span>
+        </p>
+        <img src={kubernetes} className="img-fluid" />
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
+          }}
+        >
+          <Link href="/videokurzy/pripravuji">
+            <a>
+              <FaYoutube style={{ fontSize: "5em", color: "white" }} />
+            </a>
+          </Link>
+        </div>
+      </div>
+      <div className="col-6">
+        {" "}
+        <h2 className="text-center">Úvod od Terraformu</h2>
+        <p className="text-center">
+          Cena: <span>1000 CZK</span>
+        </p>
+        <img src={terraform} className="img-fluid" />
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
+          }}
+        >
+          <Link href="/videokurzy/pripravuji">
+            <a>
+              <FaYoutube style={{ fontSize: "5em", color: "white" }} />
+            </a>
+          </Link>
+        </div>
+      </div>
+      <div className="col-6">
+        {" "}
+        <h2 className="text-center">Úvod od Gitlab CI</h2>
+        <p className="text-center">
+          Cena: <span>1000 CZK</span>
+        </p>
+        <img src={gitlabCi} className="img-fluid" />
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
+          }}
+        >
+          <Link href="/videokurzy/pripravuji">
+            <a>
+              <FaYoutube style={{ fontSize: "5em", color: "black" }} />
+            </a>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </Article>
+);
