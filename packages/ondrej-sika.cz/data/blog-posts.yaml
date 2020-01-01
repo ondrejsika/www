@@ -1,3 +1,34 @@
+- id: errli
+  title: err.li - Url zkracovač na odkazy z chyb na Github
+  date: 31. 12. 2019
+  tags:
+    - git
+    - github
+  perex: |
+    Projekt inspirovaný err.sh od Zeitu na jednoduché vkládání odkazu na chyby z repozitáře do chybových výstupu.
+  content: |
+    Dobře vysvětlení chyb je základ. Bohužel ne vždy se celý popis vejde do chybového výstupu. Naštěstí můžeme vložit odkaz na popis chyby. Kde ty popisy mít uložené? Ideálně v Gitu. Ale odkazy na Githubu jsou dlouhé, zkracovat jeden po druhém je také ne moc reálné.
+
+    Co s tím? S nápadem přišli lidí z [Zeit.co](https://zeit.co) a napsali [err.sh](https://err.sh), který dělá to že odkáže na konkrétní popis chyby v daném repozitáři. Například <https://err.sh/micro/path-missing> směřuje na <https://github.com/zeit/micro/blob/master/errors/path-missing.md>.
+
+    Něco takového jsem udělal i já na svém [err.li](https://err.li).
+
+    Mě to odkazuje takto:
+
+    - `err.li/[user]/[repo]/[error]` -> `github.com/[user]/[repo]/blob/master/errors/[error].md`
+    - `err.li/[repo]/[error]` -> `err.li/ondrejsika/[repo]/[error]`
+    - `err.li/[error]` -> `err.li/ondrejsika/errors/[error]`
+
+    Funguje to úplně stejně, jen implementace je trošku jiná. Err.sh používá Node.js microservice ([source](https://github.com/zeit/err-sh)), já pouze funkcionalitu Zeit.co ([now.json](https://github.com/ondrejsika/err.li/blob/master/now.json)).
+
+    Ukázka na mém projektu zde: https://err.li/tf.sh/státě-is-locked
+
+    #### Odkazy
+
+    - err.li home page - https://err.li
+    - err.sh blog post - https://zeit.co/blog/err-sh
+    - err.li source code - https://github.com/ondrejsika/err.li
+    - err.sh source code - https://github.com/zeit/err-sh
 - id: helm3
   title: Helm 3, Tillerless Helm
   date: 14. 11. 2019
