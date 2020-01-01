@@ -28,7 +28,14 @@ class Blog extends React.Component {
                     <h3 className="pt-4 bold">{post.title}</h3>
                   </a>
                 </Link>
-                <p>{post.date}</p>
+                <p>
+                  {post.date}{" "}
+                  {post.tags &&
+                    post.tags.length > 0 &&
+                    post.tags.map((tag, i) => {
+                      return <span key={i}>#{tag} </span>;
+                    })}
+                </p>
                 <p className="pb-4">
                   {post.perex}{" "}
                   <Link href={`/blog/${post.id}`}>
