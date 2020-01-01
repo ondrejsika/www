@@ -37,7 +37,7 @@
 
 # Czechia 2020
 - id: ansible-praha-09-01-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: ansible
