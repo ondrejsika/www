@@ -3,14 +3,14 @@
   date: 1. 1. 2020
   tags: []
   perex: |
-    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánují. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter v roce 2020.
+    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánuji. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter v roce 2020.
   content: |
-    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánují. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter v roce 2020.
+    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánuji. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter v roce 2020.
 
-    - [Kompletní DevOps Pipeline](#kompletní-devops-pipeline)
+    - [Kompletní DevOps Pipeline](#kompletn--devops-pipeline)
     - [Nové kurzy do roku 2020](#nové-kurzy-do-roku-2020)
       - [Terraform](#terraform)
-      - [Prométheus](#prometheus)
+      - [Prometheus](#prometheus)
       - [ELK / EFK](#elk---efk)
       - [Proxmox](#proxmox)
       - [React & Next.js](#react---next-js)
@@ -23,43 +23,43 @@
 
     Od teď nabízím školení a konzultace celé DevOps pipeline na open source stacku.
 
-    Školím tyto technologie, které na sebe krásné navazují a tvoří ucelený DevOps process:
+    Školím tyto technologie, které na sebe krásné navazují a tvoří ucelený DevOps proces:
 
-    Verzovani v Gitu, správa repozitaru v Gitlabu. Nasazování aplikaci v Dockeru do Kubernetes, automaticky pomoci Gitlab CI. Správa infrastruktury pomoci Terraformu a konfigurace pomoci Ansible. Správa logu v ELK / EFK a monitoring pomoci Prométhea.
+    Verzovani v Gitu, správa repozitářů v Gitlabu. Nasazování aplikací v Dockeru do Kubernetes, automaticky pomocí Gitlab CI. Správa infrastruktury pomocí Terraformu a konfigurace pomocí Ansible. Správa logu v ELK / EFK a monitoring pomocí Promethea.
 
     ## Nové kurzy do roku 2020
 
-    Do roku 2020 jsem si připravil nové kurzy na termata Terraform, Prométheus a ELK / EFK. Dále dělám kurzy Proxmoxu s Michaelem Kaplanem a React & Next.js se Zuzkou Jesche.
+    Do roku 2020 jsem si připravil nové kurzy na termata Terraform, Prometheus a ELK / EFK. Dále dělám kurzy Proxmoxu s Michaelem Kaplanem a React & Next.js se Zuzkou Jesche.
 
     #### Terraform
 
-    Terraform Vám usnadňuje spravovat infrastrukturu jako kód. To znamená v Gitu se vším co k tomu patří. Merge / Pull Requesty, code review, fórky a další. Správa vaší infrastruktury (public a priváte cloud) se stane jednodušší a mnohem přehlednější.
+    Terraform Vám usnadňuje spravovat infrastrukturu jako kód. To znamená v Gitu a se vším co k tomu patří. Merge / Pull Requesty, code review, forky a další. Správa vaší infrastruktury (public a private cloud) se stane jednodušší a mnohem přehlednější.
 
-    Zajímá Vás Terraform? Více na stránce [Školení Terraform](/školení/terraform)
+    Zajímá Vás Terraform? Více na stránce [Školení Terraform](/skoleni/terraform)
 
-    #### Prométheus
+    #### Prometheus
 
-    Na Kubernetes navazují další témata: monitoring a správa logu. Monitoring a metriky nám obstarává Prométheus. Je to graduated project (stejně jako Kubernetes) pod CNCF.io a je velmi pěkně integrovatelny s moderními aplikacemi jako je Kubernets, Traefik, CAdvisor (monitoring Dockeru). Je to robustní systém na sbírání metrik a monitoring.
+    Na Kubernetes navazují další témata: monitoring a správa logu. Monitoring a metriky nám obstarává Prometheus. Je to graduated project (stejně jako Kubernetes) pod CNCF.io a je velmi pěkně integrovatelny s moderními aplikacemi jako je Kubernets, Traefik, CAdvisor (monitoring Dockeru). Je to robustní systém na sbírání metrik a monitoring.
 
-    Více na stránce [Školení Prométheus](/školení/prometheus)
+    Více na stránce [Školení Prometheus](/skoleni/prometheus)
 
     #### ELK / EFK
 
     Jako druhý nástroj navazující na Kubernetes je ELK nebo Elastic Stack. Je to sada nástrojů na správu logu: Elastisticsearch (storage), Logstash / Fluentd (log parsing), Kibana (dashboard). Do ELK stacku můžete agregovat logy nejen z Kubernetes, ale veškeré vaše logy. Budete mít full text index nad logy a mnohem jednodušší práci s nimi.
 
-    Více na stránce [Školení ELK / EFK](/školení/elk). Kurz bude k dispozici začátkem února.
+    Více na stránce [Školení ELK / EFK](/skoleni/elk). Kurz bude k dispozici začátkem února.
 
     #### Proxmox
 
-    Proxmox je virtulizacni platforma používající KVM (Kernel Virtual Machines). Je to velmi dobrá open source alternativa k VMware, která poskytuje, live migrace VMs, zálohování, snapshoty a mnoho dalšího. Má také integrovanou podporu distribuované storage CEPH.
+    Proxmox je virtulizační platforma používající KVM (Kernel Virtual Machines). Je to velmi dobrá open source alternativa k VMware, která poskytuje, live migrace VMs, zálohování, snapshoty a mnoho dalšího. Má také integrovanou podporu distribuované storage CEPH.
 
-    Školení dělám já a Michael Kaplan. Více na stránce [Proxmox](/školení/proxmox)
+    Školení dělám já a Michael Kaplan. Více na stránce [Proxmox](/skoleni/proxmox)
 
     #### React & Next.js
 
     Kromě DevOps hodně pracují s Reactem a Next.js. Proto jsme se Zuz rozhodli připravit také školení Reactu. Na školení intenzívně pracujeme.
 
-    Více informací bude na stránce [Školení React & Next.js](/školení/react). Školení dělám já a Zuzana Jescke. Kurz bude k dispozici začátkem února.
+    Více informací bude na stránce [Školení React & Next.js](/skoleni/react). Školení dělám já a [Zuzana Jescke](https://zuzjes.com). Kurz bude k dispozici začátkem února.
 
     ## Články z roku 2019
 
@@ -76,9 +76,13 @@
 
     ## Videokurzy
 
-    Připravují video verze mých nejpopulárnějších školení: Docker, Kubernetes, Terraform a Gitlab CI. Budou k dispozici koncem Ledna. Více infrormaci je na stránce [Videokurzy](/videokurzy) a stránkách konkrétních školení.
+    Připravuji video verze mých nejpopulárnějších školení: Docker, Kubernetes, Terraform a Gitlab CI. Budou k dispozici koncem Ledna. Více infrormací je na stránce [Videokurzy](/videokurzy).
 
-    Kazdy videokurz obsahuje úvod do daně technologie a step-by-step lekce jak řešit konkrétní problémy a jak s nástrojem efektivně pracovat. Videokurzy mám za zaváděcí cenu 1000 CZK za kurz za osobu, při koupi všech čtyř najednou je cena 3200 CZK. Pokud jej chcete koupit do firmy cena videokurzu je 10 000 CZK pro všechny zamestnace. Opakování je matka moudrosti, pokud jste u mě měli školení na daně téma, kurz máte se slevou 50% čili za 5000 CZK pro firmu.
+    Každy videokurz obsahuje úvod do daně technologie a step-by-step lekce jak řešit konkrétní problémy a jak s nástrojem efektivně pracovat. Videokurzy mám za zaváděcí cenu 1000 CZK za kurz za osobu, při koupi všech čtyř najednou je cena 3200 CZK.
+
+    Pokud jej chcete koupit do firmy cena videokurzu je 10 000 CZK pro všechny zaměstnace.
+
+    Opakování je matka moudrosti, pokud jste u mě měli školení na dané téma, kurz máte se slevou 50% čili za 5000 CZK pro firmu.
 
     ## Trainera
 
@@ -108,7 +112,7 @@
 
     Díky také patří Kátě, která mi pomáhala s obecnou agendou a řešila za mě tašky, na které jsem neměl čas ani chuť.
 
-    Ať se Vám daří v roce 2020. oblast.<br/>
+    Ať se Vám daří v roce 2020
 
     ![PF 2020](/content/pf2020_800px.jpg)
 
