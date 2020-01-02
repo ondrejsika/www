@@ -2,10 +2,10 @@ import Article from "@app/ondrej-sika.cz/layouts/Article";
 import Link from "next/link";
 import { FaYoutube } from "react-icons/fa";
 
-import docker from "@app/data/pictures/courses/video/docker-screenshot.png";
-import kubernetes from "@app/data/pictures/courses/video/kubernetes-screenshot.png";
-import terraform from "@app/data/pictures/courses/video/terraform-screenshot.png";
-import gitlabCi from "@app/data/pictures/courses/video/gitlab-ci-screenshot.png";
+import docker from "@app/data/pictures/courses/video/docker-screenshot-600.png";
+import kubernetes from "@app/data/pictures/courses/video/kubernetes-screenshot-600.png";
+import terraform from "@app/data/pictures/courses/video/terraform-screenshot-600.png";
+import gitlabCi from "@app/data/pictures/courses/video/gitlab-ci-screenshot-600.png";
 
 export default () => (
   <Article
