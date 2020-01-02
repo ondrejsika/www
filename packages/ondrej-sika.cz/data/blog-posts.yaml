@@ -1,3 +1,103 @@
+- id: novinky2020
+  title: Novinky v roce 2020
+  date: 1. 1. 2020
+  tags: []
+  perex: |
+    Tento clanek je vlastne shrnuti toho co jsem do ted delal a take jake veci planuji. Je toho opravdu hodne. Tento clanek jsem poslal take jako muj prvni newsletter.
+  content: |
+    Tento clanek je vlastne shrnuti toho co jsem do ted delal a take jake veci planuji. Je toho opravdu hodne. Tento clanek jsem poslal take jako muj prvni newsletter.
+
+    - [Kompletni DevOps Pipeline](#kompletni-devops-pipeline)
+    - [Nove kurzy do roku 2020](#nove-kurzy-do-roku-2020)
+      - [Terraform](#terraform)
+      - [Prometheus](#prometheus)
+      - [ELK / EFK](#elk---efk)
+      - [Proxmox](#proxmox)
+      - [React & Next.js](#react---next-js)
+    - [Videokurzy](#videokurzy)
+    - [Trainera](#trainera)
+    - [Meetupy](#meetupy)
+
+    ## Kompletni DevOps Pipeline
+
+    Od ted nabizim skoleni a konzultace cele DevOps pipeline na open source stacku.
+
+    Skolim tyto technologie, ktere na sebe krasne navazuji a tvori uceleny DevOps process:
+
+    Verzovani v Gitu, sprava repozitaru v Gitlabu. Nasazovani aplikaci v Dockeru do Kubernetes, automaticky pomoci Gitlab CI. Sprava infrastruktury pomoci Terraformu a konfigurace pomoci Ansible. Sprava logu v ELK / EFK a monitoring pomoci Promethea.
+
+    ## Nove kurzy do roku 2020
+
+    Do roku 2020 jsem si pripravil nove kurzy na termata Terraform, Prometheus a ELK / EFK. Dale delam kurzy Proxmoxu s Michaelem Kaplanem a React & Next.js se Zuzkou Jesche.
+
+    #### Terraform
+
+    Terraform Vam usnadnuje spravovat infrastrukturu jako kod. To znamena v Gitu se vsim co k tomu patri. Merge / Pull Requesty, code review, forky a dalsi. Sprava vasi infrastruktury (public a private cloud) se stane jednodussi a mnohem prehlednejsi.
+
+    Zajima Vas Terraform? Vice na strance [Skoleni Terraform](/skoleni/terraform)
+
+    #### Prometheus
+
+    Na Kubernetes navazuji dalsi temata: monitoring a sprava logu. Monitoring a metriky nam obstarava Prometheus. Je to graduated project (stejne jako Kubernetes) pod CNCF.io a je velmi pekne integrovatelny s modernimi aplikacemi jako je Kubernets, Traefik, CAdvisor (monitoring Dockeru). Je to robustni system na sbirani metrik a monitoring.
+
+    Vice na strance [Skoleni Prometheus](/skoleni/prometheus)
+
+    #### ELK / EFK
+
+    Jako druhy nastroj navazujici na Kubernetes je ELK nebo Elastic Stack. Je to sada nastroju na spravu logu: Elastisticsearch (storage), Logstash / Fluentd (log parsing), Kibana (dashboard). Do ELK stacku muzete agregovat logy nejen z Kubernetes, ale veskere vase logy. Budete mit full text index nad logy a mnohem jednodussi praci s nimi.
+
+    Vice na strance [Skoleni ELK / EFK](/skoleni/elk). Kurz bude k dispozici zacatkem unora.
+
+    #### Proxmox
+
+    Proxmox je virtulizacni platforma pouzivajici KVM (Kernel Virtual Machines). Je to velmi dobra open source alternativa k VMware, ktera poskytuje, live migrace VMs, zalohovani, snapshoty a mnoho dalsiho. Ma take integrovanou podporu distribuovane storage CEPH.
+
+    Skoleni delam ja a Michael Kaplan. Vice na strance [Proxmox](/skoleni/proxmox)
+
+    #### React & Next.js
+
+    Krome DevOps hodne pracuji s Reactem a Next.js. Proto jsme se Zuz rozhodli pripravit take skoleni Reactu. Na skoleni intenzivne pracujeme.
+
+    Vice informaci bude na strance [Skoleni React & Next.js](/skoleni/react). Skoleni delam ja a Zuzana Jescke. Kurz bude k dispozici zacatkem unora.
+
+    ## Videokurzy
+
+    Pripravuji video verze mych nejpopularnejsich skoleni: Docker, Kubernetes, Terraform a Gitlab CI. Budou k dispozici koncem Ledna. Vice infrormaci je na strance [Videokurzy](/videokurzy) a strankach konkretnich skoleni.
+
+    Kazdy videokurz obsahuje uvod do dane technologie a step-by-step lekce jak resit konkretni problemy a jak s nastrojem efektivne pracovat. Videokurzy mam za zavadeci cenu 1000 CZK za kurz za osobu, pri koupi vsech ctyr najednou je cena 3200 CZK. Pokud jej chcete koupit do firmy cena videokurzu je 10 000 CZK pro vsechny zamestnace. Opakovani je matka moudrosti, pokud jste u me meli skoleni na dane tema, kurz mate se slevou 50% cili za 5000 CZK pro firmu.
+
+    ## Trainera
+
+    Zalozil jsem firmu Trainera s.r.o., pod kterou zaciname delat skoleni pro vetsi spolecnosti a ve vetsim teamu. Porad zustavam jako freelancer a porad Vam jsem schopny konzultovat a skolit DevOps sam, ale mam po svych kurzech vetsi poptavku nez stiham obslouzit a proto jsem zalozil firmu abych nemusel vyrazne zdrazit a zamerit se jen na banky a velke korporace. Rozsiruji team a snazim se ve vice lidech skolit ve stejne urovni v jake jsem skolil do ted. Drzte mi palce.
+
+    Muzete se podivat na nabidku kurzu od [Trainera.io](http://trainera.io), ale je to zatim de facto to co nabizim ja. Pokud chcete spolupracovat vyhradne se mnou, nic se pro Vas nemeni.
+
+    ## Meetupy
+
+    Jako dalsi vyzvu jsem bral pomoc komunite a chtel jsem cast svych znalosti predat dal. Proto jsem zalozil meetup group v Salzburgu. Proc Salzburg? Rad jezdim do hor a nemeli tam DevOps meetupy, tak je Salzburg spojeni prijemneho s uzitecnym.
+
+    ### Salzburg DevOps Meetups
+
+    Na Meetups mame 30 lidi a v unoru planujeme prvni meetup o Dockeru a Kubernetes.
+
+    Vice na [meetup.com/Salzburg-DevOps-Meetups](https://www.meetup.com/Salzburg-DevOps-Meetups/)
+
+    ## Zaverem bych rad podekoval
+
+    Vam za dosavadni spolupraci a Vas zajem. Budu se snazit zlepsovat DevOps a procesy v IT firmach nejen v Ceske Republice. Diky, ze jste se mnou.
+
+    Sam bych vsechno co jsem zde sepsal urcite nezvladl. A ani bych se nedostal do stavu v kterem jsem ted. Chtel bych timto podekovat memu teamu za obrovske usili, ktere vynalozili.
+
+    Jmenovite Martinovi Jurcovi ([jurco.io](https://jurco.io)), ktery mi dela sefa. Martin mi skvele nastavil firemni procesy, udelal migraci z naprosteho punku do CRM (ktera me bolela, ale musim si priznat ze prinesla sve ovoce) a ridi vse co nemusim delat ja. Ja se diky tomu mohu naplno venovat technickym vecem a skolenim. Pokud budete potrebovat poradit s podobnymi vecmi, zkuste pozadat Martina.
+
+    Dale bych rad podekoval Zuzce ([zuzjes.com](https://zuzjes.com)), pritelkyni, ktera me ne jen podporovala, ale udelala hromadu prace na webech v Reactu.
+
+    Diky take patri Kate, ktera mi pomahala s obecnou agendou a resila za me tasky, na ktere jsem nemel cas ani chut.
+
+    At se Vam dari v roce 2020. oblast.<br/>
+
+    ![PF 2020](/content/pf2020_800px.jpg)
+
 - id: errli
   title: err.li - Url zkracovač na odkazy z chyb na Github
   date: 31. 12. 2019
