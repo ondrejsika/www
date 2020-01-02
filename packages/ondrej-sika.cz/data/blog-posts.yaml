@@ -3,9 +3,9 @@
   date: 1. 1. 2020
   tags: []
   perex: |
-    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánují. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter.
+    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánují. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter v roce 2020.
   content: |
-    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánují. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter.
+    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánují. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter v roce 2020.
 
     - [Kompletní DevOps Pipeline](#kompletní-devops-pipeline)
     - [Nové kurzy do roku 2020](#nové-kurzy-do-roku-2020)
@@ -14,6 +14,7 @@
       - [ELK / EFK](#elk---efk)
       - [Proxmox](#proxmox)
       - [React & Next.js](#react---next-js)
+    - [Články z roku 2019](#-l-nky-z-roku-2019)
     - [Videokurzy](#videokurzy)
     - [Trainera](#trainera)
     - [Meetupy](#meetupy)
@@ -22,9 +23,7 @@
 
     Od teď nabízím školení a konzultace celé DevOps pipeline na open source stacku.
 
-    Školím tyto technologie, které na sebe krásné navazují a tvoří ucelený
-
-    DevOps process:
+    Školím tyto technologie, které na sebe krásné navazují a tvoří ucelený DevOps process:
 
     Verzovani v Gitu, správa repozitaru v Gitlabu. Nasazování aplikaci v Dockeru do Kubernetes, automaticky pomoci Gitlab CI. Správa infrastruktury pomoci Terraformu a konfigurace pomoci Ansible. Správa logu v ELK / EFK a monitoring pomoci Prométhea.
 
@@ -61,6 +60,19 @@
     Kromě DevOps hodně pracují s Reactem a Next.js. Proto jsme se Zuz rozhodli připravit také školení Reactu. Na školení intenzívně pracujeme.
 
     Více informací bude na stránce [Školení React & Next.js](/školení/react). Školení dělám já a Zuzana Jescke. Kurz bude k dispozici začátkem února.
+
+    ## Články z roku 2019
+
+    Začal jsem také psát články, ty nejzajímavějsí jsou zde:
+
+    - [Novinky v Helm 3](/blog/helm3) (blog post)
+    - [Sprava Cloudflare DNS pomoci Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
+    - [Git Rebase](/git/rebase)
+    - [Git Hooks](/git/hooks)
+    - [Docker s TLS](/docker/docker-s-tls)
+    - [Proč by každý měl mít svoji doménu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/)
+    - [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene)
+
 
     ## Videokurzy
 
