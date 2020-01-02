@@ -37,6 +37,7 @@ export default props => (
             ["TERRAFORM", "/skoleni/terraform"],
             ["PROMETHEUS", "/skoleni/prometheus"],
             ["PROXMOX", "/skoleni/proxmox"],
+            ["ELK / EFK", "/skoleni/elk"],
             ["REACT & NEXT.JS", "/skoleni/react"],
             ["VIDEOKURZY", "/videokurzy"]
           ]
