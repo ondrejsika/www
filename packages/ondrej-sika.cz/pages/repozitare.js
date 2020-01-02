@@ -77,13 +77,13 @@ export default () => (
     after={
       <div className="alert alert-primary mt-5 text-center" role="alert">
         <h3>
-          Chcete dostavat nove clanky do emailu? Prihlaste se k newsletteru!
+          Chcete dostávat nové články do emailu? Přihlašte se k newsletteru!
         </h3>
         <a
           className="btn btn-large btn-primary m-3"
           href="https://sika.link/newsletter"
         >
-          Prihlasit se k odberu
+          Přihlásit se k odběru
         </a>
       </div>
     }
