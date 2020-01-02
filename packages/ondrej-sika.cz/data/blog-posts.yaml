@@ -29,7 +29,7 @@
 
     ## Nové kurzy do roku 2020
 
-    Do roku 2020 jsem si připravil nové kurzy na termata Terraform, Prometheus a ELK / EFK. Dále dělám kurzy Proxmoxu s Michaelem Kaplanem a React & Next.js se Zuzkou Jesche.
+    Do roku 2020 jsem si připravil nové kurzy na termata __Terraform__, __Prometheus__ a __ELK / EFK__. Dále dělám kurzy __Proxmoxu__ s Michaelem Kaplanem a __React & Next.js__ se Zuzkou Jeschke.
 
     #### Terraform
 
@@ -39,7 +39,7 @@
 
     #### Prometheus
 
-    Na Kubernetes navazují další témata: monitoring a správa logu. Monitoring a metriky nám obstarává Prometheus. Je to graduated project (stejně jako Kubernetes) pod CNCF.io a je velmi pěkně integrovatelny s moderními aplikacemi jako je Kubernets, Traefik, CAdvisor (monitoring Dockeru). Je to robustní systém na sbírání metrik a monitoring.
+    Na Kubernetes navazují další témata: monitoring a správa logu. Monitoring a metriky nám obstarává Prometheus. Je to graduated project (stejně jako Kubernetes) pod CNCF.io a je velmi pěkně integrovatelný s moderními aplikacemi jako je Kubernets, Traefik, CAdvisor (monitoring Dockeru). Je to robustní systém na sbírání metrik a monitoring.
 
     Více na stránce [Školení Prometheus](/skoleni/prometheus)
 
@@ -57,16 +57,16 @@
 
     #### React & Next.js
 
-    Kromě DevOps hodně pracují s Reactem a Next.js. Proto jsme se Zuz rozhodli připravit také školení Reactu. Na školení intenzívně pracujeme.
+    Kromě DevOps hodně pracují s Reactem a Next.js. Proto jsme se [Zuz](https://zuzjes.com) rozhodli připravit také školení Reactu. Na školení intenzívně pracujeme.
 
-    Více informací bude na stránce [Školení React & Next.js](/skoleni/react). Školení dělám já a [Zuzana Jescke](https://zuzjes.com). Kurz bude k dispozici začátkem února.
+    Více informací bude na stránce [Školení React & Next.js](/skoleni/react). Školení dělám já a [Zuzana Jeschke](https://zuzjes.com). Kurz bude k dispozici začátkem února.
 
     ## Články z roku 2019
 
-    Začal jsem také psát články, ty nejzajímavějsí jsou zde:
+    Začal jsem také psát články, ty nejzajímavější jsou zde:
 
     - [Novinky v Helm 3](/blog/helm3) (blog post)
-    - [Sprava Cloudflare DNS pomoci Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
+    - [Správa Cloudflare DNS pomoci Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
     - [Git Rebase](/git/rebase)
     - [Git Hooks](/git/hooks)
     - [Docker s TLS](/docker/docker-s-tls)
@@ -76,17 +76,17 @@
 
     ## Videokurzy
 
-    Připravuji video verze mých nejpopulárnějších školení: Docker, Kubernetes, Terraform a Gitlab CI. Budou k dispozici koncem Ledna. Více infrormací je na stránce [Videokurzy](/videokurzy).
+    Připravuji video verze mých nejpopulárnějších školení: Docker, Kubernetes, Terraform a Gitlab CI. Budou k dispozici koncem Ledna. Více informací je na stránce [Videokurzy](/videokurzy).
 
-    Každy videokurz obsahuje úvod do daně technologie a step-by-step lekce jak řešit konkrétní problémy a jak s nástrojem efektivně pracovat. Videokurzy mám za zaváděcí cenu 1000 CZK za kurz za osobu, při koupi všech čtyř najednou je cena 3200 CZK.
+    Každy videokurz obsahuje úvod do dané technologie a step-by-step lekce jak řešit konkrétní problémy a jak s nástrojem efektivně pracovat. Videokurzy mám za zaváděcí cenu 1000 CZK za kurz za osobu, při koupi všech čtyř najednou je cena 3200 CZK.
 
-    Pokud jej chcete koupit do firmy cena videokurzu je 10 000 CZK pro všechny zaměstnace.
+    Pokud jej chcete koupit do firmy cena videokurzu je 10 000 CZK pro všechny zaměstnance.
 
     Opakování je matka moudrosti, pokud jste u mě měli školení na dané téma, kurz máte se slevou 50% čili za 5000 CZK pro firmu.
 
     ## Trainera
 
-    Založil jsem firmu Trainera s.r.o., pod kterou začínáme dělat školení pro větší společnosti a ve větším teamu. Pořád zůstávám jako freelancer a pořád Vám jsem schopny konzultovat a školit DevOps sám, ale mám po svých kurzech větší poptávku než stíhám obsloužit a proto jsem založil firmu abych nemusel výrazně zdražit a zaměřit se jen na banky a velké korporace. Rozšiřují team a snažím se ve více lidech školit ve stejně úrovni v jaké jsem školil do teď. Držte mi palce.
+    Založil jsem firmu Trainera s.r.o., pod kterou začínáme dělat školení pro větší společnosti a ve větším teamu. Pořád zůstávám jako freelancer a pořád Vám jsem schopný konzultovat a školit DevOps sám, ale mám po svých kurzech větší poptávku než stíhám obsloužit a proto jsem založil firmu abych nemusel výrazně zdražit a zaměřit se jen na banky a velké korporace. Rozšiřují team a snažím se ve více lidech školit ve stejné úrovni v jaké jsem školil do teď. Držte mi palce.
 
     Můžete se podívat na nabídku kurzu od [Trainera.io](http://trainera.io), ale je to zatím de facto to co nabízím já. Pokud chcete spolupracovat výhradně se mnou, nic se pro Vás nemění.
 
@@ -102,15 +102,15 @@
 
     ## Závěrem bych rád poděkoval
 
-    Vám za dosavadní spolupráci a Vás zájem. Budu se snažit zlepšovat DevOps a procesy v IT firmách nejen v České Republice. Díky, že jste se mnou.
+    Vám za dosavadní spolupráci a Váš zájem. Budu se snažit zlepšovat DevOps a procesy v IT firmách nejen v České Republice. Díky, že jste se mnou.
 
-    Sam bych všechno co jsem zde sepsal určitě nezvládl. A ani bych se nedostal do stavu v kterém jsem teď. Chtěl bych tímto poděkovat mému teamu za obrovské úsilí, které vynaložili.
+    Sám bych všechno co jsem zde sepsal určitě nezvládl. A ani bych se nedostal do stavu v kterém jsem teď. Chtěl bych tímto poděkovat mému teamu za obrovské úsilí, které vynaložili.
 
-    Jmenovitě Martinovi Jurcovi ([jurco.io](https://jurco.io)), který mi dělá šéfa. Martin mi skvěle nastavil firemní procesy, udělal migraci z naprostého punku do CRM (která mě bolela, ale musím si přiznat že přinesla své ovoce) a řídí vše co nemusím dělat já. Já se díky tomu mohu naplno věnovat technickým věcem a školením. Pokud budete potřebovat poradit s podobnými věcmi, zkuste požádat Martina.
+    Jmenovitě Martinovi Jurčovi ([jurco.io](https://jurco.io)), který mi manažuje operations včetně klientů a marketingu. Martin mi skvěle nastavil firemní procesy, udělal migraci z naprostého punku do CRM (která mě bolela, ale musím si přiznat že přinesla své ovoce) a řídí vše co nemusím dělat já. Já se díky tomu mohu naplno věnovat technickým věcem a školením. Pokud budete potřebovat poradit s podobnými věcmi, zkuste požádat Martina.
 
     Dále bych rád poděkoval Zuzce ([zuzjes.com](https://zuzjes.com)), přítelkyni, která mě ne jen podporovala, ale udělala hromadu práce na webech v Reactu.
 
-    Díky také patří Kátě, která mi pomáhala s obecnou agendou a řešila za mě tašky, na které jsem neměl čas ani chuť.
+    Díky také patří Kátě, která mi pomáhala s obecnou agendou a řešila za mě úkoly, na které jsem neměl čas ani chuť.
 
     Ať se Vám daří v roce 2020
 
