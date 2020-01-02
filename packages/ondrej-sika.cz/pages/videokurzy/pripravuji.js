@@ -27,7 +27,7 @@ export default () => (
         href="https://airtable.com/embed/shrIKXtFAlneUeI2e"
         style={{ fontSize: "1em" }}
       >
-        nechte mě email
+        zanechte mi email
       </a>
       .
     </p>
