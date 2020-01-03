@@ -1,5 +1,5 @@
 - id: docker-brno-14-11-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
@@ -23,7 +23,7 @@
   date_from: 18.11.2019
   date_to: 19.11.2019
 - id: gitlab-ci-praha-26-11-2019
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: gitlab-ci
