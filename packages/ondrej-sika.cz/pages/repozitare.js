@@ -67,6 +67,7 @@ export default () => (
 
 ## Zeit
 
+- Terraform Provider for Zeit - https://github.com/ondrejsika/terraform-provider-zeit
 - Zeit API Mock server - https://github.com/ondrejsika/zeit-api-mock
 - Go client for Zeit API - https://github.com/ondrejsika/zeit-go
 
