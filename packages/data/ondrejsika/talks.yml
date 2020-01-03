@@ -16,3 +16,9 @@
   abstract: You have a Python application, for example Django. You need run your application somewhere and Kubernetes is right platform for you. I'll show you, how setup Kubernetes, prepare Docker images and Helm package (packed Kubernetes sources) for your app, and how to deploy it into cluster. It's not a rocket science.
   submissions:
     - pyconsk2020
+- id: deploy-your-python-application-into-kubernetes-cz
+  title: Nasaď Python (Django) aplikaci do Kubernetes
+  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Máš Python aplikaci, například Django. Potřebuješ jí někde provozovat a Kubernetes je ta pravá platforma. Ukážu ti, jak spustit Kubernetes v Cloudu, jak vytvořit Docker obrazy a Helm balíček (zdrojové kódy pro Kubernetes) Tvé aplikace. Potom to nasadíme, není to žádná věda.
+  submissions:
+    - pyconsk2020
