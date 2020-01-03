@@ -8,8 +8,8 @@ export default props => (
         <h2>{talk.title}</h2>
         <h4>Bio</h4>
         <p>{talk.bio}</p>
-        <h4>Perex</h4>
-        <p>{talk.perex}</p>
+        <h4>Abstract</h4>
+        <p>{talk.abstract}</p>
         <p>
           <a
             href={`mailto:ondrej@sika.io?subject=[${props.site.name}] Ask for a Talk: ${talk.title}`}
