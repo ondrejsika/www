@@ -10,12 +10,12 @@ const Index = () => (
     <h1>Blog</h1>
     <p>
       04. 01. 2019{" "}
-      <Link href="/proof-of-concept-for-zeit-terraform-provider">
+      <Link href="/blog/proof-of-concept-for-zeit-terraform-provider">
         <a>Proof of Concept for Zeit Terraform Provider</a>
       </Link>
       <br />
       01. 01. 2019{" "}
-      <Link href="/terraform-state-in-git">
+      <Link href="/blog/terraform-state-in-git">
         <a>Terraform State in Git</a>
       </Link>
     </p>
