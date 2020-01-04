@@ -20,6 +20,7 @@ export default () => {
           url("${cmunbtl_svg}#cmuntt") format("svg");
         font-weight: normal;
         font-style: normal;
+        font-display: swap;
       }
 
       @font-face {
@@ -31,6 +32,7 @@ export default () => {
           url("${cmunbto_svg}#cmunbto") format("svg");
         font-weight: normal;
         font-style: italic;
+        font-display: swap;
       }
     `}</style>
   );
