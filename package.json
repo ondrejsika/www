@@ -121,6 +121,7 @@
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)",
     "now-ccc.oxs.cz": "yarn run static-ccc.oxs.cz && (cd packages/ccc.oxs.cz/out && now --name ccc-oxs-cz)",
     "now-sika.work": "yarn run static-sika.work && cd packages/sika.work/out && now --name sika-work",
+    "now-ondrejsika.io": "yarn run static-ondrejsika.io && cd packages/ondrejsika.io/out && now --name ondrejsika-io",
     "now-ydo.sh": "yarn run static-ydo.sh && cd packages/ydo.sh/out && now --name ydo-sh"
   },
   "devDependencies": {
