@@ -4,7 +4,7 @@
 
 SITE=$1
 
-IMAGE=$CI_REGISTRY_IMAGE/now/$SITE
+IMAGE=$CI_REGISTRY_IMAGE-$SITE-deploy-now
 
 rm -rf packages/$SITE/out packages/$SITE/.next
 yarn static-$SITE
