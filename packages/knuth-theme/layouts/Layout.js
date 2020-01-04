@@ -26,8 +26,9 @@ export default props => {
         }
       `}</style>
       <div className="container">
-        <Header menu_links={menu_links} site_name={site_name} />
-
+        <div className=" mt-5 mb-3">
+          <Header menu_links={menu_links} site_name={site_name} />
+        </div>
         {props.children}
         <p style={{ marginTop: "30px" }}>{site_footer}</p>
       </div>

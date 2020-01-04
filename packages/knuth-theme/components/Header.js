@@ -6,7 +6,9 @@ export default props => {
   return (
     <header className="header">
       <div className="site-name">
-        <span style={{ fontSize: "1.3em" }}>{site_name}</span>
+        <span style={{ fontSize: "1.3em" }}>
+          <strong>{site_name}</strong>
+        </span>
       </div>
       <nav className="site-nav">
         <ul>
