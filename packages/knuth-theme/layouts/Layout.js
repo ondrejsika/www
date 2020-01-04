@@ -20,7 +20,8 @@ export default props => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <style jsx global>{`
-        * {
+        body {
+          font-size: 1.2em;
           font-family: "Computer Modern Typewriter Light";
         }
       `}</style>
