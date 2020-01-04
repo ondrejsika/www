@@ -10,12 +10,8 @@ const Index = () => (
       </title>
     </Head>
     <h1>Proof of Concept for Terraform Provider Zeit</h1>
-    <p>
-      04. 01. 2019 | Ondrej Sika
-    </p>
-    <p>
-      Idea behing Terraform Provider for Zeit ...
-    </p>
+    <p>04. 01. 2019 | Ondrej Sika</p>
+    <p>Idea behing Terraform Provider for Zeit ...</p>
   </div>
 );
 
