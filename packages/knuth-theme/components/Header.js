@@ -6,7 +6,7 @@ export default props => {
   return (
     <header className="header">
       <div className="site-name">
-        <span style={{ fontSize: "1.3em" }}>
+        <span style={{ fontSize: "1.1em" }}>
           <strong>{site_name}</strong>
         </span>
       </div>
@@ -15,7 +15,7 @@ export default props => {
           {menu_links.map(link => (
             <li
               className="ml-4"
-              style={{ display: "inline-block", fontSize: "1.3em" }}
+              style={{ display: "inline-block", fontSize: "1.1em" }}
             >
               <Link href={link[1]}>
                 <a>{link[0]}</a>
