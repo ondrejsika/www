@@ -19,6 +19,8 @@ import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import courses_file from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
+import AustraliaOnFireBar from "@app/common/components/AustraliaOnFireBar";
+
 const Page = props => {
   let site = props.site;
   let lang = props.site.lang;
@@ -51,6 +53,7 @@ const Page = props => {
           rel="stylesheet"
         ></link>
       </Head>
+      {lang == "cs" && <AustraliaOnFireBar />}
       <Navigation wide={true} location={site.location} />
       <Header
         wide={true}
