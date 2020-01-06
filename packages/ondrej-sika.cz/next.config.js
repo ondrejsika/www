@@ -14,6 +14,16 @@ function walkDir(dir, callback) {
 function buildExportPathMap(custom_exclude_paths) {
   var out = {};
   var exclude_paths = ["/_document", "/_app"].concat(custom_exclude_paths);
+
+  try {
+    var posts = yaml.safeLoad(fs.readFileSync("data/blog-posts.yaml", "utf8"));
+    posts.forEach(function(post) {
+      out[`/blog/${post.id}`] = { page: "/blog/[id]", query: { id: post.id } };
+    });
+  } catch (e) {
+    console.log(e);
+  }
+
   walkDir("pages/", function(filePath) {
     // remove page/ and .js
     filePath = filePath.substr(5).substr(0, filePath.length - 5 - 3);
@@ -23,14 +33,7 @@ function buildExportPathMap(custom_exclude_paths) {
     if (filePath == "") filePath = "/";
     if (!exclude_paths.includes(filePath)) out[filePath] = { page: filePath };
   });
-  try {
-    var posts = yaml.safeLoad(fs.readFileSync("data/blog-posts.yaml", "utf8"));
-    posts.forEach(function(post) {
-      out[`/blog/${post.id}`] = { page: "/blog/[id]", query: { id: post.id } };
-    });
-  } catch (e) {
-    console.log(e);
-  }
+
   return out;
 }
 
