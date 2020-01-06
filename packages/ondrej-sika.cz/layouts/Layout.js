@@ -6,6 +6,7 @@ import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import Navbar from "@app/ondrej-sika.cz/components/Navbar";
 import Footer from "@app/ondrej-sika.cz/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
+import AustraliaOnFireBar from "@app/common/components/AustraliaOnFireBar";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
@@ -22,6 +23,7 @@ export default props => (
       />
     </Head>
     <DevelopmentBar />
+    <AustraliaOnFireBar local_link={true} />
     <Navbar
       NavName="Ondřej Šika"
       NavUnderheader="Software {Engineer, Konzultant, Lektor}"
