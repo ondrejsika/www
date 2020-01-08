@@ -14,6 +14,7 @@ Pro ty kdo mě neznají, jsem IT Konzultant, Lektor, a Architekt se zaměřením
   - [Gmail](#gmail)
   - [Google Calendar](#google-calendar)
   - [Google Docs](#google-docs)
+- [Telegram](#telegram)
 - [Todoist](#todoist)
 - [Notion](#notion)
 - [Calendly](#calendly)
@@ -80,6 +81,12 @@ Google Kalendář je super. Velkou výhodu vidím v tom, že hodně firem a lidi
 
 Používám na sdílené dokumenty, které musí používat i lidé bez Macu.
 
+
+## Telegram
+
+Jako primární messenger používám [Telegram](https://telegram.com). Funguje na všech platformách, nemá reklamy, je rychlý a stabilní. Sychnronizuje zprávy prez všechny zařízení a podporuje také šifrované zprávy a volání. Naprosto mi vyhovuje.
+
+WhatsApp nemám a Facebook Messenger jsem přestal používat když do něj [přidali reklamy](https://ondrej.sika.blog/prestavam-pouzivat-facebook-messenger-prechazim-na-telegram/). Používám tedy email, SMS/iMessage a Telegram. Ještě na některých projektech pro pracovní komunikaci Slack.
 
 ## Todoist
 
