@@ -39,6 +39,7 @@ export default () => (
 #### Ukazky Infrastruktury
 
 - Kubernetes na Digital Ocean - https://github.com/ondrejsika/terraform-do-kubernetes-example
+- VMs & LB na Digital Ocean pro Bare Metal Kubernetes - https://github.com/ondrejsika/terraform-do-bare-metal-kubernetes-infra-example
 - Gitlab na Digital Ocean - https://github.com/ondrejsika/terraform-demo-gitlab
 - NFS na Digital Ocean - https://github.com/ondrejsika/terraform-demo-nfs
 - Droplet na Digital Ocean - https://github.com/ondrejsika/terraform-do-droplet-example
