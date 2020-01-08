@@ -6,6 +6,20 @@ export default () => (
     markdown={`
 Pro ty kdo mě neznají, jsem IT Konzultant, Lektor, a Architekt se zaměřením na DevOps a programátor. Hodně cestuji a pracuji na cestách. Chci mít kancelář co nejvíce mobilní a automatizovanou.
 
+- [Apple](#apple)
+  - [Mac][#mac]
+  - [iPad Pro LTE](#ipad-pro-lte)
+  - [Apple Watch](#apple-watch)
+- [G Suite (dříve Google Apps)](#g-suite--d--ve-google-apps-)
+  - [Gmail](#gmail)
+  - [Google Calendar](#google-calendar)
+  - [Google Docs](#google-docs)
+- [Todoist](#todoist)
+- [Notion](#notion)
+- [Calendly](#calendly)
+- [Fakturoid](#fakturoid)
+- [Toggl](#toggl)
+
 ## Apple
 
 Zhruba půl roku jsem kompletně na Apple poté, co jsem přešel z Linuxu (Debian + i3) na Macbook. Telefon, hodinky a ostatní jsem měl už dříve.
@@ -47,7 +61,7 @@ Na hodinkách využívám převážně tyto funkce, v pořadí jak jsou zde uved
 - Zaznamenávání sportu - Lezení, běhání
 
 
-## G Suite (drive Google Apps)
+## G Suite (dříve Google Apps)
 
 Používám [G Suite](https://gsuite.google.com) na vlastní doméně a jsem s tím OK, nechtěl bych však používat Gmail zdarma. Proč, to mám popsane v článku [Proč by každý měl mít svoji domenu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu).
 
