@@ -9,7 +9,7 @@ const site = {
       : process.env.SITE_ORIGIN || "https://bootstrap-web.sikadev.com",
   name: "bootstrap-web",
   lang: "en",
-  gauges_site_id: "XXX",
+  gauges_site_id: "5e17419ade0e572fb4c2f3a4",
   google_analytics_site_id: "XXX"
 };
 
