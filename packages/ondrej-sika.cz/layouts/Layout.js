@@ -36,6 +36,7 @@ export default props => (
             ["GITLAB CI", "/skoleni/gitlab-ci"],
             ["DOCKER", "/skoleni/docker"],
             ["KUBERNETES", "/skoleni/kubernetes"],
+            ["RANCHER", "/skoleni/rancher"],
             ["ANSIBLE", "/skoleni/ansible"],
             ["TERRAFORM", "/skoleni/terraform"],
             ["PROMETHEUS", "/skoleni/prometheus"],

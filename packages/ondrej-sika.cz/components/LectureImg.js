@@ -5,6 +5,7 @@ import k8s from "@app/data/pictures/courses/kubernetes.png";
 import react from "@app/data/pictures/courses/react.svg";
 import terraform from "@app/data/pictures/courses/terraform-white.png";
 import ansible from "@app/data/pictures/courses/ansible.png";
+import rancher from "@app/data/pictures/courses/rancher-white.png";
 import Link from "next/link";
 
 const Card = props => {
@@ -48,6 +49,11 @@ const LectureImg = props => {
                     courseName="Terraform"
                     courseId="terraform"
                     courseImg={terraform}
+                  />
+                  <Card
+                    courseName="Rancher"
+                    courseId="rancher"
+                    courseImg={rancher}
                   />
                   <Card courseName="React" courseId="react" courseImg={react} />
                 </>

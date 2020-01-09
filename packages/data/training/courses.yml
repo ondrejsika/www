@@ -130,6 +130,53 @@
       #### Technické požadavky
       - Nainstalovaný Kubernetes, návod na instalaci: [zde](https://www.ondrej-sika.cz/kubernetes/instalace/)
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+
+- id: rancher
+  name:
+    cs: Školení Rancheru
+    en: Rancher Training
+    de: Rancher Schulung
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 6 800 CZK
+    in_house:
+      cz: 25 000 CZK
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: []
+  description:
+    cs: |
+      ### Popis technologie
+      Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webove administrace, tak pomoci Terraformu.
+
+      ### Jak školení probíhá
+
+      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Rancher si nainstalujeme a ukážeme jak jej spravovat. Pak si prakticky vytvoříme Kubernets clustery v cloudu i na on premise virtualech. Jak ručně, ťal pomoci Terraformu.
+
+      ### Co Vás naučím
+
+      - Co je Rancher
+      - Instalace Rancheru
+      - Správa Rancheru (Uživatele, Práva, ...)
+      - Správa Kubernetes clusteru v GUI (vytváření, aktualizace, ...)
+      - Správa Kuberneres clusteru pomoci Terraformu
+
+      ### Pro koho je školení určeno
+
+      Školení je určeno pro DevOps, kteří spravují Kubetnetes clustery.
+
+      #### Předchozí znalosti
+
+      - Základní znalost Kubernetes
+      - Základy práce v terminálu
+
+      #### Technické požadavky
+
+      - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+
 - id: git
   name:
     cs: Školení Gitu
