@@ -3185,3 +3185,152 @@ ccc.oxs.cz prod deploy:
     url: https://ccc.oxs.cz
   dependencies: []
 
+sika.work build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/sika.work/out
+    - yarn run static-sika.work
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika.work/**/*
+      - yarn.lock
+  artifacts:
+    name: sika.work
+    paths:
+      - packages/sika.work/out
+
+
+sika.work build docker:
+  dependencies:
+    - sika.work build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/sika.work/
+    - docker build -t registry.sikahq.com/www/www/sika.work packages/sika.work
+    - rm packages/sika.work/Dockerfile
+    - rm packages/sika.work/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/sika.work
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika.work/**/*
+      - yarn.lock
+
+ydo.sh build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/ydo.sh/out
+    - yarn run static-ydo.sh
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ydo.sh/**/*
+      - yarn.lock
+  artifacts:
+    name: ydo.sh
+    paths:
+      - packages/ydo.sh/out
+
+
+ydo.sh build docker:
+  dependencies:
+    - ydo.sh build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/ydo.sh/
+    - docker build -t registry.sikahq.com/www/www/ydo.sh packages/ydo.sh
+    - rm packages/ydo.sh/Dockerfile
+    - rm packages/ydo.sh/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/ydo.sh
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ydo.sh/**/*
+      - yarn.lock
+
+skoleni-rancher.cz build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/skoleni-rancher.cz/out
+    - yarn run static-skoleni-rancher.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-rancher.cz/**/*
+      - yarn.lock
+  artifacts:
+    name: skoleni-rancher.cz
+    paths:
+      - packages/skoleni-rancher.cz/out
+
+
+skoleni-rancher.cz build docker:
+  dependencies:
+    - skoleni-rancher.cz build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/skoleni-rancher.cz/
+    - docker build -t registry.sikahq.com/www/www/skoleni-rancher.cz packages/skoleni-rancher.cz
+    - rm packages/skoleni-rancher.cz/Dockerfile
+    - rm packages/skoleni-rancher.cz/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/skoleni-rancher.cz
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-rancher.cz/**/*
+      - yarn.lock
+
+skoleni-rancher.cz prod deploy:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-rancher.cz&domain=skoleni-rancher.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  only:
+    refs:
+      - master
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-rancher.cz/**/*
+      - yarn.lock
+  environment:
+    name: prod skoleni-rancher.cz
+    url: https://skoleni-rancher.cz
+  dependencies: []
+
