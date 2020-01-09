@@ -1,5 +1,5 @@
 export default props => (
-  <div className="container headerbar">
+  <div className="container headerbar text-right">
     <h3>
       Project of <a href="https://sika.io">Ondrej Sika</a> and{" "}
       <a href="https://trainera.io">Trainera</a>
