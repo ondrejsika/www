@@ -146,7 +146,7 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: []
+    cs: ["dimensiondata", "webglobe-yegon", "sit"]
   description:
     cs: |
       ### Popis technologie

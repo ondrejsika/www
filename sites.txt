@@ -51,3 +51,4 @@ skoleni-prometheus.cz
 ccc.oxs.cz
 sika.work
 ydo.sh
+skoleni-rancher.cz

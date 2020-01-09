@@ -141,6 +141,18 @@ const links = {
     lu: "https://ondrej-sika.com/training/react?x_source=headline",
     ch: "https://ondrej-sika.com/training/react?x_source=headline",
     nl: "https://ondrej-sika.com/training/react?x_source=headline"
+  },
+  rancher: {
+    cz: "https://ondrej-sika.cz/skoleni/rancher?x_source=headline",
+    sk: "https://ondrej-sika.cz/skoleni/rancher?x_source=headline",
+    de: "https://ondrej-sika.de/training/rancher?x_source=headline",
+    uk: "https://ondrej-sika.uk/training/rancher?x_source=headline",
+    se: "https://ondrej-sika.se/utbildning/rancher?x_source=headline",
+    at: "https://ondrej-sika.com/training/rancher?x_source=headline",
+    is: "https://ondrej-sika.com/training/rancher?x_source=headline",
+    lu: "https://ondrej-sika.com/training/rancher?x_source=headline",
+    ch: "https://ondrej-sika.com/training/rancher?x_source=headline",
+    nl: "https://ondrej-sika.com/training/rancher?x_source=headline"
   }
 };
 
@@ -195,6 +207,11 @@ class Navigation extends React.Component {
                 <li>
                   <Link href={links.proxmox[location]}>
                     <a>Proxmox</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={links.rancher[location]}>
+                    <a>Rancher</a>
                   </Link>
                 </li>
                 <li>
