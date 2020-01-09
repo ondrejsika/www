@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HeaderBar from "@app/meetup-theme/components/HeaderBar";
+import FooterBar from "@app/meetup-theme/components/FooterBar";
 import HeaderLarge from "@app/meetup-theme/components/HeaderLarge";
 import Section from "@app/meetup-theme/components/Section";
 
@@ -10,7 +11,7 @@ export default props => {
         <title>{props.meetup_name}</title>
       </Head>
       <div className="mt-3">
-        <HeaderBar></HeaderBar>
+        <HeaderBar site_name={props.site_name}></HeaderBar>
       </div>
       <div className="mt-3">
         <HeaderLarge heading={props.meetup_name}></HeaderLarge>
@@ -20,6 +21,7 @@ export default props => {
       </Section>
       <Section heading={props.join_us_header}>{props.join_us_content}</Section>
       {props.children}
+      <FooterBar site_name={props.site_name} />
     </div>
   );
 };

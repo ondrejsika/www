@@ -2,6 +2,7 @@ import MeetupPage from "@app/meetup-theme/layouts/MeetupPage";
 
 const Index = () => (
   <MeetupPage
+    site_name="salzburgdevops.com"
     meetup_name="Salzburg DevOps Meetups"
     about_us_header="About Us"
     about_us_content={
