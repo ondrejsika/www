@@ -1,5 +1,7 @@
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
+import AdBar from "@app/ondrej-sika.cz/components/AdBar";
+import NewsletterBar from "@app/ondrej-sika.cz/components/NewsletterBar";
 
 import Head from "next/head";
 
@@ -37,89 +39,18 @@ let Post = props => {
         <Markdown source={post.content} />
         {(() => {
           if (post.ad) {
-            // FIXME: Use YAML source
-            let ads = {
-              git: {
-                about: "Git",
-                course_name: "Skoleni Gitu"
-              },
-              docker: {
-                about: "Docker",
-                course_name: "Skoleni Dockeru"
-              },
-              kubernetes: {
-                about: "Kubernetes",
-                course_name: "Skoleni Kubernetes"
-              },
-              terraform: {
-                about: "Terraform",
-                course_name: "Skoleni Terraformu"
-              },
-              react: {
-                about: "React",
-                course_name: "Skoleni Reactu"
-              },
-              "gitlab-ci": {
-                about: "Gitlab CI",
-                course_name: "Skoleni Gitlab CI"
-              }
-            };
             return (
               <div className="row">
                 <div className="col-6">
-                  <div
-                    className="alert alert-success mt-5 text-center"
-                    role="alert"
-                  >
-                    <h3>
-                      Zajimate se o {ads[post.ad].about}? Zkuste me{" "}
-                      {ads[post.ad].course_name}!
-                    </h3>
-                    <a
-                      className="btn btn-large btn-success m-3"
-                      href={`/skoleni/${post.ad}`}
-                    >
-                      Ukazat {ads[post.ad].course_name}
-                    </a>
-                  </div>
+                  <AdBar ad={post.ad} />
                 </div>
                 <div className="col-6">
-                  <div
-                    className="alert alert-primary mt-5 text-center"
-                    role="alert"
-                  >
-                    <h3>
-                      Chcete dostavat nove clanky do emailu? Prihlaste se k
-                      newsletteru!
-                    </h3>
-                    <a
-                      className="btn btn-large btn-primary m-3"
-                      href="https://sika.link/newsletter"
-                    >
-                      Prihlasit se k odberu
-                    </a>
-                  </div>
+                  <NewsletterBar />
                 </div>
               </div>
             );
           } else {
-            return (
-              <div
-                className="alert alert-primary mt-5 text-center"
-                role="alert"
-              >
-                <h3>
-                  Chcete dostavat nove clanky do emailu? Prihlaste se k
-                  newsletteru!
-                </h3>
-                <a
-                  className="btn btn-large btn-primary m-3"
-                  href="https://sika.link/newsletter"
-                >
-                  Prihlasit se k odberu
-                </a>
-              </div>
-            );
+            return <NewsletterBar />;
           }
         })()}
       </div>
