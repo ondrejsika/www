@@ -37,12 +37,11 @@ const AdBar = props => {
         Zajímáte se o {ads[props.ad].about}? Zkuste mé{" "}
         {ads[props.ad].course_name}!
       </h3>
-      <a
-        className="btn btn-large btn-success m-3"
-        href={`/Školení/${props.ad}`}
-      >
-        Ukázat {ads[props.ad].course_name}
-      </a>
+      <Link href={`/skoleni/${props.ad}`}>
+        <a className="btn btn-large btn-success m-3">
+          Ukázat {ads[props.ad].course_name}
+        </a>
+      </Link>
     </div>
   );
 };
