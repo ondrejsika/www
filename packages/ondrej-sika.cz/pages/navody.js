@@ -20,6 +20,15 @@ Pokud Vas zajima Docker, podivejte se na me [Skoleni Dockeru](/skoleni/docker)
 
 Pokud Vas zajima Kubernetes, podivejte se na me [Skoleni Kubernetes](/skoleni/kubernetes)
 
+### Rancher, nástroj na správu Kubernetes clusterů
+
+- [Co je Rancher](/rancher)
+- [Instalace Rancheru](/rancher/instalace-rancheru)
+
+<!---
+- [Instalace Kubernetes clusteru pomocí Rancheru na vlastním hardware](/rancher/instalace-kubernetes-clusteru-pomoci-rancheru-na-vlastnim-hardware)
+--->
+
 ### Terraform
 
 - [Co je Terraform](/terraform)
