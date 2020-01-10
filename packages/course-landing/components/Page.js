@@ -146,7 +146,7 @@ const Page = props => {
                     <ButtonOutline btnUrl={site.x_inquiry_url}>
                       <Translate
                         lang={lang}
-                        cs="Nezávazne poptat"
+                        cs="Nezávazně poptat"
                         sk="Nezáväzne popýtať"
                       />
                     </ButtonOutline>
@@ -165,7 +165,7 @@ const Page = props => {
                     <ButtonOutline btnUrl={site.x_inquiry_url}>
                       <Translate
                         lang={lang}
-                        cs="Nezávazne poptat"
+                        cs="Nezávazně poptat"
                         sk="Nezáväzne popýtať"
                       />
                     </ButtonOutline>
