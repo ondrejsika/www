@@ -150,11 +150,11 @@
   description:
     cs: |
       ### Popis technologie
-      Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webove administrace, tak pomoci Terraformu.
+      Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webov0 administrace, tak pomoc9 Terraformu.
 
       ### Jak školení probíhá
 
-      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Rancher si nainstalujeme a ukážeme jak jej spravovat. Pak si prakticky vytvoříme Kubernets clustery v cloudu i na on premise virtualech. Jak ručně, ťal pomoci Terraformu.
+      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Rancher si nainstalujeme a ukážeme jak jej spravovat. Pak si prakticky vytvoříme Kubernets clustery v cloudu i na on premise virtuálech. Jak ručně, tak pomocí Terraformu.
 
       ### Co Vás naučím
 
