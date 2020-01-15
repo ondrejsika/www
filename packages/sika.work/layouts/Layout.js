@@ -4,7 +4,7 @@ import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 
 export default props => (
   <Layout>
-    <div className="container">{props.children}</div>
+    <div className="container-fluid">{props.children}</div>
     <Gauges gauges_site_id={props.site.gauges_site_id} />
     <GoogleAnalytics
       google_analytics_site_id={props.site.google_analytics_site_id}

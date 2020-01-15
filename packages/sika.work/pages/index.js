@@ -6,7 +6,7 @@ const Index = () => (
     <Head>
       <title>sika.work</title>
     </Head>
-    <div className="mt-4">
+    <div className="mt-2">
       <h1>Ondrej Sika</h1>
       <p>
         <strong>Your CTO / Software &amp; DevOps Engineer</strong>
