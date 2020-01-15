@@ -52,3 +52,4 @@ ccc.oxs.cz
 sika.work
 ydo.sh
 skoleni-rancher.cz
+sika.blog
