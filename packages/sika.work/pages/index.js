@@ -13,6 +13,8 @@ const Index = () => (
       </p>
       <p>
         <a href="mailto:ondrej@sika.work">ondrej@sika.work</a>
+        <br />
+        <a href="/resume.pdf">resume.pdf</a>
       </p>
     </div>
   </>
