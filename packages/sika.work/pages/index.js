@@ -9,7 +9,10 @@ const Index = () => (
     <div className="mt-4">
       <h1>Ondrej Sika</h1>
       <p>
-        <strong>Software &amp; DevOps Engineer</strong>
+        <strong>Your CTO / Software &amp; DevOps Engineer</strong>
+      </p>
+      <p>
+        <strong>Hire Me!</strong>
       </p>
       <p>
         <a href="mailto:ondrej@sika.work">ondrej@sika.work</a>
