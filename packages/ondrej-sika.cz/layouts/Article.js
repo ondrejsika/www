@@ -22,7 +22,7 @@ export default props => {
           if (props.after) return props.after;
         })()}
 
-        {!props.ad && <NewsletterBar />}
+        {!props.ad && !props.hideNewsletter && <NewsletterBar />}
         {props.ad && (
           <div class="row">
             <div class="col-6">
