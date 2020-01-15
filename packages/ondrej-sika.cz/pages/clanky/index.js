@@ -13,6 +13,7 @@ export default () => (
 - [Primární, Soukromý a firemní email](/clanky/primarni-soukromy-a-firemni-email/)
 - [Výběr osobní wiki](/clanky/vyber-osobni-wiki)
 - [Digitální Detox](/clanky/digitalni-detox/)
+- [Zajímavé osobní stránky](/clanky/zajimave-osobni-stranky)
 `}
   />
 );
