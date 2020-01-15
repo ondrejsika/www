@@ -14,6 +14,7 @@ export default () => (
 - [Výběr osobní wiki](/clanky/vyber-osobni-wiki)
 - [Digitální Detox](/clanky/digitalni-detox/)
 - [Zajímavé osobní stránky](/clanky/zajimave-osobni-stranky)
+- [Čaje](/clanky/caje)
 `}
   />
 );
