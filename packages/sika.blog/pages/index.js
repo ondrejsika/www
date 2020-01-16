@@ -13,8 +13,9 @@ const Index = () => (
         <br />
         <a href="https://knihy.sika.blog">knihy.sika.blog</a>
         <br />
-        <a href="https://random.sika.blog">random.sika.blog</a>
+        <a href="https://firma.sika.blog">firma.sika.blog</a>
         <br />
+        <a href="https://random.sika.blog">random.sika.blog</a>
       </p>
     </div>
   </>
