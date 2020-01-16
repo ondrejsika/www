@@ -14,6 +14,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://sekava.cz/>
 - <https://rousek.name/>
 - <https://jurco.io/>
+- <https://peteramende.de/>
 
     `}
   />
