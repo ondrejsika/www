@@ -3,6 +3,7 @@ import Article from "@app/ondrej-sika.cz/layouts/Article";
 export default () => (
   <Article
     title="Terraform"
+    ad="terraform"
     markdown={`
 ## Co je Terraform
 
