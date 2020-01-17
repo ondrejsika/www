@@ -119,6 +119,10 @@ const Footer = () => (
           <Link href="/doporucte-me-prosim">
             <a className="a-underline">Doporučte mě prosím</a>
           </Link>
+          <span className="text-white">&nbsp;|&nbsp;</span>
+          <Link href="/book-me">
+            <a className="a-underline">Book Me</a>
+          </Link>
         </p>
         <p className="text-center text-white fs-9 pt-4">
           Website by{" "}
