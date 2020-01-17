@@ -11,6 +11,7 @@ Rezervujte si můj čas, ideálně po domluvě emailem (<ondrej@sika.io>) nebo t
 - [Večerní Event](https://calendly.com/ondrejsika/evening-training) - Pro White Label & HR Kurzy
 - [Dopolední Event](https://calendly.com/ondrejsika/morning) - Pro White Label & HR Kurzy
 - [Oběd](https://calendly.com/ondrejsika/friday-lunch)
+- [Pivo](https://calendly.com/ondrejsika/beer)
 - [Delší Call](https://calendly.com/ondrejsika/friday-call) - 10 minut a více
 `}
   />
