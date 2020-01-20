@@ -53,3 +53,4 @@ sika.work
 ydo.sh
 skoleni-rancher.cz
 sika.blog
+static.sika.io
