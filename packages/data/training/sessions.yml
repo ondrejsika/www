@@ -49,7 +49,7 @@
   date_from: 9.1.2020
   date_to: 9.1.2020
 - id: git-praha-10-01-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: git
@@ -61,7 +61,7 @@
   date_from: 10.1.2020
   date_to: 10.1.2020
 - id: proxmox-praha-17-01-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: proxmox
