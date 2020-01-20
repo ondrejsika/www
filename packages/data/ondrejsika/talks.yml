@@ -10,6 +10,12 @@
   abstract: How easy is it to deploy your software in staging or production? How many manual actions do you have to do? I'll show you, how you can set up fast and reliable deployments to multiple environments with Gitlab CI, Docker, and Kubernetes. I'll show you the whole pipeline from static code analysis, through builds to deployment. Everything on unified infrastructure backed by Docker and Kubernetes.
   submissions:
     - devopsbarcelona2020
+- id: setup-deploy-pipeline-cz
+  title: Nasazujte aplikace pomocí Dockeru, Kubernetes a Gitlab CI
+  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Jak tězké je nasadit Vaši aplikaci do testovacího nebo produkčního prostředí? Kolik toho musíte udělat manuálně? Ukáži Vám, jak nastvit bezpečný, rychlý a plně automatický deploment do různých prostředí pomocí Dockeru, Kubernetes a Gitlab CI. Ukážu Vám celou pipeline od statické analýzy kódu, přez build po nasazení. Vše na unifikované platformě postavené na Dockeru a Kubernetes, nezávislé na Vaší aplikaci.
+  submissions:
+    - teched2020
 - id: deploy-your-python-application-into-kubernetes
   title: Deploy your Python (Django) Application into Kubernetes
   bio: I'm a DevOps engineer and consultant from Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable software products.
