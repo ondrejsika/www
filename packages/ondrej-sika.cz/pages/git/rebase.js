@@ -24,14 +24,14 @@ Udelame to takto (vychazime z vychoziho stavu projektu, pokud jsme jiz vytvorili
 ![](/static/rebase/basic-rebase-3.png)
 
     git checkout experimental
-    git reabase master
+    git rebase master
 
 Tyto prikazy nam preskladaji vetev experimental do teto podoby:
 
 Pak uz jen staci pouzit fast forward merge a vetev mame experimental zaclenenou do masteru:
 
     git checkout master
-    git merge –ff-only experimental
+    git merge –-ff-only experimental
 
 Vysledek pak vypada takto:
 
