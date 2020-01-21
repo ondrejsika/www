@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useCookie } from "@app/common/components/AustraliaOnFireBar/useCookie";
 
 let Bar = props => (
-  <div style={{ backgroundColor: props.color, padding: "15px", width: 100}}>
+  <div style={{ backgroundColor: props.color, padding: "15px", width: 100 }}>
     {props.children}
   </div>
 );
@@ -26,7 +26,8 @@ export default () => {
       )}
       <a href="#" onClick={() => setHideBar(true)}>
         hide
-      </a>{` `}
+      </a>
+      {` `}
       <a href="#" onClick={() => setHideBar("")}>
         show
       </a>

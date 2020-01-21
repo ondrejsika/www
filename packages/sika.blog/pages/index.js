@@ -15,7 +15,8 @@ const Index = () => (
         <br />
         <a href="https://firma.sika.blog">firma.sika.blog</a>
         <br />
-        <a href="https://ps.sika.blog">ps.sika.blog</a> - Jak vzniká PersonalStack.io
+        <a href="https://ps.sika.blog">ps.sika.blog</a> - Jak vzniká
+        PersonalStack.io
         <br />
         <a href="https://random.sika.blog">random.sika.blog</a>
       </p>
