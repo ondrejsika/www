@@ -41,6 +41,10 @@ $SITE build js:
     - yarn
     - rm -rf packages/$SITE/out
     - yarn run static-$SITE
+  except:
+    variables:
+      - \$EXCEPT_BUILD
+      - \$EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -67,6 +71,10 @@ $SITE build docker:
     - rm packages/$SITE/Dockerfile
     - rm packages/$SITE/nginx-site.conf
     - docker push registry.sikahq.com/www/www/$SITE
+  except:
+    variables:
+      - \$EXCEPT_BUILD
+      - \$EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -88,6 +96,12 @@ $SITE dev deploy:
     - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
   except:
     - master
+  except:
+    variables:
+      - \$EXCEPT_DEPLOY
+      - \$EXCEPT_DEPLOY_SOD
+      - \$EXCEPT_DEPLOY_DEV
+      - \$EXCEPT_DEPLOY_DEV_SOD
   only:
     changes:
       - packages/data/**/*
@@ -118,6 +132,12 @@ $SITE dev deploy k8s:
     - helm upgrade --install $NAME-dev ondrejsika/one-image --set host=$SITE$SUFFIX --set image=\$CI_REGISTRY_IMAGE/$SITE
   except:
     - master
+  except:
+    variables:
+      - \$EXCEPT_DEPLOY
+      - \$EXCEPT_DEPLOY_K8S
+      - \$EXCEPT_DEPLOY_DEV
+      - \$EXCEPT_DEPLOY_DEV_K8S
   only:
     changes:
       - packages/data/**/*
@@ -143,6 +163,12 @@ $SITE prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - \$EXCEPT_DEPLOY
+      - \$EXCEPT_DEPLOY_SOD
+      - \$EXCEPT_DEPLOY_PROD
+      - \$EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -174,7 +200,11 @@ $SITE prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install $NAME ondrejsika/one-image --set host=$SITE --set image=\$CI_REGISTRY_IMAGE/$SITE
   except:
-    - master
+    variables:
+      - \$EXCEPT_DEPLOY
+      - \$EXCEPT_DEPLOY_K8S
+      - \$EXCEPT_DEPLOY_PROD
+      - \$EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
