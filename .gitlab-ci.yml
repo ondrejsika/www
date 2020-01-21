@@ -55,15 +55,18 @@ ansible-schulung.de build docker:
       - packages/ansible-schulung.de/**/*
       - yarn.lock
 
-ansible-schulung.de prod deploy:
+ansible-schulung.de prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-schulung.de&domain=ansible-schulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install ansible-schulung-de ondrejsika/one-image --set host=ansible-schulung.de --set image=$CI_REGISTRY_IMAGE/ansible-schulung.de
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -71,7 +74,7 @@ ansible-schulung.de prod deploy:
       - packages/ansible-schulung.de/**/*
       - yarn.lock
   environment:
-    name: prod ansible-schulung.de
+    name: dev ansible-schulung.de
     url: https://ansible-schulung.de
   dependencies: []
 
@@ -118,15 +121,18 @@ ansible-skoleni.cz build docker:
       - packages/ansible-skoleni.cz/**/*
       - yarn.lock
 
-ansible-skoleni.cz prod deploy:
+ansible-skoleni.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz&domain=ansible-skoleni.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install ansible-skoleni-cz ondrejsika/one-image --set host=ansible-skoleni.cz --set image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -134,7 +140,7 @@ ansible-skoleni.cz prod deploy:
       - packages/ansible-skoleni.cz/**/*
       - yarn.lock
   environment:
-    name: prod ansible-skoleni.cz
+    name: dev ansible-skoleni.cz
     url: https://ansible-skoleni.cz
   dependencies: []
 
@@ -224,15 +230,18 @@ dockerschulung.de build docker:
       - packages/dockerschulung.de/**/*
       - yarn.lock
 
-dockerschulung.de prod deploy:
+dockerschulung.de prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/dockerschulung.de&domain=dockerschulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install dockerschulung-de ondrejsika/one-image --set host=dockerschulung.de --set image=$CI_REGISTRY_IMAGE/dockerschulung.de
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -240,7 +249,7 @@ dockerschulung.de prod deploy:
       - packages/dockerschulung.de/**/*
       - yarn.lock
   environment:
-    name: prod dockerschulung.de
+    name: dev dockerschulung.de
     url: https://dockerschulung.de
   dependencies: []
 
@@ -287,15 +296,18 @@ gitlab-ci.cz build docker:
       - packages/gitlab-ci.cz/**/*
       - yarn.lock
 
-gitlab-ci.cz prod deploy:
+gitlab-ci.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-ci.cz&domain=gitlab-ci.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install gitlab-ci-cz ondrejsika/one-image --set host=gitlab-ci.cz --set image=$CI_REGISTRY_IMAGE/gitlab-ci.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -303,7 +315,7 @@ gitlab-ci.cz prod deploy:
       - packages/gitlab-ci.cz/**/*
       - yarn.lock
   environment:
-    name: prod gitlab-ci.cz
+    name: dev gitlab-ci.cz
     url: https://gitlab-ci.cz
   dependencies: []
 
@@ -350,15 +362,18 @@ kubernetes-schulung.de build docker:
       - packages/kubernetes-schulung.de/**/*
       - yarn.lock
 
-kubernetes-schulung.de prod deploy:
+kubernetes-schulung.de prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de&domain=kubernetes-schulung.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install kubernetes-schulung-de ondrejsika/one-image --set host=kubernetes-schulung.de --set image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -366,7 +381,7 @@ kubernetes-schulung.de prod deploy:
       - packages/kubernetes-schulung.de/**/*
       - yarn.lock
   environment:
-    name: prod kubernetes-schulung.de
+    name: dev kubernetes-schulung.de
     url: https://kubernetes-schulung.de
   dependencies: []
 
@@ -413,15 +428,18 @@ ondrej-sika.cz build docker:
       - packages/ondrej-sika.cz/**/*
       - yarn.lock
 
-ondrej-sika.cz prod deploy:
+ondrej-sika.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.cz&domain=ondrej-sika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install ondrej-sika-cz ondrejsika/one-image --set host=ondrej-sika.cz --set image=$CI_REGISTRY_IMAGE/ondrej-sika.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -429,7 +447,7 @@ ondrej-sika.cz prod deploy:
       - packages/ondrej-sika.cz/**/*
       - yarn.lock
   environment:
-    name: prod ondrej-sika.cz
+    name: dev ondrej-sika.cz
     url: https://ondrej-sika.cz
   dependencies: []
 
@@ -539,15 +557,18 @@ skoleni-docker.cz build docker:
       - packages/skoleni-docker.cz/**/*
       - yarn.lock
 
-skoleni-docker.cz prod deploy:
+skoleni-docker.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-docker.cz&domain=skoleni-docker.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skoleni-docker-cz ondrejsika/one-image --set host=skoleni-docker.cz --set image=$CI_REGISTRY_IMAGE/skoleni-docker.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -555,7 +576,7 @@ skoleni-docker.cz prod deploy:
       - packages/skoleni-docker.cz/**/*
       - yarn.lock
   environment:
-    name: prod skoleni-docker.cz
+    name: dev skoleni-docker.cz
     url: https://skoleni-docker.cz
   dependencies: []
 
@@ -602,15 +623,18 @@ skoleni-git.cz build docker:
       - packages/skoleni-git.cz/**/*
       - yarn.lock
 
-skoleni-git.cz prod deploy:
+skoleni-git.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-git.cz&domain=skoleni-git.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skoleni-git-cz ondrejsika/one-image --set host=skoleni-git.cz --set image=$CI_REGISTRY_IMAGE/skoleni-git.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -618,7 +642,7 @@ skoleni-git.cz prod deploy:
       - packages/skoleni-git.cz/**/*
       - yarn.lock
   environment:
-    name: prod skoleni-git.cz
+    name: dev skoleni-git.cz
     url: https://skoleni-git.cz
   dependencies: []
 
@@ -665,15 +689,18 @@ skoleni-kubernetes.cz build docker:
       - packages/skoleni-kubernetes.cz/**/*
       - yarn.lock
 
-skoleni-kubernetes.cz prod deploy:
+skoleni-kubernetes.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz&domain=skoleni-kubernetes.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skoleni-kubernetes-cz ondrejsika/one-image --set host=skoleni-kubernetes.cz --set image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -681,7 +708,7 @@ skoleni-kubernetes.cz prod deploy:
       - packages/skoleni-kubernetes.cz/**/*
       - yarn.lock
   environment:
-    name: prod skoleni-kubernetes.cz
+    name: dev skoleni-kubernetes.cz
     url: https://skoleni-kubernetes.cz
   dependencies: []
 
@@ -728,15 +755,18 @@ git-training.uk build docker:
       - packages/git-training.uk/**/*
       - yarn.lock
 
-git-training.uk prod deploy:
+git-training.uk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.uk&domain=git-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install git-training-uk ondrejsika/one-image --set host=git-training.uk --set image=$CI_REGISTRY_IMAGE/git-training.uk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -744,7 +774,7 @@ git-training.uk prod deploy:
       - packages/git-training.uk/**/*
       - yarn.lock
   environment:
-    name: prod git-training.uk
+    name: dev git-training.uk
     url: https://git-training.uk
   dependencies: []
 
@@ -791,15 +821,18 @@ docker-training.uk build docker:
       - packages/docker-training.uk/**/*
       - yarn.lock
 
-docker-training.uk prod deploy:
+docker-training.uk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.uk&domain=docker-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install docker-training-uk ondrejsika/one-image --set host=docker-training.uk --set image=$CI_REGISTRY_IMAGE/docker-training.uk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -807,7 +840,7 @@ docker-training.uk prod deploy:
       - packages/docker-training.uk/**/*
       - yarn.lock
   environment:
-    name: prod docker-training.uk
+    name: dev docker-training.uk
     url: https://docker-training.uk
   dependencies: []
 
@@ -854,15 +887,18 @@ kubernetes-training.uk build docker:
       - packages/kubernetes-training.uk/**/*
       - yarn.lock
 
-kubernetes-training.uk prod deploy:
+kubernetes-training.uk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-training.uk&domain=kubernetes-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install kubernetes-training-uk ondrejsika/one-image --set host=kubernetes-training.uk --set image=$CI_REGISTRY_IMAGE/kubernetes-training.uk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -870,7 +906,7 @@ kubernetes-training.uk prod deploy:
       - packages/kubernetes-training.uk/**/*
       - yarn.lock
   environment:
-    name: prod kubernetes-training.uk
+    name: dev kubernetes-training.uk
     url: https://kubernetes-training.uk
   dependencies: []
 
@@ -917,15 +953,18 @@ ansible-training.uk build docker:
       - packages/ansible-training.uk/**/*
       - yarn.lock
 
-ansible-training.uk prod deploy:
+ansible-training.uk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-training.uk&domain=ansible-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install ansible-training-uk ondrejsika/one-image --set host=ansible-training.uk --set image=$CI_REGISTRY_IMAGE/ansible-training.uk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -933,7 +972,7 @@ ansible-training.uk prod deploy:
       - packages/ansible-training.uk/**/*
       - yarn.lock
   environment:
-    name: prod ansible-training.uk
+    name: dev ansible-training.uk
     url: https://ansible-training.uk
   dependencies: []
 
@@ -980,15 +1019,18 @@ gitlab-training.uk build docker:
       - packages/gitlab-training.uk/**/*
       - yarn.lock
 
-gitlab-training.uk prod deploy:
+gitlab-training.uk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-training.uk&domain=gitlab-training.uk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install gitlab-training-uk ondrejsika/one-image --set host=gitlab-training.uk --set image=$CI_REGISTRY_IMAGE/gitlab-training.uk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -996,7 +1038,7 @@ gitlab-training.uk prod deploy:
       - packages/gitlab-training.uk/**/*
       - yarn.lock
   environment:
-    name: prod gitlab-training.uk
+    name: dev gitlab-training.uk
     url: https://gitlab-training.uk
   dependencies: []
 
@@ -1043,15 +1085,18 @@ skolenie-git.sk build docker:
       - packages/skolenie-git.sk/**/*
       - yarn.lock
 
-skolenie-git.sk prod deploy:
+skolenie-git.sk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-git.sk&domain=skolenie-git.sk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skolenie-git-sk ondrejsika/one-image --set host=skolenie-git.sk --set image=$CI_REGISTRY_IMAGE/skolenie-git.sk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1059,7 +1104,7 @@ skolenie-git.sk prod deploy:
       - packages/skolenie-git.sk/**/*
       - yarn.lock
   environment:
-    name: prod skolenie-git.sk
+    name: dev skolenie-git.sk
     url: https://skolenie-git.sk
   dependencies: []
 
@@ -1106,15 +1151,18 @@ skolenie-gitlab.sk build docker:
       - packages/skolenie-gitlab.sk/**/*
       - yarn.lock
 
-skolenie-gitlab.sk prod deploy:
+skolenie-gitlab.sk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk&domain=skolenie-gitlab.sk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skolenie-gitlab-sk ondrejsika/one-image --set host=skolenie-gitlab.sk --set image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1122,7 +1170,7 @@ skolenie-gitlab.sk prod deploy:
       - packages/skolenie-gitlab.sk/**/*
       - yarn.lock
   environment:
-    name: prod skolenie-gitlab.sk
+    name: dev skolenie-gitlab.sk
     url: https://skolenie-gitlab.sk
   dependencies: []
 
@@ -1169,15 +1217,18 @@ skolenie-docker.sk build docker:
       - packages/skolenie-docker.sk/**/*
       - yarn.lock
 
-skolenie-docker.sk prod deploy:
+skolenie-docker.sk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-docker.sk&domain=skolenie-docker.sk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skolenie-docker-sk ondrejsika/one-image --set host=skolenie-docker.sk --set image=$CI_REGISTRY_IMAGE/skolenie-docker.sk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1185,7 +1236,7 @@ skolenie-docker.sk prod deploy:
       - packages/skolenie-docker.sk/**/*
       - yarn.lock
   environment:
-    name: prod skolenie-docker.sk
+    name: dev skolenie-docker.sk
     url: https://skolenie-docker.sk
   dependencies: []
 
@@ -1232,15 +1283,18 @@ skolenie.kubernetes.sk build docker:
       - packages/skolenie.kubernetes.sk/**/*
       - yarn.lock
 
-skolenie.kubernetes.sk prod deploy:
+skolenie.kubernetes.sk prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk&domain=skolenie.kubernetes.sk&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skolenie-kubernetes-sk ondrejsika/one-image --set host=skolenie.kubernetes.sk --set image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1248,7 +1302,7 @@ skolenie.kubernetes.sk prod deploy:
       - packages/skolenie.kubernetes.sk/**/*
       - yarn.lock
   environment:
-    name: prod skolenie.kubernetes.sk
+    name: dev skolenie.kubernetes.sk
     url: https://skolenie.kubernetes.sk
   dependencies: []
 
@@ -1358,15 +1412,18 @@ ansible-utbildning.se build docker:
       - packages/ansible-utbildning.se/**/*
       - yarn.lock
 
-ansible-utbildning.se prod deploy:
+ansible-utbildning.se prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ansible-utbildning.se&domain=ansible-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install ansible-utbildning-se ondrejsika/one-image --set host=ansible-utbildning.se --set image=$CI_REGISTRY_IMAGE/ansible-utbildning.se
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1374,7 +1431,7 @@ ansible-utbildning.se prod deploy:
       - packages/ansible-utbildning.se/**/*
       - yarn.lock
   environment:
-    name: prod ansible-utbildning.se
+    name: dev ansible-utbildning.se
     url: https://ansible-utbildning.se
   dependencies: []
 
@@ -1421,15 +1478,18 @@ docker-utbildning.se build docker:
       - packages/docker-utbildning.se/**/*
       - yarn.lock
 
-docker-utbildning.se prod deploy:
+docker-utbildning.se prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-utbildning.se&domain=docker-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install docker-utbildning-se ondrejsika/one-image --set host=docker-utbildning.se --set image=$CI_REGISTRY_IMAGE/docker-utbildning.se
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1437,7 +1497,7 @@ docker-utbildning.se prod deploy:
       - packages/docker-utbildning.se/**/*
       - yarn.lock
   environment:
-    name: prod docker-utbildning.se
+    name: dev docker-utbildning.se
     url: https://docker-utbildning.se
   dependencies: []
 
@@ -1484,15 +1544,18 @@ git-utbildning.se build docker:
       - packages/git-utbildning.se/**/*
       - yarn.lock
 
-git-utbildning.se prod deploy:
+git-utbildning.se prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-utbildning.se&domain=git-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install git-utbildning-se ondrejsika/one-image --set host=git-utbildning.se --set image=$CI_REGISTRY_IMAGE/git-utbildning.se
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1500,7 +1563,7 @@ git-utbildning.se prod deploy:
       - packages/git-utbildning.se/**/*
       - yarn.lock
   environment:
-    name: prod git-utbildning.se
+    name: dev git-utbildning.se
     url: https://git-utbildning.se
   dependencies: []
 
@@ -1547,15 +1610,18 @@ gitlab-utbildning.se build docker:
       - packages/gitlab-utbildning.se/**/*
       - yarn.lock
 
-gitlab-utbildning.se prod deploy:
+gitlab-utbildning.se prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se&domain=gitlab-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install gitlab-utbildning-se ondrejsika/one-image --set host=gitlab-utbildning.se --set image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1563,7 +1629,7 @@ gitlab-utbildning.se prod deploy:
       - packages/gitlab-utbildning.se/**/*
       - yarn.lock
   environment:
-    name: prod gitlab-utbildning.se
+    name: dev gitlab-utbildning.se
     url: https://gitlab-utbildning.se
   dependencies: []
 
@@ -1610,15 +1676,18 @@ kubernetes-utbildning.se build docker:
       - packages/kubernetes-utbildning.se/**/*
       - yarn.lock
 
-kubernetes-utbildning.se prod deploy:
+kubernetes-utbildning.se prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se&domain=kubernetes-utbildning.se&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install kubernetes-utbildning-se ondrejsika/one-image --set host=kubernetes-utbildning.se --set image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1626,7 +1695,7 @@ kubernetes-utbildning.se prod deploy:
       - packages/kubernetes-utbildning.se/**/*
       - yarn.lock
   environment:
-    name: prod kubernetes-utbildning.se
+    name: dev kubernetes-utbildning.se
     url: https://kubernetes-utbildning.se
   dependencies: []
 
@@ -1736,15 +1805,18 @@ ondrej-sika.de build docker:
       - packages/ondrej-sika.de/**/*
       - yarn.lock
 
-ondrej-sika.de prod deploy:
+ondrej-sika.de prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.de&domain=ondrej-sika.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install ondrej-sika-de ondrejsika/one-image --set host=ondrej-sika.de --set image=$CI_REGISTRY_IMAGE/ondrej-sika.de
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1752,7 +1824,7 @@ ondrej-sika.de prod deploy:
       - packages/ondrej-sika.de/**/*
       - yarn.lock
   environment:
-    name: prod ondrej-sika.de
+    name: dev ondrej-sika.de
     url: https://ondrej-sika.de
   dependencies: []
 
@@ -1862,6 +1934,29 @@ sika.io build docker:
       - packages/sika.io/**/*
       - yarn.lock
 
+sika.io dev deploy k8s:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
+  script:
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install sika-io-dev ondrejsika/one-image --set host=sika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika.io
+  except:
+    - master
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika.io/**/*
+      - yarn.lock
+  environment:
+    name: dev sika.io
+    url: https://sika.io.panda.k8s.oxs.cz
+  dependencies: []
+
 sika.io prod deploy:
   stage: deploy_prod
   variables:
@@ -1925,15 +2020,18 @@ docker-training.de build docker:
       - packages/docker-training.de/**/*
       - yarn.lock
 
-docker-training.de prod deploy:
+docker-training.de prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.de&domain=docker-training.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install docker-training-de ondrejsika/one-image --set host=docker-training.de --set image=$CI_REGISTRY_IMAGE/docker-training.de
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1941,7 +2039,7 @@ docker-training.de prod deploy:
       - packages/docker-training.de/**/*
       - yarn.lock
   environment:
-    name: prod docker-training.de
+    name: dev docker-training.de
     url: https://docker-training.de
   dependencies: []
 
@@ -1988,15 +2086,18 @@ docker-training.ch build docker:
       - packages/docker-training.ch/**/*
       - yarn.lock
 
-docker-training.ch prod deploy:
+docker-training.ch prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.ch&domain=docker-training.ch&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install docker-training-ch ondrejsika/one-image --set host=docker-training.ch --set image=$CI_REGISTRY_IMAGE/docker-training.ch
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2004,7 +2105,7 @@ docker-training.ch prod deploy:
       - packages/docker-training.ch/**/*
       - yarn.lock
   environment:
-    name: prod docker-training.ch
+    name: dev docker-training.ch
     url: https://docker-training.ch
   dependencies: []
 
@@ -2051,15 +2152,18 @@ docker-training.at build docker:
       - packages/docker-training.at/**/*
       - yarn.lock
 
-docker-training.at prod deploy:
+docker-training.at prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.at&domain=docker-training.at&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install docker-training-at ondrejsika/one-image --set host=docker-training.at --set image=$CI_REGISTRY_IMAGE/docker-training.at
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2067,7 +2171,7 @@ docker-training.at prod deploy:
       - packages/docker-training.at/**/*
       - yarn.lock
   environment:
-    name: prod docker-training.at
+    name: dev docker-training.at
     url: https://docker-training.at
   dependencies: []
 
@@ -2114,15 +2218,18 @@ docker-training.nl build docker:
       - packages/docker-training.nl/**/*
       - yarn.lock
 
-docker-training.nl prod deploy:
+docker-training.nl prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/docker-training.nl&domain=docker-training.nl&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install docker-training-nl ondrejsika/one-image --set host=docker-training.nl --set image=$CI_REGISTRY_IMAGE/docker-training.nl
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2130,7 +2237,7 @@ docker-training.nl prod deploy:
       - packages/docker-training.nl/**/*
       - yarn.lock
   environment:
-    name: prod docker-training.nl
+    name: dev docker-training.nl
     url: https://docker-training.nl
   dependencies: []
 
@@ -2177,15 +2284,18 @@ git-training.nl build docker:
       - packages/git-training.nl/**/*
       - yarn.lock
 
-git-training.nl prod deploy:
+git-training.nl prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/git-training.nl&domain=git-training.nl&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install git-training-nl ondrejsika/one-image --set host=git-training.nl --set image=$CI_REGISTRY_IMAGE/git-training.nl
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2193,7 +2303,7 @@ git-training.nl prod deploy:
       - packages/git-training.nl/**/*
       - yarn.lock
   environment:
-    name: prod git-training.nl
+    name: dev git-training.nl
     url: https://git-training.nl
   dependencies: []
 
@@ -2429,15 +2539,18 @@ salzburgdevops.com build docker:
       - packages/salzburgdevops.com/**/*
       - yarn.lock
 
-salzburgdevops.com prod deploy:
+salzburgdevops.com prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/salzburgdevops.com&domain=salzburgdevops.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install salzburgdevops-com ondrejsika/one-image --set host=salzburgdevops.com --set image=$CI_REGISTRY_IMAGE/salzburgdevops.com
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2445,7 +2558,7 @@ salzburgdevops.com prod deploy:
       - packages/salzburgdevops.com/**/*
       - yarn.lock
   environment:
-    name: prod salzburgdevops.com
+    name: dev salzburgdevops.com
     url: https://salzburgdevops.com
   dependencies: []
 
@@ -2618,15 +2731,18 @@ skoleni-terraform.cz build docker:
       - packages/skoleni-terraform.cz/**/*
       - yarn.lock
 
-skoleni-terraform.cz prod deploy:
+skoleni-terraform.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz&domain=skoleni-terraform.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skoleni-terraform-cz ondrejsika/one-image --set host=skoleni-terraform.cz --set image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2634,7 +2750,7 @@ skoleni-terraform.cz prod deploy:
       - packages/skoleni-terraform.cz/**/*
       - yarn.lock
   environment:
-    name: prod skoleni-terraform.cz
+    name: dev skoleni-terraform.cz
     url: https://skoleni-terraform.cz
   dependencies: []
 
@@ -2744,15 +2860,18 @@ ondrej-sika.com build docker:
       - packages/ondrej-sika.com/**/*
       - yarn.lock
 
-ondrej-sika.com prod deploy:
+ondrej-sika.com prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.com&domain=ondrej-sika.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install ondrej-sika-com ondrejsika/one-image --set host=ondrej-sika.com --set image=$CI_REGISTRY_IMAGE/ondrej-sika.com
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2760,7 +2879,7 @@ ondrej-sika.com prod deploy:
       - packages/ondrej-sika.com/**/*
       - yarn.lock
   environment:
-    name: prod ondrej-sika.com
+    name: dev ondrej-sika.com
     url: https://ondrej-sika.com
   dependencies: []
 
@@ -2870,6 +2989,29 @@ ondrejsika.io build docker:
       - packages/ondrejsika.io/**/*
       - yarn.lock
 
+ondrejsika.io dev deploy k8s:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
+  script:
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install ondrejsika-io-dev ondrejsika/one-image --set host=ondrejsika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/ondrejsika.io
+  except:
+    - master
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrejsika.io/**/*
+      - yarn.lock
+  environment:
+    name: dev ondrejsika.io
+    url: https://ondrejsika.io.panda.k8s.oxs.cz
+  dependencies: []
+
 cal-api.sika.io build js:
   stage: build_js
   image: node
@@ -2976,15 +3118,18 @@ skoleni-proxmox.cz build docker:
       - packages/skoleni-proxmox.cz/**/*
       - yarn.lock
 
-skoleni-proxmox.cz prod deploy:
+skoleni-proxmox.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-proxmox.cz&domain=skoleni-proxmox.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skoleni-proxmox-cz ondrejsika/one-image --set host=skoleni-proxmox.cz --set image=$CI_REGISTRY_IMAGE/skoleni-proxmox.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2992,7 +3137,7 @@ skoleni-proxmox.cz prod deploy:
       - packages/skoleni-proxmox.cz/**/*
       - yarn.lock
   environment:
-    name: prod skoleni-proxmox.cz
+    name: dev skoleni-proxmox.cz
     url: https://skoleni-proxmox.cz
   dependencies: []
 
@@ -3102,15 +3247,18 @@ skoleni-prometheus.cz build docker:
       - packages/skoleni-prometheus.cz/**/*
       - yarn.lock
 
-skoleni-prometheus.cz prod deploy:
+skoleni-prometheus.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-prometheus.cz&domain=skoleni-prometheus.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skoleni-prometheus-cz ondrejsika/one-image --set host=skoleni-prometheus.cz --set image=$CI_REGISTRY_IMAGE/skoleni-prometheus.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3118,7 +3266,7 @@ skoleni-prometheus.cz prod deploy:
       - packages/skoleni-prometheus.cz/**/*
       - yarn.lock
   environment:
-    name: prod skoleni-prometheus.cz
+    name: dev skoleni-prometheus.cz
     url: https://skoleni-prometheus.cz
   dependencies: []
 
@@ -3314,15 +3462,18 @@ skoleni-rancher.cz build docker:
       - packages/skoleni-rancher.cz/**/*
       - yarn.lock
 
-skoleni-rancher.cz prod deploy:
+skoleni-rancher.cz prod deploy k8s:
   stage: deploy_prod
   variables:
     GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
   script:
-    - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skoleni-rancher.cz&domain=skoleni-rancher.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install skoleni-rancher-cz ondrejsika/one-image --set host=skoleni-rancher.cz --set image=$CI_REGISTRY_IMAGE/skoleni-rancher.cz
+  except:
+    - master
   only:
-    refs:
-      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3330,7 +3481,7 @@ skoleni-rancher.cz prod deploy:
       - packages/skoleni-rancher.cz/**/*
       - yarn.lock
   environment:
-    name: prod skoleni-rancher.cz
+    name: dev skoleni-rancher.cz
     url: https://skoleni-rancher.cz
   dependencies: []
 
