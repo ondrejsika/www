@@ -72,6 +72,18 @@
   length: 1 den
   date_from: 17.1.2020
   date_to: 17.1.2020
+- id: git-praha-30-01-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: git
+  name: Školení Git
+  city: Praha
+  price: 6800 CZK
+  venue_id: paralelni-polis
+  length: 1 den
+  date_from: 30.1.2020
+  date_to: 30.1.2020
 - id: prometheus-praha-31-01-2020
   active: true
   country: cz
