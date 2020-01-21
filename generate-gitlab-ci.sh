@@ -213,7 +213,7 @@ $SITE prod deploy k8s:
       - packages/$SITE/**/*
       - yarn.lock
   environment:
-    name: dev $SITE
+    name: prod $SITE
     url: https://$SITE
   dependencies: []
 
