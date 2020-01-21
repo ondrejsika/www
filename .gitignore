@@ -8,4 +8,4 @@ report.*.json
 .idea
 ci/docker/out
 deploy-now.env.sh
-
+.kubeconfig

@@ -1,8 +1,11 @@
 #!/bin/sh
 
 DEV_SITES="skolenie-ansible.sk ondrej-sika.uk sika-kaplan.com trainera.io"
-PROD_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.cz ondrejsikalabs.com ondrej-sika.de skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk sika-kaplan.com salzburgdevops.com training.kubernetes.is training.kubernetes.lu sika-kraml.de skoleni-terraform.cz sika-training.com ondrej-sika.com sikahq.com cal-api.sika.io ydo.cz skoleni-proxmox.cz skoleni-prometheus.cz ccc.oxs.cz docker-training.de docker-training.ch docker-training.nl docker-training.at git-training.nl skoleni-rancher.cz sika.blog static.sika.io"
+DEV_K8S_SITES=""
+PROD_SITES="git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz ondrej-sika.cz ondrejsikalabs.com ondrej-sika.de skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk sika-kaplan.com salzburgdevops.com training.kubernetes.is training.kubernetes.lu sika-kraml.de skoleni-terraform.cz sika-training.com ondrej-sika.com sikahq.com cal-api.sika.io ydo.cz skoleni-proxmox.cz skoleni-prometheus.cz ccc.oxs.cz docker-training.de docker-training.ch docker-training.nl docker-training.at git-training.nl skoleni-rancher.cz sika.blog static.sika.io"
+PROD_K8S_SITES="ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se"
 DEV_SUFFIX=".xsika.cz"
+DEV_K8S_SUFFIX=".panda.k8s.oxs.cz"
 
 
 cat << EOF > .gitlab-ci.yml
@@ -100,6 +103,36 @@ $SITE dev deploy:
 EOF
 fi;
 
+if printf '%s\n' ${DEV_K8S_SITES[@]} | grep "$SITE" > /dev/null; then
+SUFFIX=$DEV_K8S_SUFFIX
+NAME=$(echo $SITE | sed "s/\./-/g")
+cat << EOF >> .gitlab-ci.yml
+$SITE dev deploy k8s:
+  stage: deploy_dev
+  variables:
+    GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
+  script:
+    - echo \$KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install $NAME-dev ondrejsika/one-image --set host=$SITE$SUFFIX --set image=\$CI_REGISTRY_IMAGE/$SITE
+  except:
+    - master
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/$SITE/**/*
+      - yarn.lock
+  environment:
+    name: dev $SITE
+    url: https://$SITE$SUFFIX
+  dependencies: []
+
+EOF
+fi;
+
 
 if printf '%s\n' ${PROD_SITES[@]} | grep "$SITE" > /dev/null; then
 SUFFIX=""
@@ -121,6 +154,36 @@ $SITE prod deploy:
       - yarn.lock
   environment:
     name: prod $SITE
+    url: https://$SITE
+  dependencies: []
+
+EOF
+fi;
+
+if printf '%s\n' ${PROD_K8S_SITES[@]} | grep "$SITE" > /dev/null; then
+SUFFIX=$DEV_K8S_SUFFIX
+NAME=$(echo $SITE | sed "s/\./-/g")
+cat << EOF >> .gitlab-ci.yml
+$SITE prod deploy k8s:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
+  script:
+    - echo \$KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install $NAME ondrejsika/one-image --set host=$SITE --set image=\$CI_REGISTRY_IMAGE/$SITE
+  except:
+    - master
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/$SITE/**/*
+      - yarn.lock
+  environment:
+    name: dev $SITE
     url: https://$SITE
   dependencies: []
 
