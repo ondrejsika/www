@@ -1,9 +1,9 @@
 #!/bin/sh
 
-DEV_SITES="skolenie-ansible.sk ondrej-sika.uk sika-kaplan.com trainera.io"
-DEV_K8S_SITES="ondrejsika.io"
-PROD_SITES=" ondrejsikalabs.com sika-kaplan.com training.kubernetes.is training.kubernetes.lu sika-kraml.de  sika-training.com sikahq.com cal-api.sika.io ydo.cz ccc.oxs.cz sika.blog static.sika.io"
-PROD_K8S_SITES="ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.com ondrej-sika.cz ondrej-sika.de git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk salzburgdevops.com skoleni-terraform.cz skoleni-proxmox.cz skoleni-prometheus.cz docker-training.de docker-training.ch docker-training.nl docker-training.at git-training.nl skoleni-rancher.cz"
+DEV_SITES=""
+DEV_K8S_SITES="ondrejsika.io skolenie-ansible.sk ondrej-sika.uk sika-kaplan.com trainera.io"
+PROD_SITES=""
+PROD_K8S_SITES="ansible-utbildning.se docker-utbildning.se git-utbildning.se gitlab-utbildning.se kubernetes-utbildning.se ondrej-sika.com ondrej-sika.cz ondrej-sika.de git-training.uk docker-training.uk kubernetes-training.uk ansible-training.uk gitlab-training.uk ansible-schulung.de ansible-skoleni.cz dockerschulung.de gitlab-ci.cz kubernetes-schulung.de skoleni-docker.cz skoleni-git.cz skoleni-kubernetes.cz skolenie-git.sk skolenie-gitlab.sk skolenie-docker.sk skolenie.kubernetes.sk salzburgdevops.com skoleni-terraform.cz skoleni-proxmox.cz skoleni-prometheus.cz docker-training.de docker-training.ch docker-training.nl docker-training.at git-training.nl skoleni-rancher.cz ondrejsikalabs.com sika-kaplan.com training.kubernetes.is training.kubernetes.lu sika-kraml.de sika-training.com cal-api.sika.io ydo.cz ccc.oxs.cz sika.blog static.sika.io sikahq.com"
 DEV_SUFFIX=".xsika.cz"
 DEV_K8S_SUFFIX=".panda.k8s.oxs.cz"
 
