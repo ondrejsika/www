@@ -21,6 +21,10 @@ ansible-schulung.de build js:
     - yarn
     - rm -rf packages/ansible-schulung.de/out
     - yarn run static-ansible-schulung.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -47,6 +51,10 @@ ansible-schulung.de build docker:
     - rm packages/ansible-schulung.de/Dockerfile
     - rm packages/ansible-schulung.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ansible-schulung.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -65,7 +73,11 @@ ansible-schulung.de prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ansible-schulung-de ondrejsika/one-image --set host=ansible-schulung.de --set image=$CI_REGISTRY_IMAGE/ansible-schulung.de
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -87,6 +99,10 @@ ansible-skoleni.cz build js:
     - yarn
     - rm -rf packages/ansible-skoleni.cz/out
     - yarn run static-ansible-skoleni.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -113,6 +129,10 @@ ansible-skoleni.cz build docker:
     - rm packages/ansible-skoleni.cz/Dockerfile
     - rm packages/ansible-skoleni.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ansible-skoleni.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -131,7 +151,11 @@ ansible-skoleni.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ansible-skoleni-cz ondrejsika/one-image --set host=ansible-skoleni.cz --set image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -153,6 +177,10 @@ archetype-web build js:
     - yarn
     - rm -rf packages/archetype-web/out
     - yarn run static-archetype-web
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -179,6 +207,10 @@ archetype-web build docker:
     - rm packages/archetype-web/Dockerfile
     - rm packages/archetype-web/nginx-site.conf
     - docker push registry.sikahq.com/www/www/archetype-web
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -196,6 +228,10 @@ dockerschulung.de build js:
     - yarn
     - rm -rf packages/dockerschulung.de/out
     - yarn run static-dockerschulung.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -222,6 +258,10 @@ dockerschulung.de build docker:
     - rm packages/dockerschulung.de/Dockerfile
     - rm packages/dockerschulung.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/dockerschulung.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -240,7 +280,11 @@ dockerschulung.de prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install dockerschulung-de ondrejsika/one-image --set host=dockerschulung.de --set image=$CI_REGISTRY_IMAGE/dockerschulung.de
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -262,6 +306,10 @@ gitlab-ci.cz build js:
     - yarn
     - rm -rf packages/gitlab-ci.cz/out
     - yarn run static-gitlab-ci.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -288,6 +336,10 @@ gitlab-ci.cz build docker:
     - rm packages/gitlab-ci.cz/Dockerfile
     - rm packages/gitlab-ci.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/gitlab-ci.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -306,7 +358,11 @@ gitlab-ci.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install gitlab-ci-cz ondrejsika/one-image --set host=gitlab-ci.cz --set image=$CI_REGISTRY_IMAGE/gitlab-ci.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -328,6 +384,10 @@ kubernetes-schulung.de build js:
     - yarn
     - rm -rf packages/kubernetes-schulung.de/out
     - yarn run static-kubernetes-schulung.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -354,6 +414,10 @@ kubernetes-schulung.de build docker:
     - rm packages/kubernetes-schulung.de/Dockerfile
     - rm packages/kubernetes-schulung.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/kubernetes-schulung.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -372,7 +436,11 @@ kubernetes-schulung.de prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install kubernetes-schulung-de ondrejsika/one-image --set host=kubernetes-schulung.de --set image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -394,6 +462,10 @@ ondrej-sika.cz build js:
     - yarn
     - rm -rf packages/ondrej-sika.cz/out
     - yarn run static-ondrej-sika.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -420,6 +492,10 @@ ondrej-sika.cz build docker:
     - rm packages/ondrej-sika.cz/Dockerfile
     - rm packages/ondrej-sika.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrej-sika.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -438,7 +514,11 @@ ondrej-sika.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrej-sika-cz ondrejsika/one-image --set host=ondrej-sika.cz --set image=$CI_REGISTRY_IMAGE/ondrej-sika.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -460,6 +540,10 @@ sika-kraml.de build js:
     - yarn
     - rm -rf packages/sika-kraml.de/out
     - yarn run static-sika-kraml.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -486,6 +570,10 @@ sika-kraml.de build docker:
     - rm packages/sika-kraml.de/Dockerfile
     - rm packages/sika-kraml.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika-kraml.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -500,6 +588,12 @@ sika-kraml.de prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika-kraml.de&domain=sika-kraml.de&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -523,6 +617,10 @@ skoleni-docker.cz build js:
     - yarn
     - rm -rf packages/skoleni-docker.cz/out
     - yarn run static-skoleni-docker.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -549,6 +647,10 @@ skoleni-docker.cz build docker:
     - rm packages/skoleni-docker.cz/Dockerfile
     - rm packages/skoleni-docker.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-docker.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -567,7 +669,11 @@ skoleni-docker.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-docker-cz ondrejsika/one-image --set host=skoleni-docker.cz --set image=$CI_REGISTRY_IMAGE/skoleni-docker.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -589,6 +695,10 @@ skoleni-git.cz build js:
     - yarn
     - rm -rf packages/skoleni-git.cz/out
     - yarn run static-skoleni-git.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -615,6 +725,10 @@ skoleni-git.cz build docker:
     - rm packages/skoleni-git.cz/Dockerfile
     - rm packages/skoleni-git.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-git.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -633,7 +747,11 @@ skoleni-git.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-git-cz ondrejsika/one-image --set host=skoleni-git.cz --set image=$CI_REGISTRY_IMAGE/skoleni-git.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -655,6 +773,10 @@ skoleni-kubernetes.cz build js:
     - yarn
     - rm -rf packages/skoleni-kubernetes.cz/out
     - yarn run static-skoleni-kubernetes.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -681,6 +803,10 @@ skoleni-kubernetes.cz build docker:
     - rm packages/skoleni-kubernetes.cz/Dockerfile
     - rm packages/skoleni-kubernetes.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-kubernetes.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -699,7 +825,11 @@ skoleni-kubernetes.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-kubernetes-cz ondrejsika/one-image --set host=skoleni-kubernetes.cz --set image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -721,6 +851,10 @@ git-training.uk build js:
     - yarn
     - rm -rf packages/git-training.uk/out
     - yarn run static-git-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -747,6 +881,10 @@ git-training.uk build docker:
     - rm packages/git-training.uk/Dockerfile
     - rm packages/git-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/git-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -765,7 +903,11 @@ git-training.uk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install git-training-uk ondrejsika/one-image --set host=git-training.uk --set image=$CI_REGISTRY_IMAGE/git-training.uk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -787,6 +929,10 @@ docker-training.uk build js:
     - yarn
     - rm -rf packages/docker-training.uk/out
     - yarn run static-docker-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -813,6 +959,10 @@ docker-training.uk build docker:
     - rm packages/docker-training.uk/Dockerfile
     - rm packages/docker-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -831,7 +981,11 @@ docker-training.uk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-uk ondrejsika/one-image --set host=docker-training.uk --set image=$CI_REGISTRY_IMAGE/docker-training.uk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -853,6 +1007,10 @@ kubernetes-training.uk build js:
     - yarn
     - rm -rf packages/kubernetes-training.uk/out
     - yarn run static-kubernetes-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -879,6 +1037,10 @@ kubernetes-training.uk build docker:
     - rm packages/kubernetes-training.uk/Dockerfile
     - rm packages/kubernetes-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/kubernetes-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -897,7 +1059,11 @@ kubernetes-training.uk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install kubernetes-training-uk ondrejsika/one-image --set host=kubernetes-training.uk --set image=$CI_REGISTRY_IMAGE/kubernetes-training.uk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -919,6 +1085,10 @@ ansible-training.uk build js:
     - yarn
     - rm -rf packages/ansible-training.uk/out
     - yarn run static-ansible-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -945,6 +1115,10 @@ ansible-training.uk build docker:
     - rm packages/ansible-training.uk/Dockerfile
     - rm packages/ansible-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ansible-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -963,7 +1137,11 @@ ansible-training.uk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ansible-training-uk ondrejsika/one-image --set host=ansible-training.uk --set image=$CI_REGISTRY_IMAGE/ansible-training.uk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -985,6 +1163,10 @@ gitlab-training.uk build js:
     - yarn
     - rm -rf packages/gitlab-training.uk/out
     - yarn run static-gitlab-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1011,6 +1193,10 @@ gitlab-training.uk build docker:
     - rm packages/gitlab-training.uk/Dockerfile
     - rm packages/gitlab-training.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/gitlab-training.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1029,7 +1215,11 @@ gitlab-training.uk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install gitlab-training-uk ondrejsika/one-image --set host=gitlab-training.uk --set image=$CI_REGISTRY_IMAGE/gitlab-training.uk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1051,6 +1241,10 @@ skolenie-git.sk build js:
     - yarn
     - rm -rf packages/skolenie-git.sk/out
     - yarn run static-skolenie-git.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1077,6 +1271,10 @@ skolenie-git.sk build docker:
     - rm packages/skolenie-git.sk/Dockerfile
     - rm packages/skolenie-git.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie-git.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1095,7 +1293,11 @@ skolenie-git.sk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-git-sk ondrejsika/one-image --set host=skolenie-git.sk --set image=$CI_REGISTRY_IMAGE/skolenie-git.sk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1117,6 +1319,10 @@ skolenie-gitlab.sk build js:
     - yarn
     - rm -rf packages/skolenie-gitlab.sk/out
     - yarn run static-skolenie-gitlab.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1143,6 +1349,10 @@ skolenie-gitlab.sk build docker:
     - rm packages/skolenie-gitlab.sk/Dockerfile
     - rm packages/skolenie-gitlab.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie-gitlab.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1161,7 +1371,11 @@ skolenie-gitlab.sk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-gitlab-sk ondrejsika/one-image --set host=skolenie-gitlab.sk --set image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1183,6 +1397,10 @@ skolenie-docker.sk build js:
     - yarn
     - rm -rf packages/skolenie-docker.sk/out
     - yarn run static-skolenie-docker.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1209,6 +1427,10 @@ skolenie-docker.sk build docker:
     - rm packages/skolenie-docker.sk/Dockerfile
     - rm packages/skolenie-docker.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie-docker.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1227,7 +1449,11 @@ skolenie-docker.sk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-docker-sk ondrejsika/one-image --set host=skolenie-docker.sk --set image=$CI_REGISTRY_IMAGE/skolenie-docker.sk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1249,6 +1475,10 @@ skolenie.kubernetes.sk build js:
     - yarn
     - rm -rf packages/skolenie.kubernetes.sk/out
     - yarn run static-skolenie.kubernetes.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1275,6 +1505,10 @@ skolenie.kubernetes.sk build docker:
     - rm packages/skolenie.kubernetes.sk/Dockerfile
     - rm packages/skolenie.kubernetes.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie.kubernetes.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1293,7 +1527,11 @@ skolenie.kubernetes.sk prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-kubernetes-sk ondrejsika/one-image --set host=skolenie.kubernetes.sk --set image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1315,6 +1553,10 @@ skolenie-ansible.sk build js:
     - yarn
     - rm -rf packages/skolenie-ansible.sk/out
     - yarn run static-skolenie-ansible.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1341,6 +1583,10 @@ skolenie-ansible.sk build docker:
     - rm packages/skolenie-ansible.sk/Dockerfile
     - rm packages/skolenie-ansible.sk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skolenie-ansible.sk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1357,6 +1603,12 @@ skolenie-ansible.sk dev deploy:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/skolenie-ansible.sk&domain=skolenie-ansible.sk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   except:
     - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_SOD
   only:
     changes:
       - packages/data/**/*
@@ -1378,6 +1630,10 @@ ansible-utbildning.se build js:
     - yarn
     - rm -rf packages/ansible-utbildning.se/out
     - yarn run static-ansible-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1404,6 +1660,10 @@ ansible-utbildning.se build docker:
     - rm packages/ansible-utbildning.se/Dockerfile
     - rm packages/ansible-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ansible-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1422,7 +1682,11 @@ ansible-utbildning.se prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ansible-utbildning-se ondrejsika/one-image --set host=ansible-utbildning.se --set image=$CI_REGISTRY_IMAGE/ansible-utbildning.se
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1444,6 +1708,10 @@ docker-utbildning.se build js:
     - yarn
     - rm -rf packages/docker-utbildning.se/out
     - yarn run static-docker-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1470,6 +1738,10 @@ docker-utbildning.se build docker:
     - rm packages/docker-utbildning.se/Dockerfile
     - rm packages/docker-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1488,7 +1760,11 @@ docker-utbildning.se prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-utbildning-se ondrejsika/one-image --set host=docker-utbildning.se --set image=$CI_REGISTRY_IMAGE/docker-utbildning.se
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1510,6 +1786,10 @@ git-utbildning.se build js:
     - yarn
     - rm -rf packages/git-utbildning.se/out
     - yarn run static-git-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1536,6 +1816,10 @@ git-utbildning.se build docker:
     - rm packages/git-utbildning.se/Dockerfile
     - rm packages/git-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/git-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1554,7 +1838,11 @@ git-utbildning.se prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install git-utbildning-se ondrejsika/one-image --set host=git-utbildning.se --set image=$CI_REGISTRY_IMAGE/git-utbildning.se
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1576,6 +1864,10 @@ gitlab-utbildning.se build js:
     - yarn
     - rm -rf packages/gitlab-utbildning.se/out
     - yarn run static-gitlab-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1602,6 +1894,10 @@ gitlab-utbildning.se build docker:
     - rm packages/gitlab-utbildning.se/Dockerfile
     - rm packages/gitlab-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/gitlab-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1620,7 +1916,11 @@ gitlab-utbildning.se prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install gitlab-utbildning-se ondrejsika/one-image --set host=gitlab-utbildning.se --set image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1642,6 +1942,10 @@ kubernetes-utbildning.se build js:
     - yarn
     - rm -rf packages/kubernetes-utbildning.se/out
     - yarn run static-kubernetes-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1668,6 +1972,10 @@ kubernetes-utbildning.se build docker:
     - rm packages/kubernetes-utbildning.se/Dockerfile
     - rm packages/kubernetes-utbildning.se/nginx-site.conf
     - docker push registry.sikahq.com/www/www/kubernetes-utbildning.se
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1686,7 +1994,11 @@ kubernetes-utbildning.se prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install kubernetes-utbildning-se ondrejsika/one-image --set host=kubernetes-utbildning.se --set image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1708,6 +2020,10 @@ ondrej-sika.uk build js:
     - yarn
     - rm -rf packages/ondrej-sika.uk/out
     - yarn run static-ondrej-sika.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1734,6 +2050,10 @@ ondrej-sika.uk build docker:
     - rm packages/ondrej-sika.uk/Dockerfile
     - rm packages/ondrej-sika.uk/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrej-sika.uk
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1750,6 +2070,12 @@ ondrej-sika.uk dev deploy:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrej-sika.uk&domain=ondrej-sika.uk.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   except:
     - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_SOD
   only:
     changes:
       - packages/data/**/*
@@ -1771,6 +2097,10 @@ ondrej-sika.de build js:
     - yarn
     - rm -rf packages/ondrej-sika.de/out
     - yarn run static-ondrej-sika.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1797,6 +2127,10 @@ ondrej-sika.de build docker:
     - rm packages/ondrej-sika.de/Dockerfile
     - rm packages/ondrej-sika.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrej-sika.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1815,7 +2149,11 @@ ondrej-sika.de prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrej-sika-de ondrejsika/one-image --set host=ondrej-sika.de --set image=$CI_REGISTRY_IMAGE/ondrej-sika.de
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1837,6 +2175,10 @@ ondrejsikalabs.com build js:
     - yarn
     - rm -rf packages/ondrejsikalabs.com/out
     - yarn run static-ondrejsikalabs.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1863,6 +2205,10 @@ ondrejsikalabs.com build docker:
     - rm packages/ondrejsikalabs.com/Dockerfile
     - rm packages/ondrejsikalabs.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrejsikalabs.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1877,6 +2223,12 @@ ondrejsikalabs.com prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com&domain=ondrejsikalabs.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -1900,6 +2252,10 @@ sika.io build js:
     - yarn
     - rm -rf packages/sika.io/out
     - yarn run static-sika.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -1926,6 +2282,10 @@ sika.io build docker:
     - rm packages/sika.io/Dockerfile
     - rm packages/sika.io/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -1945,6 +2305,12 @@ sika.io dev deploy k8s:
     - helm upgrade --install sika-io-dev ondrejsika/one-image --set host=sika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika.io
   except:
     - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
   only:
     changes:
       - packages/data/**/*
@@ -1963,6 +2329,12 @@ sika.io prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika.io&domain=sika.io&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -1986,6 +2358,10 @@ docker-training.de build js:
     - yarn
     - rm -rf packages/docker-training.de/out
     - yarn run static-docker-training.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2012,6 +2388,10 @@ docker-training.de build docker:
     - rm packages/docker-training.de/Dockerfile
     - rm packages/docker-training.de/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.de
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2030,7 +2410,11 @@ docker-training.de prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-de ondrejsika/one-image --set host=docker-training.de --set image=$CI_REGISTRY_IMAGE/docker-training.de
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -2052,6 +2436,10 @@ docker-training.ch build js:
     - yarn
     - rm -rf packages/docker-training.ch/out
     - yarn run static-docker-training.ch
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2078,6 +2466,10 @@ docker-training.ch build docker:
     - rm packages/docker-training.ch/Dockerfile
     - rm packages/docker-training.ch/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.ch
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2096,7 +2488,11 @@ docker-training.ch prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-ch ondrejsika/one-image --set host=docker-training.ch --set image=$CI_REGISTRY_IMAGE/docker-training.ch
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -2118,6 +2514,10 @@ docker-training.at build js:
     - yarn
     - rm -rf packages/docker-training.at/out
     - yarn run static-docker-training.at
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2144,6 +2544,10 @@ docker-training.at build docker:
     - rm packages/docker-training.at/Dockerfile
     - rm packages/docker-training.at/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.at
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2162,7 +2566,11 @@ docker-training.at prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-at ondrejsika/one-image --set host=docker-training.at --set image=$CI_REGISTRY_IMAGE/docker-training.at
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -2184,6 +2592,10 @@ docker-training.nl build js:
     - yarn
     - rm -rf packages/docker-training.nl/out
     - yarn run static-docker-training.nl
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2210,6 +2622,10 @@ docker-training.nl build docker:
     - rm packages/docker-training.nl/Dockerfile
     - rm packages/docker-training.nl/nginx-site.conf
     - docker push registry.sikahq.com/www/www/docker-training.nl
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2228,7 +2644,11 @@ docker-training.nl prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-nl ondrejsika/one-image --set host=docker-training.nl --set image=$CI_REGISTRY_IMAGE/docker-training.nl
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -2250,6 +2670,10 @@ git-training.nl build js:
     - yarn
     - rm -rf packages/git-training.nl/out
     - yarn run static-git-training.nl
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2276,6 +2700,10 @@ git-training.nl build docker:
     - rm packages/git-training.nl/Dockerfile
     - rm packages/git-training.nl/nginx-site.conf
     - docker push registry.sikahq.com/www/www/git-training.nl
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2294,7 +2722,11 @@ git-training.nl prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install git-training-nl ondrejsika/one-image --set host=git-training.nl --set image=$CI_REGISTRY_IMAGE/git-training.nl
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -2316,6 +2748,10 @@ sika-kaplan.com build js:
     - yarn
     - rm -rf packages/sika-kaplan.com/out
     - yarn run static-sika-kaplan.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2342,6 +2778,10 @@ sika-kaplan.com build docker:
     - rm packages/sika-kaplan.com/Dockerfile
     - rm packages/sika-kaplan.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika-kaplan.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2358,6 +2798,12 @@ sika-kaplan.com dev deploy:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika-kaplan.com&domain=sika-kaplan.com.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   except:
     - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_SOD
   only:
     changes:
       - packages/data/**/*
@@ -2376,6 +2822,12 @@ sika-kaplan.com prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika-kaplan.com&domain=sika-kaplan.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -2399,6 +2851,10 @@ bootstrap-web build js:
     - yarn
     - rm -rf packages/bootstrap-web/out
     - yarn run static-bootstrap-web
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2425,6 +2881,10 @@ bootstrap-web build docker:
     - rm packages/bootstrap-web/Dockerfile
     - rm packages/bootstrap-web/nginx-site.conf
     - docker push registry.sikahq.com/www/www/bootstrap-web
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2442,6 +2902,10 @@ trainera.io build js:
     - yarn
     - rm -rf packages/trainera.io/out
     - yarn run static-trainera.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2468,6 +2932,10 @@ trainera.io build docker:
     - rm packages/trainera.io/Dockerfile
     - rm packages/trainera.io/nginx-site.conf
     - docker push registry.sikahq.com/www/www/trainera.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2484,6 +2952,12 @@ trainera.io dev deploy:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/trainera.io&domain=trainera.io.xsika.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
   except:
     - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_SOD
   only:
     changes:
       - packages/data/**/*
@@ -2505,6 +2979,10 @@ salzburgdevops.com build js:
     - yarn
     - rm -rf packages/salzburgdevops.com/out
     - yarn run static-salzburgdevops.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2531,6 +3009,10 @@ salzburgdevops.com build docker:
     - rm packages/salzburgdevops.com/Dockerfile
     - rm packages/salzburgdevops.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/salzburgdevops.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2549,7 +3031,11 @@ salzburgdevops.com prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install salzburgdevops-com ondrejsika/one-image --set host=salzburgdevops.com --set image=$CI_REGISTRY_IMAGE/salzburgdevops.com
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -2571,6 +3057,10 @@ training.kubernetes.is build js:
     - yarn
     - rm -rf packages/training.kubernetes.is/out
     - yarn run static-training.kubernetes.is
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2597,6 +3087,10 @@ training.kubernetes.is build docker:
     - rm packages/training.kubernetes.is/Dockerfile
     - rm packages/training.kubernetes.is/nginx-site.conf
     - docker push registry.sikahq.com/www/www/training.kubernetes.is
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2611,6 +3105,12 @@ training.kubernetes.is prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/training.kubernetes.is&domain=training.kubernetes.is&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -2634,6 +3134,10 @@ training.kubernetes.lu build js:
     - yarn
     - rm -rf packages/training.kubernetes.lu/out
     - yarn run static-training.kubernetes.lu
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2660,6 +3164,10 @@ training.kubernetes.lu build docker:
     - rm packages/training.kubernetes.lu/Dockerfile
     - rm packages/training.kubernetes.lu/nginx-site.conf
     - docker push registry.sikahq.com/www/www/training.kubernetes.lu
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2674,6 +3182,12 @@ training.kubernetes.lu prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/training.kubernetes.lu&domain=training.kubernetes.lu&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -2697,6 +3211,10 @@ skoleni-terraform.cz build js:
     - yarn
     - rm -rf packages/skoleni-terraform.cz/out
     - yarn run static-skoleni-terraform.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2723,6 +3241,10 @@ skoleni-terraform.cz build docker:
     - rm packages/skoleni-terraform.cz/Dockerfile
     - rm packages/skoleni-terraform.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-terraform.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2741,7 +3263,11 @@ skoleni-terraform.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-terraform-cz ondrejsika/one-image --set host=skoleni-terraform.cz --set image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -2763,6 +3289,10 @@ sika-training.com build js:
     - yarn
     - rm -rf packages/sika-training.com/out
     - yarn run static-sika-training.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2789,6 +3319,10 @@ sika-training.com build docker:
     - rm packages/sika-training.com/Dockerfile
     - rm packages/sika-training.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika-training.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2803,6 +3337,12 @@ sika-training.com prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika-training.com&domain=sika-training.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -2826,6 +3366,10 @@ ondrej-sika.com build js:
     - yarn
     - rm -rf packages/ondrej-sika.com/out
     - yarn run static-ondrej-sika.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2852,6 +3396,10 @@ ondrej-sika.com build docker:
     - rm packages/ondrej-sika.com/Dockerfile
     - rm packages/ondrej-sika.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrej-sika.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2870,7 +3418,11 @@ ondrej-sika.com prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrej-sika-com ondrejsika/one-image --set host=ondrej-sika.com --set image=$CI_REGISTRY_IMAGE/ondrej-sika.com
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -2892,6 +3444,10 @@ sikahq.com build js:
     - yarn
     - rm -rf packages/sikahq.com/out
     - yarn run static-sikahq.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2918,6 +3474,10 @@ sikahq.com build docker:
     - rm packages/sikahq.com/Dockerfile
     - rm packages/sikahq.com/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sikahq.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -2932,6 +3492,12 @@ sikahq.com prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sikahq.com&domain=sikahq.com&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -2955,6 +3521,10 @@ ondrejsika.io build js:
     - yarn
     - rm -rf packages/ondrejsika.io/out
     - yarn run static-ondrejsika.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -2981,6 +3551,10 @@ ondrejsika.io build docker:
     - rm packages/ondrejsika.io/Dockerfile
     - rm packages/ondrejsika.io/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ondrejsika.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3000,6 +3574,12 @@ ondrejsika.io dev deploy k8s:
     - helm upgrade --install ondrejsika-io-dev ondrejsika/one-image --set host=ondrejsika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/ondrejsika.io
   except:
     - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
   only:
     changes:
       - packages/data/**/*
@@ -3021,6 +3601,10 @@ cal-api.sika.io build js:
     - yarn
     - rm -rf packages/cal-api.sika.io/out
     - yarn run static-cal-api.sika.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3047,6 +3631,10 @@ cal-api.sika.io build docker:
     - rm packages/cal-api.sika.io/Dockerfile
     - rm packages/cal-api.sika.io/nginx-site.conf
     - docker push registry.sikahq.com/www/www/cal-api.sika.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3061,6 +3649,12 @@ cal-api.sika.io prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/cal-api.sika.io&domain=cal-api.sika.io&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -3084,6 +3678,10 @@ skoleni-proxmox.cz build js:
     - yarn
     - rm -rf packages/skoleni-proxmox.cz/out
     - yarn run static-skoleni-proxmox.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3110,6 +3708,10 @@ skoleni-proxmox.cz build docker:
     - rm packages/skoleni-proxmox.cz/Dockerfile
     - rm packages/skoleni-proxmox.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-proxmox.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3128,7 +3730,11 @@ skoleni-proxmox.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-proxmox-cz ondrejsika/one-image --set host=skoleni-proxmox.cz --set image=$CI_REGISTRY_IMAGE/skoleni-proxmox.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -3150,6 +3756,10 @@ ydo.cz build js:
     - yarn
     - rm -rf packages/ydo.cz/out
     - yarn run static-ydo.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3176,6 +3786,10 @@ ydo.cz build docker:
     - rm packages/ydo.cz/Dockerfile
     - rm packages/ydo.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ydo.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3190,6 +3804,12 @@ ydo.cz prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ydo.cz&domain=ydo.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -3213,6 +3833,10 @@ skoleni-prometheus.cz build js:
     - yarn
     - rm -rf packages/skoleni-prometheus.cz/out
     - yarn run static-skoleni-prometheus.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3239,6 +3863,10 @@ skoleni-prometheus.cz build docker:
     - rm packages/skoleni-prometheus.cz/Dockerfile
     - rm packages/skoleni-prometheus.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-prometheus.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3257,7 +3885,11 @@ skoleni-prometheus.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-prometheus-cz ondrejsika/one-image --set host=skoleni-prometheus.cz --set image=$CI_REGISTRY_IMAGE/skoleni-prometheus.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -3279,6 +3911,10 @@ ccc.oxs.cz build js:
     - yarn
     - rm -rf packages/ccc.oxs.cz/out
     - yarn run static-ccc.oxs.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3305,6 +3941,10 @@ ccc.oxs.cz build docker:
     - rm packages/ccc.oxs.cz/Dockerfile
     - rm packages/ccc.oxs.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ccc.oxs.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3319,6 +3959,12 @@ ccc.oxs.cz prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/ccc.oxs.cz&domain=ccc.oxs.cz&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -3342,6 +3988,10 @@ sika.work build js:
     - yarn
     - rm -rf packages/sika.work/out
     - yarn run static-sika.work
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3368,6 +4018,10 @@ sika.work build docker:
     - rm packages/sika.work/Dockerfile
     - rm packages/sika.work/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika.work
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3385,6 +4039,10 @@ ydo.sh build js:
     - yarn
     - rm -rf packages/ydo.sh/out
     - yarn run static-ydo.sh
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3411,6 +4069,10 @@ ydo.sh build docker:
     - rm packages/ydo.sh/Dockerfile
     - rm packages/ydo.sh/nginx-site.conf
     - docker push registry.sikahq.com/www/www/ydo.sh
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3428,6 +4090,10 @@ skoleni-rancher.cz build js:
     - yarn
     - rm -rf packages/skoleni-rancher.cz/out
     - yarn run static-skoleni-rancher.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3454,6 +4120,10 @@ skoleni-rancher.cz build docker:
     - rm packages/skoleni-rancher.cz/Dockerfile
     - rm packages/skoleni-rancher.cz/nginx-site.conf
     - docker push registry.sikahq.com/www/www/skoleni-rancher.cz
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3472,7 +4142,11 @@ skoleni-rancher.cz prod deploy k8s:
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-rancher-cz ondrejsika/one-image --set host=skoleni-rancher.cz --set image=$CI_REGISTRY_IMAGE/skoleni-rancher.cz
   except:
-    - master
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
     changes:
       - packages/data/**/*
@@ -3494,6 +4168,10 @@ sika.blog build js:
     - yarn
     - rm -rf packages/sika.blog/out
     - yarn run static-sika.blog
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3520,6 +4198,10 @@ sika.blog build docker:
     - rm packages/sika.blog/Dockerfile
     - rm packages/sika.blog/nginx-site.conf
     - docker push registry.sikahq.com/www/www/sika.blog
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3534,6 +4216,12 @@ sika.blog prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/sika.blog&domain=sika.blog&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
@@ -3557,6 +4245,10 @@ static.sika.io build js:
     - yarn
     - rm -rf packages/static.sika.io/out
     - yarn run static-static.sika.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
   only:
     changes:
       - packages/data/**/*
@@ -3583,6 +4275,10 @@ static.sika.io build docker:
     - rm packages/static.sika.io/Dockerfile
     - rm packages/static.sika.io/nginx-site.conf
     - docker push registry.sikahq.com/www/www/static.sika.io
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
   only:
     changes:
       - packages/data/**/*
@@ -3597,6 +4293,12 @@ static.sika.io prod deploy:
     GIT_STRATEGY: none
   script:
     - curl -s "$SOD_URL/api/v1/deploy/docker/?image=$CI_REGISTRY_IMAGE/static.sika.io&domain=static.sika.io&token=$SOD_TOKEN&registry=$CI_REGISTRY&registry_user=$CI_REGISTRY_USER&registry_password=$CI_REGISTRY_PASSWORD"
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_SOD
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_SOD
   only:
     refs:
       - master
