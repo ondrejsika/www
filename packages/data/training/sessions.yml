@@ -1694,12 +1694,12 @@
   date_to:
 
 # Czech Republic
-- id: kubernetes-praha-11-02-2020
-  active: false
+- id: docker-praha-11-02-2020
+  active: true
   country: cz
   lang: cs
-  course_id: kubernetes
-  name: Školení Kubernetes
+  course_id: docker
+  name: Školení Docker
   city: Praha
   price: 11999 CZK
   venue_id: anywhere
