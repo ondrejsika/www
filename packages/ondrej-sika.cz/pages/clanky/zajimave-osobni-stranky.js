@@ -15,6 +15,8 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://rousek.name/>
 - <https://jurco.io/>
 - <https://peteramende.de/>
+- <https://huvik.dev/>
+- <https://sulc.dev/>
 
     `}
   />
