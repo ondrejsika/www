@@ -101,7 +101,7 @@ Na školení si formou workshopu vysvetlíme prečo je dobré CI používať, uk
       >
         <Markdown
           source={`
-Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím hlavne Docker a CI, ktorý s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://www.ondrej-sika.cz/).
+Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím hlavne Docker a CI, ktorý s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/).
 Všetky kurzy vediem osobne. S Gitlab CI mám skúsenosti z mnohých projektov a firiem. Takmer všetky projekty na ktorých pracujem využívaju Gitlab CI. Gitlab CI mi veľmi uľahčuje a zrýchľuje prácu pretože sa nemusím starať o rutinné akcie ako nasadzovanie alebo build aplikácie a môžem sa venovať vývoju a činnostiam ktoré mi prinášajú zisk.
         `}
         />

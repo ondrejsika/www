@@ -95,7 +95,7 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
             <Markdown
               source={`
 #### Technické požadavky
-- Nainstalovaný Docker, [návod na instalaci](https://www.ondrej-sika.cz/docker/instalace/)
+- Nainstalovaný Docker, [návod na instalaci](https://ondrej-sika.cz/docker/instalace/)
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
             `}
             />

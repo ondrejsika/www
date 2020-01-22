@@ -90,7 +90,7 @@ Kubernetes je dnes najrozšírenejšou platformou na hostovanie Docker kontajner
             <Markdown
               source={`
 #### Technické požiadavky
-- Nainštalovaný Kubernetes, návod na inštaláciu: [tu](https://www.ondrej-sika.cz/kubernetes/instalace/)
+- Nainštalovaný Kubernetes, návod na inštaláciu: [tu](https://ondrej-sika.cz/kubernetes/instalace/)
 - Přístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
 `}
             />
@@ -105,7 +105,7 @@ Kubernetes je dnes najrozšírenejšou platformou na hostovanie Docker kontajner
         Kubernetes som školil vo firmách ako je CGI alebo Webglobe - Yegon.
         Školím prevažne Docker, ktorý s Kubernetes veľmi úzko súvisí. Ďalšie
         školenia nájdete na mojom webe
-        [ondrej-sika.cz](https://www.ondrej-sika.cz/).
+        [ondrej-sika.cz](https://ondrej-sika.cz/).
         <br />
         <br />
         Všetky kurzy vediem osobne. Kubernetes používam ako platformu pre

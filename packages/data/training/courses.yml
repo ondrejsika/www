@@ -50,7 +50,7 @@
 
       #### Technické požadavky
 
-      - Nainstalovaný Docker, [návod na instalaci](https://www.ondrej-sika.cz/docker/instalace/)
+      - Nainstalovaný Docker, [návod na instalaci](https://ondrej-sika.cz/docker/instalace/)
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
 
     sk: |
@@ -82,7 +82,7 @@
 
       #### Technické požiadavky
 
-      - Nainštalovaný Docker, [návod na inštaláciu](https://www.ondrej-sika.cz/docker/instalace/)
+      - Nainštalovaný Docker, [návod na inštaláciu](https://ondrej-sika.cz/docker/instalace/)
       - Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
 
 - id: kubernetes
@@ -128,7 +128,7 @@
       - Základy práce v terminálu
 
       #### Technické požadavky
-      - Nainstalovaný Kubernetes, návod na instalaci: [zde](https://www.ondrej-sika.cz/kubernetes/instalace/)
+      - Nainstalovaný Kubernetes, návod na instalaci: [zde](https://ondrej-sika.cz/kubernetes/instalace/)
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
 
 - id: rancher

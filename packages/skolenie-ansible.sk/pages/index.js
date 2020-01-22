@@ -88,7 +88,7 @@ Ansible je nástroj na hromadnú správu konfigurácií a nasadzovanie. Vy dekla
             <Markdown
               source={`
 #### Technické požiadavky
-- Nainštalovaný Ansible, [návod na inštaláciu](https://www.ondrej-sika.cz/ansible/instalace/)
+- Nainštalovaný Ansible, [návod na inštaláciu](https://ondrej-sika.cz/ansible/instalace/)
 - Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
             `}
             />
