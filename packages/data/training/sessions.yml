@@ -36,8 +36,8 @@
   date_to: 26.11.2019
 
 # Czechia 2020
-- id: ansible-praha-09-01-2020
-  active: false
+- id: ansible-praha-03-03-2020
+  active: true
   country: cz
   lang: cs
   course_id: ansible
@@ -46,8 +46,8 @@
   price: 6800 CZK
   venue_id: paralelni-polis
   length: 1 den
-  date_from: 9.1.2020
-  date_to: 9.1.2020
+  date_from: 3.3.2020
+  date_to: 3.3.2020
 - id: git-praha-10-01-2020
   active: false
   country: cz
