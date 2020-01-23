@@ -47,10 +47,10 @@ ansible-schulung.de build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ansible-schulung.de/
-    - docker build -t registry.sikahq.com/www/www/ansible-schulung.de packages/ansible-schulung.de
+    - docker build -t registry.sikahq.com/www/www/ansible-schulung.de:$CI_COMMIT_SHORT_SHA packages/ansible-schulung.de
     - rm packages/ansible-schulung.de/Dockerfile
     - rm packages/ansible-schulung.de/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ansible-schulung.de
+    - docker push registry.sikahq.com/www/www/ansible-schulung.de:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -71,7 +71,7 @@ ansible-schulung.de prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ansible-schulung-de ondrejsika/one-image --set host=ansible-schulung.de --set image=$CI_REGISTRY_IMAGE/ansible-schulung.de --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ansible-schulung-de ondrejsika/one-image --set host=ansible-schulung.de --set image=$CI_REGISTRY_IMAGE/ansible-schulung.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -125,10 +125,10 @@ ansible-skoleni.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ansible-skoleni.cz/
-    - docker build -t registry.sikahq.com/www/www/ansible-skoleni.cz packages/ansible-skoleni.cz
+    - docker build -t registry.sikahq.com/www/www/ansible-skoleni.cz:$CI_COMMIT_SHORT_SHA packages/ansible-skoleni.cz
     - rm packages/ansible-skoleni.cz/Dockerfile
     - rm packages/ansible-skoleni.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ansible-skoleni.cz
+    - docker push registry.sikahq.com/www/www/ansible-skoleni.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -149,7 +149,7 @@ ansible-skoleni.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ansible-skoleni-cz ondrejsika/one-image --set host=ansible-skoleni.cz --set image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ansible-skoleni-cz ondrejsika/one-image --set host=ansible-skoleni.cz --set image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -203,10 +203,10 @@ archetype-web build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/archetype-web/
-    - docker build -t registry.sikahq.com/www/www/archetype-web packages/archetype-web
+    - docker build -t registry.sikahq.com/www/www/archetype-web:$CI_COMMIT_SHORT_SHA packages/archetype-web
     - rm packages/archetype-web/Dockerfile
     - rm packages/archetype-web/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/archetype-web
+    - docker push registry.sikahq.com/www/www/archetype-web:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -254,10 +254,10 @@ dockerschulung.de build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/dockerschulung.de/
-    - docker build -t registry.sikahq.com/www/www/dockerschulung.de packages/dockerschulung.de
+    - docker build -t registry.sikahq.com/www/www/dockerschulung.de:$CI_COMMIT_SHORT_SHA packages/dockerschulung.de
     - rm packages/dockerschulung.de/Dockerfile
     - rm packages/dockerschulung.de/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/dockerschulung.de
+    - docker push registry.sikahq.com/www/www/dockerschulung.de:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -278,7 +278,7 @@ dockerschulung.de prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install dockerschulung-de ondrejsika/one-image --set host=dockerschulung.de --set image=$CI_REGISTRY_IMAGE/dockerschulung.de --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install dockerschulung-de ondrejsika/one-image --set host=dockerschulung.de --set image=$CI_REGISTRY_IMAGE/dockerschulung.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -332,10 +332,10 @@ gitlab-ci.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/gitlab-ci.cz/
-    - docker build -t registry.sikahq.com/www/www/gitlab-ci.cz packages/gitlab-ci.cz
+    - docker build -t registry.sikahq.com/www/www/gitlab-ci.cz:$CI_COMMIT_SHORT_SHA packages/gitlab-ci.cz
     - rm packages/gitlab-ci.cz/Dockerfile
     - rm packages/gitlab-ci.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/gitlab-ci.cz
+    - docker push registry.sikahq.com/www/www/gitlab-ci.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -356,7 +356,7 @@ gitlab-ci.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install gitlab-ci-cz ondrejsika/one-image --set host=gitlab-ci.cz --set image=$CI_REGISTRY_IMAGE/gitlab-ci.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install gitlab-ci-cz ondrejsika/one-image --set host=gitlab-ci.cz --set image=$CI_REGISTRY_IMAGE/gitlab-ci.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -410,10 +410,10 @@ kubernetes-schulung.de build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/kubernetes-schulung.de/
-    - docker build -t registry.sikahq.com/www/www/kubernetes-schulung.de packages/kubernetes-schulung.de
+    - docker build -t registry.sikahq.com/www/www/kubernetes-schulung.de:$CI_COMMIT_SHORT_SHA packages/kubernetes-schulung.de
     - rm packages/kubernetes-schulung.de/Dockerfile
     - rm packages/kubernetes-schulung.de/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/kubernetes-schulung.de
+    - docker push registry.sikahq.com/www/www/kubernetes-schulung.de:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -434,7 +434,7 @@ kubernetes-schulung.de prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install kubernetes-schulung-de ondrejsika/one-image --set host=kubernetes-schulung.de --set image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install kubernetes-schulung-de ondrejsika/one-image --set host=kubernetes-schulung.de --set image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -488,10 +488,10 @@ ondrej-sika.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ondrej-sika.cz/
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.cz packages/ondrej-sika.cz
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.cz:$CI_COMMIT_SHORT_SHA packages/ondrej-sika.cz
     - rm packages/ondrej-sika.cz/Dockerfile
     - rm packages/ondrej-sika.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ondrej-sika.cz
+    - docker push registry.sikahq.com/www/www/ondrej-sika.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -512,7 +512,7 @@ ondrej-sika.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ondrej-sika-cz ondrejsika/one-image --set host=ondrej-sika.cz --set image=$CI_REGISTRY_IMAGE/ondrej-sika.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ondrej-sika-cz ondrejsika/one-image --set host=ondrej-sika.cz --set image=$CI_REGISTRY_IMAGE/ondrej-sika.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -566,10 +566,10 @@ sika-kraml.de build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/sika-kraml.de/
-    - docker build -t registry.sikahq.com/www/www/sika-kraml.de packages/sika-kraml.de
+    - docker build -t registry.sikahq.com/www/www/sika-kraml.de:$CI_COMMIT_SHORT_SHA packages/sika-kraml.de
     - rm packages/sika-kraml.de/Dockerfile
     - rm packages/sika-kraml.de/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/sika-kraml.de
+    - docker push registry.sikahq.com/www/www/sika-kraml.de:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -590,7 +590,7 @@ sika-kraml.de prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-kraml-de ondrejsika/one-image --set host=sika-kraml.de --set image=$CI_REGISTRY_IMAGE/sika-kraml.de --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install sika-kraml-de ondrejsika/one-image --set host=sika-kraml.de --set image=$CI_REGISTRY_IMAGE/sika-kraml.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -644,10 +644,10 @@ skoleni-docker.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skoleni-docker.cz/
-    - docker build -t registry.sikahq.com/www/www/skoleni-docker.cz packages/skoleni-docker.cz
+    - docker build -t registry.sikahq.com/www/www/skoleni-docker.cz:$CI_COMMIT_SHORT_SHA packages/skoleni-docker.cz
     - rm packages/skoleni-docker.cz/Dockerfile
     - rm packages/skoleni-docker.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skoleni-docker.cz
+    - docker push registry.sikahq.com/www/www/skoleni-docker.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -668,7 +668,7 @@ skoleni-docker.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skoleni-docker-cz ondrejsika/one-image --set host=skoleni-docker.cz --set image=$CI_REGISTRY_IMAGE/skoleni-docker.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skoleni-docker-cz ondrejsika/one-image --set host=skoleni-docker.cz --set image=$CI_REGISTRY_IMAGE/skoleni-docker.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -722,10 +722,10 @@ skoleni-git.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skoleni-git.cz/
-    - docker build -t registry.sikahq.com/www/www/skoleni-git.cz packages/skoleni-git.cz
+    - docker build -t registry.sikahq.com/www/www/skoleni-git.cz:$CI_COMMIT_SHORT_SHA packages/skoleni-git.cz
     - rm packages/skoleni-git.cz/Dockerfile
     - rm packages/skoleni-git.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skoleni-git.cz
+    - docker push registry.sikahq.com/www/www/skoleni-git.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -746,7 +746,7 @@ skoleni-git.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skoleni-git-cz ondrejsika/one-image --set host=skoleni-git.cz --set image=$CI_REGISTRY_IMAGE/skoleni-git.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skoleni-git-cz ondrejsika/one-image --set host=skoleni-git.cz --set image=$CI_REGISTRY_IMAGE/skoleni-git.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -800,10 +800,10 @@ skoleni-kubernetes.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skoleni-kubernetes.cz/
-    - docker build -t registry.sikahq.com/www/www/skoleni-kubernetes.cz packages/skoleni-kubernetes.cz
+    - docker build -t registry.sikahq.com/www/www/skoleni-kubernetes.cz:$CI_COMMIT_SHORT_SHA packages/skoleni-kubernetes.cz
     - rm packages/skoleni-kubernetes.cz/Dockerfile
     - rm packages/skoleni-kubernetes.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skoleni-kubernetes.cz
+    - docker push registry.sikahq.com/www/www/skoleni-kubernetes.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -824,7 +824,7 @@ skoleni-kubernetes.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skoleni-kubernetes-cz ondrejsika/one-image --set host=skoleni-kubernetes.cz --set image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skoleni-kubernetes-cz ondrejsika/one-image --set host=skoleni-kubernetes.cz --set image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -878,10 +878,10 @@ git-training.uk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/git-training.uk/
-    - docker build -t registry.sikahq.com/www/www/git-training.uk packages/git-training.uk
+    - docker build -t registry.sikahq.com/www/www/git-training.uk:$CI_COMMIT_SHORT_SHA packages/git-training.uk
     - rm packages/git-training.uk/Dockerfile
     - rm packages/git-training.uk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/git-training.uk
+    - docker push registry.sikahq.com/www/www/git-training.uk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -902,7 +902,7 @@ git-training.uk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install git-training-uk ondrejsika/one-image --set host=git-training.uk --set image=$CI_REGISTRY_IMAGE/git-training.uk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install git-training-uk ondrejsika/one-image --set host=git-training.uk --set image=$CI_REGISTRY_IMAGE/git-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -956,10 +956,10 @@ docker-training.uk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/docker-training.uk/
-    - docker build -t registry.sikahq.com/www/www/docker-training.uk packages/docker-training.uk
+    - docker build -t registry.sikahq.com/www/www/docker-training.uk:$CI_COMMIT_SHORT_SHA packages/docker-training.uk
     - rm packages/docker-training.uk/Dockerfile
     - rm packages/docker-training.uk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/docker-training.uk
+    - docker push registry.sikahq.com/www/www/docker-training.uk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -980,7 +980,7 @@ docker-training.uk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install docker-training-uk ondrejsika/one-image --set host=docker-training.uk --set image=$CI_REGISTRY_IMAGE/docker-training.uk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install docker-training-uk ondrejsika/one-image --set host=docker-training.uk --set image=$CI_REGISTRY_IMAGE/docker-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1034,10 +1034,10 @@ kubernetes-training.uk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/kubernetes-training.uk/
-    - docker build -t registry.sikahq.com/www/www/kubernetes-training.uk packages/kubernetes-training.uk
+    - docker build -t registry.sikahq.com/www/www/kubernetes-training.uk:$CI_COMMIT_SHORT_SHA packages/kubernetes-training.uk
     - rm packages/kubernetes-training.uk/Dockerfile
     - rm packages/kubernetes-training.uk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/kubernetes-training.uk
+    - docker push registry.sikahq.com/www/www/kubernetes-training.uk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1058,7 +1058,7 @@ kubernetes-training.uk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install kubernetes-training-uk ondrejsika/one-image --set host=kubernetes-training.uk --set image=$CI_REGISTRY_IMAGE/kubernetes-training.uk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install kubernetes-training-uk ondrejsika/one-image --set host=kubernetes-training.uk --set image=$CI_REGISTRY_IMAGE/kubernetes-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1112,10 +1112,10 @@ ansible-training.uk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ansible-training.uk/
-    - docker build -t registry.sikahq.com/www/www/ansible-training.uk packages/ansible-training.uk
+    - docker build -t registry.sikahq.com/www/www/ansible-training.uk:$CI_COMMIT_SHORT_SHA packages/ansible-training.uk
     - rm packages/ansible-training.uk/Dockerfile
     - rm packages/ansible-training.uk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ansible-training.uk
+    - docker push registry.sikahq.com/www/www/ansible-training.uk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1136,7 +1136,7 @@ ansible-training.uk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ansible-training-uk ondrejsika/one-image --set host=ansible-training.uk --set image=$CI_REGISTRY_IMAGE/ansible-training.uk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ansible-training-uk ondrejsika/one-image --set host=ansible-training.uk --set image=$CI_REGISTRY_IMAGE/ansible-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1190,10 +1190,10 @@ gitlab-training.uk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/gitlab-training.uk/
-    - docker build -t registry.sikahq.com/www/www/gitlab-training.uk packages/gitlab-training.uk
+    - docker build -t registry.sikahq.com/www/www/gitlab-training.uk:$CI_COMMIT_SHORT_SHA packages/gitlab-training.uk
     - rm packages/gitlab-training.uk/Dockerfile
     - rm packages/gitlab-training.uk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/gitlab-training.uk
+    - docker push registry.sikahq.com/www/www/gitlab-training.uk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1214,7 +1214,7 @@ gitlab-training.uk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install gitlab-training-uk ondrejsika/one-image --set host=gitlab-training.uk --set image=$CI_REGISTRY_IMAGE/gitlab-training.uk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install gitlab-training-uk ondrejsika/one-image --set host=gitlab-training.uk --set image=$CI_REGISTRY_IMAGE/gitlab-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1268,10 +1268,10 @@ skolenie-git.sk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skolenie-git.sk/
-    - docker build -t registry.sikahq.com/www/www/skolenie-git.sk packages/skolenie-git.sk
+    - docker build -t registry.sikahq.com/www/www/skolenie-git.sk:$CI_COMMIT_SHORT_SHA packages/skolenie-git.sk
     - rm packages/skolenie-git.sk/Dockerfile
     - rm packages/skolenie-git.sk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skolenie-git.sk
+    - docker push registry.sikahq.com/www/www/skolenie-git.sk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1292,7 +1292,7 @@ skolenie-git.sk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skolenie-git-sk ondrejsika/one-image --set host=skolenie-git.sk --set image=$CI_REGISTRY_IMAGE/skolenie-git.sk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skolenie-git-sk ondrejsika/one-image --set host=skolenie-git.sk --set image=$CI_REGISTRY_IMAGE/skolenie-git.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1346,10 +1346,10 @@ skolenie-gitlab.sk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skolenie-gitlab.sk/
-    - docker build -t registry.sikahq.com/www/www/skolenie-gitlab.sk packages/skolenie-gitlab.sk
+    - docker build -t registry.sikahq.com/www/www/skolenie-gitlab.sk:$CI_COMMIT_SHORT_SHA packages/skolenie-gitlab.sk
     - rm packages/skolenie-gitlab.sk/Dockerfile
     - rm packages/skolenie-gitlab.sk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skolenie-gitlab.sk
+    - docker push registry.sikahq.com/www/www/skolenie-gitlab.sk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1370,7 +1370,7 @@ skolenie-gitlab.sk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skolenie-gitlab-sk ondrejsika/one-image --set host=skolenie-gitlab.sk --set image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skolenie-gitlab-sk ondrejsika/one-image --set host=skolenie-gitlab.sk --set image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1424,10 +1424,10 @@ skolenie-docker.sk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skolenie-docker.sk/
-    - docker build -t registry.sikahq.com/www/www/skolenie-docker.sk packages/skolenie-docker.sk
+    - docker build -t registry.sikahq.com/www/www/skolenie-docker.sk:$CI_COMMIT_SHORT_SHA packages/skolenie-docker.sk
     - rm packages/skolenie-docker.sk/Dockerfile
     - rm packages/skolenie-docker.sk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skolenie-docker.sk
+    - docker push registry.sikahq.com/www/www/skolenie-docker.sk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1448,7 +1448,7 @@ skolenie-docker.sk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skolenie-docker-sk ondrejsika/one-image --set host=skolenie-docker.sk --set image=$CI_REGISTRY_IMAGE/skolenie-docker.sk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skolenie-docker-sk ondrejsika/one-image --set host=skolenie-docker.sk --set image=$CI_REGISTRY_IMAGE/skolenie-docker.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1502,10 +1502,10 @@ skolenie.kubernetes.sk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skolenie.kubernetes.sk/
-    - docker build -t registry.sikahq.com/www/www/skolenie.kubernetes.sk packages/skolenie.kubernetes.sk
+    - docker build -t registry.sikahq.com/www/www/skolenie.kubernetes.sk:$CI_COMMIT_SHORT_SHA packages/skolenie.kubernetes.sk
     - rm packages/skolenie.kubernetes.sk/Dockerfile
     - rm packages/skolenie.kubernetes.sk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skolenie.kubernetes.sk
+    - docker push registry.sikahq.com/www/www/skolenie.kubernetes.sk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1526,7 +1526,7 @@ skolenie.kubernetes.sk prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skolenie-kubernetes-sk ondrejsika/one-image --set host=skolenie.kubernetes.sk --set image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skolenie-kubernetes-sk ondrejsika/one-image --set host=skolenie.kubernetes.sk --set image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1580,10 +1580,10 @@ skolenie-ansible.sk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skolenie-ansible.sk/
-    - docker build -t registry.sikahq.com/www/www/skolenie-ansible.sk packages/skolenie-ansible.sk
+    - docker build -t registry.sikahq.com/www/www/skolenie-ansible.sk:$CI_COMMIT_SHORT_SHA packages/skolenie-ansible.sk
     - rm packages/skolenie-ansible.sk/Dockerfile
     - rm packages/skolenie-ansible.sk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skolenie-ansible.sk
+    - docker push registry.sikahq.com/www/www/skolenie-ansible.sk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1604,7 +1604,7 @@ skolenie-ansible.sk dev deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skolenie-ansible-sk-dev ondrejsika/one-image --set host=skolenie-ansible.sk.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/skolenie-ansible.sk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skolenie-ansible-sk-dev ondrejsika/one-image --set host=skolenie-ansible.sk.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/skolenie-ansible.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     - master
   except:
@@ -1660,10 +1660,10 @@ ansible-utbildning.se build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ansible-utbildning.se/
-    - docker build -t registry.sikahq.com/www/www/ansible-utbildning.se packages/ansible-utbildning.se
+    - docker build -t registry.sikahq.com/www/www/ansible-utbildning.se:$CI_COMMIT_SHORT_SHA packages/ansible-utbildning.se
     - rm packages/ansible-utbildning.se/Dockerfile
     - rm packages/ansible-utbildning.se/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ansible-utbildning.se
+    - docker push registry.sikahq.com/www/www/ansible-utbildning.se:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1684,7 +1684,7 @@ ansible-utbildning.se prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ansible-utbildning-se ondrejsika/one-image --set host=ansible-utbildning.se --set image=$CI_REGISTRY_IMAGE/ansible-utbildning.se --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ansible-utbildning-se ondrejsika/one-image --set host=ansible-utbildning.se --set image=$CI_REGISTRY_IMAGE/ansible-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1738,10 +1738,10 @@ docker-utbildning.se build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/docker-utbildning.se/
-    - docker build -t registry.sikahq.com/www/www/docker-utbildning.se packages/docker-utbildning.se
+    - docker build -t registry.sikahq.com/www/www/docker-utbildning.se:$CI_COMMIT_SHORT_SHA packages/docker-utbildning.se
     - rm packages/docker-utbildning.se/Dockerfile
     - rm packages/docker-utbildning.se/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/docker-utbildning.se
+    - docker push registry.sikahq.com/www/www/docker-utbildning.se:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1762,7 +1762,7 @@ docker-utbildning.se prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install docker-utbildning-se ondrejsika/one-image --set host=docker-utbildning.se --set image=$CI_REGISTRY_IMAGE/docker-utbildning.se --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install docker-utbildning-se ondrejsika/one-image --set host=docker-utbildning.se --set image=$CI_REGISTRY_IMAGE/docker-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1816,10 +1816,10 @@ git-utbildning.se build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/git-utbildning.se/
-    - docker build -t registry.sikahq.com/www/www/git-utbildning.se packages/git-utbildning.se
+    - docker build -t registry.sikahq.com/www/www/git-utbildning.se:$CI_COMMIT_SHORT_SHA packages/git-utbildning.se
     - rm packages/git-utbildning.se/Dockerfile
     - rm packages/git-utbildning.se/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/git-utbildning.se
+    - docker push registry.sikahq.com/www/www/git-utbildning.se:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1840,7 +1840,7 @@ git-utbildning.se prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install git-utbildning-se ondrejsika/one-image --set host=git-utbildning.se --set image=$CI_REGISTRY_IMAGE/git-utbildning.se --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install git-utbildning-se ondrejsika/one-image --set host=git-utbildning.se --set image=$CI_REGISTRY_IMAGE/git-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1894,10 +1894,10 @@ gitlab-utbildning.se build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/gitlab-utbildning.se/
-    - docker build -t registry.sikahq.com/www/www/gitlab-utbildning.se packages/gitlab-utbildning.se
+    - docker build -t registry.sikahq.com/www/www/gitlab-utbildning.se:$CI_COMMIT_SHORT_SHA packages/gitlab-utbildning.se
     - rm packages/gitlab-utbildning.se/Dockerfile
     - rm packages/gitlab-utbildning.se/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/gitlab-utbildning.se
+    - docker push registry.sikahq.com/www/www/gitlab-utbildning.se:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1918,7 +1918,7 @@ gitlab-utbildning.se prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install gitlab-utbildning-se ondrejsika/one-image --set host=gitlab-utbildning.se --set image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install gitlab-utbildning-se ondrejsika/one-image --set host=gitlab-utbildning.se --set image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1972,10 +1972,10 @@ kubernetes-utbildning.se build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/kubernetes-utbildning.se/
-    - docker build -t registry.sikahq.com/www/www/kubernetes-utbildning.se packages/kubernetes-utbildning.se
+    - docker build -t registry.sikahq.com/www/www/kubernetes-utbildning.se:$CI_COMMIT_SHORT_SHA packages/kubernetes-utbildning.se
     - rm packages/kubernetes-utbildning.se/Dockerfile
     - rm packages/kubernetes-utbildning.se/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/kubernetes-utbildning.se
+    - docker push registry.sikahq.com/www/www/kubernetes-utbildning.se:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -1996,7 +1996,7 @@ kubernetes-utbildning.se prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install kubernetes-utbildning-se ondrejsika/one-image --set host=kubernetes-utbildning.se --set image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install kubernetes-utbildning-se ondrejsika/one-image --set host=kubernetes-utbildning.se --set image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2050,10 +2050,10 @@ ondrej-sika.uk build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ondrej-sika.uk/
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.uk packages/ondrej-sika.uk
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.uk:$CI_COMMIT_SHORT_SHA packages/ondrej-sika.uk
     - rm packages/ondrej-sika.uk/Dockerfile
     - rm packages/ondrej-sika.uk/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ondrej-sika.uk
+    - docker push registry.sikahq.com/www/www/ondrej-sika.uk:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2074,7 +2074,7 @@ ondrej-sika.uk dev deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ondrej-sika-uk-dev ondrejsika/one-image --set host=ondrej-sika.uk.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/ondrej-sika.uk --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ondrej-sika-uk-dev ondrejsika/one-image --set host=ondrej-sika.uk.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/ondrej-sika.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     - master
   except:
@@ -2130,10 +2130,10 @@ ondrej-sika.de build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ondrej-sika.de/
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.de packages/ondrej-sika.de
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.de:$CI_COMMIT_SHORT_SHA packages/ondrej-sika.de
     - rm packages/ondrej-sika.de/Dockerfile
     - rm packages/ondrej-sika.de/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ondrej-sika.de
+    - docker push registry.sikahq.com/www/www/ondrej-sika.de:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2154,7 +2154,7 @@ ondrej-sika.de prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ondrej-sika-de ondrejsika/one-image --set host=ondrej-sika.de --set image=$CI_REGISTRY_IMAGE/ondrej-sika.de --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ondrej-sika-de ondrejsika/one-image --set host=ondrej-sika.de --set image=$CI_REGISTRY_IMAGE/ondrej-sika.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2208,10 +2208,10 @@ ondrejsikalabs.com build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ondrejsikalabs.com/
-    - docker build -t registry.sikahq.com/www/www/ondrejsikalabs.com packages/ondrejsikalabs.com
+    - docker build -t registry.sikahq.com/www/www/ondrejsikalabs.com:$CI_COMMIT_SHORT_SHA packages/ondrejsikalabs.com
     - rm packages/ondrejsikalabs.com/Dockerfile
     - rm packages/ondrejsikalabs.com/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ondrejsikalabs.com
+    - docker push registry.sikahq.com/www/www/ondrejsikalabs.com:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2232,7 +2232,7 @@ ondrejsikalabs.com prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ondrejsikalabs-com ondrejsika/one-image --set host=ondrejsikalabs.com --set image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ondrejsikalabs-com ondrejsika/one-image --set host=ondrejsikalabs.com --set image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2286,10 +2286,10 @@ sika.io build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/sika.io/
-    - docker build -t registry.sikahq.com/www/www/sika.io packages/sika.io
+    - docker build -t registry.sikahq.com/www/www/sika.io:$CI_COMMIT_SHORT_SHA packages/sika.io
     - rm packages/sika.io/Dockerfile
     - rm packages/sika.io/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/sika.io
+    - docker push registry.sikahq.com/www/www/sika.io:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2310,7 +2310,7 @@ sika.io dev deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-io-dev ondrejsika/one-image --set host=sika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika.io --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install sika-io-dev ondrejsika/one-image --set host=sika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     - master
   except:
@@ -2339,7 +2339,7 @@ sika.io prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-io ondrejsika/one-image --set host=sika.io --set image=$CI_REGISTRY_IMAGE/sika.io --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install sika-io ondrejsika/one-image --set host=sika.io --set image=$CI_REGISTRY_IMAGE/sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2393,10 +2393,10 @@ docker-training.de build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/docker-training.de/
-    - docker build -t registry.sikahq.com/www/www/docker-training.de packages/docker-training.de
+    - docker build -t registry.sikahq.com/www/www/docker-training.de:$CI_COMMIT_SHORT_SHA packages/docker-training.de
     - rm packages/docker-training.de/Dockerfile
     - rm packages/docker-training.de/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/docker-training.de
+    - docker push registry.sikahq.com/www/www/docker-training.de:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2417,7 +2417,7 @@ docker-training.de prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install docker-training-de ondrejsika/one-image --set host=docker-training.de --set image=$CI_REGISTRY_IMAGE/docker-training.de --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install docker-training-de ondrejsika/one-image --set host=docker-training.de --set image=$CI_REGISTRY_IMAGE/docker-training.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2471,10 +2471,10 @@ docker-training.ch build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/docker-training.ch/
-    - docker build -t registry.sikahq.com/www/www/docker-training.ch packages/docker-training.ch
+    - docker build -t registry.sikahq.com/www/www/docker-training.ch:$CI_COMMIT_SHORT_SHA packages/docker-training.ch
     - rm packages/docker-training.ch/Dockerfile
     - rm packages/docker-training.ch/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/docker-training.ch
+    - docker push registry.sikahq.com/www/www/docker-training.ch:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2495,7 +2495,7 @@ docker-training.ch prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install docker-training-ch ondrejsika/one-image --set host=docker-training.ch --set image=$CI_REGISTRY_IMAGE/docker-training.ch --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install docker-training-ch ondrejsika/one-image --set host=docker-training.ch --set image=$CI_REGISTRY_IMAGE/docker-training.ch:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2549,10 +2549,10 @@ docker-training.at build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/docker-training.at/
-    - docker build -t registry.sikahq.com/www/www/docker-training.at packages/docker-training.at
+    - docker build -t registry.sikahq.com/www/www/docker-training.at:$CI_COMMIT_SHORT_SHA packages/docker-training.at
     - rm packages/docker-training.at/Dockerfile
     - rm packages/docker-training.at/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/docker-training.at
+    - docker push registry.sikahq.com/www/www/docker-training.at:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2573,7 +2573,7 @@ docker-training.at prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install docker-training-at ondrejsika/one-image --set host=docker-training.at --set image=$CI_REGISTRY_IMAGE/docker-training.at --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install docker-training-at ondrejsika/one-image --set host=docker-training.at --set image=$CI_REGISTRY_IMAGE/docker-training.at:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2627,10 +2627,10 @@ docker-training.nl build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/docker-training.nl/
-    - docker build -t registry.sikahq.com/www/www/docker-training.nl packages/docker-training.nl
+    - docker build -t registry.sikahq.com/www/www/docker-training.nl:$CI_COMMIT_SHORT_SHA packages/docker-training.nl
     - rm packages/docker-training.nl/Dockerfile
     - rm packages/docker-training.nl/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/docker-training.nl
+    - docker push registry.sikahq.com/www/www/docker-training.nl:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2651,7 +2651,7 @@ docker-training.nl prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install docker-training-nl ondrejsika/one-image --set host=docker-training.nl --set image=$CI_REGISTRY_IMAGE/docker-training.nl --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install docker-training-nl ondrejsika/one-image --set host=docker-training.nl --set image=$CI_REGISTRY_IMAGE/docker-training.nl:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2705,10 +2705,10 @@ git-training.nl build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/git-training.nl/
-    - docker build -t registry.sikahq.com/www/www/git-training.nl packages/git-training.nl
+    - docker build -t registry.sikahq.com/www/www/git-training.nl:$CI_COMMIT_SHORT_SHA packages/git-training.nl
     - rm packages/git-training.nl/Dockerfile
     - rm packages/git-training.nl/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/git-training.nl
+    - docker push registry.sikahq.com/www/www/git-training.nl:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2729,7 +2729,7 @@ git-training.nl prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install git-training-nl ondrejsika/one-image --set host=git-training.nl --set image=$CI_REGISTRY_IMAGE/git-training.nl --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install git-training-nl ondrejsika/one-image --set host=git-training.nl --set image=$CI_REGISTRY_IMAGE/git-training.nl:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2783,10 +2783,10 @@ sika-kaplan.com build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/sika-kaplan.com/
-    - docker build -t registry.sikahq.com/www/www/sika-kaplan.com packages/sika-kaplan.com
+    - docker build -t registry.sikahq.com/www/www/sika-kaplan.com:$CI_COMMIT_SHORT_SHA packages/sika-kaplan.com
     - rm packages/sika-kaplan.com/Dockerfile
     - rm packages/sika-kaplan.com/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/sika-kaplan.com
+    - docker push registry.sikahq.com/www/www/sika-kaplan.com:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2807,7 +2807,7 @@ sika-kaplan.com dev deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-kaplan-com-dev ondrejsika/one-image --set host=sika-kaplan.com.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika-kaplan.com --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install sika-kaplan-com-dev ondrejsika/one-image --set host=sika-kaplan.com.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika-kaplan.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     - master
   except:
@@ -2836,7 +2836,7 @@ sika-kaplan.com prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-kaplan-com ondrejsika/one-image --set host=sika-kaplan.com --set image=$CI_REGISTRY_IMAGE/sika-kaplan.com --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install sika-kaplan-com ondrejsika/one-image --set host=sika-kaplan.com --set image=$CI_REGISTRY_IMAGE/sika-kaplan.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2890,10 +2890,10 @@ bootstrap-web build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/bootstrap-web/
-    - docker build -t registry.sikahq.com/www/www/bootstrap-web packages/bootstrap-web
+    - docker build -t registry.sikahq.com/www/www/bootstrap-web:$CI_COMMIT_SHORT_SHA packages/bootstrap-web
     - rm packages/bootstrap-web/Dockerfile
     - rm packages/bootstrap-web/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/bootstrap-web
+    - docker push registry.sikahq.com/www/www/bootstrap-web:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2941,10 +2941,10 @@ trainera.io build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/trainera.io/
-    - docker build -t registry.sikahq.com/www/www/trainera.io packages/trainera.io
+    - docker build -t registry.sikahq.com/www/www/trainera.io:$CI_COMMIT_SHORT_SHA packages/trainera.io
     - rm packages/trainera.io/Dockerfile
     - rm packages/trainera.io/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/trainera.io
+    - docker push registry.sikahq.com/www/www/trainera.io:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -2965,7 +2965,7 @@ trainera.io dev deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install trainera-io-dev ondrejsika/one-image --set host=trainera.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/trainera.io --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install trainera-io-dev ondrejsika/one-image --set host=trainera.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/trainera.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     - master
   except:
@@ -3021,10 +3021,10 @@ salzburgdevops.com build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/salzburgdevops.com/
-    - docker build -t registry.sikahq.com/www/www/salzburgdevops.com packages/salzburgdevops.com
+    - docker build -t registry.sikahq.com/www/www/salzburgdevops.com:$CI_COMMIT_SHORT_SHA packages/salzburgdevops.com
     - rm packages/salzburgdevops.com/Dockerfile
     - rm packages/salzburgdevops.com/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/salzburgdevops.com
+    - docker push registry.sikahq.com/www/www/salzburgdevops.com:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3045,7 +3045,7 @@ salzburgdevops.com prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install salzburgdevops-com ondrejsika/one-image --set host=salzburgdevops.com --set image=$CI_REGISTRY_IMAGE/salzburgdevops.com --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install salzburgdevops-com ondrejsika/one-image --set host=salzburgdevops.com --set image=$CI_REGISTRY_IMAGE/salzburgdevops.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3099,10 +3099,10 @@ training.kubernetes.is build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/training.kubernetes.is/
-    - docker build -t registry.sikahq.com/www/www/training.kubernetes.is packages/training.kubernetes.is
+    - docker build -t registry.sikahq.com/www/www/training.kubernetes.is:$CI_COMMIT_SHORT_SHA packages/training.kubernetes.is
     - rm packages/training.kubernetes.is/Dockerfile
     - rm packages/training.kubernetes.is/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/training.kubernetes.is
+    - docker push registry.sikahq.com/www/www/training.kubernetes.is:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3123,7 +3123,7 @@ training.kubernetes.is prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install training-kubernetes-is ondrejsika/one-image --set host=training.kubernetes.is --set image=$CI_REGISTRY_IMAGE/training.kubernetes.is --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install training-kubernetes-is ondrejsika/one-image --set host=training.kubernetes.is --set image=$CI_REGISTRY_IMAGE/training.kubernetes.is:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3177,10 +3177,10 @@ training.kubernetes.lu build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/training.kubernetes.lu/
-    - docker build -t registry.sikahq.com/www/www/training.kubernetes.lu packages/training.kubernetes.lu
+    - docker build -t registry.sikahq.com/www/www/training.kubernetes.lu:$CI_COMMIT_SHORT_SHA packages/training.kubernetes.lu
     - rm packages/training.kubernetes.lu/Dockerfile
     - rm packages/training.kubernetes.lu/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/training.kubernetes.lu
+    - docker push registry.sikahq.com/www/www/training.kubernetes.lu:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3201,7 +3201,7 @@ training.kubernetes.lu prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install training-kubernetes-lu ondrejsika/one-image --set host=training.kubernetes.lu --set image=$CI_REGISTRY_IMAGE/training.kubernetes.lu --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install training-kubernetes-lu ondrejsika/one-image --set host=training.kubernetes.lu --set image=$CI_REGISTRY_IMAGE/training.kubernetes.lu:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3255,10 +3255,10 @@ skoleni-terraform.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skoleni-terraform.cz/
-    - docker build -t registry.sikahq.com/www/www/skoleni-terraform.cz packages/skoleni-terraform.cz
+    - docker build -t registry.sikahq.com/www/www/skoleni-terraform.cz:$CI_COMMIT_SHORT_SHA packages/skoleni-terraform.cz
     - rm packages/skoleni-terraform.cz/Dockerfile
     - rm packages/skoleni-terraform.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skoleni-terraform.cz
+    - docker push registry.sikahq.com/www/www/skoleni-terraform.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3279,7 +3279,7 @@ skoleni-terraform.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skoleni-terraform-cz ondrejsika/one-image --set host=skoleni-terraform.cz --set image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skoleni-terraform-cz ondrejsika/one-image --set host=skoleni-terraform.cz --set image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3333,10 +3333,10 @@ sika-training.com build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/sika-training.com/
-    - docker build -t registry.sikahq.com/www/www/sika-training.com packages/sika-training.com
+    - docker build -t registry.sikahq.com/www/www/sika-training.com:$CI_COMMIT_SHORT_SHA packages/sika-training.com
     - rm packages/sika-training.com/Dockerfile
     - rm packages/sika-training.com/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/sika-training.com
+    - docker push registry.sikahq.com/www/www/sika-training.com:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3357,7 +3357,7 @@ sika-training.com prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-training-com ondrejsika/one-image --set host=sika-training.com --set image=$CI_REGISTRY_IMAGE/sika-training.com --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install sika-training-com ondrejsika/one-image --set host=sika-training.com --set image=$CI_REGISTRY_IMAGE/sika-training.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3411,10 +3411,10 @@ ondrej-sika.com build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ondrej-sika.com/
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.com packages/ondrej-sika.com
+    - docker build -t registry.sikahq.com/www/www/ondrej-sika.com:$CI_COMMIT_SHORT_SHA packages/ondrej-sika.com
     - rm packages/ondrej-sika.com/Dockerfile
     - rm packages/ondrej-sika.com/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ondrej-sika.com
+    - docker push registry.sikahq.com/www/www/ondrej-sika.com:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3435,7 +3435,7 @@ ondrej-sika.com prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ondrej-sika-com ondrejsika/one-image --set host=ondrej-sika.com --set image=$CI_REGISTRY_IMAGE/ondrej-sika.com --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ondrej-sika-com ondrejsika/one-image --set host=ondrej-sika.com --set image=$CI_REGISTRY_IMAGE/ondrej-sika.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3489,10 +3489,10 @@ sikahq.com build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/sikahq.com/
-    - docker build -t registry.sikahq.com/www/www/sikahq.com packages/sikahq.com
+    - docker build -t registry.sikahq.com/www/www/sikahq.com:$CI_COMMIT_SHORT_SHA packages/sikahq.com
     - rm packages/sikahq.com/Dockerfile
     - rm packages/sikahq.com/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/sikahq.com
+    - docker push registry.sikahq.com/www/www/sikahq.com:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3513,7 +3513,7 @@ sikahq.com prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sikahq-com ondrejsika/one-image --set host=sikahq.com --set image=$CI_REGISTRY_IMAGE/sikahq.com --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install sikahq-com ondrejsika/one-image --set host=sikahq.com --set image=$CI_REGISTRY_IMAGE/sikahq.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3567,10 +3567,10 @@ ondrejsika.io build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ondrejsika.io/
-    - docker build -t registry.sikahq.com/www/www/ondrejsika.io packages/ondrejsika.io
+    - docker build -t registry.sikahq.com/www/www/ondrejsika.io:$CI_COMMIT_SHORT_SHA packages/ondrejsika.io
     - rm packages/ondrejsika.io/Dockerfile
     - rm packages/ondrejsika.io/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ondrejsika.io
+    - docker push registry.sikahq.com/www/www/ondrejsika.io:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3591,7 +3591,7 @@ ondrejsika.io dev deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ondrejsika-io-dev ondrejsika/one-image --set host=ondrejsika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/ondrejsika.io --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ondrejsika-io-dev ondrejsika/one-image --set host=ondrejsika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/ondrejsika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     - master
   except:
@@ -3647,10 +3647,10 @@ cal-api.sika.io build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/cal-api.sika.io/
-    - docker build -t registry.sikahq.com/www/www/cal-api.sika.io packages/cal-api.sika.io
+    - docker build -t registry.sikahq.com/www/www/cal-api.sika.io:$CI_COMMIT_SHORT_SHA packages/cal-api.sika.io
     - rm packages/cal-api.sika.io/Dockerfile
     - rm packages/cal-api.sika.io/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/cal-api.sika.io
+    - docker push registry.sikahq.com/www/www/cal-api.sika.io:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3671,7 +3671,7 @@ cal-api.sika.io prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install cal-api-sika-io ondrejsika/one-image --set host=cal-api.sika.io --set image=$CI_REGISTRY_IMAGE/cal-api.sika.io --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install cal-api-sika-io ondrejsika/one-image --set host=cal-api.sika.io --set image=$CI_REGISTRY_IMAGE/cal-api.sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3725,10 +3725,10 @@ skoleni-proxmox.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skoleni-proxmox.cz/
-    - docker build -t registry.sikahq.com/www/www/skoleni-proxmox.cz packages/skoleni-proxmox.cz
+    - docker build -t registry.sikahq.com/www/www/skoleni-proxmox.cz:$CI_COMMIT_SHORT_SHA packages/skoleni-proxmox.cz
     - rm packages/skoleni-proxmox.cz/Dockerfile
     - rm packages/skoleni-proxmox.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skoleni-proxmox.cz
+    - docker push registry.sikahq.com/www/www/skoleni-proxmox.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3749,7 +3749,7 @@ skoleni-proxmox.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skoleni-proxmox-cz ondrejsika/one-image --set host=skoleni-proxmox.cz --set image=$CI_REGISTRY_IMAGE/skoleni-proxmox.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skoleni-proxmox-cz ondrejsika/one-image --set host=skoleni-proxmox.cz --set image=$CI_REGISTRY_IMAGE/skoleni-proxmox.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3803,10 +3803,10 @@ ydo.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ydo.cz/
-    - docker build -t registry.sikahq.com/www/www/ydo.cz packages/ydo.cz
+    - docker build -t registry.sikahq.com/www/www/ydo.cz:$CI_COMMIT_SHORT_SHA packages/ydo.cz
     - rm packages/ydo.cz/Dockerfile
     - rm packages/ydo.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ydo.cz
+    - docker push registry.sikahq.com/www/www/ydo.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3827,7 +3827,7 @@ ydo.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ydo-cz ondrejsika/one-image --set host=ydo.cz --set image=$CI_REGISTRY_IMAGE/ydo.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ydo-cz ondrejsika/one-image --set host=ydo.cz --set image=$CI_REGISTRY_IMAGE/ydo.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3881,10 +3881,10 @@ skoleni-prometheus.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skoleni-prometheus.cz/
-    - docker build -t registry.sikahq.com/www/www/skoleni-prometheus.cz packages/skoleni-prometheus.cz
+    - docker build -t registry.sikahq.com/www/www/skoleni-prometheus.cz:$CI_COMMIT_SHORT_SHA packages/skoleni-prometheus.cz
     - rm packages/skoleni-prometheus.cz/Dockerfile
     - rm packages/skoleni-prometheus.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skoleni-prometheus.cz
+    - docker push registry.sikahq.com/www/www/skoleni-prometheus.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3905,7 +3905,7 @@ skoleni-prometheus.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skoleni-prometheus-cz ondrejsika/one-image --set host=skoleni-prometheus.cz --set image=$CI_REGISTRY_IMAGE/skoleni-prometheus.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skoleni-prometheus-cz ondrejsika/one-image --set host=skoleni-prometheus.cz --set image=$CI_REGISTRY_IMAGE/skoleni-prometheus.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3959,10 +3959,10 @@ ccc.oxs.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ccc.oxs.cz/
-    - docker build -t registry.sikahq.com/www/www/ccc.oxs.cz packages/ccc.oxs.cz
+    - docker build -t registry.sikahq.com/www/www/ccc.oxs.cz:$CI_COMMIT_SHORT_SHA packages/ccc.oxs.cz
     - rm packages/ccc.oxs.cz/Dockerfile
     - rm packages/ccc.oxs.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ccc.oxs.cz
+    - docker push registry.sikahq.com/www/www/ccc.oxs.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -3983,7 +3983,7 @@ ccc.oxs.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ccc-oxs-cz ondrejsika/one-image --set host=ccc.oxs.cz --set image=$CI_REGISTRY_IMAGE/ccc.oxs.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install ccc-oxs-cz ondrejsika/one-image --set host=ccc.oxs.cz --set image=$CI_REGISTRY_IMAGE/ccc.oxs.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4037,10 +4037,10 @@ sika.work build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/sika.work/
-    - docker build -t registry.sikahq.com/www/www/sika.work packages/sika.work
+    - docker build -t registry.sikahq.com/www/www/sika.work:$CI_COMMIT_SHORT_SHA packages/sika.work
     - rm packages/sika.work/Dockerfile
     - rm packages/sika.work/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/sika.work
+    - docker push registry.sikahq.com/www/www/sika.work:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -4088,10 +4088,10 @@ ydo.sh build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ydo.sh/
-    - docker build -t registry.sikahq.com/www/www/ydo.sh packages/ydo.sh
+    - docker build -t registry.sikahq.com/www/www/ydo.sh:$CI_COMMIT_SHORT_SHA packages/ydo.sh
     - rm packages/ydo.sh/Dockerfile
     - rm packages/ydo.sh/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ydo.sh
+    - docker push registry.sikahq.com/www/www/ydo.sh:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -4139,10 +4139,10 @@ skoleni-rancher.cz build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skoleni-rancher.cz/
-    - docker build -t registry.sikahq.com/www/www/skoleni-rancher.cz packages/skoleni-rancher.cz
+    - docker build -t registry.sikahq.com/www/www/skoleni-rancher.cz:$CI_COMMIT_SHORT_SHA packages/skoleni-rancher.cz
     - rm packages/skoleni-rancher.cz/Dockerfile
     - rm packages/skoleni-rancher.cz/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/skoleni-rancher.cz
+    - docker push registry.sikahq.com/www/www/skoleni-rancher.cz:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -4163,7 +4163,7 @@ skoleni-rancher.cz prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install skoleni-rancher-cz ondrejsika/one-image --set host=skoleni-rancher.cz --set image=$CI_REGISTRY_IMAGE/skoleni-rancher.cz --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install skoleni-rancher-cz ondrejsika/one-image --set host=skoleni-rancher.cz --set image=$CI_REGISTRY_IMAGE/skoleni-rancher.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4217,10 +4217,10 @@ sika.blog build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/sika.blog/
-    - docker build -t registry.sikahq.com/www/www/sika.blog packages/sika.blog
+    - docker build -t registry.sikahq.com/www/www/sika.blog:$CI_COMMIT_SHORT_SHA packages/sika.blog
     - rm packages/sika.blog/Dockerfile
     - rm packages/sika.blog/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/sika.blog
+    - docker push registry.sikahq.com/www/www/sika.blog:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -4241,7 +4241,7 @@ sika.blog prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-blog ondrejsika/one-image --set host=sika.blog --set image=$CI_REGISTRY_IMAGE/sika.blog --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install sika-blog ondrejsika/one-image --set host=sika.blog --set image=$CI_REGISTRY_IMAGE/sika.blog:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4295,10 +4295,10 @@ static.sika.io build docker:
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/static.sika.io/
-    - docker build -t registry.sikahq.com/www/www/static.sika.io packages/static.sika.io
+    - docker build -t registry.sikahq.com/www/www/static.sika.io:$CI_COMMIT_SHORT_SHA packages/static.sika.io
     - rm packages/static.sika.io/Dockerfile
     - rm packages/static.sika.io/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/static.sika.io
+    - docker push registry.sikahq.com/www/www/static.sika.io:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
@@ -4319,7 +4319,7 @@ static.sika.io prod deploy k8s:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install static-sika-io ondrejsika/one-image --set host=static.sika.io --set image=$CI_REGISTRY_IMAGE/static.sika.io --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install static-sika-io ondrejsika/one-image --set host=static.sika.io --set image=$CI_REGISTRY_IMAGE/static.sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
   except:
     variables:
       - $EXCEPT_DEPLOY
