@@ -130,6 +130,7 @@ $SITE dev deploy k8s:
     - echo \$KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install $NAME-dev ondrejsika/one-image --set host=$SITE$SUFFIX --set image=\$CI_REGISTRY_IMAGE/$SITE:\$CI_COMMIT_SHORT_SHA --set changeCause=job-\$CI_JOB_ID
+    - kubectl rollout status deploy $NAME-dev
   except:
     - master
   except:
@@ -199,6 +200,7 @@ $SITE prod deploy k8s:
     - echo \$KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install $NAME ondrejsika/one-image --set host=$SITE --set image=\$CI_REGISTRY_IMAGE/$SITE:\$CI_COMMIT_SHORT_SHA --set changeCause=job-\$CI_JOB_ID
+    - kubectl rollout status deploy $NAME
   except:
     variables:
       - \$EXCEPT_DEPLOY
