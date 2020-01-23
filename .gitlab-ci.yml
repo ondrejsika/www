@@ -72,6 +72,7 @@ ansible-schulung.de prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ansible-schulung-de ondrejsika/one-image --set host=ansible-schulung.de --set image=$CI_REGISTRY_IMAGE/ansible-schulung.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ansible-schulung-de
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -150,6 +151,7 @@ ansible-skoleni.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ansible-skoleni-cz ondrejsika/one-image --set host=ansible-skoleni.cz --set image=$CI_REGISTRY_IMAGE/ansible-skoleni.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ansible-skoleni-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -279,6 +281,7 @@ dockerschulung.de prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install dockerschulung-de ondrejsika/one-image --set host=dockerschulung.de --set image=$CI_REGISTRY_IMAGE/dockerschulung.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy dockerschulung-de
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -357,6 +360,7 @@ gitlab-ci.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install gitlab-ci-cz ondrejsika/one-image --set host=gitlab-ci.cz --set image=$CI_REGISTRY_IMAGE/gitlab-ci.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy gitlab-ci-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -435,6 +439,7 @@ kubernetes-schulung.de prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install kubernetes-schulung-de ondrejsika/one-image --set host=kubernetes-schulung.de --set image=$CI_REGISTRY_IMAGE/kubernetes-schulung.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy kubernetes-schulung-de
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -513,6 +518,7 @@ ondrej-sika.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrej-sika-cz ondrejsika/one-image --set host=ondrej-sika.cz --set image=$CI_REGISTRY_IMAGE/ondrej-sika.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ondrej-sika-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -591,6 +597,7 @@ sika-kraml.de prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install sika-kraml-de ondrejsika/one-image --set host=sika-kraml.de --set image=$CI_REGISTRY_IMAGE/sika-kraml.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sika-kraml-de
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -669,6 +676,7 @@ skoleni-docker.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-docker-cz ondrejsika/one-image --set host=skoleni-docker.cz --set image=$CI_REGISTRY_IMAGE/skoleni-docker.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skoleni-docker-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -747,6 +755,7 @@ skoleni-git.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-git-cz ondrejsika/one-image --set host=skoleni-git.cz --set image=$CI_REGISTRY_IMAGE/skoleni-git.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skoleni-git-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -825,6 +834,7 @@ skoleni-kubernetes.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-kubernetes-cz ondrejsika/one-image --set host=skoleni-kubernetes.cz --set image=$CI_REGISTRY_IMAGE/skoleni-kubernetes.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skoleni-kubernetes-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -903,6 +913,7 @@ git-training.uk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install git-training-uk ondrejsika/one-image --set host=git-training.uk --set image=$CI_REGISTRY_IMAGE/git-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy git-training-uk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -981,6 +992,7 @@ docker-training.uk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-uk ondrejsika/one-image --set host=docker-training.uk --set image=$CI_REGISTRY_IMAGE/docker-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy docker-training-uk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1059,6 +1071,7 @@ kubernetes-training.uk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install kubernetes-training-uk ondrejsika/one-image --set host=kubernetes-training.uk --set image=$CI_REGISTRY_IMAGE/kubernetes-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy kubernetes-training-uk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1137,6 +1150,7 @@ ansible-training.uk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ansible-training-uk ondrejsika/one-image --set host=ansible-training.uk --set image=$CI_REGISTRY_IMAGE/ansible-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ansible-training-uk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1215,6 +1229,7 @@ gitlab-training.uk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install gitlab-training-uk ondrejsika/one-image --set host=gitlab-training.uk --set image=$CI_REGISTRY_IMAGE/gitlab-training.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy gitlab-training-uk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1293,6 +1308,7 @@ skolenie-git.sk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-git-sk ondrejsika/one-image --set host=skolenie-git.sk --set image=$CI_REGISTRY_IMAGE/skolenie-git.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skolenie-git-sk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1371,6 +1387,7 @@ skolenie-gitlab.sk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-gitlab-sk ondrejsika/one-image --set host=skolenie-gitlab.sk --set image=$CI_REGISTRY_IMAGE/skolenie-gitlab.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skolenie-gitlab-sk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1449,6 +1466,7 @@ skolenie-docker.sk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-docker-sk ondrejsika/one-image --set host=skolenie-docker.sk --set image=$CI_REGISTRY_IMAGE/skolenie-docker.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skolenie-docker-sk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1527,6 +1545,7 @@ skolenie.kubernetes.sk prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-kubernetes-sk ondrejsika/one-image --set host=skolenie.kubernetes.sk --set image=$CI_REGISTRY_IMAGE/skolenie.kubernetes.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skolenie-kubernetes-sk
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1605,6 +1624,7 @@ skolenie-ansible.sk dev deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skolenie-ansible-sk-dev ondrejsika/one-image --set host=skolenie-ansible.sk.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/skolenie-ansible.sk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skolenie-ansible-sk-dev
   except:
     - master
   except:
@@ -1685,6 +1705,7 @@ ansible-utbildning.se prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ansible-utbildning-se ondrejsika/one-image --set host=ansible-utbildning.se --set image=$CI_REGISTRY_IMAGE/ansible-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ansible-utbildning-se
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1763,6 +1784,7 @@ docker-utbildning.se prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-utbildning-se ondrejsika/one-image --set host=docker-utbildning.se --set image=$CI_REGISTRY_IMAGE/docker-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy docker-utbildning-se
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1841,6 +1863,7 @@ git-utbildning.se prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install git-utbildning-se ondrejsika/one-image --set host=git-utbildning.se --set image=$CI_REGISTRY_IMAGE/git-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy git-utbildning-se
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1919,6 +1942,7 @@ gitlab-utbildning.se prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install gitlab-utbildning-se ondrejsika/one-image --set host=gitlab-utbildning.se --set image=$CI_REGISTRY_IMAGE/gitlab-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy gitlab-utbildning-se
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -1997,6 +2021,7 @@ kubernetes-utbildning.se prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install kubernetes-utbildning-se ondrejsika/one-image --set host=kubernetes-utbildning.se --set image=$CI_REGISTRY_IMAGE/kubernetes-utbildning.se:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy kubernetes-utbildning-se
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2075,6 +2100,7 @@ ondrej-sika.uk dev deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrej-sika-uk-dev ondrejsika/one-image --set host=ondrej-sika.uk.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/ondrej-sika.uk:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ondrej-sika-uk-dev
   except:
     - master
   except:
@@ -2155,6 +2181,7 @@ ondrej-sika.de prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrej-sika-de ondrejsika/one-image --set host=ondrej-sika.de --set image=$CI_REGISTRY_IMAGE/ondrej-sika.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ondrej-sika-de
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2233,6 +2260,7 @@ ondrejsikalabs.com prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrejsikalabs-com ondrejsika/one-image --set host=ondrejsikalabs.com --set image=$CI_REGISTRY_IMAGE/ondrejsikalabs.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ondrejsikalabs-com
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2311,6 +2339,7 @@ sika.io dev deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install sika-io-dev ondrejsika/one-image --set host=sika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sika-io-dev
   except:
     - master
   except:
@@ -2340,6 +2369,7 @@ sika.io prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install sika-io ondrejsika/one-image --set host=sika.io --set image=$CI_REGISTRY_IMAGE/sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sika-io
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2418,6 +2448,7 @@ docker-training.de prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-de ondrejsika/one-image --set host=docker-training.de --set image=$CI_REGISTRY_IMAGE/docker-training.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy docker-training-de
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2496,6 +2527,7 @@ docker-training.ch prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-ch ondrejsika/one-image --set host=docker-training.ch --set image=$CI_REGISTRY_IMAGE/docker-training.ch:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy docker-training-ch
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2574,6 +2606,7 @@ docker-training.at prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-at ondrejsika/one-image --set host=docker-training.at --set image=$CI_REGISTRY_IMAGE/docker-training.at:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy docker-training-at
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2652,6 +2685,7 @@ docker-training.nl prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install docker-training-nl ondrejsika/one-image --set host=docker-training.nl --set image=$CI_REGISTRY_IMAGE/docker-training.nl:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy docker-training-nl
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2730,6 +2764,7 @@ git-training.nl prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install git-training-nl ondrejsika/one-image --set host=git-training.nl --set image=$CI_REGISTRY_IMAGE/git-training.nl:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy git-training-nl
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2808,6 +2843,7 @@ sika-kaplan.com dev deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install sika-kaplan-com-dev ondrejsika/one-image --set host=sika-kaplan.com.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika-kaplan.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sika-kaplan-com-dev
   except:
     - master
   except:
@@ -2837,6 +2873,7 @@ sika-kaplan.com prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install sika-kaplan-com ondrejsika/one-image --set host=sika-kaplan.com --set image=$CI_REGISTRY_IMAGE/sika-kaplan.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sika-kaplan-com
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -2966,6 +3003,7 @@ trainera.io dev deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install trainera-io-dev ondrejsika/one-image --set host=trainera.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/trainera.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy trainera-io-dev
   except:
     - master
   except:
@@ -3046,6 +3084,7 @@ salzburgdevops.com prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install salzburgdevops-com ondrejsika/one-image --set host=salzburgdevops.com --set image=$CI_REGISTRY_IMAGE/salzburgdevops.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy salzburgdevops-com
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3124,6 +3163,7 @@ training.kubernetes.is prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install training-kubernetes-is ondrejsika/one-image --set host=training.kubernetes.is --set image=$CI_REGISTRY_IMAGE/training.kubernetes.is:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy training-kubernetes-is
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3202,6 +3242,7 @@ training.kubernetes.lu prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install training-kubernetes-lu ondrejsika/one-image --set host=training.kubernetes.lu --set image=$CI_REGISTRY_IMAGE/training.kubernetes.lu:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy training-kubernetes-lu
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3280,6 +3321,7 @@ skoleni-terraform.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-terraform-cz ondrejsika/one-image --set host=skoleni-terraform.cz --set image=$CI_REGISTRY_IMAGE/skoleni-terraform.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skoleni-terraform-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3358,6 +3400,7 @@ sika-training.com prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install sika-training-com ondrejsika/one-image --set host=sika-training.com --set image=$CI_REGISTRY_IMAGE/sika-training.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sika-training-com
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3436,6 +3479,7 @@ ondrej-sika.com prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrej-sika-com ondrejsika/one-image --set host=ondrej-sika.com --set image=$CI_REGISTRY_IMAGE/ondrej-sika.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ondrej-sika-com
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3514,6 +3558,7 @@ sikahq.com prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install sikahq-com ondrejsika/one-image --set host=sikahq.com --set image=$CI_REGISTRY_IMAGE/sikahq.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sikahq-com
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3592,6 +3637,7 @@ ondrejsika.io dev deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ondrejsika-io-dev ondrejsika/one-image --set host=ondrejsika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/ondrejsika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ondrejsika-io-dev
   except:
     - master
   except:
@@ -3672,6 +3718,7 @@ cal-api.sika.io prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install cal-api-sika-io ondrejsika/one-image --set host=cal-api.sika.io --set image=$CI_REGISTRY_IMAGE/cal-api.sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy cal-api-sika-io
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3750,6 +3797,7 @@ skoleni-proxmox.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-proxmox-cz ondrejsika/one-image --set host=skoleni-proxmox.cz --set image=$CI_REGISTRY_IMAGE/skoleni-proxmox.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skoleni-proxmox-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3828,6 +3876,7 @@ ydo.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ydo-cz ondrejsika/one-image --set host=ydo.cz --set image=$CI_REGISTRY_IMAGE/ydo.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ydo-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3906,6 +3955,7 @@ skoleni-prometheus.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-prometheus-cz ondrejsika/one-image --set host=skoleni-prometheus.cz --set image=$CI_REGISTRY_IMAGE/skoleni-prometheus.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skoleni-prometheus-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3984,6 +4034,7 @@ ccc.oxs.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install ccc-oxs-cz ondrejsika/one-image --set host=ccc.oxs.cz --set image=$CI_REGISTRY_IMAGE/ccc.oxs.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy ccc-oxs-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4164,6 +4215,7 @@ skoleni-rancher.cz prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install skoleni-rancher-cz ondrejsika/one-image --set host=skoleni-rancher.cz --set image=$CI_REGISTRY_IMAGE/skoleni-rancher.cz:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy skoleni-rancher-cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4242,6 +4294,7 @@ sika.blog prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install sika-blog ondrejsika/one-image --set host=sika.blog --set image=$CI_REGISTRY_IMAGE/sika.blog:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sika-blog
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4320,6 +4373,7 @@ static.sika.io prod deploy k8s:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
     - helm upgrade --install static-sika-io ondrejsika/one-image --set host=static.sika.io --set image=$CI_REGISTRY_IMAGE/static.sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy static-sika-io
   except:
     variables:
       - $EXCEPT_DEPLOY
