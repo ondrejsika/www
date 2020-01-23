@@ -211,7 +211,7 @@
     #### Z Chartu ve specifickém repozitari
 
     ```
-    helm install hello5 --řepo https://helm.oxs.cz one-image --set hello5.k8s.sikademo.com
+    helm install hello5 --repo https://helm.oxs.cz one-image --set hello5.k8s.sikademo.com
     ```
 
     ### Helm Upgrade
@@ -225,12 +225,12 @@
     a samotný upgrade:
 
     ```
-    helm upgrade nginx ondrejsika/one-image --set image=nginx:alpíne --set host=nginx.k8s.sikademo.com
+    helm upgrade nginx ondrejsika/one-image --set image=nginx:alpine --set host=nginx.k8s.sikademo.com
     ```
 
     ### Helm Uninstall místo Helm Delete
 
-    Helm 3 má příkaz `helm uninstall`, který nahrazuje `helm delete ředíš --purge`. Po odinstalování můžete rovnou nasadit nový chart pod stejným jménem.
+    Helm 3 má příkaz `helm uninstall`, který nahrazuje `helm delete redis --purge`. Po odinstalování můžete rovnou nasadit nový chart pod stejným jménem.
 
     Pokud chcete zachovat historii (dříve bez parametrů `--purge`), teď musíte přidat parametr `--keep-history`
 
