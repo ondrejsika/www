@@ -7,6 +7,6 @@ export default props => (
     lang={props.site.lang}
     logo={logo}
     location="cz"
-    show_sessions={false}
+    show_sessions={true}
   />
 );
