@@ -67,10 +67,10 @@ $SITE build docker:
   script:
     - docker login \$CI_REGISTRY -u \$CI_REGISTRY_USER -p \$CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/$SITE/
-    - docker build -t registry.sikahq.com/www/www/$SITE packages/$SITE
+    - docker build -t registry.sikahq.com/www/www/$SITE:\$CI_COMMIT_SHORT_SHA packages/$SITE
     - rm packages/$SITE/Dockerfile
     - rm packages/$SITE/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/$SITE
+    - docker push registry.sikahq.com/www/www/$SITE:\$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - \$EXCEPT_BUILD
@@ -93,7 +93,7 @@ $SITE dev deploy:
   variables:
     GIT_STRATEGY: none
   script:
-    - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
+    - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE:\$CI_COMMIT_SHORT_SHA&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
   except:
     - master
   except:
@@ -129,7 +129,7 @@ $SITE dev deploy k8s:
   script:
     - echo \$KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install $NAME-dev ondrejsika/one-image --set host=$SITE$SUFFIX --set image=\$CI_REGISTRY_IMAGE/$SITE --set changeCause=job-\$CI_JOB_ID
+    - helm upgrade --install $NAME-dev ondrejsika/one-image --set host=$SITE$SUFFIX --set image=\$CI_REGISTRY_IMAGE/$SITE:\$CI_COMMIT_SHORT_SHA --set changeCause=job-\$CI_JOB_ID
   except:
     - master
   except:
@@ -162,7 +162,7 @@ $SITE prod deploy:
   variables:
     GIT_STRATEGY: none
   script:
-    - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
+    - curl -s "\$SOD_URL/api/v1/deploy/docker/?image=\$CI_REGISTRY_IMAGE/$SITE:\$CI_COMMIT_SHORT_SHA&domain=$SITE$SUFFIX&token=\$SOD_TOKEN&registry=\$CI_REGISTRY&registry_user=\$CI_REGISTRY_USER&registry_password=\$CI_REGISTRY_PASSWORD"
   except:
     variables:
       - \$EXCEPT_DEPLOY
@@ -198,7 +198,7 @@ $SITE prod deploy k8s:
   script:
     - echo \$KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install $NAME ondrejsika/one-image --set host=$SITE --set image=\$CI_REGISTRY_IMAGE/$SITE --set changeCause=job-\$CI_JOB_ID
+    - helm upgrade --install $NAME ondrejsika/one-image --set host=$SITE --set image=\$CI_REGISTRY_IMAGE/$SITE:\$CI_COMMIT_SHORT_SHA --set changeCause=job-\$CI_JOB_ID
   except:
     variables:
       - \$EXCEPT_DEPLOY
