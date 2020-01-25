@@ -23,7 +23,6 @@ export default props => (
       />
     </Head>
     <DevelopmentBar />
-    <AustraliaOnFireBar local_link={true} />
     <Navbar
       NavName="Ondřej Šika"
       NavUnderheader="Software {Engineer, Konzultant, Lektor}"

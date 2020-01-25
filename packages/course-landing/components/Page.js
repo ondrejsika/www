@@ -53,7 +53,6 @@ const Page = props => {
           rel="stylesheet"
         ></link>
       </Head>
-      {lang == "cs" && <AustraliaOnFireBar />}
       <Navigation wide={true} location={site.location} />
       <Header
         wide={true}
