@@ -11,6 +11,7 @@ export default () => (
 - Traefik proxy s Let's Encrypt pro Docker - https://github.com/ondrejsika/traefik-le
 - Docker Registry za Traefik proxy - https://github.com/ondrejsika/docker-registry-traefik
 - Ukazky ke [Skoleni Dockeru](/skoleni/docker) - https://github.com/ondrejsika/docker-training
+- HA Docker Cluster pomocí Swarmu a Cephu - https://github.com/ondrejsika/ha-docker-cluster-with-swarm-and-ceph
 
 
 ## Gitlab CI
@@ -71,6 +72,10 @@ export default () => (
 - Terraform Provider for Zeit - https://github.com/ondrejsika/terraform-provider-zeit
 - Zeit API Mock server - https://github.com/ondrejsika/zeit-api-mock
 - Go client for Zeit API - https://github.com/ondrejsika/zeit-go
+
+## Ceph
+
+- HA Docker Cluster pomocí Swarmu a Cephu - https://github.com/ondrejsika/ha-docker-cluster-with-swarm-and-ceph
 
 ## Ostatní
 
