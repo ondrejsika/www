@@ -1,5 +1,5 @@
 export default props => (
-  <div className="container footerbar text-center">
+  <div className="container footerbar text-center monospace">
     <p>
       2019 - 2020 &copy; <strong>Salzburg DevOps Meetups</strong> by{" "}
       <a
