@@ -8,7 +8,7 @@
     "clean": "git clean -X -f -d",
     "prettier-check": "prettier -l \"**/*.js\"",
     "prettier-write": "prettier --write \"**/*.js\"",
-    "eslint-diff": "git diff-index --name-only HEAD | grep .js | grep -v .json | xargs eslint",
+    "eslint-diff": "git diff-index --name-only HEAD | grep .js | grep -v .json | grep -v .eslintrc.js | xargs eslint",
     "dev-all": "./run-dev-all.sh",
     "ncu": "ncu -u --packageFile",
     "ncu-packages": "find ./packages -name package.json -exec yarn run ncu {} \\;",
