@@ -1,3 +1,0 @@
-image: ondrejsika/go-hello-world:2
-host: hello-world.local
-changeCause: null
