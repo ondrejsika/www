@@ -35,7 +35,7 @@
   submissions:
     - installfest2020
 - id: modern-monitoring-stack-using-prometheus-aletmanager-and-grafana-cz
-  title: Moderní monitoringovy stack - Prométheus, Alert Manager a Grafana
+  title: Moderní monitoringový stack - Prométheus, Alert Manager a Grafana
   bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
   abstract: Chcete Monitorovat vaší Aplikaci a infrastrukturu moderním a prověřeným stackem. Zkuste Prometheus a Alert Manager. Prometheus je metrics server, který sbírá metrické data. Na základě těchto dat umožňuje notifikovat o problémech pomocí Alert Manageru. Tyto metriky také můžete zobrazovat v přehledných grafech v Grafaně.
   submissions:
