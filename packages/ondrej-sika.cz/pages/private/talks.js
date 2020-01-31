@@ -4,7 +4,15 @@ import workshops from "@app/data/ondrejsika/workshops.yml";
 
 export default props => (
   <Article title="Talks &amp; Workshops , I Can Do on Your Event">
-    <h1>Talks</h1>
+    <ul>
+      <li>
+        <a href="#talks">Talks</a>
+      </li>
+      <li>
+        <a href="#workshops">Workshops</a>
+      </li>
+    </ul>
+    <h1 id="talks">Talks</h1>
     {talks.map(talk => (
       <div>
         <h2>{talk.title}</h2>
@@ -24,7 +32,7 @@ export default props => (
         />
       </div>
     ))}
-    <h1>Workshops</h1>
+    <h1 id="workshops">Workshops</h1>
     {workshops.map(workshop => (
       <div>
         <h2>{workshop.title}</h2>
