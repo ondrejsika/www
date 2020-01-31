@@ -9,7 +9,7 @@ const Index = () => (
     </Head>
     <div className="mt-4">
       <h1>static.sika.io</h1>
-      <p>Static content for other wesbites or externals (conferences, ...).</p>
+      <p>Static content for other websites or externals (conferences, ...).</p>
       <h2>Files</h2>
       <Markdown
         source={`
