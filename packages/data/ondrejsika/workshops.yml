@@ -1,16 +1,16 @@
 - id: own-terraform-provider-in-go-cz
   title: Vlastní Terraform Provider v Go
-  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
   abstract: |
-    Terraform je populární nástroj na správu infrastruktury. Co když Vás poskytovatel infrastruktury Terraform nepodporuje? Nebo pokud používáte vlastní infrastrukturu? Můžete si napsat vlastní Terraform Provider. A není to rocker science!
+    Terraform je populární nástroj na správu infrastruktury. Co když Vás poskytovatel infrastruktury Terraform nepodporuje? Nebo pokud používáte vlastní infrastrukturu? Můžete si napsat vlastní Terraform Provider. A není to rocket science!
 
-    Na workshopu si ukážeme jak. Společně si napíšeme vlastní demo provider v Go. Zvládnete to i bez znalosti Go. Začneme instalaci Go a zkončíme jednoduchým Terraform manifestem kde využijete Váš provider.
+    Na workshopu si ukážeme jak. Společně si napíšeme vlastní demo provider v Go. Zvládnete to i bez znalosti Go. Začneme instalaci Go a skončíme jednoduchým Terraform manifestem kde využijete Váš provider.
   submissions:
     - installfest2020
 - id: getting-started-with-prometheus-stack-cz
-  title: Začněte s Prométheem, Alert Managerem a Grafanou
-  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  title: Začněte s Prometheem, Alert Managerem a Grafanou
+  bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
   abstract: |
-    Nemáte žádné zkušenosti s Prométheem, Alert Managerem a Grafanou? Pojďme si spolu nastavit monitoring stack pro jednoduché příklady. Ukážeme si jak monitorovat jednoduchou aplikaci nasazenou na virtuálním serverů a aplikaci běžící v Kubernetes. Nastavíme Prométheus, alerty i pěkné dashboardy v Grafaně.
+    Nemáte žádné zkušenosti s Prometheem, Alert Managerem a Grafanou? Pojďme si spolu nastavit monitoring stack pro jednoduché příklady. Ukážeme si jak monitorovat jednoduchou aplikaci nasazenou na virtuálním serveru a aplikaci běžící v Kubernetes. Nastavíme Prometheus, alerty i pěkné dashboardy v Grafaně.
   submissions:
     - installfest2020

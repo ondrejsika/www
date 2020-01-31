@@ -30,13 +30,13 @@
     - pyconsk2020
 - id: zeit-serverless-deployments-cz
   title: Zeit, Serverless Deployments - nasazujte aplikace i bez serverů
-  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
-  abstract: Máte web nebo aplikaci kterou chcete ukázat světu, ale nechcete se starat o servery nebo infrastrukturu? Odpovědi na tuto otázku je serverless platforma Zeit. Aplikaci nasadíte pushem do master větve na Githubu nebo příkazem now.
+  bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Máte web nebo aplikaci kterou chcete ukázat světu, ale nechcete se starat o servery nebo infrastrukturu? Odpovědí na tuto otázku je serverless platforma Zeit. Aplikaci nasadíte pushem do master větve na Githubu nebo příkazem now.
   submissions:
     - installfest2020
 - id: modern-monitoring-stack-using-prometheus-aletmanager-and-grafana-cz
   title: Moderní monitoringovy stack - Prométheus, Alert Manager a Grafana
-  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
-  abstract: Chcete Monitorovat vaší Aplikaci a infrastrukturu moderním a prověřeným stackem. Zkuste Prométheus a Alert Manager. Prométheus je metrics server, který sbírá metrické data. Na základě těchto dát umožňuje notifikovat o problémech pomoci Alert Manageru. Tyto metriky také můžete zobrazovat v přehledných grafech v Grafaně.
+  bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Chcete Monitorovat vaší Aplikaci a infrastrukturu moderním a prověřeným stackem. Zkuste Prometheus a Alert Manager. Prometheus je metrics server, který sbírá metrické data. Na základě těchto dat umožňuje notifikovat o problémech pomocí Alert Manageru. Tyto metriky také můžete zobrazovat v přehledných grafech v Grafaně.
   submissions:
     - installfest2020
