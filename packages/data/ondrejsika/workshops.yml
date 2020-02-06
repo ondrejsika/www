@@ -5,6 +5,11 @@
     Terraform je populární nástroj na správu infrastruktury. Co když Vás poskytovatel infrastruktury Terraform nepodporuje? Nebo pokud používáte vlastní infrastrukturu? Můžete si napsat vlastní Terraform Provider. A není to rocket science!
 
     Na workshopu si ukážeme jak. Společně si napíšeme vlastní demo provider v Go. Zvládnete to i bez znalosti Go. Začneme instalaci Go a skončíme jednoduchým Terraform manifestem kde využijete Váš provider.
+  requirements: |
+    - Visual Studio Code
+    - Go
+    - Terraform
+
   submissions:
     - installfest2020
 - id: getting-started-with-prometheus-stack-cz
@@ -12,5 +17,9 @@
   bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
   abstract: |
     Nemáte žádné zkušenosti s Prometheem, Alert Managerem a Grafanou? Pojďme si spolu nastavit monitoring stack pro jednoduché příklady. Ukážeme si jak monitorovat jednoduchou aplikaci nasazenou na virtuálním serveru a aplikaci běžící v Kubernetes. Nastavíme Prometheus, alerty i pěkné dashboardy v Grafaně.
+  requirements: |
+    - Prometheus
+    - Alert Manager
+    - Grafana
   submissions:
     - installfest2020
