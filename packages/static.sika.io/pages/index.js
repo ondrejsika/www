@@ -8,6 +8,7 @@ const Index = () => (
   <>
     <Head>
       <title>static.sika.io</title>
+      <link rel="icon" type="image/png" href="/icon.png" />
       <link
         href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
         rel="stylesheet"
