@@ -8,7 +8,20 @@ const Index = () => (
   <>
     <Head>
       <title>static.sika.io</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
+        rel="stylesheet"
+      />
     </Head>
+    <style jsx global>{`
+      * {
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+      h1,
+      h2 {
+        font-family: "IBM Plex Mono", monospace;
+      }
+    `}</style>
     <div className="mt-4">
       <h1>static.sika.io</h1>
       <p>Static content for other websites or externals (conferences, ...).</p>
