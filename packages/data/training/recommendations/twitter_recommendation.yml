@@ -1,6 +1,9 @@
 - id: adam-bisek-docker
   tweet_id: '1217508566317314049'
   course: docker
+- id: petr-klobas-docker
+  tweet_id: '1225126289188802562'
+  course: docker
 - id: martin-sindelar-gitlab-ci
   tweet_id: '1154359265324351489'
   course: gitlab-ci
