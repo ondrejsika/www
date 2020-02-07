@@ -1,9 +1,11 @@
+import React from "react";
 import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-export default () => (
-  <Article
-    title="Zajímavé osobní stránky"
-    markdown={`
+export default function Hello() {
+  return (
+    <Article
+      title="Zajímavé osobní stránky"
+      markdown={`
 Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizuji, naposledy 15. 1. 2020.
 
 - <https://dhh.dk/>
@@ -17,7 +19,9 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://peteramende.de/>
 - <https://huvik.dev/>
 - <https://sulc.dev/>
+- <https://honzacerny.com/>
 
     `}
-  />
-);
+    />
+  );
+}
