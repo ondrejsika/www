@@ -1,46 +1,29 @@
 const CopyPlugin = require("copy-webpack-plugin");
-yaml = require("js-yaml");
-fs = require("fs");
-path = require("path");
-
-function walkDir(dir, callback) {
-  fs.readdirSync(dir).forEach(f => {
-    let dirPath = path.join(dir, f);
-    let isDirectory = fs.statSync(dirPath).isDirectory();
-    isDirectory ? walkDir(dirPath, callback) : callback(path.join(dir, f));
-  });
-}
-
-function buildExportPathMap(custom_exclude_paths) {
-  var out = {};
-  var exclude_paths = ["/_document", "/_app"].concat(custom_exclude_paths);
-
-  try {
-    var posts = yaml.safeLoad(fs.readFileSync("data/blog-posts.yaml", "utf8"));
-    posts.forEach(function(post) {
-      out[`/blog/${post.id}`] = { page: "/blog/[id]", query: { id: post.id } };
-    });
-  } catch (e) {
-    console.log(e);
-  }
-
-  walkDir("pages/", function(filePath) {
-    // remove page/ and .js
-    filePath = filePath.substr(5).substr(0, filePath.length - 5 - 3);
-    // replace /index with /
-    filePath = filePath.replace("/index", "");
-    // fix file path for root index
-    if (filePath == "") filePath = "/";
-    if (!exclude_paths.includes(filePath)) out[filePath] = { page: filePath };
-  });
-
-  return out;
-}
+const yaml = require("js-yaml");
+const fs = require("fs");
 
 module.exports = {
   exportTrailingSlash: true,
-  exportPathMap: function() {
-    return buildExportPathMap(["/blog/[id]"]);
+  exportPathMap: function(defaultPathMap) {
+    // remove default blog page render (without post)
+    delete defaultPathMap["/blog/[id]"];
+
+    // export blog post
+    try {
+      var posts = yaml.safeLoad(
+        fs.readFileSync("data/blog-posts.yaml", "utf8")
+      );
+      posts.forEach(function(post) {
+        defaultPathMap[`/blog/${post.id}`] = {
+          page: "/blog/[id]",
+          query: { id: post.id }
+        };
+      });
+    } catch (e) {
+      console.log(e);
+    }
+
+    return defaultPathMap;
   },
   webpack: function(config) {
     config.plugins.push(
