@@ -17,13 +17,13 @@ Pokud odkaz nebude fungovat (bohužel ho musím každých 20 dní aktualizovat),
 
 ## LinkedIn
 
-- Moje stránka: [Ondrej Sika](https://www.linkedin.com/company/ondrejsika)
 - Skupina pro účastníky: [Ondrej Sika Training Attendees](https://www.linkedin.com/groups/8902190/)
+- Moje stránka: [Ondrej Sika](https://www.linkedin.com/company/ondrejsika)
 
 ## Facebook
 
-- Moje stránka: [Ondrej Sika](https://www.facebook.com/ondrejsikafreelancer/)
 - Skupina: [Ondrej Sika Skoleni - Ucastnici](https://www.facebook.com/groups/3484478441626937/)
+- Moje stránka: [Ondrej Sika](https://www.facebook.com/ondrejsikafreelancer/)
 
 ## Newsletter
 
