@@ -1,17 +1,16 @@
-import Head from "next/head";
 import React from "react";
+import Head from "next/head";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import Navbar from "@app/ondrej-sika.cz/components/Navbar";
 import Footer from "@app/ondrej-sika.cz/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
-import AustraliaOnFireBar from "@app/common/components/AustraliaOnFireBar";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
 
-export default props => (
+let Layout = props => (
   <div>
     <Head>
       <meta charSet="utf-8" />
@@ -67,3 +66,5 @@ export default props => (
     />
   </div>
 );
+
+export default Layout;
