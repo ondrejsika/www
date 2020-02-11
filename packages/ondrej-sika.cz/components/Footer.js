@@ -1,3 +1,5 @@
+import React from "react";
+
 import Link from "next/link";
 
 import facebookhex from "@app/data/pictures/social-networks/fb-hex.svg";
@@ -123,12 +125,17 @@ const Footer = () => (
           <Link href="/book-me">
             <a className="a-underline">Book Me</a>
           </Link>
+          <span className="text-white">&nbsp;|&nbsp;</span>
+          <Link href="/invite">
+            <a className="a-underline">Připojte se</a>
+          </Link>
         </p>
         <p className="text-center text-white fs-9 pt-4">
           Website by{" "}
           <a
             href="https://zuzjes.com"
             target="_blank"
+            rel="noopener noreferrer"
             className="fs-11 text a-underline"
           >
             Zuzana Jeschke
