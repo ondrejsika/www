@@ -61,7 +61,7 @@
   date_from: 17.1.2020
   date_to: 17.1.2020
 - id: git-praha-30-01-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: git
