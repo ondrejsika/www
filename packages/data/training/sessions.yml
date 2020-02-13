@@ -130,7 +130,7 @@
 # Germany
 # Berlin
 - id: docker-berlin-13-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: docker
@@ -143,7 +143,7 @@
   date_to: 14.1.2020
 
 - id: kubernetes-berlin-15-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: kubernetes
@@ -156,7 +156,7 @@
   date_to: 16.1.2020
 
 - id: gitlab-ci-berlin-17-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: gitlab-ci
@@ -170,7 +170,7 @@
 
 # Hamburg
 - id: docker-hamburg-20-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: docker
@@ -183,7 +183,7 @@
   date_to: 21.1.2020
 
 - id: kubernetes-hamburg-22-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: kubernetes
@@ -196,7 +196,7 @@
   date_to: 23.1.2020
 
 - id: gitlab-ci-hamburg-24-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: gitlab-ci
@@ -210,7 +210,7 @@
 
 # Munich
 - id: docker-munich-27-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: docker
@@ -223,7 +223,7 @@
   date_to: 28.1.2020
 
 - id: kubernetes-munich-29-01-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: kubernetes
@@ -251,7 +251,7 @@
 # Austria
 # Vienna
 - id: docker-vienna-13-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: docker
@@ -264,7 +264,7 @@
   date_to: 14.1.2020
 
 - id: kubernetes-vienna-15-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: kubernetes
@@ -277,7 +277,7 @@
   date_to: 16.1.2020
 
 - id: gitlab-ci-vienna-17-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: gitlab-ci
@@ -291,7 +291,7 @@
 
 # Salzburg
 - id: docker-salzburg-20-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: docker
@@ -304,7 +304,7 @@
   date_to: 21.1.2020
 
 - id: kubernetes-salzburg-22-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: kubernetes
@@ -317,7 +317,7 @@
   date_to: 23.1.2020
 
 - id: gitlab-ci-salzburg-24-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: gitlab-ci
@@ -331,7 +331,7 @@
 
 # Graz
 - id: docker-graz-27-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: docker
@@ -344,7 +344,7 @@
   date_to: 28.1.2020
 
 - id: kubernetes-graz-29-01-2020
-  active: true
+  active: false
   country: at
   lang: en
   course_id: kubernetes
@@ -372,7 +372,7 @@
 # Sweden
 # Stockholm
 - id: docker-stockholm-13-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: docker
@@ -385,7 +385,7 @@
   date_to: 14.1.2020
 
 - id: kubernetes-stockholm-15-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: kubernetes
@@ -398,7 +398,7 @@
   date_to: 16.1.2020
 
 - id: gitlab-ci-stockholm-17-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: gitlab-ci
@@ -412,7 +412,7 @@
 
 # Malmo
 - id: docker-malmo-20-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: docker
@@ -425,7 +425,7 @@
   date_to: 21.1.2020
 
 - id: kubernetes-malmo-22-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: kubernetes
@@ -438,7 +438,7 @@
   date_to: 23.1.2020
 
 - id: gitlab-ci-malmo-24-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: gitlab-ci
@@ -452,7 +452,7 @@
 
 # Gothenburg
 - id: docker-gothenburg-27-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: docker
@@ -465,7 +465,7 @@
   date_to: 28.1.2020
 
 - id: kubernetes-gothenburg-29-01-2020
-  active: true
+  active: false
   country: se
   lang: en
   course_id: kubernetes
@@ -493,7 +493,7 @@
 # Switzerland
 # Zurich
 - id: docker-zurich-13-01-2020
-  active: true
+  active: false
   country: ch
   lang: en
   course_id: docker
@@ -506,7 +506,7 @@
   date_to: 14.1.2020
 
 - id: kubernetes-zurich-15-01-2020
-  active: true
+  active: false
   country: ch
   lang: en
   course_id: kubernetes
@@ -519,7 +519,7 @@
   date_to: 16.1.2020
 
 - id: gitlab-ci-zurich-17-01-2020
-  active: true
+  active: false
   country: ch
   lang: en
   course_id: gitlab-ci
@@ -533,7 +533,7 @@
 
 # Geneva
 - id: docker-geneva-20-01-2020
-  active: true
+  active: false
   country: ch
   lang: en
   course_id: docker
@@ -546,7 +546,7 @@
   date_to: 21.1.2020
 
 - id: kubernetes-geneva-22-01-2020
-  active: true
+  active: false
   country: ch
   lang: en
   course_id: kubernetes
@@ -559,7 +559,7 @@
   date_to: 23.1.2020
 
 - id: gitlab-ci-geneva-24-01-2020
-  active: true
+  active: false
   country: ch
   lang: en
   course_id: gitlab-ci
@@ -574,7 +574,7 @@
 # Netherlands
 # Amsterdam
 - id: docker-amsterdam-13-01-2020
-  active: true
+  active: false
   country: nl
   lang: en
   course_id: docker
@@ -587,7 +587,7 @@
   date_to: 14.1.2020
 
 - id: kubernetes-amsterdam-15-01-2020
-  active: true
+  active: false
   country: nl
   lang: en
   course_id: kubernetes
@@ -600,7 +600,7 @@
   date_to: 16.1.2020
 
 - id: gitlab-ci-amsterdam-17-01-2020
-  active: true
+  active: false
   country: nl
   lang: en
   course_id: gitlab-ci
@@ -615,7 +615,7 @@
 # Denmark
 # Copenhagen
 - id: docker-copenhagen-13-01-2020
-  active: true
+  active: false
   country: dk
   lang: en
   course_id: docker
@@ -628,7 +628,7 @@
   date_to: 14.1.2020
 
 - id: kubernetes-copenhagen-15-01-2020
-  active: true
+  active: false
   country: dk
   lang: en
   course_id: kubernetes
@@ -641,7 +641,7 @@
   date_to: 16.1.2020
 
 - id: gitlab-ci-copenhagen-17-01-2020
-  active: true
+  active: false
   country: dk
   lang: en
   course_id: gitlab-ci
@@ -658,7 +658,7 @@
 # Germany
 # Berlin
 - id: docker-berlin-03-02-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: docker
@@ -671,7 +671,7 @@
   date_to: 4.2.2020
 
 - id: kubernetes-berlin-05-02-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: kubernetes
@@ -684,7 +684,7 @@
   date_to: 6.2.2020
 
 - id: gitlab-ci-berlin-07-02-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: kubernetes
@@ -738,7 +738,7 @@
 
 # Munich
 - id: docker-munich-17-02-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: docker
