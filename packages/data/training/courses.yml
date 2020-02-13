@@ -477,4 +477,8 @@
       - Základy práce v terminálu
 
       #### Technické požadavky
-      - Notebook s pristupem na internet
+
+      - Notebook s přístupem na internet
+      - Docker nebo nainstalovány Prométheus, Alert Manager, Push Gateway a Grafanu
+
+      Informace pro přípravu na školení [zde](/skoleni/prometheus/priprava-na-skoleni)
