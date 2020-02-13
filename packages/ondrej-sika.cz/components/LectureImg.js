@@ -1,3 +1,5 @@
+import React from "react";
+
 import docker from "@app/data/pictures/courses/docker-w.svg";
 import git from "@app/data/pictures/courses/git-w.svg";
 import gitlabci from "@app/data/pictures/courses/gitlab-ci.svg";
@@ -6,6 +8,7 @@ import react from "@app/data/pictures/courses/react.svg";
 import terraform from "@app/data/pictures/courses/terraform-white.png";
 import ansible from "@app/data/pictures/courses/ansible.png";
 import rancher from "@app/data/pictures/courses/rancher-white.png";
+import prometheus from "@app/data/pictures/courses/prometheus-white.png";
 import Link from "next/link";
 
 const Card = props => {
@@ -41,6 +44,11 @@ const LectureImg = props => {
             courseImg={gitlabci}
           />
           <Card courseName="Ansible" courseId="ansible" courseImg={ansible} />
+          <Card
+            courseName="Prometheus"
+            courseId="prometheus"
+            courseImg={prometheus}
+          />
           {(() => {
             if (!props.lang || props.lang == "cs") {
               return (
