@@ -40,3 +40,9 @@
   abstract: Chcete Monitorovat vaší Aplikaci a infrastrukturu moderním a prověřeným stackem. Zkuste Prometheus a Alert Manager. Prometheus je metrics server, který sbírá metrické data. Na základě těchto dat umožňuje notifikovat o problémech pomocí Alert Manageru. Tyto metriky také můžete zobrazovat v přehledných grafech v Grafaně.
   submissions:
     - installfest2020
+- id: monitor-your-python-app-with-prometheus-cz
+  title: Monotorujte Vaši Python aplikaci pomocí Promethea
+  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Prometheus je moderní monitoringový nástroj, který sbírá metriky z aplikaci a na jejich základě může posílat notifikace. Prometheus nativně podporuje monitoring Kubernetes, serverů, databázi a mnoho dalšího. Také může monitorovat metriky z Váší aplikace, díky kterým můžete ohdalit problémy v jejich zárodku. Pojďme si ukázat jak toho docílit v Pythonu za pomoci oficiálního Python klienta. Ukážeme si to na třech příkladech, aplikace v Djangu, ve Flasku a vlatni aplikaci v Pythonu.
+  submissions:
+    - pyconsk2020
