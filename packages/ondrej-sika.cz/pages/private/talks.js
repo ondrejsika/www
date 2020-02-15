@@ -6,18 +6,36 @@ import workshops from "@app/data/ondrejsika/workshops.yml";
 import Markdown from "@app/common/components/Markdown";
 
 let Page = props => (
-  <Article title="Talks &amp; Workshops , I Can Do on Your Event">
+  <Article title="Talks &amp; Workshops, I Can Do on Your Event">
     <ul>
       <li>
-        <a href="#talks">Talks</a>
+        <a href="#talks">
+          <strong>Talks</strong>
+        </a>
+        <ul>
+          {talks.map((talk, i) => (
+            <li key={i}>
+              <a href={`#${talk.id}`}>{talk.title}</a>
+            </li>
+          ))}
+        </ul>
       </li>
       <li>
-        <a href="#workshops">Workshops</a>
+        <a href="#workshops">
+          <strong>Workshops</strong>
+        </a>
+        <ul>
+          {workshops.map((workshop, i) => (
+            <li key={i}>
+              <a href={`#${workshop.id}`}>{workshop.title}</a>
+            </li>
+          ))}
+        </ul>
       </li>
     </ul>
     <h1 id="talks">Talks</h1>
     {talks.map((talk, i) => (
-      <div key={i}>
+      <div key={i} id={talk.id}>
         <h2>{talk.title}</h2>
         <h4>Bio</h4>
         <p>{talk.bio}</p>
@@ -37,7 +55,7 @@ let Page = props => (
     ))}
     <h1 id="workshops">Workshops</h1>
     {workshops.map((workshop, i) => (
-      <div key={i}>
+      <div key={i} id={workshop.id}>
         <h2>{workshop.title}</h2>
         <h4>Bio</h4>
         <p>{workshop.bio}</p>
