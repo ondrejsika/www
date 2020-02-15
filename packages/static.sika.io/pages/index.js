@@ -29,12 +29,19 @@ const Index = () => (
       <h2>Files</h2>
       <Markdown
         source={`
+- [ondrejsika4.jpg](/files/photos/ondrejsika4.jpg) - \`https://static.sika.io/files/photos/ondrejsika4.jpg\`
+- [ondrejsika4_print.jpg](/files/photos/ondrejsika4_print.jpg) - \`https://static.sika.io/files/photos/ondrejsika4_print.jpg\`
+- [ondrejsika4_grayscale.jpg](/files/photos/ondrejsika4_grayscale.jpg) - \`https://static.sika.io/files/photos/ondrejsika4_grayscale.jpg\`
+- [ondrejsika4_grayscale_print.jpg](/files/photos/ondrejsika4_grayscale_print.jpg) - \`https://static.sika.io/files/photos/ondrejsika4_grayscale_print.jpg\`
+- [ondrejsika4_200px.jpg](/files/photos/ondrejsika4_200px.jpg) - \`https://static.sika.io/files/photos/ondrejsika4_200px.jpg\`
+- [ondrejsika4_32px.jpg](/files/photos/ondrejsika4_32px.jpg) - \`https://static.sika.io/files/photos/ondrejsika4_32px.jpg\`
+- [ondrejsika4_32px.png](/files/photos/ondrejsika4_32px.png) - \`https://static.sika.io/files/photos/ondrejsika4_32px.png\`
 - [ondrejsika3.jpg](/files/photos/ondrejsika3.jpg) - \`https://static.sika.io/files/photos/ondrejsika3.jpg\`
 - [ondrejsika3_200px.jpg](/files/photos/ondrejsika3_200px.jpg) - \`https://static.sika.io/files/photos/ondrejsika3_200px.jpg\`
 - [ondrejsika3_32px.jpg](/files/photos/ondrejsika3_32px.jpg) - \`https://static.sika.io/files/photos/ondrejsika3_32px.jpg\`
 - [ondrejsika3_32px.png](/files/photos/ondrejsika3_32px.png) - \`https://static.sika.io/files/photos/ondrejsika3_32px.png\`
 
-Aliases for \`ondrejsika3*\`
+Aliases for \`ondrejsika4*\`
 
 - [ondrejsika.jpg](/files/photos/ondrejsika.jpg) - \`https://static.sika.io/files/photos/ondrejsika.jpg\`
 - [ondrejsika_200px.jpg](/files/photos/ondrejsika_200px.jpg) - \`https://static.sika.io/files/photos/ondrejsika_200px.jpg\`
