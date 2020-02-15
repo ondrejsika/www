@@ -5,6 +5,8 @@ import talks from "@app/data/ondrejsika/talks.yml";
 import workshops from "@app/data/ondrejsika/workshops.yml";
 import Markdown from "@app/common/components/Markdown";
 
+let speaker_image = "https://static.sika.io/files/photos/ondrejsika4.jpg";
+
 let Page = props => (
   <Article title="Talks &amp; Workshops, I Can Do on Your Event">
     <ul>
@@ -39,6 +41,10 @@ let Page = props => (
         <h2>{talk.title}</h2>
         <h4>Bio</h4>
         <p>{talk.bio}</p>
+        <h4>Speaker Image</h4>
+        <p>
+          <code>{speaker_image}</code> (<a href={speaker_image}>link</a>)
+        </p>
         <h4>Abstract</h4>
         <p>{talk.abstract}</p>
         <p>
@@ -61,6 +67,10 @@ let Page = props => (
         <p>{workshop.bio}</p>
         <h4>Abstract</h4>
         <p>{workshop.abstract}</p>
+        <h4>Speaker Image</h4>
+        <p>
+          <code>{speaker_image}</code> (<a href={speaker_image}>link</a>)
+        </p>
         <h4>Requirements</h4>
         <p>
           <Markdown source={workshop.requirements} />
@@ -77,6 +87,11 @@ let Page = props => (
         />
       </div>
     ))}
+    <style jsx>{`
+      code {
+        font-size: 1em;
+      }
+    `}</style>
   </Article>
 );
 
