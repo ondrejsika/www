@@ -124,6 +124,18 @@
   length: 1 den
   date_from: 11.3.2020
   date_to: 11.3.2020
+- id: rancher-praha-27-04-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: rancher
+  name: Školení Rancher
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 27.4.2020
+  date_to: 27.4.2020
 
 
 # EuropeTour 2020 January
