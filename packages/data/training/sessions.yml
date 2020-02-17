@@ -1760,7 +1760,7 @@
   date_from: 24.2.2020
   date_to: 25.2.2020
 - id: gitlab-ci-praha-26-02-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: gitlab-ci
