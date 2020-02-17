@@ -1,10 +1,12 @@
+import React from "react";
+
 import facebookhex from "@app/data/pictures/social-networks/fb-hex.svg";
 import instagramhex from "@app/data/pictures/social-networks/instagram-hex.svg";
 import linkedinhex from "@app/data/pictures/social-networks/linkedin-hex.svg";
 import twitterhex from "@app/data/pictures/social-networks/twitter-hex.svg";
 import githubhex from "@app/data/pictures/social-networks/github-hex.svg";
 import mailhex from "@app/data/pictures/social-networks/mail-hex.svg";
-import ond from "@app/data/pictures/ond.jpg";
+import ond from "@app/data/pictures/lecturers/ondrejsika/ondrejsika4x_steave_vertical.jpg";
 
 const TextWithImg = props => (
   <div>
