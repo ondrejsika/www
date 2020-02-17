@@ -89,7 +89,7 @@
   facebook_event: https://www.facebook.com/events/3325204957506417/
   linkedin_event: https://www.linkedin.com/events/6626833099974025216
 - id: rancher-praha-02-03-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: rancher
