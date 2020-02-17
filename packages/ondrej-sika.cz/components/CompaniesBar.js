@@ -1,3 +1,5 @@
+import React from "react";
+
 import Translate from "@app/common/components/Translate";
 
 import eltodo from "@app/data/pictures/companies/eltodo-sq.png";
@@ -10,7 +12,7 @@ import upce from "@app/data/pictures/companies/upce.png";
 import vse from "@app/data/pictures/companies/vse.png";
 import fio from "@app/data/pictures/companies/fio.png";
 import cs from "@app/data/pictures/companies/ceskasporitelna.jpg";
-import cp from "@app/data/pictures/companies/ceska_pojistovna.jpg";
+// import cp from "@app/data/pictures/companies/ceska_pojistovna.jpg";
 import zoot from "@app/data/pictures/companies/zoot.jpg";
 import cesnet from "@app/data/pictures/companies/cesnet.jpg";
 import cgi from "@app/data/pictures/companies/cgi.png";
@@ -24,12 +26,22 @@ import sde from "@app/data/pictures/companies/sde.png";
 import solitea from "@app/data/pictures/companies/solitea.png";
 import storaenso from "@app/data/pictures/companies/storaenso.jpg";
 import turboconsult from "@app/data/pictures/companies/turboconsult.jpg";
-// import wy from "@app/data/pictures/companies/webglobe-yegon-sq.png";
-// import lukapo from "@app/data/pictures/companies/lukapo.jpg";
-// import animato from "@app/data/pictures/companies/animato.jpg";
-// import ants from "@app/data/pictures/companies/ants.png";
+import wy from "@app/data/pictures/companies/webglobe-yegon-sq.png";
+import lukapo from "@app/data/pictures/companies/lukapo.jpg";
+import animato from "@app/data/pictures/companies/animato.jpg";
+import ants from "@app/data/pictures/companies/ants.png";
 // import atelidev from "@app/data/pictures/companies/atelidev.png";
-// import sl from "@app/data/pictures/companies/satoshilabs.png";
+import sl from "@app/data/pictures/companies/satoshilabs.png";
+
+import fg_forrest from "@app/data/pictures/companies/fg-forrest-square.png";
+import azd_praha from "@app/data/pictures/companies/azd-praha-square.jpg";
+import konica_minolta from "@app/data/pictures/companies/konica-minolta-square.jpg";
+import shopsys from "@app/data/pictures/companies/shopsys-square.png";
+import invasys from "@app/data/pictures/companies/invasys-square.png";
+import actis from "@app/data/pictures/companies/actis-square.png";
+// import spcss from "@app/data/pictures/companies/spcss-square.jpg";
+import ica from "@app/data/pictures/companies/ica-square.jpg";
+import cra from "@app/data/pictures/companies/cra-square.jpg";
 
 const CompaniesBar = props => (
   <div className="pb-2">
@@ -38,7 +50,7 @@ const CompaniesBar = props => (
     </h2>
     <div className="d-flex row text-center">
       {[
-        cp,
+        invasys,
         cesnet,
         deutcheborse,
         sde,
@@ -61,9 +73,24 @@ const CompaniesBar = props => (
         solitea,
         storaenso,
         upce,
-        turboconsult
-      ].map(img => (
-        <div className="col-lg-1 col-md-2 col-sm-4 col-4 pl-0 pr-0">
+        turboconsult,
+        wy,
+        lukapo,
+        // atelidev,
+        animato,
+        ants,
+        sl,
+        fg_forrest,
+        azd_praha,
+        konica_minolta,
+        shopsys,
+        actis,
+        // cp,
+        // spcss,
+        ica,
+        cra
+      ].map((img, i) => (
+        <div key={i} className="col-lg-1 col-md-2 col-sm-4 col-4 pl-0 pr-0">
           <img src={img} className="img-fluid bw" alt="default" />
         </div>
       ))}
