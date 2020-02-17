@@ -15,7 +15,8 @@ const Index = () => (
         <strong>Your CTO / Software &amp; DevOps Engineer</strong>
       </p>
       <p>
-        <strong>Hire Me!</strong>
+        <strong>Hire Me!</strong> (New York, London, Berlin, Zurich, Dubai,
+        Doha)
       </p>
       <p>
         <a href="mailto:ondrej@sika.work">ondrej@sika.work</a>
