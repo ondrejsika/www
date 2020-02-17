@@ -1,3 +1,5 @@
+import React from "react";
+
 import Head from "next/head";
 import Link from "next/link";
 import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
@@ -19,9 +21,12 @@ const Index = props => (
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
           <p className="">
-            <a href="mailto:deals@trainera.io?subject=Poptavka skoleni">
-              deals@trainera.io
-            </a>
+            <a href="mailto:sales@trainera.io?subject=Poptavka skoleni">
+              sales@trainera.io
+            </a>{" "}
+            (Poptávky školení)
+            <br />
+            <a href="mailto:info@trainera.io">info@trainera.io</a> (Ostatní)
           </p>
           <p className="pb-4">
             <a href="https://www.linkedin.com/company/traineraio">
