@@ -1,8 +1,11 @@
+import React from "react";
 import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
 import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
 import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
+import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 
 import Head from "next/head";
 
@@ -61,6 +64,19 @@ const Index = () => (
         Všechny kurzy a školení dělám v českém nebo anglickém jazyce.
       </TextWithImg>
       <CompaniesBar />
+      <h2 className="mt-5">Doporučení z Twitteru</h2>
+      <div className="card-columns">
+        {twitter_recommendation_file.map((rec, i) => {
+          return (
+            <div key={i} className="card" style={{ border: "none" }}>
+              <TwitterTweetEmbed
+                tweetId={rec.tweet_id}
+                options={{ conversation: "none" }}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   </div>
 );
