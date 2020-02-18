@@ -20,6 +20,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://huvik.dev/>
 - <https://sulc.dev/>
 - <https://honzacerny.com/>
+- <https://mattbanderson.com/about/>
 
     `}
     />
