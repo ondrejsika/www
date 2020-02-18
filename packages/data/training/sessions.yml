@@ -75,7 +75,7 @@
   facebook_event: https://www.facebook.com/events/2632627060187625/
   linkedin_event: https://www.linkedin.com/events/6626830204021022720
 - id: prometheus-praha-17-02-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: prometheus
@@ -1723,7 +1723,7 @@
 
 # Czech Republic
 - id: docker-praha-11-02-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
