@@ -82,19 +82,6 @@ const Page = () => (
 
 - Err.li - Url zkracovač pro chyby v repozitáři na Githubu - https://github.com/ondrejsika/err.li
 `}
-    after={
-      <div className="alert alert-primary mt-5 text-center" role="alert">
-        <h3>
-          Chcete dostávat nové články do emailu? Přihlašte se k newsletteru!
-        </h3>
-        <a
-          className="btn btn-large btn-primary m-3"
-          href="https://sika.link/newsletter"
-        >
-          Přihlásit se k odběru
-        </a>
-      </div>
-    }
   />
 );
 
