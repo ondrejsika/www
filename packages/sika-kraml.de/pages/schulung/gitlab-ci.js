@@ -1,8 +1,9 @@
+import React from "react";
 import Course from "@app/ondrej-sika.cz/layouts/Course";
 import logo from "@app/data/pictures/courses/gitlab-ci.svg";
 import { stripIndent } from "common-tags";
 
-export default props => (
+const Page = props => (
   <Course
     lang={props.site.lang}
     site={props.site}
@@ -76,3 +77,5 @@ export default props => (
     // ]}
   />
 );
+
+export default Page;

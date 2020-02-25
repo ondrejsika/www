@@ -1,6 +1,7 @@
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Markdown from "@app/common/components/Markdown";
+// import Markdown from "@app/common/components/Markdown";
 
 const Index = () => (
   <div>
@@ -11,7 +12,7 @@ const Index = () => (
     <p>
       04. 01. 2019{" "}
       <Link href="/blog/proof-of-concept-for-zeit-terraform-provider">
-        <a>Proof of Concept for Zeit Terraform Provider</a>
+        <a>Proof of Concept for ZEIT Terraform Provider</a>
       </Link>
       <br />
       01. 01. 2019{" "}

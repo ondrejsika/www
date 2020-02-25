@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Repozitáře"
     markdown={`
@@ -47,7 +48,7 @@ export default () => (
 
 #### Custom Providers
 
-- Terraform Provider for Zeit - https://github.com/ondrejsika/terraform-provider-zeit
+- Terraform Provider for ZEIT - https://github.com/ondrejsika/terraform-provider-zeit
 
 #### Nástroje
 
@@ -67,11 +68,11 @@ export default () => (
 
 - Docker Compose deployment pomoci Ansible - https://github.com/ondrejsika/ansible-docker-compose--example
 
-## Zeit
+## ZEIT
 
-- Terraform Provider for Zeit - https://github.com/ondrejsika/terraform-provider-zeit
-- Zeit API Mock server - https://github.com/ondrejsika/zeit-api-mock
-- Go client for Zeit API - https://github.com/ondrejsika/zeit-go
+- Terraform Provider for ZEIT - https://github.com/ondrejsika/terraform-provider-zeit
+- ZEIT API Mock server - https://github.com/ondrejsika/zeit-api-mock
+- Go client for ZEIT API - https://github.com/ondrejsika/zeit-go
 
 ## Ceph
 
@@ -96,3 +97,5 @@ export default () => (
     }
   />
 );
+
+export default Page;

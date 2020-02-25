@@ -1,11 +1,8 @@
+import React from "React";
 import "@app/sika-kraml.de/css";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import ReactMarkdown from "react-markdown";
 import { stripIndent } from "common-tags";
-
-let site = {
-  lang: "de"
-};
 
 // TODO can we rename this file to "sent.js"?
 
@@ -16,7 +13,7 @@ const Index = () => (
       <ReactMarkdown
         source={stripIndent`
         Wir werden Sie zum frühesmöglichen Zeitpunkt kontaktieren.
-        
+
         Fall Sie noch Fragen haben, kontaktieren Sie uns unter <ondrej@ondrejsika.com>.
         `}
       />

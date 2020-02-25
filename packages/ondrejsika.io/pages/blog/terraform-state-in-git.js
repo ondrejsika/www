@@ -1,5 +1,6 @@
+import React from "React";
 import Head from "next/head";
-import Markdown from "@app/common/components/Markdown";
+// import Markdown from "@app/common/components/Markdown";
 
 const Index = () => (
   <div>
@@ -8,7 +9,7 @@ const Index = () => (
     </Head>
     <h1>Terraform State in Git</h1>
     <p>01. 01. 2019 | Ondrej Sika</p>
-    <p>Idea behing Terraform Provider for Zeit ...</p>
+    <p>Idea behing Terraform Provider for ZEIT ...</p>
   </div>
 );
 

@@ -29,9 +29,9 @@
   submissions:
     - pyconsk2020
 - id: zeit-serverless-deployments-cz
-  title: Zeit, Serverless Deployments - nasazujte aplikace i bez serverů
+  title: ZEIT, Serverless Deployments - nasazujte aplikace i bez serverů
   bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
-  abstract: Máte web nebo aplikaci kterou chcete ukázat světu, ale nechcete se starat o servery nebo infrastrukturu? Odpovědí na tuto otázku je serverless platforma Zeit. Aplikaci nasadíte pushem do master větve na Githubu nebo příkazem now.
+  abstract: Máte web nebo aplikaci kterou chcete ukázat světu, ale nechcete se starat o servery nebo infrastrukturu? Odpovědí na tuto otázku je serverless platforma ZEIT. Aplikaci nasadíte pushem do master větve na Githubu nebo příkazem now.
   submissions:
     - installfest2020
 - id: modern-monitoring-stack-using-prometheus-aletmanager-and-grafana-cz
