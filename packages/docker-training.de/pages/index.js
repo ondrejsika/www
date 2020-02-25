@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "@app/course-landing/components/Header";
 import HeaderLink from "@app/course-landing/components/HeaderLink";
 import TextFrame from "@app/course-landing/components/TextFrame";
@@ -7,12 +8,10 @@ import ThreeCol from "@app/course-landing/components/ThreeCol";
 import TwoCol from "@app/course-landing/components/TwoCol";
 import Navigation from "@app/course-landing/components/Navigation";
 import Recommendation from "@app/course-landing/components/Recommendation";
-import Contact from "@app/course-landing/components/Contact";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import site from "@app/docker-training.de/config";
-import Link from "next/link";
 
 const Index = () => (
   <div>
