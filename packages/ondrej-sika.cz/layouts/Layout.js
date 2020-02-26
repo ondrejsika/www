@@ -51,7 +51,8 @@ let Layout = props => (
             ["BLOG", "/blog"],
             ["NÁVODY (TECHNICKÉ)", "/navody"],
             ["ČLÁNKY (RŮZNÉ)", "/clanky"],
-            ["REPOZITÁŘE", "/repozitare"]
+            ["REPOZITÁŘE", "/repozitare"],
+            ["RESOURCES", "/resources"]
           ]
         ],
         ["KONTAKT", "/kontakt"]
