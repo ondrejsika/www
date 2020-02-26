@@ -1,12 +1,14 @@
+import React from "react";
 import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Články"
     markdown={`
 
   Zde jsou mé články a eseje na různá témata od osobního rozvoje, přes minimalismus po správu osobní IT ifrastruktury. Jsou určené pro široké publikum, ne jako zbytek mého webu, který je primárně určen pro lidi, kteří řeší vývoj a provozování software.
 
+- [Ze emailu do Slacku](/clanky/z-emailu-do-slacku)
 - [Nástroje, které používám a zjednodušují mi práci a život](/clanky/toolchain)
 - [Proč by každý měl mít svoji doménu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/)
 - [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene)
@@ -18,3 +20,5 @@ export default () => (
 `}
   />
 );
+
+export default Page;
