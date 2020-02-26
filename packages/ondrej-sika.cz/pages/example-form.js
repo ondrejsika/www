@@ -6,11 +6,15 @@ import Field from "@app/common/forms/Field";
 const ExampleForm = () => {
   const { handleSubmit, register, errors } = useForm();
   const onSubmit = values => {
-    alert(
-      `name: ${values.name}, company: ${values.company || "--"}, email: ${
-        values.email
-      }, phone: ${values.phone || "--"}`
-    );
+    let out = [
+      `name: ${values.name}`,
+      `company: ${values.company || "--"}`,
+      `email: ${values.email}`,
+      `phone: ${values.phone || "--"}`,
+      `course: ${values.course}`,
+      `session: ${values.session}`
+    ];
+    alert(out.join(", "));
   };
 
   return (
@@ -46,6 +50,34 @@ const ExampleForm = () => {
         register={register}
         errors={errors}
       />
+
+      <Field
+        name="course"
+        as="select"
+        label="Course"
+        register={register}
+        errors={errors}
+        validation_required="Course is required"
+      >
+        <option></option>
+        <option>Docker</option>
+        <option>Kubernetes</option>
+        <option>Gitlab CI</option>
+      </Field>
+
+      <Field
+        name="session"
+        as="select"
+        label="Session"
+        register={register}
+        errors={errors}
+        validation_required="Session is required"
+      >
+        <option></option>
+        <option value="kubernetes-2020-02-01">Kubernetes 1. 2. 2020</option>
+        <option value="kubernetes-2020-04-01">Kubernetes 1. 4. 2020</option>
+        <option value="kubernetes-2020-06-01">Kubernetes 1. 6. 2020</option>
+      </Field>
 
       <Button variant="primary" type="submit">
         Submit

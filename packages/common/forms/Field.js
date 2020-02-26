@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap";
 
 const Field = props => {
   let name = props.name;
+  let as = props.as;
   let label = props.label;
   let type = props.type || "text";
   let register = props.register;
@@ -28,12 +29,15 @@ const Field = props => {
     <Form.Group controlId={name}>
       <Form.Label>{label}</Form.Label>
       <Form.Control
+        as={as}
         type={type}
         name={name}
         isInvalid={errors[name]}
         placeholder={label}
         ref={register(validation)}
-      />
+      >
+        {props.children}
+      </Form.Control>
       <Form.Text className="text-muted">
         {errors[name] && errors[name].message}
       </Form.Text>
