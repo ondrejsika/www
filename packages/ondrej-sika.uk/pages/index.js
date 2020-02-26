@@ -1,5 +1,6 @@
+import React from "react";
 import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import MainBarHomepage from "@app/ondrej-sika.cz/components/MainBarHomepage";
 import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
 import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
 import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
@@ -9,10 +10,10 @@ import Head from "next/head";
 const Index = () => (
   <div>
     <Head></Head>
-    <MainBar
+    <MainBarHomepage
       MainBarHeader="IT Školení, konzultace a workshopy"
       MainBarText="Zlepšuji práci vývojářských týmu zaváděním efektivních procesu ve vývoji a použitím prověřených nástrojů a technologií, které vedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
-    ></MainBar>
+    />
     <StatisticBar
       NumberOfPeople="500+"
       NumberOfPeopleHeader="Počet odškolených lidí"
