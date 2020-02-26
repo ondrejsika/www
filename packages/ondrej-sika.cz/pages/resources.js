@@ -6,6 +6,11 @@ const Page = () => (
     title="Resources"
     subheader="Odkazy na zajimave lidi, clanky, projekty a repozitate ..."
     markdown={`
+## Management
+
+- Paul Graham: Maker's Schedule, Manager's Schedule - http://www.paulgraham.com/makersschedule.html
+
+
 ## Essays
 
 - Paul Graham - http://www.paulgraham.com/articles.html
