@@ -6,7 +6,11 @@ import Field from "@app/common/forms/Field";
 const ExampleForm = () => {
   const { handleSubmit, register, errors } = useForm();
   const onSubmit = values => {
-    console.log(values);
+    alert(
+      `name: ${values.name}, company: ${values.company || "--"}, email: ${
+        values.email
+      }, phone: ${values.phone || "--"}`
+    );
   };
 
   return (
@@ -20,6 +24,13 @@ const ExampleForm = () => {
       />
 
       <Field
+        name="company"
+        label="Company"
+        register={register}
+        errors={errors}
+      />
+
+      <Field
         name="email"
         label="Email"
         register={register}
@@ -27,6 +38,13 @@ const ExampleForm = () => {
         validation_required="Your email is required"
         validation_pattern={/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i}
         validation_pattern_message="Your email is not valid"
+      />
+
+      <Field
+        name="phone"
+        label="Phone Number"
+        register={register}
+        errors={errors}
       />
 
       <Button variant="primary" type="submit">
