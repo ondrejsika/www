@@ -1,3 +1,4 @@
+import React from "react";
 import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
 import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";

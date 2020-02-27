@@ -35,16 +35,38 @@ const LectureImg = props => {
       </h2>
       <div className="container-flex banner-courses">
         <div className="d-flex flex-wrap flex-sm-wrap flex-lg-nowrap d-lg-flex flex-row">
-          <Card courseName="Docker" courseId="docker" courseImg={docker} />
-          <Card courseName="Kubernetes" courseId="kubernetes" courseImg={k8s} />
-          <Card courseName="Git" courseId="git" courseImg={git} />
           <Card
+            lang={props.lang}
+            courseName="Docker"
+            courseId="docker"
+            courseImg={docker}
+          />
+          <Card
+            lang={props.lang}
+            courseName="Kubernetes"
+            courseId="kubernetes"
+            courseImg={k8s}
+          />
+          <Card
+            lang={props.lang}
+            courseName="Git"
+            courseId="git"
+            courseImg={git}
+          />
+          <Card
+            lang={props.lang}
             courseName="Gitlab CI"
             courseId="gitlab-ci"
             courseImg={gitlabci}
           />
-          <Card courseName="Ansible" courseId="ansible" courseImg={ansible} />
           <Card
+            lang={props.lang}
+            courseName="Ansible"
+            courseId="ansible"
+            courseImg={ansible}
+          />
+          <Card
+            lang={props.lang}
             courseName="Prometheus"
             courseId="prometheus"
             courseImg={prometheus}
@@ -54,16 +76,23 @@ const LectureImg = props => {
               return (
                 <>
                   <Card
+                    lang={props.lang}
                     courseName="Terraform"
                     courseId="terraform"
                     courseImg={terraform}
                   />
                   <Card
+                    lang={props.lang}
                     courseName="Rancher"
                     courseId="rancher"
                     courseImg={rancher}
                   />
-                  <Card courseName="React" courseId="react" courseImg={react} />
+                  <Card
+                    lang={props.lang}
+                    courseName="React"
+                    courseId="react"
+                    courseImg={react}
+                  />
                 </>
               );
             }
