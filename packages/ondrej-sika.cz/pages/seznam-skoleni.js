@@ -3,7 +3,7 @@ import Article from "@app/ondrej-sika.cz/layouts/Article";
 import Link from "next/link";
 
 const Page = () => (
-  <Article title="Seznam všech mých školení">
+  <Article title="Seznam všech mých školení" hideNewsletter={true}>
     <ul>
       {[
         ["GIT", "/skoleni/git"],
