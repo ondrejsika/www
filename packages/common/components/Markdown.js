@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import React from "react";
+import Link from "next/link";
 
 function flatten(text, child) {
   return typeof child === "string"
@@ -14,12 +15,20 @@ function HeadingRenderer(props) {
   return React.createElement("h" + props.level, { id: slug }, props.children);
 }
 
+function LinkRenderer(props) {
+  return (
+    <Link href={props.href}>
+      <a>{props.children}</a>
+    </Link>
+  );
+}
+
 let Markdown = props => {
   return (
     <ReactMarkdown
       source={props.source}
       escapeHtml={false}
-      renderers={{ heading: HeadingRenderer }}
+      renderers={{ heading: HeadingRenderer, link: LinkRenderer }}
     />
   );
 };
