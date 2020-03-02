@@ -1,5 +1,4 @@
 import React from "react";
-
 import recommendations from "@app/data/training/recommendations/recommendations.yaml";
 
 let recommendation_id_map = {};

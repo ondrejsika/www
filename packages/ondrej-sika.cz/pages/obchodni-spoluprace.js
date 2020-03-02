@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-export default () => (
+export const ObchodniSpoluprace = () => (
   <Article
     title="Obchodní Spolupráce"
     markdown={`
@@ -8,3 +9,5 @@ Pokud delate aktivni obchod a mate zajem prodavat moje skoleni a konzultace tak 
 `}
   />
 );
+
+export default ObchodniSpoluprace;

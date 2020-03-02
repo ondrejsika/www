@@ -1,3 +1,4 @@
+import React from "react";
 import "@app/ondrej-sika.cz/css";
 
 import Header from "@app/ondrej-sika.cz/components/Header";
@@ -7,7 +8,7 @@ import site from "@app/ondrej-sika.cz/config";
 
 import Head from "next/head";
 
-export default () => (
+export const Registration = () => (
   <div>
     <Head>
       <title>Registrace na Školení - Ondřej Šika</title>
@@ -82,3 +83,4 @@ export default () => (
     </div>
   </div>
 );
+export default Registration;

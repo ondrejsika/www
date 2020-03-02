@@ -1,8 +1,9 @@
+import React from "react";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 import Head from "next/head";
 
-const Index = () => (
+const Sent = () => (
   <div>
     <Head>
       <title>Odesláno- Ondřej Šika</title>
@@ -21,4 +22,4 @@ V případě jakýchkoliv dotazů pište na <ondrej@sika.io>.
   </div>
 );
 
-export default Index;
+export default Sent;
