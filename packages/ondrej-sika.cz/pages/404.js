@@ -3,7 +3,7 @@ import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
 
-export default () => {
+export const error = () => {
   return (
     <>
       <Head>
@@ -31,3 +31,5 @@ Pokud něco nefunguje, dejte mi vědět na <ondrej@sika.io>
     </>
   );
 };
+
+export default error;

@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-export default () => (
+export const BookMe = () => (
   <Article
     title="Book Me"
     hideNewsletter={true}
@@ -16,3 +17,5 @@ Rezervujte si můj čas, ideálně po domluvě emailem (<ondrej@sika.io>) nebo t
 `}
   />
 );
+
+export default BookMe;

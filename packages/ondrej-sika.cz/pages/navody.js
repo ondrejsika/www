@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrej-sika.cz/layouts/Article";
 
-export default () => (
+export const Manuals = () => (
   <Article
     title="Návody"
     markdown={`
@@ -53,3 +54,4 @@ Pokud Vas zajima Git, podivejte se na me [Skoleni Gitu](/skoleni/git)
 `}
   />
 );
+export default Manuals;

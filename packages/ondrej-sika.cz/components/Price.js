@@ -1,3 +1,5 @@
+import React from "react";
+
 const Price = props => (
   <div>
     <div className="price bg-grey pb-3">

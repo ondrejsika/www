@@ -1,15 +1,15 @@
+import React from "react";
 import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-
 import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
 
 import Head from "next/head";
 
 import site from "@app/ondrej-sika.cz/config";
 
-let style = {
-  fontSize: "1.4em",
-  fontWeight: "bold"
-};
+// let style = {
+//   fontSize: "1.4em",
+//   fontWeight: "bold"
+// };
 
 const Index = () => (
   <div>

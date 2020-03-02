@@ -1,10 +1,11 @@
+import React from "react";
 import Article from "@app/ondrej-sika.cz/layouts/Article";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import Recommendation from "@app/course-landing/components/Recommendation";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import recommendation_file from "@app/data/training/recommendations/recommendations.yaml";
 
-export default props => (
+export const TwitterLinkedin = props => (
   <Article title="Doporučení z Twiteru a LinkedInu">
     <div className="row">
       <div className="col-6">
@@ -36,3 +37,4 @@ export default props => (
     </div>
   </Article>
 );
+export default TwitterLinkedin;

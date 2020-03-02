@@ -1,3 +1,5 @@
+import React from "react";
+
 const StatisticBar = props => (
   <div className="bar-grey-light d-none d-lg-block d-xl-block">
     <div className="container">

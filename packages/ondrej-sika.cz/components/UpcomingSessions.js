@@ -4,7 +4,6 @@ import Translate from "@app/common/components/Translate";
 import sessions_file from "@app/data/training/sessions.yml";
 import AddToGoogleCalendar from "@app/common/components/AddToGoogleCalendar";
 import Link from "next/link";
-import { throws } from "assert";
 
 const date_for_google_calendar_link = dd_mm_yyyy =>
   dd_mm_yyyy
