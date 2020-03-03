@@ -1,7 +1,7 @@
 import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
-import head from "next/head";
+import Head from "next/head";
 import Layout from "@app/ondrej-sika.cz/layouts/Layout";
 
 // Imported CSS
@@ -19,7 +19,8 @@ class MyApp extends App {
       <div>
         <head>
           <link
-          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300&display=swap" rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300&display=swap"
+            rel="stylesheet"
           />
         </head>
         <Layout {...pageProps}>
