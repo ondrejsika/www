@@ -1,7 +1,7 @@
 import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
-import Head from "next/head";
+import head from "next/head";
 import Layout from "@app/ondrej-sika.cz/layouts/Layout";
 
 // Imported CSS
