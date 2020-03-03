@@ -6,7 +6,7 @@ import Head from "next/head";
 
 import posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
 
-export const Blog = () => {
+export const Blog = () => (
   <>
     <Head>
       <title>Blog - Ondrej Sika</title>
@@ -45,7 +45,7 @@ export const Blog = () => {
         );
       })}
     </div>
-  </>;
-};
+  </>
+);
 
 export default Blog;
