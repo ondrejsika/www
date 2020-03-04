@@ -1,6 +1,7 @@
 import React from "react";
 import color from "../config/colors";
 import styled from "styled-components";
+import { Container as BootstrapContainer } from "react-bootstrap";
 
 const TopBar = styled.div`
   background-color: ${color.BLUE};
@@ -15,19 +16,17 @@ const MainBarHeader = styled.h1`
   color: ${color.WHITE};
   padding: 0.5em 0;
 `;
-const Container = styled.div`
+const Container = styled(BootstrapContainer)`
   padding: 1.5em 0.8em;
 `;
 
 const MainBarHomepage = props => (
-  <div>
-    <TopBar>
-      <Container className="container">
-        <MainBarHeader>{props.MainBarHeader}</MainBarHeader>
-        <MainBarText>{props.MainBarText}</MainBarText>
-      </Container>
-    </TopBar>
-  </div>
+  <TopBar>
+    <Container>
+      <MainBarHeader>{props.MainBarHeader}</MainBarHeader>
+      <MainBarText>{props.MainBarText}</MainBarText>
+    </Container>
+  </TopBar>
 );
 
 export default MainBarHomepage;

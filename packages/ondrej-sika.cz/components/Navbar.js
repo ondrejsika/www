@@ -8,9 +8,9 @@ const Grey = styled.div`
 `;
 const NavLink = styled.a`
   color: white;
-  /* &:hover {
-    color: ${color.BROWN};
-  } */
+  &:hover {
+    color: ${color.BROWN}!important;
+  }
 `;
 
 const Nav = styled.nav`
