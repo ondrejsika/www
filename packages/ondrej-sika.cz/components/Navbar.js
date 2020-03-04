@@ -1,16 +1,40 @@
 import React from "react";
+import color from "../config/colors";
+import styled from "styled-components";
 import Link from "next/link";
 
+const Grey = styled.div`
+  background-color: ${color.BLUE};
+`;
+const NavLink = styled.a`
+  color: white;
+  /* &:hover {
+    color: ${color.BROWN};
+  } */
+`;
+
+const Nav = styled.nav`
+  border-bottom: 1px solid white;
+`;
+
+const NavName = styled.strong`
+  color: white;
+`;
+
+const NavUnderheader = styled.div`
+  color: ${color.BROWN};
+`;
+
 const Navbar = props => (
-  <div>
+  <Grey>
     <div className="container-fluid">
       <div className="container pt-2 pb-2">
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <Nav className="navbar navbar-expand-lg navbar-light">
           <a className="navbar-brand" href="/">
-            <strong>{props.NavName}</strong>
-            <div className="text-gray-s fs-8 d-none d-sm-block">
+            <NavName>{props.NavName}</NavName>
+            <NavUnderheader className="fs-8 d-none d-sm-block">
               {props.NavUnderheader}
-            </div>
+            </NavUnderheader>
           </a>
           <button
             className="navbar-toggler"
@@ -30,14 +54,14 @@ const Navbar = props => (
                   return (
                     <li className="nav-item" key={i}>
                       <Link href={link[1]}>
-                        <a className="nav-link">{link[0]}</a>
+                        <NavLink className="nav-link">{link[0]}</NavLink>
                       </Link>
                     </li>
                   );
                 } else {
                   return (
                     <li key={i} className="nav-item dropdown">
-                      <a
+                      <NavLink
                         className="nav-link dropdown-toggle"
                         href="#"
                         id="navbarDropdown"
@@ -47,7 +71,7 @@ const Navbar = props => (
                         aria-expanded="false"
                       >
                         {link[0]}
-                      </a>
+                      </NavLink>
                       <div
                         className="dropdown-menu"
                         aria-labelledby="navbarDropdown"
@@ -66,10 +90,10 @@ const Navbar = props => (
               })}
             </ul>
           </div>
-        </nav>
+        </Nav>
       </div>
     </div>
-  </div>
+  </Grey>
 );
 
 export default Navbar;
