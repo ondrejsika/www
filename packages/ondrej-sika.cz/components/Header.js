@@ -1,8 +1,14 @@
 import React from "react";
+import styled from "styled-components";
+import color from "../config/colors";
+
+const Background = styled.div`
+  background-color: ${color.BLUE};
+`;
 
 const Header = props => (
-  <div>
-    <div className="bar-header">
+  <>
+    <Background>
       <div className="container">
         {(() => {
           if (props.websiteHeaderCenter)
@@ -38,8 +44,8 @@ const Header = props => (
             );
         })()}
       </div>
-    </div>
-  </div>
+    </Background>
+  </>
 );
 
 export default Header;
