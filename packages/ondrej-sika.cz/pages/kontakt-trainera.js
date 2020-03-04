@@ -2,6 +2,7 @@ import React from "react";
 
 import Head from "next/head";
 import Link from "next/link";
+import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
 
 const Index = props => (
@@ -9,13 +10,7 @@ const Index = props => (
     <Head>
       <title>Kontakty - Trainera s.r.o.</title>
     </Head>
-    <div className="bar-header">
-      <div className="container">
-        <div className="pt-4 pb-4">
-          <h1 className="text-white pt-3 pb-2">Kontakt na Trainera s.r.o.</h1>
-        </div>
-      </div>
-    </div>
+    <MainBar MainBarHeader="Kontakt na Trainera s.r.o." />
     <div className="container">
       <h3 className="pt-4 pb-2">Trainera s.r.o.</h3>
       <div className="row">

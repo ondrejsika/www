@@ -2,19 +2,14 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
+import MainBar from "@app/ondrej-sika.cz/components/MainBar";
 
 const Index = props => (
   <div>
     <Head>
       <title>Kontakty - Ondřej Šika</title>
     </Head>
-    <div className="bar-header">
-      <div className="container">
-        <div className="pt-4 pb-4">
-          <h1 className="text-white pt-3 pb-2">Kontakt</h1>
-        </div>
-      </div>
-    </div>
+    <MainBar MainBarHeader="Kontakt" />
     <div className="container">
       <h3 className="pt-4 pb-2">Ondřej Šika</h3>
       <div className="row">
