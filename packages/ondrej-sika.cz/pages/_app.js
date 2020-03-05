@@ -1,3 +1,4 @@
+import React from "next/react";
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
 
