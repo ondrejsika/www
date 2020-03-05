@@ -31,9 +31,9 @@ const Navbar = props => (
     <div className="container-fluid">
       <div className="container pt-2 pb-2">
         <Nav className="navbar navbar-expand-lg navbar-light">
-          <a className="navbar-brand" href="/">
+          <a className="form navbar-brand" href="/">
             <NavName>{props.NavName}</NavName>
-            <NavUnderheader className="fs-8 d-none d-sm-block">
+            <NavUnderheader className="form fs-8 d-none d-sm-block">
               {props.NavUnderheader}
             </NavUnderheader>
           </a>
@@ -49,7 +49,7 @@ const Navbar = props => (
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdownaa">
-            <ul className="navbar-nav ml-auto">
+            <ul className="form navbar-nav ml-auto">
               {props.links.map((link, i) => {
                 if (typeof link[1] == "string") {
                   return (
@@ -82,7 +82,9 @@ const Navbar = props => (
                         {link[1].map((sub_link, i) => {
                           return (
                             <Link key={i} href={sub_link[1]}>
-                              <a className="dropdown-item">{sub_link[0]}</a>
+                              <a className="form dropdown-item">
+                                {sub_link[0]}
+                              </a>
                             </Link>
                           );
                         })}
