@@ -1,7 +1,8 @@
+import React from "react";
 import CourseDD from "@app/ondrej-sika.cz/layouts/CourseDD";
-import logo from "@app/data/pictures/courses/docker.svg";
+import logo from "@app/data/pictures/courses/docker-w.svg";
 
-export default props => (
+const Page = props => (
   <CourseDD
     course_id="docker"
     lang={props.site.lang}
@@ -10,3 +11,5 @@ export default props => (
     show_sessions={true}
   />
 );
+
+export default Page;
