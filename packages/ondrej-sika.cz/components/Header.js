@@ -23,14 +23,12 @@ const InquiryBtn = styled.a`
     cursor: pointer;
   }
 `;
-const Container = styled(BootstrapContainer)`
-  padding: 1.5em 0.8em;
-`;
+const Container = styled(BootstrapContainer)``;
 const Header = props => (
   <Background>
     <Container>
       {props.websiteHeaderCenter && (
-        <div className="pt-4 pb-4">
+        <div className="pt-3">
           <h1 className="text-white pt-3 pb-2 text-center">
             {props.websiteHeaderCenter}
           </h1>
@@ -39,8 +37,8 @@ const Header = props => (
       {!props.websiteHeaderCenter && (
         <div className="row">
           <div className="col-lg-10 col-md-9 col-sm-8 col-8">
-            <div className="pt-4 pb-4">
-              <h1 className="text-white pt-3 pb-2">{props.websiteHeader}</h1>
+            <div className="pt-4 pb-2">
+              <h1 className="text-white pt-3 pb-3">{props.websiteHeader}</h1>
               {props.inquiryBtn && (
                 <Link href="#form">
                   <InquiryBtn>{props.inquiryBtn}</InquiryBtn>
