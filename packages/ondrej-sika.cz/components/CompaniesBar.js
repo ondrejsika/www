@@ -5,7 +5,7 @@ import Translate from "@app/common/components/Translate";
 import eltodo from "@app/data/pictures/companies/eltodo-sq.png";
 import eon from "@app/data/pictures/companies/eon-sq.jpg";
 import kb from "@app/data/pictures/companies/kb.png";
-import o2 from "@app/data/pictures/companies/o2.png";
+import o2 from "@app/data/pictures/companies/02-sq.png";
 import dd from "@app/data/pictures/companies/dimension-data-sq.png";
 import aaa from "@app/data/pictures/companies/aaa-auto-sq.png";
 import upce from "@app/data/pictures/companies/upce.png";
