@@ -1,7 +1,7 @@
 import React from "react";
-
 import Link from "next/link";
-
+import styled from "styled-components";
+import color from "../config/colors";
 import facebookhex from "@app/data/pictures/social-networks/fb-hex.svg";
 import instagramhex from "@app/data/pictures/social-networks/instagram-hex.svg";
 import linkedinhex from "@app/data/pictures/social-networks/linkedin-hex.svg";
@@ -9,6 +9,15 @@ import twitterhex from "@app/data/pictures/social-networks/twitter-hex.svg";
 import githubhex from "@app/data/pictures/social-networks/github-hex.svg";
 import mailhex from "@app/data/pictures/social-networks/mail-hex.svg";
 
+const A = styled.a`
+  text-decoration: underline;
+  color: ${color.WHITE};
+`;
+const Center = styled.p`
+  text-align: center;
+  color: ${color.WHITE};
+  padding-top: 1em;
+`;
 const Footer = () => (
   <div>
     <div className="footer mt-5">
@@ -17,13 +26,13 @@ const Footer = () => (
           <div className="col-md-3 col-sm-7 col-8 text-white">
             <h3 className="text-white">Ondřej Šika</h3>
             <p>
-              <a href="mailto:ondrej@sika.io" className="a-underline">
+              <A href="mailto:ondrej@sika.io" className="a-underline">
                 ondrej@sika.io
-              </a>
+              </A>
               <br />
-              <a href="tel:+420773452376" className="a-underline">
+              <A href="tel:+420773452376" className="a-underline">
                 +420 773 452 376
-              </a>
+              </A>
             </p>
             <table className="contact-table table-borderless">
               <tbody>
@@ -101,46 +110,46 @@ const Footer = () => (
             </a>
           </div>
         </div>
-        <p className="text-center">
+        <Center>
           <Link href="/lektorska-spoluprace">
-            <a className="a-underline">Lektorská spolupráce</a>
+            <A>Lektorská spolupráce</A>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/jobs">
-            <a className="a-underline">Nabídka (spolu)práce</a>
+            <A>Nabídka (spolu)práce</A>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/obchodni-spoluprace">
-            <a className="a-underline">Obchodní Spolupráce</a>
+            <A>Obchodní Spolupráce</A>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/doporuceni">
-            <a className="a-underline">Doporučení</a>
+            <A>Doporučení</A>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/doporucte-me-prosim">
-            <a className="a-underline">Doporučte mě prosím</a>
+            <A>Doporučte mě prosím</A>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/book-me">
-            <a className="a-underline">Book Me</a>
+            <A>Book Me</A>
           </Link>
           <span className="text-white">&nbsp;|&nbsp;</span>
           <Link href="/invite">
-            <a className="a-underline">Připojte se</a>
+            <A>Připojte se</A>
           </Link>
-        </p>
-        <p className="text-center text-white fs-9 pt-4">
+        </Center>
+        <Center>
           Website by{" "}
-          <a
+          <A
             href="https://zuzjes.com"
             target="_blank"
             rel="noopener noreferrer"
             className="fs-11 text a-underline"
           >
             Zuzana Jeschke
-          </a>
-        </p>
+          </A>
+        </Center>
       </div>
     </div>
   </div>
