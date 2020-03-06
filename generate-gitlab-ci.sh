@@ -141,6 +141,8 @@ $SITE prod deploy k8s:
       - \$EXCEPT_DEPLOY_PROD
       - \$EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
