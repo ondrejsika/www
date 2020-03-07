@@ -80,6 +80,8 @@ ansible-schulung.de prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -159,6 +161,8 @@ ansible-skoleni.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -289,6 +293,8 @@ dockerschulung.de prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -368,6 +374,8 @@ gitlab-ci.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -447,6 +455,8 @@ kubernetes-schulung.de prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -526,6 +536,8 @@ ondrej-sika.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -605,6 +617,8 @@ sika-kraml.de prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -684,6 +698,8 @@ skoleni-docker.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -763,6 +779,8 @@ skoleni-git.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -842,6 +860,8 @@ skoleni-kubernetes.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -921,6 +941,8 @@ git-training.uk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1000,6 +1022,8 @@ docker-training.uk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1079,6 +1103,8 @@ kubernetes-training.uk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1158,6 +1184,8 @@ ansible-training.uk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1237,6 +1265,8 @@ gitlab-training.uk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1316,6 +1346,8 @@ skolenie-git.sk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1395,6 +1427,8 @@ skolenie-gitlab.sk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1474,6 +1508,8 @@ skolenie-docker.sk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1553,6 +1589,8 @@ skolenie.kubernetes.sk prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1713,6 +1751,8 @@ ansible-utbildning.se prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1792,6 +1832,8 @@ docker-utbildning.se prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1871,6 +1913,8 @@ git-utbildning.se prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -1950,6 +1994,8 @@ gitlab-utbildning.se prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2029,6 +2075,8 @@ kubernetes-utbildning.se prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2189,6 +2237,8 @@ ondrej-sika.de prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2268,6 +2318,8 @@ ondrejsikalabs.com prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2377,6 +2429,8 @@ sika.io prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2456,6 +2510,8 @@ docker-training.de prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2535,6 +2591,8 @@ docker-training.ch prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2614,6 +2672,8 @@ docker-training.at prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2693,6 +2753,8 @@ docker-training.nl prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2772,6 +2834,8 @@ git-training.nl prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2881,6 +2945,8 @@ sika-kaplan.com prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3092,6 +3158,8 @@ salzburgdevops.com prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3171,6 +3239,8 @@ training.kubernetes.is prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3250,6 +3320,8 @@ training.kubernetes.lu prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3329,6 +3401,8 @@ skoleni-terraform.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3408,6 +3482,8 @@ sika-training.com prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3487,6 +3563,8 @@ ondrej-sika.com prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3566,6 +3644,8 @@ sikahq.com prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3726,6 +3806,8 @@ cal-api.sika.io prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3805,6 +3887,8 @@ skoleni-proxmox.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3884,6 +3968,8 @@ ydo.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -3963,6 +4049,8 @@ skoleni-prometheus.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -4042,6 +4130,8 @@ ccc.oxs.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -4223,6 +4313,8 @@ skoleni-rancher.cz prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -4302,6 +4394,8 @@ sika.blog prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -4381,6 +4475,8 @@ static.sika.io prod deploy k8s:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -4391,4 +4487,55 @@ static.sika.io prod deploy k8s:
     name: prod static.sika.io
     url: https://static.sika.io
   dependencies: []
+
+ondrejsikaltd.com build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/ondrejsikaltd.com/out
+    - yarn run static-ondrejsikaltd.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrejsikaltd.com/**/*
+      - yarn.lock
+  artifacts:
+    name: ondrejsikaltd.com
+    paths:
+      - packages/ondrejsikaltd.com/out
+
+
+ondrejsikaltd.com build docker:
+  dependencies:
+    - ondrejsikaltd.com build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/ondrejsikaltd.com/
+    - docker build -t registry.sikahq.com/www/www/ondrejsikaltd.com:$CI_COMMIT_SHORT_SHA packages/ondrejsikaltd.com
+    - rm packages/ondrejsikaltd.com/Dockerfile
+    - rm packages/ondrejsikaltd.com/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/ondrejsikaltd.com:$CI_COMMIT_SHORT_SHA
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrejsikaltd.com/**/*
+      - yarn.lock
 
