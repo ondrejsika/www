@@ -67,7 +67,7 @@ const Index = props => (
               </tr>
               <tr>
                 <td className="pt-3" valign="top">
-                  Adresa&nbsp;Banky:&nbsp;&nbsp;&nbsp;
+                  Bank&nbsp;Address:&nbsp;&nbsp;&nbsp;
                 </td>
                 <td className="pt-3">
                   Fio banka, a.s.,
