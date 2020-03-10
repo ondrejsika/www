@@ -74,9 +74,9 @@ const Index = props => (
                   <br />
                   V Celnici 1028/10,
                   <br />
-                  Praha 1,
+                  Prague 1,
                   <br />
-                  Česká Republika
+                  Czech Republic
                 </td>
               </tr>
             </tbody>
