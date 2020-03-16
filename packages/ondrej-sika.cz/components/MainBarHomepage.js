@@ -10,6 +10,7 @@ const TopBar = styled.div`
 const MainBarText = styled.h3`
   color: ${color.WHITE};
   padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
 `;
 const MainBarHeader = styled.h1`
   font-weight: bolder;
