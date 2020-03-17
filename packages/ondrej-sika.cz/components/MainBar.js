@@ -7,8 +7,7 @@ const Background = styled.div`
   background-color: ${color.BLUE};
 `;
 
-const Container = styled(BootstrapContainer)`
-`;
+const Container = styled(BootstrapContainer)``;
 const MainBar = props => (
   <Background>
     <Container>
