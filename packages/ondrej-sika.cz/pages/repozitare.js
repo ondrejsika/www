@@ -45,6 +45,8 @@ const Page = () => (
 - Gitlab na Digital Ocean - https://github.com/ondrejsika/terraform-demo-gitlab
 - NFS na Digital Ocean - https://github.com/ondrejsika/terraform-demo-nfs
 - Droplet na Digital Ocean - https://github.com/ondrejsika/terraform-do-droplet-example
+- Jedna EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-example
+- Vice EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-many-example
 
 #### Custom Providers
 
@@ -77,6 +79,11 @@ const Page = () => (
 ## Ceph
 
 - HA Docker Cluster pomocí Swarmu a Cephu - https://github.com/ondrejsika/ha-docker-cluster-with-swarm-and-ceph
+
+## AWS
+
+- Jedna EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-example
+- Vice EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-many-example
 
 ## Ostatní
 
