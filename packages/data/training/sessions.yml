@@ -113,7 +113,7 @@
   date_from: 3.3.2020
   date_to: 3.3.2020
 - id: git-praha-11-03-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: git
@@ -1748,7 +1748,7 @@
   date_to: 12.2.2020
 # Praha Root.cz Unor-Brezen
 - id: docker-praha-24-02-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
@@ -1772,7 +1772,7 @@
   date_from: 26.2.2020
   date_to: 26.2.2020
 - id: kubernetes-praha-27-02-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
@@ -1784,7 +1784,7 @@
   date_from: 27.2.2020
   date_to: 28.2.2020
 - id: proxmox-praha-06-03-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: proxmox
@@ -1796,7 +1796,7 @@
   date_from: 6.3.2020
   date_to: 6.3.2020
 - id: terraform-praha-13-03-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: terraform
