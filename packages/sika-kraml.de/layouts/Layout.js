@@ -3,7 +3,7 @@ import React from "react";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
-import Navbar from "@app/ondrej-sika.cz/components/Navbar";
+import Navbar from "@app/ondrejsika-theme/components/Navbar";
 import Footer from "@app/sika-kraml.de/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 import Newsletter from "@app/sika-kraml.de/components/Newsletter";

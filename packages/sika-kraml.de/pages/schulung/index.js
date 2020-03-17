@@ -3,7 +3,7 @@ import LectureSectionLg from "@app/sika-kraml.de/components/LectureSectionLg";
 import LectureInnerLg from "@app/sika-kraml.de/components/LectureInnerLg";
 import LectureSectionMdSm from "@app/sika-kraml.de/components/LectureSectionMdSm";
 import LectureInnerMdSm from "@app/sika-kraml.de/components/LectureInnerMdSm";
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Head from "next/head";
 import docker_img from "@app/data/pictures/courses/docker.svg";
 import git_img from "@app/data/pictures/courses/git.svg";

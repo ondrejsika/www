@@ -1,4 +1,4 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
 import Head from "next/head";
 import Link from "next/link";

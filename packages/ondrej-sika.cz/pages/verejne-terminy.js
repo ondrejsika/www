@@ -1,6 +1,6 @@
 import React from "react";
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
+import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 
 import Head from "next/head";
 

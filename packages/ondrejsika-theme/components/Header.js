@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import color from "../config/colors";
+import color from "@app/ondrejsika-theme/config/colors";
 import Link from "next/link";
 import { Container as BootstrapContainer } from "react-bootstrap";
 

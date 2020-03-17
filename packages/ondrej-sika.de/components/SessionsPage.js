@@ -1,4 +1,4 @@
-import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
+import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 
 export default props => {
   return (

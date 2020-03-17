@@ -1,5 +1,5 @@
-import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
 import Head from "next/head";
 

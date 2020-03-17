@@ -1,4 +1,4 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 
 import Head from "next/head";

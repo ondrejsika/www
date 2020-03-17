@@ -3,7 +3,7 @@ import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import FooterOndrejSikaCom from "@app/ondrej-sika.com/components/FooterOndrejSikaCom";
-import Navbar from "@app/ondrej-sika.cz/components/Navbar";
+import Navbar from "@app/ondrejsika-theme/components/Navbar";
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
 import Head from "next/head";

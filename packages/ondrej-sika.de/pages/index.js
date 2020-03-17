@@ -1,9 +1,9 @@
 import React from "react";
-import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
-import MainBarHomepage from "@app/ondrej-sika.cz/components/MainBarHomepage";
-import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
-import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
-import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
+import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
+import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
+import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
+import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
+import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 
 import Head from "next/head";
 import ContactPage from "../components/ContactPage";

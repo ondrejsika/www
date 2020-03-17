@@ -1,7 +1,7 @@
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
-import TextWithImg from "@app/ondrej-sika.cz/components/TextWithImg";
-import StatisticBar from "@app/ondrej-sika.cz/components/StatisticBar";
-import CompaniesBar from "@app/ondrej-sika.cz/components/CompaniesBar";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
+import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
+import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
+import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 
 import Markdown from "@app/common/components/Markdown";
 

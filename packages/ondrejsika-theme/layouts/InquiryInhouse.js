@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import Header from "@app/ondrej-sika.cz/components/Header";
-import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
+import Header from "@app/ondrejsika-theme/components/Header";
+import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 
 export default props => (
   <div>

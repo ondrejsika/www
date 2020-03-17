@@ -11,7 +11,7 @@ import Recommendation from "@app/course-landing/components/Recommendation";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
-import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
+import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import Translate from "@app/common/components/Translate";
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";

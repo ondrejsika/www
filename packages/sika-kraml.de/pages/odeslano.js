@@ -1,6 +1,6 @@
 import React from "React";
 import "@app/sika-kraml.de/css";
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import ReactMarkdown from "react-markdown";
 import { stripIndent } from "common-tags";
 

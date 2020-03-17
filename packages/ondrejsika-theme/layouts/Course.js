@@ -1,17 +1,17 @@
 import Markdown from "@app/common/components/Markdown";
-import Header from "@app/ondrej-sika.cz/components/Header";
-import TextArea from "@app/ondrej-sika.cz/components/TextArea";
-import TwoCol from "@app/ondrej-sika.cz/components/TwoCol";
-import References from "@app/ondrej-sika.cz/components/References";
-import Price from "@app/ondrej-sika.cz/components/Price";
-import OrderBtn from "@app/ondrej-sika.cz/components/OrderBtn";
+import Header from "@app/ondrejsika-theme/components/Header";
+import TextArea from "@app/ondrejsika-theme/components/TextArea";
+import TwoCol from "@app/ondrejsika-theme/components/TwoCol";
+import References from "@app/ondrejsika-theme/components/References";
+import Price from "@app/ondrejsika-theme/components/Price";
+import OrderBtn from "@app/ondrejsika-theme/components/OrderBtn";
 import "@app/course-landing/components/TwitterRecommendations";
 import Translate from "@app/common/components/Translate";
-import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
+import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 
 import Head from "next/head";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
-import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
+import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 
 export default props => (
   <div>

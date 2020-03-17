@@ -1,8 +1,8 @@
 import React from "react";
 import "@app/ondrej-sika.cz/css";
 
-import Header from "@app/ondrej-sika.cz/components/Header";
-import TextArea from "@app/ondrej-sika.cz/components/TextArea";
+import Header from "@app/ondrejsika-theme/components/Header";
+import TextArea from "@app/ondrejsika-theme/components/TextArea";
 import Former2 from "@app/common/components/Former2";
 import site from "@app/ondrej-sika.cz/config";
 

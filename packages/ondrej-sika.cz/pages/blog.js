@@ -1,5 +1,5 @@
 import React from "react";
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Link from "next/link";
 
 import Head from "next/head";

@@ -1,14 +1,14 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Markdown from "@app/common/components/Markdown";
-import Header from "@app/ondrej-sika.cz/components/Header";
-import TextArea from "@app/ondrej-sika.cz/components/TextArea";
-import TwoCol from "@app/ondrej-sika.cz/components/TwoCol";
-import References from "@app/ondrej-sika.cz/components/References";
+import Header from "@app/ondrejsika-theme/components/Header";
+import TextArea from "@app/ondrejsika-theme/components/TextArea";
+import TwoCol from "@app/ondrejsika-theme/components/TwoCol";
+import References from "@app/ondrejsika-theme/components/References";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 
-import Navbar from "@app/ondrej-sika.cz/components/Navbar";
-import Footer from "@app/ondrej-sika.cz/components/Footer";
+import Navbar from "@app/ondrejsika-theme/components/Navbar";
+import Footer from "@app/ondrejsika-theme/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 
 import site from "../config";

@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
-import MainBar from "@app/ondrej-sika.cz/components/MainBar";
+import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
 const Index = props => (
   <div>

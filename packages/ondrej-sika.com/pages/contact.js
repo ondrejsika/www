@@ -1,4 +1,4 @@
-import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
+import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 import Head from "next/head";
 
 const Index = props => (

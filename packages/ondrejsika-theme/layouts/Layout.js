@@ -3,8 +3,8 @@ import Head from "next/head";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
-import Navbar from "@app/ondrej-sika.cz/components/Navbar";
-import Footer from "@app/ondrej-sika.cz/components/Footer";
+import Navbar from "@app/ondrejsika-theme/components/Navbar";
+import Footer from "@app/ondrejsika-theme/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 import CoronaBar from "@app/common/components/CoronaBar";
 

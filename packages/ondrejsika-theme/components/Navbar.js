@@ -1,5 +1,5 @@
 import React from "react";
-import color from "../config/colors";
+import color from "@app/ondrejsika-theme/config/colors";
 import styled from "styled-components";
 import Link from "next/link";
 

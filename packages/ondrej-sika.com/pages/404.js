@@ -1,5 +1,5 @@
 import Markdown from "@app/common/components/Markdown";
-import LectureImg from "@app/ondrej-sika.cz/components/LectureImg";
+import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
 import Head from "next/head";
 import React from "react";
 
