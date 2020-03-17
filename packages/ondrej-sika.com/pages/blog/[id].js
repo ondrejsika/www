@@ -1,6 +1,7 @@
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 
+import React from "react";
 import Head from "next/head";
 
 let style = {

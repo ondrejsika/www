@@ -1,5 +1,5 @@
+import React from "react";
 import MainBar from "@app/sika-kaplan.com/components/MainBar";
-
 import Head from "next/head";
 
 const Index = () => (

@@ -1,3 +1,5 @@
+import React from "react";
+
 var mainBar = {
   background: "#00212C"
 };

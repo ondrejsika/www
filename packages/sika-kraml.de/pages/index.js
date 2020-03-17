@@ -1,3 +1,4 @@
+import React from "react";
 import "@app/sika-kraml.de/css";
 import ReactMarkdown from "@app/common/components/Markdown";
 import LectureInnerLg from "@app/sika-kraml.de/components/LectureInnerLg";

@@ -1,3 +1,4 @@
+import React from "react";
 import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";

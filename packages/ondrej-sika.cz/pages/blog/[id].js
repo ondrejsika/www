@@ -1,3 +1,4 @@
+import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 import AdBar from "@app/ondrejsika-theme/components/AdBar";

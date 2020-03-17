@@ -1,3 +1,4 @@
+import React from "react";
 import "@app/ondrej-sika.cz/css";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";

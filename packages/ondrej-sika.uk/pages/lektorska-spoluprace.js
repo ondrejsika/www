@@ -1,3 +1,4 @@
+import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
 import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
