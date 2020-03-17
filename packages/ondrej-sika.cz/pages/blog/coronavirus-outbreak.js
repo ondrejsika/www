@@ -12,7 +12,7 @@ const Page = () => (
     <p>
       Pokud přeci jen máte zájem o školení on-site, po skončení karantény za
       Vámi přijedu, můžete si v{" "}
-      <a href="https://calendly.com/ondrejsika/1day">Calendly</a>přebookovat
+      <a href="https://calendly.com/ondrejsika/1day">Calendly</a> přebookovat
       termín.
     </p>
     <div className="mt-3 mb-3">
