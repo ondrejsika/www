@@ -22,7 +22,7 @@ let KoronaBar = props => {
             </div>
             <div className="text-center">
               <Link href={post_link}>
-                <a className="main">
+                <a className="main ibm-mono">
                   Vzhledem k epidemii COVID19,
                   <br /> nabízím všechna školení v on-line formě. 😷🦠
                 </a>
