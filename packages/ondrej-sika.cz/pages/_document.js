@@ -15,8 +15,12 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html lang="en">
-        <Head>{this.props.styleTags}
-          <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet" />
+        <Head>
+          {this.props.styleTags}
+          <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
