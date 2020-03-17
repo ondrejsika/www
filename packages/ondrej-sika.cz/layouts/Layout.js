@@ -6,6 +6,7 @@ import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import Navbar from "@app/ondrej-sika.cz/components/Navbar";
 import Footer from "@app/ondrej-sika.cz/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
+import CoronaBar from "@app/common/components/CoronaBar";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
@@ -22,6 +23,7 @@ let Layout = props => (
       />
     </Head>
     <DevelopmentBar />
+    <CoronaBar />
     <Navbar
       NavName="Ondřej Šika"
       NavUnderheader="Software {Engineer, Konzultant, Lektor}"
