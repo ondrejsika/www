@@ -35,8 +35,8 @@ const Index = () => (
       <title>Sika Kraml - IT Schulungen, Workshops und Beratung</title>
     </Head>
     <MainBar
-      MainBarHeader="IT Schulungen, Workshops und Beratung"
-      MainBarText="
+      header="IT Schulungen, Workshops und Beratung"
+      text="
         Wir bieten Schulungen und Beratung im DevOps-Umfeld an.
         Für uns steht die Verbesserung Ihrer Softwareentwicklung und Operationsabläufe an erster Stelle.
         Wie steigern Ihre Produktivität und Effizienz und senken zusätzlich noch Ihre Ausgaben."

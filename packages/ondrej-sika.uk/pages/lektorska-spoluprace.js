@@ -19,7 +19,7 @@ let style = {
 const Install = () => (
   <div>
     <Head></Head>
-    <MainBar MainBarHeader="LEKTORSKA SPOLUPRACE"></MainBar>
+    <MainBar header="LEKTORSKA SPOLUPRACE"></MainBar>
 
     <style
       dangerouslySetInnerHTML={{

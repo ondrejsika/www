@@ -14,8 +14,8 @@ const Index = props => (
       </title>
     </Head>
     <MainBar
-      MainBarHeader="IT Training, Consulting and Workshops in Europe"
-      MainBarText="I'm boosting effectivity & productivity of software development teams by using tools which lead to faster development and reliable operation of software products."
+      header="IT Training, Consulting and Workshops in Europe"
+      text="I'm boosting effectivity & productivity of software development teams by using tools which lead to faster development and reliable operation of software products."
     ></MainBar>
     <StatisticBar
       NumberOfPeople="650+"

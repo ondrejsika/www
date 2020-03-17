@@ -10,7 +10,7 @@ const Index = props => (
     <Head>
       <title>Kontakty - Trainera s.r.o.</title>
     </Head>
-    <MainBar MainBarHeader="Kontakt na Trainera s.r.o." />
+    <MainBar header="Kontakt na Trainera s.r.o." />
     <div className="container">
       <h3 className="pt-4 pb-2">Trainera s.r.o.</h3>
       <div className="row">

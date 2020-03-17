@@ -11,8 +11,8 @@ const Index = () => (
   <div>
     <Head></Head>
     <MainBarHomepage
-      MainBarHeader="IT Školení, konzultace a workshopy"
-      MainBarText="Zlepšuji práci vývojářských týmu zaváděním efektivních procesu ve vývoji a použitím prověřených nástrojů a technologií, které vedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
+      header="IT Školení, konzultace a workshopy"
+      text="Zlepšuji práci vývojářských týmu zaváděním efektivních procesu ve vývoji a použitím prověřených nástrojů a technologií, které vedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
     />
     <StatisticBar
       NumberOfPeople="500+"

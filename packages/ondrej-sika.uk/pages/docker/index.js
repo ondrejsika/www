@@ -19,7 +19,7 @@ let style = {
 const Install = () => (
   <div>
     <Head></Head>
-    <MainBar MainBarHeader="Docker"></MainBar>
+    <MainBar header="Docker"></MainBar>
 
     <div className="container pt-4 pb-2">
       <Markdown

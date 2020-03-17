@@ -13,8 +13,8 @@ const ArticleLayout = props => {
         <title>{props.title} - Ondřej Šika</title>
       </Head>
       <MainBar
-        MainBarHeader={props.header || props.title}
-        MainBarText={props.subheader}
+        header={props.header || props.title}
+        text={props.subheader}
       />
 
       <div className="container pt-4 pb-2 article-body">

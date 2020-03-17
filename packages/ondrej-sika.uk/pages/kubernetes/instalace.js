@@ -19,7 +19,7 @@ let style = {
 const Install = () => (
   <div>
     <Head></Head>
-    <MainBar MainBarHeader="Instalace Kubernetes pro lokalni vyvoj"></MainBar>
+    <MainBar header="Instalace Kubernetes pro lokalni vyvoj"></MainBar>
 
     <div className="container pt-4 pb-2">
       <Markdown

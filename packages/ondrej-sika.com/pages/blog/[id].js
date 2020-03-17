@@ -22,7 +22,7 @@ let Post = props => {
       <Head>
         <title>{post.title} - Ondřej Šika</title>
       </Head>
-      <MainBar MainBarHeader={post.title}></MainBar>
+      <MainBar header={post.title}></MainBar>
 
       <div className="container pt-4">
         <Markdown source={post.content} />

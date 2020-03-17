@@ -8,7 +8,7 @@ const Index = props => (
     <Head>
       <title>Training - Ondřej Šika</title>
     </Head>
-    <MainBar MainBarHeader="Training" />
+    <MainBar header="Training" />
     <div className="container">
       <LectureImg lang={props.site.lang} LectureImgHeader="My Training" />
     </div>

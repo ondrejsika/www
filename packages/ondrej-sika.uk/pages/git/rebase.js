@@ -19,7 +19,7 @@ let style = {
 const Install = () => (
   <div>
     <Head></Head>
-    <MainBar MainBarHeader="Git Rebase"></MainBar>
+    <MainBar header="Git Rebase"></MainBar>
 
     <style
       dangerouslySetInnerHTML={{

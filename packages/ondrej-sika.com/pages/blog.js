@@ -10,7 +10,7 @@ class Blog extends React.Component {
         <Head>
           <title>Blog - Ondrej Sika</title>
         </Head>
-        <MainBar MainBarHeader="Blog"></MainBar>
+        <MainBar header="Blog"></MainBar>
 
         <div className="container">
           {posts.map((post, i) => {

@@ -25,8 +25,8 @@ let Post = props => {
         <title>{post.title} - Ondřej Šika</title>
       </Head>
       <MainBar
-        MainBarHeader={post.title}
-        MainBarText={
+        header={post.title}
+        text={
           post.tags &&
           post.tags.map((tag, i) => (
             <span key={i} style={{ fontSize: "0.8em" }}>

@@ -30,7 +30,7 @@ class BlogPost extends React.Component {
     if (!post) return <></>;
     return (
       <div>
-        <MainBar MainBarHeader={post.title}></MainBar>
+        <MainBar header={post.title}></MainBar>
 
         <div className="container pt-4">
           <Markdown source={post.content} />

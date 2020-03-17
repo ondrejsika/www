@@ -8,7 +8,7 @@ import { stripIndent } from "common-tags";
 
 const Index = () => (
   <div>
-    <MainBar MainBarHeader="Anfrage abgesendet" />
+    <MainBar header="Anfrage abgesendet" />
     <div className="container pt-4">
       <ReactMarkdown
         source={stripIndent`

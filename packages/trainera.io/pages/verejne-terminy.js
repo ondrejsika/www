@@ -16,7 +16,7 @@ const Index = () => (
     <Head>
       <title>Veřejné termíny - Ondrej Sika</title>
     </Head>
-    <MainBar MainBarHeader="Veřejné termíny školení" />
+    <MainBar header="Veřejné termíny školení" />
     <div className="container pt-4">
       <UpcomingSessions
         lang={site.lang}

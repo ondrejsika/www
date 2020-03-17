@@ -18,7 +18,7 @@ let style = {
 const Index = () => (
   <div>
     <Head></Head>
-    <MainBar MainBarHeader="Nabídka Školení" />
+    <MainBar header="Nabídka Školení" />
     <div className="container">
       <LectureImg LectureImgHeader="Kurzy co školím" />
     </div>

@@ -12,9 +12,9 @@ const MainBar = props => (
   <Background>
     <Container>
       <div className="pt-3 pb-3">
-        <h1 className="text-white pt-3 pb-3">{props.MainBarHeader}</h1>
+        <h1 className="text-white pt-3 pb-3">{props.header}</h1>
         <p className="text-white" style={{ fontSize: "18px" }}>
-          {props.MainBarText}
+          {props.text}
         </p>
       </div>
     </Container>

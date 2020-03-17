@@ -8,8 +8,8 @@ const Index = () => (
       <title>Sika Kaplan - Your DevOps Partner</title>
     </Head>
     <MainBar
-      MainBarHeader="In progress ..."
-      MainBarText="In progress ..."
+      header="In progress ..."
+      text="In progress ..."
     ></MainBar>
     <div className="container mt-5">
       <h2>O nas</h2>

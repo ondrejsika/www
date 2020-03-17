@@ -15,8 +15,8 @@ const Index = () => (
       <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
     </Head>
     <MainBarHomepage
-      MainBarHeader="IT & DevOps školení, konzultace a workshopy"
-      MainBarText="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
+      header="IT & DevOps školení, konzultace a workshopy"
+      text="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
     />
     <StatisticBar
       NumberOfPeople="750+"

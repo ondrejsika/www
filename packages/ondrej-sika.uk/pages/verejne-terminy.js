@@ -20,7 +20,7 @@ let style = {
 const Index = () => (
   <div>
     <Head></Head>
-    <MainBar MainBarHeader="Veřejné termíny školení" />
+    <MainBar header="Veřejné termíny školení" />
     <div className="container">
       <UpcomingSessions lang={site.lang} />
     </div>

@@ -9,7 +9,7 @@ const Install = () => (
     <Head>
       <title>Lektorská spolupráce - Ondrej Sika</title>
     </Head>
-    <MainBar MainBarHeader="LEKTORSKA SPOLUPRACE"></MainBar>
+    <MainBar header="LEKTORSKA SPOLUPRACE"></MainBar>
 
     <style
       dangerouslySetInnerHTML={{

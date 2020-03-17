@@ -7,7 +7,7 @@ const Index = props => (
     <Head>
       <title>Upcoming Sessions - Ondrej Sika</title>
     </Head>
-    <MainBar MainBarHeader="Upcoming Sessions" />
+    <MainBar header="Upcoming Sessions" />
     <div className="container pt-4">
       <UpcomingSessions lang={props.site.lang} />
     </div>

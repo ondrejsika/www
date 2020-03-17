@@ -8,7 +8,7 @@ const Sent = () => (
     <Head>
       <title>Odesláno- Ondřej Šika</title>
     </Head>
-    <MainBar MainBarHeader="Formulář byl úspěšně odeslán" />
+    <MainBar header="Formulář byl úspěšně odeslán" />
     <div className="container pt-4">
       <Markdown
         source={`

@@ -18,8 +18,8 @@ const Index = () => (
       </title>
     </Head>
     <MainBarHomepage
-      MainBarHeader="IT Training, Consulting and Workshops in Germany 🇩🇪"
-      MainBarText="I'm boosting effectivity & productivity of software development teame by using tools which lead to faster development and reliable operation of software products."
+      header="IT Training, Consulting and Workshops in Germany 🇩🇪"
+      text="I'm boosting effectivity & productivity of software development teame by using tools which lead to faster development and reliable operation of software products."
     />
     <StatisticBar
       NumberOfPeople="600+"

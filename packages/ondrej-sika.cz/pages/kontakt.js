@@ -9,7 +9,7 @@ const Index = props => (
     <Head>
       <title>Kontakty - Ondřej Šika</title>
     </Head>
-    <MainBar MainBarHeader="Kontakt" />
+    <MainBar header="Kontakt" />
     <div className="container">
       <h3 className="pt-4 pb-2">Ondřej Šika</h3>
       <div className="row">
