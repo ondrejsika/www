@@ -5,13 +5,15 @@ import InstagramEmbed from "react-instagram-embed";
 const Page = () => (
   <Article title="Coronavirus 😷🦠">
     <p>
-      Coronavirus me skoleni nezastavi, skolim dal ale on-line. Prez Zoom,
-      Google Hangouts, Whereby nebo GoToWebinar. Prave ted skolim Docker a
-      Kubernetes pro IBM Germany online a vse bezi skvele, neni treba se bat.
+      Ani Coronavirus nezastaví mé školení. Školím dál ale on-line. Přes Zoom,
+      Google Hangouts, Whereby nebo GoToWebinar. Celý tento týden školím Docker
+      a Kubernetes pro IBM Germany online a vše běží skvěle, není třeba se bát.
     </p>
     <p>
-      Pokud preci jen mate zajem o skoleni on-site, po zkonceni karanteny za
-      Vami prijedu, muzete si v Calendly prebookovat termin.
+      Pokud přeci jen máte zájem o školení on-site, po skončení karantény za
+      Vámi přijedu, můžete si v{" "}
+      <a href="https://calendly.com/ondrejsika/1day">Calendly</a>přebookovat
+      termín.
     </p>
     <div className="mt-3 mb-3">
       <center>
