@@ -409,33 +409,33 @@
     cs: |
       ### Co je to Proxmox
 
-      Proxmox je open source nastavba KVM Virtualizace a LXC kontejneru. Prinasi enterprise virtualizaci a jednoduchou spravu virtualnich stroju a kontejneru na leta provereny virtualizacni stack na Linuxu.
+      Proxmox je open source nástavba KVM Virtualizace a LXC kontejnerů. Přináší enterprise virtualizaci a jednoduchou správu virtuálních strojů a kontejnerů na léty prověřený virtualizační stack na Linuxu.
 
       ### Jak školení probíhá
 
-      Na školení probiha formou workshopu, vse si prakticky vyzkousime. Od instalace Proxmox serveru, po nastaveni HA pro virtualni servery.
+      Školení probíhá formou workshopu, vše si prakticky vyzkoušíme. Od instalace Proxmox serveru, po nastaveni HA pro virtuální servery.
 
       ### Co Vás naučím
 
-      - Uvod do Virtualizace, Kontejnerizace a Proxmoxu
-      - Nastaveni Proxmoxu
-      - Nastaveni storage
-      - Prace s KVM virtualnimy servery
-      - Prace s LXC kontejnery (lightweight virtualizace)
+      - Úvod do Virtualizace, Kontejnerizace a Proxmoxu
+      - Nastavení Proxmoxu
+      - Nastavení storage
+      - Práce s KVM virtuálnímy servery
+      - Práce s LXC kontejnery (lightweight virtualizace)
       - Backup, restore
       - Migrace a HA
 
       ### Pro koho je školení určeno
 
-      Školení je primárně určeno administratorum, kteří nemají s virtualizaci a Proxmoxem zadne nebo jen male zkusenosti.
+      Školení je primárně určeno administrátorům, kteří nemají s virtualizací a Proxmoxem žádné nebo jen malé zkušenosti.
 
       #### Předchozí znalosti
 
-      Zakladni znalost administrace Linuxu.
+      Základní znalost administrace Linuxu.
 
       #### Technické požadavky
 
-      Notebook s pristupem na internet. Nic vic neni potreba. Pokud mate nejaky testovaci Proxmox, muzete vyuzivat ten, ale pro absolvovani kurzu neni potreba.
+      Notebook s přístupem na internet. Nic víc není potřeba. Pokud máte nějaký testovací Proxmox, můžete využívat ten, ale pro absolvování kurzu není potřeba.
 
 - id: prometheus
   name:
