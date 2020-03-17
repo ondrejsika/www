@@ -14,6 +14,7 @@ module.exports = {
         fs.readFileSync("data/blog-posts.yaml", "utf8")
       );
       posts.forEach(function(post) {
+        if (post.nostatic) return;
         defaultPathMap[`/blog/${post.id}`] = {
           page: "/blog/[id]",
           query: { id: post.id }
