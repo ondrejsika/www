@@ -5,7 +5,7 @@
 SITE=$1
 NAME=$(echo $SITE | sed "s/\./-/g")
 
-IMAGE=$CI_REGISTRY_IMAGE-$SITE-deploy-now:$(git rev-parse --abbrev-ref HEAD)-$(git rev-parse --short HEAD)
+IMAGE=$CI_REGISTRY_IMAGE-$SITE-deploy-now:$(git rev-parse --abbrev-ref HEAD)-$(git rev-parse --short HEAD)-$(date +%s)
 
 rm -rf packages/$SITE/out packages/$SITE/.next
 yarn static-$SITE
