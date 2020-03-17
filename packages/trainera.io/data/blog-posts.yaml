@@ -1,0 +1,586 @@
+- id: coronavirus-outbreak
+  nostatic: true
+  title: Coronavirus 😷🦠
+  date: 17. 3. 2020
+  tags: []
+  perex: |
+    Coronavirus me skoleni nezastavi, skolim dal ale on-line. Prez Zoom, Google Hangouts, Whereby nebo GoToWebinar.
+  content:
+- id: australia-on-fire
+  nostatic: true
+  title: Pomozte Austrálii 🐨🦘❤️
+  date: 6. 1. 2020
+  tags: []
+  perex: |
+    Přispěte na pomoc Austrálii, dostanete slevu na školení nebo konzultaci ve výši daru.
+  content:
+- id: novinky2020
+  title: Novinky v roce 2020
+  date: 1. 1. 2020
+  tags: []
+  perex: |
+    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánuji. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter v roce 2020.
+  content: |
+    Tento článek je vlastně shrnutí toho co jsem do teď dělal a také jaké věci plánuji. Je toho opravdu hodně. Článek jsem poslal také jako můj první newsletter v roce 2020.
+
+    - [Kompletní DevOps Pipeline](#kompletn--devops-pipeline)
+    - [Nové kurzy do roku 2020](#nové-kurzy-do-roku-2020)
+      - [Terraform](#terraform)
+      - [Prometheus](#prometheus)
+      - [ELK / EFK](#elk---efk)
+      - [Proxmox](#proxmox)
+      - [React & Next.js](#react---next-js)
+    - [Články z roku 2019](#-l-nky-z-roku-2019)
+    - [Videokurzy](#videokurzy)
+    - [Trainera](#trainera)
+    - [Meetupy](#meetupy)
+
+    ## Kompletní DevOps Pipeline
+
+    Od teď nabízím školení a konzultace celé DevOps pipeline na open source stacku.
+
+    Školím tyto technologie, které na sebe krásné navazují a tvoří ucelený DevOps proces:
+
+    Verzovani v Gitu, správa repozitářů v Gitlabu. Nasazování aplikací v Dockeru do Kubernetes, automaticky pomocí Gitlab CI. Správa infrastruktury pomocí Terraformu a konfigurace pomocí Ansible. Správa logu v ELK / EFK a monitoring pomocí Promethea.
+
+    ## Nové kurzy do roku 2020
+
+    Do roku 2020 jsem si připravil nové kurzy na termata __Terraform__, __Prometheus__ a __ELK / EFK__. Dále dělám kurzy __Proxmoxu__ s Michaelem Kaplanem a __React & Next.js__ se Zuzkou Jeschke.
+
+    #### Terraform
+
+    Terraform Vám usnadňuje spravovat infrastrukturu jako kód. To znamená v Gitu a se vším co k tomu patří. Merge / Pull Requesty, code review, forky a další. Správa vaší infrastruktury (public a private cloud) se stane jednodušší a mnohem přehlednější.
+
+    Zajímá Vás Terraform? Více na stránce [Školení Terraform](/skoleni/terraform)
+
+    #### Prometheus
+
+    Na Kubernetes navazují další témata: monitoring a správa logu. Monitoring a metriky nám obstarává Prometheus. Je to graduated project (stejně jako Kubernetes) pod CNCF.io a je velmi pěkně integrovatelný s moderními aplikacemi jako je Kubernets, Traefik, CAdvisor (monitoring Dockeru). Je to robustní systém na sbírání metrik a monitoring.
+
+    Více na stránce [Školení Prometheus](/skoleni/prometheus)
+
+    #### ELK / EFK
+
+    Jako druhý nástroj navazující na Kubernetes je ELK nebo Elastic Stack. Je to sada nástrojů na správu logu: Elastisticsearch (storage), Logstash / Fluentd (log parsing), Kibana (dashboard). Do ELK stacku můžete agregovat logy nejen z Kubernetes, ale veškeré vaše logy. Budete mít full text index nad logy a mnohem jednodušší práci s nimi.
+
+    Více na stránce [Školení ELK / EFK](/skoleni/elk). Kurz bude k dispozici začátkem února.
+
+    #### Proxmox
+
+    Proxmox je virtulizační platforma používající KVM (Kernel Virtual Machines). Je to velmi dobrá open source alternativa k VMware, která poskytuje, live migrace VMs, zálohování, snapshoty a mnoho dalšího. Má také integrovanou podporu distribuované storage CEPH.
+
+    Školení dělám já a Michael Kaplan. Více na stránce [Proxmox](/skoleni/proxmox)
+
+    #### React & Next.js
+
+    Kromě DevOps hodně pracují s Reactem a Next.js. Proto jsme se [Zuz](https://zuzjes.com) rozhodli připravit také školení Reactu. Na školení intenzívně pracujeme.
+
+    Více informací bude na stránce [Školení React & Next.js](/skoleni/react). Školení dělám já a [Zuzana Jeschke](https://zuzjes.com). Kurz bude k dispozici začátkem února.
+
+    ## Články z roku 2019
+
+    Začal jsem také psát články, ty nejzajímavější jsou zde:
+
+    - [Novinky v Helm 3](/blog/helm3) (blog post)
+    - [Správa Cloudflare DNS pomoci Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
+    - [Git Rebase](/git/rebase)
+    - [Git Hooks](/git/hooks)
+    - [Docker s TLS](/docker/docker-s-tls)
+    - [Proč by každý měl mít svoji doménu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/)
+    - [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene)
+
+
+    ## Videokurzy
+
+    Připravuji video verze mých nejpopulárnějších školení: Docker, Kubernetes, Terraform a Gitlab CI. Budou k dispozici koncem Ledna. Více informací je na stránce [Videokurzy](/videokurzy).
+
+    Každy videokurz obsahuje úvod do dané technologie a step-by-step lekce jak řešit konkrétní problémy a jak s nástrojem efektivně pracovat. Videokurzy mám za zaváděcí cenu 1000 CZK za kurz za osobu, při koupi všech čtyř najednou je cena 3200 CZK.
+
+    Pokud jej chcete koupit do firmy cena videokurzu je 10 000 CZK pro všechny zaměstnance.
+
+    Opakování je matka moudrosti, pokud jste u mě měli školení na dané téma, kurz máte se slevou 50% čili za 5000 CZK pro firmu.
+
+    ## Trainera
+
+    Založil jsem firmu Trainera s.r.o., pod kterou začínáme dělat školení pro větší společnosti a ve větším teamu. Pořád zůstávám jako freelancer a pořád Vám jsem schopný konzultovat a školit DevOps sám, ale mám po svých kurzech větší poptávku než stíhám obsloužit a proto jsem založil firmu abych nemusel výrazně zdražit a zaměřit se jen na banky a velké korporace. Rozšiřují team a snažím se ve více lidech školit ve stejné úrovni v jaké jsem školil do teď. Držte mi palce.
+
+    Můžete se podívat na nabídku kurzu od [Trainera.io](http://trainera.io), ale je to zatím de facto to co nabízím já. Pokud chcete spolupracovat výhradně se mnou, nic se pro Vás nemění.
+
+    ## Meetupy
+
+    Jako další výzvu jsem bral pomoc komunitě a chtěl jsem část svých znalosti předat dál. Proto jsem založil meetup group v Salzburgu. Proč Salzburg? Rád jezdím do hor a neměli tam DevOps meetupy, tak je Salzburg spojení příjemného s užitečným.
+
+    ### Salzburg DevOps Meetups
+
+    Na Meetups máme 30 lidí a v únoru plánujeme první meetup o Dockeru a Kubernetes.
+
+    Více na [meetup.com/Salzburg-DevOps-Meetups](https://www.meetup.com/Salzburg-DevOps-Meetups/)
+
+    ## Závěrem bych rád poděkoval
+
+    Vám za dosavadní spolupráci a Váš zájem. Budu se snažit zlepšovat DevOps a procesy v IT firmách nejen v České Republice. Díky, že jste se mnou.
+
+    Sám bych všechno co jsem zde sepsal určitě nezvládl. A ani bych se nedostal do stavu v kterém jsem teď. Chtěl bych tímto poděkovat mému teamu za obrovské úsilí, které vynaložili.
+
+    Jmenovitě Martinovi Jurčovi ([jurco.io](https://jurco.io)), který mi manažuje operations včetně klientů a marketingu. Martin mi skvěle nastavil firemní procesy, udělal migraci z naprostého punku do CRM (která mě bolela, ale musím si přiznat že přinesla své ovoce) a řídí vše co nemusím dělat já. Já se díky tomu mohu naplno věnovat technickým věcem a školením. Pokud budete potřebovat poradit s podobnými věcmi, zkuste požádat Martina.
+
+    Dále bych rád poděkoval Zuzce ([zuzjes.com](https://zuzjes.com)), přítelkyni, která mě ne jen podporovala, ale udělala hromadu práce na webech v Reactu.
+
+    Díky také patří Kátě, která mi pomáhala s obecnou agendou a řešila za mě úkoly, na které jsem neměl čas ani chuť.
+
+    Ať se Vám daří v roce 2020
+
+    ![PF 2020](/content/pf2020_800px.jpg)
+
+- id: errli
+  title: err.li - Url zkracovač na odkazy z chyb na Github
+  date: 31. 12. 2019
+  tags:
+    - git
+    - github
+  perex: |
+    Projekt inspirovaný err.sh od ZEITu na jednoduché vkládání odkazu na chyby z repozitáře do chybových výstupu.
+  content: |
+    Správné vysvětlení chyb je základ. Bohužel ne vždy se celý popis vejde do chybového výstupu. Naštěstí můžeme vložit odkaz na popis chyby. Kde ty popisy mít uložené? Ideálně v Gitu. Ale odkazy na Githubu jsou dlouhé, zkracovat jeden po druhém není moc reálné.
+
+    Co s tím? S nápadem přišli lidí z [ZEIT.co](https://zeit.co) a napsali [err.sh](https://err.sh), který dělá to, že odkáže na konkrétní popis chyby v daném repozitáři. Například <https://err.sh/micro/path-missing> směřuje na <https://github.com/zeit/micro/blob/master/errors/path-missing.md>.
+
+    Něco takového jsem udělal i já na svém [err.li](https://err.li).
+
+    Mě to odkazuje takto:
+
+    - `err.li/[user]/[repo]/[error]` -> `github.com/[user]/[repo]/blob/master/errors/[error].md`
+    - `err.li/[repo]/[error]` -> `err.li/ondrejsika/[repo]/[error]`
+    - `err.li/[error]` -> `err.li/ondrejsika/errors/[error]`
+
+    Funguje to úplně stejně, jen implementace je trošku jiná. Err.sh používá Node.js microservice ([source](https://github.com/zeit/err-sh)), já pouze funkcionalitu ZEIT.co ([now.json](https://github.com/ondrejsika/err.li/blob/master/now.json)).
+
+    Ukázka mého projektu zde: https://err.li/tf.sh/state-is-locked
+
+    #### Odkazy
+
+    - err.li home page - https://err.li
+    - err.sh blog post - https://zeit.co/blog/err-sh
+    - err.li source code - https://github.com/ondrejsika/err.li
+    - err.sh source code - https://github.com/zeit/err-sh
+- id: helm3
+  title: Helm 3, Tillerless Helm
+  date: 14. 11. 2019
+  ad: kubernetes
+  tags:
+    - kubernetes
+    - helm
+  perex: |
+    Helm3! Konečně! Tillerless Helm verze 3 je tady a tohle je jeho krátká recenze na základě jeho používání.
+  content: |
+    __Helm__ asi znáte, je to balíčkovací nastro pro __Kubernetes__. Ted ale přišel zásadní release v podobě verze 3 a já Vám ukážu novinky a rozdíly oproti předchozí verzi, které mě zaujali.
+
+    ### Tillerless Helm
+    Největší a asi i nejočekávanější novinkou je to že Helm 3 už je čistě client, nepotřebuje se instalovat do clusteru (Tiller). Pro mě je to skvělá zpráva a možnost začít používat Helm na plno.
+
+    Dříve jsem Helm používal primárně jako Template engine, protože jsem nasazoval tímto stylem:
+
+    ```bash
+    helm template ./helm/myapp --name myapp.cz --set host=myapp.cz | kubectl apply -f -
+    ```
+
+    Výhodou byla absence nutnosti Tilleru (části Helmu běžící v clusteru) a nevýhodou bylo to že se to nechovalo jako jeden balíček a pořád jsem to musel spravovat ručně (pomocí `kubectl`). Další nevýhodou bylo to že helm neuměl vyrenderovat template z balíčku v repozitari, také jsem musel mít zdrojaky součástí repozitare, který z Gitlab CI nasazoval, a nebo nějak stažené.
+
+    To se teď mění. Mužů používat Helm i jako správě nasazených aplikaci.
+
+    ### Nasazování přímo z Helmu
+
+    Když nasazují přímo z Helmu, mám několik možnosti a vasechny jsou pěkně:
+
+    #### Podle Chartu
+
+    ```
+    helm repo add ondrejsika https://helm.oxs.cz
+    helm install hello ondrejsika/one-image --set hello.k8s.sikademo.com
+    ```
+
+    #### Ze zdroje Chartu
+
+    ```
+    helm install hello2 ./helm/one-image --set hello2.k8s.sikademo.com
+    ```
+
+    #### Z archivu Chartu
+
+    ```
+    helm install hello3 ./one-image.tgz --set hello3.k8s.sikademo.com
+    ```
+
+    #### Z archivu Chartu na webu
+
+    ```
+    helm install hello4 https://helm.oxs.cz/one-image-1.1.1.tgz --set hello4.k8s.sikademo.com
+    ```
+
+    #### Z Chartu ve specifickém repozitari
+
+    ```
+    helm install hello5 --repo https://helm.oxs.cz one-image --set hello5.k8s.sikademo.com
+    ```
+
+    ### Helm Upgrade
+
+    Příkaz `helm upgrade` se chová stejně jako ve verzi 2, ale díky nové struktuře `helm install` to celé dává větší smysl. Zároveň pořád funguje parametr `--install` tazke můžete pořád používat klasický install upgrade, což je obdoba `helm template ... | kubectl apply ...`.
+
+    ```
+    helm upgrade --install nginx ondrejsika/one-image --set image=nginx --set host=nginx.k8s.sikademo.com
+    ```
+
+    a samotný upgrade:
+
+    ```
+    helm upgrade nginx ondrejsika/one-image --set image=nginx:alpine --set host=nginx.k8s.sikademo.com
+    ```
+
+    ### Helm Uninstall místo Helm Delete
+
+    Helm 3 má příkaz `helm uninstall`, který nahrazuje `helm delete redis --purge`. Po odinstalování můžete rovnou nasadit nový chart pod stejným jménem.
+
+    Pokud chcete zachovat historii (dříve bez parametrů `--purge`), teď musíte přidat parametr `--keep-history`
+
+    ### Helm Status
+
+    Příkaz `helm status` neukazuje resources jak jsme byli zvyklí z Helm 2, je to spíš feature než bug, ale podle diskuze na [Githubu](https://github.com/helm/helm/issues/5952) se tam možná tato funkcionalita vrátí.
+
+    Dá se to vyřešit pomoci těchto způsobu:
+
+    ```
+    helm get manifest hello | kubectl get -f -
+    ```
+
+    Nebo na to Marc Khouzam napsal plugin do Helmu, který vypíše jak status tak ten `kubectl get ...`. Stačí nainstalovat:
+
+    ```
+    helm plugin install https://github.com/marckhouzam/helm-fullstatus
+    ```
+
+    A pustit:
+
+    ```
+    helm fullstatus hello
+    ```
+
+    ### Ostatní změny v CLI
+
+    - `helm init` je odstraněn, není potřeba ;)
+    - `helm inspect` -> `helm show`
+    - `helm fetch` -> `helm pull`
+
+    ### Závěr
+
+    Helm 3 je jednoznačně super, splnil všechny mě očekávání. Myslím, že řada lidí nechtěla používat Helm kvůli Tilleru, teď už to není důvod. Helm 3 používám už nějakou dobu jako beta & RC a jsem s ním naplno spokojený.
+
+    ### Zdroje
+
+    - https://helm.sh/blog/helm-v3-beta/
+    - https://github.com/helm/helm/issues/5952
+
+
+
+- id: javadays2019
+  title: Docker & Kubernetes Talk @ JavaDays 2019
+  ad: docker
+  date: 12. 11. 2019
+  perex: |
+    Slides a ukazka kodu z me prednasky o Dockeru a Kubernetes.
+  content: |
+
+    Slides z prednasky na Speaker Deck: <https://speakerdeck.com/ondrejsika/introduction-to-docker-and-kubernetes-at-javadays-2019>
+
+    Ukazkovy projekt: [ondrejsika/javadays2019](https://github.com/ondrejsika/javadays2019)
+
+    Pokud se Vam prednaska libila budu rad kdyz o ni tweetnetes s `@ondrejsika` a `#javadayscz`. Diky.
+
+    Zajima Vas Docker nebo Kubernetes? Muzete si objednat moje [Skoleni Dockeru](/skoleni/docker) a [Skoleni Kubernetes](/skoleni/kubernetes) nebo prijit na nejaky [otevreny termin](/verejne-terminy)
+
+
+- id: terraform-prednaska-linuxdays-2019
+  url: /blog/2019/terraform-prednaska-linuxdays-2019
+  title: Terraform prednaska na LinuxDays 2019
+  ad: terraform
+  date: 6. 10. 2019
+  perex: |
+    Slides, video a ukazka kodu z me prednasky o Terraformu.
+  content: |
+
+    Slides z prednasky na Speaker Deck: <https://speakerdeck.com/ondrejsika/terraform-infrastructure-as-a-code>
+
+    Ukazkovy projekt: [ondrejsika/linuxdays2019-terraform](https://github.com/ondrejsika/linuxdays2019-terraform)
+
+    Video zaznam na YouTube: <https://www.youtube.com/watch?list=PLlTxFw5y5UZtIUJgYb-aEcjV21x8TGgLx&v=-u4OOoJd6ck>
+
+    Zajima Vas Terraform? Muzete prijit na moje [Skoleni Terraformu](/skoleni/terraform)
+
+- id: react-next-workshop-linuxdays-2019
+  url: /blog/2019/react-next-workshop-linuxdays-2019
+  title: React & Next.js Workshop na LinuxDays 2019
+  date: 5. 10. 2019
+  ad: react
+  perex: |
+    Dnes jsem mel workshop na LinuxDays, zde jesou materialy a ukazkovy projekt.
+  content: |
+    "Slides" pro workshop: [ondrejsika/linuxdays2019-react](https://github.com/ondrejsika/linuxdays2019-react)
+
+    Ukazkovy projekt: [ondrejsika/linuxdays2019-react--example](https://github.com/ondrejsika/linuxdays2019-react--example)
+
+    Nestihli jste workshop na LinuxDays? Nevadi, muzete prijit na moje [Skoleni Reactu](/skoleni/react)
+
+- id: terminy-skoleni-podzim-2019
+  url: /blog/2019/terminy-skoleni-podzim-2019
+  title: Terminy skoleni na podzim 2019
+  date: 4. 10. 2019
+  perex: |
+    Mate zajem o nejake me skoleni? Zde jsou terminy do konce roku 2019.
+  content: |
+    Tento rok uz mam skoro cely vybookovany a tak nabizim terminy, kdy mam vypsane verejne terminy, kam se muzete prihlasit pripadne, kam muzete poslat Vase vyvojare. Vypsane mam terminy Dockeru, Kubernetes a Gitlab CI, muzete se podivat na stranku [Verejne Terminy](/verejne-terminy). Pokud mate zajem o jiny kurz, napiste mi mail a domluvime se.
+
+- id: mac-os-vs-debian-i3
+  url: /blog/2019/mac-os-vs-debian-i3
+  title: Mac OS vs Debian + i3
+  date: 5. 2. 2019
+  perex: |
+    Chci si koupit Mac. Uz po čtvrté jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkam, zda by pro me nebyl i MacOS. Předchozí tři pokusy byli neuspěšné, na Mac se mi nepodařilo přejít. Ted to zkouším po čtvrté.
+  content: |
+    Chci si koupit Mac. Uz po čtvrté jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkam, zda by pro me nebyl i MacOS. Předchozí tři pokusy byli neuspěšné, na Mac se mi nepodařilo přejít. Ted to zkouším po čtvrté.
+
+    Chtěl bych zjistit zda to půjde. Začnu tím, proč bych na Mac přešel. Nebudu teď řešit cenu, ta je sice vyšší, ale jsem ochotny ji zaplatit.
+
+    ### Výhody Macu
+    - Synchronizace mezi zařízeními &#8211; Telefon, Počítač
+    - Funkční tiskárny, wifi, projektor, &#8230;
+    - Unifikované klávesové zkratky (skrz aplikace, skrz zařízení)
+    - Hotspot
+
+    ### Výhody Debianu s i3
+    - Efektivní window manger (i3)
+    - Nativní Docker
+    - Mnohem větší výkon za lepší cenu
+
+    ### Nevýhody Macu
+    - Naprosto strašná práce s okny klávesnici
+    - Minimální velikost oken
+
+    ### Nevýhody Debianu s i3
+    - Připojení monitoru
+    - Tiskárny
+
+    #### Window Manager i3
+
+    Tohle je asi nejdůležitější věc, proč jsem nikdy nepřešel na Mac. i3 je prostě naprosto dokonalý, skvěle se ovládá, perfektně pracuje s více monitory. Nemám k němu žádnou výhradu.
+
+    #### Wifi Hotspot
+    Na Macu je skvěle sdílení internetu z iPhone a iPadu do Macu. Otevřu Mac, kliknu na ikonu Wifi a vyberu si, zda chci internet z telefonu nebo iPadu. Nemusím nic vyndávat z kapes a pouštět hotspot. Prostě to funguje.
+
+- id: emaily-v-jedne-domene-na-google-i-na-svem-serveru
+  url: /blog/2019/emaily-v-jedne-domene-na-google-i-na-svem-serveru
+  title: Emaily v jedné doméně na Google i na svém serveru
+  date: 10. 1. 2019
+  perex: |
+    Chci si koupit Mac. Už potřetí jej testuji. Mám iPhone, iPad, Apple Watch, Apple TV. Dlouho si říkám, zda by pro mě nebyl i MacOS. Předchozí dva pokusy byly neúspěšné, na Mac se mi nepodařilo přejít. Teď to zkouším potřetí.
+  content: |
+    Je možné mít emaily v jedné doméně jako ondrej@example.com na G Suite a monitoring@example.com na svém serverů? Ano, jde a není to těžké.
+
+    Používám G Suite z mnoha důvodů. Je to stabilní email, který funguje i když zbytek mé infrastruktury spadne, doručuje se do inboxu a nemusím řešit spam listy, mám na Google kalendář, kontakty a G Suite. To jsou asi hlavní důvody, proč jej používám.
+
+    Na druhou stranu, email účet stojí 4 EUR měsíčně a poštu si organizuji do více účtů. Dělám to zase z více důvodů. Dobře se mi s tím pracuje a některé emaily chci sdílet a některé ne. Nechci také stahovat všechny emaily na mobilu, zvlášť ty, které nemusím řešit akutně a chodí jich hodně. Stejně tak mi vadí filtrování Googlim způsobem narozdíl od standartniho Sieve. Není to možná nejlepší způsob, ale mě vyhovuje.
+
+    Dejme tomu, že používám doménu example.com. Používat email ondrej@example.com jako hlavní, ondrejsika@example.com na většinu služeb a webu (jako například ondrejsika+alza@example.com nebo ondrejsika+netflix@example.com), monitoring@example.com pro notifikace z monitoringu, wp@example.com pro notifikace z Worpresu a podobně.
+
+    Jelikož Google chce za každý účet v G Suite 4 EUR, platil bych zbytečně moc za služby, které nechci. U těchto emailů nemusím řešit ani spam, většinou z nich nic neposílám.
+
+    Moje dosavadní řešení bylo na svém serveru mít doménu int.example.com (int jako internal) a na ní mít tyto emaily (například ondrejsika@int.example.com, wp@int.example.com).
+
+    Toto řešení se mi nakonec přestalo líbit. Povedlo se mi totiž docílit toho, že emaily mohu mít v hezkém formátu (ondrejsika@example.com, wp@example.com) a nepoužívat více účtů v G Suite. Ukážu Vám, jak na to.
+
+    Provozuji vlastní emailový server Poste.io. Je to jeden Docker kontejner, který obsahuje SMTP, IMAP, webmail a Admin. Vytvořili to češi, je to fakt super. V něm jsem si vytvořil virtuální doménu example.com, na které si vytvářím jednotlivé účty. Dále jsem si vytvořil doménu gin.example.com (Google INput, podobnost s alkoholem náhodná), kterou jsem přesměroval na example.com, což znamená, že všechny emaily pro účty na gin.example.com se budou doručovat do schránek v doméně example.com. Používá se to například, když máte alias domény s pomlčkou a chcete doručovat emaily na obě domény (například ondrej@my-domain.com -> ondrej@mydomain.com, alice@my-domain.com -> alice@mydomain.com).
+
+    MX DNS záznamy domény example.com nechám na Google a MX pro gin.example.com nastavím na můj mailserver. Vypadá to asi takto:
+
+        sika@sika-x250:~$ host example.com
+        example.com mail is handled by 10 aspmx.l.google.com.
+        example.com mail is handled by 20 alt1.aspmx.l.google.com.
+        sika@sika-x250:~$ host gin.example.com
+        gin.example.com mail is handled by 10 mail.example.com.
+        sika@sika-x250:~$
+
+    V G Suite nastavím mému uživateli aliasy pro tyto jména (ondrejsika@example.com, wp@example.com) nebo doménový koš (akceptuje všechny emaly (cokoliv@example.com). Potom nastavím přesměrování těchto emailu na emaily v gin.example.com doméně, (která je interně doručuje na example.com). Poste.io nedělá DNS resilution pro domény, se kterými pracuje a proto se nepodívá, že example.com má být na Google, ale email doručí lokálnímu účtu. A to je celé. Stačí přidat nové emaily do mailového klienta.
+
+    Pokud mám správně nastavené SPF, mohu emaily z domény i odesílat a ano, budou ve složce odeslaná pošta.
+- id: talk-gitlab-ci-docker-linux-days-2018
+  url: /blog/2018/talk-gitlab-ci-docker-linux-days-2018
+  title: |
+    Talk: Gitlab CI + Docker (Linux Days 2018)
+  date: 6. 10. 2018
+  ad: gitlab-ci
+  perex: |
+      Slidy k přednášce a workshopu na Linux Days 2018.
+  content: |
+    DOPLNIT SLIDY
+    Repozitar: https://github.com/ondrejsika/linuxdays2018
+    Resources:
+
+    Setup of Gitlab Runner in Docker: [https://github.com/ondrejsika/gitlab-ci-runner](https://github.com/ondrejsika/gitlab-ci-runner)
+    Run Traefik with SSL: [https://github.com/ondrejsika/traefik-ssl](https://github.com/ondrejsika/traefik-ssl)
+    Docker image ondrejsika/ci: [https://github.com/ondrejsika/ondrejsika-ci-docker](https://github.com/ondrejsika/ondrejsika-ci-docker)
+- id: talk-uvod-do-pouzivani-dockeru-teched-2018
+  url: /blog/2019/talk-uvod-do-pouzivani-dockeru-teched-2018
+  ad: docker
+  title: |
+    Talk: Úvod do používání Dockeru, TechEd 2018
+  date: 16. 5. 2018
+  perex: |
+    Slidy a zdrojáky z mé přednášky na konferenci TechEd 2018.
+  content: |
+    DOPLNIT SLIDY
+
+    Demo: https://github.com/ondrejsika/teched18
+    Slides: https://speakerdeck.com/ondrejsika/teched-2018-introduction-to-docker
+- id: talk-automatizace-pomoci-gitlab-gi-a-dockeru
+  url: /blog/2018/talk-automatizace-pomoci-gitlab-gi-a-dockeru
+  title: |
+    Talk: Automatizace pomoci Gitlab CI a Dockeru
+  date: 21. 4. 2018
+  perex: Slides z přednášky na DevHeaven.
+  content: |
+    Zdroje:
+    - [https://github.com/ondrejsika/jekyll-demo](https://github.com/ondrejsika/jekyll-demo)
+    - [https://github.com/ondrejsika/traefik-ssl](https://github.com/ondrejsika/traefik-ssl)
+    - [https://github.com/ondrejsika/gitlab-ci-runner](https://github.com/ondrejsika/gitlab-ci-runner)
+    - [https://github.com/ondrejsika/ondrejsika-ci-docker](https://github.com/ondrejsika/ondrejsika-ci-docker)
+
+    Mate zajem o skoleni [Dockeru](/), [Gitu](/) nebo [CI](/)?
+
+- id: plzensky-barcamp-lightning-network-aneb-bitcoin-2.0
+  url: .blog/2018/plzensky-barcamp-lightning-network-aneb-bitcoin-2.0
+  title: |
+    Plzensky Barcamp: Lightning Network aneb Bitcoin 2.0
+  date: 7. 4. 2018
+  perex: |
+      Slidy a zdrojáky k demo ukázce LN na Plzeňském Barcampu.
+  content: |
+    Slides a zdrojáky k demo ukázce LN na Plzeňském Barcampu.
+    Zdrojové kódy ukázky:  [https://github.com/ondrejsika/lightning-example](https://github.com/ondrejsika/lightning-example)
+    Slides v PDF: [https://speakerd.s3.amazonaws.com/…/Lightning_Network_aneb_Bitcoin_2.0.pdf](https://speakerd.s3.amazonaws.com/…/Lightning_Network_aneb_Bitcoin_2.0.pdf)
+
+    DOPLNIT SLIDY
+
+- id: tunelovani-git-konfigurace-na-server-prez-ssh-aneb-konec-commitum-root-root@debian
+  url: /blog/2018/tunelovani-git-konfigurace-na-server-prez-ssh-aneb-konec-commitum-root-root@debian
+  title: Tunelovani GIT konfigurace na server prez SSH aneb konec commitum root root@debian
+  date: 21. 3. 2018
+  ad: git
+  perex: |
+    Určitě se vám někdy stalo, že jste něco commitovali na serveru a do historie jste si zavlekly něco jako: commit 8f160534070012c87c409e5b19028ad0062f0310 Author: root <root@debian> Date: Wed Jun 26 17:16:31 2013 +0000 blocks.pickle, peers.pickle added to .gitignore commit 96e83891bfdcad41c545220e1957fba1ba72c2cd Author: root&#8230;
+  content: |
+    Urcite se vam nekdy stalo, ze jste neco commitovali na serveru a do historie jste si zavlekly neco jako:
+
+    ```
+    commit 8f160534070012c87c409e5b19028ad0062f0310
+    Author: root <root@debian>
+    Date: Wed Jun 26 17:16:31 2013 +0000
+    blocks.pickle, peers.pickle added to .gitignore
+    ```
+    Asi to znate. Ale nastavit uzivatele a email na serveru neni nejlepsi reseni, protoze muze pristupovat vice lidi a kazdy chce vytvaret commity pod svym jmenem.
+
+    ### SSH forward proměnných
+    Resenim muze byt posilani environment promenych po SSH. Vyzaduje to sice zmenu nastaveni SSH serveru, ale je to jediny zpusob, jak nastavit prostredi Gitu automaticky pro konkretniho uzivatele.
+    #### Na lokalnim pocitaci
+    Na straně klienta musíme mít v bashrc vyexportované proměnné, které nastavují v Gitu jméno a email pro autora i commitera. Jsou to tyto proměnné:
+
+        export GIT_AUTHOR_NAME="Ondrej Sika"
+        export GIT_AUTHOR_EMAIL="ondrej@ondrejsika.com"
+        export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
+        export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
+
+    a je jestě nutné tyto proměnné posílat při SSH spojení. To se dá globálně povolit v SSH konfigu (.ssh/config) takto:
+        Host *
+            SendEnv GIT_*
+    A to je na straně klienta vše.
+    #### Na serveru
+    Na serverů je nutné povolit přijímání env proměnných Gitu. Do souboru /etc/ssh/sshd_config je nutné přidat následující řádku:
+    ```
+    AcceptEnv GIT_*
+    ```
+    A pak jen restartovat SSH server (service ssh restart), odpojit a připojit se znovu. Zda vše zafungovalo, zjistíte když si vypíšete proměnné prostředí pomoci:
+    ```
+    root@debian:~# env | grep GIT
+    GIT_COMMITTER_NAME=Ondrej Sika
+    GIT_COMMITTER_EMAIL=ondrej@ondrejsika.com
+    GIT_AUTHOR_NAME=Ondrej Sika
+    GIT_AUTHOR_EMAIL=ondrej@ondrejsika.com
+    ```
+    Ted uz vse funguje, dalsi commit na serveru bude uz se spravnym autorem.
+
+- id: python-libraries-for-bitcoin-and-ethereum-pycon-sk-2018
+  url: /blog/2018/python-libraries-for-bitcoin-and-ethereum-pycon-sk-2018
+  title: Python Libraries for Bitcoin and Ethereum (PyCon SK 2018)
+  date: 10. 3. 2018
+  perex: |
+    Slidy z přednášky o knihovnách pro práci s Bitcoinem a Ethereem z PyCon SK 2018
+  content: |
+    Slidy z přednášky o knihovnách pro práci s Bitcoinem a Ethereem z PyCon SK 2018
+
+    VLOZIT SLIDY
+
+    Code examples: [https://github.com/ondrejsika/examples–bitcoin-ethereum-python-tools](https://github.com/ondrejsika/examples–bitcoin-ethereum-python-tools)
+
+    Slides in PDF: [PDF](/)
+
+- id: i3–tiling-window-manager-install-fest-2018
+  url: /blog/2018/i3–tiling-window-manager-install-fest-2018
+  title: i3 – tiling window manager (Install Fest 2018)
+  date: 3. 3. 2018
+  perex: |
+    Slidy z mé přednášky o i3 windows manageru.
+  content: |
+    Slidy z mé přednášky o i3 windows manageru.
+
+    VLOZIT SLIDY
+
+    My i3 config: https://github.com/ondrejsika/i3-config
+
+    Slides: [https://speakerdeck.com/ondrejsika/i3-tiling-window-manager-install-fest-2018](https://speakerdeck.com/ondrejsika/i3-tiling-window-manager-install-fest-2018)<br/>
+    Slides [PDF]: [https://speakerd.s3.amazonaws.com/…/Install_Fest_2018_-_i3wm.pdf](https://speakerd.s3.amazonaws.com/presentations/0b309db6aa8140fd897065dd25d04f61/Install_Fest_2018_-_i3wm.pdf)
+
+- id: jake-knapp-sprint
+  url: /blog/2018/jake-knapp-sprint
+  title: |
+    Jake Knapp: Sprint
+  date: 18. 2. 2018
+  perex: |
+    Právě jsem dočetl knížku Sprint od lidí z Google Ventrures. Když jsem si knížku kupoval, myslel jsem si, že si kupuji návod, jak ryche udělat nějaký projekt. Ale o tom knížka vůbec není … Kniha Sprint popisuje, jak otestovat nápad…
+  content: |
+    Právě jsem dočetl knížku Sprint od lidí z Google Ventrures. Když jsem si knížku kupoval, myslel jsem si, že si kupuji návod, jak ryche udělat nějaký projekt. Ale o tom knížka vůbec není …<br/>
+
+    Kniha Sprint popisuje, jak otestovat nápad za týden. A nápad může být jakkoliv bláznivý. Vlastně, čím bláznivější, tím je to téma vhodnější pro sprint. Riskuji vlastně jen týden a v pátek budu mít hmatatelné výsledky, zda můj projekt může fungovat či nikoliv.<br/>
+
+    V knížce se dozvíte, jak nápad vhodně zvolit, jak na něm v teamu pracovat, vytvořit prototyp a vyzkoušet na zákaznících. Je nutná trocha představivosti, ale sprintem můžete testovat prakticky všechno. Od navržení prodejny nebo ordinace, přes software nebo weby až po hardwarové produkty.<br/>
+
+    Mnohé techniky z knihy se dají použít i mimo týdenní sprint, třeba když potřebujete společně něco vymyslet. Jsou lepší metody než brainstorming – ten podle autorů vůbec nefunguje. Také kvalitiativní rozhovory se zákazníky jsou velmi zajímavá oblast.<br/>
+
+    Už se těším až sprint nebo nějakou jeho část či upravenou variantu, (i když to příliš nedoporučuji) vyzkouším na nějakém reálném projektu. Přemýšlím i o použití ve skautském oddílu. Až si udělám osobní zkušenost se sprintem, jak ho popisují v knize, určitě o tom napíši.<br/>
+
+    Rád knihu půjčím: [https://distlib.com/ondrejsika/169/](https://distlib.com/ondrejsika/169/)<br/>
+    Nebo ji můžete zakoupit: [https://www.melvil.cz/kniha-sprint/](https://www.melvil.cz/kniha-sprint/)
+- id: prednaska-o-dockeru-ve-zline-8-2-2018
+  url: /blog/2018/prednaska-o-dockeru-ve-zline-8-2-2018
+  ad: docker
+  title: |
+    Přednáška o Dockeru ve Zlíně 8. 2. 2018
+  date: 8. 2. 2018
+  perex: |
+  content: |
+- id: prednaska-o-dockeru-v-olomouci-30-1-2017
+  url: /blog/2018/prednaska-o-dockeru-v-olomouci-30-1-2017
+  title: |
+    Přednáška o Dockeru v Olomouci 30. 11. 2017
+  date: 30. 11. 2017
+  perex: |
+  content: |
+
+

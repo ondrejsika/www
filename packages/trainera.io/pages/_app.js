@@ -1,10 +1,10 @@
 import App from "next/app";
-import site from "../config";
+import site from "@app/ondrej-sika.cz/config";
 
-import Layout from "../layouts/Layout";
+import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
 // Imported CSS
-import "../css";
+import "@app/ondrej-sika.cz/css";
 
 class MyApp extends App {
   constructor(...args) {
@@ -16,7 +16,7 @@ class MyApp extends App {
     pageProps.site = this.site;
     return (
       <Layout {...pageProps}>
-        <Component {...pageProps} />
+        <Component lang={site.lang} {...pageProps} />
       </Layout>
     );
   }
