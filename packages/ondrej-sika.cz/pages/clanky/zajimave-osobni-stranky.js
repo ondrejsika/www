@@ -22,6 +22,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://honzacerny.com/>
 - <https://mattbanderson.com/about/>
 - <https://endler.dev/about/>
+- <https://sugarshin.net/>
 
     `}
     />
