@@ -3,7 +3,6 @@ import Head from "next/head";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
-import Navbar from "@app/ondrejsika-theme/components/Navbar";
 import Footer from "@app/ondrejsika-theme/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 import CoronaBar from "@app/common/components/CoronaBar";
@@ -24,42 +23,7 @@ let Layout = props => (
     </Head>
     <DevelopmentBar />
     <CoronaBar local_link={true} />
-    <Navbar
-      NavName="Ondřej Šika"
-      NavUnderheader="Software {Engineer, Konzultant, Lektor}"
-      links={[
-        ["DOMŮ", "/"],
-        [
-          "KURZY",
-          [
-            ["GIT", "/skoleni/git"],
-            ["GITLAB CI", "/skoleni/gitlab-ci"],
-            ["DOCKER", "/skoleni/docker"],
-            ["KUBERNETES", "/skoleni/kubernetes"],
-            ["RANCHER", "/skoleni/rancher"],
-            ["ANSIBLE", "/skoleni/ansible"],
-            ["TERRAFORM", "/skoleni/terraform"],
-            ["PROMETHEUS", "/skoleni/prometheus"],
-            ["PROXMOX", "/skoleni/proxmox"],
-            ["ELK / EFK", "/skoleni/elk"],
-            ["REACT & NEXT.JS", "/skoleni/react"],
-            ["VIDEOKURZY", "/videokurzy"]
-          ]
-        ],
-        ["TERMÍNY", "/verejne-terminy"],
-        [
-          "NÁVODY & ČLÁNKY",
-          [
-            ["BLOG", "/blog"],
-            ["NÁVODY (TECHNICKÉ)", "/navody"],
-            ["ČLÁNKY (RŮZNÉ)", "/clanky"],
-            ["REPOZITÁŘE", "/repozitare"],
-            ["RESOURCES", "/resources"]
-          ]
-        ],
-        ["KONTAKT", "/kontakt"]
-      ]}
-    />
+    {props.Navbar}
     <div className="content">{props.children}</div>
     <Footer />
     <BootstrapJS />
