@@ -11,7 +11,6 @@ import "@app/ondrej-sika.cz/css";
 const Navbar = (
   <ThemeNavbar
     NavName="Trainera.io"
-    NavUnderheader="IT &amp; DevOps Training"
     links={[
       ["DOMŮ", "/"],
       [
