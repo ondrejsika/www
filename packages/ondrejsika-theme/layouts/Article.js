@@ -12,10 +12,7 @@ const ArticleLayout = props => {
       <Head>
         <title>{props.title} - Ondřej Šika</title>
       </Head>
-      <MainBar
-        header={props.header || props.title}
-        text={props.subheader}
-      />
+      <MainBar header={props.header || props.title} text={props.subheader} />
 
       <div className="container pt-4 pb-2 article-body">
         {props.children}

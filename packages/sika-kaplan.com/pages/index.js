@@ -7,10 +7,7 @@ const Index = () => (
     <Head>
       <title>Sika Kaplan - Your DevOps Partner</title>
     </Head>
-    <MainBar
-      header="In progress ..."
-      text="In progress ..."
-    ></MainBar>
+    <MainBar header="In progress ..." text="In progress ..."></MainBar>
     <div className="container mt-5">
       <h2>O nas</h2>
       <p>In progress ...</p>
