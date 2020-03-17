@@ -124,6 +124,18 @@
   length: 1 den
   date_from: 11.3.2020
   date_to: 11.3.2020
+- id: prometheus-praha-24-04-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: prometheus
+  name: Školení Prometheus
+  city: Praha
+  price: 6800 CZK
+  venue_id: paralelni-polis
+  length: 1 den
+  date_from: 24.4.2020
+  date_to: 24.4.2020
 - id: rancher-praha-27-04-2020
   active: true
   country: cz
@@ -136,6 +148,31 @@
   length: 1 den
   date_from: 27.4.2020
   date_to: 27.4.2020
+- id: ansible-praha-01-05-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: ansible
+  name: Školení Ansible
+  city: Praha
+  price: 6800 CZK
+  venue_id: paralelni-polis
+  length: 1 den
+  date_from: 1.5.2020
+  date_to: 1.5.2020
+- id: git-praha-15-05-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: Git
+  name: Školení Git
+  city: Praha
+  price: 6800 CZK
+  venue_id: paralelni-polis
+  length: 1 den
+  date_from: 15.5.2020
+  date_to: 15.5.2020
+
 
 
 # EuropeTour 2020 January
