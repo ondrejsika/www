@@ -164,7 +164,7 @@
   active: true
   country: cz
   lang: cs
-  course_id: Git
+  course_id: git
   name: Školení Git
   city: Praha
   price: 6800 CZK
