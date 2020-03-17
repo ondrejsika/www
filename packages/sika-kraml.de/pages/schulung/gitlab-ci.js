@@ -1,5 +1,5 @@
 import React from "react";
-import Course from "@app/ondrej-sika.cz/layouts/Course";
+import Course from "@app/ondrejsika-theme/layouts/Course";
 import logo from "@app/data/pictures/courses/gitlab-ci.svg";
 import { stripIndent } from "common-tags";
 

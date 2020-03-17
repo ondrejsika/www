@@ -1,4 +1,4 @@
-import Course from "@app/ondrej-sika.cz/layouts/Course";
+import Course from "@app/ondrejsika-theme/layouts/Course";
 import docker_img from "@app/data/pictures/courses/docker.svg";
 import { stripIndent } from "common-tags";
 

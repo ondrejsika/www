@@ -1,5 +1,5 @@
 import React from "react";
-import CourseDD from "@app/ondrej-sika.cz/layouts/CourseDD";
+import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
 import logo from "@app/data/pictures/courses/git-w.svg";
 
 const Page = props => (

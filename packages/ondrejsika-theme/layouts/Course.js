@@ -11,7 +11,7 @@ import UpcomingSessions from "@app/ondrej-sika.cz/components/UpcomingSessions";
 
 import Head from "next/head";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
-import PipedriveContactForm from "../components/PipedriveContactForm";
+import PipedriveContactForm from "@app/ondrej-sika.cz/components/PipedriveContactForm";
 
 export default props => (
   <div>

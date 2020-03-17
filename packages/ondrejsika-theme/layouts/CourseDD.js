@@ -1,4 +1,4 @@
-import Course from "@app/ondrej-sika.cz/layouts/Course";
+import Course from "@app/ondrejsika-theme/layouts/Course";
 import couses_yaml from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 

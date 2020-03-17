@@ -1,6 +1,6 @@
 import React from "react";
 
-import Article from "@app/ondrej-sika.cz/layouts/Article";
+import Article from "@app/ondrejsika-theme/layouts/Article";
 import talks from "@app/data/ondrejsika/talks.yml";
 import workshops from "@app/data/ondrejsika/workshops.yml";
 import Markdown from "@app/common/components/Markdown";
