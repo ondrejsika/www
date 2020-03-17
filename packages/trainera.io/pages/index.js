@@ -2,7 +2,6 @@ import React from "react";
 import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
-import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import { TwitterTweetEmbed } from "react-twitter-embed";
@@ -14,18 +13,7 @@ const Index = () => (
     <Head>
       <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
     </Head>
-    <MainBarHomepage
-      header="IT & DevOps školení, konzultace a workshopy"
-      text="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
-    />
-    <StatisticBar
-      NumberOfPeople="750+"
-      NumberOfPeopleHeader="Počet odškolených lidí"
-      NumberOfCompanies="120+"
-      NumberOfCompaniesHeader="Počet firem ve spolupráci"
-      NumberOfLectures="170+"
-      NumberOfLecturesHeader="Počet uskutečněných školení"
-    />
+    <MainBarHomepage header="IT & DevOps školení, konzultace a workshopy" />
 
     <div className="container">
       <LectureImg LectureImgHeader="Kurzy co školím" />
