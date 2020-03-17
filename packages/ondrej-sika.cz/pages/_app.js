@@ -1,7 +1,7 @@
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
 
-import Layout from "@app/ondrej-sika.cz/layouts/Layout";
+import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";

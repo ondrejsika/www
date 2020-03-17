@@ -1,5 +1,5 @@
 import React from "react";
-import Article from "@app/ondrej-sika.cz/layouts/Article";
+import Article from "@app/ondrejsika-theme/layouts/Article";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import Recommendation from "@app/course-landing/components/Recommendation";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";

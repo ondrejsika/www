@@ -1,5 +1,5 @@
 import React from "react";
-import Article from "@app/ondrej-sika.cz/layouts/Article";
+import Article from "@app/ondrejsika-theme/layouts/Article";
 
 export const BookMe = () => (
   <Article

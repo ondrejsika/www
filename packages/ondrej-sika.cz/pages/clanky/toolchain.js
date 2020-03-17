@@ -1,4 +1,4 @@
-import Article from "@app/ondrej-sika.cz/layouts/Article";
+import Article from "@app/ondrejsika-theme/layouts/Article";
 
 export default () => (
   <Article

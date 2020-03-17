@@ -1,4 +1,4 @@
-import CourseDD from "@app/ondrej-sika.cz/layouts/CourseDD";
+import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
 import logo from "@app/data/pictures/courses/proxmox-white.svg";
 
 export default props => (
