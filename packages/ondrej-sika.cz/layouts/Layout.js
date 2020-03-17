@@ -23,7 +23,7 @@ let Layout = props => (
       />
     </Head>
     <DevelopmentBar />
-    <CoronaBar />
+    <CoronaBar local_link={true} />
     <Navbar
       NavName="Ondřej Šika"
       NavUnderheader="Software {Engineer, Konzultant, Lektor}"
