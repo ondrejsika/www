@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "@app/course-landing/components/Header";
 import ButtonOutline from "@app/course-landing/components/ButtonOutline";
 import Bar from "@app/course-landing/components/Bar";
@@ -5,7 +6,6 @@ import HeaderLink from "@app/course-landing/components/HeaderLink";
 import TextFrame from "@app/course-landing/components/TextFrame";
 import MyClients from "@app/course-landing/components/MyClients";
 import ThreeCol from "@app/course-landing/components/ThreeCol";
-import TwoCol from "@app/course-landing/components/TwoCol";
 import Navigation from "@app/course-landing/components/Navigation";
 import Recommendation from "@app/course-landing/components/Recommendation";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
@@ -19,7 +19,7 @@ import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import courses_file from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
-import AustraliaOnFireBar from "@app/common/components/AustraliaOnFireBar";
+import CoronaBar from "@app/common/components/CoronaBar";
 
 const Page = props => {
   let site = props.site;
@@ -53,6 +53,7 @@ const Page = props => {
           rel="stylesheet"
         ></link>
       </Head>
+      <CoronaBar local_link={false} />
       <Navigation wide={true} location={site.location} />
       <Header
         wide={true}
