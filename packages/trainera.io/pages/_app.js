@@ -1,6 +1,8 @@
 import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
+import Link from "next/link";
+import styled from "styled-components";
 
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
@@ -10,6 +12,21 @@ import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
 
+const WrapperWhite = styled.div`
+  padding: 0.5em 0;
+  color: white;
+`;
+
+const H4 = styled.h4`
+  color: white;
+`;
+
+const A = styled.a`
+  color: white;
+  &:hover {
+    text-decoration: underline white;
+  }
+`;
 const Navbar = (
   <ThemeNavbar
     NavName="Trainera.io"
@@ -40,17 +57,13 @@ const Navbar = (
 
 const Footer = (
   <ThemeFooter
-    contact={
-      <>
-        <h3 className="text-white">Trainera.io</h3>
+    firstColumn={
+      <WrapperWhite>
+        <H4>Trainera.io</H4>
         <p>
-          <a href="mailto:sales@trainera.io" className="a-underline">
-            sales@trainera.io
-          </a>
+          <A href="mailto:sales@trainera.io">sales@trainera.io</A>
           <br />
-          <a href="tel:+420773452376" className="a-underline">
-            +420 773 452 376
-          </a>
+          <A href="tel:+420773452376">+420 773 452 376</A>
         </p>
         <table className="contact-table table-borderless">
           <tbody>
@@ -68,6 +81,57 @@ const Footer = (
             </tr>
           </tbody>
         </table>
+      </WrapperWhite>
+    }
+    secondColumn={
+      <WrapperWhite>
+        <H4>Nejoblíbenější kurzy</H4>
+        <ul>
+          {[
+            ["Docker", "/skoleni/docker"],
+            ["Kubernetes", "/skoleni/kubernetes"],
+            ["Gitlab CI", "/skoleni/gitlab-ci"],
+            ["Terraform", "/skoleni/terraform"],
+            ["Prometheus", "/skoleni/prometheus"]
+          ].map((el, i) => {
+            return (
+              <li key={i}>
+                <Link href={el[1]}>
+                  <A className="a-underline">{el[0]}</A>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </WrapperWhite>
+    }
+    thirdColumn={
+      <WrapperWhite>
+        <H4>Zajímají Vás novinky?</H4>
+        <p>Odebírejte můj newsletter a budete v obraze!</p>
+        <div className="input-group">
+          <a
+            className="btn btn-outline-header"
+            href="https://sika.link/newsletter"
+          >
+            Přihlásit se k odběru článků a novinek
+          </a>
+        </div>
+      </WrapperWhite>
+    }
+    center={
+      <>
+        <Link href="/lektorska-spoluprace">
+          <A href="#">Lektorská spolupráce</A>
+        </Link>
+        <span className="text-white">&nbsp;|&nbsp;</span>
+        <Link href="/obchodni-spoluprace">
+          <A href="#">Obchodní Spolupráce</A>
+        </Link>
+        <span className="text-white">&nbsp;|&nbsp;</span>
+        <Link href="/invite">
+          <A href="#">Připojte se</A>
+        </Link>
       </>
     }
   />
