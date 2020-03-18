@@ -3,7 +3,6 @@ import Head from "next/head";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
-import Footer from "@app/ondrejsika-theme/components/Footer";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 import CoronaBar from "@app/common/components/CoronaBar";
 
@@ -25,7 +24,7 @@ let Layout = props => (
     <CoronaBar local_link={true} />
     {props.Navbar}
     <div className="content">{props.children}</div>
-    <Footer />
+    {props.Footer}
     <BootstrapJS />
     <Gauges gauges_site_id={props.site.gauges_site_id} />
     <GoogleAnalytics

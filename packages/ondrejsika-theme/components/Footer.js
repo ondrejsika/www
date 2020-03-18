@@ -9,38 +9,13 @@ import twitterhex from "@app/data/pictures/social-networks/twitter-hex.svg";
 import githubhex from "@app/data/pictures/social-networks/github-hex.svg";
 import mailhex from "@app/data/pictures/social-networks/mail-hex.svg";
 
-const Footer = () => (
+const Footer = props => (
   <div>
     <div className="footer mt-5">
       <div className="container pt-4 pb-4">
         <div className="row">
           <div className="col-md-3 col-sm-7 col-8 text-white">
-            <h3 className="text-white">Ondřej Šika</h3>
-            <p>
-              <a href="mailto:ondrej@sika.io" className="a-underline">
-                ondrej@sika.io
-              </a>
-              <br />
-              <a href="tel:+420773452376" className="a-underline">
-                +420 773 452 376
-              </a>
-            </p>
-            <table className="contact-table table-borderless">
-              <tbody>
-                <tr>
-                  <td>IČ:</td>
-                  <td>88114163</td>
-                </tr>
-                <tr>
-                  <td>DIČ:</td>
-                  <td>CZ9302252102</td>
-                </tr>
-                <tr>
-                  <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-                  <td>2301432033/2010 (Fio)</td>
-                </tr>
-              </tbody>
-            </table>
+            {props.contact}
           </div>
           <div className="col-md-2 col-sm-5 col-4">
             <h3 className="text-white">Moje Kurzy</h3>
