@@ -31,16 +31,6 @@ const Navbar = (
         ]
       ],
       ["TERMÍNY", "/verejne-terminy"],
-      [
-        "NÁVODY & ČLÁNKY",
-        [
-          ["BLOG", "/blog"],
-          ["NÁVODY (TECHNICKÉ)", "/navody"],
-          ["ČLÁNKY (RŮZNÉ)", "/clanky"],
-          ["REPOZITÁŘE", "/repozitare"],
-          ["RESOURCES", "/resources"]
-        ]
-      ],
       ["KONTAKT", "/kontakt"]
     ]}
   />
