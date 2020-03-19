@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import "@app/sika-kraml.de/css";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import ReactMarkdown from "react-markdown";

@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import Head from "next/head";
 // import Markdown from "@app/common/components/Markdown";
 
