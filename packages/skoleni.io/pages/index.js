@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-import Navbar from "../components/Navbar";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import CourseBar from "../components/CourseBar";
@@ -16,7 +15,6 @@ const Background = styled.div`
 
 const Index = () => (
   <>
-    <Navbar />
     <Header header="SKOLENI.IO" />
     <Background>
       <Container>
