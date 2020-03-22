@@ -1,5 +1,5 @@
 import React from "react";
-import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBarTrainera";
+import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
