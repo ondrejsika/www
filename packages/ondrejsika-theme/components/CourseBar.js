@@ -27,7 +27,7 @@ const Card = props => {
   );
 };
 
-const LectureImg = props => {
+const CourseBar = props => {
   return (
     <div className="">
       <h2 className="pt-4 pb-2" id="my-training">
@@ -103,4 +103,4 @@ const LectureImg = props => {
   );
 };
 
-export default LectureImg;
+export default CourseBar;

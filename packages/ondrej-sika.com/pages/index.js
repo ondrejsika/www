@@ -1,6 +1,6 @@
 import React from "react";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
-import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
@@ -27,7 +27,7 @@ const Index = props => (
     />
 
     <div className="container">
-      <LectureImg lang={props.site.lang} LectureImgHeader="My Training" />
+      <CourseBar lang={props.site.lang} LectureImgHeader="My Training" />
       <TextWithImg TextWithImgHeader="About me">
         My name is Ondrej, I am a software engineer and DevOps consultant,
         architect &amp; lecturer. I lead mostly Docker courses and CI; they are

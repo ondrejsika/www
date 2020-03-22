@@ -1,5 +1,5 @@
 import Markdown from "@app/common/components/Markdown";
-import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import Head from "next/head";
 import React from "react";
 
@@ -20,7 +20,7 @@ export default props => {
 Send me and email <ondrej@sika.io> and let me know what you need. I'd like to help you.
 `}
         />
-        <LectureImg
+        <CourseBar
           lang={props.site.lang}
           LectureImgHeader="... or look for my training"
         />

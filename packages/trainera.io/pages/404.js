@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
-import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 
 export const error = () => {
   return (
@@ -20,7 +20,7 @@ export const error = () => {
 Napište mi email na <ondrej@sika.io> a dejte mi vědět co potřebujete. Rád Vám pomohu.
 `}
         />
-        <LectureImg LectureImgHeader="... nebo se podivejte na kurzy co školím" />
+        <CourseBar LectureImgHeader="... nebo se podivejte na kurzy co školím" />
         <div className="mt-5" />
         <Markdown
           source={`

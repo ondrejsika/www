@@ -3,7 +3,7 @@ var Align = {
   fontSize: "35px"
 };
 
-const LectureImg = props => (
+const CourseBar = props => (
   <div className="d-none d-md-block d-lg-none">
     <h3 className="pt-4 pb-2" style={Align}>
       {props.LectureImgHeader}
@@ -16,4 +16,4 @@ const LectureImg = props => (
   </div>
 );
 
-export default LectureImg;
+export default CourseBar;

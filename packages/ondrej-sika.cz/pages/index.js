@@ -1,5 +1,5 @@
 import React from "react";
-import LectureImg from "@app/ondrejsika-theme/components/LectureImg";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
 import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
@@ -28,7 +28,7 @@ const Index = () => (
     />
 
     <div className="container">
-      <LectureImg LectureImgHeader="Kurzy co školím" />
+      <CourseBar LectureImgHeader="Kurzy co školím" />
       <TextWithImg TextWithImgHeader="O mně">
         Jmenuji se Ondřej Šika a od roku 2009 se zabývám vývojem software a
         DevOps. Své praktické zkušenosti předávám na školeních od roku 2013.
