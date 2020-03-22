@@ -1,0 +1,13 @@
+{
+  "name": "skoleni.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "skoleni.io",
+  "author": "Zuzana Jeschke",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
+    "styled-components": "4.2.0"
+  }
+}
