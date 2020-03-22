@@ -7,7 +7,7 @@ import php from "@app/data/pictures/courses/php-sq.png";
 import react from "@app/data/pictures/courses/react-sq.webp";
 import gitlab from "@app/data/pictures/courses/gitlab-sq.png";
 import kubernetes from "@app/data/pictures/courses/kubernetes-sq.png";
-import docker from "@app/data/pictures/courses/docker-sq.png";
+import docker from "@app/data/pictures/courses/docker.png";
 import javascript from "@app/data/pictures/courses/javascript-sq.png";
 
 const Img = styled.img`
@@ -19,7 +19,7 @@ const BackgroundReact = styled.div`
 `;
 
 const BackgroundDocker = styled.div`
-  padding-top: 0.3em;
+  padding: 0.6em 0.3em;
   background-color: #349bea;
 `;
 
