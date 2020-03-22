@@ -1,6 +1,8 @@
 import React from "react";
 import App from "next/app";
 import site from "../config";
+import "bootstrap-css-only/css/bootstrap.min.css";
+
 const Layout = props => <div>{props.children}</div>;
 
 class MyApp extends App {
