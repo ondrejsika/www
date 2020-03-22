@@ -55,3 +55,4 @@ skoleni-rancher.cz
 sika.blog
 static.sika.io
 ondrejsikaltd.com
+skoleni.io
