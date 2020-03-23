@@ -32,3 +32,6 @@ module.exports = withTM(module.exports);
 
 const withImages = require("next-images");
 module.exports = withImages(module.exports);
+
+const withYAML = require("next-yaml");
+module.exports = withYAML(module.exports);
