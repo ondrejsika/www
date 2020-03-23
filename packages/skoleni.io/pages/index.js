@@ -12,7 +12,8 @@ const P = styled.p`
 `;
 
 const Background = styled.div`
-  background: linear-gradient(#efefef, white);
+  margin-top: -0.5em;
+  background: linear-gradient(#e4e4e4, white);
 `;
 
 const Index = () => (
