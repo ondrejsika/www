@@ -6,6 +6,7 @@ import { createGlobalStyle } from "styled-components";
 
 import Navbar from "../components/Navbar";
 import Container from "react-bootstrap/Container";
+import Footer from "../components/Footer";
 
 const GlobalStyle = createGlobalStyle`
   a, p  {
@@ -28,6 +29,7 @@ class MyApp extends App {
         <Layout {...pageProps}>
           <Component />
         </Layout>
+        <Footer />
       </>
     );
   }
