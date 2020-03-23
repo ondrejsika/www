@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import CourseBar from "../components/CourseBar";
 import OurTeam from "../components/OurTeam";
 import ond from "@app/data/pictures/ondrejsika.jpg";
+import JanPospisil from "@app/data/pictures/lecturers/janpospisil.jpg";
 
 const P = styled.p`
   padding: 0.5em 0;
@@ -36,8 +37,8 @@ const Index = () => (
     <CourseBar />
     <OurTeam
       lecturers={[
-        [ond, "Ondrej Sika"],
-        [ond, "Ondrej Sika"]
+        [ond, "Ondřej Šika"],
+        [JanPospisil, "Honza Pospíšil"]
       ]}
     />
   </>
