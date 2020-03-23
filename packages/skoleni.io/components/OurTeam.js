@@ -15,6 +15,7 @@ const H4 = styled.h4`
 `;
 const ImgWrapper = styled.div`
   padding-left: 1em;
+  padding-top: 2em;
 `;
 
 const Wrapper = styled.div`
