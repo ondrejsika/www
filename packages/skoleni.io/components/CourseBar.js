@@ -19,7 +19,7 @@ const BackgroundReact = styled.div`
 `;
 
 const BackgroundDocker = styled.div`
-  padding: 0.6em 0.3em;
+  padding: 0.6em 0em;
   background-color: #349bea;
 `;
 
