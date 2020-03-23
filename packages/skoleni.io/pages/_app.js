@@ -27,7 +27,7 @@ class MyApp extends App {
           <Navbar />
         </Container>
         <Layout {...pageProps}>
-          <Component />
+          <Component {...pageProps} />
         </Layout>
         <Footer />
       </>
