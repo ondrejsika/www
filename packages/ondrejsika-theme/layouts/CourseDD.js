@@ -1,5 +1,5 @@
 import Course from "@app/ondrejsika-theme/layouts/Course";
-import corses_yaml from "@app/data/training/courses.yml";
+import courses_yaml from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
 export default props => {
