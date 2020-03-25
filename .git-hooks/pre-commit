@@ -3,5 +3,5 @@
 set -e
 
 yarn run eslint-diff
-yarn run prettier-check
+yarn run prettier-check-diff
 
