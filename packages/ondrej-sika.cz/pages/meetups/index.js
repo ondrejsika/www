@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default props => (
+const Page = () => (
   <Article title="Meetups" hideNewsletter={true}>
     <p>Meetupy, které pořádám a spolupořádám</p>
     <ul>
@@ -8,10 +9,10 @@ export default props => (
         <a href="#zeit-czech-community">ZEIT Czech Community</a>
       </li>
       <li>
-        <a href="#hug-prague">Hashicorp User Group Prague</a>
+        <a href="#prague-hashicorp-user-group">Prague HashiCorp User Group</a>
       </li>
       <li>
-        <a href="#prague-hashicorp-user-group">Prague HashiCorp User Group</a>
+        <a href="#salzburg-devops-meetups">Salzburg DevOps Meetups</a>
       </li>
     </ul>
     <h2 id="zeit-czech-community">ZEIT Czech Community</h2>
@@ -34,3 +35,5 @@ export default props => (
     </p>
   </Article>
 );
+
+export default Page;
