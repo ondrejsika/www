@@ -1,8 +1,11 @@
 import React from "react";
 import MeetupPage from "@app/meetup-theme/layouts/MeetupPage";
 
+import logo from "@app/data/logos/meetups/salzburgdevops_logo_500px_sq.png";
+
 const Index = props => (
   <MeetupPage
+    logo={logo}
     site_name="salzburgdevops.com"
     meetup_name="Salzburg DevOps Meetups"
     meetupcom_url={props.site.meetup.meetupcom_url}
