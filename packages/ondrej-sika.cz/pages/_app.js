@@ -108,7 +108,7 @@ const Footer = (
             return (
               <li key={i}>
                 <Link href={el[1]}>
-                  <A>{el[0]}</A>
+                  <A href="#">{el[0]}</A>
                 </Link>
               </li>
             );
