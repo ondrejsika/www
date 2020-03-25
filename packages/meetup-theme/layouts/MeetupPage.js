@@ -15,7 +15,10 @@ const MeetupPage = props => {
         <HeaderBar site_name={props.site_name}></HeaderBar>
       </div>
       <div className="mt-3">
-        <HeaderLarge heading={props.meetup_name}></HeaderLarge>
+        <HeaderLarge
+          logo={props.logo}
+          heading={props.meetup_name}
+        ></HeaderLarge>
       </div>
       <Section heading={props.about_us_header}>
         {props.about_us_content}
