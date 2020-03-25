@@ -68,6 +68,8 @@ const Page = () => (
 
 ## Ansible
 
+- [Skoleni Ansible](/skoleni/ansible) - https://github.com/ondrejsika/ansible-training
+- Ukazka Ansible konfigurace v Monorepu - https://github.com/ondrejsika/example-ansible-monorepo
 - Docker Compose deployment pomoci Ansible - https://github.com/ondrejsika/ansible-docker-compose--example
 
 ## ZEIT
