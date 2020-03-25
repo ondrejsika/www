@@ -1,10 +1,11 @@
+import React from "react";
 import Head from "next/head";
 import HeaderBar from "@app/meetup-theme/components/HeaderBar";
 import FooterBar from "@app/meetup-theme/components/FooterBar";
 import HeaderLarge from "@app/meetup-theme/components/HeaderLarge";
 import Section from "@app/meetup-theme/components/Section";
 
-export default props => {
+const MeetupPage = props => {
   return (
     <div>
       <Head>
@@ -21,7 +22,12 @@ export default props => {
       </Section>
       <Section heading={props.join_us_header}>{props.join_us_content}</Section>
       {props.children}
-      <FooterBar site_name={props.site_name} />
+      <FooterBar
+        site_name={props.site_name}
+        meetupcom_url={props.meetupcom_url}
+      />
     </div>
   );
 };
+
+export default MeetupPage;

@@ -1,5 +1,7 @@
-export default props => (
-  <div className="container footerbar text-center monospace">
+import React from "react";
+
+const FooterBar = props => (
+  <div className="container footerbar monospace text-center mt-5">
     <p>
       2019 - 2020 &copy; <strong>Salzburg DevOps Meetups</strong> by{" "}
       <a
@@ -13,6 +15,10 @@ export default props => (
       >
         Trainera
       </a>
+      <br />
+      Follow us on <a href={props.meetupcom_url}>Meetup.com</a>
     </p>
   </div>
 );
+
+export default FooterBar;
