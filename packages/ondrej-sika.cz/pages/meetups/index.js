@@ -29,6 +29,10 @@ const Page = () => (
     </p>
     <h2 id="salzburg-devops-meetups">Salzburg DevOps Meetups</h2>
     <p>
+      Website:{" "}
+      <a href="https://salzburgdevops.com">https://salzburgdevops.com</a>
+      <br />
+      Meetup.com:{" "}
       <a href="https://www.meetup.com/Salzburg-DevOps-Meetups/">
         https://www.meetup.com/Salzburg-DevOps-Meetups/
       </a>
