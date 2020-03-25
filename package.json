@@ -7,6 +7,7 @@
     "now-build": "yarn run static-$TARGET",
     "clean": "git clean -X -f -d",
     "prettier-check": "prettier -l \"**/*.js\"",
+    "prettier-check-diff": "git diff-index --name-only HEAD | grep -e js\\$ | grep -v -e json\\$ | grep -v .eslintrc.js | xargs find 2>/dev/null | xargs prettier -l",
     "prettier-write": "prettier --write \"**/*.js\"",
     "eslint-diff": "git diff-index --name-only HEAD | grep -e js\\$ | grep -v -e json\\$ | grep -v .eslintrc.js | xargs find 2>/dev/null | xargs eslint",
     "dev-all": "./run-dev-all.sh",
