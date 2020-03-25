@@ -1,18 +1,14 @@
-import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
+import React from "react";
 import Head from "next/head";
+import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
 const Index = props => (
   <div>
     <Head>
-      <title>Contact - Ondřej Šika</title>
+      <title>Contact - Ondrej Sika</title>
     </Head>
-    <div className="bar-header">
-      <div className="container">
-        <div className="pt-4 pb-4">
-          <h1 className="text-white pt-3 pb-2">Contact</h1>
-        </div>
-      </div>
-    </div>
+    <MainBar header="Contact" />
     <div className="container">
       <h3 className="pt-4 pb-2">Ondrej Sika</h3>
       <div className="row">
