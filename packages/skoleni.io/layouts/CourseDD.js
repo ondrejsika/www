@@ -1,5 +1,5 @@
 import Course from "@app/skoleni.io/layouts/Course";
-import couses_yaml from "@app/data/training/courses.yml";
+import courses_yaml from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
 export default props => {
@@ -10,7 +10,7 @@ export default props => {
   let show_sessions = props.show_sessions;
 
   let db = new StaticDB();
-  db.add("courses", couses_yaml);
+  db.add("courses", courses_yaml);
   db.setCursor("courses");
   db.filter("id", course_id);
   let course = db.getOne();
