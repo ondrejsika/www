@@ -1,5 +1,6 @@
 import React from "react";
 import App from "next/app";
+import Head from "next/head";
 import site from "../config";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import { createGlobalStyle } from "styled-components";
@@ -22,6 +23,18 @@ class MyApp extends App {
     pageProps.site = site;
     return (
       <>
+        <Head>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="icon" type="image/png" href="/icon.png" />
+          <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
         <GlobalStyle />
         <Container>
           <Navbar />
