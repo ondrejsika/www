@@ -5,7 +5,6 @@
     en: Freelance IT architect, consultant and lecturer focused on DevOps
     de: Berater @ Sika Kraml Schulungen GbR.
     sk: Freelance IT architekt, konzultant a lektor so zameraním na DevOps
-
   bio_long:
     cs: |
       Jmenuji se Ondřej Šika, od roku 2009 se zabývám vývojem software a DevOps. Od roku 2013 předávám své praktické zkušenosti na školeních. Pracoval jsem pro malé firmy, startupy i velké korporace s cílem zefektivnit jim proces vývoje, testování a nasazování software. Dnes se primárně věnuji DevOps: návrhem softwarového stacku, vývojového a provozního prostředí ve firmách. Práci s nástroji jako Docker, Kubernetes a Terraform se snažím co nejvíce automatizovat, aby lidé nemuseli dělat rutiny, které můžou jednoduše dělat stroje.
@@ -13,6 +12,16 @@
     de:
     sk: |
       Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť.
+  courses: |
+    - gitlab
+    - docker
+    - kubernetes
+    - elk
+    - prometheus
+    - git
+    - ansible
+    - rancher
+    - terraform
 
 - id: jirikraml
   name: Jiri Kraml
@@ -20,15 +29,30 @@
     cs:
     en:
     de:
-- id: janpospisil
+  bio_long:
+  courses:
+
+- id: <Header>Co skolim</Header>
+    <Markdown source={props.courses} />
   name: Jan Pospisil
   bio:
     cs:
     en:
     de:
+  bio_long:
+    cs: |
+      Jmenuji se Jan Pospisil, od roku 2009 se zabývám vývojem software a DevOps. Od roku 2013 předávám své praktické zkušenosti na školeních. Pracoval jsem pro malé firmy, startupy i velké korporace s cílem zefektivnit jim proces vývoje, testování a nasazování software. Dnes se primárně věnuji DevOps: návrhem softwarového stacku, vývojového a provozního prostředí ve firmách. Práci s nástroji jako Docker, Kubernetes a Terraform se snažím co nejvíce automatizovat, aby lidé nemuseli dělat rutiny, které můžou jednoduše dělat stroje.
+  courses: |
+    - js
+    - php
+    - nodejs
+    - eact
+
 - id: martinstudna
   name: Martin Studna
   bio:
     cs: Software Engineer @ IBM
     en: Software Engineer @ IBM
     de: Software Engineer @ IBM
+  bio_long: 
+  courses:
