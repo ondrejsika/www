@@ -1,7 +1,31 @@
 const CopyPlugin = require("copy-webpack-plugin");
+const yaml = require("js-yaml");
+const fs = require("fs");
 
 module.exports = {
   exportTrailingSlash: true,
+  exportPathMap: function(defaultPathMap) {
+    // remove default blog page render (without post)
+    delete defaultPathMap["/lektor/[id]"];
+
+    // export blog post
+    try {
+      var lecturers = yaml.safeLoad(
+        fs.readFileSync("../data/training/lecturers.yml", "utf8")
+      );
+      lecturers.forEach(function(obj) {
+        if (!obj.skoleniio) return;
+        defaultPathMap[`/lektor/${obj.id}`] = {
+          page: "/lektor/[id]",
+          query: { id: obj.id }
+        };
+      });
+    } catch (e) {
+      console.log(e);
+    }
+
+    return defaultPathMap;
+  },
   webpack: function(config) {
     config.plugins.push(
       new CopyPlugin([
