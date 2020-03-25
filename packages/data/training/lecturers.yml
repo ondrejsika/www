@@ -1,4 +1,5 @@
 - id: ondrejsika
+  skoleniio: true
   name: Ondrej Sika
   bio:
     cs: Freelance IT architekt, konzultant a lektor se zamerenim na DevOps
@@ -32,8 +33,8 @@
   bio_long:
   courses:
 
-- id: <Header>Co skolim</Header>
-    <Markdown source={props.courses} />
+- id: janpospisil
+  skoleniio: true
   name: Jan Pospisil
   bio:
     cs:
