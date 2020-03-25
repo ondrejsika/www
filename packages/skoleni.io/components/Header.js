@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
-
+import { Row, Col } from "react-bootstrap";
 const H1 = styled.h1`
   color: white;
   font-weight: bold;
@@ -22,19 +22,33 @@ const Wrapper = styled.div`
   padding: 1em 0;
 `;
 
+const Img = styled.img`
+  padding: 0.5em;
+  width: 100%;
+`;
+
 const Header = props => (
   <>
     <Background>
       <Container>
-        <Wrapper>
-          <H1>{props.header}</H1>
-          {props.lecturer && (
-            <Lecturer>
-              lektor:{" "}
-              <a href={`/lektor/${props.lecturerId}`}>{props.lecturer}</a>
-            </Lecturer>
+        <Row>
+          <Col xs={9}>
+            <Wrapper>
+              <H1>{props.header}</H1>
+              {props.lecturer && (
+                <Lecturer>
+                  lektor:{" "}
+                  <a href={`/lektor/${props.lecturerId}`}>{props.lecturer}</a>
+                </Lecturer>
+              )}
+            </Wrapper>
+          </Col>
+          {props.headerImg && (
+            <Col xs={2}>
+              <Img src={props.headerImg} />
+            </Col>
           )}
-        </Wrapper>
+        </Row>
       </Container>
     </Background>
   </>
