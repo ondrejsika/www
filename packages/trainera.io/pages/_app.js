@@ -8,6 +8,7 @@ import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
 import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
+import ThemeLanguageSwitch from "@app/ondrejsika-theme/components/LanguageSwitch";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
@@ -27,6 +28,9 @@ const A = styled.a`
     text-decoration: underline white;
   }
 `;
+
+const LanguageSwitch = <ThemeLanguageSwitch />;
+
 const Navbar = (
   <ThemeNavbar
     NavName="Trainera.io"
@@ -146,7 +150,12 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     pageProps.site = this.site;
     return (
-      <Layout Navbar={Navbar} Footer={Footer} {...pageProps}>
+      <Layout
+        LanguageSwitch={LanguageSwitch}
+        Navbar={Navbar}
+        Footer={Footer}
+        {...pageProps}
+      >
         <Component lang={site.lang} {...pageProps} />
       </Layout>
     );
