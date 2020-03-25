@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import { Row, Col } from "react-bootstrap";
+
 const H1 = styled.h1`
   color: white;
   font-weight: bold;
@@ -15,7 +16,7 @@ const Lecturer = styled.h5`
 
 const Background = styled.div`
   background-color: #202020;
-  margin: 1em 0;
+  margin-bottom: 1em;
 `;
 
 const Wrapper = styled.div`
