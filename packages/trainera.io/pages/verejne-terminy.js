@@ -6,17 +6,12 @@ import Head from "next/head";
 
 import site from "@app/ondrej-sika.cz/config";
 
-// let style = {
-//   fontSize: "1.4em",
-//   fontWeight: "bold"
-// };
-
-const Index = () => (
+const Index = props => (
   <div>
     <Head>
       <title>Veřejné termíny - Ondrej Sika</title>
     </Head>
-    <MainBar header="Veřejné termíny školení" />
+    <MainBar site={props.site} header="Veřejné termíny školení" />
     <div className="container pt-4">
       <UpcomingSessions
         lang={site.lang}
