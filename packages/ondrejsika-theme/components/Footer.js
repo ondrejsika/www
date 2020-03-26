@@ -46,11 +46,12 @@ Footer.Li = LiHex;
 
 Footer.Wrapper = styled.div`
   padding: 0.5em 0;
-  color: #c8bfb0;
+  color: white;
 `;
 
 Footer.A = styled.a`
-  color: #c8bfb0;
+  color: white;
+  text-decoration: underline;
   &:hover {
     color: white;
     text-decoration: underline white;
