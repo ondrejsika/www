@@ -1,7 +1,6 @@
 import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
-import styled from "styled-components";
 import Link from "next/link";
 
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
@@ -11,21 +10,6 @@ import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
-
-const Wrapper = styled.div`
-  padding: 0.5em 0;
-  color: #c8bfb0;
-`;
-const A = styled.a`
-  color: #c8bfb0;
-  &:hover {
-    color: white;
-    text-decoration: underline white;
-  }
-`;
-const H4 = styled.h4`
-  color: white;
-`;
 
 const Navbar = (
   <ThemeNavbar
@@ -37,16 +21,16 @@ const Navbar = (
         "KURZY",
         [
           ["GIT", "/skoleni/git"],
-          ["GITLAB CI", "/skoleni/gitlab-ci"],
+          ["GITLThemeFooter.AB CI", "/skoleni/gitlab-ci"],
           ["DOCKER", "/skoleni/docker"],
           ["KUBERNETES", "/skoleni/kubernetes"],
-          ["RANCHER", "/skoleni/rancher"],
-          ["ANSIBLE", "/skoleni/ansible"],
-          ["TERRAFORM", "/skoleni/terraform"],
+          ["RThemeFooter.ANCHER", "/skoleni/rancher"],
+          ["ThemeFooter.ANSIBLE", "/skoleni/ansible"],
+          ["TERRThemeFooter.AFORM", "/skoleni/terraform"],
           ["PROMETHEUS", "/skoleni/prometheus"],
           ["PROXMOX", "/skoleni/proxmox"],
           ["ELK / EFK", "/skoleni/elk"],
-          ["REACT & NEXT.JS", "/skoleni/react"],
+          ["REThemeFooter.ACT & NEXT.JS", "/skoleni/react"],
           ["VIDEOKURZY", "/videokurzy"]
         ]
       ],
@@ -61,7 +45,7 @@ const Navbar = (
           ["RESOURCES", "/resources"]
         ]
       ],
-      ["KONTAKT", "/kontakt"]
+      ["KONTThemeFooter.AKT", "/kontakt"]
     ]}
   />
 );
@@ -69,12 +53,16 @@ const Navbar = (
 const Footer = (
   <ThemeFooter
     firstColumn={
-      <Wrapper>
-        <H4>Ondrej Sika</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Ondrej Sika</ThemeFooter.H4>
         <p>
-          <A href="mailto:ondrej@sika.io">ondrej@sika.io</A>
+          <ThemeFooter.A href="mailto:ondrej@sika.io">
+            ondrej@sika.io
+          </ThemeFooter.A>
           <br />
-          <A href="tel:+420773452376">+420 773 452 376</A>
+          <ThemeFooter.A href="tel:+420773452376">
+            +420 773 452 376
+          </ThemeFooter.A>
         </p>
         <table className="contact-table table-borderless">
           <tbody>
@@ -92,11 +80,11 @@ const Footer = (
             </tr>
           </tbody>
         </table>
-      </Wrapper>
+      </ThemeFooter.Wrapper>
     }
     secondColumn={
-      <Wrapper>
-        <H4>Nejoblíbenější kurzy</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Nejoblíbenější kurzy</ThemeFooter.H4>
         <ul>
           {[
             ["Docker", "/skoleni/docker"],
@@ -106,19 +94,19 @@ const Footer = (
             ["Prometheus", "/skoleni/prometheus"]
           ].map((el, i) => {
             return (
-              <li key={i}>
+              <ThemeFooter.Li key={i}>
                 <Link href={el[1]}>
-                  <A href="#">{el[0]}</A>
+                  <ThemeFooter.A href="#">{el[0]}</ThemeFooter.A>
                 </Link>
-              </li>
+              </ThemeFooter.Li>
             );
           })}
         </ul>
-      </Wrapper>
+      </ThemeFooter.Wrapper>
     }
     thirdColumn={
-      <Wrapper>
-        <H4>Zajímají Vás novinky?</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Zajímají Vás novinky?</ThemeFooter.H4>
         <p>Odebírejte můj newsletter a budete v obraze!</p>
         <div className="input-group">
           <a
@@ -128,28 +116,28 @@ const Footer = (
             Přihlásit se k odběru článků a novinek
           </a>
         </div>
-      </Wrapper>
+      </ThemeFooter.Wrapper>
     }
     center={
       <>
         <Link href="/obchodni-spoluprace">
-          <A href="#">Obchodní Spolupráce</A>
+          <ThemeFooter.A href="#">Obchodní Spolupráce</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/doporuceni">
-          <A href="#">Doporučení</A>
+          <ThemeFooter.A href="#">Doporučení</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/doporucte-me-prosim">
-          <A href="#">Doporučte mě prosím</A>
+          <ThemeFooter.A href="#">Doporučte mě prosím</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/book-me">
-          <A href="#">Book Me</A>
+          <ThemeFooter.A href="#">Book Me</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/invite">
-          <A href="#">Připojte se</A>
+          <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
         </Link>
       </>
     }

@@ -2,7 +2,6 @@ import React from "react";
 import App from "next/app";
 import site from "@app/trainera.io/config";
 import Link from "next/link";
-import styled from "styled-components";
 
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
@@ -12,22 +11,6 @@ import ThemeLanguageSwitch from "@app/ondrejsika-theme/components/LanguageSwitch
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
-
-const WrapperWhite = styled.div`
-  padding: 0.5em 0;
-  color: white;
-`;
-
-const H4 = styled.h4`
-  color: white;
-`;
-
-const A = styled.a`
-  color: white;
-  &:hover {
-    text-decoration: underline white;
-  }
-`;
 
 const LanguageSwitch = <ThemeLanguageSwitch site={site} />;
 
@@ -64,12 +47,16 @@ const Footer = (
   <ThemeFooter
     site={site}
     firstColumn={
-      <WrapperWhite>
-        <H4>Trainera.io</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Trainera.io</ThemeFooter.H4>
         <p>
-          <A href="mailto:sales@trainera.io">sales@trainera.io</A>
+          <ThemeFooter.A href="mailto:sales@trainera.io">
+            sales@trainera.io
+          </ThemeFooter.A>
           <br />
-          <A href="tel:+420773452376">+420 773 452 376</A>
+          <ThemeFooter.A href="tel:+420773452376">
+            +420 773 452 376
+          </ThemeFooter.A>
         </p>
         <table className="contact-table table-borderless">
           <tbody>
@@ -87,11 +74,11 @@ const Footer = (
             </tr>
           </tbody>
         </table>
-      </WrapperWhite>
+      </ThemeFooter.Wrapper>
     }
     secondColumn={
-      <WrapperWhite>
-        <H4>Nejoblíbenější kurzy</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Nejoblíbenější kurzy</ThemeFooter.H4>
         <ul>
           {[
             ["Docker", "/skoleni/docker"],
@@ -101,19 +88,21 @@ const Footer = (
             ["Prometheus", "/skoleni/prometheus"]
           ].map((el, i) => {
             return (
-              <li key={i}>
+              <ThemeFooter.Li key={i}>
                 <Link href={el[1]}>
-                  <A className="a-underline">{el[0]}</A>
+                  <ThemeFooter.A href={el[1]} className="a-underline">
+                    {el[0]}
+                  </ThemeFooter.A>
                 </Link>
-              </li>
+              </ThemeFooter.Li>
             );
           })}
         </ul>
-      </WrapperWhite>
+      </ThemeFooter.Wrapper>
     }
     thirdColumn={
-      <WrapperWhite>
-        <H4>Zajímají Vás novinky?</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Zajímají Vás novinky?</ThemeFooter.H4>
         <p>Odebírejte můj newsletter a budete v obraze!</p>
         <div className="input-group">
           <a
@@ -123,20 +112,20 @@ const Footer = (
             Přihlásit se k odběru článků a novinek
           </a>
         </div>
-      </WrapperWhite>
+      </ThemeFooter.Wrapper>
     }
     center={
       <>
         <Link href="/lektorska-spoluprace">
-          <A href="#">Lektorská spolupráce</A>
+          <ThemeFooter.A href="#">Lektorská spolupráce</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/obchodni-spoluprace">
-          <A href="#">Obchodní Spolupráce</A>
+          <ThemeFooter.A href="#">Obchodní Spolupráce</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/invite">
-          <A href="#">Připojte se</A>
+          <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
         </Link>
       </>
     }

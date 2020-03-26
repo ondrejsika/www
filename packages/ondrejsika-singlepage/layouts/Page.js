@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
@@ -22,23 +21,6 @@ import Head from "next/head";
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
 
-const Wrapper = styled.div`
-  padding: 0.5em 0;
-  color: #c8bfb0;
-`;
-
-const A = styled.a`
-  color: #c8bfb0;
-  &:hover {
-    color: white;
-    text-decoration: underline white;
-  }
-`;
-
-const H4 = styled.h4`
-  color: white;
-`;
-
 const Page = props => {
   const Navbar = (
     <ThemeNavbar
@@ -55,12 +37,16 @@ const Page = props => {
   const Footer = (
     <ThemeFooter
       firstColumn={
-        <Wrapper>
-          <H4>Ondrej Sika</H4>
+        <ThemeFooter.Wrapper>
+          <ThemeFooter.H4>Ondrej Sika</ThemeFooter.H4>
           <p>
-            <A href="mailto:ondrej@sika.io">ondrej@sika.io</A>
+            <ThemeFooter.A href="mailto:ondrej@sika.io">
+              ondrej@sika.io
+            </ThemeFooter.A>
             <br />
-            <A href="tel:+420773452376">+420 773 452 376</A>
+            <ThemeFooter.A href="tel:+420773452376">
+              +420 773 452 376
+            </ThemeFooter.A>
           </p>
           <p>
             <span style={{ fontSize: "0.7em" }}>Company ID</span>
@@ -72,11 +58,11 @@ const Page = props => {
             <br />
             CZ9302252102
           </p>
-        </Wrapper>
+        </ThemeFooter.Wrapper>
       }
       secondColumn={
-        <Wrapper>
-          <H4>Newsletter</H4>
+        <ThemeFooter.Wrapper>
+          <ThemeFooter.H4>Newsletter</ThemeFooter.H4>
           <p>Subscribe my newsletter and keep in touch!</p>
           <div className="input-group">
             <a
@@ -86,7 +72,7 @@ const Page = props => {
               Subscribe
             </a>
           </div>
-        </Wrapper>
+        </ThemeFooter.Wrapper>
       }
       thirdColumn={<></>}
       center={[]}
