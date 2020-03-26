@@ -1,3 +1,4 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import Link from "next/link";
 import { FaYoutube } from "react-icons/fa";
@@ -7,8 +8,9 @@ import kubernetes from "@app/data/pictures/courses/video/kubernetes-screenshot-6
 import terraform from "@app/data/pictures/courses/video/terraform-screenshot-600.png";
 import gitlabCi from "@app/data/pictures/courses/video/gitlab-ci-screenshot-600.png";
 
-export default () => (
+const Page = props => (
   <Article
+    site={props.site}
     title="Videokurzy"
     header={
       <>
@@ -120,3 +122,5 @@ export default () => (
     </div>
   </Article>
 );
+
+export default Page;

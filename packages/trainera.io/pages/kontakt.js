@@ -1,7 +1,6 @@
 import React from "react";
 
 import Head from "next/head";
-import Link from "next/link";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 
@@ -10,7 +9,7 @@ const Index = props => (
     <Head>
       <title>Kontakty - Trainera s.r.o.</title>
     </Head>
-    <MainBar header="Kontakt" />
+    <MainBar site={props.site} header="Kontakt" />
     <div className="container">
       <h3 className="pt-4 pb-2">Trainera s.r.o.</h3>
       <div className="row">
