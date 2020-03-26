@@ -1,8 +1,9 @@
+import React from "react";
 import Course from "@app/ondrejsika-theme/layouts/Course";
 import courses_yaml from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
-export default props => {
+const CourseDD = props => {
   let course_id = props.course_id;
   let lang = props.lang;
   let location = props.location;
@@ -24,6 +25,7 @@ export default props => {
 
   return (
     <Course
+      site={props.site}
       course_id={course_id}
       show_sessions={show_sessions}
       lang={lang}
@@ -40,3 +42,5 @@ export default props => {
     />
   );
 };
+
+export default CourseDD;
