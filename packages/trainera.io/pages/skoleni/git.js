@@ -4,6 +4,7 @@ import logo from "@app/data/pictures/courses/git-w.svg";
 
 const Page = props => (
   <CourseDD
+    site={props.site}
     course_id="git"
     lang={props.site.lang}
     logo={logo}
@@ -11,4 +12,5 @@ const Page = props => (
     show_sessions={true}
   />
 );
+
 export default Page;

@@ -11,12 +11,15 @@ import OutTeam from "@app/ondrejsika-theme/components/OurTeam";
 
 import ond from "@app/data/pictures/ondrejsika.jpg";
 
-const Index = () => (
+const Index = props => (
   <div>
     <Head>
       <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
     </Head>
-    <MainBarHomepage header="IT & DevOps školení, konzultace a workshopy" />
+    <MainBarHomepage
+      site={props.site}
+      header="IT & DevOps školení, konzultace a workshopy"
+    />
 
     <div className="container">
       <TraineraCourseBar LectureImgHeader="Co školíme" />
