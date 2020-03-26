@@ -4,6 +4,7 @@ import logo from "@app/data/pictures/courses/docker-w.svg";
 
 const Page = props => (
   <CourseDD
+    site={props.site}
     course_id="docker"
     lang={props.site.lang}
     logo={logo}
