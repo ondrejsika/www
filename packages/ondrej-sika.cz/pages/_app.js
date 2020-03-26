@@ -45,7 +45,7 @@ const Navbar = (
           ["RESOURCES", "/resources"]
         ]
       ],
-      ["KONTThemeFooter.AKT", "/kontakt"]
+      ["KONTAKT", "/kontakt"]
     ]}
   />
 );
