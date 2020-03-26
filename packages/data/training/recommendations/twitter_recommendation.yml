@@ -1,36 +1,48 @@
 - id: adam-bisek-docker
   tweet_id: '1217508566317314049'
   course: docker
+  lang: en
 - id: petr-klobas-docker
   tweet_id: '1225126289188802562'
   course: docker
+  lang: en
 - id: martin-sindelar-gitlab-ci
   tweet_id: '1154359265324351489'
   course: gitlab-ci
+  lang: cs
 - id: pavel-mattivi-kubernetes
   course: kubernetes
   tweet_id: '1101169823197904896'
+  lang: cs
 - id: tomas-ligenza-docker
   course: docker
   tweet_id: '1100429520128086022'
+  lang: cs
 - id: lubos-klokner-docker
   course: docker
   tweet_id: '1115508671214161920'
+  lang: cs
 - id: lubos-klokner-docker-2
   course: docker
   tweet_id: '1115579912855990272'
+  lang: en
 - id: lubos-klokner-docker-3
   course: docker
   tweet_id: '1153263494961225729'
+  lang: cs
 - id: radomir-sohlich-docker
   course: docker
   tweet_id: '961676371146821633'
+  lang: en
 - id: jan-novotny-docker
   course: docker
   tweet_id: '1110150113345835010'
+  lang: cs
 - id: petr-todorov-kubernetes
   course: kubernetes
   tweet_id: '1179136403889954817'
+  lang: en
 - id: tomas-peterka-terraform
   course: terraform
   tweet_id: '1180763644059176960'
+  lang: en
