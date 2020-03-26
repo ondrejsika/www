@@ -4479,3 +4479,54 @@ skoleni.io build docker:
       - packages/skoleni.io/**/*
       - yarn.lock
 
+ondrejsika.is build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/ondrejsika.is/out
+    - yarn run static-ondrejsika.is
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrejsika.is/**/*
+      - yarn.lock
+  artifacts:
+    name: ondrejsika.is
+    paths:
+      - packages/ondrejsika.is/out
+
+
+ondrejsika.is build docker:
+  dependencies:
+    - ondrejsika.is build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/ondrejsika.is/
+    - docker build -t registry.sikahq.com/www/www/ondrejsika.is:$CI_COMMIT_SHORT_SHA packages/ondrejsika.is
+    - rm packages/ondrejsika.is/Dockerfile
+    - rm packages/ondrejsika.is/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/ondrejsika.is:$CI_COMMIT_SHORT_SHA
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrejsika.is/**/*
+      - yarn.lock
+
