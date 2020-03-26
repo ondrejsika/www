@@ -62,6 +62,7 @@ const Navbar = (
 
 const Footer = (
   <ThemeFooter
+    site={site}
     firstColumn={
       <WrapperWhite>
         <H4>Trainera.io</H4>

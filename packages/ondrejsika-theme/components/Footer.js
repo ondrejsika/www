@@ -1,16 +1,31 @@
 import React from "react";
+import styled from "styled-components";
+import { Container, Col, Row } from "react-bootstrap";
+import default_colors from "@app/ondrejsika-theme/config/colors";
 
-const Footer = props => (
-  <div>
-    <div className="footer mt-5">
-      <div className="container pt-4 pb-4">
-        <div className="row">
-          <div className="col-md-4 col-sm-7 col-8 ">{props.firstColumn}</div>
-          <div className="col-md-4 col-sm-5 col-4">{props.secondColumn}</div>
-          <div className="col-md-4 col-sm-12 ">{props.thirdColumn}</div>
-        </div>
-        <p className="text-center">{props.center}</p>
-        <p className="text-center text-white fs-9 pt-4">
+const CenterP = styled.p`
+  color: ${default_colors.WHITE};
+  text-align: center;
+`;
+
+const Footer = props => {
+  const Background = styled.div`
+    padding: 1em 0;
+    background-color: ${(props.site &&
+      props.site.colors &&
+      props.site.colors.PRIMARY) ||
+      default_colors.BLUE};
+  `;
+  return (
+    <Background>
+      <Container>
+        <Row>
+          <Col sm={4}>{props.firstColumn}</Col>
+          <Col sm={4}>{props.secondColumn}</Col>
+          <Col sm={4}>{props.thirdColumn}</Col>
+        </Row>
+        <CenterP>{props.center}</CenterP>
+        <CenterP>
           Website by{" "}
           <a
             href="https://zuzjes.com"
@@ -20,10 +35,10 @@ const Footer = props => (
           >
             Zuzana Jeschke
           </a>
-        </p>
-      </div>
-    </div>
-  </div>
-);
+        </CenterP>
+      </Container>
+    </Background>
+  );
+};
 
 export default Footer;
