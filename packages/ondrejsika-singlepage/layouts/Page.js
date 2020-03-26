@@ -5,6 +5,7 @@ import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
 import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
+import Translate from "@app/common/components/Translate";
 import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
 
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
@@ -12,6 +13,9 @@ import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 import ContactSection from "@app/ondrejsika-singlepage/components/ContactSection";
+
+import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 
 import Head from "next/head";
 
@@ -139,6 +143,26 @@ const Page = props => {
             location={props.site.location}
           />
           <CompaniesBar lang={props.site.lang} />
+          <h2 className="mt-5">
+            <Translate
+              lang={props.site.lang}
+              cs="Doporučení z Twitteru"
+              en="Twitter Reccomendations"
+            />
+          </h2>
+          <div className="card-columns">
+            {twitter_recommendation_file.map((rec, i) => {
+              if (rec.lang != props.site.lang) return;
+              return (
+                <div key={i} className="card" style={{ border: "none" }}>
+                  <TwitterTweetEmbed
+                    tweetId={rec.tweet_id}
+                    options={{ conversation: "none" }}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         <ContactSection />
