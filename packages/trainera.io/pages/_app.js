@@ -29,7 +29,7 @@ const A = styled.a`
   }
 `;
 
-const LanguageSwitch = <ThemeLanguageSwitch />;
+const LanguageSwitch = <ThemeLanguageSwitch site={site} />;
 
 const Navbar = (
   <ThemeNavbar
