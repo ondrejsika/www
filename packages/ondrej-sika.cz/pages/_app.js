@@ -21,16 +21,16 @@ const Navbar = (
         "KURZY",
         [
           ["GIT", "/skoleni/git"],
-          ["GITLThemeFooter.AB CI", "/skoleni/gitlab-ci"],
+          ["GITLAB CI", "/skoleni/gitlab-ci"],
           ["DOCKER", "/skoleni/docker"],
           ["KUBERNETES", "/skoleni/kubernetes"],
-          ["RThemeFooter.ANCHER", "/skoleni/rancher"],
-          ["ThemeFooter.ANSIBLE", "/skoleni/ansible"],
-          ["TERRThemeFooter.AFORM", "/skoleni/terraform"],
+          ["RANCHER", "/skoleni/rancher"],
+          ["ANSIBLE", "/skoleni/ansible"],
+          ["TERRAFORM", "/skoleni/terraform"],
           ["PROMETHEUS", "/skoleni/prometheus"],
           ["PROXMOX", "/skoleni/proxmox"],
           ["ELK / EFK", "/skoleni/elk"],
-          ["REThemeFooter.ACT & NEXT.JS", "/skoleni/react"],
+          ["REACT & NEXT.JS", "/skoleni/react"],
           ["VIDEOKURZY", "/videokurzy"]
         ]
       ],
