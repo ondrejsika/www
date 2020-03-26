@@ -24,15 +24,11 @@ const Index = props => (
     <div className="container">
       <TraineraCourseBar LectureImgHeader="Co školíme" />
       <TextArea
-        TextWithImgHeader="O nas"
-        TextParagraph="Jmenuji se Ondřej Šika a od roku 2009 se zabývám vývojem software a
-        DevOps. Své praktické zkušenosti předávám na školeních od roku 2013.
-        Také se hodně věnuji školení, všechny kurzy jsou formou workshopů
-        (hands-on) a stavím je na svých dlouholetých znalostech a zkušenostech z
-        vývoje, testování a provozování softwarových projektů.
-        Vše co školím jsem použil v reálných projektech a mám s technologií osobní
-        zkušenost.
-        Všechny kurzy a školení dělám v českém nebo anglickém jazyce."
+        TextWithImgHeader="Služby a tým"
+        TextParagraph="Trainera je školíci agentura, která se primárně zaměřuje na oblast DevOps. Naši lektoři jsou zkušení vývojáři a DevOpsáci, kteří technologiím, které školí rozumí a denne s nimi pracují. Dokážou proto jednoduše vysvětlit základy, ale zodpovědět na záludné praktické dotazy."
+        TextParagraph="Technologie a technologický stack, který školíme je soubor na sebe navazujících nástrojů, které Vám umožní zvýšit efektivitu Vašich IT týmů. Ať už vývojářům pomůžou doručovat změny rychleji k zákazníkům, tak pomohou Vašemu operations týmu s bezproblémovým během Vašich služeb a snížením provozních nákladů. Oba tyto faktory mají pozitivní vlyv na celkové náklady Vašich IT projektů."
+        TextParagraph="Pojďte zavést nebo posunout Vaše DevOps do současnosti. Začněte s Gitem, Dockerem, Kubernetes nebo CI. Tak jako jsme pomohli bankám, telefonním operátorům k zjednodušení práce a úspoře nákladů, můžeme pomoci i Vám."
+        TextParagraph="Všechny kurzy a školení děláme v českém i anglickém jazyce. Kurzy nabízíme jako otevřené termíny, tak i školení in house. Teď v době Coronaviru děláme všechny školení online formou a funguje to skvěle."
       />
       <OutTeam
         lecturers={[
