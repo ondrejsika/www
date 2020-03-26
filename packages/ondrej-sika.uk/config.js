@@ -9,6 +9,7 @@ const site = {
       : process.env.SITE_ORIGIN || "https://ondrej-sika.cz",
   name: "ondrej-sika.uk",
   lang: "en",
+  location: "uk",
   gauges_site_id: "GAUGES-XXX-DEMO",
   google_analytics_site_id: "GOOGLE-ANALYTICS-XXX-DEMO"
 };
