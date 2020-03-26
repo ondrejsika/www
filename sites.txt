@@ -55,3 +55,4 @@ sika.blog
 static.sika.io
 ondrejsikaltd.com
 skoleni.io
+ondrejsika.is
