@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Col, Row } from "react-bootstrap";
 import default_colors from "@app/ondrejsika-theme/config/colors";
+import LiHex from "@app/ondrejsika-theme/components/LiHex";
 
 const CenterP = styled.p`
   color: ${default_colors.WHITE};
@@ -40,5 +41,24 @@ const Footer = props => {
     </Background>
   );
 };
+
+Footer.Li = LiHex;
+
+Footer.Wrapper = styled.div`
+  padding: 0.5em 0;
+  color: #c8bfb0;
+`;
+
+Footer.A = styled.a`
+  color: #c8bfb0;
+  &:hover {
+    color: white;
+    text-decoration: underline white;
+  }
+`;
+
+Footer.H4 = styled.h4`
+  color: white;
+`;
 
 export default Footer;

@@ -1,7 +1,6 @@
 import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.com/config";
-import styled from "styled-components";
 import Link from "next/link";
 
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
@@ -11,21 +10,6 @@ import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
-
-const Wrapper = styled.div`
-  padding: 0.5em 0;
-  color: #c8bfb0;
-`;
-const A = styled.a`
-  color: #c8bfb0;
-  &:hover {
-    color: white;
-    text-decoration: underline white;
-  }
-`;
-const H4 = styled.h4`
-  color: white;
-`;
 
 const Navbar = (
   <ThemeNavbar
@@ -63,12 +47,16 @@ const Navbar = (
 const Footer = (
   <ThemeFooter
     firstColumn={
-      <Wrapper>
-        <H4>Ondrej Sika</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Ondrej Sika</ThemeFooter.H4>
         <p>
-          <A href="mailto:ondrej@sika.io">ondrej@sika.io</A>
+          <ThemeFooter.A href="mailto:ondrej@sika.io">
+            ondrej@sika.io
+          </ThemeFooter.A>
           <br />
-          <A href="tel:+420773452376">+420 773 452 376</A>
+          <ThemeFooter.A href="tel:+420773452376">
+            +420 773 452 376
+          </ThemeFooter.A>
         </p>
         <table className="contact-table table-borderless">
           <tbody>
@@ -82,11 +70,11 @@ const Footer = (
             </tr>
           </tbody>
         </table>
-      </Wrapper>
+      </ThemeFooter.Wrapper>
     }
     secondColumn={
-      <Wrapper>
-        <H4>Popular Courses</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Popular Courses</ThemeFooter.H4>
         <ul>
           {[
             ["GIT", "/training/git"],
@@ -100,17 +88,17 @@ const Footer = (
             return (
               <li key={i}>
                 <Link href={el[1]}>
-                  <A href="#">{el[0]}</A>
+                  <ThemeFooter.A href="#">{el[0]}</ThemeFooter.A>
                 </Link>
               </li>
             );
           })}
         </ul>
-      </Wrapper>
+      </ThemeFooter.Wrapper>
     }
     thirdColumn={
-      <Wrapper>
-        <H4>Newsletter</H4>
+      <ThemeFooter.Wrapper>
+        <ThemeFooter.H4>Newsletter</ThemeFooter.H4>
         <p>Subscribe my newsletter and keep in touch!</p>
         <div className="input-group">
           <a
@@ -120,7 +108,7 @@ const Footer = (
             Subscribe
           </a>
         </div>
-      </Wrapper>
+      </ThemeFooter.Wrapper>
     }
   />
 );
