@@ -1,8 +1,10 @@
+import React from "react";
 import Course from "@app/ondrejsika-theme/layouts/Course";
 import logo from "@app/data/pictures/courses/elk-color.png";
 
-export default props => (
+const Page = props => (
   <Course
+    site={props.site}
     course_id="react"
     show_sessions={true}
     lang={props.site.lang}
@@ -20,3 +22,5 @@ export default props => (
     </div>
   </Course>
 );
+
+export default Page;
