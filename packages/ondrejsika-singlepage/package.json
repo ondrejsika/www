@@ -1,0 +1,12 @@
+{
+  "name": "@app/ondrejsika-singlepage",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Ondrej Sika",
+  "author_email": "ondrej@ondrejsika.com",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
+    "react-bootstrap": "^1.0.0-beta.17",
+    "styled-components": "4.2.0"
+  }
+}
