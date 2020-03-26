@@ -22,6 +22,7 @@ const Course = props => (
       </title>
     </Head>
     <Header
+      site={props.site}
       websiteHeader={props.course_title}
       inquiryBtn={
         <Translate
