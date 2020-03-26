@@ -48,7 +48,7 @@ const CompaniesBar = props => (
     <h2 className="pt-5 pb-2">
       <Translate lang={props.lang || "cs"} en="My Clients" cs="Moji klienti" />
     </h2>
-    <div className="d-flex row text-center">
+    <div className="d-flex row text-center pl-3 pr-3">
       {[
         invasys,
         cesnet,
