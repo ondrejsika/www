@@ -36,10 +36,7 @@ const Index = () => (
     </Background>
     <CourseBar />
     <OurTeam
-      lecturers={[
-        [ond, "Ondřej Šika"],
-        [JanPospisil, "Honza Pospíšil"]
-      ]}
+      lecturers={[[ond, "Ondřej Šika"], [JanPospisil, "Honza Pospíšil"]]}
     />
   </>
 );
