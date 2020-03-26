@@ -10,7 +10,10 @@ const site = {
   name: "ondrej-sika.cz",
   lang: "cs",
   gauges_site_id: "5a892d8dba4ae31b28000034",
-  google_analytics_site_id: "UA-39461955-14"
+  google_analytics_site_id: "UA-39461955-14",
+  colors: {
+    PRIMARY: "#098958"
+  }
 };
 
 export default site;

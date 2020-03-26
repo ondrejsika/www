@@ -1,6 +1,6 @@
 import React from "react";
 import App from "next/app";
-import site from "@app/ondrej-sika.cz/config";
+import site from "@app/trainera.io/config";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -33,6 +33,7 @@ const LanguageSwitch = <ThemeLanguageSwitch />;
 
 const Navbar = (
   <ThemeNavbar
+    site={site}
     NavName="Trainera.io"
     links={[
       ["DOMŮ", "/"],
