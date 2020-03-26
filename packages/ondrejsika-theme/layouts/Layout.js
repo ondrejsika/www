@@ -22,6 +22,7 @@ let Layout = props => (
     </Head>
     <DevelopmentBar />
     <CoronaBar local_link={true} />
+    <div id="home" />
     {props.LanguageSwitch}
     {props.Navbar}
     <div className="content">{props.children}</div>
