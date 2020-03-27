@@ -73,6 +73,10 @@ out.append("""# Don't edit this file maually
 image: ondrejsika/ci
 
 stages:
+  - build_js_priority
+  - build_docker_priority
+  - deploy_dev_priority
+  - deploy_prod_priority
   - build_js
   - build_docker
   - deploy_dev
@@ -85,7 +89,7 @@ variables:
 for site in SITES:
     out.append("""
 %(site)s build js:
-  stage: build_js
+  stage: build_js%(priority_suffix)s
   image: node
   variables:
     GIT_CLEAN_FLAGS: none
@@ -115,7 +119,7 @@ for site in SITES:
     - %(site)s build js
   variables:
     GIT_STRATEGY: none
-  stage: build_docker
+  stage: build_docker%(priority_suffix)s
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/%(site)s/
@@ -136,12 +140,13 @@ for site in SITES:
       - yarn.lock
 """ % {
         "site": site,
+        "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
     })
 
     if site in DEV_SITES:
         out.append("""
 %(site)s dev deploy k8s:
-  stage: deploy_dev
+  stage: deploy_dev%(priority_suffix)s
   variables:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
@@ -173,13 +178,14 @@ for site in SITES:
         "site": site,
         "name": site.replace(".", "-"),
         "suffix": SUFFIX,
+        "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
     })
 
 
     if site in PROD_SITES:
         out.append("""
 %(site)s prod deploy k8s:
-  stage: deploy_prod
+  stage: deploy_prod%(priority_suffix)s
   variables:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
@@ -211,6 +217,7 @@ for site in SITES:
         "site": site,
         "suffix": SUFFIX,
         "name": site.replace(".", "-"),
+        "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
     })
 
 with open(".gitlab-ci.yml", "w") as f:
