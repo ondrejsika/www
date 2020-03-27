@@ -8,125 +8,149 @@ _DEFAULT_DEPENDENCIES = [
   "yarn.lock",
 ]
 
+_COURSE_LANDING_DEPENDENCIES = [
+  "packages/data/training/sessions.yml",
+  "packages/data/training/recommendations/**/*",
+  "packages/data/training/recommendations/**/*",
+  "packages/data/training/pictures/**/*",
+  "packages/common/**/*",
+  "packages/course-landing/**/*",
+  "packages/{{site}}/**/*",
+  "yarn.lock",
+]
+
+_ONDREJSIKA_THEME_DEPENDENCIES = [
+  "packages/data/**/*",
+  "packages/common/**/*",
+  "packages/ondrejsika-theme/**/*",
+  "packages/{{site}}/**/*",
+  "yarn.lock",
+]
+
+
+_ONDREJSIKA_SINGLEPAGE_DEPENDENCIES = _ONDREJSIKA_THEME_DEPENDENCIES + [
+  "packages/ondrejsika-singlepage/**/*",
+]
+
 DEV_SITES = {
     "ondrejsika.io": {
       "dependencies": _DEFAULT_DEPENDENCIES,
     },
     "skolenie-ansible.sk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ondrej-sika.uk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
     },
 }
 PROD_SITES = {
     "ansible-utbildning.se": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "docker-utbildning.se": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "git-utbildning.se": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "gitlab-utbildning.se": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "kubernetes-utbildning.se": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ondrej-sika.com": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
     },
     "ondrej-sika.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
     },
     "ondrej-sika.de": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "trainera.io": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
     },
     "git-training.uk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "docker-training.uk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "kubernetes-training.uk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ansible-training.uk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "gitlab-training.uk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ansible-schulung.de": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ansible-skoleni.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "dockerschulung.de": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "gitlab-ci.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "kubernetes-schulung.de": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skoleni-docker.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skoleni-git.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skoleni-kubernetes.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skolenie-git.sk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skolenie-gitlab.sk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skolenie-docker.sk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skolenie.kubernetes.sk": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "salzburgdevops.com": {
       "dependencies": _DEFAULT_DEPENDENCIES,
     },
     "skoleni-terraform.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skoleni-proxmox.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skoleni-prometheus.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "docker-training.de": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "docker-training.ch": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "docker-training.nl": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "docker-training.at": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "git-training.nl": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skoleni-rancher.cz": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ondrejsikalabs.com": {
       "dependencies": _DEFAULT_DEPENDENCIES,
@@ -135,10 +159,10 @@ PROD_SITES = {
       "dependencies": _DEFAULT_DEPENDENCIES,
     },
     "training.kubernetes.is": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "training.kubernetes.lu": {
-      "dependencies": _DEFAULT_DEPENDENCIES,
+      "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "sika-kraml.de": {
       "dependencies": _DEFAULT_DEPENDENCIES,
