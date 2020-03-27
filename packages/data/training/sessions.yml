@@ -158,8 +158,8 @@
   price: 6800 CZK
   venue_id: online
   length: 1 den
-  date_from: 20.6.2020
-  date_to: 20.6.2020
+  date_from: 20.4.2020
+  date_to: 20.4.2020
 - id: gitlab-ci-praha-21-04-2020
   active: true
   country: cz
