@@ -30,7 +30,7 @@ const Header = props => {
             <div className="col-lg-10 col-md-9 col-sm-8 col-8">
               <div className="pt-4 pb-4">
                 <h1 className="text-white pt-3 pb-2">{props.websiteHeader}</h1>
-                <Button href="#form" site={props.site}>
+                <Button site={props.site} type="outline" href="#form">
                   {props.text}
                 </Button>
               </div>

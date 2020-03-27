@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Link from "next/link";
 
 const Button = props => {
@@ -11,28 +11,70 @@ const Button = props => {
     font-size: 1rem;
     line-height: 1.5;
 
-    border: 1px solid
-      ${props.site && props.site.colors && props.site.colors.SECONDARY_LIGHT};
+    ${props =>
+      props.type == "primary" &&
+      css`
+        border: 1px solid
+          ${props.site && props.site.colors && props.site.colors.PRIMARY};
 
-    color: ${props.site &&
-      props.site.colors &&
-      props.site.colors.SECONDARY_LIGHT};
+        color: ${props.site && props.site.colors && props.site.colors.PRIMARY};
 
-    background: ${props.site && props.site.colors && props.site.colors.PRIMARY};
-    &:hover {
-      border: 1px solid
-        ${props.site && props.site.colors && props.site.colors.PRIMARY};
-      color: ${props.site && props.site.colors && props.site.colors.PRIMARY};
-      background: ${props.site &&
-        props.site.colors &&
-        props.site.colors.SECONDARY_LIGHT};
-      text-decoration: none;
-    }
+        background: ${props.site &&
+          props.site.colors &&
+          props.site.colors.SECONDARY_LIGHT};
+        &:hover {
+          border: 1px solid
+            ${props.site &&
+              props.site.colors &&
+              props.site.colors.SECONDARY_LIGHT};
+          color: ${props.site &&
+            props.site.colors &&
+            props.site.colors.SECONDARY_LIGHT};
+          background: ${props.site &&
+            props.site.colors &&
+            props.site.colors.PRIMARY};
+          text-decoration: none;
+        }
+      `}
+
+    ${props =>
+      props.type == "outline" &&
+      css`
+        border: 1px solid
+          ${props.site &&
+            props.site.colors &&
+            props.site.colors.SECONDARY_LIGHT};
+
+        color: ${props.site &&
+          props.site.colors &&
+          props.site.colors.SECONDARY_LIGHT};
+
+        background: ${props.site &&
+          props.site.colors &&
+          props.site.colors.PRIMARY};
+        &:hover {
+          border: 1px solid
+            ${props.site && props.site.colors && props.site.colors.PRIMARY};
+          color: ${props.site &&
+            props.site.colors &&
+            props.site.colors.PRIMARY};
+          background: ${props.site &&
+            props.site.colors &&
+            props.site.colors.SECONDARY_LIGHT};
+          text-decoration: none;
+        }
+      `}
   `;
   return (
     <>
       <Link href={props.href}>
-        <WrapperButton href={props.href}>{props.children}</WrapperButton>
+        <WrapperButton
+          site={props.site}
+          href={props.href}
+          type={props.type || "primary"}
+        >
+          {props.children}
+        </WrapperButton>
       </Link>
     </>
   );
