@@ -16,5 +16,6 @@ const TextArea = props => (
     {props.children}
   </div>
 );
+TextArea.P = P;
 
 export default TextArea;
