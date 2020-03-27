@@ -4,7 +4,6 @@ DEV_SITES = (
     "ondrejsika.io",
     "skolenie-ansible.sk",
     "ondrej-sika.uk",
-    "sika-kaplan.com",
 )
 PROD_SITES = (
     "ansible-utbildning.se",
