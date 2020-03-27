@@ -35,7 +35,7 @@ const Course = props => (
     <Header
       site={props.site}
       websiteHeader={props.course_title}
-      inquiryBtn={
+      text={
         <Translate
           lang={props.lang}
           cs="Nezávazně poptat školení"
