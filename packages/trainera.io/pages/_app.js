@@ -106,11 +106,9 @@ const Footer = (
         <ThemeFooter.H4>Zajímají Vás novinky?</ThemeFooter.H4>
         <p>Odebírejte můj newsletter a budete v obraze!</p>
         <div className="input-group">
-          <Button
-            site={site}
-            text="Přihlásit se k odběru článků a novinek"
-            href="https://sika.link/newsletter"
-          />
+          <Button site={site} href="https://sika.link/newsletter">
+            Přihlásit se k odběru článků a novinek
+          </Button>
         </div>
       </ThemeFooter.Wrapper>
     }
