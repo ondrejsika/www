@@ -12,7 +12,8 @@ const site = {
   gauges_site_id: "5a892d8dba4ae31b28000034",
   google_analytics_site_id: "UA-39461955-14",
   colors: {
-    PRIMARY: "#098958"
+    PRIMARY: "#098958",
+    SECONDARY_LIGHT: "#fff"
   }
 };
 
