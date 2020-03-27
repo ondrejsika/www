@@ -32,7 +32,7 @@ const Button = props => {
   return (
     <>
       <Link href={props.href}>
-        <WrapperButton href={props.href}>{props.text}</WrapperButton>
+        <WrapperButton href={props.href}>{props.children}</WrapperButton>
       </Link>
     </>
   );
