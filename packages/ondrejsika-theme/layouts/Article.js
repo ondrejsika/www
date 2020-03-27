@@ -27,14 +27,16 @@ const ArticleLayout = props => {
           if (props.after) return props.after;
         })()}
 
-        {!props.ad && !props.hideNewsletter && <NewsletterBar />}
+        {!props.ad && !props.hideNewsletter && (
+          <NewsletterBar site={props.site} />
+        )}
         {props.ad && (
           <div className="row">
             <div className="col-6">
               <AdBar ad={props.ad} />
             </div>
             <div className="col-6">
-              <NewsletterBar />
+              <NewsletterBar site={props.site} />
             </div>
           </div>
         )}

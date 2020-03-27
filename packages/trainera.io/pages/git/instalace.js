@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Gitu"
     markdown={`
@@ -30,3 +31,5 @@ nebo pouzit package manager [Chocolatey](https://chocolatey.org/)
 `}
   />
 );
+
+export default Page;

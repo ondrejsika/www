@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Rancheru"
     ad="rancher"
@@ -21,3 +22,5 @@ docker-compose up -d
 `}
   />
 );
+
+export default Page;

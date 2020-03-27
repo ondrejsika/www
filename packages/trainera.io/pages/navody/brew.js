@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Brew (Homebrew) - Package Manager pro Mac"
     markdown={`
@@ -56,3 +57,5 @@ Ja mam tento soubor ([Brewfile](https://github.com/ondrejsika/dotfiles/blob/mast
 `}
   />
 );
+
+export default Page;

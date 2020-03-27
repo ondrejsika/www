@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Chocolatey - Package Manager pro Windows"
     markdown={`
@@ -36,3 +37,5 @@ Napriklad
 `}
   />
 );
+
+export default Page;
