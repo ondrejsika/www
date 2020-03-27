@@ -2893,25 +2893,25 @@ trainera.io build docker:
       - packages/trainera.io/**/*
       - yarn.lock
 
-trainera.io dev deploy k8s:
-  stage: deploy_dev_priority
+trainera.io prod deploy k8s:
+  stage: deploy_prod_priority
   variables:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install trainera-io-dev ondrejsika/one-image --set host=trainera.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/trainera.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy trainera-io-dev
-  except:
-    - master
+    - helm upgrade --install trainera-io ondrejsika/one-image --set host=trainera.io --set image=$CI_REGISTRY_IMAGE/trainera.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy trainera-io
   except:
     variables:
       - $EXCEPT_DEPLOY
       - $EXCEPT_DEPLOY_K8S
-      - $EXCEPT_DEPLOY_DEV
-      - $EXCEPT_DEPLOY_DEV_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
   only:
+    refs:
+      - master
     changes:
       - packages/data/**/*
       - packages/common/**/*
@@ -2919,8 +2919,8 @@ trainera.io dev deploy k8s:
       - packages/trainera.io/**/*
       - yarn.lock
   environment:
-    name: dev trainera.io
-    url: https://trainera.io.panda.k8s.oxs.cz
+    name: prod trainera.io
+    url: https://trainera.io
   dependencies: []
 
 salzburgdevops.com build js:
