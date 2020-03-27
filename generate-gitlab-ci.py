@@ -1,60 +1,175 @@
 #!/usr/bin/env python3
 
-DEV_SITES = (
-    "ondrejsika.io",
-    "skolenie-ansible.sk",
-    "ondrej-sika.uk",
-)
-PROD_SITES = (
-    "ansible-utbildning.se",
-    "docker-utbildning.se",
-    "git-utbildning.se",
-    "gitlab-utbildning.se",
-    "kubernetes-utbildning.se",
-    "ondrej-sika.com",
-    "ondrej-sika.cz",
-    "ondrej-sika.de",
-    "trainera.io",
-    "git-training.uk",
-    "docker-training.uk",
-    "kubernetes-training.uk",
-    "ansible-training.uk",
-    "gitlab-training.uk",
-    "ansible-schulung.de",
-    "ansible-skoleni.cz",
-    "dockerschulung.de",
-    "gitlab-ci.cz",
-    "kubernetes-schulung.de",
-    "skoleni-docker.cz",
-    "skoleni-git.cz",
-    "skoleni-kubernetes.cz",
-    "skolenie-git.sk",
-    "skolenie-gitlab.sk",
-    "skolenie-docker.sk",
-    "skolenie.kubernetes.sk",
-    "salzburgdevops.com",
-    "skoleni-terraform.cz",
-    "skoleni-proxmox.cz",
-    "skoleni-prometheus.cz",
-    "docker-training.de",
-    "docker-training.ch",
-    "docker-training.nl",
-    "docker-training.at",
-    "git-training.nl",
-    "skoleni-rancher.cz",
-    "ondrejsikalabs.com",
-    "sika-kaplan.com",
-    "training.kubernetes.is",
-    "training.kubernetes.lu",
-    "sika-kraml.de",
-    "sika-training.com",
-    "cal-api.sika.io",
-    "ydo.cz",
-    "ccc.oxs.cz",
-    "sika.blog",
-    "static.sika.io",
-    "sikahq.com",
-)
+_DEFAULT_DEPENDENCIES = [
+  "packages/data/**/*",
+  "packages/common/**/*",
+  "packages/course-landing/**/*",
+  "packages/{{site}}/**/*",
+  "yarn.lock",
+]
+
+DEV_SITES = {
+    "ondrejsika.io": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skolenie-ansible.sk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ondrej-sika.uk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+}
+PROD_SITES = {
+    "ansible-utbildning.se": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "docker-utbildning.se": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "git-utbildning.se": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "gitlab-utbildning.se": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "kubernetes-utbildning.se": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ondrej-sika.com": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ondrej-sika.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ondrej-sika.de": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "trainera.io": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "git-training.uk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "docker-training.uk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "kubernetes-training.uk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ansible-training.uk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "gitlab-training.uk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ansible-schulung.de": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ansible-skoleni.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "dockerschulung.de": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "gitlab-ci.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "kubernetes-schulung.de": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skoleni-docker.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skoleni-git.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skoleni-kubernetes.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skolenie-git.sk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skolenie-gitlab.sk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skolenie-docker.sk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skolenie.kubernetes.sk": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "salzburgdevops.com": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skoleni-terraform.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skoleni-proxmox.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skoleni-prometheus.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "docker-training.de": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "docker-training.ch": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "docker-training.nl": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "docker-training.at": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "git-training.nl": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "skoleni-rancher.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ondrejsikalabs.com": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "sika-kaplan.com": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "training.kubernetes.is": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "training.kubernetes.lu": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "sika-kraml.de": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "sika-training.com": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "cal-api.sika.io": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ydo.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ccc.oxs.cz": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "sika.blog": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "static.sika.io": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "sikahq.com": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+}
+
+ALL_SITES={}
+ALL_SITES.update(PROD_SITES)
+ALL_SITES.update(DEV_SITES)
+
 PRIORITY_SITES = (
     "ondrej-sika.cz",
     "ondrej-sika.com",
@@ -85,6 +200,15 @@ variables:
   DOCKER_BUILDKIT: '1'
 """)
 
+def generate_dependencies(site):
+  if site not in ALL_SITES:
+    return """      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/{{site}}/**/*
+      - yarn.lock""".replace('{{site}}', site)
+  return "\n".join(("      - "+line).replace('{{site}}', site) for line in ALL_SITES[site]["dependencies"])
+
 for site in SITES:
     out.append("""
 %(site)s build js:
@@ -102,11 +226,7 @@ for site in SITES:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/%(site)s/**/*
-      - yarn.lock
+%(dependencies)s
   artifacts:
     name: %(site)s
     paths:
@@ -132,14 +252,11 @@ for site in SITES:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/%(site)s/**/*
-      - yarn.lock
+%(dependencies)s
 """ % {
         "site": site,
         "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
+        "dependencies": generate_dependencies(site),
     })
 
     if site in DEV_SITES:
@@ -164,11 +281,7 @@ for site in SITES:
       - $EXCEPT_DEPLOY_DEV_K8S
   only:
     changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/%(site)s/**/*
-      - yarn.lock
+%(dependencies)s
   environment:
     name: dev %(site)s
     url: https://%(site)s%(suffix)s
@@ -178,6 +291,7 @@ for site in SITES:
         "name": site.replace(".", "-"),
         "suffix": SUFFIX,
         "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
+        "dependencies": generate_dependencies(site),
     })
 
 
@@ -217,6 +331,7 @@ for site in SITES:
         "suffix": SUFFIX,
         "name": site.replace(".", "-"),
         "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
+        "dependencies": generate_dependencies(site),
     })
 
 with open(".gitlab-ci.yml", "w") as f:
