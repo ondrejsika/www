@@ -4,6 +4,10 @@
 image: ondrejsika/ci
 
 stages:
+  - build_js_priority
+  - build_docker_priority
+  - deploy_dev_priority
+  - deploy_prod_priority
   - build_js
   - build_docker
   - deploy_dev
@@ -469,7 +473,7 @@ kubernetes-schulung.de prod deploy k8s:
   dependencies: []
 
 ondrej-sika.cz build js:
-  stage: build_js
+  stage: build_js_priority
   image: node
   variables:
     GIT_CLEAN_FLAGS: none
@@ -499,7 +503,7 @@ ondrej-sika.cz build docker:
     - ondrej-sika.cz build js
   variables:
     GIT_STRATEGY: none
-  stage: build_docker
+  stage: build_docker_priority
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ondrej-sika.cz/
@@ -520,7 +524,7 @@ ondrej-sika.cz build docker:
       - yarn.lock
 
 ondrej-sika.cz prod deploy k8s:
-  stage: deploy_prod
+  stage: deploy_prod_priority
   variables:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
@@ -2382,66 +2386,6 @@ sika.io build docker:
       - packages/sika.io/**/*
       - yarn.lock
 
-sika.io dev deploy k8s:
-  stage: deploy_dev
-  variables:
-    GIT_STRATEGY: none
-    KUBECONFIG: .kubeconfig
-  script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-io-dev ondrejsika/one-image --set host=sika.io.panda.k8s.oxs.cz --set image=$CI_REGISTRY_IMAGE/sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy sika-io-dev
-  except:
-    - master
-  except:
-    variables:
-      - $EXCEPT_DEPLOY
-      - $EXCEPT_DEPLOY_K8S
-      - $EXCEPT_DEPLOY_DEV
-      - $EXCEPT_DEPLOY_DEV_K8S
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/sika.io/**/*
-      - yarn.lock
-  environment:
-    name: dev sika.io
-    url: https://sika.io.panda.k8s.oxs.cz
-  dependencies: []
-
-sika.io prod deploy k8s:
-  stage: deploy_prod
-  variables:
-    GIT_STRATEGY: none
-    KUBECONFIG: .kubeconfig
-  script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install sika-io ondrejsika/one-image --set host=sika.io --set image=$CI_REGISTRY_IMAGE/sika.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy sika-io
-  except:
-    variables:
-      - $EXCEPT_DEPLOY
-      - $EXCEPT_DEPLOY_K8S
-      - $EXCEPT_DEPLOY_PROD
-      - $EXCEPT_DEPLOY_PROD_K8S
-  only:
-    refs:
-      - master
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/sika.io/**/*
-      - yarn.lock
-  environment:
-    name: prod sika.io
-    url: https://sika.io
-  dependencies: []
-
 docker-training.de build js:
   stage: build_js
   image: node
@@ -2899,7 +2843,7 @@ bootstrap-web build docker:
       - yarn.lock
 
 trainera.io build js:
-  stage: build_js
+  stage: build_js_priority
   image: node
   variables:
     GIT_CLEAN_FLAGS: none
@@ -2929,7 +2873,7 @@ trainera.io build docker:
     - trainera.io build js
   variables:
     GIT_STRATEGY: none
-  stage: build_docker
+  stage: build_docker_priority
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/trainera.io/
@@ -2950,7 +2894,7 @@ trainera.io build docker:
       - yarn.lock
 
 trainera.io dev deploy k8s:
-  stage: deploy_dev
+  stage: deploy_dev_priority
   variables:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
@@ -3385,7 +3329,7 @@ sika-training.com prod deploy k8s:
   dependencies: []
 
 ondrej-sika.com build js:
-  stage: build_js
+  stage: build_js_priority
   image: node
   variables:
     GIT_CLEAN_FLAGS: none
@@ -3415,7 +3359,7 @@ ondrej-sika.com build docker:
     - ondrej-sika.com build js
   variables:
     GIT_STRATEGY: none
-  stage: build_docker
+  stage: build_docker_priority
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/ondrej-sika.com/
@@ -3436,7 +3380,7 @@ ondrej-sika.com build docker:
       - yarn.lock
 
 ondrej-sika.com prod deploy k8s:
-  stage: deploy_prod
+  stage: deploy_prod_priority
   variables:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
@@ -4429,7 +4373,7 @@ ondrejsikaltd.com build docker:
       - yarn.lock
 
 skoleni.io build js:
-  stage: build_js
+  stage: build_js_priority
   image: node
   variables:
     GIT_CLEAN_FLAGS: none
@@ -4459,7 +4403,7 @@ skoleni.io build docker:
     - skoleni.io build js
   variables:
     GIT_STRATEGY: none
-  stage: build_docker
+  stage: build_docker_priority
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/skoleni.io/
@@ -4529,4 +4473,3 @@ ondrejsika.is build docker:
       - packages/course-landing/**/*
       - packages/ondrejsika.is/**/*
       - yarn.lock
-
