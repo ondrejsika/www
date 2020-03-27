@@ -30,6 +30,7 @@ const Wrapper = styled.div``;
 const Course = props => (
   <>
     <Header
+      site={props.site}
       header={props.header}
       lecturer={props.lecturer}
       lecturerId={props.lecturerId}
