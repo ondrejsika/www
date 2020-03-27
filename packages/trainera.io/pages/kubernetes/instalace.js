@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Kubernetes pro lokalni vyvoj"
     markdown={`
@@ -148,3 +149,5 @@ Take funguje pro __zsh__, napriklad: \`source <(kubectl completion zsh)\`
 `}
   />
 );
+
+export default Page;

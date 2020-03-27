@@ -1,12 +1,18 @@
 import React from "react";
-import Link from "next/link";
+import Button from "@app/ondrejsika-theme/components/Button";
 
-const NewsletterBar = () => (
+const NewsletterBar = props => (
   <div className="alert alert-primary mt-5 text-center" role="alert">
     <h3>Chcete dostávat nové články do emailu? Přihlaste se k newsletteru!</h3>
-    <Link href="https://sika.link/newsletter">
-      <a className="btn btn-large btn-primary m-3">Přihlásit se k odběru</a>
-    </Link>
+    <div className="mt-3 mb-3">
+      <Button
+        site={props.site}
+        type="primary"
+        href="https://sika.link/newsletter"
+      >
+        Přihlásit se k odběru
+      </Button>
+    </div>
   </div>
 );
 

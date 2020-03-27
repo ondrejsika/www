@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Dockeru"
     markdown={`
@@ -101,3 +102,5 @@ Pokud máte problém s instalací a nebo jakýkoliv dotaz, neváhejte mě napsat
 `}
   />
 );
+
+export default Page;

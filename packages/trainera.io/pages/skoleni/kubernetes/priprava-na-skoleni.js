@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Priprava na Skoleni Kubernetes"
     markdown={`
@@ -8,3 +9,5 @@ Na skoleni Kubernetes je potreba mit nainstalovany \`kubectl\`, \`helm\` a \`min
 `}
   />
 );
+
+export default Page;

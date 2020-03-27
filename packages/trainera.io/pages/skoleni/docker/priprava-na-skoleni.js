@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Příprava na Školení Dockeru"
     markdown={`
@@ -18,3 +19,5 @@ Pokud budete mít jakýkoliv problém nebo dotaz, neváhejte napsat na <ondrej@s
 `}
   />
 );
+
+export default Page;

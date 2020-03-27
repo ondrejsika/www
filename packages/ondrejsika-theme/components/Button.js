@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import Link from "next/link";
+import default_colors from "@app/ondrejsika-theme/config/colors";
 
 const Button = props => {
   const WrapperButton = styled.a`
@@ -15,24 +16,27 @@ const Button = props => {
       props.type == "primary" &&
       css`
         border: 1px solid
-          ${props.site && props.site.colors && props.site.colors.PRIMARY};
+          ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
 
-        color: ${props.site && props.site.colors && props.site.colors.PRIMARY};
-
-        background: ${props.site &&
+        color: ${(props.site &&
           props.site.colors &&
-          props.site.colors.SECONDARY_LIGHT};
+          props.site.colors.PRIMARY) ||
+          default_colors.BLUE};
         &:hover {
           border: 1px solid
-            ${props.site &&
+            ${(props.site &&
               props.site.colors &&
-              props.site.colors.SECONDARY_LIGHT};
-          color: ${props.site &&
+              props.site.colors.SECONDARY_LIGHT) ||
+              default_colors.WHITE};
+          color: ${(props.site &&
             props.site.colors &&
-            props.site.colors.SECONDARY_LIGHT};
-          background: ${props.site &&
+            props.site.colors.SECONDARY_LIGHT) ||
+            default_colors.WHITE};
+          background: ${(props.site &&
             props.site.colors &&
-            props.site.colors.PRIMARY};
+            props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
           text-decoration: none;
         }
       `}
@@ -41,26 +45,29 @@ const Button = props => {
       props.type == "outline" &&
       css`
         border: 1px solid
-          ${props.site &&
+          ${(props.site &&
             props.site.colors &&
-            props.site.colors.SECONDARY_LIGHT};
+            props.site.colors.SECONDARY_LIGHT) ||
+            default_colors.WHITE};
 
-        color: ${props.site &&
+        color: ${(props.site &&
           props.site.colors &&
-          props.site.colors.SECONDARY_LIGHT};
+          props.site.colors.SECONDARY_LIGHT) ||
+          default_colors.WHITE};
 
-        background: ${props.site &&
-          props.site.colors &&
-          props.site.colors.PRIMARY};
+        
         &:hover {
           border: 1px solid
-            ${props.site && props.site.colors && props.site.colors.PRIMARY};
-          color: ${props.site &&
+            ${props.site && props.site.colors && props.site.colors.PRIMARY ||
+          default_colors.BLUE};
+          color: ${(props.site &&
             props.site.colors &&
-            props.site.colors.PRIMARY};
-          background: ${props.site &&
+            props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
+          background: ${(props.site &&
             props.site.colors &&
-            props.site.colors.SECONDARY_LIGHT};
+            props.site.colors.SECONDARY_LIGHT) ||
+            default_colors.WHITE};
           text-decoration: none;
         }
       `}

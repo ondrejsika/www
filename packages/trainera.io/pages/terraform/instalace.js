@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Terraformu"
     ad="terraform"
@@ -24,3 +25,5 @@ Na Windown naistalujete Terrafrom pomoci [chocolatey](/navody/chocolatey)
 `}
   />
 );
+
+export default Page;
