@@ -31,7 +31,10 @@ ansible-schulung.de build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-schulung.de/**/*
@@ -61,7 +64,10 @@ ansible-schulung.de build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-schulung.de/**/*
@@ -112,7 +118,10 @@ ansible-skoleni.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-skoleni.cz/**/*
@@ -142,7 +151,10 @@ ansible-skoleni.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-skoleni.cz/**/*
@@ -244,7 +256,10 @@ dockerschulung.de build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/dockerschulung.de/**/*
@@ -274,7 +289,10 @@ dockerschulung.de build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/dockerschulung.de/**/*
@@ -325,7 +343,10 @@ gitlab-ci.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-ci.cz/**/*
@@ -355,7 +376,10 @@ gitlab-ci.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-ci.cz/**/*
@@ -406,7 +430,10 @@ kubernetes-schulung.de build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-schulung.de/**/*
@@ -436,7 +463,10 @@ kubernetes-schulung.de build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-schulung.de/**/*
@@ -489,7 +519,7 @@ ondrej-sika.cz build js:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
       - packages/ondrej-sika.cz/**/*
       - yarn.lock
   artifacts:
@@ -519,7 +549,7 @@ ondrej-sika.cz build docker:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
       - packages/ondrej-sika.cz/**/*
       - yarn.lock
 
@@ -649,7 +679,10 @@ skoleni-docker.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-docker.cz/**/*
@@ -679,7 +712,10 @@ skoleni-docker.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-docker.cz/**/*
@@ -730,7 +766,10 @@ skoleni-git.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-git.cz/**/*
@@ -760,7 +799,10 @@ skoleni-git.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-git.cz/**/*
@@ -811,7 +853,10 @@ skoleni-kubernetes.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-kubernetes.cz/**/*
@@ -841,7 +886,10 @@ skoleni-kubernetes.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-kubernetes.cz/**/*
@@ -892,7 +940,10 @@ git-training.uk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-training.uk/**/*
@@ -922,7 +973,10 @@ git-training.uk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-training.uk/**/*
@@ -973,7 +1027,10 @@ docker-training.uk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.uk/**/*
@@ -1003,7 +1060,10 @@ docker-training.uk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.uk/**/*
@@ -1054,7 +1114,10 @@ kubernetes-training.uk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-training.uk/**/*
@@ -1084,7 +1147,10 @@ kubernetes-training.uk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-training.uk/**/*
@@ -1135,7 +1201,10 @@ ansible-training.uk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-training.uk/**/*
@@ -1165,7 +1234,10 @@ ansible-training.uk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-training.uk/**/*
@@ -1216,7 +1288,10 @@ gitlab-training.uk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-training.uk/**/*
@@ -1246,7 +1321,10 @@ gitlab-training.uk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-training.uk/**/*
@@ -1297,7 +1375,10 @@ skolenie-git.sk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-git.sk/**/*
@@ -1327,7 +1408,10 @@ skolenie-git.sk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-git.sk/**/*
@@ -1378,7 +1462,10 @@ skolenie-gitlab.sk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-gitlab.sk/**/*
@@ -1408,7 +1495,10 @@ skolenie-gitlab.sk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-gitlab.sk/**/*
@@ -1459,7 +1549,10 @@ skolenie-docker.sk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-docker.sk/**/*
@@ -1489,7 +1582,10 @@ skolenie-docker.sk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-docker.sk/**/*
@@ -1540,7 +1636,10 @@ skolenie.kubernetes.sk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie.kubernetes.sk/**/*
@@ -1570,7 +1669,10 @@ skolenie.kubernetes.sk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie.kubernetes.sk/**/*
@@ -1621,7 +1723,10 @@ skolenie-ansible.sk build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-ansible.sk/**/*
@@ -1651,7 +1756,10 @@ skolenie-ansible.sk build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-ansible.sk/**/*
@@ -1677,7 +1785,10 @@ skolenie-ansible.sk dev deploy k8s:
       - $EXCEPT_DEPLOY_DEV_K8S
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skolenie-ansible.sk/**/*
@@ -1702,7 +1813,10 @@ ansible-utbildning.se build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-utbildning.se/**/*
@@ -1732,7 +1846,10 @@ ansible-utbildning.se build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ansible-utbildning.se/**/*
@@ -1783,7 +1900,10 @@ docker-utbildning.se build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-utbildning.se/**/*
@@ -1813,7 +1933,10 @@ docker-utbildning.se build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-utbildning.se/**/*
@@ -1864,7 +1987,10 @@ git-utbildning.se build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-utbildning.se/**/*
@@ -1894,7 +2020,10 @@ git-utbildning.se build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-utbildning.se/**/*
@@ -1945,7 +2074,10 @@ gitlab-utbildning.se build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-utbildning.se/**/*
@@ -1975,7 +2107,10 @@ gitlab-utbildning.se build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/gitlab-utbildning.se/**/*
@@ -2026,7 +2161,10 @@ kubernetes-utbildning.se build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-utbildning.se/**/*
@@ -2056,7 +2194,10 @@ kubernetes-utbildning.se build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/kubernetes-utbildning.se/**/*
@@ -2109,7 +2250,8 @@ ondrej-sika.uk build js:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/ondrejsika-singlepage/**/*
       - packages/ondrej-sika.uk/**/*
       - yarn.lock
   artifacts:
@@ -2139,7 +2281,8 @@ ondrej-sika.uk build docker:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/ondrejsika-singlepage/**/*
       - packages/ondrej-sika.uk/**/*
       - yarn.lock
 
@@ -2165,7 +2308,8 @@ ondrej-sika.uk dev deploy k8s:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/ondrejsika-singlepage/**/*
       - packages/ondrej-sika.uk/**/*
       - yarn.lock
   environment:
@@ -2188,7 +2332,10 @@ ondrej-sika.de build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.de/**/*
@@ -2218,7 +2365,10 @@ ondrej-sika.de build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/ondrej-sika.de/**/*
@@ -2401,7 +2551,10 @@ docker-training.de build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.de/**/*
@@ -2431,7 +2584,10 @@ docker-training.de build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.de/**/*
@@ -2482,7 +2638,10 @@ docker-training.ch build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.ch/**/*
@@ -2512,7 +2671,10 @@ docker-training.ch build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.ch/**/*
@@ -2563,7 +2725,10 @@ docker-training.at build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.at/**/*
@@ -2593,7 +2758,10 @@ docker-training.at build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.at/**/*
@@ -2644,7 +2812,10 @@ docker-training.nl build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.nl/**/*
@@ -2674,7 +2845,10 @@ docker-training.nl build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/docker-training.nl/**/*
@@ -2725,7 +2899,10 @@ git-training.nl build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-training.nl/**/*
@@ -2755,7 +2932,10 @@ git-training.nl build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/git-training.nl/**/*
@@ -2859,7 +3039,7 @@ trainera.io build js:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
       - packages/trainera.io/**/*
       - yarn.lock
   artifacts:
@@ -2889,7 +3069,7 @@ trainera.io build docker:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
       - packages/trainera.io/**/*
       - yarn.lock
 
@@ -3019,7 +3199,10 @@ training.kubernetes.is build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/training.kubernetes.is/**/*
@@ -3049,7 +3232,10 @@ training.kubernetes.is build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/training.kubernetes.is/**/*
@@ -3100,7 +3286,10 @@ training.kubernetes.lu build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/training.kubernetes.lu/**/*
@@ -3130,7 +3319,10 @@ training.kubernetes.lu build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/training.kubernetes.lu/**/*
@@ -3181,7 +3373,10 @@ skoleni-terraform.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-terraform.cz/**/*
@@ -3211,7 +3406,10 @@ skoleni-terraform.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-terraform.cz/**/*
@@ -3345,7 +3543,7 @@ ondrej-sika.com build js:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
       - packages/ondrej-sika.com/**/*
       - yarn.lock
   artifacts:
@@ -3375,7 +3573,7 @@ ondrej-sika.com build docker:
     changes:
       - packages/data/**/*
       - packages/common/**/*
-      - packages/course-landing/**/*
+      - packages/ondrejsika-theme/**/*
       - packages/ondrej-sika.com/**/*
       - yarn.lock
 
@@ -3667,7 +3865,10 @@ skoleni-proxmox.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-proxmox.cz/**/*
@@ -3697,7 +3898,10 @@ skoleni-proxmox.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-proxmox.cz/**/*
@@ -3829,7 +4033,10 @@ skoleni-prometheus.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-prometheus.cz/**/*
@@ -3859,7 +4066,10 @@ skoleni-prometheus.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-prometheus.cz/**/*
@@ -4093,7 +4303,10 @@ skoleni-rancher.cz build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-rancher.cz/**/*
@@ -4123,7 +4336,10 @@ skoleni-rancher.cz build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/data/**/*
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
       - packages/common/**/*
       - packages/course-landing/**/*
       - packages/skoleni-rancher.cz/**/*
