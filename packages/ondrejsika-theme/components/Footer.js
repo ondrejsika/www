@@ -11,6 +11,7 @@ const CenterP = styled.p`
 
 const Footer = props => {
   const Background = styled.div`
+    margin-top: 3em;
     padding: 1em 0;
     background-color: ${(props.site &&
       props.site.colors &&
