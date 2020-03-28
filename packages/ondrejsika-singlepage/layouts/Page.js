@@ -67,7 +67,7 @@ const Page = props => {
           <div className="input-group">
             <a
               className="btn btn-outline-header"
-              href="https://sika.link/newsletter"
+              href="https://sika.link/newsletter-en"
             >
               Subscribe
             </a>
