@@ -19,9 +19,9 @@ const Index = props => (
     ></MainBar>
     <StatisticBar
       lang={props.site.lang}
-      NumberOfPeople="650+"
-      NumberOfCompanies="100+"
-      NumberOfLectures="150+"
+      NumberOfPeople="750+"
+      NumberOfCompanies="120+"
+      NumberOfLectures="170+"
     />
 
     <div className="container">
