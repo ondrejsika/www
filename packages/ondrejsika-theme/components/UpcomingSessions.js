@@ -31,6 +31,11 @@ class UpcomingSessions extends React.Component {
       en: "training",
       de: "schulung"
     }[this.props.lang || "cs"];
+    let session_page_prefix = {
+      cs: "verejne-terminy",
+      en: "upcoming-sessions",
+      de: "termine"
+    }[this.props.lang || "cs"];
 
     return (
       <table className="table table-hover">
@@ -95,6 +100,14 @@ class UpcomingSessions extends React.Component {
               <tr key={i}>
                 <td scope="row">
                   {(() => {
+                    if (this.props.show_session_link)
+                      return (
+                        <Link href={`/${session_page_prefix}/${course.id}`}>
+                          <a>
+                            {course.name} {flag}
+                          </a>
+                        </Link>
+                      );
                     if (this.props.show_course_link)
                       return (
                         <Link
