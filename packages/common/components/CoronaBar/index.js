@@ -1,5 +1,6 @@
 import React from "react";
 import { useCookie } from "./useCookie";
+import Translate from "@app/common/components/Translate";
 
 import Link from "next/link";
 import bar from "./coronavirus3.jpg";
@@ -7,9 +8,15 @@ import close from "./close.svg";
 let KoronaBar = props => {
   const [hideBar, setHideBar] = useCookie("CoronaBarHide");
 
+  let lang = props.lang || "cs";
+
+  let base_site = "https://ondrej-sika.cz";
+  if (lang == "en") base_site = "https://ondrej-sika.com";
+
   let post_link = props.local_link
     ? "/blog/coronavirus-outbreak"
-    : "https://ondrej-sika.cz/blog/coronavirus-outbreak";
+    : base_site + "/blog/coronavirus-outbreak";
+
   return (
     <div>
       {!hideBar && (
@@ -21,12 +28,25 @@ let KoronaBar = props => {
               </a>
             </div>
             <div className="text-center">
-              <Link href={post_link}>
-                <a className="main ibm-mono">
-                  Vzhledem k epidemii COVID19,
-                  <br /> nabízím všechna školení v on-line formě. 😷🦠
-                </a>
-              </Link>
+              <Translate
+                lang={lang}
+                cs={
+                  <Link href={post_link}>
+                    <a className="main ibm-mono">
+                      Vzhledem k epidemii COVID19,
+                      <br /> nabízím všechna školení v on-line formě. 😷🦠
+                    </a>
+                  </Link>
+                }
+                en={
+                  <Link href={post_link}>
+                    <a className="main ibm-mono">
+                      Due to COVID19, <br />
+                      I&apos;ve turned all my training online. 😷🦠
+                    </a>
+                  </Link>
+                }
+              />
             </div>
           </div>
           <style jsx>{`
