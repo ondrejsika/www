@@ -20,6 +20,16 @@ module.exports = {
           query: { id: post.id }
         };
       });
+
+      var sessions = yaml.safeLoad(
+        fs.readFileSync("../data/training/sessions.yml", "utf8")
+      );
+      sessions.forEach(function(session) {
+        defaultPathMap[`/verejne-terminy/${session.id}`] = {
+          page: "/verejne-terminy/[id]",
+          query: { id: session.id }
+        };
+      });
     } catch (e) {
       console.log(e);
     }
