@@ -1,4 +1,5 @@
 import React from "react";
+import Translate from "@app/common/components/Translate";
 
 const StatisticBar = props => (
   <div className="bar-grey-light d-none d-lg-block d-xl-block">
@@ -9,7 +10,11 @@ const StatisticBar = props => (
             {props.NumberOfPeople}
           </h2>
           <p className="text-white text-center statistic-bottom">
-            {props.NumberOfPeopleHeader}
+            <Translate
+              lang={props.lang || "cs"}
+              cs="Počet odškolených lidí"
+              en="Training attendees"
+            />
           </p>
         </div>
         <div className="col-4">
@@ -17,7 +22,11 @@ const StatisticBar = props => (
             {props.NumberOfCompanies}
           </h2>
           <p className="text-white text-center statistic-bottom">
-            {props.NumberOfCompaniesHeader}
+            <Translate
+              lang={props.lang || "cs"}
+              cs="Počet firem ve spolupráci"
+              en="Companies trained"
+            />
           </p>
         </div>
         <div className="col-4">
@@ -25,7 +34,11 @@ const StatisticBar = props => (
             {props.NumberOfLectures}
           </h2>
           <p className="text-white text-center statistic-bottom">
-            {props.NumberOfLecturesHeader}
+            <Translate
+              lang={props.lang || "cs"}
+              cs="Počet uskutečněných školení"
+              en="Training sessions"
+            />
           </p>
         </div>
       </div>
