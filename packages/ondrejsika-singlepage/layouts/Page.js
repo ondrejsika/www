@@ -62,6 +62,25 @@ const Page = props => {
       }
       secondColumn={
         <ThemeFooter.Wrapper>
+          <ThemeFooter.H4>Follow me</ThemeFooter.H4>
+          <ul>
+            {[
+              ["LinkedIn", "https://linkedin.com/in/ondrejsika"],
+              ["Twitter", "https://linkedin.com/in/twitter"],
+              ["Facebook", "https://facebook.com/sikaondrej"],
+              ["Instagram", "https://instagram.com/ondrejsika"]
+            ].map((el, i) => {
+              return (
+                <ThemeFooter.Li key={i}>
+                  <ThemeFooter.A href="#">{el[0]}</ThemeFooter.A>
+                </ThemeFooter.Li>
+              );
+            })}
+          </ul>
+        </ThemeFooter.Wrapper>
+      }
+      thirdColumn={
+        <ThemeFooter.Wrapper>
           <ThemeFooter.H4>Newsletter</ThemeFooter.H4>
           <p>Subscribe my newsletter and keep in touch!</p>
           <div className="input-group">
@@ -74,7 +93,6 @@ const Page = props => {
           </div>
         </ThemeFooter.Wrapper>
       }
-      thirdColumn={<></>}
       center={[]}
     />
   );
