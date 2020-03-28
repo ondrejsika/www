@@ -32,7 +32,7 @@ const ContactSection = () => (
             <br />
             301 00 Pilsen
             <br />
-            CZ
+            Czech Republic (EU)
           </p>
           <table className="contact-table table-borderless">
             <tbody>
@@ -52,14 +52,6 @@ const ContactSection = () => (
           <table className="contact-table table-borderless">
             <tbody>
               <tr>
-                <td>ČR (CZK):</td>
-                <td>2301432033 / 2010</td>
-              </tr>
-              <tr>
-                <td>SK (EUR):</td>
-                <td>2301432033 / 8330</td>
-              </tr>
-              <tr>
                 <td>IBAN:</td>
                 <td>CZ0820100000002301432033</td>
               </tr>
@@ -69,16 +61,16 @@ const ContactSection = () => (
               </tr>
               <tr>
                 <td className="pt-3" valign="top">
-                  Adresa&nbsp;Banky:&nbsp;&nbsp;&nbsp;
+                  Bank&nbsp;Address:&nbsp;&nbsp;&nbsp;
                 </td>
                 <td className="pt-3">
                   Fio banka, a.s.,
                   <br />
                   V Celnici 1028/10,
                   <br />
-                  Praha 1,
+                  Prague 1,
                   <br />
-                  Česká Republika
+                  Czech Republic
                 </td>
               </tr>
             </tbody>
