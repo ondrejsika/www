@@ -1,6 +1,6 @@
 import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
-import posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
+import posts from "@app/ondrej-sika.com/data/blog-posts.yaml";
 import Head from "next/head";
 import Link from "next/link";
 
