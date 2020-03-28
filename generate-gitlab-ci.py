@@ -66,7 +66,7 @@ PROD_SITES = {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
     },
     "ondrej-sika.de": {
-      "dependencies": _COURSE_LANDING_DEPENDENCIES,
+      "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
     },
     "trainera.io": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
@@ -187,6 +187,9 @@ PROD_SITES = {
     },
     "sikahq.com": {
       "dependencies": _DEFAULT_DEPENDENCIES,
+    },
+    "ondrejsika.is": {
+      "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
     },
 }
 
