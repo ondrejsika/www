@@ -344,11 +344,7 @@ for site in SITES:
     refs:
       - master
     changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/course-landing/**/*
-      - packages/%(site)s/**/*
-      - yarn.lock
+%(dependencies)s
   environment:
     name: prod %(site)s
     url: https://%(site)s
