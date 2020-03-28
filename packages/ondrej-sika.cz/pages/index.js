@@ -9,7 +9,7 @@ import { TwitterTweetEmbed } from "react-twitter-embed";
 
 import Head from "next/head";
 
-const Index = () => (
+const Index = props => (
   <div>
     <Head>
       <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
@@ -19,12 +19,10 @@ const Index = () => (
       text="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
     />
     <StatisticBar
+      lang={props.site.lang}
       NumberOfPeople="750+"
-      NumberOfPeopleHeader="Počet odškolených lidí"
       NumberOfCompanies="120+"
-      NumberOfCompaniesHeader="Počet firem ve spolupráci"
       NumberOfLectures="170+"
-      NumberOfLecturesHeader="Počet uskutečněných školení"
     />
 
     <div className="container">

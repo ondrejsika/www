@@ -18,12 +18,10 @@ const Index = props => (
       text="I'm boosting effectivity & productivity of software development teams by using tools which lead to faster development and reliable operation of software products."
     ></MainBar>
     <StatisticBar
+      lang={props.site.lang}
       NumberOfPeople="650+"
-      NumberOfPeopleHeader="Training attendees"
       NumberOfCompanies="100+"
-      NumberOfCompaniesHeader="Companies trained"
       NumberOfLectures="150+"
-      NumberOfLecturesHeader="Training sessions"
     />
 
     <div className="container">

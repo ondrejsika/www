@@ -108,12 +108,10 @@ const Page = props => {
           text={props.site_claim_text}
         />
         <StatisticBar
+          lang={props.site.lang}
           NumberOfPeople={props.statistics_bar_people}
-          NumberOfPeopleHeader="Počet odškolených lidí"
           NumberOfCompanies={props.statistics_bar_companies}
-          NumberOfCompaniesHeader="Počet firem ve spolupráci"
           NumberOfLectures={props.statistics_bar_courses}
-          NumberOfLecturesHeader="Počet uskutečněných školení"
         />
 
         <div className="container">
