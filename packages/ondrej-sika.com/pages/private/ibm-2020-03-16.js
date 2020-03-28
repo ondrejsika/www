@@ -4,6 +4,7 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 const Page = props => (
   <Article
     site={props.site}
+    hideNewsletter={true}
     title="Docker &amp; Kubernetes @ IBM, 16. 3. 2020"
     markdown={`
 ## Course Repositories
@@ -35,6 +36,12 @@ const Page = props => (
 - Gitlab with CI - https://github.com/ondrejsika/terraform-demo-gitlab
 - NFS - https://github.com/ondrejsika/terraform-demo-nfs
 
+## Repositories We've Created
+
+- Helm package for couter app - https://github.com/sika-training-examples/helm-counter--2020-03-19
+- Gitlab CI deployment using Helm - https://github.com/sika-training-examples/gitlab-ci-helm-deployment--2020-03-19
+
+
 ## Recordings
 
 - Monday - https://www.youtube.com/watch?v=AKEQ_gwY01w
@@ -42,6 +49,14 @@ const Page = props => (
 - Wednesday - https://www.youtube.com/watch?v=bEndEYAlbaU
 - Thursday - https://www.youtube.com/watch?v=fwbfsLELoeg
 - Friday - https://www.youtube.com/watch?v=sNbbF-gN2Zs
+
+## Reccommend me on LinkedIn & Twitter, Please
+
+Do you like the course? Write me recommendation on Twitter (with handle @ondrejsika) and LinkedIn (add me /in/ondrejsika and I'll send you request for recommendation). Thanks.
+
+## Join me on Facebook, Linkedin & Newsletter
+
+If you're interested in news about DevOps and my work you can [subscribe my newsletter](https://sika.link/newsletter-en) and join my groups on [Facebook](https://www.facebook.com/groups/199561764681068) or [LinkedIn](https://www.linkedin.com/groups/8919602/).
 
 ## Questions
 
