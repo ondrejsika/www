@@ -58,18 +58,16 @@ const Footer = (
             +420 773 452 376
           </ThemeFooter.A>
         </p>
-        <table className="contact-table table-borderless">
-          <tbody>
-            <tr>
-              <td>Company ID:&nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td>88114163</td>
-            </tr>
-            <tr>
-              <td>VAT ID:</td>
-              <td>CZ9302252102</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>
+          <span style={{ fontSize: "0.7em" }}>Company ID</span>
+          <br />
+          88114163
+        </p>
+        <p>
+          <span style={{ fontSize: "0.7em" }}>VAT ID</span>
+          <br />
+          CZ9302252102
+        </p>
       </ThemeFooter.Wrapper>
     }
     secondColumn={
@@ -103,7 +101,7 @@ const Footer = (
         <div className="input-group">
           <a
             className="btn btn-outline-header"
-            href="https://sika.link/newsletter"
+            href="https://sika.link/newsletter-en"
           >
             Subscribe
           </a>
