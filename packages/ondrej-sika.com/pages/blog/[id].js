@@ -4,12 +4,7 @@ import Markdown from "@app/common/components/Markdown";
 import React from "react";
 import Head from "next/head";
 
-let style = {
-  fontSize: "1.4em",
-  fontWeight: "bold"
-};
-
-import posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
+import posts from "@app/ondrej-sika.com/data/blog-posts.yaml";
 
 let posts_id_map = {};
 posts.map((element, i) => {

@@ -1,1 +1,15 @@
-[]
+- id: coronavirus-outbreak
+  nostatic: true
+  title: Covid-19 😷🦠
+  date: 17. 3. 2020
+  tags: []
+  perex: |
+    Due to Covid-19 I've turned all my training online.
+  content: |
+    Due to Covid-19 I've turned turn all my training online.
+
+    If you have any questions about online training, drop me an email: <ondrej@sika.io>
+
+    <img src="/content/online_training.jpg" width="400"/>
+
+    <div class="mt-5"></div>
