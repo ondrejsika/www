@@ -1,0 +1,44 @@
+import React from "react";
+
+import Article from "@app/ondrejsika-theme/layouts/Article";
+
+import sessions from "@app/data/training/sessions.yml";
+
+let session_id_map = {};
+sessions.map((element, i) => {
+  session_id_map[element.id] = i;
+});
+
+const SessionDD = props => {
+  let session = sessions[session_id_map[props.session_id]];
+  if (!session) {
+    return <></>;
+  }
+  return (
+    <>
+      <Article
+        title={`${session.name} ${session.city} - Ondrej Sika`}
+        header={`${session.name} ${session.city}`}
+        subheader={
+          session.date_from == session.date_to
+            ? `Termín školení ${session.date_from}`
+            : `Termín školení od ${session.date_from} do ${session.date_to}`
+        }
+        hideNewsletter={true}
+      >
+        <div className="row">
+          <div className="col-md-7">
+            <h2>Datum a misto konani</h2>
+            <h2>Lektor</h2>
+            <h2>Nazory ucastniky</h2>
+          </div>
+          <div className="col-md-5">
+            <h2>Registrace</h2>
+          </div>
+        </div>
+      </Article>
+    </>
+  );
+};
+
+export default SessionDD;
