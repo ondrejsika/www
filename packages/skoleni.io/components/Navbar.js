@@ -25,22 +25,22 @@ const Navbar = () => (
     <Nav>
       <NavItem>
         <Link href="#">
-          <NavLink>Home</NavLink>
-        </Link>
-      </NavItem>
-      <NavItem>
-        <Link href="#">
           <NavLink>Skoleni</NavLink>
         </Link>
       </NavItem>
       <NavItem>
-        <Link href="#">
+        <Link href="/lektori">
           <NavLink>Lektori</NavLink>
         </Link>
       </NavItem>
       <NavItem>
         <Link href="#">
           <NavLink>Kontakty</NavLink>
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link href="/">
+          <NavLink>Home</NavLink>
         </Link>
       </NavItem>
     </Nav>
