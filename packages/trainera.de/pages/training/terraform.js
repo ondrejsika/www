@@ -1,14 +1,14 @@
 import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
-import logo from "@app/data/pictures/courses/gitlab-ci.svg";
+import logo from "@app/data/pictures/courses/terraform-color.png";
 
 const Page = props => (
   <CourseDD
     site={props.site}
-    course_id="gitlab-ci"
+    course_id="terraform"
     lang={props.site.lang}
     logo={logo}
-    location="cz"
+    location="de"
     show_sessions={true}
   />
 );

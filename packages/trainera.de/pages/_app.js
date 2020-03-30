@@ -1,6 +1,6 @@
 import React from "react";
 import App from "next/app";
-import site from "@app/trainera.io/config";
+import site from "@app/trainera.de/config";
 import Link from "next/link";
 
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
@@ -20,26 +20,25 @@ const Navbar = (
     site={site}
     NavName="Trainera.de 🇩🇪"
     links={[
-      ["DOMŮ", "/"],
+      ["HOME", "/"],
       [
-        "KURZY",
+        "TRAINING",
         [
-          ["GIT", "/skoleni/git"],
-          ["GITLAB CI", "/skoleni/gitlab-ci"],
-          ["DOCKER", "/skoleni/docker"],
-          ["KUBERNETES", "/skoleni/kubernetes"],
-          ["RANCHER", "/skoleni/rancher"],
-          ["ANSIBLE", "/skoleni/ansible"],
-          ["TERRAFORM", "/skoleni/terraform"],
-          ["PROMETHEUS", "/skoleni/prometheus"],
-          ["PROXMOX", "/skoleni/proxmox"],
-          ["ELK / EFK", "/skoleni/elk"],
-          ["REACT & NEXT.JS", "/skoleni/react"],
-          ["VIDEOKURZY", "/videokurzy"]
+          ["GIT", "/training/git"],
+          ["GITLAB CI", "/training/gitlab-ci"],
+          ["DOCKER", "/training/docker"],
+          ["KUBERNETES", "/training/kubernetes"],
+          // ["RANCHER", "/training/rancher"],
+          ["ANSIBLE", "/training/ansible"],
+          // ["TERRAFORM", "/training/terraform"],
+          ["PROMETHEUS", "/training/prometheus"]
+          // ["PROXMOX", "/training/proxmox"],
+          // ["ELK / EFK", "/training/elk"],
+          // ["REACT & NEXT.JS", "/training/react"]
         ]
       ],
-      ["TERMÍNY", "/verejne-terminy"],
-      ["KONTAKT", "/kontakt"]
+      ["PUBLIC SESSIONS", "/public-sessions"],
+      ["CONTACT", "/contact"]
     ]}
   />
 );
@@ -49,7 +48,7 @@ const Footer = (
     site={site}
     firstColumn={
       <ThemeFooter.Wrapper>
-        <ThemeFooter.H4>Trainera.io</ThemeFooter.H4>
+        <ThemeFooter.H4>Trainera.de</ThemeFooter.H4>
         <p>
           <ThemeFooter.A href="mailto:sales@trainera.io">
             sales@trainera.io
@@ -62,16 +61,12 @@ const Footer = (
         <table className="contact-table table-borderless">
           <tbody>
             <tr>
-              <td>IČ:</td>
+              <td>Company ID:</td>
               <td>08591491</td>
             </tr>
             <tr>
-              <td>DIČ:</td>
+              <td>VAT ID:</td>
               <td>CZ08591491</td>
-            </tr>
-            <tr>
-              <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-              <td>2801705982/2010</td>
             </tr>
           </tbody>
         </table>
@@ -79,14 +74,14 @@ const Footer = (
     }
     secondColumn={
       <ThemeFooter.Wrapper>
-        <ThemeFooter.H4>Nejoblíbenější kurzy</ThemeFooter.H4>
+        <ThemeFooter.H4>Popular Courses</ThemeFooter.H4>
         <ul>
           {[
-            ["Docker", "/skoleni/docker"],
-            ["Kubernetes", "/skoleni/kubernetes"],
-            ["Gitlab CI", "/skoleni/gitlab-ci"],
-            ["Terraform", "/skoleni/terraform"],
-            ["Prometheus", "/skoleni/prometheus"]
+            ["Docker", "/training/docker"],
+            ["Kubernetes", "/training/kubernetes"],
+            ["Gitlab CI", "/training/gitlab-ci"],
+            ["Terraform", "/training/terraform"],
+            ["Prometheus", "/training/prometheus"]
           ].map((el, i) => {
             return (
               <ThemeFooter.Li key={i}>
@@ -103,34 +98,20 @@ const Footer = (
     }
     thirdColumn={
       <ThemeFooter.Wrapper>
-        <ThemeFooter.H4>Zajímají Vás novinky?</ThemeFooter.H4>
-        <p>Odebírejte můj newsletter a budete v obraze!</p>
+        <ThemeFooter.H4>Newsletter</ThemeFooter.H4>
+        <p>Subscribe our newsletter for new courses and sessions!</p>
         <div className="input-group">
           <Button
             site={site}
             type="outline"
-            href="https://sika.link/newsletter"
+            href="https://sika.link/newsletter-en"
           >
-            Přihlásit se k odběru článků a novinek
+            Subscribe
           </Button>
         </div>
       </ThemeFooter.Wrapper>
     }
-    center={
-      <>
-        <Link href="/lektorska-spoluprace">
-          <ThemeFooter.A href="#">Lektorská spolupráce</ThemeFooter.A>
-        </Link>
-        <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/obchodni-spoluprace">
-          <ThemeFooter.A href="#">Obchodní Spolupráce</ThemeFooter.A>
-        </Link>
-        <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/invite">
-          <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
-        </Link>
-      </>
-    }
+    center={<></>}
   />
 );
 

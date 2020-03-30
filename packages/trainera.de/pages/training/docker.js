@@ -1,14 +1,14 @@
 import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
-import logo from "@app/data/pictures/courses/prometheus-white.png";
+import logo from "@app/data/pictures/courses/docker-w.svg";
 
 const Page = props => (
   <CourseDD
     site={props.site}
-    course_id="prometheus"
+    course_id="docker"
     lang={props.site.lang}
     logo={logo}
-    location="cz"
+    location="de"
     show_sessions={true}
   />
 );

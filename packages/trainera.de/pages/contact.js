@@ -7,20 +7,20 @@ import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveCont
 const Index = props => (
   <div>
     <Head>
-      <title>Kontakty - Trainera s.r.o.</title>
+      <title>Contact - Trainera s.r.o.</title>
     </Head>
-    <MainBar site={props.site} header="Kontakt" />
+    <MainBar site={props.site} header="Contact" />
     <div className="container">
       <h3 className="pt-4 pb-2">Trainera s.r.o.</h3>
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
           <p className="">
-            <a href="mailto:sales@trainera.io?subject=Poptavka skoleni">
+            <a href="mailto:sales@trainera.io?subject=Training Inquiry">
               sales@trainera.io
             </a>{" "}
-            (Poptávky školení)
+            (training inquiry)
             <br />
-            <a href="mailto:info@trainera.io">info@trainera.io</a> (Ostatní)
+            <a href="mailto:info@trainera.io">info@trainera.io</a> (other)
           </p>
           <p className="pb-4">
             <a href="https://www.linkedin.com/company/traineraio">
@@ -29,43 +29,31 @@ const Index = props => (
           </p>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-          <h4>Fakturační údaje</h4>
+          <h4>Billing Informations</h4>
           <p>
             Bělehradská 858/23
             <br />
-            120 00 Praha 2
+            120 00 Prague 2
             <br />
-            Česká Republika
+            Czech Republic
           </p>
           <table className="contact-table table-borderless">
             <tbody>
               <tr>
-                <td>IČ:</td>
+                <td>Company ID:&nbsp;&nbsp;&nbsp;</td>
                 <td>08591491</td>
               </tr>
               <tr>
-                <td>DIČ:</td>
-                <td>CZ08591491 (neplatce DPH)</td>
-              </tr>
-              <tr>
-                <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-                <td>2801705982/2010 (Fio)</td>
+                <td>VAT ID:</td>
+                <td>CZ08591491</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div className="col-lg-4 col-md-9 col-sm-12 col-12">
-          <h4 className="pt-4 pt-md-0">Platební údaje</h4>
+          <h4 className="pt-4 pt-md-0">Bank Account</h4>
           <table className="contact-table table-borderless">
             <tbody>
-              <tr>
-                <td>ČR (CZK):</td>
-                <td>2801705982 / 2010</td>
-              </tr>
-              <tr>
-                <td>SK (EUR):</td>
-                <td>2801705982 / 8330</td>
-              </tr>
               <tr>
                 <td>IBAN:</td>
                 <td>CZ4920100000002801705982</td>
@@ -76,16 +64,16 @@ const Index = props => (
               </tr>
               <tr>
                 <td className="pt-3" valign="top">
-                  Adresa&nbsp;Banky:&nbsp;&nbsp;&nbsp;
+                  Bank&nbsp;address:&nbsp;&nbsp;&nbsp;
                 </td>
                 <td className="pt-3">
                   Fio banka, a.s.,
                   <br />
                   V Celnici 1028/10,
                   <br />
-                  Praha 1,
+                  Prague 1,
                   <br />
-                  Česká Republika
+                  Czech Republic
                 </td>
               </tr>
             </tbody>

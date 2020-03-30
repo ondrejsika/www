@@ -2,8 +2,6 @@ import React from "react";
 import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
-import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
-import { TwitterTweetEmbed } from "react-twitter-embed";
 
 import Head from "next/head";
 import TextArea from "@app/ondrejsika-theme/components/TextArea";
@@ -14,41 +12,39 @@ import ond from "@app/data/pictures/ondrejsika.jpg";
 const Index = props => (
   <div>
     <Head>
-      <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
+      <title>Trainera.de - IT &amp; DevOps Training</title>
     </Head>
     <MainBarHomepage
       site={props.site}
-      header="IT & DevOps školení, konzultace a workshopy"
+      header="IT &amp; DevOps Training in Germany"
     />
 
     <div className="container">
-      <TraineraCourseBar LectureImgHeader="Co školíme" />
-      <TextArea TextHeader="Služby a tým">
+      <TraineraCourseBar
+        lang={props.site.lang}
+        LectureImgHeader="Our Courses"
+      />
+      <TextArea TextHeader="Our services &amp; Team">
         <TextArea.P>
-          Trainera je školíci agentura, která se primárně zaměřuje na oblast
-          DevOps. Naši lektoři jsou zkušení vývojáři a DevOpsáci, kteří
-          technologiím, které školí rozumí a denne s nimi pracují. Dokážou proto
-          jednoduše vysvětlit základy, ale zodpovědět na záludné praktické
-          dotazy.
+          We are a training agency focused on DevOps. Out team is full of
+          experienced DevOps letcturers which works with those technologis on
+          daily basis. That&apos;s te reason why they can explain the technology
+          clearly for beginners and answer all questions from attendees.
         </TextArea.P>
         <TextArea.P>
-          Technologie a technologický stack, který školíme je soubor na sebe
-          navazujících nástrojů, které Vám umožní zvýšit efektivitu Vašich IT
-          týmů. Ať už vývojářům pomůžou doručovat změny rychleji k zákazníkům,
-          tak pomohou Vašemu operations týmu s bezproblémovým během Vašich
-          služeb a snížením provozních nákladů. Oba tyto faktory mají pozitivní
-          vlyv na celkové náklady Vašich IT projektů.
+          Our technology stach, which we train, is a set of depending tools,
+          which boost your and your IT teams effectivity and productivity. From
+          faster delivery of new features to your clients to cut of your
+          operation budget.
         </TextArea.P>
         <TextArea.P>
-          Pojďte zavést nebo posunout Vaše DevOps do současnosti. Začněte s
-          Gitem, Dockerem, Kubernetes nebo CI. Tak jako jsme pomohli bankám,
-          telefonním operátorům k zjednodušení práce a úspoře nákladů, můžeme
-          pomoci i Vám.
+          DevOps to the edge. Start with Docker, Kubernetes or CI today! As
+          I&apos;ve hepled banks, telcos or startups to be more productive I can
+          help you.
         </TextArea.P>
         <TextArea.P>
-          Všechny kurzy a školení děláme v českém i anglickém jazyce. Kurzy
-          nabízíme jako otevřené termíny, tak i školení in house. Teď v době
-          Coronaviru děláme všechny školení online formou a funguje to skvěle.
+          Our training have two options: open session or in-house trainig. Due
+          to Covid-19 We are 100% online.
         </TextArea.P>
       </TextArea>
       <OutTeam
@@ -61,20 +57,7 @@ const Index = props => (
           [ond, "Martin Studna"]
         ]}
       ></OutTeam>
-      <CompaniesBar />
-      <h2 className="mt-5">Doporučení z Twitteru</h2>
-      <div className="card-columns">
-        {twitter_recommendation_file.map((rec, i) => {
-          return (
-            <div key={i} className="card" style={{ border: "none" }}>
-              <TwitterTweetEmbed
-                tweetId={rec.tweet_id}
-                options={{ conversation: "none" }}
-              />
-            </div>
-          );
-        })}
-      </div>
+      <CompaniesBar lang={props.site.lang} />
     </div>
   </div>
 );
