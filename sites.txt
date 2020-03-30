@@ -56,3 +56,4 @@ static.sika.io
 ondrejsikaltd.com
 skoleni.io
 ondrejsika.is
+trainera.de
