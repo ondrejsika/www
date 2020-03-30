@@ -16,7 +16,6 @@ const Lecturer = styled.h5`
 
 const Background = styled.div`
   background-color: #202020;
-  margin-bottom: 1em;
 `;
 
 const Wrapper = styled.div`
