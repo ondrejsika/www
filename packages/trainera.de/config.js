@@ -4,7 +4,7 @@ const site = {
       ? "http://127.0.0.1:3060"
       : process.env.SITE_ORIGIN || "https://trainera.de",
   name: "trainera.de",
-  lang: "de",
+  lang: "en",
   gauges_site_id: "XXX",
   google_analytics_site_id: "XXX",
   colors: {
