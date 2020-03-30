@@ -20,6 +20,7 @@ const Index = props => (
     />
     <StatisticBar
       lang={props.site.lang}
+      site={props.site}
       NumberOfPeople="750+"
       NumberOfCompanies="120+"
       NumberOfLectures="170+"

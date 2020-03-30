@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import styled from "styled-components";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import default_colors from "@app/ondrejsika-theme/config/colors";
 
 import Markdown from "@app/common/components/Markdown";
@@ -14,7 +14,7 @@ import "@app/course-landing/components/TwitterRecommendations";
 import Translate from "@app/common/components/Translate";
 import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
-
+import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 
@@ -153,21 +153,28 @@ const Course = props => (
           <PipedriveContactForm lang={props.lang} />
         </Col>
       </Row>
-      <div className="container">
-        {props.twitter_recommendations &&
-          props.twitter_recommendations.length > 0 && (
-            <>
-              {props.recommendations && (
-                <References ids={props.recommendations} lang={props.lang} />
-              )}
-              <h3>Ohlasy z Twitteru</h3>
-              <TwitterRecommendations ids={props.twitter_recommendations} />
-            </>
-          )}
-      </div>
     </div>
-
-    <div className="container"></div>
+    <StatisticBar
+      site={props.site}
+      NumberOfPeople="150+"
+      NumberOfPeopleHeader="účastníků proškoleno"
+      NumberOfCompanies="15+"
+      NumberOfCompaniesHeader="firem proškoleno"
+      NumberOfLectures="20+"
+      NumberOfLecturesHeader="běhů školení"
+    />
+    <Container>
+      {props.twitter_recommendations &&
+        props.twitter_recommendations.length > 0 && (
+          <>
+            {props.recommendations && (
+              <References ids={props.recommendations} lang={props.lang} />
+            )}
+            <h3>Ohlasy z Twitteru</h3>
+            <TwitterRecommendations ids={props.twitter_recommendations} />
+          </>
+        )}
+    </Container>
   </div>
 );
 

@@ -1,8 +1,14 @@
 import React from "react";
 import Translate from "@app/common/components/Translate";
+import styled from "styled-components";
+
+const Background = styled.div`
+  background-color: ${props =>
+    (props.site && props.site.colors && props.site.colors.SECONDARY) || "grey"};
+`;
 
 const StatisticBar = props => (
-  <div className="bar-grey-light d-none d-lg-block d-xl-block">
+  <Background site={props.site}>
     <div className="container">
       <div className="row">
         <div className="col-4">
@@ -43,7 +49,7 @@ const StatisticBar = props => (
         </div>
       </div>
     </div>
-  </div>
+  </Background>
 );
 
 export default StatisticBar;
