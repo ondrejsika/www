@@ -10,7 +10,13 @@ const site = {
   name: "skoleni.io",
   lang: "cs",
   gauges_site_id: "xx",
-  google_analytics_site_id: "xx"
+  google_analytics_site_id: "xx",
+  colors: {
+    PRIMARY: "#202020",
+    PRIMARY_LIGHT: "#565656",
+    SECONDARY: "#7fcd91",
+    SECONDARY_LIGHT: "white"
+  }
 };
 
 export default site;
