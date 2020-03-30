@@ -13,6 +13,7 @@ const site = {
   google_analytics_site_id: "UA-39461955-14",
   colors: {
     PRIMARY: "#098958",
+    SECONDARY: "#7FCD91",
     SECONDARY_LIGHT: "#fff"
   }
 };
