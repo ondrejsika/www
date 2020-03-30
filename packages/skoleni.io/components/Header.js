@@ -9,7 +9,9 @@ const H1 = styled.h1`
   font-family: "IBM Plex Mono", monospace;
   font-size: 3.5em;
 `;
-
+const H3 = styled.h3`
+  color: white;
+`;
 const Lecturer = styled.h5`
   color: white;
 `;
@@ -35,6 +37,7 @@ const Header = props => (
           <Col xs={9}>
             <Wrapper>
               <H1>{props.header}</H1>
+              {props.underline && <H3>{props.underline}</H3>}
               {props.lecturer && (
                 <Lecturer>
                   lektor:{" "}
