@@ -124,24 +124,24 @@
   length: 1 den
   date_from: 11.3.2020
   date_to: 11.3.2020
-- id: kubernetes-praha-14-04-2020
+- id: docker-praha-14-04-2020
   active: true
   country: cz
   lang: cs
-  course_id: kubernetes
-  name: Školení Kubernetes
+  course_id: docker
+  name: Školení Docker
   city: Praha
   price: 11999 CZK
   venue_id: online
   length: 2 dny
   date_from: 14.4.2020
   date_to: 15.4.2020
-- id: docker-praha-16-04-2020
+- id: kubernetes-praha-16-04-2020
   active: true
   country: cz
   lang: cs
-  course_id: docker
-  name: Školení Docker
+  course_id: kubernetes
+  name: Školení Kubernetes
   city: Praha
   price: 11999 CZK
   venue_id: online
