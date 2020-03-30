@@ -15,14 +15,15 @@ const Margin = styled.div`
 
 const Index = () => (
   <>
-    <Header header="SKOLENI.IO" />
-
+    <Header
+      header="SKOLENI.IO"
+      underline="Jsme platforma, kde freelanceri mohou prezentovat sve kurzy a
+      skoleni, prevazne v IT."
+    />
     <Container>
       <P>
-        Skoleni.io je platforma kde freelanceri mohou prezentovat sve kurzy a
-        skoleni, prevazne IT. Platforma nabizi alternativu ke skolicim firmam,
-        kde nevite kdo presne bude dane tema skolit a nevite jakou kvalitu
-        ocekavat.
+        Platforma nabizi alternativu ke skolicim firmam, kde nevite kdo presne
+        bude dane tema skolit a nevite jakou kvalitu ocekavat.
         <br /> Je to misto kde naleznete kurzy co dani profesionalove nabizi s
         referencemi od proskolenych lidi a firem. Nejsme skolici firma nebo
         agentura, kurzy si kazdy lektor resi po svem, od registrace (my pouze
