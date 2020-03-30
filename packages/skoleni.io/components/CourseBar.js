@@ -11,14 +11,17 @@ import docker from "@app/data/pictures/courses/docker.png";
 import javascript from "@app/data/pictures/courses/javascript-sq.png";
 
 const Img = styled.img`
+  padding-top: 1em;
   width: 160px;
 `;
 
 const BackgroundReact = styled.div`
+  margin-top: 1em;
   background-color: #282c33;
 `;
 
 const BackgroundDocker = styled.div`
+  margin-top: 1em;
   padding: 0.6em 0em;
   background-color: #349bea;
 `;
