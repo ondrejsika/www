@@ -42,6 +42,9 @@ DEV_SITES = {
     "ondrej-sika.uk": {
       "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
     },
+    "trainera.de": {
+      "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
+    },
 }
 PROD_SITES = {
     "ansible-utbildning.se": {
@@ -201,7 +204,8 @@ PRIORITY_SITES = (
     "ondrej-sika.cz",
     "ondrej-sika.com",
     "trainera.io",
-    "skoleni.io"
+    "skoleni.io",
+    "trainera.io",
 )
 SUFFIX = ".panda.k8s.oxs.cz"
 with open("sites.txt") as f:
