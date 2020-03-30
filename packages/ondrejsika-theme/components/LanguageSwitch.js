@@ -20,7 +20,8 @@ const LanguageSwitch = props => {
   return (
     <Wrapper>
       <Container>
-        <White>🇬🇧/ 🇩🇪 / 🇨🇿</White>
+        <White href="https://trainera.de">🇩🇪</White>&nbsp;/&nbsp;&nbsp;
+        <White href="https://trainera.io">🇨🇿</White>
       </Container>
     </Wrapper>
   );
