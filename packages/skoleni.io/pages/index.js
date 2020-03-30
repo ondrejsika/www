@@ -16,7 +16,6 @@ const Margin = styled.div`
 const Index = () => (
   <>
     <Header header="SKOLENI.IO" />
-    <CourseBar />
 
     <Container>
       <P>
@@ -29,8 +28,9 @@ const Index = () => (
         agentura, kurzy si kazdy lektor resi po svem, od registrace (my pouze
         posleme email s poptavkou) az po platbu.
       </P>
-      <Margin />
     </Container>
+    <CourseBar />
+    <Margin />
   </>
 );
 export default Index;
