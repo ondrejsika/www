@@ -84,6 +84,32 @@
 
       - Nainštalovaný Docker, [návod na inštaláciu](https://ondrej-sika.cz/docker/instalace/)
       - Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
+    en: |
+      ### What is Docker
+      Docker can make your life easier through simplifying the process of R&D, testing, and software usage in your business. Run everything, everywhere. Don’t lose your time waiting for server setups or random library updates. Have the environment as a part of your application.
+
+      ### Course Description
+      During the two-day workshop, you’ll be shown everything you need to know to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
+
+      ### Course outline
+      - Theory introduction to containers & Docker
+      - How to install Docker at home or work (for those who did not - do so)
+      - Basics of Containerisation
+      - Basics of Images
+      - Docker Compose - multi-container applications
+      - Deployment to Swarm
+      - Preview of deployment to Kubernetes
+
+      ### Who Should Attend
+      This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it is something they can implement.
+
+      #### Skill Requirements
+      - Basic Linux knowledge
+      - Basic Terminal knowledge
+
+      #### Technical Requirements
+       - Have Docker installed, instructions: [here] (/instructions/docker)
+      - Access to the internet - ideally without corporate proxy, or proxy set up in Docker
 
 - id: kubernetes
   name:
@@ -130,6 +156,34 @@
       #### Technické požadavky
       - Nainstalovaný Kubernetes, návod na instalaci: [zde](https://ondrej-sika.cz/kubernetes/instalace/)
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+    en: |
+      ### What is Kubernetes
+      Kubernetes is one of the most used platforms for running your Docker containers and it is supported by key market leaders (Google, Amazon, Microsoft, etc.) via Cloud Native Computing Foundation. Kubernetes is being used by businesses of all scales, from startups to corporations.
+
+      ### Course Description
+      This course is ran in the form of a two-day hands-on workshop where you will be able to practice everything you learn. You will be shown how to run Kubernetes locally (for development) and on a cloud platform, Digital Ocean. You will also find out the basic structure of Kubernetes, including its components. You will learn how to create a Kubernetes Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
+
+      ### Course Outline
+      - Theory introduction to Kubernetes
+      - How to install locally (minikube and kubectl)
+      - Description of Kubernetes components
+      - Deployment to Kubernetes
+      - Working with permissions in the Kubernetes cluster
+      - Theory introduction to Helm packages
+      - Installation/Deployment using Helm
+      - Creating a custom Helm package
+
+      ### Who Should Attend
+      This course is primarily aimed at people (developers & DevOps), who want to maintain their applications in Kubernetes.
+
+      #### Skill Requirements
+      - Basic Docker knowledge
+      - Basic Linux knowledge
+      - Basic Terminal knowledge
+
+      #### Technical Requirements
+      - Have Kubernetes installed & running, instructions [here](/instructions/kubernetes/)
+      - Access to the internet - ideally without corporate proxy
 
 - id: rancher
   name:
@@ -176,6 +230,18 @@
       #### Technické požadavky
 
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+    en: |
+      ### What is
+
+      ### Course Description
+
+      ### Course Outline
+
+      ### Who Should Attend
+
+      #### Skill Requirements
+
+      #### Technical Requirements
 
 - id: git
   name:
@@ -222,6 +288,34 @@
       #### Technické požadavky
       - Nainstalovaný Git
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+    en: |
+      ### What is Git
+      Git is a modern versioning tool that has become an industry standard among developers. Individuals, startups and corporations use it on a daily basis. Git offers a simple simultaneous collaboration with more people on different parts of a project. You won't face the issue of disrupting each other's work or not being able to access the latest versions. The collaboration on a project can also be improved using Gitlab, a platform for the design, development and running of software projects.
+
+      ### Course Description
+      During this one day hands-on workshop, you will find out why it is beneficial to use Git, how it works (why there are no substitutes) and best practices. You will be shown everything from the installation and basic Git setup, simple individual work in a one branch to work in a team with multiple branches using merge strategies (merge, rebase) and Gitlab. The pros and cons of both will be explained, and you can choose which one is better suited for your needs. Also, you will be shown how to get out of unexpected situations like 'I deleted everything by accident' etc.
+
+      ### Course Outline
+      - Installation and Configuration
+      - New Repository
+      - Basic Git controls
+      - Work in one branch
+      - Work in branches - merge, rebase (strength of Git)
+      - Work with remote repositories
+      - Workflow with Gitlab
+      - Recovery of erased data from the repository
+      - Tips
+
+      ### Who Should Attend
+      This training course is primarily aimed at developers who don't do versioning or aren't using Git. Also,for those who make use of Git for 100% (git commit, git pull, git push). You can find a use for Git when it comes to a plentitude of projects, like small websites or bigger projects. Also, the course is useful for people that don't code frequently like DevOps.
+
+      #### Skill Requirements
+      - Basic Terminal knowledge
+      - Basic Git knowledge beneficial
+
+      #### Technical Requirements
+      - Have Git installed
+      - Access to the internet (https) - ideally without corporate proxy
 
 - id: gitlab-ci
   name:
@@ -266,6 +360,33 @@
 
       #### Technické požadavky
       - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
+    en: |
+      ### What is Gitlab CI
+      Continuous Integration (abbr. CI or CI/CD) is a tool that automates routine tasks such as running tests,code quality or deployment. It allows faster adoption of changes to master and quicker deployment. The compelling advantage of Gitlab CI is its Docker support; you can easily combine Docker images or run tests in containers.
+
+      ### Course Description
+      This course is ran in the form of a one day hands-on workshop where you will learn the importance of CI,the different versions of Gitlab CI and practice writing CI script for a sample project. The outcome will be a script for a simple project containing application build jobs, from tests to deployment.
+
+      ### Course Outline
+      - Generic introduction to CI
+      - Introduction to Gitlab CI
+      - Installation of Gitlab CI Runner
+      - Work with CI Jobs
+      - Creation of CI Pipelines
+      - Deployment Automatisation
+      - Docker and CI
+
+      ### Who Should Attend
+      The course is primarily aimed at developers who are using Gitlab and are wanting to start using Gitlab CI. At the same time, Gitlab CI might be the reason why people are transferring onto Gitlab. The course is also useful for DevOps who want to simplify their routine tasks with deployment automatisation.
+
+      #### Skill Requirements
+      - Basic Linux knowledge
+      - Basic Terminal knowledge
+      - Basic Git knowledge is of benefit - [Git training](/training/git/)
+      - Docker knowledge is of benefit - [Docker training](/training/docker/)
+
+      #### Technical Requirements
+      - Access to the internet - ideally without corporate proxy
 
 - id: ansible
   name:
@@ -316,6 +437,34 @@
 
       - Nainstalovaný Ansible
       - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
+    en: |
+      ### What is Ansible
+      Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about the state the current server or applications are in now; Ansible turns it into desired state. The entire configuration is versioned using Git, and you will never lose view of where everything is being deployed or miss any critical steps during the process. Ansible will help you with application deployment and quicker and safer server administration.
+
+      ### Course Description
+      The training is ran as a two-day hands-on workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and introduce the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from the beginning to the end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts, and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
+
+      ### Course Outline
+      - Basic insights into automation
+      - Basic insights into Ansible
+      - Ansible installation (for those who did not install at home)
+      - Basic Ansible controls
+      - Playbooks
+      - Templates
+      - Secrets
+      - Writing own modules
+      - Ansible & CI/CD (Gitlab CI)
+
+      ### Who Should Attend
+      This training is primarily aimed at admins and DevOps who want to start using Ansible. At the same time,developers who deploy their applications (even into test environments) and want to simplify this process, will also find it useful.
+
+      #### Skill Requirements
+      - Basic Linux knowledge
+      - Basic Terminal knowledge
+
+      #### Technical Requirements
+      - Have Ansible installed, instructions: [here](/instructions/ansible)
+      - Access to the internet (https, ssh) - better without corporate proxy
 
 - id: terraform
   name:
@@ -373,6 +522,18 @@
       - [Nainstalovaný Terraform](/terraform/instalace)
       - Přístup na internet (ideálně bez korporatni proxy)
       - Vlastní účet v Digital Oceanu výhodou - [Registrace + 50 USD kredit](https://sika.link/do-ref)
+    en: |
+      ### What is
+
+      ### Course Description
+
+      ### Course Outline
+
+      ### Who Should Attend
+
+      #### Skill Requirements
+
+      #### Technical Requirements
 
 - id: react
   name:
@@ -436,6 +597,18 @@
       #### Technické požadavky
 
       Notebook s přístupem na internet. Nic víc není potřeba. Pokud máte nějaký testovací Proxmox, můžete využívat ten, ale pro absolvování kurzu není potřeba.
+    en: |
+      ### What is
+
+      ### Course Description
+
+      ### Course Outline
+
+      ### Who Should Attend
+
+      #### Skill Requirements
+
+      #### Technical Requirements
 
 - id: prometheus
   name:
@@ -482,6 +655,32 @@
       - Docker nebo nainstalovány Prométheus, Alert Manager, Push Gateway a Grafanu
 
       Informace pro přípravu na školení [zde](/skoleni/prometheus/priprava-na-skoleni)
+    en: |
+      ### What is Prometheus
+      Prometheus is widely-adopted open-source systems monitoring and alerting toolkit and metrics server. It allows you to collect data metrics from your app and most of your infrastructure components, as well as slicing and dicing them in order to generate ad-hoc graphs, tables and alerts. Both Prometheus and Kubernetes joined CNCF - Cloud Native Computing Foundation.
+
+      ### Course Outline
+      - Introduction to Prometheus ecosystem
+      - How to install Prometheus and Alertmanager
+      - Data collection - Exporters
+      - Prometheus and Alertmanager configuration
+      - How to work with PROMQL (query language of Prometheus)
+      - Grafana integration
+      - Prometheus Pushgateway
+      - Docker, Kubernetes and custom app integrations
+
+      ### Who Should Attend
+      This training course is primarily aimed at developers and DevOps (Server Administrators) teams, who want to monitor applications easily and comfortably.
+
+      #### Skill Requirements
+      - Basic Linux knowledge
+      - Basic Terminal knowledge
+
+      #### Technical Requirements
+      - Access to the internet - ideally without corporate proxy
+      - Installed Docker or Prometheus, Alertmanager, Pushgateway and Grafana
+
+      Installation instructions [here](/instructions/prometheus)
 
 - id: javascript
   name:
