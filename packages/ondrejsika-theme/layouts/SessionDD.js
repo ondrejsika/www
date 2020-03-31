@@ -1,6 +1,7 @@
 import React from "react";
 
 import Article from "@app/ondrejsika-theme/layouts/Article";
+import SessionRegisterForm from "@app/ondrejsika-theme/layouts/SessionRegisterForm";
 
 import sessions from "@app/data/training/sessions.yml";
 
@@ -26,6 +27,18 @@ const SessionDD = props => {
         }
         hideNewsletter={true}
       >
+        <h2>Registrovat na skoleni</h2>
+        <div className="row">
+          <div className="col-md-4">
+            <SessionRegisterForm
+              site={props.site}
+              organizer_id={null}
+              session_id={null}
+              organizer_slug="ondrejsika"
+              session_slug={session.id}
+            />
+          </div>
+        </div>
         <div className="row">
           <div className="col-md-7">
             <h2>Datum a misto konani</h2>

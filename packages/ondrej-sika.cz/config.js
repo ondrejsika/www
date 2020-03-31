@@ -7,6 +7,10 @@ const site = {
     process.env.NODE_ENV == "development"
       ? "http://127.0.0.1:3010"
       : process.env.SITE_ORIGIN || "https://ondrej-sika.cz",
+  trainingcrm_url:
+    process.env.NODE_ENV == "development"
+      ? "https://trainingcrm-demo.sika.io"
+      : "https://trainingcrm.sika.io",
   name: "ondrej-sika.cz",
   lang: "cs",
   gauges_site_id: "5a892d8dba4ae31b28000034",

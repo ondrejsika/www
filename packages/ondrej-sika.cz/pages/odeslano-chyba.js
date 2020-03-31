@@ -8,13 +8,17 @@ const Sent = () => (
     <Head>
       <title>Odesláno - Ondřej Šika</title>
     </Head>
-    <MainBar header="Formulář byl úspěšně odeslán" />
+    <MainBar
+      header={
+        <span style={{ color: "red" }}>
+          !! Při odesílání formuláře nastala chyba !!
+        </span>
+      }
+    />
     <div className="container pt-4">
       <Markdown
         source={`
-Brzy se Vám ozvu.
-
-V případě jakýchkoliv dotazů pište na <ondrej@sika.io>.
+Napište mi prosím email na <ondrej@sika.io>. Děkuji.
 `}
       />
       <div style={{ height: "100px" }}></div>
