@@ -4820,7 +4820,7 @@ ondrejsika.is prod deploy k8s:
   dependencies: []
 
 trainera.de build js:
-  stage: build_js
+  stage: build_js_priority
   image: node
   variables:
     GIT_CLEAN_FLAGS: none
@@ -4850,7 +4850,7 @@ trainera.de build docker:
     - trainera.de build js
   variables:
     GIT_STRATEGY: none
-  stage: build_docker
+  stage: build_docker_priority
   script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/trainera.de/
@@ -4871,7 +4871,7 @@ trainera.de build docker:
       - yarn.lock
 
 trainera.de dev deploy k8s:
-  stage: deploy_dev
+  stage: deploy_dev_priority
   variables:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
