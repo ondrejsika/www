@@ -25,7 +25,9 @@ const InquiryBtn = styled.a`
 
 const PrizeHeader = styled.h4``;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  padding-top: 1em;
+`;
 
 const Course = props => (
   <>
