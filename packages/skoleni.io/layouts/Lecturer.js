@@ -14,8 +14,11 @@ const Img = styled.img`
 
 const Header = styled.h3``;
 const Bio = styled.p``;
-
 const AboutMe = styled.p``;
+
+const Li = styled.li`
+  text-transform: capitalize;
+`;
 
 const Lecturer = props => (
   <Container>
@@ -29,9 +32,9 @@ const Lecturer = props => (
         <Header>Co skolim</Header>
         <ul>
           {props.courses.map((course, i) => (
-            <li key={i}>
+            <Li key={i}>
               <Link href={`/skoleni/${course}`}>{course}</Link>
-            </li>
+            </Li>
           ))}
         </ul>
       </Col>
