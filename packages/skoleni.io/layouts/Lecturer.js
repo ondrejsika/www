@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Col, Row, Container } from "react-bootstrap";
-// import CourseBar from "@app/skoleni.io/components/CourseBar";
-import Markdown from "@app/common/components/Markdown";
+import Link from "next/link";
 
 const Name = styled.h2`
   padding-top: 1em;
@@ -28,7 +27,13 @@ const Lecturer = props => (
         {props.aboutMe && <AboutMe>{props.aboutMe}</AboutMe>}
 
         <Header>Co skolim</Header>
-        <Markdown source={props.courses} />
+        <ul>
+          {props.courses.map((course, i) => (
+            <li key={i}>
+              <Link href={`/skoleni/${course}`}>{course}</Link>
+            </li>
+          ))}
+        </ul>
       </Col>
       <Col sm={4}>
         <Img src={props.lecturerImg} />
