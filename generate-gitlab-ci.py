@@ -205,7 +205,7 @@ PRIORITY_SITES = (
     "ondrej-sika.com",
     "trainera.io",
     "skoleni.io",
-    "trainera.io",
+    "trainera.de",
 )
 SUFFIX = ".panda.k8s.oxs.cz"
 with open("sites.txt") as f:
