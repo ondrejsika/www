@@ -482,3 +482,146 @@
       - Docker nebo nainstalovány Prométheus, Alert Manager, Push Gateway a Grafanu
 
       Informace pro přípravu na školení [zde](/skoleni/prometheus/priprava-na-skoleni)
+
+- id: javascript
+  name:
+    cs: Školení Javascriptu
+    en: Javascript Training
+    de: Javasript Schulung
+  lecturers:
+    - janpospisil
+  price:
+    open:
+      cz: xx CZK
+    in_house:
+      cz: xx CZK
+  twitter_recommendations: []
+  recommendations: []
+  description:
+    cs: |
+      ### Co se naučíte
+
+      Javascript se dnes dá považovat za „Jazyk webu“, to je dáno zejména tím, že je jako jediný spustitelný u klienta v prohlížeči. Díky tomu má jazyk jistou popularitu i využití v budoucnu. Poznejte tento jazyk skutečně do hloubky! Na školení si ukážeme, jak správně psát objekty, jak navrhnout a udržovat aplikaci, novinky v Javascriptu (ES6, ES7, ES8), jak testovat Javascript a na co se připravit. To vše si ukážeme na praktických příkladech.
+
+      ### Co probereme
+      -	Základní konstrukce jazyka, Pole, Objekt, Number, String apod..
+      - Jak procházet, filtrovat a zpracovávat pole.
+      - Prototypování, Objetky
+      - Hoisting
+      - Javasript na serveru a v prohlížeči
+      - Dynamický a lexikální kontext
+      - Jak funguje v Javascriptu slovo this
+      - Asynchronní operace, callbeck hell, Promise, async funce
+      - Testování
+      - Přehled javasciptových knihoven a nástrojů
+      - Debugování a zpracování chyb
+      - Minifikace a převod do starších verzí javasriptu
+
+      #### Pro koho je školení určeno
+      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
+
+      #### Předchozí znalosti
+      - Praktická cvičení řeší každý účastník sám na svém notebooku. Nezáleží na operačním systému. Veškerý potřebný software si nainstalujeme na začátku kurzu. Je nutné mít administrátorská práva k počítači.
+      - Účastník by měl mít alespoň povědomí o programovaní, co je if, else, funkce apod.
+
+      #### Technické požadavky
+      - Notebook s přístupem na internet
+
+- id: nodejs
+  name:
+    cs: Školení Node JS
+    en: Node JS Training
+    de: Node JS Schulung
+  lecturers:
+    - janpospisil
+  price:
+    open:
+      cz: xx CZK
+    in_house:
+      cz: xx CZK
+  twitter_recommendations: []
+  recommendations: []
+  description:
+    cs: |
+      ### Co se naučíte
+
+      Na tomto dvoudenním školení Node JS se dozvíte, že Javascript už dávno není jen jazyk pro klientské aplikace. Jazyk Javascript je praktický jediný programovací jazyk, ve kterém jste schopni napsat aplikaci od A do Z. To se netýká zdaleka jen těch webových. Na školení si ukážeme, jak vytvářet Server side aplikace ve frameworku Express. Ukážeme si i jak udělat REST API v json formátu, jak na autorizaci, co je request, response a jaké jsou testovací nástroje. Vysvětlíme si, co je SPA, výhody nevýhody a vhodné technologie. Na konci školení budete schopni vytvářet vlastní serverové služby v Node JS.
+
+      ### Co probereme
+      -	Javascript, základní principy, ES6, výjimky, třídy, scope, this
+      - Callback hell, Promise, async
+      - V čem se Node JS / Javascript zásadně liší od ostatních jazyků
+      - Request / Response a jeho obsluha v Node JS
+      - Představení frameworků Express, Restify, Hapi JS
+      - Zavedení nového projektu, soubor package.js
+      - Verzování
+      - Moduly v Node.JS
+      - Formuláře
+      - Zabezpečení a možné útoky na webové stránky
+      - Autorizace pomocí JWT
+      - Komunikace s databází MySQL, MongoDB
+      - Šablonovací systém Jade
+      - Validace vstupních parametrů pomocí Json schema
+      - Testovaní aplikací v nástroji Jest
+
+      #### Pro koho je školení určeno
+      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
+
+      #### Předchozí znalosti
+      - Praktická cvičení řeší každý účastník sám na svém notebooku. Nezáleží na operačním systému. Veškerý potřebný software si nainstalujeme na začátku kurzu. Je nutné mít administrátorská práva k počítači.
+      - Účastník by měl mít alespoň základní znalost Javascriptu.
+
+      #### Technické požadavky
+      - Notebook s přístupem na internet
+
+- id: oopinphp
+  name:
+    cs: Školení OOP in PHP
+    en: OOP in PHP Training
+    de: OOP in PHP Schulung
+  lecturers:
+    - janpospisil
+  price:
+    open:
+      cz: xx CZK
+    in_house:
+      cz: xx CZK
+  twitter_recommendations: []
+  recommendations: []
+  description:
+    cs: |
+      ### Co se naučíte
+
+      Na školení se naučíte vytvářet webové aplikace v PHP pomocí objektů, dědičnosti a dalších praktických postupů moderního programování. Školení probíhá na vlastních počítačích (na operačním systému nezáleží). Na školení si stručně řekneme něco o teorii a hned poté se pustíme do psaní reálné aplikace. Vše si tedy osaháte v praxi na konkrétním příkladě!
+
+      ### Co probereme
+      -	Co je objekt v programovacím jazyce
+      - Konstruktor, metody a datové složky
+      - Polymorfizmus
+      - Kompozice
+      - Dědičnost
+      - Výjimky a jejich obsluha
+      - Interface
+      - Abstraktní třídy
+      - Statické třídy
+      - Final metody a třídy
+      - Konstanty
+      - Autoloading
+      - Magické metody
+      - Jmenné prostory
+      - Traits
+      - Anonymní funkce
+      - Bezpečnost PHP a na co si dát pozor
+      - Ukázková aplikace
+      - Srovnání verzí PHP od 5.2 do 7.2
+      - Představení nástroje composer
+
+      #### Pro koho je školení určeno
+      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
+
+      #### Předchozí znalosti
+      - Praktická cvičení řeší každý účastník sám na svém notebooku. Nezáleží na operačním systému. Veškerý potřebný software si nainstalujeme na začátku kurzu. Je nutné mít administrátorská práva k počítači.
+      - Předchozí zkušenost s PHP. Znalost termínů jako je proměnná, podmínka, foreach, funkce, pole apod.
+
+      #### Technické požadavky
+      - Notebook s přístupem na internet
