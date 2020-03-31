@@ -3,7 +3,7 @@ import Course from "@app/ondrejsika-theme/layouts/Course";
 export default props => (
   <Course
     course_id="ansible"
-    // show_sessions={true}
+    show_sessions={true}
     lang={props.site.lang}
     course_title="Ansible Training"
     logo="/static/ansible.png"
