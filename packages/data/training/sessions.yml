@@ -2231,3 +2231,77 @@
   length: 2 dny
   date_from: 1.2.2020
   date_to: 2.2.2020
+
+# Online Corona European Tour
+- id: git-online-18-5-2020
+  active: true
+  country: de
+  lang: en
+  course_id: git
+  name: Training Git
+  city: online
+  price: 399 EUR
+  venue_id: online
+  length: 1 day
+  date_from: 18.5.2020
+  date_to: 18.5.2020
+- id: docker-online-19-5-2020
+  active: true
+  country: de
+  lang: en
+  course_id: docker
+  name: Training Docker
+  city: online
+  price: 799 EUR
+  venue_id: online
+  length: 2 days
+  date_from: 19.5.2020
+  date_to: 20.5.2020
+- id: gitlab-ci-online-3-6-2020
+  active: true
+  country: de
+  lang: en
+  course_id: gitlab-ci
+  name: Training Gitlab CI
+  city: online
+  price: 399 EUR
+  venue_id: online
+  length: 1 day
+  date_from: 3.6.2020
+  date_to: 3.6.2020
+- id: kubernetes-online-8-6-2020
+  active: true
+  country: de
+  lang: en
+  course_id: kubernetes
+  name: Training Kubernetes
+  city: online
+  price: 799 EUR
+  venue_id: online
+  length: 2 days
+  date_from: 8.6.2020
+  date_to: 9.6.2020
+- id: ansible-online-10-6-2020
+  active: true
+  country: de
+  lang: en
+  course_id: ansible
+  name: Training Ansible
+  city: online
+  price: 399 EUR
+  venue_id: online
+  length: 1 day
+  date_from: 10.6.2020
+  date_to: 10.6.2020
+- id: prometheus-online-11-6-2020
+  active: true
+  country: de
+  lang: en
+  course_id: prometheus
+  name: Training Prometheus
+  city: online
+  price: 399 EUR
+  venue_id: online
+  length: 1 day
+  date_from: 11.6.2020
+  date_to: 11.6.2020
