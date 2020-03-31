@@ -3,6 +3,9 @@ const yaml = require("js-yaml");
 const fs = require("fs");
 
 module.exports = {
+  env: {
+    TRAININGCRM_URL: process.env.TRAININGCRM_URL
+  },
   exportTrailingSlash: true,
   exportPathMap: function(defaultPathMap) {
     // remove default blog page render (without post)

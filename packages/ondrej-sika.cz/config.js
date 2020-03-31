@@ -10,7 +10,7 @@ const site = {
   trainingcrm_url:
     process.env.NODE_ENV == "development"
       ? "https://trainingcrm-demo.sika.io"
-      : "https://trainingcrm.sika.io",
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
   name: "ondrej-sika.cz",
   lang: "cs",
   gauges_site_id: "5a892d8dba4ae31b28000034",
