@@ -3,16 +3,22 @@ import { useForm } from "react-hook-form";
 import { Form, Button } from "react-bootstrap";
 import Field from "@app/common/forms/Field";
 
-const ExampleForm = () => {
+import ReCAPTCHA from "react-google-recaptcha";
+
+const recaptchaRef = React.createRef();
+
+const ExampleForm = props => {
   const { handleSubmit, register, errors } = useForm();
   const onSubmit = values => {
+    console.log(recaptchaRef.current.getValue());
     let out = [
       `name: ${values.name}`,
       `company: ${values.company || "--"}`,
       `email: ${values.email}`,
       `phone: ${values.phone || "--"}`,
       `course: ${values.course}`,
-      `session: ${values.session}`
+      `session: ${values.session}`,
+      recaptchaRef.current.getValue()
     ];
     alert(out.join(", "));
   };
@@ -78,7 +84,7 @@ const ExampleForm = () => {
         <option value="kubernetes-2020-04-01">Kubernetes 1. 4. 2020</option>
         <option value="kubernetes-2020-06-01">Kubernetes 1. 6. 2020</option>
       </Field>
-
+      <ReCAPTCHA ref={recaptchaRef} sitekey={props.site.recaptcha_site_key} />
       <Button variant="primary" type="submit">
         Submit
       </Button>
@@ -86,9 +92,9 @@ const ExampleForm = () => {
   );
 };
 
-const Index = () => (
+const Index = props => (
   <div className="container">
-    <ExampleForm />
+    <ExampleForm site={props.site} />
   </div>
 );
 
