@@ -55,11 +55,10 @@ const Button = props => {
           props.site.colors.SECONDARY_LIGHT) ||
           default_colors.WHITE};
 
-        
         &:hover {
           border: 1px solid
-            ${props.site && props.site.colors && props.site.colors.PRIMARY ||
-          default_colors.BLUE};
+            ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+              default_colors.BLUE};
           color: ${(props.site &&
             props.site.colors &&
             props.site.colors.PRIMARY) ||
