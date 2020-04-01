@@ -18,13 +18,14 @@ const NavLink = styled.a`
   text-align: center;
   font-weight: bold;
   display: block;
+  cursor: pointer;
 `;
 
 const Navbar = () => (
   <>
     <Nav>
       <NavItem>
-        <Link href="#">
+        <Link href="/skoleni">
           <NavLink>Skoleni</NavLink>
         </Link>
       </NavItem>
@@ -34,7 +35,7 @@ const Navbar = () => (
         </Link>
       </NavItem>
       <NavItem>
-        <Link href="#">
+        <Link href="/kontakty">
           <NavLink>Kontakty</NavLink>
         </Link>
       </NavItem>

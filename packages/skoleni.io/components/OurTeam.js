@@ -19,8 +19,10 @@ const OurTeam = props => (
     <Row>
       {props.lecturers.map((lector, i) => (
         <ImgWrapper key={i}>
-          <Img src={lector[0]} fluid />
-          <H4>{lector[1]}</H4>
+          <a href={`/lektor/${lector[2]}`}>
+            <Img src={lector[0]} fluid />
+            <H4>{lector[1]}</H4>
+          </a>
         </ImgWrapper>
       ))}
     </Row>
