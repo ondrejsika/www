@@ -1,88 +1,54 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
 import Newsletter from "@app/skoleni.io/components/Newsletter";
-
-const Background = styled.div`
-  background-color: #202020;
-`;
+import H3 from "@app/skoleni.io/components/H3";
 
 const A = styled.a`
   color: white;
 `;
 const Wrapper = styled.div`
-  /* padding: 1em 0; */
+  border-top: 1px solid black;
+  margin-top: 2em;
 `;
+
 const Content = styled.div`
+  padding: 3em 0;
   color: white;
 `;
 
-const Header = styled.h3`
-  color: white;
-  font-weight: bold;
-  padding-top: 1em;
-`;
-
-const ColorfulBackground = styled.div`
-  padding: 2em 0;
-  ${props =>
-    props.type == "secondary" &&
-    css`
-      background: ${props.site &&
-        props.site.colors &&
-        props.site.colors.SECONDARY} !important;
-    `}
+const Bg = styled.div`
+  background-color: black;
 `;
 
 const Footer = props => (
   <>
-    <Background>
+    <Bg>
       <Container>
         <Wrapper>
           <Row>
-            <Col xs={8}>
-              <Header>Kontakty</Header>
-              <Row>
-                <Col>
-                  <Content>
-                    <h4>
-                      <A href="/lektor/ondrejsika">Ondřej Šika</A>
-                    </h4>
-                    <A href="mailto: ondrej@ondrejsika.com">
-                      ondrej@ondrejsika.com
-                    </A>
-                    <br />
-                    <A href="https://ondrej-sika.cz">ondrej-sika.cz</A>
-                    <br />
-                    <A href="tel:+420773452376">+420 773 452 376</A>
-                  </Content>
-                </Col>
-                <Col>
-                  <Content>
-                    <h4>skoleni.io</h4>
-                    <A href="skoleni@skoleni.io">skoleni@skoleni.io</A>
-                    <br />
-                    <A href="spoluprace@skoleni.io">spoluprace@skoleni.io</A>
-                    <br />
-                    <A href="dotazy@skoleni.io">dotazy@skoleni.io</A>
-                  </Content>
-                </Col>
-              </Row>
+            <Col md={6}>
+              <Content>
+                <H3>skoleni.io</H3>
+                <A href="skoleni@skoleni.io">skoleni@skoleni.io</A>
+                <br />
+                <A href="spoluprace@skoleni.io">spoluprace@skoleni.io</A>
+                <br />
+                <A href="dotazy@skoleni.io">dotazy@skoleni.io</A>
+              </Content>
             </Col>
-            <Col>
-              <ColorfulBackground site={props.site} type="secondary">
-                <Newsletter
-                  site={props.site}
-                  header="Zajímají Vás novinky?"
-                  text="Odebírejte můj newsletter a budete v obraze!"
-                  btnText="Přihlásit se k odběru článků a novinek"
-                />
-              </ColorfulBackground>
+            <Col md={6}>
+              <Newsletter
+                site={props.site}
+                header="Zajímají Vás novinky?"
+                text="Odebírejte můj newsletter a budete v obraze!"
+                btnText="Přihlásit se k odběru článků a novinek"
+              />
             </Col>
           </Row>
         </Wrapper>
       </Container>
-    </Background>
+    </Bg>
   </>
 );
 
