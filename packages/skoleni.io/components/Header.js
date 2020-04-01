@@ -34,7 +34,7 @@ const Header = props => (
     <Background>
       <Container>
         <Row>
-          <Col xs={9}>
+          <Col xs={props.headerImg ? 9 : 12}>
             <Wrapper>
               <H1>{props.header}</H1>
               {props.underline && <H3>{props.underline}</H3>}
