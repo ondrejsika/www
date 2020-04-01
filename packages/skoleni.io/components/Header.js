@@ -1,57 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
-import { Row, Col } from "react-bootstrap";
 
-const H1 = styled.h1`
-  color: white;
-  font-size: 2.5em;
-`;
-const H3 = styled.h3`
-  color: white;
-`;
-const Lecturer = styled.h5`
-  color: white;
+const H1 = styled.span`
+  font-size: 6em;
+  padding: 0.05em 0;
+  font-weight: bold;
 `;
 
-const Background = styled.div`
-  background-color: #202020;
+const Lecturer = styled.span`
+  font-size: 2em;
+  font-weight: bold;
 `;
 
-const Wrapper = styled.div`
-  padding: 2em 0;
-`;
-
-const Img = styled.img`
-  padding: 0.5em;
-  width: 100%;
-`;
+const H3 = styled.h3``;
 
 const Header = props => (
   <>
-    <Background>
-      <Container>
-        <Row>
-          <Col xs={props.headerImg ? 9 : 12}>
-            <Wrapper>
-              <H1>{props.header}</H1>
-              {props.underline && <H3>{props.underline}</H3>}
-              {props.lecturer && (
-                <Lecturer>
-                  lektor:{" "}
-                  <a href={`/lektor/${props.lecturerId}`}>{props.lecturer}</a>
-                </Lecturer>
-              )}
-            </Wrapper>
-          </Col>
-          {props.headerImg && (
-            <Col xs={2}>
-              <Img src={props.headerImg} />
-            </Col>
-          )}
-        </Row>
-      </Container>
-    </Background>
+    <Container>
+      <p>
+        <H1>{props.header} </H1>
+        {props.underline && <H3>{props.underline}</H3>}
+        {props.lecturer && (
+          <Lecturer>
+            by <a href={`/lektor/${props.lecturerId}`}>{props.lecturer}</a>
+          </Lecturer>
+        )}
+      </p>
+    </Container>
   </>
 );
 
