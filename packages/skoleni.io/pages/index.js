@@ -10,7 +10,18 @@ const P = styled.p`
 
 const Index = () => (
   <>
-    <CourseBar />
+    <CourseBar
+      courses={[
+        ["kubernetes", "kubernetes", "Ondrej Sika", "ondrejsika"],
+        ["docker", "docker", "Ondrej Sika", "ondrejsika"],
+        ["git", "git", "Vojtech Mares", "vojtechmares"],
+        ["gitlab ci", "gitlab_ci", "Vojtech Mares", "vojtechmares"],
+        ["proxmox", "proxmox", "Michael Kaplan", "michaelkaplan"],
+        ["ansible", "ansible", "Ondrej Sika", "ondrejsika"],
+        ["elk", "elk", "Ondrej Sika", "ondrejsika"],
+        ["react", "react", "Ondrej Sika", "ondrejsika"]
+      ]}
+    />
     <Container>
       <H3>Spoluprace</H3>
       <P>
@@ -27,3 +38,27 @@ const Index = () => (
   </>
 );
 export default Index;
+
+{
+  /* 
+              <H1>DOCKER </H1> <Lecturer>by Ondrej Sika</Lecturer>
+            </p>
+            <p>
+              <H1>GIT </H1> <Lecturer>by Vojtech Mares</Lecturer>
+            </p>
+            <p>
+              <H1>GITLAB CI </H1> <Lecturer>by Vojtech Mares</Lecturer>
+            </p>
+            <p>
+              <H1>PROXMOX </H1> <Lecturer>by Michael Kaplan</Lecturer>
+            </p>
+            <p>
+              <H1>ANSIBLE </H1> <Lecturer>by Ondrej Sika</Lecturer>
+            </p>
+            <p>
+              <H1>ELK </H1> <Lecturer>by Ondrej Sika</Lecturer>
+            </p>
+            <p>
+              <H1>REACT </H1> <Lecturer>by Ondrej Sika</Lecturer>
+            </p> */
+}
