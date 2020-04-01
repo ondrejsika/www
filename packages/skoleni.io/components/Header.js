@@ -5,9 +5,7 @@ import { Row, Col } from "react-bootstrap";
 
 const H1 = styled.h1`
   color: white;
-  font-weight: bold;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 3.5em;
+  font-size: 2.5em;
 `;
 const H3 = styled.h3`
   color: white;
@@ -21,7 +19,7 @@ const Background = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 1em 0;
+  padding: 2em 0;
 `;
 
 const Img = styled.img`

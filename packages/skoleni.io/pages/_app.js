@@ -4,9 +4,6 @@ import Head from "next/head";
 import site from "../config";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import { createGlobalStyle } from "styled-components";
-
-import Navbar from "../components/Navbar";
-import Container from "react-bootstrap/Container";
 import Footer from "../components/Footer";
 
 const GlobalStyle = createGlobalStyle`
@@ -36,9 +33,6 @@ class MyApp extends App {
           />
         </Head>
         <GlobalStyle />
-        <Container>
-          <Navbar />
-        </Container>
         <Layout {...pageProps}>
           <Component {...pageProps} />
         </Layout>
