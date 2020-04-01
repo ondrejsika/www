@@ -17,6 +17,11 @@ const lektori = () => (
     <Container>
       <OurTeam
         lecturers={[
+          [ondrejsika, "Ondřej Šika", "ondrejsika", "DevOps"],
+          [janpospisil, "Honza Pospíšil", "janpospisil", "xxxxxxx"],
+          [ondrejsika, "Ondřej Šika", "ondrejsika", "xxxxxxx"],
+          [janpospisil, "Honza Pospíšil", "janpospisil", "xxxxxxx"],
+          [ondrejsika, "Ondřej Šika", "ondrejsika"],
           [ondrejsika, "Ondřej Šika", "ondrejsika"],
           [janpospisil, "Honza Pospíšil", "janpospisil"]
         ]}
