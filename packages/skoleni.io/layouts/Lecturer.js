@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { Col, Row, Container } from "react-bootstrap";
 import Link from "next/link";
 
-const Name = styled.h2`
-  padding-top: 1em;
-  border-top: 1px solid #1f1f1f;
+const H1 = styled.h1`
+  font-size: 6em;
+  padding: 0.05em 0;
+  font-weight: bold;
+  text-transform: uppercase;
 `;
 
 const Img = styled.img`
@@ -17,12 +19,12 @@ const Bio = styled.p``;
 const AboutMe = styled.p``;
 
 const Li = styled.li`
-  text-transform: capitalize;
+  text-transform: uppercase;
 `;
 
 const Lecturer = props => (
   <Container>
-    <Name>{props.name}</Name>
+    <H1>{props.name}</H1>
     <Row>
       <Col sm={8}>
         {props.bio && <Bio>{props.bio}</Bio>}
