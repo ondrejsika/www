@@ -38,7 +38,7 @@ class MyApp extends App {
         <Layout {...pageProps}>
           <Component {...pageProps} />
         </Layout>
-        <Footer site={site} />
+        <Footer />
       </>
     );
   }
