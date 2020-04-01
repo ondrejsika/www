@@ -1,46 +1,57 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import nodejs from "@app/data/pictures/courses/nodejs-sq.png";
-import php from "@app/data/pictures/courses/php-sq.png";
-import react from "@app/data/pictures/courses/react-sq.webp";
-import gitlab from "@app/data/pictures/courses/gitlab-sq.png";
-import kubernetes from "@app/data/pictures/courses/kubernetes-sq.png";
-import docker from "@app/data/pictures/courses/docker.png";
-import javascript from "@app/data/pictures/courses/javascript-sq.png";
+import { Row, Col } from "react-bootstrap";
 
-const Img = styled.img`
-  padding: 1em 0;
-  width: 160px;
+const Courses = styled.div`
+  margin: 3em 0;
 `;
 
-const BackgroundReact = styled.div`
-  margin: 1em 0;
-  background-color: #282c33;
+const H1 = styled.span`
+  font-size: 6em;
+  padding: 0.05em 0;
+  font-weight: bold;
 `;
 
-const BackgroundDocker = styled.div`
-  margin: 1em 0;
-  padding: 0.6em 0em;
-  background-color: #349bea;
+const FOO = styled.span`
+  font-size: 2em;
+  font-weight: bold;
 `;
 
 const CourseBar = () => (
-  <Container>
-    <Row>
-      <Img src={nodejs} />
-      <Img src={php} />
-      <BackgroundReact>
-        <Img src={react} />
-      </BackgroundReact>
-      <Img src={gitlab} />
-      <Img src={kubernetes} />
-      <BackgroundDocker>
-        <Img src={docker} />
-      </BackgroundDocker>
-      <Img src={javascript} />
-    </Row>
-  </Container>
+  <>
+    <Courses>
+      <Container>
+        <Row>
+          <Col md={12}>
+            <p>
+              <H1>KUBERNETES </H1> <FOO>by Ondrej Sika</FOO>
+            </p>
+            <p>
+              <H1>DOCKER </H1> <FOO>by Ondrej Sika</FOO>
+            </p>
+            <p>
+              <H1>GIT </H1> <FOO>by Vojtech Mares</FOO>
+            </p>
+            <p>
+              <H1>GITLAB CI </H1> <FOO>by Vojtech Mares</FOO>
+            </p>
+            <p>
+              <H1>PROXMOX </H1> <FOO>by Michael Kaplan</FOO>
+            </p>
+            <p>
+              <H1>ANSIBLE </H1> <FOO>by Ondrej Sika</FOO>
+            </p>
+            <p>
+              <H1>ELK </H1> <FOO>by Ondrej Sika</FOO>
+            </p>
+            <p>
+              <H1>REACT </H1> <FOO>by Ondrej Sika</FOO>
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </Courses>
+  </>
 );
 export default CourseBar;
