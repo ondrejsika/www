@@ -5,6 +5,7 @@ import site from "../config";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import { createGlobalStyle } from "styled-components";
 import Footer from "../components/Footer";
+import Navbar from "@app/skoleni.io/components/Navbar";
 
 const GlobalStyle = createGlobalStyle`
   a, p  {
@@ -33,6 +34,7 @@ class MyApp extends App {
           />
         </Head>
         <GlobalStyle />
+        <Navbar />
         <Layout {...pageProps}>
           <Component {...pageProps} />
         </Layout>
