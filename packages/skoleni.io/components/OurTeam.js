@@ -1,45 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-import { Row, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import H1 from "@app/skoleni.io/components/H1";
 
-const Img = styled.img`
-  width: 190px;
-  text-align: center;
+const Wrapper = styled.div`
+  padding-bottom: 3em;
 `;
-
-const H4 = styled.h4`
-  font-size: 1em;
-  text-transform: capitalize;
-  text-align: center;
-  padding: 0.4em 0;
-  margin-bottom: 0;
-`;
-const H5 = styled.h5`
-  font-size: 0.8em;
-  text-transform: capitalize;
-  text-align: center;
-  margin-bottom: 1em;
-`;
-
-const ImgWrapper = styled.div`
-  margin-top: 1em;
-`;
-
 const OurTeam = props => (
-  <Container>
-    <ImgWrapper>
-      <Row>
-        {props.lecturers.map((lector, i) => (
-          <div key={i}>
-            <a href={`/lektor/${lector[2]}`}>
-              <Img src={lector[0]} fluid />
-              <H4>{lector[1]}</H4>
-            </a>
-            {lector[3] && <H5>( {lector[3]} )</H5>}
-          </div>
-        ))}
-      </Row>
-    </ImgWrapper>
-  </Container>
+  <Wrapper>
+    <Container>
+      {props.lecturers.map((lecturer, i) => (
+        <div key={i}>
+          <a href={`/lektor/${lecturer[1]}`}>
+            <p>
+              <H1>{lecturer[0]}</H1>
+            </p>
+          </a>
+        </div>
+      ))}
+    </Container>
+  </Wrapper>
 );
 export default OurTeam;
