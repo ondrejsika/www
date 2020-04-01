@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import OurTeam from "@app/skoleni.io/components/OurTeam";
-import ond from "@app/data/pictures/ondrejsika.jpg";
-import JanPospisil from "@app/data/pictures/lecturers/janpospisil.jpg";
+import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
+import janpospisil from "@app/data/pictures/lecturers/janpospisil.jpg";
 import { Container } from "react-bootstrap";
 import Header from "@app/skoleni.io/components/Header";
 
@@ -17,12 +17,8 @@ const lektori = () => (
     <Container>
       <OurTeam
         lecturers={[
-          [ond, "Ondřej Šika"],
-          [JanPospisil, "Honza Pospíšil"],
-          [ond, "Ondřej Šika"],
-          [JanPospisil, "Honza Pospíšil"],
-          [ond, "Ondřej Šika"],
-          [JanPospisil, "Honza Pospíšil"]
+          [ondrejsika, "Ondřej Šika", "ondrejsika"],
+          [janpospisil, "Honza Pospíšil", "janpospisil"]
         ]}
       />
       <Margin />

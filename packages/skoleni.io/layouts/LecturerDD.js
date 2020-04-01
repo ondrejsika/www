@@ -4,9 +4,11 @@ import lecturers_yaml from "@app/data/training/lecturers.yml";
 import StaticDB from "@app/common/staticdb";
 
 import img_ondrejsika from "@app/data/pictures/lecturers/ondrejsika/ondrejsika4x_steave_vertical.jpg";
+import img_janpospisil from "@app/data/pictures/lecturers/janpospisil.jpg";
 
 const imgs = {
-  ondrejsika: img_ondrejsika
+  ondrejsika: img_ondrejsika,
+  janpospisil: img_janpospisil
 };
 
 const LecturerDD = props => {
