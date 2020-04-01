@@ -2,21 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Col, Row, Container } from "react-bootstrap";
 import Link from "next/link";
-
-const H1 = styled.h1`
-  font-size: 6em;
-  padding: 0.05em 0;
-  font-weight: bold;
-  text-transform: uppercase;
-`;
+import H3 from "@app/skoleni.io/components/H3";
+import H1 from "@app/skoleni.io/components/H1";
 
 const Img = styled.img`
   width: 100%;
-`;
-
-const Header = styled.h3`
-  text-transform: uppercase;
-  font-size: 2em;
 `;
 
 const Text = styled.p`
@@ -33,10 +23,10 @@ const Lecturer = props => (
     <Row>
       <Col sm={8}>
         {props.bio && <Text>{props.bio}</Text>}
-        <Header>O mě</Header>
+        <H3>O mě</H3>
         {props.aboutMe && <Text>{props.aboutMe}</Text>}
 
-        <Header>Co skolim</Header>
+        <H3>Co skolim</H3>
         <ul>
           {props.courses.map((course, i) => (
             <Li key={i}>

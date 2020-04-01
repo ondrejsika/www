@@ -2,15 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import { Row, Col } from "react-bootstrap";
+import H1 from "@app/skoleni.io/components/H1";
 
 const Courses = styled.div`
   margin: 3em 0;
-`;
-
-const H1 = styled.span`
-  font-size: 6em;
-  padding: 0.05em 0;
-  font-weight: bold;
 `;
 
 const Lecturer = styled.span`

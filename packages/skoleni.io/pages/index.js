@@ -2,21 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import CourseBar from "../components/CourseBar";
+import H3 from "@app/skoleni.io/components/H3";
 
 const P = styled.p`
-  padding: 0.5em 0;
-  font-size: 1.3em;
-`;
-
-const Margin = styled.div`
-  margin: 6em;
+  padding: 0.5em 0 3em 0;
 `;
 
 const Index = () => (
   <>
     <CourseBar />
     <Container>
-      <h3>Spoluprace</h3>
+      <H3>Spoluprace</H3>
       <P>
         Chcete inzerovat sva skoleni na nasem webu? Napiste email a urcite se
         domluvime. Cena za inzerci je 20% z ceny kurzu za kazdeho kdo se na kurz
@@ -28,7 +24,6 @@ const Index = () => (
         firmy prochazet nezavysle profesionaly.
       </P>
     </Container>
-    <Margin />
   </>
 );
 export default Index;
