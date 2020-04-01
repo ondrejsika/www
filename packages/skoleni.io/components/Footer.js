@@ -45,7 +45,9 @@ const Footer = props => (
               <Row>
                 <Col>
                   <Content>
-                    <h4>Ondřej Šika</h4>
+                    <h4>
+                      <A href="/lektor/ondrejsika">Ondřej Šika</A>
+                    </h4>
                     <A href="mailto: ondrej@ondrejsika.com">
                       ondrej@ondrejsika.com
                     </A>
