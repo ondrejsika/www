@@ -42,11 +42,11 @@ DEV_SITES = {
     "ondrej-sika.uk": {
       "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
     },
+}
+PROD_SITES = {
     "trainera.de": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
     },
-}
-PROD_SITES = {
     "ansible-utbildning.se": {
       "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
