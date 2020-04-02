@@ -24,6 +24,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://endler.dev/about/>
 - <https://sugarshin.net/>
 - <https://nat.github.io/hello/> ([source](https://github.com/nat/hello))
+- <https://petrmanek.cz/>
 
     `}
     />
