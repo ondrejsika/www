@@ -9,7 +9,6 @@ const Courses = styled.div`
 
 const Lecturer = styled.span`
   font-size: 2em;
-  font-weight: bold;
 `;
 
 const CourseBar = props => (
@@ -21,9 +20,10 @@ const CourseBar = props => (
             <a href={`skoleni/${course[1]}`}>
               <H1>{course[0]} </H1>
             </a>
-            <a href={`lektor/${course[3]}`}>
-              <Lecturer>by {course[2]}</Lecturer>
-            </a>
+
+            <Lecturer>
+              by <a href={`lektor/${course[3]}`}>{course[2]}</a>
+            </Lecturer>
           </div>
         ))}
       </Container>
