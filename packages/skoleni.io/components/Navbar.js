@@ -9,30 +9,29 @@ const Nav = styled.ul`
   list-style-type: none;
   overflow: hidden;
 `;
+
 const NavItem = styled.li`
   float: right;
 `;
+
 const NavLink = styled.a`
   padding: 14px 16px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 1.4em;
   display: block;
   cursor: pointer;
   color: black;
 `;
 
+const Brand = styled.span``;
+
 const Navbar = () => (
   <>
     <Nav>
       <Container>
-        <NavItem>
-          <Link href="/skoleni">
-            <NavLink>Skoleni</NavLink>
-          </Link>
-        </NavItem>
         <NavItem>
           <Link href="/lektori">
             <NavLink>Lektori</NavLink>
@@ -44,9 +43,11 @@ const Navbar = () => (
           </Link>
         </NavItem>
         <NavItem>
-          <Link href="/">
-            <NavLink>Home</NavLink>
-          </Link>
+          <Brand>
+            <a href="/">
+              <NavLink>Skoleni.io</NavLink>
+            </a>
+          </Brand>
         </NavItem>
       </Container>
     </Nav>
