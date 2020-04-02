@@ -5,6 +5,11 @@ import SessionRegisterForm from "@app/ondrejsika-theme/layouts/SessionRegisterFo
 
 import sessions from "@app/data/training/sessions.yml";
 import AboutLecturer from "../components/AboutLecturer";
+import Markdown from "@app/common/components/Markdown";
+
+import StaticDB from "@app/common/staticdb";
+import courses_yaml from "@app/data/training/courses.yml";
+import Price from "@app/ondrejsika-theme/components/Price";
 
 let session_id_map = {};
 sessions.map((element, i) => {
@@ -12,7 +17,16 @@ sessions.map((element, i) => {
 });
 
 const SessionDD = props => {
+  let lang = props.site.lang || "cs";
+
   let session = sessions[session_id_map[props.session_id]];
+
+  let db = new StaticDB();
+  db.add("courses", courses_yaml);
+  db.setCursor("courses");
+  db.filter("id", session.course_id);
+  let course = db.getOne();
+
   if (!session) {
     return <></>;
   }
@@ -35,18 +49,24 @@ const SessionDD = props => {
               <li>online</li>
               <li>nebo misto konkretni</li>
             </ul>
-            <AboutLecturer lang={props.lang} />
+            <Markdown source={course.agenda[lang]} />
             <p>
-              pokud se chcete dozvedet vic podivejste se a stranku primo skoleni
-              <br />- link na stranku primo skoleni
+              Vice informaci naleznete zde -{" "}
+              <a href={`/skoleni/${session.course_id}`}>{session.name}</a>
             </p>
-            <h2>Co Vás naučím - body</h2>
-            <h2>Cena za školení</h2>
-            <p>Otevřený termín: 6 800 CZK bez DPH</p>
+            <h2>Lektor</h2>
+            <AboutLecturer lang={lang} />
           </div>
 
           <div className="col-md-5">
-            <h2>Registrace</h2>
+            <Price
+              PriceHeader={"Cena za školení"}
+              PriceBtn={"Nezávazně poptat školení"}
+            >
+              Otevřený termín {session.price} bez DPH
+            </Price>
+
+            <h2 className="pt-3">Registrace</h2>
 
             <SessionRegisterForm
               site={props.site}

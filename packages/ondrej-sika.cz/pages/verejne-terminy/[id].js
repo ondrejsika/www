@@ -5,7 +5,6 @@ let Page = props => (
   <SessionDD
     site={props.site}
     session_id={props.session_id}
-    lang={props.lang}
   />
 );
 

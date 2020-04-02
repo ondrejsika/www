@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Form, Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import Field from "@app/common/forms/Field";
 import fetch from "isomorphic-unfetch";
 import Router from "next/router";
-
+import Button from "@app/ondrejsika-theme/components/Button";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const recaptchaRef = React.createRef();
@@ -75,9 +75,11 @@ const SessionRegisterForm = props => {
 
       <ReCAPTCHA ref={recaptchaRef} sitekey={props.site.recaptcha_site_key} />
 
-      <Button variant="primary" type="submit">
-        Odeslat
-      </Button>
+      <div className="pt-3">
+        <Button site={props.site} href="#">
+          Odeslat
+        </Button>
+      </div>
     </Form>
   );
 };
