@@ -20,6 +20,17 @@
   recommendations:
     cs: ["spel", "vse", "sit"]
     sk: ["spel", "vse", "sit"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+      
+      - Teoretický úvod do Dockeru
+      - Instalace Dockeru (pro ty kteří nenainstalovali doma)
+      - Práce s kontejnery
+      - Práce s obrazy
+      - Docker Compose - vicekontejnerove aplikace v Dockeru
+      - Deployment do Swarmu
+      - Ukázka deploymentu do Kubernetes
   description:
     cs: |
       ### Co je to Docker
@@ -127,6 +138,18 @@
     cs: ["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]
   recommendations:
     cs: ["dimensiondata", "webglobe-yegon", "sit"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+
+      - Teoretický úvod do Kubernetes
+      - Instalace Minikube a kubectl (pro ty kteří nenainstalovali doma)
+      - Popis Kubernetes komponent
+      - Deployment do Kubernetes
+      - Práce s právy v Kubernetes clusteru
+      - Teoretický úvod do Helm balíčku
+      - Instalace / Deployment pomocí Helmu
+      - Psaní vlastního Helm balíčku
   description:
     cs: |
       ### Popis technologie
@@ -201,6 +224,15 @@
     cs: []
   recommendations:
     cs: ["dimensiondata", "webglobe-yegon", "sit"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+
+      - Co je Rancher
+      - Instalace Rancheru
+      - Správa Rancheru (Uživatele, Práva, ...)
+      - Správa Kubernetes clusteru v GUI (vytváření, aktualizace, ...)
+      - Správa Kuberneres clusteru pomoci Terraformu
   description:
     cs: |
       ### Popis technologie
@@ -260,6 +292,17 @@
     cs: []
   recommendations:
     cs: ["dimensiondata", "bohemiaenergy", "sit"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+
+      - Instalace a konfigurace GITu
+      - Vytvořit nový repozitář
+      - Základní ovládání GITu
+      - Práce v jedné větvi
+      - Práce ve větvích - merge, rebase (silná stránka Gitu)
+      - Práce se vzdálenými repozitáři
+      - Záchrana smazaných dat z repozitáře
   description:
     cs: |
       ### Co je to Git?
@@ -333,6 +376,17 @@
     cs: []
   recommendations:
     cs: ["CMS", "vse"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+
+      - Obecný úvod do CI
+      - Úvod do Gitlab CI
+      - Instalace Gitlab CI Runneru
+      - Práce s CI joby
+      - Tvorba CI pipelines
+      - Automatické nasazování
+      - Docker a CI
   description:
     cs: |
       ### K čemu se používá ?
@@ -404,6 +458,17 @@
     cs: []
   recommendations:
     cs: ["oxy", "oxyCTO", "sit"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+
+      - Základní koncept Ansible
+      - Instalace Ansible (pro ty kteří nenainstalovali doma)
+      - Základní ovládání Ansible
+      - Playbooks
+      - Moduly
+      - Šablony
+      - Secrets
   description:
     cs: |
       ### K čemu se používá?
@@ -482,6 +547,19 @@
     cs: []
   recommendations:
     cs: ["oxy", "oxyCTO", "sit"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+
+      - Základní koncept Terraformu
+      - Výhody Terraformu proti Ansible, Puppetu, ...
+      - Konfigurace Terraformu pro práci v teamu
+      - Ovládání Terraform CLI
+      - Úvod do Terraform Configuration Language (HCL)
+      - Terraform Providers - napojení na cloudy
+      - Práce s resources v Terraformu
+      - Terraform moduly
+      - Best Practice
   description:
     cs: |
       ### Co to je Terraform a k čemu se používá?
@@ -566,6 +644,17 @@
     cs: []
   recommendations:
     cs: ["spel", "vse", "sit"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+
+      - Úvod do Virtualizace, Kontejnerizace a Proxmoxu
+      - Nastavení Proxmoxu
+      - Nastavení storage
+      - Práce s KVM virtuálnímy servery
+      - Práce s LXC kontejnery (lightweight virtualizace)
+      - Backup, restore
+      - Migrace a HA
   description:
     cs: |
       ### Co je to Proxmox
@@ -626,6 +715,18 @@
     cs: []
   recommendations:
     cs: ["spel", "vse", "sit"]
+  agenda: 
+    cs: |
+      ### Co Vás naučím
+      
+      -	Úvod do Prometheus ekosystému
+      - Instalace Promethea a Alertmanageru
+      - Exportéry – získávání dat
+      - Konfigurace Promethea a Alertmanageru
+      - Práce s PROMQL (dotazovací jazyk Promethea)
+      - Integrace s Grafanou
+      - Prometheus Pushgateway
+      - Integrace s Dockerem, Kubernetes a vlastní aplikací
   description:
     cs: |
       ### Co je to Prometheus
