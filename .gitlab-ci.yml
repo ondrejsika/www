@@ -4899,3 +4899,78 @@ trainera.de prod deploy k8s:
     name: prod trainera.de
     url: https://trainera.de
   dependencies: []
+
+sikalabs.com build js:
+  stage: build_js
+  image: node
+  variables:
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - rm -rf packages/sikalabs.com/out
+    - yarn run static-sikalabs.com
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_JS
+  only:
+    changes:
+      - packages/common/**/*
+      - packages/sikalabs.com/**/*
+      - yarn.lock
+  artifacts:
+    name: sikalabs.com
+    paths:
+      - packages/sikalabs.com/out
+
+
+sikalabs.com build docker:
+  dependencies:
+    - sikalabs.com build js
+  variables:
+    GIT_STRATEGY: none
+  stage: build_docker
+  script:
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - cp ci/docker/* packages/sikalabs.com/
+    - docker build -t registry.sikahq.com/www/www/sikalabs.com:$CI_COMMIT_SHORT_SHA packages/sikalabs.com
+    - rm packages/sikalabs.com/Dockerfile
+    - rm packages/sikalabs.com/nginx-site.conf
+    - docker push registry.sikahq.com/www/www/sikalabs.com:$CI_COMMIT_SHORT_SHA
+  except:
+    variables:
+      - $EXCEPT_BUILD
+      - $EXCEPT_BUILD_DOCKER
+  only:
+    changes:
+      - packages/common/**/*
+      - packages/sikalabs.com/**/*
+      - yarn.lock
+
+sikalabs.com prod deploy k8s:
+  stage: deploy_prod
+  variables:
+    GIT_STRATEGY: none
+    KUBECONFIG: .kubeconfig
+  script:
+    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - helm repo add ondrejsika https://helm.oxs.cz
+    - helm upgrade --install sikalabs-com ondrejsika/one-image --set host=sikalabs.com --set image=$CI_REGISTRY_IMAGE/sikalabs.com:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - kubectl rollout status deploy sikalabs-com
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
+  only:
+    refs:
+      - master
+    changes:
+      - packages/common/**/*
+      - packages/sikalabs.com/**/*
+      - yarn.lock
+  environment:
+    name: prod sikalabs.com
+    url: https://sikalabs.com
+  dependencies: []
