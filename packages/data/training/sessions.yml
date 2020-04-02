@@ -136,6 +136,8 @@
   length: 2 dny
   date_from: 14.4.2020
   date_to: 15.4.2020
+  facebook_event: https://www.facebook.com/events/2405784686189990/
+  linkedin_event:
 - id: kubernetes-praha-16-04-2020
   active: true
   country: cz
@@ -148,6 +150,8 @@
   length: 2 dny
   date_from: 16.4.2020
   date_to: 17.4.2020
+  facebook_event: https://www.facebook.com/events/536911027209179/
+  linkedin_event:
 - id: terraform-praha-20-04-2020
   active: true
   country: cz
@@ -196,6 +200,8 @@
   length: 1 den
   date_from: 27.4.2020
   date_to: 27.4.2020
+  facebook_event: https://www.facebook.com/events/296308344680464/
+  linkedin_event:
 - id: ansible-praha-01-05-2020
   active: true
   country: cz
@@ -250,7 +256,6 @@
   length: 2 days
   date_from: 15.1.2020
   date_to: 16.1.2020
-
 - id: gitlab-ci-berlin-17-01-2020
   active: false
   country: de
