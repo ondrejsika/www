@@ -20,7 +20,7 @@ const CourseBar = props => (
           <div key={i}>
             <a href={`skoleni/${course[1]}`}>
               <H1>{course[0]} </H1>
-            </a>{" "}
+            </a>
             <a href={`lektor/${course[3]}`}>
               <Lecturer>by {course[2]}</Lecturer>
             </a>
