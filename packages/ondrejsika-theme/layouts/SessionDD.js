@@ -4,6 +4,7 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 import SessionRegisterForm from "@app/ondrejsika-theme/layouts/SessionRegisterForm";
 
 import sessions from "@app/data/training/sessions.yml";
+import AboutLecturer from "../components/AboutLecturer";
 
 let session_id_map = {};
 sessions.map((element, i) => {
@@ -29,19 +30,21 @@ const SessionDD = props => {
       >
         <Row>
           <div className="col-md-7">
-            <h2>Datum a misto konani</h2>
-            Aenean porta a massa vel mattis. Sed lacus enim, volutpat sit amet
-            velit consectetur, hendrerit lacinia urna.
-            <h2>Lektor</h2>
-            Nulla sit amet scelerisque orci. Etiam feugiat id sem eget bibendum.
-            Fusce efficitur rutrum aliquet. Duis quis aliquam odio. Maecenas
-            eget orci non dolor tempor consectetur.
-            <h2>Nazory ucastniky</h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
-            magna lorem. Duis ut convallis lacus. Curabitur vel dignissim ex,
-            vitae fringilla leo. Sed blandit neque dapibus, hendrerit sem in,
-            sagittis massa.
+            <h2>Místo konání</h2>
+            <ul>
+              <li>online</li>
+              <li>nebo misto konkretni</li>
+            </ul>
+            <AboutLecturer lang={props.lang} />
+            <p>
+              pokud se chcete dozvedet vic podivejste se a stranku primo skoleni
+              <br />- link na stranku primo skoleni
+            </p>
+            <h2>Co Vás naučím - body</h2>
+            <h2>Cena za školení</h2>
+            <p>Otevřený termín: 6 800 CZK bez DPH</p>
           </div>
+
           <div className="col-md-5">
             <h2>Registrace</h2>
 
