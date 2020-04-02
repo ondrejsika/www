@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Row } from "react-bootstrap";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import SessionRegisterForm from "@app/ondrejsika-theme/layouts/SessionRegisterForm";
 
@@ -27,9 +27,24 @@ const SessionDD = props => {
         }
         hideNewsletter={true}
       >
-        <h2>Registrovat na skoleni</h2>
-        <div className="row">
-          <div className="col-md-4">
+        <Row>
+          <div className="col-md-7">
+            <h2>Datum a misto konani</h2>
+            Aenean porta a massa vel mattis. Sed lacus enim, volutpat sit amet
+            velit consectetur, hendrerit lacinia urna.
+            <h2>Lektor</h2>
+            Nulla sit amet scelerisque orci. Etiam feugiat id sem eget bibendum.
+            Fusce efficitur rutrum aliquet. Duis quis aliquam odio. Maecenas
+            eget orci non dolor tempor consectetur.
+            <h2>Nazory ucastniky</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+            magna lorem. Duis ut convallis lacus. Curabitur vel dignissim ex,
+            vitae fringilla leo. Sed blandit neque dapibus, hendrerit sem in,
+            sagittis massa.
+          </div>
+          <div className="col-md-5">
+            <h2>Registrace</h2>
+
             <SessionRegisterForm
               site={props.site}
               organizer_id={null}
@@ -38,17 +53,7 @@ const SessionDD = props => {
               session_slug={session.id}
             />
           </div>
-        </div>
-        <div className="row">
-          <div className="col-md-7">
-            <h2>Datum a misto konani</h2>
-            <h2>Lektor</h2>
-            <h2>Nazory ucastniky</h2>
-          </div>
-          <div className="col-md-5">
-            <h2>Registrace</h2>
-          </div>
-        </div>
+        </Row>
       </Article>
     </>
   );
