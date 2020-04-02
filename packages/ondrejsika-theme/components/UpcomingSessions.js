@@ -87,6 +87,7 @@ class UpcomingSessions extends React.Component {
               />
             </th>
             <th />
+            <th />
             {(() => {
               if (!this.props.hide_add_to_google_calendar) return <th />;
             })()}
@@ -148,6 +149,18 @@ class UpcomingSessions extends React.Component {
                       se="Fråga efter en träning"
                     />
                   </a>
+                </td>
+                <td scope="row">
+                  {course.facebook_event && (
+                    <a
+                      href={course.facebook_event}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-success btn-sm"
+                    >
+                      FB&nbsp;Event
+                    </a>
+                  )}
                 </td>
                 {(() => {
                   if (!this.props.hide_add_to_google_calendar)
