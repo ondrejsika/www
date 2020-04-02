@@ -44,6 +44,13 @@ DEV_SITES = {
     },
 }
 PROD_SITES = {
+    "sikalabs.com": {
+      "dependencies": {
+        "packages/common/**/*",
+        "packages/{{site}}/**/*",
+        "yarn.lock",
+      }
+    },
     "trainera.de": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
     },
