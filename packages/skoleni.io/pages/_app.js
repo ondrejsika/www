@@ -11,6 +11,13 @@ const GlobalStyle = createGlobalStyle`
   a, p  {
     font-family: 'IBM Plex Sans', sans-serif;
   }
+  a {
+    color: #131480;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #C8BFB0;
+  }
 `;
 
 const Layout = props => <div>{props.children}</div>;
