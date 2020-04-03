@@ -220,6 +220,8 @@
   length: 1 den
   date_from: 1.5.2020
   date_to: 1.5.2020
+  facebook_event: https://www.facebook.com/events/507435356598852/
+  linkedin_event:
 - id: git-praha-15-05-2020
   active: true
   country: cz
@@ -228,11 +230,12 @@
   name: Školení Git
   city: Praha
   price: 6800 CZK
-  venue_id: paralelni-polis
+  venue_id: online
   length: 1 den
   date_from: 15.5.2020
   date_to: 15.5.2020
-
+  facebook_event: https://www.facebook.com/events/228026568576729/
+  linkedin_event:
 
 # EuropeTour 2020 January
 # Germany
@@ -1967,6 +1970,8 @@
   length: 2 dny
   date_from: 25.5.2020
   date_to: 26.5.2020
+  facebook_event: https://www.facebook.com/events/212671346684150
+  linkedin_event:
 - id: gitlab-ci-brno-27-05-2020
   active: true
   country: cz
