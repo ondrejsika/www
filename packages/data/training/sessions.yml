@@ -192,6 +192,8 @@
   length: 1 den
   date_from: 24.4.2020
   date_to: 24.4.2020
+  facebook_event: https://www.facebook.com/events/236084434111712/
+  linkedin_event:
 - id: rancher-praha-27-04-2020
   active: true
   country: cz
