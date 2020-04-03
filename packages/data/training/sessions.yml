@@ -2001,6 +2001,8 @@
   length: 1 day
   date_from: 3.6.2020
   date_to: 3.6.2020
+  facebook_event: https://www.facebook.com/events/1332721420251761/
+  linkedin_event:
 - id: proxmox-brno-04-06-2020
   active: true
   country: cz
@@ -2037,6 +2039,8 @@
   length: 2 days
   date_from: 8.6.2020
   date_to: 9.6.2020
+  facebook_event: https://www.facebook.com/events/2475951512718465/
+  linkedin_event:
 - id: ansible-online-10-6-2020
   active: true
   country: de
@@ -2049,6 +2053,8 @@
   length: 1 day
   date_from: 10.6.2020
   date_to: 10.6.2020
+  facebook_event: https://www.facebook.com/events/1446869245474135/
+  linkedin_event:
 - id: prometheus-online-11-6-2020
   active: true
   country: de
