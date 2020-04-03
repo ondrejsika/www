@@ -2069,6 +2069,8 @@
   length: 1 day
   date_from: 11.6.2020
   date_to: 11.6.2020
+  facebook_event: https://www.facebook.com/events/207975663824552/
+  linkedin_event:
 # Praha Root.cz Zari
 - id: proxmox-praha-11-09-2020
   active: true
