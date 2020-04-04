@@ -207,7 +207,7 @@
   date_from: 27.4.2020
   date_to: 27.4.2020
   facebook_event: https://www.facebook.com/events/296308344680464/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652270217235836928/
 - id: ansible-praha-01-05-2020
   active: true
   country: cz
@@ -221,7 +221,7 @@
   date_from: 1.5.2020
   date_to: 1.5.2020
   facebook_event: https://www.facebook.com/events/507435356598852/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652270885434609664/
 - id: git-praha-15-05-2020
   active: true
   country: cz
@@ -235,7 +235,7 @@
   date_from: 15.5.2020
   date_to: 15.5.2020
   facebook_event: https://www.facebook.com/events/228026568576729/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652271625670545408/
 
 # EuropeTour 2020 January
 # Germany
@@ -1971,7 +1971,7 @@
   date_from: 25.5.2020
   date_to: 26.5.2020
   facebook_event: https://www.facebook.com/events/212671346684150
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652273229278785536/
 - id: gitlab-ci-brno-27-05-2020
   active: true
   country: cz
@@ -1985,7 +1985,7 @@
   date_from: 27.5.2020
   date_to: 27.5.2020
   facebook_event: https://www.facebook.com/events/257911625215990/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652274053505667072/
 - id: kubernetes-brno-28-05-2020
   active: true
   country: cz
