@@ -130,7 +130,7 @@
   lang: cs
   course_id: docker
   name: Školení Docker
-  city: Praha
+  city: online
   price: 11999 CZK
   venue_id: online
   length: 2 dny
@@ -144,7 +144,7 @@
   lang: cs
   course_id: kubernetes
   name: Školení Kubernetes
-  city: Praha
+  city: online
   price: 11999 CZK
   venue_id: online
   length: 2 dny
@@ -158,7 +158,7 @@
   lang: cs
   course_id: terraform
   name: Školení Terraform
-  city: Praha
+  city: online
   price: 6800 CZK
   venue_id: online
   length: 1 den
@@ -172,7 +172,7 @@
   lang: cs
   course_id: gitlab-ci
   name: Školení Gitlab CI
-  city: Praha
+  city: online
   price: 6800 CZK
   venue_id: online
   length: 1 den
@@ -186,7 +186,7 @@
   lang: cs
   course_id: prometheus
   name: Školení Prometheus
-  city: Praha
+  city: online
   price: 6800 CZK
   venue_id: online
   length: 1 den
@@ -200,7 +200,7 @@
   lang: cs
   course_id: rancher
   name: Školení Rancher
-  city: Praha
+  city: online
   price: 6800 CZK
   venue_id: online
   length: 1 den
@@ -214,7 +214,7 @@
   lang: cs
   course_id: ansible
   name: Školení Ansible
-  city: Praha
+  city: online
   price: 6800 CZK
   venue_id: online
   length: 1 den
@@ -228,7 +228,7 @@
   lang: cs
   course_id: git
   name: Školení Git
-  city: Praha
+  city: online
   price: 6800 CZK
   venue_id: online
   length: 1 den
@@ -1964,7 +1964,7 @@
   lang: cs
   course_id: docker
   name: Školení Docker
-  city: Brno
+  city: online
   price: 11999 CZK
   venue_id: rootcz-brno
   length: 2 dny
@@ -1978,7 +1978,7 @@
   lang: cs
   course_id: gitlab-ci
   name: Školení Gitlab CI
-  city: Brno
+  city: online
   price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
@@ -1992,7 +1992,7 @@
   lang: cs
   course_id: kubernetes
   name: Školení Kubernetes
-  city: Brno
+  city: online
   price: 11999 CZK
   venue_id: rootcz-brno
   length: 2 dny
@@ -2015,7 +2015,7 @@
   facebook_event: https://www.facebook.com/events/1332721420251761/
   linkedin_event:
 - id: proxmox-brno-04-06-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: proxmox
@@ -2032,7 +2032,7 @@
   lang: cs
   course_id: terraform
   name: Školení Terraform
-  city: Brno
+  city: online
   price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
