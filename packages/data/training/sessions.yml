@@ -137,7 +137,7 @@
   date_from: 14.4.2020
   date_to: 15.4.2020
   facebook_event: https://www.facebook.com/events/2405784686189990/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652235478722465792/
 - id: kubernetes-praha-16-04-2020
   active: true
   country: cz
