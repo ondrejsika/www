@@ -1984,6 +1984,8 @@
   length: 1 den
   date_from: 27.5.2020
   date_to: 27.5.2020
+  facebook_event: https://www.facebook.com/events/257911625215990/
+  linkedin_event:
 - id: kubernetes-brno-28-05-2020
   active: true
   country: cz
@@ -1996,6 +1998,8 @@
   length: 2 dny
   date_from: 28.5.2020
   date_to: 29.5.2020
+  facebook_event: https://www.facebook.com/events/533943073989960/
+  linkedin_event:
 - id: gitlab-ci-online-3-6-2020
   active: true
   country: de
@@ -2034,6 +2038,8 @@
   length: 1 den
   date_from: 5.6.2020
   date_to: 5.6.2020
+  facebook_event: https://www.facebook.com/events/214450903228658/
+  linkedin_event:
 - id: kubernetes-online-8-6-2020
   active: true
   country: de
