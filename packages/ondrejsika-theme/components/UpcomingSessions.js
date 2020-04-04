@@ -4,6 +4,11 @@ import Translate from "@app/common/components/Translate";
 import sessions_file from "@app/data/training/sessions.yml";
 import AddToGoogleCalendar from "@app/common/components/AddToGoogleCalendar";
 import Link from "next/link";
+import {
+  FaRegCalendarPlus,
+  FaLinkedinIn,
+  FaFacebookSquare
+} from "react-icons/fa";
 
 const date_for_google_calendar_link = dd_mm_yyyy =>
   dd_mm_yyyy
@@ -88,6 +93,7 @@ class UpcomingSessions extends React.Component {
             </th>
             <th />
             <th />
+            <th />
             {(() => {
               if (!this.props.hide_add_to_google_calendar) return <th />;
             })()}
@@ -156,9 +162,21 @@ class UpcomingSessions extends React.Component {
                       href={course.facebook_event}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-success btn-sm"
+                      className="btn btn-primary btn-sm"
                     >
-                      FB&nbsp;Event
+                      <FaFacebookSquare />
+                    </a>
+                  )}
+                </td>
+                <td scope="row">
+                  {course.linkedin_event && (
+                    <a
+                      href={course.linkedin_event}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm"
+                    >
+                      <FaLinkedinIn />
                     </a>
                   )}
                 </td>
@@ -173,12 +191,7 @@ class UpcomingSessions extends React.Component {
                           to={date_for_google_calendar_link(course.date_to)}
                         >
                           <a className="btn btn-primary btn-sm" target="_blank">
-                            <Translate
-                              default="en"
-                              lang={this.props.lang}
-                              cs="Do&nbsp;kalendáře"
-                              en="Add&nbsp;to&nbsp;Calendar"
-                            />
+                            <FaRegCalendarPlus />
                           </a>
                         </AddToGoogleCalendar>
                       </td>
