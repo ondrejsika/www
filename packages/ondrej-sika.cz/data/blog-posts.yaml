@@ -1,6 +1,6 @@
 - id: wireguard
   title: 'Wireguard: Nahrada IPSecu a OpenVPN v jednom'
-  date: 1. 1. 2020
+  date: 4. 4. 2020
   tags:
     - wireguard
     - vpn
