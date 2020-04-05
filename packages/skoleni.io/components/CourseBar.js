@@ -7,7 +7,7 @@ const Courses = styled.div`
 `;
 
 const Lecturer = styled.span`
-  font-size: 4vw;
+  font-size: 1.5em;
 `;
 
 const CourseBar = props => (
