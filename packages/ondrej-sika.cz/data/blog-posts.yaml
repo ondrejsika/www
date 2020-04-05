@@ -1,3 +1,175 @@
+- id: wireguard
+  title: 'Wireguard: Nahrada IPSecu a OpenVPN v jednom'
+  date: 1. 1. 2020
+  tags:
+    - wireguard
+    - vpn
+  perex: |
+    Wireguard je extreme jednoducha a rychla VPN. Vlastne nahrada IPSecu a OpenVPN v jednom. Bezi vsude, v kernelu je jako network modul a ma klienta pro Mac, iOS, Android, Windows, ...
+  content: |
+    Na Wireguard uz me pred nejakym casem navedl Michael Kaplan a chci mu za to verene podekovat. I prez pocatecni problemy (asi jako se vsim) jsem Wireguard rozjel a je naprosto super.
+
+    ## Co je Wireguard
+
+    Wireguard je extreme jednoducha a rychla VPN. Vlastne nahrada IPSecu a OpenVPN v jednom. Bezi vsude, v kernelu je jako network modul a ma klienta pro Mac, iOS, Android, Windows, ...
+
+    Pouziva moderni kryptografii (jako SSH) a nepouziva zadne x509 certificates, proste jen verejny a privatni klic. Konfigurace siti, jak na strane serveru, tak na strane klineta je velmi jednoducha. Muzete velmi jednoduse nakonfigurovat jake rozsahy maji byt pristupne z VPN na strane serveru a jaky trafik ma jit prez VPN na strane klienta. A to vse v jednom souboru `/etc/wireguard/wg0.conf` a spousteni pomoci jednoho prikazu `wg-quick up wg0`. Strasne jednoduche.
+
+    Podporuje take roaming, muzete menit IP adresu a stale komunikovat se zbytkem site. Hezky to napsal Petr Krcmar v clanku na Rootu: https://www.root.cz/clanky/wireguard-moderni-a-snadno-pouzitelna-vpn-v-linuxovem-jadre/
+
+    ## Setup Wireguardu
+
+    Pojdme si ukazat jak Wireguard nakonfigurovat. Mame VPN server na IP adrese `vpn.sikademo.com`, firemni sit `192.168.100.0/24` kde mame server s clientem k VPN na adrese `192.168.100.101`. Dale mame notebook a telefon, ktere chceme take do VPN pripojit.
+
+    Budu pouzivat VPN server na Debian 10, kde je wireguard v repozitarich. Na firemni siti take pobezi Debian 10, na notebooku mam Mam mac a telefon iPhone.
+
+    ### Instalace
+
+    Na serverech nainstaluju balicky `wireguard` a `resolvconf`.
+
+    ```
+    apt update && apt install -y wireguard resolvconf
+    ```
+
+    Na Macu nainstaluju Wireguard z [Mac App Store](https://apps.apple.com/us/app/wireguard/id1451685025), stejne tak na iPhone z [App Store](https://apps.apple.com/us/app/wireguard/id1441195209).
+
+    Pokud chci i wireguard tools musim je nainstalovat pomoci brew
+
+    ```
+    brew install wireguard-tools
+    ```
+
+    ## Setup Serveru
+
+    Na serveru (`vpn.sikademo.com`) si vytvorim konfiguracni soubor `/etc/wireguard/wg0.conf` s timto obsahem:
+
+    ```
+    [Interface]
+    Address = 10.10.0.1/24
+    ListenPort = 51820
+    PrivateKey = Vpn/Priv=
+
+    PostUp = iptables -t mangle -A POSTROUTING -p tcp --tcp-flags SYN,RST SYN -o eth0 -j TCPMSS --clamp-mss-to-pmtu
+    PostUp = ip6tables -t mangle -A POSTROUTING -p tcp --tcp-flags SYN,RST SYN -o eth0 -j TCPMSS --clamp-mss-to-pmtu
+    PostUp = iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    PostUp = ip6tables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    PostUp = iptables -A FORWARD -i %i -j ACCEPT
+    PostUp = ip6tables -A FORWARD -i %i -j ACCEPT
+    PostUp = sysctl -q -w net.ipv4.ip_forward=1
+    PostUp = sysctl -q -w net.ipv6.conf.all.forwarding=1
+
+    PostDown = sysctl -q -w net.ipv4.ip_forward=0
+    PostDown = sysctl -q -w net.ipv6.conf.all.forwarding=0
+    PostDown = iptables -D FORWARD -i %i -j ACCEPT
+    PostDown = ip6tables -D FORWARD -i %i -j ACCEPT
+    PostDown = iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+    PostDown = ip6tables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+    PostDown = iptables -t mangle -D POSTROUTING -p tcp --tcp-flags SYN,RST SYN -o eth0 -j TCPMSS --clamp-mss-to-pmtu
+    PostDown = ip6tables -t mangle -D POSTROUTING -p tcp --tcp-flags SYN,RST SYN -o eth0 -j TCPMSS --clamp-mss-to-pmtu
+
+    [Peer]
+    PublicKey = Office/Pub=
+    PresharedKey = Office/Preshared=
+    AllowedIPs = 10.10.0.101/32, 192.168.100.0/24
+
+    [Peer]
+    PublicKey = Mac/Pub=
+    PresharedKey = Mac/Preshared=
+    AllowedIPs = 10.10.0.201/32
+
+    [Peer]
+    PublicKey = Phone/Pub=
+    PresharedKey = Phone/Preshared=
+    AllowedIPs = 10.10.0.202/32
+    ```
+
+    Interface popisuje jak vypada interface wg0, coz je standartni interface. Adresa `10.10.0.1/24` je adresa na VPN siti a port `51820` je standartni UDP port kde Wireguard posloucha. Dale je tam privatni klic (v me ukazce nevalidni placeholder `Server/Private=`), ktery vygenerujete prikazem `wg genkey`. V seci post up / post down je nastaveni forwardu a masquarade.
+
+    Pak jsou na definice jednotlivich klientu, peeru. Budeme mit 3 klienty: server v kancerali, pocitac a telefon. Klienti jsou definovani pouze jejich verejnym klicem, zadne certifikaty nejsou potreba.
+
+    Prvni klient (office) mam v allowed IPs take rozsah site v kancelari abychom se na ni z VPN dostali.
+
+    Konfigrurce klientu jsou jednodussi, takhle vypada konfiguracni soubor na klientu v kancelari:
+
+    ```
+    [Interface]
+    PrivateKey = Priv/Office=
+    Address = 10.10.0.100/32
+    DNS = 1.1.1.1
+
+    PostUp = sysctl -w net.ipv4.ip_forward=1
+    PostUp = iptables -A FORWARD -i wg0 -j ACCEPT
+    PostUp = iptables -A FORWARD -o wg0 -j ACCEPT
+    PostUp = iptables -t nat -A POSTROUTING -o wg0 -j MASQUERADE
+    PostUp = iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+    PostDown = sysctl -w net.ipv4.ip_forward=0
+    PostDown = iptables -D FORWARD -i wg0 -j ACCEPT
+    PostDown = iptables -D FORWARD -o wg0 -j ACCEPT
+    PostDown = iptables -t nat -D POSTROUTING -o wg0 -j MASQUERADE
+    PostDown = iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+
+    [Peer]
+    PublicKey = Vpn/Pub=
+    PresharedKey = Office/Preshared=
+    AllowedIPs = 10.10.0.0/24
+    Endpoint = vpn.sikademo.com:51820
+    PersistentKeepalive = 25
+    ```
+
+    Klinet mam zase privatni klic (ktery ma server v peeru) a v peeru ma verejny klic VPN serveru. Dale ma adresu `10.10.0.100/32` na VPN a DNS nastavene na Cloudflare (neco jako `8.8.8.8` od Google).
+
+    V Peeru ma potom pouze VPN server kam se pripojuje.
+
+    Co se tyka konfigurace na Macu a iPhone, je to jeste jednodussi.
+
+    ```
+    [Interface]
+    PrivateKey = Mac/Priv=
+    Address = 10.10.0.201/24
+    DNS = 1.1.1.1
+
+    [Peer]
+    PublicKey = Vpn/Pub=
+    PresharedKey = Mac/Preshared=
+    AllowedIPs = 10.10.0.0/24, 192.168.100.0/24
+    Endpoint = vpn.sikademo.com:51820
+    PersistentKeepalive = 25
+    ```
+
+    Na Macu ani na iPhone uz neni potreba PostUp/PostDown, takze konfigurace je jeste primocarejsi. Kdyz se podivame do AllowedIPs, je tam krome site VPN take adresa site v kancelari, coz nam rika ze packety smerujici do kancelare maji jit skrz VPN.
+
+    Pokud chceme aby vsechen traffic byl skrz VPN, nastavime `AllowedIPs = 0.0.0.0/0, ::/0`.
+
+    Konfigrurce na telefonu vypada velice podobne
+
+    ```
+    [Interface]
+    PrivateKey = Phone/Priv=
+    Address = 10.10.0.202/24
+    DNS = 1.1.1.1
+
+    [Peer]
+    PublicKey = Vpn/Pub=
+    PresharedKey = Phone/Preshared=
+    AllowedIPs = 10.10.0.0/24, 192.168.100.0/24
+    Endpoint = vpn.sikademo.com:51820
+    PersistentKeepalive = 25
+    ```
+
+    ## Start
+
+    Kdyz chceme na Linuxu Wireguard zapnout staci nam k tomu `wg-quick up wg0`. `wg0` je nazev interface a zaroven jsemo souboru v `/etc/wireguard/`. Pokud jej chceme vypnout, pouzijeme `wg-quick up wg0`. Pokud soubor zmenime, musime vzdy Wiregurd vypnout a pak zapnout.
+
+    Na Macu a v telefonu je to jen pripojit se do profilu VPN.
+
+    A je to. Wireguard je hodne robustni, takze i kdyz se spojeni rozvaze, dokaze si ho velmi rychle navazat zpet bez nutnosti interakce.
+
+    ## Shrnutí
+
+    S Wireguardem mam velmi pozitivni zkusenost, uz jej pouzivam na vsech svych projektech produkcne a zadna chyba. Rozodne je to neco co stoji za vyzkouseni a myslim si ze si jej zamilujete (i ti, kdo nesnasi VPN a site jako ja).
+
+
 - id: coronavirus-outbreak
   nostatic: true
   title: Coronavirus 😷🦠
