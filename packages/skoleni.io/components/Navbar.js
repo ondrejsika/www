@@ -30,8 +30,8 @@ const Brand = styled.span``;
 
 const Navbar = () => (
   <>
-    <Nav>
-      <Container>
+    <Container>
+      <Nav>
         <NavItem>
           <Link href="/lektori">
             <NavLink>Lektori</NavLink>
@@ -49,8 +49,8 @@ const Navbar = () => (
             </a>
           </Brand>
         </NavItem>
-      </Container>
-    </Nav>
+      </Nav>
+    </Container>
   </>
 );
 
