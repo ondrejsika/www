@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import H1 from "@app/skoleni.io/components/H1";
 
 const Margin = styled.div`
-  margin-bottom: 25em;
+  margin-bottom: 10em;
 `;
 
 const P = styled.p`

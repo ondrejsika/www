@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import H1 from "@app/skoleni.io/components/H1";
 
 const Wrapper = styled.div`
-  padding-bottom: 3em;
+  margin-bottom: 10em;
 `;
 const OurTeam = props => (
   <Wrapper>
