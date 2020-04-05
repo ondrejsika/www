@@ -9,7 +9,7 @@ const Page = props => (
     course_title="Prometheus Training"
     logo="/static/prometheus.png"
     price_self_funded="399 EUR"
-    price_in_house="xx EUR"
+    price_in_house="1 300 EUR"
     description={`
 ### What is Prometheus
 Prometheus is widely-adopted open-source systems monitoring and alerting toolkit and metrics server. It allows you to collect data metrics from your app and most of your infrastructure components, as well as slicing and dicing them in order to generate ad-hoc graphs, tables and alerts. Both Prometheus and Kubernetes joined CNCF - Cloud Native Computing Foundation.
