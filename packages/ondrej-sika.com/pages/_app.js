@@ -24,7 +24,8 @@ const Navbar = (
           ["GITLAB CI", "/training/gitlab-ci"],
           ["DOCKER", "/training/docker"],
           ["KUBERNETES", "/training/kubernetes"],
-          ["ANSIBLE", "/training/ansible"]
+          ["ANSIBLE", "/training/ansible"],
+          ["PROMETHEUS", "/training/prometheus"]
           // ["TERRAFORM", "/training/terraform"],
           // ["REACT & NEXT.JS", "/training/react"]
         ]
