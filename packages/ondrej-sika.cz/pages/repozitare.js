@@ -47,6 +47,7 @@ const Page = () => (
 - Droplet na Digital Ocean - https://github.com/ondrejsika/terraform-do-droplet-example
 - Jedna EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-example
 - Vice EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-many-example
+- Example infrastructure for Rook Ceph cluster - https://github.com/ondrejsika/terraform-do-rook-ceph-example
 
 #### Custom Providers
 
