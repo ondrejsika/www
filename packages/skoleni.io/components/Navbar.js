@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
+import Link from "@app/skoleni.io/components/MyLink";
 import { Container } from "react-bootstrap";
 
 const Nav = styled.ul`
@@ -12,9 +12,6 @@ const Nav = styled.ul`
 
 const NavItem = styled.li`
   float: right;
-`;
-
-const NavLink = styled.a`
   padding: 14px 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -24,7 +21,6 @@ const NavLink = styled.a`
   display: block;
   cursor: pointer;
   color: black;
-
   @media (max-width: 600px) {
     padding: 0.5em 0.4em 1em 0.4em;
     font-size: 1.25em;
@@ -43,20 +39,14 @@ const Navbar = () => (
     <Container>
       <Nav>
         <NavItem>
-          <Link href="/lektori">
-            <NavLink>Lektori</NavLink>
-          </Link>
+          <Link href="/lektori">lektori</Link>
         </NavItem>
         <NavItem>
-          <Link href="/kontakty">
-            <NavLink>Kontakty</NavLink>
-          </Link>
+          <Link href="/kontakty">Kontakty</Link>
         </NavItem>
         <NavItem>
           <Brand>
-            <a href="/">
-              <NavLink>Skoleni.io</NavLink>
-            </a>
+            <Link href="/">Skoleni.io</Link>
           </Brand>
         </NavItem>
       </Nav>
