@@ -17,6 +17,8 @@
 
     Podporuje take roaming, muzete menit IP adresu a stale komunikovat se zbytkem site. Hezky to napsal Petr Krcmar v clanku na Rootu: https://www.root.cz/clanky/wireguard-moderni-a-snadno-pouzitelna-vpn-v-linuxovem-jadre/
 
+    Super talk primo od autora Wireguardu na Youtube: https://www.youtube.com/watch?v=eYztYCbV_8U
+
     ## Setup Wireguardu
 
     Pojdme si ukazat jak Wireguard nakonfigurovat. Mame VPN server na IP adrese `vpn.sikademo.com`, firemni sit `192.168.100.0/24` kde mame server s clientem k VPN na adrese `192.168.100.101`. Dale mame notebook a telefon, ktere chceme take do VPN pripojit.
@@ -169,6 +171,14 @@
 
     S Wireguardem mam velmi pozitivni zkusenost, uz jej pouzivam na vsech svych projektech produkcne a zadna chyba. Rozodne je to neco co stoji za vyzkouseni a myslim si ze si jej zamilujete (i ti, kdo nesnasi VPN a site jako ja).
 
+    ## Zdroje
+
+    - https://www.wireguard.com/
+    - https://www.linode.com/docs/networking/vpn/set-up-wireguard-vpn-on-ubuntu
+    - https://staaldraad.github.io/2017/04/17/nat-to-nat-with-wireguard/
+    - https://www.ericlight.com/wireguard-part-two-vpn-routing.html
+    - https://www.youtube.com/watch?v=eYztYCbV_8U
+    - https://github.com/burghardt/easy-wg-quick
 
 - id: coronavirus-outbreak
   nostatic: true
