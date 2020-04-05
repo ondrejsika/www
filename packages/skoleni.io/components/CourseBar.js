@@ -4,6 +4,9 @@ import H1 from "@app/skoleni.io/components/H1";
 
 const Courses = styled.div`
   margin: 3em 0;
+  @media (max-width: 400px) {
+    margin: 0;
+  }
 `;
 
 const Lecturer = styled.span`
