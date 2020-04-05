@@ -24,6 +24,16 @@ const NavLink = styled.a`
   display: block;
   cursor: pointer;
   color: black;
+
+  @media (max-width: 600px) {
+    padding: 0.5em 0.4em 1em 0.4em;
+    font-size: 1.25em;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0.5em 0.25em 1em 0.25em;
+    font-size: 1.13em;
+  }
 `;
 
 const Brand = styled.span``;
