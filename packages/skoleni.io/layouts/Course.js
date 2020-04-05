@@ -6,11 +6,8 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const InquiryBtn = styled.a`
-  color: #1f1f1f !important;
-  background-color: #f5fff7;
   border: 2px solid #1f1f1f;
-  border-radius: 0.25rem;
-  padding: 0.375rem 0.75rem;
+  padding: 0.475rem 0.85rem;
   margin: 0.5em 0 1em 0;
   display: inline-block;
   vertical-align: middle;
@@ -18,7 +15,7 @@ const InquiryBtn = styled.a`
   text-align: center;
   font-weight: bold;
   &:hover {
-    background-color: green;
+    background-color: #c8bfb0;
     cursor: pointer;
   }
 `;
