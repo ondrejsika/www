@@ -9,7 +9,7 @@ const P = styled.p`
 `;
 
 const Index = () => (
-  <>
+  <Container>
     <CourseBar
       courses={[
         ["kubernetes", "kubernetes", "Ondrej Sika", "ondrejsika"],
@@ -22,20 +22,18 @@ const Index = () => (
         ["react", "react", "Ondrej Sika", "ondrejsika"]
       ]}
     />
-    <Container>
-      <H3>Spoluprace</H3>
-      <P>
-        Chcete inzerovat sva skoleni na nasem webu? Napiste email a urcite se
-        domluvime. Cena za inzerci je 20% z ceny kurzu za kazdeho, kdo se na
-        kurz registruje pres tento web. Pokud k vam klient, ktereho jste ziskali
-        prez skoleni.io, prijde i na dalsi skoleni, budu rad, kdyz zaplatite 5%
-        z ceny kurzu. Verim ve svobodu a ferovost a chci, at si kazdy sve kurzy
-        promuje, jak uzna za vhodne, skoleni.io nemusi byt jedine misto, kde
-        bude nabizet a prodavat kurzy. Je to ale dobre misto, kde kurzy
-        agregovat a nechat firmy prochazet nezavisle profesionaly.
-      </P>
-    </Container>
-  </>
+    <H3>Spoluprace</H3>
+    <P>
+      Chcete inzerovat sva skoleni na nasem webu? Napiste email a urcite se
+      domluvime. Cena za inzerci je 20% z ceny kurzu za kazdeho, kdo se na kurz
+      registruje pres tento web. Pokud k vam klient, ktereho jste ziskali prez
+      skoleni.io, prijde i na dalsi skoleni, budu rad, kdyz zaplatite 5% z ceny
+      kurzu. Verim ve svobodu a ferovost a chci, at si kazdy sve kurzy promuje,
+      jak uzna za vhodne, skoleni.io nemusi byt jedine misto, kde bude nabizet a
+      prodavat kurzy. Je to ale dobre misto, kde kurzy agregovat a nechat firmy
+      prochazet nezavisle profesionaly.
+    </P>
+  </Container>
 );
 export default Index;
 
