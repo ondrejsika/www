@@ -1,12 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
-
-const H1 = styled.span`
-  font-size: 6em;
-  padding: 0.05em 0;
-  font-weight: bold;
-`;
+import H1 from "@app/skoleni.io/components/H1";
 
 const Lecturer = styled.span`
   font-size: 2em;
@@ -23,7 +18,7 @@ const Header = props => (
         {props.underline && <H3>{props.underline}</H3>}
         {props.lecturer && (
           <Lecturer>
-            by <a href={`/lektor/${props.lecturerId}`}>{props.lecturer}</a>
+            by&nbsp;<a href={`/lektor/${props.lecturerId}`}>{props.lecturer}</a>
           </Lecturer>
         )}
       </p>
