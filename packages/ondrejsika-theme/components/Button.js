@@ -26,37 +26,43 @@ const Button = props => {
     ${props =>
       props.size == "big" &&
       css`
-        padding: 0.475rem 0.95rem;
+        padding: 0.5em 2em;
       `}
 
-    ${props =>
-      props.type == "outline-primary" &&
-      css`
-        border: 1px solid
-          ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
-            default_colors.BLUE};
+      ${props =>
+        props.size == "huge" &&
+        css`
+          padding: 0.8em 3em;
+        `}
 
-        color: ${(props.site &&
-          props.site.colors &&
-          props.site.colors.PRIMARY) ||
-          default_colors.BLUE};
-        &:hover {
+      ${props =>
+        props.type == "outline-primary" &&
+        css`
           border: 1px solid
-            ${(props.site &&
-              props.site.colors &&
-              props.site.colors.SECONDARY_LIGHT) ||
-              default_colors.WHITE};
+            ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+              default_colors.BLUE};
+
           color: ${(props.site &&
-            props.site.colors &&
-            props.site.colors.SECONDARY_LIGHT) ||
-            default_colors.WHITE};
-          background: ${(props.site &&
             props.site.colors &&
             props.site.colors.PRIMARY) ||
             default_colors.BLUE};
-          text-decoration: none;
-        }
-      `}
+          &:hover {
+            border: 1px solid
+              ${(props.site &&
+                props.site.colors &&
+                props.site.colors.SECONDARY_LIGHT) ||
+                default_colors.WHITE};
+            color: ${(props.site &&
+              props.site.colors &&
+              props.site.colors.SECONDARY_LIGHT) ||
+              default_colors.WHITE};
+            background: ${(props.site &&
+              props.site.colors &&
+              props.site.colors.PRIMARY) ||
+              default_colors.BLUE};
+            text-decoration: none;
+          }
+        `}
 
     ${props =>
       props.type == "outline-secondary" &&
@@ -87,6 +93,62 @@ const Button = props => {
           text-decoration: none;
         }
       `}
+
+    ${props =>
+      props.type == "primary" &&
+      css`
+        background: ${(props.site &&
+          props.site.colors &&
+          props.site.colors.PRIMARY) ||
+          default_colors.BLUE};
+        color: ${(props.site &&
+          props.site.colors &&
+          props.site.colors.SECONDARY_LIGHT) ||
+          default_colors.WHITE};
+
+        &:hover {
+          border: 1px solid
+            ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+              default_colors.BLUE};
+          color: ${(props.site &&
+            props.site.colors &&
+            props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
+          background: ${(props.site &&
+            props.site.colors &&
+            props.site.colors.SECONDARY_LIGHT) ||
+            default_colors.WHITE};
+          text-decoration: none;
+        }
+      `}
+
+    ${props =>
+      props.type == "secondary" &&
+      css`
+        order: 1px solid
+          ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
+        color: ${(props.site &&
+          props.site.colors &&
+          props.site.colors.PRIMARY) ||
+          default_colors.BLUE};
+        background: ${(props.site &&
+          props.site.colors &&
+          props.site.colors.SECONDARY_LIGHT) ||
+          default_colors.WHITE};
+
+        &:hover {
+          background: ${(props.site &&
+            props.site.colors &&
+            props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
+          color: ${(props.site &&
+            props.site.colors &&
+            props.site.colors.SECONDARY_LIGHT) ||
+            default_colors.WHITE};
+          text-decoration: none;
+        }
+      `}
   `;
   return (
     <>
@@ -94,7 +156,7 @@ const Button = props => {
         <WrapperButton
           site={props.site}
           href={props.href}
-          type={props.type || "outline-primary"}
+          type={props.type || "primary"}
           size={props.size || "medium"}
         >
           {props.children}

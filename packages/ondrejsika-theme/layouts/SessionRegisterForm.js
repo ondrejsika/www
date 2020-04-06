@@ -72,11 +72,10 @@ const SessionRegisterForm = props => {
         register={register}
         errors={errors}
       />
-
       <ReCAPTCHA ref={recaptchaRef} sitekey={props.site.recaptcha_site_key} />
 
-      <div className="pt-3">
-        <Button site={props.site} href="#">
+      <div className="pt-5">
+        <Button size="huge" site={props.site} href="#">
           Odeslat
         </Button>
       </div>
