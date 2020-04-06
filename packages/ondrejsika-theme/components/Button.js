@@ -8,9 +8,26 @@ const Button = props => {
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
+
+    ${props =>
+      props.size == "small" &&
+      css`
+        padding: 0.375rem 0.55rem;
+      `}
+      
+    ${props =>
+      props.size == "medium" &&
+      css`
+        padding: 0.375rem 0.75rem;
+      `}
+
+    ${props =>
+      props.size == "big" &&
+      css`
+        padding: 0.475rem 0.95rem;
+      `}
 
     ${props =>
       props.type == "primary" &&
@@ -78,6 +95,7 @@ const Button = props => {
           site={props.site}
           href={props.href}
           type={props.type || "primary"}
+          size={props.size || "medium"}
         >
           {props.children}
         </WrapperButton>
