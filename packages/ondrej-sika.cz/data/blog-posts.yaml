@@ -5,37 +5,37 @@
     - wireguard
     - vpn
   perex: |
-    Wireguard je extreme jednoducha a rychla VPN. Vlastne nahrada IPSecu a OpenVPN v jednom. Bezi vsude, v kernelu je jako network modul a ma klienta pro Mac, iOS, Android, Windows, ...
+    Wireguard je extrémě jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpanVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
   content: |
-    Na Wireguard uz me pred nejakym casem navedl Michael Kaplan a chci mu za to verene podekovat. I prez pocatecni problemy (asi jako se vsim) jsem Wireguard rozjel a je naprosto super.
+    Na Wireguard už mě před nějakým časem navedl Michael Kaplan a chci mu za to veřejně poděkovat. I přes počáteční problémy (asi jako se vším) jsem Wireguard rozjel a je naprosto super.
 
     ## Co je Wireguard
 
-    Wireguard je extreme jednoducha a rychla VPN. Vlastne nahrada IPSecu a OpenVPN v jednom. Bezi vsude, v kernelu je jako network modul a ma klienta pro Mac, iOS, Android, Windows, ...
+    Wireguard je extrémě jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpanVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
 
-    Pouziva moderni kryptografii (jako SSH) a nepouziva zadne x509 certificates, proste jen verejny a privatni klic. Konfigurace siti, jak na strane serveru, tak na strane klineta je velmi jednoducha. Muzete velmi jednoduse nakonfigurovat jake rozsahy maji byt pristupne z VPN na strane serveru a jaky trafik ma jit prez VPN na strane klienta. A to vse v jednom souboru `/etc/wireguard/wg0.conf` a spousteni pomoci jednoho prikazu `wg-quick up wg0`. Strasne jednoduche.
+    Používá moderní kryptografii (jako SSH) a nepoužívá žádné x509 certifikáty, prostě jen veřejný a privátní klíč. Konfigurace sítí, jak na straně serveru, tak na straně klienta je velmi jednoduchá. Můžete velmi jednoduše nakonfigurovat jaké rozsahy mají být přístupné z VPN na straně serveru a jaký traffic má jít přes VPN na straně klienta. A to vše v jednom souboru `/etc/wireguard/wg0.conf` a spouštění pomocí jednoho příkazu `wg-quick up wg0`. Velmi jednoduché.
 
-    Podporuje take roaming, muzete menit IP adresu a stale komunikovat se zbytkem site. Hezky to napsal Petr Krcmar v clanku na Rootu: https://www.root.cz/clanky/wireguard-moderni-a-snadno-pouzitelna-vpn-v-linuxovem-jadre/
+    Podporuje také roaming, můžete měnit IP adresu a stále komunikovat se zbytkem sítě. Hezky to napsal Petr Krčmář v článku na Rootu: https://www.root.cz/clanky/wireguard-moderni-a-snadno-pouzitelna-vpn-v-linuxovem-jadre/
 
-    Super talk primo od autora Wireguardu na Youtube: https://www.youtube.com/watch?v=eYztYCbV_8U
+    Super talk přímo od autora Wireguardu na Youtube: https://www.youtube.com/watch?v=eYztYCbV_8U
 
     ## Setup Wireguardu
 
-    Pojdme si ukazat jak Wireguard nakonfigurovat. Mame VPN server na IP adrese `vpn.sikademo.com`, firemni sit `192.168.100.0/24` kde mame server s clientem k VPN na adrese `192.168.100.101`. Dale mame notebook a telefon, ktere chceme take do VPN pripojit.
+    Pojďme si ukázat jak Wireguard nakonfigurovat. Máme VPN server na IP adrese `vpn.sikademo.com`, firemní síť `192.168.100.0/24` kde máme server s clientem k VPN na adrese `192.168.100.101`. Dále máme notebook a telefon, které chceme také do VPN připojit.
 
-    Budu pouzivat VPN server na Debian 10, kde je wireguard v repozitarich. Na firemni siti take pobezi Debian 10, na notebooku mam Mam mac a telefon iPhone.
+    Budu používat VPN server na Debian 10, kde je wireguard v repozitářích. Na firemní síti také poběží Debian 10, na notebooku mám Mac a telefon IPhone.
 
     ### Instalace
 
-    Na serverech nainstaluju balicky `wireguard` a `resolvconf`.
+    Na serverech nainstaluju balíčky `wireguard` a `resolvconf`.
 
     ```
     apt update && apt install -y wireguard resolvconf
     ```
 
-    Na Macu nainstaluju Wireguard z [Mac App Store](https://apps.apple.com/us/app/wireguard/id1451685025), stejne tak na iPhone z [App Store](https://apps.apple.com/us/app/wireguard/id1441195209).
+    Na Macu nainstaluju Wireguard z [Mac App Store](https://apps.apple.com/us/app/wireguard/id1451685025), stejně tak na iPhone z [App Store](https://apps.apple.com/us/app/wireguard/id1441195209).
 
-    Pokud chci i wireguard tools musim je nainstalovat pomoci brew
+    Pokud chci i wireguard tools musím je nainstalovat pomoci brew
 
     ```
     brew install wireguard-tools
@@ -43,7 +43,7 @@
 
     ## Setup Serveru
 
-    Na serveru (`vpn.sikademo.com`) si vytvorim konfiguracni soubor `/etc/wireguard/wg0.conf` s timto obsahem:
+    Na serveru (`vpn.sikademo.com`) si vytvořím konfigurační soubor `/etc/wireguard/wg0.conf` s tímto obsahem:
 
     ```
     [Interface]
@@ -85,13 +85,13 @@
     AllowedIPs = 10.10.0.202/32
     ```
 
-    Interface popisuje jak vypada interface wg0, coz je standartni interface. Adresa `10.10.0.1/24` je adresa na VPN siti a port `51820` je standartni UDP port kde Wireguard posloucha. Dale je tam privatni klic (v me ukazce nevalidni placeholder `Server/Private=`), ktery vygenerujete prikazem `wg genkey`. V seci post up / post down je nastaveni forwardu a masquarade.
+    Interface popisuje jak vypadá interface wg0, co je standardní interface. Adresa `10.10.0.1/24` je adresa na VPN síti a port `51820` je standardní UDP port kde Wireguard poslouchá. Dále je tam privátní klíč (v mé ukázce nevalidní placeholder `Server/Private=`), který vygenerujete příkazem `wg genkey`. V skeci post up / post down je nastavení forwardu a masquarade.
 
-    Pak jsou na definice jednotlivich klientu, peeru. Budeme mit 3 klienty: server v kancerali, pocitac a telefon. Klienti jsou definovani pouze jejich verejnym klicem, zadne certifikaty nejsou potreba.
+    Pak jsou na definice jednotlivých klientů, peeru. Budeme mít 3 klienty: server v kanceláři, počítač a telefon. Klienti jsou definování pouze jejich veřejným klíčem, žádné certifikáty nejsou potřeba.
 
-    Prvni klient (office) mam v allowed IPs take rozsah site v kancelari abychom se na ni z VPN dostali.
+    První klient (office) mám v allowed IPs také rozsah sítě v kanceláři abychom se na ni z VPN dostali.
 
-    Konfigrurce klientu jsou jednodussi, takhle vypada konfiguracni soubor na klientu v kancelari:
+    Konfigrurce klientů jsou jednodušší, takhle vypadá konfigurační soubor na klientu v kanceláři:
 
     ```
     [Interface]
@@ -119,11 +119,11 @@
     PersistentKeepalive = 25
     ```
 
-    Klinet mam zase privatni klic (ktery ma server v peeru) a v peeru ma verejny klic VPN serveru. Dale ma adresu `10.10.0.100/32` na VPN a DNS nastavene na Cloudflare (neco jako `8.8.8.8` od Google).
+    Klinet má zase privátní klíč (který má server v peeru) a v peeru má veřejný klíč VPN serveru. Dále má adresu `10.10.0.100/32` na VPN a DNS nastavené na Cloudflare (něco jako `8.8.8.8` od Google).
 
-    V Peeru ma potom pouze VPN server kam se pripojuje.
+    V Peeru má potom pouze VPN server kam se připojuje.
 
-    Co se tyka konfigurace na Macu a iPhone, je to jeste jednodussi.
+    Co se týká konfigurace na Macu a iPhone, je to ještě jednodušší.
 
     ```
     [Interface]
@@ -139,11 +139,11 @@
     PersistentKeepalive = 25
     ```
 
-    Na Macu ani na iPhone uz neni potreba PostUp/PostDown, takze konfigurace je jeste primocarejsi. Kdyz se podivame do AllowedIPs, je tam krome site VPN take adresa site v kancelari, coz nam rika ze packety smerujici do kancelare maji jit skrz VPN.
+    Na Macu ani na iPhone už není potřeba PostUp/PostDown, takže konfigurace je ještě přímočařejší. Když se podíváme do AllowedIPs, je tam kromě sítě VPN také adresa sitě v kanceláři, což nám říká že packety směřující do kanceláře mají jít skrz VPN.
 
-    Pokud chceme aby vsechen traffic byl skrz VPN, nastavime `AllowedIPs = 0.0.0.0/0, ::/0`.
+    Pokud chceme aby všechen traffic byl skrz VPN, nastavíme `AllowedIPs = 0.0.0.0/0, ::/0`.
 
-    Konfigrurce na telefonu vypada velice podobne
+    Konfigrurce na telefonu vypadá velice podobně
 
     ```
     [Interface]
@@ -161,15 +161,15 @@
 
     ## Start
 
-    Kdyz chceme na Linuxu Wireguard zapnout staci nam k tomu `wg-quick up wg0`. `wg0` je nazev interface a zaroven jsemo souboru v `/etc/wireguard/`. Pokud jej chceme vypnout, pouzijeme `wg-quick up wg0`.  Pri potrebe spousteni pri startu systemu je idealni pouzit `systemctl enable wg-quick@wg0`, timto zapneme sluzbu. `systemctl start wg-quick@wg0` timto sluzbu spustime, a timto zjistime status sluzby `systemctl status wg-quick@wg0` Pokud soubor zmenime, musime vzdy Wiregurd vypnout a pak zapnout.
+    Když chceme na Linuxu Wireguard zapnout, stačí nám k tomu `wg-quick up wg0`. `wg0` je název interface a zároveň jméno souboru v `/etc/wireguard/`. Pokud jej chceme vypnout, použijeme `wg-quick up wg0`.  Při potřebe spoušění při startu systému je ideální použít `systemctl enable wg-quick@wg0`, tímto zapneme službu. `systemctl start wg-quick@wg0` tímto službu spustíme, a tímto zjistíme status služby `systemctl status wg-quick@wg0` Pokud soubor změníme, musíme vždy Wiregurd vypnout a pak zapnout.
 
-    Na Macu a v telefonu je to jen pripojit se do profilu VPN.
+    Na Macu a v telefonu je to jen připojit se do profilu VPN.
 
-    A je to. Wireguard je hodne robustni, takze i kdyz se spojeni rozvaze, dokaze si ho velmi rychle navazat zpet bez nutnosti interakce.
+    A je to. Wireguard je hodně robustní, takže i když se spojení rozváže, dokáže si ho velmi rychle navazat zpět bez nutnosti interakce.
 
     ## Shrnutí
 
-    S Wireguardem mam velmi pozitivni zkusenost, uz jej pouzivam na vsech svych projektech produkcne a zadna chyba. Rozodne je to neco co stoji za vyzkouseni a myslim si ze si jej zamilujete (i ti, kdo nesnasi VPN a site jako ja).
+    S Wireguardem mám velmi pozitivní zkušenost, už jej používám na všech svých projektech produkčně a žádná chyba. Rozodně je to něco co stojí za vyzkoušení a myslím s, že si jej zamilujete (i ti, kdo nesnáší VPN a sítě jako já).
 
     ## Zdroje
 
@@ -186,7 +186,7 @@
   date: 17. 3. 2020
   tags: []
   perex: |
-    Coronavirus me skoleni nezastavi, skolim dal ale on-line. Prez Zoom, Google Hangouts, Whereby nebo GoToWebinar.
+    Coronavirus me skoleni nezastavi, školím dál, ale on-line. Prez Zoom, Google Hangouts, Whereby nebo GoToWebinar.
   content:
 - id: australia-on-fire
   nostatic: true
