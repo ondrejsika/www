@@ -7,7 +7,7 @@ const NewsletterBar = props => (
     <div className="mt-3 mb-3">
       <Button
         site={props.site}
-        type="primary"
+        type="outline-primary"
         href="https://sika.link/newsletter"
       >
         Přihlásit se k odběru
