@@ -1,10 +1,9 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Link from "next/link";
 import default_colors from "@app/ondrejsika-theme/config/colors";
 
-const Button = props => {
-  const WrapperButton = styled.a`
+const FormButton = props => {
+  const WrapperButton = styled.button`
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -152,18 +151,16 @@ const Button = props => {
   `;
   return (
     <>
-      <Link href={props.href}>
-        <WrapperButton
-          site={props.site}
-          href={props.href}
-          type={props.type || "primary"}
-          size={props.size || "medium"}
-        >
-          {props.children}
-        </WrapperButton>
-      </Link>
+      <WrapperButton
+        site={props.site}
+        href={props.href}
+        type={props.type || "primary"}
+        size={props.size || "medium"}
+      >
+        {props.children}
+      </WrapperButton>
     </>
   );
 };
 
-export default Button;
+export default FormButton;

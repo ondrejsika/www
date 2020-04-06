@@ -4,7 +4,7 @@ import { Form } from "react-bootstrap";
 import Field from "@app/common/forms/Field";
 import fetch from "isomorphic-unfetch";
 import Router from "next/router";
-import Button from "@app/ondrejsika-theme/components/Button";
+import Button from "@app/ondrejsika-theme/components/FormButton";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const recaptchaRef = React.createRef();
