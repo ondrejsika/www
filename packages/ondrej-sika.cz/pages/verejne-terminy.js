@@ -21,7 +21,7 @@ const Index = () => (
       <UpcomingSessions
         lang={site.lang}
         location="cz"
-        show_course_link={true}
+        show_session_link={true}
       />
     </div>
   </div>

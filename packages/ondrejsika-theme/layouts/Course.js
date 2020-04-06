@@ -55,7 +55,7 @@ const Course = props => (
             location={props.location}
             course_id={props.course_id}
             limit={3}
-            show_session_link={process.env.NODE_ENV == "development"}
+            show_session_link={true}
           />
         </>
       )}
