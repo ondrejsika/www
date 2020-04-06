@@ -51,7 +51,7 @@ const SessionDD = props => {
           <div className="col-md-7">
             <h2>Místo konání</h2>
             <ul>
-              <li>{session.city} - z duvodu COVID-19</li>
+              <li>{session.city}</li>
             </ul>
             <Markdown source={course.agenda[lang]} />
             <p>
@@ -60,13 +60,6 @@ const SessionDD = props => {
             </p>
             <h2>Lektor: Ondrej Sika</h2>
             <Row>
-              <Col md={3}>
-                <img
-                  src={ondrejsika}
-                  className="img-fluid rounded-circle"
-                  width="130"
-                />
-              </Col>
               <Col md={9}>
                 <p>
                   <Translate
@@ -80,6 +73,13 @@ const SessionDD = props => {
                     sk="Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
                   />
                 </p>
+              </Col>
+              <Col md={3}>
+                <img
+                  src={ondrejsika}
+                  className="img-fluid rounded-circle"
+                  width="130"
+                />
               </Col>
             </Row>
           </div>
