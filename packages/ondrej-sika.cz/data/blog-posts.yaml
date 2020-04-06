@@ -1,6 +1,6 @@
 - id: ceph-persistent-volumes-v-kubernetes-pomoci-rook
   ad: kubernetes
-  title: 'Ceph Persistent volumes v Kubernetes pomoci Rook'
+  title: 'Ceph Persistent volumes v Kubernetes pomocí Rook'
   date: 6. 4. 2020
   tags:
     - kubernetes
@@ -8,51 +8,50 @@
     - ceph
     - storage
   perex: |
-    Kubernetes je skvela platforma na provozovani stateless aplikaci. Storage je casto resena mimo Kubernetes cluster. Rook.io a Ceph je ultimatni reseni pro persistenti storage primo v Kubernetes clusteru.
+    Kubernetes je skvělá platforma na provozování stateless aplikací. Storage je často řešena mimo Kubernetes cluster. Rook.io a Ceph je ultimátní řešení pro perzistentní storage přímo v Kubernetes clusteru.
   content: |
-    Kubernetes je skvela platforma na provozovani stateless aplikaci. Storage je casto resena mimo Kubernetes cluster. Rook.io a Ceph je ultimatni reseni pro persistenti storage primo v Kubernetes clusteru.
+    Kubernetes je skvělá platforma na provozování stateless aplikací. Storage je často řešena mimo Kubernetes cluster. Rook.io a Ceph je ultimátní řešení pro perzistentní storage přímo v Kubernetes clusteru.
 
     ## Co je CEPH
-
-    Ceph je softwarove definovana distribuovana storage ktera podporuje block device (RBD), object storage s (AWS S3 interface) a Filesystem (CEPH FS). Skvely uvod do Cephu je tato prednaska, od kamenych desticek k distribuovane storage za mene nez hodinu: https://www.youtube.com/watch?v=7I9uxoEhUdY
+    Ceph je softwarově definovaná distribuovaná storage, která podporuje block device (RBD), object storage s (AWS S3 interface) a Filesystem (CEPH F5). Skvělý návod do Cephu je tato přednáška, od kamených destiček k distribuované storage za méně než hodinu: https://www.youtube.com/watch?v=7I9uxoEhUdY
 
     ## Co je to Rook
 
-    Rook je sada Kubernetes operatoru, ktere vytvari a spravuji storage v ramci Kubernetes Clusteru. Nejpouzivanejsi je Ceph, ale Rook podporuje i mnoho jinych typu storage, napriklad: NFS, Cassandra, ... Prednaska o Rooku a Cephu na Youtube https://www.youtube.com/watch?v=pNz0UyaqlE8
+    Rook je sada Kubernetes operátorů, které výtváří a spravují storage v rámci Kubernetes Clusteru. Nejpoužívanější je Ceph, ale Rook podporuje i mnoho jiných typů storage, například: NFS, Cassandra, ... Přednáška o Rooku a Cephu na YouTube: https://www.youtube.com/watch?v=pNz0UyaqlE8
 
     ## Setup Infrastruktury
 
-    Abychom mohli provozovat Ceph cluster, potrebujeme minimalne 3 Kubernetes nody s nejmene 4 GB RAM. Kazdy server musi mit nainstalovane LVM (`apt install lvm2`) a nejake disky (eg: `/dev/sdb`), ktere pouzije Ceph pro svoji storage. My si to vytovrime pomoci Terraformu na Digital Oceanu. Rovnou si pripravime i loadbalancer, ktery bude ukazovat na vsechny nody a nasmerujeme na nej nejakou domenu.
+    Abychom mohli provozovat Ceph cluster, potřebujeme minimálně 3 Kubernetes nody s nejméně 4 GB RAM. Každý server musí mít nainstalované LVM (`apt install lvm2`) a nejake disky (eg: `/dev/sdb`), které použije Ceph pro svoji storage. My si to vytvoříme pomocí Terraformu na Digital Oceanu. Rovnou si připravíme i loadbalancer, který bude ukazovat na všechny nody a nasměřujeme na něj nějakou doménu.
 
-    Muzete pouzit moji ukazku z Githubu [ondrejsika/terraform-do-rook-ceph-example](https://github.com/ondrejsika/terraform-do-rook-ceph-example).
+    Můžete použít moji ukázku z Githubu [ondrejsika/terraform-do-rook-ceph-example](https://github.com/ondrejsika/terraform-do-rook-ceph-example).
 
-    Ta mi vytvori 3 servery s druhym diskem (30 GB):
+    Ta mi vytvoří 3 servery s druhým diskem (30 GB):
 
     - rook0.sikademo.com
     - rook1.sikademo.com
     - rook2.sikademo.com
 
-    a loadbalancer ktery ukazuje na vsechny tyto nody na adrese `rook.sikademo.com` s CNAME `*.rook.sikademo.com`.
+    a laodbalancer, který ukazuje na všechny tyto nody na adrese `rook.sikademo.com` s CNAME `*.rook.sikademo.com`.
 
     ## Instalace Kuberneres
 
-    Potrebujeme nainstalovat Kubernetes, muzeme pouzit `kubeadmin` nebo Rancher. Ja jsem pouzil Rancher a postavil jsem cluster, kde kazdy node je master i worker zaroven.
+    Nejdřív potřebujeme nainstalovat Kubernetes. Můžeme použít `kubeadmin` nebo Rancher. Já jsem použil Rancher a postavil jsem cluster kde každý node je master i worker zároveň.
 
     ```
     rke up
     ```
 
-    Po instalaci clusteru jeste nainstaluju [Traefik Ingress Controller](https://github.com/ondrejsika/kubernetes-ingress-traefik):
+    Po instalaci clusteru ještě nainstaluju [Traefik Ingress Controller](https://github.com/ondrejsika/kubernetes-ingress-traefik):
 
     ```
     kubectl apply -f https://k.sika.link/ingress.yml
     ```
 
-    [k.sika.link](https://k.sika.link) je muj tool ([source](https://github.com/ondrejsika/k.sika.link)) na zkraceni cest z `raw.githubusercontent.com` abych nemusel pouzivat celou cestu `https://raw.githubusercontent.com/rook/rook/release-1.3/cluster/examples/kubernetes/ceph/common.yaml` ale jen `https://k.sika.link/rook-ceph-1.3/common.yaml`
+    [k.sika.link](https://k.sika.link) je můj tool ([source](https://github.com/ondrejsika/k.sika.link)) na zkrácení cest z `raw.githubusercontent.com` abych nemusel používat celou cestu `https://raw.githubusercontent.com/rook/rook/release-1.3/cluster/examples/kubernetes/ceph/common.yaml` ale jen `https://k.sika.link/rook-ceph-1.3/common.yaml`
 
     ## Instalace Rooku
 
-    Rook budeme instalovat podle postupu z jejich webu, nejdrive musime vytvorit custom resources a spustit operator.
+    Rook budeme instalovat podle postupu z jejich webu, nejdříve musíme vytvořit custom resources a spustit operátor.
 
     ```
     kubectl create -f https://k.sika.link/rook-ceph-1.3/common.yaml
@@ -62,7 +61,7 @@
     kubectl create -f https://k.sika.link/rook-ceph-1.3/operator.yaml
     ```
 
-    Pockame az nabehnou vsechny tyto pody (`kubectl -n rook-ceph get po`):
+    Počkáme až naběhnou všechny tyto pody (`kubectl -n rook-ceph get po`):
 
     ```
     ondrej@sika-mac:~/Examples/rook (master)$ kubectl -n rook-ceph get po
@@ -75,13 +74,13 @@
 
     ## Setup Ceph clusteru
 
-    Jakmile nabehne operato a rook discover, muz
+    Jakmile naběhne operátor a rook discover, muz
 
     ```
     kubectl create -f https://k.sika.link/rook-ceph-1.3/cluster.yaml
     ```
 
-    Pockame dokud cluster nebude ready:
+    Počkáme dokud cluster nebude ready:
 
     ```
     ondrej@sika-mac:~/Examples/rook (master)$ kubectl -n rook-ceph get cephcluster
@@ -91,15 +90,15 @@
 
     ## Instalace Storage Class
 
-    Abychom mohli vytvaret vlastni PVC na Cephu, musime pro to vytvorit Storage Class
+    Abychom mohli vytvářet vlastní PVC na Cephu, musíme pro to vytvořit Storage Class
 
-    Tu vytvorime prikazem:
+    Tu vytvoříme příkazem:
 
     ```
     kubectl apply -f https://k.sika.link/rook-ceph-1.3/csi/rbd/storageclass.yaml
     ```
 
-    Pokud vypiseme Storage Classes tak ji uvidime:
+    Pokud vypíšeme Storage Classes, tak ji uvidíme:
 
     ```
     ondrej@sika-mac:~/Examples/rook (master)$ kubectl get sc
@@ -107,15 +106,15 @@
     rook-ceph-block   rook-ceph.rbd.csi.ceph.com   Delete          Immediate           true                   46s
     ```
 
-    Pokud mame jen jednu storage class, muzeme ji nastavit jako defaultni prikazem:
+    Pokud máme jen jednu storage class, můžeme ji nastavit jako defaultní příkazem:
 
     ```
     kubectl patch storageclass rook-ceph-block -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
     ```
 
-    ## Pouziti Storage Class
+    ## Použítí Storage Class
 
-    Jako ukazku pouziti nainstalujeme prez Helm 3 Wordpress:
+    Jako ukazku použítí nainstalujeme přes Helm 3 Wordpress:
 
     ```
     helm repo add ondrejsika https://helm.oxs.cz
@@ -134,7 +133,7 @@
     See: https://hello.rook.sikademo.com
     ```
 
-    Muzeme kouknout ze se storage pripojili a pody bezi:
+    Můžeme kouknout, že se storage připojili a pody běží:
 
     ```
     ondrej@sika-mac:~/Examples/rook (master)$ kubectl get po,pvc,pv
@@ -151,7 +150,7 @@
     persistentvolume/pvc-fd576f28-f9bd-475d-bceb-89e7eefca856   1Gi        RWO            Delete           Bound    default/hello-wordpress   rook-ceph-block            14m
     ```
 
-    Vidime ze vsechno jede. To je vse. Muzeme se na nas Wordpress podivat na https://hello.rook.sikademo.com
+    Vidime, že všechno jede. To je vše. Můžeme se na náš Wordpress podívat na https://hello.rook.sikademo.com
 
 
 - id: wireguard
