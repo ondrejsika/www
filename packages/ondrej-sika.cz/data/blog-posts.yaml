@@ -1,3 +1,159 @@
+- id: ceph-persistent-volumes-v-kubernetes-pomoci-rook
+  ad: kubernetes
+  title: 'Ceph Persistent volumes v Kubernetes pomoci Rook'
+  date: 6. 4. 2020
+  tags:
+    - kubernetes
+    - rook
+    - ceph
+    - storage
+  perex: |
+    Kubernetes je skvela platforma na provozovani stateless aplikaci. Storage je casto resena mimo Kubernetes cluster. Rook.io a Ceph je ultimatni reseni pro persistenti storage primo v Kubernetes clusteru.
+  content: |
+    Kubernetes je skvela platforma na provozovani stateless aplikaci. Storage je casto resena mimo Kubernetes cluster. Rook.io a Ceph je ultimatni reseni pro persistenti storage primo v Kubernetes clusteru.
+
+    ## Co je CEPH
+
+    Ceph je softwarove definovana distribuovana storage ktera podporuje block device (RBD), object storage s (AWS S3 interface) a Filesystem (CEPH FS). Skvely uvod do Cephu je tato prednaska, od kamenych desticek k distribuovane storage za mene nez hodinu: https://www.youtube.com/watch?v=7I9uxoEhUdY
+
+    ## Co je to Rook
+
+    Rook je sada Kubernetes operatoru, ktere vytvari a spravuji storage v ramci Kubernetes Clusteru. Nejpouzivanejsi je Ceph, ale Rook podporuje i mnoho jinych typu storage, napriklad: NFS, Cassandra, ... Prednaska o Rooku a Cephu na Youtube https://www.youtube.com/watch?v=pNz0UyaqlE8
+
+    ## Setup Infrastruktury
+
+    Abychom mohli provozovat Ceph cluster, potrebujeme minimalne 3 Kubernetes nody s nejmene 4 GB RAM. Kazdy server musi mit nainstalovane LVM (`apt install lvm2`) a nejake disky (eg: `/dev/sdb`), ktere pouzije Ceph pro svoji storage. My si to vytovrime pomoci Terraformu na Digital Oceanu. Rovnou si pripravime i loadbalancer, ktery bude ukazovat na vsechny nody a nasmerujeme na nej nejakou domenu.
+
+    Muzete pouzit moji ukazku z Githubu [ondrejsika/terraform-do-rook-ceph-example](https://github.com/ondrejsika/terraform-do-rook-ceph-example).
+
+    Ta mi vytvori 3 servery s druhym diskem (30 GB):
+
+    - rook0.sikademo.com
+    - rook1.sikademo.com
+    - rook2.sikademo.com
+
+    a loadbalancer ktery ukazuje na vsechny tyto nody na adrese `rook.sikademo.com` s CNAME `*.rook.sikademo.com`.
+
+    ## Instalace Kuberneres
+
+    Potrebujeme nainstalovat Kubernetes, muzeme pouzit `kubeadmin` nebo Rancher. Ja jsem pouzil Rancher a postavil jsem cluster, kde kazdy node je master i worker zaroven.
+
+    ```
+    rke up
+    ```
+
+    Po instalaci clusteru jeste nainstaluju [Traefik Ingress Controller](https://github.com/ondrejsika/kubernetes-ingress-traefik):
+
+    ```
+    kubectl apply -f https://k.sika.link/ingress.yml
+    ```
+
+    [k.sika.link](https://k.sika.link) je muj tool ([source](https://github.com/ondrejsika/k.sika.link)) na zkraceni cest z `raw.githubusercontent.com` abych nemusel pouzivat celou cestu `https://raw.githubusercontent.com/rook/rook/release-1.3/cluster/examples/kubernetes/ceph/common.yaml` ale jen `https://k.sika.link/rook-ceph-1.3/common.yaml`
+
+    ## Instalace Rooku
+
+    Rook budeme instalovat podle postupu z jejich webu, nejdrive musime vytvorit custom resources a spustit operator.
+
+    ```
+    kubectl create -f https://k.sika.link/rook-ceph-1.3/common.yaml
+    ```
+
+    ```
+    kubectl create -f https://k.sika.link/rook-ceph-1.3/operator.yaml
+    ```
+
+    Pockame az nabehnou vsechny tyto pody (`kubectl -n rook-ceph get po`):
+
+    ```
+    ondrej@sika-mac:~/Examples/rook (master)$ kubectl -n rook-ceph get po
+    NAME                                  READY   STATUS    RESTARTS   AGE
+    rook-ceph-operator-66d99fccf4-fpwj9   1/1     Running   0          50s
+    rook-discover-5q8r4                   1/1     Running   0          28s
+    rook-discover-7ng4s                   1/1     Running   0          28s
+    rook-discover-dn6bj                   1/1     Running   0          28s
+    ```
+
+    ## Setup Ceph clusteru
+
+    Jakmile nabehne operato a rook discover, muz
+
+    ```
+    kubectl create -f https://k.sika.link/rook-ceph-1.3/cluster.yaml
+    ```
+
+    Pockame dokud cluster nebude ready:
+
+    ```
+    ondrej@sika-mac:~/Examples/rook (master)$ kubectl -n rook-ceph get cephcluster
+    NAMESPACE   NAME        DATADIRHOSTPATH   MONCOUNT   AGE     PHASE   MESSAGE                        HEALTH
+    rook-ceph   rook-ceph   /var/lib/rook     3          4m26s   Ready   Cluster created successfully   HEALTH_OK
+    ```
+
+    ## Instalace Storage Class
+
+    Abychom mohli vytvaret vlastni PVC na Cephu, musime pro to vytvorit Storage Class
+
+    Tu vytvorime prikazem:
+
+    ```
+    kubectl apply -f https://k.sika.link/rook-ceph-1.3/csi/rbd/storageclass.yaml
+    ```
+
+    Pokud vypiseme Storage Classes tak ji uvidime:
+
+    ```
+    ondrej@sika-mac:~/Examples/rook (master)$ kubectl get sc
+    NAME              PROVISIONER                  RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+    rook-ceph-block   rook-ceph.rbd.csi.ceph.com   Delete          Immediate           true                   46s
+    ```
+
+    Pokud mame jen jednu storage class, muzeme ji nastavit jako defaultni prikazem:
+
+    ```
+    kubectl patch storageclass rook-ceph-block -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+    ```
+
+    ## Pouziti Storage Class
+
+    Jako ukazku pouziti nainstalujeme prez Helm 3 Wordpress:
+
+    ```
+    helm repo add ondrejsika https://helm.oxs.cz
+    ```
+
+    ```
+    ondrej@sika-mac:~/Examples/rook (master)$ helm upgrade --install hello ondrejsika/wordpress-mysql --set host=hello.rook.sikademo.com
+    Release "hello" has been upgraded. Happy Helming!
+    NAME: hello
+    LAST DEPLOYED: Mon Apr  6 19:15:41 2020
+    NAMESPACE: default
+    STATUS: deployed
+    REVISION: 4
+    TEST SUITE: None
+    NOTES:
+    See: https://hello.rook.sikademo.com
+    ```
+
+    Muzeme kouknout ze se storage pripojili a pody bezi:
+
+    ```
+    ondrej@sika-mac:~/Examples/rook (master)$ kubectl get po,pvc,pv
+    NAME                                   READY   STATUS    RESTARTS   AGE
+    pod/hello-mysql-0                      1/1     Running   0          14m
+    pod/hello-wordpress-7fdb4565f8-d7dns   1/1     Running   0          12m
+
+    NAME                                    STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS      AGE
+    persistentvolumeclaim/hello-mysql       Bound    pvc-157cba57-822f-43a0-ac97-54ef699a1c47   1Gi        RWO            rook-ceph-block   14m
+    persistentvolumeclaim/hello-wordpress   Bound    pvc-fd576f28-f9bd-475d-bceb-89e7eefca856   1Gi        RWO            rook-ceph-block   14m
+
+    NAME                                                        CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                     STORAGECLASS      REASON   AGE
+    persistentvolume/pvc-157cba57-822f-43a0-ac97-54ef699a1c47   1Gi        RWO            Delete           Bound    default/hello-mysql       rook-ceph-block            14m
+    persistentvolume/pvc-fd576f28-f9bd-475d-bceb-89e7eefca856   1Gi        RWO            Delete           Bound    default/hello-wordpress   rook-ceph-block            14m
+    ```
+
+    Vidime ze vsechno jede. To je vse. Muzeme se na nas Wordpress podivat na https://hello.rook.sikademo.com
+
+
 - id: wireguard
   title: 'Wireguard: Náhrada IPSecu a OpenVPN v jednom'
   date: 4. 4. 2020
