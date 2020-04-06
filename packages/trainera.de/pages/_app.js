@@ -103,7 +103,7 @@ const Footer = (
         <div className="input-group">
           <Button
             site={site}
-            type="outline"
+            type="outline-secondary"
             href="https://sika.link/newsletter-en"
           >
             Subscribe

@@ -30,7 +30,7 @@ const Button = props => {
       `}
 
     ${props =>
-      props.type == "primary" &&
+      props.type == "outline-primary" &&
       css`
         border: 1px solid
           ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
@@ -59,7 +59,7 @@ const Button = props => {
       `}
 
     ${props =>
-      props.type == "outline" &&
+      props.type == "outline-secondary" &&
       css`
         border: 1px solid
           ${(props.site &&
@@ -94,7 +94,7 @@ const Button = props => {
         <WrapperButton
           site={props.site}
           href={props.href}
-          type={props.type || "primary"}
+          type={props.type || "outline-primary"}
           size={props.size || "medium"}
         >
           {props.children}
