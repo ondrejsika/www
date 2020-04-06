@@ -1919,7 +1919,7 @@
   date_from: 18.5.2020
   date_to: 18.5.2020
   facebook_event: https://www.facebook.com/events/614915235754621/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/git-onlinetraining18-5/
 - id: docker-online-19-5-2020
   active: true
   country: de
@@ -1933,7 +1933,7 @@
   date_from: 19.5.2020
   date_to: 20.5.2020
   facebook_event: https://www.facebook.com/events/546252982672435/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652872475065491456/
 - id: kubernetes-praha-21-05-2020
   active: false
   country: cz
@@ -2013,7 +2013,7 @@
   date_from: 3.6.2020
   date_to: 3.6.2020
   facebook_event: https://www.facebook.com/events/1332721420251761/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652873523058491392/
 - id: proxmox-brno-04-06-2020
   active: false
   country: cz
@@ -2053,7 +2053,7 @@
   date_from: 8.6.2020
   date_to: 9.6.2020
   facebook_event: https://www.facebook.com/events/2475951512718465/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652874301601009665/
 - id: ansible-online-10-6-2020
   active: true
   country: de
@@ -2067,7 +2067,7 @@
   date_from: 10.6.2020
   date_to: 10.6.2020
   facebook_event: https://www.facebook.com/events/1446869245474135/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652875075814989824/
 - id: prometheus-online-11-6-2020
   active: true
   country: de
@@ -2081,7 +2081,7 @@
   date_from: 11.6.2020
   date_to: 11.6.2020
   facebook_event: https://www.facebook.com/events/207975663824552/
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6652877499036385281/
 # Praha Root.cz Zari
 - id: proxmox-praha-11-09-2020
   active: true
