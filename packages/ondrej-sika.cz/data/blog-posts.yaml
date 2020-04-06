@@ -1,19 +1,19 @@
 - id: wireguard
-  title: 'Wireguard: Nahrada IPSecu a OpenVPN v jednom'
+  title: 'Wireguard: Náhrada IPSecu a OpenVPN v jednom'
   date: 4. 4. 2020
   tags:
     - wireguard
     - vpn
   perex: |
-    Wireguard je extrémě jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpanVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
+    Wireguard je extrémně jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpanVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
   content: |
     Na Wireguard už mě před nějakým časem navedl Michael Kaplan a chci mu za to veřejně poděkovat. I přes počáteční problémy (asi jako se vším) jsem Wireguard rozjel a je naprosto super.
 
     ## Co je Wireguard
 
-    Wireguard je extrémě jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpanVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
+    Wireguard je extrémně jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpanVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
 
-    Používá moderní kryptografii (jako SSH) a nepoužívá žádné x509 certifikáty, prostě jen veřejný a privátní klíč. Konfigurace sítí, jak na straně serveru, tak na straně klienta je velmi jednoduchá. Můžete velmi jednoduše nakonfigurovat jaké rozsahy mají být přístupné z VPN na straně serveru a jaký traffic má jít přes VPN na straně klienta. A to vše v jednom souboru `/etc/wireguard/wg0.conf` a spouštění pomocí jednoho příkazu `wg-quick up wg0`. Velmi jednoduché.
+    Používá moderní kryptografii (jako SSH) a nepoužívá žádné x509 certifikáty, prostě jen veřejný a privátní klíč. Konfigurace sítí, jak na straně serveru, tak na straně klienta je velmi jednoduchá. Můžete velmi jednoduše nakonfigurovat jaké rozsahy mají být přístupné z VPN na straně serveru a jaký traffic má jít přes VPN na straně klienta. A to vše v jednom souboru `/etc/wireguard/wg0.conf`. Spouští se pomocí jednoho příkazu `wg-quick up wg0`. Velmi jednoduché.
 
     Podporuje také roaming, můžete měnit IP adresu a stále komunikovat se zbytkem sítě. Hezky to napsal Petr Krčmář v článku na Rootu: https://www.root.cz/clanky/wireguard-moderni-a-snadno-pouzitelna-vpn-v-linuxovem-jadre/
 
@@ -21,7 +21,7 @@
 
     ## Setup Wireguardu
 
-    Pojďme si ukázat jak Wireguard nakonfigurovat. Máme VPN server na IP adrese `vpn.sikademo.com`, firemní síť `192.168.100.0/24` kde máme server s clientem k VPN na adrese `192.168.100.101`. Dále máme notebook a telefon, které chceme také do VPN připojit.
+    Pojďme si ukázat jak Wireguard nakonfigurovat. Máme VPN server na IP adrese `vpn.sikademo.com`, firemní síť `192.168.100.0/24` kde máme server s klientem k VPN na adrese `192.168.100.101`. Dále máme notebook a telefon, které chceme také do VPN připojit.
 
     Budu používat VPN server na Debian 10, kde je wireguard v repozitářích. Na firemní síti také poběží Debian 10, na notebooku mám Mac a telefon IPhone.
 
@@ -35,7 +35,7 @@
 
     Na Macu nainstaluju Wireguard z [Mac App Store](https://apps.apple.com/us/app/wireguard/id1451685025), stejně tak na iPhone z [App Store](https://apps.apple.com/us/app/wireguard/id1441195209).
 
-    Pokud chci i wireguard tools musím je nainstalovat pomoci brew
+    Pokud chci i wireguard tools, musím je nainstalovat pomoci brew
 
     ```
     brew install wireguard-tools
@@ -87,11 +87,11 @@
 
     Interface popisuje jak vypadá interface wg0, co je standardní interface. Adresa `10.10.0.1/24` je adresa na VPN síti a port `51820` je standardní UDP port kde Wireguard poslouchá. Dále je tam privátní klíč (v mé ukázce nevalidní placeholder `Server/Private=`), který vygenerujete příkazem `wg genkey`. V skeci post up / post down je nastavení forwardu a masquarade.
 
-    Pak jsou na definice jednotlivých klientů, peeru. Budeme mít 3 klienty: server v kanceláři, počítač a telefon. Klienti jsou definování pouze jejich veřejným klíčem, žádné certifikáty nejsou potřeba.
+    Pak jsou na definice jednotlivých klientů, peeru. Budeme mít 3 klienty: server v kanceláři, počítač a telefon. Klienti jsou definováni pouze jejich veřejným klíčem, žádné certifikáty nejsou potřeba.
 
     První klient (office) mám v allowed IPs také rozsah sítě v kanceláři abychom se na ni z VPN dostali.
 
-    Konfigrurce klientů jsou jednodušší, takhle vypadá konfigurační soubor na klientu v kanceláři:
+    Konfigrurce klientů jsou jednodušší, takhle vypadá konfigurační soubor na klientovi v kanceláři:
 
     ```
     [Interface]
@@ -139,7 +139,7 @@
     PersistentKeepalive = 25
     ```
 
-    Na Macu ani na iPhone už není potřeba PostUp/PostDown, takže konfigurace je ještě přímočařejší. Když se podíváme do AllowedIPs, je tam kromě sítě VPN také adresa sitě v kanceláři, což nám říká že packety směřující do kanceláře mají jít skrz VPN.
+    Na Macu ani na iPhone už není potřeba PostUp/PostDown, takže konfigurace je ještě přímočařejší. Když se podíváme do AllowedIPs, je tam kromě sítě VPN také adresa sitě v kanceláři, což nám říká, že packety směřující do kanceláře mají jít skrz VPN.
 
     Pokud chceme aby všechen traffic byl skrz VPN, nastavíme `AllowedIPs = 0.0.0.0/0, ::/0`.
 
@@ -161,15 +161,15 @@
 
     ## Start
 
-    Když chceme na Linuxu Wireguard zapnout, stačí nám k tomu `wg-quick up wg0`. `wg0` je název interface a zároveň jméno souboru v `/etc/wireguard/`. Pokud jej chceme vypnout, použijeme `wg-quick up wg0`.  Při potřebe spoušění při startu systému je ideální použít `systemctl enable wg-quick@wg0`, tímto zapneme službu. `systemctl start wg-quick@wg0` tímto službu spustíme, a tímto zjistíme status služby `systemctl status wg-quick@wg0` Pokud soubor změníme, musíme vždy Wiregurd vypnout a pak zapnout.
+    Když chceme na Linuxu Wireguard zapnout, stačí nám k tomu `wg-quick up wg0`. `wg0`, co je název interface a zároveň jméno souboru v `/etc/wireguard/`. Pokud jej chceme vypnout, použijeme `wg-quick up wg0`. V případě potřeby spouštění při startu systému je ideální použít `systemctl enable wg-quick@wg0`, tímto zapneme službu. Tímto příkazem `systemctl start wg-quick@wg0` službu spustíme, a tímto příkazem zase zjistíme status služby `systemctl status wg-quick@wg0` Pokud soubor změníme, musíme vždy Wiregurd vypnout a pak zapnout.
 
-    Na Macu a v telefonu je to jen připojit se do profilu VPN.
+    Na Macu a v telefonu to znamená jen připojit se do profilu VPN.
 
-    A je to. Wireguard je hodně robustní, takže i když se spojení rozváže, dokáže si ho velmi rychle navazat zpět bez nutnosti interakce.
+    A je to. Wireguard je hodně robustní, takže i když se spojení rozváže, dokáže si ho velmi rychle navázat zpět bez nutnosti interakce.
 
     ## Shrnutí
 
-    S Wireguardem mám velmi pozitivní zkušenost, už jej používám na všech svých projektech produkčně a žádná chyba. Rozodně je to něco co stojí za vyzkoušení a myslím s, že si jej zamilujete (i ti, kdo nesnáší VPN a sítě jako já).
+    S Wireguardem mám velmi pozitivní zkušenost, už jej používám na všech svých projektech produkčně a žádná chyba. Rozhodně je to něco co stojí za vyzkoušení a myslím si, že si jej zamilujete (i ti, kdo nesnáší VPN a sítě jako já).
 
     ## Zdroje
 
