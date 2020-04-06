@@ -92,7 +92,9 @@ const SessionDD = props => {
               Otevřený termín {session.price} bez DPH
             </Price>
             <Padding>
-              <h2 className="pt-3">Registrace</h2>
+              <h2 className="pt-3" id="register">
+                Registrace
+              </h2>
 
               <SessionRegisterForm
                 site={props.site}

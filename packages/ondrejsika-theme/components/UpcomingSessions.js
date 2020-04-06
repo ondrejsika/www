@@ -28,9 +28,6 @@ class UpcomingSessions extends React.Component {
     if (this.props.limit) db.limit(this.props.limit);
     let sessions = db.get();
 
-    let site_name = this.props.site_name || "ondrej-sika";
-    let inquiry_email = this.props.inquiry_email || "ondrej@sika.io";
-
     let course_page_prefix = {
       cs: "skoleni",
       en: "training",
@@ -143,18 +140,17 @@ class UpcomingSessions extends React.Component {
                 <td>{course.price}</td>
                 <td>{course.length}</td>
                 <td scope="row">
-                  <a
-                    href={`mailto:${inquiry_email}?subject=[${site_name}] Request for Training: ${course.name} ${course.date_from} (${course.id})`}
-                    className="btn btn-success btn-sm"
-                  >
-                    <Translate
-                      lang={this.props.lang}
-                      cs="Registrovat"
-                      en="Register"
-                      de="Registrieren"
-                      se="Fråga efter en träning"
-                    />
-                  </a>
+                  <Link href={`/${session_page_prefix}/${course.id}#register`}>
+                    <a className="btn btn-success btn-small">
+                      <Translate
+                        lang={this.props.lang}
+                        cs="Registrovat"
+                        en="Register"
+                        de="Registrieren"
+                        se="Fråga efter en träning"
+                      />
+                    </a>
+                  </Link>
                 </td>
                 <td scope="row">
                   {course.facebook_event && (
