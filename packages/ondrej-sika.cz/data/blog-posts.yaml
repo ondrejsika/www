@@ -74,7 +74,7 @@
 
     ## Setup Ceph clusteru
 
-    Jakmile naběhne operátor a rook discover, muz
+    Jakmile naběhne operátor a rook discover, můžete nasadit Ceph cluster.
 
     ```
     kubectl create -f https://k.sika.link/rook-ceph-1.3/cluster.yaml
