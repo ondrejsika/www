@@ -6,11 +6,6 @@ import NewsletterBar from "@app/ondrejsika-theme/components/NewsletterBar";
 
 import Head from "next/head";
 
-let style = {
-  fontSize: "1.4em",
-  fontWeight: "bold"
-};
-
 import posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
 
 let posts_id_map = {};
@@ -40,16 +35,7 @@ let Post = props => {
         <Markdown source={post.content} />
         {(() => {
           if (post.ad) {
-            return (
-              <div className="row">
-                <div className="col-6">
-                  <AdBar ad={post.ad} />
-                </div>
-                <div className="col-6">
-                  <NewsletterBar />
-                </div>
-              </div>
-            );
+            return <AdBar ad={post.ad} />;
           } else {
             return <NewsletterBar />;
           }
