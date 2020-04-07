@@ -5,6 +5,7 @@
   "author": "Zuzana Jeschke",
   "author_email": "zuz@zuzjes.com",
   "dependencies": {
+    "@sentry/browser": "^5.15.4",
     "babel-plugin-styled-components": "^1.10.7",
     "react-bootstrap": "^1.0.0-beta.17",
     "styled-components": "4.2.0"
