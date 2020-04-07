@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Button from "@app/ondrejsika-theme/components/Button";
 
 const AdBar = props => {
   let ads = {
@@ -33,16 +33,16 @@ const AdBar = props => {
     }
   };
   return (
-    <div className="alert alert-success mt-5 text-center" role="alert">
+    <div className="alert alert-primary mt-5 text-center" role="alert">
       <h3>
         Zajímáte se o {ads[props.ad].about}? Zkuste mé{" "}
         {ads[props.ad].course_name}!
       </h3>
-      <Link href={`/skoleni/${props.ad}`}>
-        <a className="btn btn-large btn-success m-3">
+      <div className="m-5">
+        <Button size="huge" href={`/skoleni/${props.ad}`}>
           Ukázat {ads[props.ad].course_name}
-        </a>
-      </Link>
+        </Button>
+      </div>
     </div>
   );
 };
