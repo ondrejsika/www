@@ -24,6 +24,9 @@ module.exports = {
         };
       });
 
+      // remove default session page render (without session)
+      delete defaultPathMap["/verejne-terminy/[id]"];
+
       var sessions = yaml.safeLoad(
         fs.readFileSync("../data/training/sessions.yml", "utf8")
       );
