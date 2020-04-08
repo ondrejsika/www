@@ -2,7 +2,7 @@ import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
 import Link from "next/link";
-
+import styled from "styled-components";
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
@@ -11,6 +11,12 @@ import Button from "@app/ondrejsika-theme/components/Button";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
+
+const Hide = styled.div`
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
 
 const Navbar = (
   <ThemeNavbar
@@ -65,22 +71,24 @@ const Footer = (
             +420 773 452 376
           </ThemeFooter.A>
         </p>
-        <table className="contact-table table-borderless">
-          <tbody>
-            <tr>
-              <td>IČ:</td>
-              <td>88114163</td>
-            </tr>
-            <tr>
-              <td>DIČ:</td>
-              <td>CZ9302252102</td>
-            </tr>
-            <tr>
-              <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-              <td>2301432033/2010</td>
-            </tr>
-          </tbody>
-        </table>
+        <Hide>
+          <table className="contact-table table-borderless">
+            <tbody>
+              <tr>
+                <td>IČ:</td>
+                <td>88114163</td>
+              </tr>
+              <tr>
+                <td>DIČ:</td>
+                <td>CZ9302252102</td>
+              </tr>
+              <tr>
+                <td>Účet:&nbsp;&nbsp;&nbsp;</td>
+                <td>2301432033/2010</td>
+              </tr>
+            </tbody>
+          </table>
+        </Hide>
       </ThemeFooter.Wrapper>
     }
     secondColumn={
@@ -121,7 +129,7 @@ const Footer = (
       </ThemeFooter.Wrapper>
     }
     center={
-      <>
+      <Hide>
         <Link href="/obchodni-spoluprace">
           <ThemeFooter.A href="#">Obchodní Spolupráce</ThemeFooter.A>
         </Link>
@@ -141,7 +149,7 @@ const Footer = (
         <Link href="/invite">
           <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
         </Link>
-      </>
+      </Hide>
     }
   />
 );
