@@ -2,6 +2,7 @@ import React from "react";
 import default_colors from "@app/ondrejsika-theme/config/colors";
 import styled from "styled-components";
 import Link from "next/link";
+import hamburgerMenu from "@app/data/pictures/hamburger-menu.svg";
 
 const NavLink = styled.a`
   color: ${default_colors.WHITE} !important;
@@ -20,6 +21,16 @@ const NavName = styled.strong`
 
 const NavUnderheader = styled.div`
   color: ${default_colors.WHITE};
+`;
+
+const HamburgerMenu = styled.span`
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
 `;
 
 const Navbar = props => {
@@ -42,7 +53,6 @@ const Navbar = props => {
               </NavUnderheader>
             </a>
             <button
-              className="navbar-toggler"
               type="button"
               data-toggle="collapse"
               data-target="#navbarNavDropdownaa"
@@ -50,7 +60,10 @@ const Navbar = props => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              {/* zde */}
+              <HamburgerMenu>
+                <img src={hamburgerMenu} />
+              </HamburgerMenu>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdownaa">
               <ul className="navbar-nav ml-auto">
