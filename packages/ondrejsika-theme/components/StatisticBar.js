@@ -5,6 +5,9 @@ import styled from "styled-components";
 const Background = styled.div`
   background-color: ${props =>
     (props.site && props.site.colors && props.site.colors.SECONDARY) || "grey"};
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const StatisticBar = props => (
