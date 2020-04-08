@@ -90,7 +90,7 @@ const CompaniesBar = props => (
         ica,
         cra
       ].map((img, i) => (
-        <div key={i} className="col-lg-1 col-md-2 col-sm-4 col-4 pl-0 pr-0">
+        <div key={i} className="col-lg-1 col-md-2 col-sm-3 col-2 pl-0 pr-0">
           <img src={img} className="img-fluid bw" alt="default" />
         </div>
       ))}
