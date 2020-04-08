@@ -9,6 +9,12 @@ const CenterP = styled.p`
   text-align: center;
 `;
 
+const Hide = styled.div`
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
+
 const Footer = props => {
   const Background = styled.div`
     margin-top: 3em;
@@ -27,17 +33,19 @@ const Footer = props => {
           <Col sm={4}>{props.thirdColumn}</Col>
         </Row>
         <CenterP>{props.center}</CenterP>
-        <CenterP>
-          Website by{" "}
-          <a
-            href="https://zuzjes.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="fs-11 text a-underline text-white"
-          >
-            Zuzana Jeschke
-          </a>
-        </CenterP>
+        <Hide>
+          <CenterP>
+            Website by{" "}
+            <a
+              href="https://zuzjes.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fs-11 text a-underline text-white"
+            >
+              Zuzana Jeschke
+            </a>
+          </CenterP>
+        </Hide>
       </Container>
     </Background>
   );
