@@ -5,6 +5,7 @@ import Translate from "@app/common/components/Translate";
 import Link from "next/link";
 import bar from "./coronavirus3.jpg";
 import close from "./close.svg";
+
 let KoronaBar = props => {
   const [hideBar, setHideBar] = useCookie("CoronaBarHide");
 
@@ -60,6 +61,11 @@ let KoronaBar = props => {
             .background {
               background-image: url(${bar});
               background-size: cover;
+            }
+            @media (max-width: 600px) {
+              .background {
+                display: none;
+              }
             }
             a {
               color: white !important;
