@@ -38,8 +38,8 @@ const AdBar = props => {
         Zajímáte se o {ads[props.ad].about}? Zkuste mé{" "}
         {ads[props.ad].course_name}!
       </h3>
-      <div className="m-5">
-        <Button size="huge" href={`/skoleni/${props.ad}`}>
+      <div className="mt-5 mb-5">
+        <Button size="big" href={`/skoleni/${props.ad}`}>
           Ukázat {ads[props.ad].course_name}
         </Button>
       </div>
