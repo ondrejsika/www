@@ -23,8 +23,8 @@ const ImgWrapper = styled.div`
 const OurTeam = props => (
   <>
     <Row>
-      {props.lecturers.map(lector => (
-        <Col xs={2}>
+      {props.lecturers.map((lector, i) => (
+        <Col md={2} xs={4} key={i}>
           <ImgWrapper>
             <Img src={lector[0]} fluid />
             <H4>{lector[1]}</H4>
