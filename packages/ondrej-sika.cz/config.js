@@ -13,6 +13,7 @@ const site = {
       : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
   name: "ondrej-sika.cz",
   lang: "cs",
+  gtm_id: "GTM-T5TVKRL",
   gauges_site_id: "5a892d8dba4ae31b28000034",
   google_analytics_site_id: "UA-39461955-14",
   recaptcha_site_key: "6LeLfOUUAAAAAIH5pSlU_m539RjHOkhHgClZnYoc",
