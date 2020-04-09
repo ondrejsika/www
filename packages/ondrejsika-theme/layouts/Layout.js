@@ -6,11 +6,16 @@ import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 import CoronaBar from "@app/common/components/CoronaBar";
+import GoogleTagManager from "@app/common/google_tag_manager/GoogleTagManager";
+
+import { init as gtm_init } from "@app/common/google_tag_manager/lib";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
 
 let Layout = props => {
+  if (props.site.gtm_id) gtm_init(props.site.gtm_id);
+
   if (props.site.sentry_dsn)
     Sentry.init({
       dsn: props.site.sentry_dsn
@@ -25,6 +30,7 @@ let Layout = props => {
           href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
           rel="stylesheet"
         />
+        {props.site.gtm_id && <GoogleTagManager gtm_id={props.site.gtm_id} />}
       </Head>
       <DevelopmentBar />
       <CoronaBar
