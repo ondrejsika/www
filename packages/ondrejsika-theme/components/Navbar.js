@@ -31,8 +31,15 @@ const HamburgerMenu = styled.span`
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
-`;
 
+  @media (min-width: 992px) {
+    display: none;
+  }
+`;
+const Button = styled.button`
+  background-color: transparent;
+  border: none;
+`;
 const Navbar = props => {
   const Background = styled.div`
     background-color: ${(props.site &&
@@ -52,19 +59,11 @@ const Navbar = props => {
                 {props.NavUnderheader}
               </NavUnderheader>
             </a>
-            <button
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNavDropdownaa"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              {/* zde */}
+            <Button data-toggle="collapse" data-target="#navbarNavDropdownaa">
               <HamburgerMenu>
                 <img src={hamburgerMenu} />
               </HamburgerMenu>
-            </button>
+            </Button>
             <div className="collapse navbar-collapse" id="navbarNavDropdownaa">
               <ul className="navbar-nav ml-auto">
                 {props.links.map((link, i) => {
