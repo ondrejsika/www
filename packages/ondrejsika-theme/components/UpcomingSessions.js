@@ -91,9 +91,7 @@ class UpcomingSessions extends React.Component {
             <th />
             <th />
             <th />
-            {(() => {
-              if (!this.props.hide_add_to_google_calendar) return <th />;
-            })()}
+            {!this.props.hide_add_to_google_calendar && <th />}
           </tr>
         </thead>
         <tbody>
@@ -131,11 +129,9 @@ class UpcomingSessions extends React.Component {
                 </td>
                 <td>{course.city}</td>
                 <td>
-                  {(() => {
-                    if (course.date_from != course.date_to)
-                      return course.date_from + ` - ` + course.date_to;
-                    return course.date_from;
-                  })()}
+                  {course.date_from != course.date_to
+                    ? course.date_from + ` - ` + course.date_to
+                    : course.date_from}
                 </td>
                 <td>{course.price}</td>
                 <td>{course.length}</td>
@@ -176,23 +172,20 @@ class UpcomingSessions extends React.Component {
                     </a>
                   )}
                 </td>
-                {(() => {
-                  if (!this.props.hide_add_to_google_calendar)
-                    return (
-                      <td scope="row">
-                        <AddToGoogleCalendar
-                          name={`${course.name} - Ondrej Sika`}
-                          location={course.city}
-                          from={date_for_google_calendar_link(course.date_from)}
-                          to={date_for_google_calendar_link(course.date_to)}
-                        >
-                          <a className="btn btn-primary btn-sm" target="_blank">
-                            <FaRegCalendarPlus />
-                          </a>
-                        </AddToGoogleCalendar>
-                      </td>
-                    );
-                })()}
+                {!this.props.hide_add_to_google_calendar && (
+                  <td scope="row">
+                    <AddToGoogleCalendar
+                      name={`${course.name} - Ondrej Sika`}
+                      location={course.city}
+                      from={date_for_google_calendar_link(course.date_from)}
+                      to={date_for_google_calendar_link(course.date_to)}
+                    >
+                      <a className="btn btn-primary btn-sm" target="_blank">
+                        <FaRegCalendarPlus />
+                      </a>
+                    </AddToGoogleCalendar>
+                  </td>
+                )}
               </tr>
             );
           })}
