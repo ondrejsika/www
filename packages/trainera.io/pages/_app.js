@@ -2,7 +2,7 @@ import React from "react";
 import App from "next/app";
 import site from "@app/trainera.io/config";
 import Link from "next/link";
-
+import styled from "styled-components";
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
@@ -12,6 +12,12 @@ import Button from "@app/ondrejsika-theme/components/Button";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
+
+const Hide = styled.div`
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
 
 const LanguageSwitch = <ThemeLanguageSwitch site={site} />;
 
@@ -59,22 +65,24 @@ const Footer = (
             +420 773 452 376
           </ThemeFooter.A>
         </p>
-        <table className="contact-table table-borderless">
-          <tbody>
-            <tr>
-              <td>IČ:</td>
-              <td>08591491</td>
-            </tr>
-            <tr>
-              <td>DIČ:</td>
-              <td>CZ08591491</td>
-            </tr>
-            <tr>
-              <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-              <td>2801705982/2010</td>
-            </tr>
-          </tbody>
-        </table>
+        <Hide>
+          <table className="contact-table table-borderless">
+            <tbody>
+              <tr>
+                <td>IČ:</td>
+                <td>08591491</td>
+              </tr>
+              <tr>
+                <td>DIČ:</td>
+                <td>CZ08591491</td>
+              </tr>
+              <tr>
+                <td>Účet:&nbsp;&nbsp;&nbsp;</td>
+                <td>2801705982/2010</td>
+              </tr>
+            </tbody>
+          </table>
+        </Hide>
       </ThemeFooter.Wrapper>
     }
     secondColumn={
@@ -117,7 +125,7 @@ const Footer = (
       </ThemeFooter.Wrapper>
     }
     center={
-      <>
+      <Hide>
         <Link href="/lektorska-spoluprace">
           <ThemeFooter.A href="#">Lektorská spolupráce</ThemeFooter.A>
         </Link>
@@ -129,7 +137,7 @@ const Footer = (
         <Link href="/invite">
           <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
         </Link>
-      </>
+      </Hide>
     }
   />
 );
