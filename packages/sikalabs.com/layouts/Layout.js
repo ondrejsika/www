@@ -29,10 +29,20 @@ const Layout = props => (
       }
       h1 {
         font-size: 2em;
+        font-weight: normal;
       }
       h2 {
         font-size: 5em;
         font-weight: bold;
+      }
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 1.3em;
+        }
+        h2 {
+          font-size: 2em;
+          font-weight: bold;
+        }
       }
     `}</style>
     <Gauges gauges_site_id={props.site.gauges_site_id} />
