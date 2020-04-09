@@ -48,6 +48,15 @@ const Layout = props => (
           font-weight: bold;
         }
       }
+      .button {
+        padding: 10px;
+        background: white;
+        color: #131480;
+        text-decoration: none;
+      }
+      .button:hover {
+        text-decoration: underline;
+      }
     `}</style>
     <Gauges gauges_site_id={props.site.gauges_site_id} />
   </>
