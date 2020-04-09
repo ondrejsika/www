@@ -35,6 +35,10 @@ const Layout = props => (
         font-size: 5em;
         font-weight: bold;
       }
+      h3 {
+        font-size: 1.6em;
+        font-weight: bold;
+      }
       @media only screen and (max-width: 600px) {
         h1 {
           font-size: 1.3em;
