@@ -97,6 +97,9 @@ const Button = props => {
     ${props =>
       props.type == "primary" &&
       css`
+        border: 1px solid
+          ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
         background: ${(props.site &&
           props.site.colors &&
           props.site.colors.PRIMARY) ||
@@ -125,12 +128,12 @@ const Button = props => {
     ${props =>
       props.type == "secondary" &&
       css`
-        order: 1px solid
-          ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+        border: 1px solid
+          ${(props.site && props.site.colors && props.site.colors.SECONDARY) ||
             default_colors.BLUE};
         color: ${(props.site &&
           props.site.colors &&
-          props.site.colors.PRIMARY) ||
+          props.site.colors.SECONDARY) ||
           default_colors.BLUE};
         background: ${(props.site &&
           props.site.colors &&
