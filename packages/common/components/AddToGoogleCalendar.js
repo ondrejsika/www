@@ -1,4 +1,5 @@
-import Link from "next/link";
+import React from "react";
+import styled from "styled-components";
 
 const parseDate = dateString => {
   var year = dateString.substring(0, 4);
@@ -25,17 +26,19 @@ const AddToGoogleCalendar = props => {
   let name = props.name;
   let from = props.from;
 
+  let A = props.A || styled.a``;
+
   let toDate = parseDate(props.to);
   toDate.setDate(toDate.getDate() + 1);
   let to = formatDate(toDate);
   let details = props.details || "";
   let location = props.location || "";
   return (
-    <Link
+    <A
       href={`https://www.google.com/calendar/render?action=TEMPLATE&text=${name}&dates=${from}/${to}&details=${details}&location=${location}&sf=true&output=xml`}
     >
       {props.children}
-    </Link>
+    </A>
   );
 };
 export default AddToGoogleCalendar;
