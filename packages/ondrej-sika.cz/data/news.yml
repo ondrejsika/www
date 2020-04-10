@@ -11,3 +11,10 @@
     Na školení se můžete registrovat zde: [Registrace na Docker](/verejne-terminy/docker-praha-14-04-2020#register) a [Registrace na Kubernetes](/verejne-terminy/kubernetes-praha-16-04-2020#register)
 
     Pokud máte jakoukoliv otázku, neváhejte se zeptat na <ondrej@sika.io>
+  twitter_recommendations:
+    - adam-bisek-docker
+    - petr-klobas-docker
+    - petr-todorov-kubernetes
+    - martin-sindelar-gitlab-ci
+    - jan-novotny-docker
+    - lubos-klokner-docker-2
