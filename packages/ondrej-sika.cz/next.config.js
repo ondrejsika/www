@@ -36,6 +36,17 @@ module.exports = {
           query: { id: session.id }
         };
       });
+
+      // remove default news page render (without session)
+      delete defaultPathMap["/news/[id]"];
+
+      var news_list = yaml.safeLoad(fs.readFileSync("data/news.yml", "utf8"));
+      news_list.forEach(function(news) {
+        defaultPathMap[`/news/${news.id}`] = {
+          page: "/news/[id]",
+          query: { id: news.id }
+        };
+      });
     } catch (e) {
       console.log(e);
     }
