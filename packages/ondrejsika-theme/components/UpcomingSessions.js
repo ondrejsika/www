@@ -25,6 +25,10 @@ const MobileView = styled.div`
   }
 `;
 
+const Session = styled.div`
+  padding: 0.5em 0;
+`;
+
 const date_for_google_calendar_link = dd_mm_yyyy =>
   dd_mm_yyyy
     .split(".")
@@ -34,7 +38,7 @@ const date_for_google_calendar_link = dd_mm_yyyy =>
 
 const UpcomingSessions = props => {
   const A = styled.a`
-    padding: 1em;
+    padding-left: 1.5em;
     color: ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
       default_colors.BLUE};
   `;
@@ -217,37 +221,10 @@ const UpcomingSessions = props => {
       </DesktopView>
 
       <MobileView>
-        <h1>mobil</h1>
-        {sessions.map(course => {
-          let flag = { en: "🇬🇧", de: "🇩🇪", se: "🇸🇪", cs: "🇨🇿" }[course.lang];
+        {sessions.map((course, i) => {
           return (
-            <>
+            <Session key={i}>
               <p>
-                kurz:
-                {(() => {
-                  if (props.show_session_link)
-                    return (
-                      <Link href={`/${session_page_prefix}/${course.id}`}>
-                        <a>
-                          {course.name} {flag}
-                        </a>
-                      </Link>
-                    );
-                  if (props.show_course_link)
-                    return (
-                      <Link href={`/${course_page_prefix}/${course.course_id}`}>
-                        <a>
-                          {course.name} {flag}
-                        </a>
-                      </Link>
-                    );
-                  return (
-                    <span>
-                      {course.name} {flag}
-                    </span>
-                  );
-                })()}
-                -
                 {course.date_from != course.date_to
                   ? course.date_from + ` - ` + course.date_to
                   : course.date_from}
@@ -256,6 +233,19 @@ const UpcomingSessions = props => {
                 <br />
                 cena: {course.price}
               </p>
+              <Button
+                site={props.site}
+                size="big"
+                href={`/${session_page_prefix}/${course.id}#register`}
+              >
+                <Translate
+                  lang={props.lang}
+                  cs="Registrovat"
+                  en="Register"
+                  de="Registrieren"
+                  se="Fråga efter en träning"
+                />
+              </Button>
               <span>
                 {course.facebook_event && (
                   <A
@@ -286,22 +276,8 @@ const UpcomingSessions = props => {
                     <FaRegCalendarPlus />
                   </AddToGoogleCalendar>
                 )}
-                <Button
-                  site={props.site}
-                  size="big"
-                  href={`/${session_page_prefix}/${course.id}#register`}
-                >
-                  <Translate
-                    lang={props.lang}
-                    cs="Registrovat"
-                    en="Register"
-                    de="Registrieren"
-                    se="Fråga efter en träning"
-                  />
-                </Button>
               </span>
-              <hr />
-            </>
+            </Session>
           );
         })}
       </MobileView>
