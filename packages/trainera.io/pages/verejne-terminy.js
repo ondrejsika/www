@@ -14,6 +14,7 @@ const Index = props => (
     <MainBar site={props.site} header="Veřejné termíny školení" />
     <div className="container pt-4">
       <UpcomingSessions
+        site={props.site}
         lang={site.lang}
         location="cz"
         show_course_link={true}
