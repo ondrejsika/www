@@ -49,6 +49,7 @@ const Course = props => (
             />
           </h2>
           <UpcomingSessions
+            site={props.site}
             hide_add_to_google_calendar={props.hide_add_to_google_calendar}
             lang={props.lang}
             site_name={props.site && props.site.name}
