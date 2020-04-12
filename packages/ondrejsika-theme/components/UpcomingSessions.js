@@ -14,21 +14,26 @@ import {
 } from "react-icons/fa";
 
 const DesktopView = styled.div`
-  @media (max-width: 690px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
 
 const MobileView = styled.div`
-  @media (min-width: 690px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
 
-const Session = styled.div`
-  padding: 0.5em 0;
+const Session = styled.div``;
+const CourseName = styled.h3`
+  padding-top: 2em;
+  padding-bottom: 0;
+  margin-bottom: 0;
 `;
-
+const MarginTop = styled.div`
+  padding-top: 1.5em;
+`;
 const date_for_google_calendar_link = dd_mm_yyyy =>
   dd_mm_yyyy
     .split(".")
@@ -224,6 +229,31 @@ const UpcomingSessions = props => {
         {sessions.map((course, i) => {
           return (
             <Session key={i}>
+              {props.courseName && (
+                <>
+                  {(() => {
+                    if (props.show_session_link)
+                      return (
+                        <>
+                          <CourseName>{course.name}</CourseName>
+                          <Link href={`/${session_page_prefix}/${course.id}`}>
+                            <a>vice o kurzu</a>
+                          </Link>
+                        </>
+                      );
+                    if (props.show_course_link)
+                      return (
+                        <Link
+                          href={`/${course_page_prefix}/${course.course_id}`}
+                        >
+                          <a>{course.name}</a>
+                        </Link>
+                      );
+                    return <span>{course.name}</span>;
+                  })()}
+                </>
+              )}
+              {!props.courseName && <MarginTop />}
               <p>
                 {course.date_from != course.date_to
                   ? course.date_from + ` - ` + course.date_to
