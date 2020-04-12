@@ -237,7 +237,13 @@ const UpcomingSessions = props => {
                         <>
                           <CourseName>{course.name}</CourseName>
                           <Link href={`/${session_page_prefix}/${course.id}`}>
-                            <a>vice o kurzu</a>
+                            <a>
+                              <Translate
+                                lang={props.lang}
+                                cs="Více o kurzu"
+                                en="About the training"
+                              />
+                            </a>
                           </Link>
                         </>
                       );
@@ -259,9 +265,11 @@ const UpcomingSessions = props => {
                   ? course.date_from + ` - ` + course.date_to
                   : course.date_from}
                 <br />
-                delka: {course.length}
+                <Translate lang={props.lang} cs="délka: " en="length: " />
+                {course.length}
                 <br />
-                cena: {course.price}
+                <Translate lang={props.lang} cs="cena: " en="price: " />{" "}
+                {course.price}
               </p>
               <Button
                 site={props.site}

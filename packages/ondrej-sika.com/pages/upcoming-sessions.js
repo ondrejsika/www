@@ -10,7 +10,11 @@ const Index = props => (
     </Head>
     <MainBar header="Upcoming Sessions" />
     <div className="container pt-4">
-      <UpcomingSessions lang={props.site.lang} />
+      <UpcomingSessions
+        courseName={true}
+        show_session_link
+        lang={props.site.lang}
+      />
     </div>
   </div>
 );
