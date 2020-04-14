@@ -46,3 +46,7 @@
   course: terraform
   tweet_id: '1180763644059176960'
   lang: en
+- id: david-mach-ansible
+  course: ansible
+  tweet_id: '1249961245656133632'
+  lang: cs
