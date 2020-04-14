@@ -26,17 +26,16 @@ const Index = props => (
       />
       <TextArea TextHeader="Our services &amp; Team">
         <TextArea.P>
-          We are a training agency focused on DevOps. Out team is full of
-          experienced DevOps lecturers who work with those technologies on a
-          daily basis. That&apos;s the reason why they can explain the
-          technology clearly for beginners and answer all practical questions
-          from attendees.
+          We are training agency focused on DevOps. Our team is made up of
+          experienced DevOps lecturers who work with DeoOps technologies on a
+          daily basis. Therefore they can explain the technology clearly for
+          beginners and answer all practical questions from attendees.
         </TextArea.P>
         <TextArea.P>
-          Our technology stack, which we train, is a set of depending tools,
-          which boost yours and your IT teams effectivity and productivity. From
-          faster delivery of new features to your clients to cutting your
-          operating budget.
+          Technology stack, which we train, is a set of depending tools, which
+          boost the effectiveness and productivity of your teams &amp; yours.
+          You can expect faster delivery of new features to your clients as well
+          as cutting your operating budget.
         </TextArea.P>
         <TextArea.P>
           DevOps to the edge. Start with Docker, Kubernetes or CI today! As
