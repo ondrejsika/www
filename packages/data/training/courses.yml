@@ -20,10 +20,10 @@
   recommendations:
     cs: ["spel", "vse", "sit"]
     sk: ["spel", "vse", "sit"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
-      
+
       - Teoretický úvod do Dockeru
       - Instalace Dockeru (pro ty kteří nenainstalovali doma)
       - Práce s kontejnery
@@ -138,7 +138,7 @@
     cs: ["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]
   recommendations:
     cs: ["dimensiondata", "webglobe-yegon", "sit"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
 
@@ -224,7 +224,7 @@
     cs: []
   recommendations:
     cs: ["dimensiondata", "webglobe-yegon", "sit"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
 
@@ -292,7 +292,7 @@
     cs: []
   recommendations:
     cs: ["dimensiondata", "bohemiaenergy", "sit"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
 
@@ -376,7 +376,7 @@
     cs: []
   recommendations:
     cs: ["CMS", "vse"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
 
@@ -458,7 +458,7 @@
     cs: []
   recommendations:
     cs: ["oxy", "oxyCTO", "sit"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
 
@@ -473,7 +473,7 @@
     cs: |
       ### K čemu se používá?
 
-      Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám, ze ztratíte přehled, kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
+      Ansible je nástroj na hromadnou správu konfigurací a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám, že ztratíte přehled, kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
 
       ### Jak školení probíhá
 
@@ -547,7 +547,7 @@
     cs: []
   recommendations:
     cs: ["oxy", "oxyCTO", "sit"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
 
@@ -566,7 +566,7 @@
 
       Terraform je nástroj, který se používá ke správě infrastruktury v cloudu, jak veřejném (AWS, Azure, GCP), tak privátním (OpenStack, VMware vSphere).
 
-      Terraform Vám umožní __spravovat infrastruktutru jako kód__, to znamená verzovanou v Gitu, přidávání resources pomocí merge (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředé přesně tak, jako je v produkci bez zbytečného úsilí. O všech komponentách máte přehled a můžete predikovat ceny. Konec klikání infrastruktury, zkuste Terraform.
+      Terraform Vám umožní __spravovat infrastruktutru jako kód__, to znamená verzovanou v Gitu, přidávání resources pomocí merge (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředí přesně tak, jako je v produkci bez zbytečného úsilí. O všech komponentách máte přehled a můžete predikovat ceny. Konec klikání infrastruktury, zkuste Terraform.
 
       Terraform umožnuje spravovat více cloudových providerů současne, zároveň umožnuje pracovat s hibridními cloudy (část v privátním cloudu, část ve veřejném).
 
@@ -644,7 +644,7 @@
     cs: []
   recommendations:
     cs: ["spel", "vse", "sit"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
 
@@ -715,10 +715,10 @@
     cs: []
   recommendations:
     cs: ["spel", "vse", "sit"]
-  agenda: 
+  agenda:
     cs: |
       ### Co Vás naučím
-      
+
       -	Úvod do Prometheus ekosystému
       - Instalace Promethea a Alertmanageru
       - Exportéry – získávání dat

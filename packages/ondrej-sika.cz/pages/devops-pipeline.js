@@ -4,14 +4,14 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 const Page = () => (
   <Article
     title="Open source DevOps pipeline"
-    subheader="DevOps je sada nastroju a technik, diky kterym budete dorucovat novou fukncionalitu a zmeny k zakaznikum automaticky, rychleji a bez starostne. DevOps Vam umozni venovat vice casu vyvojem nez nasazovanim a provozovanim a vy se muzete zamerit na jadro vaseho businessu. Zavedenim DevOps take elimujete nutnost rucnich zasahu a usetrite naklady na tuto manualni praci a vyhnete se chybam."
+    subheader="DevOps je sada nástrojů a technik, díky kterým budete doručovat novou fukncionalitu a změny k zakazníkům automaticky, rychleji a bezstarostně. DevOps Vám umožní trávit více času vývojem než nasazováním a provozováním a vy se můžete zaměřit na jádro vašeho byznysu. Zavedením DevOps také eliminujete nutnost ručních zásahů a ušetříte náklady na tuto manuální práci a vyhnete se chybám."
     markdown={`
-Ja pouzivam tyto nastroje jak ve sve tak v DevOps pipeline pro klienty.
+Já používám tyto nástroje jak ve své pipepline tak v DevOps pipeline pro klienty.
 
-- Git - Verzovaci system
-- Gitlab - Collaborativni a DevOps Platforma
+- Git - Verzovací systém
+- Gitlab - Kolaborativní a DevOps Platforma
 - Gitlab CI - Automatizace
-- Ansible - Congig management
+- Ansible - Config management
 - Docker - Container Engine
 - Kubernetes - Container Orchestrator
 - Prometheus, Alert Manager, Grafana - Monitoring & Alerting
@@ -28,7 +28,7 @@ Git je moderní verzovaci nástroj, který se stal de facto standardem mezi výv
 
 ## Gitlab
 
-Gitlab je kolaborativni platforma pokryvajici velkou cast zivotniho cyklu DevOps. Primarne jde o server pro hostovani Git repozitaru a spolupraci nad kodem. Gitlab take obsahuje velmi dobre CI, Issues management nebo Wiki.
+Gitlab je kolaborativní platforma pokrývající velkou část životního cyklu DevOps. Primárně jde o server pro hostování Git repozitářů a spolupráci nad kódem. Gitlab také obsahuje velmi dobré CI, Issues management nebo Wiki.
 
 ## Gitlab CI
 
@@ -36,7 +36,7 @@ Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás au
 
 ## Ansible
 
-Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám, ze ztratíte přehled, kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
+Ansible je nástroj na hromadnou správu konfigurací a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám, že ztratíte přehled, kde máte co nasazené nebo že vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
 
 ## Docker
 
@@ -52,11 +52,11 @@ Prométheus je moderní monitoringový nástroj a metrics server. Umožňuje sb�
 
 ## Sentry
 
-Sentry je nastroj na agregovani chyb z aplikace. Podporuje vsechny mozne jazyky od Pythonu po JavaScript v browseru. Sentry dokaze ulozit kompletni stack trace, takze nasledne ladeni chyb je o hodne jednodussi.
+Sentry je nástroj na agregování chyb z aplikace. Podporuje všechny možné jazyky od Pythonu po JavaScript v browseru. Sentry dokáže uložit kompletní stack trace, takže následné ladení chyb je o hodně jednodušší.
 
 ## ELK / EFK
 
-ELK nebo Elastic Stack je sada nastroju ElasticSearch, Logstash (nebo Fluentd) a Kibana, ktere agreguji logy na jedno misto a umoznuji nad nimi full text vyhledavani a alerting.
+ELK nebo Elastic Stack je sada nástrojů ElasticSearch, Logstash (nebo Fluentd) a Kibana, které agregují logy na jedno místo a umožní nad nimi full text vyhledávání a alerting.
 
 ## Rancher, RKE
 
@@ -64,7 +64,7 @@ Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, ta
 
 ## Terraform
 
-Terraform je nástroj, který se používá ke správě infrastruktury v cloudu (veřejném i privátním). Terraform Vám umožní spravovat infrastruktutru jako kód, to znamená verzovanou v Gitu, přidávání resources pomocí merge (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředé přesně tak, jako je v produkci bez zbytečného úsilí.
+Terraform je nástroj, který se používá ke správě infrastruktury v cloudu (veřejném i privátním). Terraform Vám umožní spravovat infrastruktutru jako kód, to znamená verzovanou v Gitu, přidávání resources pomocí merge (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředí přesně tak, jako je v produkci, prostředí, bez zbytečného úsilí.
 `}
   />
 );
