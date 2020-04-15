@@ -11,7 +11,7 @@ const Index = () => (
     </Head>
     <MainBar header="Nabídka Školení" />
     <div className="container">
-      <TraineraCourseBar LectureImgHeader="Kurzy co školímeeeee" />
+      <TraineraCourseBar LectureImgHeader="Kurzy co školíme" />
     </div>
   </div>
 );
