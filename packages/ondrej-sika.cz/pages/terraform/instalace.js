@@ -7,19 +7,20 @@ export default () => (
     markdown={`
 ## Mac
 
-Na Macu nainstalujete Terraform pomoci [brew](/navody/brew)
+Na Macu nainstalujete Terraform pomocí [brew](/návody/brew)
 
-    brew install terraform
+brew install terraform
 
 ## Linux
 
-Na Linuxu si stahnete (<https://www.terraform.io/downloads.html>) build v ZIPu a zkopitujte \`terraform\` binarku do \`/usr/local/bin\`.
+Na Linuxu si stáhněte (<https://www.terraform.io/downloads.html>) build v ZIPu a zkopírujte \`terraform\` binárku do \`/usr/local/bin\`.
 
 ## Windows
 
-Na Windown naistalujete Terrafrom pomoci [chocolatey](/navody/chocolatey)
+Na Windows naistalujete Terrafrom pomocí [chocolatey](/návody/chocolatey)
 
-    choco install terraform
+choco install terraform
+
 
 `}
   />

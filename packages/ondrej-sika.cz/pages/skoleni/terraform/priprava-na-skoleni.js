@@ -3,13 +3,13 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
   <Article
-    title="Priprava na Skoleni Terraformu"
+    title="Příprava na Školení Terraformu"
     hideNewsletter={true}
     markdown={`
-Na skoleni Terraformu je potreba:
+Na školení Terraformu je potřeba:
+- Nainstalovaný Terraform - [návod na instalaci](/terraform/instalace)
 
-- Nainstalovany Terraform - [navod na instalaci](/terraform/instalace)
-- Ucet na DigitalOcean (Pokud nemate muzete pouzit muj referal: [Registrace + 50 USD kredit](https://sika.link/do-ref))
+- Účet na DigitalOcean (Pokud nemáte můžete použít můj referral: [Registrace + 50 USD kredit](https://sika.link/do-ref))
 `}
   />
 );
