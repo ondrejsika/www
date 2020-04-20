@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Terraform"
     ad="terraform"
@@ -19,3 +20,5 @@ Tato stranka je ve vyvoji, pro vice informaci jdete na oficialni stranky <https:
 `}
   />
 );
+
+export default Page;
