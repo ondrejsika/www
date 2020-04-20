@@ -1,7 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
-import { TreeTransformer } from "terser";
 
-export default () => (
+const Page = () => (
   <Article
     title="Sprava Cloudflare DNS pomoci Terraformu"
     add="terraform"
@@ -119,3 +119,5 @@ Jeste jedno upozorneni na zaver, Terraform vygenereuje soubory \`terraform.tfsta
     }
   />
 );
+
+export default Page;
