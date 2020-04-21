@@ -125,7 +125,7 @@
   date_from: 11.3.2020
   date_to: 11.3.2020
 - id: docker-praha-14-04-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
@@ -139,7 +139,7 @@
   facebook_event: https://www.facebook.com/events/2405784686189990/
   linkedin_event: https://www.linkedin.com/events/6652235478722465792/
 - id: kubernetes-praha-16-04-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
@@ -153,7 +153,7 @@
   facebook_event: https://www.facebook.com/events/536911027209179/
   linkedin_event: https://www.linkedin.com/events/6652265982385508352/
 - id: terraform-praha-20-04-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: terraform
@@ -167,7 +167,7 @@
   facebook_event: https://www.facebook.com/events/219550906058013/
   linkedin_event: https://www.linkedin.com/events/6652266921565659136/
 - id: gitlab-ci-praha-21-04-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: gitlab-ci
