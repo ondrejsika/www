@@ -181,7 +181,7 @@
   facebook_event: https://www.facebook.com/events/642294013259391/
   linkedin_event: https://www.linkedin.com/events/6652267611755171840/
 - id: prometheus-praha-24-04-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: prometheus
