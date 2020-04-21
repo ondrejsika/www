@@ -1,3 +1,11 @@
+- id: radim-daniel-panek-terraform
+  course: terraform
+  tweet_id: '1252334258292752392'
+  lang: cs
+- id: jan-novotny-terraform
+  course: docker
+  tweet_id: '1252517864315240448'
+  lang: cs
 - id: david-mach-ansible
   course: ansible
   tweet_id: '1249961245656133632'
