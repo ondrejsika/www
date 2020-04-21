@@ -1,7 +1,7 @@
 # Ondrej Sika's Webs
 
     2019 Ondrej Sika <ondrej@ondrejsika.com>
-    https://github.com/ondrejsika/ondrejsikawebs
+    https://github.com/ondrejsika/www
     https://gitlab.sikahq.com/www/www
 
 ## Development Guide
