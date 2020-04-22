@@ -452,12 +452,15 @@
   price:
     open:
       cz: 6 800 CZK
+      de: "??? EUR"
     in_house:
       cz: 25 000 CZK
+      de: "??? EUR"
   twitter_recommendations:
     cs: []
   recommendations:
     cs: ["oxy", "oxyCTO", "sit"]
+    en: ["oxy", "oxyCTO", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
