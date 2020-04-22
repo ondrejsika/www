@@ -51,7 +51,7 @@ const Page = props => {
         <link
           href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </Head>
       <CoronaBar local_link={false} />
       <Navigation wide={true} location={site.location} />
@@ -67,18 +67,28 @@ const Page = props => {
             lang={site.lang}
             cs="Nezávazně poptat školení"
             sk="Nezáväzne popýtať školenie"
+            de="xxNezávazně poptat školení"
+            en="xxNezávazně poptat školení"
           />
         </HeaderLink>
         <HeaderLink url={site.x_contact_link}>
-          <Translate lang={site.lang} cs="Kontaktovat" sk="Kontaktovať" />
+          <Translate
+            lang={site.lang}
+            cs="Kontaktovat"
+            sk="Kontaktovať"
+            de="xxKontaktovat"
+            en="xxKontaktovat"
+          />
         </HeaderLink>
       </Header>
       <div className="container">
         <h2>
           <Translate
             lang={site.lang}
-            cs="Otevřené ternímy"
+            cs="Otevřené termíny"
             sk="Otvorené termíny"
+            de="xxOtevřené ternímy"
+            en="Otevřené termíny"
           />
         </h2>
         <UpcomingSessions
@@ -111,6 +121,8 @@ const Page = props => {
                 povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho
                 software."
                   sk="Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
+                  de="xxVolám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
+                  en="xxVolám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
                 />
               </p>
             </TextFrame>
@@ -121,14 +133,17 @@ const Page = props => {
                     lang={lang}
                     cs="Mám zájem o školení"
                     sk="Mám záujem o školenie"
+                    de="xxMám zájem o školení"
+                    en="xxMám zájem o školení"
                   />
                 </h3>
                 <p>
                   <Translate
                     lang={lang}
-                    cs="Pokud máte zájem o školení, vyberte si variantu a pošlete
-                  nezávaznou poptávku."
+                    cs="Pokud máte zájem o školení, vyberte si variantu a pošlete nezávaznou poptávku."
                     sk="Ak máte záujem o školenie, neváhajte ma kontaktovať."
+                    de="xxPokud máte zájem o školení, vyberte si variantu a pošlete nezávaznou poptávku."
+                    en="xxPokud máte zájem o školení, vyberte si variantu a pošlete nezávaznou poptávku."
                   />
                 </p>
                 <div className="row text-center mt-4">
@@ -138,6 +153,8 @@ const Page = props => {
                         lang={lang}
                         cs="Otevřený termín"
                         sk="Otvorený termín"
+                        de="xxOtevřený termín"
+                        en="xxOtevřený termín"
                       />
                     </h5>
                     <div className="mb-2" style={{ fontSize: "1.3em" }}>
@@ -148,6 +165,8 @@ const Page = props => {
                         lang={lang}
                         cs="Nezávazně poptat"
                         sk="Nezáväzne popýtať"
+                        de="xxNezávazně poptat"
+                        en="xxNezávazně poptat"
                       />
                     </ButtonOutline>
                   </div>
@@ -157,6 +176,8 @@ const Page = props => {
                         lang={lang}
                         cs="Firemní školení"
                         sk="Firemné školenia"
+                        de="xxFiremní školení"
+                        en="xxFiremní školení"
                       />
                     </h5>
                     <div className="mb-2" style={{ fontSize: "1.3em" }}>
@@ -167,6 +188,8 @@ const Page = props => {
                         lang={lang}
                         cs="Nezávazně poptat"
                         sk="Nezáväzne popýtať"
+                        de="xxNezávazně poptat"
+                        en="xxNezávazně poptat"
                       />
                     </ButtonOutline>
                   </div>
@@ -179,6 +202,8 @@ const Page = props => {
                     lang={lang}
                     cs="Pokud máte jakýkoliv dotaz, naváhejte mi napsat na"
                     sk="Ak máte záujem o školenie, neváhajte ma kontaktovať"
+                    de="xxPokud máte jakýkoliv dotaz, naváhejte mi napsat na"
+                    en="xxPokud máte jakýkoliv dotaz, naváhejte mi napsat na"
                   />{" "}
                   <a
                     href={`mailto:ondrej@sika.io?subject=[${site.name}] Question about ${course_name}`}
@@ -211,6 +236,8 @@ const Page = props => {
               lang={lang}
               cs="Statistiky kurzu"
               sk="Štatistiky kurzu"
+              de="xxStatistiky kurzu"
+              en="xxStatistiky kurzu"
             />
           </h2>
         </div>
@@ -224,6 +251,8 @@ const Page = props => {
                 lang={lang}
                 cs="účastníků proškoleno"
                 sk="účastníkov"
+                de="xxúčastníků proškoleno"
+                en="xxúčastníků proškoleno"
               />
             </p>
           </div>
@@ -236,13 +265,21 @@ const Page = props => {
                 lang={lang}
                 cs="firem proškoleno"
                 sk="firiem preškolených"
+                de="xxfirem proškoleno"
+                en="xxfirem proškoleno"
               />
             </p>
           </div>
           <div className="col-4">
             <h2 className="text-center text-white mb-0 text-huge">20+</h2>
             <p className="text-white text-center statistic-bottom">
-              <Translate lang={lang} cs="běhů školení" sk="školení" />
+              <Translate
+                lang={lang}
+                cs="běhů školení"
+                sk="školení"
+                de="xxběhů školení"
+                en="xxběhů školení"
+              />
             </p>
           </div>
         </div>
@@ -255,6 +292,8 @@ const Page = props => {
               lang={lang}
               cs="Moji nejvýznamější klienti"
               sk="Moji nejvýznamější klienti"
+              de="xxMoji nejvýznamější klienti"
+              en="xxMoji nejvýznamější klienti"
             />
           }
         />
@@ -263,7 +302,14 @@ const Page = props => {
             <TwitterRecommendations ids={twitter_recommendations} />;
         })()}
         <ThreeCol
-          header={<Translate lang={lang} cs="Reference" />}
+          header={
+            <Translate
+              lang={lang}
+              cs="Reference"
+              de="xxReference"
+              en="xxReference"
+            />
+          }
           col1={<Recommendation id={recommendations[0]} lang={site.lang} />}
           col2={<Recommendation id={recommendations[1]} lang={site.lang} />}
           col3={<Recommendation id={recommendations[2]} lang={site.lang} />}
