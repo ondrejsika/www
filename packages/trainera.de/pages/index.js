@@ -7,7 +7,9 @@ import Head from "next/head";
 import TextArea from "@app/ondrejsika-theme/components/TextArea";
 import OutTeam from "@app/ondrejsika-theme/components/OurTeam";
 
-import ond from "@app/data/pictures/ondrejsika.jpg";
+import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
+import martinjurco from "@app/data/pictures/martinjurco.jpeg";
+import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
 
 const Index = props => (
   <div>
@@ -49,12 +51,9 @@ const Index = props => (
       </TextArea>
       <OutTeam
         lecturers={[
-          [ond, "Ondrej Sika"],
-          [ond, "Zuzana Jeschke"],
-          [ond, "Martin Jurco"],
-          [ond, "Martin Studna"],
-          [ond, "Martin Studna"],
-          [ond, "Martin Studna"]
+          [ondrejsika, "Ondrej Sika"],
+          [martinjurco, "Martin Jurco"],
+          [zuzanajeschke, "Zuzana Jeschke"]
         ]}
       ></OutTeam>
       <CompaniesBar lang={props.site.lang} />
