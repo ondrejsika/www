@@ -405,7 +405,7 @@
       - Docker a CI
 
       ### Pro koho je školení určeno
-      Školení je primárně určeno vývojářům, kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.`}
+      Školení je primárně určeno vývojářům, kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.
 
       #### Předchozí znalosti
       - Základy práce s Linuxem
