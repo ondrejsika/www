@@ -19,6 +19,7 @@ Pokud Vas zajima Docker, podivejte se na me [Skoleni Dockeru](/skoleni/docker)
 - [Pridani Kubernetes clusteru do Gitlabu](/kubernetes/pridani-kubernetes-clusteru-do-gitlabu)
 - [Priprava na skoleni Kubernetes](/skoleni/kubernetes/priprava-na-skoleni) - vice informaci o skoleni [zde](/skoleni/kubernetes)
 - [Novinky v Helm 3](/blog/helm3) (blog post)
+- [Persistentni storage pomoci Cephu](/blog/ceph-persistent-volumes-v-kubernetes-pomoci-rook/) (blog post)
 
 Pokud Vas zajima Kubernetes, podivejte se na me [Skoleni Kubernetes](/skoleni/kubernetes)
 
@@ -50,6 +51,7 @@ Pokud Vas zajima Git, podivejte se na me [Skoleni Gitu](/skoleni/git)
 
 ### Ostatní
 
+- [Wireguard VPN, nahrada OpenVPN a IPSec](/blog/wireguard/) (blog post)
 - [Brew (Homebrew)](/navody/brew) - Package manager pro Mac
 - [Chocolatey](/navody/chocolatey) - Package manager pro Windows
 `}
