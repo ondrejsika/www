@@ -20,6 +20,19 @@ module.exports = {
           query: { id: post.id }
         };
       });
+
+      // remove default session page render (without session)
+      delete defaultPathMap["/upcoming-sessions/[id]"];
+
+      var sessions = yaml.safeLoad(
+        fs.readFileSync("../data/training/sessions.yml", "utf8")
+      );
+      sessions.forEach(function(session) {
+        defaultPathMap[`/upcoming-sessions/${session.id}`] = {
+          page: "/upcoming-sessions/[id]",
+          query: { id: session.id }
+        };
+      });
     } catch (e) {
       console.log(e);
     }
