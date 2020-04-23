@@ -38,6 +38,7 @@ const SessionDD = props => {
   return (
     <>
       <Article
+        site={props.site}
         title={`${session.name} ${session.city} - Ondrej Sika`}
         header={`${session.name} ${session.city}`}
         subheader={
