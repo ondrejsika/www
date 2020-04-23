@@ -11,15 +11,20 @@
     open:
       cz: 11 999 CZK
       sk: 389 EUR
+      de: "??? EUR"
+      en: "??? EUR"
     in_house:
       cz: 50 000 CZK
       sk: 1550 EUR
+      de: "??? EUR"
+      en: "??? EUR"
   twitter_recommendations:
     cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
     sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
   recommendations:
     cs: ["spel", "vse", "sit"]
     sk: ["spel", "vse", "sit"]
+    en: ["spel", "vse", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
