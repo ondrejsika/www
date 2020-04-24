@@ -78,6 +78,7 @@ const UpcomingSessions = props => {
                 <Translate
                   lang={props.lang}
                   cs="NÁZEV ŠKOLENÍ"
+                  sk="NÁZOV ŠKOLENIA"
                   en="COURSE"
                   de="BEZEICHNUNG"
                   se="TRÄNNINGSNAMN"
@@ -87,6 +88,7 @@ const UpcomingSessions = props => {
                 <Translate
                   lang={props.lang}
                   cs="MÍSTO"
+                  sk="MIESTO"
                   en="VENUE"
                   de="ORT"
                   se="MÖTESPLATS"
@@ -96,6 +98,7 @@ const UpcomingSessions = props => {
                 <Translate
                   lang={props.lang}
                   cs="DATUM"
+                  sk="DÁTUM"
                   en="DATE"
                   de="DATUM"
                   se="DATUM"
@@ -105,6 +108,7 @@ const UpcomingSessions = props => {
                 <Translate
                   lang={props.lang}
                   cs="CENA"
+                  sk="CENA"
                   en="PRICE"
                   de="PREIS"
                   se="PRIS"
@@ -114,6 +118,7 @@ const UpcomingSessions = props => {
                 <Translate
                   lang={props.lang}
                   cs="DÉLKA"
+                  sk="ČASOVÝ ROZSAH"
                   en="LEGTH"
                   de="DAUER"
                   se="KURSLÄNGD"
@@ -177,6 +182,7 @@ const UpcomingSessions = props => {
                       <Translate
                         lang={props.lang}
                         cs="Registrovat"
+                        sk="Registrovať"
                         en="Register"
                         de="Registrieren"
                         se="Fråga efter en träning"
@@ -241,6 +247,7 @@ const UpcomingSessions = props => {
                               <Translate
                                 lang={props.lang}
                                 cs="Více o kurzu"
+                                sk="Viac o kurze"
                                 en="About the training"
                               />
                             </a>
@@ -265,10 +272,20 @@ const UpcomingSessions = props => {
                   ? course.date_from + ` - ` + course.date_to
                   : course.date_from}
                 <br />
-                <Translate lang={props.lang} cs="délka: " en="length: " />
+                <Translate
+                  lang={props.lang}
+                  cs="délka: "
+                  en="length: "
+                  sk="časový rozsah: "
+                />
                 {course.length}
                 <br />
-                <Translate lang={props.lang} cs="cena: " en="price: " />{" "}
+                <Translate
+                  lang={props.lang}
+                  cs="cena: "
+                  en="price: "
+                  sk="cena: "
+                />{" "}
                 {course.price}
               </p>
               <Button
@@ -279,6 +296,7 @@ const UpcomingSessions = props => {
                 <Translate
                   lang={props.lang}
                   cs="Registrovat"
+                  sk="Registrovať"
                   en="Register"
                   de="Registrieren"
                   se="Fråga efter en träning"
