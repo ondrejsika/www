@@ -294,11 +294,13 @@
       nl: "??? EUR"
       de: "??? EUR"
       en: "???"
+      se: "??? SEK"
     in_house:
       cz: 25 000 CZK
       nl: "??? EUR"
       de: "??? EUR"
       en: "???"
+      se: "??? SEK"
   twitter_recommendations:
     cs: []
   recommendations:
