@@ -384,12 +384,21 @@
   price:
     open:
       cz: 6 800 CZK
+      nl: "??? EUR"
+      de: "??? EUR"
+      en: "???"
+      se: "??? SEK"
     in_house:
       cz: 25 000 CZK
+      nl: "??? EUR"
+      de: "??? EUR"
+      en: "???"
+      se: "??? SEK"
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["CMS", "vse"]
+    cs: ["CMS", "vse", "lbms"]
+    en: ["CMS", "vse", "lbms"]
   agenda:
     cs: |
       ### Co Vás naučím
