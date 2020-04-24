@@ -13,7 +13,7 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.com/contact/?x_source=docker-training.ch",
   x_inquiry_url:
-    "https://ondrej-sika.com/training/ansible/inquiry/?x_source=docker-training.ch"
+    "https://ondrej-sika.com/training/docker/inquiry/?x_source=docker-training.ch"
 };
 
 export default site;
