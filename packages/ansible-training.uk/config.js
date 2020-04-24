@@ -13,7 +13,7 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.com/contact/?x_source=ansible-training.uk",
   x_inquiry_url:
-    "https://ondrej-sika.com/training/ansible/inquiry/?x_source=ansible-training.uk"
+    "https://ondrej-sika.com/training/ansible/poptavka/?x_source=ansible-training.uk"
 };
 
 export default site;
