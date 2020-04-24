@@ -12,7 +12,7 @@ const site = {
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.com/contact/?x_source=git-training.uk",
   x_inquiry_url:
-    "https://ondrej-sika.com/training/ansible/inquiry/?x_source=git-training.uk"
+    "https://ondrej-sika.com/training/git/inquiry/?x_source=git-training.uk"
 };
 
 export default site;
