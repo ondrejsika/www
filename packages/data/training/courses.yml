@@ -291,12 +291,19 @@
   price:
     open:
       cz: 6 800 CZK
+      nl: "??? EUR"
+      de: "??? EUR"
+      en: "???"
     in_house:
       cz: 25 000 CZK
+      nl: "??? EUR"
+      de: "??? EUR"
+      en: "???"
   twitter_recommendations:
     cs: []
   recommendations:
     cs: ["dimensiondata", "bohemiaenergy", "sit"]
+    en: ["dimensiondata", "bohemiaenergy", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
