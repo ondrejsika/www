@@ -475,6 +475,7 @@
 - id: ansible
   name:
     cs: Školení Ansible
+    sk: Skolenie Ansible
     en: Ansible Training
     de: Ansible Schulung
   lecturers:
@@ -482,14 +483,23 @@
   price:
     open:
       cz: 6 800 CZK
+      sk: "??? EUR"
+      nl: "??? EUR"
       de: "??? EUR"
+      en: "???"
+      se: "??? SEK"
     in_house:
       cz: 25 000 CZK
+      sk: "??? EUR"
+      nl: "??? EUR"
       de: "??? EUR"
+      en: "???"
+      se: "??? SEK"
   twitter_recommendations:
     cs: []
   recommendations:
     cs: ["oxy", "oxyCTO", "sit"]
+    sk: ["oxy", "oxyCTO", "sit"]
     en: ["oxy", "oxyCTO", "sit"]
   agenda:
     cs: |
@@ -502,6 +512,16 @@
       - Moduly
       - Šablony
       - Secrets
+    sk: |
+      ### Čo Vás naučím
+
+      - Základný koncept Ansible
+      - Inštaláciu Ansible (tých, ktorí ho nenainštalovali doma)
+      - Základné ovládanie Ansible
+      - Playbooks
+      - Moduly
+      - Šablóny
+      - Secrets 
   description:
     cs: |
       ### K čemu se používá?
@@ -535,6 +555,32 @@
 
       - Nainstalovaný Ansible
       - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
+    sk: |
+      ### Popis technológie
+      Ansible je nástroj na hromadnú správu konfigurácií a nasadzovanie. Vy deklarujete výsledný stav serveru a služieb a Ansible sa postará o vykonanie. Nemusíte riešiť v akom stave je server alebo aplikácia aktuálne, Ansible vám zariadi požadovaný výsledok (výhoda deklaratívnej syntax, napríklad shell script je imperatívny - vykonaj to a to . ..). Akúkoľvek konfiguráciu máte verzovanú Gitom a nestane sa Vám, že stratíte prehľad o tom, čo kde máte alebo že vynecháte nejaký dôležitý krok. Ansible Vám pomôže nasadzovať aplikácie a spravovať servery rýchlejšie a bezpečnejšie.
+      
+      ### Ako školenie prebieha
+      Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ansible si spoločne nainštalujeme, popíšeme si ako pracuje a základné koncepty. Skúsime si nastaviť server (tetovací na DiditalOcean) a nasadiť aplikáciu od začiatku až do konca. Od inštalácie systémových balíčkov, cez stiahnutie aplikácie z Gitu, po vytvorenie šablón konfiguračných skriptov a nastavenie secretes (napríklad hesiel). Po absolvovaní kurzu budete schopní používať Ansible na dennej báze a zjednodušiť si nasadzovanie a konfiguračné rutiny.
+
+      ### Čo Vás naučím
+      - Základný koncept Ansible
+      - Inštaláciu Ansible (tých, ktorí ho nenainštalovali doma)
+      - Základné ovládanie Ansible
+      - Playbooks
+      - Moduly
+      - Šablóny
+      - Secrets
+
+      ### Pre koho je školenie určené
+      Školenie je určené hlavne adminom a DevOps (serverovým administrátorom), ktorí chcú začať Ansible používať. Zároveň je vhodné i pre vývojárov, ktorí občas nasadzujú (aj do testovacích prostredí) svoje aplikácie a chcú si tento proces zjednodušiť.
+
+      #### Predchádzajúce znalosti
+      - Základy práce s Linuxom
+      - Základy práce v terminále
+
+      #### Technické požiadavky
+      - Nainštalovaný Ansible, [návod na inštaláciu](https://ondrej-sika.cz/ansible/instalace/)
+      - Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
     en: |
       ### What is Ansible
       Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about the state the current server or applications are in now; Ansible turns it into desired state. The entire configuration is versioned using Git, and you will never lose view of where everything is being deployed or miss any critical steps during the process. Ansible will help you with application deployment and quicker and safer server administration.
