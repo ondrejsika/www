@@ -1,6 +1,7 @@
+import React from "react";
 import Course from "@app/ondrejsika-theme/layouts/Course";
 
-export default props => (
+const Page = props => (
   <Course
     lang={props.site.lang}
     course_id="kubernetes"
@@ -40,10 +41,12 @@ This course is primarily aimed at people (developers & DevOps), who want to main
 - Have Kubernetes installed & running, instruction here
 - Access to the internet - ideally without corporate proxy
 `}
-    recommendations={["oxy", "oxyCTO"]}
+    recommendations={["oxy", "oxyshop"]}
     twitter_recommendations={[
       "petr-todorov-kubernetes",
       "pavel-mattivi-kubernetes"
     ]}
   />
 );
+
+export default Page;
