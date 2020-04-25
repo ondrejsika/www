@@ -12,7 +12,7 @@ const Index = () => (
     <div className="container pt-4">
       <Markdown
         source={`
-Doufám, že se Vám konzultace nebo školení líbilo a že bylo pro Tebe
+Doufám, že se Vám konzultace nebo školení líbilo a že bylo pro Vás
 přínosné.
 
 Budu moc rád, když mi napíšete doporučení na Linkedin a na Twitter.

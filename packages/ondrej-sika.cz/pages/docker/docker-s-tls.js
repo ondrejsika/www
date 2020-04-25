@@ -4,22 +4,22 @@ export default () => (
   <Article
     title="Docker s TLS"
     markdown={`
-Pokud chcete pouzivat Docker vzdalene (ovladat jej z jineho hostu, je temer nutnosti zapnout TLS overovani. Jak to nasadit si ukazeme zde.
+Pokud chcete používat Docker vzdáleně (ovládat jej z jiného hostu, je téměř nutností zapnout TLS ověřování. Jak to nasadit si ukážeme zde.
 
-## Generovani certifikatu
+## Generování certifikátů
 
-Nejdrive si vygenerujeme SSL certifikaty nastrojem [minica](https://github.com/jsha/minica). Predpokladejme ze nas docker bezi na serveru kam je nacilena domena \`docker.sikademo.com\`.
+Nejdříve si vygenerujeme SSL certifikáty nástrojem [minica](https://github.com/jsha/minica). Předpokládejme že náš Docker běží na serveru kam je nacílena doména \`docker.sikademo.com\`.
 
-Pokud nemate \`minica\` muzete jej nainstalovat pomoci \`brew install minica\`
+Pokud nemáte \`minica\` můžete jej nainstalovat pomocí \`brew install minica\`
 
     minica --domains docker.sikademo.com
     scp minica.pem root@docker.sikademo.com:/etc/docker/ca.pem
     scp docker.sikademo.com/cert.pem root@docker.sikademo.com:/etc/docker/cert.pem
     scp docker.sikademo.com/key.pem root@docker.sikademo.com:/etc/docker/key.pem
 
-## Spusteni Dockeru s TLS parametry
+## Spuštění Dockeru s TLS parametry
 
-Je potreba spustit docker s temito parametry \`--tlsverify --tlscacert=/etc/docker/ca.pem --tlscert=/etc/docker/cert.pem --tlskey=/etc/docker/key.pem -H=0.0.0.0:2376\`. V systemd nastavte tyto parametry ke spousteni Dockeru.
+Je potřeba spustit Docker s těmito parametry \`--tlsverify --tlscacert=/etc/docker/ca.pem --tlscert=/etc/docker/čert.pem --tlskey=/etc/docker/key.pem -H=0.0.0.0:2376\`. V systemd nastavte tyto parametry ke spouštění Dockeru.
 
     dockerd \\
       --tlsverify \\
@@ -28,30 +28,30 @@ Je potreba spustit docker s temito parametry \`--tlsverify --tlscacert=/etc/dock
       --tlskey=/etc/docker/key.pem \\
       -H=0.0.0.0:2376
 
-Konfiguracni soubor Dockeru v systemd zjistitite timto prikazem:
+Konfigurační soubor Dockeru v systemd zjistitite tímto příkazem:
 
     systemctl status docker.service
 
-Vypise to neco jako:
+Vypíše to něco jako:
 
 ![systemctl status docker.service](/static/systemctl-status-docker-service.png)
 
-Pak otevreme soubor \`/lib/systemd/system/docker.service\` a pridate TLS paramtry. Pote reloadnete konfiguraci a restartujete Docker.
+Pak otevřete soubor \`/lib/systemd/system/docker.service\` a přidáte TLS parametry. Poté reloadnete konfiguraci a restartujete Docker.
 
     vim /lib/systemd/system/docker.service
     systemctl daemon-reload
     systemctl restart docker
 
-## Pripojeni ke vzdalenemu Dockeru
+## Připojení ke vzdálenému Dockeru
 
-Zkopirume si certifikaty do slozky \`~/.docker/docker.sikademo.com\`:
+Zkopírujeme si certifikáty do složky \`~/.docker/docker.sikademo.com\`:
 
     mkdir ~/.docker/docker.sikademo.com
     cp minica.pem ~/.docker/docker.sikademo.com/ca.pem
     cp docker.sikademo.com/cert.pem ~/.docker/docker.sikademo.com/cert.pem
     cp docker.sikademo.com/key.pem ~/.docker/docker.sikademo.com/key.pem
 
-Pro pripojeni vzdaleneho dockeru muzete pouzit bud parametry prikazu docker nebo environment variables.
+Pro připojení vzdáleného Dockeru můžete použít buď parametry příkazu docker nebo environment variables.
 
     docker \\
       --tlsverify \\
@@ -61,7 +61,7 @@ Pro pripojeni vzdaleneho dockeru muzete pouzit bud parametry prikazu docker nebo
       -H=tcp://docker.sikademo.com:2376 \\
       version
 
-nebo pomoci promennych
+nebo pomocí proměnných
 
     export DOCKER_HOST=tcp://docker.sikademo.com:2376
     export DOCKER_CERT_PATH=~/.docker/docker.sikademo.com
@@ -72,9 +72,9 @@ nebo pomoci promennych
       <div className="row">
         <div className="col-6">
           <div className="alert alert-success mt-5 text-center" role="alert">
-            <h3>Zajimate se o Docker? Zkuste me skoleni Dockeru!</h3>
+            <h3>Zajímáte se o Docker? Zkuste mé školení Dockeru!</h3>
             <a className="btn btn-large btn-success m-3" href="/skoleni/docker">
-              Ukazat skoleni Dockeru
+              Ukázat školení Dockeru
             </a>
           </div>
         </div>
