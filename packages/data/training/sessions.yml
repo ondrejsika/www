@@ -236,6 +236,119 @@
   date_to: 15.5.2020
   facebook_event: https://www.facebook.com/events/228026568576729/
   linkedin_event: https://www.linkedin.com/events/6652271625670545408/
+- id: git-praha-12-06-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: git
+  name: Školení Git
+  city: online
+  price: 6800 CZK
+  venue_id: online
+  length: 1 den
+  date_from: 12.6.2020
+  date_to: 12.6.2020
+  facebook_event:
+  linkedin_event:
+- id: gitlab-ci-praha-20-07-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: gitlab-ci
+  name: Školení Gitlab CI
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 20.7.2020
+  date_to: 20.7.2020
+  facebook_event:
+  linkedin_event:
+- id: docker-praha-21-07-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: docker
+  name: Školení Docker
+  city: Praha
+  price: 11999 CZK
+  venue_id: rootcz
+  length: 2 dny
+  date_from: 21.7.2020
+  date_to: 22.7.2020
+  facebook_event:
+  linkedin_event:
+- id: kubernetes-praha-23-07-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: kubernetes
+  name: Školení Kubernetes
+  city: Praha
+  price: 11999 CZK
+  venue_id: rootcz
+  length: 2 dny
+  date_from: 23.7.2020
+  date_to: 24.7.2020
+  facebook_event:
+  linkedin_event:
+- id: prometheus-praha-27-07-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: prometheus
+  name: Školení Prometheus
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 27.7.2020
+  date_to: 27.7.2020
+  facebook_event:
+  linkedin_event:
+- id: rancher-praha-28-07-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: rancher
+  name: Školení Rancher
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 28.7.2020
+  date_to: 28.7.2020
+  facebook_event:
+  linkedin_event:
+- id: terraform-praha-29-07-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: terraform
+  name: Školení Terraform
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 29.7.2020
+  date_to: 29.7.2020
+  facebook_event:
+  linkedin_event:
+- id: proxmox-praha-30-07-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: proxmox
+  name: Školení Proxmox
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 30.7.2020
+  date_to: 30.7.2020
+  facebook_event:
+  linkedin_event:
+
 
 # EuropeTour 2020 January
 # Germany
