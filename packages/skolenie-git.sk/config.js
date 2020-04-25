@@ -12,7 +12,7 @@ const site = {
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=skolenie-git.sk",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skolenie-git.sk"
+    "https://ondrej-sika.cz/skoleni/git/poptavka/?x_source=skolenie-git.sk"
 };
 
 export default site;
