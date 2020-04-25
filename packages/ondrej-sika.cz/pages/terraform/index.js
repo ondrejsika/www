@@ -8,14 +8,14 @@ const Page = () => (
     markdown={`
 ## Co je Terraform
 
-Terraform je nastro na praci s infrastruktutou jako kodem.
+Terraform je nástroj na práci s infrastrukturou jako kódem.
 
-Tato stranka je ve vyvoji, pro vice informaci jdete na oficialni stranky <https://terraform.io>
+Tato stránka je ve vývoji, pro více informací jděte na oficiální stránky <https://terraform.io>
 
-## Clanky o Terraformu zde na webu
+## Články o Terraformu zde na webu
 
 - [Instalace Terraformu](/terraform/instalace)
-- [Sprava Cloudflare DNS pomoci Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
+- [Správa Cloudflare DNS pomocí Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
 
 `}
   />
