@@ -290,6 +290,7 @@
 - id: git
   name:
     cs: Školení Gitu
+    sk: Skolenie Gitu
     en: Git Training
     de: Git Schulung
   lecturers:
@@ -298,12 +299,14 @@
   price:
     open:
       cz: 6 800 CZK
+      sk: 199 EUR
       nl: "??? EUR"
       de: "??? EUR"
       en: "???"
       se: "??? SEK"
     in_house:
       cz: 25 000 CZK
+      sk: 779 EUR
       nl: "??? EUR"
       de: "??? EUR"
       en: "???"
@@ -312,6 +315,7 @@
     cs: []
   recommendations:
     cs: ["dimensiondata", "bohemiaenergy", "sit"]
+    sk: ["dimensiondata", "bohemiaenergy", "sit"]
     en: ["dimensiondata", "bohemiaenergy", "sit"]
   agenda:
     cs: |
@@ -324,6 +328,15 @@
       - Práce ve větvích - merge, rebase (silná stránka Gitu)
       - Práce se vzdálenými repozitáři
       - Záchrana smazaných dat z repozitáře
+    sk: |
+      ### Čo Vás naučím
+      - Inštalácia a konfigurácia GITu
+      - Vytvorenie nového repozitára
+      - Základné ovládanie GITu
+      - Práca na jednej vetve
+      - Práca s viacerými vetvami - merge, rebase (silná stránka Gitu)
+      - Práca so vzdialenými repozitármi
+      - Záchrana zmazaných dát z repozitára
   description:
     cs: |
       ### Co je to Git?
@@ -380,6 +393,33 @@
       #### Technical Requirements
       - Have Git installed
       - Access to the internet (https) - ideally without corporate proxy
+    sk: |
+      ### Čo je to Git?
+      Git je moderný verzovací nástroj, ktorý sa stal de facto štandardom medzi vývojármi. Na dennej báze ho používajú jednotlivci, startupy aj korporácie. Vďaka Gitu je kolaborácia viacerých ľudí na jednom projekte jednoduchá, a to aj v prípade, že pracujete spoločne na niekoľkých častiach projektu súčasne. Dokonca bez toho, aby ste si do rozpracovaných vecí nechcene zasahovali. Spoluprácu na vývoji projektu ešte zlepšuje Gitlab, kolaboratívna platforma, ktorá slúži na návrh, vývoj a prevádzku softvéru (viac o Gitlabe v samostatnom kurze).
+      
+      ### Ako školenie prebieha
+      Na školení si formou workshopu vysvetlíme prečo je dobré Git používať, ako funguje, prečo dnes nemá konkurenciu a best practice. Ukážeme si všetko od inštalácie a základného nastavenia Gitu, cez jednoduchú prácu na jednej vetve až po prácu v teame a s viacerými vetvami za pomoci rôznych mergovacích stratégií (merge, rebase). Ukážeme si ich výhody a nevýhody a bude len na Vás ako sa rozhodnete s nimi pracovať. Tiež si ukážeme, ako sa dostať z nepríjemných situácií, ako napríklad, keď si omylom všetko vymažete a pod.
+
+      ### Čo Vás naučím
+      - Inštalácia a konfigurácia GITu
+      - Vytvorenie nového repozitára
+      - Základné ovládanie GITu
+      - Práca na jednej vetve
+      - Práca s viacerými vetvami - merge, rebase (silná stránka Gitu)
+      - Práca so vzdialenými repozitármi
+      - Záchrana zmazaných dát z repozitára
+      
+      ### Pre koho je školenie určené
+      Školenie je určené primárne pre vývojárov, ktorí vôbec neverzujú alebo nepoužívajú Git. Zároveň je vhodné pre tých, ktori Git nevyužívajú na 100% (git commit, git pull, git push). Či už ide o malé weby, alebo veľké projekty, Git si nájde svoje uplatnenie. Kurz je vhodný aj pre tých, ktorí nepíšu kód často, ale občas potrebujú niečo zaverzovať, napríklad nejaké migračné skripty DB alebo konfiguráciu serveru. Git pomôže i DBA (databázovým administrátorom) alebo DevOps (serverovým administrátorom).
+
+      #### Predchádzajúce znalosti
+      - Základy programovania
+      - Základy práce v terminále výhodou
+      - Základná znalosť Gitu výhodou
+
+      #### Technické požiadavky
+      - Nainštalovaný Git
+      - Prístup na internet - ideálne bez korporátnej proxy, prípadne s nastavenou proxy v prehliadači
 
 - id: gitlab-ci
   name:
