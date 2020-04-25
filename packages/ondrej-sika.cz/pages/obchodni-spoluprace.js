@@ -5,7 +5,8 @@ export const ObchodniSpoluprace = () => (
   <Article
     title="Obchodní Spolupráce"
     markdown={`
-Pokud delate aktivni obchod a mate zajem prodavat moje skoleni a konzultace tak napiste email na <ondrej@ondrejsika.com> a muzeme se domvluvit. Rad zodpovim veskere vase dotazy. Pokud vite o nekom kdo by mel potencionalni zajem, predejte mu prosim kontakt na me. Diky.
+    Pokud děláte aktivní obchod a máte zájem prodávat moje školení a konzultace tak napište email na ondrej@ondrejsika.com a můžeme se domvluvit. Rád zodpovím veškeré vaše dotazy. Pokud víte o někom kdo by měl potencionální zájem, předejte mu prosím kontakt na mě. Díky.
+
 `}
   />
 );
