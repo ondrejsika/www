@@ -426,17 +426,20 @@
     cs: Školení Gitlab CI
     en: Gitlab CI Training
     de: Gitlab CI Schulung
+    sk: Skolenie Gitlab CI
   lecturers:
     - ondrejsika
   price:
     open:
       cz: 6 800 CZK
+      sk: 199 EUR
       nl: "??? EUR"
       de: "??? EUR"
       en: "???"
       se: "??? SEK"
     in_house:
       cz: 25 000 CZK
+      sk: 779 EUR
       nl: "??? EUR"
       de: "??? EUR"
       en: "???"
@@ -444,8 +447,9 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["CMS", "vse", "lbms"]
-    en: ["CMS", "vse", "lbms"]
+    cs: ["NMS", "vse", "lbms"]
+    sk: ["NMS", "vse", "lbms"]
+    en: ["NMS", "vse", "lbms"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -456,6 +460,16 @@
       - Práce s CI joby
       - Tvorba CI pipelines
       - Automatické nasazování
+      - Docker a CI
+    sk: |
+      #### Čo Vás naučím
+
+      - Všeobecný úvod do CI
+      - Úvod do Gitlab CI
+      - Inštalácia Gitlab CI Runneru
+      - Práca s CI jobmi
+      - Tvorba CI pipelines
+      - Automatické nasadzovanie
       - Docker a CI
   description:
     cs: |
@@ -511,6 +525,32 @@
 
       #### Technical Requirements
       - Access to the internet - ideally without corporate proxy
+    sk: |
+      ### Popis technológie
+      Continuous Integration (skrátene CI nebo CI/CD) je nástroj, ktorý za Vás automatizuje rutinné úlohy ako je púšťanie testov, kontrola kvality kódu alebo nasadzovanie. Umožní Vám rýchlejšie začleňovať zmeny do masteru a rýchlejšie nasadzovať. Výhodou Gitlab CI je veľmi dobrá podpora Dockeru. Môžete veľmi jednoducho skladať Docker images alebo púšťať testy v kontajneroch.
+
+      ### Ako školenie prebieha
+      Na školení si formou workshopu vysvetlíme prečo je dobré CI používať, ukážeme si možnosti Gitlab CI a vyskúšame si napísať CI skript pre ukážkový projekt. Výsledkom bude CI skript pre jednoduchý projekt obsahujúci joby od buildu aplikácie, cez testy až po deployment.
+
+      #### Čo Vás naučím
+      - Všeobecný úvod do CI
+      - Úvod do Gitlab CI
+      - Inštalácia Gitlab CI Runneru
+      - Práca s CI jobmi
+      - Tvorba CI pipelines
+      - Automatické nasadzovanie
+      - Docker a CI
+
+      ### Pre koho je školenie určené
+      Školenie je primárne určené vývojárom, ktorí používajú Gitlab a chcú začať používať Gitlab CI. Zároveň práve Gitlab CI môže byť dôvodom prechodu na GitLab. Školenie je tiež vhodné pre DevOps (serverových administrátorov), ktorí si chcú ulahčiť prácu s automatizáciou nasadzovania.
+
+      #### Predchádzajúce znalosti
+      - Základy práce s Linuxom
+      - Základy práce v terminále
+      - Základná znalosť Gitu výhodou - [Školenie Git](https://ondrej-sika.cz/skoleni/git/)
+
+      #### Technické požiadavky
+      - Prístup na internet - ideálne bez korporátnej proxy, prípadne s nastavenou proxy v prehliadači
 
 - id: ansible
   name:
