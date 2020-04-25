@@ -34,7 +34,7 @@ rm -rf rancher-linux-amd64-v2.4.0.tar.gz rancher-v2.4.0
 
 ## Windows
 
-Choco balicky jeste nejsou (pracuje se na nich), musite pouzit oficialni navodu:
+Choco balíčky ještě nejsou (pracuje se na nich), musíte použít oficiální návody:
 
 - Rancher CLI - https://rancher.com/docs/rancher/v2.x/en/cli/
 - RKE - https://rancher.com/docs/rke/latest/en/installation/

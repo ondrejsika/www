@@ -6,24 +6,24 @@ export default () => (
     markdown={`
 ### Linux
 
-Prikazem
+Příkazem
 
     apt install git
 
 ### macOS
 
-Prikazem
+Příkazem
 
     brew install git
 
-Pokud nemate __brew__, muzete ho naistalovat z oficialniho webu [brew.sh](https://brew.sh)
+Pokud nemáte __brew__, můžete ho naistalovat z oficiálního webu [brew.sh](https://brew.sh)
 
 
 ### Windows
 
-Stahnout installer z oficialnich stranek [git-scm.com](https://git-scm.com)
+Stáhnout installer z oficiálních stránek [git-scm.com](https://git-scm.com)
 
-nebo pouzit package manager [Chocolatey](https://chocolatey.org/)
+nebo použít package manager [Chocolatey](https://chocolatey.org/)
 
     choco install git
 
