@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Rancher, nástroj na správu Kubernetes clusterů"
     ad="rancher"
@@ -12,6 +13,7 @@ Rancher je nástroj na správu Kubernetes clusterů. Umožňuje Vám jednoše sp
 ## Články o Rancheru zde na webu
 
 - [Instalace Rancheru](/rancher/instalace-rancheru)
+- [Instalace Rancher CLI a RKE](/rancher/instalace-rancher-cli-a-rke)
 
 <!---
 - [Instalace Kubernetes clusteru pomocí Rancheru na vlastním hardware](/rancher/instalace-kubernetes-clusteru-pomoci-rancheru-na-vlastnim-hardware)
@@ -20,3 +22,5 @@ Rancher je nástroj na správu Kubernetes clusterů. Umožňuje Vám jednoše sp
 `}
   />
 );
+
+export default Page;

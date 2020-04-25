@@ -28,6 +28,7 @@ Pokud Vás zajímá Kubernetes, podívejte se na mé [Školení Kubernetes](/sko
 
 - [Co je Rancher](/rancher)
 - [Instalace Rancheru](/rancher/instalace-rancheru)
+- [Instalace Rancher CLI a RKE](/rancher/instalace-rancher-cli-a-rke)
 
 <!---
 - [Instalace Kubernetes clusteru pomocí Rancheru na vlastním hardware](/rancher/instalace-kubernetes-clusteru-pomoci-rancheru-na-vlastnim-hardware)
