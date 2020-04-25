@@ -3,7 +3,6 @@ import logo from "@app/data/pictures/courses/ansible.png";
 const site = {
   name: "skolenie-ansible.sk",
   lang: "sk",
-  location: "cz",
   gauges_site_id: "5cefbbe86dcfe04e0202e27e",
   google_analytics_site_id: "UA-39461955-39",
 
