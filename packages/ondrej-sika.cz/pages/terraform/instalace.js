@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Terraformu"
     ad="terraform"
@@ -9,7 +10,7 @@ export default () => (
 
 Na Macu nainstalujete Terraform pomocí [brew](/návody/brew)
 
-brew install terraform
+    brew install terraform
 
 ## Linux
 
@@ -19,9 +20,9 @@ Na Linuxu si stáhněte (<https://www.terraform.io/downloads.html>) build v ZIPu
 
 Na Windows naistalujete Terrafrom pomocí [chocolatey](/návody/chocolatey)
 
-choco install terraform
-
-
+    choco install terraform
 `}
   />
 );
+
+export default Page;
