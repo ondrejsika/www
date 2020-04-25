@@ -130,6 +130,7 @@
 - id: kubernetes
   name:
     cs: Školení Kubernetes
+    sk: Školenie Kuberneres
     en: Kubernetes Training
     de: Kubernetes Schulung
   lecturers:
@@ -149,6 +150,7 @@
     cs: ["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]
   recommendations:
     cs: ["dimensiondata", "webglobe-yegon", "sit"]
+    sk: ["dimensiondata", "webglobe-yegon", "sit"]
     en: ["dimensiondata", "webglobe-yegon", "sit"]
   agenda:
     cs: |
@@ -162,6 +164,17 @@
       - Teoretický úvod do Helm balíčku
       - Instalace / Deployment pomocí Helmu
       - Psaní vlastního Helm balíčku
+    sk: |
+      ### Čo Vás naučím
+
+      - Teoretický úvod do Kubernetes
+      - Inštalácia Minikube a kubectl (tých, ktorí ho nenainštalovali doma)
+      - Popis Kubernetes komponentov
+      - Deployment do Kubernetes
+      - Pracovať s právami v Kubernetes clusteri
+      - Teoretický úvod do Helm balíčku
+      - Inštalácia / Deployment pomocí Helmu
+      - Písanie vlastného Helm balíčku
   description:
     cs: |
       ### Popis technologie
@@ -219,6 +232,34 @@
       #### Technical Requirements
       - Have Kubernetes installed & running, instructions [here](/instructions/kubernetes/)
       - Access to the internet - ideally without corporate proxy
+    sk: |
+      ### Popis technológie
+      Kubernetes je dnes najrozšírenejšou platformou na hostovanie Docker kontajnerov a je podporovaná velkými hráčmi na trhu (Google, Amazon, Microsoft) cez Cloud Native Computing Foundation. Kubernetes bežne používajú firmy rôznych veľkostí, od startupov až po korporácie.
+
+      ### Ako školenie prebieha
+      Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ukážeme si ako spustiť Kubernetes lokálne (pre vývoj) a na cloudové platforme Digital Ocean. Povieme si o základnej štruktúre Kubernetes a prejdeme si jeho kompomenty. Naučíme sa ako napísať Kubernetes manifest a ako pomocou neho nasadiť aplikáciu v Dockeri. Ďalej si ukážeme ako pracovať s právami v Kubernetes a ako používať (a písať) Kubernetes balíčky v Helme.
+      
+      ### Čo Vás naučím
+      - Teoretický úvod do Kubernetes
+      - Inštalácia Minikube a kubectl (tých, ktorí ho nenainštalovali doma)
+      - Popis Kubernetes komponentov
+      - Deployment do Kubernetes
+      - Pracovať s právami v Kubernetes clusteri
+      - Teoretický úvod do Helm balíčku
+      - Inštalácia / Deployment pomocí Helmu
+      - Písanie vlastného Helm balíčku
+      
+      ### Pre koho je školenie určené
+      Školenie je určené pre ľudí (vývojárov a DevOps), ktorí majú záujem prevádzkovať svoje Docker aplikácie v Kubernetes.
+
+      #### Predchádzajúce znalosti
+      - Základy práce s Dockerom
+      - Základy práce s Linuxom
+      - Základy práce v terminále
+
+      #### Technické požiadavky
+      - Nainštalovaný Kubernetes, návod na inštaláciu: [tu](https://ondrej-sika.cz/kubernetes/instalace/)
+      - Přístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
 
 - id: rancher
   name:
@@ -290,7 +331,7 @@
 - id: git
   name:
     cs: Školení Gitu
-    sk: Skolenie Gitu
+    sk: Školenie Gitu
     en: Git Training
     de: Git Schulung
   lecturers:
@@ -424,9 +465,9 @@
 - id: gitlab-ci
   name:
     cs: Školení Gitlab CI
+    sk: Školenie Gitlab CI
     en: Gitlab CI Training
     de: Gitlab CI Schulung
-    sk: Skolenie Gitlab CI
   lecturers:
     - ondrejsika
   price:
