@@ -2095,7 +2095,7 @@
   length: 1 den
   date_from: 12.6.2020
   date_to: 12.6.2020
-  facebook_event: 
+  facebook_event: https://www.facebook.com/events/224926602288324
   linkedin_event:
 - id: gitlab-ci-praha-20-07-2020
   active: true
@@ -2109,7 +2109,7 @@
   length: 1 den
   date_from: 20.7.2020
   date_to: 20.7.2020
-  facebook_event:
+  facebook_event: https://www.facebook.com/events/257197692084319
   linkedin_event:
 - id: docker-praha-21-07-2020
   active: true
@@ -2123,7 +2123,7 @@
   length: 2 dny
   date_from: 21.7.2020
   date_to: 22.7.2020
-  facebook_event:
+  facebook_event: https://www.facebook.com/events/840139229801161
   linkedin_event:
 - id: kubernetes-praha-23-07-2020
   active: true
@@ -2137,7 +2137,7 @@
   length: 2 dny
   date_from: 23.7.2020
   date_to: 24.7.2020
-  facebook_event:
+  facebook_event: https://www.facebook.com/events/549440105971390
   linkedin_event:
 - id: prometheus-praha-27-07-2020
   active: true
@@ -2151,7 +2151,7 @@
   length: 1 den
   date_from: 27.7.2020
   date_to: 27.7.2020
-  facebook_event:
+  facebook_event: https://www.facebook.com/events/3133318073374502
   linkedin_event:
 - id: rancher-praha-28-07-2020
   active: true
@@ -2165,7 +2165,7 @@
   length: 1 den
   date_from: 28.7.2020
   date_to: 28.7.2020
-  facebook_event:
+  facebook_event: https://www.facebook.com/events/234441647765054
   linkedin_event:
 - id: terraform-praha-29-07-2020
   active: true
@@ -2179,7 +2179,7 @@
   length: 1 den
   date_from: 29.7.2020
   date_to: 29.7.2020
-  facebook_event:
+  facebook_event: https://www.facebook.com/events/2573436442907180
   linkedin_event:
 - id: proxmox-praha-30-07-2020
   active: true
@@ -2193,7 +2193,7 @@
   length: 1 den
   date_from: 30.7.2020
   date_to: 30.7.2020
-  facebook_event:
+  facebook_event: https://www.facebook.com/events/1117815641913132
   linkedin_event:
 
 # Praha Root.cz Zari

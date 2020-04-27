@@ -384,7 +384,7 @@
       Git je moderní verzovaci nástroj, který se stal de facto standardem mezi vývojáři. Používají jej na denní bázy jednotlivci, startupy i korporace. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně aniž byste si zasahovali do rozdělaných věcí nebo je jinak narušovali. Spolupráci na vývoji projektu ještě zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software (více o Gitlabu v samostatném kurzu).
 
       ### Jak školení probíhá
-      Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practice. Ukážeme si vše od instalace a základního nastavení Gitu, přes jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacich strategii (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako "omylem jsem si všechno smazal a podobně.
+      Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practice. Ukážeme si vše od instalace a základního nastavení Gitu, přes jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacích strategií (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako omylem jsem si všechno smazal a podobně.
 
       ### Co Vás naučím
       - Instalace a konfigurace GITu
@@ -944,7 +944,7 @@
       - Integrace s Dockerem, Kubernetes a vlastní aplikací
 
       #### Pro koho je školení určeno
-      Školení je určeno pro vývojáře a devops, kteří chteji jednoduse a efektivne monitorovat aplikace.
+      Školení je určeno pro vývojáře a devops, kteří chtějí jednoduše a efektivně monitorovat aplikace.
 
       #### Předchozí znalosti
       - Základy práce s Linuxemm
