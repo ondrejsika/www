@@ -238,7 +238,7 @@
 
       ### Ako školenie prebieha
       Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ukážeme si ako spustiť Kubernetes lokálne (pre vývoj) a na cloudové platforme Digital Ocean. Povieme si o základnej štruktúre Kubernetes a prejdeme si jeho kompomenty. Naučíme sa ako napísať Kubernetes manifest a ako pomocou neho nasadiť aplikáciu v Dockeri. Ďalej si ukážeme ako pracovať s právami v Kubernetes a ako používať (a písať) Kubernetes balíčky v Helme.
-      
+
       ### Čo Vás naučím
       - Teoretický úvod do Kubernetes
       - Inštalácia Minikube a kubectl (tých, ktorí ho nenainštalovali doma)
@@ -248,7 +248,7 @@
       - Teoretický úvod do Helm balíčku
       - Inštalácia / Deployment pomocí Helmu
       - Písanie vlastného Helm balíčku
-      
+
       ### Pre koho je školenie určené
       Školenie je určené pre ľudí (vývojárov a DevOps), ktorí majú záujem prevádzkovať svoje Docker aplikácie v Kubernetes.
 
@@ -384,7 +384,7 @@
       Git je moderní verzovaci nástroj, který se stal de facto standardem mezi vývojáři. Používají jej na denní bázy jednotlivci, startupy i korporace. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně aniž byste si zasahovali do rozdělaných věcí nebo je jinak narušovali. Spolupráci na vývoji projektu ještě zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software (více o Gitlabu v samostatném kurzu).
 
       ### Jak školení probíhá
-      Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practice. Ukážeme si vše od instalace a základního nastavení Gitu, přez jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacich strategii (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako "omylem jsem si všechno smazal a podobně.
+      Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practice. Ukážeme si vše od instalace a základního nastavení Gitu, přes jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacich strategii (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako "omylem jsem si všechno smazal a podobně.
 
       ### Co Vás naučím
       - Instalace a konfigurace GITu
@@ -437,7 +437,7 @@
     sk: |
       ### Čo je to Git?
       Git je moderný verzovací nástroj, ktorý sa stal de facto štandardom medzi vývojármi. Na dennej báze ho používajú jednotlivci, startupy aj korporácie. Vďaka Gitu je kolaborácia viacerých ľudí na jednom projekte jednoduchá, a to aj v prípade, že pracujete spoločne na niekoľkých častiach projektu súčasne. Dokonca bez toho, aby ste si do rozpracovaných vecí nechcene zasahovali. Spoluprácu na vývoji projektu ešte zlepšuje Gitlab, kolaboratívna platforma, ktorá slúži na návrh, vývoj a prevádzku softvéru (viac o Gitlabe v samostatnom kurze).
-      
+
       ### Ako školenie prebieha
       Na školení si formou workshopu vysvetlíme prečo je dobré Git používať, ako funguje, prečo dnes nemá konkurenciu a best practice. Ukážeme si všetko od inštalácie a základného nastavenia Gitu, cez jednoduchú prácu na jednej vetve až po prácu v teame a s viacerými vetvami za pomoci rôznych mergovacích stratégií (merge, rebase). Ukážeme si ich výhody a nevýhody a bude len na Vás ako sa rozhodnete s nimi pracovať. Tiež si ukážeme, ako sa dostať z nepríjemných situácií, ako napríklad, keď si omylom všetko vymažete a pod.
 
@@ -449,7 +449,7 @@
       - Práca s viacerými vetvami - merge, rebase (silná stránka Gitu)
       - Práca so vzdialenými repozitármi
       - Záchrana zmazaných dát z repozitára
-      
+
       ### Pre koho je školenie určené
       Školenie je určené primárne pre vývojárov, ktorí vôbec neverzujú alebo nepoužívajú Git. Zároveň je vhodné pre tých, ktori Git nevyužívajú na 100% (git commit, git pull, git push). Či už ide o malé weby, alebo veľké projekty, Git si nájde svoje uplatnenie. Kurz je vhodný aj pre tých, ktorí nepíšu kód často, ale občas potrebujú niečo zaverzovať, napríklad nejaké migračné skripty DB alebo konfiguráciu serveru. Git pomôže i DBA (databázovým administrátorom) alebo DevOps (serverovým administrátorom).
 
@@ -642,7 +642,7 @@
       - Playbooks
       - Moduly
       - Šablóny
-      - Secrets 
+      - Secrets
   description:
     cs: |
       ### K čemu se používá?
@@ -679,7 +679,7 @@
     sk: |
       ### Popis technológie
       Ansible je nástroj na hromadnú správu konfigurácií a nasadzovanie. Vy deklarujete výsledný stav serveru a služieb a Ansible sa postará o vykonanie. Nemusíte riešiť v akom stave je server alebo aplikácia aktuálne, Ansible vám zariadi požadovaný výsledok (výhoda deklaratívnej syntax, napríklad shell script je imperatívny - vykonaj to a to . ..). Akúkoľvek konfiguráciu máte verzovanú Gitom a nestane sa Vám, že stratíte prehľad o tom, čo kde máte alebo že vynecháte nejaký dôležitý krok. Ansible Vám pomôže nasadzovať aplikácie a spravovať servery rýchlejšie a bezpečnejšie.
-      
+
       ### Ako školenie prebieha
       Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ansible si spoločne nainštalujeme, popíšeme si ako pracuje a základné koncepty. Skúsime si nastaviť server (tetovací na DiditalOcean) a nasadiť aplikáciu od začiatku až do konca. Od inštalácie systémových balíčkov, cez stiahnutie aplikácie z Gitu, po vytvorenie šablón konfiguračných skriptov a nastavenie secretes (napríklad hesiel). Po absolvovaní kurzu budete schopní používať Ansible na dennej báze a zjednodušiť si nasadzovanie a konfiguračné rutiny.
 

@@ -13,7 +13,7 @@
 - id: setup-deploy-pipeline-cz
   title: Nasazujte aplikace pomocí Dockeru, Kubernetes a Gitlab CI
   bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
-  abstract: Jak tězké je nasadit Vaši aplikaci do testovacího nebo produkčního prostředí? Kolik toho musíte udělat manuálně? Ukáži Vám, jak nastvit bezpečný, rychlý a plně automatický deploment do různých prostředí pomocí Dockeru, Kubernetes a Gitlab CI. Ukážu Vám celou pipeline od statické analýzy kódu, přez build po nasazení. Vše na unifikované platformě postavené na Dockeru a Kubernetes, nezávislé na Vaší aplikaci.
+  abstract: Jak tězké je nasadit Vaši aplikaci do testovacího nebo produkčního prostředí? Kolik toho musíte udělat manuálně? Ukáži Vám, jak nastvit bezpečný, rychlý a plně automatický deploment do různých prostředí pomocí Dockeru, Kubernetes a Gitlab CI. Ukážu Vám celou pipeline od statické analýzy kódu, přes build po nasazení. Vše na unifikované platformě postavené na Dockeru a Kubernetes, nezávislé na Vaší aplikaci.
   submissions:
     - teched2020
 - id: deploy-your-python-application-into-kubernetes

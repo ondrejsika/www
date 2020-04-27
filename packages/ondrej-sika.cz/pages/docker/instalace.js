@@ -58,7 +58,7 @@ Po instalaci spusťte program Docker Quikstart Terminál, počkejte až se Vám 
 
 Na Macu jsou opět 2 varianty Dockeru: Docker Desktop a Docker Toolbox. Použijte Docker pro Mac, pokud nemáte podporu xhive (zjistíte takž že do terminálu napíšete \`sysctl kern.hv_support\`) použijte Toolbox.
 
-Můžete je nainstalovat přez Homebrew nebo manuálně
+Můžete je nainstalovat přes Homebrew nebo manuálně
 
 #### Brew
 

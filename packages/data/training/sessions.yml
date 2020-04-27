@@ -195,7 +195,7 @@
   facebook_event: https://www.facebook.com/events/236084434111712/
   linkedin_event: https://www.linkedin.com/events/prometheus-online-kolen-24-4/
 - id: rancher-praha-27-04-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: rancher
@@ -2095,7 +2095,7 @@
   length: 1 den
   date_from: 12.6.2020
   date_to: 12.6.2020
-  facebook_event:
+  facebook_event: 
   linkedin_event:
 - id: gitlab-ci-praha-20-07-2020
   active: true
