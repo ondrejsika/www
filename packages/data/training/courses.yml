@@ -396,7 +396,7 @@
       - Záchrana smazaných dat z repozitáře
 
       ### Pro koho je školení určeno
-      Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.
+      Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB anebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.
 
       #### Předchozí znalosti
       - Základy programování
@@ -515,7 +515,7 @@
   description:
     cs: |
       ### K čemu se používá ?
-      Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutinní úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní Vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
+      Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutinní úkoly jako je pouštění testů, kvality kódu anebo nasazování. Umožní Vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images anebo pouštět testy v kontejnerech.
 
       ### Jak školení probíhá
       Na školení formou workshopu si vysvětlíme, proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přes testy až po deployment.
@@ -1018,7 +1018,7 @@
       - Minifikace a převod do starších verzí javasriptu
 
       #### Pro koho je školení určeno
-      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
+      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB anebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
 
       #### Předchozí znalosti
       - Praktická cvičení řeší každý účastník sám na svém notebooku. Nezáleží na operačním systému. Veškerý potřebný software si nainstalujeme na začátku kurzu. Je nutné mít administrátorská práva k počítači.
@@ -1065,7 +1065,7 @@
       - Testovaní aplikací v nástroji Jest
 
       #### Pro koho je školení určeno
-      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
+      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB anebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
 
       #### Předchozí znalosti
       - Praktická cvičení řeší každý účastník sám na svém notebooku. Nezáleží na operačním systému. Veškerý potřebný software si nainstalujeme na začátku kurzu. Je nutné mít administrátorská práva k počítači.
@@ -1117,7 +1117,7 @@
       - Představení nástroje composer
 
       #### Pro koho je školení určeno
-      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
+      Školeni je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíší kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB anebo konfiguraci serverů. Git pomůže i DBA nebo DevOps.
 
       #### Předchozí znalosti
       - Praktická cvičení řeší každý účastník sám na svém notebooku. Nezáleží na operačním systému. Veškerý potřebný software si nainstalujeme na začátku kurzu. Je nutné mít administrátorská práva k počítači.

@@ -521,7 +521,7 @@
     helm template ./helm/myapp --name myapp.cz --set host=myapp.cz | kubectl apply -f -
     ```
 
-    Výhodou byla absence nutnosti Tilleru (části Helmu běžící v clusteru) a nevýhodou bylo to že se to nechovalo jako jeden balíček a pořád jsem to musel spravovat ručně (pomocí `kubectl`). Další nevýhodou bylo to že helm neuměl vyrenderovat template z balíčku v repozitari, také jsem musel mít zdrojaky součástí repozitare, který z Gitlab CI nasazoval, a nebo nějak stažené.
+    Výhodou byla absence nutnosti Tilleru (části Helmu běžící v clusteru) a nevýhodou bylo to že se to nechovalo jako jeden balíček a pořád jsem to musel spravovat ručně (pomocí `kubectl`). Další nevýhodou bylo to že helm neuměl vyrenderovat template z balíčku v repozitari, také jsem musel mít zdrojaky součástí repozitare, který z Gitlab CI nasazoval, anebo nějak stažené.
 
     To se teď mění. Mužů používat Helm i jako správě nasazených aplikaci.
 

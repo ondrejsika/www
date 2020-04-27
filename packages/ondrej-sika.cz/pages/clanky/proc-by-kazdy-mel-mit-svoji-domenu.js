@@ -6,7 +6,7 @@ export default () => (
     markdown={`
 Domena je základ pro osobní brand a svobodu online. O emailu na vlastní doméně jsem napsal článek [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene).
 
-### Jak si vybrat doménu a nebo domény
+### Jak si vybrat doménu anebo domény
 
 Při výběru domény postupuji následovně. Zkusím první variantu a pokud je obsazená, jdu na další. Můžete například takto:
 

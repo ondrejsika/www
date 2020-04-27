@@ -25,7 +25,7 @@ Pokud používáte [Chocolatey](https://chocolatey.org), můžete Docker nainsta
 Tyto Windows podporují Docker for Windows, stáhněte jej zde: [Docker Desktop](https://sika.link/docker-for-windows)
 Při instalaci nechte defaultní nastavení, při výběru typu kontejneru nechte vybrané Linuxové kontejnery.
 
-Po instalaci spuste Docker do do terminalu napiste: \`docker run ondrejsika/verify-docker\` a meli by jste dostat:
+Po instalaci spuste Docker do do terminalu napiste: \`docker run ondrejsika/verify-docker\` a meli byste dostat:
 
     sika@sika-x250:~$ docker run ondrejsika/verify-docker
     Unable to find image 'ondrejsika/verify-docker:latest' locally
@@ -53,7 +53,7 @@ Pokud používáte [Chocolatey](https://chocolatey.org), můžete Docker nainsta
 
     choco install docker-toolbox
 
-Po instalaci spusťte program Docker Quikstart Terminál, počkejte až se Vám spustí VM a pak spusťte: docker run ondrejsika/verify-docker a měli by jste dostat stejný výstup (Your Docker is working) jako při použití Docker pro Windows.
+Po instalaci spusťte program Docker Quikstart Terminál, počkejte až se Vám spustí VM a pak spusťte: docker run ondrejsika/verify-docker a měli byste dostat stejný výstup (Your Docker is working) jako při použití Docker pro Windows.
 
 ### Mac OS
 
@@ -77,7 +77,7 @@ __Docker Toolbox__
 Stáhněte si Docker Desktop: [zde](https://sika.link/docker-for-mac)
 <br/>Případně Docker Toolbox: [zde](https://sika.link/docker-toolbox-mac)
 
-Po instalaci spustě Docker do do terminálu napište: \`docker run ondrejsika/verify-docker\` a měli by jste dostat:
+Po instalaci spustě Docker do do terminálu napište: \`docker run ondrejsika/verify-docker\` a měli byste dostat:
 
     sika@sika-x250:~$ docker run ondrejsika/verify-docker
     Unable to find image 'ondrejsika/verify-docker:latest' locally
@@ -98,7 +98,7 @@ Pekne popsane v clanku: <https://blog.alexellis.io/docker-mac-bash-completion/>
 Na Linuxu nepoužívejte Docker z distribučních balíčků, je tam starý. Postupujte podle oficiálního návodu na: [zde](https://docs.docker.com/install/linux/docker-ce/debian/) pro Debian, případně si vyberte svoji distribuci v levém menu.
 
 
-Pokud máte problém s instalací a nebo jakýkoliv dotaz, neváhejte mě napsat na [ondrej@sika.io](ondrej@sika.io)
+Pokud máte problém s instalací anebo jakýkoliv dotaz, neváhejte mě napsat na [ondrej@sika.io](ondrej@sika.io)
 `}
   />
 );

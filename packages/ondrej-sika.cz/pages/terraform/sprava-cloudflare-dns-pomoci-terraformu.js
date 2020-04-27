@@ -10,7 +10,7 @@ Kazdy kdo delal neco okolo webu se setkal vice ci mene se spravou DNS. Pokud pou
 
 Terraform predstavim jen kratce, je to nastroj na spravu infrastruktury, vetsinou na public cloudech. Popis infrastruktury je deklarativni a drzi si stav, diky kteremu je schopen ruzne resources lepe upravovat a mazat. Terraform pouziva pro kofiguraci HCL (Hasicorp Language). Navod na syntaxy je na <https://www.terraform.io/docs/configuration/syntax.html>.
 
-Pustme se ale do Terraformu s Cloudflare.  Nejdrive musime propojit Terraform s Cloudflare. Vytvorime soubor \`terraform.tf\` a nastavime Cloudflare email a token. Idelane formou promennych, ktere muzete zadat pri spousteni a nebo v souboru \`terraform.tfvars\`, ktery ignorujete v Gitu.
+Pustme se ale do Terraformu s Cloudflare.  Nejdrive musime propojit Terraform s Cloudflare. Vytvorime soubor \`terraform.tf\` a nastavime Cloudflare email a token. Idelane formou promennych, ktere muzete zadat pri spousteni anebo v souboru \`terraform.tfvars\`, ktery ignorujete v Gitu.
 
 \`\`\`
 // terrfaform.tf
@@ -105,7 +105,7 @@ Ted mame vse hotovo, pokud chcete naaplikovat nastaveni z teto konfigurace, muze
 terraform apply
 \`\`\`
 
-a on Vam ukaze co chce zmenit, musite napsat \`yes\` a Terraform Vam konfiguraci nasadi. Pokud budete chtit neco zmenit, pouze upravte konfiguraci a nebo pridejte dalsi resource a znovu zavolejte \`terraform apply\`, Terraform vam zase upravi konfiguraci podle teto definice (bez nutnosti znalosti predchoziho stavu).
+a on Vam ukaze co chce zmenit, musite napsat \`yes\` a Terraform Vam konfiguraci nasadi. Pokud budete chtit neco zmenit, pouze upravte konfiguraci anebo pridejte dalsi resource a znovu zavolejte \`terraform apply\`, Terraform vam zase upravi konfiguraci podle teto definice (bez nutnosti znalosti predchoziho stavu).
 
 Jeste jedno upozorneni na zaver, Terraform vygenereuje soubory \`terraform.tfstate\` a \`terraform.tfstate.backup\`. Tyto soubory jsou dulezite, doporucuji je pro jednoduchost verzovat v Gitu, ale jsou lepsi zpusoby, jak s nimi pracovat.
 `}
