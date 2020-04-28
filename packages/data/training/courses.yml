@@ -747,7 +747,7 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["oxy", "oxyCTO", "sit"]
+    cs: ["oxy", "oxyshop", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
