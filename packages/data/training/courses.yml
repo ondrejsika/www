@@ -619,9 +619,10 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["oxy", "oxyCTO", "sit"]
-    sk: ["oxy", "oxyCTO", "sit"]
-    en: ["oxy", "oxyCTO", "sit"]
+    cs: ["oxy", "oxyshop", "sit"]
+    sk: ["oxy", "oxyshop", "sit"]
+    en: ["oxy", "oxyshop", "sit"]
+    de: ["oxy", "oxyshop", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
