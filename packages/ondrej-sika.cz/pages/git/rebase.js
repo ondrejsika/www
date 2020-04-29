@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Git Rebase"
     markdown={`
@@ -19,7 +20,7 @@ Výsledkem bude:
 
 Tento výsledek nechceme, chceme mít historii lineární, proto před použitím merge uděláme rebase přeskládání větve experimental na větev master.
 
-Uděláme to takto (vycházíme z výchozího stavu projektu, pokud jsme již vytvořili merge commit, můžeme jej vrátit příkazem \`git reset hard HEAD~1\`):
+Uděláme to takto (vycházíme z výchozího stavu projektu, pokud jsme již vytvořili merge commit, můžeme jej vrátit příkazem \`git reset --hard HEAD~1\`):
 
 ![](/static/rebase/basic-rebase-3.png)
 
@@ -49,3 +50,5 @@ Výsledek pak vypadá takto:
     />
   </Article>
 );
+
+export default Page;
