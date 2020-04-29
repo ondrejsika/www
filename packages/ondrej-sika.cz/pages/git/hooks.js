@@ -4,21 +4,21 @@ export default () => (
   <Article
     title="Git Hooks"
     markdown={`
-## Co jsou to Git hooky? A k cemu vlastne slouzi?
+## Co jsou to Git hooky? A k čemu vlastně slouží?
 
-To si vysvetlime v nasledujicim clanku. Diky Git hookum budete napriklad commitovat cistejsi kod.
+To si vysvětlíme v následujícím článku. Díky Git hookům budete například commitovat čistější kód.
 
-Git hooky jsou scripty, ktere se spousteji na zaklade nejake udalosti v Gitu, napriklad pred commitem (pre-commit) nebo pred pushem (pre-push). Uplny seznam hooku a dokumentace je zde: <https://git-scm.com/docs/githooks>
+Git hooky jsou scripty, které se spouštějí na základě nějaké události v Gitu, například před commitem (pre-commit) nebo před pushem (pre-push). Úplný seznam hooku a dokumentace je zde: <https://git-scm.com/docs/githooks>
 
-My se zamerime na jeden a to na __pre-commit__ hook. Ostatni hooky se delaji obdobne.
+My se zaměříme na jeden a to na __pre-commit__ hook. Ostatní hooky se dělají obdobně.
 
-## Vytvoreni pre-commit hooku
+## Vytvoření pre-commit hooku
 
-Kdyz chceme vytvorit hook, ve slozce \`.git/hooks/\` v repozitari vytvorime spustitelny soubor s nazvem \`pre-commit\` (typicky shell script).
+Když chceme vytvořit hook, ve složce \`.git/hooks/\` v repozitáři vytvoříme spustitelný soubor s názvem \`pre-commit\` (typický shell script).
 
-Obsah tohoto skriptu je na nas, pred commitem se skript spusti a pokud skonci navratovym kodem 0, pokracuje se s commitem, pokud skonci s chybou (nenulovy navratovy kod), commit nepovoli.
+Obsah tohoto skriptu je na nás, před commitem se skript spustí a pokud skončí návratovým kódem 0, pokračuje se s commitem, pokud skončí s chybou (nenulový návratový kód), commit nepovolí.
 
-Pre commit hook muzete napriklad pouzit jako chceck formatovani kodu, ukazka hooku pro JavaScript a Prettier zde:
+Pre-commit hook můžete například použít jako check formátování kódu, ukázka hooku pro JavaScript a Prettier je zde:
 
 \`\`\`
 cat > .git/hooks/pre-commit <<EOF
@@ -30,20 +30,20 @@ EOF
 chmod +x .git/hooks/pre-commit
 \`\`\`
 
-Pokud budete chcit commit vytvorit i kdyz neprojce pre commit hook, muzete jej obejit parametrem \`-n\` nebo \`--no-verify\` u prikazu \`git commit\`.
+Pokud budete chtít commit vytvořit i když neprojde přes commit hook, můžete jej obejít parametrem \`-n\` nebo \`--no-verify\` u příkazu \`git commit\`.
 
 
-## Ukazka pouziti naseho hooku
+## Ukázka použití našeho hooku
 
-Pokud chceme commitnout spatne formatovani, hook nas nepusti.
+Pokud chceme commitnout špatné formátování, hook nás nepustí.
 
 ![](/static/hooks/pre-commit-invalid.png)
 
-Kdyz jej opravime, commit udelat muzeme.
+Když jej opravíme, commit udělat můžeme.
 
 ![](/static/hooks/pre-commit-valid.png)
 
-Pokud chci docasne vypnout validaci, pouziji parametr \`-n\` a hook se nespousti.
+Pokud chci dočasně vypnout validaci, použiji parametr \`-n\` a hook se nespustí.
 
 ![](/static/hooks/no-hook.png)
 
@@ -57,9 +57,9 @@ Zdroje:
 `}
     after={
       <div className="alert alert-primary mt-5 text-center" role="alert">
-        <h2>Zajimate se o Git? Zkuste me skoleni Gitu!</h2>
+        <h2>Zajímáte se o Git? Zkuste mé školení Gitu!</h2>
         <a className="btn btn-large btn-primary m-3" href="/skoleni/git">
-          Ukazat skoleni Gitu
+          Ukázat školení Gitu
         </a>
       </div>
     }
