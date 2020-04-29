@@ -1,6 +1,5 @@
 import React from "react";
 
-import "../css";
 import Head from "next/head";
 import img from "@app/data/pictures/lecturers/ondrejsika/ondrejsika4x_notebook_vertical.jpg";
 
