@@ -8,7 +8,7 @@ const Page = props => (
     markdown={`
 - [Instalace](/kubernetes/instalace)
 - [Pridani Kubernetes clusteru do Gitlabu](/kubernetes/pridani-kubernetes-clusteru-do-gitlabu)
-- [Persistentni storage pomoci Cephu](/blog/ceph-persistent-volumes-v-kubernetes-pomoci-rook/) (blog post)
+- [Persistentni storage pomocí Cephu](/blog/ceph-persistent-volumes-v-kubernetes-pomoci-rook/) (blog post)
 `}
   />
 );

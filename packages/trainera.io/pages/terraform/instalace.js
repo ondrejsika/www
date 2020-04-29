@@ -8,7 +8,7 @@ const Page = () => (
     markdown={`
 ## Mac
 
-Na Macu nainstalujete Terraform pomoci [brew](/navody/brew)
+Na Macu nainstalujete Terraform pomocí [brew](/navody/brew)
 
     brew install terraform
 
@@ -18,7 +18,7 @@ Na Linuxu si stahnete (<https://www.terraform.io/downloads.html>) build v ZIPu a
 
 ## Windows
 
-Na Windown naistalujete Terrafrom pomoci [chocolatey](/navody/chocolatey)
+Na Windown naistalujete Terrafrom pomocí [chocolatey](/navody/chocolatey)
 
     choco install terraform
 

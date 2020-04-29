@@ -7,13 +7,13 @@ const Page = () => (
     markdown={`
 ### Co je Chocolatey
 
-Chocolatey je balickovaci system pro Windows, podobny jako je [Brew](/navody/brew) na Macu. Vice informaci naleznete na [chocolatey.org](https://chocolatey.org).
+Chocolatey je balíčkovací systém pro Windows, podobný jako je [Brew](/navody/brew) na Macu. Více informací naleznete na [chocolatey.org](https://chocolatey.org).
 
 ### Instalace Chocolatey
 
-Vice o instalaci najdete na <https://chocolatey.org/install>.
+Více o instalaci najdete na <https://chocolatey.org/install>.
 
-Pokud chcete nainstalovat Chcoco jednim prikazem, puste CMD nebo PowerShell jako Admininstrator.
+Pokud chcete nainstalovat Chcoco jedním příkazem, pusťte CMD nebo PowerShell jako Administrátor.
 
 #### CMD
 
@@ -23,14 +23,13 @@ Pokud chcete nainstalovat Chcoco jednim prikazem, puste CMD nebo PowerShell jako
 
     Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
+### Instalace balíčku pomocí Chocolatey
 
-### Instalace balicku pomoci Chocolatey
-
-Pokud chcete nainstalovat nejaky balicek, instalujte pomoci
+Pokud chcete nainstalovat nějaký balíček, instalujte pomocí
 
     choco install <package>
 
-Napriklad
+Například
 
     choco install docker-desktop
 

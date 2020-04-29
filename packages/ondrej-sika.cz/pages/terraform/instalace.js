@@ -8,7 +8,7 @@ const Page = () => (
     markdown={`
 ## Mac
 
-Na Macu nainstalujete Terraform pomocí [brew](/návody/brew)
+Na Macu nainstalujete Terraform pomocí [brew](/navody/brew)
 
     brew install terraform
 

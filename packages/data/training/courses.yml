@@ -285,7 +285,7 @@
       - Instalace Rancheru
       - Správa Rancheru (Uživatele, Práva, ...)
       - Správa Kubernetes clusteru v GUI (vytváření, aktualizace, ...)
-      - Správa Kuberneres clusteru pomoci Terraformu
+      - Správa Kuberneres clusteru pomocí Terraformu
   description:
     cs: |
       ### Popis technologie
@@ -301,7 +301,7 @@
       - Instalace Rancheru
       - Správa Rancheru (Uživatele, Práva, ...)
       - Správa Kubernetes clusteru v GUI (vytváření, aktualizace, ...)
-      - Správa Kuberneres clusteru pomoci Terraformu
+      - Správa Kuberneres clusteru pomocí Terraformu
 
       ### Pro koho je školení určeno
 
