@@ -19,7 +19,7 @@ const Page = props => (
     <Container>
       <div className="alert alert-danger pt-4 pb-4 mt-5 mb-4" role="alert">
         <h2>Připravuji ...</h2>
-        Na kurzu momentálne pracuji, pokud máte zájem, napište mi email anebo
+        Na kurzu momentálně pracuji, pokud máte zájem, napište mi email anebo
         vyplňte poptávku. Ozvu se Vám.
       </div>
     </Container>

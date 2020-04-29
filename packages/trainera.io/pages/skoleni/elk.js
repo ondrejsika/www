@@ -17,7 +17,7 @@ const Page = props => (
   >
     <div className="alert alert-danger mt-5" role="alert">
       <h2>Připravuji ...</h2>
-      Na kurzu momentálne pracuji, pokud máte zájem, napište mi email anebo
+      Na kurzu momentálně pracuji, pokud máte zájem, napište mi email anebo
       vyplňte poptávku. Ozvu se Vám.
     </div>
   </Course>
