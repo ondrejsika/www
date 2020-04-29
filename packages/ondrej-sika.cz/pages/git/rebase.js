@@ -17,7 +17,7 @@ Výsledkem bude:
 
 ![](/static/rebase/basic-rebase-2.png)
 
-Tento výsledek nechceme, chceme mít historii lineární, proto před použitím merge uděláme rebase přeskládani větve experimental na větev master.
+Tento výsledek nechceme, chceme mít historii lineární, proto před použitím merge uděláme rebase přeskládání větve experimental na větev master.
 
 Uděláme to takto (vycházíme z výchozího stavu projektu, pokud jsme již vytvořili merge commit, můžeme jej vrátit příkazem \`git reset hard HEAD~1\`):
 
@@ -28,7 +28,7 @@ Uděláme to takto (vycházíme z výchozího stavu projektu, pokud jsme již vy
 
 Tyto příkazy nám přeskládají větev experimental do této podoby:
 
-Pak už jen stačí použít fast-forward merge a větev experimental máme začleněnou do masterů:
+Pak už jen stačí použít fast-forward merge a větev experimental máme začleněnou do masteru:
 
     git checkout master
     git merge –-ff-only experimental
