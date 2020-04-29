@@ -4,36 +4,36 @@ export default () => (
   <Article
     title="Git Rebase"
     markdown={`
-Mam 2 vetve, vetev master a experiment. Stav repozitare vypada takto:
+Mám 2 větve, větev master a experiment. Stav repozitáře vypadá takto:
 
 ![](/static/rebase/basic-rebase-1.png)
 
-Nasim cilem je dostat zmeny z vetve experiment do masteru. Muzu pouzit merge, ale to nam vytvori v merge commit kteremu se chceme vyhnout. Pouziti merge vypada takto:
+Naším cílem je dostat změny z větve experiment do masteru. Mužů použít merge, ale to nám vytvoří v merge commit kterému se chceme vyhnout. Použití merge vypadá takto:
 
     git checkout master
     git merge experiment
 
-Vysledkem bude:
+Výsledkem bude:
 
 ![](/static/rebase/basic-rebase-2.png)
 
-Tento vysledek nechceme, chceme mit historii linearni, proto pred pouzitim merge udelame rebase – preskladani vetve experimental na vetev master.
+Tento výsledek nechceme, chceme mít historii lineární, proto před použitím merge uděláme rebase přeskládani větve experimental na větev master.
 
-Udelame to takto (vychazime z vychoziho stavu projektu, pokud jsme jiz vytvorili merge commit, muzeme jej vratit prikazem \`git reset –hard HEAD~1\`):
+Uděláme to takto (vycházíme z výchozího stavu projektu, pokud jsme již vytvořili merge commit, můžeme jej vrátit příkazem \`git reset hard HEAD~1\`):
 
 ![](/static/rebase/basic-rebase-3.png)
 
     git checkout experimental
     git rebase master
 
-Tyto prikazy nam preskladaji vetev experimental do teto podoby:
+Tyto příkazy nám přeskládají větev experimental do této podoby:
 
-Pak uz jen staci pouzit fast forward merge a vetev mame experimental zaclenenou do masteru:
+Pak už jen stačí použít fast-forward merge a větev experimental máme začleněnou do masterů:
 
     git checkout master
     git merge –-ff-only experimental
 
-Vysledek pak vypada takto:
+Výsledek pak vypadá takto:
 
 ![](/static/rebase/basic-rebase-4.png)
 `}
