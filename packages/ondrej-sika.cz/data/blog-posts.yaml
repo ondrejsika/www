@@ -190,7 +190,7 @@
 
     Na Macu nainstaluju Wireguard z [Mac App Store](https://apps.apple.com/us/app/wireguard/id1451685025), stejně tak na iPhone z [App Store](https://apps.apple.com/us/app/wireguard/id1441195209).
 
-    Pokud chci i wireguard tools, musím je nainstalovat pomoci brew
+    Pokud chci i wireguard tools, musím je nainstalovat pomocí brew
 
     ```
     brew install wireguard-tools
@@ -341,7 +341,7 @@
   date: 17. 3. 2020
   tags: []
   perex: |
-    Coronavirus me skoleni nezastavi, školím dál, ale on-line. Prez Zoom, Google Hangouts, Whereby nebo GoToWebinar.
+    Coronavirus mé školení nezastaví, školím dál, ale on-line. Přes Zoom, Google Hangouts, Whereby nebo GoToWebinar.
   content:
 - id: australia-on-fire
   nostatic: true
@@ -419,7 +419,7 @@
     Začal jsem také psát články, ty nejzajímavější jsou zde:
 
     - [Novinky v Helm 3](/blog/helm3) (blog post)
-    - [Správa Cloudflare DNS pomoci Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
+    - [Správa Cloudflare DNS pomocí Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
     - [Git Rebase](/git/rebase)
     - [Git Hooks](/git/hooks)
     - [Docker s TLS](/docker/docker-s-tls)
@@ -584,7 +584,7 @@
 
     Příkaz `helm status` neukazuje resources jak jsme byli zvyklí z Helm 2, je to spíš feature než bug, ale podle diskuze na [Githubu](https://github.com/helm/helm/issues/5952) se tam možná tato funkcionalita vrátí.
 
-    Dá se to vyřešit pomoci těchto způsobu:
+    Dá se to vyřešit pomocí těchto způsobu:
 
     ```
     helm get manifest hello | kubectl get -f -
@@ -780,7 +780,7 @@
 - id: talk-automatizace-pomoci-gitlab-gi-a-dockeru
   url: /blog/2018/talk-automatizace-pomoci-gitlab-gi-a-dockeru
   title: |
-    Talk: Automatizace pomoci Gitlab CI a Dockeru
+    Talk: Automatizace pomocí Gitlab CI a Dockeru
   date: 21. 4. 2018
   perex: Slides z přednášky na DevHeaven.
   content: |
@@ -843,7 +843,7 @@
     ```
     AcceptEnv GIT_*
     ```
-    A pak jen restartovat SSH server (service ssh restart), odpojit a připojit se znovu. Zda vše zafungovalo, zjistíte když si vypíšete proměnné prostředí pomoci:
+    A pak jen restartovat SSH server (service ssh restart), odpojit a připojit se znovu. Zda vše zafungovalo, zjistíte když si vypíšete proměnné prostředí pomocí:
     ```
     root@debian:~# env | grep GIT
     GIT_COMMITTER_NAME=Ondrej Sika

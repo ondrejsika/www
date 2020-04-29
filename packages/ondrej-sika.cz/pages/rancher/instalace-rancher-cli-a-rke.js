@@ -8,7 +8,7 @@ const Page = () => (
     markdown={`
 ## Mac
 
-Na Macu nainstalujete Rancher CLI a RKE pomocí [brew](/návody/brew)
+Na Macu nainstalujete Rancher CLI a RKE pomocí [brew](/navody/brew)
 
     brew install rancher-cli rke
 

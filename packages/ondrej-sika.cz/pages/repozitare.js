@@ -30,7 +30,7 @@ const Page = () => (
 
 - [Skoleni Kubernetes](/skoleni/kubernetes) - https://github.com/ondrejsika/kubernetes-training
 - Jak nainstalovat Kubernetes na bare metal - https://github.com/ondrejsika/bare-metal-kubernetes
-- Kubernetes Ingress pomoci Traefiku - https://github.com/ondrejsika/kubernetes-ingress-traefik
+- Kubernetes Ingress pomocí Traefiku - https://github.com/ondrejsika/kubernetes-ingress-traefik
 - Jednoduchy HELM balicek - https://github.com/ondrejsika/one-image-helm
 
 [Vsechny repozitare tykajici se Kubernetes na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=kubernetes&type=&language=)
@@ -71,7 +71,7 @@ const Page = () => (
 
 - [Skoleni Ansible](/skoleni/ansible) - https://github.com/ondrejsika/ansible-training
 - Ukazka Ansible konfigurace v Monorepu - https://github.com/ondrejsika/example-ansible-monorepo
-- Docker Compose deployment pomoci Ansible - https://github.com/ondrejsika/ansible-docker-compose--example
+- Docker Compose deployment pomocí Ansible - https://github.com/ondrejsika/ansible-docker-compose--example
 
 ## ZEIT
 
