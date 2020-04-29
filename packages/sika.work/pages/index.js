@@ -6,7 +6,7 @@ import img from "@app/data/pictures/lecturers/ondrejsika/ondrejsika4x_notebook_v
 const Index = () => (
   <>
     <Head>
-      <title>sika.work</title>
+      <title>Ondrej Sika - sika.work</title>
     </Head>
     <div className="mt-2">
       <h1>Ondrej Sika</h1>
