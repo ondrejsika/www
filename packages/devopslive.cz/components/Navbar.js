@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "../components/MyLink";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
+import devops from "@app/data/pictures/devops/devops_beige.svg";
 
 const Nav = styled.ul`
   margin: 0;
@@ -20,7 +20,6 @@ const NavItem = styled.li`
   font-size: 1.4em;
   display: block;
   cursor: pointer;
-  color: black;
   @media (max-width: 600px) {
     padding: 0.5em 0.4em 1em 0.4em;
     font-size: 1.25em;
@@ -32,14 +31,34 @@ const NavItem = styled.li`
   }
 `;
 
+const Brand = styled.div`
+  display: inline-block;
+  margin: 1rem 1rem 1rem 0;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+`;
+
+const Img = styled.img`
+  height: 30px;
+  padding-left: 2px;
+`;
+
+const Item = styled.a`
+  color: #131480 !important;
+`;
+
 const Navbar = () => (
   <Container>
     <Nav>
+      <Brand>
+        <Img src={devops} className="" />
+      </Brand>
       <NavItem>
-        <Link href="https://ondrej-sika.cz">Ondrej Sika</Link>
+        <Item href="https://ondrej-sika.cz">Ondrej Sika</Item>
       </NavItem>
       <NavItem>
-        <Link href="/">DEVOPSLIVE.CZ</Link>
+        <Item href="/">home</Item>
       </NavItem>
     </Nav>
   </Container>

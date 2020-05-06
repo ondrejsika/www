@@ -3,36 +3,39 @@ import styled from "styled-components";
 import H3 from "./H3";
 // import Link from "@app/devopslive.cz/components/MyLink";
 import Link from "next/link";
+import { Container } from "react-bootstrap";
 
 const Courses = styled.div`
   margin: 0;
+  padding: 1em 0;
   background-color: #131480;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+`;
+const Lecture = styled.a`
+  color: #c8bfb0;
 `;
 
-const Lecturer = styled.span`
+const Date = styled.span`
   font-size: 1em;
+  color: white;
 `;
 
 const CourseBar = props => (
   <>
     <Courses>
-      {props.courses.map((course, i) => (
-        <div key={i}>
-          <H3>
-            <Link href={`skoleni/${course[1]}`}>
-              <a href={`skoleni/${course[1]}`}>{course[0]} </a>
-            </Link>
-          </H3>
-          <Lecturer>
-            <p>({course[2]})</p>
-          </Lecturer>
-        </div>
-      ))}
+      <Container>
+        {props.courses.map((course, i) => (
+          <div key={i}>
+            <H3>
+              <Link href={`skoleni/${course[1]}`}>
+                <Lecture href={`skoleni/${course[1]}`}>{course[0]} </Lecture>
+              </Link>
+            </H3>
+            <Date>
+              <p>- {course[2]}</p>
+            </Date>
+          </div>
+        ))}
+      </Container>
     </Courses>
   </>
 );

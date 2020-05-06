@@ -15,7 +15,8 @@
   "dependencies": {
     "@app/skoleni.io": "^1.0.0",
     "babel-plugin-styled-components": "^1.10.7",
-    "next-images": "^1.3.1",
+    "next": "^9.3.6",
+    "next-images": "^1.4.0",
     "next-yaml": "^1.0.1",
     "react-bootstrap": "^1.0.1",
     "styled-components": "^5.1.0"
