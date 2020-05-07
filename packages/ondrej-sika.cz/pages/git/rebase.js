@@ -22,12 +22,14 @@ Tento výsledek nechceme, chceme mít historii lineární, proto před použití
 
 Uděláme to takto (vycházíme z výchozího stavu projektu, pokud jsme již vytvořili merge commit, můžeme jej vrátit příkazem \`git reset --hard HEAD~1\`):
 
-![](/static/rebase/basic-rebase-3.png)
+![](/static/rebase/basic-rebase-1.png)
 
     git checkout experimental
     git rebase master
 
 Tyto příkazy nám přeskládají větev experimental do této podoby:
+
+![](/static/rebase/basic-rebase-3.png)
 
 Pak už jen stačí použít fast-forward merge a větev experimental máme začleněnou do masteru:
 
