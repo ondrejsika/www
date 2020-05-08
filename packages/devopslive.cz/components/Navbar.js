@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import devops from "@app/data/pictures/devops/devops_beige.svg";
+import devops from "@app/data/pictures/devops/devops_blue.svg";
 
 const Nav = styled.ul`
   margin: 0;
@@ -42,17 +42,26 @@ const Brand = styled.div`
 const Img = styled.img`
   height: 30px;
   padding-left: 2px;
+  padding-bottom: 4px;
 `;
 
 const Item = styled.a`
   color: #131480 !important;
 `;
 
+const Devops = styled.h1`
+  color: #131480 !important;
+  display: inherit;
+  vertical-align: middle;
+  padding-left: 0.2em;
+  font-weight: 900 !important;
+`;
 const Navbar = () => (
   <Container>
     <Nav>
       <Brand>
-        <Img src={devops} className="" />
+        <Img src={devops} className=""></Img>
+        <Devops>DEVOPSLIVE</Devops>
       </Brand>
       <NavItem>
         <Item href="https://ondrej-sika.cz">Ondrej Sika</Item>

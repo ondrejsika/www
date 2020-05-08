@@ -12,11 +12,19 @@ const Courses = styled.div`
 `;
 const Lecture = styled.a`
   color: #c8bfb0;
+  :hover {
+    color: white;
+    text-decoration: none;
+  }
 `;
-
+const About = styled.p`
+  color: white;
+  margin-bottom: 0.3rem;
+`;
 const Date = styled.span`
   font-size: 1em;
   color: white;
+  margin-bottom: 1.3em !important;
 `;
 
 const CourseBar = props => (
@@ -30,6 +38,7 @@ const CourseBar = props => (
                 <Lecture href={`skoleni/${course[1]}`}>{course[0]} </Lecture>
               </Link>
             </H3>
+            <About>{course[3]}</About>
             <Date>
               <p>- {course[2]}</p>
             </Date>
