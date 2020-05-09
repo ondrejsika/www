@@ -209,7 +209,7 @@
   facebook_event: https://www.facebook.com/events/296308344680464/
   linkedin_event: https://www.linkedin.com/events/6652270217235836928/
 - id: ansible-praha-01-05-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: ansible
