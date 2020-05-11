@@ -2,6 +2,8 @@ import React from "react";
 import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
+import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 
 import Head from "next/head";
 import TextArea from "@app/ondrejsika-theme/components/TextArea";
@@ -57,6 +59,20 @@ const Index = props => (
         ]}
       ></OutTeam>
       <CompaniesBar lang={props.site.lang} />
+      <h2 className="mt-5">Twitter Reccomendations</h2>
+      <div className="card-columns">
+        {twitter_recommendation_file.map((rec, i) => {
+          if (rec.lang != props.site.lang) return;
+          return (
+            <div key={i} className="card" style={{ border: "none" }}>
+              <TwitterTweetEmbed
+                tweetId={rec.tweet_id}
+                options={{ conversation: "none" }}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   </div>
 );
