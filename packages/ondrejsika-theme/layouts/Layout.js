@@ -5,7 +5,6 @@ import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import BootstrapJS from "@app/common/components/BootstrapJS";
-import CoronaBar from "@app/common/components/CoronaBar";
 import GoogleTagManager from "@app/common/google_tag_manager/GoogleTagManager";
 
 import { init as gtm_init } from "@app/common/google_tag_manager/lib";
@@ -33,12 +32,6 @@ let Layout = props => {
         {props.site.gtm_id && <GoogleTagManager gtm_id={props.site.gtm_id} />}
       </Head>
       <DevelopmentBar />
-      <CoronaBar
-        lang={props.site.lang}
-        local_link={["ondrej-sika.cz", "ondrej-sika.com"].includes(
-          props.site.name
-        )}
-      />
       <div id="home" />
       {props.LanguageSwitch}
       {props.Navbar}
