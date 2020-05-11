@@ -12,13 +12,14 @@ const Nav = styled.ul`
 
 const NavItem = styled.li`
   float: right;
-  padding: 14px 16px;
+  padding: 0 16px;
+  margin: 1rem 1rem 1rem 0;;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 1.4em;
-  display: block;
   cursor: pointer;
   @media (max-width: 600px) {
     padding: 0.5em 0.4em 1em 0.4em;
