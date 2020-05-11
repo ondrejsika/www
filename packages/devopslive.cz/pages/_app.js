@@ -5,6 +5,7 @@ import site from "../config";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import { createGlobalStyle } from "styled-components";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -13,9 +14,7 @@ const GlobalStyle = createGlobalStyle`
   a, p  {
     font-family: 'IBM Plex Sans', sans-serif;
   }
-  a {
-    color: #131480;
-  }
+  
   a:hover {
     text-decoration: none;
     color: #C8BFB0;
@@ -47,6 +46,7 @@ class MyApp extends App {
         <Layout {...pageProps}>
           <Component {...pageProps} />
         </Layout>
+        <Footer />
       </>
     );
   }

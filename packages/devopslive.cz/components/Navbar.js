@@ -13,7 +13,7 @@ const Nav = styled.ul`
 const NavItem = styled.li`
   float: right;
   padding: 0 16px;
-  margin: 1rem 1rem 1rem 0;;
+  margin: 1rem 1rem 1rem 0;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
