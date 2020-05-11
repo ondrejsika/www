@@ -4,6 +4,7 @@ import H3 from "./H3";
 // import Link from "@app/devopslive.cz/components/MyLink";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
+import devops_live_data from "@app/data/training/devops_live.yml";
 
 const Courses = styled.div`
   margin: 0;
@@ -29,23 +30,28 @@ const Date = styled.span`
 
 const CourseBar = props => (
   <>
-    <Courses>
-      <Container>
-        {props.courses.map((course, i) => (
-          <div key={i}>
-            <H3>
-              <Link href={`skoleni/${course[1]}`}>
-                <Lecture href={`skoleni/${course[1]}`}>{course[0]} </Lecture>
-              </Link>
-            </H3>
-            <About>{course[3]}</About>
-            <Date>
-              <p>- {course[2]}</p>
-            </Date>
-          </div>
-        ))}
-      </Container>
-    </Courses>
+    {devops_live_data.map((devops_live, i) => {
+      return (
+        <div key={i}>
+          <Courses>
+            <Container>
+              <div>
+                <H3>
+                  <Link href={devops_live.id}>
+                    <Lecture href={devops_live.id}>{props.title}</Lecture>
+                  </Link>
+                </H3>
+                <About>{devops_live.text}</About>
+                <Date>
+                  <p>- {devops_live.date}</p>
+                </Date>
+              </div>
+            </Container>
+          </Courses>
+        </div>
+      );
+    })}
   </>
 );
+
 export default CourseBar;

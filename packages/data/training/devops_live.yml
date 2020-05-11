@@ -1,0 +1,30 @@
+- id: "sprava-gitlabu-a-githubu-pomoci-terraformu"
+  title: "Sprava Gitlabu a Githubu pomoci Terraformu"
+  date: "31.5.2020"
+  date_id: "2020-05-31"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lorem vitae fermentum consectetur. Phasellus luctus quam at elementum consectetur. Cras ornare felis porta odio porta, in bibendum ipsum dictum. "
+        
+- id: "persistentni-ceph-storage-pro-kuberneretes-pomoci-rooku"
+  title: "Persistentni Ceph storage pro Kuberneretes pomoci Rooku"
+  date: "20.5.2020"
+  date_id: "2020-05-20"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lorem vitae fermentum consectetur. Phasellus luctus quam at elementum consectetur. Cras ornare felis porta odio porta. "
+
+- id: "bare-metal-kubernetes-pomoci-rke"
+  title: "Bare metal Kubernetes pomoci RKE"
+  date: "24.5.2020"
+  date_id: "2020-05-24"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lorem vitae fermentum consectetur. Phasellus luctus quam at elementum consectetur. Cras ornare felis porta odio porta, in bibendum ipsum dictum. Cras ornare felis porta odio porta, in bibendum ipsum dictum."
+
+- id: "docker-monitoring-pomoci-promethea-a-alertmanageru"
+  title: "Docker monitoring pomoci Promethea a Alertmanageru"
+  date: "23.5.2020"
+  date_id: "2020-05-23"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lorem vitae fermentum consectetur. Phasellus luctus quam at elementum consectetur."
+  
+- id: "prometheus-exportery-ktere-pouzivam"
+  title: "Prometheus Exportery, ktere pouzivam (Node, DB, Docker, Kubernetes, Proxmox)"
+  date: "28.5.2020"
+  date_id: "2020-05-28"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lorem vitae fermentum consectetur."
+        
