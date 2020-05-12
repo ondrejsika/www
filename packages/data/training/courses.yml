@@ -187,7 +187,7 @@
       - Písanie vlastného Helm balíčku
     en: |
       ### Course Outline
-      
+
       - Theory introduction to Kubernetes
       - How to install locally (minikube and kubectl)
       - Description of Kubernetes components
@@ -954,9 +954,11 @@
     open:
       cz: 6 800 CZK
       de: 399 EUR
+      uk: 399 EUR
     in_house:
       cz: 25 000 CZK
       de: 1999 EUR
+      uk: 1999 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -973,6 +975,16 @@
       - Integrace s Grafanou
       - Prometheus Pushgateway
       - Integrace s Dockerem, Kubernetes a vlastní aplikací
+    en: |
+      ### Course Outline
+      - Introduction to Prometheus ecosystem
+      - How to install Prometheus and Alertmanager
+      - Data collection - Exporters
+      - Prometheus and Alertmanager configuration
+      - How to work with PROMQL (query language of Prometheus)
+      - Grafana integration
+      - Prometheus Pushgateway
+      - Docker, Kubernetes and custom app integrations
   description:
     cs: |
       ### Co je to Prometheus
