@@ -388,7 +388,7 @@
       - Práca s viacerými vetvami - merge, rebase (silná stránka Gitu)
       - Práca so vzdialenými repozitármi
       - Záchrana zmazaných dát z repozitára
-      
+
     en: |
       ### Course Outline
       - Installation and Configuration
@@ -498,14 +498,14 @@
       sk: 199 EUR
       nl: "??? EUR"
       de: 399 EUR
-      en: "???"
+      uk: 399 EUR
       se: "??? SEK"
     in_house:
       cz: 25 000 CZK
       sk: 779 EUR
       nl: "??? EUR"
       de: 1999 EUR
-      en: "???"
+      uk: 1999 EUR
       se: "??? SEK"
   twitter_recommendations:
     cs: []
@@ -534,6 +534,16 @@
       - Tvorba CI pipelines
       - Automatické nasadzovanie
       - Docker a CI
+    en: |
+      ### Course Outline
+      
+      - Generic introduction to CI
+      - Introduction to Gitlab CI
+      - Installation of Gitlab CI Runner
+      - Work with CI Jobs
+      - Creation of CI Pipelines
+      - Deployment Automatisation
+      - Docker and CI
   description:
     cs: |
       ### K čemu se používá ?
