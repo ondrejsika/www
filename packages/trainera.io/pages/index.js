@@ -7,6 +7,7 @@ import { TwitterTweetEmbed } from "react-twitter-embed";
 import Head from "next/head";
 import TextArea from "@app/ondrejsika-theme/components/TextArea";
 import OutTeam from "@app/ondrejsika-theme/components/OurTeam";
+import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import martinjurco from "@app/data/pictures/martinjurco.jpeg";
@@ -34,7 +35,15 @@ const Index = props => (
         jednoduše vysvětlit základy, ale i zodpovědět na záludné praktické
         dotazy."
     />
-
+    <StatisticBar
+      site={props.site}
+      NumberOfPeople="150+"
+      NumberOfPeopleHeader="účastníků proškoleno"
+      NumberOfCompanies="15+"
+      NumberOfCompaniesHeader="firem proškoleno"
+      NumberOfLectures="20+"
+      NumberOfLecturesHeader="běhů školení"
+    />
     <div className="container">
       <TraineraCourseBar LectureImgHeader="Co školíme" />
       <TextArea TextHeader="Služby a tým">
