@@ -650,14 +650,14 @@
       sk: "??? EUR"
       nl: "??? EUR"
       de: 399 EUR
-      en: "???"
+      uk: 399 EUR
       se: "??? SEK"
     in_house:
       cz: 25 000 CZK
       sk: "??? EUR"
       nl: "??? EUR"
       de: 1999 EUR
-      en: "???"
+      uk: 1999 EUR
       se: "??? SEK"
   twitter_recommendations:
     cs: []
@@ -687,6 +687,18 @@
       - Moduly
       - Šablóny
       - Secrets
+    en: |
+      ### Course Outline
+      - Basic insights into automation
+      - Basic insights into Ansible
+      - Ansible installation (for those who did not install at home)
+      - Basic Ansible controls
+      - Playbooks
+      - Templates
+      - Secrets
+      - Writing own modules
+      - Ansible & CI/CD (Gitlab CI)
+
   description:
     cs: |
       ### K čemu se používá?
