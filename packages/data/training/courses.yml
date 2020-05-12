@@ -11,12 +11,12 @@
     open:
       cz: 11 999 CZK
       sk: 389 EUR
-      de: "??? EUR"
+      de: 799 EUR
       en: "??? EUR"
     in_house:
       cz: 50 000 CZK
       sk: 1550 EUR
-      de: "??? EUR"
+      de: 3999 EUR"
       en: "??? EUR"
   twitter_recommendations:
     cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
@@ -139,12 +139,12 @@
     open:
       cz: 11 999 CZK
       sk: 389 EUR
-      de: "??? EUR"
+      de: 799 EUR
       en: "??? EUR"
     in_house:
       cz: 50 000 CZK
       sk: 1550 EUR
-      de: "??? EUR"
+      de: 3999 EUR
       en: "??? EUR"
   twitter_recommendations:
     cs: ["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]
@@ -342,14 +342,14 @@
       cz: 6 800 CZK
       sk: 199 EUR
       nl: "??? EUR"
-      de: "??? EUR"
+      de: 399 EUR
       en: "???"
       se: "??? SEK"
     in_house:
       cz: 25 000 CZK
       sk: 779 EUR
       nl: "??? EUR"
-      de: "??? EUR"
+      de: 1999 EUR
       en: "???"
       se: "??? SEK"
   twitter_recommendations:
@@ -475,14 +475,14 @@
       cz: 6 800 CZK
       sk: 199 EUR
       nl: "??? EUR"
-      de: "??? EUR"
+      de: 399 EUR
       en: "???"
       se: "??? SEK"
     in_house:
       cz: 25 000 CZK
       sk: 779 EUR
       nl: "??? EUR"
-      de: "??? EUR"
+      de: 1999 EUR
       en: "???"
       se: "??? SEK"
   twitter_recommendations:
@@ -606,14 +606,14 @@
       cz: 6 800 CZK
       sk: "??? EUR"
       nl: "??? EUR"
-      de: "??? EUR"
+      de: 399 EUR
       en: "???"
       se: "??? SEK"
     in_house:
       cz: 25 000 CZK
       sk: "??? EUR"
       nl: "??? EUR"
-      de: "??? EUR"
+      de: 1999 EUR
       en: "???"
       se: "??? SEK"
   twitter_recommendations:
@@ -910,8 +910,10 @@
   price:
     open:
       cz: 6 800 CZK
+      de: 399 EUR
     in_house:
       cz: 25 000 CZK
+      de: 1999 EUR
   twitter_recommendations:
     cs: []
   recommendations:
