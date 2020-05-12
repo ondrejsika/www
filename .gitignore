@@ -9,3 +9,4 @@ report.*.json
 ci/docker/out
 deploy-now.env.sh
 .kubeconfig
+cloudflare-workers/**/dist

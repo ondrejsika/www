@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "ondrejsika-static-cloudflare-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare worker for Ondrej Sika's Next.js static sites",
+  "main": "index.js",
+  "author": "Ondrej Sika <ondrej@ondrejsika.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.0.5"
+  }
+}
