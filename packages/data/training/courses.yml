@@ -353,14 +353,14 @@
       sk: 199 EUR
       nl: "??? EUR"
       de: 399 EUR
-      en: "???"
+      uk: 399 EUR
       se: "??? SEK"
     in_house:
       cz: 25 000 CZK
       sk: 779 EUR
       nl: "??? EUR"
       de: 1999 EUR
-      en: "???"
+      en: 1999 EUR
       se: "??? SEK"
   twitter_recommendations:
     cs: []
@@ -388,6 +388,18 @@
       - Práca s viacerými vetvami - merge, rebase (silná stránka Gitu)
       - Práca so vzdialenými repozitármi
       - Záchrana zmazaných dát z repozitára
+      
+    en: |
+      ### Course Outline
+      - Installation and Configuration
+      - New Repository
+      - Basic Git controls
+      - Work in one branch
+      - Work in branches - merge, rebase (strength of Git)
+      - Work with remote repositories
+      - Workflow with Gitlab
+      - Recovery of erased data from the repository
+      - Tips
   description:
     cs: |
       ### Co je to Git?
