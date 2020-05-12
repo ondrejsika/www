@@ -42,9 +42,21 @@ const SessionDD = props => {
         title={`${session.name} ${session.city} - Ondrej Sika`}
         header={`${session.name} ${session.city}`}
         subheader={
-          session.date_from == session.date_to
-            ? `Termín školení ${session.date_from}`
-            : `Termín školení od ${session.date_from} do ${session.date_to}`
+          session.date_from == session.date_to ? (
+            <Translate
+              lang={lang}
+              cs={`Termín školení ${session.date_from}`}
+              sk={`Termín školení ${session.date_from}`}
+              en={session.date_from}
+            />
+          ) : (
+            <Translate
+              lang={lang}
+              cs={`Termín školení od ${session.date_from} do ${session.date_to}`}
+              sk={`Termín školení od ${session.date_from} do ${session.date_to}`}
+              en={`From ${session.date_from} to ${session.date_to}`}
+            />
+          )
         }
         hideNewsletter={true}
       >
