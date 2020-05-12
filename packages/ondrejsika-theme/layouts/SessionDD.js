@@ -50,26 +50,41 @@ const SessionDD = props => {
       >
         <Row>
           <div className="col-md-7">
-            <h2>Místo konání</h2>
+            <h2>
+              <Translate
+                lang={lang}
+                cs="Místo konání"
+                sk="Místo konání"
+                en="Venue"
+              />
+            </h2>
             <ul>
               <li>{session.city}</li>
             </ul>
             <Markdown source={course.agenda[lang]} />
             <p>
-              Vice informaci naleznete zde -{" "}
+              <Translate
+                lang={lang}
+                cs="Vice informaci naleznete zde -"
+                sk="Vice informaci naleznete zde -"
+                en="For more information go to -"
+              />{" "}
               <a href={`/skoleni/${session.course_id}`}>{session.name}</a>
             </p>
-            <h2>Lektor: Ondrej Sika</h2>
+            <h2>
+              <Translate
+                lang={lang}
+                cs="Lektor: Ondrej Sika"
+                sk="Lektor: Ondrej Sika"
+                en="Lecturer: Ondrej Sika"
+              />
+            </h2>
             <Row>
               <Col md={9}>
                 <p>
                   <Translate
                     lang={lang}
-                    cs="Jsem freelance DevOps konzultant a lektor. Zlepšuji práci
-            vývojářských týmu zaváděním efektivních procesů ve vývoji.
-            Naučím Vás používat prověřené nástroje a technologie, které
-            povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho
-            software."
+                    cs="Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
                     en="I'm a software engineer since 2009. These days, I'm focused in DevOps. I've stated with training in 2013, since then I've made more than 170 training sessions for more than 750 people. My cliets are banks, telco & large enterpises as well as startups and small companies."
                     sk="Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
                   />
@@ -87,14 +102,27 @@ const SessionDD = props => {
 
           <div className="col-md-5">
             <Price
-              PriceHeader={"Cena za školení"}
-              PriceBtn={"Nezávazně poptat školení"}
+              PriceHeader={
+                <Translate lang={lang} cs="Cena za školení" en="Price" />
+              }
+              PriceBtn={
+                <Translate
+                  lang={lang}
+                  cs="Nezávazně poptat školení"
+                  sk="Nezávazně poptat školení"
+                  en="Ask for the training"
+                />
+              }
             >
-              Otevřený termín {session.price} bez DPH
+              <Translate
+                lang={lang}
+                cs={`Otevřený termín ${session.price} bez DPH`}
+                en={`Public session - ${session.price} excl. VAT `}
+              />
             </Price>
             <Padding>
               <h2 className="pt-3" id="register">
-                Registrace
+                <Translate lang={lang} cs="Registrace" en="Registration" />
               </h2>
 
               <SessionRegisterForm

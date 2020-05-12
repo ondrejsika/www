@@ -6,6 +6,7 @@ import fetch from "isomorphic-unfetch";
 import Router from "next/router";
 import Button from "@app/ondrejsika-theme/components/FormButton";
 import ReCAPTCHA from "react-google-recaptcha";
+import Translate from "@app/common/components/Translate";
 
 const recaptchaRef = React.createRef();
 
@@ -76,7 +77,7 @@ const SessionRegisterForm = props => {
 
       <div className="pt-5">
         <Button size="huge" site={props.site} href="#">
-          Odeslat
+          <Translate lang={props.site.lang} cs="Odeslat" en="Submit" />
         </Button>
       </div>
     </Form>
