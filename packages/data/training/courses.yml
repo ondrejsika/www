@@ -150,12 +150,12 @@
       cz: 11 999 CZK
       sk: 389 EUR
       de: 799 EUR
-      en: "??? EUR"
+      uk: 799 EUR
     in_house:
       cz: 50 000 CZK
       sk: 1550 EUR
       de: 3999 EUR
-      en: "??? EUR"
+      uk: 2999 EUR
   twitter_recommendations:
     cs: ["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]
   recommendations:
@@ -185,6 +185,17 @@
       - Teoretický úvod do Helm balíčku
       - Inštalácia / Deployment pomocí Helmu
       - Písanie vlastného Helm balíčku
+    en: |
+      ### Course Outline
+      
+      - Theory introduction to Kubernetes
+      - How to install locally (minikube and kubectl)
+      - Description of Kubernetes components
+      - Deployment to Kubernetes
+      - Working with permissions in the Kubernetes cluster
+      - Theory introduction to Helm packages
+      - Installation/Deployment using Helm
+      - Creating a custom Helm package
   description:
     cs: |
       ### Popis technologie
@@ -536,7 +547,7 @@
       - Docker a CI
     en: |
       ### Course Outline
-      
+
       - Generic introduction to CI
       - Introduction to Gitlab CI
       - Installation of Gitlab CI Runner
