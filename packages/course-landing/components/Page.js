@@ -64,8 +64,8 @@ const Page = props => {
             lang={site.lang}
             cs="Nezávazně poptat školení"
             sk="Nezáväzne popýtať školenie"
-            de="xxNezávazně poptat školení"
-            en="xxNezávazně poptat školení"
+            de="Ask for the training"
+            en="Ask for the training"
           />
         </HeaderLink>
         <HeaderLink url={site.x_contact_link}>
@@ -73,8 +73,8 @@ const Page = props => {
             lang={site.lang}
             cs="Kontaktovat"
             sk="Kontaktovať"
-            de="xxKontaktovat"
-            en="xxKontaktovat"
+            de="Contact me"
+            en="Contact me"
           />
         </HeaderLink>
       </Header>
@@ -84,8 +84,8 @@ const Page = props => {
             lang={site.lang}
             cs="Otevřené termíny"
             sk="Otvorené termíny"
-            de="xxOtevřené ternímy"
-            en="Otevřené termíny"
+            de="Public session"
+            en="Public session"
           />
         </h2>
         <UpcomingSessions
@@ -107,19 +107,15 @@ const Page = props => {
                   className="img-fluid rounded-circle mb-3"
                   width="140"
                 />
-                <h4>Ondřej Šika</h4>
+                <h4>Ondrej Sika</h4>
               </div>
               <p>
                 <Translate
                   lang={site.lang}
-                  cs="Jsem freelance DevOps konzultant a lektor. Zlepšuji práci
-                vývojářských týmu zaváděním efektivních procesů ve vývoji.
-                Naučím Vás používat prověřené nástroje a technologie, které
-                povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho
-                software."
+                  cs="Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
                   sk="Volám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
-                  de="xxVolám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
-                  en="xxVolám sa Ondřej Šika, vyvíjam softvér pre Slush Pool a školím. Školím prevažne Docker a CI, ktorý spolu s Dockerom veľmi úzko súvisí. Ďalšie školenia nájdete na mojom webe [ondrej-sika.cz](https://ondrej-sika.cz/). Všetky kurzy vediem osobne. S Dockerom mám viac ako štyri roky skúseností v rámci komerčného vývoja softvéru. Docker používam denne vo vývoji, ale aj na produkcii a prácu bez neho si už neviem ani predstaviť."
+                  de="My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies, startups to big corporations. I have four years of experience with training."
+                  en="My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies, startups to big corporations. I have four years of experience with training."
                 />
               </p>
             </TextFrame>
@@ -130,8 +126,8 @@ const Page = props => {
                     lang={lang}
                     cs="Mám zájem o školení"
                     sk="Mám záujem o školenie"
-                    de="xxMám zájem o školení"
-                    en="xxMám zájem o školení"
+                    de="I am interested in this training"
+                    en="I am interested in this training"
                   />
                 </h3>
                 <p>
@@ -139,8 +135,8 @@ const Page = props => {
                     lang={lang}
                     cs="Pokud máte zájem o školení, vyberte si variantu a pošlete nezávaznou poptávku."
                     sk="Ak máte záujem o školenie, neváhajte ma kontaktovať."
-                    de="xxPokud máte zájem o školení, vyberte si variantu a pošlete nezávaznou poptávku."
-                    en="xxPokud máte zájem o školení, vyberte si variantu a pošlete nezávaznou poptávku."
+                    de=""
+                    en=""
                   />
                 </p>
                 <div className="row text-center mt-4">
@@ -150,8 +146,8 @@ const Page = props => {
                         lang={lang}
                         cs="Otevřený termín"
                         sk="Otvorený termín"
-                        de="xxOtevřený termín"
-                        en="xxOtevřený termín"
+                        de="Public session"
+                        en="Public session"
                       />
                     </h5>
                     <div className="mb-2" style={{ fontSize: "1.3em" }}>
@@ -162,8 +158,8 @@ const Page = props => {
                         lang={lang}
                         cs="Nezávazně poptat"
                         sk="Nezáväzne popýtať"
-                        de="xxNezávazně poptat"
-                        en="xxNezávazně poptat"
+                        de="Ask for the training"
+                        en="Ask for the training"
                       />
                     </ButtonOutline>
                   </div>
@@ -173,8 +169,8 @@ const Page = props => {
                         lang={lang}
                         cs="Firemní školení"
                         sk="Firemné školenia"
-                        de="xxFiremní školení"
-                        en="xxFiremní školení"
+                        de="Company traning (in-house)"
+                        en="Company traning (in-house)"
                       />
                     </h5>
                     <div className="mb-2" style={{ fontSize: "1.3em" }}>
@@ -185,8 +181,8 @@ const Page = props => {
                         lang={lang}
                         cs="Nezávazně poptat"
                         sk="Nezáväzne popýtať"
-                        de="xxNezávazně poptat"
-                        en="xxNezávazně poptat"
+                        de="Ask for the training"
+                        en="Ask for the training"
                       />
                     </ButtonOutline>
                   </div>
@@ -199,8 +195,8 @@ const Page = props => {
                     lang={lang}
                     cs="Pokud máte jakýkoliv dotaz, naváhejte mi napsat na"
                     sk="Ak máte záujem o školenie, neváhajte ma kontaktovať"
-                    de="xxPokud máte jakýkoliv dotaz, naváhejte mi napsat na"
-                    en="xxPokud máte jakýkoliv dotaz, naváhejte mi napsat na"
+                    de="If you have any question, let me know at"
+                    en="If you have any question, let me know at"
                   />{" "}
                   <a
                     href={`mailto:ondrej@sika.io?subject=[${site.name}] Question about ${course_name}`}
@@ -233,8 +229,8 @@ const Page = props => {
               lang={lang}
               cs="Statistiky kurzu"
               sk="Štatistiky kurzu"
-              de="xxStatistiky kurzu"
-              en="xxStatistiky kurzu"
+              de="Course statistics"
+              en="Course statistics"
             />
           </h2>
         </div>
@@ -248,8 +244,8 @@ const Page = props => {
                 lang={lang}
                 cs="účastníků proškoleno"
                 sk="účastníkov"
-                de="xxúčastníků proškoleno"
-                en="xxúčastníků proškoleno"
+                de="Training attendees"
+                en="Training attendees"
               />
             </p>
           </div>
@@ -262,8 +258,8 @@ const Page = props => {
                 lang={lang}
                 cs="firem proškoleno"
                 sk="firiem preškolených"
-                de="xxfirem proškoleno"
-                en="xxfirem proškoleno"
+                de="Companies trained"
+                en="Companies trained"
               />
             </p>
           </div>
@@ -274,8 +270,8 @@ const Page = props => {
                 lang={lang}
                 cs="běhů školení"
                 sk="školení"
-                de="xxběhů školení"
-                en="xxběhů školení"
+                de="Training sessions"
+                en="Training sessions"
               />
             </p>
           </div>
@@ -289,8 +285,8 @@ const Page = props => {
               lang={lang}
               cs="Moji nejvýznamější klienti"
               sk="Moji nejvýznamější klienti"
-              de="xxMoji nejvýznamější klienti"
-              en="xxMoji nejvýznamější klienti"
+              de="My Clients"
+              en="My Clients"
             />
           }
         />
@@ -303,8 +299,8 @@ const Page = props => {
             <Translate
               lang={lang}
               cs="Reference"
-              de="xxReference"
-              en="xxReference"
+              de="References"
+              en="References"
             />
           }
           col1={<Recommendation id={recommendations[0]} lang={site.lang} />}
