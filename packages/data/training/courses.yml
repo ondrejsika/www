@@ -124,7 +124,7 @@
       - Basic Terminal knowledge
 
       #### Technical Requirements
-       - Have Docker installed, instructions: [here] (/instructions/docker)
+      - Have Docker installed
       - Access to the internet - ideally without corporate proxy, or proxy set up in Docker
 
 - id: kubernetes
@@ -230,7 +230,7 @@
       - Basic Terminal knowledge
 
       #### Technical Requirements
-      - Have Kubernetes installed & running, instructions [here](/instructions/kubernetes/)
+      - Have Kubernetes installed & running
       - Access to the internet - ideally without corporate proxy
     sk: |
       ### Popis technológie
@@ -729,7 +729,7 @@
       - Basic Terminal knowledge
 
       #### Technical Requirements
-      - Have Ansible installed, instructions: [here](/instructions/ansible)
+      - Have Ansible installed
       - Access to the internet (https, ssh) - better without corporate proxy
 
 - id: terraform
@@ -983,8 +983,6 @@
       #### Technical Requirements
       - Access to the internet - ideally without corporate proxy
       - Installed Docker or Prometheus, Alertmanager, Pushgateway and Grafana
-
-      Installation instructions [here](/instructions/prometheus)
 
 - id: javascript
   name:
