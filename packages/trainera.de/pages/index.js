@@ -12,6 +12,8 @@ import OutTeam from "@app/ondrejsika-theme/components/OurTeam";
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import martinjurco from "@app/data/pictures/martinjurco.jpeg";
 import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
+import jirikraml from "@app/data/pictures/jirikraml.jpg";
+import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
 
 const Index = props => (
   <div>
@@ -55,7 +57,9 @@ const Index = props => (
         lecturers={[
           [ondrejsika, "Ondrej Sika"],
           [martinjurco, "Martin Jurco"],
-          [zuzanajeschke, "Zuzana Jeschke"]
+          [zuzanajeschke, "Zuzana Jeschke"],
+          [vojtechmares, "Vojtěch Mareš"],
+          [jirikraml, "Jiří Kraml"]
         ]}
       ></OutTeam>
       <CompaniesBar lang={props.site.lang} />
