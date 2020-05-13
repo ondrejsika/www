@@ -38,7 +38,7 @@
       - Ukázka deploymentu do Kubernetes
     en: |
       ### Course outline
-      
+
       - Theory introduction to containers & Docker
       - How to install Docker at home or work (for those who did not - do so)
       - Basics of Containerisation
@@ -383,7 +383,7 @@
     cs: |
       ### Co Vás naučím
 
-      - Instalace a konfigurace GITu
+      - Konfigurace GITu
       - Vytvořit nový repozitář
       - Základní ovládání GITu
       - Práce v jedné větvi
@@ -392,7 +392,7 @@
       - Záchrana smazaných dat z repozitáře
     sk: |
       ### Čo Vás naučím
-      - Inštalácia a konfigurácia GITu
+      - Konfigurácia GITu
       - Vytvorenie nového repozitára
       - Základné ovládanie GITu
       - Práca na jednej vetve
@@ -402,7 +402,7 @@
 
     en: |
       ### Course Outline
-      - Installation and Configuration
+      - Git Configuration
       - New Repository
       - Basic Git controls
       - Work in one branch
@@ -420,7 +420,7 @@
       Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practice. Ukážeme si vše od instalace a základního nastavení Gitu, přes jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacích strategií (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako omylem jsem si všechno smazal a podobně.
 
       ### Co Vás naučím
-      - Instalace a konfigurace GITu
+      - Konfigirace GITu
       - Vytvořit nový repozitář
       - Základní ovládání GITu
       - Práce v jedné větvi
@@ -447,7 +447,7 @@
       During this one day hands-on workshop, you will find out why it is beneficial to use Git, how it works (why there are no substitutes) and best practices. You will be shown everything from the installation and basic Git setup, simple individual work in a one branch to work in a team with multiple branches using merge strategies (merge, rebase) and Gitlab. The pros and cons of both will be explained, and you can choose which one is better suited for your needs. Also, you will be shown how to get out of unexpected situations like 'I deleted everything by accident' etc.
 
       ### Course Outline
-      - Installation and Configuration
+      - Git Configuration
       - New Repository
       - Basic Git controls
       - Work in one branch
