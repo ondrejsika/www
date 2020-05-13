@@ -129,11 +129,32 @@ const Course = props => (
     <StatisticBar
       site={props.site}
       NumberOfPeople="150+"
-      NumberOfPeopleHeader="účastníků proškoleno"
+      NumberOfPeopleHeader={
+        <Translate
+          lang={props.lang}
+          cs="účastníků proškoleno"
+          en="Training attendees"
+          de="Training attendees"
+        />
+      }
       NumberOfCompanies="15+"
-      NumberOfCompaniesHeader="firem proškoleno"
+      NumberOfCompaniesHeader={
+        <Translate
+          lang={props.lang}
+          cs="firem proškoleno"
+          en="Companies trained"
+          de="Companies trained"
+        />
+      }
       NumberOfLectures="20+"
-      NumberOfLecturesHeader="běhů školení"
+      NumberOfLecturesHeader={
+        <Translate
+          lang={props.lang}
+          cs="běhů školení"
+          en="Training sessions"
+          de="Training sessions"
+        />
+      }
     />
     <Container>
       {props.twitter_recommendations &&

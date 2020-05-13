@@ -19,11 +19,15 @@ const StatisticBar = props => (
             {props.NumberOfPeople}
           </h2>
           <p className="text-white text-center statistic-bottom">
-            <Translate
-              lang={props.lang || "cs"}
-              cs="Počet odškolených lidí"
-              en="Training attendees"
-            />
+            {!props.NumberOfPeopleHeader ? (
+              <Translate
+                lang={props.lang || "cs"}
+                cs="Počet odškolených lidí"
+                en="Training attendees"
+              />
+            ) : (
+              props.NumberOfPeopleHeader
+            )}
           </p>
         </div>
         <div className="col-4">
@@ -31,11 +35,15 @@ const StatisticBar = props => (
             {props.NumberOfCompanies}
           </h2>
           <p className="text-white text-center statistic-bottom">
-            <Translate
-              lang={props.lang || "cs"}
-              cs="Počet firem ve spolupráci"
-              en="Companies trained"
-            />
+            {!props.NumberOfCompaniesHeader ? (
+              <Translate
+                lang={props.lang || "cs"}
+                cs="Počet firem ve spolupráci"
+                en="Companies trained"
+              />
+            ) : (
+              props.NumberOfCompaniesHeader
+            )}
           </p>
         </div>
         <div className="col-4">
@@ -43,11 +51,15 @@ const StatisticBar = props => (
             {props.NumberOfLectures}
           </h2>
           <p className="text-white text-center statistic-bottom">
-            <Translate
-              lang={props.lang || "cs"}
-              cs="Počet uskutečněných školení"
-              en="Training sessions"
-            />
+            {!props.NumberOfLecturesHeader ? (
+              <Translate
+                lang={props.lang || "cs"}
+                cs="Počet uskutečněných školení"
+                en="Training sessions"
+              />
+            ) : (
+              props.NumberOfLecturesHeader
+            )}
           </p>
         </div>
       </div>
