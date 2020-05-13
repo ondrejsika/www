@@ -79,7 +79,7 @@ const Index = props => (
       }
     />
     <div className="container">
-      <TraineraCourseBar LectureImgHeader="Co školíme" />
+      <TraineraCourseBar site={props.site} LectureImgHeader="Co školíme" />
       <TextArea TextHeader="Služby a tým">
         <TextArea.P>
           <Bold>Technologie a technologický stack</Bold>, který školíme je

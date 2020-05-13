@@ -7,6 +7,7 @@ const Text = styled.h3`
   color: ${default_colors.WHITE};
   padding: 0;
   font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 200;
 `;
 const Header = styled.h1`
   font-weight: bolder;
