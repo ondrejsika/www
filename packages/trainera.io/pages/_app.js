@@ -124,21 +124,6 @@ const Footer = (
         </div>
       </ThemeFooter.Wrapper>
     }
-    center={
-      <Hide>
-        <Link href="/lektorska-spoluprace">
-          <ThemeFooter.A href="#">Lektorská spolupráce</ThemeFooter.A>
-        </Link>
-        <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/obchodni-spoluprace">
-          <ThemeFooter.A href="#">Obchodní Spolupráce</ThemeFooter.A>
-        </Link>
-        <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/invite">
-          <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
-        </Link>
-      </Hide>
-    }
   />
 );
 
