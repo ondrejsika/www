@@ -7,6 +7,7 @@ import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
 import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
+import Button from "@app/ondrejsika-theme/components/Button";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
@@ -100,12 +101,13 @@ const Footer = (
         <ThemeFooter.H4>Newsletter</ThemeFooter.H4>
         <p>Subscribe my newsletter and keep in touch!</p>
         <div className="input-group">
-          <a
-            className="btn btn-outline-header"
+          <Button
+            site={site}
+            type="outline-secondary"
             href="https://sika.link/newsletter-en"
           >
             Subscribe
-          </a>
+          </Button>
         </div>
       </ThemeFooter.Wrapper>
     }
