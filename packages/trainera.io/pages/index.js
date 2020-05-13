@@ -4,6 +4,8 @@ import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import { TwitterTweetEmbed } from "react-twitter-embed";
+import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
+import Translate from "@app/common/components/Translate";
 
 import Head from "next/head";
 import TextArea from "@app/ondrejsika-theme/components/TextArea";
@@ -23,18 +25,42 @@ const Index = props => (
     <MainBarHomepage
       site={props.site}
       header="IT & DevOps školení, konzultace a workshopy"
+      text="Trainera je školíci agentura, která se primárně zaměřuje na oblast
+        DevOps."
     />
-
+    <StatisticBar
+      site={props.site}
+      NumberOfPeople="150+"
+      NumberOfPeopleHeader={
+        <Translate
+          lang={props.lang}
+          cs="účastníků proškoleno"
+          en="Training attendees"
+          de="Training attendees"
+        />
+      }
+      NumberOfCompanies="15+"
+      NumberOfCompaniesHeader={
+        <Translate
+          lang={props.lang}
+          cs="firem proškoleno"
+          en="Companies trained"
+          de="Companies trained"
+        />
+      }
+      NumberOfLectures="20+"
+      NumberOfLecturesHeader={
+        <Translate
+          lang={props.lang}
+          cs="běhů školení"
+          en="Training sessions"
+          de="Training sessions"
+        />
+      }
+    />
     <div className="container">
       <TraineraCourseBar LectureImgHeader="Co školíme" />
       <TextArea TextHeader="Služby a tým">
-        <TextArea.P>
-          Trainera je školíci agentura, která se primárně zaměřuje na oblast
-          DevOps. Naši lektoři jsou zkušení vývojáři a DevOpsáci, kteří
-          technologiím, které školí rozumí a denne s nimi pracují. Dokážou proto
-          jednoduše vysvětlit základy, ale zodpovědět na záludné praktické
-          dotazy.
-        </TextArea.P>
         <TextArea.P>
           Technologie a technologický stack, který školíme je soubor na sebe
           navazujících nástrojů, které Vám umožní zvýšit efektivitu Vašich IT
@@ -53,6 +79,11 @@ const Index = props => (
           Všechny kurzy a školení děláme v českém i anglickém jazyce. Kurzy
           nabízíme jako otevřené termíny, tak i školení in house. Teď v době
           Coronaviru děláme všechny školení online formou a funguje to skvěle.
+        </TextArea.P>
+        <TextArea.P>
+          Naši lektoři jsou zkušení vývojáři a DevOpsáci, kteří technologiím,
+          které školí rozumí a denne s nimi pracují. Dokážou proto jednoduše
+          vysvětlit základy, ale zodpovědět na záludné praktické dotazy.
         </TextArea.P>
       </TextArea>
       <OutTeam
