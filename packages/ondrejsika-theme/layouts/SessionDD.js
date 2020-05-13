@@ -46,14 +46,14 @@ const SessionDD = props => {
             <Translate
               lang={lang}
               cs={`Termín školení ${session.date_from}`}
-              sk={`Termín školení ${session.date_from}`}
+              sk={`Termín školenia ${session.date_from}`}
               en={session.date_from}
             />
           ) : (
             <Translate
               lang={lang}
               cs={`Termín školení od ${session.date_from} do ${session.date_to}`}
-              sk={`Termín školení od ${session.date_from} do ${session.date_to}`}
+              sk={`Termín školenia od ${session.date_from} do ${session.date_to}`}
               en={`From ${session.date_from} to ${session.date_to}`}
             />
           )
@@ -66,7 +66,7 @@ const SessionDD = props => {
               <Translate
                 lang={lang}
                 cs="Místo konání"
-                sk="Místo konání"
+                sk="Miesto konania"
                 en="Venue"
               />
             </h2>
@@ -78,7 +78,7 @@ const SessionDD = props => {
               <Translate
                 lang={lang}
                 cs="Vice informaci naleznete zde -"
-                sk="Vice informaci naleznete zde -"
+                sk="Viac informácií nájdete tu -"
                 en="For more information go to -"
               />{" "}
               <a href={`/skoleni/${session.course_id}`}>{session.name}</a>
@@ -121,7 +121,7 @@ const SessionDD = props => {
                 <Translate
                   lang={lang}
                   cs="Nezávazně poptat školení"
-                  sk="Nezávazně poptat školení"
+                  sk="Nezáväzne popýtať školenie"
                   en="Ask for the training"
                 />
               }
@@ -129,12 +129,18 @@ const SessionDD = props => {
               <Translate
                 lang={lang}
                 cs={`Otevřený termín ${session.price} bez DPH`}
+                sk={`Otvorený kurz/termín ${session.price} bez DPH`}
                 en={`Public session - ${session.price} excl. VAT `}
               />
             </Price>
             <Padding>
               <h2 className="pt-3" id="register">
-                <Translate lang={lang} cs="Registrace" en="Registration" />
+                <Translate
+                  lang={lang}
+                  cs="Registrace"
+                  en="Registration"
+                  sk="Registrácia"
+                />
               </h2>
 
               <SessionRegisterForm
