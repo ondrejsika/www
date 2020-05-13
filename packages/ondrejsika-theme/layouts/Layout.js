@@ -29,6 +29,10 @@ let Layout = props => {
           href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
+          rel="stylesheet"
+        />
         {props.site.gtm_id && <GoogleTagManager gtm_id={props.site.gtm_id} />}
       </Head>
       <DevelopmentBar />

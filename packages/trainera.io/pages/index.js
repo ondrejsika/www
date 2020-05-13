@@ -17,6 +17,21 @@ import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
 import jirikraml from "@app/data/pictures/jirikraml.jpg";
 import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
 
+import styled from "styled-components";
+
+const A = styled.a`
+  border-bottom: 2px solid #098958;
+  background-image: linear-gradient(120deg, #098958 0%, #098958 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0em;
+  background-position: 0 100%;
+  transition: background-size 0.125s ease-in;
+  :hover {
+    border-color: #098958;
+    color: white;
+    background-size: 100% 100%;
+  }
+`;
 const Index = props => (
   <div>
     <Head>
@@ -70,10 +85,11 @@ const Index = props => (
           vlyv na celkové náklady Vašich IT projektů.
         </TextArea.P>
         <TextArea.P>
-          Pojďte zavést nebo posunout Vaše DevOps do současnosti. Začněte s
-          Gitem, Dockerem, Kubernetes nebo CI. Tak jako jsme pomohli bankám,
-          telefonním operátorům k zjednodušení práce a úspoře nákladů, můžeme
-          pomoci i Vám.
+          Pojďte zavést nebo posunout Vaše DevOps do současnosti. Začněte s{" "}
+          <A href="skoleni/git">Gitem</A>, <A href="">Dockerem</A>,{" "}
+          <A href="">Kubernetes</A> nebo <A href="">CI</A>. Tak jako jsme
+          pomohli bankám, telefonním operátorům k zjednodušení práce a úspoře
+          nákladů, můžeme pomoci i Vám.
         </TextArea.P>
         <TextArea.P>
           Všechny kurzy a školení děláme v českém i anglickém jazyce. Kurzy
