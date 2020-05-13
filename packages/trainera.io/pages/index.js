@@ -20,6 +20,7 @@ import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
 import styled from "styled-components";
 
 const A = styled.a`
+  color: #098958;
   border-bottom: 2px solid #098958;
   background-image: linear-gradient(120deg, #098958 0%, #098958 100%);
   background-repeat: no-repeat;
@@ -31,6 +32,10 @@ const A = styled.a`
     color: white;
     background-size: 100% 100%;
   }
+`;
+
+const Bold = styled.b`
+  font-weight: 700;
 `;
 const Index = props => (
   <div>
@@ -77,29 +82,36 @@ const Index = props => (
       <TraineraCourseBar LectureImgHeader="Co školíme" />
       <TextArea TextHeader="Služby a tým">
         <TextArea.P>
-          Technologie a technologický stack, který školíme je soubor na sebe
-          navazujících nástrojů, které Vám umožní zvýšit efektivitu Vašich IT
-          týmů. Ať už vývojářům pomůžou doručovat změny rychleji k zákazníkům,
-          tak pomohou Vašemu operations týmu s bezproblémovým během Vašich
-          služeb a snížením provozních nákladů. Oba tyto faktory mají pozitivní
-          vlyv na celkové náklady Vašich IT projektů.
+          <Bold>Technologie a technologický stack</Bold>, který školíme je
+          soubor na sebe navazujících nástrojů, které Vám umožní{" "}
+          <Bold>zvýšit efektivitu</Bold> Vašich IT týmů. Ať už{" "}
+          <Bold>vývojářům</Bold> pomůžou{" "}
+          <Bold>doručovat změny rychleji k zákazníkům</Bold>, tak{" "}
+          <Bold>pomohou</Bold> Vašemu operations týmu s{" "}
+          <Bold>bezproblémovým během Vašich služeb</Bold> a{" "}
+          <Bold>snížením provozních nákladů</Bold>.{" "}
+          <Bold>Oba tyto faktory</Bold> mají pozitivní vliv na celkové{" "}
+          <Bold>náklady Vašich</Bold> IT projektů.
         </TextArea.P>
         <TextArea.P>
-          Pojďte zavést nebo posunout Vaše DevOps do současnosti. Začněte s{" "}
-          <A href="skoleni/git">Gitem</A>, <A href="">Dockerem</A>,{" "}
+          Pojďte zavést nebo posunout Vaše <Bold>DevOps do současnosti</Bold>.
+          Začněte s <A href="skoleni/git">Gitem</A>, <A href="">Dockerem</A>,{" "}
           <A href="">Kubernetes</A> nebo <A href="">CI</A>. Tak jako jsme
-          pomohli bankám, telefonním operátorům k zjednodušení práce a úspoře
-          nákladů, můžeme pomoci i Vám.
+          pomohli <Bold>bankám, telefonním operátorům</Bold> k zjednodušení
+          práce a úspoře nákladů, <Bold>můžeme pomoci i Vám</Bold>.
         </TextArea.P>
         <TextArea.P>
-          Všechny kurzy a školení děláme v českém i anglickém jazyce. Kurzy
-          nabízíme jako otevřené termíny, tak i školení in house. Teď v době
-          Coronaviru děláme všechny školení online formou a funguje to skvěle.
+          Všechny kurzy a školení děláme v{" "}
+          <Bold>českém i anglickém jazyce</Bold>. Kurzy nabízíme jako{" "}
+          <Bold>otevřené termíny</Bold>, tak i <Bold>školení in house</Bold>.
+          Teď v době Coronaviru děláme všechny školení online formou a funguje
+          to skvěle.
         </TextArea.P>
         <TextArea.P>
-          Naši lektoři jsou zkušení vývojáři a DevOpsáci, kteří technologiím,
-          které školí rozumí a denne s nimi pracují. Dokážou proto jednoduše
-          vysvětlit základy, ale zodpovědět na záludné praktické dotazy.
+          Naši lektoři jsou <Bold>zkušení vývojáři a DevOpsáci</Bold>, kteří
+          technologiím, které školí rozumí a denne s nimi pracují. Dokážou proto{" "}
+          <Bold>jednoduše vysvětlit základy</Bold>, ale zodpovědět na záludné
+          praktické dotazy.
         </TextArea.P>
       </TextArea>
       <OutTeam
