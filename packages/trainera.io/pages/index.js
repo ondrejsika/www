@@ -50,7 +50,7 @@ const Index = props => (
     />
     <StatisticBar
       site={props.site}
-      NumberOfPeople="150+"
+      NumberOfPeople="750+"
       NumberOfPeopleHeader={
         <Translate
           lang={props.lang}
@@ -59,7 +59,7 @@ const Index = props => (
           de="Training attendees"
         />
       }
-      NumberOfCompanies="15+"
+      NumberOfCompanies="120+"
       NumberOfCompaniesHeader={
         <Translate
           lang={props.lang}
@@ -68,11 +68,11 @@ const Index = props => (
           de="Companies trained"
         />
       }
-      NumberOfLectures="20+"
+      NumberOfLectures="170+"
       NumberOfLecturesHeader={
         <Translate
           lang={props.lang}
-          cs="běhů školení"
+          cs="Počet uskutečněných školení"
           en="Training sessions"
           de="Training sessions"
         />
