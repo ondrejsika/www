@@ -71,6 +71,7 @@ PROD_SITES = {
     },
     "ondrej-sika.com": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
+      "cloudflare_workers": True,
     },
     "ondrej-sika.cz": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
@@ -248,7 +249,10 @@ def generate_dependencies(site):
   return "\n".join(("      - "+line).replace('{{site}}', site) for line in ALL_SITES[site]["dependencies"])
 
 for site in SITES:
-    out.append("""
+    if site in ALL_SITES and ALL_SITES[site].get("cloudflare_workers"):
+        pass
+    else:
+        out.append("""
 %(site)s build js:
   stage: build_js%(priority_suffix)s
   image: node
@@ -292,13 +296,16 @@ for site in SITES:
     changes:
 %(dependencies)s
 """ % {
-        "site": site,
-        "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
-        "dependencies": generate_dependencies(site),
-    })
+            "site": site,
+            "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
+            "dependencies": generate_dependencies(site),
+        })
 
     if site in DEV_SITES:
-        out.append("""
+        if ALL_SITES[site].get("cloudflare_workers"):
+            pass
+        else:
+            out.append("""
 %(site)s dev deploy k8s:
   stage: deploy_dev%(priority_suffix)s
   variables:
@@ -325,16 +332,48 @@ for site in SITES:
     url: https://%(site)s%(suffix)s
   dependencies: []
 """ % {
-        "site": site,
-        "name": site.replace(".", "-"),
-        "suffix": SUFFIX,
-        "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
-        "dependencies": generate_dependencies(site),
-    })
+            "site": site,
+            "name": site.replace(".", "-"),
+            "suffix": SUFFIX,
+            "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
+            "dependencies": generate_dependencies(site),
+        })
 
 
     if site in PROD_SITES:
-        out.append("""
+        if PROD_SITES[site].get("cloudflare_workers"):
+            out.append("""
+%(site)s prod deploy cloudflare:
+  image: node
+  stage: deploy_prod%(priority_suffix)s
+  script:
+    - yarn
+    - rm -rf packages/%(site)s/out
+    - yarn run deploy-%(site)s
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_PROD
+      - $EXCEPT_DEPLOY_PROD_K8S
+  only:
+    refs:
+      - master
+    changes:
+%(dependencies)s
+  environment:
+    name: prod %(site)s
+    url: https://%(site)s
+  dependencies: []
+""" % {
+                "site": site,
+                "suffix": SUFFIX,
+                "name": site.replace(".", "-"),
+                "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
+                "dependencies": generate_dependencies(site),
+            })
+        else:
+            out.append("""
 %(site)s prod deploy k8s:
   stage: deploy_prod%(priority_suffix)s
   variables:
@@ -361,12 +400,12 @@ for site in SITES:
     url: https://%(site)s
   dependencies: []
 """ % {
-        "site": site,
-        "suffix": SUFFIX,
-        "name": site.replace(".", "-"),
-        "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
-        "dependencies": generate_dependencies(site),
-    })
+            "site": site,
+            "suffix": SUFFIX,
+            "name": site.replace(".", "-"),
+            "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
+            "dependencies": generate_dependencies(site),
+        })
 
 with open(".gitlab-ci.yml", "w") as f:
     f.write("".join(out))
