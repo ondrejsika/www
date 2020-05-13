@@ -25,8 +25,12 @@ let Layout = props => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="/icon.png" />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
+          rel="stylesheet"
+        /> */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap"
           rel="stylesheet"
         />
         {props.site.gtm_id && <GoogleTagManager gtm_id={props.site.gtm_id} />}
