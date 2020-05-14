@@ -26,6 +26,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://nat.github.io/hello/> ([source](https://github.com/nat/hello))
 - <https://petrmanek.cz/>
 - <https://www.tomasvitek.com/>
+- <https://clarkmoody.com/> ([source](https://github.com/clarkmoody/clarkmoody.com)
 
     `}
     />
