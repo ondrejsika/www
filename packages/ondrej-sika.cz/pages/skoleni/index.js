@@ -10,7 +10,7 @@ const Index = () => (
       <title>Školení - Ondřej Šika</title>
     </Head>
     <MainBar header="Nabídka Školení" />
-    <div className="container">
+    <div className="container pb-4">
       <CourseBar LectureImgHeader="Kurzy co školím" />
     </div>
   </div>
