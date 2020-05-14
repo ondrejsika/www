@@ -75,6 +75,7 @@ PROD_SITES = {
     },
     "ondrej-sika.cz": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
+      "cloudflare_workers": True,
     },
     "ondrej-sika.de": {
       "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
