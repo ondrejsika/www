@@ -1,6 +1,6 @@
 import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
-import logo from "@app/data/pictures/courses/terraform-color.png";
+import logo from "@app/data/pictures/courses/white/terraform.svg";
 
 const Page = props => (
   <CourseDD
