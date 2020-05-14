@@ -132,7 +132,7 @@ const Course = props => (
       NumberOfPeopleHeader={
         <Translate
           lang={props.lang}
-          cs="účastníků proškoleno"
+          cs="Počet odškolených lidí"
           en="Training attendees"
           de="Training attendees"
         />
@@ -141,7 +141,7 @@ const Course = props => (
       NumberOfCompaniesHeader={
         <Translate
           lang={props.lang}
-          cs="firem proškoleno"
+          cs="Počet firem ve spolupráci"
           en="Companies trained"
           de="Companies trained"
         />
@@ -150,7 +150,7 @@ const Course = props => (
       NumberOfLecturesHeader={
         <Translate
           lang={props.lang}
-          cs="běhů školení"
+          cs="Počet uskutečněných školení"
           en="Training sessions"
           de="Training sessions"
         />

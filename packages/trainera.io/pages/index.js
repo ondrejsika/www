@@ -54,7 +54,7 @@ const Index = props => (
       NumberOfPeopleHeader={
         <Translate
           lang={props.lang}
-          cs="účastníků proškoleno"
+          cs="Počet odškolených lidí"
           en="Training attendees"
           de="Training attendees"
         />
@@ -63,7 +63,7 @@ const Index = props => (
       NumberOfCompaniesHeader={
         <Translate
           lang={props.lang}
-          cs="firem proškoleno"
+          cs="Počet firem ve spolupráci"
           en="Companies trained"
           de="Companies trained"
         />

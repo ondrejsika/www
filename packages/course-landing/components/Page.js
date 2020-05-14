@@ -242,7 +242,7 @@ const Page = props => {
             <p className="text-white text-center statistic-bottom">
               <Translate
                 lang={lang}
-                cs="účastníků proškoleno"
+                cs="Počet odškolených lidí"
                 sk="účastníkov"
                 de="Training attendees"
                 en="Training attendees"
@@ -268,7 +268,7 @@ const Page = props => {
             <p className="text-white text-center statistic-bottom">
               <Translate
                 lang={lang}
-                cs="běhů školení"
+                cs="Počet uskutečněných školení"
                 sk="školení"
                 de="Training sessions"
                 en="Training sessions"
