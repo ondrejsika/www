@@ -1,12 +1,6 @@
 import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
-import { ServerStyleSheet, createGlobalStyle } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-  p, a, li {
-  font-weight: 200 !important;
-  }
-`;
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -23,7 +17,6 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>{this.props.styleTags}</Head>
         <body>
-          <GlobalStyle />
           <Main />
           <NextScript />
         </body>
