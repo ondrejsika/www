@@ -3,7 +3,7 @@ import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet, createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  p, a {
+  p, a, li {
   font-weight: 200 !important;
   }
 `;
