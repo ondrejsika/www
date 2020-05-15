@@ -157,12 +157,12 @@ const Course = props => (
       }
     />
     <Container>
+      {props.recommendations && (
+        <References ids={props.recommendations} lang={props.lang} />
+      )}
       {props.twitter_recommendations &&
         props.twitter_recommendations.length > 0 && (
           <>
-            {props.recommendations && (
-              <References ids={props.recommendations} lang={props.lang} />
-            )}
             <h3>Ohlasy z Twitteru</h3>
             <TwitterRecommendations ids={props.twitter_recommendations} />
           </>
