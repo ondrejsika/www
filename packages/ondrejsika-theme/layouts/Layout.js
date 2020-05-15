@@ -6,11 +6,17 @@ import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 import GoogleTagManager from "@app/common/google_tag_manager/GoogleTagManager";
-
+import { createGlobalStyle } from "styled-components";
 import { init as gtm_init } from "@app/common/google_tag_manager/lib";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
+
+const GlobalStyle = createGlobalStyle`
+  p, a, li {
+  font-weight: 200 !important;
+  }
+`;
 
 let Layout = props => {
   if (props.site.gtm_id) gtm_init(props.site.gtm_id);
@@ -35,6 +41,7 @@ let Layout = props => {
         />
         {props.site.gtm_id && <GoogleTagManager gtm_id={props.site.gtm_id} />}
       </Head>
+      <GlobalStyle />
       <DevelopmentBar />
       <div id="home" />
       {props.LanguageSwitch}
