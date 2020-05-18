@@ -13,8 +13,8 @@ import Translate from "@app/common/components/Translate";
 import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
-import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 import AboutLecturer from "@app/ondrejsika-theme/components/AboutLecturer";
+import CourseInquiryForm from "@app/ondrejsika-theme/layouts/CourseInquiryForm";
 
 const Course = props => (
   <div>
@@ -75,7 +75,6 @@ const Course = props => (
         </Col>
         <Col md={5}>
           <AboutLecturer lang={props.lang} />
-
           <Price
             PriceHeader={
               <Translate
@@ -121,8 +120,12 @@ const Course = props => (
               de="zzgl. MwSt"
             />
           </Price>
-
-          <PipedriveContactForm lang={props.lang} />
+          <div className="m-3">
+            <CourseInquiryForm
+              site={props.site}
+              course_slug={props.course_id}
+            />
+          </div>
         </Col>
       </Row>
     </div>
