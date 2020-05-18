@@ -8,11 +8,11 @@
   lecturer_name: "Ondrej Sika"
 - id: git
   course: git
-  lecturer: Vojtech Mares
+  lecturer: vojtechmares
   lecturer_name: "Vojtech Mares"
 - id: gitlab-ci
   course: gitlab ci
-  lecturer: Vojtech Mares
+  lecturer: vojtechmares
   lecturer_name: "Vojtech Mares"
 - id: proxmox
   course: proxmox
