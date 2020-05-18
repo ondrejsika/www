@@ -30,3 +30,15 @@
   course: react
   lecturer: ondrejsika
   lecturer_name: "Ondrej Sika"
+- id: prometheus
+  course: prometheus
+  lecturer: ondrejsika
+  lecturer_name: "Ondrej Sika"
+- id: rancher
+  course: rancher
+  lecturer: ondrejsika
+  lecturer_name: "Ondrej Sika"
+- id: terraform
+  course: terraform
+  lecturer: ondrejsika
+  lecturer_name: "Ondrej Sika"
