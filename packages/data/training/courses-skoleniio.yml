@@ -1,0 +1,32 @@
+- id: kubernetes
+  course: kubernetes
+  lecturer: ondrejsika
+  lecturer_name: "Ondrej Sika"
+- id: docker
+  course: docker
+  lecturer: ondrejsika
+  lecturer_name: "Ondrej Sika"
+- id: git
+  course: git
+  lecturer: Vojtech Mares
+  lecturer_name: "Vojtech Mares"
+- id: gitlab-ci
+  course: gitlab ci
+  lecturer: Vojtech Mares
+  lecturer_name: "Vojtech Mares"
+- id: proxmox
+  course: proxmox
+  lecturer: michaelkaplan
+  lecturer_name: "Michael Kaplan"
+- id: ansible
+  course: ansible
+  lecturer: ondrejsika
+  lecturer_name: "Ondrej Sika"
+- id: elk
+  course: elk
+  lecturer: ondrejsika
+  lecturer_name: "Ondrej Sika"
+- id: react
+  course: react
+  lecturer: ondrejsika
+  lecturer_name: "Ondrej Sika"

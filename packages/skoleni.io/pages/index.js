@@ -10,18 +10,7 @@ const P = styled.p`
 
 const Index = () => (
   <Container>
-    <CourseBar
-      courses={[
-        ["kubernetes", "kubernetes", "Ondrej Sika", "ondrejsika"],
-        ["docker", "docker", "Ondrej Sika", "ondrejsika"],
-        ["git", "git", "Vojtech Mares", "vojtechmares"],
-        ["gitlab ci", "gitlab_ci", "Vojtech Mares", "vojtechmares"],
-        ["proxmox", "proxmox", "Michael Kaplan", "michaelkaplan"],
-        ["ansible", "ansible", "Ondrej Sika", "ondrejsika"],
-        ["elk", "elk", "Ondrej Sika", "ondrejsika"],
-        ["react", "react", "Ondrej Sika", "ondrejsika"]
-      ]}
-    />
+    <CourseBar />
     <H3>Spoluprace</H3>
     <P>
       Chcete inzerovat sva skoleni na nasem webu? Napiste email a urcite se
