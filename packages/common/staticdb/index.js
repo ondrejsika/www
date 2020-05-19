@@ -41,6 +41,11 @@ class StaticDB {
       return el[key] == val;
     }));
   }
+  filterIn(key, val) {
+    return (this._cursor = this._cursor.filter((el, i, array) => {
+      return el[key] && el[key].includes(val);
+    }));
+  }
   limit(lim) {
     this._cursor = this._cursor.slice(0, lim);
   }
