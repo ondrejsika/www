@@ -11,7 +11,7 @@ const Page = () => (
           <li key={i}>
             <Link href={`/news/${news.id}`}>
               <a>
-                <span className="pt-4 bold">{news.title}</span>
+                <span className="bold">{news.title}</span>
               </a>
             </Link>{" "}
             ({news.date}): {news.perex}
