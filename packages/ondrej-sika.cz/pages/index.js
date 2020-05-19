@@ -4,6 +4,7 @@ import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
 import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
+import NewsLine from "@app/ondrejsika-theme/components/NewsLine";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 
@@ -18,6 +19,10 @@ const Index = props => (
       header="IT & DevOps školení, konzultace a workshopy"
       text="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
     />
+    <NewsLine href="/news/skoleni-docker-a-kubernetes-online-2020-04-10/">
+      !!! Online školení Dockeru (25.-26.5.), Gitlab CI (27.5.) a Kubernetes
+      (28.-29.5.) příští týden !!!
+    </NewsLine>
     <StatisticBar
       lang={props.site.lang}
       site={props.site}
