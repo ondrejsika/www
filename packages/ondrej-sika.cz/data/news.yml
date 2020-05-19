@@ -1,5 +1,33 @@
+- id: skoleni-docker-gitlab-ci-a-kubernetes-online-2020-05-19
+  title: "DevOps školení v Květnu"
+  date: 19. 5. 2020
+  perex: |
+    Zvu Vás na školení Dockeru, Gitlab CI a Kubernetes
+  content: |
+    Zvu Vás na školení __Dockeru__ (25.-26.5.), __Gitlab CI__ (27.5.) a __Kubernetes__ (28.-29.5.).
+
+    Více informací o školeních najdete na stránce [školení Gitlab CI](/skoleni/gitlab-ci), [školení Dockeru](/skoleni/docker) a [školení Kubernetes](/skoleni/kubernetes).
+
+    Na školení se můžete registrovat zde:
+
+    - [Registrace na Gitlab CI](/verejne-terminy/gitlab-ci-brno-27-05-2020/#register) - 1 den, 6 800 CZK
+    - [Registrace na Docker](/verejne-terminy/gitlab-ci-brno-27-05-2020/#register) - 2 dny, 11 999 CZK
+    - [Registrace na Kubernetes](/verejne-terminy/kubernetes-brno-28-05-2020#register) - 2 dny,
+    11 999 CZK
+
+    Cena každého školení (Dockeru a Kubernetes) je 11 999 CZK, pokud chcete příjít na obě současně, cena je 19 999 CZK.
+
+    Pokud máte jakoukoliv otázku, neváhejte se zeptat na <ondrej@sika.io>
+  twitter_recommendations:
+    - adam-bisek-docker
+    - petr-klobas-docker
+    - petr-todorov-kubernetes
+    - martin-sindelar-gitlab-ci
+    - jan-novotny-docker
+    - lubos-klokner-docker-2
+
 - id: skoleni-docker-a-kubernetes-online-2020-04-10
-  title: 'Školení Dockeru a Kubernetes v Dubnu'
+  title: "Školení Dockeru a Kubernetes v Dubnu"
   date: 10. 4. 2020
   perex: |
     Zvu Vás na školení Dockeru (14.-15.4.) a školení Kubernetes (16.-17.4.).
