@@ -1,3 +1,44 @@
+- id: weeknotes-1
+  title: "Weeknotes #1"
+  date: 17. 5. 2020
+  tags:
+    - weeknotes
+    - trainingcrm
+    - pipedrive
+    - terraform
+    - vercel
+  perex: |
+    Zacinam psat tydenni poznamky #weeknotes. Zde je to co jsem delal v tydnu od 11. do 17.5.
+  content: |
+    ### Zacinam psat Weeknotes
+
+    K psani tydennich poznamek me inspiroval Honza Javorek (ktereho inpiroval Simon Willison). Poznamky maji slouzit k:
+
+    - zaznamenani toho co jsem delal abych nemel pocit ze se flakam
+    - zaznamenani toho co jsem vyresi a naucil se - muze se to hodi i dalsim
+
+    Jsem sam na sebe zvedav, jak svedomity budu.
+
+    ### Vercel
+
+    Po nejakem case jsem se vratil k Terraform Provideru pro ZEIT. Mezi tim se z ZEITu stal Vercel a tak jsem predelal nazvy a api ve vsech mych projektech ktery s tim Terraform providerem souvisi.
+
+    Taky jsem pridal nejakou dalsi funkcionalitu (prace s DNS zaznamy) do me knihovny `vercel-go`, kterou jsem vytvoril primarne pro ten Terraform provider. A tak jsem ho konecne na tu knihovnu napojil.
+
+    - [ondrejsika/terraform-provider-vercel](https://github.com/ondrejsika/terraform-provider-vercel) - Terraform Provider pro Vercel
+    - [ondrejsika/vercel-go](https://github.com/ondrejsika/vercel-go) - Go client pro Vercel API
+    - [ondrejsika/vercel-api-mock](https://github.com/ondrejsika/vercel-api-mock) - Vercel API Mock
+
+    ### TrainingCRM
+
+    #### Integrace s Pipedrive
+
+    Prez vikend jsem pracoval na TrainingCRM (mem internim crm na spravu skoleni), prevazne na jeho integraci s Pipedrive (to pouzivam pro obchod). TrainingCRM je psane v Djangu a hledal jsem nejaky rozumny Python Client pro Pipedrive az jsem si napsal vlastni. Na Pypi bylo dokonce volne jmeno `pipedrive` (coz jsem necekal), takze balicek je zde <https://pypi.org/project/pipedrive/> a zdrojaky na Githubu <https://github.com/ondrejsika/pipedrive>
+
+    #### TrainingCRM jako produkt
+
+    TrainingCRM je moje reseni problemu jak spravovat ucastniky na skolenich, spolupraci se skolicimi agenturami, vypisovani terminu a dalsi. Zaroven je to i formularovy backend pro me jinak staticke weby v Next.js. Kdyz vydim, jak firmy, se kterymi spolupracuji resi cely proces rucne a maji data po Execelech, rozhodl jsem se venovat trosku zdroju a premenit me interni CRM do produktu. Z toho duvodu neni TrainingCRM opensource.
+
 - id: ceph-persistent-volumes-v-kubernetes-pomoci-rook
   ad: kubernetes
   title: "Ceph Persistent volumes v Kubernetes pomocí Rook"
