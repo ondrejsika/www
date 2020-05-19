@@ -1,7 +1,29 @@
 const CopyPlugin = require("copy-webpack-plugin");
+const yaml = require("js-yaml");
+const fs = require("fs");
 
 module.exports = {
   exportTrailingSlash: true,
+  exportPathMap: function(defaultPathMap) {
+    try {
+      // remove default session page render (without session)
+      delete defaultPathMap["/verejne-terminy/[id]"];
+
+      var sessions = yaml.safeLoad(
+        fs.readFileSync("../data/training/sessions.yml", "utf8")
+      );
+      sessions.forEach(function(session) {
+        defaultPathMap[`/verejne-terminy/${session.id}`] = {
+          page: "/verejne-terminy/[id]",
+          query: { id: session.id }
+        };
+      });
+    } catch (e) {
+      console.log(e);
+    }
+
+    return defaultPathMap;
+  },
   webpack: function(config) {
     config.plugins.push(
       new CopyPlugin([
