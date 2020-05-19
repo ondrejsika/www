@@ -1,6 +1,6 @@
 - id: ceph-persistent-volumes-v-kubernetes-pomoci-rook
   ad: kubernetes
-  title: 'Ceph Persistent volumes v Kubernetes pomocí Rook'
+  title: "Ceph Persistent volumes v Kubernetes pomocí Rook"
   date: 6. 4. 2020
   tags:
     - kubernetes
@@ -152,9 +152,8 @@
 
     Vidime, že všechno jede. To je vše. Můžeme se na náš Wordpress podívat na https://hello.rook.sikademo.com
 
-
 - id: wireguard
-  title: 'Wireguard: Náhrada IPSecu a OpenVPN v jednom'
+  title: "Wireguard: Náhrada IPSecu a OpenVPN v jednom"
   date: 4. 4. 2020
   tags:
     - wireguard
@@ -617,8 +616,6 @@
     - https://helm.sh/blog/helm-v3-beta/
     - https://github.com/helm/helm/issues/5952
 
-
-
 - id: javadays2019
   title: Docker & Kubernetes Talk @ JavaDays 2019
   ad: docker
@@ -634,7 +631,6 @@
     Pokud se Vam prednaska libila budu rad kdyz o ni tweetnetes s `@ondrejsika` a `#javadayscz`. Diky.
 
     Zajima Vas Docker nebo Kubernetes? Muzete si objednat moje [Skoleni Dockeru](/skoleni/docker) a [Skoleni Kubernetes](/skoleni/kubernetes) nebo prijit na nejaky [otevreny termin](/verejne-terminy)
-
 
 - id: terraform-prednaska-linuxdays-2019
   url: /blog/2019/terraform-prednaska-linuxdays-2019
@@ -755,7 +751,7 @@
   date: 6. 10. 2018
   ad: gitlab-ci
   perex: |
-      Slidy k přednášce a workshopu na Linux Days 2018.
+    Slidy k přednášce a workshopu na Linux Days 2018.
   content: |
     DOPLNIT SLIDY
     Repozitar: https://github.com/ondrejsika/linuxdays2018
@@ -798,7 +794,7 @@
     Plzensky Barcamp: Lightning Network aneb Bitcoin 2.0
   date: 7. 4. 2018
   perex: |
-      Slidy a zdrojáky k demo ukázce LN na Plzeňském Barcampu.
+    Slidy a zdrojáky k demo ukázce LN na Plzeňském Barcampu.
   content: |
     Slides a zdrojáky k demo ukázce LN na Plzeňském Barcampu.
     Zdrojové kódy ukázky:  [https://github.com/ondrejsika/lightning-example](https://github.com/ondrejsika/lightning-example)
@@ -919,5 +915,3 @@
   date: 30. 11. 2017
   perex: |
   content: |
-
-
