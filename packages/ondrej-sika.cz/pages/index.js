@@ -20,8 +20,8 @@ const Index = props => (
       text="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
     />
     <NewsLine href="/news/skoleni-docker-a-kubernetes-online-2020-04-10/">
-      !!! Online školení Dockeru (25.-26.5.), Gitlab CI (27.5.) a Kubernetes
-      (28.-29.5.) příští týden !!!
+      Volná místa na online školení Dockeru (25.-26.5.), Gitlab CI (27.5.) a
+      Kubernetes (28.-29.5.) příští týden
     </NewsLine>
     <StatisticBar
       lang={props.site.lang}
