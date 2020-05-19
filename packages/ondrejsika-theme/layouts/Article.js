@@ -10,7 +10,9 @@ const ArticleLayout = props => {
   return (
     <div>
       <Head>
-        <title>{props.title} - Ondřej Šika</title>
+        <title>
+          {props.title} - {props.site.name || "Ondřej Šika"}
+        </title>
       </Head>
       <MainBar
         site={props.site}
