@@ -223,7 +223,7 @@
   facebook_event: https://www.facebook.com/events/507435356598852/
   linkedin_event: https://www.linkedin.com/events/6652270885434609664/
 - id: git-praha-15-05-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: git
