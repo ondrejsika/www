@@ -1,35 +1,38 @@
 import React from "react";
-import Head from "next/head";
-import Markdown from "@app/common/components/Markdown";
 import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
+import Article from "@app/ondrejsika-theme/layouts/Article";
+import styled from "styled-components";
 
-export const error = () => {
+const FontSize = styled.div`
+  p,
+  a {
+    font-size: 24px;
+  }
+`;
+
+export const Page404 = () => {
   return (
     <>
-      <Head>
-        <title>404 Stránka nenalezena - Ondrej Sika | ondrej-sika.cz</title>
-      </Head>
-      <div className="bar-grey p-5">
-        <h1 className="text-center text-white">404 Stránka nenalezena</h1>
-      </div>
-      <div className="container pt-5">
-        <Markdown
-          source={`
-## Nenašli jste co hledáte ...
-
-Napište mi email na <ondrej@sika.io> a dejte mi vědět co potřebujete. Rád Vám pomohu.
-`}
-        />
-        <CourseBar LectureImgHeader="... nebo se podivejte na kurzy co školím" />
+      <Article title="404 Nenašli jste co hledáte ..." hideNewsletter={false}>
+        <FontSize>
+          <p>
+            Napište mi email na{" "}
+            <a href="mailto:ondrej@sika.io">ondrej@sika.io</a> a dejte mi vědět
+            co potřebujete. Rád Vám pomohu. Nebo se podivejte na kurzy co
+            školím:
+          </p>
+        </FontSize>
+        <CourseBar LectureImgHeader="" />
         <div className="mt-5" />
-        <Markdown
-          source={`
-Pokud něco nefunguje, dejte mi vědět na <ondrej@sika.io>
-`}
-        />
-      </div>
+        <FontSize>
+          <p>
+            Pokud něco nefunguje, dejte mi vědět na{" "}
+            <a href="mailto:ondrej@sika.io">ondrej@sika.io</a>
+          </p>
+        </FontSize>
+      </Article>
     </>
   );
 };
 
-export default error;
+export default Page404;
