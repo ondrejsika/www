@@ -130,6 +130,10 @@ const Footer = (
     }
     center={
       <Hide>
+        <Link href="/news" passHref>
+          <ThemeFooter.A>News</ThemeFooter.A>
+        </Link>
+        <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/obchodni-spoluprace">
           <ThemeFooter.A href="#">Obchodní Spolupráce</ThemeFooter.A>
         </Link>
