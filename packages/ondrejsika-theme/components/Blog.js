@@ -9,7 +9,7 @@ const Blog = props => {
       <Head>
         <title>Blog - Ondrej Sika</title>
       </Head>
-      <MainBar header={`Blog ${props.header_suffix}`}></MainBar>
+      <MainBar header={`Blog ${props.header_suffix || ""}`}></MainBar>
 
       <div className="container">
         {props.posts.map((post, i) => {
