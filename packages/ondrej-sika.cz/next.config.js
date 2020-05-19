@@ -24,6 +24,22 @@ module.exports = {
         };
       });
 
+      // export blog tags
+      var tags = new Set();
+      posts.forEach(function(post) {
+        if (post.tags)
+          post.tags.forEach(function(tag) {
+            tags.add(tag);
+          });
+      });
+
+      tags.forEach(function(tag) {
+        defaultPathMap[`/blog/tag/${tag}`] = {
+          page: "/blog/tag/[id]",
+          query: { id: tag }
+        };
+      });
+
       // remove default session page render (without session)
       delete defaultPathMap["/verejne-terminy/[id]"];
 
