@@ -11,7 +11,7 @@ const ArticleLayout = props => {
     <div>
       <Head>
         <title>
-          {props.title} - {props.site.name || "Ondřej Šika"}
+          {props.title} - {(props.site && props.site.name) || "Ondřej Šika"}
         </title>
       </Head>
       <MainBar
