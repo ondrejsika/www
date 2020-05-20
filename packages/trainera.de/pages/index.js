@@ -27,6 +27,7 @@ const Index = props => (
 
     <div className="container">
       <TraineraCourseBar
+        site={props.site}
         lang={props.site.lang}
         LectureImgHeader="Our Courses"
       />
