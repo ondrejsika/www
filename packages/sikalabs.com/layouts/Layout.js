@@ -30,6 +30,7 @@ const Layout = props => (
       h1 {
         font-size: 2em;
         font-weight: normal;
+        line-height: 0.8em;
       }
       h2 {
         font-size: 5em;
@@ -40,6 +41,9 @@ const Layout = props => (
         font-weight: bold;
       }
       @media only screen and (max-width: 600px) {
+        body {
+          margin: 1em 1.25em;
+        }
         h1 {
           font-size: 1.3em;
         }
@@ -56,6 +60,9 @@ const Layout = props => (
       }
       .button:hover {
         text-decoration: underline;
+      }
+      .button-bitcoin {
+        color: #ff9900;
       }
     `}</style>
     <Gauges gauges_site_id={props.site.gauges_site_id} />
