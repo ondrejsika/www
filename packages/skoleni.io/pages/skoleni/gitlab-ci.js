@@ -1,9 +1,9 @@
 import React from "react";
-import CourseDD from "@app/skoleni.io/layouts/CourseDD";
+import Course from "@app/skoleni.io/layouts/Course";
 import logo from "@app/data/pictures/courses/gitlab-ci.svg";
 
 const Page = props => (
-  <CourseDD
+  <Course
     course_id="gitlab-ci"
     lang={props.site.lang}
     logo={logo}

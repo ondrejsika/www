@@ -18,7 +18,8 @@ const Header = props => (
         {props.underline && <H3>{props.underline}</H3>}
         {props.lecturer && (
           <Lecturer>
-            by&nbsp;<a href={`/lektor/${props.lecturerId}`}>{props.lecturer}</a>
+            by&nbsp;
+            <a href={`/lektor/${props.lecturer_id}`}>{props.lecturer}</a>
           </Lecturer>
         )}
       </p>
