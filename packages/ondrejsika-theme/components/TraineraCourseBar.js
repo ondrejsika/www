@@ -14,7 +14,7 @@ import elk from "@app/data/pictures/courses/white/elk.svg";
 
 import color from "../config/colors";
 import default_colors from "@app/ondrejsika-theme/config/colors";
-
+import { Row } from "react-bootstrap";
 const H4 = styled.h4`
   color: white;
   text-align: center;
@@ -29,10 +29,11 @@ const Card = props => {
 
   const Box = styled.div`
     width: 100%;
+    max-width: 221px;
     text-align: center;
     border: 1px solid ${color.LIGHT_GREY};
     border-radius: 2px;
-    margin: 1px;
+    margin-bottom: 5px;
     background-color: ${(props.site &&
       props.site.colors &&
       props.site.colors.PRIMARY) ||
@@ -43,17 +44,25 @@ const Card = props => {
     max-width: 90%;
     height: auto;
   `;
+
+  const Col = styled.div`
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0px;
+  `;
   return (
-    <Box site={props.site}>
-      <Link href={`/${training}/${props.courseId}`}>
-        <a className="course-header">
-          <H4>
-            <span>{props.courseName}</span>
-          </H4>
-          <Img src={props.courseImg} />
-        </a>
-      </Link>
-    </Box>
+    <Col lg={2}>
+      <Box site={props.site}>
+        <Link href={`/${training}/${props.courseId}`}>
+          <a className="course-header">
+            <H4>
+              <span>{props.courseName}</span>
+            </H4>
+            <Img src={props.courseImg} />
+          </a>
+        </Link>
+      </Box>
+    </Col>
   );
 };
 
@@ -62,7 +71,7 @@ const TraineraCourseBar = props => {
     <Trainera>
       <h2 className="pt-4 pb-2 ">{props.LectureImgHeader}</h2>
       <div className="container-flex banner-courses">
-        <div className="d-flex flex-wrap flex-sm-wrap flex-lg-nowrap d-lg-flex flex-row">
+        <Row>
           <Card
             site={props.site}
             lang={props.lang}
@@ -98,8 +107,8 @@ const TraineraCourseBar = props => {
             courseId="ansible"
             courseImg={ansible}
           />
-        </div>
-        <div className="d-flex flex-wrap flex-sm-wrap flex-lg-nowrap d-lg-flex flex-row">
+          {/* </div>
+        <div className="d-flex flex-wrap flex-sm-wrap flex-lg-nowrap d-lg-flex flex-row"> */}
           <Card
             site={props.site}
             lang={props.lang}
@@ -144,7 +153,7 @@ const TraineraCourseBar = props => {
               );
             }
           })()}
-        </div>
+        </Row>
       </div>
     </Trainera>
   );
