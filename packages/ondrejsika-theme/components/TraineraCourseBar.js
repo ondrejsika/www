@@ -10,6 +10,8 @@ import terraform from "@app/data/pictures/courses/white/terraform.svg";
 import ansible from "@app/data/pictures/courses/white/ansible.svg";
 import rancher from "@app/data/pictures/courses/white/rancher.svg";
 import prometheus from "@app/data/pictures/courses/white/prometheus.svg";
+import elk from "@app/data/pictures/courses/white/elk.svg";
+
 import color from "../config/colors";
 import default_colors from "@app/ondrejsika-theme/config/colors";
 
@@ -26,16 +28,20 @@ const Card = props => {
   let training = { en: "training", cs: "skoleni" }[props.lang || "cs"];
 
   const Box = styled.div`
-    width: 20%;
-    min-width: 110px;
+    width: 100%;
+    text-align: center;
     border: 1px solid ${color.LIGHT_GREY};
-    border-radius: 5px;
-    margin: 3px;
+    border-radius: 2px;
+    margin: 1px;
     background-color: ${(props.site &&
       props.site.colors &&
       props.site.colors.PRIMARY) ||
       default_colors.BLUE};
-    /* background-color: #088958; */
+  `;
+
+  const Img = styled.img`
+    max-width: 90%;
+    height: auto;
   `;
   return (
     <Box site={props.site}>
@@ -44,7 +50,7 @@ const Card = props => {
           <H4>
             <span>{props.courseName}</span>
           </H4>
-          <img src={props.courseImg} className="img img-fluid p-2" />
+          <Img src={props.courseImg} />
         </a>
       </Link>
     </Box>
@@ -92,6 +98,8 @@ const TraineraCourseBar = props => {
             courseId="ansible"
             courseImg={ansible}
           />
+        </div>
+        <div className="d-flex flex-wrap flex-sm-wrap flex-lg-nowrap d-lg-flex flex-row">
           <Card
             site={props.site}
             lang={props.lang}
@@ -99,6 +107,7 @@ const TraineraCourseBar = props => {
             courseId="prometheus"
             courseImg={prometheus}
           />
+
           {(() => {
             if (!props.lang || props.lang == "cs") {
               return (
@@ -123,6 +132,13 @@ const TraineraCourseBar = props => {
                     courseName="React"
                     courseId="react"
                     courseImg={react}
+                  />
+                  <Card
+                    site={props.site}
+                    lang={props.lang}
+                    courseName="Elk"
+                    courseId="elk"
+                    courseImg={elk}
                   />
                 </>
               );
