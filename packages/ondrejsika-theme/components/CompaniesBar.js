@@ -14,18 +14,22 @@ import cgi from "@app/data/pictures/companies/cgi.png";
 import homecredit from "@app/data/pictures/companies/homecredit.png";
 import konica_minolta from "@app/data/pictures/companies/konica-minolta-square.jpg";
 import cznic from "@app/data/pictures/companies/cznic.png";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Header = styled.h3`
   font-size: 2.5em;
   font-weight: 700;
   padding-top: 3em;
-  padding-bottom: 1em;
-  text-align: center;
+  padding-bottom: 0.5em;
+  ${props =>
+    props.align == "center" &&
+    css`
+      text-align: center;
+    `}
 `;
 
 const CompaniesBar = props => (
-  <div className="pb-2">
+  <div className="pb-2" align={props.align}>
     <Header>
       {props.myClients || (
         <Translate

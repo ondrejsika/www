@@ -125,7 +125,7 @@ const Index = props => (
       ]}
     ></Team>
     <div className="container">
-      <CompaniesBar myClients="Naši klienti" />
+      <CompaniesBar align="center" myClients="Naši klienti" />
       <h2 className="mt-5">Doporučení z Twitteru</h2>
       <div className="card-columns">
         {twitter_recommendation_file.map((rec, i) => {
