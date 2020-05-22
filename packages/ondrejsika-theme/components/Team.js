@@ -40,8 +40,18 @@ const MyRow = styled(Row)`
   margin-left: 0;
   margin-right: 0;
 `;
+
+const Header = styled.h3`
+  font-size: 2.5em;
+  font-weight: 700;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  text-align: center;
+`;
+
 const Team = props => (
   <>
+    <Header>{props.teamHeader}</Header>
     <MyRow>
       {props.lecturers.map((lector, i) => (
         <GaplesCol xl={4} md={6} sm={6} xs={12} key={i}>
