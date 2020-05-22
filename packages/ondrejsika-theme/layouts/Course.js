@@ -120,7 +120,7 @@ const Course = props => (
               de="zzgl. MwSt"
             />
           </Price>
-          <div className="m-3">
+          <div className="m-3" id="form">
             <CourseInquiryForm
               site={props.site}
               course_slug={props.course_id}
