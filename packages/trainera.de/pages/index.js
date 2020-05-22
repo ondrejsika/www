@@ -7,10 +7,10 @@ import { TwitterTweetEmbed } from "react-twitter-embed";
 
 import Head from "next/head";
 import TextArea from "@app/ondrejsika-theme/components/TextArea";
-import OutTeam from "@app/ondrejsika-theme/components/OurTeam";
+import Team from "@app/ondrejsika-theme/components/Team";
 
-import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
-import martinjurco from "@app/data/pictures/martinjurco.jpeg";
+import ondrejsika from "@app/data/pictures/ondrejsika.png";
+import martinjurco from "@app/data/pictures/martinjurco.png";
 import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
 import jirikraml from "@app/data/pictures/jirikraml.jpg";
 import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
@@ -54,15 +54,18 @@ const Index = props => (
           to Covid-19 we are 100% online.
         </TextArea.P>
       </TextArea>
-      <OutTeam
-        lecturers={[
-          [ondrejsika, "Ondrej Sika"],
-          [martinjurco, "Martin Jurco"],
-          [zuzanajeschke, "Zuzana Jeschke"],
-          [vojtechmares, "Vojtěch Mareš"],
-          [jirikraml, "Jiří Kraml"]
-        ]}
-      ></OutTeam>
+    </div>
+    <Team
+      lecturers={[
+        [ondrejsika, "Ondrej Sika", "DevOps&SoftwareArchitect"],
+        [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
+        [vojtechmares, "Vojtěch Mareš", "neco neco"],
+        [jirikraml, "Jiří Kraml", "neconeconeconeco"],
+        [martinjurco, "Martin Jurco", "kuchar&neco"],
+        [ondrejsika, "Michael Kaplan", "neco"]
+      ]}
+    ></Team>
+    <div className="container">
       <CompaniesBar lang={props.site.lang} />
       <h2 className="mt-5">Twitter Reccomendations</h2>
       <div className="card-columns">

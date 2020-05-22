@@ -1,4 +1,6 @@
 import React from "react";
+import styled from "styled-components";
+
 import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
@@ -6,18 +8,15 @@ import twitter_recommendation_file from "@app/data/training/recommendations/twit
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import Translate from "@app/common/components/Translate";
-
+import Team from "@app/ondrejsika-theme/components/Team";
 import Head from "next/head";
 import TextArea from "@app/ondrejsika-theme/components/TextArea";
-import OutTeam from "@app/ondrejsika-theme/components/OurTeam";
 
-import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
-import martinjurco from "@app/data/pictures/martinjurco.jpeg";
+import ondrejsika from "@app/data/pictures/ondrejsika.png";
+import martinjurco from "@app/data/pictures/martinjurco.png";
 import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
 import jirikraml from "@app/data/pictures/jirikraml.jpg";
 import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
-
-import styled from "styled-components";
 
 const A = styled.a`
   color: #098958;
@@ -114,15 +113,18 @@ const Index = props => (
           praktické dotazy.
         </TextArea.P>
       </TextArea>
-      <OutTeam
-        lecturers={[
-          [ondrejsika, "Ondrej Sika"],
-          [martinjurco, "Martin Jurco"],
-          [zuzanajeschke, "Zuzana Jeschke"],
-          [vojtechmares, "Vojtěch Mareš"],
-          [jirikraml, "Jiří Kraml"]
-        ]}
-      ></OutTeam>
+    </div>
+    <Team
+      lecturers={[
+        [ondrejsika, "Ondrej Sika", "DevOps&SoftwareArchitect"],
+        [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
+        [vojtechmares, "Vojtěch Mareš", "neco neco"],
+        [jirikraml, "Jiří Kraml", "neconeconeconeco"],
+        [martinjurco, "Martin Jurco", "kuchar&neco"],
+        [ondrejsika, "Michael Kaplan", "neco"]
+      ]}
+    ></Team>
+    <div className="container">
       <CompaniesBar />
       <h2 className="mt-5">Doporučení z Twitteru</h2>
       <div className="card-columns">
