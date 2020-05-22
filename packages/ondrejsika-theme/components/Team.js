@@ -36,10 +36,13 @@ const ImgWrapper = styled.div`
     background-color: ${colors.LIGHT_GREY};
   }
 `;
-
+const MyRow = styled(Row)`
+  margin-left: 0;
+  margin-right: 0;
+`;
 const Team = props => (
   <>
-    <Row>
+    <MyRow>
       {props.lecturers.map((lector, i) => (
         <GaplesCol xl={4} md={6} sm={6} xs={12} key={i}>
           <ImgWrapper>
@@ -49,7 +52,7 @@ const Team = props => (
           </ImgWrapper>
         </GaplesCol>
       ))}
-    </Row>
+    </MyRow>
   </>
 );
 export default Team;
