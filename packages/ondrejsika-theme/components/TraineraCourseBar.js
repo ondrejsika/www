@@ -22,8 +22,16 @@ const H4 = styled.h4`
   padding-top: 0.4em;
 `;
 
-const Trainera = styled.div``;
-
+const Trainera = styled.div`
+  padding-bottom: 4.5em;
+`;
+const Header = styled.h3`
+  font-size: 2.5em;
+  font-weight: 700;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  text-align: center;
+`;
 const Card = props => {
   let training = { en: "training", cs: "skoleni" }[props.lang || "cs"];
 
@@ -50,6 +58,7 @@ const Card = props => {
     max-width: 20%;
     padding: 0px;
   `;
+
   return (
     <Col lg={2}>
       <Box site={props.site}>
@@ -69,7 +78,7 @@ const Card = props => {
 const TraineraCourseBar = props => {
   return (
     <Trainera>
-      <h2 className="pt-4 pb-2 ">{props.LectureImgHeader}</h2>
+      <Header>{props.LectureImgHeader}</Header>
       <div className="container-flex banner-courses">
         <Row>
           <Card
