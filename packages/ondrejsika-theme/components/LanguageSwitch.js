@@ -15,6 +15,7 @@ const LanguageSwitch = props => {
       default_colors.BLUE};
     text-align: right;
     padding-top: 0.5em;
+    color: white;
   `;
 
   return (
