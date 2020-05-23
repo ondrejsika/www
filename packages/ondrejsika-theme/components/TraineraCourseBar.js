@@ -22,13 +22,11 @@ const H4 = styled.h4`
 `;
 
 const Trainera = styled.div`
-  margin-bottom: 4.5em;
   background-color: #088958;
 `;
 const Header = styled.h3`
   font-size: 2.5em;
   font-weight: 700;
-  margin-top: 2em;
   padding: 0.5em 0;
   text-align: center;
   color: white;
@@ -78,96 +76,114 @@ const Card = props => {
   );
 };
 
+const TriangleBottomRight = styled.div`
+  width: 100%;
+  height: 0;
+  border-bottom: 150px solid #088958;
+  border-left: 2000px solid transparent;
+`;
+
+const TriangleTopLeft = styled.div`
+  width: 100%;
+  height: 0;
+  border-top: 150px solid #088958;
+  border-right: 2000px solid transparent;
+`;
+
 const TraineraCourseBar = props => {
   return (
-    <Trainera>
-      <Container>
-        <Header>{props.LectureImgHeader}</Header>
-        <div className="container-flex banner-courses pb-3">
-          <Row>
-            <Card
-              site={props.site}
-              lang={props.lang}
-              courseName="Docker"
-              courseId="docker"
-              courseImg={docker}
-            />
-            <Card
-              site={props.site}
-              lang={props.lang}
-              courseName="Kubernetes"
-              courseId="kubernetes"
-              courseImg={k8s}
-            />
-            <Card
-              site={props.site}
-              lang={props.lang}
-              courseName="Git"
-              courseId="git"
-              courseImg={git}
-            />
-            <Card
-              site={props.site}
-              lang={props.lang}
-              courseName="Gitlab CI"
-              courseId="gitlab-ci"
-              courseImg={gitlabci}
-            />
-            <Card
-              site={props.site}
-              lang={props.lang}
-              courseName="Ansible"
-              courseId="ansible"
-              courseImg={ansible}
-            />
-            <Card
-              site={props.site}
-              lang={props.lang}
-              courseName="Prometheus"
-              courseId="prometheus"
-              courseImg={prometheus}
-            />
+    <>
+      <TriangleBottomRight />
+      <Trainera>
+        <Container>
+          <Header>{props.LectureImgHeader}</Header>
+          <div className="container-flex banner-courses pb-3">
+            <Row>
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Docker"
+                courseId="docker"
+                courseImg={docker}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Kubernetes"
+                courseId="kubernetes"
+                courseImg={k8s}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Git"
+                courseId="git"
+                courseImg={git}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Gitlab CI"
+                courseId="gitlab-ci"
+                courseImg={gitlabci}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Ansible"
+                courseId="ansible"
+                courseImg={ansible}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Prometheus"
+                courseId="prometheus"
+                courseImg={prometheus}
+              />
 
-            {(() => {
-              if (!props.lang || props.lang == "cs") {
-                return (
-                  <>
-                    <Card
-                      site={props.site}
-                      lang={props.lang}
-                      courseName="Terraform"
-                      courseId="terraform"
-                      courseImg={terraform}
-                    />
-                    <Card
-                      site={props.site}
-                      lang={props.lang}
-                      courseName="Rancher"
-                      courseId="rancher"
-                      courseImg={rancher}
-                    />
-                    <Card
-                      site={props.site}
-                      lang={props.lang}
-                      courseName="React"
-                      courseId="react"
-                      courseImg={react}
-                    />
-                    <Card
-                      site={props.site}
-                      lang={props.lang}
-                      courseName="Elk"
-                      courseId="elk"
-                      courseImg={elk}
-                    />
-                  </>
-                );
-              }
-            })()}
-          </Row>
-        </div>
-      </Container>
-    </Trainera>
+              {(() => {
+                if (!props.lang || props.lang == "cs") {
+                  return (
+                    <>
+                      <Card
+                        site={props.site}
+                        lang={props.lang}
+                        courseName="Terraform"
+                        courseId="terraform"
+                        courseImg={terraform}
+                      />
+                      <Card
+                        site={props.site}
+                        lang={props.lang}
+                        courseName="Rancher"
+                        courseId="rancher"
+                        courseImg={rancher}
+                      />
+                      <Card
+                        site={props.site}
+                        lang={props.lang}
+                        courseName="React"
+                        courseId="react"
+                        courseImg={react}
+                      />
+                      <Card
+                        site={props.site}
+                        lang={props.lang}
+                        courseName="Elk"
+                        courseId="elk"
+                        courseImg={elk}
+                      />
+                    </>
+                  );
+                }
+              })()}
+            </Row>
+          </div>
+        </Container>
+      </Trainera>
+      <TriangleTopLeft />
+    </>
   );
 };
 
