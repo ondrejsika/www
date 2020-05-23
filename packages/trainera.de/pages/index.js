@@ -8,6 +8,8 @@ import TraineraAbout from "@app/ondrejsika-theme/components/TraineraAbout";
 import { Container } from "react-bootstrap";
 import Head from "next/head";
 import Team from "@app/ondrejsika-theme/components/Team";
+import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
+import Translate from "@app/common/components/Translate";
 
 import ondrejsika from "@app/data/pictures/ondrejsika.png";
 import martinjurco from "@app/data/pictures/martinjurco.png";
@@ -25,7 +27,36 @@ const Index = props => (
       header="IT &amp; DevOps Training in Germany"
       text=""
     />
-
+    <StatisticBar
+      site={props.site}
+      NumberOfPeople="750+"
+      NumberOfPeopleHeader={
+        <Translate
+          lang={props.lang}
+          cs="Počet odškolených lidí"
+          en="Training attendees"
+          de="Training attendees"
+        />
+      }
+      NumberOfCompanies="120+"
+      NumberOfCompaniesHeader={
+        <Translate
+          lang={props.lang}
+          cs="Počet firem ve spolupráci"
+          en="Companies trained"
+          de="Companies trained"
+        />
+      }
+      NumberOfLectures="170+"
+      NumberOfLecturesHeader={
+        <Translate
+          lang={props.lang}
+          cs="Počet uskutečněných školení"
+          en="Training sessions"
+          de="Training sessions"
+        />
+      }
+    />
     <Container>
       <TraineraAbout lang={props.site.lang} />
     </Container>
