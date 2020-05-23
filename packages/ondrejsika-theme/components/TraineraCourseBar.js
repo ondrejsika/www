@@ -55,6 +55,7 @@ const Card = props => {
   const Img = styled.img`
     max-width: 90%;
     height: auto;
+    padding: 0 1em 1em 1em;
   `;
 
   const MyCol = styled(Col)`
