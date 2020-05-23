@@ -1,4 +1,6 @@
 import React from "react";
+
+import TraineraAbout from "@app/ondrejsika-theme/components/TraineraAbout";
 import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
@@ -57,8 +59,15 @@ const Index = props => (
       }
     />
     <div className="container">
-      <TraineraCourseBar site={props.site} LectureImgHeader="Naše školení" />
+      <TraineraAbout />
+      <TraineraCourseBar
+        site={props.site}
+        LectureImgHeader="Vyberte si školení"
+      />
+
+      <CompaniesBar align="center" myClients="Naši klienti" />
     </div>
+
     <Team
       teamHeader="Náš tým"
       lecturers={[
@@ -70,8 +79,8 @@ const Index = props => (
         [ondrejsika, "Michael Kaplan", "neco"]
       ]}
     ></Team>
+
     <div className="container">
-      <CompaniesBar align="center" myClients="Naši klienti" />
       <h2 className="mt-5">Doporučení z Twitteru</h2>
       <div className="card-columns">
         {twitter_recommendation_file.map((rec, i) => {
