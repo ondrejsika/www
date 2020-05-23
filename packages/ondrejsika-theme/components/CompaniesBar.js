@@ -55,7 +55,7 @@ const CompaniesBar = props => (
         cznic,
         konica_minolta
       ].map((img, i) => (
-        <div key={i} className="col-lg-2 col-md-2 col-sm-3 col-2 p-3">
+        <div key={i} className="col-lg-2 col-md-2 col-sm-4 col-4 p-3">
           <img src={img} className="img-fluid bw" alt="default" />
         </div>
       ))}
