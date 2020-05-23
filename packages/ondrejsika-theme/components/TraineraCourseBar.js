@@ -119,8 +119,6 @@ const TraineraCourseBar = props => {
               courseId="ansible"
               courseImg={ansible}
             />
-            {/* </div>
-        <div className="d-flex flex-wrap flex-sm-wrap flex-lg-nowrap d-lg-flex flex-row"> */}
             <Card
               site={props.site}
               lang={props.lang}
