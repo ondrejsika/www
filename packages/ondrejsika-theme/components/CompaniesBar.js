@@ -19,7 +19,7 @@ import styled, { css } from "styled-components";
 const Header = styled.h3`
   font-size: 2.5em;
   font-weight: 700;
-  padding-top: 3em;
+  padding-top: 1em;
   padding-bottom: 0.5em;
   ${props =>
     props.align == "center" &&
