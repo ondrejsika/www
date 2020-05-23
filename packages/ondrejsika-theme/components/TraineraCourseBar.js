@@ -78,16 +78,16 @@ const Card = props => {
 
 const TriangleBottomRight = styled.div`
   width: 100%;
-  height: 0;
-  border-bottom: 150px solid #088958;
-  border-left: 2000px solid transparent;
+  height: 80px;
+  background: #088958;
+  clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
 `;
 
 const TriangleTopLeft = styled.div`
   width: 100%;
-  height: 0;
-  border-top: 150px solid #088958;
-  border-right: 2000px solid transparent;
+  height: 80px;
+  background: #088958;
+  clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
 `;
 
 const TraineraCourseBar = props => {
