@@ -48,7 +48,7 @@ const Index = props => (
       ]}
     ></Team>
     <div className="container">
-      <h2 className="mt-5">Twitter Reccomendations</h2>
+      <h2 className="mt-5 text-center">Twitter Reccomendations</h2>
       <div className="card-columns">
         {twitter_recommendation_file.map((rec, i) => {
           if (rec.lang != props.site.lang) return;
