@@ -27,9 +27,15 @@ const Footer = props => {
     <Background>
       <Container>
         <Row>
-          <Col sm={4}>{props.firstColumn}</Col>
-          <Col sm={4}>{props.secondColumn}</Col>
-          <Col sm={4}>{props.thirdColumn}</Col>
+          <Col md={4} sm={6} xs={12}>
+            {props.firstColumn}
+          </Col>
+          <Col md={4} sm={6} xs={12}>
+            {props.secondColumn}
+          </Col>
+          <Col md={4} sm={6} xs={12}>
+            {props.thirdColumn}
+          </Col>
         </Row>
         <CenterP>{props.center}</CenterP>
         <Hide>

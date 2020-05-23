@@ -5,7 +5,7 @@ import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import TraineraAbout from "@app/ondrejsika-theme/components/TraineraAbout";
-
+import { Container } from "react-bootstrap";
 import Head from "next/head";
 import Team from "@app/ondrejsika-theme/components/Team";
 
@@ -26,20 +26,21 @@ const Index = props => (
       text=""
     />
 
-    <div className="container">
+    <Container>
       <TraineraAbout lang={props.site.lang} />
-
-      <TraineraCourseBar
-        site={props.site}
-        lang={props.site.lang}
-        LectureImgHeader="Our Courses"
-      />
+    </Container>
+    <TraineraCourseBar
+      site={props.site}
+      lang={props.site.lang}
+      LectureImgHeader="Our Courses"
+    />
+    <Container>
       <CompaniesBar align="center" lang={props.site.lang} />
-    </div>
+    </Container>
 
     <Team
       lecturers={[
-        [ondrejsika, "Ondrej Sika", "DevOps&SoftwareArchitect"],
+        [ondrejsika, "Ondrej Sika", "DevOps& SoftwareArchitect"],
         [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
         [vojtechmares, "Vojtěch Mareš", "neco neco"],
         [jirikraml, "Jiří Kraml", "neconeconeconeco"],

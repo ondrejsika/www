@@ -10,6 +10,7 @@ import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import Translate from "@app/common/components/Translate";
 import Team from "@app/ondrejsika-theme/components/Team";
 import Head from "next/head";
+import { Container } from "react-bootstrap";
 
 import ondrejsika from "@app/data/pictures/ondrejsika.png";
 import martinjurco from "@app/data/pictures/martinjurco.png";
@@ -58,20 +59,21 @@ const Index = props => (
         />
       }
     />
-    <div className="container">
+    <Container>
       <TraineraAbout />
-      <TraineraCourseBar
-        site={props.site}
-        LectureImgHeader="Vyberte si školení"
-      />
-
+    </Container>
+    <TraineraCourseBar
+      site={props.site}
+      LectureImgHeader="Vyberte si školení"
+    />
+    <Container>
       <CompaniesBar align="center" myClients="Naši klienti" />
-    </div>
+    </Container>
 
     <Team
       teamHeader="Náš tým"
       lecturers={[
-        [ondrejsika, "Ondrej Sika", "DevOps&SoftwareArchitect"],
+        [ondrejsika, "Ondrej Sika", "SoftwareArchitect"],
         [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
         [vojtechmares, "Vojtěch Mareš", "neco neco"],
         [jirikraml, "Jiří Kraml", "neconeconeconeco"],
