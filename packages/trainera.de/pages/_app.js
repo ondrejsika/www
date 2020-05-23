@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import App from "next/app";
 import site from "@app/trainera.de/config";
 import Link from "next/link";
@@ -9,11 +10,27 @@ import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
 import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
 import ThemeLanguageSwitch from "@app/ondrejsika-theme/components/LanguageSwitch";
 import Button from "@app/ondrejsika-theme/components/Button";
-
+import Twitter from "@app/data/pictures/social-networks/twitter_sq.svg";
+import Linkedin from "@app/data/pictures/social-networks/linkedin_sq.svg";
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
 
 const LanguageSwitch = <ThemeLanguageSwitch site={site} />;
+
+const Row = styled.div`
+  display: flex;
+  padding-top: 1em;
+`;
+const Icon = styled.span`
+  margin: 0.8em;
+  :first-child {
+    margin-left: 0;
+    padding-left: 0;
+  }
+`;
+const Img = styled.img`
+  height: 50px;
+`;
 
 const Navbar = (
   <ThemeNavbar
@@ -57,7 +74,21 @@ const Footer = (
           <ThemeFooter.A href="tel:+420773452376">
             +420 773 452 376
           </ThemeFooter.A>
+          <Row>
+            <ThemeFooter.A href="https://twitter.com/traineraio">
+              <Icon>
+                <Img src={Twitter} />
+              </Icon>
+            </ThemeFooter.A>
+            <br />
+            <ThemeFooter.A href="https://www.linkedin.com/company/traineraio">
+              <Icon>
+                <Img src={Linkedin} />
+              </Icon>
+            </ThemeFooter.A>
+          </Row>
         </p>
+
         <table className="contact-table table-borderless">
           <tbody>
             <tr>
