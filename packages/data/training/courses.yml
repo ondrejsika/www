@@ -905,17 +905,44 @@
       - Přístup na internet (ideálně bez korporatni proxy)
       - Vlastní účet v Digital Oceanu výhodou
     en: |
-      ### What is
+      ### What is Terraform
+
+      Terraform is a tool used to manage cloud infrastructure, both public (AWS, Azure, GCP) and private (OpenStack, VMware vSphere).
+
+      Terraform allows you to manage the infrastructure as code versioned in Git, adding resources using merge (pull) requests, and many other benefits. You can further deploy the infrastructure to the test environment exactly as it is in production without undue effort. You have an overview of all components and you can predict prices. No more clicking the infrastructure, try Terraform.
+
+      Terraform allows you to manage multiple cloud providers simultaneously, while also allowing you to work with hybrid clouds (part in the private cloud, part in the public).
 
       ### Course Description
 
+      The training is in the form of a workshop where we will examine and explain everything in detail. I will manifest how Terraform works, how to use it in a team and how to use it to manage the infrastructure. Finally we will set up a simple application infrastructure, where we configure everything - from DNS, through the Kubernetes cluster to S3 file storage.
+
       ### Course Outline
+
+      - Basic concept of Terraform
+      - Terraform advantages over Ansible, Puppet, ...
+      - Terraform configuration for team work
+      - Terraform CLI control
+      - Introduction to Terraform Configuration Language (HCL)
+      - Terraform Providers - connection to the clouds
+      - Working with resources in Terraform
+      - Terraform modules
+      - Best Practice
 
       ### Who Should Attend
 
+      The training is a perfect fit for DevOps and administrators who want to better and more efficiently manage the infrastructure as well as for developers who take care of some infrastructure in the clouds.
+
       #### Skill Requirements
 
+      - Basic knowledge of public clouds (AWS, Digital Ocean, Azure, ...)
+      - Basics Terminal knowledge
+
       #### Technical Requirements
+
+      - Terraform installed
+      - Internet access (ideally without corporate proxy)
+      - Personal account in Digital Ocean is an advantage - [Get one with the registration credit + 50 USD] (https://sika.link/do-ref)
 
 - id: react
   ignore_for_partners: true
