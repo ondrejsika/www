@@ -891,9 +891,6 @@
       #### Technical Requirements
 
 - id: react
-  skoleniio:
-    name: react
-    lecturer: ondrejsika
   name:
     cs: Školení Reactu
     en: React Training
