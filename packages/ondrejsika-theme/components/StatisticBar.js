@@ -5,7 +5,6 @@ import styled from "styled-components";
 const TriangleBottomRight = styled.div`
   width: 100%;
   height: 80px;
-  /* background: #131480; */
   background-color: ${props =>
     (props.site && props.site.colors && props.site.colors.SECONDARY) || "grey"};
   clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);

@@ -15,6 +15,7 @@ import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import AboutLecturer from "@app/ondrejsika-theme/components/AboutLecturer";
 import CourseInquiryForm from "@app/ondrejsika-theme/layouts/CourseInquiryForm";
+import ConvinceYourBoss from "@app/ondrejsika-theme/components/ConvinceYourBoss";
 
 const Course = props => (
   <div>
@@ -129,8 +130,12 @@ const Course = props => (
         </Col>
       </Row>
     </div>
+
+    <ConvinceYourBoss site={props.site} lang={props.site.lang} />
     <StatisticBar
       site={props.site}
+      showDiagonalBackground={true}
+      showBothDiagonalBackground={true}
       NumberOfPeople="150+"
       NumberOfPeopleHeader={
         <Translate

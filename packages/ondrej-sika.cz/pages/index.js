@@ -7,6 +7,7 @@ import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 import NewsLine from "@app/ondrejsika-theme/components/NewsLine";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import { TwitterTweetEmbed } from "react-twitter-embed";
+import { Container } from "react-bootstrap";
 
 import Head from "next/head";
 
@@ -33,7 +34,7 @@ const Index = props => (
       NumberOfLectures="170+"
     />
 
-    <div className="container">
+    <Container>
       <CourseBar LectureImgHeader="Kurzy co školím" />
       <TextWithImg TextWithImgHeader="O mně">
         Jmenuji se Ondřej Šika a od roku 2009 se zabývám vývojem software a
@@ -83,7 +84,7 @@ const Index = props => (
           );
         })}
       </div>
-    </div>
+    </Container>
   </div>
 );
 
