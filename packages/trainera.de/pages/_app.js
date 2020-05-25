@@ -45,7 +45,7 @@ const Navbar = (
           ["GITLAB CI", "/training/gitlab-ci"],
           ["DOCKER", "/training/docker"],
           ["KUBERNETES", "/training/kubernetes"],
-          // ["RANCHER", "/training/rancher"],
+          ["RANCHER", "/training/rancher"],
           ["ANSIBLE", "/training/ansible"],
           // ["TERRAFORM", "/training/terraform"],
           ["PROMETHEUS", "/training/prometheus"]
@@ -112,6 +112,7 @@ const Footer = (
             ["Kubernetes", "/training/kubernetes"],
             ["Gitlab CI", "/training/gitlab-ci"],
             ["Terraform", "/training/terraform"],
+            ["Rancher", "/training/rancher"],
             ["Prometheus", "/training/prometheus"]
           ].map((el, i) => {
             return (
