@@ -2,6 +2,16 @@ import React from "react";
 import Translate from "@app/common/components/Translate";
 import styled from "styled-components";
 
+const TriangleBottomRight = styled.div`
+  width: 100%;
+  height: 80px;
+  /* background: #131480; */
+  background-color: ${props =>
+    (props.site && props.site.colors && props.site.colors.SECONDARY) || "grey"};
+  clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
+  margin-bottom: -1px;
+`;
+
 const TriangleTopLeft = styled.div`
   width: 100%;
   height: 80px;
@@ -20,6 +30,10 @@ const Background = styled.div`
 
 const StatisticBar = props => (
   <>
+    {props.showBothDiagonalBackground && (
+      <TriangleBottomRight site={props.site} />
+    )}
+
     <Background site={props.site}>
       <div className="container">
         <div className="row">
