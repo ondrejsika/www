@@ -8,6 +8,9 @@ const TriangleTopLeft = styled.div`
   background: ${props =>
     (props.site && props.site.colors && props.site.colors.SECONDARY) || "grey"};
   clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Background = styled.div`
