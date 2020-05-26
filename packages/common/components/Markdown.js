@@ -1,6 +1,8 @@
 import ReactMarkdown from "react-markdown";
 import React from "react";
 import Link from "next/link";
+import JsxParser from "react-jsx-parser";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 
 function flatten(text, child) {
   return typeof child === "string"
@@ -23,12 +25,36 @@ function LinkRenderer(props) {
   );
 }
 
+const ReactComponent = props => <>{props.children}</>;
+const TwitterComponent = props => (
+  <TwitterTweetEmbed
+    tweetId={props.tweet_id}
+    options={{ conversation: "none" }}
+  />
+);
+
+const ReactRenderer = props => {
+  return (
+    <JsxParser
+      jsx={props.value}
+      components={{
+        React: ReactComponent,
+        Twitter: TwitterComponent
+      }}
+    />
+  );
+};
+
 let Markdown = props => {
   return (
     <ReactMarkdown
       source={props.source}
       escapeHtml={false}
-      renderers={{ heading: HeadingRenderer, link: LinkRenderer }}
+      renderers={{
+        heading: HeadingRenderer,
+        link: LinkRenderer,
+        html: ReactRenderer
+      }}
     />
   );
 };

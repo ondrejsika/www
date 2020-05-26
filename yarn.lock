@@ -7635,6 +7635,14 @@ react-is@^16.12.0, react-is@^16.3.2, react-is@^16.6.0, react-is@^16.7.0, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-jsx-parser@^1.23.0:
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/react-jsx-parser/-/react-jsx-parser-1.23.0.tgz#7cff7753c9ac28c1024a78b48e2042736e073965"
+  integrity sha512-zpwtE1h9XQ2O2tTBS189FrFOhDmYMAeggcZ4HNRq9ypYaQqoK/14p3YCm9SmlBtPTRjuiXfvLwoAO7Sxyab8ZA==
+  dependencies:
+    acorn "^7.1.1"
+    acorn-jsx "^5.2.0"
+
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"

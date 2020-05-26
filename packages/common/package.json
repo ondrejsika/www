@@ -10,6 +10,7 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
-    "react-hook-form": "^4.9.8"
+    "react-hook-form": "^4.9.8",
+    "react-jsx-parser": "^1.23.0"
   }
 }
