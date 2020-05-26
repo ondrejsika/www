@@ -1,3 +1,57 @@
+- id: weeknotes-2
+  title: "Weeknotes #2"
+  date: 24. 5. 2020
+  tags:
+    - weeknotes
+    - devopslive
+    - terraform
+    - poste
+  perex: |
+    Zapisky #weeknotes dalsiho tydne od 11. do 17.5. DevOps Live a dalsi Terraform provider.
+  content: |
+    Tyden ubehl a ja zde sepisuji par veci co jsem za tyden zvladnul.
+
+    ### DevOps Live
+
+    Rozhodl jsem se ze budu natacet livestremy na temata z DevOps.
+
+    Muj Tweet s dotaznikem, ktera temata lidi zajimaji, se pomerne hodnde rozsiril a ja mam dostatek informaci pro naplanovani prvnich livestreamu.
+
+    <Twitter tweet_id="1263402541292892160" />
+
+    Takze na DevOps Live se muzete tesit zacatkem cervna. Pokud si porad chcete vybrat temata a nezmeskat live stream, muzete vyplnit dotaznicek <https://forms.gle/gMQJc5qdib5t8B4QA> nebo zacit odebirat muj [Newsletter](https://sika.link/newsletter).
+
+    ### Terraform Provider pro Poste.io
+
+    Napsal jsem zatim proof of concept Terraform provideru pro [Poste.io](https://poste.io) mail server. Zacinam s Training CRM a chci mit rovnou vsechnu infrastrukturu v Terraformu.
+
+    Pokud neznate Poste.io, je to mail server v jednom Docker kontajneru. Poste.io obsahuje SMTP server, IMAP server, RoundCube, Web Admin, SSL pomoci Let's Encrypt a dalsi komponenty. Je hrozne jednoduchy na instalaci, doporucuji se na nej podivat.
+
+    Ma take skvele API, pro ktere jsem pripravil knihovnu [poste-go](https://github.com/ondrejsika/poste-go), kterou pouzivam v Terraform provideru.
+
+    Vytvoril jsem `terraform-provider-poste` a zacal jsem s implementaci dvou zakladnich funkci, ktere jsem potreboval. Pridavani domen a vytvare mailboxu. Oboji bylo jednoduche a ja tak muzu lehce spravovat moje mailboxy z Terraformu. Viz:
+
+    ```terraform
+    provider "poste" {
+      origin = "https://poste.sikademo.com/admin/api"
+      username = "admin@poste.sikademo.com"
+      password = "asdfasdf"
+    }
+
+    resource "poste_domain" "foo_com" {
+      name = "foo.com"
+    }
+
+    resource "poste_box" "foo_foo_com" {
+      email = "foo@${poste_domain.foo_com.name}"
+      password = "asdfasdf"
+    }
+    ```
+
+    Zdrojove kody jsou samozrejme na Githubu, pomoc nebo navrhy na zlepseni jsou vitane.
+
+    https://github.com/ondrejsika/terraform-provider-poste
+
 - id: weeknotes-1
   title: "Weeknotes #1"
   date: 17. 5. 2020
