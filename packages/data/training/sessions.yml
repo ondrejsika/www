@@ -237,7 +237,6 @@
   facebook_event: https://www.facebook.com/events/228026568576729/
   linkedin_event: https://www.linkedin.com/events/6652271625670545408/
 
-
 # EuropeTour 2020 January
 # Germany
 # Berlin
@@ -763,7 +762,6 @@
   length: 1 day
   date_from: 17.1.2020
   date_to: 17.1.2020
-
 
 # EuropeTour 2020 February
 # Germany
@@ -1291,7 +1289,6 @@
   length: 1 day
   date_from: 21.2.2020
   date_to: 21.2.2020
-
 
 # EuropeTour 2020 March
 # Germany
@@ -1974,7 +1971,7 @@
   facebook_event: https://www.facebook.com/events/212669443351007/
   linkedin_event: https://www.linkedin.com/events/6652273229278785536/
 - id: gitlab-ci-brno-27-05-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: gitlab-ci
@@ -1988,7 +1985,7 @@
   facebook_event: https://www.facebook.com/events/257911625215990/
   linkedin_event: https://www.linkedin.com/events/6652274053505667072/
 - id: kubernetes-brno-28-05-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
@@ -2028,7 +2025,7 @@
   date_from: 4.6.2020
   date_to: 4.6.2020
 - id: terraform-brno-05-06-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: terraform
@@ -2084,7 +2081,7 @@
   facebook_event: https://www.facebook.com/events/207975663824552/
   linkedin_event: https://www.linkedin.com/events/6652877499036385281/
 - id: git-praha-12-06-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: git
@@ -2451,6 +2448,5 @@
   length: 2 dny
   date_from: 1.2.2020
   date_to: 2.2.2020
-
 # Online Corona European Tour
 
