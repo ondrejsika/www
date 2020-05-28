@@ -8,6 +8,7 @@ import Layout from "@app/ondrejsika-theme/layouts/Layout";
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
 import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
 import Button from "@app/ondrejsika-theme/components/Button";
+import Seo from "@app/common/components/Seo";
 
 // Imported CSS
 import "@app/ondrej-sika.cz/css";
@@ -172,9 +173,22 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     pageProps.site = this.site;
     return (
-      <Layout Navbar={Navbar} Footer={Footer} {...pageProps}>
-        <Component lang={site.lang} {...pageProps} />
-      </Layout>
+      <>
+        <Seo
+          title="Ondřej Šika - IT & DevOps školení, konzultace a workshopy"
+          description="Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software."
+          canonical="https://ondrej-sika.com/"
+          imageUrl="x"
+          imageAlt="Ondrej Sika"
+          imageUrl2="xx"
+          imageAlt2="Skoleni - "
+          twitterHandle="ondrejsika"
+          cardType="summary_large_image"
+        />
+        <Layout Navbar={Navbar} Footer={Footer} {...pageProps}>
+          <Component lang={site.lang} {...pageProps} />
+        </Layout>
+      </>
     );
   }
 }
