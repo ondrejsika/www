@@ -27,6 +27,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://petrmanek.cz/>
 - <https://www.tomasvitek.com/>
 - <https://clarkmoody.com/> ([source](https://github.com/clarkmoody/clarkmoody.com)
+- <https://chaoyizha.com/>
 
     `}
     />
