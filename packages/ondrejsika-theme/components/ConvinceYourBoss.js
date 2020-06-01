@@ -26,15 +26,32 @@ const Background = styled.div`
     (props.site && props.site.colors && props.site.colors.PRIMARY) || "grey"};
 `;
 const Text = styled.div`
-  padding: 2em 0;
+  padding: 0.5em 0 2em 0;
   color: white;
   font-size: 1.5em;
 `;
+
+const Header = styled.h3`
+  padding-top: 2em;
+  color: ${props =>
+    (props.site && props.site.colors && props.site.colors.SECONDARY) ||
+    "white"};
+  font-size: 1.8em;
+  font-weight: bold;
+`;
+
 const ConvinceYourBoss = props => (
   <>
     <TriangleBottomRight site={props.site} />
     <Background site={props.site}>
       <Container>
+        <Header site={props.site}>
+          <Translate
+            lang={props.lang || "cs"}
+            cs="Máte pochybnosti? Potřebujete přesvědčit svého šéfa?"
+            en="Worth it? Need to convince your boss?"
+          />
+        </Header>
         <Text>
           <Translate
             lang={props.lang || "cs"}
