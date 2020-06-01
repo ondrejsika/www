@@ -65,7 +65,7 @@ const Index = props => (
       LectureImgHeader="Our Courses"
     />
     <Container>
-      <CompaniesBar align="center" lang={props.site.lang} />
+      <CompaniesBar align="center" myClients="Our Clients" />
     </Container>
 
     <Team
