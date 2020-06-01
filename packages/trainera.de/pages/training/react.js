@@ -1,6 +1,6 @@
 import React from "react";
 import Course from "@app/ondrejsika-theme/layouts/Course";
-import logo from "@app/data/pictures/courses/react.svg";
+import logo from "@app/data/pictures/courses/white/react.svg";
 
 const Page = props => (
   <Course

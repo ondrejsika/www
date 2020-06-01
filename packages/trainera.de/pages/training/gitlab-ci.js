@@ -1,6 +1,6 @@
 import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
-import logo from "@app/data/pictures/courses/gitlab-ci.svg";
+import logo from "@app/data/pictures/courses/white/gitlab_ci.svg";
 
 const Page = props => (
   <CourseDD

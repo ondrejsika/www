@@ -1,6 +1,6 @@
 import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
-import logo from "@app/data/pictures/courses/kubernetes.png";
+import logo from "@app/data/pictures/courses/white/kubernetes.svg";
 
 const Page = props => (
   <CourseDD
