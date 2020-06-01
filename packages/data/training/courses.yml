@@ -346,17 +346,32 @@
 
       Požadavky na školení jsou na stránce [Příprava na školení Rancheru](/skoleni/rancher/priprava-na-skoleni)
     en: |
-      ### What is
+      ### What is Rancher
+      Rancher is a tool for managing the Kubernetes cluster both on its own hardware and in the cloud (AWS, GCP, DigitalOcean). Rancher allows you to easily create and manage Kuberneres clusters from both web administration and Terraform.
 
       ### Course Description
+      This course is ran in the form of a one-day hands-on workshop. We will try out and touch everything practically. Firstly, we will install Rancher togehter and I will show you how to manage it. Then we create Kubernets clusters in the cloud and on the premise virtuals. Both manually and using Terraform.
 
       ### Course Outline
+      - What is Rancher
+      - Rancher installation
+      - Rancher Administration (Users, Rights, ...)
+      - Kubernetes cluster administration in GUI (creation, update, ...)
+      - Kuberneres cluster management using Terraform
 
       ### Who Should Attend
+      Anyone managing Kubetnetes clusters and interested in more advanced DevOps setup.
 
       #### Skill Requirements
+      - Basic knowledge of Kubernetes
+      - Basic terminal knowledge
 
       #### Technical Requirements
+      - Terraform installed
+      - Rancher CLI & RKE installed
+      - DigitalOcean account [if you don't have one yet, please use my referral and get 50 USD credit](https://sika.link/do-ref)
+      - Access to the internet (https, ssh) - better without corporate proxy
+
 
 - id: git
   skoleniio:
