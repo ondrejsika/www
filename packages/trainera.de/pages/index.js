@@ -23,7 +23,7 @@ const Index = props => (
     <MainBarHomepage
       site={props.site}
       header="IT &amp; DevOps Training in Germany"
-      text=""
+      text="Trainera is DevOps training agency aiming at open-source technologies."
     />
     <StatisticBar
       site={props.site}
@@ -65,7 +65,11 @@ const Index = props => (
       LectureImgHeader="Our Courses"
     />
     <Container>
-      <CompaniesBar align="center" myClients="Our Clients" />
+      <CompaniesBar
+        align="center"
+        myClients="Our Clients"
+        lang={props.site.lang}
+      />
     </Container>
 
     <Team
