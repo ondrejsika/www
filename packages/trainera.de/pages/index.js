@@ -14,8 +14,6 @@ import Translate from "@app/common/components/Translate";
 import ondrejsika from "@app/data/pictures/ondrejsika.png";
 import martinjurco from "@app/data/pictures/martinjurco.png";
 import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
-import jirikraml from "@app/data/pictures/jirikraml.jpg";
-import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
 
 const Index = props => (
   <div>
@@ -74,12 +72,9 @@ const Index = props => (
       lecturers={[
         [ondrejsika, "Ondrej Sika", "DevOps& SoftwareArchitect"],
         [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
-        [vojtechmares, "Vojtěch Mareš", "neco neco"],
-        [jirikraml, "Jiří Kraml", "neconeconeconeco"],
-        [martinjurco, "Martin Jurco", "kuchar&neco"],
-        [ondrejsika, "Michael Kaplan", "neco"]
+        [martinjurco, "Martin Jurco", "Operations"]
       ]}
-    ></Team>
+    />
     <div className="container">
       <h2 className="mt-5 text-center">Twitter Reccomendations</h2>
       <div className="card-columns">
