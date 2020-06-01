@@ -1,8 +1,6 @@
 import React from "react";
-
 import Head from "next/head";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
-import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 
 const Index = props => (
   <div>
@@ -52,14 +50,14 @@ const Index = props => (
         </div>
         <div className="col-lg-4 col-md-9 col-sm-12 col-12">
           <h4 className="pt-4 pt-md-0">Bank Account</h4>
-          <table className="contact-table table-borderless">
+          <table className="contact-table table-borderless mb-5">
             <tbody>
               <tr>
                 <td>IBAN:</td>
                 <td>CZ4920100000002801705982</td>
               </tr>
               <tr>
-                <td>BIC / SWIFT:</td>
+                <td>BIC/SWIFT:</td>
                 <td>FIOBCZPPXXX</td>
               </tr>
               <tr>
@@ -80,7 +78,6 @@ const Index = props => (
           </table>
         </div>
       </div>
-      <PipedriveContactForm lang={props.lang} />
     </div>
   </div>
 );
