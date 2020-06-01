@@ -62,7 +62,6 @@ const Index = props => (
       <TraineraAbout lang={props.site.lang} />
     </Container>
     <TraineraCourseBar
-      negativeTop
       site={props.site}
       lang={props.site.lang}
       LectureImgHeader="Our Courses"
