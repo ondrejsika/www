@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import docker from "@app/data/pictures/courses/white/docker.svg";
 import git from "@app/data/pictures/courses/white/git.svg";
 import gitlabci from "@app/data/pictures/courses/white/gitlab_ci.svg";
@@ -81,6 +81,12 @@ const TriangleBottomRight = styled.div`
   height: 80px;
   background: #088958;
   clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
+  margin-bottom: -1px;
+  ${props =>
+    props.negativeTop &&
+    css`
+      margin-top: -80px;
+    `}
 `;
 
 const TriangleTopLeft = styled.div`
@@ -93,7 +99,7 @@ const TriangleTopLeft = styled.div`
 const TraineraCourseBar = props => {
   return (
     <>
-      <TriangleBottomRight />
+      <TriangleBottomRight negativeTop={props.negativeTop} />
       <Trainera>
         <Container>
           <Header>{props.LectureImgHeader}</Header>
