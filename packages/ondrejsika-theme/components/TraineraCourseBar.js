@@ -133,13 +133,7 @@ const TraineraCourseBar = props => {
                 courseId="gitlab-ci"
                 courseImg={gitlabci}
               />
-              <Card
-                site={props.site}
-                lang={props.lang}
-                courseName="Ansible"
-                courseId="ansible"
-                courseImg={ansible}
-              />
+
               <Card
                 site={props.site}
                 lang={props.lang}
@@ -147,7 +141,13 @@ const TraineraCourseBar = props => {
                 courseId="prometheus"
                 courseImg={prometheus}
               />
-
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Terraform"
+                courseId="terraform"
+                courseImg={terraform}
+              />
               {(() => {
                 if (!props.lang || props.lang == "cs") {
                   return (
@@ -155,9 +155,9 @@ const TraineraCourseBar = props => {
                       <Card
                         site={props.site}
                         lang={props.lang}
-                        courseName="Terraform"
-                        courseId="terraform"
-                        courseImg={terraform}
+                        courseName="Ansible"
+                        courseId="ansible"
+                        courseImg={ansible}
                       />
                       <Card
                         site={props.site}
