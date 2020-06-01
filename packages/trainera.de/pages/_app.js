@@ -47,7 +47,7 @@ const Navbar = (
           ["KUBERNETES", "/training/kubernetes"],
           ["RANCHER", "/training/rancher"],
           ["ANSIBLE", "/training/ansible"],
-          // ["TERRAFORM", "/training/terraform"],
+          ["TERRAFORM", "/training/terraform"],
           ["PROMETHEUS", "/training/prometheus"]
           // ["PROXMOX", "/training/proxmox"],
           // ["ELK / EFK", "/training/elk"],
