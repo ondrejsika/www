@@ -68,7 +68,11 @@ const Index = props => (
       LectureImgHeader="Vyberte si školení"
     />
     <Container>
-      <CompaniesBar align="center" myClients="Naši klienti" />
+      <CompaniesBar
+        align="center"
+        myClients="Naši klienti"
+        lang={props.site.lang}
+      />
     </Container>
 
     <Team
