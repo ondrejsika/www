@@ -20,7 +20,7 @@ const MainTitle = styled.h1`
   color: white;
 `;
 const Section = styled.div`
-  margin-bottom: 3em;
+  margin: 3em 0;
 `;
 const TextBeige = styled.span`
   color: #c8bfb0 !important;
@@ -141,7 +141,9 @@ const Page = () => {
       <BackgroundBlue>
         <Container>
           <Section>
-            <SectionHeader white>MŮJ PŘÍBĚH</SectionHeader>
+            <SectionHeader white tight>
+              MŮJ PŘÍBĚH
+            </SectionHeader>
             <RoomyRow>
               <Col md={8}>
                 <Text white>
