@@ -7,6 +7,7 @@ const SectionHeader = styled.h3`
   border-bottom: 5px solid #c8bfb0;
   box-sizing: border-box;
   display: inline;
+  text-transform: uppercase;
 `;
 
 export default SectionHeader;
