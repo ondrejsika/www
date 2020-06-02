@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const SectionHeader = styled.h3`
   font-family: "IBM Plex Mono", monospace;
@@ -8,6 +8,12 @@ const SectionHeader = styled.h3`
   box-sizing: border-box;
   display: inline;
   text-transform: uppercase;
+
+  ${props =>
+    props.white &&
+    css`
+      color: white !important;
+    `}
 `;
 
 export default SectionHeader;
