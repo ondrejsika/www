@@ -18,7 +18,9 @@ const MainTitle = styled.h1`
   opacity: 1;
   color: white;
 `;
-
+const Section = styled.div`
+  margin-bottom: 3em;
+`;
 const TextBeige = styled.span`
   color: #c8bfb0 !important;
 `;
@@ -46,7 +48,9 @@ const Img = styled.img`
   max-width: 100%;
   height: auto;
 `;
-
+const RoomyRow = styled(Row)`
+  margin-top: 8em;
+`;
 const MarginBottom = styled.div`
   margin-bottom: 6em;
 `;
@@ -72,39 +76,53 @@ const Page = () => (
       </Container>
     </BackgroundBlue>
     <Container>
-      <Center>
-        <SectionHeader center>S ČÍM VÁM POMOHU</SectionHeader>
-      </Center>
+      <Section>
+        <Center>
+          <SectionHeader center>S ČÍM VÁM POMOHU</SectionHeader>
+        </Center>
 
-      <MarginBottom>
-        <Row>
-          <Col md={4}>
-            <Box
-              text="Zavedu open-source DevOps do Vaší firmy. Nastavím nástroje a procesy
+        <MarginBottom>
+          <Row>
+            <Col md={4}>
+              <Box
+                text="Zavedu open-source DevOps do Vaší firmy. Nastavím nástroje a procesy
           tak, abyste automaticky, spolehlivě a rychle doručovali novou
           funkcionalitu Vašim zákazníkům."
-            />
+              />
+            </Col>
+            <Col md={4}>
+              <Box text="Vyřeším Váš konkrétní problém formou konzultací, čímž se vyvarujete zbytečných a drahých chyb. Já a můj team Vám budeme oporou při provozu Vaší DevOps infrastruktury formou jednoho z našich support plánů." />
+            </Col>
+            <Col md={4}>
+              <Box text="Vyškolím Váš team tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vase DevOps prostředí." />
+            </Col>
+          </Row>
+        </MarginBottom>
+      </Section>
+      <Section>
+        <Row>
+          <Col md={6}>
+            <Img src={ondrej_training} />
           </Col>
-          <Col md={4}>
-            <Box text="Vyřeším Váš konkrétní problém formou konzultací, čímž se vyvarujete zbytečných a drahých chyb. Já a můj team Vám budeme oporou při provozu Vaší DevOps infrastruktury formou jednoho z našich support plánů." />
-          </Col>
-          <Col md={4}>
-            <Box text="Vyškolím Váš team tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vase DevOps prostředí." />
+          <Col md={6}>
+            <Center>
+              <SectionHeader center>moji klienti</SectionHeader>
+            </Center>
+            <Companies />
           </Col>
         </Row>
-      </MarginBottom>
-
-      <Row>
-        <Col md={6}>
-          <Img src={ondrej_training} />
-        </Col>
-        <Col md={6}>
-          <Center>
-            <SectionHeader center>moji klienti</SectionHeader>
-          </Center>
-          <Companies />
-        </Col>
-      </Row>
+      </Section>
+      <Section>
+        <SectionHeader center>KONTAKTUJTE MĚ</SectionHeader>
+        <RoomyRow>
+          <Col md={4}>
+            <Button href="#">Zavolat</Button>
+          </Col>
+          <Col md={4}>
+            <Button href="#">Poslat email</Button>
+          </Col>
+        </RoomyRow>
+      </Section>
     </Container>
   </>
 );
