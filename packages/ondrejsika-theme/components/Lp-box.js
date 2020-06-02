@@ -15,7 +15,7 @@ const Border = styled.div`
   flex-direction: column;
 `;
 const Wrapper = styled.div`
-  padding: 2em 1em 1em 1em;
+  padding: 2em 1em 0 1em;
 `;
 
 const Box = props => {
