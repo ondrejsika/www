@@ -69,7 +69,7 @@ const Index = props => (
         <br />
         Všechny kurzy a školení dělám v českém nebo anglickém jazyce.
       </TextWithImg>
-      <CompaniesBar />
+      <CompaniesBar lang={props.site.lang} />
       <h2 className="mt-5">Doporučení z Twitteru</h2>
       <div className="card-columns">
         {twitter_recommendation_file.map((rec, i) => {
