@@ -7,16 +7,13 @@ const Button = props => {
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    padding: 0.375rem 2.25rem;
-    font-size: 1rem;
+    padding: 0.475rem 2.25rem;
     font-weight: bold;
-    line-height: 1.5;
-    width: 331px;
-    height: 65px;
+
     background: #131480;
-    box-shadow: 5px 5px 6px;
-    box-shadow: 5px 5px 6px #00000029;
-    opacity: 1;
+    box-shadow: 9px 9px 6px #00000029;
+    border-radius: 54px;
+    color: white;
 
     ${props =>
       props.inverse &&
@@ -24,7 +21,6 @@ const Button = props => {
         background: #c8bfb0;
         box-shadow: 9px 9px 6px #00000029;
         border-radius: 54px;
-        opacity: 1;
         color: #131480;
       `}
   `;
