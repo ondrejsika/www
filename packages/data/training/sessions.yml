@@ -2038,6 +2038,8 @@
   date_to: 5.6.2020
   facebook_event: https://www.facebook.com/events/214450903228658/
   linkedin_event: https://www.linkedin.com/events/6652530626958245888/
+  twitter_recommendations:
+    - radim-daniel-panek-terraform
 - id: kubernetes-online-8-6-2020
   active: true
   country: de
