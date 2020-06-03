@@ -5,6 +5,7 @@ import ondrej_chair from "@app/data/pictures/landing-page/ondrej_chair.png";
 import ondrej_mac from "@app/data/pictures/landing-page/ondrej_mac.png";
 import ondrej_training from "@app/data/pictures/landing-page/ondrej_training.png";
 import ondrej_table from "@app/data/pictures/landing-page/ondrej_table.png";
+import ondrej_consulting from "@app/data/pictures/landing-page/ondrej_consulting.png";
 
 import Button from "@app/ondrejsika-theme/components/Lp-button";
 import Text from "@app/ondrejsika-theme/components/Lp-text";
@@ -220,6 +221,73 @@ const Page = () => {
           </RoomyRow>
         </Section>
       </Background>
+      <Container>
+        <Section>
+          <Center>
+            <SectionHeader>IMPLEMENTATION STUDY</SectionHeader>
+          </Center>
+          <Row>
+            <Col md={12}>
+              <Center>
+                {" "}
+                <h3>
+                  1<br /> text text
+                </h3>
+                <Text>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                  dolor in hendrerit in vulputate velit esse molestie consequat,
+                  vel illum dolore eu feugiat nulla facilisis at vero eros et
+                  accumsan et iusto odio dignissim qui blandit praesent luptatum
+                  zzril delenit augue duis dolore te feugait nulla facilisi.
+                </Text>
+              </Center>
+            </Col>
+            <Col md={7}>
+              <Center>
+                <h3>
+                  2<br /> text text
+                </h3>
+              </Center>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel
+                illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+                et iusto odio dignissim qui blandit praesent luptatum zzril
+                delenit augue duis dolore te feugait nulla facilisi.
+              </Text>
+            </Col>
+            <Col md={5}>
+              <Img src={ondrej_consulting}></Img>
+            </Col>
+            <Col md={12}>
+              <Center>
+                <h3>
+                  3<br /> text text
+                </h3>
+              </Center>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel
+                illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+                et iusto odio dignissim qui blandit praesent luptatum zzril
+                delenit augue duis dolore te feugait nulla facilisi.
+              </Text>
+            </Col>
+          </Row>
+        </Section>
+      </Container>
     </>
   );
 };
