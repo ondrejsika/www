@@ -16,6 +16,10 @@ const Padding = styled.div`
   padding: 1em;
 `;
 
+const City = styled.span`
+  font-size: 1.3em;
+`;
+
 let session_id_map = {};
 sessions.map((element, i) => {
   session_id_map[element.id] = i;
@@ -70,9 +74,9 @@ const SessionDD = props => {
                 en="Venue"
               />
             </h2>
-            <ul>
-              <li>{session.city}</li>
-            </ul>
+            <p className="mb-5">
+              <City>{session.city}</City>
+            </p>
             <Markdown source={course.agenda[lang]} />
             <p>
               <Translate
