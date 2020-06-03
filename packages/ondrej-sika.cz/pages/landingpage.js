@@ -267,10 +267,10 @@ const Page = () => {
       <Background light_grey>
         <Section>
           <RoomyRow>
-            <Col md={5}>
+            <Col md={5} sm={12}>
               <Img src={ondrej_table}></Img>
             </Col>
-            <Col md={7}>
+            <Col md={7} sm={12}>
               <SectionHeader>PROČ DO TOHO JÍT SE MNOU?</SectionHeader>
               <Text>
                 <Row>
