@@ -47,6 +47,9 @@ const Img = styled.img`
 const RoomyRow = styled(Row)`
   margin-top: 3em;
 `;
+const PaddingTop = styled.div`
+  padding-top: 6em;
+`;
 
 const MarginBottom = styled.div`
   margin-bottom: 6em;
@@ -62,14 +65,12 @@ const Li = styled.li`
   list-style: none;
   padding: 1em 1em 1em 2em;
   :after {
-    content: "";
+    content: "♦";
     height: 0.5em;
     width: 0.5em;
-    background: #131480;
-    display: block;
+    color: #131480;
     position: absolute;
-    transform: rotate(45deg);
-    top: 1.45em;
+    top: 1.35em;
     left: 0;
   }
 `;
@@ -295,22 +296,24 @@ const Page = () => {
               </Center>
             </Col>
             <Col md={7}>
-              <Center>
-                <H3>
-                  2<br /> text text
-                </H3>
-              </Center>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-                in hendrerit in vulputate velit esse molestie consequat, vel
-                illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-                et iusto odio dignissim qui blandit praesent luptatum zzril
-                delenit augue duis dolore te feugait nulla facilisi.
-              </Text>
+              <PaddingTop>
+                <Center>
+                  <H3>
+                    2<br /> text text
+                  </H3>
+                </Center>
+                <Text>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                  dolor in hendrerit in vulputate velit esse molestie consequat,
+                  vel illum dolore eu feugiat nulla facilisis at vero eros et
+                  accumsan et iusto odio dignissim qui blandit praesent luptatum
+                  zzril delenit augue duis dolore te feugait nulla facilisi.
+                </Text>
+              </PaddingTop>
             </Col>
             <Col md={5}>
               <Img src={ondrej_consulting}></Img>
