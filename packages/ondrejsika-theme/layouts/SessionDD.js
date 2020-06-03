@@ -11,6 +11,7 @@ import StaticDB from "@app/common/staticdb";
 import courses_yaml from "@app/data/training/courses.yml";
 import Price from "@app/ondrejsika-theme/components/Price";
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
+import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 
 const Padding = styled.div`
   padding: 1em;
@@ -114,6 +115,15 @@ const SessionDD = props => {
                 />
               </Col>
             </Row>
+            {session.twitter_recommendations &&
+              session.twitter_recommendations.length > 0 && (
+                <>
+                  <h3>Ohlasy z Twitteru</h3>
+                  <TwitterRecommendations
+                    ids={session.twitter_recommendations}
+                  />
+                </>
+              )}
           </div>
 
           <div className="col-md-5">
