@@ -152,8 +152,8 @@ const Page = () => {
           </HeaderBox>
         </Container>
       </Background>
-      <Container>
-        <Section>
+      <Background light_grey>
+        <Container>
           <Center>
             <SectionHeader>S ČÍM VÁM POMOHU</SectionHeader>
           </Center>
@@ -163,8 +163,8 @@ const Page = () => {
               <Col md={4}>
                 <Box
                   text="Zavedu open-source DevOps do Vaší firmy. Nastavím nástroje a procesy
-                    tak, abyste automaticky, spolehlivě a rychle doručovali novou
-                    funkcionalitu Vašim zákazníkům."
+                          tak, abyste automaticky, spolehlivě a rychle doručovali novou
+                          funkcionalitu Vašim zákazníkům."
                 />
               </Col>
               <Col md={4}>
@@ -175,7 +175,9 @@ const Page = () => {
               </Col>
             </Row>
           </MarginBottom>
-        </Section>
+        </Container>
+      </Background>
+      <Container>
         <Section>
           <Row>
             <Col md={6}>
