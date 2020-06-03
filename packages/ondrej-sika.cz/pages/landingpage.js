@@ -23,7 +23,6 @@ import Companies from "@app/ondrejsika-theme/components/Lp-companies";
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
-  font-size: 45px;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
