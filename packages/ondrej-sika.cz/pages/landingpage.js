@@ -5,7 +5,7 @@ import ondrej_chair from "@app/data/pictures/landing-page/ondrej_chair.png";
 import ondrej_mac from "@app/data/pictures/landing-page/ondrej_mac.png";
 import ondrej_training from "@app/data/pictures/landing-page/ondrej_training.png";
 import ondrej_table from "@app/data/pictures/landing-page/ondrej_table.png";
-import ondrej_consulting from "@app/data/pictures/landing-page/ondrej_consulting.png";
+// import ondrej_consulting from "@app/data/pictures/landing-page/ondrej_consulting.png";
 
 import mail from "@app/data/pictures/landing-page/mail-blue.svg";
 import mail_grey from "@app/data/pictures/landing-page/mail.svg";
@@ -47,9 +47,10 @@ const Img = styled.img`
 const RoomyRow = styled(Row)`
   margin-top: 3em;
 `;
-const PaddingTop = styled.div`
-  padding-top: 6em;
-`;
+
+// const PaddingTop = styled.div`
+//   padding-top: 6em;
+// `;
 
 const MarginBottom = styled.div`
   margin-bottom: 6em;
@@ -221,15 +222,16 @@ const Page = () => {
             <RoomyRow>
               <Col md={8}>
                 <Text white>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                  aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                  dolor in hendrerit in vulputate velit esse molestie consequat,
-                  vel illum dolore eu feugiat nulla facilisis at vero eros et
-                  accumsan et iusto odio dignissim qui blandit praesent luptatum
-                  zzril delenit augue duis dolore te feugait nulla facilisi.
+                  K projektu prvního a nejúspěšnějšího Bitcoinového těžařského
+                  poolu v společnosti Braiins System jsem se přidal v čase jeho
+                  kompletního přepisování a škálování na robustnější
+                  infrastrukturu. Náročné požadavky na sofistikovanou a
+                  distribuovanou IT infrastrukturu stávající z desítek serverů
+                  rozmístěných na třech kontinentech nedávaly jinou možnost jako
+                  hned od začátku nasadit ty nejnovější DevOps technologie. Měl
+                  jsem tedy unikátní možnost osahat si open-source DevOps
+                  technologie a 5 let pracovat s týmem skvělých IT architektů a
+                  vizionářů - Honzou Čapkem, Pavlem Moravcem a Markem Palatinem.
                 </Text>
               </Col>
             </RoomyRow>
@@ -243,27 +245,33 @@ const Page = () => {
               <Img src={ondrej_table}></Img>
             </Col>
             <Col md={7}>
-              <SectionHeader>PROČ SE MNOU?</SectionHeader>
+              <SectionHeader>PROČ DO TOHO JÍT SE MNOU?</SectionHeader>
               <Text>
                 <Row>
                   <Col md={6}>
                     <Li>
-                      <H3>Zkušenosti</H3>
+                      <H3>Dlouholeté zkušenosti</H3>
                     </Li>
                   </Col>
                   <Col md={6}>
                     <Li>
-                      <H3>Reference</H3>
+                      <H3>
+                        Komplexní <br />
+                        pohled
+                      </H3>
                     </Li>
                   </Col>
                   <Col md={6}>
                     <Li>
-                      <H3>Otevřenost</H3>
+                      <H3>
+                        Výborné <br />
+                        reference
+                      </H3>
                     </Li>
                   </Col>
                   <Col md={6}>
                     <Li>
-                      <H3>Komplexní pohled</H3>
+                      <H3>Maximální otevřenost</H3>
                     </Li>
                   </Col>
                 </Row>
@@ -272,7 +280,7 @@ const Page = () => {
           </RoomyRow>
         </Section>
       </Background>
-      <Container>
+      {/* <Container>
         <Section>
           <Center>
             <SectionHeader>IMPLEMENTATION STUDY</SectionHeader>
@@ -340,7 +348,7 @@ const Page = () => {
             </Col>
           </Row>
         </Section>
-      </Container>
+      </Container> */}
       <Background blue>
         <Container>
           <Row>
