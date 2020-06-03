@@ -30,11 +30,6 @@ const TextBeige = styled.span`
   color: #c8bfb0 !important;
 `;
 
-const HeaderBox = styled.div`
-  width: 1078px;
-  padding: 5em 0 6em 0;
-`;
-
 const Center = styled.div`
   text-align: center;
 `;
@@ -59,8 +54,6 @@ const OndMac = styled.img`
 `;
 
 const Li = styled.li`
-  font-size: 1.75rem;
-  color: #131480;
   list-style: none;
   padding: 1em 1em 1em 2em;
   :after {
@@ -74,6 +67,15 @@ const Li = styled.li`
     top: 1.45em;
     left: 0;
   }
+`;
+const H3 = styled.h3`
+  font-size: 1.75rem;
+  color: #131480;
+  ${props =>
+    props.white &&
+    css`
+      color: white !important;
+    `}
 `;
 const Page = () => {
   const Background = styled.div`
@@ -96,6 +98,17 @@ const Page = () => {
         background-color: #ececec;
       `}
   `;
+
+  const HeaderBox = styled.div`
+    width: 1078px;
+    padding: 5em 0 6em 0;
+    ${props =>
+      props.big &&
+      css`
+        padding: 6em 0 6em 0 !important;
+      `}
+  `;
+
   return (
     <>
       <Background img={ondrej_chair} blue>
@@ -204,16 +217,24 @@ const Page = () => {
               <Text>
                 <Row>
                   <Col md={6}>
-                    <Li>Zkušenosti</Li>
+                    <Li>
+                      <H3>Zkušenosti</H3>
+                    </Li>
                   </Col>
                   <Col md={6}>
-                    <Li>Reference</Li>
+                    <Li>
+                      <H3>Reference</H3>
+                    </Li>
                   </Col>
                   <Col md={6}>
-                    <Li>Otevřenost</Li>
+                    <Li>
+                      <H3>Otevřenost</H3>
+                    </Li>
                   </Col>
                   <Col md={6}>
-                    <Li>Komplexní pohled</Li>
+                    <Li>
+                      <H3>Komplexní pohled</H3>
+                    </Li>
                   </Col>
                 </Row>
               </Text>
@@ -230,9 +251,9 @@ const Page = () => {
             <Col md={12}>
               <Center>
                 {" "}
-                <h3>
+                <H3>
                   1<br /> text text
-                </h3>
+                </H3>
                 <Text>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                   diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -248,9 +269,9 @@ const Page = () => {
             </Col>
             <Col md={7}>
               <Center>
-                <h3>
+                <H3>
                   2<br /> text text
-                </h3>
+                </H3>
               </Center>
               <Text>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -269,9 +290,9 @@ const Page = () => {
             </Col>
             <Col md={12}>
               <Center>
-                <h3>
+                <H3>
                   3<br /> text text
-                </h3>
+                </H3>
               </Center>
               <Text>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -288,6 +309,29 @@ const Page = () => {
           </Row>
         </Section>
       </Container>
+      <Background blue>
+        <Container>
+          <Row>
+            <Col md={6}>
+              <HeaderBox>
+                <MainTitle>
+                  <TextBeige>Ondřej Šika</TextBeige>
+                </MainTitle>
+                <Text white>ondrej@sika.io</Text>
+                <Text white>+420 773 452 376</Text>
+              </HeaderBox>
+            </Col>
+            <Col md={6}>
+              <HeaderBox big>
+                <H3 white>Máte zájem o moje služby?</H3>
+                <Button inverse href="#">
+                  Napište mi
+                </Button>
+              </HeaderBox>
+            </Col>
+          </Row>
+        </Container>
+      </Background>
     </>
   );
 };
