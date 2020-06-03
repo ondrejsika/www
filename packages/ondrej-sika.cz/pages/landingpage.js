@@ -36,7 +36,6 @@ const HeaderBox = styled.div`
 
 const Center = styled.div`
   text-align: center;
-  /* margin: 3em 0; */
 `;
 
 const Img = styled.img`
@@ -61,7 +60,20 @@ const OndMac = styled.img`
 const Li = styled.li`
   font-size: 1.75rem;
   color: #131480;
-  padding: 1em 0;
+  list-style: none;
+  /* padding-left: 1em; */
+  padding: 1em 1em 1em 2em;
+  :after {
+    content: "";
+    height: 0.5em;
+    width: 0.5em;
+    background: #131480;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 1.45em;
+    left: 0;
+  }
 `;
 const Page = () => {
   const Background = styled.div`
