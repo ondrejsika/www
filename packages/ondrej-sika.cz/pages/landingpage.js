@@ -1,9 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
 import ondrej_chair from "@app/data/pictures/landing-page/ondrej_chair.png";
 import ondrej_mac from "@app/data/pictures/landing-page/ondrej_mac.png";
 import ondrej_training from "@app/data/pictures/landing-page/ondrej_training.png";
+import ondrej_table from "@app/data/pictures/landing-page/ondrej_table.png";
 
 import Button from "@app/ondrejsika-theme/components/Lp-button";
 import Text from "@app/ondrejsika-theme/components/Lp-text";
@@ -57,9 +58,13 @@ const OndMac = styled.img`
   margin-bottom: -508px;
 `;
 
+const Li = styled.li`
+  font-size: 1.75rem;
+  color: #131480;
+  padding: 1em 0;
+`;
 const Page = () => {
-  const BackgroundBlue = styled.div`
-    background-color: #131480;
+  const Background = styled.div`
     padding: 1em 0 2em 0;
     background-image: url(${props => props.img});
     background-repeat: no-repeat;
@@ -68,11 +73,20 @@ const Page = () => {
     overflow: visible;
     height: 100%;
     width: 100%;
-    /* position: absolute; */
+    ${props =>
+      props.blue &&
+      css`
+        background-color: #131480;
+      `}
+    ${props =>
+      props.light_grey &&
+      css`
+        background-color: #ececec;
+      `}
   `;
   return (
     <>
-      <BackgroundBlue img={ondrej_chair}>
+      <Background img={ondrej_chair} blue>
         <Container>
           <HeaderBox>
             <MainTitle>
@@ -90,7 +104,7 @@ const Page = () => {
             </Button>
           </HeaderBox>
         </Container>
-      </BackgroundBlue>
+      </Background>
       <Container>
         <Section>
           <Center>
@@ -143,7 +157,7 @@ const Page = () => {
           </RoomyRow>
         </Section>
       </Container>
-      <BackgroundBlue>
+      <Background blue>
         <Container>
           <Section>
             <SectionHeader white tight>
@@ -166,7 +180,38 @@ const Page = () => {
             </RoomyRow>
           </Section>
         </Container>
-      </BackgroundBlue>
+      </Background>
+      <Background light_grey>
+        <Section>
+          <RoomyRow>
+            <Col md={5}>
+              <Img src={ondrej_table}></Img>
+            </Col>
+            <Col md={7}>
+              {/* <Center> */}
+              <SectionHeader>PROČ SE MNOU?</SectionHeader>
+              {/* </Center> */}
+              <Text>
+                <Row>
+                  <Col md={6}>
+                    <Li>Zkušenosti</Li>
+                  </Col>
+                  <Col md={6}>
+                    <Li>Reference</Li>
+                  </Col>
+                  <Col md={6}>
+                    <Li>Otevřenost</Li>
+                  </Col>
+                  <Col md={6}>
+                    <Li>Komplexní pohled</Li>
+                  </Col>
+                </Row>
+              </Text>
+            </Col>
+          </RoomyRow>
+        </Section>
+        {/* </Container> */}
+      </Background>
     </>
   );
 };
