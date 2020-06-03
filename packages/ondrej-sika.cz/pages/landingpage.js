@@ -61,7 +61,6 @@ const Li = styled.li`
   font-size: 1.75rem;
   color: #131480;
   list-style: none;
-  /* padding-left: 1em; */
   padding: 1em 1em 1em 2em;
   :after {
     content: "";
@@ -200,9 +199,7 @@ const Page = () => {
               <Img src={ondrej_table}></Img>
             </Col>
             <Col md={7}>
-              {/* <Center> */}
               <SectionHeader>PROČ SE MNOU?</SectionHeader>
-              {/* </Center> */}
               <Text>
                 <Row>
                   <Col md={6}>
@@ -222,7 +219,6 @@ const Page = () => {
             </Col>
           </RoomyRow>
         </Section>
-        {/* </Container> */}
       </Background>
     </>
   );
