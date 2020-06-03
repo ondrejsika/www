@@ -19,9 +19,11 @@ const MainTitle = styled.h1`
   opacity: 1;
   color: white;
 `;
+
 const Section = styled.div`
   margin: 3em 0;
 `;
+
 const TextBeige = styled.span`
   color: #c8bfb0 !important;
 `;
@@ -40,18 +42,21 @@ const Img = styled.img`
   max-width: 100%;
   height: auto;
 `;
+
 const RoomyRow = styled(Row)`
   margin-top: 3em;
 `;
+
 const MarginBottom = styled.div`
   margin-bottom: 6em;
 `;
+
 const OndMac = styled.img`
   height: 700px;
   margin-top: -100px;
-
-  margin-bottom: -450px;
+  margin-bottom: -508px;
 `;
+
 const Page = () => {
   const BackgroundBlue = styled.div`
     background-color: #131480;
