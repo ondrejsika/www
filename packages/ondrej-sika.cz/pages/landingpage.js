@@ -285,7 +285,8 @@ const Page = () => {
                   <Col md={6}>
                     <Li>
                       <H3>
-                        Komplexní <br />Î pohled
+                        Komplexní <br />
+                        pohled
                       </H3>
                     </Li>
                   </Col>
