@@ -1,6 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
+import Head from "next/head";
+
 import ondrej_chair from "@app/data/pictures/landing-page/ondrej_chair.png";
 import ondrej_mac from "@app/data/pictures/landing-page/ondrej_mac.png";
 import ondrej_training from "@app/data/pictures/landing-page/ondrej_training.png";
@@ -58,8 +60,20 @@ const MarginBottom = styled.div`
 
 const OndMac = styled.img`
   height: 700px;
+
   margin-top: -100px;
-  margin-bottom: -508px;
+  margin-bottom: -665px;
+
+  @media (max-width: 1319px) {
+    margin-bottom: -620px;
+  }
+  @media (min-width: 1091px) {
+    margin-top: -100px;
+    margin-bottom: -665px;
+  }
+  @media (max-width: 1091px) {
+    display: none;
+  }
 `;
 
 const Li = styled.li`
@@ -94,6 +108,10 @@ const Page = () => {
     overflow: visible;
     height: 100%;
     width: 100%;
+    @media only screen and (max-width: 1319px) {
+      background-image: none;
+    }
+
     ${props =>
       props.blue &&
       css`
@@ -107,7 +125,6 @@ const Page = () => {
   `;
 
   const HeaderBox = styled.div`
-    width: 1078px;
     padding: 5em 0 6em 0;
     ${props =>
       props.big &&
@@ -133,6 +150,16 @@ const Page = () => {
 
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <Background img={ondrej_chair} blue>
         <Container>
           <HeaderBox>
@@ -206,7 +233,7 @@ const Page = () => {
                 Poslat email
               </Button>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={false}>
               <OndMac src={ondrej_mac} />
             </Col>
           </RoomyRow>
@@ -219,7 +246,7 @@ const Page = () => {
               MŮJ PŘÍBĚH
             </SectionHeader>
             <RoomyRow>
-              <Col md={8}>
+              <Col lg={8} md={12}>
                 <Text white>
                   K projektu prvního a nejúspěšnějšího Bitcoinového těžařského
                   poolu v společnosti Braiins System jsem se přidal v čase jeho
@@ -249,14 +276,16 @@ const Page = () => {
                 <Row>
                   <Col md={6}>
                     <Li>
-                      <H3>Dlouholeté zkušenosti</H3>
+                      <H3>
+                        Dlouholeté <br />
+                        zkušenosti
+                      </H3>
                     </Li>
                   </Col>
                   <Col md={6}>
                     <Li>
                       <H3>
-                        Komplexní <br />
-                        pohled
+                        Komplexní <br />Î pohled
                       </H3>
                     </Li>
                   </Col>
@@ -270,7 +299,10 @@ const Page = () => {
                   </Col>
                   <Col md={6}>
                     <Li>
-                      <H3>Maximální otevřenost</H3>
+                      <H3>
+                        Maximální <br />
+                        otevřenost
+                      </H3>
                     </Li>
                   </Col>
                 </Row>
