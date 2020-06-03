@@ -372,7 +372,6 @@
       - DigitalOcean account [if you don't have one yet, please use my referral and get 50 USD credit](https://sika.link/do-ref)
       - Access to the internet (https, ssh) - better without corporate proxy
 
-
 - id: git
   skoleniio:
     name: git
@@ -836,7 +835,8 @@
     in_house:
       cz: 25 000 CZK
   twitter_recommendations:
-    cs: []
+    cs:
+      - radim-daniel-panek-terraform
   recommendations:
     cs: ["oxy", "oxyshop", "sit"]
   agenda:
