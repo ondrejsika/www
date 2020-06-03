@@ -21,7 +21,7 @@ const Companies = () => (
   <>
     <Row>
       {[eltodo, eon, fio, kb, cgi, homecredit, o2, cs, zoot].map((img, i) => (
-        <Col md={4} key={i}>
+        <Col md={4} sm={6} xs={6} key={i}>
           <Img src={img} className="img-fluid" alt="default" />
         </Col>
       ))}
