@@ -188,16 +188,16 @@ const Page = () => {
 
           <MarginBottom>
             <Row>
-              <Col md={4}>
+              <Col md={4} sm={12}>
                 <Box
                   text="Zavedu open-source DevOps do Vaší firmy. Nastavím nástroje a procesy
                     tak, abyste automaticky, spolehlivě a rychle doručovali novou funkcionalitu Vašim zákazníkům."
                 />
               </Col>
-              <Col md={4}>
+              <Col md={4} sm={12}>
                 <Box text="Vyřeším Váš konkrétní problém formou konzultací, čímž se vyvarujete zbytečných a drahých chyb. Já a můj team Vám budeme oporou při provozu Vaší DevOps infrastruktury formou jednoho z našich support plánů." />
               </Col>
-              <Col md={4}>
+              <Col md={4} sm={12}>
                 <Box text="Vyškolím Váš team tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vase DevOps prostředí." />
               </Col>
             </Row>
@@ -230,7 +230,7 @@ const Page = () => {
             <Col md={4}>
               <Button href="mailto:ondrej@sika.io">
                 <IconBtn padding_right src={mail_grey} />
-                Poslat email
+                Poslat&nbsp;email
               </Button>
             </Col>
             <Col md={4} sm={false}>
