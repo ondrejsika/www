@@ -164,8 +164,7 @@ const Page = () => {
               <Col md={4}>
                 <Box
                   text="Zavedu open-source DevOps do Vaší firmy. Nastavím nástroje a procesy
-                          tak, abyste automaticky, spolehlivě a rychle doručovali novou
-                          funkcionalitu Vašim zákazníkům."
+                    tak, abyste automaticky, spolehlivě a rychle doručovali novou funkcionalitu Vašim zákazníkům."
                 />
               </Col>
               <Col md={4}>
@@ -196,13 +195,13 @@ const Page = () => {
           <SectionHeader>KONTAKTUJTE MĚ</SectionHeader>
           <RoomyRow>
             <Col md={4}>
-              <Button href="#">
+              <Button href="tel:+420773452376">
                 <IconBtn padding_right src={phone} />
                 Zavolat
               </Button>
             </Col>
             <Col md={4}>
-              <Button href="#">
+              <Button href="mailto:ondrej@sika.io">
                 <IconBtn padding_right src={mail_grey} />
                 Poslat email
               </Button>
@@ -364,7 +363,7 @@ const Page = () => {
             <Col md={6}>
               <HeaderBox big>
                 <H3 white>Máte zájem o moje služby?</H3>
-                <Button inverse huge href="#">
+                <Button inverse huge href="mailto:ondrej@sika.io">
                   <img src={mail} /> Napište mi
                 </Button>
               </HeaderBox>
