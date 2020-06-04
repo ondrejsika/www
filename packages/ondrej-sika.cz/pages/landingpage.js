@@ -26,6 +26,11 @@ const MainTitle = styled.h1`
   letter-spacing: 0px;
   opacity: 1;
   color: white;
+
+  font-size: 2.5rem;
+  @media (max-width: 1200px) {
+    font-size: 2rem;
+  }
 `;
 
 const Section = styled.div`
