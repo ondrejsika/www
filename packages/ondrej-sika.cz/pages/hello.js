@@ -3,10 +3,10 @@ import styled, { css } from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
 import Head from "next/head";
 
-import ondrej_chair from "@app/data/pictures/landing-page/ondrej_chair.webp";
-import ondrej_mac from "@app/data/pictures/landing-page/ondrej_mac.webp";
-import ondrej_training from "@app/data/pictures/landing-page/ondrej_training.webp";
-import ondrej_table from "@app/data/pictures/landing-page/ondrej_table.webp";
+import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
+import ondrej_mac from "@app/data/pictures/landing-page/tinipng/ondrej_mac.png";
+import ondrej_training from "@app/data/pictures/landing-page/tinipng/ondrej_training.png";
+import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
 // import ondrej_consulting from "@app/data/pictures/landing-page/ondrej_consulting.png";
 
 // import mail from "@app/data/pictures/landing-page/mail-blue.svg";
