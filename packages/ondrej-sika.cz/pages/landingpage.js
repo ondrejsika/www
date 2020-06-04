@@ -227,13 +227,13 @@ const Page = () => {
         <Section>
           <SectionHeader>KONTAKTUJTE MĚ</SectionHeader>
           <RoomyRow>
-            <Col md={4}>
+            <Col lg={4} md={6}>
               <Button href="tel:+420773452376">
                 {/* <IconBtn padding_right src={phone} /> */}
                 Zavolat
               </Button>
             </Col>
-            <Col md={4}>
+            <Col lg={4} md={6}>
               <Button href="mailto:ondrej@sika.io">
                 {/* <IconBtn padding_right src={mail_grey} /> */}
                 Poslat&nbsp;email
