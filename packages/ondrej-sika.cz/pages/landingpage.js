@@ -62,24 +62,6 @@ const MarginBottom = styled.div`
   margin-bottom: 6em;
 `;
 
-const OndMac = styled.img`
-  height: 700px;
-
-  margin-top: -100px;
-  margin-bottom: -665px;
-
-  @media (max-width: 1319px) {
-    margin-bottom: -620px;
-  }
-  @media (min-width: 1091px) {
-    margin-top: -100px;
-    margin-bottom: -665px;
-  }
-  @media (max-width: 1091px) {
-    display: none;
-  }
-`;
-
 const Li = styled.li`
   list-style: none;
   padding: 1em 1em 1em 2em;
@@ -246,13 +228,10 @@ const Page = () => {
                 Poslat&nbsp;email
               </Button>
             </Col>
-            <Col md={4} sm={false}>
-              <OndMac src={ondrej_mac} />
-            </Col>
           </RoomyRow>
         </Section>
       </Container>
-      <Background blue>
+      <Background blue style={{ position: "relative" }}>
         <Container>
           <Section>
             <SectionHeader white tight>
@@ -276,6 +255,18 @@ const Page = () => {
             </RoomyRow>
           </Section>
         </Container>
+        <Col
+          className="d-none d-lg-block"
+          lg={4}
+          style={{
+            position: "absolute",
+            right: "0",
+            bottom: "0",
+            overflowX: "hidden"
+          }}
+        >
+          <img src={ondrej_mac} style={{ height: "800px" }} />
+        </Col>
       </Background>
       <Background light_grey>
         <Section>
