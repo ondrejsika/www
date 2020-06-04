@@ -185,15 +185,32 @@ const Page = () => {
             <Row>
               <Col md={4} sm={12}>
                 <Box
+                  header="IMPLEMENTACE DEVOPS PIPELINE"
                   text="Zavedu open-source DevOps do Vaší firmy. Nastavím nástroje a procesy
                     tak, abyste automaticky, spolehlivě a rychle doručovali novou funkcionalitu Vašim zákazníkům."
                 />
               </Col>
               <Col md={4} sm={12}>
-                <Box text="Vyřeším Váš konkrétní problém formou konzultací, čímž se vyvarujete zbytečných a drahých chyb. Já a můj team Vám budeme oporou při provozu Vaší DevOps infrastruktury formou jednoho z našich support plánů." />
+                <Box
+                  header={
+                    <span>
+                      KONZULTACE
+                      <br />& SUPPORT
+                    </span>
+                  }
+                  text="Vyřeším Váš konkrétní problém formou konzultací, čímž se vyvarujete zbytečných a drahých chyb. Já a můj team Vám budeme oporou při provozu Vaší DevOps infrastruktury formou jednoho z našich support plánů."
+                />
               </Col>
               <Col md={4} sm={12}>
-                <Box text="Vyškolím Váš team tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vase DevOps prostředí." />
+                <Box
+                  header={
+                    <span>
+                      ŠKOLENÍ
+                      <br /> VAŠEHO TÝMU
+                    </span>
+                  }
+                  text="Vyškolím Váš team tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vase DevOps prostředí."
+                />
               </Col>
             </Row>
           </MarginBottom>

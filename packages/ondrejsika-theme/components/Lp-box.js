@@ -11,23 +11,31 @@ const Border = styled.div`
   box-shadow: 8px 11px 20px #00000029;
   border-top: 5px solid #131480;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+
+  /* height: 90%; */
+  /* display: flex; */
+  /* flex-direction: column; */
 `;
 const Wrapper = styled.div`
   padding: 2em 1em 0 1em;
 `;
 
+const Flex = styled.div`
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+`;
+
 const Box = props => {
   return (
-    <>
-      <Header>IMPLEMENTACE DEVOPS PIPELINE</Header>
+    <Flex>
+      <Header>{props.header}</Header>
       <Border>
         <Wrapper>
           <Text>{props.text}</Text>
         </Wrapper>
       </Border>
-    </>
+    </Flex>
   );
 };
 
