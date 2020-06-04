@@ -193,7 +193,7 @@ const Page = () => {
                     <br />& SUPPORT
                   </span>
                 }
-                text="Vyřeším Váš konkrétní problém formou konzultací, čímž se vyvarujete zbytečných a drahých chyb. Já a můj team Vám budeme oporou při provozu Vaší DevOps infrastruktury formou jednoho z našich support plánů."
+                text="Vyřeším Váš konkrétní problém formou konzultací, čímž se vyvarujete zbytečných a drahých chyb. Já a můj tým Vám budeme oporou při provozu Vaší DevOps infrastruktury formou jednoho z našich support plánů."
               />
             </Col>
             <Col md={4} sm={12}>
@@ -204,7 +204,7 @@ const Page = () => {
                     <br /> VAŠEHO TÝMU
                   </span>
                 }
-                text="Vyškolím Váš team tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vase DevOps prostředí."
+                text="Vyškolím Váš tým tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vaše DevOps prostředí."
               />
             </Col>
           </Row>
@@ -252,7 +252,7 @@ const Page = () => {
               <Col lg={8} md={12}>
                 <Text white>
                   K projektu prvního a nejúspěšnějšího Bitcoinového těžařského
-                  poolu v společnosti Braiins System jsem se přidal v čase jeho
+                  poolu v společnosti Braiins Systems jsem se přidal v čase jeho
                   kompletního přepisování a škálování na robustnější
                   infrastrukturu. Náročné požadavky na sofistikovanou a
                   distribuovanou IT infrastrukturu stávající z desítek serverů
