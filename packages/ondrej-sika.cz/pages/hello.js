@@ -231,9 +231,9 @@ const Page = () => {
           <SectionHeader>KONTAKTUJTE MĚ</SectionHeader>
           <RoomyRow>
             <Col lg={4} md={6}>
-              <Button href="tel:+420773452376">
+              <Button href="https://calendly.com/ondrejsika/evening-call">
                 {/* <IconBtn padding_right src={phone} /> */}
-                Zavolat
+                Naplanujte hovor
               </Button>
             </Col>
             <Col lg={4} md={6}>
