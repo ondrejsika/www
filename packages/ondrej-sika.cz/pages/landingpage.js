@@ -281,7 +281,7 @@ const Page = () => {
       </Background>
       <Background light_grey>
         <Section>
-          <RoomyRow>
+          <RoomyRow style={{ marginRight: "0" }}>
             <Col md={5} sm={12}>
               <Img src={ondrej_table}></Img>
             </Col>
