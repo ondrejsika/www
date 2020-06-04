@@ -279,52 +279,50 @@ const Page = () => {
       </Background>
       <Background light_grey>
         <Section>
-          <Container>
-            <RoomyRow>
-              <Col md={5} sm={12}>
-                <Img src={ondrej_table}></Img>
-              </Col>
-              <Col md={7} sm={12}>
-                <SectionHeader>PROČ DO TOHO JÍT SE MNOU?</SectionHeader>
-                <Text>
-                  <Row>
-                    <Col md={6}>
-                      <Li>
-                        <H3>
-                          Dlouholeté <br />
-                          zkušenosti
-                        </H3>
-                      </Li>
-                    </Col>
-                    <Col md={6}>
-                      <Li>
-                        <H3>
-                          Komplexní <br />
-                          pohled
-                        </H3>
-                      </Li>
-                    </Col>
-                    <Col md={6}>
-                      <Li>
-                        <H3>
-                          Výborné <br />
-                          reference
-                        </H3>
-                      </Li>
-                    </Col>
-                    <Col md={6}>
-                      <Li>
-                        <H3>
-                          Maximální <br />
-                          otevřenost
-                        </H3>
-                      </Li>
-                    </Col>
-                  </Row>
-                </Text>
-              </Col>
-            </RoomyRow>
-          </Container>
+          <RoomyRow>
+            <Col md={5} sm={12}>
+              <Img src={ondrej_table}></Img>
+            </Col>
+            <Col md={7} sm={12}>
+              <SectionHeader>PROČ DO TOHO JÍT SE MNOU?</SectionHeader>
+              <Text>
+                <Row>
+                  <Col md={6}>
+                    <Li>
+                      <H3>
+                        Dlouholeté <br />
+                        zkušenosti
+                      </H3>
+                    </Li>
+                  </Col>
+                  <Col md={6}>
+                    <Li>
+                      <H3>
+                        Komplexní <br />
+                        pohled
+                      </H3>
+                    </Li>
+                  </Col>
+                  <Col md={6}>
+                    <Li>
+                      <H3>
+                        Výborné <br />
+                        reference
+                      </H3>
+                    </Li>
+                  </Col>
+                  <Col md={6}>
+                    <Li>
+                      <H3>
+                        Maximální <br />
+                        otevřenost
+                      </H3>
+                    </Li>
+                  </Col>
+                </Row>
+              </Text>
+            </Col>
+          </RoomyRow>
         </Section>
       </Background>
       {/* <Container>
