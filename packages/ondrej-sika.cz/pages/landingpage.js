@@ -51,7 +51,7 @@ const Img = styled.img`
 `;
 
 const RoomyRow = styled(Row)`
-  margin-top: 3em;
+  margin-bottom: 4em;
 `;
 
 // const PaddingTop = styled.div`
