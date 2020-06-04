@@ -139,7 +139,9 @@ const Page = () => {
 
   return (
     <>
-      <Head></Head>
+      <Head>
+        <title>Ondrej Sika</title>
+      </Head>
       <Background blue paddingBottom="0">
         <Container>
           <Row>
