@@ -45,9 +45,9 @@ let Layout = props => {
       <DevelopmentBar />
       <div id="home" />
       {props.LanguageSwitch}
-      {props.Navbar}
+      {!(props.meta && props.meta.noNavbar) && props.Navbar}
       <div className="content">{props.children}</div>
-      {props.Footer}
+      {!(props.meta && props.meta.noFooter) && props.Footer}
       <BootstrapJS />
       <Gauges gauges_site_id={props.site.gauges_site_id} />
       <GoogleAnalytics
