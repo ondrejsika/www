@@ -9,10 +9,10 @@ import ondrej_training from "@app/data/pictures/landing-page/ondrej_training.png
 import ondrej_table from "@app/data/pictures/landing-page/ondrej_table.png";
 // import ondrej_consulting from "@app/data/pictures/landing-page/ondrej_consulting.png";
 
-import mail from "@app/data/pictures/landing-page/mail-blue.svg";
-import mail_grey from "@app/data/pictures/landing-page/mail.svg";
-import arrow from "@app/data/pictures/landing-page/arrow.svg";
-import phone from "@app/data/pictures/landing-page/phone.svg";
+// import mail from "@app/data/pictures/landing-page/mail-blue.svg";
+// import mail_grey from "@app/data/pictures/landing-page/mail.svg";
+// import arrow from "@app/data/pictures/landing-page/arrow.svg";
+// import phone from "@app/data/pictures/landing-page/phone.svg";
 
 import Button from "@app/ondrejsika-theme/components/Lp-button";
 import Text from "@app/ondrejsika-theme/components/Lp-text";
@@ -119,20 +119,20 @@ const Page = () => {
       `}
   `;
 
-  const IconBtn = styled.img`
-    vertical-align: text-top;
-    height: 20px;
-    ${props =>
-      props.padding_right &&
-      css`
-        padding-right: 10px;
-      `}
-    ${props =>
-      props.padding_left &&
-      css`
-        padding-left: 10px;
-      `}
-  `;
+  // const IconBtn = styled.img`
+  //   vertical-align: text-top;
+  //   height: 20px;
+  //   ${props =>
+  //     props.padding_right &&
+  //     css`
+  //       padding-right: 10px;
+  //     `}
+  //   ${props =>
+  //     props.padding_left &&
+  //     css`
+  //       padding-left: 10px;
+  //     `}
+  // `;
 
   return (
     <>
@@ -162,7 +162,7 @@ const Page = () => {
               </Text>
               <Button inverse href="#help">
                 Zjistit vice
-                <IconBtn padding_left src={arrow} />
+                {/* <IconBtn padding_left src={arrow} /> */}
               </Button>
             </Col>
             <Col lg={5}>
@@ -229,13 +229,13 @@ const Page = () => {
           <RoomyRow>
             <Col md={4}>
               <Button href="tel:+420773452376">
-                <IconBtn padding_right src={phone} />
+                {/* <IconBtn padding_right src={phone} /> */}
                 Zavolat
               </Button>
             </Col>
             <Col md={4}>
               <Button href="mailto:ondrej@sika.io">
-                <IconBtn padding_right src={mail_grey} />
+                {/* <IconBtn padding_right src={mail_grey} /> */}
                 Poslat&nbsp;email
               </Button>
             </Col>
@@ -412,7 +412,8 @@ const Page = () => {
               <HeaderBox big>
                 <H3 white>Máte zájem o moje služby?</H3>
                 <Button inverse huge href="mailto:ondrej@sika.io">
-                  <img src={mail} /> Napište mi
+                  {/* <img src={mail} />  */}
+                  Napište mi
                 </Button>
               </HeaderBox>
             </Col>
