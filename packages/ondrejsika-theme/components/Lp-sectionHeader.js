@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 const Wrapper = styled.div`
-  padding: 4em 1em;
+  padding: 4em 0;
   ${props =>
     props.tight &&
     css`
