@@ -19,7 +19,11 @@ const Button = props => {
     box-shadow: 9px 9px 6px #00000029;
     border-radius: 54px;
     color: white;
-
+    &:hover {
+      background: #c8bfb0;
+      color: #131480;
+      text-decoration: none;
+    }
     ${props =>
       props.inverse &&
       css`
@@ -27,6 +31,12 @@ const Button = props => {
         box-shadow: 9px 9px 6px #00000029;
         border-radius: 54px;
         color: #131480;
+        &:hover {
+          background: #131480;
+          color: #c8bfb0;
+          text-decoration: none;
+          border: 1px solid #c8bfb0;
+        }
       `}
     ${props =>
       props.huge &&
