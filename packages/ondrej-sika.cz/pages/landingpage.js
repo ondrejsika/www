@@ -150,7 +150,7 @@ const Page = () => {
         <Container>
           <Row>
             <Col lg={7}>
-              <MainTitle>
+              <MainTitle className="pt-md-5">
                 Jsem <TextBeige>Ondřej Šika</TextBeige>
                 <br /> a pomohu vám s open-source
                 <br />
