@@ -435,5 +435,13 @@ const Page = () => {
     </>
   );
 };
+Page.getInitialProps = () => {
+  return {
+    meta: {
+      noNavbar: true,
+      noFooter: true
+    }
+  };
+};
 
 export default Page;
