@@ -157,7 +157,7 @@ const Page = () => {
                 připravíme Vaši IT architekturu na rapidní škálování.
               </Text>
               <Button inverse href="#help">
-                Zjistit vice
+                Zjistit více
                 {/* <IconBtn padding_left src={arrow} /> */}
               </Button>
             </Col>
@@ -226,7 +226,7 @@ const Page = () => {
             <Col lg={4} md={6}>
               <Button href="https://calendly.com/ondrejsika/evening-call">
                 {/* <IconBtn padding_right src={phone} /> */}
-                Naplanujte hovor
+                Naplánujte hovor
               </Button>
             </Col>
             <Col lg={4} md={6}>
