@@ -70,6 +70,9 @@ const Li = styled.li`
     top: 1.35em;
     left: 0;
   }
+  :before {
+    display: none;
+  }
 `;
 const H3 = styled.h3`
   font-size: 1.75rem;
