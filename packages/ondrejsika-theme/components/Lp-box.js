@@ -24,6 +24,7 @@ const Flex = styled.div`
   display: flex;
   height: 100%;
   flex-direction: column;
+  padding-bottom: 2em;
 `;
 
 const Box = props => {
