@@ -110,7 +110,11 @@ const Page = () => {
     @media only screen and (max-width: 1319px) {
       background-image: none;
     }
-
+    ${props =>
+      props.paddingBottom &&
+      css`
+        padding-bottom: ${props.paddingBottom};
+      `}
     ${props =>
       props.blue &&
       css`
@@ -159,24 +163,29 @@ const Page = () => {
           rel="stylesheet"
         />
       </Head>
-      <Background img={ondrej_chair} blue>
+      <Background blue paddingBottom="0">
         <Container>
-          <HeaderBox>
-            <MainTitle>
-              Jsem <TextBeige>Ondřej Šika</TextBeige>
-              <br /> a pomohu vám s open-source
-              <br />
-              <TextBeige>DevOps technologiemi</TextBeige>!
-            </MainTitle>
-            <Text white>
-              Snížime spolu náklady na IT, vyřešíme technologický dluh a
-              připravíme Vaši IT architekturu na rapidní škálování.
-            </Text>
-            <Button inverse href="#">
-              Zjistit vice
-              <IconBtn padding_left src={arrow} />
-            </Button>
-          </HeaderBox>
+          <Row>
+            <Col lg={7}>
+              <MainTitle>
+                Jsem <TextBeige>Ondřej Šika</TextBeige>
+                <br /> a pomohu vám s open-source
+                <br />
+                <TextBeige>DevOps technologiemi</TextBeige>!
+              </MainTitle>
+              <Text white>
+                Snížime spolu náklady na IT, vyřešíme technologický dluh a
+                připravíme Vaši IT architekturu na rapidní škálování.
+              </Text>
+              <Button inverse href="#">
+                Zjistit vice
+                <IconBtn padding_left src={arrow} />
+              </Button>
+            </Col>
+            <Col lg={5}>
+              <img src={ondrej_chair} className="img-fluid" />
+            </Col>
+          </Row>
         </Container>
       </Background>
       <Background light_grey>
