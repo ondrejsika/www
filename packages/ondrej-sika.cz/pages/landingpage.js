@@ -160,7 +160,7 @@ const Page = () => {
                 Snížime spolu náklady na IT, vyřešíme technologický dluh a
                 připravíme Vaši IT architekturu na rapidní škálování.
               </Text>
-              <Button inverse href="#">
+              <Button inverse href="#help">
                 Zjistit vice
                 <IconBtn padding_left src={arrow} />
               </Button>
@@ -171,7 +171,7 @@ const Page = () => {
           </Row>
         </Container>
       </Background>
-      <Background light_grey>
+      <Background light_grey id="help">
         <Container>
           <Center>
             <SectionHeader>S ČÍM VÁM POMOHU</SectionHeader>
