@@ -397,7 +397,7 @@ const Page = () => {
         </Section>
       </Container> */}
       <Background blue>
-        <Container>
+        {/* <Container>
           <Row>
             <Col md={6}>
               <HeaderBox>
@@ -412,7 +412,19 @@ const Page = () => {
               <HeaderBox big>
                 <H3 white>Máte zájem o moje služby?</H3>
                 <Button inverse huge href="mailto:ondrej@sika.io">
-                  {/* <img src={mail} />  */}
+                  {false && <img src={mail} />}
+                  Napište mi
+                </Button>
+              </HeaderBox>
+            </Col>
+          </Row>
+        </Container> */}
+        <Container>
+          <Row>
+            <Col md={12}>
+              <HeaderBox big className="text-center">
+                <H3 white>Máte dotaz nebo zájem o spolupráci?</H3>
+                <Button inverse huge href="mailto:ondrej@sika.io">
                   Napište mi
                 </Button>
               </HeaderBox>
