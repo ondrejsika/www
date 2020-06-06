@@ -163,38 +163,18 @@ const BaseLandingPage = props => {
       <Background light_grey id="help">
         <Container>
           <Center>
-            <SectionHeader>S ČÍM VÁM POMOHU</SectionHeader>
+            <SectionHeader>{props.sectionBoxesHeader}</SectionHeader>
           </Center>
 
           <Row>
             <Col md={4} sm={12}>
-              <Box
-                header="IMPLEMENTACE DEVOPS PIPELINE"
-                text="Zavedu open-source DevOps do Vaší firmy. Nastavím nástroje a procesy
-                    tak, abyste automaticky, spolehlivě a rychle doručovali novou funkcionalitu Vašim zákazníkům."
-              />
+              <Box header={props.boxHeader1} text={props.boxText1} />
             </Col>
             <Col md={4} sm={12}>
-              <Box
-                header={
-                  <span>
-                    KONZULTACE
-                    <br />& SUPPORT
-                  </span>
-                }
-                text="Vyřeším Váš konkrétní problém formou konzultací, čímž se vyvarujete zbytečných a drahých chyb. Já a můj tým Vám budeme oporou při provozu Vaší DevOps infrastruktury formou jednoho z našich support plánů."
-              />
+              <Box header={props.boxHeader2} text={props.boxText2} />
             </Col>
             <Col md={4} sm={12}>
-              <Box
-                header={
-                  <span>
-                    ŠKOLENÍ
-                    <br /> VAŠEHO TÝMU
-                  </span>
-                }
-                text="Vyškolím Váš tým tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vaše DevOps prostředí."
-              />
+              <Box header={props.boxHeader3} text={props.boxText3} />
             </Col>
           </Row>
         </Container>
