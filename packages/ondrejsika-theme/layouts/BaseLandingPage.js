@@ -187,7 +187,7 @@ const BaseLandingPage = props => {
             </Col>
             <Col md={6}>
               <Center>
-                <SectionHeader>moji klienti</SectionHeader>
+                <SectionHeader>{props.sectionMyClientsHeader}</SectionHeader>
               </Center>
               <Companies />
             </Col>

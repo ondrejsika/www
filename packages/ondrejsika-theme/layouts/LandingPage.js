@@ -33,6 +33,7 @@ const LandingPage = props => (
       </span>
     }
     boxText3="Vyškolím Váš tým tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vaše DevOps prostředí."
+    sectionMyClientsHeader="moji klienti"
   />
 );
 
