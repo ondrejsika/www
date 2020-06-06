@@ -19,6 +19,7 @@ import Text from "@app/ondrejsika-theme/components/Lp-text";
 import Box from "@app/ondrejsika-theme/components/Lp-Box";
 import SectionHeader from "@app/ondrejsika-theme/components/Lp-sectionHeader";
 import Companies from "@app/ondrejsika-theme/components/Lp-companies";
+import Translate from "@app/common/components/Translate";
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
@@ -83,7 +84,7 @@ const H3 = styled.h3`
       color: white !important;
     `}
 `;
-const BaseLandingPage = () => {
+const BaseLandingPage = props => {
   const Background = styled.div`
     padding: 1em 0 2em 0;
     background-image: url(${props => props.img});
@@ -146,18 +147,10 @@ const BaseLandingPage = () => {
         <Container>
           <Row>
             <Col lg={7}>
-              <MainTitle className="pt-md-5">
-                Jsem <TextBeige>Ondřej Šika</TextBeige>
-                <br /> a pomohu vám s open-source
-                <br />
-                <TextBeige>DevOps technologiemi</TextBeige>!
-              </MainTitle>
-              <Text white>
-                Snížime spolu náklady na IT, vyřešíme technologický dluh a
-                připravíme Vaši IT architekturu na rapidní škálování.
-              </Text>
+              <MainTitle className="pt-md-5">{props.headerText}</MainTitle>
+              <Text white>{props.headerAbout}</Text>
               <Button inverse href="#help">
-                Zjistit více
+                <Translate lang={props.site.lang} cs="Zjistit více" en="!!!" />
                 {/* <IconBtn padding_left src={arrow} /> */}
               </Button>
             </Col>
@@ -431,5 +424,7 @@ const BaseLandingPage = () => {
     </>
   );
 };
+
+BaseLandingPage.TextBeige = TextBeige;
 
 export default BaseLandingPage;
