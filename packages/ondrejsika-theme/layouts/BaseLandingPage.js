@@ -194,18 +194,18 @@ const BaseLandingPage = props => {
           </Row>
         </Section>
         <Section>
-          <SectionHeader>KONTAKTUJTE MĚ</SectionHeader>
+          <SectionHeader>{props.sectionContactMeHeader}</SectionHeader>
           <RoomyRow>
             <Col lg={4} md={6}>
               <Button href="https://calendly.com/ondrejsika/evening-call">
                 {/* <IconBtn padding_right src={phone} /> */}
-                Naplánujte hovor
+                {props.Call}
               </Button>
             </Col>
             <Col lg={4} md={6}>
               <Button href="mailto:ondrej@sika.io">
                 {/* <IconBtn padding_right src={mail_grey} /> */}
-                Poslat&nbsp;email
+                {props.email}
               </Button>
             </Col>
           </RoomyRow>
