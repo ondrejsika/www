@@ -19,6 +19,7 @@ import Text from "@app/ondrejsika-theme/components/Lp-text";
 import Box from "@app/ondrejsika-theme/components/Lp-Box";
 import SectionHeader from "@app/ondrejsika-theme/components/Lp-sectionHeader";
 import Companies from "@app/ondrejsika-theme/components/Lp-companies";
+import Background from "@app/ondrejsika-theme/components/LP-background";
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
@@ -84,35 +85,6 @@ const H3 = styled.h3`
     `}
 `;
 const BaseLandingPage = props => {
-  const Background = styled.div`
-    padding: 1em 0 2em 0;
-    background-image: url(${props => props.img});
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 400px;
-    overflow: visible;
-    height: 100%;
-    width: 100%;
-    @media only screen and (max-width: 1319px) {
-      background-image: none;
-    }
-    ${props =>
-      props.paddingBottom &&
-      css`
-        padding-bottom: ${props.paddingBottom};
-      `}
-    ${props =>
-      props.blue &&
-      css`
-        background-color: #131480;
-      `}
-    ${props =>
-      props.light_grey &&
-      css`
-        background-color: #ececec;
-      `}
-  `;
-
   const HeaderBox = styled.div`
     padding: 5em 0 6em 0;
     ${props =>
@@ -197,7 +169,7 @@ const BaseLandingPage = props => {
             <Col lg={4} md={6}>
               <Button href="https://calendly.com/ondrejsika/evening-call">
                 {/* <IconBtn padding_right src={phone} /> */}
-                {props.Call}
+                {props.call}
               </Button>
             </Col>
             <Col lg={4} md={6}>
@@ -217,7 +189,7 @@ const BaseLandingPage = props => {
             </SectionHeader>
             <RoomyRow>
               <Col lg={8} md={12}>
-                <Text white>{props.myStoryText}</Text>
+                <Text white>{props.MyStoryText}</Text>
               </Col>
             </RoomyRow>
           </Section>
