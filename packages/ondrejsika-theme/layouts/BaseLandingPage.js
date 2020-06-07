@@ -20,6 +20,7 @@ import Box from "@app/ondrejsika-theme/components/Lp-Box";
 import SectionHeader from "@app/ondrejsika-theme/components/Lp-sectionHeader";
 import Companies from "@app/ondrejsika-theme/components/Lp-companies";
 import Background from "@app/ondrejsika-theme/components/LP-background";
+import Point from "@app/ondrejsika-theme/components/LP-point";
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
@@ -59,22 +60,6 @@ const RoomyRow = styled(Row)`
 //   padding-top: 6em;
 // `;
 
-const Li = styled.li`
-  list-style: none;
-  padding: 1em 1em 1em 2em;
-  :after {
-    content: "♦";
-    height: 0.5em;
-    width: 0.5em;
-    color: #131480;
-    position: absolute;
-    top: 1.35em;
-    left: 0;
-  }
-  :before {
-    display: none;
-  }
-`;
 const H3 = styled.h3`
   font-size: 1.75rem;
   color: #131480;
@@ -217,26 +202,10 @@ const BaseLandingPage = props => {
               <SectionHeader>{props.sectionWhyMeHeader}</SectionHeader>
               <Text>
                 <Row>
-                  <Col md={6}>
-                    <Li>
-                      <H3>{props.point1}</H3>
-                    </Li>
-                  </Col>
-                  <Col md={6}>
-                    <Li>
-                      <H3>{props.point2}</H3>
-                    </Li>
-                  </Col>
-                  <Col md={6}>
-                    <Li>
-                      <H3>{props.point3}</H3>
-                    </Li>
-                  </Col>
-                  <Col md={6}>
-                    <Li>
-                      <H3>{props.point4}</H3>
-                    </Li>
-                  </Col>
+                  <Point text={props.point1} />
+                  <Point text={props.point2} />
+                  <Point text={props.point3} />
+                  <Point text={props.point4} />
                 </Row>
               </Text>
             </Col>
@@ -353,5 +322,5 @@ const BaseLandingPage = props => {
 };
 
 BaseLandingPage.TextBeige = TextBeige;
-
+BaseLandingPage.H3 = H3;
 export default BaseLandingPage;
