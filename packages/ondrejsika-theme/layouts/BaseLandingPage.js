@@ -19,7 +19,6 @@ import Text from "@app/ondrejsika-theme/components/Lp-text";
 import Box from "@app/ondrejsika-theme/components/Lp-Box";
 import SectionHeader from "@app/ondrejsika-theme/components/Lp-sectionHeader";
 import Companies from "@app/ondrejsika-theme/components/Lp-companies";
-import Translate from "@app/common/components/Translate";
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
@@ -141,7 +140,7 @@ const BaseLandingPage = props => {
   return (
     <>
       <Head>
-        <title>Ondrej Sika</title>
+        <title>{props.head}</title>
       </Head>
       <Background blue paddingBottom="0">
         <Container>
@@ -150,12 +149,12 @@ const BaseLandingPage = props => {
               <MainTitle className="pt-md-5">{props.headerText}</MainTitle>
               <Text white>{props.headerAbout}</Text>
               <Button inverse href="#help">
-                <Translate lang={props.site.lang} cs="Zjistit více" en="!!!" />
+                {props.findOutMore}
                 {/* <IconBtn padding_left src={arrow} /> */}
               </Button>
             </Col>
             <Col lg={5}>
-              <img src={ondrej_chair} className="img-fluid" />
+              <Img src={ondrej_chair} />
             </Col>
           </Row>
         </Container>
@@ -165,7 +164,6 @@ const BaseLandingPage = props => {
           <Center>
             <SectionHeader>{props.sectionBoxesHeader}</SectionHeader>
           </Center>
-
           <Row>
             <Col md={4} sm={12}>
               <Box header={props.boxHeader1} text={props.boxText1} />
@@ -241,7 +239,7 @@ const BaseLandingPage = props => {
         <Section>
           <RoomyRow style={{ marginRight: "0" }}>
             <Col md={5} sm={12}>
-              <Img src={ondrej_table}></Img>
+              <Img src={ondrej_table} />
             </Col>
             <Col md={7} sm={12}>
               <SectionHeader>{props.sectionWhyMeHeader}</SectionHeader>

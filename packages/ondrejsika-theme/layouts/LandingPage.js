@@ -1,8 +1,10 @@
 import React from "react";
 import BaseLandingPage from "@app/ondrejsika-theme/layouts/BaseLandingPage";
+import Translate from "@app/common/components/Translate";
 
 const LandingPage = props => (
   <BaseLandingPage
+    head="Ondrej Sika"
     site={props.site}
     headerText={
       <>
@@ -16,6 +18,9 @@ const LandingPage = props => (
       </>
     }
     headerAbout="Snížime spolu náklady na IT, vyřešíme technologický dluh a připravíme Vaši IT architekturu na rapidní škálování."
+    findOutMore={
+      <Translate lang={props.site.lang} cs="Zjistit více" en="!!!" />
+    }
     sectionBoxesHeader="S ČÍM VÁM POMOHU"
     boxHeader1="IMPLEMENTACE DEVOPS PIPELINE"
     boxText1="Zavedu open-source DevOps do Vaší firmy. Nastavím nástroje a procesy tak, abyste automaticky, spolehlivě a rychle doručovali novou funkcionalitu Vašim zákazníkům."
