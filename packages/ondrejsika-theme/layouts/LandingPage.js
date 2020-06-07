@@ -39,6 +39,33 @@ const LandingPage = props => (
     email="Poslat&nbsp;email"
     sectionMyStoryHeader="MŮJ PŘÍBĚH"
     propsMyStoryText="K projektu prvního a nejúspěšnějšího Bitcoinového těžařského poolu v společnosti Braiins Systems jsem se přidal v čase jeho kompletního přepisování a škálování na robustnější infrastrukturu. Náročné požadavky na sofistikovanou a distribuovanou IT infrastrukturu stávající z desítek serverů rozmístěných na třech kontinentech nedávaly jinou možnost jako hned od začátku nasadit ty nejnovější DevOps technologie. Měl jsem tedy unikátní možnost osahat si open-source DevOps technologie a 5 let pracovat s týmem skvělých IT architektů a vizionářů - Honzou Čapkem, Pavlem Moravcem a Markem Palatinem."
+    sectionWhyMeHeader="PROČ DO TOHO JÍT SE MNOU?"
+    point1={
+      <span>
+        Dlouholeté <br /> zkušenosti
+      </span>
+    }
+    point2={
+      <span>
+        Komplexní <br />
+        pohled
+      </span>
+    }
+    point3={
+      <span>
+        Výborné <br />
+        reference
+      </span>
+    }
+    point4={
+      <span>
+        Maximální <br />
+        otevřenost
+      </span>
+    }
+    // sectionStory="IMPLEMENTATION STUDY"
+    sectionCooperationText="Máte dotaz nebo zájem o spolupráci?"
+    writeMe="Napište mi"
   />
 );
 

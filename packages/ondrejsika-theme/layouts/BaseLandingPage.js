@@ -244,39 +244,27 @@ const BaseLandingPage = props => {
               <Img src={ondrej_table}></Img>
             </Col>
             <Col md={7} sm={12}>
-              <SectionHeader>PROČ DO TOHO JÍT SE MNOU?</SectionHeader>
+              <SectionHeader>{props.sectionWhyMeHeader}</SectionHeader>
               <Text>
                 <Row>
                   <Col md={6}>
                     <Li>
-                      <H3>
-                        Dlouholeté <br />
-                        zkušenosti
-                      </H3>
+                      <H3>{props.point1}</H3>
                     </Li>
                   </Col>
                   <Col md={6}>
                     <Li>
-                      <H3>
-                        Komplexní <br />
-                        pohled
-                      </H3>
+                      <H3>{props.point2}</H3>
                     </Li>
                   </Col>
                   <Col md={6}>
                     <Li>
-                      <H3>
-                        Výborné <br />
-                        reference
-                      </H3>
+                      <H3>{props.point3}</H3>
                     </Li>
                   </Col>
                   <Col md={6}>
                     <Li>
-                      <H3>
-                        Maximální <br />
-                        otevřenost
-                      </H3>
+                      <H3>{props.point4}</H3>
                     </Li>
                   </Col>
                 </Row>
@@ -288,7 +276,7 @@ const BaseLandingPage = props => {
       {/* <Container>
         <Section>
           <Center>
-            <SectionHeader>IMPLEMENTATION STUDY</SectionHeader>
+            <SectionHeader>{props.sectionStory}</SectionHeader>
           </Center>
           <Row>
             <Col md={12}>
@@ -381,9 +369,9 @@ const BaseLandingPage = props => {
           <Row>
             <Col md={12}>
               <HeaderBox big className="text-center">
-                <H3 white>Máte dotaz nebo zájem o spolupráci?</H3>
+                <H3 white>{props.sectionCooperationText}</H3>
                 <Button inverse huge href="mailto:ondrej@sika.io">
-                  Napište mi
+                  {props.writeMe}
                 </Button>
               </HeaderBox>
             </Col>
