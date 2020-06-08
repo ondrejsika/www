@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styled, { css } from "styled-components";
+
 import docker from "@app/data/pictures/courses/white/docker.svg";
 import git from "@app/data/pictures/courses/white/git.svg";
 import gitlabci from "@app/data/pictures/courses/white/gitlab_ci.svg";
@@ -10,7 +11,9 @@ import terraform from "@app/data/pictures/courses/white/terraform.svg";
 import ansible from "@app/data/pictures/courses/white/ansible.svg";
 import rancher from "@app/data/pictures/courses/white/rancher.svg";
 import prometheus from "@app/data/pictures/courses/white/prometheus.svg";
+import proxmox from "@app/data/pictures/courses/white/proxmox.svg";
 import elk from "@app/data/pictures/courses/white/elk.svg";
+
 import default_colors from "@app/ondrejsika-theme/config/colors";
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -178,6 +181,13 @@ const TraineraCourseBar = props => {
                         courseName="Elk"
                         courseId="elk"
                         courseImg={elk}
+                      />
+                      <Card
+                        site={props.site}
+                        lang={props.lang}
+                        courseName="Proxmox"
+                        courseId="proxmox"
+                        courseImg={proxmox}
                       />
                     </>
                   );
