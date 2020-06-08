@@ -12,6 +12,7 @@ import storaenso from "@app/data/pictures/companies/storaenso.jpg";
 import tmobile from "@app/data/pictures/companies/tmobile.png";
 import dborse from "@app/data/pictures/companies/deutscheborse.png";
 import generalli from "@app/data/pictures/companies/generalli.png";
+import eltodo from "@app/data/pictures/companies/eltodo.png";
 
 import zoot from "@app/data/pictures/companies/zoot-white.png";
 import cgi from "@app/data/pictures/companies/cgi.png";
@@ -57,7 +58,8 @@ const CompaniesBar = props => (
           cgi,
           homecredit,
           cznic,
-          konica_minolta
+          konica_minolta,
+          eltodo
         ].map((img, i) => (
           <div key={i} className="col-lg-2 col-md-2 col-sm-4 col-4 p-3">
             <img src={img} className="img-fluid bw" alt="default" />
