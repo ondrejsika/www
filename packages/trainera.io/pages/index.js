@@ -17,6 +17,7 @@ import martinjurco from "@app/data/pictures/martinjurco.png";
 import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
 import jirikraml from "@app/data/pictures/jirikraml.jpg";
 import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
+import michaelkaplan from "@app/data/pictures/michaelkaplan.png";
 
 const Index = props => (
   <div>
@@ -76,14 +77,17 @@ const Index = props => (
     </Container>
 
     <Team
-      teamHeader="Náš tým"
-      lecturers={[
+      teamMembersHeader="Náš tým"
+      teamMembers={[
         [ondrejsika, "Ondrej Sika", "SoftwareArchitect"],
         [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
+        [martinjurco, "Martin Jurco", "kuchar&neco"]
+      ]}
+      mentorHeader="Mentoři"
+      mentors={[
         [vojtechmares, "Vojtěch Mareš", "neco neco"],
         [jirikraml, "Jiří Kraml", "neconeconeconeco"],
-        [martinjurco, "Martin Jurco", "kuchar&neco"],
-        [ondrejsika, "Michael Kaplan", "neco"]
+        [michaelkaplan, "Michael Kaplan", "neco"]
       ]}
     ></Team>
 
