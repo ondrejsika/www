@@ -9,6 +9,8 @@ import terraform from "@app/data/pictures/courses/terraform-white.png";
 import ansible from "@app/data/pictures/courses/ansible.png";
 import rancher from "@app/data/pictures/courses/rancher-white.png";
 import prometheus from "@app/data/pictures/courses/prometheus-white.png";
+import proxmox from "@app/data/pictures/courses/white/proxmox.svg";
+
 import Link from "next/link";
 
 const Card = props => {
@@ -92,6 +94,12 @@ const CourseBar = props => {
                     courseName="React"
                     courseId="react"
                     courseImg={react}
+                  />
+                  <Card
+                    lang={props.lang}
+                    courseName="Proxmox"
+                    courseId="proxmox"
+                    courseImg={proxmox}
                   />
                 </>
               );
