@@ -250,12 +250,12 @@ const LandingPage = props => (
     sectionCooperationText={
       <Translate
         lang={props.site.lang}
-        en="Máte dotaz nebo zájem o spolupráci?"
+        en="Interested in cooperation?"
         cs="Máte dotaz nebo zájem o spolupráci?"
       />
     }
     writeMe={
-      <Translate lang={props.site.lang} en="Send me an email" cs="Napište mi" />
+      <Translate lang={props.site.lang} en="Contact me" cs="Napište mi" />
     }
   />
 );
