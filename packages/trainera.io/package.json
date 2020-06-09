@@ -1,0 +1,21 @@
+{
+  "name": "@app/trainera.io",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Ondrej Sika",
+  "author_email": "ondrej@ondrejsika.com",
+  "scripts": {
+    "dev": "NODE_ENV=development next",
+    "build": "next build",
+    "export": "next export",
+    "static": "yarn run build && yarn run export"
+  },
+  "dependencies": {
+    "@app/course-landing": "^0.0.0",
+    "@app/ondrejsika-theme": "^0.0.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "react-icons": "^3.10.0",
+    "react-instagram-embed": "^1.5.0",
+    "styled-components": "4.2.0"
+  }
+}
