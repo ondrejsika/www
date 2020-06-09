@@ -25,7 +25,9 @@ const H4 = styled.h4`
 `;
 
 const Trainera = styled.div`
-  background-color: #088958;
+  background-color: ${props =>
+    (props.site && props.site.colors && props.site.colors.PRIMARY) ||
+    default_colors.BLUE};
 `;
 const Header = styled.h3`
   font-size: 2.5em;
@@ -34,34 +36,60 @@ const Header = styled.h3`
   text-align: center;
   color: white;
 `;
+
+const Box = styled.div`
+  width: 100%;
+  max-width: 221px;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  background-color: ${props =>
+    (props.site && props.site.colors && props.site.colors.PRIMARY) ||
+    default_colors.BLUE};
+  &:hover {
+    border: 2px solid #7fce91;
+  }
+`;
+
+const Img = styled.img`
+  max-width: 90%;
+  height: auto;
+  padding: 0 1em 1em 1em;
+`;
+
+const MyCol = styled(Col)`
+  padding: 0px;
+`;
+
+const TriangleBottomRight = styled.div`
+  width: 100%;
+  height: 80px;
+  /* background: #088958; */
+  background-color: ${props =>
+    (props.site && props.site.colors && props.site.colors.PRIMARY) ||
+    default_colors.BLUE};
+  clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
+  margin-bottom: -1px;
+  ${props =>
+    props.hidden &&
+    css`
+      display: none;
+    `}
+`;
+
+const TriangleTopLeft = styled.div`
+  width: 100%;
+  height: 80px;
+  /* background: #088958; */
+  background-color: ${props =>
+    (props.site && props.site.colors && props.site.colors.PRIMARY) ||
+    default_colors.BLUE};
+  clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
+`;
+
 const Card = props => {
   let training = { en: "training", cs: "skoleni" }[props.lang || "cs"];
-
-  const Box = styled.div`
-    width: 100%;
-    max-width: 221px;
-    text-align: center;
-    border: 2px solid transparent;
-    border-radius: 2px;
-    margin-bottom: 5px;
-    background-color: ${(props.site &&
-      props.site.colors &&
-      props.site.colors.PRIMARY) ||
-      default_colors.BLUE};
-    &:hover {
-      border: 2px solid #7fce91;
-    }
-  `;
-
-  const Img = styled.img`
-    max-width: 90%;
-    height: auto;
-    padding: 0 1em 1em 1em;
-  `;
-
-  const MyCol = styled(Col)`
-    padding: 0px;
-  `;
 
   return (
     <MyCol md={2} sm={4} xs={6}>
@@ -79,30 +107,10 @@ const Card = props => {
   );
 };
 
-const TriangleBottomRight = styled.div`
-  width: 100%;
-  height: 80px;
-  background: #088958;
-  clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
-  margin-bottom: -1px;
-  ${props =>
-    props.negativeTop &&
-    css`
-      margin-top: -80px;
-    `}
-`;
-
-const TriangleTopLeft = styled.div`
-  width: 100%;
-  height: 80px;
-  background: #088958;
-  clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
-`;
-
 const TraineraCourseBar = props => {
   return (
     <>
-      <TriangleBottomRight negativeTop={props.negativeTop} />
+      <TriangleBottomRight hidden={props.hidden} site={props.site} />
       <Trainera>
         <Container>
           <Header>{props.LectureImgHeader}</Header>
@@ -197,7 +205,7 @@ const TraineraCourseBar = props => {
           </div>
         </Container>
       </Trainera>
-      <TriangleTopLeft />
+      <TriangleTopLeft site={props.site} />
     </>
   );
 };
