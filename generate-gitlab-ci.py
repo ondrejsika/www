@@ -80,7 +80,7 @@ PROD_SITES = {
     "ondrej-sika.de": {
       "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
     },
-    "trainera.io": {
+    "trainera.cz": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
     },
     "git-training.uk": {
@@ -212,7 +212,7 @@ ALL_SITES.update(DEV_SITES)
 PRIORITY_SITES = (
     "ondrej-sika.cz",
     "ondrej-sika.com",
-    "trainera.io",
+    "trainera.cz",
     "skoleni.io",
     "trainera.de",
 )
