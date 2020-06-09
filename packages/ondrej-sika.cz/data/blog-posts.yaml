@@ -1,3 +1,21 @@
+- id: weeknotes-3
+  title: "Weeknotes #3"
+  date: 31. 5. 2020
+  tags:
+    - weeknotes
+    - surge
+    - static-sites
+  perex: |
+    Zapisky #weeknotes dalsiho tydne od 25. do 31.5., skoleni, landing page a staticky hosting surge.sh
+  content: |
+    V tomto tydnu jsem skolil a hodne pracoval na internich vecech. Zde je to nejdulezitejsi co jsem delal.
+
+    Pracoval jsem spolecne s Matinem a Zuzkou na nove Landig Page, na kterou budeme odkazovat nove kontaky. Design je od Mateje Kamenickeho. A je tam Nelinka (muj pes). Vysledek je zde: [CZ](/hello) a [EN](https://ondrej-sika.com/hello).
+
+    Rozhodl jsem se presunout staticke weby z Kubernetes a hledal jsem idelani platformu, kde je provozovat. Rozhodoval jsem se mezi Vercel (drive Zeit), Cloudflare Workers, AWS S3 a Surge.sh.
+
+    Nakonec jsem zvolil pro produkcni beh Cloudflare Workers a pro testovaci deploymenty Surge.sh. Na to tema napisu obsahlejsi clanek, proc jsem si vybral zrovna takto.
+
 - id: weeknotes-2
   title: "Weeknotes #2"
   date: 24. 5. 2020
