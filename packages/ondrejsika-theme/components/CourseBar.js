@@ -1,13 +1,13 @@
 import React from "react";
 
-import docker from "@app/data/pictures/courses/docker-w.svg";
-import git from "@app/data/pictures/courses/git-w.svg";
-import gitlabci from "@app/data/pictures/courses/gitlab-ci.svg";
-import k8s from "@app/data/pictures/courses/kubernetes.png";
-import react from "@app/data/pictures/courses/react.svg";
-import terraform from "@app/data/pictures/courses/terraform-white.png";
-import ansible from "@app/data/pictures/courses/ansible.png";
-import rancher from "@app/data/pictures/courses/rancher-white.png";
+import docker from "@app/data/pictures/courses/white/docker.svg";
+import git from "@app/data/pictures/courses/white/git.svg";
+import gitlabci from "@app/data/pictures/courses/white/gitlab_ci.svg";
+import k8s from "@app/data/pictures/courses/white/kubernetes.svg";
+import react from "@app/data/pictures/courses/white/react.svg";
+import terraform from "@app/data/pictures/courses/white/terraform.svg";
+import ansible from "@app/data/pictures/courses/white/ansible.svg";
+import rancher from "@app/data/pictures/courses/white/rancher.svg";
 import prometheus from "@app/data/pictures/courses/prometheus-white.png";
 import proxmox from "@app/data/pictures/courses/white/proxmox.svg";
 
