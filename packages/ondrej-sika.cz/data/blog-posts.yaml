@@ -1,3 +1,16 @@
+- id: weeknotes-4
+  title: "Weeknotes #4"
+  date: 7. 6. 2020
+  tags:
+    - weeknotes
+    - kafemlejnek
+  perex: |
+    Gitlab CI, nataceni podcastu a zkracovac url
+  content: |
+    Ve stredu jsem byl natacet epizodu podcastu [Kafemlejnek.tv](https://kafemlejnek.tv) o Gitlab CI, byl to muj prvni podcast (jako host), tak doufam, ze se to povedlo. Uvidime casem.
+
+    Dale potrebuji pro sve marketingove ucely url zkracovac, ktery bude zkracovat url a bude zbirat co nejvice moznych informaci o proklikach jako (cas, HTTP referer, IP adresa, ..) a bude se rozume generovat pomoci API. Nenasel jsem nic pouzitelneho, tak jsem si jeden velmy jednoduchy vytvoril. TODO: zdrojaky dat na Github.
+
 - id: weeknotes-3
   title: "Weeknotes #3"
   date: 31. 5. 2020
