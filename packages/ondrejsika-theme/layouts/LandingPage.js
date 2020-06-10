@@ -182,68 +182,57 @@ const LandingPage = props => (
     point1={
       <Translate
         lang={props.site.lang}
-        en={
-          <span>
-            Years <br />
-            of experience
-          </span>
-        }
-        cs={
-          <span>
-            Dlouholeté <br /> zkušenosti
-          </span>
-        }
+        en="Years of experience"
+        cs="Dlouholeté zkušenosti"
+      />
+    }
+    text1={
+      <Translate
+        lang={props.site.lang}
+        en="I've worked 5 years as a senior software engineer for Braiins.com where I've helped guys to rebuild Slush Pool (the very first Bitcoin mining pool) to new distributed infrastructure. I left Braiins to focus on my freelance career afterwards. "
+        cs="Pět let jsem pracoval jako senior software engineer pro Braiins.com a pomáhal jsem s přestavbou globálního Bitcoinového těžařského poolu na lepší distribuovanou infrastrukturu. Paralelně s touto prací jsem začal od roku 2013 dělat freelance školení a konzultace."
       />
     }
     point2={
       <Translate
         lang={props.site.lang}
-        en={
-          <span>
-            In-depth <br />
-            tech overview
-          </span>
-        }
-        cs={
-          <span>
-            Komplexní <br />
-            pohled
-          </span>
-        }
+        en="In-depth tech overview"
+        cs="Komplexní pohled"
+      />
+    }
+    text2={
+      <Translate
+        lang={props.site.lang}
+        en="I'll set up your DevOps pipeline utilizing following tech: Git, Gitlab CI, Ansible, Docker, Kubernetes, Prometheus, Sentry, ELK / EFK, Rancher, Terraform, Public Cloud: [AWS, DigitalOcean, Azure, GCP], Private Cloud: [Proxmox, OpenStack]."
+        cs="Na míru Vám poskládám DevOps pipeline z těchto technologií: Git, Gitlab CI, Ansible, Docker, Kubernetes, Prometheus, Sentry, ELK / EFK, Rancher, Terraform, Public Cloud: [AWS, DigitalOcean, Azure, GCP], Private Cloud: [Proxmox, OpenStack] ."
       />
     }
     point3={
       <Translate
         lang={props.site.lang}
-        en={
-          <span>
-            Excellent
-            <br /> references
-          </span>
-        }
-        cs={
-          <span>
-            Výborné <br />
-            reference
-          </span>
-        }
+        en="Excellent references"
+        cs="Výborné reference"
+      />
+    }
+    text3={
+      <Translate
+        lang={props.site.lang}
+        en="Check out my 60+ positive recommendations on my LinkedIn profile."
+        cs="Veřejně mě doporučilo už víc než 60 účastníků mých školení a já jim ze tyto reference moc děkuju. Najdete je na mém LinkedIn profilu."
       />
     }
     point4={
       <Translate
         lang={props.site.lang}
-        en={
-          <span>
-            High <br />
-            openness
-          </span>
-        }
-        cs={
-          <span>
-            Maximální <br />
-            otevřenost
-          </span>
-        }
+        en="High openness"
+        cs="Maximální otevřenost"
+      />
+    }
+    text4={
+      <Translate
+        lang={props.site.lang}
+        en="I believe in open source. Therefore, many of my projects which are not under client's NDA are available for free on my Github account."
+        cs="Věřím v open source. Proto mám většinu své práce, která nepodléhá NDA, veřejně na Githubu."
       />
     }
     // sectionStory="IMPLEMENTATION STUDY"
