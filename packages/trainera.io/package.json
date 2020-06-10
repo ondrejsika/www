@@ -14,6 +14,8 @@
     "@app/course-landing": "^0.0.0",
     "@app/ondrejsika-theme": "^0.0.0",
     "babel-plugin-styled-components": "^1.10.7",
+    "bootstrap": "^4.5.0",
+    "react-bootstrap": "^1.0.1",
     "react-icons": "^3.10.0",
     "react-instagram-embed": "^1.5.0",
     "styled-components": "4.2.0"
