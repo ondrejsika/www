@@ -13,6 +13,7 @@ import Head from "next/head";
 import { Container } from "react-bootstrap";
 
 import ondrejsika from "@app/data/pictures/ondrejsika.png";
+import ondandnela from "@app/data/pictures/ondandnel.png";
 import martinjurco from "@app/data/pictures/martinjurco.png";
 import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
 import jirikraml from "@app/data/pictures/jirikraml.jpg";
@@ -86,6 +87,7 @@ const Index = props => (
       mentorHeader="Mentoři"
       mentors={[
         [vojtechmares, "Vojtěch Mareš", "neco neco"],
+        [ondandnela, "Ondrej Sika", "SoftwareArchitect"],
         [jirikraml, "Jiří Kraml", "neconeconeconeco"],
         [michaelkaplan, "Michael Kaplan", "neco"]
       ]}

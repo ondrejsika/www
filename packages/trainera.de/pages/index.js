@@ -14,6 +14,10 @@ import Translate from "@app/common/components/Translate";
 import ondrejsika from "@app/data/pictures/ondrejsika.png";
 import martinjurco from "@app/data/pictures/martinjurco.png";
 import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
+import jirikraml from "@app/data/pictures/jirikraml.jpg";
+import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
+import michaelkaplan from "@app/data/pictures/michaelkaplan.png";
+import ondandnela from "@app/data/pictures/ondandnel.png";
 
 const Index = props => (
   <div>
@@ -73,12 +77,21 @@ const Index = props => (
     </Container>
 
     <Team
-      lecturers={[
-        [ondrejsika, "Ondrej Sika", "DevOps& SoftwareArchitect"],
+      teamMembersHeader="Our team"
+      teamMembers={[
+        [ondrejsika, "Ondrej Sika", "SoftwareArchitect"],
         [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
-        [martinjurco, "Martin Jurco", "Operations"]
+        [martinjurco, "Martin Jurco", "kuchar&neco"]
       ]}
-    />
+      mentorHeader="Lecturers"
+      mentors={[
+        [vojtechmares, "Vojtěch Mareš", "neco neco"],
+        [ondandnela, "Ondrej Sikaa", "SoftwaareArchitect"],
+
+        [jirikraml, "Jiří Kraml", "neconeconeconeco"],
+        [michaelkaplan, "Michael Kaplan", "neco"]
+      ]}
+    ></Team>
     <div className="container">
       <h2 className="mt-5 text-center">Twitter Reccomendations</h2>
       <div className="card-columns">

@@ -66,7 +66,7 @@ const Team = props => (
     <Header>{props.mentorHeader}</Header>
     <MyRow>
       {props.mentors.map((mentor, i) => (
-        <GaplesCol xl={4} md={6} sm={6} xs={12} key={i}>
+        <GaplesCol xl={3} md={6} sm={6} xs={12} key={i}>
           <ImgWrapper>
             <Img src={mentor[0]} fluid />
             <H4>{mentor[1]}</H4>
