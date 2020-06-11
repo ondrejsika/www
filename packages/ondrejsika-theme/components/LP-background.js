@@ -7,7 +7,7 @@ const Background = styled.div`
     background-position: right bottom;
     background-size: 400px;
     overflow: visible;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     @media only screen and (max-width: 1319px) {
       background-image: none;

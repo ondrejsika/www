@@ -20,7 +20,7 @@ const Button = props => {
     border-radius: 54px;
     color: white;
     &:hover {
-      background: #c8bfb0;
+      background: #707070;
       color: #131480;
       text-decoration: none;
     }

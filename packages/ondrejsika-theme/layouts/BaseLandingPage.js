@@ -10,11 +10,13 @@ import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.p
 // import ondrej_consulting from "@app/data/pictures/landing-page/ondrej_consulting.png";
 
 // import mail from "@app/data/pictures/landing-page/mail-blue.svg";
-// import mail_grey from "@app/data/pictures/landing-page/mail.svg";
+import mail_grey from "@app/data/pictures/landing-page/mail.svg";
 // import arrow from "@app/data/pictures/landing-page/arrow.svg";
 // import phone from "@app/data/pictures/landing-page/phone.svg";
 
 import Button from "@app/ondrejsika-theme/components/Lp-button";
+import FloatingBtn from "@app/ondrejsika-theme/components/FloatingBtn";
+
 import Text from "@app/ondrejsika-theme/components/Lp-text";
 import Box from "@app/ondrejsika-theme/components/Lp-Box";
 import SectionHeader from "@app/ondrejsika-theme/components/Lp-sectionHeader";
@@ -79,26 +81,30 @@ const BaseLandingPage = props => {
       `}
   `;
 
-  // const IconBtn = styled.img`
-  //   vertical-align: text-top;
-  //   height: 20px;
-  //   ${props =>
-  //     props.padding_right &&
-  //     css`
-  //       padding-right: 10px;
-  //     `}
-  //   ${props =>
-  //     props.padding_left &&
-  //     css`
-  //       padding-left: 10px;
-  //     `}
-  // `;
+  const IconBtn = styled.img`
+    margin-top: 20px;
+    vertical-align: center;
+    height: 20px;
+    ${props =>
+      props.padding_right &&
+      css`
+        padding-right: 10px;
+      `}
+    ${props =>
+      props.padding_left &&
+      css`
+        padding-left: 10px;
+      `}
+  `;
 
   return (
     <>
       <Head>
         <title>{props.head}</title>
       </Head>
+      <FloatingBtn href="mailto:ondrej@sika.io">
+        <IconBtn src={mail_grey} />
+      </FloatingBtn>
       <Background blue paddingBottom="0">
         <Container>
           <Row>
@@ -189,7 +195,7 @@ const BaseLandingPage = props => {
             overflowX: "hidden"
           }}
         >
-          <img src={ondrej_mac} style={{ height: "800px" }} />
+          <img src={ondrej_mac} style={{ height: "800px", zIndex: "2" }} />
         </Col>
       </Background>
       <Background light_grey>
@@ -278,7 +284,7 @@ const BaseLandingPage = props => {
           </Row>
         </Section>
       </Container> */}
-      <Background blue>
+      <Background blue style={{ position: "absolute", zIndex: 6 }}>
         {/* <Container>
           <Row>
             <Col md={6}>
