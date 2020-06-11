@@ -1,6 +1,13 @@
 import React from "react";
+import styled from "styled-components";
 import BaseLandingPage from "@app/ondrejsika-theme/layouts/BaseLandingPage";
 import Translate from "@app/common/components/Translate";
+
+const A = styled.a`
+  font-size: 1em;
+  color: #141480;
+  text-decoration: underline;
+`;
 
 const LandingPage = props => (
   <BaseLandingPage
@@ -217,8 +224,21 @@ const LandingPage = props => (
     text3={
       <Translate
         lang={props.site.lang}
-        en="Check out my 60+ positive recommendations on my LinkedIn profile."
-        cs="Veřejně mě doporučilo už víc než 60 účastníků mých školení a já jim ze tyto reference moc děkuju. Najdete je na mém LinkedIn profilu."
+        en={
+          <span>
+            Check out my 60+ positive recommendations on my{" "}
+            <A href="https://www.linkedin.com/in/ondrejsika/">LinkedIn</A>{" "}
+            profile.
+          </span>
+        }
+        cs={
+          <span>
+            Veřejně mě doporučilo už víc než 60 účastníků mých školení a já jim
+            ze tyto reference moc děkuju. Najdete je na mém{" "}
+            <A href="https://www.linkedin.com/in/ondrejsika/">LinkedIn</A>{" "}
+            profilu.
+          </span>
+        }
       />
     }
     point4={
