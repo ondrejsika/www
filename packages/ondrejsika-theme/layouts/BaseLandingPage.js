@@ -9,10 +9,9 @@ import ondrej_training from "@app/data/pictures/landing-page/tinipng/ondrej_trai
 import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
 // import ondrej_consulting from "@app/data/pictures/landing-page/ondrej_consulting.png";
 
-// import mail from "@app/data/pictures/landing-page/mail-blue.svg";
 import mail_grey from "@app/data/pictures/landing-page/mail.svg";
-// import arrow from "@app/data/pictures/landing-page/arrow.svg";
-// import phone from "@app/data/pictures/landing-page/phone.svg";
+import arrow from "@app/data/pictures/landing-page/arrow.svg";
+import phone from "@app/data/pictures/landing-page/phone.svg";
 
 import Button from "@app/ondrejsika-theme/components/Lp-button";
 import FloatingBtn from "@app/ondrejsika-theme/components/FloatingBtn";
@@ -71,6 +70,12 @@ const H3 = styled.h3`
       color: white !important;
     `}
 `;
+const FloatingSvg = styled.img`
+  margin-top: 20px;
+  vertical-align: center;
+  height: 20px;
+`;
+
 const BaseLandingPage = props => {
   const HeaderBox = styled.div`
     padding: 5em 0 6em 0;
@@ -82,7 +87,7 @@ const BaseLandingPage = props => {
   `;
 
   const IconBtn = styled.img`
-    margin-top: 20px;
+    margin-bottom: 2px;
     vertical-align: center;
     height: 20px;
     ${props =>
@@ -103,7 +108,7 @@ const BaseLandingPage = props => {
         <title>{props.head}</title>
       </Head>
       <FloatingBtn href="mailto:ondrej@sika.io">
-        <IconBtn src={mail_grey} />
+        <FloatingSvg src={mail_grey} />
       </FloatingBtn>
       <Background blue paddingBottom="0">
         <Container>
@@ -113,7 +118,7 @@ const BaseLandingPage = props => {
               <Text white>{props.headerAbout}</Text>
               <Button inverse href="#help">
                 {props.findOutMore}
-                {/* <IconBtn padding_left src={arrow} /> */}
+                <IconBtn padding_left src={arrow} />
               </Button>
             </Col>
             <Col lg={5}>
@@ -159,13 +164,13 @@ const BaseLandingPage = props => {
           <RoomyRow>
             <Col lg={4} md={6}>
               <Button href="https://calendly.com/ondrejsika/evening-call">
-                {/* <IconBtn padding_right src={phone} /> */}
+                <IconBtn padding_right src={phone} />
                 {props.call}
               </Button>
             </Col>
             <Col lg={4} md={6}>
               <Button href="mailto:ondrej@sika.io">
-                {/* <IconBtn padding_right src={mail_grey} /> */}
+                <IconBtn padding_right src={mail_grey} />
                 {props.email}
               </Button>
             </Col>

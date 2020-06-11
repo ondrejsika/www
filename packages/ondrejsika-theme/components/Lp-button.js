@@ -21,7 +21,7 @@ const Button = props => {
     color: white;
     &:hover {
       background: #707070;
-      color: #131480;
+      color: white;
       text-decoration: none;
     }
     ${props =>
@@ -32,10 +32,10 @@ const Button = props => {
         border-radius: 54px;
         color: #131480;
         &:hover {
-          background: #131480;
-          color: #c8bfb0;
+          background: #707070;
+          color: #141480;
           text-decoration: none;
-          border: 1px solid #c8bfb0;
+          border: none;
         }
       `}
     ${props =>
