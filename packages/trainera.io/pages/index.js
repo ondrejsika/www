@@ -24,6 +24,14 @@ const Index = props => (
   <div>
     <Head>
       <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>
+      <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
+        rel="stylesheet"
+      />
     </Head>
     <MainBarHomepage
       site={props.site}
