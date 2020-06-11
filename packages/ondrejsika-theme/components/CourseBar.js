@@ -1,5 +1,5 @@
 import React from "react";
-
+import styled from "styled-components";
 import docker from "@app/data/pictures/courses/white/docker.svg";
 import git from "@app/data/pictures/courses/white/git.svg";
 import gitlabci from "@app/data/pictures/courses/white/gitlab_ci.svg";
@@ -13,10 +13,16 @@ import proxmox from "@app/data/pictures/courses/white/proxmox.svg";
 
 import Link from "next/link";
 
+const Box = styled.div`
+  &:hover {
+    background-color: #c7bfb0;
+  }
+`;
+
 const Card = props => {
   let training = { en: "training", cs: "skoleni" }[props.lang || "cs"];
   return (
-    <div className="box" id={props.courseId}>
+    <Box className="box" id={props.courseId}>
       <Link href={`/${training}/${props.courseId}`}>
         <a className="course-header">
           <h4 className="text-center text-white course-header pt-3">
@@ -25,7 +31,7 @@ const Card = props => {
           <img src={props.courseImg} className="img img-fluid p-3" />
         </a>
       </Link>
-    </div>
+    </Box>
   );
 };
 
