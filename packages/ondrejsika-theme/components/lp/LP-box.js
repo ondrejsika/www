@@ -17,7 +17,7 @@ const Border = styled.div`
   /* flex-direction: column; */
 `;
 const Wrapper = styled.div`
-  padding: 2em 1em 0 1em;
+  padding: 2em 1em 3em 1em;
 `;
 
 const Flex = styled.div`
@@ -25,6 +25,18 @@ const Flex = styled.div`
   height: 100%;
   flex-direction: column;
   padding-bottom: 2em;
+  /* padding-right: 0;
+  margin-right: 1em; */
+`;
+
+const Number = styled.div`
+  text-align: right;
+  position: absolute;
+  bottom: 1.3em;
+  right: 1em;
+  color: #131480;
+  font-weight: bold;
+  font-size: 2em;
 `;
 
 const Box = props => {
@@ -35,6 +47,7 @@ const Box = props => {
         <Wrapper>
           <Text>{props.text}</Text>
         </Wrapper>
+        <Number>{props.number}</Number>
       </Border>
     </Flex>
   );

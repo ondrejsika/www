@@ -134,13 +134,13 @@ const BaseLandingPage = props => {
           </Center>
           <Row>
             <Col md={4} sm={12}>
-              <Box header={props.boxHeader1} text={props.boxText1} />
+              <Box header={props.boxHeader1} text={props.boxText1} number="1" />
             </Col>
             <Col md={4} sm={12}>
-              <Box header={props.boxHeader2} text={props.boxText2} />
+              <Box header={props.boxHeader2} text={props.boxText2} number="2" />
             </Col>
             <Col md={4} sm={12}>
-              <Box header={props.boxHeader3} text={props.boxText3} />
+              <Box header={props.boxHeader3} text={props.boxText3} number="3" />
             </Col>
           </Row>
         </Container>
