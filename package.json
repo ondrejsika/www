@@ -151,6 +151,7 @@
     "prettier": "1.19.1"
   },
   "dependencies": {
-    "@cloudflare/wrangler": "^1.9.0"
+    "@cloudflare/wrangler": "^1.9.0",
+    "surge": "^0.21.3"
   }
 }
