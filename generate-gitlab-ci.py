@@ -158,6 +158,7 @@ for site in SITES:
             out.append(
                 """
 %(site)s dev deploy k8s:
+  image: node
   stage: deploy_dev%(priority_suffix)s
   variables:
     GIT_STRATEGY: none
