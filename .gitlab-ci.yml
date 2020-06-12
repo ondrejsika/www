@@ -649,6 +649,7 @@ skolenie.kubernetes.sk prod deploy k8s:
   dependencies: []
 
 skolenie-ansible.sk dev deploy k8s:
+  image: node
   stage: deploy_dev
   variables:
     GIT_STRATEGY: none
@@ -849,6 +850,7 @@ kubernetes-utbildning.se prod deploy k8s:
   dependencies: []
 
 ondrej-sika.uk dev deploy k8s:
+  image: node
   stage: deploy_dev
   variables:
     GIT_STRATEGY: none
@@ -1363,6 +1365,7 @@ sikahq.com prod deploy k8s:
   dependencies: []
 
 ondrejsika.io dev deploy k8s:
+  image: node
   stage: deploy_dev
   variables:
     GIT_STRATEGY: none
@@ -1730,9 +1733,9 @@ sikalabs.com prod deploy k8s:
     refs:
       - master
     changes:
+      - packages/common/**/*
       - yarn.lock
       - packages/sikalabs.com/**/*
-      - packages/common/**/*
   environment:
     name: prod sikalabs.com
     url: https://sikalabs.com
