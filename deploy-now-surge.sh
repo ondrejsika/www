@@ -10,4 +10,4 @@ DOMAIN_BRANCH=$NAME-$BRANCH.surge.sh
 
 yarn static-$SITE
 ./node_modules/.bin/surge packages/$SITE/out $DOMAIN
-./node_modules/.bin/surge packages/$SITE/out $DOMAIN_BRANCH
+# ./node_modules/.bin/surge packages/$SITE/out $DOMAIN_BRANCH
