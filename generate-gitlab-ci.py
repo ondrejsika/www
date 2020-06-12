@@ -179,7 +179,7 @@ for site in SITES:
 %(dependencies)s
   environment:
     name: dev %(site)s
-    url: https://%(site)s%(suffix)s
+    url: https://%(site)s-$CI_COMMIT_REF_SLUG.surge.sh
   dependencies: []
 """
                 % {
