@@ -92,7 +92,7 @@ const Index = props => (
         [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
         [martinjurco, "Martin Jurco", "kuchar&neco"]
       ]}
-      mentorHeader="Mentoři"
+      mentorHeader="Lektoři"
       mentors={[
         [vojtechmares, "Vojtěch Mareš", "neco neco"],
         [ondandnela, "Ondrej Sika", "SoftwareArchitect"],
