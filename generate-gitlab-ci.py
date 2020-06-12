@@ -164,6 +164,7 @@ for site in SITES:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
   script:
+    - yarn
     - ./deploy-now-surge.sh ondrej-sika.cz %(site)s
   except:
     - master
