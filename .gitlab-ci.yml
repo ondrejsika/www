@@ -652,7 +652,6 @@ skolenie-ansible.sk dev deploy k8s:
   image: node
   stage: deploy_dev
   variables:
-    GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
   script:
     - yarn
@@ -854,7 +853,6 @@ ondrej-sika.uk dev deploy k8s:
   image: node
   stage: deploy_dev
   variables:
-    GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
   script:
     - yarn
@@ -1370,7 +1368,6 @@ ondrejsika.io dev deploy k8s:
   image: node
   stage: deploy_dev
   variables:
-    GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
   script:
     - yarn
