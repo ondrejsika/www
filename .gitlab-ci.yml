@@ -656,7 +656,7 @@ skolenie-ansible.sk dev deploy k8s:
     KUBECONFIG: .kubeconfig
   script:
     - yarn
-    - ./deploy-now-surge.sh ondrej-sika.cz skolenie-ansible.sk
+    - ./deploy-now-surge.sh skolenie-ansible.sk
   except:
     - master
   except:
@@ -858,7 +858,7 @@ ondrej-sika.uk dev deploy k8s:
     KUBECONFIG: .kubeconfig
   script:
     - yarn
-    - ./deploy-now-surge.sh ondrej-sika.cz ondrej-sika.uk
+    - ./deploy-now-surge.sh ondrej-sika.uk
   except:
     - master
   except:
@@ -1374,7 +1374,7 @@ ondrejsika.io dev deploy k8s:
     KUBECONFIG: .kubeconfig
   script:
     - yarn
-    - ./deploy-now-surge.sh ondrej-sika.cz ondrejsika.io
+    - ./deploy-now-surge.sh ondrejsika.io
   except:
     - master
   except:
@@ -1736,9 +1736,9 @@ sikalabs.com prod deploy k8s:
     refs:
       - master
     changes:
+      - packages/common/**/*
       - packages/sikalabs.com/**/*
       - yarn.lock
-      - packages/common/**/*
   environment:
     name: prod sikalabs.com
     url: https://sikalabs.com

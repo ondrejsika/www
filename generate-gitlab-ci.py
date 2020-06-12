@@ -165,7 +165,7 @@ for site in SITES:
     KUBECONFIG: .kubeconfig
   script:
     - yarn
-    - ./deploy-now-surge.sh ondrej-sika.cz %(site)s
+    - ./deploy-now-surge.sh %(site)s
   except:
     - master
   except:
