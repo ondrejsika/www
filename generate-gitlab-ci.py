@@ -150,11 +150,8 @@ def generate_dependencies(site):
 
 for site in SITES:
     if site in ALL_SITES:
-        if ALL_SITES[site].get("cloudflare_workers"):
-            pass
-        else:
-            out.append(
-                """
+        out.append(
+            """
 %(site)s dev deploy k8s:
   image: node
   stage: deploy_dev%(priority_suffix)s
@@ -180,14 +177,14 @@ for site in SITES:
     url: https://%(site)s-$CI_COMMIT_REF_SLUG.surge.sh
   dependencies: []
 """
-                % {
-                    "site": site,
-                    "name": site.replace(".", "-"),
-                    "suffix": SUFFIX,
-                    "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
-                    "dependencies": generate_dependencies(site),
-                }
-            )
+            % {
+                "site": site,
+                "name": site.replace(".", "-"),
+                "suffix": SUFFIX,
+                "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
+                "dependencies": generate_dependencies(site),
+            }
+        )
 
     if site in PROD_SITES:
         if PROD_SITES[site].get("cloudflare_workers"):
