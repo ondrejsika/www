@@ -24,6 +24,7 @@
   twitter_recommendations:
     cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
     sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
+    en: ["adam-bisek-docker", "petr-klobas-docker", "radomir-sohlich-docker"]
   recommendations:
     cs: ["spel", "vse", "sit"]
     sk: ["spel", "vse", "sit"]
@@ -164,6 +165,7 @@
       uk: 2999 EUR
   twitter_recommendations:
     cs: ["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]
+    en: ["petr-todorov-kubernetes", "lubos-klokner-docker-2"]
   recommendations:
     cs: ["dimensiondata", "webglobe-yegon", "sit"]
     sk: ["dimensiondata", "webglobe-yegon", "sit"]
@@ -307,6 +309,7 @@
     cs: []
   recommendations:
     cs: ["dimensiondata", "webglobe-yegon", "sit"]
+    en: ["dimensiondata", "webglobe-yegon", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -1017,6 +1020,7 @@
     cs: []
   recommendations:
     cs: ["spel", "vse", "sit"]
+    en: ["spel", "vse", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
