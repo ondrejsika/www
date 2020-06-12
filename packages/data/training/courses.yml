@@ -79,7 +79,7 @@
 
       #### Technické požadavky
 
-      - Nainstalovaný Docker, [návod na instalaci](https://ondrej-sika.cz/docker/instalace/)
+      - Nainstalovaný Docker
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
 
     sk: |
@@ -111,7 +111,7 @@
 
       #### Technické požiadavky
 
-      - Nainštalovaný Docker, [návod na inštaláciu](https://ondrej-sika.cz/docker/instalace/)
+      - Nainštalovaný Docker
       - Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
     en: |
       ### What is Docker
@@ -229,7 +229,7 @@
       - Základy práce v terminálu
 
       #### Technické požadavky
-      - Nainstalovaný Kubernetes, návod na instalaci: [zde](https://ondrej-sika.cz/kubernetes/instalace/)
+      - Nainstalovaný Kubernetes
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
     en: |
       ### What is Kubernetes
@@ -285,7 +285,7 @@
       - Základy práce v terminále
 
       #### Technické požiadavky
-      - Nainštalovaný Kubernetes, návod na inštaláciu: [tu](https://ondrej-sika.cz/kubernetes/instalace/)
+      - Nainštalovaný Kubernetes
       - Přístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
 
 - id: rancher
@@ -344,7 +344,7 @@
 
       #### Požadavky
 
-      Požadavky na školení jsou na stránce [Příprava na školení Rancheru](/skoleni/rancher/priprava-na-skoleni)
+      Požadavky na školení jsou na stránce
     en: |
       ### What is Rancher
       Rancher is a tool for managing the Kubernetes cluster both on its own hardware and in the cloud (AWS, GCP, DigitalOcean). Rancher allows you to easily create and manage Kuberneres clusters from both web administration and Terraform.
@@ -369,7 +369,7 @@
       #### Technical Requirements
       - Terraform installed
       - Rancher CLI & RKE installed
-      - DigitalOcean account [if you don't have one yet, please use my referral and get 50 USD credit](https://sika.link/do-ref)
+      - DigitalOcean account
       - Access to the internet (https, ssh) - better without corporate proxy
 
 - id: git
@@ -788,7 +788,7 @@
       - Základy práce v terminále
 
       #### Technické požiadavky
-      - Nainštalovaný Ansible, [návod na inštaláciu](https://ondrej-sika.cz/ansible/instalace/)
+      - Nainštalovaný Ansible
       - Prístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
     en: |
       ### What is Ansible
@@ -889,9 +889,9 @@
 
       #### Technické požadavky
 
-      - [Nainstalovaný Terraform](/terraform/instalace)
+      - Nainstalovaný Terraform
       - Přístup na internet (ideálně bez korporatni proxy)
-      - Vlastní účet v Digital Oceanu výhodou - [Registrace + 50 USD kredit](https://sika.link/do-ref)
+      - Vlastní účet v Digital Oceanu výhodou
     en: |
       ### What is
 
@@ -1067,7 +1067,6 @@
       - Notebook s přístupem na internet
       - Docker nebo nainstalovány Prométheus, Alert Manager, Push Gateway a Grafanu
 
-      Informace pro přípravu na školení [zde](/skoleni/prometheus/priprava-na-skoleni)
     en: |
       ### What is Prometheus
       Prometheus is widely-adopted open-source systems monitoring and alerting toolkit and metrics server. It allows you to collect data metrics from your app and most of your infrastructure components, as well as slicing and dicing them in order to generate ad-hoc graphs, tables and alerts. Both Prometheus and Kubernetes joined CNCF - Cloud Native Computing Foundation.
