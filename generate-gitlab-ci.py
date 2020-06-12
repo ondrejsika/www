@@ -162,7 +162,7 @@ for site in SITES:
   stage: deploy_dev%(priority_suffix)s
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh %(site)s

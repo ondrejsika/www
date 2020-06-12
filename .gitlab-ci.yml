@@ -17,7 +17,7 @@ ansible-schulung.de dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ansible-schulung.de
@@ -83,7 +83,7 @@ ansible-skoleni.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ansible-skoleni.cz
@@ -149,7 +149,7 @@ dockerschulung.de dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh dockerschulung.de
@@ -215,7 +215,7 @@ gitlab-ci.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh gitlab-ci.cz
@@ -281,7 +281,7 @@ kubernetes-schulung.de dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh kubernetes-schulung.de
@@ -374,7 +374,7 @@ sika-kraml.de dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh sika-kraml.de
@@ -434,7 +434,7 @@ skoleni-docker.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skoleni-docker.cz
@@ -500,7 +500,7 @@ skoleni-git.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skoleni-git.cz
@@ -566,7 +566,7 @@ skoleni-kubernetes.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skoleni-kubernetes.cz
@@ -632,7 +632,7 @@ git-training.uk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh git-training.uk
@@ -698,7 +698,7 @@ docker-training.uk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh docker-training.uk
@@ -764,7 +764,7 @@ kubernetes-training.uk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh kubernetes-training.uk
@@ -830,7 +830,7 @@ ansible-training.uk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ansible-training.uk
@@ -896,7 +896,7 @@ gitlab-training.uk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh gitlab-training.uk
@@ -962,7 +962,7 @@ skolenie-git.sk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skolenie-git.sk
@@ -1028,7 +1028,7 @@ skolenie-gitlab.sk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skolenie-gitlab.sk
@@ -1094,7 +1094,7 @@ skolenie-docker.sk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skolenie-docker.sk
@@ -1160,7 +1160,7 @@ skolenie.kubernetes.sk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skolenie.kubernetes.sk
@@ -1226,7 +1226,7 @@ skolenie-ansible.sk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skolenie-ansible.sk
@@ -1258,7 +1258,7 @@ ansible-utbildning.se dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ansible-utbildning.se
@@ -1324,7 +1324,7 @@ docker-utbildning.se dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh docker-utbildning.se
@@ -1390,7 +1390,7 @@ git-utbildning.se dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh git-utbildning.se
@@ -1456,7 +1456,7 @@ gitlab-utbildning.se dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh gitlab-utbildning.se
@@ -1522,7 +1522,7 @@ kubernetes-utbildning.se dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh kubernetes-utbildning.se
@@ -1588,7 +1588,7 @@ ondrej-sika.uk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ondrej-sika.uk
@@ -1618,7 +1618,7 @@ ondrej-sika.de dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ondrej-sika.de
@@ -1680,7 +1680,7 @@ ondrejsikalabs.com dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ondrejsikalabs.com
@@ -1740,7 +1740,7 @@ docker-training.de dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh docker-training.de
@@ -1806,7 +1806,7 @@ docker-training.ch dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh docker-training.ch
@@ -1872,7 +1872,7 @@ docker-training.at dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh docker-training.at
@@ -1938,7 +1938,7 @@ docker-training.nl dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh docker-training.nl
@@ -2004,7 +2004,7 @@ git-training.nl dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh git-training.nl
@@ -2070,7 +2070,7 @@ trainera.io dev deploy k8s:
   stage: deploy_dev_priority
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh trainera.io
@@ -2130,7 +2130,7 @@ salzburgdevops.com dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh salzburgdevops.com
@@ -2190,7 +2190,7 @@ training.kubernetes.is dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh training.kubernetes.is
@@ -2256,7 +2256,7 @@ training.kubernetes.lu dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh training.kubernetes.lu
@@ -2322,7 +2322,7 @@ skoleni-terraform.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skoleni-terraform.cz
@@ -2388,7 +2388,7 @@ sika-training.com dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh sika-training.com
@@ -2475,7 +2475,7 @@ sikahq.com dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh sikahq.com
@@ -2535,7 +2535,7 @@ ondrejsika.io dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ondrejsika.io
@@ -2564,7 +2564,7 @@ cal-api.sika.io dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh cal-api.sika.io
@@ -2624,7 +2624,7 @@ skoleni-proxmox.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skoleni-proxmox.cz
@@ -2690,7 +2690,7 @@ ydo.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ydo.cz
@@ -2750,7 +2750,7 @@ skoleni-prometheus.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skoleni-prometheus.cz
@@ -2816,7 +2816,7 @@ ccc.oxs.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ccc.oxs.cz
@@ -2876,7 +2876,7 @@ skoleni-rancher.cz dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh skoleni-rancher.cz
@@ -2942,7 +2942,7 @@ sika.blog dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh sika.blog
@@ -3002,7 +3002,7 @@ static.sika.io dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh static.sika.io
@@ -3062,7 +3062,7 @@ ondrejsika.is dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh ondrejsika.is
@@ -3124,7 +3124,7 @@ trainera.de dev deploy k8s:
   stage: deploy_dev_priority
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh trainera.de
@@ -3184,7 +3184,7 @@ sikalabs.com dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
-    GIT_CLEAN_FLAGS: None
+    GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - ./deploy-now-surge.sh sikalabs.com
@@ -3199,8 +3199,8 @@ sikalabs.com dev deploy k8s:
   only:
     changes:
       - yarn.lock
-      - packages/sikalabs.com/**/*
       - packages/common/**/*
+      - packages/sikalabs.com/**/*
   environment:
     name: dev sikalabs.com
     url: https://sikalabs.com.panda.k8s.oxs.cz
@@ -3228,8 +3228,8 @@ sikalabs.com prod deploy k8s:
       - master
     changes:
       - yarn.lock
-      - packages/sikalabs.com/**/*
       - packages/common/**/*
+      - packages/sikalabs.com/**/*
   environment:
     name: prod sikalabs.com
     url: https://sikalabs.com
