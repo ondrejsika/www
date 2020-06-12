@@ -3198,8 +3198,8 @@ sikalabs.com dev deploy k8s:
       - $EXCEPT_DEPLOY_DEV_K8S
   only:
     changes:
-      - packages/common/**/*
       - packages/sikalabs.com/**/*
+      - packages/common/**/*
       - yarn.lock
   environment:
     name: dev sikalabs.com
@@ -3227,8 +3227,8 @@ sikalabs.com prod deploy k8s:
     refs:
       - master
     changes:
-      - packages/common/**/*
       - packages/sikalabs.com/**/*
+      - packages/common/**/*
       - yarn.lock
   environment:
     name: prod sikalabs.com
