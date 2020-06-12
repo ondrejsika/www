@@ -17,6 +17,9 @@ const Page = () => (
         ["PROXMOX", "/skoleni/proxmox"],
         ["ELK / EFK", "/skoleni/elk"],
         ["REACT & NEXT.JS", "/skoleni/react"],
+        ["GO (GOLANG)", "/skoleni/go"],
+        ["PYTHON", "/skoleni/python"],
+        ["DJANGO", "/skoleni/django"],
         ["VIDEOKURZY", "/videokurzy"]
       ].map((link, i) => (
         <li key={i}>
