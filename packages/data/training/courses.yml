@@ -1219,3 +1219,37 @@
       **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
+- id: django
+  skoleniio:
+    name: django
+    lecturer: ondrejsika
+  name:
+    cs: Školení Djanga
+    en: Python Training
+    de: Python Schulung
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 11 999 CZK
+      de: 599 EUR
+      uk: 599 EUR
+    in_house:
+      cz: 50 000 CZK
+      de: 3999 EUR
+      uk: 3999 GBP
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  agenda:
+    cs: |
+      **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+  description:
+    cs: |
+      **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
