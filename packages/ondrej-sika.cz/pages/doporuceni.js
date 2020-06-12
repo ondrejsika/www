@@ -15,7 +15,7 @@ export const TwitterLinkedin = props => (
             Twitteru. Pokud chcete vidět zdroj, podívejte se na můj LinkedIn
             profil{" "}
             <a href="https://www.linkedin.com/in/ondrejsika/">/in/ondrejsika</a>
-            , je tam více než 40 doporučení.
+            , je tam více než 60 doporučení.
           </strong>
         </p>
         {recommendation_file.map((rec, i) => (
