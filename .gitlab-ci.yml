@@ -12,6 +12,38 @@ stages:
 variables:
   DOCKER_BUILDKIT: '1'
 
+ansible-schulung.de dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ansible-schulung.de
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ansible-schulung.de/**/*
+      - yarn.lock
+  environment:
+    name: dev ansible-schulung.de
+    url: https://ansible-schulung.de.panda.k8s.oxs.cz
+  dependencies: []
+
 ansible-schulung.de prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -44,6 +76,38 @@ ansible-schulung.de prod deploy k8s:
   environment:
     name: prod ansible-schulung.de
     url: https://ansible-schulung.de
+  dependencies: []
+
+ansible-skoleni.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ansible-skoleni.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ansible-skoleni.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev ansible-skoleni.cz
+    url: https://ansible-skoleni.cz.panda.k8s.oxs.cz
   dependencies: []
 
 ansible-skoleni.cz prod deploy k8s:
@@ -80,6 +144,38 @@ ansible-skoleni.cz prod deploy k8s:
     url: https://ansible-skoleni.cz
   dependencies: []
 
+dockerschulung.de dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh dockerschulung.de
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/dockerschulung.de/**/*
+      - yarn.lock
+  environment:
+    name: dev dockerschulung.de
+    url: https://dockerschulung.de.panda.k8s.oxs.cz
+  dependencies: []
+
 dockerschulung.de prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -114,6 +210,38 @@ dockerschulung.de prod deploy k8s:
     url: https://dockerschulung.de
   dependencies: []
 
+gitlab-ci.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh gitlab-ci.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/gitlab-ci.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev gitlab-ci.cz
+    url: https://gitlab-ci.cz.panda.k8s.oxs.cz
+  dependencies: []
+
 gitlab-ci.cz prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -146,6 +274,38 @@ gitlab-ci.cz prod deploy k8s:
   environment:
     name: prod gitlab-ci.cz
     url: https://gitlab-ci.cz
+  dependencies: []
+
+kubernetes-schulung.de dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh kubernetes-schulung.de
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/kubernetes-schulung.de/**/*
+      - yarn.lock
+  environment:
+    name: dev kubernetes-schulung.de
+    url: https://kubernetes-schulung.de.panda.k8s.oxs.cz
   dependencies: []
 
 kubernetes-schulung.de prod deploy k8s:
@@ -209,6 +369,35 @@ ondrej-sika.cz prod deploy cloudflare:
     url: https://ondrej-sika.cz
   dependencies: []
 
+sika-kraml.de dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh sika-kraml.de
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika-kraml.de/**/*
+      - yarn.lock
+  environment:
+    name: dev sika-kraml.de
+    url: https://sika-kraml.de.panda.k8s.oxs.cz
+  dependencies: []
+
 sika-kraml.de prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -238,6 +427,38 @@ sika-kraml.de prod deploy k8s:
   environment:
     name: prod sika-kraml.de
     url: https://sika-kraml.de
+  dependencies: []
+
+skoleni-docker.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skoleni-docker.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-docker.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev skoleni-docker.cz
+    url: https://skoleni-docker.cz.panda.k8s.oxs.cz
   dependencies: []
 
 skoleni-docker.cz prod deploy k8s:
@@ -274,6 +495,38 @@ skoleni-docker.cz prod deploy k8s:
     url: https://skoleni-docker.cz
   dependencies: []
 
+skoleni-git.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skoleni-git.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-git.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev skoleni-git.cz
+    url: https://skoleni-git.cz.panda.k8s.oxs.cz
+  dependencies: []
+
 skoleni-git.cz prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -306,6 +559,38 @@ skoleni-git.cz prod deploy k8s:
   environment:
     name: prod skoleni-git.cz
     url: https://skoleni-git.cz
+  dependencies: []
+
+skoleni-kubernetes.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skoleni-kubernetes.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-kubernetes.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev skoleni-kubernetes.cz
+    url: https://skoleni-kubernetes.cz.panda.k8s.oxs.cz
   dependencies: []
 
 skoleni-kubernetes.cz prod deploy k8s:
@@ -342,6 +627,38 @@ skoleni-kubernetes.cz prod deploy k8s:
     url: https://skoleni-kubernetes.cz
   dependencies: []
 
+git-training.uk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh git-training.uk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/git-training.uk/**/*
+      - yarn.lock
+  environment:
+    name: dev git-training.uk
+    url: https://git-training.uk.panda.k8s.oxs.cz
+  dependencies: []
+
 git-training.uk prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -374,6 +691,38 @@ git-training.uk prod deploy k8s:
   environment:
     name: prod git-training.uk
     url: https://git-training.uk
+  dependencies: []
+
+docker-training.uk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh docker-training.uk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.uk/**/*
+      - yarn.lock
+  environment:
+    name: dev docker-training.uk
+    url: https://docker-training.uk.panda.k8s.oxs.cz
   dependencies: []
 
 docker-training.uk prod deploy k8s:
@@ -410,6 +759,38 @@ docker-training.uk prod deploy k8s:
     url: https://docker-training.uk
   dependencies: []
 
+kubernetes-training.uk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh kubernetes-training.uk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/kubernetes-training.uk/**/*
+      - yarn.lock
+  environment:
+    name: dev kubernetes-training.uk
+    url: https://kubernetes-training.uk.panda.k8s.oxs.cz
+  dependencies: []
+
 kubernetes-training.uk prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -442,6 +823,38 @@ kubernetes-training.uk prod deploy k8s:
   environment:
     name: prod kubernetes-training.uk
     url: https://kubernetes-training.uk
+  dependencies: []
+
+ansible-training.uk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ansible-training.uk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ansible-training.uk/**/*
+      - yarn.lock
+  environment:
+    name: dev ansible-training.uk
+    url: https://ansible-training.uk.panda.k8s.oxs.cz
   dependencies: []
 
 ansible-training.uk prod deploy k8s:
@@ -478,6 +891,38 @@ ansible-training.uk prod deploy k8s:
     url: https://ansible-training.uk
   dependencies: []
 
+gitlab-training.uk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh gitlab-training.uk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/gitlab-training.uk/**/*
+      - yarn.lock
+  environment:
+    name: dev gitlab-training.uk
+    url: https://gitlab-training.uk.panda.k8s.oxs.cz
+  dependencies: []
+
 gitlab-training.uk prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -510,6 +955,38 @@ gitlab-training.uk prod deploy k8s:
   environment:
     name: prod gitlab-training.uk
     url: https://gitlab-training.uk
+  dependencies: []
+
+skolenie-git.sk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skolenie-git.sk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie-git.sk/**/*
+      - yarn.lock
+  environment:
+    name: dev skolenie-git.sk
+    url: https://skolenie-git.sk.panda.k8s.oxs.cz
   dependencies: []
 
 skolenie-git.sk prod deploy k8s:
@@ -546,6 +1023,38 @@ skolenie-git.sk prod deploy k8s:
     url: https://skolenie-git.sk
   dependencies: []
 
+skolenie-gitlab.sk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skolenie-gitlab.sk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie-gitlab.sk/**/*
+      - yarn.lock
+  environment:
+    name: dev skolenie-gitlab.sk
+    url: https://skolenie-gitlab.sk.panda.k8s.oxs.cz
+  dependencies: []
+
 skolenie-gitlab.sk prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -580,6 +1089,38 @@ skolenie-gitlab.sk prod deploy k8s:
     url: https://skolenie-gitlab.sk
   dependencies: []
 
+skolenie-docker.sk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skolenie-docker.sk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie-docker.sk/**/*
+      - yarn.lock
+  environment:
+    name: dev skolenie-docker.sk
+    url: https://skolenie-docker.sk.panda.k8s.oxs.cz
+  dependencies: []
+
 skolenie-docker.sk prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -612,6 +1153,38 @@ skolenie-docker.sk prod deploy k8s:
   environment:
     name: prod skolenie-docker.sk
     url: https://skolenie-docker.sk
+  dependencies: []
+
+skolenie.kubernetes.sk dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skolenie.kubernetes.sk
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skolenie.kubernetes.sk/**/*
+      - yarn.lock
+  environment:
+    name: dev skolenie.kubernetes.sk
+    url: https://skolenie.kubernetes.sk.panda.k8s.oxs.cz
   dependencies: []
 
 skolenie.kubernetes.sk prod deploy k8s:
@@ -680,6 +1253,38 @@ skolenie-ansible.sk dev deploy k8s:
     url: https://skolenie-ansible.sk.panda.k8s.oxs.cz
   dependencies: []
 
+ansible-utbildning.se dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ansible-utbildning.se
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ansible-utbildning.se/**/*
+      - yarn.lock
+  environment:
+    name: dev ansible-utbildning.se
+    url: https://ansible-utbildning.se.panda.k8s.oxs.cz
+  dependencies: []
+
 ansible-utbildning.se prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -712,6 +1317,38 @@ ansible-utbildning.se prod deploy k8s:
   environment:
     name: prod ansible-utbildning.se
     url: https://ansible-utbildning.se
+  dependencies: []
+
+docker-utbildning.se dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh docker-utbildning.se
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-utbildning.se/**/*
+      - yarn.lock
+  environment:
+    name: dev docker-utbildning.se
+    url: https://docker-utbildning.se.panda.k8s.oxs.cz
   dependencies: []
 
 docker-utbildning.se prod deploy k8s:
@@ -748,6 +1385,38 @@ docker-utbildning.se prod deploy k8s:
     url: https://docker-utbildning.se
   dependencies: []
 
+git-utbildning.se dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh git-utbildning.se
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/git-utbildning.se/**/*
+      - yarn.lock
+  environment:
+    name: dev git-utbildning.se
+    url: https://git-utbildning.se.panda.k8s.oxs.cz
+  dependencies: []
+
 git-utbildning.se prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -782,6 +1451,38 @@ git-utbildning.se prod deploy k8s:
     url: https://git-utbildning.se
   dependencies: []
 
+gitlab-utbildning.se dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh gitlab-utbildning.se
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/gitlab-utbildning.se/**/*
+      - yarn.lock
+  environment:
+    name: dev gitlab-utbildning.se
+    url: https://gitlab-utbildning.se.panda.k8s.oxs.cz
+  dependencies: []
+
 gitlab-utbildning.se prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -814,6 +1515,38 @@ gitlab-utbildning.se prod deploy k8s:
   environment:
     name: prod gitlab-utbildning.se
     url: https://gitlab-utbildning.se
+  dependencies: []
+
+kubernetes-utbildning.se dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh kubernetes-utbildning.se
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/kubernetes-utbildning.se/**/*
+      - yarn.lock
+  environment:
+    name: dev kubernetes-utbildning.se
+    url: https://kubernetes-utbildning.se.panda.k8s.oxs.cz
   dependencies: []
 
 kubernetes-utbildning.se prod deploy k8s:
@@ -880,6 +1613,36 @@ ondrej-sika.uk dev deploy k8s:
     url: https://ondrej-sika.uk.panda.k8s.oxs.cz
   dependencies: []
 
+ondrej-sika.de dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ondrej-sika.de
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/ondrej-sika.de/**/*
+      - yarn.lock
+      - packages/ondrejsika-singlepage/**/*
+  environment:
+    name: dev ondrej-sika.de
+    url: https://ondrej-sika.de.panda.k8s.oxs.cz
+  dependencies: []
+
 ondrej-sika.de prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -912,6 +1675,35 @@ ondrej-sika.de prod deploy k8s:
     url: https://ondrej-sika.de
   dependencies: []
 
+ondrejsikalabs.com dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ondrejsikalabs.com
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ondrejsikalabs.com/**/*
+      - yarn.lock
+  environment:
+    name: dev ondrejsikalabs.com
+    url: https://ondrejsikalabs.com.panda.k8s.oxs.cz
+  dependencies: []
+
 ondrejsikalabs.com prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -941,6 +1733,38 @@ ondrejsikalabs.com prod deploy k8s:
   environment:
     name: prod ondrejsikalabs.com
     url: https://ondrejsikalabs.com
+  dependencies: []
+
+docker-training.de dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh docker-training.de
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.de/**/*
+      - yarn.lock
+  environment:
+    name: dev docker-training.de
+    url: https://docker-training.de.panda.k8s.oxs.cz
   dependencies: []
 
 docker-training.de prod deploy k8s:
@@ -977,6 +1801,38 @@ docker-training.de prod deploy k8s:
     url: https://docker-training.de
   dependencies: []
 
+docker-training.ch dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh docker-training.ch
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.ch/**/*
+      - yarn.lock
+  environment:
+    name: dev docker-training.ch
+    url: https://docker-training.ch.panda.k8s.oxs.cz
+  dependencies: []
+
 docker-training.ch prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1009,6 +1865,38 @@ docker-training.ch prod deploy k8s:
   environment:
     name: prod docker-training.ch
     url: https://docker-training.ch
+  dependencies: []
+
+docker-training.at dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh docker-training.at
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.at/**/*
+      - yarn.lock
+  environment:
+    name: dev docker-training.at
+    url: https://docker-training.at.panda.k8s.oxs.cz
   dependencies: []
 
 docker-training.at prod deploy k8s:
@@ -1045,6 +1933,38 @@ docker-training.at prod deploy k8s:
     url: https://docker-training.at
   dependencies: []
 
+docker-training.nl dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh docker-training.nl
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/docker-training.nl/**/*
+      - yarn.lock
+  environment:
+    name: dev docker-training.nl
+    url: https://docker-training.nl.panda.k8s.oxs.cz
+  dependencies: []
+
 docker-training.nl prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1077,6 +1997,38 @@ docker-training.nl prod deploy k8s:
   environment:
     name: prod docker-training.nl
     url: https://docker-training.nl
+  dependencies: []
+
+git-training.nl dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh git-training.nl
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/git-training.nl/**/*
+      - yarn.lock
+  environment:
+    name: dev git-training.nl
+    url: https://git-training.nl.panda.k8s.oxs.cz
   dependencies: []
 
 git-training.nl prod deploy k8s:
@@ -1113,6 +2065,35 @@ git-training.nl prod deploy k8s:
     url: https://git-training.nl
   dependencies: []
 
+trainera.io dev deploy k8s:
+  image: node
+  stage: deploy_dev_priority
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh trainera.io
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/trainera.io/**/*
+      - yarn.lock
+  environment:
+    name: dev trainera.io
+    url: https://trainera.io.panda.k8s.oxs.cz
+  dependencies: []
+
 trainera.io prod deploy k8s:
   stage: deploy_prod_priority
   variables:
@@ -1144,6 +2125,35 @@ trainera.io prod deploy k8s:
     url: https://trainera.io
   dependencies: []
 
+salzburgdevops.com dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh salzburgdevops.com
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/salzburgdevops.com/**/*
+      - yarn.lock
+  environment:
+    name: dev salzburgdevops.com
+    url: https://salzburgdevops.com.panda.k8s.oxs.cz
+  dependencies: []
+
 salzburgdevops.com prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1173,6 +2183,38 @@ salzburgdevops.com prod deploy k8s:
   environment:
     name: prod salzburgdevops.com
     url: https://salzburgdevops.com
+  dependencies: []
+
+training.kubernetes.is dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh training.kubernetes.is
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.is/**/*
+      - yarn.lock
+  environment:
+    name: dev training.kubernetes.is
+    url: https://training.kubernetes.is.panda.k8s.oxs.cz
   dependencies: []
 
 training.kubernetes.is prod deploy k8s:
@@ -1209,6 +2251,38 @@ training.kubernetes.is prod deploy k8s:
     url: https://training.kubernetes.is
   dependencies: []
 
+training.kubernetes.lu dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh training.kubernetes.lu
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/training.kubernetes.lu/**/*
+      - yarn.lock
+  environment:
+    name: dev training.kubernetes.lu
+    url: https://training.kubernetes.lu.panda.k8s.oxs.cz
+  dependencies: []
+
 training.kubernetes.lu prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1243,6 +2317,38 @@ training.kubernetes.lu prod deploy k8s:
     url: https://training.kubernetes.lu
   dependencies: []
 
+skoleni-terraform.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skoleni-terraform.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-terraform.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev skoleni-terraform.cz
+    url: https://skoleni-terraform.cz.panda.k8s.oxs.cz
+  dependencies: []
+
 skoleni-terraform.cz prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1275,6 +2381,35 @@ skoleni-terraform.cz prod deploy k8s:
   environment:
     name: prod skoleni-terraform.cz
     url: https://skoleni-terraform.cz
+  dependencies: []
+
+sika-training.com dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh sika-training.com
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika-training.com/**/*
+      - yarn.lock
+  environment:
+    name: dev sika-training.com
+    url: https://sika-training.com.panda.k8s.oxs.cz
   dependencies: []
 
 sika-training.com prod deploy k8s:
@@ -1333,6 +2468,35 @@ ondrej-sika.com prod deploy cloudflare:
   environment:
     name: prod ondrej-sika.com
     url: https://ondrej-sika.com
+  dependencies: []
+
+sikahq.com dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh sikahq.com
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sikahq.com/**/*
+      - yarn.lock
+  environment:
+    name: dev sikahq.com
+    url: https://sikahq.com.panda.k8s.oxs.cz
   dependencies: []
 
 sikahq.com prod deploy k8s:
@@ -1395,6 +2559,35 @@ ondrejsika.io dev deploy k8s:
     url: https://ondrejsika.io.panda.k8s.oxs.cz
   dependencies: []
 
+cal-api.sika.io dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh cal-api.sika.io
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/cal-api.sika.io/**/*
+      - yarn.lock
+  environment:
+    name: dev cal-api.sika.io
+    url: https://cal-api.sika.io.panda.k8s.oxs.cz
+  dependencies: []
+
 cal-api.sika.io prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1424,6 +2617,38 @@ cal-api.sika.io prod deploy k8s:
   environment:
     name: prod cal-api.sika.io
     url: https://cal-api.sika.io
+  dependencies: []
+
+skoleni-proxmox.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skoleni-proxmox.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-proxmox.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev skoleni-proxmox.cz
+    url: https://skoleni-proxmox.cz.panda.k8s.oxs.cz
   dependencies: []
 
 skoleni-proxmox.cz prod deploy k8s:
@@ -1460,6 +2685,35 @@ skoleni-proxmox.cz prod deploy k8s:
     url: https://skoleni-proxmox.cz
   dependencies: []
 
+ydo.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ydo.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ydo.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev ydo.cz
+    url: https://ydo.cz.panda.k8s.oxs.cz
+  dependencies: []
+
 ydo.cz prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1489,6 +2743,38 @@ ydo.cz prod deploy k8s:
   environment:
     name: prod ydo.cz
     url: https://ydo.cz
+  dependencies: []
+
+skoleni-prometheus.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skoleni-prometheus.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-prometheus.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev skoleni-prometheus.cz
+    url: https://skoleni-prometheus.cz.panda.k8s.oxs.cz
   dependencies: []
 
 skoleni-prometheus.cz prod deploy k8s:
@@ -1525,6 +2811,35 @@ skoleni-prometheus.cz prod deploy k8s:
     url: https://skoleni-prometheus.cz
   dependencies: []
 
+ccc.oxs.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ccc.oxs.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/ccc.oxs.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev ccc.oxs.cz
+    url: https://ccc.oxs.cz.panda.k8s.oxs.cz
+  dependencies: []
+
 ccc.oxs.cz prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1554,6 +2869,38 @@ ccc.oxs.cz prod deploy k8s:
   environment:
     name: prod ccc.oxs.cz
     url: https://ccc.oxs.cz
+  dependencies: []
+
+skoleni-rancher.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh skoleni-rancher.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/training/sessions.yml
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/recommendations/**/*
+      - packages/data/training/pictures/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/skoleni-rancher.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev skoleni-rancher.cz
+    url: https://skoleni-rancher.cz.panda.k8s.oxs.cz
   dependencies: []
 
 skoleni-rancher.cz prod deploy k8s:
@@ -1590,6 +2937,35 @@ skoleni-rancher.cz prod deploy k8s:
     url: https://skoleni-rancher.cz
   dependencies: []
 
+sika.blog dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh sika.blog
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/sika.blog/**/*
+      - yarn.lock
+  environment:
+    name: dev sika.blog
+    url: https://sika.blog.panda.k8s.oxs.cz
+  dependencies: []
+
 sika.blog prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1621,6 +2997,35 @@ sika.blog prod deploy k8s:
     url: https://sika.blog
   dependencies: []
 
+static.sika.io dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh static.sika.io
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/course-landing/**/*
+      - packages/static.sika.io/**/*
+      - yarn.lock
+  environment:
+    name: dev static.sika.io
+    url: https://static.sika.io.panda.k8s.oxs.cz
+  dependencies: []
+
 static.sika.io prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1650,6 +3055,36 @@ static.sika.io prod deploy k8s:
   environment:
     name: prod static.sika.io
     url: https://static.sika.io
+  dependencies: []
+
+ondrejsika.is dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ondrejsika.is
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/ondrejsika.is/**/*
+      - yarn.lock
+      - packages/ondrejsika-singlepage/**/*
+  environment:
+    name: dev ondrejsika.is
+    url: https://ondrejsika.is.panda.k8s.oxs.cz
   dependencies: []
 
 ondrejsika.is prod deploy k8s:
@@ -1684,6 +3119,35 @@ ondrejsika.is prod deploy k8s:
     url: https://ondrejsika.is
   dependencies: []
 
+trainera.de dev deploy k8s:
+  image: node
+  stage: deploy_dev_priority
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh trainera.de
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/trainera.de/**/*
+      - yarn.lock
+  environment:
+    name: dev trainera.de
+    url: https://trainera.de.panda.k8s.oxs.cz
+  dependencies: []
+
 trainera.de prod deploy k8s:
   stage: deploy_prod_priority
   variables:
@@ -1715,6 +3179,33 @@ trainera.de prod deploy k8s:
     url: https://trainera.de
   dependencies: []
 
+sikalabs.com dev deploy k8s:
+  image: node
+  stage: deploy_dev
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
+  script:
+    - yarn
+    - ./deploy-now-surge.sh sikalabs.com
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - yarn.lock
+      - packages/sikalabs.com/**/*
+      - packages/common/**/*
+  environment:
+    name: dev sikalabs.com
+    url: https://sikalabs.com.panda.k8s.oxs.cz
+  dependencies: []
+
 sikalabs.com prod deploy k8s:
   stage: deploy_prod
   variables:
@@ -1736,9 +3227,9 @@ sikalabs.com prod deploy k8s:
     refs:
       - master
     changes:
+      - yarn.lock
       - packages/sikalabs.com/**/*
       - packages/common/**/*
-      - yarn.lock
   environment:
     name: prod sikalabs.com
     url: https://sikalabs.com
