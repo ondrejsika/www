@@ -122,12 +122,8 @@ out.append(
 image: ondrejsika/ci
 
 stages:
-  - build_js_priority
-  - build_docker_priority
   - deploy_dev_priority
   - deploy_prod_priority
-  - build_js
-  - build_docker
   - deploy_dev
   - deploy_prod
 
@@ -155,59 +151,6 @@ def generate_dependencies(site):
 for site in SITES:
     if site in ALL_SITES and ALL_SITES[site].get("cloudflare_workers"):
         pass
-    else:
-        out.append(
-            """
-%(site)s build js:
-  stage: build_js%(priority_suffix)s
-  image: node
-  variables:
-    GIT_CLEAN_FLAGS: none
-  script:
-    - yarn
-    - rm -rf packages/%(site)s/out
-    - yarn run static-%(site)s
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_JS
-  only:
-    changes:
-%(dependencies)s
-  artifacts:
-    name: %(site)s
-    paths:
-      - packages/%(site)s/out
-
-
-%(site)s build docker:
-  dependencies:
-    - %(site)s build js
-  variables:
-    GIT_STRATEGY: none
-  stage: build_docker%(priority_suffix)s
-  script:
-    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/* packages/%(site)s/
-    - docker build -t registry.sikahq.com/www/www/%(site)s:$CI_COMMIT_SHORT_SHA packages/%(site)s
-    - rm packages/%(site)s/Dockerfile
-    - rm packages/%(site)s/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/%(site)s:$CI_COMMIT_SHORT_SHA
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_DOCKER
-  only:
-    changes:
-%(dependencies)s
-"""
-            % {
-                "site": site,
-                "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
-                "dependencies": generate_dependencies(site),
-            }
-        )
-
     if site in DEV_SITES:
         if ALL_SITES[site].get("cloudflare_workers"):
             pass
@@ -220,10 +163,7 @@ for site in SITES:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
   script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install %(name)s-dev ondrejsika/one-image --set host=%(site)s%(suffix)s --set image=$CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy %(name)s-dev
+    - ./deploy-now-surge.sh ondrej-sika.cz %(site)s
   except:
     - master
   except:
@@ -292,11 +232,12 @@ for site in SITES:
   variables:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
+    KUBERNETES_CONTEXT: panda-default
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
+    - touch deploy-now.env.sh
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install %(name)s ondrejsika/one-image --set host=%(site)s --set image=$CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy %(name)s
+    - ./deploy-now-k8s.sh %(site)s
   except:
     variables:
       - $EXCEPT_DEPLOY
