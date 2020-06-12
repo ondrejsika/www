@@ -653,6 +653,7 @@ skolenie-ansible.sk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
   script:
     - yarn
     - ./deploy-now-surge.sh skolenie-ansible.sk
@@ -854,6 +855,7 @@ ondrej-sika.uk dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
   script:
     - yarn
     - ./deploy-now-surge.sh ondrej-sika.uk
@@ -1369,6 +1371,7 @@ ondrejsika.io dev deploy k8s:
   stage: deploy_dev
   variables:
     KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: None
   script:
     - yarn
     - ./deploy-now-surge.sh ondrejsika.io
@@ -1733,8 +1736,8 @@ sikalabs.com prod deploy k8s:
     refs:
       - master
     changes:
-      - packages/common/**/*
       - packages/sikalabs.com/**/*
+      - packages/common/**/*
       - yarn.lock
   environment:
     name: prod sikalabs.com
