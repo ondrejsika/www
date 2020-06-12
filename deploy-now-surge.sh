@@ -7,5 +7,5 @@ DOMAIN=$NAME-$(git rev-parse --abbrev-ref HEAD)-$(git rev-parse --short HEAD)-$(
 DOMAIN_BRANCH=$NAME-$(git rev-parse --abbrev-ref HEAD).surge.sh
 
 yarn static-$SITE
-surge packages/$SITE/out $DOMAIN
-surge packages/$SITE/out $DOMAIN_BRANCH
+./node_modules/.bin/surge packages/$SITE/out $DOMAIN
+./node_modules/.bin/surge packages/$SITE/out $DOMAIN_BRANCH
