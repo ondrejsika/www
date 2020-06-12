@@ -151,7 +151,7 @@ def generate_dependencies(site):
 for site in SITES:
     if site in ALL_SITES and ALL_SITES[site].get("cloudflare_workers"):
         pass
-    if site in DEV_SITES:
+    if site in ALL_SITES:
         if ALL_SITES[site].get("cloudflare_workers"):
             pass
         else:
