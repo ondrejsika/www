@@ -3198,9 +3198,9 @@ sikalabs.com dev deploy k8s:
       - $EXCEPT_DEPLOY_DEV_K8S
   only:
     changes:
-      - yarn.lock
       - packages/common/**/*
       - packages/sikalabs.com/**/*
+      - yarn.lock
   environment:
     name: dev sikalabs.com
     url: https://sikalabs.com-$CI_COMMIT_REF_SLUG.surge.sh
@@ -3227,9 +3227,9 @@ sikalabs.com prod deploy k8s:
     refs:
       - master
     changes:
-      - yarn.lock
       - packages/common/**/*
       - packages/sikalabs.com/**/*
+      - yarn.lock
   environment:
     name: prod sikalabs.com
     url: https://sikalabs.com
