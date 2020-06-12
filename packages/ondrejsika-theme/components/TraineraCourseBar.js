@@ -111,7 +111,7 @@ const TraineraCourseBar = props => {
   return (
     <>
       <TriangleBottomRight hidden={props.hidden} site={props.site} />
-      <Trainera>
+      <Trainera site={props.site}>
         <Container>
           <Header>{props.LectureImgHeader}</Header>
           <div className="container-flex banner-courses pb-3">
