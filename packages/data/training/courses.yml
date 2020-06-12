@@ -13,12 +13,12 @@
   price:
     open:
       cz: 11 999 CZK
-      sk: 389 EUR
+      sk: 399 EUR
       de: 799 EUR
       uk: "799 EUR"
     in_house:
       cz: 50 000 CZK
-      sk: 1550 EUR
+      sk: 1990 EUR
       de: 3999 EUR
       uk: "2999 EUR"
   twitter_recommendations:
@@ -154,12 +154,12 @@
   price:
     open:
       cz: 11 999 CZK
-      sk: 389 EUR
+      sk: 399 EUR
       de: 799 EUR
       uk: 799 EUR
     in_house:
       cz: 50 000 CZK
-      sk: 1550 EUR
+      sk: 1999 EUR
       de: 3999 EUR
       uk: 2999 EUR
   twitter_recommendations:
@@ -678,18 +678,18 @@
     - ondrejsika
   price:
     open:
-      cz: 6 800 CZK
-      sk: "??? EUR"
+      cz: 11 999 CZK
+      sk: 399 EUR
       nl: "??? EUR"
-      de: 399 EUR
-      uk: 399 EUR
+      de: 799 EUR
+      uk: 799 EUR
       se: "??? SEK"
     in_house:
-      cz: 25 000 CZK
-      sk: "??? EUR"
+      cz: 50 000 CZK
+      sk: 1999 EUR
       nl: "??? EUR"
-      de: 1999 EUR
-      uk: 1999 EUR
+      de: 3999 EUR
+      uk: 3999 EUR
       se: "??? SEK"
   twitter_recommendations:
     cs: []

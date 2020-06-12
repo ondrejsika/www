@@ -2061,9 +2061,9 @@
   course_id: ansible
   name: Training Ansible
   city: online
-  price: 399 EUR
+  price: 799 EUR
   venue_id: online
-  length: 1 day
+  length: 2 days
   date_from: 10.6.2020
   date_to: 10.6.2020
   facebook_event: https://www.facebook.com/events/1446869245474135/
