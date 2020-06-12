@@ -342,6 +342,35 @@ kubernetes-schulung.de prod deploy k8s:
     url: https://kubernetes-schulung.de
   dependencies: []
 
+ondrej-sika.cz dev deploy k8s:
+  image: node
+  stage: deploy_dev_priority
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ondrej-sika.cz
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/ondrej-sika.cz/**/*
+      - yarn.lock
+  environment:
+    name: dev ondrej-sika.cz
+    url: https://ondrej-sika.cz-$CI_COMMIT_REF_SLUG.surge.sh
+  dependencies: []
+
 ondrej-sika.cz prod deploy cloudflare:
   image: node
   stage: deploy_prod_priority
@@ -2443,6 +2472,35 @@ sika-training.com prod deploy k8s:
     url: https://sika-training.com
   dependencies: []
 
+ondrej-sika.com dev deploy k8s:
+  image: node
+  stage: deploy_dev_priority
+  variables:
+    KUBECONFIG: .kubeconfig
+    GIT_CLEAN_FLAGS: none
+  script:
+    - yarn
+    - ./deploy-now-surge.sh ondrej-sika.com
+  except:
+    - master
+  except:
+    variables:
+      - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_K8S
+      - $EXCEPT_DEPLOY_DEV
+      - $EXCEPT_DEPLOY_DEV_K8S
+  only:
+    changes:
+      - packages/data/**/*
+      - packages/common/**/*
+      - packages/ondrejsika-theme/**/*
+      - packages/ondrej-sika.com/**/*
+      - yarn.lock
+  environment:
+    name: dev ondrej-sika.com
+    url: https://ondrej-sika.com-$CI_COMMIT_REF_SLUG.surge.sh
+  dependencies: []
+
 ondrej-sika.com prod deploy cloudflare:
   image: node
   stage: deploy_prod_priority
@@ -3199,8 +3257,8 @@ sikalabs.com dev deploy k8s:
   only:
     changes:
       - packages/sikalabs.com/**/*
-      - packages/common/**/*
       - yarn.lock
+      - packages/common/**/*
   environment:
     name: dev sikalabs.com
     url: https://sikalabs.com-$CI_COMMIT_REF_SLUG.surge.sh
@@ -3228,8 +3286,8 @@ sikalabs.com prod deploy k8s:
       - master
     changes:
       - packages/sikalabs.com/**/*
-      - packages/common/**/*
       - yarn.lock
+      - packages/common/**/*
   environment:
     name: prod sikalabs.com
     url: https://sikalabs.com
