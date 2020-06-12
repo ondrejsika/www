@@ -161,7 +161,6 @@ for site in SITES:
   image: node
   stage: deploy_dev%(priority_suffix)s
   variables:
-    GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
   script:
     - yarn
