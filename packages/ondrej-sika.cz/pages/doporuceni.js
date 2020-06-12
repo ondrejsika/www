@@ -18,8 +18,8 @@ export const TwitterLinkedin = props => (
             , je tam více než 40 doporučení.
           </strong>
         </p>
-        {recommendation_file.map(rec => (
-          <div className="mb-3">
+        {recommendation_file.map((rec, i) => (
+          <div className="mb-3" key={i}>
             <Recommendation
               id={rec.id}
               lang={props.site.lang}
@@ -30,8 +30,8 @@ export const TwitterLinkedin = props => (
         ))}
       </div>
       <div className="col-6">
-        {twitter_recommendation_file.map(rec => (
-          <TwitterRecommendations ids={[rec.id]} />
+        {twitter_recommendation_file.map((rec, i) => (
+          <TwitterRecommendations key={i} ids={[rec.id]} />
         ))}
       </div>
     </div>
