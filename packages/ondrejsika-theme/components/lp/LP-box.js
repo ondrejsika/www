@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "@app/ondrejsika-theme/components/Lp-text";
+import Text from "@app/ondrejsika-theme/components/lp/LP-text";
 
 const Header = styled.h3`
   color: #131480;

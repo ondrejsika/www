@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Col } from "react-bootstrap";
 import BaseLandingPage from "@app/ondrejsika-theme/layouts/BaseLandingPage";
-import Text from "@app/ondrejsika-theme/components/Lp-text";
+import Text from "@app/ondrejsika-theme/components/lp/LP-text";
 
 const Li = styled.li`
   list-style: none;
