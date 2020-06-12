@@ -13,13 +13,13 @@ import mail_grey from "@app/data/pictures/landing-page/mail.svg";
 import arrow from "@app/data/pictures/landing-page/arrow.svg";
 import phone from "@app/data/pictures/landing-page/phone.svg";
 
-import Button from "@app/ondrejsika-theme/components/Lp-button";
+import Button from "@app/ondrejsika-theme/components/LP-button";
 import FloatingBtn from "@app/ondrejsika-theme/components/FloatingBtn";
 
-import Text from "@app/ondrejsika-theme/components/Lp-text";
-import Box from "@app/ondrejsika-theme/components/Lp-Box";
-import SectionHeader from "@app/ondrejsika-theme/components/Lp-sectionHeader";
-import Companies from "@app/ondrejsika-theme/components/Lp-companies";
+import Text from "@app/ondrejsika-theme/components/LP-text";
+import Box from "@app/ondrejsika-theme/components/LP-Box";
+import SectionHeader from "@app/ondrejsika-theme/components/LP-sectionHeader";
+import Companies from "@app/ondrejsika-theme/components/LP-companies";
 import Background from "@app/ondrejsika-theme/components/LP-background";
 import Point from "@app/ondrejsika-theme/components/LP-point";
 
