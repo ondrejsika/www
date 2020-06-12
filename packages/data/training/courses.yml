@@ -1092,3 +1092,96 @@
       #### Technical Requirements
       - Access to the internet - ideally without corporate proxy
       - Installed Docker or Prometheus, Alertmanager, Pushgateway and Grafana
+
+- id: go
+  skoleniio:
+    name: go
+    lecturer: ondrejsika
+  name:
+    cs: Školení Go (Golang)
+    en: Go (Golang) Training
+    de: Go (Golang) Schulung
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 11 999 CZK
+      de: 599 EUR
+      uk: 599 EUR
+    in_house:
+      cz: 50 000 CZK
+      de: 3999 EUR
+      uk: 3999 GBP
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  agenda:
+    cs: |
+      ### Co Vás naučím
+
+      - Proc Go
+      -	Uvod do jazyka Go
+      - Nastaveni vyvojoveho prostredi
+      - Zakladni datove typy
+      - Kompozitni datove typy
+      - Protokoly a formaty
+      - Funkce a organizace kodu
+      - OOP v GO
+      - Interfaces a abstrakce
+      - Zaklady konkurence
+      - Vlakna v Go
+
+    en: |
+      ### Course Outline
+
+      - Why Go
+      -	Go Introduction
+      - Development Environment Setup for Go
+      - Basic Data Types
+      - Composite Data Types
+      - Protocols and Formats
+      - Functions and Code Organization
+      - Function Types
+      - Object Orientation in Go
+      - Interfaces
+      - Why Use Concurrency?
+      - Concureny Basics
+      - Threads in Go
+      - Synchronized Communication
+  description:
+    cs: |
+      **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
+
+      ### Co Vás naučím
+
+      - Proc Go
+      -	Uvod do jazyka Go
+      - Nastaveni vyvojoveho prostredi
+      - Zakladni datove typy
+      - Kompozitni datove typy
+      - Protokoly a formaty
+      - Funkce a organizace kodu
+      - OOP v GO
+      - Interfaces a abstrakce
+      - Zaklady konkurence
+      - Vlakna v Go
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
+      ### Course Outline
+
+      - Why Go
+      -	Go Introduction
+      - Development Environment Setup for Go
+      - Basic Data Types
+      - Composite Data Types
+      - Protocols and Formats
+      - Functions and Code Organization
+      - Function Types
+      - Object Orientation in Go
+      - Interfaces
+      - Why Use Concurrency?
+      - Concureny Basics
+      - Threads in Go
+      - Synchronized Communication
