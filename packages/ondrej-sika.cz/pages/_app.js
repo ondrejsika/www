@@ -158,6 +158,10 @@ const Footer = (
         <Link href="/devops-pipeline">
           <ThemeFooter.A href="#">DevOps pipeline</ThemeFooter.A>
         </Link>
+        <span className="text-white">&nbsp;|&nbsp;</span>
+        <Link href="/seznam-skoleni">
+          <ThemeFooter.A href="#">Seznam Všech Školení</ThemeFooter.A>
+        </Link>
       </Hide>
     }
   />
