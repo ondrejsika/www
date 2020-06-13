@@ -53,6 +53,7 @@ PROD_SITES = {
     },
     "trainera.de": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
+      "cloudflare_workers": True,
     },
     "ansible-utbildning.se": {
       "dependencies": _COURSE_LANDING_DEPENDENCIES,
@@ -79,9 +80,11 @@ PROD_SITES = {
     },
     "ondrej-sika.de": {
       "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
+      "cloudflare_workers": True,
     },
     "trainera.io": {
       "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
+      "cloudflare_workers": True,
     },
     "git-training.uk": {
       "dependencies": _COURSE_LANDING_DEPENDENCIES,
@@ -202,6 +205,7 @@ PROD_SITES = {
     },
     "ondrejsika.is": {
       "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
+      "cloudflare_workers": True,
     },
 }
 
