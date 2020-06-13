@@ -139,6 +139,7 @@
     "deploy-ondrej-sika.com": "yarn run static-ondrej-sika.com && (cd cloudflare-workers/ondrej-sika.com && ../../node_modules/.bin/wrangler publish)",
     "deploy-ondrejsika.is": "yarn run static-ondrejsika.is && (cd cloudflare-workers/ondrejsika.is && ../../node_modules/.bin/wrangler publish)",
     "deploy-ondrej-sika.de": "yarn run static-ondrej-sika.de && (cd cloudflare-workers/ondrej-sika.de && ../../node_modules/.bin/wrangler publish)",
+    "deploy-skoleni.io": "yarn run static-skoleni.io && (cd cloudflare-workers/skoleni.io && ../../node_modules/.bin/wrangler publish)",
     "deploy-trainera.io": "yarn run static-trainera.io && (cd cloudflare-workers/trainera.io && ../../node_modules/.bin/wrangler publish)",
     "deploy-trainera.de": "yarn run static-trainera.de && (cd cloudflare-workers/trainera.de && ../../node_modules/.bin/wrangler publish)",
     "deploy-trainera.cz": "yarn run static-trainera.cz && (cd cloudflare-workers/trainera.cz && ../../node_modules/.bin/wrangler publish)",
