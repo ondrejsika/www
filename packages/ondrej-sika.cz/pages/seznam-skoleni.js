@@ -1,34 +1,36 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import Link from "next/link";
+import courses_yaml from "@app/data/training/courses.yml";
 
-const Page = () => (
+const Page = props => (
   <Article title="Seznam všech mých školení" hideNewsletter={true}>
-    <ul>
-      {[
-        ["GIT", "/skoleni/git"],
-        ["GITLAB CI", "/skoleni/gitlab-ci"],
-        ["DOCKER", "/skoleni/docker"],
-        ["KUBERNETES", "/skoleni/kubernetes"],
-        ["RANCHER", "/skoleni/rancher"],
-        ["ANSIBLE", "/skoleni/ansible"],
-        ["TERRAFORM", "/skoleni/terraform"],
-        ["PROMETHEUS", "/skoleni/prometheus"],
-        ["PROXMOX", "/skoleni/proxmox"],
-        ["ELK / EFK", "/skoleni/elk"],
-        ["REACT & NEXT.JS", "/skoleni/react"],
-        ["GO (GOLANG)", "/skoleni/go"],
-        ["PYTHON", "/skoleni/python"],
-        ["DJANGO", "/skoleni/django"],
-        ["VIDEOKURZY", "/videokurzy"]
-      ].map((link, i) => (
-        <li key={i}>
-          <Link href={link[1]}>
-            <a>{link[0]}</a>
-          </Link>
-        </li>
+    <table className="table">
+      <tr>
+        <th>Školení</th>
+        <th>Délka</th>
+        <th>Cena (otevreny termin)</th>
+        <th>Cena (in house)</th>
+      </tr>
+      {courses_yaml.map((course, i) => (
+        <tr key={i}>
+          <td>
+            <Link href={`/skoleni/${course.id}`}>
+              <a>{course.name[props.site.lang]}</a>
+            </Link>
+          </td>
+          <td>
+            {course.length} {course.length == 1 ? "den" : "dny"}
+          </td>
+          <td>
+            {course.price ? course.price.open["cz"] + " (za osobu)" : "--"}
+          </td>
+          <td>
+            {course.price ? course.price.in_house["cz"] + " (celkem)" : "--"}
+          </td>
+        </tr>
       ))}
-    </ul>
+    </table>
   </Article>
 );
 
