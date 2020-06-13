@@ -1,0 +1,12 @@
+
+name = "training-kubernetes.lu"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "training.kubernetes.lu/*"
+zone_id = null
+
+[site]
+bucket = "../../packages/training.kubernetes.lu/out/"
+entry-point = "../_static-site"
+

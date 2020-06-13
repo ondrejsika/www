@@ -1,0 +1,12 @@
+
+name = "git-training-uk"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "git-training.uk/*"
+zone_id = "e87123938e5862fde5e851b647669b9f"
+
+[site]
+bucket = "../../packages/git-training.uk/out/"
+entry-point = "../_static-site"
+

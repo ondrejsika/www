@@ -1,0 +1,12 @@
+
+name = "kubernetes-schulung-de"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "kubernetes-schulung.de/*"
+zone_id = "32caf4caa085f92ca7de2020e4118c72"
+
+[site]
+bucket = "../../packages/kubernetes-schulung.de/out/"
+entry-point = "../_static-site"
+

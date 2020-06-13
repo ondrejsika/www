@@ -1,0 +1,12 @@
+
+name = "git-utbildning-se"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "git-utbildning.se/*"
+zone_id = "61e02c9fa17684564337b0bb2b2e79eb"
+
+[site]
+bucket = "../../packages/git-utbildning.se/out/"
+entry-point = "../_static-site"
+

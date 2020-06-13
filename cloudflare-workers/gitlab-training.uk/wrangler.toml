@@ -1,0 +1,12 @@
+
+name = "gitlab-training-uk"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "gitlab-training.uk/*"
+zone_id = "9e8f1f88259ac344e89add28439afbf2"
+
+[site]
+bucket = "../../packages/gitlab-training.uk/out/"
+entry-point = "../_static-site"
+

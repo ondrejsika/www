@@ -1,0 +1,12 @@
+
+name = "ansible-skoleni-cz"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "ansible-skoleni.cz/*"
+zone_id = "f446de36f936382c289b24923e072bb1"
+
+[site]
+bucket = "../../packages/ansible-skoleni.cz/out/"
+entry-point = "../_static-site"
+

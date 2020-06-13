@@ -1,0 +1,12 @@
+
+name = "gitlab-ci-cz"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "gitlab-ci.cz/*"
+zone_id = "bc8c83617ccccc4c881cfc0ef739fb5e"
+
+[site]
+bucket = "../../packages/gitlab-ci.cz/out/"
+entry-point = "../_static-site"
+

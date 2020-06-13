@@ -1,0 +1,12 @@
+
+name = "sika-blog"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "sika.blog/*"
+zone_id = "9ee55059514ec38bc1cafc5e32feec18"
+
+[site]
+bucket = "../../packages/sika.blog/out/"
+entry-point = "../_static-site"
+

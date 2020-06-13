@@ -1,0 +1,12 @@
+
+name = "skolenie-ansible-sk"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "skolenie-ansible.sk/*"
+zone_id = null
+
+[site]
+bucket = "../../packages/skolenie-ansible.sk/out/"
+entry-point = "../_static-site"
+

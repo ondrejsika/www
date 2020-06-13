@@ -1,0 +1,12 @@
+
+name = "sika-kraml-de"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "sika-kraml.de/*"
+zone_id = "198d9aa8636edccf4dbba7961bfc9bca"
+
+[site]
+bucket = "../../packages/sika-kraml.de/out/"
+entry-point = "../_static-site"
+

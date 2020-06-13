@@ -1,0 +1,12 @@
+
+name = "git-training-nl"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "git-training.nl/*"
+zone_id = "a063820a0e9917164c1f94e4736cead8"
+
+[site]
+bucket = "../../packages/git-training.nl/out/"
+entry-point = "../_static-site"
+

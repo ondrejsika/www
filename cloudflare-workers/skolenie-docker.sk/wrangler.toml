@@ -1,0 +1,12 @@
+
+name = "skolenie-docker-sk"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "skolenie-docker.sk/*"
+zone_id = "bb4e704c5b388a3be0eb5a867782ec72"
+
+[site]
+bucket = "../../packages/skolenie-docker.sk/out/"
+entry-point = "../_static-site"
+

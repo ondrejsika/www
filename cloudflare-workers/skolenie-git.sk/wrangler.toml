@@ -1,0 +1,12 @@
+
+name = "skolenie-git-sk"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "skolenie-git.sk/*"
+zone_id = "1a1eefdbd7688a548e18a92eeb0a5a9e"
+
+[site]
+bucket = "../../packages/skolenie-git.sk/out/"
+entry-point = "../_static-site"
+

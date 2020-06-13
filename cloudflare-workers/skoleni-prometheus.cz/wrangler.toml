@@ -1,0 +1,12 @@
+
+name = "skoleni-prometheus-cz"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "skoleni-prometheus.cz/*"
+zone_id = "285c7cca0fcf400da54a6f9ba5f3d799"
+
+[site]
+bucket = "../../packages/skoleni-prometheus.cz/out/"
+entry-point = "../_static-site"
+

@@ -1,0 +1,12 @@
+
+name = "ansible-training-uk"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "ansible-training.uk/*"
+zone_id = "0b04ab609a2ecab87a382152ca02d0aa"
+
+[site]
+bucket = "../../packages/ansible-training.uk/out/"
+entry-point = "../_static-site"
+

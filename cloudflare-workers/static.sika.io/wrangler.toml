@@ -1,0 +1,12 @@
+
+name = "static-sika.io"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "static.sika.io/*"
+zone_id = null
+
+[site]
+bucket = "../../packages/static.sika.io/out/"
+entry-point = "../_static-site"
+

@@ -1,0 +1,12 @@
+
+name = "sika-training-com"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "sika-training.com/*"
+zone_id = "e835b6126a8c3d454f8a65d9d659655f"
+
+[site]
+bucket = "../../packages/sika-training.com/out/"
+entry-point = "../_static-site"
+

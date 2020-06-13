@@ -1,0 +1,12 @@
+
+name = "skolenie-gitlab-sk"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "skolenie-gitlab.sk/*"
+zone_id = "6c24acce7b4fff764febc82cdc4d68db"
+
+[site]
+bucket = "../../packages/skolenie-gitlab.sk/out/"
+entry-point = "../_static-site"
+

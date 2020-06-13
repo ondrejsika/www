@@ -1,0 +1,12 @@
+
+name = "docker-training-at"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "docker-training.at/*"
+zone_id = "0d862f7234c434f6bebb668513d58315"
+
+[site]
+bucket = "../../packages/docker-training.at/out/"
+entry-point = "../_static-site"
+

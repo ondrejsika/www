@@ -1,0 +1,12 @@
+
+name = "ansible-utbildning-se"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "ansible-utbildning.se/*"
+zone_id = "d0c6b1caded632b04968bc804e81f5e3"
+
+[site]
+bucket = "../../packages/ansible-utbildning.se/out/"
+entry-point = "../_static-site"
+

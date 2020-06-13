@@ -1,0 +1,12 @@
+
+name = "skoleni-terraform-cz"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "skoleni-terraform.cz/*"
+zone_id = "da0b0844059ad53e6c13ae56d6746746"
+
+[site]
+bucket = "../../packages/skoleni-terraform.cz/out/"
+entry-point = "../_static-site"
+

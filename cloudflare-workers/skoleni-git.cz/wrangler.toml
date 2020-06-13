@@ -1,0 +1,12 @@
+
+name = "skoleni-git-cz"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "skoleni-git.cz/*"
+zone_id = "48dd674340e36759810ef6478c8ece31"
+
+[site]
+bucket = "../../packages/skoleni-git.cz/out/"
+entry-point = "../_static-site"
+

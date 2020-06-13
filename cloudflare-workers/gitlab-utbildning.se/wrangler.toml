@@ -1,0 +1,12 @@
+
+name = "gitlab-utbildning-se"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "gitlab-utbildning.se/*"
+zone_id = null
+
+[site]
+bucket = "../../packages/gitlab-utbildning.se/out/"
+entry-point = "../_static-site"
+

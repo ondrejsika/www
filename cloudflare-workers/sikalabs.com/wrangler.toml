@@ -1,0 +1,12 @@
+
+name = "sikalabs-com"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "sikalabs.com/*"
+zone_id = "3fa034e048eb3ca9adfbf0897193229c"
+
+[site]
+bucket = "../../packages/sikalabs.com/out/"
+entry-point = "../_static-site"
+

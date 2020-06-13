@@ -1,0 +1,12 @@
+
+name = "skolenie-kubernetes.sk"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "skolenie.kubernetes.sk/*"
+zone_id = null
+
+[site]
+bucket = "../../packages/skolenie.kubernetes.sk/out/"
+entry-point = "../_static-site"
+
