@@ -2329,69 +2329,13 @@ ondrej-sika.uk dev deploy k8s:
     url: https://ondrej-sika.uk.panda.k8s.oxs.cz
   dependencies: []
 
-ondrej-sika.de build js:
-  stage: build_js
+ondrej-sika.de prod deploy cloudflare:
   image: node
-  variables:
-    GIT_CLEAN_FLAGS: none
+  stage: deploy_prod
   script:
     - yarn
     - rm -rf packages/ondrej-sika.de/out
-    - yarn run static-ondrej-sika.de
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_JS
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/ondrejsika-theme/**/*
-      - packages/ondrej-sika.de/**/*
-      - yarn.lock
-      - packages/ondrejsika-singlepage/**/*
-  artifacts:
-    name: ondrej-sika.de
-    paths:
-      - packages/ondrej-sika.de/out
-
-
-ondrej-sika.de build docker:
-  dependencies:
-    - ondrej-sika.de build js
-  variables:
-    GIT_STRATEGY: none
-  stage: build_docker
-  script:
-    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/* packages/ondrej-sika.de/
-    - docker build -t registry.sikahq.com/www/www/ondrej-sika.de:$CI_COMMIT_SHORT_SHA packages/ondrej-sika.de
-    - rm packages/ondrej-sika.de/Dockerfile
-    - rm packages/ondrej-sika.de/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ondrej-sika.de:$CI_COMMIT_SHORT_SHA
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_DOCKER
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/ondrejsika-theme/**/*
-      - packages/ondrej-sika.de/**/*
-      - yarn.lock
-      - packages/ondrejsika-singlepage/**/*
-
-ondrej-sika.de prod deploy k8s:
-  stage: deploy_prod
-  variables:
-    GIT_STRATEGY: none
-    KUBECONFIG: .kubeconfig
-  script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ondrej-sika-de ondrejsika/one-image --set host=ondrej-sika.de --set image=$CI_REGISTRY_IMAGE/ondrej-sika.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy ondrej-sika-de
+    - yarn run deploy-ondrej-sika.de
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3046,67 +2990,13 @@ bootstrap-web build docker:
       - packages/bootstrap-web/**/*
       - yarn.lock
 
-trainera.io build js:
-  stage: build_js_priority
+trainera.io prod deploy cloudflare:
   image: node
-  variables:
-    GIT_CLEAN_FLAGS: none
+  stage: deploy_prod_priority
   script:
     - yarn
     - rm -rf packages/trainera.io/out
-    - yarn run static-trainera.io
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_JS
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/ondrejsika-theme/**/*
-      - packages/trainera.io/**/*
-      - yarn.lock
-  artifacts:
-    name: trainera.io
-    paths:
-      - packages/trainera.io/out
-
-
-trainera.io build docker:
-  dependencies:
-    - trainera.io build js
-  variables:
-    GIT_STRATEGY: none
-  stage: build_docker_priority
-  script:
-    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/* packages/trainera.io/
-    - docker build -t registry.sikahq.com/www/www/trainera.io:$CI_COMMIT_SHORT_SHA packages/trainera.io
-    - rm packages/trainera.io/Dockerfile
-    - rm packages/trainera.io/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/trainera.io:$CI_COMMIT_SHORT_SHA
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_DOCKER
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/ondrejsika-theme/**/*
-      - packages/trainera.io/**/*
-      - yarn.lock
-
-trainera.io prod deploy k8s:
-  stage: deploy_prod_priority
-  variables:
-    GIT_STRATEGY: none
-    KUBECONFIG: .kubeconfig
-  script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install trainera-io ondrejsika/one-image --set host=trainera.io --set image=$CI_REGISTRY_IMAGE/trainera.io:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy trainera-io
+    - yarn run deploy-trainera.io
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4627,69 +4517,13 @@ skoleni.io build docker:
       - packages/skoleni.io/**/*
       - yarn.lock
 
-ondrejsika.is build js:
-  stage: build_js
+ondrejsika.is prod deploy cloudflare:
   image: node
-  variables:
-    GIT_CLEAN_FLAGS: none
+  stage: deploy_prod
   script:
     - yarn
     - rm -rf packages/ondrejsika.is/out
-    - yarn run static-ondrejsika.is
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_JS
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/ondrejsika-theme/**/*
-      - packages/ondrejsika.is/**/*
-      - yarn.lock
-      - packages/ondrejsika-singlepage/**/*
-  artifacts:
-    name: ondrejsika.is
-    paths:
-      - packages/ondrejsika.is/out
-
-
-ondrejsika.is build docker:
-  dependencies:
-    - ondrejsika.is build js
-  variables:
-    GIT_STRATEGY: none
-  stage: build_docker
-  script:
-    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/* packages/ondrejsika.is/
-    - docker build -t registry.sikahq.com/www/www/ondrejsika.is:$CI_COMMIT_SHORT_SHA packages/ondrejsika.is
-    - rm packages/ondrejsika.is/Dockerfile
-    - rm packages/ondrejsika.is/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/ondrejsika.is:$CI_COMMIT_SHORT_SHA
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_DOCKER
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/ondrejsika-theme/**/*
-      - packages/ondrejsika.is/**/*
-      - yarn.lock
-      - packages/ondrejsika-singlepage/**/*
-
-ondrejsika.is prod deploy k8s:
-  stage: deploy_prod
-  variables:
-    GIT_STRATEGY: none
-    KUBECONFIG: .kubeconfig
-  script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install ondrejsika-is ondrejsika/one-image --set host=ondrejsika.is --set image=$CI_REGISTRY_IMAGE/ondrejsika.is:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy ondrejsika-is
+    - yarn run deploy-ondrejsika.is
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4711,67 +4545,13 @@ ondrejsika.is prod deploy k8s:
     url: https://ondrejsika.is
   dependencies: []
 
-trainera.de build js:
-  stage: build_js_priority
+trainera.de prod deploy cloudflare:
   image: node
-  variables:
-    GIT_CLEAN_FLAGS: none
+  stage: deploy_prod_priority
   script:
     - yarn
     - rm -rf packages/trainera.de/out
-    - yarn run static-trainera.de
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_JS
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/ondrejsika-theme/**/*
-      - packages/trainera.de/**/*
-      - yarn.lock
-  artifacts:
-    name: trainera.de
-    paths:
-      - packages/trainera.de/out
-
-
-trainera.de build docker:
-  dependencies:
-    - trainera.de build js
-  variables:
-    GIT_STRATEGY: none
-  stage: build_docker_priority
-  script:
-    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - cp ci/docker/* packages/trainera.de/
-    - docker build -t registry.sikahq.com/www/www/trainera.de:$CI_COMMIT_SHORT_SHA packages/trainera.de
-    - rm packages/trainera.de/Dockerfile
-    - rm packages/trainera.de/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/trainera.de:$CI_COMMIT_SHORT_SHA
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_DOCKER
-  only:
-    changes:
-      - packages/data/**/*
-      - packages/common/**/*
-      - packages/ondrejsika-theme/**/*
-      - packages/trainera.de/**/*
-      - yarn.lock
-
-trainera.de prod deploy k8s:
-  stage: deploy_prod_priority
-  variables:
-    GIT_STRATEGY: none
-    KUBECONFIG: .kubeconfig
-  script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install trainera-de ondrejsika/one-image --set host=trainera.de --set image=$CI_REGISTRY_IMAGE/trainera.de:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy trainera-de
+    - yarn run deploy-trainera.de
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -4807,8 +4587,8 @@ sikalabs.com build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - yarn.lock
       - packages/sikalabs.com/**/*
+      - yarn.lock
       - packages/common/**/*
   artifacts:
     name: sikalabs.com
@@ -4835,8 +4615,8 @@ sikalabs.com build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - yarn.lock
       - packages/sikalabs.com/**/*
+      - yarn.lock
       - packages/common/**/*
 
 sikalabs.com prod deploy k8s:
@@ -4859,8 +4639,8 @@ sikalabs.com prod deploy k8s:
     refs:
       - master
     changes:
-      - yarn.lock
       - packages/sikalabs.com/**/*
+      - yarn.lock
       - packages/common/**/*
   environment:
     name: prod sikalabs.com
