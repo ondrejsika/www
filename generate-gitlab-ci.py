@@ -207,6 +207,10 @@ PROD_SITES = {
       "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
       "cloudflare_workers": True,
     },
+    "skoleni.io": {
+      "dependencies": _DEFAULT_DEPENDENCIES,
+      "cloudflare_workers": True,
+    },
 }
 
 ALL_SITES={}
