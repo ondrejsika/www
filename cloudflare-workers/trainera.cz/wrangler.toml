@@ -1,0 +1,10 @@
+name = "trainera-cz"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "trainera.cz/*"
+zone_id = "48fa247d581b00fa438d371da17c808f"
+
+[site]
+bucket = "../../packages/trainera.cz/out/"
+entry-point = "../_static-site"

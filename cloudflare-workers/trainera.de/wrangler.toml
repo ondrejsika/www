@@ -1,0 +1,10 @@
+name = "trainera-de"
+type = "webpack"
+account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+workers_dev = false
+route = "trainera.de/*"
+zone_id = "8cd8ce4af421f34ddffb1db88f3ec2c7"
+
+[site]
+bucket = "../../packages/trainera.de/out/"
+entry-point = "../_static-site"
