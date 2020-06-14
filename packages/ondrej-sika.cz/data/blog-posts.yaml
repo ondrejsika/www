@@ -64,7 +64,7 @@
     A muzeme spoustet kontejnery:
 
     ```
-    podman run hello world
+    podman run hello-world
     ```
 
     ```
