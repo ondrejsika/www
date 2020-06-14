@@ -1,3 +1,36 @@
+- id: docker-vs-podman-v-cem-se-lisi
+  title: "Docker vs Podman: V cem se lisi"
+  date: 14. 6. 2020
+  ad: docker
+  tags:
+    - docker
+    - container
+  perex: |
+    Hlavni rozdili mezi Dockerem a Podmanem
+  content: |
+    Docker i Podman jsou nastroje na praci s kontejnery. Podman je novejsi nastroj, ktery kopiruje UI Dockeru, ale v tom jak pracuji jsou zasadni rozdily.
+
+    Docker bezi jako client/server, Docker client rika serveru jak ma vytvaret kontejnery. Na misto toho Podman vytvori novy process standartne (fork/exec), Podman take umi bezet pod non-root uzivatelem.
+
+    Co se tyka security, Podman je lepsi. Pokud se nekdo dostane k Docker socketu, je de facto root na serveru. Podman nema zadnou bezici komponetu, kazdy uzivatel vytvari kontejnery ve svem kontextu.
+
+    ### Docker
+
+    - Bezi na Linuxu, Macu i Windows
+    - Funguje na modelu client/server
+    - Client ma pro Linux, Mac i Windows, server bezi na Linuxu, v Macu a Windows je Linux VM v xHyve nebo Hyper-V
+    - Podpora BuildKit
+    - Kontejnery se pusti po restartu serveru
+
+    ### Podman
+
+    - Bezi pouze na Linuxu
+    - [Muze bezet pod non-root uzivatelem](/blog/podman-docker-pod-non-root-uzivatelem)
+    - Nema bezici daemon
+    - Pouziva tradicni fork/exec model
+
+    Oba podporuji build images, i multistage. Podman vsak nepodporuje BuildKit. Sitovani maji podobne, ale ne stejne.
+
 - id: podman-docker-pod-non-root-uzivatelem
   title: 'Podman: "Docker" pod non-root uzivatem'
   date: 14. 6. 2020

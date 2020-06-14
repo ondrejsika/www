@@ -11,6 +11,7 @@ export const Manuals = () => (
 - [Instalace](/docker/instalace)
 - [Docker s TLS](/docker/docker-s-tls)
 - [Příprava na školení Dockeru](/skoleni/docker/priprava-na-skoleni) - více informací o školení [zde](/skoleni/docker)
+- [Docker vs Podman: V cem se lisi](/blog/docker-vs-podman-v-cem-se-lisi) (blog post)
 - [Podman: "Docker" pod non-root uzivatelem](/blog/podman-docker-pod-non-root-uzivatelem) (blog post)
 
 Pokud Vás zajímá Docker, podívejte se na mé [Školení Dockeru](/skoleni/docker)

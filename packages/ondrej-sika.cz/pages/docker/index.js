@@ -7,6 +7,7 @@ const Page = () => (
     markdown={`
 - [Instalace](/docker/instalace)
 - [Docker s TLS](/docker/docker-s-tls)
+- [Docker vs Podman: V cem se lisi](/blog/docker-vs-podman-v-cem-se-lisi) (blog post)
 - [Podman: "Docker" pod non-root uzivatelem](/blog/podman-docker-pod-non-root-uzivatelem) (blog post)
 `}
   />
