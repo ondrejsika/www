@@ -16,7 +16,6 @@
 
     ### Docker
 
-    - Bezi na Linuxu, Macu i Windows
     - Funguje na modelu client/server
     - Client ma pro Linux, Mac i Windows, server bezi na Linuxu, v Macu a Windows je Linux VM v xHyve nebo Hyper-V
     - Podpora BuildKit
@@ -24,9 +23,8 @@
 
     ### Podman
 
-    - Bezi pouze na Linuxu
-    - [Muze bezet pod non-root uzivatelem](/blog/podman-docker-pod-non-root-uzivatelem)
     - Nema bezici daemon
+    - [Muze bezet pod non-root uzivatelem](/blog/podman-docker-pod-non-root-uzivatelem)
     - Pouziva tradicni fork/exec model
 
     Oba podporuji build images, i multistage. Podman vsak nepodporuje BuildKit. Sitovani maji podobne, ale ne stejne.
