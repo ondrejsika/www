@@ -4,7 +4,7 @@
   ad: docker
   tags:
     - docker
-    - container
+    - podman
   perex: |
     Hlavni rozdili mezi Dockerem a Podmanem
   content: |
@@ -37,7 +37,7 @@
   ad: docker
   tags:
     - docker
-    - container
+    - podman
   perex: |
     Podman je zpusob, jak spoustet (Docker) kontejnery pod non-root uzivatelem na Linuxu.
   content: |
