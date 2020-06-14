@@ -18,6 +18,7 @@ const Page = () => (
 
 ## Go
 
+- A Tour of Go - https://tour.golang.org/
 - Go by Example - https://gobyexample.com/
 
 
