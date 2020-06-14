@@ -1,3 +1,43 @@
+- id: podman-docker-pod-non-root-uzivatelem
+  title: 'Podman: "Docker" pod non-root uzivatem'
+  date: 14. 6. 2020
+  ad: docker
+  tags:
+    - docker
+    - container
+  perex: |
+    Podman je zpusob, jak spoustet (Docker) kontejnery pod non-root uzivatelem na Linuxu.
+  content: |
+    Podman je zpusob, jak spoustet (Docker) kontejnery pod non-root uzivatelem na Linuxu.
+
+    Vytvorime napriklad uzivatele `podman`:
+
+    ```
+    useradd podman -m
+    ```
+
+    Povolime `kernel.unprivileged_userns_clone`:
+
+    ```
+    sysctl kernel.unprivileged_userns_clone=1
+    ```
+
+    Prepneme se do login shellu (dulezite) pomoci:
+
+    ```
+    su - podman
+    ```
+
+    A muzeme spoustet kontejnery:
+
+    ```
+    podman run hello world
+    ```
+
+    ```
+    podman run -d --name hello -p 8000:80 ondrejsika/go-hello-world:3
+    ```
+
 - id: weeknotes-4
   title: "Weeknotes #4"
   date: 7. 6. 2020
