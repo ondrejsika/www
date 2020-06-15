@@ -1270,3 +1270,73 @@
       **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
+- id: consul
+  skoleniio:
+    name: consul
+    lecturer: ondrejsika
+  name:
+    cs: Školení Consul
+    en: Consul Training
+    de: Consul Schulung
+  lecturers:
+    - ondrejsika
+  length: 1
+  price:
+    open:
+      cz: 6 800 CZK
+      de: 299 EUR
+      uk: 299 EUR
+    in_house:
+      cz: 25 000 CZK
+      de: 1999 EUR
+      uk: 1999 GBP
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  agenda:
+    cs: |
+      **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+  description:
+    cs: |
+      **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
+- id: vault
+  skoleniio:
+    name: vault
+    lecturer: ondrejsika
+  name:
+    cs: Školení Vault (Hashicorp)
+    en: Vault Training (Hashicorp)
+    de: Vault Schulung (Hashicorp)
+  lecturers:
+    - ondrejsika
+  length: 1
+  price:
+    open:
+      cz: 6 800 CZK
+      de: 299 EUR
+      uk: 299 EUR
+    in_house:
+      cz: 25 000 CZK
+      de: 1999 EUR
+      uk: 1999 GBP
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  agenda:
+    cs: |
+      **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+  description:
+    cs: |
+      **Na tomto kurzu momentalne pracuji. V pripade jakehohokoliv dotazu me poslete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
