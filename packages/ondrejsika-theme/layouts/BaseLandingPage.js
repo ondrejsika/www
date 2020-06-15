@@ -22,19 +22,8 @@ import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader"
 import Companies from "@app/ondrejsika-theme/components/lp/LP-companies";
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import Point from "@app/ondrejsika-theme/components/lp/LP-point";
-
-const MainTitle = styled.h1`
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: bold;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white;
-
-  font-size: 2.5rem;
-  @media (max-width: 1200px) {
-    font-size: 2rem;
-  }
-`;
+import Header from "@app/ondrejsika-theme/components/lp/LP-header";
+import IconBtn from "@app/ondrejsika-theme/components/lp/LP-btnIcon";
 
 const Section = styled.div`
   margin: 3em 0;
@@ -56,10 +45,6 @@ const Img = styled.img`
 const RoomyRow = styled(Row)`
   margin-bottom: 4em;
 `;
-
-// const PaddingTop = styled.div`
-//   padding-top: 6em;
-// `;
 
 const H3 = styled.h3`
   font-size: 1.75rem;
@@ -86,22 +71,6 @@ const BaseLandingPage = props => {
       `}
   `;
 
-  const IconBtn = styled.img`
-    margin-bottom: 2px;
-    vertical-align: center;
-    height: 20px;
-    ${props =>
-      props.padding_right &&
-      css`
-        padding-right: 10px;
-      `}
-    ${props =>
-      props.padding_left &&
-      css`
-        padding-left: 10px;
-      `}
-  `;
-
   return (
     <>
       <Head>
@@ -110,23 +79,14 @@ const BaseLandingPage = props => {
       <FloatingBtn href="mailto:ondrej@sika.io">
         <FloatingSvg src={mail_grey} />
       </FloatingBtn>
-      <Background blue paddingBottom="0">
-        <Container>
-          <Row>
-            <Col lg={7}>
-              <MainTitle className="pt-md-5">{props.headerText}</MainTitle>
-              <Text white>{props.headerAbout}</Text>
-              <Button inverse href="#help">
-                {props.findOutMore}
-                <IconBtn padding_left src={arrow} />
-              </Button>
-            </Col>
-            <Col lg={5}>
-              <Img src={ondrej_chair} />
-            </Col>
-          </Row>
-        </Container>
-      </Background>
+      <Header
+        btn="#help"
+        btnIcon={arrow}
+        image={ondrej_chair}
+        header={props.headerText}
+        headerAbout={props.headerAbout}
+        findOutMore={props.findOutMore}
+      />
       <Background light_grey id="help">
         <Container>
           <Center>
