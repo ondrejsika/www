@@ -21,12 +21,9 @@ const LandingPage = props => (
             My name is{" "}
             <BaseLandingPage.TextBeige>Ondrej Sika</BaseLandingPage.TextBeige>{" "}
             <br />
-            and I will help you with open-source <br />
-            <BaseLandingPage.TextBeige>
-              DevOps implementation
-            </BaseLandingPage.TextBeige>{" "}
-            <br />
-            and its operation.
+            and I will help you with{" "}
+            <BaseLandingPage.TextBeige>DevOps</BaseLandingPage.TextBeige>{" "}
+            pipeline.
           </>
         }
         cs={
