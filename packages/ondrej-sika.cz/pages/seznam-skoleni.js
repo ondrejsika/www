@@ -1,7 +1,14 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import Link from "next/link";
+import StaticDB from "@app/common/staticdb";
 import courses_yaml from "@app/data/training/courses.yml";
+
+let db = new StaticDB();
+db.add("courses", courses_yaml);
+db.setCursor("courses");
+db.filterIn("lecturers", "ondrejsika");
+let courses = db.get();
 
 const Page = props => (
   <Article title="Seznam všech mých školení" hideNewsletter={true}>
@@ -12,7 +19,7 @@ const Page = props => (
         <th>Cena (otevreny termin)</th>
         <th>Cena (in house)</th>
       </tr>
-      {courses_yaml.map((course, i) => (
+      {courses.map((course, i) => (
         <tr key={i}>
           <td>
             <Link href={`/skoleni/${course.id}`}>
