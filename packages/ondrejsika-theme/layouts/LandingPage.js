@@ -100,8 +100,8 @@ const LandingPage = props => (
         lang={props.site.lang}
         en={
           <span>
-            YOUR TEAM
-            <br /> TRAINING
+            TRAINING
+            <br /> YOUR TEAM
           </span>
         }
         cs={
