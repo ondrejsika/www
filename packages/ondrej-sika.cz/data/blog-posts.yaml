@@ -1,65 +1,65 @@
 - id: docker-vs-podman-v-cem-se-lisi
-  title: "Docker vs Podman: V cem se lisi"
+  title: "Docker vs Podman: V čem se liší"
   date: 14. 6. 2020
   ad: docker
   tags:
     - docker
     - podman
   perex: |
-    Hlavni rozdili mezi Dockerem a Podmanem
+    Hlavní rozdíly mezi Dockerem a Podmanem
   content: |
-    Docker i Podman jsou nastroje na praci s kontejnery. Podman je novejsi nastroj, ktery kopiruje UI Dockeru, ale v tom jak pracuji jsou zasadni rozdily.
+    Docker i Podman jsou nástroje na práci s kontejnery. Podman je novější nástroj, který kopíruje UI Dockeru, ale v tom jak pracují jsou zásadní rozdíly.
 
-    Docker bezi jako client/server, Docker client rika serveru jak ma vytvaret kontejnery. Na misto toho Podman vytvori novy process standartne (fork/exec), Podman take umi bezet pod non-root uzivatelem.
+    Docker běží jako client/server, Docker client říká serveru jak má vytvářet kontejnery. Namísto toho Podman vytvoří nový proces standardne (fork/exec), Podman také umí běžet pod non-root uživatelem.
 
-    Co se tyka security, Podman je lepsi. Pokud se nekdo dostane k Docker socketu, je de facto root na serveru. Podman nema zadnou bezici komponetu, kazdy uzivatel vytvari kontejnery ve svem kontextu.
+    Co se týká bezpečnosti, Podman je lepší. Pokud se někdo dostane k Docker socketu, je de facto root na serveru. Podman nemá žádnou běžící komponetu, každý uživatel vytváří kontejnery ve svém kontextu.
 
     ### Docker
 
     - Funguje na modelu client/server
-    - Client ma pro Linux, Mac i Windows, server bezi na Linuxu, v Macu a Windows je Linux VM v xHyve nebo Hyper-V
+    - Client má pro Linux, Mac i Windows, server běží na Linuxu, v Macu a Windows je Linux VM v xHyve nebo Hyper-V
     - Podpora BuildKit
-    - Kontejnery se pusti po restartu serveru
+    - Kontejnery se pustí po restartu serveru
 
     ### Podman
 
-    - Nema bezici daemon
-    - [Muze bezet pod non-root uzivatelem](/blog/podman-docker-pod-non-root-uzivatelem)
-    - Pouziva tradicni fork/exec model
+    - Nemá běžící daemon
+    - [Může běžet pod non-root uživatelem](/blog/podman-docker-pod-non-root-uzivatelem)
+    - Používá tradiční fork/exec model
 
-    Oba podporuji build images, i multistage. Podman vsak nepodporuje BuildKit. Sitovani maji podobne, ale ne stejne.
+    Oba podporují build images, i multistage. Podman však nepodporuje BuildKit. Síťování mají podobně, ale ne stejně.
 
 - id: podman-docker-pod-non-root-uzivatelem
-  title: 'Podman: "Docker" pod non-root uzivatem'
+  title: 'Podman: "Docker" pod non-root uživatelem'
   date: 14. 6. 2020
   ad: docker
   tags:
     - docker
     - podman
   perex: |
-    Podman je zpusob, jak spoustet (Docker) kontejnery pod non-root uzivatelem na Linuxu.
+    Podman je způsob, jak spouštět (Docker) kontejnery pod non-root uživatelem na Linuxu.
   content: |
-    Podman je zpusob, jak spoustet (Docker) kontejnery pod non-root uzivatelem na Linuxu.
+    Podman je způsob, jak spouštět (Docker) kontejnery pod non-root uživatelem na Linuxu.
 
-    Vytvorime napriklad uzivatele `podman`:
+    Vytvoříme například uživatele `podman`:
 
     ```
     useradd podman -m
     ```
 
-    Povolime `kernel.unprivileged_userns_clone`:
+    Povolíme `kernel.unprivileged_userns_clone`:
 
     ```
     sysctl kernel.unprivileged_userns_clone=1
     ```
 
-    Prepneme se do login shellu (dulezite) pomoci:
+    Přepneme se do login shellu (důležité) pomocí:
 
     ```
     su - podman
     ```
 
-    A muzeme spoustet kontejnery:
+    A můžeme spouštět kontejnery:
 
     ```
     podman run hello-world
@@ -76,11 +76,11 @@
     - weeknotes
     - kafemlejnek
   perex: |
-    Gitlab CI, nataceni podcastu a zkracovac url
+    Gitlab CI, natáčení podcastu a zkracovač url
   content: |
-    Ve stredu jsem byl natacet epizodu podcastu [Kafemlejnek.tv](https://kafemlejnek.tv) o Gitlab CI, byl to muj prvni podcast (jako host), tak doufam, ze se to povedlo. Uvidime casem.
+    Ve středu jsem byl natáčet epizodu podcastu [Kafemlejnek.tv](https://kafemlejnek.tv) o Gitlab CI. Byl to můj první podcast (jako host), tak doufám, že se to povedlo. Uvidíme časem.
 
-    Dale potrebuji pro sve marketingove ucely url zkracovac, ktery bude zkracovat url a bude zbirat co nejvice moznych informaci o proklikach jako (cas, HTTP referer, IP adresa, ..) a bude se rozume generovat pomoci API. Nenasel jsem nic pouzitelneho, tak jsem si jeden velmy jednoduchy vytvoril. TODO: zdrojaky dat na Github.
+    Dále potřebuji pro své marketingové účely url zkracovač, který bude zkracovat url a bude sbirat co nejvíce možných informací o proklikách jako (čas, HTTP referer, IP adresa, ..) a bude se rozumně generovat pomocí API. Nenašel jsem nic použitelného, tak jsem si jeden velmi jednoduchý vytvořil. TODO: zdrojáky dát na Github.
 
 - id: weeknotes-3
   title: "Weeknotes #3"
@@ -90,15 +90,15 @@
     - surge
     - static-sites
   perex: |
-    Zapisky #weeknotes dalsiho tydne od 25. do 31.5., skoleni, landing page a staticky hosting surge.sh
+    Zápisky #weeknotes dalšího týdne od 25. do 31.5., školení, landing page a statický hosting surge.sh
   content: |
-    V tomto tydnu jsem skolil a hodne pracoval na internich vecech. Zde je to nejdulezitejsi co jsem delal.
+    V tomto týdnu jsem školil a hodně pracoval na interních věcech. Zde je to nejdůležitější co jsem dělal.
 
-    Pracoval jsem spolecne s Matinem a Zuzkou na nove Landig Page, na kterou budeme odkazovat nove kontaky. Design je od Mateje Kamenickeho. A je tam Nelinka (muj pes). Vysledek je zde: [CZ](/hello) a [EN](https://ondrej-sika.com/hello).
+    Pracoval jsem společně s Martinem a Zuzkou na nové Landing Page, na kterou budeme odkazovat nové kontakty. Design je od Matěje Kamenického. A je tam Nelinka (můj pes). Výsledek je zde: [CZ](/hello) a [EN](https://ondrej-sika.com/hello).
 
-    Rozhodl jsem se presunout staticke weby z Kubernetes a hledal jsem idelani platformu, kde je provozovat. Rozhodoval jsem se mezi Vercel (drive Zeit), Cloudflare Workers, AWS S3 a Surge.sh.
+    Rozhodl jsem se přesunout statické weby z Kubernetes a hledal jsem ideální platformu, kde je provozovat. Rozhodoval jsem se mezi Vercel (dříve Zeit), Cloudflare Workers, AWS S3 a Surge.sh.
 
-    Nakonec jsem zvolil pro produkcni beh Cloudflare Workers a pro testovaci deploymenty Surge.sh. Na to tema napisu obsahlejsi clanek, proc jsem si vybral zrovna takto.
+    Nakonec jsem zvolil pro produkční běh Cloudflare Workers a pro testovací deploymenty Surge.sh. Na to téma napíšu obsáhlejší článek, proč jsem si vybral zrovna takto.
 
 - id: weeknotes-2
   title: "Weeknotes #2"
@@ -109,29 +109,29 @@
     - terraform
     - poste
   perex: |
-    Zapisky #weeknotes dalsiho tydne od 11. do 17.5. DevOps Live a dalsi Terraform provider.
+    Zápisky #weeknotes dalšího týdne od 11. do 17.5. DevOps Live a další Terraform provider.
   content: |
-    Tyden ubehl a ja zde sepisuji par veci co jsem za tyden zvladnul.
+    Týden uběhl a já zde sepisuji pár věcí co jsem za týden zvládl.
 
     ### DevOps Live
 
-    Rozhodl jsem se ze budu natacet livestremy na temata z DevOps.
+    Rozhodl jsem se, že budu natáčet livestreamy na témata z DevOps.
 
-    Muj Tweet s dotaznikem, ktera temata lidi zajimaji, se pomerne hodnde rozsiril a ja mam dostatek informaci pro naplanovani prvnich livestreamu.
+    Můj Tweet s dotazníkem, která témata lidí zajímají, se poměrně hodně rozšířil a já mám dostatek informací pro naplánování prvních livestreamů.
 
     <Twitter tweet_id="1263402541292892160" />
 
-    Takze na DevOps Live se muzete tesit zacatkem cervna. Pokud si porad chcete vybrat temata a nezmeskat live stream, muzete vyplnit dotaznicek <https://forms.gle/gMQJc5qdib5t8B4QA> nebo zacit odebirat muj [Newsletter](https://sika.link/newsletter).
+    Takže na DevOps Live se můžete těšit začátkem června. Pokud si pořád chcete vybrat témata a nezmeškat live stream, můžete vyplnit dotazníček <https://forms.gle/gMQJc5qdib5t8B4QA> nebo začít odebírat můj [Newsletter](https://sika.link/newsletter).
 
     ### Terraform Provider pro Poste.io
 
-    Napsal jsem zatim proof of concept Terraform provideru pro [Poste.io](https://poste.io) mail server. Zacinam s Training CRM a chci mit rovnou vsechnu infrastrukturu v Terraformu.
+    Napsal jsem zatím proof of concept Terraform provideru pro [Poste.io](https://poste.io) mail server. Začínám s Training CRM a chci mít rovnou všechnu infrastrukturu v Terraformu.
 
-    Pokud neznate Poste.io, je to mail server v jednom Docker kontajneru. Poste.io obsahuje SMTP server, IMAP server, RoundCube, Web Admin, SSL pomoci Let's Encrypt a dalsi komponenty. Je hrozne jednoduchy na instalaci, doporucuji se na nej podivat.
+    Pokud neznáte Poste.io, je to mail server v jednom Docker kontajneru. Poste.io obsahuje SMTP server, IMAP server, RoundCube, Web Admin, SSL pomocí Let's Encrypt a další komponenty. Je hrozně jednoduchý na instalaci, doporučuji se na něj podívat.
 
-    Ma take skvele API, pro ktere jsem pripravil knihovnu [poste-go](https://github.com/ondrejsika/poste-go), kterou pouzivam v Terraform provideru.
+    Má také skvělé API, pro které jsem připravil knihovnu [poste-go](https://github.com/ondrejsika/poste-go), kterou používám v Terraform provideru.
 
-    Vytvoril jsem `terraform-provider-poste` a zacal jsem s implementaci dvou zakladnich funkci, ktere jsem potreboval. Pridavani domen a vytvare mailboxu. Oboji bylo jednoduche a ja tak muzu lehce spravovat moje mailboxy z Terraformu. Viz:
+    Vytvořil jsem `terraform-provider-poste` a začal jsem s implementací dvou základních funkcí, které jsem potřeboval. Přidávání domén a vytváření mailboxu. Obojí bylo jednoduché a já tak mužů lehce spravovat moje mailboxy z Terraformu. Viz:
 
     ```terraform
     provider "poste" {
@@ -150,7 +150,7 @@
     }
     ```
 
-    Zdrojove kody jsou samozrejme na Githubu, pomoc nebo navrhy na zlepseni jsou vitane.
+    Zdrojové kódy jsou samozřejmě na Githubu, pomoc nebo návrhy na zlepšení jsou vítané.
 
     https://github.com/ondrejsika/terraform-provider-poste
 
@@ -164,22 +164,22 @@
     - terraform
     - vercel
   perex: |
-    Zacinam psat tydenni poznamky #weeknotes. Zde je to co jsem delal v tydnu od 11. do 17.5.
+    Začínám psát týdenní poznámky #weeknotes. Zde je to co jsem dělal v týdnu od 11. do 17.5.
   content: |
-    ### Zacinam psat Weeknotes
+    ### Začínám psát Weeknotes
 
-    K psani tydennich poznamek me inspiroval Honza Javorek (ktereho inpiroval Simon Willison). Poznamky maji slouzit k:
+    K psaní týdenních poznámek mě inspiroval Honza Javorek (kterého inspiroval Simon Willison). Poznámky mají sloužit k:
 
-    - zaznamenani toho co jsem delal abych nemel pocit ze se flakam
-    - zaznamenani toho co jsem vyresi a naucil se - muze se to hodi i dalsim
+    - zaznamenání toho, co jsem dělal, abych neměl pocit že se flákám
+    - zaznamenání toho, co jsem vyřešil a naučil se - může se to hodit i dalším
 
-    Jsem sam na sebe zvedav, jak svedomity budu.
+    Jsem sám na sebe zvědav, jak svědomitý budu.
 
     ### Vercel
 
-    Po nejakem case jsem se vratil k Terraform Provideru pro ZEIT. Mezi tim se z ZEITu stal Vercel a tak jsem predelal nazvy a api ve vsech mych projektech ktery s tim Terraform providerem souvisi.
+    Po nějakém čase jsem se vrátil k Terraform Provideru pro ZEIT. Mezitím se z ZEITu stal Vercel a tak jsem předělal názvy a api ve všech mých projektech, které s tím Terraform providerem souvisí.
 
-    Taky jsem pridal nejakou dalsi funkcionalitu (prace s DNS zaznamy) do me knihovny `vercel-go`, kterou jsem vytvoril primarne pro ten Terraform provider. A tak jsem ho konecne na tu knihovnu napojil.
+    Taky jsem přidal nějakou další funkcionalitu (práce s DNS záznamy) do mé knihovny `vercel-go`, kterou jsem vytvořil primárně pro ten Terraform provider. A tak jsem ho konečně na tu knihovnu napojil.
 
     - [ondrejsika/terraform-provider-vercel](https://github.com/ondrejsika/terraform-provider-vercel) - Terraform Provider pro Vercel
     - [ondrejsika/vercel-go](https://github.com/ondrejsika/vercel-go) - Go client pro Vercel API
@@ -189,11 +189,11 @@
 
     #### Integrace s Pipedrive
 
-    Prez vikend jsem pracoval na TrainingCRM (mem internim crm na spravu skoleni), prevazne na jeho integraci s Pipedrive (to pouzivam pro obchod). TrainingCRM je psane v Djangu a hledal jsem nejaky rozumny Python Client pro Pipedrive az jsem si napsal vlastni. Na Pypi bylo dokonce volne jmeno `pipedrive` (coz jsem necekal), takze balicek je zde <https://pypi.org/project/pipedrive/> a zdrojaky na Githubu <https://github.com/ondrejsika/pipedrive>
+    O víkendu jsem pracoval na TrainingCRM (mém interním CRM na správu školení), převážně na jeho integrací s Pipedrive (to používám pro obchod). TrainingCRM je psané v Djangu a hledal jsem nějaký rozumný Python Client pro Pipedrive až jsem si napsal vlastní. Na Pypi bylo dokonce volné jméno `pipedrive` (což jsem nečekal), takže balíček je zde <https://pypi.org/project/pipedrive/> a zdrojáky na Githubu <https://github.com/ondrejsika/pipedrive>
 
     #### TrainingCRM jako produkt
 
-    TrainingCRM je moje reseni problemu jak spravovat ucastniky na skolenich, spolupraci se skolicimi agenturami, vypisovani terminu a dalsi. Zaroven je to i formularovy backend pro me jinak staticke weby v Next.js. Kdyz vydim, jak firmy, se kterymi spolupracuji resi cely proces rucne a maji data po Execelech, rozhodl jsem se venovat trosku zdroju a premenit me interni CRM do produktu. Z toho duvodu neni TrainingCRM opensource.
+    TrainingCRM je moje řešení problémů jak spravovat účastníky na školeních, spolupráci se školícími agenturami, vypisování termínů a další. Zároveň je to i formulářový backend pro mé jinak statické weby v Next.js. Když vidím, jak firmy, se kterými spolupracuji řeší celý proces ručně a mají data po Execelech, rozhodl jsem se věnovat trošku zdrojů a přeměnit mé interní CRM do produktu. Z toho důvodu není TrainingCRM open-source.
 
 - id: ceph-persistent-volumes-v-kubernetes-pomoci-rook
   ad: kubernetes
