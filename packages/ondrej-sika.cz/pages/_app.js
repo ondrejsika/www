@@ -37,6 +37,9 @@ const Navbar = (
           ["PROMETHEUS", "/skoleni/prometheus"],
           ["PROXMOX", "/skoleni/proxmox"],
           ["ELK / EFK", "/skoleni/elk"],
+          ["GO (GOLANG)", "/skoleni/go"],
+          ["PYTHON", "/skoleni/python"],
+          ["DJANGO", "/skoleni/django"],
           ["REACT & NEXT.JS", "/skoleni/react"],
           ["VIDEOKURZY", "/videokurzy"]
         ]
