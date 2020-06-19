@@ -15,14 +15,14 @@ Nejsem investicni poradce ani obchodnik. Tyto pravidla mi rekl pritel Daniel Ste
 2. Prvni investice by mela byt maximalne jeden mesicni plat
 2. Neprodavat pri prvnim poklesu ceny
 
-Souhlasim s temi pravidly, ale spis doporucuji to co delam ja. Pravidelne si davam do Bitcoinu penize kazdy mesic stejnou castku at je cena jakakoliv. Ano, nakupoval jsem i za cenu 18 000 USD.
+Souhlasim s temito pravidly, ale spis doporucuji jak to delam ja. Pravidelne si davam do Bitcoinu penize, kazdy mesic stejnou castku, at je cena jakakoliv. Ano, nakupoval jsem i za cenu 18 000 USD.
 
-Bitcoin ma smysl pouze koupit. Tezeni nema smyl, pro jednotlivce kteri nechteji investovat miliony. Ruzene online & cloud nesmysly (cloud mining, klikacky) jsou scam.
+Bitcoin ma smysl pouze koupit. Tezeni nema smyl, pro jednotlivce, kteri nechteji investovat miliony. Ruzne online & cloud nesmysly (cloud mining, klikacky) jsou scam.
 
 ## Penezenky
 
-- Hardware - Pro velke castky, Bitcoin banka ve vlastnich rukou
-- Applice - Pro male castky, vzdy po ruce, jednoduse pouzitelne
+- Hardware - Pro velke castky, Bitcoinova banka ve vlastnich rukou
+- Aplikace - Pro male castky, vzdy po ruce, jednoduse pouzitelne
 
 #### Trezor
 
@@ -38,7 +38,7 @@ Blockstream Green je mobilni a desktopova penezenka. Je idealni na male mnozstvi
 
 ## Nakup Bitcoinu
 
-Bitcoin ma smysl pouze koupit. Moznosti nakupu je nekolik, zde jsou ty spolehlive a doporucuji pouzivat je. Pokud budete chtit koupit Bitcoiny i jinde, dejte mi vedet.
+Bitcoin ma smysl pouze koupit. Moznosti nakupu je nekolik, zde jsou ty spolehlive a doporucuji pouzivat tyto. Pokud budete chtit koupit Bitcoiny i jinde, dejte mi vedet.
 
 #### Bitcoin ATM (Bankomaty)
 
@@ -60,7 +60,7 @@ Bitcoin se da koupit i ve smenarnach, poplatky jsou cca 3 az 5 procent. Jako sme
 
 #### Burza
 
-Nejlevnejsi je nakup primo na burze. Je tam vsak slozitejsi registrace a deposit typycky v eurech. Pro vetsi objemy je to nejlepsi cesta. Z burz doporucuji [Coinmate](https://coinmate.io/) (stoji za ni cesi) a [Bitstamp](https://bitstamp.net/).
+Nejlevnejsi je nakup primo na burze. Je tam vsak slozitejsi registrace a deposit typicky v eurech. Pro vetsi objemy je to nejlepsi cesta. Z burz doporucuji [Coinmate](https://coinmate.io/) (stoji za ni cesi) a [Bitstamp](https://bitstamp.net/).
 
 ## Muj Bitcoin Newsletter
 
