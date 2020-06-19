@@ -18,6 +18,7 @@ const Page = () => (
 - [Zajímavé osobní stránky](/clanky/zajimave-osobni-stranky)
 - [Čaje](/clanky/caje)
 - [Prvni kroky ve Fronted vyvoji](/clanky/prvni-kroky-ve-frontend-vyvoji)
+- [Bitcoin](/bitcoin)
 `}
   />
 );
