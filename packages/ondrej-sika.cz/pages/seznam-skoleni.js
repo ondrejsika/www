@@ -16,7 +16,7 @@ const Page = props => (
       <tr>
         <th>Školení</th>
         <th>Délka</th>
-        <th>Cena (otevreny termin)</th>
+        <th>Cena (otevřený termín)</th>
         <th>Cena (in house)</th>
       </tr>
       {courses.map((course, i) => (
