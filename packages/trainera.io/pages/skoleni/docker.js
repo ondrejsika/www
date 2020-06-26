@@ -9,6 +9,7 @@ const Page = props => (
     lang={props.site.lang}
     logo={logo}
     location="cz"
+    hide_prices={true}
     show_sessions={true}
   />
 );

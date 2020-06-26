@@ -10,6 +10,7 @@ const Page = props => (
     logo={logo}
     location="de"
     show_sessions={true}
+    hide_prices={true}
   />
 );
 

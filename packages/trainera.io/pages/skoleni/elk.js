@@ -14,6 +14,7 @@ const Page = props => (
     price_company_funded="14 999 CZK"
     price_in_house="50 000 CZK"
     location="cz"
+    hide_prices={true}
   >
     <div className="alert alert-danger mt-5" role="alert">
       <h2>Připravuji ...</h2>
