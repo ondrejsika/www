@@ -9,6 +9,7 @@ const CourseDD = props => {
   let location = props.location;
   let logo = props.logo;
   let show_sessions = props.show_sessions;
+  let hide_prices = props.hide_prices;
 
   let db = new StaticDB();
   db.add("courses", courses_yaml);
@@ -39,6 +40,7 @@ const CourseDD = props => {
       col2={null}
       recommendations={recommendations}
       twitter_recommendations={twitter_recommendations}
+      hide_prices={hide_prices}
     />
   );
 };

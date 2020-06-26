@@ -76,51 +76,53 @@ const Course = props => (
         </Col>
         <Col md={5}>
           <AboutLecturer lang={props.lang} />
-          <Price
-            PriceHeader={
+          {!props.hide_prices && (
+            <Price
+              PriceHeader={
+                <Translate
+                  lang={props.lang}
+                  cs="Cena za školení"
+                  en="Price"
+                  de="Preis"
+                />
+              }
+              PriceBtn={
+                <Translate
+                  lang={props.lang}
+                  cs="Nezávazně poptat školení"
+                  en="Request Training"
+                />
+              }
+            >
               <Translate
                 lang={props.lang}
-                cs="Cena za školení"
-                en="Price"
-                de="Preis"
+                cs="Otevřený termín"
+                en="Public session"
+                de="Öffentlicher Termin"
               />
-            }
-            PriceBtn={
+              : {props.price_self_funded}{" "}
               <Translate
                 lang={props.lang}
-                cs="Nezávazně poptat školení"
-                en="Request Training"
+                cs="bez DPH"
+                en="excl. VAT"
+                de="zzgl. MwSt"
               />
-            }
-          >
-            <Translate
-              lang={props.lang}
-              cs="Otevřený termín"
-              en="Public session"
-              de="Öffentlicher Termin"
-            />
-            : {props.price_self_funded}{" "}
-            <Translate
-              lang={props.lang}
-              cs="bez DPH"
-              en="excl. VAT"
-              de="zzgl. MwSt"
-            />
-            <br />
-            <Translate
-              lang={props.lang}
-              cs="Firemní školení"
-              en="Company traning (in-house)"
-              de="On-Premise Schulung"
-            />
-            : {props.price_in_house}{" "}
-            <Translate
-              lang={props.lang}
-              cs="bez DPH"
-              en="excl. VAT"
-              de="zzgl. MwSt"
-            />
-          </Price>
+              <br />
+              <Translate
+                lang={props.lang}
+                cs="Firemní školení"
+                en="Company traning (in-house)"
+                de="On-Premise Schulung"
+              />
+              : {props.price_in_house}{" "}
+              <Translate
+                lang={props.lang}
+                cs="bez DPH"
+                en="excl. VAT"
+                de="zzgl. MwSt"
+              />
+            </Price>
+          )}
           <div className="m-3" id="form">
             <CourseInquiryForm
               site={props.site}
