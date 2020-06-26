@@ -2990,13 +2990,13 @@ bootstrap-web build docker:
       - packages/bootstrap-web/**/*
       - yarn.lock
 
-trainera.io prod deploy cloudflare:
+trainera.cz prod deploy cloudflare:
   image: node
   stage: deploy_prod_priority
   script:
     - yarn
-    - rm -rf packages/trainera.io/out
-    - yarn run deploy-trainera.io
+    - rm -rf packages/trainera.cz/out
+    - yarn run deploy-trainera.cz
   except:
     variables:
       - $EXCEPT_DEPLOY
@@ -3010,11 +3010,11 @@ trainera.io prod deploy cloudflare:
       - packages/data/**/*
       - packages/common/**/*
       - packages/ondrejsika-theme/**/*
-      - packages/trainera.io/**/*
+      - packages/trainera.cz/**/*
       - yarn.lock
   environment:
-    name: prod trainera.io
-    url: https://trainera.io
+    name: prod trainera.cz
+    url: https://trainera.cz
   dependencies: []
 
 salzburgdevops.com build js:
@@ -4563,9 +4563,9 @@ sikalabs.com build js:
       - $EXCEPT_BUILD_JS
   only:
     changes:
-      - packages/common/**/*
-      - yarn.lock
       - packages/sikalabs.com/**/*
+      - yarn.lock
+      - packages/common/**/*
   artifacts:
     name: sikalabs.com
     paths:
@@ -4591,9 +4591,9 @@ sikalabs.com build docker:
       - $EXCEPT_BUILD_DOCKER
   only:
     changes:
-      - packages/common/**/*
-      - yarn.lock
       - packages/sikalabs.com/**/*
+      - yarn.lock
+      - packages/common/**/*
 
 sikalabs.com prod deploy k8s:
   stage: deploy_prod
@@ -4615,9 +4615,9 @@ sikalabs.com prod deploy k8s:
     refs:
       - master
     changes:
-      - packages/common/**/*
-      - yarn.lock
       - packages/sikalabs.com/**/*
+      - yarn.lock
+      - packages/common/**/*
   environment:
     name: prod sikalabs.com
     url: https://sikalabs.com

@@ -34,7 +34,7 @@ docker-training.at
 docker-training.nl
 git-training.nl
 bootstrap-web
-trainera.io
+trainera.cz
 salzburgdevops.com
 training.kubernetes.is
 training.kubernetes.lu

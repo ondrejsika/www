@@ -1,6 +1,6 @@
 import React from "react";
 import App from "next/app";
-import site from "@app/trainera.io/config";
+import site from "@app/trainera.cz/config";
 import Link from "next/link";
 import styled from "styled-components";
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
@@ -41,7 +41,7 @@ const LanguageSwitch = <ThemeLanguageSwitch site={site} />;
 const Navbar = (
   <ThemeNavbar
     site={site}
-    NavName="Trainera.io"
+    NavName="Trainera"
     links={[
       ["DOMŮ", "/"],
       [
@@ -72,7 +72,7 @@ const Footer = (
     site={site}
     firstColumn={
       <ThemeFooter.Wrapper>
-        <ThemeFooter.H4>Trainera.io</ThemeFooter.H4>
+        <ThemeFooter.H4>Trainera</ThemeFooter.H4>
         <p>
           <ThemeFooter.A href="mailto:sales@trainera.io">
             sales@trainera.io
