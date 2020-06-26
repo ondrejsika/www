@@ -1,5 +1,5 @@
 import React from "react";
-import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
+import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import styled from "styled-components";
 import Translate from "@app/common/components/Translate";
@@ -48,7 +48,11 @@ export const Page404 = props => {
             }
           />
         </FontSize>
-        <CourseBar lang={props.site.lang} LectureImgHeader="" />
+        <TraineraCourseBar
+          site={props.site}
+          hidden={true}
+          LectureImgHeader="Vyberte si školení"
+        />
         <div className="mt-5" />
         <FontSize>
           <Translate
