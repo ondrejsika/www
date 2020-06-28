@@ -28,6 +28,7 @@ sessions.map((element, i) => {
 
 const SessionDD = props => {
   let lang = props.site.lang || "cs";
+  let hide_prices = props.hide_prices;
 
   let session = sessions[session_id_map[props.session_id]];
 
@@ -127,26 +128,28 @@ const SessionDD = props => {
           </div>
 
           <div className="col-md-5">
-            <Price
-              PriceHeader={
-                <Translate lang={lang} cs="Cena za školení" en="Price" />
-              }
-              PriceBtn={
+            {!hide_prices && (
+              <Price
+                PriceHeader={
+                  <Translate lang={lang} cs="Cena za školení" en="Price" />
+                }
+                PriceBtn={
+                  <Translate
+                    lang={lang}
+                    cs="Nezávazně poptat školení"
+                    sk="Nezáväzne popýtať školenie"
+                    en="Ask for the training"
+                  />
+                }
+              >
                 <Translate
                   lang={lang}
-                  cs="Nezávazně poptat školení"
-                  sk="Nezáväzne popýtať školenie"
-                  en="Ask for the training"
+                  cs={`Otevřený termín ${session.price} bez DPH`}
+                  sk={`Otvorený kurz/termín ${session.price} bez DPH`}
+                  en={`Public session - ${session.price} excl. VAT `}
                 />
-              }
-            >
-              <Translate
-                lang={lang}
-                cs={`Otevřený termín ${session.price} bez DPH`}
-                sk={`Otvorený kurz/termín ${session.price} bez DPH`}
-                en={`Public session - ${session.price} excl. VAT `}
-              />
-            </Price>
+              </Price>
+            )}
             <Padding>
               <h2 className="pt-3" id="register">
                 <Translate
