@@ -16,6 +16,7 @@ const Index = props => (
         lang={props.site.lang}
         location="de"
         show_course_link={true}
+        hide_prices={true}
       />
     </div>
   </div>
