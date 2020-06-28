@@ -58,6 +58,7 @@ const Course = props => (
             course_id={props.course_id}
             limit={3}
             show_session_link={true}
+            hide_prices={props.hide_prices}
           />
         </>
       )}

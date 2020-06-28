@@ -42,6 +42,8 @@ const date_for_google_calendar_link = dd_mm_yyyy =>
     .join("");
 
 const UpcomingSessions = props => {
+  var hide_prices = props.hide_prices;
+
   const A = styled.a`
     padding-left: 1.5em;
     color: ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
@@ -104,16 +106,18 @@ const UpcomingSessions = props => {
                   se="DATUM"
                 />
               </th>
-              <th scope="col" className="col-min">
-                <Translate
-                  lang={props.lang}
-                  cs="CENA"
-                  sk="CENA"
-                  en="PRICE"
-                  de="PREIS"
-                  se="PRIS"
-                />
-              </th>
+              {!hide_prices && (
+                <th scope="col" className="col-min">
+                  <Translate
+                    lang={props.lang}
+                    cs="CENA"
+                    sk="CENA"
+                    en="PRICE"
+                    de="PREIS"
+                    se="PRIS"
+                  />
+                </th>
+              )}
               <th scope="col" className="col-min">
                 <Translate
                   lang={props.lang}
@@ -171,7 +175,7 @@ const UpcomingSessions = props => {
                       ? course.date_from + ` - ` + course.date_to
                       : course.date_from}
                   </td>
-                  <td>{course.price}</td>
+                  {!hide_prices && <td>{course.price}</td>}
                   <td>{course.length}</td>
                   <td scope="row">
                     <Button
