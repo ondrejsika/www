@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Kubernetes pro lokalni vyvoj"
     markdown={`
@@ -28,7 +29,7 @@ brew link --overwrite kubernetes-cli
 ### Helm on Mac
 
 \`\`\`
-brew install kubernetes-helm
+brew install helm
 \`\`\`
 
 ### Minikube on Mac
@@ -54,7 +55,7 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 ### Helm on Linux
 
 
-Docs <https://github.com/helm/helm/blob/master/docs/install.md>
+Docs <https://helm.sh/docs/intro/install/>
 
 Pomoci package manageru snap:
 
@@ -65,7 +66,7 @@ sudo snap install helm --classic
 Nebo:
 
 \`\`\`
-curl https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 \`\`\`
 
 ### Minikube on Linux (Linux on host)
@@ -148,3 +149,5 @@ Take funguje pro __zsh__, napriklad: \`source <(kubectl completion zsh)\`
 `}
   />
 );
+
+export default Page;
