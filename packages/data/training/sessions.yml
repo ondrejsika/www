@@ -2041,7 +2041,7 @@
   twitter_recommendations:
     - radim-daniel-panek-terraform
 - id: kubernetes-online-8-6-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: kubernetes
@@ -2055,7 +2055,7 @@
   facebook_event: https://www.facebook.com/events/2475951512718465/
   linkedin_event: https://www.linkedin.com/events/6652874301601009665/
 - id: ansible-online-10-6-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: ansible
@@ -2069,7 +2069,7 @@
   facebook_event: https://www.facebook.com/events/1446869245474135/
   linkedin_event: https://www.linkedin.com/events/6652875075814989824/
 - id: prometheus-online-11-6-2020
-  active: true
+  active: false
   country: de
   lang: en
   course_id: prometheus
