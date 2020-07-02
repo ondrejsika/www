@@ -5,24 +5,24 @@ import martin from "@app/data/pictures/martinjurco_portrait.jpg";
 export default function InvitePage() {
   return (
     <Article
-      title="Martin Jurco"
+      title="Martin Jurčo"
       subheader="#operations #scaling #marketing #sales"
       hideNewsletter={true}
     >
       <div className="row">
         <div className="col-8">
           <p>
-            Martin je moje prava ruka co se tyka operativy, skalovani,
+            Martin je moje pravá ruka co se týče operativy, škálování,
             marketingu a obchodu.
           </p>
           <p>
-            Potkali jsme se spolu na Slush Poolu a diky nemu nemusim resit
-            agendu a muzu delat to v cem jsem dobry - DevOps.
+            Potkali jsme se spolu na Slush Poolu a díky němu nemusím řešit
+            agendu a můžu dělat to, v čem jsem dobrý - DevOps.
           </p>
           <p>
             Kontakt na Martina je{" "}
-            <a href="mailto:martin@jurco.io">martin@jurco.io</a>, pro pripadnou
-            spolupraci se mnou (Ondrejem Sikou), piste na{" "}
+            <a href="mailto:martin@jurco.io">martin@jurco.io</a>, pro případnou
+            spolupráci se mnou (Ondřejem Šikou), pište na{" "}
             <a href="mailto:spoluprace@sika.io">spoluprace@sika.io</a>
           </p>
         </div>
