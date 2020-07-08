@@ -1,3 +1,30 @@
+- id: devops-skoleni-v-cervenci-2020-07-08
+  title: "DevOps školení v Červenci"
+  date: 8. 7. 2020
+  perex: |
+    Gitlab CI, Docker, Kubernetes, Rancher, Terraform, Prometheus a Proxmox
+  content: |
+    Zvu Vás na sérii DevOps školení v druhé polovině července. Zlepšete se v těchto DevOps technologiích:
+
+    - Gitlab CI (20. 7.) -  [Informace o kurzu](/skoleni/gitlab-ci), [Registrace na školení](/verejne-terminy/gitlab-ci-praha-20-07-2020), cena: 6 800 CZK
+    - Docker (21. - 22. 7.) -  [Informace o kurzu](/skoleni/docker), [Registrace na školení](/verejne-terminy/docker-praha-21-07-2020), cena: 11 999 CZK
+    - Kubernetes (23. - 24. 7.) -  [Informace o kurzu](/skoleni/kubernetes), [Registrace na školení](/verejne-terminy/kubernetes-praha-23-07-2020), cena: 11 999 CZK
+    - Prometheus (27. 7.) -  [Informace o kurzu](/skoleni/prometheus), [Registrace na školení](/verejne-terminy/prometheus-praha-27-07-2020), cena: 6 800 CZK
+    - Rancher (28. 7.) -  [Informace o kurzu](/skoleni/rancher), [Registrace na školení](/verejne-terminy/rancher-praha-28-07-2020), cena: 6 800 CZK
+    - Terraform (29. 7.) -  [Informace o kurzu](/skoleni/terraform), [Registrace na školení](/verejne-terminy/terraform-praha-29-07-2020), cena: 6 800 CZK
+    - Proxmox (30. 7.) -  [Informace o kurzu](/skoleni/proxmox), [Registrace na školení](/verejne-terminy/proxmox-praha-30-07-2020), cena: 6 800 CZK
+
+    Pokud máte zájem o více kurzů nebo Vás půjde víc, napište mi email a domluvíme se na nějaké slevě.
+
+    Pokud máte jakoukoliv otázku, neváhejte se zeptat na <ondrej@sika.io>
+  twitter_recommendations:
+    - adam-bisek-docker
+    - petr-klobas-docker
+    - petr-todorov-kubernetes
+    - martin-sindelar-gitlab-ci
+    - jan-novotny-docker
+    - lubos-klokner-docker-2
+
 - id: skoleni-docker-gitlab-ci-a-kubernetes-online-2020-05-19
   title: "DevOps školení v Květnu"
   date: 19. 5. 2020
