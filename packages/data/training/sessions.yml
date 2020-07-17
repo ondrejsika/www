@@ -2097,7 +2097,7 @@
   facebook_event: https://www.facebook.com/events/224926602288324
   linkedin_event: https://www.linkedin.com/events/6660465715528638464/
 - id: gitlab-ci-praha-20-07-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: gitlab-ci
@@ -2111,7 +2111,7 @@
   facebook_event: https://www.facebook.com/events/257197692084319
   linkedin_event: https://www.linkedin.com/events/6660466872829394944/
 - id: docker-praha-21-07-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
@@ -2125,7 +2125,7 @@
   facebook_event: https://www.facebook.com/events/840139229801161
   linkedin_event: https://www.linkedin.com/events/6660467717247639552/
 - id: kubernetes-praha-23-07-2020
-  active: true
+  active: fal se
   country: cz
   lang: cs
   course_id: kubernetes
