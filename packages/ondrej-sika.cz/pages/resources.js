@@ -30,6 +30,10 @@ const Page = () => (
 ## Go vs Rust
 - Matthias Endler: Go vs Rust? Choose Go. - https://endler.dev/2017/go-vs-rust/
 
+
+## Service Mesh
+
+- [Kubernetes Service Mesh: A Comparison of Istio, Linkerd and Consul](https://platform9.com/blog/kubernetes-service-mesh-a-comparison-of-istio-linkerd-and-consul/), Platform9, 21. 10. 2019
 `}
   />
 );
