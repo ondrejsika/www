@@ -2153,7 +2153,7 @@
   facebook_event: https://www.facebook.com/events/3133318073374502
   linkedin_event: https://www.linkedin.com/events/6660469831621455872/
 - id: rancher-praha-28-07-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: rancher
