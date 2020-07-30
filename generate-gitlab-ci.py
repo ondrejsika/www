@@ -201,6 +201,8 @@ for site in SITES:
 %(site)s build docker:
   dependencies:
     - %(site)s build js
+  needs:
+    - %(site)s build js
   variables:
     GIT_STRATEGY: none
   stage: build_docker%(priority_suffix)s
@@ -233,6 +235,8 @@ for site in SITES:
             out.append(
                 """
 %(site)s dev deploy k8s:
+  needs:
+    - %(site)s build docker
   stage: deploy_dev%(priority_suffix)s
   variables:
     GIT_STRATEGY: none
@@ -306,6 +310,8 @@ for site in SITES:
             out.append(
                 """
 %(site)s prod deploy k8s:
+  needs:
+    - %(site)s build docker
   stage: deploy_prod%(priority_suffix)s
   variables:
     GIT_STRATEGY: none
