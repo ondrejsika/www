@@ -335,5 +335,5 @@ for site in SITES:
                 }
             )
 
-with open(".gitlab-ci.yml", "w") as f:
+with open(".gitlab-ci.generated.yml", "w") as f:
     f.write("".join(out))
