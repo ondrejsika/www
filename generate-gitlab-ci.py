@@ -135,6 +135,7 @@ out.append(
 image: ondrejsika/ci
 
 stages:
+  - start
   - build_js_priority
   - build_docker_priority
   - deploy_dev_priority
@@ -146,6 +147,10 @@ stages:
 
 variables:
   DOCKER_BUILDKIT: '1'
+
+start:
+  stage: start
+  script: echo "start job - you can't create empty child pipeline"
 """
 )
 
