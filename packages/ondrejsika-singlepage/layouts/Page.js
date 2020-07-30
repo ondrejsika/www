@@ -72,7 +72,7 @@ const Page = props => {
             ].map((el, i) => {
               return (
                 <ThemeFooter.Li key={i}>
-                  <ThemeFooter.A href="#">{el[0]}</ThemeFooter.A>
+                  <ThemeFooter.A href={el[1]}>{el[0]}</ThemeFooter.A>
                 </ThemeFooter.Li>
               );
             })}
