@@ -34,6 +34,12 @@ const Page = () => (
 ## Service Mesh
 
 - [Kubernetes Service Mesh: A Comparison of Istio, Linkerd and Consul](https://platform9.com/blog/kubernetes-service-mesh-a-comparison-of-istio-linkerd-and-consul/), Platform9, 21. 10. 2019
+
+## edX Kurzy (online)
+
+- Introduction to Kubernetes - https://www.edx.org/course/introduction-to-kubernetes
+- Introduction to Cloud Infrastructure Technologies - https://www.edx.org/course/introduction-to-cloud-infrastructure-technologies
+- Introduction to Linux - https://www.edx.org/course/introduction-to-linux
 `}
   />
 );
