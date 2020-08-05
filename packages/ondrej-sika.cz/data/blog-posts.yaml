@@ -1,42 +1,42 @@
 - id: emaily-jak-a-kam-je-odesilat
-  title: "Emaily: Jak a kam je odesilat"
+  title: "Emaily: Jak a kam je odesílat"
   date: 30. 7. 2020
   tags:
     - email
     - development
   perex: |
-    Poslat email z aplikace umi kazdy. Poslat ho tak, aby to bylo uzivatelum prijemne, to uz ne. Zde Vam ukazu jak to delam ja a hlavne proc.
+    Poslat email z aplikace umí každý. Poslat ho tak, aby to bylo uživatelům příjemné, to už ne. Zde Vám ukážu jak to dělám já a hlavně proč.
   content: |
-    Proc pisu tento blog post? Abych ulehcil uzivatelum pouzivani emailu, hlavne kdyz maji filtery a automaticky je zpracovavaji.
+    Proč píšu tento blog post? Abych ulehčil uživatelům používání emailu, hlavně když mají filtry a automaticky je zpracovávají.
 
-    ## Odesilani emailu z vice adres
+    ## Odesílání emailu z více adres
 
-    Vetsinou vsechny emaily odesilame z `noreply@app.com` coz by nevadilo, kdyz bychom dali uzivateli moznost at si v aplikaci nastavi na jaky email mu maji chodit zasadni akce na jeho uctu (napriklad reset hesla), kam notifikace (kterych chodi hodne), kam faktury a kam newsletter. To asi nedelate, jeste se k tomu dostanu.
+    Většinou všechny emaily odesíláme z `noreply@app.com` což by nevadilo, když bychom dali uživateli možnost ať si v aplikaci nastaví na jaký email mu mají chodit zásadní akce na jeho účtu (například řešit hesla), kam notifikace (kterých chodí hodně), kam faktury a kam newsletter. To asi neděláte, ještě se k tomu dostanu.
 
-    Podstata je ze mame na klienta 1 email a tam posilame vsechno. Pokud vse posilame z jednoho emailu, delame mu potize s psanim pravidel pro trizeni prichozich zpracovavaji.
+    Podstata je, že máme na klienta 1 email a tam posíláme všechno. Pokud vše posíláme z jednoho emailu, děláme mu potíže s psaním pravidel pro třídění příchozích zpráv.
 
-    Pojdme mu to tedy zjednodusit. Ja pouzivat tyto emaily pro odchozi postu ve vetsine svych aplikaci a myslim, ze to funguje dobre.
+    Pojďme mu to tedy zjednodušit. Já používám tyto emaily pro odchozí poštu ve většině svých aplikaci a myslím, že to funguje dobře.
 
-    - `noreply-account@app.com` - Dulezite zmeny na uctu, zmena hesla, notifikace prihlaseni. Vse co je dulezite dostat do inboxu
-    - `noreply-notification@app.com` - Pro vsechny mozne notifikace
-    - `noreply-invoice@app.com` - Pro posilani faktur, da se jednoduse presmerovat ucetni nebo sluzbe, ktera je plati za Vas
-    - `noreply-newsletter@app.com` - Pro newsletter. Pokud si ho chce nekdo dat do slozky (a koukat do nich jen obcas jako to delam ja)
+    - `noreply-account@app.com` - Důležité změny na účtu, změna hesla, notifikace přihlášení. Vše, co je důležité dostat do inboxu
+    - `noreply-notification@app.com` - Pro všechny možné notifikace
+    - `noreply-invoice@app.com` - Pro posílání faktur, dá se jednoduše přesměrovat účetní nebo službě, která je platí za Vás
+    - `noreply-newsletter@app.com` - Pro newsletter. Pokud si ho chce někdo dát do složky (a koukat do nich jen občas jako to dělám já)
 
-    Proc emaily posilam z ruznych emailu a ne jen suffixu jako `noreply+account@app.com` a `noreply+newsletter@app.com` je i duvod ze nektere emailove sluzby (jako [HEY.com](https://hey.com)), umoznuji delat jednoduchy screening podle odesilatele a ruzne from adresy jsou pro ne nejlepsi.
+Proč emaily posílám z různých emailů a ne jen suffixu jako `noreply+account@app.com` a `noreply+newsletter@app.com` je i důvod, že některé emailové služby (jako [HEY.com](https://hey.com)), umožňují dělat jednoduchý screening podle odesílatele a různé from adresy jsou pro ně nejlepší.
 
-    ## Odesilani emailu na ruzne adresy
+    ## Odesílání emailů na různé adresy
 
-    V prvnim odstavci jsem psal proc posilam emaily z ruznych address. Zaroven nektere emaily, typicky firemni, nemaji moznost nastavovani filtru a proto je pro uzivatele prijemne, kdyz si muze nastavit emaily kam mu budou chodit ruzne typy zprav.
+    V prvním odstavci jsem psal proč posílám emaily z různých adres. Zároveň některé emaily, typicky ty firemní, nemají možnost nastavování filtru a proto je pro uživatele příjemné, když si může nastavit emaily kam mu budou chodit různé typy zpráv.
 
-    Ja nechavam uzivateli nastavit si emaly pro stejne kategorie jako mam pri odesilani.
+    Já nechávám uživateli nastavit si emaily pro stejné kategorie jako mám při odesílání.
 
     ## Noreply, ale
 
-    Posilani z `noreply@app.com` ma zasadni nevyhodu. Kdyz ma klient problem, nemuze napsat zpet. Ja delam to ze u kazdeho emailu, ktery odchazi automaticky z `noreply-*@app.com` davam jeste __Reply-to__ na `support@app.com` a zajistim, ze zpetnou komunikaci bude nekdo resit.
+Posílání z `noreply@app.com` má zásadní nevýhodu. Když má klient problém, nemůže napsat zpět. Já dělám to, že u každého emailu, který odchází automaticky z `noreply-*@app.com` dávám ještě __Reply-to__ na `support@app.com` a zajistím tak, že zpětnou komunikaci bude někdo řešit.
 
-    ## Zaver
+    ## Závěr
 
-    Pokud navrhujete aplikaci, pro vase uzivatele je konzistentni a prehledne posilani emailu velky bonus. Github to ma velmi pekne udelane, bohuzel je to vyjimka. I velci hraci jako Booking nebo PayPal v tom maji velky chaos a pravidla pro ne se pisu velmi tezce (prevazne zavisle na fulltext search).
+Pokud navrhujete aplikaci, pro vaše uživatele je konzistentní a přehledné posílání emailů velký bonus. Github to má velmi pěkně udělané, bohužel je to výjimka. I velcí hráči jako Booking nebo PayPal v tom mají velký chaos a pravidla pro ně se píšou velmi těžce (protože jsou převážně závislé na fulltext search).
 
 - id: docker-vs-podman-v-cem-se-lisi
   title: "Docker vs Podman: V čem se liší"
