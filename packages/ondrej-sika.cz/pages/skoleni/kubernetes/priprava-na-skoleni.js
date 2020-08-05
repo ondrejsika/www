@@ -5,7 +5,15 @@ const Page = () => (
   <Article
     title="Priprava na Skoleni Kubernetes"
     markdown={`
-Na skoleni Kubernetes je potreba mit nainstalovany \`kubectl\`, \`helm\` a \`minikube\`. Navod na instalaci najdete v clanku [Instalace Kubernetes pro lokalni vyvoj](/kubernetes/instalace).
+Na skoleni Kubernetes je potreba mit nainstalovany:
+
+- Git
+- Textovy editor (doporucuji VS Code)
+- \`kubectl\`
+- \`helm\`
+- \`minikube\`.
+
+Navod na instalaci najdete v clanku [Instalace Kubernetes pro lokalni vyvoj](/kubernetes/instalace).
 
 Po instalaci je dobre overit si zda minikube funguje:
 

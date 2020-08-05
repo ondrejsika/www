@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Příprava na Školení Dockeru"
     markdown={`
@@ -9,6 +10,8 @@ Díky za Váš zájem o školení Dockeru.
 Na školení Dockeru potřebujete
 
 - Vlastní notebook
+- Git
+- Textovy editor (doporucuji VS Code)
 - Nainstalovaný Docker - [návod na instalaci](/docker/instalace)
 - Přístup na internet ideálně __bez korporátní proxy__, případne nastavenou proxy v Docker Desktop (na Mac stačí mít nastavenou systémovou proxy)
 
@@ -18,3 +21,5 @@ Pokud budete mít jakýkoliv problém nebo dotaz, neváhejte napsat na <ondrej@s
 `}
   />
 );
+
+export default Page;
