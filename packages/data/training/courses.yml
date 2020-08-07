@@ -1367,14 +1367,87 @@
     cs: ["spel", "vse", "sit"]
   agenda:
     cs: |
-      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+      ### Co Vás naučím
+
+      - Co je Digital Ocean
+      - Digital Ocean vs ostatni cloudy
+      - Prehled sluzeb Digital Oceanu
+      - Digital Ocean a Terraform
+      - Digital Ocean CLI
+      - Compute (Virtualni Servery, Kubernetes)
+      - Storage (Block Storage, S3)
+      - Managed DB (Postgres, Mysql, Redis)
+      - Networking (Load Balancing, Firewall, VPC)
+      - Monitoring
+      - Backupy
+
     en: |
-      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+      ### Course Outline
+
+      - What is Digital Ocean
+      - Digital Ocean vs others
+      - All resources overview
+      - Digital Ocean and Terraform
+      - Digital Ocean CLI
+      - Compute (Virtualni Servery, Kubernetes)
+      - Storage (Block Storage, S3)
+      - Managed DB (Postgres, Mysql, Redis)
+      - Networking (Load Balancing, Firewall, VPC)
+      - Monitoring
+      - Backups
+
   description:
     cs: |
-      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+      ### Popis technologie
+      Digital Ocean je spolehlivy a jednoduchy cloud, kam muzete velmi rychle zmigrovat vasi satavajici infrastrukturu nebo vytvorit novou pro novy projekt ve velmi kratkem case a s velmi malou nutnosti udrzby. Digital Ocean je o hodne jednodussi nez AWS nebo GCP a je proto vhodny i pro ty, kteri nemaji s cloudy zadne zkusenosti.
+
+      ### Jak školení probíhá
+      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+
+      ### Co Vás naučím
+
+      - Co je Digital Ocean
+      - Digital Ocean vs ostatni cloudy
+      - Prehled sluzeb Digital Oceanu
+      - Digital Ocean a Terraform
+      - Digital Ocean CLI
+      - Compute (Virtualni Servery, Kubernetes)
+      - Storage (Block Storage, S3)
+      - Managed DB (Postgres, Mysql, Redis)
+      - Networking (Load Balancing, Firewall, VPC)
+      - Monitoring
+      - Backupy
+
+      ### Pro koho je školení určeno
+
+      Skoleni je urcene pro vyvojare a DevOpsaky, kteri premysleji o cloudu nebo chteji zefektivnit spravu infrastruktry na svem projektu.
+
+      #### Předchozí znalosti
+      - Základy práce s Linuxem
+      - Základy práce v terminálu
+
+      #### Technické požadavky
+      - Nainstalovaný
+        - Terraform
+        - Digital Ocean CLI (`doctl`)
+        - Ucet na Digital Oceanu ([Registrace + 50 USD kredit](https://sika.link/do-ref))
+      - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
+      ### Course Outline
+
+      - What is Digital Ocean
+      - Digital Ocean vs others
+      - All resources overview
+      - Digital Ocean and Terraform
+      - Digital Ocean CLI
+      - Compute (Virtualni Servery, Kubernetes)
+      - Storage (Block Storage, S3)
+      - Managed DB (Postgres, Mysql, Redis)
+      - Networking (Load Balancing, Firewall, VPC)
+      - Monitoring
+      - Backups
 
 - id: aws
   skoleniio:
