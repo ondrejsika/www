@@ -22,7 +22,7 @@
     - `noreply-invoice@app.com` - Pro posílání faktur, dá se jednoduše přesměrovat účetní nebo službě, která je platí za Vás
     - `noreply-newsletter@app.com` - Pro newsletter. Pokud si ho chce někdo dát do složky (a koukat do nich jen občas jako to dělám já)
 
-Proč emaily posílám z různých emailů a ne jen suffixu jako `noreply+account@app.com` a `noreply+newsletter@app.com` je i důvod, že některé emailové služby (jako [HEY.com](https://hey.com)), umožňují dělat jednoduchý screening podle odesílatele a různé from adresy jsou pro ně nejlepší.
+    Proč emaily posílám z různých emailů a ne jen suffixu jako `noreply+account@app.com` a `noreply+newsletter@app.com` je i důvod, že některé emailové služby (jako [HEY.com](https://hey.com)), umožňují dělat jednoduchý screening podle odesílatele a různé from adresy jsou pro ně nejlepší.
 
     ## Odesílání emailů na různé adresy
 
@@ -32,11 +32,11 @@ Proč emaily posílám z různých emailů a ne jen suffixu jako `noreply+accoun
 
     ## Noreply, ale
 
-Posílání z `noreply@app.com` má zásadní nevýhodu. Když má klient problém, nemůže napsat zpět. Já dělám to, že u každého emailu, který odchází automaticky z `noreply-*@app.com` dávám ještě __Reply-to__ na `support@app.com` a zajistím tak, že zpětnou komunikaci bude někdo řešit.
+    Posílání z `noreply@app.com` má zásadní nevýhodu. Když má klient problém, nemůže napsat zpět. Já dělám to, že u každého emailu, který odchází automaticky z `noreply-*@app.com` dávám ještě __Reply-to__ na `support@app.com` a zajistím tak, že zpětnou komunikaci bude někdo řešit.
 
     ## Závěr
 
-Pokud navrhujete aplikaci, pro vaše uživatele je konzistentní a přehledné posílání emailů velký bonus. Github to má velmi pěkně udělané, bohužel je to výjimka. I velcí hráči jako Booking nebo PayPal v tom mají velký chaos a pravidla pro ně se píšou velmi těžce (protože jsou převážně závislé na fulltext search).
+    Pokud navrhujete aplikaci, pro vaše uživatele je konzistentní a přehledné posílání emailů velký bonus. Github to má velmi pěkně udělané, bohužel je to výjimka. I velcí hráči jako Booking nebo PayPal v tom mají velký chaos a pravidla pro ně se píšou velmi těžce (protože jsou převážně závislé na fulltext search).
 
 - id: docker-vs-podman-v-cem-se-lisi
   title: "Docker vs Podman: V čem se liší"
