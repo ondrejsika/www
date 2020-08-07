@@ -1375,3 +1375,38 @@
       **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
+- id: aws
+  skoleniio:
+    name: aws
+    lecturer: ondrejsika
+  name:
+    cs: Školení AWS (Úvod)
+    en: AWS Introduction Training
+    de: AWS Introduction Schulung
+  lecturers:
+    - ondrejsika
+  length: 2
+  price:
+    open:
+      cz: 11 999 CZK
+      de: 599 EUR
+      uk: 599 EUR
+    in_house:
+      cz: 50 000 CZK
+      de: 3999 EUR
+      uk: 3999 GBP
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  agenda:
+    cs: |
+      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+  description:
+    cs: |
+      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
