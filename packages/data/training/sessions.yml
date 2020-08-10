@@ -2256,6 +2256,31 @@
   length: 1 den
   date_from: 25.9.2020
   date_to: 25.9.2020
+- id: digitalocean-praha-02-10-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: digitalocean
+  name: Školení Digital Ocean
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 2.10.2020
+  date_to: 2.10.2020
+- id: digitalocean-praha-04-12-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: digitalocean
+  name: Školení Digital Ocean
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 4.12.2020
+  date_to: 4.12.2020
+
 # Brno Root.cz Listopad
 - id: docker-brno-02-11-2020
   active: true
