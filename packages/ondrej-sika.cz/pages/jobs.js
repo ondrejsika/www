@@ -24,15 +24,15 @@ const Install = () => (
     <div className="container pt-4 pb-2 post-body">
       <Markdown
         source={`
-FAQ: Je tato nabidka aktualni? Ano.
+FAQ: Je tato nabídka aktuální? Ano.
 
-- [__Konzultant a Skolitel DevOps__](#hledam-partaka-na-skoleni-a-konzultace-devops) HOT!
+- [__Konzultant a Školitel DevOps__](#hledam-partaka-na-skoleni-a-konzultace-devops) HOT!
 - [Junion Frontend Developer (HTML & React)](#junion-frontend-developer--html---react-)
-- [Technicky asistent & Junior DevOps Engineer](#technicky-asistent---junior-devops-engineer)
+- [Technický asistent & Junior DevOps Engineer](#technicky-asistent---junior-devops-engineer)
 
-## Hledam partaka na skoleni a konzultace DevOps
+## Hledám parťáka na školení a konzultace DevOps
 
-Shanim nekoho kdo mi pomuze se skolenimi a workshopy na DevOps temata. Skolim a konzultuji tyto nastroje a praci s nimi.
+Sháním někoho kdo mi pomůže se školeními a workshopy na DevOps témata. Školím a konzultuji tyto nástroje a práci s nimi.
 
 - Git, Gitlab
 - Gitlab CI
@@ -41,82 +41,82 @@ Shanim nekoho kdo mi pomuze se skolenimi a workshopy na DevOps temata. Skolim a 
 - ELK / EFK
 - Prometheus, Sentry
 
-Pokud pracujes s jinymi technologiemi jako je napriklad AWS, Azure, ... nevadi. Urcite se domluvime.
+Pokud pracuješ s jinými technologiemi jako je například AWS, Azure, ... nevadí. Určitě se domluvíme.
 
-Moji klienti jsou startupy i korporace. Napriklad O2, AirBank, Satoshi Labs, E.ON, AAA Auto, ...
+Moji klienti jsou startupy i korporace. Například O2, AirBank, Satoshi Labs, E.ON, AAA Auto, ...
 
-### Nabizim
+### Nabízím
 
-- Plat az 13 000 CZK za jeden skolici den
-- Moznost rustu, budeme partneri ne zamestnanec vs zamestnavatel
-- Prace na zajimavych projektech
-- Maly (punkovy) team
+- Plat až 13 000 CZK za jeden školící den
+- Možnost růstu, budeme partneři, ne zamestnanec vs zaměstnavatel
+- Práce na zajímavých projektech
+- Malý (punkový) team
 
-### Pozadavky
+### Požadavky
 
-- Prakticke zkusenosti s nastroji, ktere budes skolit
-- Motivace a chut se ucit nove veci ohledne IT a DevOps
-- Cestina, Anglictina
+- Praktické zkušenosti s nástroji, které budeš školit
+- Motivace a chuť se učit nové věci ohledně IT a DevOps
+- Čeština, Angličtina
 - Samostatnost
 
-### Vyhodou
+### Výhodou
 
-- Praha – obcas se budem muset potkat osobne
-- Zkusenosti s prednasenim / lektorovanim
+- Praha – občas se budeme muset potkat osobně
+- Zkušenosti s přednášením / lektorováním
 
 
-Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>. Napada te nekdo kdo by mel zajem? Doporuc mu prosim tuto nabidku, diky.
+Pokud tě nabídka zaujala, napiš mi email na <ondrej@ondrejsika.com>. Napadá tě někdo kdo by měl zájem? Doporuč mu prosím tuto nabidku, díky.
 
 ## Junion Frontend Developer (HTML & React)
 
-Mas zajem pracovat na spouste webu v Next.js a v Reactu? Koukni na ne na [Github](https://github.com/ondrejsika/ondrejsikawebs). Zajima te Frontend, HTML, SEO, ...? Posun se v Reactu a ziskej zkusenosti z praxe na realnych projektech.
+Máš zájem pracovat na spoustě webu v Next.js a v Reactu? Koukni na ně na [Github](https://github.com/ondrejsika/ondrejsikawebs). Zajímá tě Frontend, HTML, SEO, ...? Posuň se v Reactu a získej zkušenosti z praxe na reálných projektech.
 
-### Nabizim
+### Nabízím
 
-- Zajimave financni ohodnoceni
-- Moznost ucit se a rust
-- Prace odkudkoliv
+- Zajímavé finanční ohodnocení
+- Možnost učit se a růst
+- Práce odkudkoliv
 
-### Pozaduji
+### Požaduji
 
 - Znalost HTML
 - Znalost JavaScriptu
-- Zakladni znalost Reactu a React komponent
-- Zaklady SEO
+- Základní znalost Reactu a React komponent
+- Základy SEO
 
-### Vyhodou
+### Výhodou
 
 - Znalost Next.js
 
-Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>. Napada te nekdo kdo by mel zajem? Doporuc mu prosim tuto nabidku, diky.
+Pokud tě nabídka zaujala, napiš mi email na <ondrej@ondrejsika.com>. Napadá tě někdo kdo by měl zájem? Doporuč mu prosím tuto nabídku, díky.
 
 
-## Technicky asistent & Junior DevOps Engineer
+## Technický asistent & Junior DevOps Engineer
 
-Zajimas se o DevOps, ale nemas jeste moc zkusenosti? Nevadi, pojd nejake ziskat.
+Zajímáš se o DevOps, ale nemáš jěště moc zkušeností? Nevadí, pojď nějaké získat.
 
-Shanim nekoho kdo mi pomuze s:
+Sháním někoho kdo mi pomůže s:
 
-- Implementaci DevOps pro klienty
-- Pripravou skoleni
+- Implementací DevOps pro klienty
+- Přípravou školení
 - Sprava promo webu ([ondrej-sika.cz](https://ondrej-sika.cz), [skoleni-docker.cz](https://skoleni-docker.cz), ...)
 
 ### Nabizim
 
-- Moznost ucit se od nejlepsich
-- Prace na zajimavych projektech
+- Možnost učit se od nejlepších
+- Práce na zajímavých projektech
 
-### Pozaduji
+### Požaduji
 
-- Chut se ucit nove veci
-- Zajem o DevOps
+- Chuť se učit nové věci
+- Zájem o DevOps
 
-### Vyhodou
+### Výhodou
 
-- Praha – obcas se budem muset potkat osobne
+- Praha – občas se budeme muset potkat osobně
 - Student IT (CVUT)
 
-Pokud te nabidka zaujala, napis mi email na <ondrej@ondrejsika.com>. Napada te nekdo kdo by mel zajem? Doporuc mu prosim tuto nabidku, diky.
+Pokud tě nabídka zaujala, napiš mi email na <ondrej@ondrejsika.com>. Napadá tě někdo kdo by měl zájem? Doporuč mu prosím tuto nabídku, díky.
 
 `}
       />
