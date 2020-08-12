@@ -2208,6 +2208,8 @@
   length: 1 den
   date_from: 11.9.2020
   date_to: 11.9.2020
+  facebook_event: https://www.facebook.com/events/306925370416542
+  linkedin_event:
 - id: docker-praha-14-09-2020
   active: true
   country: cz
@@ -2220,6 +2222,8 @@
   length: 2 dny
   date_from: 14.9.2020
   date_to: 15.9.2020
+  facebook_event: https://www.facebook.com/events/1654907008016856
+  linkedin_event:
 - id: gitlab-ci-praha-16-09-2020
   active: true
   country: cz
@@ -2232,6 +2236,8 @@
   length: 1 den
   date_from: 16.9.2020
   date_to: 16.9.2020
+  facebook_event: https://www.facebook.com/events/2642278449419396
+  linkedin_event:
 - id: kubernetes-praha-17-09-2020
   active: true
   country: cz
@@ -2244,6 +2250,8 @@
   length: 2 dny
   date_from: 17.9.2020
   date_to: 18.9.2020
+  facebook_event: https://www.facebook.com/events/3134661776612413
+  linkedin_event:
 - id: terraform-praha-25-09-2020
   active: true
   country: cz
@@ -2256,6 +2264,8 @@
   length: 1 den
   date_from: 25.9.2020
   date_to: 25.9.2020
+  facebook_event: https://www.facebook.com/events/952797201885121
+  linkedin_event:
 - id: digitalocean-praha-02-10-2020
   active: true
   country: cz
@@ -2268,6 +2278,8 @@
   length: 1 den
   date_from: 2.10.2020
   date_to: 2.10.2020
+  facebook_event: https://www.facebook.com/events/3469410083078250
+  linkedin_event:
 - id: digitalocean-praha-04-12-2020
   active: true
   country: cz
@@ -2280,6 +2292,8 @@
   length: 1 den
   date_from: 4.12.2020
   date_to: 4.12.2020
+  facebook_event: https://www.facebook.com/events/643493409913901
+  linkedin_event:
 
 # Brno Root.cz Listopad
 - id: docker-brno-02-11-2020
@@ -2294,6 +2308,8 @@
   length: 2 dny
   date_from: 2.11.2020
   date_to: 3.11.2020
+  facebook_event: https://www.facebook.com/events/223410545748452
+  linkedin_event:
 - id: gitlab-ci-brno-4-11-2020
   active: true
   country: cz
@@ -2306,6 +2322,8 @@
   length: 1 den
   date_from: 4.11.2020
   date_to: 4.11.2020
+  facebook_event: https://www.facebook.com/events/800482037357548
+  linkedin_event:
 - id: kubernetes-brno-05-11-2020
   active: true
   country: cz
@@ -2318,6 +2336,8 @@
   length: 2 dny
   date_from: 5.11.2020
   date_to: 6.11.2020
+  facebook_event: https://www.facebook.com/events/930034360818411
+  linkedin_event:
 - id: proxmox-brno-20-11-2020
   active: true
   country: cz
@@ -2330,6 +2350,8 @@
   length: 1 den
   date_from: 20.11.2020
   date_to: 20.11.2020
+  facebook_event: https://www.facebook.com/events/1394533997418347
+  linkedin_event:
 - id: terraform-brno-27-11-2020
   active: true
   country: cz
@@ -2342,6 +2364,8 @@
   length: 1 den
   date_from: 27.11.2020
   date_to: 27.11.2020
+  facebook_event: https://www.facebook.com/events/1322145124794134
+  linkedin_event: 
 #OLD
 - id: docker-praha-16-10-2019
   active: false
