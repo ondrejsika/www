@@ -2209,7 +2209,7 @@
   date_from: 11.9.2020
   date_to: 11.9.2020
   facebook_event: https://www.facebook.com/events/306925370416542
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699285063315529728/
 - id: docker-praha-14-09-2020
   active: true
   country: cz
@@ -2223,7 +2223,7 @@
   date_from: 14.9.2020
   date_to: 15.9.2020
   facebook_event: https://www.facebook.com/events/1654907008016856
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699286420705570816/
 - id: gitlab-ci-praha-16-09-2020
   active: true
   country: cz
@@ -2237,7 +2237,7 @@
   date_from: 16.9.2020
   date_to: 16.9.2020
   facebook_event: https://www.facebook.com/events/2642278449419396
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699287887134920705/
 - id: kubernetes-praha-17-09-2020
   active: true
   country: cz
@@ -2251,7 +2251,7 @@
   date_from: 17.9.2020
   date_to: 18.9.2020
   facebook_event: https://www.facebook.com/events/3134661776612413
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699289039452835840/
 - id: terraform-praha-25-09-2020
   active: true
   country: cz
@@ -2265,7 +2265,7 @@
   date_from: 25.9.2020
   date_to: 25.9.2020
   facebook_event: https://www.facebook.com/events/952797201885121
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699289848773132288/
 - id: digitalocean-praha-02-10-2020
   active: true
   country: cz
@@ -2279,21 +2279,7 @@
   date_from: 2.10.2020
   date_to: 2.10.2020
   facebook_event: https://www.facebook.com/events/3469410083078250
-  linkedin_event:
-- id: digitalocean-praha-04-12-2020
-  active: true
-  country: cz
-  lang: cs
-  course_id: digitalocean
-  name: Školení Digital Ocean
-  city: Praha
-  price: 6800 CZK
-  venue_id: rootcz
-  length: 1 den
-  date_from: 4.12.2020
-  date_to: 4.12.2020
-  facebook_event: https://www.facebook.com/events/643493409913901
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699290620546048002/
 
 # Brno Root.cz Listopad
 - id: docker-brno-02-11-2020
@@ -2309,7 +2295,7 @@
   date_from: 2.11.2020
   date_to: 3.11.2020
   facebook_event: https://www.facebook.com/events/223410545748452
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699293927184318464/
 - id: gitlab-ci-brno-4-11-2020
   active: true
   country: cz
@@ -2323,7 +2309,7 @@
   date_from: 4.11.2020
   date_to: 4.11.2020
   facebook_event: https://www.facebook.com/events/800482037357548
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699295534529683458/
 - id: kubernetes-brno-05-11-2020
   active: true
   country: cz
@@ -2337,7 +2323,7 @@
   date_from: 5.11.2020
   date_to: 6.11.2020
   facebook_event: https://www.facebook.com/events/930034360818411
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699296409071456256/
 - id: proxmox-brno-20-11-2020
   active: true
   country: cz
@@ -2365,7 +2351,22 @@
   date_from: 27.11.2020
   date_to: 27.11.2020
   facebook_event: https://www.facebook.com/events/1322145124794134
-  linkedin_event: 
+  linkedin_event:
+# Praha Root.cz Prosinec
+  id: digitalocean-praha-04-12-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: digitalocean
+  name: Školení Digital Ocean
+  city: Praha
+  price: 6800 CZK
+  venue_id: rootcz
+  length: 1 den
+  date_from: 4.12.2020
+  date_to: 4.12.2020
+  facebook_event: https://www.facebook.com/events/643493409913901
+  linkedin_event: https://www.linkedin.com/events/6699291594736050176/
 #OLD
 - id: docker-praha-16-10-2019
   active: false
