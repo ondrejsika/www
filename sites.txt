@@ -58,3 +58,4 @@ skoleni.io
 ondrejsika.is
 trainera.de
 sikalabs.com
+digitalocean.cz

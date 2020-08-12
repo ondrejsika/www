@@ -74,6 +74,8 @@
     "dev-ondrejsika.is": "yarn --cwd packages/ondrejsika.is dev -p 3059",
     "dev-trainera.de": "yarn --cwd packages/trainera.de dev -p 3060",
     "dev-sikalabs.com": "yarn --cwd packages/sikalabs.com dev -p 3061",
+    "dev-digitalocean.cz": "yarn --cwd packages/digitalocean.cz dev -p 3062",
+
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -134,6 +136,8 @@
     "static-ondrejsika.is": "yarn --cwd packages/ondrejsika.is static",
     "static-trainera.de": "yarn --cwd packages/trainera.de static",
     "static-sikalabs.com": "yarn --cwd packages/sikalabs.com static",
+    "static-digitalocean.cz": "yarn --cwd packages/digitalocean.cz static",
+
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)",
     "deploy-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd cloudflare-workers/ondrej-sika.cz && ../../node_modules/.bin/wrangler publish)",
     "deploy-ondrej-sika.com": "yarn run static-ondrej-sika.com && (cd cloudflare-workers/ondrej-sika.com && ../../node_modules/.bin/wrangler publish)",

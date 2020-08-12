@@ -153,6 +153,9 @@ const links = {
     lu: "https://ondrej-sika.com/training/rancher?x_source=headline",
     ch: "https://ondrej-sika.com/training/rancher?x_source=headline",
     nl: "https://ondrej-sika.com/training/rancher?x_source=headline"
+  },
+  digitalocean: {
+    cz: "https://ondrej-sika.cz/skoleni/digitalocean/"
   }
 };
 
@@ -217,6 +220,11 @@ class Navigation extends React.Component {
                 <li>
                   <Link href={links.react[location]}>
                     <a>React</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={links.digitalocean[location]}>
+                    <a>Digital Ocean</a>
                   </Link>
                 </li>
               </p>
