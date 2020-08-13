@@ -2337,7 +2337,7 @@
   date_from: 20.11.2020
   date_to: 20.11.2020
   facebook_event: https://www.facebook.com/events/1394533997418347
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699588615283978240/
 - id: terraform-brno-27-11-2020
   active: true
   country: cz
@@ -2351,7 +2351,7 @@
   date_from: 27.11.2020
   date_to: 27.11.2020
   facebook_event: https://www.facebook.com/events/1322145124794134
-  linkedin_event:
+  linkedin_event: https://www.linkedin.com/events/6699591210727698432/
 # Praha Root.cz Prosinec
 - id: digitalocean-praha-04-12-2020
   active: true

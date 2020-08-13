@@ -409,8 +409,8 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["dimensiondata", "bohemiaenergy", "sit"]
-    sk: ["dimensiondata", "bohemiaenergy", "sit"]
+    cs: ["fio", "lbms", "100MEGA"]
+    sk: ["fio", "lbms", "100MEGA"]
     en: ["dimensiondata", "bohemiaenergy", "sit"]
   agenda:
     cs: |
