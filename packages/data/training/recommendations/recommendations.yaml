@@ -7,9 +7,9 @@
   name: Matěj Kučera
   photo: img/matejkucera.jpg
   role:
-    cs: Vývojář Aplikací
-    de: Web Application Developer
-    en: Web Application Developer
+    cs: Vývojář Aplikací, Vysoká škola ekonomická v Praze
+    de: Web Application Developer, University of Economics Prague, Prague
+    en: Web Application Developer, University of Economics Prague, Prague
     se: Webapplikationsutvecklare
   text:
     cs: |
@@ -91,8 +91,8 @@
   name: Martin Kylián
   photo: img/martinkylian.jpg
   role:
-    cs: Network Security Engineer, SIT MP
-    en: Network Security Engineer, SIT MP
+    cs: Penetration Tester, CESNET z.s.p.o
+    en: Penetration Tester, CESNET z.s.p.o
     se: Nätverkssäkerhetsingenjör, SIT MP
   text:
     cs: |
@@ -156,14 +156,16 @@
     cs: Technický ředitel
     en: Technical Director
   text:
-    cs: "Ondra u nas ve firme skolil verzovaci system GIT. Uz od prvniho okamziku
+    cs:
+      "Ondra u nas ve firme skolil verzovaci system GIT. Uz od prvniho okamziku
       bylo poznat, ze disponuje rozsahlymi znalostmi a pochopenim problematiky. Skoleni
       bylo provadeno s durazem na individualni pristup, profesionalitu a maximalni
       pokryti probirane latky. Prakticky neexistovala otazka, na kterou by nam nebyl
       schopny odpovedet. Ondra je ochotny konzultovat oblasti i nad ramec puvodne
       dohodnuteho skoleni, zejmena ohledne softwaroveho vyvoje. Urcite bych ho za
       nasi spolecnost doporucil komukoliv a myslim, ze ho vyuzijeme opakovane."
-    en: "Ondra has trained GIT versioning system in our company. From the very first
+    en:
+      "Ondra has trained GIT versioning system in our company. From the very first
       moment it was clear that he had extensive knowledge and understanding of the
       issue. The training was carried out with an emphasis on individual approach,
       professionalism and maximum coverage of the subject matter. There was no question
@@ -183,7 +185,8 @@
   text:
     cs: |
       Ondru jsme si pozvali na praktické školení Docker-u. Ondra byl perfektně připraven, odpověděl na všechny naše dotazy a dal nám také spoustu užitečných rad. Skvělý start jak začít s novou technologií.
-    en: "We invited Ondra to a practical Docker training. Ondra was perfectly prepared,
+    en:
+      "We invited Ondra to a practical Docker training. Ondra was perfectly prepared,
       answered all our questions and gave us a lot of useful advice. Great start to
       start with new technology."
 - company: LBMS s.r.o.
@@ -203,7 +206,7 @@
       Right at the first meeting it was clear that Ondřej had a lot of practical experience with Git. His training certainly met my expectations. He helped me understand the main differences between Git and centralized systems, trained its use, and advised what to avoid in practice. At the same time it was no problem to tailor training to our specific needs and helped us to compare web implementations (GitLab, GitHub, ...). We are definitely planning further cooperation in the future.
     sk: |
       Hned při prvním setkání bylo zřejmé, že Ondřej má mnoho praktických zkušeností s Git. Jeho školení určitě splnilo moje očekávání. Pomohl mi pochopit hlavní rozdíly mezi Git a centralizovanými systémy, vyškolil jeho užívání a k tomu poradil, čemu se v praxi vyvarovat. Zároveň nebyl problém upravit školení na míru našim specifickým potřebám a v neposlední řadě nám pomohl se srovnáním webových implementací (GitLab, GitHub, ...). Do budoucna určitě plánujeme další spolupráci.
-    
+
 - company: Colosys s.r.o.
   date:
     cs: 19. září 2017
@@ -326,10 +329,10 @@
   name: Juraj Boldiš
   photo: img/jurajboldis.jpg
   role:
-    cs: Architect
-    de: Architect
-    en: Architect
-    se: Architect
+    cs: Architect, Ernst & Young
+    de: Architect, Ernst & Young
+    en: Architect, Ernst & Young
+    se: Architect, Ernst & Young
   text:
     cs: |
       S Ondřejem jsem konzultoval Blockchain, GIT a development standarts, v nichž je Ondřej velmi zkušený. Je to člověk s otevřenou myslí a diskuze s nim byly velmi obohacující.
@@ -339,7 +342,7 @@
     se: |
       Jag konsulterade med Ondřej i ämnen som Blockchain, GITm och utvecklingsstandarder, där Ondřej är mycket erfaren. Ondrej är uppriktig person och jag fann diskussioner med honom väldigt upplysande.
     sk: |
-      S Ondřejem jsem konzultoval Blockchain, GIT a development standarts, v nichž je Ondřej velmi zkušený. Je to člověk s otevřenou myslí a diskuze s nim byly velmi obohacující.
+      S Ondřejem jsem konzultoval Blockchain, GIT a development standards, v nichž je Ondřej velmi zkušený. Je to člověk s otevřenou myslí a diskuze s nim byly velmi obohacující.
 - company: STAND CZ
   date:
     cs: 25. června 2018
@@ -461,7 +464,8 @@
     cs: Servisní technik
     en: service engineer
   text:
-    cs: "Ondřej u nás školil Docker/Docker-compose/Swarm dva dny. Úvod do teoerie
+    cs:
+      "Ondřej u nás školil Docker/Docker-compose/Swarm dva dny. Úvod do teoerie
       včetně vysvětlení. Ondřej srozumitelně ukazuje na praktických příkladech formou
       workshopu, který je dle mě nejlepším možným způsobem, jak se můžete něco nového
       naučit. Je vidět, že Ondra má se všemi technologiemi a jejich nasazením praktické
@@ -470,16 +474,16 @@
       školení za několik posledních let."
     en: |
       Ondřej trained Docker / Docker-compose / Swarm for two days. Introduction to theory including explanation. Ondřej clearly demonstrates on practical examples in the form of a workshop, which I think is the best possible way to learn something new. It can be seen that Ondra has practical experience with all technologies and their deployment. I would also like to appreciate the friendly approach, the best training for me in the last few years.
-- company: oXy Shop
+- company: Notino
   date:
     cs: 6. května 2019
     en: May 6, 2019
-  id: oxy
+  id: notino
   name: Marek Kudláček
   photo: img/marekkudlacek.jpg
   role:
-    cs: Systémový specialista v oXy shop
-    en: Administrator in oXy shop
+    cs: L3 System Admin, Notino
+    en: L3 System Admin, Notino
   text:
     cs: |
       Pár školení už jsem zažil, ale takhle perfektně do detailu vyladěné Kubernetes školení mě vážně dostalo;) Pokud chcete jít s dobou a vůbec nevíte co k8s je, tak neváhejte a napište Ondrovi!!! Ještě jednou díky Ondro;) Bylo to super!
@@ -491,8 +495,8 @@
   date:
     cs: 25. července  2019
     en: June 25, 2019
-  id: Univerzita Pardubice
-  name: Bratronicek Tomas
+  id: univerzita-pardubice
+  name: Bartonicek Tomas
   photo: img/bartonicektomas.jpeg
   role:
     cs: IT administrátor
@@ -555,10 +559,12 @@
     cs: Software Architect
     en: Software Architect
   text:
-    cs: "Ondra nás školil na Kubernetes, školení bylo super. Uměl téma pěkně vysvětlit
+    cs:
+      "Ondra nás školil na Kubernetes, školení bylo super. Uměl téma pěkně vysvětlit
       a ukázat konkrétní použití v praxi. Každému poradil možnost použití v jeho projektech.
       Můžu doporučit."
-    en: "Ondra trained us at Kubernetes, the training was great. He was able to explain
+    en:
+      "Ondra trained us at Kubernetes, the training was great. He was able to explain
       the topic nicely and show concrete use in practice. He advised everyone to use
       them in his projects. I can recommend."
 - company: Czech IT Cluster
@@ -572,12 +578,14 @@
     cs: Business & IT Systems Analyst
     en: Business & IT Systems Analyst
   text:
-    cs: "Ondřej během interního školení poskytl naprosto ohromující vhled do Dockeru
+    cs:
+      "Ondřej během interního školení poskytl naprosto ohromující vhled do Dockeru
       a Kubernetes \U0001F44D Obzvláště jsem ocenil praktický přístup \U0001F468\U0001F3FB‍\U0001F4BB
       také se širokou uživatelskou zkušeností. Mohu jen doporučit zúčastnit se kterékoli
       z akcí pořádaných Ondřejem a skutečně se těším na další, které se budu moci
       zúčastnit. \U0001F947."
-    en: "During an in-house training Ondřej delivered an absolutely stunning insight
+    en:
+      "During an in-house training Ondřej delivered an absolutely stunning insight
       into the realms of Docker and Kubernetes \U0001F44D I especially appreciated
       the hands-on approach \U0001F468\U0001F3FB‍\U0001F4BB thx to which I was leaving
       the course equipped not only with the necessary theoretical background, but
@@ -591,8 +599,8 @@
   name: Robert Urban
   photo: img/roberturban.jpeg
   role:
-    cs: Project Manager & communication specialists & IT Architect
-    en: Project Manager & communication specialists & IT Architect
+    cs: Project Manager & communication specialists & IT Architect, Digiteq Automotive
+    en: Project Manager & communication specialists & IT Architect, Digiteq Automotive
   text:
     cs: |
       Na doporučení našich obchodních partnerů jsme požádali Ondřeje o školení Dockeru. Celé dva dny splnily naše očekávání. Já a mí kolegové jsme si z toho odnesli víc, než se očekávalo. Skvělá otevřená atmosféra. Ondřeji, děkuji.
@@ -686,7 +694,8 @@
     cs: Freelancer Linux administrator & Java developer
     en: Freelancer Linux administrator & Java developer
   text:
-    cs: "S Ondrou jsem absolvoval kurz Gitlab-CI, každému vřele doporučuji. Profesionální
+    cs:
+      "S Ondrou jsem absolvoval kurz Gitlab-CI, každému vřele doporučuji. Profesionální
       přístup, super knowledge base. Ještě jednou díky!"
     en: |
       I attended the Gitlab-CI course, I highly recommend to everyone. Professional approach, super knowledge base. Thank you once again!
@@ -719,3 +728,232 @@
       Ondra je erudovaný a v oblastech, které školí se dobře orientuje. Mohu jej doporučit. Osobně jsem byl na dvou jeho školeních.
     en: |
       Ondra is erudite and he orients very well in the areas that he trains. I can recommend. I was personally on two his trainings.
+- company: Zoot a.s.
+  date:
+    cs: 18. Březen, 2020
+    en: March 18, 2020
+  id: zoot
+  name: Josef Sekava
+  photo: img/josef_sekava_zoot.jpeg
+  role:
+    cs: Interim Chief Technology Officer, Zoot a.s.
+    en: Interim Chief Technology Officer, Zoot a.s.
+    sk: Interim Chief Technology Officer, Zoot a.s.
+  text:
+    cs: |
+      Ondra je přátelský mentor a expert na Docker se kterým se prostě chcete potkat!
+      Ondra udělal pro naše IT oddělení dvoudenní školení Docker v lednu 2020. Za dva dny se mu podařilo dostat se do hloubky, ale zároveň to podal dostatečně srozumitelně a jasně pro všechny. A všichni jsme uvítali obsáhlé materiály, které nám dal pro pozdější použití.
+      To, co jsem ocenil nejvíce, byly četné následné e-maily, kontrola našeho týmu a nabídka pomoci s případnými překážkami.
+      Pokud potřebujete někoho, kdo vám pomůže nastartovat nebo vylepšit vaši cestu k Dockeru, mohu Ondřeje doporučit jako toho pravého.
+    en: |
+      The friendly Docker expert/mentor you want to meet!
+      Ondrej's did a two day Docker workshop for our IT department in January 2020. In two days, he was able to go to quite a depth while keeping things reasonably clear for everyone. And we all welcomed the comprehensive materials he gave us for later use.
+      What I appreciated most was the numerous follow-up e-mails, checking on our team and offering help with any potential roadblocks.
+      If you need somebody to help you kickstart or improve your Docker journey, I can only recommend Ondřej as your guy.
+    sk: |
+      Ondrej je priateľský mentor a expert na Docker s ktorým sa jednoducho chcete stretnúť!
+      Ondra urobil pre naše IT oddelenie dvojdňové školenie Docker v januári 2020. Za dva dni sa mu podarilo dostať sa do hĺbky, ale zároveň to podal dostatočne zrozumiteľne a jasne pre všetkých. A všetci sme uvítali obsiahle materiály, ktoré nám dal pre neskoršie použitie.
+      To, čo som ocenil najviac, boli početné následné e-maily, kontrola nášho tímu a ponuka pomôcť s prípadnými prekážkami.
+      Ak potrebujete niekoho, kto vám pomôže naštartovať alebo vylepšiť vašu cestu k Dockeru, môžem Ondreja odporučiť ako toho pravého.
+
+- company: CZ.NIC, z.s.p.o
+  date:
+    cs: 21. Březen 2020
+    en: March 21, 2020
+  id: cz-nic
+  name: Matouš Holinka
+  photo: img/matous_holinka_cznic.jpeg
+  role:
+    cs: Test Automation, CZ.NIC
+    en: Test Automation, CZ.NIC
+    sk: Test Automation, CZ.NIC
+  text:
+    cs: |
+      Formou dvoudenního workshopu nás Ondra seznámil se základními technologiemi kontejnerů a navazující pokročilou problematikou.
+      Vysvětloval velice přehledně, přitom technicky/odborně na vysoké úrovni. Teorii doplnil o spoustu praktických příkladů a rad. Ačkoliv jsem měl se základy v Dockeru jistou zkušenost, díky tomuto workshopu jsem měl možnost si znalosti doplnit a ověřit.
+      Navazující druhá část workshopu (Docker Compose, Machine a Swarm) už byla náročnější. Nicméně Ondra dovedl tuto problematiku zjednodušit pomocí vhodných analogií. Tudíž jsem po dvou dnech odcházel se slušnou porcí odpovědí na svoje otázky.
+      Školení/materiály mi dost pomohly rozšířit znalosti. Ještě jednou děkuji a těším se v Brně!
+    en: |
+      In the form of a two-day workshop, Ondra introduced us to the basic technologies of containers and related advanced issues.
+      He explained everything very clearly, while technically & professionally at the same time. He supplemented the theory with a lot of practical examples and advice. Although I had some experience with the Docker basics, thanks to this workshop I had the opportunity to supplement and verify my knowledge.
+      Second part of the workshop (Docker Compose, Machine and Swarm) was more demanding. However, Ondra was able to simplify this issue with appropriate analogies. So, after two days, I left with a decent portion of answers to my questions.
+      The training / materials helped me a lot to expand my knowledge. Thank you again and I'm looking forward to meeting you in Brno!
+    sk: |
+      Formou dvojdňového workshopu nás Ondrej zoznámil so základnými technológiami kontajnerov a nadväzujúcu pokročilú problematiku.
+      Vysvetľoval veľmi prehľadne, pritom technicky / odborne na vysokej úrovni. Teóriu doplnil o veľa praktických príkladov a rád. Hoci som mal so základmi v Docker istú skúsenosť, vďaka tomuto workshopu som mal možnosť si vedomosti doplniť a overiť.
+      Nadväzujúca druhá časť workshopu (Docker Compose, Machine a Swarm) už bola náročnejšia. Avšak Ondra vedel túto problematiku zjednodušiť pomocou vhodných analógií. Aj vďaka tomu som po dvoch dňoch odchádzal so slušnou porciou odpovedí na svoje otázky.
+      Školenie / materiály mi dosť pomohli rozšíriť znalosti. Ešte raz ďakujem a teším sa na stretnutie v Brne!
+- company: Apple
+  date:
+    cs: 31. Leden 2019
+    en: January 31, 2019
+  id: apple
+  name: Jan Potužník
+  photo: img/jan_potuznik_apple.jpeg
+  role:
+    cs: Tools & Automation Engineer, Apple
+    en: Tools & Automation Engineer, Apple
+    sk: Tools & Automation Engineer, Apple
+  text:
+    cs: |
+      Školení Docker bylo skvělé, hodně jsem se naučil a byla to zábava. Zúčastnil jsem se také tréninku Kubernetes, které bylo také skvělé.
+    en: |
+      The docker training was great, i learned a lot and it was fun. I also attended the Kubernetes training which was great too.
+    sk: |
+      Školenie Docker bolo skvelé, veľa som sa naučil a bola to zábava. Zúčastnil som sa aj tréningu Kubernetes, ktoré bolo tiež skvelé.
+- company: České Radiokomunikace a.s.
+  date:
+    cs: 7. Červenec 2020
+    en: July 7, 2020
+  id: radio
+  name: Jozef Vojtek
+  photo: img/jozef_vojtek_radio.jpeg
+  role:
+    cs: Java Specialist, České Radiokomunikace a.s.
+    en: Java Specialist, České Radiokomunikace a.s.
+    sk: Java Specialist, České Radiokomunikace a.s.
+  text:
+    cs: |
+      U Ondřeje jsem absolvoval dvě školení. Docker a GitLab CI v jednom a Kubernetes.
+      Obě školení mi otevřely dveře a posunuli mě vpřed. Ondřej disponuje ohromně širokým záběrem znalostí, takže se s ním velmi dobře diskutuje.
+      Získal jsem přehled co daný nástroj nabízí a co naopak dokáže vzít, díky výkladu člověka z praxe jsem dostal "best practice", na níž mohu stavět.
+      Každopádně doporučuji jakýkoliv kurz z Ondrova portfolia.
+    en: |
+      I completed two training sessions with Ondrej. Docker and GitLab CI in one package and Kubernetes.
+      Both trainings opened the door for me and pushed me forward. Ondrej has a very wide range of knowledge, so he discusses it very well.
+      I got an overview of what the tool offers and what it can take. Thanks to the interpretation of a person from practice, I got a "best practice" on which I can build.
+      In any case, I recommend any course from Ondrej's portfolio.
+    sk: |
+      U Ondreja som absolvoval dve školenie. Docker a GitLab CI v jednom a Kubernetes.
+      Obe školenia mi otvorili dvere a posunuli ma vpred. Ondrej disponuje ohromne širokým záberom vedomostí, takže sa s ním veľmi dobre diskutuje.
+      Získal som prehľad čo daný nástroj ponúka a čo naopak dokáže zobrať, vďaka výkladu človeka z praxe som dostal "best practice", na ktorej môžem stavať.
+      Každopádne doporučujem akýkoľvek kurz z Ondrovho portfólia.
+- company: Konica Minolta Business Solutions Czech
+  date:
+    cs: 21. Duben 2020
+    en: April 21, 2020
+  id: konica
+  name: Ivo Hlavaty
+  photo: img/ivo_hlavaty_konica.jpeg
+  role:
+    cs: System Engineer, Konica Minolta Business Solutions Czech
+    en: System Engineer, Konica Minolta Business Solutions Czech
+    sk: System Engineer, Konica Minolta Business Solutions Czech
+  text:
+    cs: |
+      Absolvoval jsem online kurz Terraformu a moc se mi to líbilo. Ondřej byl dobře připraven s mnoha příklady v Githubu. Byl také ochoten najít konkrétní řešení na žádosti ostatních účastníků.
+      Oceňuji také jeho nápady jak integrovat Terraform s dalšími nástroji (prometheus, gitlab, ..). Rozhodně doporučuji přihlásit se na jeho kurzy.
+    en: |
+      I have taken an online course of Terraform and I liked it a lot. Ondrej was well prepared with many examples in Github. He was also willing to find a solution for other participants requests.
+      I also appreciate the integration ideas with other tools (prometheus, gitlab, ..). I definitelly recommend signing up to his courses.
+    sk: |
+      Zúčastnil som sa online kurzu Terraform a veľmi sa mi to páčilo. Ondrej bol dobre pripravený s mnohými príkladmi v Githube. Bol tiež ochotný nájsť konkrétne riešenie na žiadosti ostatných účastníkov.
+      Oceňujem tiež jeho nápady ako integrovať Terraform s inými nástrojmi (prometheus, gitlab, ..). Rozhodne odporúčam prihlásiť sa na jeho kurzy.
+- company:
+  date:
+    cs: 24. Duben 2020
+    en: April 24, 2020
+  id: milanskuhra
+  name: Milan Skuhra
+  photo: img/milan_skuhra.jpeg
+  role:
+    cs: IT Architect
+    en: IT Architect
+    sk: IT Architect
+  text:
+    cs: |
+      Zúčastnil jsem se školení Docker a Kubernetes, protože jsme ve firmě chtěli tímto způsobem spravovat naše servery. Kvantum poznatků, které Ondřej dokázal za krátký čas odevzdat mě fascinovalo.
+      Zajednali jsme s ním i spolupráci na rozjetí kubernetes clusteru (včetně CEPH) na našich serverech. Doufali jsme, že s Ondřejem to zvládneme za dva dny no udělali jsme to za jeden a naučili se také mnoho o administraci nového setupu.
+      Po vynikajících zkušenostech jsem se zúčastnil dalšího školení - Terraform. Po jeho absolvování jsem mou několik denní nedokončenou práci mohl nahradit novým řešením hotovým za pár hodin.
+      Vážím si jeho otevřenost a ochotu dělit se se svými zkušenostmi. Spolupráci s ním mohu jen vřele doporučit.
+    en: |
+      I participated in Docker and Kubernetes training because we wanted to manage our servers in this way. I was fascinated by the amount of knowledge that Ondrej was able to pass on in such a short time.
+      We also arranged cooperation with him to break up the kubernetes cluster (including ceph) on our servers. We hoped that Ondrej and I would be able to do it in two days, but we did it in one day. We also learned a lot about the administration of the new setup along the way.
+      After excellent experience, I participated in another training - Terraform. After that, I was able to replace my several days of unfinished work with a new solution ready in a few hours.
+      I appreciate his openness and willingness to share his experiences. I can only highly recommend working with him.
+    sk: |
+      Zúčastnil som sa školenia Dockeru a Kubernetes, pretože sme vo firme chceli týmto spôsobom spravovať naše servre. Kvantum poznatkov, ktoré Ondrej dokázal za krátky čas odovzdať, ma fascinovalo.
+      Zajednali sme s ním aj spoluprácu na rozbenutie kubernetes klastra (vrátane ceph) na našich serveroch. Dúfali sme, že s Ondrejom to zvládneme za dva dni no urobili sme to za jeden a naučili sa aj mnoho o administrácií nového setupu.
+      Po vynikajúcich skúsenostiach som sa zúčastnil ďalšieho školenia - terraform, po ktorom som moju niekoľko dňovú nedokončenú prácu mohol nahradiť novým riešením hotovým za pár hodín.
+      Vážim si jeho otvorenosť a ochotu deliť sa so svojimi skúsenosťami. Spoluprácu s ním môžem len vrele odporúčať.
+- company:
+  date:
+    cs: 15. Únor 2020
+    en: February 18, 2020
+  id: jakubschimer
+  name: Jakub Schimer
+  photo: img/jakub_schimer.jpeg
+  role:
+    cs: Software Developer
+    en: Software Developer
+    sk: Software Developer
+  text:
+    cs: |
+      Ondřej je zkušený systémový architekt a skvělý lektor, který s radostí odpovídá na jakoukoli otázku. Školení Docker, Kubernetes a Terraform bylo velmi poučné.
+    en: |
+      Ondrej is experienced system architect and great lecturer who gladly answers any question thrown at him. Very enlightening Docker, Kubernetes and Terraform lessons.
+    sk: |
+      Ondrej je skúsený systémový architekt a vynikajúci lektor, ktorý rád odpovie na každú otázku, ktorá mu bola položená. Veľmi poučné školenie Dockera, Kuberneta a Terraform.
+- company: Státní pokladna, Centrum sdílených služeb, s.p.
+  date:
+    cs: 20. Leden 2020
+    en: January 20, 2020
+  id: pokladna
+  name: Jiří Hlavatý
+  photo: img/jiri_hlavaty_pokladna.jpeg
+  role:
+    cs: Unix System Administrator, Státní pokladna
+    en: Unix System Administrator, State Treasury
+    sk: Unix System Administrator, Štátna pokladňa
+  text:
+    cs: |
+      Ondřeje vřele doporučuju jak na školení tak konzultaci v oblasti automatizace a DevOps procesů v prostředí linuxového světa. Github, Docker, Ansible..vše v malíčku, podpořeno praxi a nadšením pro opensource.
+      No, možná by naučil i zalamování ve wordu, neptal jsem se..
+    en: |
+      I highly recommend Ondrej for both training and consulting in the field of automation and DevOps processes in the Linux world. Github, Docker, Ansible..all in a nutshell, supported by practice and enthusiasm for open source.
+      Well, maybe he would learn me wrapping in Microsoft Word as well, I didn't ask ..
+    sk: |
+      Ondreja vrelo odporúčam ako na školenie tak aj na konzultáciu v oblasti automatizácie a DevOps procesov v prostredí linuxového sveta. Github, Docker, Ansible..má všetko v malíčku, podporené praxou a nadšením pre opensource.
+      No, možno by ma naučil aj zalamovanie v Microsoft Word, nepýtal som sa ..
+- company: Glami.cz
+  date:
+    cs: 10. Březen 2020
+    en: March 10, 2020
+  id: glami
+  name: Vojtěch Kurka
+  photo: img/vojtech_kurka_glami.jpeg
+  role:
+    cs: Software Developer & DBA, Glami.cz
+    en: Software Developer & DBA, Glami.cz
+    sk: Software Developer & DBA, Glami.cz
+  text:
+    cs: |
+      Ondřej má skvělé DevOps a prezentační schopnosti, opírající se o skutečné zkušenosti z produkce.
+    en: |
+      Ondrej has great DevOps and presenting skills, backed by real production experience.
+    sk: |
+      Ondrej má skvelé DevOps a prezentačné schopnosti, opierajúce sa o skutočné skúsenosti z produkcie.
+- company: Asseco Central Europe
+  date:
+    cs: 20. Prosinec 2019
+    en: December 20, 2020
+  id: asseco
+  name: Petr Hrebicek
+  photo: img/petr_hrebicek_asseco.jpeg
+  role:
+    cs: System Specialist Senior, Asseco Central Europe, a.s.
+    en: System Specialist Senior, Asseco Central Europe, a.s.
+    sk: System Specialist Senior, Asseco Central Europe, a.s.
+  text:
+    cs: |
+      Ondra dělal u naší společnosti školení a několik konzultací v oblasti Docker a DevOps. Je to prvotřídní odborník v této oblasti, s obrovským přesahem do dalších oblastí a s neuvěřitelným rozhledem i v takových oborech, jako je např. management nebo projektové řízení.
+      Rozhodně doporučuji využít jeho služeb.
+      Osobně se těším na další spolupráci s ním.
+    en: |
+      Ondra did training and several consultations at our company in the field of Docker and DevOps. He is a first-class expert in this field, with a huge overlap into other areas and with an incredible outlook in such fields as management or project management.
+      I definitely recommend using his services.
+      Personally, I look forward to further cooperation with him.
+    sk: |
+      Ondra robil v našej spoločnosti školenia a niekoľko konzultácií v oblasti Docker a DevOps. Je to prvotriedny odborník v tejto oblasti, s obrovským presahom do ďalších oblastí a s neuveriteľným rozhľadom aj v takých odboroch, ako je napr. manažment alebo projektové riadenie.
+      Rozhodne odporúčam využiť jeho služby.
+      Osobne sa teším na ďalšiu spoluprácu s ním.
