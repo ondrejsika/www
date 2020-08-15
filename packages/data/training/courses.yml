@@ -1369,7 +1369,7 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cz: ["fio", "apple", "asseco"]
+    cs: ["fio", "apple", "asseco"]
     sk: ["fio", "apple", "asseco"]
     en: ["fio", "apple", "asseco"]
   agenda:
@@ -1478,7 +1478,7 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cz: ["fio", "apple", "asseco"]
+    cs: ["fio", "apple", "asseco"]
     sk: ["fio", "apple", "asseco"]
     en: ["fio", "apple", "asseco"]
   agenda:
