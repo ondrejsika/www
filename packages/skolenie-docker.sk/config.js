@@ -12,7 +12,7 @@ const site = {
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=skolenie-docker.sk",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skolenie-docker.sk"
+    "https://ondrej-sika.cz/skoleni/docker/?x_source=skolenie-docker.sk#form"
 };
 
 export default site;

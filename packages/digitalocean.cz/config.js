@@ -12,7 +12,7 @@ const site = {
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=digitalocean.cz",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/digitalocean/poptavka/?x_source=digitalocean.cz"
+    "https://ondrej-sika.cz/skoleni/digitalocean/?x_source=digitalocean.cz"
 };
 
 export default site;

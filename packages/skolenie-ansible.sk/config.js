@@ -12,7 +12,7 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.cz/kontakt/?x_source=skolenie-ansible.sk",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/ansible/poptavka/?x_source=skolenie-ansible.sk"
+    "https://ondrej-sika.cz/skoleni/ansible/?x_source=skolenie-ansible.sk#form"
 };
 
 export default site;

@@ -13,7 +13,7 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.cz/kontakt/?x_source=skolenie.kubernetes.sk",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skolenie.kubernetes.sk"
+    "https://ondrej-sika.cz/skoleni/kubernetes/?x_source=skolenie.kubernetes.sk#form"
 };
 
 export default site;

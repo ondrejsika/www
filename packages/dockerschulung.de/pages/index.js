@@ -1,14 +1,10 @@
-import FooterSikaKraml from "@app/course-landing/components/FooterSikaKraml";
+import React from "react";
 import Header from "@app/course-landing/components/Header";
 import HeaderLink from "@app/course-landing/components/HeaderLink";
 import TextFrame from "@app/course-landing/components/TextFrame";
 import TextFrameWithImage from "@app/course-landing/components/TextFrameWithImage";
 import MyClients from "@app/course-landing/components/MyClients";
-import References from "@app/course-landing/components/References";
 import ThreeCol from "@app/course-landing/components/ThreeCol";
-import someone from "@app/course-landing/components/References/someone.jpg";
-import jurajboldis from "@app/course-landing/components/References/jurajboldis.jpg";
-import martinkylian from "@app/course-landing/components/References/martinkylian.jpg";
 import TwoCol from "@app/course-landing/components/TwoCol";
 import Navigation from "@app/course-landing/components/Navigation";
 import ButtonOutline from "@app/course-landing/components/ButtonOutline";
@@ -129,14 +125,14 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
 Pokud máte zájem o školení, neváhejte mě kontaktovat
         `}
         />
-        <ButtonOutline btnUrl="https://ondrej-sika.cz/skoleni/docker/poptavka/">
+        <ButtonOutline btnUrl="https://ondrej-sika.cz/skoleni/docker/#form">
           Nezávazně poptat školení
         </ButtonOutline>
       </TextFrame>
 
       <TextFrame header="Cena">
         Pokud máte zájem o školení u vás ve firmě,{" "}
-        <Link href="https://ondrej-sika.cz/skoleni/docker/poptavka/">
+        <Link href="https://ondrej-sika.cz/skoleni/docker/#form">
           <a className="btn btn-large mybutton-outline">
             nezávazně jej poptejte
           </a>
