@@ -27,9 +27,9 @@
     sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
     en: ["adam-bisek-docker", "petr-klobas-docker", "radomir-sohlich-docker"]
   recommendations:
-    cs: ["spel", "vse", "sit"]
-    sk: ["spel", "vse", "sit"]
-    en: ["spel", "vse", "sit"]
+    cs: ["zoot", "Digiteq", "cz-nic"]
+    sk: ["zoot", "Digiteq", "cz-nic"]
+    en: ["zoot", "Digiteq", "cz-nic"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -169,9 +169,9 @@
     cs: ["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]
     en: ["petr-todorov-kubernetes", "lubos-klokner-docker-2"]
   recommendations:
-    cs: ["dimensiondata", "webglobe-yegon", "sit"]
-    sk: ["dimensiondata", "webglobe-yegon", "sit"]
-    en: ["dimensiondata", "webglobe-yegon", "sit"]
+    cs: ["apple", "radio", "notino"]
+    sk: ["apple", "radio", "notino"]
+    en: ["apple", "radio", "notino"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -409,9 +409,9 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["fio", "lbms", "100MEGA"]
-    sk: ["fio", "lbms", "100MEGA"]
-    en: ["dimensiondata", "bohemiaenergy", "sit"]
+    cs: ["fio", "bohemiaenergy", "100MEGA"]
+    sk: ["fio", "bohemiaenergy", "100MEGA"]
+    en: ["fio", "bohemiaenergy", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -558,9 +558,9 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["NMS", "vse", "lbms"]
-    sk: ["NMS", "vse", "lbms"]
-    en: ["NMS", "vse", "lbms"]
+    cs: ["univerzita-pardubice", "vse", "NMS"]
+    sk: ["univerzita-pardubice", "vse", "NMS"]
+    en: ["univerzita-pardubice", "vse", "NMS"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -703,10 +703,10 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["oxy", "oxyshop", "sit"]
-    sk: ["oxy", "oxyshop", "sit"]
-    en: ["oxy", "oxyshop", "sit"]
-    de: ["oxy", "oxyshop", "sit"]
+    cs: ["pokladna", "glami", "asseco"]
+    sk: ["pokladna", "glami", "asseco"]
+    en: ["pokladna", "glami", "asseco"]
+    de: ["notino", "oxyshop", "sit"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -848,7 +848,9 @@
     cs:
       - radim-daniel-panek-terraform
   recommendations:
-    cs: ["oxy", "oxyshop", "sit"]
+    cs: ["konica", "milanskuhra", "jakubschimer"]
+    en: ["konica", "milanskuhra", "jakubschimer"]
+    sk: ["konica", "milanskuhra", "jakubschimer"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -951,7 +953,9 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["spel", "vse", "sit"]
+    cs: ["pokladna", "glami", "asseco"]
+    sk: ["pokladna", "glami", "asseco"]
+    en: ["pokladna", "glami", "asseco"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -1030,8 +1034,9 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["spel", "vse", "sit"]
-    en: ["spel", "vse", "sit"]
+    cs: ["konica", "pokladna", "asseco"]
+    en: ["konica", "pokladna", "asseco"]
+    sk: ["konica", "pokladna", "asseco"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -1364,7 +1369,9 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["spel", "vse", "sit"]
+    cz: ["fio", "apple", "asseco"]
+    sk: ["fio", "apple", "asseco"]
+    en: ["fio", "apple", "asseco"]
   agenda:
     cs: |
       ### Co Vás naučím
@@ -1471,7 +1478,9 @@
   twitter_recommendations:
     cs: []
   recommendations:
-    cs: ["spel", "vse", "sit"]
+    cz: ["fio", "apple", "asseco"]
+    sk: ["fio", "apple", "asseco"]
+    en: ["fio", "apple", "asseco"]
   agenda:
     cs: |
       **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
