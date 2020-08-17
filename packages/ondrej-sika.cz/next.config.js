@@ -53,6 +53,20 @@ module.exports = {
         };
       });
 
+      // remove default session page render (without session)
+      delete defaultPathMap["/private/pro-partnery/[id]"];
+
+      var courses = yaml.safeLoad(
+        fs.readFileSync("../data/training/courses.yml", "utf8")
+      );
+      courses.forEach(function(course) {
+        if (course.ignore_for_partners) return;
+        defaultPathMap[`/private/pro-partnery/${course.id}`] = {
+          page: "/private/pro-partnery/[id]",
+          query: { id: course.id }
+        };
+      });
+
       // remove default news page render (without session)
       delete defaultPathMap["/news/[id]"];
 

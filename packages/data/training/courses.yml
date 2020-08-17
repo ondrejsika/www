@@ -918,6 +918,7 @@
       #### Technical Requirements
 
 - id: react
+  ignore_for_partners: true
   name:
     cs: Školení Reactu
     en: React Training
@@ -926,6 +927,7 @@
     - martinstudna
   length: 2
 - id: react-native
+  ignore_for_partners: true
   name:
     cs: Školení React Native
     en: React Native Training
