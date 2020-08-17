@@ -2324,6 +2324,20 @@
   date_to: 6.11.2020
   facebook_event: https://www.facebook.com/events/930034360818411
   linkedin_event: https://www.linkedin.com/events/6699296409071456256/
+- id: kubernetes-brno-12-11-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: kubernetes
+  name: Školení Kubernetes
+  city: Brno
+  price: 11999 CZK
+  venue_id: anywhere
+  length: 2 dny
+  date_from: 12.11.2020
+  date_to: 13.11.2020
+  facebook_event: https://www.facebook.com/events/789692305134266
+  linkedin_event: https://www.linkedin.com/events/6701122873815257088/
 - id: proxmox-brno-20-11-2020
   active: true
   country: cz
