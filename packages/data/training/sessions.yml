@@ -2252,6 +2252,20 @@
   date_to: 18.9.2020
   facebook_event: https://www.facebook.com/events/3134661776612413
   linkedin_event: https://www.linkedin.com/events/6699289039452835840/
+- id: prometheus-online-30-10-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: prometheus
+  name: Školení Prometheus
+  city: Praha
+  price: 6800 CZK
+  venue_id: online
+  length: 1 den
+  date_from: 30.10.2020
+  date_to: 30.10.2020
+  facebook_event: https://www.facebook.com/events/653319681973039
+  linkedin_event: https://www.linkedin.com/events/6701470338565316608/
 - id: terraform-praha-25-09-2020
   active: true
   country: cz
@@ -2324,13 +2338,13 @@
   date_to: 6.11.2020
   facebook_event: https://www.facebook.com/events/930034360818411
   linkedin_event: https://www.linkedin.com/events/6699296409071456256/
-- id: kubernetes-brno-12-11-2020
+- id: kubernetes-praha-12-11-2020
   active: true
   country: cz
   lang: cs
   course_id: kubernetes
   name: Školení Kubernetes
-  city: Brno
+  city: Praha
   price: 11999 CZK
   venue_id: anywhere
   length: 2 dny
@@ -2381,6 +2395,20 @@
   date_to: 4.12.2020
   facebook_event: https://www.facebook.com/events/643493409913901
   linkedin_event: https://www.linkedin.com/events/6699291594736050176/
+- id: rancher-praha-11-12-2020
+  active: false
+  country: cz
+  lang: cs
+  course_id: rancher
+  name: Školení Rancher
+  city: online
+  price: 6800 CZK
+  venue_id: online
+  length: 1 den
+  date_from: 11.12.2020
+  date_to: 11.12.2020
+  facebook_event: https://www.facebook.com/events/1377306179326395
+  linkedin_event: https://www.linkedin.com/events/6701798854485938176/
 #OLD
 - id: docker-praha-16-10-2019
   active: false
