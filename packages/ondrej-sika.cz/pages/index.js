@@ -1,5 +1,4 @@
 import React from "react";
-import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import TextWithImg from "@app/ondrejsika-theme/components/TextWithImg";
 import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
@@ -8,6 +7,7 @@ import NewsLine from "@app/ondrejsika-theme/components/NewsLine";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import { Container } from "react-bootstrap";
+import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
 
 import Head from "next/head";
 
@@ -33,9 +33,13 @@ const Index = props => (
       NumberOfCompanies="120+"
       NumberOfLectures="170+"
     />
-
+    <TraineraCourseBar
+      site={props.site}
+      hiddenTop
+      hiddenBottom
+      LectureImgHeader="Kurzy co školím"
+    />
     <Container>
-      <CourseBar LectureImgHeader="Kurzy co školím" />
       <TextWithImg TextWithImgHeader="O mně">
         Jmenuji se Ondřej Šika a od roku 2009 se zabývám vývojem software a
         DevOps. Své praktické zkušenosti předávám na školeních od roku 2013.
