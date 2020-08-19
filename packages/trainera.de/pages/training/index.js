@@ -1,5 +1,5 @@
 import React from "react";
-import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
 import Head from "next/head";
@@ -11,7 +11,7 @@ const Index = () => (
     </Head>
     <MainBar header="Nabídka Školení" />
     <div className="container">
-      <TraineraCourseBar LectureImgHeader="Kurzy co školímeeeee" />
+      <CourseBar LectureImgHeader="Kurzy co školímeeeee" />
     </div>
   </div>
 );

@@ -13,6 +13,7 @@ import rancher from "@app/data/pictures/courses/white/rancher.svg";
 import prometheus from "@app/data/pictures/courses/white/prometheus.svg";
 import proxmox from "@app/data/pictures/courses/white/proxmox.svg";
 import elk from "@app/data/pictures/courses/white/elk.svg";
+import digitalocean from "@app/data/pictures/courses/digitalocean-w.png";
 
 import default_colors from "@app/ondrejsika-theme/config/colors";
 import { Row, Col, Container } from "react-bootstrap";
@@ -115,7 +116,7 @@ const Card = props => {
   );
 };
 
-const TraineraCourseBar = props => {
+const CourseBar = props => {
   return (
     <>
       <TriangleBottomRight hiddenTop={props.hiddenTop} site={props.site} />
@@ -205,6 +206,13 @@ const TraineraCourseBar = props => {
                         courseId="proxmox"
                         courseImg={proxmox}
                       />
+                      <Card
+                        site={props.site}
+                        lang={props.lang}
+                        courseName="Digital Ocean"
+                        courseId="digitalocean"
+                        courseImg={digitalocean}
+                      />
                     </>
                   );
                 }
@@ -218,4 +226,4 @@ const TraineraCourseBar = props => {
   );
 };
 
-export default TraineraCourseBar;
+export default CourseBar;

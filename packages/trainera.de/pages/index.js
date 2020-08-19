@@ -1,5 +1,5 @@
 import React from "react";
-import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
@@ -71,7 +71,7 @@ const Index = props => (
     <Container>
       <TraineraAbout lang={props.site.lang} />
     </Container>
-    <TraineraCourseBar
+    <CourseBar
       site={props.site}
       lang={props.site.lang}
       LectureImgHeader="Our Courses"

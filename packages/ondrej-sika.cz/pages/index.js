@@ -7,7 +7,7 @@ import NewsLine from "@app/ondrejsika-theme/components/NewsLine";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import { Container } from "react-bootstrap";
-import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 
 import Head from "next/head";
 
@@ -33,7 +33,7 @@ const Index = props => (
       NumberOfCompanies="120+"
       NumberOfLectures="170+"
     />
-    <TraineraCourseBar
+    <CourseBar
       site={props.site}
       hiddenTop
       hiddenBottom

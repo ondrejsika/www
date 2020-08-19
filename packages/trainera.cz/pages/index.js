@@ -1,7 +1,7 @@
 import React from "react";
 
 import TraineraAbout from "@app/ondrejsika-theme/components/TraineraAbout";
-import TraineraCourseBar from "@app/ondrejsika-theme/components/TraineraCourseBar";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
@@ -73,10 +73,7 @@ const Index = props => (
     <Container>
       <TraineraAbout />
     </Container>
-    <TraineraCourseBar
-      site={props.site}
-      LectureImgHeader="Vyberte si školení"
-    />
+    <CourseBar site={props.site} LectureImgHeader="Vyberte si školení" />
     <Container>
       <CompaniesBar
         align="center"
