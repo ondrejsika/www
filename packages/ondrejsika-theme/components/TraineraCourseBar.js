@@ -48,7 +48,10 @@ const Box = styled.div`
     (props.site && props.site.colors && props.site.colors.PRIMARY) ||
     default_colors.BLUE};
   &:hover {
-    border: 2px solid #7fce91;
+    border: 2px solid
+      ${props =>
+        (props.site && props.site.colors && props.site.colors.SECONDARY) ||
+        default_colors.WHITE};
   }
 `;
 
@@ -72,7 +75,7 @@ const TriangleBottomRight = styled.div`
   clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
   margin-bottom: -1px;
   ${props =>
-    props.hidden &&
+    props.hiddenTop &&
     css`
       display: none;
     `}
@@ -86,6 +89,11 @@ const TriangleTopLeft = styled.div`
     (props.site && props.site.colors && props.site.colors.PRIMARY) ||
     default_colors.BLUE};
   clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
+  ${props =>
+    props.hiddenBottom &&
+    css`
+      display: none;
+    `}
 `;
 
 const Card = props => {
@@ -110,7 +118,7 @@ const Card = props => {
 const TraineraCourseBar = props => {
   return (
     <>
-      <TriangleBottomRight hidden={props.hidden} site={props.site} />
+      <TriangleBottomRight hiddenTop={props.hiddenTop} site={props.site} />
       <Trainera site={props.site}>
         <Container>
           <Header>{props.LectureImgHeader}</Header>
@@ -205,7 +213,7 @@ const TraineraCourseBar = props => {
           </div>
         </Container>
       </Trainera>
-      <TriangleTopLeft site={props.site} />
+      <TriangleTopLeft site={props.site} hiddenBottom={props.hiddenBottom} />
     </>
   );
 };
