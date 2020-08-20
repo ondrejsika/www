@@ -2258,7 +2258,7 @@
   lang: cs
   course_id: prometheus
   name: Školení Prometheus
-  city: Praha
+  city: online
   price: 6800 CZK
   venue_id: online
   length: 1 den
@@ -2401,9 +2401,9 @@
   lang: cs
   course_id: rancher
   name: Školení Rancher
-  city: online
+  city: Praha
   price: 6800 CZK
-  venue_id: online
+  venue_id: Praha
   length: 1 den
   date_from: 11.12.2020
   date_to: 11.12.2020
