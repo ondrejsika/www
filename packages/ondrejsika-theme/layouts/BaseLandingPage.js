@@ -2,6 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
 import Head from "next/head";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 
 import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
 import ondrej_mac from "@app/data/pictures/landing-page/tinipng/ondrej_mac.png";
@@ -105,7 +106,7 @@ const BaseLandingPage = props => {
   return (
     <>
       <Head>
-        <title>{props.head}</title>
+        <title>{props.title}</title>
       </Head>
       <FloatingBtn href="mailto:ondrej@sika.io">
         <FloatingSvg src={mail_grey} />
@@ -127,7 +128,8 @@ const BaseLandingPage = props => {
           </Row>
         </Container>
       </Background>
-      <Background light_grey id="help">
+      {/* light_grey */}
+      <Background id="help">
         <Container>
           <Center>
             <SectionHeader>{props.sectionBoxesHeader}</SectionHeader>
@@ -144,6 +146,13 @@ const BaseLandingPage = props => {
             </Col>
           </Row>
         </Container>
+      </Background>
+      {/* light_grey */}
+      <Background id="training">
+        <Center>
+          <SectionHeader>{props.trainingHeader}</SectionHeader>
+        </Center>
+        <CourseBar />
       </Background>
       <Container>
         <Section>
@@ -179,16 +188,18 @@ const BaseLandingPage = props => {
       </Container>
       <Background blue style={{ position: "relative" }}>
         <Container>
-          <Section>
-            <SectionHeader white tight>
-              {props.sectionMyStoryHeader}
-            </SectionHeader>
-            <RoomyRow>
-              <Col lg={8} md={12}>
-                <Text white>{props.MyStoryText}</Text>
-              </Col>
-            </RoomyRow>
-          </Section>
+          {/* <Section> */}
+          <SectionHeader white tight>
+            {props.sectionMyStoryHeader}
+          </SectionHeader>
+          {/* <RoomyRow> */}
+          <Row className="mt-3 mb-5">
+            <Col lg={8} md={12}>
+              <Text white>{props.MyStoryText}</Text>
+            </Col>
+          </Row>
+          {/* </RoomyRow> */}
+          {/* </Section> */}
         </Container>
         <Col
           className="d-none d-lg-block"
@@ -289,7 +300,7 @@ const BaseLandingPage = props => {
           </Row>
         </Section>
       </Container> */}
-      <Background blue style={{ position: "absolute", zIndex: 6 }}>
+      <Background blue>
         {/* <Container>
           <Row>
             <Col md={6}>

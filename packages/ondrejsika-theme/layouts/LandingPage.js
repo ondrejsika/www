@@ -11,8 +11,13 @@ const A = styled.a`
 
 const LandingPage = props => (
   <BaseLandingPage
-    head="Ondrej Sika"
     site={props.site}
+    title={
+      {
+        en: "Ondrej Sika",
+        cs: "Ondrej Sika - IT Školení, konzultace a workshopy"
+      }[props.site.lang || "en"]
+    }
     headerText={
       <Translate
         lang={props.site.lang}
@@ -119,6 +124,9 @@ const LandingPage = props => (
         cs="Vyškolím Váš tým tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vaše DevOps prostředí."
       />
     }
+    trainingHeader={
+      <Translate lang={props.site.lang} en="My Training" cs="Moje Školení" />
+    }
     sectionMyClientsHeader={
       <Translate lang={props.site.lang} en="My clients" cs="moji klienti" />
     }
@@ -136,7 +144,7 @@ const LandingPage = props => (
       />
     }
     sectionMyStoryHeader={
-      <Translate lang={props.site.lang} en="My story" cs="MŮJ PŘÍBĚH" />
+      <Translate lang={props.site.lang} en="My story" cs="O MĚ" />
     }
     MyStoryText={
       <Translate
@@ -159,20 +167,29 @@ const LandingPage = props => (
           </span>
         }
         cs={
-          <span>
-            K projektu prvního a nejúspěšnějšího Bitcoinového těžařského poolu v
-            společnosti Braiins Systems jsem se přidal v čase jeho kompletního
-            přepisování a škálování na robustnější infrastrukturu.
-            <br />
-            <br /> Náročné požadavky na sofistikovanou a distribuovanou IT
-            infrastrukturu stávající z desítek serverů rozmístěných na třech
-            kontinentech nedávaly jinou možnost jako hned od začátku nasadit ty
-            nejnovější DevOps technologie.
-            <br />
-            <br /> Měl jsem tedy unikátní možnost osahat si open-source DevOps
-            technologie a 5 let pracovat s týmem skvělých IT architektů a
-            vizionářů - Honzou Čapkem, Pavlem Moravcem a Markem Palatinem.
-          </span>
+          <>
+            <p>
+              Od roku 2009 se zabývám vývojem software a DevOps. Své praktické
+              zkušenosti předávám na školeních od roku 2013. Pracoval jsem pro
+              malé firmy, startupy i velké korporace s cílem zefektivnit jim
+              proces vývoje, testování a nasazování software. Dnes se primárně
+              věnuji DevOps: návrhem softwarového stacku, vývojového a
+              provozního prostředí ve firmách.
+            </p>
+            <p>
+              Práci s nástroji jako Docker, Kubernetes a Terraform se snažím co
+              nejvíce automatizovat, aby lidé nemuseli dělat rutiny, které můžou
+              jednoduše dělat stroje.
+            </p>
+            <h4>Školení</h4>
+            <p>
+              Také se hodně věnuji školení, všechny kurzy jsou formou workshopů
+              (hands-on) a stavím je na svých dlouholetých znalostech a
+              zkušenostech z vývoje, testování a provozování softwarových
+              projektů. Všechny kurzy a školení dělám v českém nebo anglickém
+              jazyce.
+            </p>
+          </>
         }
       />
     }
