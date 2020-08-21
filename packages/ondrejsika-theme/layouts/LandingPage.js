@@ -14,7 +14,7 @@ const LandingPage = props => (
     site={props.site}
     title={
       {
-        en: "Ondrej Sika",
+        en: "Ondrej Sika - IT Training, Consulting and Workshops in Europe",
         cs: "Ondrej Sika - IT Školení, konzultace a workshopy"
       }[props.site.lang || "en"]
     }
@@ -144,27 +144,31 @@ const LandingPage = props => (
       />
     }
     sectionMyStoryHeader={
-      <Translate lang={props.site.lang} en="My story" cs="O MĚ" />
+      <Translate lang={props.site.lang} en="ABOUT ME" cs="O MĚ" />
     }
     MyStoryText={
       <Translate
         lang={props.site.lang}
         en={
-          <span>
-            I joined the project of the very first and the most successful
-            Bitcoin mining pool at a time of its complete rewriting and scaling
-            to a more robust infrastructure.
-            <br />
-            <br />
-            IT infrastructure consisting of dozens of servers located on three
-            continents offered no other option than to deploy the latest DevOps
-            technologies from the very beginning.
-            <br />
-            <br />
-            So I had a unique opportunity to touch open-source DevOps technology
-            and work for 5 years with a team of great IT architects and
-            visionaries - Honza Čapek, Pavel Moravec and Marek Palatinus.
-          </span>
+          <>
+            <p>
+              I have been involved in software development and DevOps since
+              2009, teaching my practical experiences since 2013.
+            </p>
+            <p>
+              I worked for small companies, startups and large corporations in
+              order to streamline the process of their software development,
+              testing and deployment. Today, I focus primarily on DevOps:
+              designing the software stack, development and operating
+              environment in companies.
+            </p>
+            <h4>Training</h4>
+            <p>
+              All my courses are hands-on workshops. When creating them, I
+              utilized many years of my experience in developing, testing and
+              operating software projects.
+            </p>
+          </>
         }
         cs={
           <>

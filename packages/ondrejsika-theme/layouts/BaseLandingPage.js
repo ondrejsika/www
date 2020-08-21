@@ -152,7 +152,7 @@ const BaseLandingPage = props => {
         <Center>
           <SectionHeader>{props.trainingHeader}</SectionHeader>
         </Center>
-        <CourseBar />
+        <CourseBar site={props.site} lang={props.site.lang} />
       </Background>
       <Container>
         <Section>
