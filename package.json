@@ -61,11 +61,9 @@
     "dev-ondrejsika.io": "yarn --cwd packages/ondrejsika.io dev -p 3046",
     "dev-cal-api.sika.io": "yarn --cwd packages/cal-api.sika.io dev -p 3047",
     "dev-skoleni-proxmox.cz": "yarn --cwd packages/skoleni-proxmox.cz dev -p 3048",
-    "dev-ydo.cz": "yarn --cwd packages/ydo.cz dev -p 3049",
     "dev-skoleni-prometheus.cz": "yarn --cwd packages/skoleni-prometheus.cz dev -p 3050",
     "dev-ccc.oxs.cz": "yarn --cwd packages/ccc.oxs.cz dev -p 3051",
     "dev-sika.work": "yarn --cwd packages/sika.work dev -p 3052",
-    "dev-ydo.sh": "yarn --cwd packages/ydo.sh dev -p 3053",
     "dev-skoleni-rancher.cz": "yarn --cwd packages/skoleni-rancher.cz dev -p 3054",
     "dev-sika.blog": "yarn --cwd packages/sika.blog dev -p 3055",
     "dev-static.sika.io": "yarn --cwd packages/static.sika.io dev -p 3056",
@@ -75,7 +73,6 @@
     "dev-trainera.de": "yarn --cwd packages/trainera.de dev -p 3060",
     "dev-sikalabs.com": "yarn --cwd packages/sikalabs.com dev -p 3061",
     "dev-digitalocean.cz": "yarn --cwd packages/digitalocean.cz dev -p 3062",
-
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
@@ -123,11 +120,9 @@
     "static-ondrejsika.io": "yarn --cwd packages/ondrejsika.io static",
     "static-cal-api.sika.io": "yarn --cwd packages/cal-api.sika.io static",
     "static-skoleni-proxmox.cz": "yarn --cwd packages/skoleni-proxmox.cz static",
-    "static-ydo.cz": "yarn --cwd packages/ydo.cz static",
     "static-skoleni-prometheus.cz": "yarn --cwd packages/skoleni-prometheus.cz static",
     "static-ccc.oxs.cz": "yarn --cwd packages/ccc.oxs.cz static",
     "static-sika.work": "yarn --cwd packages/sika.work static",
-    "static-ydo.sh": "yarn --cwd packages/ydo.sh static",
     "static-skoleni-rancher.cz": "yarn --cwd packages/skoleni-rancher.cz static",
     "static-sika.blog": "yarn --cwd packages/sika.blog static",
     "static-static.sika.io": "yarn --cwd packages/static.sika.io static",
@@ -137,7 +132,6 @@
     "static-trainera.de": "yarn --cwd packages/trainera.de static",
     "static-sikalabs.com": "yarn --cwd packages/sikalabs.com static",
     "static-digitalocean.cz": "yarn --cwd packages/digitalocean.cz static",
-
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)",
     "deploy-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd cloudflare-workers/ondrej-sika.cz && ../../node_modules/.bin/wrangler publish)",
     "deploy-ondrej-sika.com": "yarn run static-ondrej-sika.com && (cd cloudflare-workers/ondrej-sika.com && ../../node_modules/.bin/wrangler publish)",
@@ -149,7 +143,6 @@
     "now-ccc.oxs.cz": "yarn run static-ccc.oxs.cz && (cd packages/ccc.oxs.cz/out && now --name ccc-oxs-cz)",
     "now-sika.work": "yarn run static-sika.work && cd packages/sika.work/out && now --name sika-work",
     "now-ondrejsika.io": "yarn run static-ondrejsika.io && cd packages/ondrejsika.io/out && now --name ondrejsika-io",
-    "now-ydo.sh": "yarn run static-ydo.sh && cd packages/ydo.sh/out && now --name ydo-sh",
     "now-skoleni.io": "yarn run static-skoleni.io && cd packages/skoleni.io/out && now --name skoleni.io"
   },
   "devDependencies": {

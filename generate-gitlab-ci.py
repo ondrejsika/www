@@ -100,7 +100,6 @@ PROD_SITES = {
     "sika-kraml.de": {"dependencies": _DEFAULT_DEPENDENCIES,},
     "sika-training.com": {"dependencies": _DEFAULT_DEPENDENCIES,},
     "cal-api.sika.io": {"dependencies": _DEFAULT_DEPENDENCIES,},
-    "ydo.cz": {"dependencies": _DEFAULT_DEPENDENCIES,},
     "ccc.oxs.cz": {"dependencies": _DEFAULT_DEPENDENCIES,},
     "sika.blog": {"dependencies": _DEFAULT_DEPENDENCIES,},
     "static.sika.io": {"dependencies": _DEFAULT_DEPENDENCIES,},
