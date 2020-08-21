@@ -1,11 +1,16 @@
 import React from "react";
+import styled from "styled-components";
+import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader";
+const Center = styled.div`
+  text-align: center;
+`;
 
 const ContactSection = () => (
-  <div>
+  <div style={{ marginBottom: "60px" }}>
     <div className="container">
-      <h2 className="mt-5" id="contact">
-        Contact me
-      </h2>
+      <Center>
+        <SectionHeader id="contact">Contacts</SectionHeader>
+      </Center>
       <h3 className="pt-4 pb-2">Ondrej Sika</h3>
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
