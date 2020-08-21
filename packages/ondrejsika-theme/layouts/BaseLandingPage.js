@@ -148,12 +148,14 @@ const BaseLandingPage = props => {
         </Container>
       </Background>
       {/* light_grey */}
-      <Background id="training">
-        <Center>
-          <SectionHeader>{props.trainingHeader}</SectionHeader>
-        </Center>
-        <CourseBar site={props.site} lang={props.site.lang} />
-      </Background>
+      {!props.hideTrainingSection && (
+        <Background id="training">
+          <Center>
+            <SectionHeader>{props.trainingHeader}</SectionHeader>
+          </Center>
+          <CourseBar site={props.site} lang={props.site.lang} />
+        </Background>
+      )}
       <Container>
         <Section>
           <Row>

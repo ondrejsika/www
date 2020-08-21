@@ -12,6 +12,7 @@ const A = styled.a`
 const LandingPage = props => (
   <BaseLandingPage
     site={props.site}
+    hideTrainingSection={props.hideTrainingSection}
     title={
       {
         en: "Ondrej Sika - IT Training, Consulting and Workshops in Europe",
