@@ -11,7 +11,7 @@ import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader"
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 // import Point from "@app/ondrejsika-theme/components/lp/LP-point";
 import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
-// import Button from "@app/ondrejsika-theme/components/lp/LP-button";
+import Button from "@app/ondrejsika-theme/components/lp/LP-button";
 // import arrow from "@app/data/pictures/landing-page/arrow.svg";
 
 const MainTitle = styled.h1`
@@ -30,12 +30,12 @@ const MainTitle = styled.h1`
 const Section = styled.div`
   margin: 3em 0;
 `;
-// const TextBeige = styled.span`
-//   color: #c8bfb0 !important;
-// `;
-// const Center = styled.div`
-//   text-align: center;
-// `;
+const TextBeige = styled.span`
+  color: #c8bfb0 !important;
+`;
+const Center = styled.div`
+  text-align: center;
+`;
 
 const Img = styled.img`
   max-width: 100%;
@@ -58,21 +58,6 @@ const TextBox = styled.div`
 `;
 
 const Page = () => {
-  // const IconBtn = styled.img`
-  //   margin-bottom: 2px;
-  //   vertical-align: center;
-  //   height: 20px;
-  //   ${props =>
-  //     props.padding_right &&
-  //     css`
-  //       padding-right: 10px;
-  //     `}
-  //   ${props =>
-  //     props.padding_left &&
-  //     css`
-  //       padding-left: 10px;
-  //     `}
-  // `;
   return (
     <>
       <Background blue paddingBottom="0">
@@ -113,35 +98,57 @@ const Page = () => {
             DevOps Live newsletter & Slack kanál.
           </TextBox>
           <Section>
-            <SectionHeader>AKTUÁLNÍ TERMÍN</SectionHeader>
+            <SectionHeader>příští TERMÍN</SectionHeader>
             <TextBox blue>
               {events.map((event, i) => {
                 return (
                   <div key={i}>
                     <>
-                      <p className="pt-4">
+                      <TextBeige className="pt-4">
                         {event.date} od {event.time}
-                      </p>
-                      <h3 className="pb-4 bold">{event.title}</h3>
+                      </TextBeige>
+                      <h3 className="pb-2 bold">{event.title}</h3>
                       <Row>
                         <Col md={6}>
-                          <p className="pb-4">
+                          <p className="pb-4 pt-3">
                             <Markdown source={event.about} />
                           </p>
                         </Col>
-                        <Col md={6} style={{ borderLeft: "5px solid #c8bfb0" }}>
+                        <Col
+                          md={6}
+                          className="pt-3"
+                          style={{ borderLeft: "5px solid #c8bfb0" }}
+                        >
                           <ul>
                             <p className="pb-4">
                               <Markdown source={event.points} />
                             </p>
                           </ul>
                         </Col>
+                        <Col md={6}>
+                          <Center>
+                            <Button inverse huge href="/">
+                              Přihlásit
+                            </Button>
+                          </Center>
+                        </Col>
+                        <Col
+                          md={6}
+                          className="pt-3"
+                          style={{ borderLeft: "5px solid #c8bfb0" }}
+                        >
+                          <Center>
+                            <h3
+                              className="pt-3"
+                              style={{
+                                color: "#c8bfb0"
+                              }}
+                            >
+                              Zdarma nebo 500 Kč
+                            </h3>
+                          </Center>
+                        </Col>
                       </Row>
-
-                      {/* <Point>Seznámení s DevOps</Point>
-                      <Point>Seznámení s DevOps vv</Point>
-                      <Point>Seznámení s </Point>
-                      <Point>Seznámení s DevOps</Point> */}
                     </>
                   </div>
                 );

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Col } from "react-bootstrap";
 import BaseLandingPage from "@app/ondrejsika-theme/layouts/BaseLandingPage";
 import Text from "@app/ondrejsika-theme/components/lp/LP-text";
@@ -8,7 +8,17 @@ const Li = styled.li`
   list-style: none;
   padding: 1em 1em 1em 2em;
   :after {
-    content: "♦";
+    ${props =>
+      props.empty &&
+      css`
+        content: "♢";
+      `}
+    ${props =>
+      props.full &&
+      css`
+        content: "♦";
+      `}
+    
     height: 0.5em;
     width: 0.5em;
     color: #131480;
@@ -26,7 +36,7 @@ const Pl = styled.div`
 const Point = props => (
   <>
     <Col md={10}>
-      <Li>
+      <Li empty={props.empty} full={props.full}>
         <BaseLandingPage.H3>{props.point}</BaseLandingPage.H3>
       </Li>
       <Pl>
