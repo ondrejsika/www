@@ -4,37 +4,47 @@
   title: Správa Gitlabu a Githubu pomocí Terraformu
   date: 2.9.2020
   time: "19:00"
-  perex: |
+  about: |
     Každý má v Gitlabu a Githubu hodně repozitářů s hromadou nastavení a správa přes GUI není nijak efektivní ani příjemná. Terraform umožňuje spravovat infrastrukturu jako kód a podporuje správu Gitlabu a Githubu.
-
+  points: |
     - Správa repozitářů, uživatelů a skupin
     - Správa nastavení pro CI
     - Integrace s dalšími komponenty infrastruktury
     - Jak Gitlab konfiguruji já
+  technologies:
+    - gitlab
+    - terraform
+    - git
 
 - id: docker-a-traefik-proxy
-  eventbrite: https://www.eventbrite.com/e/117836685699/
+  eventbrite: https://www.eventbrite.com/e/117834916407
   active: true
   title: Docker & Traefik Proxy
   date: 23.9.2020
   time: "19:00"
-  perex: |
+  about: |
     Traefik je populární proxy, která podporuje autodiscovery (nejen) Dockeru, což Vám umožňuje velmi jednoduše zpřístupnit světu více Docker kontejnerů na jednom serveru. Traefik se také stará o SSL certifikáty pomoci Let's Encrypt, metriky a mnoho dalšího.
-
+  points: |
     - Co je Traefik
     - Autodiscovery, Let's Encrypt, Metrics & Monitoring
     - Konfigurace Traefiku s Dockerem
     - Ukázky z praxe
+  technologies:
+    - git
+    - docker
 
 - id: jednoducha-integrace-gitlab-ci-a-kubernetes
-  eventbrite: https://www.eventbrite.com/e/117834916407
+  eventbrite: https://www.eventbrite.com/e/117836685699/
   active: true
   title: Jednoduchá integrace Gitlab CI a Kubernetes
   date: 7.10.2020
   time: "19:00"
-  perex: |
+  about: |
     Gitlab umožňuje propojení s Kubernetes clusterem. Má to své výhody hlavně v CI. Ukážeme si jak na to.
-
+  points: |
     - Nativní propojení Gitlab CI a Kubernetes clusteru
     - Více Kubernetes clusteru (nelze ve free variantě)
     - Více clusterů bez nativní integrace
+  technologies:
+    - gitlab
+    - kubernetes

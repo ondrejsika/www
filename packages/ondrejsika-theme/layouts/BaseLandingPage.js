@@ -224,10 +224,10 @@ const BaseLandingPage = props => {
             </Col>
             <Col md={7} sm={12}>
               <SectionHeader>{props.sectionWhyMeHeader}</SectionHeader>
-              <Point point={props.point1} text={props.text1} />
-              <Point point={props.point2} text={props.text2} />
-              <Point point={props.point3} text={props.text3} />
-              <Point point={props.point4} text={props.text4} />
+              <Point full point={props.point1} text={props.text1} />
+              <Point full point={props.point2} text={props.text2} />
+              <Point full point={props.point3} text={props.text3} />
+              <Point full point={props.point4} text={props.text4} />
               <Text></Text>
             </Col>
           </RoomyRow>

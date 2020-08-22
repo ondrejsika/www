@@ -4,7 +4,7 @@ const Li = styled.li`
   list-style: none;
   font-size: 18px;
   &:before {
-    content: "⬡";
+    content: "▲";
     margin-right: 10px;
     margin-left: -27px;
   }
