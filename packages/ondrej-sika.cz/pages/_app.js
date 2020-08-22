@@ -78,24 +78,16 @@ const Footer = (
             +420 773 452 376
           </ThemeFooter.A>
         </p>
-        <Hide>
-          <table className="contact-table table-borderless">
-            <tbody>
-              <tr>
-                <td>IČ:</td>
-                <td>88114163</td>
-              </tr>
-              <tr>
-                <td>DIČ:</td>
-                <td>CZ9302252102</td>
-              </tr>
-              <tr>
-                <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-                <td>2301432033/2010</td>
-              </tr>
-            </tbody>
-          </table>
-        </Hide>
+        <p>
+          <span style={{ fontSize: "0.7em" }}>Company ID</span>
+          <br />
+          88114163
+        </p>
+        <p>
+          <span style={{ fontSize: "0.7em" }}>VAT ID</span>
+          <br />
+          CZ9302252102
+        </p>
       </ThemeFooter.Wrapper>
     }
     secondColumn={
