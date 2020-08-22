@@ -1,5 +1,6 @@
 - id: sprava-gitlabu-a-githubu-pomoci-terraformu
   active: true
+  eventbrite: https://www.eventbrite.com/e/117783428405
   title: Správa Gitlabu a Githubu pomocí Terraformu
   date: 2.9.2020
   time: "19:00"
@@ -12,6 +13,7 @@
     - Jak Gitlab konfiguruji já
 
 - id: docker-a-traefik-proxy
+  eventbrite: https://www.eventbrite.com/e/117836685699/
   active: true
   title: Docker & Traefik Proxy
   date: 23.9.2020
@@ -25,6 +27,7 @@
     - Ukázky z praxe
 
 - id: jednoducha-integrace-gitlab-ci-a-kubernetes
+  eventbrite: https://www.eventbrite.com/e/117834916407
   active: true
   title: Jednoduchá integrace Gitlab CI a Kubernetes
   date: 7.10.2020
