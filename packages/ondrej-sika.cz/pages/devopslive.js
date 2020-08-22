@@ -46,7 +46,7 @@ const Img = styled.img`
 `;
 
 const TextBox = styled.div`
-  padding: 1em;
+  padding: 1.5em;
   ${props =>
     props.white &&
     css`
