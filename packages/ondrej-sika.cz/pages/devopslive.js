@@ -154,7 +154,64 @@ const Page = () => {
                 );
               })}
             </TextBox>
-            {events.map((event, i) => {
+            <SectionHeader>Nadcházející témata</SectionHeader>
+            <TextBox white>
+              {events.map((event, i) => {
+                return (
+                  <div key={i}>
+                    <>
+                      <TextBeige className="pt-4">
+                        {event.date} od {event.time}
+                      </TextBeige>
+                      <h3 className="pb-2 bold">{event.title}</h3>
+                      <Row>
+                        <Col md={6}>
+                          <p className="pb-4 pt-3">
+                            <Markdown source={event.about} />
+                          </p>
+                        </Col>
+                        <Col
+                          md={6}
+                          className="pt-3"
+                          style={{ borderLeft: "5px solid #c8bfb0" }}
+                        >
+                          <ul>
+                            <p className="pb-4">
+                              <Markdown source={event.points} />
+                            </p>
+                          </ul>
+                        </Col>
+                        <Col md={6}>
+                          <Center>
+                            <Button inverse huge href="/">
+                              Přihlásit
+                            </Button>
+                          </Center>
+                        </Col>
+                        <Col
+                          md={6}
+                          className="pt-3"
+                          style={{ borderLeft: "5px solid #c8bfb0" }}
+                        >
+                          <Center>
+                            <h3
+                              className="pt-3"
+                              style={{
+                                color: "#c8bfb0"
+                              }}
+                            >
+                              Zdarma nebo 500 Kč
+                            </h3>
+                          </Center>
+                        </Col>
+                      </Row>
+                    </>
+                  </div>
+                );
+              })}
+            </TextBox>
+
+            {/* {events.map((event, i) => {
               return (
                 <div key={i}>
                   {(() => {
@@ -170,14 +227,14 @@ const Page = () => {
                     <Markdown source={event.about} />
                   </p>
                   <ul>
-                    {/* {event.points.map((point, p) => {
+                    {event.points.map((point, p) => {
                       <Point key={p}>{point}</Point>;
-                    })} */}
-                    {/* <Markdown source={event.points} /> */}
+                    })}
+                    <Markdown source={event.points} />
                   </ul>
                 </div>
               );
-            })}
+            })} */}
           </Section>
         </Container>
       </Background>
