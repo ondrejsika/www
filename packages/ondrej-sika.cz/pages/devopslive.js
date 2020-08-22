@@ -4,15 +4,16 @@ import { Row, Col, Container } from "react-bootstrap";
 import events from "@app/data/devopslive.yml";
 // import Article from "@app/ondrejsika-theme/layouts/Article";
 import Markdown from "@app/common/components/Markdown";
-// import Text from "@app/ondrejsika-theme/components/lp/LP-text";
+import Text from "@app/ondrejsika-theme/components/lp/LP-text";
 // import Box from "@app/ondrejsika-theme/components/lp/LP-box";
 import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader";
 // import Companies from "@app/ondrejsika-theme/components/lp/LP-companies";
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
-// import Point from "@app/ondrejsika-theme/components/lp/LP-point";
+import Point from "@app/ondrejsika-theme/components/lp/LP-point";
 import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
 import Button from "@app/ondrejsika-theme/components/lp/LP-button";
 // import arrow from "@app/data/pictures/landing-page/arrow.svg";
+import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
@@ -36,7 +37,9 @@ const TextBeige = styled.span`
 const Center = styled.div`
   text-align: center;
 `;
-
+const RoomyRow = styled(Row)`
+  margin-bottom: 4em;
+`;
 const Img = styled.img`
   max-width: 100%;
   height: auto;
@@ -235,6 +238,35 @@ const Page = () => {
                 </div>
               );
             })} */}
+          </Section>
+
+          <Section>
+            <RoomyRow style={{ marginRight: "0" }}>
+              <Col md={5} sm={12}>
+                <Img src={ondrej_table} />
+              </Col>
+              <Col md={7} sm={12}>
+                <TextBox white>
+                  <div className="pl-5">
+                    <SectionHeader>Archiv</SectionHeader>
+                    {/* {events.map((event, i) => (
+                    <Point full point={events.title} text="something" />
+                  ))} */}
+                    <Point full point="DevOps v praxi" datum="33.3.2020" />
+                    <Point full point="Základy Proxmox" datum="33.3.2020" />
+                    <Point
+                      full
+                      point="Rozdíly mezi jednotlivými programy"
+                      datum="33.3.2020"
+                    />
+                    <Text></Text>
+                    <Button huge href="/">
+                      ZOBRAZIT VŠE
+                    </Button>
+                  </div>
+                </TextBox>
+              </Col>
+            </RoomyRow>
           </Section>
         </Container>
       </Background>

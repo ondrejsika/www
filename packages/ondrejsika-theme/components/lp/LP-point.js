@@ -6,7 +6,7 @@ import Text from "@app/ondrejsika-theme/components/lp/LP-text";
 
 const Li = styled.li`
   list-style: none;
-  padding: 1em 1em 1em 2em;
+  padding: 1em 1em 0 2em;
   :after {
     ${props =>
       props.empty &&
@@ -33,14 +33,21 @@ const Li = styled.li`
 const Pl = styled.div`
   padding-left: 2.3em;
 `;
+
+const Datum = styled.p`
+  color: #131480;
+  font-size: 20px;
+`;
 const Point = props => (
   <>
     <Col md={10}>
       <Li empty={props.empty} full={props.full}>
         <BaseLandingPage.H3>{props.point}</BaseLandingPage.H3>
       </Li>
+
       <Pl>
-        <Text>{props.text}</Text>
+        <Datum>{props.datum}</Datum>
+        <Text className="pt-3">{props.text}</Text>
       </Pl>
     </Col>
   </>
