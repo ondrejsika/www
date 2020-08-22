@@ -1,19 +1,18 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
 import events from "@app/data/devopslive.yml";
-// import Article from "@app/ondrejsika-theme/layouts/Article";
 import Markdown from "@app/common/components/Markdown";
 import Text from "@app/ondrejsika-theme/components/lp/LP-text";
-// import Box from "@app/ondrejsika-theme/components/lp/LP-box";
 import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader";
-// import Companies from "@app/ondrejsika-theme/components/lp/LP-companies";
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import Point from "@app/ondrejsika-theme/components/lp/LP-point";
 import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
 import Button from "@app/ondrejsika-theme/components/lp/LP-button";
-// import arrow from "@app/data/pictures/landing-page/arrow.svg";
 import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
+import slack from "@app/data/pictures/social-networks/slack.svg";
+import Sessions from "@app/ondrejsika-theme/components/devopslive/Sessions";
+import ColorBox from "@app/ondrejsika-theme/components/devopslive/ColorBox";
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
@@ -45,21 +44,6 @@ const Img = styled.img`
   height: auto;
 `;
 
-const TextBox = styled.div`
-  padding: 1.5em;
-  ${props =>
-    props.white &&
-    css`
-      background-color: white;
-    `}
-  ${props =>
-    props.blue &&
-    css`
-      background-color: #131480;
-      color: white !important;
-    `}
-`;
-
 const Page = () => {
   return (
     <>
@@ -71,7 +55,6 @@ const Page = () => {
                 DevOps <br />
                 live
               </MainTitle>
-              {/* <Text white>Livestreamy na popularni temata z DevOps</Text> */}
             </Col>
             <Col lg={4}>
               <Img src={ondrej_chair} />
@@ -84,7 +67,7 @@ const Page = () => {
           <SectionHeader>
             Posuňme spolu firemní DevOps do 21. století
           </SectionHeader>
-          <TextBox white>
+          <ColorBox white>
             DevOps live je můj zbrusu nový online stream kde si budeme povídat
             na zajímavé témata přibližně jednou za dva týdny. <br />
             Cílem streamu je seznámit Vás s nejnovější open-source DevOps
@@ -99,145 +82,72 @@ const Page = () => {
             spolu online komunitu programátorů, kteří posunou DevOps ve svých
             firmách na novou úroveň. Skrolujte níže a najdete odkazy na můj
             DevOps Live newsletter & Slack kanál.
-          </TextBox>
+          </ColorBox>
           <Section>
             <SectionHeader>příští TERMÍN</SectionHeader>
-            <TextBox blue>
-              {events.map((event, i) => {
-                return (
-                  <div key={i}>
-                    <>
-                      <TextBeige className="pt-4">
-                        {event.date} od {event.time}
-                      </TextBeige>
-                      <h3 className="pb-2 bold">{event.title}</h3>
-                      <Row>
-                        <Col md={6}>
-                          <p className="pb-4 pt-3">
-                            <Markdown source={event.about} />
-                          </p>
-                        </Col>
-                        <Col
-                          md={6}
-                          className="pt-3"
-                          style={{ borderLeft: "5px solid #c8bfb0" }}
-                        >
-                          <ul>
-                            <p className="pb-4">
-                              <Markdown source={event.points} />
-                            </p>
-                          </ul>
-                        </Col>
-                        <Col md={6}>
-                          <Center>
-                            <Button inverse huge href="/">
-                              Přihlásit
-                            </Button>
-                          </Center>
-                        </Col>
-                        <Col
-                          md={6}
-                          className="pt-3"
-                          style={{ borderLeft: "5px solid #c8bfb0" }}
-                        >
-                          <Center>
-                            <h3
-                              className="pt-3"
-                              style={{
-                                color: "#c8bfb0"
-                              }}
-                            >
-                              Zdarma nebo 500 Kč
-                            </h3>
-                          </Center>
-                        </Col>
-                      </Row>
-                    </>
-                  </div>
-                );
-              })}
-            </TextBox>
+            <ColorBox blue>
+              <TextBeige className="pt-4">
+                {events[0].date} od {events[0].time}
+              </TextBeige>
+              <h3 className="pb-2 bold">{events[0].title}</h3>
+              <Row>
+                <Col md={6}>
+                  <p className="pb-4 pt-3">
+                    <Markdown source={events[0].about} />
+                  </p>
+                </Col>
+                <Col
+                  md={6}
+                  className="pt-3"
+                  style={{ borderLeft: "5px solid #c8bfb0" }}
+                >
+                  <ul>
+                    <p className="pb-4">
+                      <Markdown source={events[0].points} />
+                    </p>
+                  </ul>
+                </Col>
+                <Col md={6}>
+                  <Center>
+                    <Button inverse huge href="#">
+                      Přihlásit
+                    </Button>
+                  </Center>
+                </Col>
+                <Col
+                  md={6}
+                  className="pt-3"
+                  style={{ borderLeft: "5px solid #c8bfb0" }}
+                >
+                  <Center>
+                    <h3
+                      className="pt-3"
+                      style={{
+                        color: "#c8bfb0"
+                      }}
+                    >
+                      Zdarma nebo 500 Kč
+                    </h3>
+                  </Center>
+                </Col>
+              </Row>
+            </ColorBox>
             <SectionHeader>Nadcházející témata</SectionHeader>
-            <TextBox white>
-              {events.map((event, i) => {
-                return (
-                  <div key={i}>
-                    <>
-                      <TextBeige className="pt-4">
-                        {event.date} od {event.time}
-                      </TextBeige>
-                      <h3 className="pb-2 bold">{event.title}</h3>
-                      <Row>
-                        <Col md={6}>
-                          <p className="pb-4 pt-3">
-                            <Markdown source={event.about} />
-                          </p>
-                        </Col>
-                        <Col
-                          md={6}
-                          className="pt-3"
-                          style={{ borderLeft: "5px solid #c8bfb0" }}
-                        >
-                          <ul>
-                            <p className="pb-4">
-                              <Markdown source={event.points} />
-                            </p>
-                          </ul>
-                        </Col>
-                        <Col md={6}>
-                          <Center>
-                            <Button inverse huge href="/">
-                              Přihlásit
-                            </Button>
-                          </Center>
-                        </Col>
-                        <Col
-                          md={6}
-                          className="pt-3"
-                          style={{ borderLeft: "5px solid #c8bfb0" }}
-                        >
-                          <Center>
-                            <h3
-                              className="pt-3"
-                              style={{
-                                color: "#c8bfb0"
-                              }}
-                            >
-                              Zdarma nebo 500 Kč
-                            </h3>
-                          </Center>
-                        </Col>
-                      </Row>
-                    </>
-                  </div>
-                );
-              })}
-            </TextBox>
 
-            {/* {events.map((event, i) => {
+            {events.map((event, i) => {
+              if (i == 0 && i < 3) return;
               return (
                 <div key={i}>
-                  {(() => {
-                    if (i > 0) {
-                      return <hr className="hr-black" />;
-                    }
-                  })()}
-                  <h3 className="pt-4 pb-4 bold">{event.title}</h3>
-                  <p className="pb-4">
-                    {event.date} od {event.time}
-                  </p>
-                  <p className="pb-4">
-                    <Markdown source={event.about} />
-                  </p>
-                  <ul>
-                    {event.points.map((point, p) => {
-                      <Point key={p}>{point}</Point>;
-                    })}
-                    <Markdown source={event.points} />
-                  </ul>
+                  <Sessions
+                    date={event.date}
+                    time={event.time}
+                    title={event.title}
+                    about={event.about}
+                    points={event.points}
+                  />
                 </div>
               );
-            })} */}
+            })}
           </Section>
 
           <Section>
@@ -246,7 +156,7 @@ const Page = () => {
                 <Img src={ondrej_table} />
               </Col>
               <Col md={7} sm={12}>
-                <TextBox white>
+                <ColorBox white>
                   <div className="pl-5">
                     <SectionHeader>Archiv</SectionHeader>
                     {/* {events.map((event, i) => (
@@ -264,9 +174,42 @@ const Page = () => {
                       ZOBRAZIT VŠE
                     </Button>
                   </div>
-                </TextBox>
+                </ColorBox>
               </Col>
             </RoomyRow>
+          </Section>
+          <Section>
+            <Row>
+              <Col md={6}>
+                <ColorBox blue>
+                  <div className="p-5 m-2">
+                    <Center>
+                      <img src={slack} className="p-5" />
+                    </Center>
+                    <h3>DevOps live community</h3>
+                    <p>
+                      Zapojte se do života naší komunity prostřednictvím
+                      veřejného slack kanálu
+                    </p>
+                  </div>
+                </ColorBox>
+              </Col>
+              <Col md={6}>
+                <ColorBox blue>
+                  <div className="p-5">
+                    <Center>
+                      <img src={slack} className="p-5 m-2" />
+                    </Center>
+
+                    <h3>DevOps live newsletter</h3>
+                    <p>
+                      Zapojte se do života naší komunity prostřednictvím
+                      veřejného slack kanálu
+                    </p>
+                  </div>
+                </ColorBox>
+              </Col>
+            </Row>
           </Section>
         </Container>
       </Background>
