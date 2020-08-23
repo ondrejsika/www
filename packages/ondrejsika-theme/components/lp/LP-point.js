@@ -9,19 +9,20 @@ const Li = styled.li`
   padding: 1em 1em 0 2em;
   :after {
     ${props =>
-      props.empty &&
+      props.grey &&
       css`
-        content: "▪";
+        color: #c8bfb0;
+        content: "▲";
       `}
     ${props =>
-      props.full &&
+      props.fullBlue &&
       css`
-        content: "▪";
+        color: #141480 !important;
+        content: "▲";
       `}
     
     height: 0.5em;
     width: 0.5em;
-    color: #131480;
     position: absolute;
     top: 1.3em;
     left: 0;
@@ -41,7 +42,7 @@ const Datum = styled.p`
 const Point = props => (
   <>
     <Col md={10}>
-      <Li empty={props.empty} full={props.full}>
+      <Li white={props.white} fullBlue={props.fullBlue}>
         <BaseLandingPage.H3>{props.point}</BaseLandingPage.H3>
       </Li>
 

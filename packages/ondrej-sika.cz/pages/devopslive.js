@@ -164,12 +164,12 @@ const Page = () => {
                   <div className="pl-5">
                     <SectionHeader>Archiv</SectionHeader>
                     {/* {events.map((event, i) => (
-                    <Point full point={events.title} text="something" />
+                    <Point fullBlue point={events.title} text="something" />
                   ))} */}
-                    <Point full point="DevOps v praxi" datum="33.3.2020" />
-                    <Point full point="Základy Proxmox" datum="33.3.2020" />
+                    <Point fullBlue point="DevOps v praxi" datum="33.3.2020" />
+                    <Point fullBlue point="Základy Proxmox" datum="33.3.2020" />
                     <Point
-                      full
+                      fullBlue
                       point="Rozdíly mezi jednotlivými programy"
                       datum="33.3.2020"
                     />
