@@ -14,7 +14,7 @@ import kubernetes_b from "@app/data/pictures/courses/blue/kubernetes.svg";
 
 const Img = styled.img`
   height: 100px;
-  padding: 0.5em;
+  padding: 0 2em;
 `;
 
 const TechnologyIcons = props => {

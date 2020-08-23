@@ -49,7 +49,7 @@ const Sessions = props => {
         <>
           <Row>
             <Col md={11}>
-              <div onClick={handleShow}>
+              <div onClick={handleShow} style={{ maxWidth: "550px" }}>
                 <TextBeige className="pt-4">
                   {props.event.date} od {props.event.time}
                 </TextBeige>
@@ -69,7 +69,7 @@ const Sessions = props => {
             </Col>
           </Row>
           <Hidden showNextSession={showNextSession}>
-            <Col md={5}>
+            <Col md={6}>
               <p className="pb-4 pt-3">
                 <Markdown source={props.event.points} />
               </p>
@@ -81,7 +81,7 @@ const Sessions = props => {
                 ))}
               </Center>
             </Col>
-            <Col md={5}>
+            <Col md={6}>
               <Center>
                 <Button inverse huge href="/">
                   Přihlásit
@@ -100,7 +100,7 @@ const Sessions = props => {
                     color: "#c8bfb0"
                   }}
                 >
-                  Zdarma nebo 500 Kč
+                  Zdarma nebo 200 Kč
                 </h3>
               </Center>
             </Col>

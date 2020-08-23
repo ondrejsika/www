@@ -97,10 +97,12 @@ const Page = () => {
           <Section>
             <SectionHeader>příští TERMÍN</SectionHeader>
             <ColorBox blue>
-              <TextBeige className="pt-4">
-                {events[0].date} od {events[0].time}
-              </TextBeige>
-              <h3 className="pb-2 bold">{events[0].title}</h3>
+              <div style={{ maxWidth: "500px" }}>
+                <TextBeige className="pt-4">
+                  {events[0].date} od {events[0].time}
+                </TextBeige>
+                <h3 className="pb-2 bold">{events[0].title}</h3>
+              </div>
               <Row>
                 <Col md={6} className="pt-3">
                   <p className="pb-4">
@@ -133,7 +135,7 @@ const Page = () => {
                         color: "#c8bfb0"
                       }}
                     >
-                      Zdarma nebo 500 Kč
+                      Zdarma nebo 200 Kč
                     </h3>
                   </Center>
                 </Col>
@@ -193,9 +195,9 @@ const Page = () => {
               </Col>
               <Col md={6}>
                 <ColorBox blue>
-                  <div className="p-5">
+                  <div className="p-5 mt-2">
                     <Center>
-                      <img src={newsletter} className="p-5 m-2" />
+                      <img src={newsletter} className="p-5" />
                     </Center>
                     <h3>DevOps live newsletter</h3>
                     <p>
