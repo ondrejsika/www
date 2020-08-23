@@ -16,7 +16,14 @@ const TextBeige = styled.span`
 const Center = styled.div`
   text-align: center;
 `;
-
+const SectionHeader = styled.h3`
+  color: #131480;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+`;
+const Text = styled.p`
+  color: #131480;
+`;
 const Sessions = props => {
   const [showNextSession, setNextSession] = useState(false);
   const handleShow = () => setNextSession(true);
@@ -30,7 +37,7 @@ const Sessions = props => {
               <TextBeige className="pt-4">
                 {props.event.date} od {props.event.time}
               </TextBeige>
-              <h3 className="pb-2 bold">{props.event.title}</h3>
+              <SectionHeader>{props.event.title}</SectionHeader>
             </div>
           </Col>
           <Col md={1}>
@@ -53,7 +60,7 @@ const Sessions = props => {
                 <TextBeige className="pt-4">
                   {props.event.date} od {props.event.time}
                 </TextBeige>
-                <h3 className="pb-2 bold">{props.event.title}</h3>
+                <SectionHeader>{props.event.title}</SectionHeader>
               </div>
             </Col>
             <Col md={1}>
@@ -70,34 +77,24 @@ const Sessions = props => {
           </Row>
           <Hidden showNextSession={showNextSession}>
             <Col md={6}>
-              <p className="pb-4 pt-3">
+              <Text className="pb-4 pt-3">
                 <Markdown source={props.event.points} />
-              </p>
-            </Col>
-            <Col md={6} className="pt-3">
+              </Text>
               <Center>
-                {props.event.technologies.map((technology, i) => (
-                  <TechnologyIcons blue key={i} icon={technology} />
-                ))}
-              </Center>
-            </Col>
-            <Col md={6}>
-              <Center>
-                <Button inverse huge href="/">
+                <Button huge href="/">
                   Přihlásit
                 </Button>
               </Center>
             </Col>
-            <Col md={6} className="pt-3">
+            <Col
+              md={6}
+              className="pt-3"
+              style={{ borderLeft: "2px solid #c8bfb0" }}
+            >
               <Center>
-                <h3
-                  className="pt-3"
-                  style={{
-                    color: "#c8bfb0"
-                  }}
-                >
-                  Zdarma nebo 200 Kč
-                </h3>
+                {props.event.technologies.map((technology, i) => (
+                  <TechnologyIcons blue key={i} icon={technology} />
+                ))}
               </Center>
             </Col>
           </Hidden>
