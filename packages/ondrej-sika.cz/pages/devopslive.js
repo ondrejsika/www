@@ -48,7 +48,11 @@ const Underline = styled.span`
   border-bottom: 5px solid #c8bfb0;
   padding-right: 50px;
 `;
-
+const FlexBox = styled.a`
+  display: flex;
+  align-items: stretch;
+  height: 500px;
+`;
 const Page = () => {
   return (
     <>
@@ -181,32 +185,43 @@ const Page = () => {
           <Section>
             <Row>
               <Col md={6}>
-                <ColorBox blue>
-                  <div className="p-5 m-2">
-                    <Center>
-                      <img src={slack} className="p-5" width="183" />
-                    </Center>
-                    <h3>DevOps live community</h3>
-                    <p>
-                      Zapojte se do života naší komunity prostřednictvím
-                      veřejného slack kanálu
-                    </p>
-                  </div>
-                </ColorBox>
+                <FlexBox
+                  href="https://sikapublic.slack.com/archives/C018ULJEJMD"
+                  style={{ textDecoration: "none", height: "100%" }}
+                >
+                  <ColorBox blue>
+                    <div className="p-5 m-2">
+                      <Center>
+                        <img src={slack} className="p-5" width="183" />
+                      </Center>
+                      <h3>DevOps live community</h3>
+                      <p>
+                        Zapojte se do online komunity programátorů, kteří si
+                        vzájemně pomáhají prostřednictvím veřejného Slack kanálu
+                        a diskutujte.
+                      </p>
+                    </div>
+                  </ColorBox>
+                </FlexBox>
               </Col>
               <Col md={6}>
-                <ColorBox blue>
-                  <div className="p-5 m-2">
-                    <Center>
-                      <img src={newsletter} className="p-5" width="183" />
-                    </Center>
-                    <h3>DevOps live newsletter</h3>
-                    <p>
-                      Zapojte se do života naší komunity prostřednictvím
-                      veřejného slack kanálu
-                    </p>
-                  </div>
-                </ColorBox>
+                <FlexBox
+                  href="https://sika.link/devopslive-newsletter"
+                  style={{ textDecoration: "none" }}
+                >
+                  <ColorBox blue>
+                    <div className="p-5 m-2">
+                      <Center>
+                        <img src={newsletter} className="p-5" width="183" />
+                      </Center>
+                      <h3>DevOps live newsletter</h3>
+                      <p>
+                        Zapojte se do života naší komunity prostřednictvím
+                        veřejného slack kanálu.
+                      </p>
+                    </div>
+                  </ColorBox>
+                </FlexBox>
               </Col>
             </Row>
           </Section>
