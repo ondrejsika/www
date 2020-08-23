@@ -88,11 +88,7 @@ const Sessions = props => {
                 </Button>
               </Center>
             </Col>
-            <Col
-              md={6}
-              className="pt-3"
-              // style={{ borderLeft: "5px solid #c8bfb0" }}
-            >
+            <Col md={6} className="pt-3">
               <Center>
                 <h3
                   className="pt-3"

@@ -183,7 +183,7 @@ const Page = () => {
                 <ColorBox blue>
                   <div className="p-5 m-2">
                     <Center>
-                      <img src={slack} className="p-5" />
+                      <img src={slack} className="p-5" width="183" />
                     </Center>
                     <h3>DevOps live community</h3>
                     <p>
@@ -195,9 +195,9 @@ const Page = () => {
               </Col>
               <Col md={6}>
                 <ColorBox blue>
-                  <div className="p-5 mt-2">
+                  <div className="p-5 m-2">
                     <Center>
-                      <img src={newsletter} className="p-5" />
+                      <img src={newsletter} className="p-5" width="183" />
                     </Center>
                     <h3>DevOps live newsletter</h3>
                     <p>
