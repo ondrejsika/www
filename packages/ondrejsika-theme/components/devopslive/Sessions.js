@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
+
 import close from "@app/data/pictures/close.svg";
 import arrow from "@app/data/pictures/arrow.svg";
 import ColorBox from "@app/ondrejsika-theme/components/devopslive/ColorBox";
+import TechnologyIcons from "@app/ondrejsika-theme/components/devopslive/TechnologyIcons";
 import Markdown from "@app/common/components/Markdown";
 import Button from "@app/ondrejsika-theme/components/lp/LP-button";
 
@@ -26,9 +28,9 @@ const Sessions = props => {
           <Col md={11}>
             <div onClick={handleShow}>
               <TextBeige className="pt-4">
-                {props.date} od {props.time}
+                {props.event.date} od {props.event.time}
               </TextBeige>
-              <h3 className="pb-2 bold">{props.title}</h3>
+              <h3 className="pb-2 bold">{props.event.title}</h3>
             </div>
           </Col>
           <Col md={1}>
@@ -49,9 +51,9 @@ const Sessions = props => {
             <Col md={11}>
               <div onClick={handleShow}>
                 <TextBeige className="pt-4">
-                  {props.date} od {props.time}
+                  {props.event.date} od {props.event.time}
                 </TextBeige>
-                <h3 className="pb-2 bold">{props.title}</h3>
+                <h3 className="pb-2 bold">{props.event.title}</h3>
               </div>
             </Col>
             <Col md={1}>
@@ -67,23 +69,19 @@ const Sessions = props => {
             </Col>
           </Row>
           <Hidden showNextSession={showNextSession}>
-            <Col md={6}>
+            <Col md={5}>
               <p className="pb-4 pt-3">
-                <Markdown source={props.about} />
+                <Markdown source={props.event.points} />
               </p>
             </Col>
-            <Col
-              md={5}
-              className="pt-3"
-              style={{ borderLeft: "5px solid #c8bfb0" }}
-            >
-              <ul>
-                <p className="pb-4">
-                  <Markdown source={props.points} />
-                </p>
-              </ul>
+            <Col md={6} className="pt-3">
+              <Center>
+                {props.event.technologies.map((technology, i) => (
+                  <TechnologyIcons blue key={i} icon={technology} />
+                ))}
+              </Center>
             </Col>
-            <Col md={6}>
+            <Col md={5}>
               <Center>
                 <Button inverse huge href="/">
                   Přihlásit
@@ -93,7 +91,7 @@ const Sessions = props => {
             <Col
               md={6}
               className="pt-3"
-              style={{ borderLeft: "5px solid #c8bfb0" }}
+              // style={{ borderLeft: "5px solid #c8bfb0" }}
             >
               <Center>
                 <h3

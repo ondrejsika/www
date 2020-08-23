@@ -9,11 +9,14 @@ import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import Point from "@app/ondrejsika-theme/components/lp/LP-point";
 import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
 import Button from "@app/ondrejsika-theme/components/lp/LP-button";
-import devops from "@app/data/pictures/devopsicon.png";
+import devops from "@app/data/pictures/devops.svg";
 import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
 import slack from "@app/data/pictures/social-networks/slack.svg";
+import newsletter from "@app/data/pictures/newsletter.svg";
+
 import Sessions from "@app/ondrejsika-theme/components/devopslive/Sessions";
 import ColorBox from "@app/ondrejsika-theme/components/devopslive/ColorBox";
+import TechnologyIcons from "@app/ondrejsika-theme/components/devopslive/TechnologyIcons";
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
@@ -100,16 +103,16 @@ const Page = () => {
               <h3 className="pb-2 bold">{events[0].title}</h3>
               <Row>
                 <Col md={6} className="pt-3">
-                  <ul>
-                    <p className="pb-4">
-                      <Markdown source={events[0].points} />
-                    </p>
-                  </ul>
+                  <p className="pb-4">
+                    <Markdown source={events[0].points} />
+                  </p>
                 </Col>
                 <Col md={6}>
-                  <p className="pb-4 pt-3">
-                    <Markdown source={events[0].about} />
-                  </p>
+                  <Center>
+                    {events[0].technologies.map((technology, i) => (
+                      <TechnologyIcons white key={i} icon={technology} />
+                    ))}
+                  </Center>
                 </Col>
                 <Col md={6}>
                   <Center>
@@ -142,18 +145,11 @@ const Page = () => {
               if (i == 0 && i < 3) return;
               return (
                 <div key={i}>
-                  <Sessions
-                    date={event.date}
-                    time={event.time}
-                    title={event.title}
-                    about={event.about}
-                    points={event.points}
-                  />
+                  <Sessions event={event} />
                 </div>
               );
             })}
           </Section>
-
           <Section>
             <RoomyRow style={{ marginRight: "0" }}>
               <Col md={5} sm={12}>
@@ -163,9 +159,6 @@ const Page = () => {
                 <ColorBox white>
                   <div className="pl-5">
                     <SectionHeader>Archiv</SectionHeader>
-                    {/* {events.map((event, i) => (
-                    <Point fullBlue point={events.title} text="something" />
-                  ))} */}
                     <Point fullBlue point="DevOps v praxi" datum="33.3.2020" />
                     <Point fullBlue point="Základy Proxmox" datum="33.3.2020" />
                     <Point
@@ -202,9 +195,8 @@ const Page = () => {
                 <ColorBox blue>
                   <div className="p-5">
                     <Center>
-                      <img src={slack} className="p-5 m-2" />
+                      <img src={newsletter} className="p-5 m-2" />
                     </Center>
-
                     <h3>DevOps live newsletter</h3>
                     <p>
                       Zapojte se do života naší komunity prostřednictvím
