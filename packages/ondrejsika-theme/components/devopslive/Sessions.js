@@ -49,7 +49,7 @@ const Sessions = props => {
         <>
           <Row>
             <Col md={11}>
-              <div onClick={handleShow} style={{ maxWidth: "550px" }}>
+              <div onClick={handleShow}>
                 <TextBeige className="pt-4">
                   {props.event.date} od {props.event.time}
                 </TextBeige>

@@ -3,14 +3,12 @@ import styled from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
 import events from "@app/data/devopslive.yml";
 import Markdown from "@app/common/components/Markdown";
-import Text from "@app/ondrejsika-theme/components/lp/LP-text";
 import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader";
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
-import Point from "@app/ondrejsika-theme/components/lp/LP-point";
 import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
 import Button from "@app/ondrejsika-theme/components/lp/LP-button";
 import devops from "@app/data/pictures/devops.svg";
-import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
+// import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
 import slack from "@app/data/pictures/social-networks/slack.svg";
 import newsletter from "@app/data/pictures/newsletter.svg";
 
@@ -20,15 +18,17 @@ import TechnologyIcons from "@app/ondrejsika-theme/components/devopslive/Technol
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
-  font-weight: bold;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
-
-  font-size: 2.5rem;
+  font-size: 3.3rem;
   @media (max-width: 1200px) {
     font-size: 2rem;
   }
+`;
+const Header = styled.h1`
+  font-size: 5rem;
+  font-weight: bold;
 `;
 
 const Section = styled.div`
@@ -40,12 +40,13 @@ const TextBeige = styled.span`
 const Center = styled.div`
   text-align: center;
 `;
-const RoomyRow = styled(Row)`
-  margin-bottom: 4em;
-`;
 const Img = styled.img`
   max-width: 100%;
   height: auto;
+`;
+const Underline = styled.span`
+  border-bottom: 5px solid #c8bfb0;
+  padding-right: 50px;
 `;
 
 const Page = () => {
@@ -54,17 +55,19 @@ const Page = () => {
       <Background blue paddingBottom="0">
         <Container>
           <Row>
-            <Col md={4}>
+            <Col md={2}>
               <img
                 src={devops}
-                className="pt-md-5"
-                style={{ float: "right", height: "200px" }}
+                className="pt-md-5 img-fluid"
+                style={{ height: "280px" }}
               />
             </Col>
-            <Col lg={4}>
+            <Col lg={6} style={{ marginLeft: "-50px" }}>
               <MainTitle className="pt-md-5">
-                DevOps <br />
-                live
+                <Header>DevOps </Header>
+                <TextBeige>live</TextBeige>
+                <br />
+                by <Underline>Ondrej Sika</Underline>
               </MainTitle>
             </Col>
             <Col lg={4}>
@@ -75,24 +78,22 @@ const Page = () => {
       </Background>
       <Background light_grey>
         <Container>
-          <SectionHeader>
-            Posuňme spolu firemní DevOps do 21. století
-          </SectionHeader>
+          <SectionHeader>Co je DevOps live</SectionHeader>
           <ColorBox white>
-            DevOps live je můj zbrusu nový online stream kde si budeme povídat
-            na zajímavé témata přibližně jednou za dva týdny. <br />
-            Cílem streamu je seznámit Vás s nejnovější open-source DevOps
-            architekturou, která šetří Váš čas i peníze. Sdílet s Vámi užitečné
-            tipy, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu
-            vašeho software. Tyto technologie jsem pomáhal nasazovat a školit ve
-            stovce firem, mezi nimi například v globálním startupu 3D tiskárny
-            Průša, v korporátech jako o2, ale i na Ministerstvu Obrany ČR.
-            Začínám v září a vybral jsem 3 nejpopulárnější témata o které
-            projevili zájem mí zákazníci a blízký okruh mých kamarádů
-            programátorů. Zahlasujte za další nebo navrhněte svoje. Vybudujeme
-            spolu online komunitu programátorů, kteří posunou DevOps ve svých
-            firmách na novou úroveň. Skrolujte níže a najdete odkazy na můj
-            DevOps Live newsletter & Slack kanál.
+            DevOps live jsou streamy live codingu zajímavých témat z DevOps, kde
+            ukážu jak si ušetřit práci a že to není tak složité. Za cca hodinu a
+            půl si ukážeme jak nasadit nějakou technologii nebo zlepšit
+            konkrétní workflow.
+            <br />
+            <br />
+            Livestreamy probíhají podobně jako mé školení, bohužel si to
+            nevyzkoušíte při streamu (i když proč ne ;) ), budu ukazovat jak to
+            dělám. Každý stream bude nahrávaný a z některých vznikne i blogpost.
+            <br />
+            <br />
+            To co budu ukazovat jsem nasazoval u firem jako je o2, LandisGyr
+            nebo Průša3d. Připojte se k nim a rozvíjejme společně Vaše znalosti
+            a Vaše DevOps.
           </ColorBox>
           <Section>
             <SectionHeader>příští TERMÍN</SectionHeader>
@@ -152,7 +153,7 @@ const Page = () => {
               );
             })}
           </Section>
-          <Section>
+          {/* <Section>
             <RoomyRow style={{ marginRight: "0" }}>
               <Col md={5} sm={12}>
                 <Img src={ondrej_table} />
@@ -176,7 +177,7 @@ const Page = () => {
                 </ColorBox>
               </Col>
             </RoomyRow>
-          </Section>
+          </Section> */}
           <Section>
             <Row>
               <Col md={6}>
