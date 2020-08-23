@@ -6,6 +6,7 @@ const Page = () => (
     title="Follow Up Index"
     hideNewsletter={true}
     markdown={`
+- [Docker & Kubernetes, Adbros, 5. 8. 2020](/follow-up/2020-08-05-adbros-docker-kubernetes)
 - [Gitlab CI, SNK, 31. 7. 2020](/follow-up/2020-07-31-snk-gitlab-ci)
 `}
   />
