@@ -8,55 +8,55 @@ const Page = () => (
     subheader="Adbros, 5. 8. 2020"
     hideNewsletter={true}
     markdown={`
-## Materialy
+## Materilály
 
-### Repozitar s kurzy
+### Repozitář s kurzy
 
 - Docker - https://github.com/ondrejsika/docker-training/
 - Kubernetes - https://github.com/ondrejsika/kubernetes-training/
 
-### Repozitare, ktere jsme pri skoleni vytvorili
+### Repozitáře, které jsme při školení vytvořili
 
-- Ukazkovy projekt v PHP - https://github.com/sika-training-examples/k8s--adbros--2020-08-06--example-php-project
+- Ukázkový projekt v PHP - https://github.com/sika-training-examples/k8s--adbros--2020-08-06--example-php-project
 
-### Dalsi pouzite repozitare
+### Další použité repozitáře
 
 - Terraform Infrastruktura Demo Gitlabu - https://github.com/ondrejsika/terraform-demo-gitlab
 - Skript na setup Gitlab Runneru - https://github.com/ondrejsika/gitlab-ci-runner
 - Traefik s Let's Encrypt - https://github.com/ondrejsika/traefik-le
 
-### Ukazky Gitlab CI
+### Ukázky Gitlab CI
 
 - Docker Compose deployment - https://github.com/ondrejsika/gitlab-ci-docker-compose-traefik--example
 - Kubernetes deployment - https://github.com/ondrejsika/gitlab-ci-example-kubernetes
 
-### Temata, ktere jsme nakousli
+### Témata, které jsme nakousli
 
-- Terraform - Infrastructure as a code, [Skoleni Terraformu](/skoleni/terraform)
-- Digital Ocean - Cloudova Platforma, [Skoleni Digital Ocean](/skoleni/digitalocean)
-- AWS - Cloudova Platforma, skoleni pripravuji
+- Terraform - Infrastructure as a code, [Školení Terraformu](/skoleni/terraform)
+- Digital Ocean - Cloudova Platforma, [Školení Digital Ocean](/skoleni/digitalocean)
+- AWS - Cloudova Platforma, školení pripravuji
 
-Pokud by jste meli zajem o nejake dalsi skoleni, muzete si vybrat zde:
+Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
 
-- Vsechny kurzy - https://ondrej-sika.cz/seznam-skoleni
-- Verejne terminy - https://ondrej-sika.cz/verejne-terminy/
+- Všechny kurzy - https://ondrej-sika.cz/seznam-skoleni
+- Veřejné termíny - https://ondrej-sika.cz/verejne-terminy/
 
-### Ostatni zajimave repozitare
+### Ostatní zajímavé repozitáře
 
-- https://ondrej-sika.cz/repozitare/ - Seznam zajimavych repozitaru
-- https://github.com/ondrejsika - Vsechny me repozitare na Githubu
+- https://ondrej-sika.cz/repozitare/ - Seznam zajímavých repozitářů
+- https://github.com/ondrejsika - Všechny mé repozitáře na Githubu
 
-Pokud se Vam bude neco libit, budu rad za hvezdicky. Diky.
+Pokud se Vám bude něco líbit, budu rád za hvězdičky. Díky.
 
-## Dalsi kroky
+## Další kroky
 
-- Budu rad, kduz mi napisete doporuceni na LinkedIn a na Twitter
-  - Linkedin: pridajte si me a ja vam poslu zadost - https://www.linkedin.com/in/ondrejsika/
-  - Twitter: Tweetnete neco s \`@ondrejsika\`.
-- Pridejte se do komunit ucastniku mych skoleni, ktere buduji na Slacku, Facebooku a Linkedinu - https://join.sika.io
-- Pokud jste ve zpetne vazbe nezaskrtly ze chcete newsletter, muzete se prihlasit zde - https://sika.link/newsletter/
+- Budu rád, když mi napíšete doporučení na LinkedIn a na Twitter
+  - Linkedin: přidejte si mne a já vám pošlu žádost - https://www.linkedin.com/in/ondrejsika/
+  - Twitter: Tweetnete něco s \`@ondrejsika\`.
+- Přidejte se do komunit účastníků mých školení, které buduji na Slacku, Facebooku a Linkedinu - https://join.sika.io
+- Pokud jste ve zpětné vazbě nezaškrtly, že chcete newsletter, můžete se přihlásit zde - https://sika.link/newsletter/
 
-At se Vam dari ne jen s Gitlab CI! O.
+Ať se Vám daří ve všem, nejen s Gitlab CI! O.
 `}
   />
 );
