@@ -11,12 +11,12 @@ const Li = styled.li`
     ${props =>
       props.empty &&
       css`
-        content: "♢";
+        content: "▪";
       `}
     ${props =>
       props.full &&
       css`
-        content: "♦";
+        content: "▪";
       `}
     
     height: 0.5em;

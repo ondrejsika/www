@@ -9,6 +9,7 @@ import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import Point from "@app/ondrejsika-theme/components/lp/LP-point";
 import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
 import Button from "@app/ondrejsika-theme/components/lp/LP-button";
+import devops from "@app/data/pictures/devopsicon.png";
 import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
 import slack from "@app/data/pictures/social-networks/slack.svg";
 import Sessions from "@app/ondrejsika-theme/components/devopslive/Sessions";
@@ -50,7 +51,14 @@ const Page = () => {
       <Background blue paddingBottom="0">
         <Container>
           <Row>
-            <Col lg={8}>
+            <Col md={4}>
+              <img
+                src={devops}
+                className="pt-md-5"
+                style={{ float: "right", height: "200px" }}
+              />
+            </Col>
+            <Col lg={4}>
               <MainTitle className="pt-md-5">
                 DevOps <br />
                 live
@@ -91,21 +99,17 @@ const Page = () => {
               </TextBeige>
               <h3 className="pb-2 bold">{events[0].title}</h3>
               <Row>
-                <Col md={6}>
-                  <p className="pb-4 pt-3">
-                    <Markdown source={events[0].about} />
-                  </p>
-                </Col>
-                <Col
-                  md={6}
-                  className="pt-3"
-                  style={{ borderLeft: "5px solid #c8bfb0" }}
-                >
+                <Col md={6} className="pt-3">
                   <ul>
                     <p className="pb-4">
                       <Markdown source={events[0].points} />
                     </p>
                   </ul>
+                </Col>
+                <Col md={6}>
+                  <p className="pb-4 pt-3">
+                    <Markdown source={events[0].about} />
+                  </p>
                 </Col>
                 <Col md={6}>
                   <Center>
@@ -117,7 +121,7 @@ const Page = () => {
                 <Col
                   md={6}
                   className="pt-3"
-                  style={{ borderLeft: "5px solid #c8bfb0" }}
+                  // style={{ borderLeft: "5px solid #c8bfb0" }}
                 >
                   <Center>
                     <h3
