@@ -23,10 +23,8 @@ const Lecturer = props => (
     <Row>
       <Col sm={8}>
         {props.bio && <Text>{props.bio}</Text>}
-        <H3>O mě</H3>
-        {props.aboutMe && <Text>{props.aboutMe}</Text>}
 
-        <H3>Co skolim</H3>
+        <H3>Moje kurzy</H3>
         <ul>
           {props.courses.map((course, i) => (
             <Li key={i}>

@@ -13,7 +13,7 @@ const OurTeam = props => (
       {props.lecturers.map((lecturer, i) => (
         <div key={i}>
           <H1>
-            <Link href={`/lektor/${lecturer[1]}`}>{lecturer[0]}</Link>
+            <Link href={`/lektor/${lecturer.id}`}>{lecturer.name}</Link>
           </H1>
         </div>
       ))}

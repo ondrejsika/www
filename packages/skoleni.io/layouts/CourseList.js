@@ -5,8 +5,11 @@ import { Container } from "react-bootstrap";
 import Markdown from "@app/common/components/Markdown";
 import styled from "styled-components";
 import Link from "next/link";
+import technologies_data from "@app/data/skoleni.io/technologies.yml";
 import courses_data from "@app/data/skoleni.io/courses.yml";
 import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
+import H3 from "@app/skoleni.io/components/H3";
+import Li from "@app/skoleni.io/components/H3";
 
 const InquiryBtn = styled.a`
   border: 2px solid #1f1f1f;
@@ -35,45 +38,40 @@ const getCourse = course_id => {
   db.add("lecturers", lecturers_data);
   db.setCursor("courses");
   db.filter("id", course_id);
-  db.lookupOne("courses", "lecturers", "lecturer_id", "id", "lecturer");
+  db.lookupOne("courses", "lecturers", "lecturer_id", "id", "lecturer")
   let course = db.getOne();
   return course;
 };
 
-const Course = props => {
-  let course_id = props.course_id;
-  let course = getCourse(course_id);
+const CourseList = props => {
+  let technology_id = props.technology_id;
 
-  let price_open = course.price_open;
-  let price_in_house = course.price_in_house;
-  let description = course.description;
-  let course_name = course.name;
-  let lecturer_name = course.lecturer.name;
+  let db = new StaticDB();
+  db.add("technologies", technologies_data);
+  db.setCursor("technologies");
+  db.filter("id", technology_id);
+  let technology = db.getOne();
+
   return (
     <>
-      <Header
-        site={props.site}
-        header={course_name}
-        lecturer={lecturer_name}
-        lecturer_id={lecturer_name}
-      />
+      <Header header={technology.name} />
       <Container>
-        <Markdown source={description} />
-        <Wrapper>
-          <PrizeHeader>Cena školení</PrizeHeader>
-          <p>
-            Otevřený termín: <b>{price_open}</b> bez DPH
-          </p>
-          <p>
-            Firemní školení: <b>{price_in_house}</b> bez DPH
-          </p>
-        </Wrapper>
-        <Link href="#form">
-          <InquiryBtn>Nezávazně poptat školení</InquiryBtn>
-        </Link>
+        <H3>Lektori</H3>
+        <ul>
+          {technology.courses.map((course_id, i) => {
+            let course = getCourse(course_id);
+            return (
+              <Li key={i}>
+                <Link href={`/skoleni/${course.id}`}>
+                  <a>{course.lecturer.name}</a>
+                </Link>
+              </Li>
+            );
+          })}
+        </ul>
       </Container>
     </>
   );
 };
 
-export default Course;
+export default CourseList;

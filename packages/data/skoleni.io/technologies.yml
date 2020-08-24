@@ -1,0 +1,20 @@
+- id: git
+  name: Git
+  courses:
+    - vojtamares-git
+
+- id: gitlab-ci
+  name: Gitlab CI
+  courses:
+    - vojtamares-gitlab-ci
+
+- id: docker
+  name: Docker
+  courses:
+    - ondrejsika-docker
+    - vojtamares-docker
+
+- id: kubernetes
+  name: Kubernetes
+  courses:
+    - ondrejsika-kubernetes

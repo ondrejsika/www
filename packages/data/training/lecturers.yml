@@ -53,7 +53,6 @@
     - gitlab
 
 - id: michaelkaplan
-  skoleniio: true
   name: Michael Kaplan
   bio:
     cs: Freelance IT architekt, konzultant a lektor se zamerenim na DevOps
@@ -76,5 +75,5 @@
     cs: Software Engineer @ IBM
     en: Software Engineer @ IBM
     de: Software Engineer @ IBM
-  bio_long: 
+  bio_long:
   courses:

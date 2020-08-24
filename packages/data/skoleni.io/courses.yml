@@ -1,0 +1,28 @@
+# Ondrej Sika
+
+- id: ondrejsika-docker
+  lecturer_id: ondrejsika
+  technology_id: docker
+  name: Docker
+
+- id: ondrejsika-kubernetes
+  lecturer_id: ondrejsika
+  technology_id: kubernetes
+  name: Kubernetes
+
+# Vojta Mares
+
+- id: vojtamares-git
+  lecturer_id: ondrejsika
+  technology_id: git
+  name: Git & Gitlab
+
+- id: vojtamares-gitlab-ci
+  lecturer_id: ondrejsika
+  technology_id: gitlab-ci
+  name: Gitlab CI
+
+- id: vojtamares-docker
+  lecturer_id: ondrejsika
+  technology_id: docker
+  name: Docker
