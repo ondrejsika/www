@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const ColorBox = styled.div`
-  padding: 2.5em;
+  padding: 3em 4em;
   ${props =>
     props.white &&
     css`

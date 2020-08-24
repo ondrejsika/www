@@ -107,7 +107,10 @@ const Page = () => {
               <Row>
                 <Col md={6} className="pt-3">
                   <p className="pb-4">
-                    <Markdown source={events[0].points} />
+                    <Markdown
+                      source={events[0].points}
+                      styled={{ paddingLeft: "40px" }}
+                    />
                   </p>
                 </Col>
                 <Col md={6}>
