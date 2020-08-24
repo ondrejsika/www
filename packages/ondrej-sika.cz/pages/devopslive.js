@@ -15,6 +15,7 @@ import SocialBox from "@app/ondrejsika-theme/components/devopslive/SocialBox";
 import Sessions from "@app/ondrejsika-theme/components/devopslive/Sessions";
 import ColorBox from "@app/ondrejsika-theme/components/devopslive/ColorBox";
 import TechnologyIcons from "@app/ondrejsika-theme/components/devopslive/TechnologyIcons";
+import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
@@ -52,7 +53,10 @@ const Underline = styled.span`
 const Page = () => {
   return (
     <>
-      <Background blue paddingBottom="0">
+      <div className="d-block d-lg-none">
+        <MainBar header="DevOps Live" />
+      </div>
+      <Background blue paddingBottom="0" className="d-none d-lg-block">
         <Container>
           <Row>
             <Col md={2}>
@@ -181,7 +185,7 @@ const Page = () => {
               </Col>
             </RoomyRow>
           </Section> */}
-          <Section>
+          <Section className="d-none d-lg-block">
             <Row>
               <SocialBox
                 icon={slack}
