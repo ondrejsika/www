@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import styled from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
 import events from "@app/data/devopslive.yml";
@@ -53,6 +54,9 @@ const Underline = styled.span`
 const Page = () => {
   return (
     <>
+      <Head>
+        <title>DevOps Live by Ondrej Sika</title>
+      </Head>
       <div className="d-block d-lg-none">
         <MainBar header="DevOps Live" />
       </div>
