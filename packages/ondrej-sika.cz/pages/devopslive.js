@@ -139,7 +139,7 @@ const Page = () => {
                         color: "#c8bfb0"
                       }}
                     >
-                      Zdarma nebo 200 Kč
+                      200 Kč
                     </h3>
                   </Center>
                 </Col>
