@@ -23,7 +23,7 @@ const Navbar = (
     NavName="Ondřej Šika"
     NavUnderheader="Software {Engineer, Konzultant, Lektor}"
     links={[
-      ["DOMŮ", "/"],
+      ["DEVOPS LIVE", "/devopslive"],
       [
         "KURZY",
         [
