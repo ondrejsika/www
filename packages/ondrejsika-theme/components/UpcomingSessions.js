@@ -43,6 +43,7 @@ const date_for_google_calendar_link = dd_mm_yyyy =>
 
 const UpcomingSessions = props => {
   var hide_prices = props.hide_prices;
+  let link_site_prefix = props.link_site_prefix || "";
 
   const A = styled.a`
     padding-left: 1.5em;
@@ -146,7 +147,9 @@ const UpcomingSessions = props => {
                     {(() => {
                       if (props.show_session_link)
                         return (
-                          <Link href={`/${session_page_prefix}/${course.id}`}>
+                          <Link
+                            href={`${link_site_prefix}/${session_page_prefix}/${course.id}`}
+                          >
                             <a>
                               {course.name} {flag}
                             </a>
@@ -155,7 +158,7 @@ const UpcomingSessions = props => {
                       if (props.show_course_link)
                         return (
                           <Link
-                            href={`/${course_page_prefix}/${course.course_id}`}
+                            href={`${link_site_prefix}/${course_page_prefix}/${course.course_id}`}
                           >
                             <a>
                               {course.name} {flag}
@@ -181,7 +184,7 @@ const UpcomingSessions = props => {
                     <Button
                       site={props.site}
                       size="big"
-                      href={`/${session_page_prefix}/${course.id}#register`}
+                      href={`${link_site_prefix}/${session_page_prefix}/${course.id}#register`}
                     >
                       <Translate
                         lang={props.lang}
@@ -261,7 +264,7 @@ const UpcomingSessions = props => {
                     if (props.show_course_link)
                       return (
                         <Link
-                          href={`/${course_page_prefix}/${course.course_id}`}
+                          href={`${link_site_prefix}/${course_page_prefix}/${course.course_id}`}
                         >
                           <a>{course.name}</a>
                         </Link>
@@ -295,7 +298,7 @@ const UpcomingSessions = props => {
               <Button
                 site={props.site}
                 size="big"
-                href={`/${session_page_prefix}/${course.id}#register`}
+                href={`${link_site_prefix}/${session_page_prefix}/${course.id}#register`}
               >
                 <Translate
                   lang={props.lang}

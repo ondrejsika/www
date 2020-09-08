@@ -89,6 +89,7 @@ const Page = props => {
           />
         </h2>
         <UpcomingSessions
+          link_site_prefix="https://ondrej-sika.cz"
           limit={3}
           site_name={site.name}
           lang={site.lang}
