@@ -4,7 +4,6 @@ import { Row, Col } from "react-bootstrap";
 
 import close from "@app/data/pictures/close.svg";
 import arrow from "@app/data/pictures/arrow.svg";
-import ColorBox from "@app/ondrejsika-theme/components/devopslive/ColorBox";
 import TechnologyIcons from "@app/ondrejsika-theme/components/devopslive/TechnologyIcons";
 import Markdown from "@app/common/components/Markdown";
 import Button from "@app/ondrejsika-theme/components/lp/LP-button";
@@ -24,12 +23,20 @@ const SectionHeader = styled.h3`
 const Text = styled.p`
   color: #131480;
 `;
+const Dropbox = styled.div`
+  background-color: white;
+  padding: 1em 1em 0.5em 3em;
+`;
+const DropIcon = styled.img`
+  padding-top: 0.5em;
+`;
+
 const Sessions = props => {
   const [showNextSession, setNextSession] = useState(false);
   const handleShow = () => setNextSession(true);
   const handleClose = () => setNextSession(false);
   return (
-    <ColorBox white className="mt-3">
+    <Dropbox white className="mt-3">
       {!showNextSession ? (
         <Row>
           <Col md={11}>
@@ -43,11 +50,11 @@ const Sessions = props => {
           <Col md={1}>
             {!showNextSession ? (
               <span onClick={handleShow}>
-                <img src={arrow} />
+                <DropIcon src={arrow} />
               </span>
             ) : (
               <span onClick={handleClose}>
-                <img src={close} />
+                <DropIcon src={close} />
               </span>
             )}
           </Col>
@@ -66,11 +73,11 @@ const Sessions = props => {
             <Col md={1}>
               {!showNextSession ? (
                 <span onClick={handleShow}>
-                  <img src={arrow} />
+                  <DropIcon src={arrow} />
                 </span>
               ) : (
                 <span onClick={handleClose}>
-                  <img src={close} />
+                  <DropIcon src={close} />
                 </span>
               )}
             </Col>
@@ -100,7 +107,7 @@ const Sessions = props => {
           </Hidden>
         </>
       )}
-    </ColorBox>
+    </Dropbox>
   );
 };
 

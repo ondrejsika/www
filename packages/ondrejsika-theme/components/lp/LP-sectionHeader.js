@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   ${props =>
     props.tight &&
     css`
-      padding: 2em 0;
+      padding: 3em 0 2em 0;
     `}
 `;
 const Header = styled.h3`

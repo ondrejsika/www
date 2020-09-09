@@ -84,9 +84,9 @@ const Page = () => {
           </Row>
         </Container>
       </Background>
-      <Background light_grey>
+      <Background light_grey style={{ paddingBottom: "2em" }}>
         <Container>
-          <SectionHeader>Co je DevOps live</SectionHeader>
+          <SectionHeader tight>Co je DevOps live</SectionHeader>
           <ColorBox white>
             DevOps live jsou streamy live codingu zajímavých témat z DevOps, kde
             ukážu jak si ušetřit práci a že to není tak složité. Za cca hodinu a
@@ -103,67 +103,65 @@ const Page = () => {
             nebo Průša3d. Připojte se k nim a rozvíjejme společně Vaše znalosti
             a Vaše DevOps.
           </ColorBox>
-          <Section>
-            <SectionHeader>příští TERMÍN</SectionHeader>
-            <ColorBox blue>
-              <div style={{ maxWidth: "500px" }}>
-                <TextBeige className="pt-4">
-                  {events[0].date} od {events[0].time}
-                </TextBeige>
-                <h3 className="pb-2 bold">{events[0].title}</h3>
-              </div>
-              <Row>
-                <Col md={6} className="pt-3">
-                  <p className="pb-4">
-                    <Markdown
-                      source={events[0].points}
-                      styled={{ paddingLeft: "40px" }}
-                    />
-                  </p>
-                </Col>
-                <Col md={6}>
-                  <Center>
-                    {events[0].technologies.map((technology, i) => (
-                      <TechnologyIcons white key={i} icon={technology} />
-                    ))}
-                  </Center>
-                </Col>
-                <Col md={6}>
-                  <Center>
-                    <Button inverse huge href={events[0].eventbrite}>
-                      Přihlásit
-                    </Button>
-                  </Center>
-                </Col>
-                <Col
-                  md={6}
-                  className="pt-3"
-                  // style={{ borderLeft: "5px solid #c8bfb0" }}
-                >
-                  <Center>
-                    <h3
-                      className="pt-3"
-                      style={{
-                        color: "#c8bfb0"
-                      }}
-                    >
-                      200 Kč
-                    </h3>
-                  </Center>
-                </Col>
-              </Row>
-            </ColorBox>
-            <SectionHeader>Nadcházející témata</SectionHeader>
+          <SectionHeader tight>příští TERMÍN</SectionHeader>
+          <ColorBox blue>
+            <div style={{ maxWidth: "500px" }}>
+              <TextBeige className="pt-4">
+                {events[0].date} od {events[0].time}
+              </TextBeige>
+              <h3 className="pb-2 bold">{events[0].title}</h3>
+            </div>
+            <Row>
+              <Col md={6} className="pt-3">
+                <p className="pb-4">
+                  <Markdown
+                    source={events[0].points}
+                    styled={{ paddingLeft: "40px" }}
+                  />
+                </p>
+              </Col>
+              <Col md={6}>
+                <Center>
+                  {events[0].technologies.map((technology, i) => (
+                    <TechnologyIcons white key={i} icon={technology} />
+                  ))}
+                </Center>
+              </Col>
+              <Col md={6}>
+                <Center>
+                  <Button inverse huge href={events[0].eventbrite}>
+                    Přihlásit
+                  </Button>
+                </Center>
+              </Col>
+              <Col
+                md={6}
+                className="pt-3"
+                // style={{ borderLeft: "5px solid #c8bfb0" }}
+              >
+                <Center>
+                  <h3
+                    className="pt-3"
+                    style={{
+                      color: "#c8bfb0"
+                    }}
+                  >
+                    200 Kč
+                  </h3>
+                </Center>
+              </Col>
+            </Row>
+          </ColorBox>
+          <SectionHeader tight>Nadcházející témata</SectionHeader>
 
-            {events.map((event, i) => {
-              if (i == 0 && i < 3) return;
-              return (
-                <div key={i}>
-                  <Sessions event={event} />
-                </div>
-              );
-            })}
-          </Section>
+          {events.map((event, i) => {
+            if (i == 0 && i < 3) return;
+            return (
+              <div key={i}>
+                <Sessions event={event} />
+              </div>
+            );
+          })}
           {/* <Section>
             <RoomyRow style={{ marginRight: "0" }}>
               <Col md={5} sm={12}>

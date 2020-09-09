@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 
 const Background = styled.div`
-    padding: 1em 0 2em 0;
     border-bottom: 1px solid #ffffff;
     background-image: url(${props => props.img});
     background-repeat: no-repeat;
