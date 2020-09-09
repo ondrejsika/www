@@ -36,78 +36,82 @@ const Sessions = props => {
   const handleShow = () => setNextSession(true);
   const handleClose = () => setNextSession(false);
   return (
-    <Dropbox white className="mt-3">
-      {!showNextSession ? (
-        <Row>
-          <Col md={11}>
-            <div onClick={handleShow}>
-              <TextBeige className="pt-4">
-                {props.event.date} od {props.event.time}
-              </TextBeige>
-              <SectionHeader>{props.event.title}</SectionHeader>
-            </div>
-          </Col>
-          <Col md={1}>
-            {!showNextSession ? (
-              <span onClick={handleShow}>
-                <DropIcon src={arrow} />
-              </span>
-            ) : (
-              <span onClick={handleClose}>
-                <DropIcon src={close} />
-              </span>
-            )}
-          </Col>
-        </Row>
-      ) : (
-        <>
-          <Row>
-            <Col md={11}>
-              <div onClick={handleShow}>
-                <TextBeige className="pt-4">
-                  {props.event.date} od {props.event.time}
-                </TextBeige>
-                <SectionHeader>{props.event.title}</SectionHeader>
-              </div>
-            </Col>
-            <Col md={1}>
-              {!showNextSession ? (
-                <span onClick={handleShow}>
-                  <DropIcon src={arrow} />
-                </span>
-              ) : (
-                <span onClick={handleClose}>
-                  <DropIcon src={close} />
-                </span>
-              )}
-            </Col>
-          </Row>
-          <Hidden showNextSession={showNextSession}>
-            <Col md={6}>
-              <Text className="pb-4 pt-3">
-                <Markdown source={props.event.points} />
-              </Text>
-              <Center>
-                <Button huge href={props.event.eventbrite}>
-                  Přihlásit
-                </Button>
-              </Center>
-            </Col>
-            <Col
-              md={6}
-              className="pt-3"
-              style={{ borderLeft: "2px solid #c8bfb0" }}
-            >
-              <Center>
-                {props.event.technologies.map((technology, i) => (
-                  <TechnologyIcons blue key={i} icon={technology} />
-                ))}
-              </Center>
-            </Col>
-          </Hidden>
-        </>
+    <>
+      {props.event.active && (
+        <Dropbox white className="mt-3">
+          {!showNextSession ? (
+            <Row>
+              <Col md={11}>
+                <div onClick={handleShow}>
+                  <TextBeige className="pt-4">
+                    {props.event.date} od {props.event.time}
+                  </TextBeige>
+                  <SectionHeader>{props.event.title}</SectionHeader>
+                </div>
+              </Col>
+              <Col md={1}>
+                {!showNextSession ? (
+                  <span onClick={handleShow}>
+                    <DropIcon src={arrow} />
+                  </span>
+                ) : (
+                  <span onClick={handleClose}>
+                    <DropIcon src={close} />
+                  </span>
+                )}
+              </Col>
+            </Row>
+          ) : (
+            <>
+              <Row>
+                <Col md={11}>
+                  <div onClick={handleShow}>
+                    <TextBeige className="pt-4">
+                      {props.event.date} od {props.event.time}
+                    </TextBeige>
+                    <SectionHeader>{props.event.title}</SectionHeader>
+                  </div>
+                </Col>
+                <Col md={1}>
+                  {!showNextSession ? (
+                    <span onClick={handleShow}>
+                      <DropIcon src={arrow} />
+                    </span>
+                  ) : (
+                    <span onClick={handleClose}>
+                      <DropIcon src={close} />
+                    </span>
+                  )}
+                </Col>
+              </Row>
+              <Hidden showNextSession={showNextSession}>
+                <Col md={6}>
+                  <Text className="pb-4 pt-3">
+                    <Markdown source={props.event.points} />
+                  </Text>
+                  <Center>
+                    <Button huge href={props.event.eventbrite}>
+                      Přihlásit
+                    </Button>
+                  </Center>
+                </Col>
+                <Col
+                  md={6}
+                  className="pt-3"
+                  style={{ borderLeft: "2px solid #c8bfb0" }}
+                >
+                  <Center>
+                    {props.event.technologies.map((technology, i) => (
+                      <TechnologyIcons blue key={i} icon={technology} />
+                    ))}
+                  </Center>
+                </Col>
+              </Hidden>
+            </>
+          )}
+        </Dropbox>
       )}
-    </Dropbox>
+    </>
   );
 };
 
