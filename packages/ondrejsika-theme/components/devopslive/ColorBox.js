@@ -6,6 +6,7 @@ const ColorBox = styled.div`
     props.white &&
     css`
       background-color: white;
+      color: #707070;
     `}
   ${props =>
     props.blue &&

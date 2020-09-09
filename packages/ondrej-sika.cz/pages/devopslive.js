@@ -109,14 +109,14 @@ const Page = () => {
               <TextBeige className="pt-4">
                 {events[0].date} od {events[0].time}
               </TextBeige>
-              <h3 className="pb-2 bold">{events[0].title}</h3>
+              <h3 className="pb-2 pt-1 bold">{events[0].title}</h3>
             </div>
             <Row>
               <Col md={6} className="pt-3">
                 <p className="pb-4">
                   <Markdown
                     source={events[0].points}
-                    styled={{ paddingLeft: "40px" }}
+                    styled={{ paddingLeft: "40px", marginTop: "20px" }}
                   />
                 </p>
               </Col>
@@ -134,11 +134,7 @@ const Page = () => {
                   </Button>
                 </Center>
               </Col>
-              <Col
-                md={6}
-                className="pt-3"
-                // style={{ borderLeft: "5px solid #c8bfb0" }}
-              >
+              <Col md={6} className="pt-3">
                 <Center>
                   <h3
                     className="pt-3"
@@ -193,14 +189,16 @@ const Page = () => {
                 icon={slack}
                 href="https://sikapublic.slack.com/archives/C018ULJEJMD"
                 header="DevOps live community"
-                text="Zapojte se do online komunity programátorů, kteří si vzájemně pomáhají prostřednictvím veřejného Slack kanálu a diskutujte."
+                text="Zapojte se do online komunity programátorů, přes veřejný Slack kanál."
+                button="https://sikapublic.slack.com/archives/C018ULJEJMD"
               />
 
               <SocialBox
                 icon={newsletter}
                 href="https://sika.link/devopslive-newsletter"
                 header="DevOps live newsletter"
-                text="Zapojte se do života naší komunity prostřednictvím veřejného slack kanálu."
+                text="Zapojte se do života naší komunity prostřednictvím DevOps live newsletteru."
+                button="https://sika.link/devopslive-newsletter"
               />
             </Row>
           </Section>
