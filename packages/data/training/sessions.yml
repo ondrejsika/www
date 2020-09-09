@@ -2197,7 +2197,7 @@
 
 # Praha Root.cz Zari
 - id: proxmox-praha-11-09-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: proxmox
