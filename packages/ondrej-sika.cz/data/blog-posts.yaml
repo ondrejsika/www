@@ -1,5 +1,5 @@
 - id: sprava-gitlabu-pomoci-terraformu
-  title: "Sprava Gitlabu pomoci Terraformu"
+  title: "Správa Gitlabu pomocí Terraformu"
   date: 30. 7. 2020
   ad: terraform
   tags:
@@ -7,15 +7,15 @@
     - gitlab
     - devopslive
   perex: |
-    Jak spravuji Gitlab? Klikam nove uzivatele, skupiny, repozitare? Ne! Pouzivam Terraform a ukazu Vam jak to delam.
+    Jak spravuju Gitlab? Klikám nové uživatele, skupiny, repozitáře? Ne! Používám Terraform a ukážu Vám jak to dělám.
   content: |
-    Tento blog post je shrnutim meho prvniho live streamu DevOps Live. DevOps Live je steam live codingu na nejake DevOps tema, ktere typicky nepokryvam ve svych skolenich. Tento steam byl o moznosti spravovat konfiguraci Gitlabu deklarativnim pristupem, cili Terraformem.
+    Tento blog post je shrnutím mého prvního live streamu [DevOps Live](/devopslive). DevOps Live je stream live codingu na nějaké DevOps téma, které typicky nepokrývám ve svých školeních. Tento stream byl o možnosti spravovat konfiguraci Gitlabu deklarativním přístupem, čili Terraformem.
 
-    Gitlab predstavovat nemusim, je to DevOps platforma: hosting Git repozitaru, CI, ... Terraform je nastroj "Infrastructure as a Code", cili na spravu infrastrury formou kodu. Terraform se prevazne pouziba na spravu Virtualnich stroju, S3 bucketu a Kuberneres clusteru v cloudu, ale da se pouzit i na spravu Gitlabu (cehokoliv co ma API). Jdeme na to.
+    Gitlab představovat nemusím, je to DevOps platforma: hosting Git repozitářů, CI, ... Terraform je nástroj "Infrastructure as a Code", čili na správu infrastrury formou kódu. Terraform se převážně používá na správu Virtuálních strojů, S3 bucketu a Kuberneres clusteru v cloudu, ale dá se použít i na správu Gitlabu (čehokoliv co má API). Jdeme na to.
 
-    ## Setup Terraform konfiurace
+    ## Setup Terraform konfigurace
 
-    Vytvorime si repozitar, kam budeme vse davat. Prvni co vytvorime bude soubor `terraform.tf`, kde nakonfigurujeme remote backend v Terraform Cloudu, soubor `versions.tf` kde definujeme jake providery budeme pouzivat a soubor `providers.tf` kde je nainicializujeme.
+    Vytvoříme si repozitář, kam budeme vše dávat. První co vytvoříme bude soubor `terraform.tf`, kde nakonfigurujeme remote backend v Terraform Cloudu, soubor `versions.tf` kde definujeme jaké providery budeme používat a soubor `providers.tf` kde je nainicializujeme.
 
     ```tf
     // terraform.tf
@@ -53,15 +53,15 @@
     }
     ```
 
-    Terraform nainicializujeme prikazem `terraform init`. Potrebujeme nastavit akorat token, kteremu dame prava na API a sudo a domenu Gitlabu. Pouzibam Terraform remote execution, tyto promenne mam definovane v Terraform Cloudu (samozrejme Terraformem).
+    Terraform nainicializujeme příkazem `terraform init`. Potřebujeme nastavit akorát token, kterému dáme práva na API a sudo a doménu Gitlabu. Používám Terraform remote execution, tyto proměnné mám definované v Terraform Cloudu (samozřejmě Terraformem).
 
-    A ted k samotne sprave Gitlabu. Dokumentace ke Gitlab Provideru (`terraform-provider-gitlab`) je na: https://www.terraform.io/docs/providers/gitlab/index.html a je dobre napsana.
+    A teď k samotné správě Gitlabu. Dokumentace ke Gitlab Provideru (`terraform-provider-gitlab`) je na: https://www.terraform.io/docs/providers/gitlab/index.html a je dobře napsaná.
 
-    ## Uzivatele
+    ## Uživatelé
 
-    Ja v Gitlabu potrebuji spravovat hlavne uzivatele, skupiny a repozitare. A samozrejme vazby mezi nimy.
+    Já v Gitlabu potřebuji spravovat hlavně uživatele, skupiny a repozitáře. A samozřejmě vazby mezi nimi.
 
-    Vsechny uzivatele definuju v jednom souboru `users.tf`.
+    Všechny uživatele definuju v jednom souboru `users.tf`.
 
     ```tf
     // users.tf
@@ -86,11 +86,11 @@
 
     ## Skupiny
 
-    Ostatni resources se snazim mit oddelene, pro kazdy mam vlastni soubor, napriklad pro skupinu `www` mam soubor `group_www.tf`. V tomto souboru definuju skupinu, uzivatele, kteri jsou v te skupine a dalsi nastaveni skupiny, jako napriklad CI environment variables.
+    Ostatní resources se snažím mít odděleně, pro každý mám vlastní soubor, například pro skupinu `www` mám soubor `group_www.tf`. V tomto souboru definuju skupinu, uživatele, kteří jsou v té skupině a další nastavení skupiny, jako například CI environment variables.
 
-    Prave sprava CI variables me primela k tomu zamyslet se jak muzu Gitlab spravovat efektivneji, protoze spravovat je rucne je peklo.
+    Právě správa CI variables mě přiměla k tomu zamyslet se jak můžu Gitlab spravovat efektivněji, protože spravovat ho ručně je peklo.
 
-    Ukazka konfiguace skupiny je:
+    Ukázka konfiguace skupiny je:
 
     ```tf
     // group_www.tf
@@ -121,7 +121,7 @@
 
     ## Projekty
 
-    A nakonec definice projektu. Velkou vyhodou vytvereni projektu Terraformem je mozne nastavit parametry, ktere se musi manualne nastavovat pro kazdy repozitar manualne, jako je napriklad Fast-Forward Only merge strategie. Pokud pouziji Terrafrom modul, nebo duplikuji konfiguraci predchoziho projektu, mam jistotu ze nastaveni je rovnou spravne. Zde je ukazka `www/www` projektu v souboru `project_www_www.tf`:
+    A nakonec definice projektu. Velkou výhodou vytváření projektu Terraformem je, že je možné nastavit parametry, které se musí manuálně nastavovat pro každý repozitář manuálně, jako je například Fast-Forward Only merge strategie. Pokud použiju Terrafrom modul, nebo duplikuji konfiguraci předchozího projektu, mám jistotu, že nastavení je rovnou správné. Zde je ukázka `www/www` projektu v souboru `project_www_www.tf`:
 
     ```tf
     // project_www_www.tf
@@ -135,11 +135,11 @@
     }
     ```
 
-    ## Zaver
+    ## Závěr
 
-    A ted uz staci po kazde uprave zavolat `terraform apply` a mame zmeny nasazene. Gitlab provider podporuje jeste mnoho dalsi konfigurace, napriklad integrace s Kubernetes, ale o tom priste.
+    A teď už stačí po každé úpravě zavolat `terraform apply` a máme změny nasazené. Gitlab provider podporuje ještě mnoho další konfigurace, například integrace s Kubernetes, ale o tom příště.
 
-    Ja beru moznost konfigurovat Gitlab deklarativni formou jako velke setreni casu a moznost mit prehled o aktualnim stavu, navic verzovany Gitem.
+    Já beru možnost konfigurovat Gitlab deklarativní formou jako velké šetření času a možnost mít přehled o aktuálním stavu, navíc verzovaný Gitem.
 
 - id: emaily-jak-a-kam-je-odesilat
   title: "Emaily: Jak a kam je odesílat"
