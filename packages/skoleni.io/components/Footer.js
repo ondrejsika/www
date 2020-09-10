@@ -39,7 +39,7 @@ const Footer = props => (
             <H3l>Ondřej Šika</H3l>
             <A href="mailto:ondrej@sika.io">ondrej@sika.io</A>
             <br />
-            <A href="https://ondej-sika.cz">ondej-sika.cz</A>
+            <A href="https://sika.io">sika.io</A>
           </Content>
         </Col>
         <Col md={4}>
