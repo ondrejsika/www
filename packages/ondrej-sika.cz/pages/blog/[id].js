@@ -29,7 +29,8 @@ let Post = props => {
       terraform: "Školení Terraformu",
       react: "Školení Reactu",
       "gitlab-ci": "Školení Gitlab CI",
-      rancher: "Školení Rancheru"
+      rancher: "Školení Rancheru",
+      prometheus: "Školení Promethea"
     }[post.ad];
   }
 
