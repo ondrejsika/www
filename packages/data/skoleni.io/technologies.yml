@@ -66,3 +66,13 @@
   name: MySQL
   courses:
     - davidkarban-mysql
+
+- id: java
+  name: Java
+  courses:
+    - jiripinkas-java
+
+- id: sql
+  name: SQL
+  courses:
+    - jiripinkas-sql

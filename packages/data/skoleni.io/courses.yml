@@ -100,3 +100,15 @@
   lecturer_id: davidkarban
   technology_id: mysql
   name: MySQL
+
+# Jiri Pinkas
+
+- id: jiripinkas-java
+  lecturer_id: jiripinkas
+  technology_id: java
+  name: Java
+
+- id: jiripinkas-sql
+  lecturer_id: jiripinkas
+  technology_id: sql
+  name: SQL
