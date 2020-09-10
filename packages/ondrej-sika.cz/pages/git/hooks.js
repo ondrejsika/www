@@ -1,8 +1,10 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Git Hooks"
+    ad="git"
     markdown={`
 ## Co jsou to Git hooky? A k čemu vlastně slouží?
 
@@ -55,19 +57,11 @@ Zdroje:
 - <https://git-scm.com/docs/githooks>
 - <https://githooks.com/>
 `}
-    after={
-      <div className="alert alert-primary mt-5 text-center" role="alert">
-        <h2>Zajímáte se o Git? Zkuste mé školení Gitu!</h2>
-        <a className="btn btn-large btn-primary m-3" href="/skoleni/git">
-          Ukázat školení Gitu
-        </a>
-      </div>
-    }
   >
     <style
       dangerouslySetInnerHTML={{
         __html: `
-   .container img {
+   .article img {
     width: 60%;
   }
 `
@@ -75,3 +69,5 @@ Zdroje:
     />
   </Article>
 );
+
+export default Page;
