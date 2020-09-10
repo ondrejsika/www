@@ -1,11 +1,13 @@
 - id: git
   name: Git
   courses:
+    - ondrejsika-git
     - vojtamares-git
 
 - id: gitlab-ci
   name: Gitlab CI
   courses:
+    - ondrejsika-gitlab-ci
     - vojtamares-gitlab-ci
 
 - id: docker
@@ -56,6 +58,7 @@
   name: Ansible
   courses:
     - veroskaplan-ansible
+    - ondrejsika-ansible
 
 - id: aws
   name: AWS
@@ -76,3 +79,43 @@
   name: SQL
   courses:
     - jiripinkas-sql
+
+- id: digitalocean
+  name: Digital Ocean
+  courses:
+    - ondrejsika-digitalocean
+
+- id: elk
+  name: ELK
+  courses:
+    - ondrejsika-elk
+
+- id: prometheus
+  name: Prometheus
+  courses:
+    - ondrejsika-prometheus
+
+- id: openstack
+  name: Open Stack
+  courses:
+    - ondrejsika-openstack
+
+- id: python
+  name: Python
+  courses:
+    - ondrejsika-python
+
+- id: django
+  name: Django
+  courses:
+    - ondrejsika-django
+
+- id: go
+  name: Go (Golang)
+  courses:
+    - ondrejsika-go
+
+- id: rancher
+  name: Rancher
+  courses:
+    - ondrejsika-rancher

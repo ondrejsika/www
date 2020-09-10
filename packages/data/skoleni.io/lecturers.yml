@@ -4,6 +4,17 @@
     - ondrejsika-docker
     - ondrejsika-kubernetes
     - ondrejsika-terraform
+    - ondrejsika-gitlab-ci
+    - ondrejsika-git
+    - ondrejsika-digitalocean
+    - ondrejsika-elk
+    - ondrejsika-prometheus
+    - ondrejsika-ansible
+    - ondrejsika-openstack
+    - ondrejsika-python
+    - ondrejsika-django
+    - ondrejsika-go
+    - ondrejsika-rancher
   bio: Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.
 
 - id: vojtamares
