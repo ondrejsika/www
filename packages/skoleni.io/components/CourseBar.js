@@ -2,41 +2,36 @@ import React from "react";
 import styled from "styled-components";
 import H1 from "@app/skoleni.io/components/H1";
 import Link from "@app/skoleni.io/components/MyLink";
-import courses_data from "@app/data/training/courses.yml";
+import technologies_data from "@app/data/skoleni.io/technologies.yml";
 import StaticDB from "@app/common/staticdb";
 
 const Courses = styled.div`
   margin: 0;
 `;
 
-const Lecturer = styled.span`
-  font-size: 1.5em;
-`;
-
 let db = new StaticDB();
-db.add("courses", courses_data);
-db.setCursor("courses");
-db.filterExists("skoleniio");
-let courses = db.get();
+db.add("technologies", technologies_data);
+db.setCursor("technologies");
+let technologies = db.get();
 
 const CourseBar = () => (
   <>
     <Courses>
-      {courses.map((skoleni_io, i) => {
+      {technologies.map((technology, i) => {
         return (
           <div key={i}>
             <Courses>
               <H1>
-                <Link href={`skoleni/${skoleni_io.id}`}>
-                  {skoleni_io.skoleniio.name}{" "}
+                <Link href={`seznam-skoleni/${technology.id}`}>
+                  {technology.name}{" "}
                 </Link>
               </H1>
-              <Lecturer>
+              {/* <Lecturer>
                 by&nbsp;
                 <Link href={`lektor/${skoleni_io.skoleniio.lecturer}`}>
                   {skoleni_io.skoleniio.lecturer}
                 </Link>
-              </Lecturer>
+              </Lecturer> */}
             </Courses>
           </div>
         );

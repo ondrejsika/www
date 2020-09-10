@@ -5,7 +5,8 @@ import { Container } from "react-bootstrap";
 import Markdown from "@app/common/components/Markdown";
 import styled from "styled-components";
 import Link from "next/link";
-import data from "@app/data/training/courses.yml";
+import courses_data from "@app/data/skoleni.io/courses.yml";
+import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
 
 const InquiryBtn = styled.a`
   border: 2px solid #1f1f1f;
@@ -28,30 +29,34 @@ const Wrapper = styled.div`
   padding-top: 1em;
 `;
 
-const Course = props => {
-  let course_id = props.course_id;
-  let lang = props.lang;
-  let location = props.location;
-
+const getCourse = course_id => {
   let db = new StaticDB();
-  db.add("courses", data);
+  db.add("courses", courses_data);
+  db.add("lecturers", lecturers_data);
   db.setCursor("courses");
   db.filter("id", course_id);
-  db.filterExists("skoleniio");
+  db.lookupOne("courses", "lecturers", "lecturer_id", "id", "lecturer");
   let course = db.getOne();
+  return course;
+};
 
-  let price_open = course.price.open[location];
-  let price_in_house = course.price.in_house[location];
-  let description = course.description[lang];
-  let course_name = course.skoleniio.name;
-  let lecturer_name = course.skoleniio.lecturer;
+const Course = props => {
+  let course_id = props.course_id;
+  let course = getCourse(course_id);
+
+  let price_open = course.price_open;
+  let price_in_house = course.price_in_house;
+  let description = course.description;
+  let course_name = course.name;
+  let lecturer_id = course.lecturer.id;
+  let lecturer_name = course.lecturer.name;
   return (
     <>
       <Header
         site={props.site}
         header={course_name}
         lecturer={lecturer_name}
-        lecturer_id={lecturer_name}
+        lecturer_id={lecturer_id}
       />
       <Container>
         <Markdown source={description} />
