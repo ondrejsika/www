@@ -1,20 +1,20 @@
-- id: sprava-gitlabu-a-githubu-pomoci-terraformu
-  active: true
-  eventbrite: https://www.eventbrite.com/e/117783428405
-  title: Správa Gitlabu a Githubu pomocí Terraformu
-  date: 2.9.2020
-  time: "19:00"
-  about: |
-    Každý má v Gitlabu a Githubu hodně repozitářů s hromadou nastavení a správa přes GUI není nijak efektivní ani příjemná. Terraform umožňuje spravovat infrastrukturu jako kód a podporuje správu Gitlabu a Githubu.
-  points: |
-    - Správa repozitářů, uživatelů a skupin
-    - Správa nastavení pro CI
-    - Integrace s dalšími komponenty infrastruktury
-    - Jak Gitlab konfiguruji já
-  technologies:
-    - gitlab
-    - terraform
-    - git
+# - id: sprava-gitlabu-a-githubu-pomoci-terraformu
+#   active: true
+#   eventbrite: https://www.eventbrite.com/e/117783428405
+#   title: Správa Gitlabu a Githubu pomocí Terraformu
+#   date: 2.9.2020
+#   time: "19:00"
+#   about: |
+#     Každý má v Gitlabu a Githubu hodně repozitářů s hromadou nastavení a správa přes GUI není nijak efektivní ani příjemná. Terraform umožňuje spravovat infrastrukturu jako kód a podporuje správu Gitlabu a Githubu.
+#   points: |
+#     - Správa repozitářů, uživatelů a skupin
+#     - Správa nastavení pro CI
+#     - Integrace s dalšími komponenty infrastruktury
+#     - Jak Gitlab konfiguruji já
+#   technologies:
+#     - gitlab
+#     - terraform
+#     - git
 
 - id: docker-a-traefik-proxy
   eventbrite: https://www.eventbrite.com/e/117834916407
