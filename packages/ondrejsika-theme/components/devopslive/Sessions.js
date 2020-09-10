@@ -89,11 +89,13 @@ const Sessions = props => {
                   <Text className="pb-4 pt-3">
                     <Markdown source={props.event.points} />
                   </Text>
-                  <Center>
-                    <Button huge href={props.event.eventbrite}>
-                      Přihlásit
-                    </Button>
-                  </Center>
+                  {props.event.eventbrite && (
+                    <Center>
+                      <Button huge href={props.event.eventbrite}>
+                        Přihlásit
+                      </Button>
+                    </Center>
+                  )}
                 </Col>
                 <Col
                   md={6}
