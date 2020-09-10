@@ -5,18 +5,53 @@ const fs = require("fs");
 module.exports = {
   exportTrailingSlash: true,
   exportPathMap: function(defaultPathMap) {
-    // remove default blog page render (without post)
+    // remove default lecturer render (without post)
     delete defaultPathMap["/lektor/[id]"];
 
-    // export blog post
+    // export lecturers
     try {
       var lecturers = yaml.safeLoad(
-        fs.readFileSync("../data/training/lecturers.yml", "utf8")
+        fs.readFileSync("../data/skoleni.io/lecturers.yml", "utf8")
       );
       lecturers.forEach(function(obj) {
-        if (!obj.skoleniio) return;
         defaultPathMap[`/lektor/${obj.id}`] = {
           page: "/lektor/[id]",
+          query: { id: obj.id }
+        };
+      });
+    } catch (e) {
+      console.log(e);
+    }
+
+    // remove default course render (without post)
+    delete defaultPathMap["/skoleni/[id]"];
+
+    // export course
+    try {
+      var courses = yaml.safeLoad(
+        fs.readFileSync("../data/skoleni.io/courses.yml", "utf8")
+      );
+      courses.forEach(function(obj) {
+        defaultPathMap[`/skoleni/${obj.id}`] = {
+          page: "/skoleni/[id]",
+          query: { id: obj.id }
+        };
+      });
+    } catch (e) {
+      console.log(e);
+    }
+
+    // remove default technology render (without post)
+    delete defaultPathMap["/seznam-skoleni/[id]"];
+
+    // export technology
+    try {
+      var technologies = yaml.safeLoad(
+        fs.readFileSync("../data/skoleni.io/technologies.yml", "utf8")
+      );
+      technologies.forEach(function(obj) {
+        defaultPathMap[`/seznam-skoleni/${obj.id}`] = {
+          page: "/seznam-skoleni/[id]",
           query: { id: obj.id }
         };
       });
