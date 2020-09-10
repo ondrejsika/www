@@ -4,6 +4,7 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 const Page = () => (
   <Article
     title="Instalace Promethea, Alert Manageru a Grafany pro lokalni vyvoj"
+    ad="prometheus"
     markdown={`
 ## Mac
 

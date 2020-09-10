@@ -5,6 +5,7 @@ const Page = props => (
   <Article
     site={props.site}
     title="Kubernetes"
+    ad="kubernetes"
     markdown={`
 - [Instalace](/kubernetes/instalace)
 - [Pridani Kubernetes clusteru do Gitlabu](/kubernetes/pridani-kubernetes-clusteru-do-gitlabu)

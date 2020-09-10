@@ -1,8 +1,10 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Docker s TLS"
+    ad="docker"
     markdown={`
 Pokud chcete používat Docker vzdáleně (ovládat jej z jiného hostu, je téměř nutností zapnout TLS ověřování. Jak to nasadit si ukážeme zde.
 
@@ -95,9 +97,11 @@ nebo pomocí proměnných
     }
   >
     <style jsx global>{`
-      .article-body img {
+      .article img {
         width: 70%;
       }
     `}</style>
   </Article>
 );
+
+export default Page;

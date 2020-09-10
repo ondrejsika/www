@@ -5,6 +5,7 @@ const Page = props => (
   <Article
     site={props.site}
     title="Pridani Kubernetes clusteru do Gitlabu"
+    ad="kubernetes"
     markdown={`
 Z clusteru potrebujete ziskat informace kam se ma Gitlab pripojit a jak se ma autentifikovat. Budete potrebovat \`server_url\`, \`ca\` a \`token\`.
 

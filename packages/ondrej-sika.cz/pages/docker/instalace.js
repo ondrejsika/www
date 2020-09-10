@@ -1,8 +1,10 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Dockeru"
+    ad="docker"
     markdown={`
 Budeme používat Docker CE (Community Edition). Pro mé školení i drtivou většinou práce stačí.
 
@@ -101,3 +103,5 @@ Pokud máte problém s instalací anebo jakýkoliv dotaz, neváhejte mě napsat 
 `}
   />
 );
+
+export default Page;

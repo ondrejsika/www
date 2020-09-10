@@ -4,6 +4,7 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 const Page = () => (
   <Article
     title="Git Rebase"
+    ad="git"
     markdown={`
 Mám 2 větve, větev master a experiment. Stav repozitáře vypadá takto:
 

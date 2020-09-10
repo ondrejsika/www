@@ -1,8 +1,10 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Git"
+    ad="git"
     markdown={`
 - [Instalace](/git/instalace)
 - [Rebase](/git/rebase)
@@ -10,3 +12,5 @@ export default () => (
 `}
   />
 );
+
+export default Page;

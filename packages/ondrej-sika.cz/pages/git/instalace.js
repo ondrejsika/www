@@ -1,8 +1,10 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Page = () => (
   <Article
     title="Instalace Gitu"
+    ad="git"
     markdown={`
 ### Linux
 
@@ -30,3 +32,5 @@ nebo použít package manager [Chocolatey](https://chocolatey.org/)
 `}
   />
 );
+
+export default Page;

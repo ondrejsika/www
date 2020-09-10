@@ -4,6 +4,7 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 const Page = () => (
   <Article
     title="Instalace Kubernetes pro lokalni vyvoj"
+    ad="kubernetes"
     markdown={`
 Aby jste mohli pouzivat kubernetes lokalne, musite mit nainstalovane tyto nastroje:
 

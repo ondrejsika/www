@@ -4,6 +4,7 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 const Page = () => (
   <Article
     title="Docker"
+    ad="docker"
     markdown={`
 - [Instalace](/docker/instalace)
 - [Docker s TLS](/docker/docker-s-tls)
