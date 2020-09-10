@@ -1,0 +1,27 @@
+- id: ondrejsika
+  name: Ondrej Sika
+  courses:
+    - ondrejsika-docker
+    - ondrejsika-kubernetes
+    - ondrejsika-terraform
+  bio: Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.
+
+- id: vojtamares
+  name: Vojta Mares
+  courses:
+    - vojtamares-gitlab-ci
+    - vojtamares-docker
+  bio: Devopsak!
+
+- id: rdpanek
+  name: Radim Daniel Panek
+  courses:
+    - rdpanek-test-automatizace
+  bio: Tester!
+
+- id: janbarasek
+  name: Jan Barasek
+  courses:
+    - janbarasek-php
+    - janbarasek-vue
+  bio: PHP & Vue!

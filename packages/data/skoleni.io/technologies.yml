@@ -1,0 +1,40 @@
+- id: git
+  name: Git
+  courses:
+    - vojtamares-git
+
+- id: gitlab-ci
+  name: Gitlab CI
+  courses:
+    - vojtamares-gitlab-ci
+
+- id: docker
+  name: Docker
+  courses:
+    - ondrejsika-docker
+    - vojtamares-docker
+
+- id: kubernetes
+  name: Kubernetes
+  courses:
+    - ondrejsika-kubernetes
+
+- id: terraform
+  name: Terraform
+  courses:
+    - ondrejsika-terraform
+
+- id: test-automatizace
+  name: Test Automatizace
+  courses:
+    - rdpanek-test-automatizace
+
+- id: php
+  name: PHP
+  courses:
+    - janbarasek-php
+
+- id: vue
+  name: Vue.js
+  courses:
+    - janbarasek-vue

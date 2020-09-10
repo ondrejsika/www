@@ -1,0 +1,52 @@
+# Ondrej Sika
+
+- id: ondrejsika-docker
+  lecturer_id: ondrejsika
+  technology_id: docker
+  name: Docker
+
+- id: ondrejsika-kubernetes
+  lecturer_id: ondrejsika
+  technology_id: kubernetes
+  name: Kubernetes
+
+- id: ondrejsika-terraform
+  lecturer_id: ondrejsika
+  technology_id: terraform
+  name: Terraform
+
+# Vojta Mares
+
+- id: vojtamares-git
+  lecturer_id: vojtamares
+  technology_id: git
+  name: Git & Gitlab
+
+- id: vojtamares-gitlab-ci
+  lecturer_id: vojtamares
+  technology_id: gitlab-ci
+  name: Gitlab CI
+
+- id: vojtamares-docker
+  lecturer_id: vojtamares
+  technology_id: docker
+  name: Docker
+
+# Radim Daniel Panek
+
+- id: rdpanek-test-automatizace
+  lecturer_id: rdpanek
+  technology_id: test-automatizace
+  name: Test Automatizace
+
+# Jan Barasek
+
+- id: janbarasek-php
+  lecturer_id: janbarasek
+  technology_id: php
+  name: PHP
+
+- id: janbarasek-vue
+  lecturer_id: janbarasek
+  technology_id: vue
+  name: Vue.js
