@@ -34,6 +34,9 @@ const BlogPostFooter = props => {
             Připoj se na Slack
           </Button>
         </span>
+        <span className="mr-3">
+          <Button href="/devopslive">DevOps Live</Button>
+        </span>
       </div>
     </div>
   );
