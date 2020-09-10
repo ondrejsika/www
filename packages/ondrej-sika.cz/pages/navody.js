@@ -41,13 +41,16 @@ Pokud Vás zajímá Kubernetes, podívejte se na mé [Školení Kubernetes](/sko
 - [Co je Terraform](/terraform)
 - [Instalace Terraformu](/terraform/instalace)
 - [Správa Cloudflare DNS pomocí Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
-Pokud Vás zajímá Terraform, podívejte se na mé [Školení Terraformu](/skoleni/terraform)
+- [Správa Gitlabu pomocí Terraformu](/blog/sprava-gitlabu-pomoci-terraformu/)
+
+Pokud Vás zajímá Terraform, podívejte se na mé [Školení Terraformu](/skoleni/terraform) (blog post)
 
 ### Git
 
 - [Instalace](/git/instalace)
 - [Rebase](/git/rebase)
 - [Hooks](/git/hooks)
+- [Správa Gitlabu pomocí Terraformu](/blog/sprava-gitlabu-pomoci-terraformu/) (blog post)
 
 Pokud Vás zajímá Git, podívejte se na mé [Školení Gitu](/skoleni/git)
 

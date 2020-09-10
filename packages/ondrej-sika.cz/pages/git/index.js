@@ -9,6 +9,7 @@ const Page = () => (
 - [Instalace](/git/instalace)
 - [Rebase](/git/rebase)
 - [Hooks](/git/hooks)
+- [Správa Gitlabu pomocí Terraformu](/blog/sprava-gitlabu-pomoci-terraformu/) (blog post)
 `}
   />
 );

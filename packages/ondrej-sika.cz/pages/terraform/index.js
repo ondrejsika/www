@@ -16,6 +16,7 @@ Tato stránka je ve vývoji, pro více informací jděte na oficiální stránky
 
 - [Instalace Terraformu](/terraform/instalace)
 - [Správa Cloudflare DNS pomocí Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
+- [Správa Gitlabu pomocí Terraformu](/blog/sprava-gitlabu-pomoci-terraformu/) (blog post)
 
 `}
   />
