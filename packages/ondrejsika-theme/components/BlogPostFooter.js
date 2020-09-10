@@ -27,7 +27,7 @@ const BlogPostFooter = props => {
           </span>
         )}
         <span className="mr-3">
-          <Button href="mailto:ondrej@sika.io">Newsletter</Button>
+          <Button href="https://sika.link/newsletter">Newsletter</Button>
         </span>
         <span className="mr-3">
           <Button href="https://sika.link/slack-sikapublic">
