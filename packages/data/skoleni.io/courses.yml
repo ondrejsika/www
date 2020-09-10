@@ -4,71 +4,99 @@
   lecturer_id: ondrejsika
   technology_id: docker
   name: Docker
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-kubernetes
   lecturer_id: ondrejsika
   technology_id: kubernetes
   name: Kubernetes
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-terraform
   lecturer_id: ondrejsika
   technology_id: terraform
   name: Terraform
+  price_open: 6 800 CZK
+  price_in_house: 25 000 CZK
 
 - id: ondrejsika-gitlab-ci
   lecturer_id: ondrejsika
   technology_id: gitlab-ci
   name: Gitlab CI
+  price_open: 6 800 CZK
+  price_in_house: 25 000 CZK
 
 - id: ondrejsika-git
   lecturer_id: ondrejsika
   technology_id: git
   name: Git
+  price_open: 6 800 CZK
+  price_in_house: 25 000 CZK
 
 - id: ondrejsika-digitalocean
   lecturer_id: ondrejsika
   technology_id: digitalocean
   name: Digital Ocean
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-elk
   lecturer_id: ondrejsika
   technology_id: elk
   name: ELK
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-prometheus
   lecturer_id: ondrejsika
   technology_id: prometheus
   name: Prometheus
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-ansible
   lecturer_id: ondrejsika
   technology_id: ansible
   name: Ansible
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-openstack
   lecturer_id: ondrejsika
   technology_id: openstack
   name: Open Stack
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-python
   lecturer_id: ondrejsika
   technology_id: python
   name: Python
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-django
   lecturer_id: ondrejsika
   technology_id: django
   name: Django
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-go
   lecturer_id: ondrejsika
   technology_id: go
   name: Go (Golang)
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
 
 - id: ondrejsika-rancher
   lecturer_id: ondrejsika
   technology_id: rancher
   name: Rancher
+  price_open: 6 800 CZK
+  price_in_house: 25 000 CZK
 
 # Vojta Mares
 
