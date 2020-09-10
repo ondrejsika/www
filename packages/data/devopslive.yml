@@ -48,3 +48,19 @@
   technologies:
     - gitlab
     - kubernetes
+
+- id: uvod-do-terraformu
+  eventbrite: ""
+  active: true
+  title: Úvod do Terraformu
+  date: 21.10.2020
+  time: "19:00"
+  about: |
+    Terraform je nastroj na správu infrastruktury formou kódu. Pojďme si ukázat jak na to.
+  points: |
+    - Co je Terraform a jeho výhody
+    - Instalace Terraformu a konfigurace Terraform Cloudu
+    - Ukázka práce s infrastrukturou (Digital Ocean, Cloudflare)
+  technologies:
+    - terraform
+    - digitalocean
