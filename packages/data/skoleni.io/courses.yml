@@ -74,3 +74,29 @@
   lecturer_id: steida
   technology_id: react
   name: React
+
+# Marek Bartik
+
+- id: marekbartik-kubernetes-networking
+  lecturer_id: marekbartik
+  technology_id: kubernetes
+  name: Kubernetes Networking
+
+# Veros Kaplan
+
+- id: veroskaplan-ansible
+  lecturer_id: veroskaplan
+  technology_id: ansible
+  name: Ansible
+
+# David Karban
+
+- id: davidkarban-aws
+  lecturer_id: davidkarban
+  technology_id: aws
+  name: AWS
+
+- id: davidkarban-mysql
+  lecturer_id: davidkarban
+  technology_id: mysql
+  name: MySQL

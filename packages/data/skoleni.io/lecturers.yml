@@ -39,3 +39,22 @@
     - steida-react
     - steida-typescript
   bio: Ancap & JS!
+
+- id: marekbartik
+  name: Marek Bartik
+  bio: Kubernetes @ Pipetail
+  courses:
+    - marekbartik-kubernetes-networking
+
+- id: veroskaplan
+  name: Veros Kaplan
+  bio: DevOps @ WF Tech
+  courses:
+    - veroskaplan-ansible
+
+- id: davidkarban
+  name: David Karban
+  bio: DevOps @ WF Tech
+  courses:
+    - davidkarban-aws
+    - davidkarban-mysql

@@ -18,6 +18,7 @@
   name: Kubernetes
   courses:
     - ondrejsika-kubernetes
+    - marekbartik-kubernetes-networking
 
 - id: terraform
   name: Terraform
@@ -50,3 +51,18 @@
   name: TypeScript
   courses:
     - steida-typescript
+
+- id: ansible
+  name: Ansible
+  courses:
+    - veroskaplan-ansible
+
+- id: aws
+  name: AWS
+  courses:
+    - davidkarban-aws
+
+- id: mysql
+  name: MySQL
+  courses:
+    - davidkarban-mysql
