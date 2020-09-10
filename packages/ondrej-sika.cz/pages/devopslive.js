@@ -55,7 +55,7 @@ const Page = () => {
   return (
     <>
       <Head>
-        <title>DevOps Live by Ondrej Sika</title>
+        <title>DevOps Live by Ondřej Šika</title>
       </Head>
       <div className="d-block d-lg-none">
         <MainBar header="DevOps Live" />
@@ -94,9 +94,8 @@ const Page = () => {
             konkrétní workflow.
             <br />
             <br />
-            Livestreamy probíhají podobně jako mé školení, bohužel si to
-            nevyzkoušíte při streamu (i když proč ne ;) ), budu ukazovat jak to
-            dělám. Každý stream bude nahrávaný a z některých vznikne i blogpost.
+            Livestreamy probíhají podobně jako mé školení, budu živě ukazovat jak to
+            dělám a zároveň komentovat. Každý stream bude nahrávaný a z některých vznikne i blogpost.
             <br />
             <br />
             To co budu ukazovat jsem nasazoval u firem jako je o2, LandisGyr
