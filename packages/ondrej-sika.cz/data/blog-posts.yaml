@@ -1,3 +1,145 @@
+- id: sprava-gitlabu-pomoci-terraformu
+  title: "Sprava Gitlabu pomoci Terraformu"
+  date: 30. 7. 2020
+  tags:
+    - terraform
+    - gitlab
+    - devopslive
+  perex: |
+    Jak spravuji Gitlab? Klikam nove uzivatele, skupiny, repozitare? Ne! Pouzivam Terraform a ukazu Vam jak to delam.
+  content: |
+    Tento blog post je shrnutim meho prvniho live streamu DevOps Live. DevOps Live je steam live codingu na nejake DevOps tema, ktere typicky nepokryvam ve svych skolenich. Tento steam byl o moznosti spravovat konfiguraci Gitlabu deklarativnim pristupem, cili Terraformem.
+
+    Gitlab predstavovat nemusim, je to DevOps platforma: hosting Git repozitaru, CI, ... Terraform je nastroj "Infrastructure as a Code", cili na spravu infrastrury formou kodu. Terraform se prevazne pouziba na spravu Virtualnich stroju, S3 bucketu a Kuberneres clusteru v cloudu, ale da se pouzit i na spravu Gitlabu (cehokoliv co ma API). Jdeme na to.
+
+    ## Setup Terraform konfiurace
+
+    Vytvorime si repozitar, kam budeme vse davat. Prvni co vytvorime bude soubor `terraform.tf`, kde nakonfigurujeme remote backend v Terraform Cloudu, soubor `versions.tf` kde definujeme jake providery budeme pouzivat a soubor `providers.tf` kde je nainicializujeme.
+
+    ```tf
+    // terraform.tf
+    terraform {
+      backend "remote" {
+        organization = "ondrejsika"
+
+        workspaces {
+          name = "gitlab"
+        }
+      }
+    }
+    ```
+
+    ```tf
+    // versions.tf
+    terraform {
+      required_providers {
+        gitlab = {
+          source = "terraform-providers/gitlab"
+        }
+      }
+      required_version = ">= 0.13"
+    }
+    ```
+
+    ```tf
+    // providers.tf
+    variable "gitlab_token" {}
+    variable "gitlab_domain" {}
+
+    provider "gitlab" {
+      base_url = "https://${var.gitlab_token}/api/v4/"
+      token = var.gitlab_token
+    }
+    ```
+
+    Terraform nainicializujeme prikazem `terraform init`. Potrebujeme nastavit akorat token, kteremu dame prava na API a sudo a domenu Gitlabu. Pouzibam Terraform remote execution, tyto promenne mam definovane v Terraform Cloudu (samozrejme Terraformem).
+
+    A ted k samotne sprave Gitlabu. Dokumentace ke Gitlab Provideru (`terraform-provider-gitlab`) je na: https://www.terraform.io/docs/providers/gitlab/index.html a je dobre napsana.
+
+    ## Uzivatele
+
+    Ja v Gitlabu potrebuji spravovat hlavne uzivatele, skupiny a repozitare. A samozrejme vazby mezi nimy.
+
+    Vsechny uzivatele definuju v jednom souboru `users.tf`.
+
+    ```tf
+    // users.tf
+    resource "gitlab_user" "vojtamares" {
+      name             = "Ondrej Sika"
+      username         = "ondrejsika"
+      email            = "xxx@xxx.com"
+      can_create_group = false
+      reset_password   = false
+      projects_limit    = 100000
+    }
+
+    resource "gitlab_user" "vojtamares" {
+      name             = "Vojtěch Mareš"
+      username         = "vojtamares"
+      email            = "xxx@xxx.com"
+      can_create_group = false
+      reset_password   = false
+      projects_limit    = 100000
+    }
+    ```
+
+    ## Skupiny
+
+    Ostatni resources se snazim mit oddelene, pro kazdy mam vlastni soubor, napriklad pro skupinu `www` mam soubor `group_www.tf`. V tomto souboru definuju skupinu, uzivatele, kteri jsou v te skupine a dalsi nastaveni skupiny, jako napriklad CI environment variables.
+
+    Prave sprava CI variables me primela k tomu zamyslet se jak muzu Gitlab spravovat efektivneji, protoze spravovat je rucne je peklo.
+
+    Ukazka konfiguace skupiny je:
+
+    ```tf
+    // group_www.tf
+    resource "gitlab_group" "www" {
+      name        = "www"
+      path        = "www"
+      visibility_level = "public"
+    }
+
+    # --- Members ---
+
+    resource "gitlab_group_membership" "www_vojtamares" {
+      group_id     = gitlab_group.www.id
+      user_id      = gitlab_user.vojtamares.id
+      access_level = "owner"
+    }
+
+    # --- Variables ---
+
+    resource "gitlab_group_variable" "www_DEV_DOMAIN_SUFFIX" {
+      group     = gitlab_group.www.id
+      key       = "DEV_DOMAIN_SUFFIX"
+      value     = "xsika.cz"
+      protected = false
+      masked    = false
+    }
+    ```
+
+    ## Projekty
+
+    A nakonec definice projektu. Velkou vyhodou vytvereni projektu Terraformem je mozne nastavit parametry, ktere se musi manualne nastavovat pro kazdy repozitar manualne, jako je napriklad Fast-Forward Only merge strategie. Pokud pouziji Terrafrom modul, nebo duplikuji konfiguraci predchoziho projektu, mam jistotu ze nastaveni je rovnou spravne. Zde je ukazka `www/www` projektu v souboru `project_www_www.tf`:
+
+    ```tf
+    // project_www_www.tf
+    resource "gitlab_project" "www_www" {
+      namespace_id = gitlab_group.www.id
+      name = "www"
+      visibility_level = "public"
+      merge_method = "ff"
+      default_branch = "master"
+      remove_source_branch_after_merge = true
+    }
+    ```
+
+    ## Zaver
+
+    A ted uz staci po kazde uprave zavolat `terraform apply` a mame zmeny nasazene. Gitlab provider podporuje jeste mnoho dalsi konfigurace, napriklad integrace s Kubernetes, ale o tom priste.
+
+    Ja beru moznost konfigurovat Gitlab deklarativni formou jako velke setreni casu a moznost mit prehled o aktualnim stavu, navic verzovany Gitem.
+
 - id: emaily-jak-a-kam-je-odesilat
   title: "Emaily: Jak a kam je odesílat"
   date: 30. 7. 2020
