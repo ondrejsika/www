@@ -33,8 +33,20 @@
   name: PHP
   courses:
     - janbarasek-php
+    - adambisek-react
+
+- id: react
+  name: React
+  courses:
+    - adambisek-react
+    - steida-react
 
 - id: vue
   name: Vue.js
   courses:
     - janbarasek-vue
+
+- id: typescript
+  name: TypeScript
+  courses:
+    - steida-typescript

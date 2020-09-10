@@ -25,3 +25,17 @@
     - janbarasek-php
     - janbarasek-vue
   bio: PHP & Vue!
+
+- id: adambisek
+  name: Adam Bisek
+  courses:
+    - adambisek-php
+    - adambisek-react
+  bio: PHP & React
+
+- id: steida
+  name: Daniel Steigerwald
+  courses:
+    - steida-react
+    - steida-typescript
+  bio: Ancap & JS!

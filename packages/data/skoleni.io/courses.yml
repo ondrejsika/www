@@ -50,3 +50,27 @@
   lecturer_id: janbarasek
   technology_id: vue
   name: Vue.js
+
+# Adam Bisek
+
+- id: adambisek-php
+  lecturer_id: adambisek
+  technology_id: php
+  name: PHP
+
+- id: adambisek-react
+  lecturer_id: adambisek
+  technology_id: react
+  name: React
+
+# Daniel Steigerwald
+
+- id: steida-typescript
+  lecturer_id: steida
+  technology_id: typescript
+  name: TypeScript
+
+- id: steida-react
+  lecturer_id: steida
+  technology_id: react
+  name: React
