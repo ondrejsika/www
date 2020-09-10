@@ -3,6 +3,7 @@ import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 import AdBar from "@app/ondrejsika-theme/components/AdBar";
 import NewsletterBar from "@app/ondrejsika-theme/components/NewsletterBar";
+import BlogPostFooter from "@app/ondrejsika-theme/components/BlogPostFooter";
 
 import Head from "next/head";
 
@@ -15,6 +16,23 @@ posts.map((element, i) => {
 
 let Post = props => {
   let post = posts[posts_id_map[props.post_id]];
+
+  let trainingButtonLink = null;
+  let trainingButtonText = null;
+
+  if (post.ad) {
+    trainingButtonLink = "/skoleni/" + post.ad;
+    trainingButtonText = {
+      git: "Školení Gitu",
+      docker: "Školení Dockeru",
+      kubernetes: "Školení Kubernetes",
+      terraform: "Školení Terraformu",
+      react: "Školení Reactu",
+      "gitlab-ci": "Školení Gitlab CI",
+      rancher: "Školení Rancheru"
+    }[post.ad];
+  }
+
   return (
     <div>
       <Head>
@@ -33,13 +51,10 @@ let Post = props => {
       />
       <div className="container pt-4">
         <Markdown source={post.content} />
-        {(() => {
-          if (post.ad) {
-            return <AdBar ad={post.ad} />;
-          } else {
-            return <NewsletterBar />;
-          }
-        })()}
+        <BlogPostFooter
+          trainingButtonText={trainingButtonText}
+          trainingButtonLink={trainingButtonLink}
+        />
       </div>
     </div>
   );

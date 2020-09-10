@@ -1,6 +1,7 @@
 - id: sprava-gitlabu-pomoci-terraformu
   title: "Sprava Gitlabu pomoci Terraformu"
   date: 30. 7. 2020
+  ad: terraform
   tags:
     - terraform
     - gitlab
