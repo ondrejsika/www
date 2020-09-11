@@ -12,116 +12,182 @@
 
 - id: gitlab-ci
   name: Gitlab CI
+  description: |
+    Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutinní úkoly jako je 
+    pouštění testů, kvality kódu anebo nasazování. Umožní Vám rychleji začleňovat změny do masteru a rychleji 
+    nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images 
+    anebo pouštět testy v kontejnerech.
   courses:
     - ondrejsika-gitlab-ci
     - vojtamares-gitlab-ci
 
 - id: docker
   name: Docker
+  description: |
+    Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. 
+    Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. 
+    Mějte prostředí jako součást vaší aplikace.
   courses:
     - ondrejsika-docker
     - vojtamares-docker
 
 - id: kubernetes
   name: Kubernetes
+  description: |
+    Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči 
+    na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny 
+    velikosti firem, od startupu po korporace.
   courses:
     - ondrejsika-kubernetes
     - marekbartik-kubernetes-networking
 
 - id: terraform
   name: Terraform
+  description: |
+    Terraform je nástroj, který se používá ke správě infrastruktury v cloudu, jak veřejném (AWS, Azure, GCP), tak privátním 
+    (OpenStack, VMware vSphere).
+
+    Terraform Vám umožní spravovat infrastruktutru jako kód, to znamená verzovanou v Gitu, přidávání resources pomocí merge 
+    (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředí přesně tak, jako je 
+    v produkci bez zbytečného úsilí. O všech komponentách máte přehled a můžete predikovat ceny. Konec klikání infrastruktury, zkuste Terraform.
+
+    Terraform umožnuje spravovat více cloudových providerů současne, zároveň umožnuje pracovat s hibridními cloudy (část v 
+    privátním cloudu, část ve veřejném).
   courses:
     - ondrejsika-terraform
 
 - id: test-automatizace
   name: Test Automatizace
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - rdpanek-test-automatizace
 
 - id: php
   name: PHP
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - janbarasek-php
     - adambisek-react
 
 - id: react
   name: React
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - adambisek-react
     - steida-react
 
 - id: vue
   name: Vue.js
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - janbarasek-vue
 
 - id: typescript
   name: TypeScript
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - steida-typescript
 
 - id: ansible
   name: Ansible
+  description: |
+    Ansible je nástroj na hromadnou správu konfigurací a nasazování. Vy deklarujete vysledný stav serveru a služeb a 
+    Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný 
+    výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci 
+    máte verzovanou Gitem a nestane se vám, že ztratíte přehled, kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. 
+    Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
   courses:
     - veroskaplan-ansible
     - ondrejsika-ansible
 
 - id: aws
   name: AWS
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - davidkarban-aws
 
 - id: mysql
   name: MySQL
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - davidkarban-mysql
 
 - id: java
   name: Java
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - jiripinkas-java
 
 - id: sql
   name: SQL
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - jiripinkas-sql
 
 - id: digitalocean
   name: Digital Ocean
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-digitalocean
 
 - id: elk
   name: ELK
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-elk
 
 - id: prometheus
   name: Prometheus
+  description: |
+    Prométheus je moderní monitoringový nástroj a metrics server. Umožňuje sbírat metrická data z vaší aplikace a většiny 
+    komponent Váši infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prométheus spadá pod CNCF, stejně 
+    jako Kubernetes.
   courses:
     - ondrejsika-prometheus
 
 - id: openstack
   name: Open Stack
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-openstack
 
 - id: python
   name: Python
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-python
 
 - id: django
   name: Django
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-django
 
 - id: go
   name: Go (Golang)
+  description: |
+    Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-go
 
 - id: rancher
   name: Rancher
+  description: |
+    Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). 
+    Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webové administrace, tak pomocí Terraformu.
   courses:
     - ondrejsika-rancher
