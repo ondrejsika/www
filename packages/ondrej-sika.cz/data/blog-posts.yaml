@@ -1,3 +1,16 @@
+- id: zaznam-devops-live-1-sprava-gitlabu-pomoci-terraformu
+  title: "Záznam DevOps Live #1: Správa Gitlabu a Githubu pomocí Terraformu"
+  date: 11. 9. 2020
+  ad: terraform
+  tags:
+    - terraform
+    - gitlab
+    - github
+    - devopslive
+  perex: |
+    Záznanam z prvního DevOps live streamu: Správa Gitlabu a Githubu pomocí Terraformu
+  youtube: 2pbU11RoTRQ
+
 - id: sprava-gitlabu-pomoci-terraformu
   title: "Správa Gitlabu pomocí Terraformu"
   date: 10. 9. 2020
