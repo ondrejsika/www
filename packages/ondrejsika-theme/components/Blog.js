@@ -4,13 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import { Container } from "react-bootstrap";
-import styled from "styled-components";
-
-const BlogBox = styled.div`
-  background-color: white;
-  padding: 1em 2em;
-  margin: 1em 0;
-`;
+import BlogBox from "@app/ondrejsika-theme/components/BlogBox";
 
 const Blog = props => {
   return (

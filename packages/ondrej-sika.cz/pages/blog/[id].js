@@ -3,7 +3,9 @@ import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 import BlogPostFooter from "@app/ondrejsika-theme/components/BlogPostFooter";
 import YouTube from "react-youtube";
-
+import BlogBox from "@app/ondrejsika-theme/components/BlogBox";
+import Background from "@app/ondrejsika-theme/components/lp/LP-background";
+import { Container } from "react-bootstrap";
 import Head from "next/head";
 
 import posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
@@ -49,20 +51,28 @@ let Post = props => {
           ))
         }
       />
-      <div className="container pt-4">
-        {post.youtube && (
-          <center>
-            <div className="m-3">
-              <YouTube videoId={post.youtube} />
-            </div>
-          </center>
-        )}
-        {post.content && <Markdown source={post.content} />}
-        <BlogPostFooter
-          trainingButtonText={trainingButtonText}
-          trainingButtonLink={trainingButtonLink}
-        />
-      </div>
+      <Background light_grey style={{ padding: "2em 0" }}>
+        <Container>
+          <BlogBox className="article">
+            {post.youtube && (
+              <center>
+                <div className="m-3">
+                  <YouTube videoId={post.youtube} />
+                </div>
+              </center>
+            )}
+            {post.content && <Markdown source={post.content} />}
+          </BlogBox>
+          <BlogBox>
+            {!props.hideFooter && (
+              <BlogPostFooter
+                trainingButtonText={trainingButtonText}
+                trainingButtonLink={trainingButtonLink}
+              />
+            )}
+          </BlogBox>
+        </Container>
+      </Background>
     </div>
   );
 };

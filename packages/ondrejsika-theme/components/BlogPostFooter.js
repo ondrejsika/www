@@ -4,7 +4,7 @@ import Button from "@app/ondrejsika-theme/components/Button";
 
 const BlogPostFooter = props => {
   return (
-    <div className="row pt-5 pb-5">
+    <div className="row pt-3 pb-2">
       <div className="col-2">
         <img src={ondrejsika} className="img-fluid  mb-3" />
       </div>

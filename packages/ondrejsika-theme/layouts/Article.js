@@ -39,12 +39,8 @@ const ArticleLayout = props => {
       <div className="container pt-4 pb-2 article-body">
         <div className="article">
           {props.children}
-          {(() => {
-            if (props.markdown) return <Markdown source={props.markdown} />;
-          })()}
-          {(() => {
-            if (props.after) return props.after;
-          })()}
+          {props.markdown && <Markdown source={props.markdown} />}
+          {props.after && props.after}
         </div>
         {!props.hideFooter && (
           <BlogPostFooter
