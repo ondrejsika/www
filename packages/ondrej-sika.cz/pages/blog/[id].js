@@ -52,7 +52,9 @@ let Post = props => {
       <div className="container pt-4">
         {post.youtube && (
           <center>
-            <YouTube videoId={post.youtube} />
+            <div className="m-3">
+              <YouTube videoId={post.youtube} />
+            </div>
           </center>
         )}
         {post.content && <Markdown source={post.content} />}
