@@ -2211,7 +2211,7 @@
   facebook_event: https://www.facebook.com/events/306925370416542
   linkedin_event: https://www.linkedin.com/events/6699285063315529728/
 - id: docker-praha-14-09-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: docker
