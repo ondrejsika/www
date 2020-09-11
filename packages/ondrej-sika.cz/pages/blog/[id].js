@@ -1,9 +1,8 @@
 import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
-import AdBar from "@app/ondrejsika-theme/components/AdBar";
-import NewsletterBar from "@app/ondrejsika-theme/components/NewsletterBar";
 import BlogPostFooter from "@app/ondrejsika-theme/components/BlogPostFooter";
+import YouTube from "react-youtube";
 
 import Head from "next/head";
 
@@ -51,7 +50,12 @@ let Post = props => {
         }
       />
       <div className="container pt-4">
-        <Markdown source={post.content} />
+        {post.youtube && (
+          <center>
+            <YouTube videoId={post.youtube} />
+          </center>
+        )}
+        {post.content && <Markdown source={post.content} />}
         <BlogPostFooter
           trainingButtonText={trainingButtonText}
           trainingButtonLink={trainingButtonLink}
