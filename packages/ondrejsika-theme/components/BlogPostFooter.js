@@ -6,10 +6,10 @@ import { Row, Col, ButtonGroup } from "react-bootstrap";
 const BlogPostFooter = props => {
   return (
     <Row className="pt-3 pb-2">
-      <Col md={2} sm={0}>
+      <Col md={2}>
         <img src={ondrejsika} className="img-fluid mb-3" />
       </Col>
-      <Col md={10} sm={12}>
+      <Col md={10}>
         <h4>Ondřej Šika</h4>
         <p>
           Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských
