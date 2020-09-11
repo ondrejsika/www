@@ -39,10 +39,10 @@ const Navbar = () => (
     <Container>
       <Nav>
         <NavItem>
-          <Link href="/lektori">lektori</Link>
+          <Link href="/kontakty">Kontakty</Link>
         </NavItem>
         <NavItem>
-          <Link href="/kontakty">Kontakty</Link>
+          <Link href="/lektori">Lektori</Link>
         </NavItem>
         <NavItem>
           <Brand>
