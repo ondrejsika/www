@@ -1,14 +1,15 @@
 import React from "react";
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import Button from "@app/ondrejsika-theme/components/Button";
+import { Row, Col, ButtonGroup } from "react-bootstrap";
 
 const BlogPostFooter = props => {
   return (
-    <div className="row pt-3 pb-2">
-      <div className="col-2">
-        <img src={ondrejsika} className="img-fluid  mb-3" />
-      </div>
-      <div className="col-10">
+    <Row className="pt-3 pb-2">
+      <Col md={2}>
+        <img src={ondrejsika} className="img-fluid mb-3" />
+      </Col>
+      <Col md={10}>
         <h4>Ondřej Šika</h4>
         <p>
           Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských
@@ -16,29 +17,30 @@ const BlogPostFooter = props => {
           prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a
           bezpečnějšímu provozu vašeho software.
         </p>
-        <span className="mr-3">
-          <Button href="mailto:ondrej@sika.io">Napiš mi</Button>
-        </span>
+
+        <ButtonGroup className="mb-2 mr-2">
+          <Button href="mailto:ondrej@sika.io">Napiš&nbsp;mi</Button>
+        </ButtonGroup>
         {props.trainingButtonLink && props.trainingButtonText && (
-          <span className="mr-3">
+          <ButtonGroup className="mb-2 mr-2">
             <Button href={props.trainingButtonLink}>
               {props.trainingButtonText}
             </Button>
-          </span>
+          </ButtonGroup>
         )}
-        <span className="mr-3">
+        <ButtonGroup className="mb-2 mr-2">
           <Button href="https://sika.link/newsletter">Newsletter</Button>
-        </span>
-        <span className="mr-3">
+        </ButtonGroup>
+        <ButtonGroup className="mb-2 mr-2">
           <Button href="https://sika.link/slack-sikapublic">
-            Připoj se na Slack
+            Připoj&nbsp;se&nbsp;na&nbsp;Slack
           </Button>
-        </span>
-        <span className="mr-3">
-          <Button href="/devopslive">DevOps Live</Button>
-        </span>
-      </div>
-    </div>
+        </ButtonGroup>
+        <ButtonGroup className="mb-2 mr-2">
+          <Button href="/devopslive">DevOps&nbsp;Live</Button>
+        </ButtonGroup>
+      </Col>
+    </Row>
   );
 };
 
