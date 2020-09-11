@@ -1,5 +1,11 @@
 - id: git
   name: Git
+  description: |
+    Git je moderní verzovaci nástroj, který se stal de facto standardem mezi vývojáři. Používají jej na 
+    denní bázy jednotlivci, startupy i korporace. Git vám nabízí jednoduchou kolaboraci na projektu s 
+    více lidmi a práci na více částech současně aniž byste si zasahovali do rozdělaných věcí nebo je 
+    jinak narušovali. Spolupráci na vývoji projektu ještě zlepšuje Gitlab, což je kolaborativni platforma 
+    na návrh, vývoj a provozování software (více o Gitlabu v samostatném kurzu).
   courses:
     - ondrejsika-git
     - vojtamares-git

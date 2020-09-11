@@ -8,6 +8,7 @@ import courses_data from "@app/data/skoleni.io/courses.yml";
 import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
 import H3 from "@app/skoleni.io/components/H3";
 import Li from "@app/skoleni.io/components/H3";
+import Markdown from "@app/common/components/Markdown";
 
 const getCourse = course_id => {
   let db = new StaticDB();
@@ -33,6 +34,7 @@ const CourseList = props => {
     <>
       <Header header={technology.name} />
       <Container>
+        <Markdown source={technology.description} />
         <H3>Lektori</H3>
         <ul>
           {technology.courses.map((course_id, i) => {
