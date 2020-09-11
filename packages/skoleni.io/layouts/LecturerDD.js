@@ -4,7 +4,7 @@ import lecturers_yaml from "@app/data/skoleni.io/lecturers.yml";
 import courses_yaml from "@app/data/skoleni.io/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
-import img_ondrejsika from "@app/data/pictures/lecturers/ondrejsika/ondrejsika4x_steave_vertical.jpg";
+import img_ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import img_janpospisil from "@app/data/pictures/lecturers/janpospisil.jpg";
 
 const imgs = {
