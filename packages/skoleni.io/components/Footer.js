@@ -6,6 +6,7 @@ import H3 from "@app/skoleni.io/components/H3";
 
 const A = styled.a`
   color: white !important;
+  text-decoration: underline;
 `;
 
 const Content = styled.div`
@@ -29,9 +30,13 @@ const Footer = props => (
         <Col md={4}>
           <Content>
             <H3>skoleni.io</H3>
-            <A href="mailto:skoleni@skoleni.io">skoleni@skoleni.io</A>
+            <A href="mailto:skoleni@skoleni.io">skoleni@skoleni.io</A> (poptávka
+            školení)
             <br />
-            <A href="mailto:spoluprace@skoleni.io">spoluprace@skoleni.io</A>
+            <A href="mailto:spoluprace@skoleni.io">
+              spoluprace@skoleni.io
+            </A>{" "}
+            (pro lektory)
           </Content>
         </Col>
         <Col md={4}>
