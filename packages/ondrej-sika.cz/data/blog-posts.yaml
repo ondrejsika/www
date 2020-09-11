@@ -10,6 +10,14 @@
   perex: |
     Záznanam z prvního DevOps live streamu: Správa Gitlabu a Githubu pomocí Terraformu
   youtube: 2pbU11RoTRQ
+  content: |
+    Pokud Vás zaujal Terraform obecně, budu mít další live stream přímo na základy Terraformu. Registrovat se můžete na [Eventbrite](https://www.eventbrite.com/e/120441195859).
+
+    Pokud se chcete naučit pracovat s Terraformem, doporučuji Vám mé [__Školení Terraformu__](/skoleni/terraform), nebudete litovat.
+
+    <center>
+    <Twitter tweet_id="1252334258292752392" />
+    </center>
 
 - id: sprava-gitlabu-pomoci-terraformu
   title: "Správa Gitlabu pomocí Terraformu"
