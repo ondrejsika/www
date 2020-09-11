@@ -47,6 +47,7 @@ const SessionDD = props => {
         site={props.site}
         title={`${session.name} ${session.city} - Ondrej Sika`}
         header={`${session.name} ${session.city}`}
+        hideFooter={true}
         subheader={
           session.date_from == session.date_to ? (
             <Translate
