@@ -99,7 +99,8 @@ const Footer = (
             ["Kubernetes", "/skoleni/kubernetes"],
             ["Gitlab CI", "/skoleni/gitlab-ci"],
             ["Terraform", "/skoleni/terraform"],
-            ["Prometheus", "/skoleni/prometheus"]
+            ["Prometheus", "/skoleni/prometheus"],
+            ["Rancher", "/skoleni/rancher"]
           ].map((el, i) => {
             return (
               <ThemeFooter.Li key={i}>
