@@ -2,7 +2,8 @@ import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 import BlogPostFooter from "@app/ondrejsika-theme/components/BlogPostFooter";
-
+import BlogBox from "@app/ondrejsika-theme/components/BlogBox";
+import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import Head from "next/head";
 
 const ArticleLayout = props => {
@@ -35,20 +36,23 @@ const ArticleLayout = props => {
         header={props.header || props.title}
         text={props.subheader}
       />
-
-      <div className="container pt-4 pb-2 article-body">
-        <div className="article">
-          {props.children}
-          {props.markdown && <Markdown source={props.markdown} />}
-          {props.after && props.after}
+      <Background light_grey style={{ padding: "2em 0" }}>
+        <div className="container pt-4 pb-2 article-body">
+          <BlogBox className="article">
+            {props.children}
+            {props.markdown && <Markdown source={props.markdown} />}
+            {props.after && props.after}
+          </BlogBox>
+          {!props.hideFooter && (
+            <BlogBox>
+              <BlogPostFooter
+                trainingButtonText={trainingButtonText}
+                trainingButtonLink={trainingButtonLink}
+              />
+            </BlogBox>
+          )}
         </div>
-        {!props.hideFooter && (
-          <BlogPostFooter
-            trainingButtonText={trainingButtonText}
-            trainingButtonLink={trainingButtonLink}
-          />
-        )}
-      </div>
+      </Background>
     </div>
   );
 };
