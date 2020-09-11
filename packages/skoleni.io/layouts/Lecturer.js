@@ -52,6 +52,39 @@ const Lecturer = props => (
       </Col>
       <Col sm={4}>
         <Img src={props.lecturerImg} />
+        <center>
+          {props.lecturer.twitter && (
+            <a href={`https://twitter.com/${props.lecturer.twitter}`}>
+              @{props.lecturer.twitter}
+            </a>
+          )}
+          {props.lecturer.linkedin && (
+            <>
+              <br />
+              <a href={`https://linkedin.com/in/${props.lecturer.linkedin}`}>
+                /in/{props.lecturer.linkedin}
+              </a>
+            </>
+          )}
+          {props.lecturer.email && (
+            <>
+              <br />
+              <a
+                href={`mailto:${props.lecturer.email}?subject=[skoleni.io] Poptavka skoleni&cc=skoleni@skoleni.io`}
+              >
+                {props.lecturer.email}
+              </a>
+            </>
+          )}
+          {props.lecturer.phone && (
+            <>
+              <br />
+              <a href={`tel:${props.lecturer.phone.replace(/\s/g, "")}`}>
+                {props.lecturer.phone}
+              </a>
+            </>
+          )}
+        </center>
       </Col>
     </Row>
   </Container>

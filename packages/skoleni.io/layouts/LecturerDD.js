@@ -30,6 +30,7 @@ const LecturerDD = props => {
 
   return (
     <Lecturer
+      lecturer={lecturer}
       name={name}
       bio={bio}
       lecturerImg={lecturerImg}
