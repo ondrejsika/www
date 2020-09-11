@@ -75,7 +75,7 @@ const Page = () => {
                 <Header>DevOps </Header>
                 <TextBeige>live</TextBeige>
                 <br />
-                by <Underline>Ondrej Sika</Underline>
+                by <Underline>Ondřej Šika</Underline>
               </MainTitle>
             </Col>
             <Col lg={4}>
@@ -95,7 +95,7 @@ const Page = () => {
             <br />
             <br />
             Livestreamy probíhají podobně jako mé školení, budu živě ukazovat jak to
-            dělám a zároveň komentovat. Každý stream bude nahrávaný a z některých vznikne i blogpost.
+            dělám a zároveň komentovat. Každý stream bude nahrávaný a z některých vznikne i [blogpost](/blog).
             <br />
             <br />
             To co budu ukazovat jsem nasazoval u firem jako je o2, LandisGyr

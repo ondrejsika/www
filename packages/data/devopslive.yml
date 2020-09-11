@@ -50,7 +50,7 @@
     - kubernetes
 
 - id: uvod-do-terraformu
-  eventbrite: ""
+  eventbrite: "https://www.eventbrite.com/e/120441195859"
   active: true
   title: Úvod do Terraformu
   date: 21.10.2020
