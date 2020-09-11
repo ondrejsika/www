@@ -94,8 +94,9 @@ const Page = () => {
             konkrétní workflow.
             <br />
             <br />
-            Livestreamy probíhají podobně jako mé školení, budu živě ukazovat jak to
-            dělám a zároveň komentovat. Každý stream bude nahrávaný a z některých vznikne i [blogpost](/blog).
+            Livestreamy probíhají podobně jako mé školení, budu živě ukazovat
+            jak to dělám a zároveň komentovat. Každý stream bude nahrávaný a z
+            některých vznikne i blogpost.
             <br />
             <br />
             To co budu ukazovat jsem nasazoval u firem jako je o2, LandisGyr
