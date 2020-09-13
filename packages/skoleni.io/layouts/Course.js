@@ -6,6 +6,8 @@ import Markdown from "@app/common/components/Markdown";
 import styled from "styled-components";
 import courses_data from "@app/data/skoleni.io/courses.yml";
 import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
+import recommendations_data from "@app/data/skoleni.io/recommendations.yml";
+import H3 from "@app/skoleni.io/components/H3";
 
 const InquiryBtn = styled.a`
   border: 2px solid #1f1f1f;
@@ -37,6 +39,15 @@ const getCourse = course_id => {
   db.lookupOne("courses", "lecturers", "lecturer_id", "id", "lecturer");
   let course = db.getOne();
   return course;
+};
+
+const getRecommendationsByCourse = course_id => {
+  let db = new StaticDB();
+  db.add("recommendations", recommendations_data);
+  db.setCursor("recommendations");
+  db.filter("course_id", course_id);
+  let recommendations = db.get();
+  return recommendations;
 };
 
 const Course = props => {
@@ -73,6 +84,22 @@ const Course = props => {
         >
           Nezávazně poptat školení
         </InquiryBtn>
+        <H3>Doporučení</H3>
+        <ul>
+          {getRecommendationsByCourse(course_id).map((recommendation, i) => {
+            return (
+              <li key={i}>
+                {recommendation.text}
+                <br />
+                --{" "}
+                <strong>
+                  {recommendation.name}, {recommendation.role},{" "}
+                  {recommendation.company}
+                </strong>
+              </li>
+            );
+          })}
+        </ul>
       </Container>
     </>
   );

@@ -6,6 +6,7 @@ import H3 from "@app/skoleni.io/components/H3";
 import H1 from "@app/skoleni.io/components/H1";
 import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
 import courses_data from "@app/data/skoleni.io/courses.yml";
+import recommendations_data from "@app/data/skoleni.io/recommendations.yml";
 import StaticDB from "@app/common/staticdb";
 
 const Img = styled.img`
@@ -31,13 +32,21 @@ const getCourse = course_id => {
   return course;
 };
 
+const getRecommendationsByLecturer = lecturer_id => {
+  let db = new StaticDB();
+  db.add("recommendations", recommendations_data);
+  db.setCursor("recommendations");
+  db.filter("lecturer_id", lecturer_id);
+  let recommendations = db.get();
+  return recommendations;
+};
+
 const Lecturer = props => (
   <Container>
     <H1>{props.name}</H1>
     <Row>
       <Col sm={8}>
         {props.bio && <Text>{props.bio}</Text>}
-
         <H3>Moje kurzy</H3>
         <ul>
           {props.courses.map((course_id, i) => {
@@ -49,9 +58,27 @@ const Lecturer = props => (
             );
           })}
         </ul>
+        <H3>Doporučení</H3>
+        <ul>
+          {getRecommendationsByLecturer(props.lecturer.id).map(
+            (recommendation, i) => {
+              return (
+                <li key={i}>
+                  {recommendation.text}
+                  <br />
+                  --{" "}
+                  <strong>
+                    {recommendation.name}, {recommendation.role},{" "}
+                    {recommendation.company}
+                  </strong>
+                </li>
+              );
+            }
+          )}
+        </ul>
       </Col>
       <Col sm={4}>
-        <Img src={props.lecturerImg} />
+        <Img src={props.lecturerImg} className="img-fluid rounded-circle" />
         <center>
           {props.lecturer.twitter && (
             <a href={`https://twitter.com/${props.lecturer.twitter}`}>
