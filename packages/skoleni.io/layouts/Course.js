@@ -4,7 +4,6 @@ import Header from "@app/skoleni.io/components/Header";
 import { Container } from "react-bootstrap";
 import Markdown from "@app/common/components/Markdown";
 import styled from "styled-components";
-import Link from "next/link";
 import courses_data from "@app/data/skoleni.io/courses.yml";
 import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
 
@@ -69,9 +68,11 @@ const Course = props => {
             Firemní školení: <b>{price_in_house}</b> bez DPH
           </p>
         </Wrapper>
-        <Link href="#form">
-          <InquiryBtn>Nezávazně poptat školení</InquiryBtn>
-        </Link>
+        <InquiryBtn
+          href={`mailto:${course.lecturer.email}?subject=[skoleni.io][${course_id}] Poptavka skoleni ${course_name}&cc=skoleni@skoleni.io`}
+        >
+          Nezávazně poptat školení
+        </InquiryBtn>
       </Container>
     </>
   );
