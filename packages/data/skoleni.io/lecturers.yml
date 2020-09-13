@@ -27,12 +27,14 @@
     - vojtamares-gitlab-ci
     - vojtamares-docker
   bio: Devopsak!
+  email: skoleni@skoleni.io
 
 - id: rdpanek
   name: Radim Daniel Panek
   courses:
     - rdpanek-test-automatizace
   bio: Tester!
+  email: skoleni@skoleni.io
 
 - id: janbarasek
   name: Jan Barasek
@@ -40,6 +42,7 @@
     - janbarasek-php
     - janbarasek-vue
   bio: PHP & Vue!
+  email: skoleni@skoleni.io
 
 - id: adambisek
   name: Adam Bisek
@@ -47,6 +50,7 @@
     - adambisek-php
     - adambisek-react
   bio: PHP & React
+  email: skoleni@skoleni.io
 
 - id: steida
   name: Daniel Steigerwald
@@ -54,18 +58,21 @@
     - steida-react
     - steida-typescript
   bio: Ancap & JS!
+  email: skoleni@skoleni.io
 
 - id: marekbartik
   name: Marek Bartik
   bio: Kubernetes @ Pipetail
   courses:
     - marekbartik-kubernetes-networking
+  email: skoleni@skoleni.io
 
 - id: veroskaplan
   name: Veros Kaplan
   bio: DevOps @ WF Tech
   courses:
     - veroskaplan-ansible
+  email: skoleni@skoleni.io
 
 - id: davidkarban
   name: David Karban
@@ -73,12 +80,13 @@
   courses:
     - davidkarban-aws
     - davidkarban-mysql
+  email: skoleni@skoleni.io
 
 - id: jiripinkas
   name: Jiří Pinkas
   bio: |
     Jsem hlavním (a v drtivé většině jediným) školitelem Java a SQL školení. V minulosti jsem pracoval pro pár známých i méně známých společností, na několika malých i velkých projektech a když nejsem na školení, tak tyto projekty obvykle dále rozšiřuji. Z hobby projektů bych v současnosti vyzdvihnul javalibs.com, což je online vyhledávač pro The Central Repository (hlavní Maven repozitář) a další Maven repozitáře s open-source knihovnami. Když nedělám nic z výše uvedeného, tak plním roli otce a manžela (a strašně rád vařím)
-
+  email: skoleni@skoleni.io
   courses:
     - jiripinkas-java
     - jiripinkas-sql
