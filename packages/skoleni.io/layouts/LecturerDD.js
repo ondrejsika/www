@@ -4,12 +4,10 @@ import lecturers_yaml from "@app/data/skoleni.io/lecturers.yml";
 import courses_yaml from "@app/data/skoleni.io/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
-import img_ondrejsika from "@app/data/pictures/ondrejsika.jpg";
-import img_janpospisil from "@app/data/pictures/lecturers/janpospisil.jpg";
+import img_ondrejsika from "@app/data/skoleni.io/images/lecturers/ondrejsika.jpg";
 
 const imgs = {
-  ondrejsika: img_ondrejsika,
-  janpospisil: img_janpospisil
+  ondrejsika: img_ondrejsika
 };
 
 const LecturerDD = props => {
