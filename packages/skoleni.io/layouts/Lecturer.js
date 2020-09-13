@@ -78,7 +78,13 @@ const Lecturer = props => (
         </ul>
       </Col>
       <Col sm={4}>
-        <Img src={props.lecturerImg} className="img-fluid rounded-circle" />
+        <Img
+          src={
+            props.lecturer.github &&
+            `https://github.com/${props.lecturer.github}.png`
+          }
+          className="img-fluid rounded-circle"
+        />
         <center>
           {props.lecturer.twitter && (
             <a href={`https://twitter.com/${props.lecturer.twitter}`}>

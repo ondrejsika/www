@@ -20,6 +20,7 @@
   linkedin: ondrejsika
   email: ondrej@sika.io
   phone: +420 773 452 376
+  github: ondrejsika
 
 - id: vojtamares
   name: Vojta Mares
@@ -28,6 +29,7 @@
     - vojtamares-docker
   bio: Devopsak!
   email: skoleni@skoleni.io
+  github: vojtamares
 
 - id: rdpanek
   name: Radim Daniel Panek
@@ -35,6 +37,7 @@
     - rdpanek-test-automatizace
   bio: Tester!
   email: skoleni@skoleni.io
+  github: rdpanek
 
 - id: janbarasek
   name: Jan Barasek
@@ -43,6 +46,7 @@
     - janbarasek-vue
   bio: PHP & Vue!
   email: skoleni@skoleni.io
+  github: janbarasek
 
 - id: adambisek
   name: Adam Bisek
@@ -51,6 +55,7 @@
     - adambisek-react
   bio: PHP & React
   email: skoleni@skoleni.io
+  github: adambisek
 
 - id: steida
   name: Daniel Steigerwald
@@ -59,6 +64,7 @@
     - steida-typescript
   bio: Ancap & JS!
   email: skoleni@skoleni.io
+  github: steida
 
 - id: marekbartik
   name: Marek Bartik
@@ -66,6 +72,7 @@
   courses:
     - marekbartik-kubernetes-networking
   email: skoleni@skoleni.io
+  github: marekaf
 
 - id: veroskaplan
   name: Veros Kaplan
@@ -73,6 +80,7 @@
   courses:
     - veroskaplan-ansible
   email: skoleni@skoleni.io
+  github: verosk
 
 - id: davidkarban
   name: David Karban
@@ -81,6 +89,7 @@
     - davidkarban-aws
     - davidkarban-mysql
   email: skoleni@skoleni.io
+  github: davidkarban
 
 - id: jiripinkas
   name: Jiří Pinkas
@@ -90,3 +99,4 @@
   courses:
     - jiripinkas-java
     - jiripinkas-sql
+  github: jirkapinkas
