@@ -56,7 +56,7 @@
   date: 21.10.2020
   time: "19:00"
   about: |
-    Terraform je nastroj na správu infrastruktury formou kódu. Pojďme si ukázat jak na to.
+    Terraform je nástroj na správu infrastruktury formou kódu. Pojďme si ukázat jak na to.
   points: |
     - Co je Terraform a jeho výhody
     - Instalace Terraformu a konfigurace Terraform Cloudu
@@ -66,18 +66,18 @@
     - digitalocean
 
 - id: novinky-v-gitlab-ci-11-2020
-  eventbrite: null
+  eventbrite: https://www.eventbrite.com/e/120943797153
   active: true
   title: Novinky v Gitlab CI (listopad 2020)
   date: 4.11.2020
   time: "19:00"
   about: |
-    V Gitlab CI se udalo za posledni rok hodne zmen, rekneme si co se od naseho skoleni zmenilo a jake funkce by Vas mohli zajimat.
+    V Gitlab CI se událo za poslední rok hodně změn, řekneme si, co se od našeho školení změnilo a jaké funkce by Vás mohli zajímat.
   points: |
-    - Lehky uvod do Gitlab CI
-    - Vice pipelines v jednom projetu
+    - Lehký úvod do Gitlab CI
+    - Více pipelines v jednom projektu
     - Vazby mezi projekty
-    - Dynamicky generovane pipelines
-    - Prakticka ukazka
+    - Dynamicky generované pipelines
+    - Praktická ukázka
   technologies:
     - gitlab
