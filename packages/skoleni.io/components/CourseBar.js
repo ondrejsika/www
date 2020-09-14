@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import H1 from "@app/skoleni.io/components/H1";
-import Link from "@app/skoleni.io/components/MyLink";
+// import Link from "@app/skoleni.io/components/MyLink";
 import technologies_data from "@app/data/skoleni.io/technologies.yml";
 import StaticDB from "@app/common/staticdb";
+import Link from "next/link";
 
 const Courses = styled.div`
   margin: 0;
