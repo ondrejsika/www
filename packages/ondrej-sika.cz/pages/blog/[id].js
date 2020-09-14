@@ -7,6 +7,7 @@ import BlogBox from "@app/ondrejsika-theme/components/BlogBox";
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import { Container } from "react-bootstrap";
 import Head from "next/head";
+import Link from "next/link";
 
 import posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
 
@@ -20,6 +21,7 @@ let Post = props => {
 
   let trainingButtonLink = null;
   let trainingButtonText = null;
+  let technology = null;
 
   if (post.ad) {
     trainingButtonLink = "/skoleni/" + post.ad;
@@ -32,6 +34,16 @@ let Post = props => {
       "gitlab-ci": "Školení Gitlab CI",
       rancher: "Školení Rancheru",
       prometheus: "Školení Promethea"
+    }[post.ad];
+    technology = {
+      git: "Git",
+      docker: "Docker",
+      kubernetes: "Kubernetes",
+      terraform: "Terraform",
+      react: "React",
+      "gitlab-ci": "Gitlab CI",
+      rancher: "Rancher",
+      prometheus: "Prometheus"
     }[post.ad];
   }
 
@@ -63,6 +75,32 @@ let Post = props => {
             )}
             {post.content && <Markdown source={post.content} />}
           </BlogBox>
+          {post.ad && (
+            <BlogBox className="article">
+              <center>
+                <div className="m-3">
+                  <h2 className="mb-3">{trainingButtonText}</h2>
+                  <p>
+                    <b>
+                      Zaujal Vás {technology}? Chcete se dozvědět více? Přijďte
+                      na mé{" "}
+                      <Link href={trainingButtonLink}>
+                        <a>{trainingButtonText}</a>
+                      </Link>
+                      !
+                    </b>
+                  </p>
+                  <p>
+                    Případně si můžete vybrat z nabídky{" "}
+                    <Link href="/verejne-terminy">
+                      <a>otevřených kurzů</a>
+                    </Link>
+                    .
+                  </p>
+                </div>
+              </center>
+            </BlogBox>
+          )}
           <BlogBox>
             {!props.hideFooter && (
               <BlogPostFooter
