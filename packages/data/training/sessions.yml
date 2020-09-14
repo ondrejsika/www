@@ -2230,7 +2230,7 @@
   lang: cs
   course_id: gitlab-ci
   name: Školení Gitlab CI
-  city: Praha
+  city: Praha + Online
   price: 6800 CZK
   venue_id: rootcz
   length: 1 den
@@ -2244,7 +2244,7 @@
   lang: cs
   course_id: kubernetes
   name: Školení Kubernetes
-  city: Praha
+  city: Praha + Online
   price: 11999 CZK
   venue_id: rootcz
   length: 2 dny
@@ -2258,7 +2258,7 @@
   lang: cs
   course_id: prometheus
   name: Školení Prometheus
-  city: online
+  city: Online
   price: 6800 CZK
   venue_id: online
   length: 1 den
@@ -2272,7 +2272,7 @@
   lang: cs
   course_id: terraform
   name: Školení Terraform
-  city: Praha
+  city: Praha + Online
   price: 6800 CZK
   venue_id: rootcz
   length: 1 den
@@ -2286,7 +2286,7 @@
   lang: cs
   course_id: digitalocean
   name: Školení Digital Ocean
-  city: Praha
+  city: Praha + Online
   price: 6800 CZK
   venue_id: rootcz
   length: 1 den
@@ -2302,7 +2302,7 @@
   lang: cs
   course_id: docker
   name: Školení Docker
-  city: Brno
+  city: Brno + Online
   price: 11999 CZK
   venue_id: rootcz-brno
   length: 2 dny
@@ -2316,7 +2316,7 @@
   lang: cs
   course_id: gitlab-ci
   name: Školení Gitlab CI
-  city: Brno
+  city: Brno + Online
   price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
@@ -2330,7 +2330,7 @@
   lang: cs
   course_id: kubernetes
   name: Školení Kubernetes
-  city: Brno
+  city: Brno + Online
   price: 11999 CZK
   venue_id: rootcz-brno
   length: 2 dny
