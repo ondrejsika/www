@@ -64,3 +64,20 @@
   technologies:
     - terraform
     - digitalocean
+
+- id: novinky-v-gitlab-ci-11-2020
+  eventbrite: null
+  active: true
+  title: Novinky v Gitlab CI (listopad 2020)
+  date: 4.11.2020
+  time: "19:00"
+  about: |
+    V Gitlab CI se udalo za posledni rok hodne zmen, rekneme si co se od naseho skoleni zmenilo a jake funkce by Vas mohli zajimat.
+  points: |
+    - Lehky uvod do Gitlab CI
+    - Vice pipelines v jednom projetu
+    - Vazby mezi projekty
+    - Dynamicky generovane pipelines
+    - Prakticka ukazka
+  technologies:
+    - gitlab
