@@ -40,13 +40,14 @@
   github: rdpanek
 
 - id: janbarasek
-  name: Jan Barasek
+  name: Jan Barášek
   courses:
     - janbarasek-php
     - janbarasek-vue
-  bio: PHP & Vue!
-  email: skoleni@skoleni.io
+  bio: Jan Barášek podniká jako nezávislý vývojář středních a velkých online aplikací. Spravuje 300 různě velkých webových projektů a píše o tom weby [https://php.baraja.cz](PHP manuál) a [https://vue.baraja.cz](Vue manuál). Během spolupráce s firmami nabral hluboké zkušenosti, které předává dál.
+  email: jan@barasek.com
   github: janbarasek
+  linkedin: janbarasek
 
 - id: adambisek
   name: Adam Bisek
