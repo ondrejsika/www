@@ -132,7 +132,7 @@ const LandingPage = props => (
       <Translate lang={props.site.lang} en="My clients" cs="moji klienti" />
     }
     sectionContactMeHeader={
-      <Translate lang={props.site.lang} en="Contact me" cs="KONTAKTUJTE MĚ" />
+      <Translate lang={props.site.lang} en="Contact me" cs="KONTAKTUJTE MNĚ" />
     }
     call={
       <Translate lang={props.site.lang} en="Call me" cs="Naplánujte hovor" />
@@ -145,7 +145,7 @@ const LandingPage = props => (
       />
     }
     sectionMyStoryHeader={
-      <Translate lang={props.site.lang} en="ABOUT ME" cs="O MĚ" />
+      <Translate lang={props.site.lang} en="ABOUT ME" cs="O MNĚ" />
     }
     MyStoryText={
       <Translate
