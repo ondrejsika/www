@@ -195,10 +195,10 @@ const Page = () => {
 
               <SocialBox
                 icon={newsletter}
-                href="https://tinyletter.com/devopslive"
+                href="http://eepurl.com/dwRHHP"
                 header="DevOps live newsletter"
                 text="Zapojte se do života naší komunity prostřednictvím DevOps live newsletteru."
-                button="https://tinyletter.com/devopslive"
+                button="http://eepurl.com/dwRHHP"
               />
             </Row>
           </Section>
