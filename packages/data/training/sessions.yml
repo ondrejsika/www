@@ -2225,7 +2225,7 @@
   facebook_event: https://www.facebook.com/events/1654907008016856
   linkedin_event: https://www.linkedin.com/events/6699286420705570816/
 - id: gitlab-ci-praha-16-09-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: gitlab-ci
@@ -2239,7 +2239,7 @@
   facebook_event: https://www.facebook.com/events/2642278449419396
   linkedin_event: https://www.linkedin.com/events/6699287887134920705/
 - id: kubernetes-praha-17-09-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: kubernetes
@@ -2252,20 +2252,6 @@
   date_to: 18.9.2020
   facebook_event: https://www.facebook.com/events/3134661776612413
   linkedin_event: https://www.linkedin.com/events/6699289039452835840/
-- id: prometheus-online-30-10-2020
-  active: true
-  country: cz
-  lang: cs
-  course_id: prometheus
-  name: Školení Prometheus
-  city: Online
-  price: 6800 CZK
-  venue_id: online
-  length: 1 den
-  date_from: 30.10.2020
-  date_to: 30.10.2020
-  facebook_event: https://www.facebook.com/events/653319681973039
-  linkedin_event: https://www.linkedin.com/events/6701470338565316608/
 - id: terraform-praha-25-09-2020
   active: true
   country: cz
@@ -2294,6 +2280,20 @@
   date_to: 2.10.2020
   facebook_event: https://www.facebook.com/events/3469410083078250
   linkedin_event: https://www.linkedin.com/events/6699290620546048002/
+- id: prometheus-online-30-10-2020
+  active: true
+  country: cz
+  lang: cs
+  course_id: prometheus
+  name: Školení Prometheus
+  city: Online
+  price: 6800 CZK
+  venue_id: online
+  length: 1 den
+  date_from: 30.10.2020
+  date_to: 30.10.2020
+  facebook_event: https://www.facebook.com/events/653319681973039
+  linkedin_event: https://www.linkedin.com/events/6701470338565316608/
 
 # Brno Root.cz Listopad
 - id: docker-brno-02-11-2020
