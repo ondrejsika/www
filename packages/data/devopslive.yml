@@ -16,22 +16,22 @@
 #     - terraform
 #     - git
 
-- id: docker-a-traefik-proxy
-  eventbrite: https://www.eventbrite.com/e/117834916407
-  active: true
-  title: Docker & Traefik Proxy
-  date: 23.9.2020
-  time: "19:00"
-  about: |
-    Traefik je populární proxy, která podporuje autodiscovery (nejen) Dockeru, což Vám umožňuje velmi jednoduše zpřístupnit světu více Docker kontejnerů na jednom serveru. Traefik se také stará o SSL certifikáty pomoci Let's Encrypt, metriky a mnoho dalšího.
-  points: |
-    - Co je Traefik
-    - Autodiscovery, Let's Encrypt, Metrics & Monitoring
-    - Konfigurace Traefiku s Dockerem
-    - Ukázky z praxe
-  technologies:
-    - git
-    - docker
+# - id: docker-a-traefik-proxy
+#   eventbrite: https://www.eventbrite.com/e/117834916407
+#   active: true
+#   title: Docker & Traefik Proxy
+#   date: 23.9.2020
+#   time: "19:00"
+#   about: |
+#     Traefik je populární proxy, která podporuje autodiscovery (nejen) Dockeru, což Vám umožňuje velmi jednoduše zpřístupnit světu více Docker kontejnerů na jednom serveru. Traefik se také stará o SSL certifikáty pomoci Let's Encrypt, metriky a mnoho dalšího.
+#   points: |
+#     - Co je Traefik
+#     - Autodiscovery, Let's Encrypt, Metrics & Monitoring
+#     - Konfigurace Traefiku s Dockerem
+#     - Ukázky z praxe
+#   technologies:
+#     - git
+#     - docker
 
 - id: jednoducha-integrace-gitlab-ci-a-kubernetes
   eventbrite: https://www.eventbrite.com/e/117836685699/
