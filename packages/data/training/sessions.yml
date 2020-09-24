@@ -2253,7 +2253,7 @@
   facebook_event: https://www.facebook.com/events/3134661776612413
   linkedin_event: https://www.linkedin.com/events/6699289039452835840/
 - id: terraform-praha-25-09-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: terraform
