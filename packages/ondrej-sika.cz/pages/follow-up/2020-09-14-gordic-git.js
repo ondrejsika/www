@@ -19,7 +19,7 @@ https://github.com/sika-training-examples/git--gordic--2020-09-14--example-proje
 
 ### Články na mém webu ohledně Gitu
 
-https://ondrej-sika.cz/git
+[https://ondrej-sika.cz/git](/git)
 
 Videa budou brzy, dám vědět a přidám je sem.
 
@@ -27,12 +27,12 @@ Videa budou brzy, dám vědět a přidám je sem.
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
 
-- Všechny kurzy - https://ondrej-sika.cz/seznam-skoleni
-- Veřejné termíny - https://ondrej-sika.cz/verejne-terminy/
+- Všechny kurzy - [https://ondrej-sika.cz/seznam-skoleni/](/seznam-skoleni/)
+- Veřejné termíny - [https://ondrej-sika.cz/verejne-terminy/](/verejne-terminy/)
 
 ### Ostatní zajímavé repozitáře
 
-- https://ondrej-sika.cz/repozitare/ - Seznam zajímavých repozitářů
+- [https://ondrej-sika.cz/repozitare/](/repozitare/) - Seznam zajímavých repozitářů
 - https://github.com/ondrejsika - Všechny mé repozitáře na Githubu
 
 Pokud se Vám bude něco líbit, budu rád za hvězdičky. Díky.
@@ -43,7 +43,7 @@ Začal jsem streamovat live coding na témata z DevOps, pokud by Vás to zajíma
 
 Zde jsou zaznamy a blog posty z DevOps Live:
 
-- https://ondrej-sika.cz/blog/tag/devopslive
+- [https://ondrej-sika.cz/blog/tag/devopslive](/blog/tag/devopslive)
 
 ## Další kroky
 

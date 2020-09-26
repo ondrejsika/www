@@ -42,12 +42,12 @@ const Page = () => (
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
 
-- Všechny kurzy - https://ondrej-sika.cz/seznam-skoleni
-- Veřejné termíny - https://ondrej-sika.cz/verejne-terminy/
+- Všechny kurzy - [https://ondrej-sika.cz/seznam-skoleni/](/seznam-skoleni/)
+- Veřejné termíny - [https://ondrej-sika.cz/verejne-terminy/](/verejne-terminy/)
 
 ### Ostatní zajímavé repozitáře
 
-- https://ondrej-sika.cz/repozitare/ - Seznam zajímavých repozitářů
+- [https://ondrej-sika.cz/repozitare/](/repozitare/) - Seznam zajímavých repozitářů
 - https://github.com/ondrejsika - Všechny mé repozitáře na Githubu
 
 Pokud se Vám bude něco líbit, budu rád za hvězdičky. Díky.
