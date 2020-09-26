@@ -51,11 +51,13 @@ const Page = () => (
 
 #### Custom Providers
 
-- Terraform Provider for ZEIT - https://github.com/ondrejsika/terraform-provider-zeit
+- Terraform Provider for Vercel - https://github.com/ondrejsika/terraform-provider-vercel
+- Extra Terraform Provider for Linode - https://github.com/ondrejsika/terraform-provider-linodex
 
-#### Nástroje
+#### My Modules
 
-- tf.sh - Tool pro Terraform State in Git - https://github.com/ondrejsika/tf.sh
+- NFS server on Digital Ocean - https://github.com/ondrejsika/terraform-module-do-nfs
+- MySQL DB with user - https://github.com/ondrejsika/terraform-module-mysql-db-with-user
 
 [Vsechny repozitare tykajici se Terraformu na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=terraform&type=&language=)
 
@@ -73,11 +75,11 @@ const Page = () => (
 - Ukazka Ansible konfigurace v Monorepu - https://github.com/ondrejsika/example-ansible-monorepo
 - Docker Compose deployment pomocí Ansible - https://github.com/ondrejsika/ansible-docker-compose--example
 
-## ZEIT
+## Vercel
 
-- Terraform Provider for ZEIT - https://github.com/ondrejsika/terraform-provider-zeit
-- ZEIT API Mock server - https://github.com/ondrejsika/zeit-api-mock
-- Go client for ZEIT API - https://github.com/ondrejsika/zeit-go
+- Terraform Provider for Vercel - https://github.com/ondrejsika/terraform-provider-vercel
+- Vercel API Mock server - https://github.com/ondrejsika/vercel-api-mock
+- Go client for Vercel API - https://github.com/ondrejsika/vercel-go
 
 ## Ceph
 
@@ -87,10 +89,6 @@ const Page = () => (
 
 - Jedna EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-example
 - Vice EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-many-example
-
-## Ostatní
-
-- Err.li - Url zkracovač pro chyby v repozitáři na Githubu - https://github.com/ondrejsika/err.li
 `}
   />
 );
