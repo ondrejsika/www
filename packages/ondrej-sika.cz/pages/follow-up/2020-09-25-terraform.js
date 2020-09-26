@@ -55,7 +55,7 @@ Zde jsou zaznamy a blog posty z DevOps Live:
 - Přidejte se do komunit účastníků mých školení, které buduji na Slacku, Facebooku a Linkedinu - https://join.sika.io
 - Pokud jste ve zpětné vazbě nezaškrtly, že chcete newsletter, můžete se přihlásit zde - https://sika.link/newsletter/
 
-Ať se Vám daří ve všem, nejen s Gitem! Pivo si muzem doluvit na https://calendly.com/ondrejsika/beer.
+Ať se Vám daří ve všem, nejen s Terraformem! Pivo si můžeme doluvit na https://calendly.com/ondrejsika/beer.
 
 Hezky den,
 O.
