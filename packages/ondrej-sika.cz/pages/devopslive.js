@@ -7,7 +7,8 @@ import Markdown from "@app/common/components/Markdown";
 import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader";
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import ondrej_chair from "@app/data/pictures/landing-page/tinipng/ondrej_chair.png";
-import Button from "@app/ondrejsika-theme/components/lp/LP-button";
+import Button from "@app/ondrejsika-theme/components/Button";
+
 import devops from "@app/data/pictures/devops.svg";
 // import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.png";
 import slack from "@app/data/pictures/social-networks/slack.svg";
@@ -49,6 +50,12 @@ const Img = styled.img`
 const Underline = styled.span`
   border-bottom: 5px solid #c8bfb0;
   padding-right: 50px;
+`;
+const Margin = styled.div`
+  padding: 2em 0;
+`;
+const B = styled.span`
+  font-weight: bold !important;
 `;
 
 const Page = () => {
@@ -129,9 +136,15 @@ const Page = () => {
               </Col>
               <Col md={6}>
                 <Center>
-                  <Button inverse huge href={events[0].eventbrite}>
-                    Přihlásit
-                  </Button>
+                  <Margin>
+                    <Button
+                      type="landing-page"
+                      size="huge"
+                      href={events[0].eventbrite}
+                    >
+                      <B>Přihlásit</B>
+                    </Button>
+                  </Margin>
                 </Center>
               </Col>
               <Col md={6} className="pt-3">
