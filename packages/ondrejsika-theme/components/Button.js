@@ -10,6 +10,7 @@ const Button = props => {
     cursor: pointer;
     font-size: 1rem;
     line-height: 1.5;
+    border-radius: 30px;
 
     ${props =>
       props.size == "small" &&
@@ -32,7 +33,7 @@ const Button = props => {
       ${props =>
         props.size == "huge" &&
         css`
-          padding: 0.8em 3em;
+          padding: 1.2em 3.3em;
         `}
 
       ${props =>
@@ -61,6 +62,10 @@ const Button = props => {
               props.site.colors.PRIMARY) ||
               default_colors.BLUE};
             text-decoration: none;
+          }
+          &:focus {
+            box-shadow: 0 0 0 3px green, 0 0 0px 5px red;
+            outline: none;
           }
         `}
 
@@ -91,6 +96,14 @@ const Button = props => {
             props.site.colors.SECONDARY_LIGHT) ||
             default_colors.WHITE};
           text-decoration: none;
+        }
+        &:focus {
+          box-shadow: 0 0 0 3px #141480,
+            0 0 0px 5px
+              ${props.site &&
+                props.site.colors &&
+                props.site.colors.SECONDARY_LIGHT};
+          outline: none;
         }
       `}
 
@@ -123,6 +136,15 @@ const Button = props => {
             default_colors.WHITE};
           text-decoration: none;
         }
+        &:focus {
+          box-shadow: 0 0 0 3px white,
+            0 0 0px 5px
+              ${(props.site &&
+                props.site.colors &&
+                props.site.colors.PRIMARY) ||
+                default_colors.BLUE};
+          outline: none;
+        }
       `}
 
     ${props =>
@@ -152,6 +174,22 @@ const Button = props => {
           text-decoration: none;
         }
       `}
+      ${props =>
+        props.type == "landing-page" &&
+        css`
+          font-weight: bold;
+          background: #c8bfb0;
+          box-shadow: 9px 9px 6px #00000029;
+          border-radius: 54px;
+          color: #131480;
+
+          &:hover {
+            background: #707070;
+            color: #141480;
+            text-decoration: none;
+            border: none;
+          }
+        `};
   `;
   return (
     <>
