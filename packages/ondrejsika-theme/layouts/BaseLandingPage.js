@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, ButtonGroup } from "react-bootstrap";
 import Head from "next/head";
 import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 
@@ -11,10 +11,9 @@ import ondrej_table from "@app/data/pictures/landing-page/tinipng/ondrej_table.p
 // import ondrej_consulting from "@app/data/pictures/landing-page/ondrej_consulting.png";
 
 import mail_grey from "@app/data/pictures/landing-page/mail.svg";
-import arrow from "@app/data/pictures/landing-page/arrow.svg";
 import phone from "@app/data/pictures/landing-page/phone.svg";
 
-import Button from "@app/ondrejsika-theme/components/lp/LP-button";
+import Button from "@app/ondrejsika-theme/components/Button";
 import FloatingBtn from "@app/ondrejsika-theme/components/FloatingBtn";
 
 import Text from "@app/ondrejsika-theme/components/lp/LP-text";
@@ -27,6 +26,7 @@ import Point from "@app/ondrejsika-theme/components/lp/LP-point";
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
+  line-height: 1.4;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
@@ -36,7 +36,17 @@ const MainTitle = styled.h1`
     font-size: 2rem;
   }
 `;
-
+const About = styled.p`
+  color: black;
+  font: Regular IBM Plex Sans;
+  font-size: 20px;
+  letter-spacing: 0px;
+  ${props =>
+    props.white &&
+    css`
+      color: white;
+    `}
+`;
 const Section = styled.div`
   margin: 3em 0;
 `;
@@ -57,10 +67,6 @@ const Img = styled.img`
 const RoomyRow = styled(Row)`
   margin-bottom: 4em;
 `;
-
-// const PaddingTop = styled.div`
-//   padding-top: 6em;
-// `;
 
 const H3 = styled.h3`
   font-size: 1.75rem;
@@ -102,6 +108,41 @@ const BaseLandingPage = props => {
         padding-left: 10px;
       `}
   `;
+  const InquiryButton = styled.a`
+    padding: 1.2em 3.3em;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    line-height: 1.5;
+    border-radius: 3rem;
+    border: 1px solid
+      ${props.site && props.site.colors && props.site.colors.PRIMARY};
+    background-color: ${props.site &&
+      props.site.colors &&
+      props.site.colors.PRIMARY};
+    color: ${props.site &&
+      props.site.colors &&
+      props.site.colors.SECONDARY_LIGHT};
+    &:hover {
+      border: 1px solid
+        ${props.site && props.site.colors && props.site.colors.PRIMARY};
+      background: ${props.site &&
+        props.site.colors &&
+        props.site.colors.SECONDARY_LIGHT};
+      color: ${props.site && props.site.colors && props.site.colors.PRIMARY};
+      text-decoration: none;
+    }
+    &:focus {
+      box-shadow: 0 0 0 3px #ffffff, 0 0 0px 5px #141480;
+      outline: none;
+    }
+  `;
+
+  const B = styled.span`
+    font-weight: bold !important;
+  `;
 
   return (
     <>
@@ -115,12 +156,14 @@ const BaseLandingPage = props => {
         <Container>
           <Row>
             <Col lg={7}>
-              <MainTitle className="pt-md-5">{props.headerText}</MainTitle>
-              <Text white>{props.headerAbout}</Text>
-              <Button inverse href="#help">
-                {props.findOutMore}
-                <IconBtn padding_left src={arrow} />
-              </Button>
+              <MainTitle className="pt-md-5 pb-4">{props.headerText}</MainTitle>
+              <About white>{props.headerAbout}</About>
+              {/* <div className="mt-4">
+                <Button type="outline-secondary" size="huge" href="#help">
+                  {props.findOutMore}
+                  <IconBtn padding_left src={arrow} />
+                </Button>
+              </div> */}
             </Col>
             <Col lg={5}>
               <Img src={ondrej_chair} />
@@ -173,35 +216,44 @@ const BaseLandingPage = props => {
         <Section>
           <SectionHeader>{props.sectionContactMeHeader}</SectionHeader>
           <RoomyRow>
-            <Col lg={4} md={6}>
-              <Button href="https://calendly.com/ondrejsika/evening-call">
-                <IconBtn padding_right src={phone} />
-                {props.call}
-              </Button>
+            <Col lg={5} md={12}>
+              <ButtonGroup className="pt-sm-3">
+                <InquiryButton
+                  site={props.site}
+                  href="https://calendly.com/ondrejsika/evening-call"
+                >
+                  <IconBtn padding_right src={phone} className="mb-1" />
+                  <B>{props.call}</B>
+                </InquiryButton>
+              </ButtonGroup>
             </Col>
-            <Col lg={4} md={6}>
-              <Button href="mailto:ondrej@sika.io">
-                <IconBtn padding_right src={mail_grey} />
-                {props.email}
-              </Button>
+            <Col lg={5} md={12}>
+              <ButtonGroup className="pt-sm-3">
+                <InquiryButton
+                  site={props.site}
+                  size="huge"
+                  href="mailto:ondrej@sika.io"
+                >
+                  <IconBtn padding_right src={mail_grey} className="mb-1" />
+                  <B>{props.email}</B>
+                </InquiryButton>
+              </ButtonGroup>
             </Col>
           </RoomyRow>
         </Section>
       </Container>
       <Background blue style={{ position: "relative" }}>
         <Container>
-          {/* <Section> */}
-          <SectionHeader white tight>
-            {props.sectionMyStoryHeader}
-          </SectionHeader>
-          {/* <RoomyRow> */}
           <Row className="mt-3 mb-5">
+            <Col lg={9} md={12}>
+              <SectionHeader white tight>
+                {props.sectionMyStoryHeader}
+              </SectionHeader>
+            </Col>
             <Col lg={8} md={12}>
               <Text white>{props.MyStoryText}</Text>
             </Col>
           </Row>
-          {/* </RoomyRow> */}
-          {/* </Section> */}
         </Container>
         <Col
           className="d-none d-lg-block"
@@ -217,7 +269,7 @@ const BaseLandingPage = props => {
         </Col>
       </Background>
       <Background light_grey>
-        <Section>
+        <Section style={{ marginTop: "0" }}>
           <RoomyRow style={{ marginRight: "0" }}>
             <Col md={5} sm={12}>
               <Img src={ondrej_table} />
@@ -329,9 +381,16 @@ const BaseLandingPage = props => {
           <Row>
             <Col md={12}>
               <HeaderBox big className="text-center">
-                <H3 white>{props.sectionCooperationText}</H3>
-                <Button inverse huge href="mailto:ondrej@sika.io">
-                  {props.writeMe}
+                <H3 white className="mb-4">
+                  {props.sectionCooperationText}
+                </H3>
+                <br />
+                <Button
+                  type="outline-secondary"
+                  size="huge"
+                  href="mailto:ondrej@sika.io"
+                >
+                  <B>{props.writeMe}</B>
                 </Button>
               </HeaderBox>
             </Col>

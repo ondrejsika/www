@@ -5,6 +5,7 @@ import Text from "@app/ondrejsika-theme/components/lp/LP-text";
 const Header = styled.h3`
   color: #131480;
   text-transform: uppercase;
+  line-height: 1.5em;
 `;
 const Border = styled.div`
   background: #ffffff;
@@ -25,8 +26,6 @@ const Flex = styled.div`
   height: 100%;
   flex-direction: column;
   padding-bottom: 2em;
-  /* padding-right: 0;
-  margin-right: 1em; */
 `;
 
 const Number = styled.div`

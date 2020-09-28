@@ -3,13 +3,14 @@ import styled, { css } from "styled-components";
 import default_colors from "@app/ondrejsika-theme/config/colors";
 
 const FormButton = props => {
-  const WrapperButton = styled.button`
+  const WrapperButton = styled.a`
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
     font-size: 1rem;
     line-height: 1.5;
-
+    border-radius: 30px;
+    
     ${props =>
       props.size == "small" &&
       css`
@@ -31,7 +32,7 @@ const FormButton = props => {
       ${props =>
         props.size == "huge" &&
         css`
-          padding: 0.8em 3em;
+          padding: 1.2em 3.3em;
         `}
 
       ${props =>
@@ -61,8 +62,13 @@ const FormButton = props => {
               default_colors.BLUE};
             text-decoration: none;
           }
+          &:focus {
+            box-shadow: 0 0 0 3px #ffffff, 0 0 0px 5px red;
+            outline: none;
+          }
         `}
 
+/* done focus */
     ${props =>
       props.type == "outline-secondary" &&
       css`
@@ -91,11 +97,21 @@ const FormButton = props => {
             default_colors.WHITE};
           text-decoration: none;
         }
+        ${"" /* &:focus {
+          box-shadow: 0 0 0 3px #141480,
+            0 0 0px 5px
+              ${props.site &&
+                props.site.colors &&
+                props.site.colors.SECONDARY_LIGHT};
+          outline: none;
+        } */}
       `}
-
     ${props =>
       props.type == "primary" &&
       css`
+        border: 1px solid
+          ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
         background: ${(props.site &&
           props.site.colors &&
           props.site.colors.PRIMARY) ||
@@ -119,17 +135,26 @@ const FormButton = props => {
             default_colors.WHITE};
           text-decoration: none;
         }
+        &:focus {
+          box-shadow: 0 0 0 3px white,
+            0 0 0px 5px
+              ${(props.site &&
+                props.site.colors &&
+                props.site.colors.PRIMARY) ||
+                default_colors.BLUE};
+          outline: none;
+        }
       `}
 
     ${props =>
       props.type == "secondary" &&
       css`
-        order: 1px solid
-          ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+        border: 1px solid
+          ${(props.site && props.site.colors && props.site.colors.SECONDARY) ||
             default_colors.BLUE};
         color: ${(props.site &&
           props.site.colors &&
-          props.site.colors.PRIMARY) ||
+          props.site.colors.SECONDARY) ||
           default_colors.BLUE};
         background: ${(props.site &&
           props.site.colors &&

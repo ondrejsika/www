@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 const Header = styled.h3`
   font-family: "IBM Plex Mono", monospace;
   font-size: 2.5em;
+  line-height: 1.5em;
   color: #131480;
   border-bottom: 5px solid #c8bfb0;
   box-sizing: border-box;

@@ -6,7 +6,7 @@ import close from "@app/data/pictures/close.svg";
 import arrow from "@app/data/pictures/arrow.svg";
 import TechnologyIcons from "@app/ondrejsika-theme/components/devopslive/TechnologyIcons";
 import Markdown from "@app/common/components/Markdown";
-import Button from "@app/ondrejsika-theme/components/lp/LP-button";
+import Button from "@app/ondrejsika-theme/components/Button";
 
 const Hidden = styled(Row)``;
 const TextBeige = styled.span`
@@ -30,7 +30,9 @@ const Dropbox = styled.div`
 const DropIcon = styled.img`
   padding-top: 0.5em;
 `;
-
+const Margin = styled.div`
+  padding: 2em 0;
+`;
 const Sessions = props => {
   const [showNextSession, setNextSession] = useState(false);
   const handleShow = () => setNextSession(true);
@@ -91,9 +93,15 @@ const Sessions = props => {
                   </Text>
                   {props.event.eventbrite && (
                     <Center>
-                      <Button huge href={props.event.eventbrite}>
-                        Přihlásit
-                      </Button>
+                      <Margin>
+                        <Button
+                          type="landing-page"
+                          size="huge"
+                          href={props.event.eventbrite}
+                        >
+                          Přihlásit
+                        </Button>
+                      </Margin>
                     </Center>
                   )}
                 </Col>

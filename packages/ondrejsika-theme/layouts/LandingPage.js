@@ -56,18 +56,18 @@ const LandingPage = props => (
     findOutMore={
       <Translate lang={props.site.lang} en="Find out more" cs="Zjistit více" />
     }
-    sectionBoxesHeader={
-      <Translate
-        lang={props.site.lang}
-        en="I can help you with"
-        cs="S ČÍM VÁM POMOHU"
-      />
-    }
+    // sectionBoxesHeader={
+    //   <Translate
+    //     lang={props.site.lang}
+    //     en="I can help you with"
+    //     cs="S ČÍM VÁM POMOHU"
+    //   />
+    // }
     boxHeader1={
       <Translate
         lang={props.site.lang}
         en="DEVOPS PIPELINE IMPLEMENTATION"
-        cs="IMPLEMENTACE DEVOPS PIPELINE"
+        cs="IMPLEMENTUJU VÁM DEVOPS PIPELINE"
       />
     }
     boxText1={
@@ -86,12 +86,7 @@ const LandingPage = props => (
             <br />& SUPPORT
           </span>
         }
-        cs={
-          <span>
-            KONZULTACE
-            <br />& SUPPORT
-          </span>
-        }
+        cs={<span>PORADÍM A NABÍDNU SUPPORT BALÍČEK</span>}
       />
     }
     boxText2={
@@ -110,12 +105,7 @@ const LandingPage = props => (
             <br /> YOUR TEAM
           </span>
         }
-        cs={
-          <span>
-            ŠKOLENÍ
-            <br /> VAŠEHO TÝMU
-          </span>
-        }
+        cs={<span>VYŠKOLÍM VÁŠ TÝM VE VYBRANÉ TECHNOLOGII</span>}
       />
     }
     boxText3={
@@ -126,17 +116,27 @@ const LandingPage = props => (
       />
     }
     trainingHeader={
-      <Translate lang={props.site.lang} en="My Training" cs="Moje Školení" />
+      <Translate
+        lang={props.site.lang}
+        en="My Training"
+        cs="TECHNOLOGIE, KTERÉ ŠKOLÍM"
+      />
     }
     sectionMyClientsHeader={
-      <Translate lang={props.site.lang} en="My clients" cs="moji klienti" />
+      <Translate
+        lang={props.site.lang}
+        en="My clients"
+        cs="PŘIDEJTE SE KE SPOKOJENÝM KLIENTŮM"
+      />
     }
     sectionContactMeHeader={
-      <Translate lang={props.site.lang} en="Contact me" cs="KONTAKTUJTE MĚ" />
+      <Translate
+        lang={props.site.lang}
+        en="Contact me"
+        cs="POBAVME SE O ŘEŠENÍ PRO VÁS"
+      />
     }
-    call={
-      <Translate lang={props.site.lang} en="Call me" cs="Naplánujte hovor" />
-    }
+    call={<Translate lang={props.site.lang} en="Call me" cs="Zavolat" />}
     email={
       <Translate
         lang={props.site.lang}
@@ -145,7 +145,11 @@ const LandingPage = props => (
       />
     }
     sectionMyStoryHeader={
-      <Translate lang={props.site.lang} en="ABOUT ME" cs="O MĚ" />
+      <Translate
+        lang={props.site.lang}
+        en="ABOUT ME"
+        cs="ZEFEKTIVŇUJI PROCES VÝVOJE FIRMÁM VŠECH VELIKOSTÍ OD ROKU 2013"
+      />
     }
     MyStoryText={
       <Translate
@@ -202,7 +206,7 @@ const LandingPage = props => (
       <Translate
         lang={props.site.lang}
         en="CONSIDER MY SERVICES"
-        cs="PROČ DO TOHO JÍT SE MNOU?"
+        cs="POJĎTE DO TOHO SE MNOU"
       />
     }
     point1={
