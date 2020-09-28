@@ -21,7 +21,6 @@ const Hide = styled.div`
 const Navbar = (
   <ThemeNavbar
     NavName="Ondřej Šika"
-    NavUnderheader="Software {Engineer, Konzultant, Lektor}"
     links={[
       ["DEVOPS LIVE", "/devopslive"],
       [
