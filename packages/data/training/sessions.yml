@@ -2267,7 +2267,7 @@
   facebook_event: https://www.facebook.com/events/952797201885121
   linkedin_event: https://www.linkedin.com/events/6699289848773132288/
 - id: digitalocean-praha-02-10-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: digitalocean
