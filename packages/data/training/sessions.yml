@@ -2281,7 +2281,7 @@
   facebook_event: https://www.facebook.com/events/3469410083078250
   linkedin_event: https://www.linkedin.com/events/6699290620546048002/
 - id: digitalocean-online-20-10-2020
-  active: true
+  active: false
   country: cz
   lang: cs
   course_id: digitalocean
