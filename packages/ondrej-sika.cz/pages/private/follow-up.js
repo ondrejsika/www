@@ -9,6 +9,7 @@ const Page = () => (
 - [Docker & Kubernetes, Eurosoftware, 29. 9. 2020](/follow-up/2020-09-29-eurosoftware-docker-kubernetes)
 - [Git, O2, 24. 9. 2020](/follow-up/2020-09-24-o2-git)
 - [Terraform, 25. 9. 2020](/follow-up/2020-09-25-terraform)
+- [Gitlab CI, 16. 9. 2020](/follow-up/2020-09-16-gitlab-ci)
 - [Git, Gordic, 14. 9. 2020](/follow-up/2020-09-14-gordic-git)
 - [Git, ZCU, 9. 9. 2020](/follow-up/2020-09-09-zcu-git)
 - [Docker & Kubernetes, Adbros, 5. 8. 2020](/follow-up/2020-08-05-adbros-docker-kubernetes)
