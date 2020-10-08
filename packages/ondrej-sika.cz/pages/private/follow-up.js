@@ -6,6 +6,7 @@ const Page = () => (
     title="Follow Up Index"
     hideNewsletter={true}
     markdown={`
+- [Kubernetes, Mavenir, 6. 10. 2020](/follow-up/2020-10-06-mavenir-kubernetes)
 - [Docker & Kubernetes, Eurosoftware, 29. 9. 2020](/follow-up/2020-09-29-eurosoftware-docker-kubernetes)
 - [Git, O2, 24. 9. 2020](/follow-up/2020-09-24-o2-git)
 - [Terraform, 25. 9. 2020](/follow-up/2020-09-25-terraform)
