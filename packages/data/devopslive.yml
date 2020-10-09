@@ -33,21 +33,21 @@
 #     - git
 #     - docker
 
-- id: jednoducha-integrace-gitlab-ci-a-kubernetes
-  eventbrite: https://www.eventbrite.com/e/117836685699/
-  active: true
-  title: Jednoduchá integrace Gitlab CI a Kubernetes
-  date: 7.10.2020
-  time: "19:00"
-  about: |
-    Gitlab umožňuje propojení s Kubernetes clusterem. Má to své výhody hlavně v CI. Ukážeme si jak na to.
-  points: |
-    - Nativní propojení Gitlab CI a Kubernetes clusteru
-    - Více Kubernetes clusteru (nelze ve free variantě)
-    - Více clusterů bez nativní integrace
-  technologies:
-    - gitlab
-    - kubernetes
+# - id: jednoducha-integrace-gitlab-ci-a-kubernetes
+#   eventbrite: https://www.eventbrite.com/e/117836685699/
+#   active: true
+#   title: Jednoduchá integrace Gitlab CI a Kubernetes
+#   date: 7.10.2020
+#   time: "19:00"
+#   about: |
+#     Gitlab umožňuje propojení s Kubernetes clusterem. Má to své výhody hlavně v CI. Ukážeme si jak na to.
+#   points: |
+#     - Nativní propojení Gitlab CI a Kubernetes clusteru
+#     - Více Kubernetes clusteru (nelze ve free variantě)
+#     - Více clusterů bez nativní integrace
+#   technologies:
+#     - gitlab
+#     - kubernetes
 
 - id: uvod-do-terraformu
   eventbrite: "https://www.eventbrite.com/e/120441195859"
