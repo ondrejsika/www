@@ -2316,7 +2316,7 @@
   lang: cs
   course_id: docker
   name: Školení Docker
-  city: Brno + Online
+  city: Online
   price: 11999 CZK
   venue_id: rootcz-brno
   length: 2 dny
@@ -2330,7 +2330,7 @@
   lang: cs
   course_id: gitlab-ci
   name: Školení Gitlab CI
-  city: Brno + Online
+  city: Online
   price: 6800 CZK
   venue_id: rootcz-brno
   length: 1 den
@@ -2344,7 +2344,7 @@
   lang: cs
   course_id: kubernetes
   name: Školení Kubernetes
-  city: Brno + Online
+  city: Online
   price: 11999 CZK
   venue_id: rootcz-brno
   length: 2 dny
