@@ -81,3 +81,48 @@
     - Praktická ukázka
   technologies:
     - gitlab
+- id: proc-a-jak-pouzivat-cloudflare
+  eventbrite: https://www.eventbrite.com/e/125436023523
+  active: true
+  title: Proč a jak používat Cloudflare
+  date: 18.11.2020
+  time: "19:00"
+  about: |
+    Přesuńte své domény do Cloudflare. Získáte tím stabilní DNS, DDoS ochranu a CDN, to celé spravované Terraformem.
+  points: |
+    - Setup domény v Cloudflare
+    - Správa DNS a dalších funkcí
+    - Integrace s Terraformem
+  technologies:
+    - cloudflare
+    - terraform
+- id: docker-monitoring-pomoci-promethea-a-alert-manageru
+  eventbrite: https://www.eventbrite.com/e/125437885091/
+  active: true
+  title: Docker monitoring pomocí Promethea a Alertmanageru
+  date: 2.12.2020
+  time: "19:00"
+  about: |
+    Monitorujte své aplikace běžící v Docker pomocí moderního nástroje Prometheus.
+  points: |
+    - Minimální setup Promethea a Alertmanageru
+    - Docker metriky pomocí cAdvisoru
+    - Vytvoření vlastních alerting rules pro Prometheus
+  technologies:
+    - docker
+    - prometheus
+    - alert manager
+- id: konfigurace-alertmanageru
+  eventbrite: https://www.eventbrite.com/e/125533296469
+  active: true
+  title: Konfigurace Alertmanageru
+  date: 16.12.2020
+  time: "19:00"
+  about: |
+    Ukážeme si jak efektivně konfigurovat flow eventů v Alertmanageru.
+  points: |
+    - Rychlý úvod do Alertmanageru
+    - Konfigurace backendů (Email, Slack, Pager Duty, Telegram ...)
+    - Konfigurace flow alertů
+  technologies:
+    - alert manager
