@@ -69,7 +69,13 @@ let Post = props => {
             {post.youtube && (
               <center>
                 <div className="m-3">
-                  <YouTube videoId={post.youtube} />
+                  <YouTube
+                    videoId={post.youtube}
+                    opts={{
+                      width: "1024",
+                      height: "576"
+                    }}
+                  />
                 </div>
               </center>
             )}
