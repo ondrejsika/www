@@ -1,3 +1,16 @@
+- id: zaznam-devops-live-2-docker-a-traefik-proxy
+  title: "Záznam DevOps Live #2: Docker & Traefik Proxy"
+  date: 25. 9. 2020
+  ad: docker
+  tags:
+    - docker
+    - devopslive
+  perex: |
+    Záznanam z druhého DevOps live streamu: Docker & Traefik Proxy
+  youtube: C5r8MNys614
+  content: |
+    Pokud se chcete naučit pracovat s Dockerem, doporučuji Vám mé [__Školení Dockeru__](/skoleni/docker), nebudete litovat.
+
 - id: zaznam-devops-live-1-sprava-gitlabu-pomoci-terraformu
   title: "Záznam DevOps Live #1: Správa Gitlabu a Githubu pomocí Terraformu"
   date: 11. 9. 2020
