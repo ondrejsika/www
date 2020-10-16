@@ -24,7 +24,7 @@ const CourseBar = () => (
             <Courses>
               <H1>
                 <Link href={`seznam-skoleni/${technology.id}`}>
-                  {technology.name}{" "}
+                  <a>{technology.name} </a>
                 </Link>
               </H1>
               {/* <Lecturer>
