@@ -23,7 +23,7 @@
   github: ondrejsika
 
 - id: vojtechmares
-  name: Vojta Mares
+  name: Vojtech Mares
   courses:
     - vojtechmares-gitlab-ci
     - vojtechmares-docker
