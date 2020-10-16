@@ -86,7 +86,7 @@
 
     ```tf
     // users.tf
-    resource "gitlab_user" "vojtamares" {
+    resource "gitlab_user" "vojtechmares" {
       name             = "Ondrej Sika"
       username         = "ondrejsika"
       email            = "xxx@xxx.com"
@@ -95,9 +95,9 @@
       projects_limit    = 100000
     }
 
-    resource "gitlab_user" "vojtamares" {
+    resource "gitlab_user" "vojtechmares" {
       name             = "Vojtěch Mareš"
-      username         = "vojtamares"
+      username         = "vojtechmares"
       email            = "xxx@xxx.com"
       can_create_group = false
       reset_password   = false
@@ -123,9 +123,9 @@
 
     # --- Members ---
 
-    resource "gitlab_group_membership" "www_vojtamares" {
+    resource "gitlab_group_membership" "www_vojtechmares" {
       group_id     = gitlab_group.www.id
-      user_id      = gitlab_user.vojtamares.id
+      user_id      = gitlab_user.vojtechmares.id
       access_level = "owner"
     }
 

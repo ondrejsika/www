@@ -131,18 +131,18 @@
 
 # Vojta Mares
 
-- id: vojtamares-git
-  lecturer_id: vojtamares
+- id: vojtechmares-git
+  lecturer_id: vojtechmares
   technology_id: git
   name: Git & Gitlab
 
-- id: vojtamares-gitlab-ci
-  lecturer_id: vojtamares
+- id: vojtechmares-gitlab-ci
+  lecturer_id: vojtechmares
   technology_id: gitlab-ci
   name: Gitlab CI
 
-- id: vojtamares-docker
-  lecturer_id: vojtamares
+- id: vojtechmares-docker
+  lecturer_id: vojtechmares
   technology_id: docker
   name: Docker
 

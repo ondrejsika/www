@@ -22,14 +22,14 @@
   phone: +420 773 452 376
   github: ondrejsika
 
-- id: vojtamares
+- id: vojtechmares
   name: Vojta Mares
   courses:
-    - vojtamares-gitlab-ci
-    - vojtamares-docker
+    - vojtechmares-gitlab-ci
+    - vojtechmares-docker
   bio: Devopsak!
   email: skoleni@skoleni.io
-  github: vojtamares
+  github: vojtechmares
 
 - id: rdpanek
   name: Radim Daniel Panek

@@ -1,41 +1,41 @@
 - id: git
   name: Git
   description: |
-    Git je moderní verzovaci nástroj, který se stal de facto standardem mezi vývojáři. Používají jej na 
-    denní bázy jednotlivci, startupy i korporace. Git vám nabízí jednoduchou kolaboraci na projektu s 
-    více lidmi a práci na více částech současně aniž byste si zasahovali do rozdělaných věcí nebo je 
-    jinak narušovali. Spolupráci na vývoji projektu ještě zlepšuje Gitlab, což je kolaborativni platforma 
+    Git je moderní verzovaci nástroj, který se stal de facto standardem mezi vývojáři. Používají jej na
+    denní bázy jednotlivci, startupy i korporace. Git vám nabízí jednoduchou kolaboraci na projektu s
+    více lidmi a práci na více částech současně aniž byste si zasahovali do rozdělaných věcí nebo je
+    jinak narušovali. Spolupráci na vývoji projektu ještě zlepšuje Gitlab, což je kolaborativni platforma
     na návrh, vývoj a provozování software (více o Gitlabu v samostatném kurzu).
   courses:
     - ondrejsika-git
-    - vojtamares-git
+    - vojtechmares-git
 
 - id: gitlab-ci
   name: Gitlab CI
   description: |
-    Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutinní úkoly jako je 
-    pouštění testů, kvality kódu anebo nasazování. Umožní Vám rychleji začleňovat změny do masteru a rychleji 
-    nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images 
+    Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutinní úkoly jako je
+    pouštění testů, kvality kódu anebo nasazování. Umožní Vám rychleji začleňovat změny do masteru a rychleji
+    nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images
     anebo pouštět testy v kontejnerech.
   courses:
     - ondrejsika-gitlab-ci
-    - vojtamares-gitlab-ci
+    - vojtechmares-gitlab-ci
 
 - id: docker
   name: Docker
   description: |
-    Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. 
-    Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. 
+    Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje.
+    Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny.
     Mějte prostředí jako součást vaší aplikace.
   courses:
     - ondrejsika-docker
-    - vojtamares-docker
+    - vojtechmares-docker
 
 - id: kubernetes
   name: Kubernetes
   description: |
-    Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči 
-    na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny 
+    Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči
+    na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny
     velikosti firem, od startupu po korporace.
   courses:
     - ondrejsika-kubernetes
@@ -44,14 +44,14 @@
 - id: terraform
   name: Terraform
   description: |
-    Terraform je nástroj, který se používá ke správě infrastruktury v cloudu, jak veřejném (AWS, Azure, GCP), tak privátním 
+    Terraform je nástroj, který se používá ke správě infrastruktury v cloudu, jak veřejném (AWS, Azure, GCP), tak privátním
     (OpenStack, VMware vSphere).
 
-    Terraform Vám umožní spravovat infrastruktutru jako kód, to znamená verzovanou v Gitu, přidávání resources pomocí merge 
-    (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředí přesně tak, jako je 
+    Terraform Vám umožní spravovat infrastruktutru jako kód, to znamená verzovanou v Gitu, přidávání resources pomocí merge
+    (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředí přesně tak, jako je
     v produkci bez zbytečného úsilí. O všech komponentách máte přehled a můžete predikovat ceny. Konec klikání infrastruktury, zkuste Terraform.
 
-    Terraform umožnuje spravovat více cloudových providerů současne, zároveň umožnuje pracovat s hibridními cloudy (část v 
+    Terraform umožnuje spravovat více cloudových providerů současne, zároveň umožnuje pracovat s hibridními cloudy (část v
     privátním cloudu, část ve veřejném).
   courses:
     - ondrejsika-terraform
@@ -96,10 +96,10 @@
 - id: ansible
   name: Ansible
   description: |
-    Ansible je nástroj na hromadnou správu konfigurací a nasazování. Vy deklarujete vysledný stav serveru a služeb a 
-    Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný 
-    výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci 
-    máte verzovanou Gitem a nestane se vám, že ztratíte přehled, kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. 
+    Ansible je nástroj na hromadnou správu konfigurací a nasazování. Vy deklarujete vysledný stav serveru a služeb a
+    Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný
+    výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci
+    máte verzovanou Gitem a nestane se vám, že ztratíte přehled, kde máte co nasazené nebo ze vynecháte nějaký důležitý krok.
     Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
   courses:
     - veroskaplan-ansible
@@ -150,8 +150,8 @@
 - id: prometheus
   name: Prometheus
   description: |
-    Prométheus je moderní monitoringový nástroj a metrics server. Umožňuje sbírat metrická data z vaší aplikace a většiny 
-    komponent Váši infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prométheus spadá pod CNCF, stejně 
+    Prométheus je moderní monitoringový nástroj a metrics server. Umožňuje sbírat metrická data z vaší aplikace a většiny
+    komponent Váši infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prométheus spadá pod CNCF, stejně
     jako Kubernetes.
   courses:
     - ondrejsika-prometheus
@@ -187,7 +187,7 @@
 - id: rancher
   name: Rancher
   description: |
-    Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). 
+    Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean).
     Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webové administrace, tak pomocí Terraformu.
   courses:
     - ondrejsika-rancher
