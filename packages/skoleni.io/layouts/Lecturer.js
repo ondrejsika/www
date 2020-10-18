@@ -8,6 +8,7 @@ import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
 import courses_data from "@app/data/skoleni.io/courses.yml";
 import recommendations_data from "@app/data/skoleni.io/recommendations.yml";
 import StaticDB from "@app/common/staticdb";
+import Markdown from "@app/common/components/Markdown";
 
 const Img = styled.img`
   width: 100%;
@@ -46,7 +47,11 @@ const Lecturer = props => (
     <H1>{props.name}</H1>
     <Row>
       <Col sm={8}>
-        {props.bio && <Text>{props.bio}</Text>}
+        {props.bio && (
+          <Text>
+            <Markdown source={props.bio} />
+          </Text>
+        )}
         <H3>Moje kurzy</H3>
         <ul>
           {props.courses.map((course_id, i) => {
