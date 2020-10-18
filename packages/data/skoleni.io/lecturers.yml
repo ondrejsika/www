@@ -52,10 +52,13 @@
 - id: adambisek
   name: Adam Bisek
   courses:
-    - adambisek-php
     - adambisek-react
-  bio: PHP & React
-  email: skoleni@skoleni.io
+    - adambisek-git
+    - adambisek-prometheus
+  bio: 'Baví mně pomáhat ostatní kolegům v IT branži růst a rád pomohu i vám! Věřím, že kromě odbornosti je velmi důležitý i softskill (prezentace, způsob komunikace a empatie), a proto mi velmi záleží na pocitu účastníků a školení a na tom, co si odnesete. Pracuji přes 18 let jako fullstack developer a pevně věřím, že z mých téměř dvou dekád mé praxe vám mám co předat. Více informací o mně na LI: https://www.linkedin.com/in/adambisek/'
+  linkedin: adambisek
+  email: adam.bisek@gmail.com
+  phone: +420 773 050 556
   github: adambisek
 
 - id: steida

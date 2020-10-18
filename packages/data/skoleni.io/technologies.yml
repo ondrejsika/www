@@ -151,7 +151,7 @@
   name: Prometheus
   description: |
     Prométheus je moderní monitoringový nástroj a metrics server. Umožňuje sbírat metrická data z vaší aplikace a většiny
-    komponent Váši infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prométheus spadá pod CNCF, stejně
+    komponent Vaší infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prométheus spadá pod CNCF, stejně
     jako Kubernetes.
   courses:
     - ondrejsika-prometheus
