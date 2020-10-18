@@ -167,15 +167,120 @@
 
 # Adam Bisek
 
-- id: adambisek-php
-  lecturer_id: adambisek
-  technology_id: php
-  name: PHP
-
 - id: adambisek-react
   lecturer_id: adambisek
   technology_id: react
   name: React
+  price_open: 10 900 CZK
+  price_in_house: 40 000 CZK
+  description: |
+    ### React
+    React je moderní knihovna pro vytváření robustního a moderního uživatelského rozhraní na webu i na mobilních zařízeních. Provedu vás nejen samotným Reactem, ale i velikou částí jeho ekosystému a postupů, které vám změní váš vývojářský život.
+
+    ### Jak školení probíhá
+
+    Na školení React si ukážeme, co vedlo ke vzniku Reatu, jak funguje pod pokličkou a navážeme ihned praktickým workshopem. Velká část školení je tedy hands-on a odnesete si praktické znalosti, které obratem využijete v praxi.
+
+    ### Co Vás naučím
+
+    - Krátká historie a důvod vzniku
+    - Rychlý pohled pod pokličku
+    - Komponentární myšlení v rámci Reactu
+    - Životní cyklus
+    - Výkonnost a optimalizace
+    - Jak správně stylovat
+    - Funkcionální programování vs objektové programování
+    - Nejlepší frameworky a knihovny
+
+    ### Pro koho je školení určeno
+
+    Pro každého, kdo rád vyvíjí webový frontend a chce se posounout dál.
+
+    #### Předchozí znalosti
+
+    - zkušenost s HTML a CSS
+    - mírně pokročilá znalost Javascriptu
+
+    #### Technické požadavky
+
+    - Notebook
+    - Google Chrome
+    - Nainstalovaný Node.Js výhodou
+    - Přístup na internet
+
+- id: adambisek-git
+  lecturer_id: adambisek
+  technology_id: git
+  name: Git
+  price_open: 4 900 CZK
+  price_in_house: 20 000 CZK
+  description: |
+    ### Git
+    GIT je v současnosti nejpoužívanější verzovací systém a v mnoha oblastech je nepsaným industry standardem. Přesvědčíte se, že GIT je neocenitelný pomocník a přitom je velmi jednoduchý. Naučím vás GIT prakticky používat.
+
+    ### Jak školení probíhá
+
+    Školil jsem již několik desítek školení GITu a pomohl jsem začít ho efektivně používat řadě skvělých kolegů, několika fotografům a dokonce paní účetní. Po krátkém úvodu jd školení čistě praktické a soustředním
+
+    ### Co Vás naučím
+
+    - krátká historie a důvod vzniku
+    - jak GIT vlastně funguje
+    - rozdíl mezi lokálními a vzdálenými repozitáři
+    - základní operace: commit, merge, fetch, pull, push, log
+    - pokročilejší operace (volitelně, dle úrovně účastníků): rebase, reflog, bisect
+    - ekosystém gitlabu a githubu
+    - používané postupy, tzv. flow (Gitflow, One Flow)
+    - nastavení GITu
+
+    ### Pro koho je školení určeno
+
+    Pro každého, kdo GIT potřebuje znát. Naučím vás ho prakticky používat, ať jste profesionální vývojář nebo máte foodblog ve wordpressu.
+
+    #### Předchozí znalosti
+
+    - mírně pokročilá uživatelská znalost PC
+
+    #### Technické požadavky
+
+    - Notebook
+    - Přístup na internet
+
+- id: adambisek-prometheus
+  lecturer_id: adambisek
+  technology_id: prometheus
+  name: Monitoring (Prometheus a Grafana)
+  price_open: 4 900 CZK
+  price_in_house: 20 000 CZK
+  description: |
+    ### Monitoring (Prometheus a Grafana)
+    Součást online úspěchu je aplikaci úspěšně provozovat, což znamená i dovídat se o včasně chybách. Prometheus a Grafana patří mezi nejlepší řešení v této oblasti.
+
+    ### Jak školení probíhá
+
+    Ukážeme si jak oba nástroje zprovoznit a nastavit. Nastavíme si společně správné metriky a upozornění, abychom z obou nástrojů vytěžili maximum. Celé školení je praktické a vše si projdeme na praktickém workshopu.
+
+    ### Co Vás naučím
+
+    - Proč a co potřebujeme monitorovat?
+    - Jak monitorovací nástroje fungují?
+    - Prometheus a alert manager
+    - Pravidla a nastavení alertingu
+    - Grafana
+
+    ### Pro koho je školení určeno
+
+    DevOps, seniornější vývojáři
+
+    #### Předchozí znalosti
+
+    - mírně pokročilá znalost linuxu
+    - mírně pokročilá znalost Dockeru
+
+    #### Technické požadavky
+
+    - Notebook
+    - Přístup na internet
 
 # Daniel Steigerwald
 
