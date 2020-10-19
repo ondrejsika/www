@@ -17,6 +17,9 @@ const Page = () => (
     </ul>
     <h2 id="vercel-czech-community">Vercel Czech Community</h2>
     <p>
+      Website: <a href="https://vercel.cz">https://vercel.cz</a>
+      <br />
+      Meetup.com:{" "}
       <a href="https://www.meetup.com/Vercel-Czech-Community/">
         https://www.meetup.com/Vercel-Czech-Community/
       </a>
