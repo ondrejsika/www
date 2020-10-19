@@ -2,7 +2,7 @@ import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
-  <Article title="Meetups" hideNewsletter={true}>
+  <Article title="Meetups" hideNewsletter={true} hideFooter={true}>
     <p>Meetupy, které pořádám a spolupořádám</p>
     <ul>
       <li>
