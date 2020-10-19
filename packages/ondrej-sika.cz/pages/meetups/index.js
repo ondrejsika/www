@@ -15,10 +15,10 @@ const Page = () => (
         <a href="#salzburg-devops-meetups">Salzburg DevOps Meetups</a>
       </li>
     </ul>
-    <h2 id="zeit-czech-community">ZEIT Czech Community</h2>
+    <h2 id="vercel-czech-community">Vercel Czech Community</h2>
     <p>
-      <a href="https://www.meetup.com/ZEIT-Czech-Community/">
-        https://www.meetup.com/ZEIT-Czech-Community/
+      <a href="https://www.meetup.com/Vercel-Czech-Community/">
+        https://www.meetup.com/Vercel-Czech-Community/
       </a>
     </p>
     <h2 id="prague-hashicorp-user-group">Prague HashiCorp User Group</h2>
