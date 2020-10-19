@@ -449,28 +449,14 @@
 - active: true
   city: Prague
   country: cz
-  course_id: digitalocean
-  date_from: 20.10.2020
-  date_to: 20.10.2020
-  facebook_event: null
-  id: digitalocean-online-20-10-2020
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Digital Ocean
-  price: 6 800 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: prometheus
   date_from: 30.10.2020
   date_to: 30.10.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/653319681973039
   id: prometheus-online-30-10-2020
   lang: cs
   length: 1 den
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6701470338565316608/
   name: Prometheus
   price: 6 800 CZK
   venue_id: null
@@ -480,11 +466,11 @@
   course_id: docker
   date_from: 02.11.2020
   date_to: 03.11.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/223410545748452
   id: docker-brno-02-11-2020
   lang: cs
   length: 2 dny
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6699293927184318464/
   name: Docker
   price: 11 999 CZK
   venue_id: null
@@ -494,11 +480,11 @@
   course_id: gitlab-ci
   date_from: 04.11.2020
   date_to: 04.11.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/800482037357548
   id: gitlab-ci-brno-4-11-2020
   lang: cs
   length: 1 den
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6699295534529683458/
   name: Gitlab CI
   price: 6 800 CZK
   venue_id: null
@@ -508,11 +494,11 @@
   course_id: kubernetes
   date_from: 05.11.2020
   date_to: 06.11.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/930034360818411
   id: kubernetes-brno-05-11-2020
   lang: cs
   length: 2 dny
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6699296409071456256/
   name: Kubernetes
   price: 11 999 CZK
   venue_id: null
@@ -522,11 +508,11 @@
   course_id: kubernetes
   date_from: 12.11.2020
   date_to: 13.11.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/789692305134266
   id: kubernetes-praha-12-11-2020
   lang: cs
   length: 2 dny
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6701122873815257088/
   name: Kubernetes
   price: 11 999 CZK
   venue_id: null
@@ -536,11 +522,11 @@
   course_id: proxmox
   date_from: 20.11.2020
   date_to: 20.11.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/1394533997418347
   id: proxmox-brno-20-11-2020
   lang: cs
   length: 1 den
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6699588615283978240/
   name: Proxmox
   price: 6 800 CZK
   venue_id: null
@@ -550,11 +536,11 @@
   course_id: terraform
   date_from: 27.11.2020
   date_to: 27.11.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/1322145124794134
   id: terraform-brno-27-11-2020
   lang: cs
   length: 1 den
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6699591210727698432/
   name: Terraform
   price: 6 800 CZK
   venue_id: null
@@ -564,11 +550,11 @@
   course_id: digitalocean
   date_from: 04.12.2020
   date_to: 04.12.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/643493409913901
   id: digitalocean-praha-04-12-2020
   lang: cs
   length: 1 den
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6699291594736050176/
   name: Digital Ocean
   price: 6 800 CZK
   venue_id: null
@@ -578,11 +564,11 @@
   course_id: rancher
   date_from: 11.12.2020
   date_to: 11.12.2020
-  facebook_event: null
+  facebook_event: https://www.facebook.com/events/1377306179326395
   id: rancher-praha-11-12-2020
   lang: cs
   length: 1 den
-  linkedin_event: null
+  linkedin_event: https://www.linkedin.com/events/6701798854485938176/
   name: Rancher
   price: 6 800 CZK
   venue_id: null
