@@ -6,7 +6,7 @@ const Page = () => (
     <p>Meetupy, které pořádám a spolupořádám</p>
     <ul>
       <li>
-        <a href="#zeit-czech-community">ZEIT Czech Community</a>
+        <a href="#vercel-czech-community">Vercel Czech Community</a>
       </li>
       <li>
         <a href="#prague-hashicorp-user-group">Prague HashiCorp User Group</a>
