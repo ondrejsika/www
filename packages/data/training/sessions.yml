@@ -197,7 +197,7 @@
 - active: false
   city: Prague
   country: cz
-  course_id: terraform4
+  course_id: terraform
   date_from: 05.06.2020
   date_to: 05.06.2020
   facebook_event: null
@@ -205,8 +205,8 @@
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: Terraform4
-  price: '---price-terraform4---'
+  name: Terraform
+  price: 6 800 CZK
   venue_id: null
 - active: false
   city: Prague
