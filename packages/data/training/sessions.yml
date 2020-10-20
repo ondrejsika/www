@@ -687,6 +687,20 @@
 - active: true
   city: Prague
   country: cz
+  course_id: ansible
+  date_from: 18.02.2021
+  date_to: 18.02.2021
+  facebook_event: null
+  id: ansible-praha-18-02-2021
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Ansible
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
   course_id: gitlab-ci
   date_from: 01.04.2021
   date_to: 01.04.2021
@@ -1018,6 +1032,20 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: ansible
+  date_from: 16.09.2021
+  date_to: 16.09.2021
+  facebook_event: null
+  id: ansible-praha-16-09-2021
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Ansible
   price: 6 800 CZK
   venue_id: null
 - active: true
