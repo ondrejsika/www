@@ -461,13 +461,13 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Brno
+  city: Prague
   country: cz
   course_id: docker
   date_from: 02.11.2020
   date_to: 03.11.2020
   facebook_event: https://www.facebook.com/events/223410545748452
-  id: docker-brno-02-11-2020
+  id: docker-online-02-11-2020
   lang: cs
   length: 2 dny
   linkedin_event: https://www.linkedin.com/events/6699293927184318464/
@@ -475,13 +475,13 @@
   price: 11 999 CZK
   venue_id: null
 - active: true
-  city: Brno
+  city: Prague
   country: cz
   course_id: gitlab-ci
   date_from: 04.11.2020
   date_to: 04.11.2020
   facebook_event: https://www.facebook.com/events/800482037357548
-  id: gitlab-ci-brno-4-11-2020
+  id: gitlab-ci-online-4-11-2020
   lang: cs
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6699295534529683458/
@@ -517,13 +517,13 @@
   price: 11 999 CZK
   venue_id: null
 - active: true
-  city: Brno
+  city: Prague
   country: cz
   course_id: proxmox
   date_from: 20.11.2020
   date_to: 20.11.2020
   facebook_event: https://www.facebook.com/events/1394533997418347
-  id: proxmox-brno-20-11-2020
+  id: proxmox-online-20-11-2020
   lang: cs
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6699588615283978240/
@@ -531,13 +531,13 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Brno
+  city: Prague
   country: cz
   course_id: terraform
   date_from: 27.11.2020
   date_to: 27.11.2020
   facebook_event: https://www.facebook.com/events/1322145124794134
-  id: terraform-brno-27-11-2020
+  id: terraform-online-27-11-2020
   lang: cs
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6699591210727698432/
@@ -551,7 +551,7 @@
   date_from: 04.12.2020
   date_to: 04.12.2020
   facebook_event: https://www.facebook.com/events/643493409913901
-  id: digitalocean-praha-04-12-2020
+  id: digitalocean-online-04-12-2020
   lang: cs
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6699291594736050176/
@@ -565,7 +565,7 @@
   date_from: 11.12.2020
   date_to: 11.12.2020
   facebook_event: https://www.facebook.com/events/1377306179326395
-  id: rancher-praha-11-12-2020
+  id: rancher-online-11-12-2020
   lang: cs
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6701798854485938176/
