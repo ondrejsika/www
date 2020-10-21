@@ -19,7 +19,9 @@ const Index = props => (
         Let us know if you are interested. Join us on{" "}
         <a href={props.site.meetup.meetupcom_url}>Meetup.com</a> or drop us mail
         to{" "}
-        <a href="mailto:meetup@salzburgdevops.com">meetup@salzburgdevops.com</a>
+        <a href="mailto:meetups@salzburgdevops.com">
+          meetups@salzburgdevops.com
+        </a>
         .
       </p>
     }
