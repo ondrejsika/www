@@ -8,7 +8,7 @@ const Page = () => (
     subheader="17. 9. 2020"
     hideNewsletter={true}
     markdown={`
-## Materilály
+## Materiály
 
 ### Repozitář s kurzy
 

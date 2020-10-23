@@ -8,7 +8,7 @@ const Page = () => (
     subheader="Neeco, 22. 10. 2020"
     hideNewsletter={true}
     markdown={`
-## Materilály
+## Materiály
 
 ### Repozitář s kurzy
 

@@ -8,7 +8,7 @@ const Page = () => (
     subheader="Adbros, 5. 8. 2020"
     hideNewsletter={true}
     markdown={`
-## Materilály
+## Materiály
 
 ### Repozitář s kurzy
 

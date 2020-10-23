@@ -8,7 +8,7 @@ const Page = () => (
     subheader="Eurosoftware, 29. 9. 2020"
     hideNewsletter={true}
     markdown={`
-## Materilály
+## Materiály
 
 ### Repozitář s kurzy
 
