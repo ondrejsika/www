@@ -32,7 +32,7 @@ const Page = () => (
 - Docker Compose deployment - https://github.com/ondrejsika/gitlab-ci-docker-compose-traefik--example
 - Kubernetes deployment - https://github.com/ondrejsika/gitlab-ci-example-kubernetes
 
-## Clanky, ktere jsem zminoval
+## Články, které jsem zmiňoval
 
 - [Správa Gitlabu pomocí Terraformu](/blog/docker-vs-podman-v-cem-se-lisi/)
 - [Podman: "Docker" pod non-root uzivatelem](/blog/podman-docker-pod-non-root-uzivatelem/)
@@ -44,7 +44,7 @@ const Page = () => (
 - Kubernetes - Orchestrace kontejneru, [Školení Kubernetes](/skoleni/kubernetes)
 - Terraform - Infrastructure as a code, [Školení Terraformu](/skoleni/terraform)
 - Digital Ocean - Cloudova Platforma, [Školení Digital Ocean](/skoleni/digitalocean)
-- AWS - Cloudova Platforma, školení pripravuji
+- AWS - Cloudová Platforma, školení pripravuji
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
 
