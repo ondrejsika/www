@@ -26,8 +26,8 @@ const Navbar = (
           ["DOCKER", "/training/docker"],
           ["KUBERNETES", "/training/kubernetes"],
           ["ANSIBLE", "/training/ansible"],
-          ["PROMETHEUS", "/training/prometheus"]
-          // ["TERRAFORM", "/training/terraform"],
+          ["PROMETHEUS", "/training/prometheus"],
+          ["TERRAFORM", "/training/terraform"]
           // ["REACT & NEXT.JS", "/training/react"]
         ]
       ],
