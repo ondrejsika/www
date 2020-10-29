@@ -560,13 +560,13 @@
   venue_id: null
 - active: true
   city: Online
-  country: cz
+  country: de
   course_id: docker
   date_from: 09.12.2020
   date_to: 10.12.2020
   facebook_event: null
   id: docker-online-09-12-2021
-  lang: cs
+  lang: en
   length: 2 dny
   linkedin_event: null
   name: Docker
@@ -588,13 +588,13 @@
   venue_id: null
 - active: true
   city: Online
-  country: cz
+  country: de
   course_id: kubernetes
   date_from: 17.12.2020
   date_to: 18.12.2020
   facebook_event: null
   id: kubernetes-online-17-12-2021
-  lang: cs
+  lang: en
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
@@ -602,13 +602,13 @@
   venue_id: null
 - active: true
   city: Online
-  country: cz
+  country: de
   course_id: terraform
   date_from: 21.12.2020
   date_to: 21.12.2020
   facebook_event: null
   id: terraform-online-21-12-2021
-  lang: cs
+  lang: en
   length: 1 den
   linkedin_event: null
   name: Terraform
