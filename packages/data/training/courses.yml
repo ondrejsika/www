@@ -842,6 +842,11 @@
   price:
     open:
       cz: 6 800 CZK
+      sk: 449 EUR
+      nl: "??? EUR"
+      de: 799 EUR
+      uk: 799 EUR
+      se: "??? SEK"
     in_house:
       cz: 25 000 CZK
   twitter_recommendations:
