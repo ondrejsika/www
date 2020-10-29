@@ -570,7 +570,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 799 EUR
   venue_id: null
 - active: true
   city: Online
@@ -598,7 +598,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 799 EUR
   venue_id: null
 - active: true
   city: Online
@@ -612,7 +612,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 449 EUR
   venue_id: null
 - active: true
   city: Prague
