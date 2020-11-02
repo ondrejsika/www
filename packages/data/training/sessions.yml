@@ -446,7 +446,7 @@
   name: Digital Ocean
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: prometheus
@@ -460,7 +460,7 @@
   name: Prometheus
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -474,7 +474,7 @@
   name: Docker
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: gitlab-ci
