@@ -63,6 +63,13 @@
   courses:
     - rdpanek-test-automatizace
 
+- id: performance-testing
+  name: Performance Testing
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - rdpanek-performance-testing
+
 - id: php
   name: PHP
   description: |

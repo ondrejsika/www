@@ -163,7 +163,7 @@
 
     ### Jak školení probíhá
 
-    Online trénink / dva dny / doprovodné materiálny v elektronické podobě / 1h konzultace po školení přes (Discord)[https://discord.com/invite/HjpmpCW] / účastník si na svém počítači odnese ukázky z probíraných témat.
+    Online trénink / dva dny / doprovodné materiálny v elektronické podobě / 1h konzultace po školení přes [__Discord__](https://discord.com/invite/HjpmpCW) / účastník si na svém počítači odnese ukázky z probíraných témat.
 
     ### Co Vás naučím
 
@@ -195,7 +195,58 @@
 
     - obsluhovat svůj počítač a mít práva pro instalaci programů
     - používání SSH
-    - další (příprava)[https://www.youtube.com/watch?v=H3GPeYVZIIk&feature=youtu.be&t=3167]
+    - další [__příprava__](https://www.youtube.com/watch?v=H3GPeYVZIIk&feature=youtu.be&t=3167)
+
+- id: rdpanek-performance-testing
+  lecturer_id: rdpanek
+  technology_id: performance-testing
+  name: Performance Testing
+  price_open: 18 400 CZK
+  price_in_house:
+
+  description: |
+    ### Co je to Performance Testing
+
+    Doménová specializace Performance testera pokrývá témata jako jsou stavba infrastruktury perf-stacku pro exekuci PT, analýzu požadavků, design PT, exekuci, investigaci a vyhodnocení, znalosti fungování backendových a frontendových systémů. Právě tato témata školení prakticky pokrývá.
+    Performance Tester je vzhledem ke způsobům řešení firemní infrastruktury potřeba více než kdy dříve a jsou na něj kladeny stále vyšší nároky. O výkonnostní charakteristiky infrastruktury a z nich plynoucí rizika se začíná zajímat více firem. Je to řemeslo, které neomylně poukazuje na rizika a které pomáhá posunout produkt do releasu.
+
+    ### Jak školení probíhá
+
+    2 dny praktického on-line školení nad testovací infrastruktorou / podklady pro vypracování Performance test analýzy a Checklist Performance Testera / 1h konzultace po školení online nebo osobně u kávy / účastník si na svém počítači odnese Test plan a funkční Perf Stack. Získáte certifikát o absolvování tréninku.
+
+    ### Co Vás naučím
+
+    - Praktické seznámení se s rolí Performance Testera
+    - Stavba a provozování perf-stacku pro exekuci a vyhodnocení Performance Testů
+    - Test analýza, Test design, Test exekuce, vyhodnocení a reportování výsledků
+    - Strategie nasazení Performance Testů
+    - Analýza nejčastějších incidentů
+    - Nástroje
+    - Úvod do Web Performance Testingu  
+
+    ### Pro koho je školení určeno
+
+    - Testeři (začátečníci i pokročilí)
+    - Vývojáři frontendových a backendových aplikací
+    - SW architekti
+    - Správci prostředí
+
+    #### Doprovodné nástroje
+
+    - Docker
+    - Elasticsearch stack
+    - Git
+    - Kubernetes
+    - Linux a příkazová řádka
+    - a spoustu dalších :-)
+
+    #### Technické požadavky
+
+    - umět obsluhovat svůj počítač a mít práva k instalaci programu
+    - základní znalosti o automatizaci testování
+    - základní znalosti, jak funguje frontend a backend webové aplikace
+    - základní znalosti práce s gitem a příkazovou řádkou
+    - účet na GitHub.com pro sdílení kódu
 
 # Jan Barasek
 
