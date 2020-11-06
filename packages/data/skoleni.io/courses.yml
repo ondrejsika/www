@@ -152,6 +152,50 @@
   lecturer_id: rdpanek
   technology_id: test-automatizace
   name: Test Automatizace
+  price_open: 9 000 CZK
+  price_in_house:
+
+  description: |
+    ### Co je to Test Automatizace
+
+    QA každé firmy má společný cíl a tím je chybám předcházet. Je ovšem často dost prapodivné, jakým způsobem se o to snaží a jaké metodiky a nástroje pro své snažení využívají. Někteří testeři ani prakticky nevědí, co vlastně testují a jaké mají možnosti.
+    Misí Test Automation Basecampu je rozšíření obzoru testera a jeho/její nasměrování na dráhu doménového specialisty.
+
+    ### Jak školení probíhá
+
+    Online trénink / dva dny / doprovodné materiálny v elektronické podobě / 1h konzultace po školení přes (Discord)[https://discord.com/invite/HjpmpCW] / účastník si na svém počítači odnese ukázky z probíraných témat.
+
+    ### Co Vás naučím
+
+    - Návyky při používání nástrojů
+    - Git bez GUI, instalace a ovládání
+    - Izolace a imutabilita pomocí Dockeru, izolace, ovládání a build
+    - Kubernetes pro řešení test automatizace na úrovni infrastruktury a definice patternu 1:1:1
+    - Elasticsearch, Kibana, Metricbeat a Filebeat pro live logování a tvorbu vizualizací a dashboardů test reportu
+    - Definice a řízení rotace automatizovaných testů
+
+    - Nástroje nejsou vše
+    - Webový browser, princip fungování a architektura webové aplikace
+    - Funkcionální automatizace před lety a dnes
+    - Nefunkcionální automatizace jako jsou Performance testy, Web Performance testy a všeobecný přehled nad nástroji a používáním
+    - Metodiky a strategie pro vývoj a udržování automatizovných testů, pro sběr a interpretace dat z testovacího frameworku.
+    - Napíšeme si a oživíme Web Performance Test
+
+    ### Pro koho je školení určeno
+
+    - Testeři začátečníci
+    - Testeři pokročilí
+    - Test Manager / Test Lead
+
+    #### Předchozí znalosti
+
+    - pokyny budou zaslány emailem
+
+    #### Technické požadavky
+
+    - obsluhovat svůj počítač a mít práva pro instalaci programů
+    - používání SSH
+    - další (příprava)[https://www.youtube.com/watch?v=H3GPeYVZIIk&feature=youtu.be&t=3167]
 
 # Jan Barasek
 
