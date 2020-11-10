@@ -44,6 +44,40 @@
   name: Kubernetes
   price_open: 11 900 CZK
   price_in_house: 50 000 CZK
+  description: |
+    ### Co je to Kubernetes
+
+    Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
+
+    ### Jak školení probíhá
+
+    Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+
+    ### Co Vás naučím
+
+    - Teoretický úvod do Kubernetes
+    - Instalace Minikube a kubectl (pro ty kteří nenainstalovali doma)
+    - Popis Kubernetes komponent
+    - Deployment do Kubernetes
+    - Práce s právy v Kubernetes clusteru
+    - Teoretický úvod do Helm balíčku
+    - Instalace / Deployment pomocí Helmu
+    - Psaní vlastního Helm balíčku
+
+    ### Pro koho je školení určeno
+
+    Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.
+
+    #### Předchozí znalosti
+
+    - Základy práce s Dockerem
+    - Základy práce s Linuxem
+    - Základy práce v terminálu
+
+    #### Technické požadavky
+
+    - Nainstalovaný Kubernetes
+    - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
 
 - id: ondrejsika-terraform
   lecturer_id: ondrejsika
@@ -51,6 +85,45 @@
   name: Terraform
   price_open: 6 800 CZK
   price_in_house: 25 000 CZK
+  description: |
+    ### Co to je Terraform a k čemu se používá?
+
+    Terraform je nástroj, který se používá ke správě infrastruktury v cloudu, jak veřejném (AWS, Azure, GCP), tak privátním (OpenStack, VMware vSphere).
+
+    Terraform Vám umožní __spravovat infrastruktutru jako kód__, to znamená verzovanou v Gitu, přidávání resources pomocí merge (pull) requestů a mnoho dalších výhod. Infrastrukturu můžete dále nasadit do testovacího prostředí přesně tak, jako je v produkci bez zbytečného úsilí. O všech komponentách máte přehled a můžete predikovat ceny. Konec klikání infrastruktury, zkuste Terraform.
+
+    Terraform umožnuje spravovat více cloudových providerů současne, zároveň umožnuje pracovat s hibridními cloudy (část v privátním cloudu, část ve veřejném).
+
+    ### Jak školení probíhá
+
+    Školení je formou workshopu, všechno si podrobně vyzkoušíme a vysvětlíme. Ukážeme si jak Terraform pracuje, jak jej používat v teamu a jak jím spravovat infrastukturu. Uděláme si příklad infrastruktury jednoduché aplikace, kde nastavíme vše - od DNS, přes Kubernetes cluster po S3 file storage.
+
+    ### Co Vás naučím
+
+    - Základní koncept Terraformu
+    - Výhody Terraformu proti Ansible, Puppetu, ...
+    - Konfigurace Terraformu pro práci v teamu
+    - Ovládání Terraform CLI
+    - Úvod do Terraform Configuration Language (HCL)
+    - Terraform Providers - napojení na cloudy
+    - Práce s resources v Terraformu
+    - Terraform moduly
+    - Best Practice
+
+    ### Pro koho je školení určeno
+
+    Školení je určeno pro DevOps a adminy, kteří chtějí lépe a efektivněji spravovat infrastrukturu. Zároveň také pro vývojáře, kteří se starají o nejakou infrastrukturu v cloudech.
+
+    #### Předchozí znalosti
+
+    - Základní znalost veřejných cloudů (AWS, Digital Ocean, Azure, ...)
+    - Základy práce v terminálu
+
+    #### Technické požadavky
+
+    - Nainstalovaný Terraform
+    - Přístup na internet (ideálně bez korporatni proxy)
+    - Vlastní účet v Digital Oceanu výhodou
 
 - id: ondrejsika-gitlab-ci
   lecturer_id: ondrejsika
@@ -58,6 +131,38 @@
   name: Gitlab CI
   price_open: 6 800 CZK
   price_in_house: 25 000 CZK
+  description: |
+    ### Co je to Continuous Integration?
+
+    Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutinní úkoly jako je pouštění testů, kvality kódu anebo nasazování. Umožní Vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images anebo pouštět testy v kontejnerech.
+
+    ### Jak školení probíhá
+
+    Na školení formou workshopu si vysvětlíme, proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přes testy až po deployment.
+
+    ### Co Vás naučím
+
+    - Obecný úvod do CI
+    - Úvod do Gitlab CI
+    - Instalace Gitlab CI Runneru
+    - Práce s CI joby
+    - Tvorba CI pipelines
+    - Automatické nasazování
+    - Docker a CI
+
+    ### Pro koho je školení určeno
+
+    Školení je primárně určeno vývojářům, kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.
+
+    #### Předchozí znalosti
+
+    - Základy práce s Linuxem
+    - Základy práce v terminálu
+    - Základní znalost Gitu výhodou
+
+    #### Technické požadavky
+
+    - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
 
 - id: ondrejsika-git
   lecturer_id: ondrejsika
@@ -65,6 +170,39 @@
   name: Git
   price_open: 6 800 CZK
   price_in_house: 25 000 CZK
+  description: |
+    ### Co je to Git?
+
+    Git je moderní verzovaci nástroj, který se stal de facto standardem mezi vývojáři. Používají jej na denní bázy jednotlivci, startupy i korporace. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně aniž byste si zasahovali do rozdělaných věcí nebo je jinak narušovali. Spolupráci na vývoji projektu ještě zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software (více o Gitlabu v samostatném kurzu).
+
+    ### Jak školení probíhá
+
+    Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practice. Ukážeme si vše od instalace a základního nastavení Gitu, přes jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacích strategií (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako omylem jsem si všechno smazal a podobně.
+
+    ### Co Vás naučím
+
+    - Konfigirace GITu
+    - Vytvořit nový repozitář
+    - Základní ovládání GITu
+    - Práce v jedné větvi
+    - Práce ve větvích - merge, rebase (silná stránka Gitu)
+    - Práce se vzdálenými repozitáři
+    - Záchrana smazaných dat z repozitáře
+
+    ### Pro koho je školení určeno
+
+    Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB anebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.
+
+    #### Předchozí znalosti
+
+    - Základy programování
+    - Základy práce v terminálu výhodou
+    - Základní znalost Gitu výhodou
+
+    #### Technické požadavky
+
+    - Nainstalovaný Git
+    - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
 
 - id: ondrejsika-digitalocean
   lecturer_id: ondrejsika
@@ -72,6 +210,45 @@
   name: Digital Ocean
   price_open: 11 900 CZK
   price_in_house: 50 000 CZK
+  description: |
+    ### Popis technologie
+
+    Digital Ocean je spolehlivý a jednoduchý cloud, kam můžete velmi rychle zmigrovat vaši stávající infrastrukturu nebo vytvořit novou pro nový projekt ve velmi krátkém čase a s velmi malou nutností údržby. Digital Ocean je o hodně jednodušší než AWS nebo GCP a je proto vhodný i pro ty, kteří nemají s cloudy žádné zkušenosti.
+
+    ### Jak školení probíhá
+
+    Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme si jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak s jeho pomocí nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+
+    ### Co Vás naučím
+
+    - Co je Digital Ocean
+    - Digital Ocean vs ostatní cloudy
+    - Přehled služeb Digital Oceanu
+    - Digital Ocean a Terraform
+    - Digital Ocean CLI
+    - Compute (Virtuální Servery, Kubernetes)
+    - Storage (Block Storage, S3)
+    - Managed DB (Postgres, Mysql, Redis)
+    - Networking (Load Balancing, Firewall, VPC)
+    - Monitoring
+    - Backupy
+
+    ### Pro koho je školení určeno
+
+    Školení je určeno pro vývojáře a DevOpsáky, kteří přemýšlí o cloudu nebo chtějí zefektivnit správu infrastruktry na svém projektu.
+
+    #### Předchozí znalosti
+
+    - Základy práce s Linuxem
+    - Základy práce v terminálu
+
+    #### Technické požadavky
+
+    - Nainstalovaný
+      - Terraform
+      - Digital Ocean CLI (`doctl`)
+      - Účet na Digital Oceanu ([Registrace + 50 USD kredit](https://sika.link/do-ref))
+    - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
 
 - id: ondrejsika-elk
   lecturer_id: ondrejsika
@@ -86,6 +263,35 @@
   name: Prometheus
   price_open: 11 900 CZK
   price_in_house: 50 000 CZK
+  description: |
+    ### Co je to Prometheus
+
+    Prométheus je moderní monitoringový nástroj a metrics server. Umožňuje sbírat metrická data z vaší aplikace a většiny komponent Váši infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prométheus spadá pod CNCF, stejně jako Kubernetes.
+
+    ### Co Vás naučím
+
+    -	Úvod do Prometheus ekosystému
+    - Instalace Promethea a Alertmanageru
+    - Exportéry – získávání dat
+    - Konfigurace Promethea a Alertmanageru
+    - Práce s PROMQL (dotazovací jazyk Promethea)
+    - Integrace s Grafanou
+    - Prometheus Pushgateway
+    - Integrace s Dockerem, Kubernetes a vlastní aplikací
+
+    #### Pro koho je školení určeno
+
+    Školení je určeno pro vývojáře a devops, kteří chtějí jednoduše a efektivně monitorovat aplikace.
+
+    #### Předchozí znalosti
+
+    - Základy práce s Linuxemm
+    - Základy práce v terminálu
+
+    #### Technické požadavky
+
+    - Notebook s přístupem na internet
+    - Docker nebo nainstalovány Prométheus, Alert Manager, Push Gateway a Grafanu
 
 - id: ondrejsika-ansible
   lecturer_id: ondrejsika
@@ -93,6 +299,38 @@
   name: Ansible
   price_open: 11 900 CZK
   price_in_house: 50 000 CZK
+  description: |
+    ### K čemu se používá?
+
+    Ansible je nástroj na hromadnou správu konfigurací a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení. Nemusíte řešit v jakém stavu je server nebo aplikace ted, Ansible vám zařídí požadovaný výsedek (výhoda deklarativní syntaxe, napřiklad shell script je imperativní - proveď to a to ...). Veškerou konfiguraci máte verzovanou Gitem a nestane se vám, že ztratíte přehled, kde máte co nasazené nebo ze vynecháte nějaký důležitý krok. Ansible vám pomůže nasazovat aplikace a spravovat servery rychleji a bezpečněji.
+
+    ### Jak školení probíhá
+
+    Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní koncepty. Zkusíme si nastavit server (testovací na DigitalOceanu) a nasadit aplikaci od začátku až do konce. Vše si prakticky ošaháme a ozkoušíme.
+
+    ### Co Vás naučím
+
+    - Základní koncept Ansible
+    - Instalace Ansible (pro ty kteří nenainstalovali doma)
+    - Základní ovládání Ansible
+    - Playbooks
+    - Moduly
+    - Šablony
+    - Secrets
+
+    ### Pro koho je školení určeno
+
+    Školení je převážně určeno adminum a DevOps, kteří chtějí začít Ansible používat. Zároveň je vhodné i pro vývojáře, kteří občas nasazují (i do testovacích prostředí) svoje aplikace a chtějí zjednodušit tento proces.
+
+    #### Předchozí znalosti
+
+    - Základy práce s Linuxemm
+    - Základy práce v terminálu
+
+    #### Technické požadavky
+
+    - Nainstalovaný Ansible
+    - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
 
 - id: ondrejsika-openstack
   lecturer_id: ondrejsika
@@ -128,6 +366,68 @@
   name: Rancher
   price_open: 6 800 CZK
   price_in_house: 25 000 CZK
+  description: |
+    ### Popis technologie
+
+    Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webové administrace, tak pomocí Terraformu.
+
+    ### Jak školení probíhá
+
+    Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Rancher si nainstalujeme a ukážeme jak jej spravovat. Pak si prakticky vytvoříme Kubernets clustery v cloudu i na on premise virtuálech. Jak ručně, tak pomocí Terraformu.
+
+    ### Co Vás naučím
+
+    - Co je Rancher
+    - Instalace Rancheru
+    - Správa Rancheru (Uživatele, Práva, ...)
+    - Správa Kubernetes clusteru v GUI (vytváření, aktualizace, ...)
+    - Správa Kuberneres clusteru pomocí Terraformu
+
+    ### Pro koho je školení určeno
+
+    Školení je určeno pro DevOps, kteří spravují Kubetnetes clustery.
+
+    #### Předchozí znalosti
+
+    - Základní znalost Kubernetes
+    - Základy práce v terminálu
+
+- id: ondrejsika-proxmox
+  lecturer_id: ondrejsika
+  technology_id: proxmox
+  name: Proxmox
+  price_open: 6 800 CZK
+  price_in_house: 25 000 CZK
+  description: |
+      ### Co je to Proxmox
+
+      Proxmox je open source nástavba KVM Virtualizace a LXC kontejnerů. Přináší enterprise virtualizaci a jednoduchou správu virtuálních strojů a kontejnerů na léty prověřený virtualizační stack na Linuxu.
+
+      ### Jak školení probíhá
+
+      Školení probíhá formou workshopu, vše si prakticky vyzkoušíme. Od instalace Proxmox serveru, po nastaveni HA pro virtuální servery.
+
+      ### Co Vás naučím
+
+      - Úvod do Virtualizace, Kontejnerizace a Proxmoxu
+      - Nastavení Proxmoxu
+      - Nastavení storage
+      - Práce s KVM virtuálnímy servery
+      - Práce s LXC kontejnery (lightweight virtualizace)
+      - Backup, restore
+      - Migrace a HA
+
+      ### Pro koho je školení určeno
+
+      Školení je primárně určeno administrátorům, kteří nemají s virtualizací a Proxmoxem žádné nebo jen malé zkušenosti.
+
+      #### Předchozí znalosti
+
+      Základní znalost administrace Linuxu.
+
+      #### Technické požadavky
+
+      Notebook s přístupem na internet. Nic víc není potřeba. Pokud máte nějaký testovací Proxmox, můžete využívat ten, ale pro absolvování kurzu není potřeba.
 
 # Vojtech Mares
 
@@ -222,7 +522,7 @@
     - Strategie nasazení Performance Testů
     - Analýza nejčastějších incidentů
     - Nástroje
-    - Úvod do Web Performance Testingu  
+    - Úvod do Web Performance Testingu
 
     ### Pro koho je školení určeno
 
