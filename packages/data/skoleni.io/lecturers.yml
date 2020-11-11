@@ -7,14 +7,10 @@
     - ondrejsika-gitlab-ci
     - ondrejsika-git
     - ondrejsika-digitalocean
-    - ondrejsika-elk
     - ondrejsika-prometheus
     - ondrejsika-ansible
-    - ondrejsika-openstack
-    - ondrejsika-python
-    - ondrejsika-django
-    - ondrejsika-go
     - ondrejsika-rancher
+    - ondrejsika-proxmox
   bio: Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.
   twitter: ondrejsika
   linkedin: ondrejsika
