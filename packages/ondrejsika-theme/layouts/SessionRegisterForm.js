@@ -4,7 +4,7 @@ import { Form } from "react-bootstrap";
 import Field from "@app/common/forms/Field";
 import fetch from "isomorphic-unfetch";
 import Router from "next/router";
-import Button from "@app/ondrejsika-theme/components/FormButton";
+// import Button from "@app/ondrejsika-theme/components/FormButton";
 import ReCAPTCHA from "react-google-recaptcha";
 import Translate from "@app/common/components/Translate";
 
@@ -76,9 +76,9 @@ const SessionRegisterForm = props => {
       <ReCAPTCHA ref={recaptchaRef} sitekey={props.site.recaptcha_site_key} />
 
       <div className="pt-5">
-        <Button size="huge" site={props.site} href="#">
+        <button site={props.site}>
           <Translate lang={props.site.lang} cs="Odeslat" en="Submit" />
-        </Button>
+        </button>
       </div>
     </Form>
   );
