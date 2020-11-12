@@ -1,3 +1,26 @@
+- id: terraform-a-gitlab-ci-14-meetup-cncf-sk
+  title: "Terraform a Gitlab CI (14. meetup CNCF.sk)"
+  date: 12. 11. 2020
+  ad: terraform
+  tags:
+    - terraform
+    - gitlab-ci
+    - cncf-sk
+  perex: |
+    Slides a repozitare z 14. meetupu Cloud Native - Kubernetes - Bratislava na tema Terraform a Gitlab CI
+  content: |
+    Slides a repozitare z 14. meetupu Cloud Native - Kubernetes - Bratislava na tema Terraform a Gitlab CI
+
+    Odkazy:
+
+    - Slides: https://docs.google.com/presentation/d/1K1-bM3SORRLRmr1NBEP_0mWsVnD0GvZzHQCqKoJO4WY/edit
+    - Repo: https://github.com/ondrejsika/example-terraform-gitlab-ci
+    - Repo (se zmenamy): https://github.com/sika-training-examples/2020-11-12-terraform-gitlab-ci-example
+
+    Odkaz na zaznam pridam az bude k dispozici.
+
+    Pokud mate jakekoliv dotazy, napiste na <ondrej@sika.io>
+
 - id: zaznam-devops-live-2-docker-a-traefik-proxy
   title: "Záznam DevOps Live #2: Docker & Traefik Proxy"
   date: 25. 9. 2020
