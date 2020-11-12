@@ -65,22 +65,22 @@
 #     - terraform
 #     - digitaloceanu
 
-- id: novinky-v-gitlab-ci-11-2020
-  eventbrite: https://www.eventbrite.com/e/120943797153
-  active: true
-  title: Novinky v Gitlab CI (listopad 2020)
-  date: 11.11.2020
-  time: "19:00"
-  about: |
-    V Gitlab CI se událo za poslední rok hodně změn, řekneme si, co se od našeho školení změnilo a jaké funkce by Vás mohli zajímat.
-  points: |
-    - Lehký úvod do Gitlab CI
-    - Více pipelines v jednom projektu
-    - Vazby mezi projekty
-    - Dynamicky generované pipelines
-    - Praktická ukázka
-  technologies:
-    - gitlab
+# - id: novinky-v-gitlab-ci-11-2020
+#   eventbrite: https://www.eventbrite.com/e/120943797153
+#   active: true
+#   title: Novinky v Gitlab CI (listopad 2020)
+#   date: 11.11.2020
+#   time: "19:00"
+#   about: |
+#     V Gitlab CI se událo za poslední rok hodně změn, řekneme si, co se od našeho školení změnilo a jaké funkce by Vás mohli zajímat.
+#   points: |
+#     - Lehký úvod do Gitlab CI
+#     - Více pipelines v jednom projektu
+#     - Vazby mezi projekty
+#     - Dynamicky generované pipelines
+#     - Praktická ukázka
+#   technologies:
+#     - gitlab
 - id: proc-a-jak-pouzivat-cloudflare
   eventbrite: https://www.eventbrite.com/e/125436023523
   active: true
