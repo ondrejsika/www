@@ -253,10 +253,10 @@
   name: František Vodsloň
   photo: img/frantisekvodslon.jpg
   role:
-    cs: Software Development Manager
-    de: Software Development Manager
-    en: Software Development Manager
-    se: Software Development Manager
+    cs: Software Development Manager, NMS Market Research
+    de: Software Development Manager, NMS Market Research
+    en: Software Development Manager, NMS Market Research
+    se: Software Development Manager, NMS Market Research
   text:
     cs: |
       Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.

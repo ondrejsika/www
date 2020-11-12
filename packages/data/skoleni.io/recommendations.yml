@@ -5,3 +5,77 @@
   role: Vývojář Aplikací
   company: Vysoká škola ekonomická v Praze
   text: Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
+
+- id: jan-potuznik-ondrejsika-docker
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-docker
+  name: Jan Potužník
+  role: Tools & Automation Engineer
+  company: Apple
+  text: Školení Docker bylo skvělé, hodně jsem se naučil a byla to zábava. Zúčastnil jsem se také tréninku Kubernetes, které bylo také skvělé.
+
+- id: marek-kudlacek-ondrejsika-kubernetes
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-kubernetes
+  name: Marek Kudláček
+  role: L3 System Admin
+  company: Notino
+  text: Pár školení už jsem zažil, ale takhle perfektně do detailu vyladěné Kubernetes školení mě vážně dostalo;) Pokud chcete jít s dobou a vůbec nevíte co k8s je, tak neváhejte a napište Ondrovi!!! Ještě jednou díky Ondro;) Bylo to super!
+
+- id: jozef-vojtek-ondrejsika-kubernetes
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-kubernetes
+  name: Jozef Vojtek
+  role: Java Specialist
+  company: České Radiokomunikace a.s.
+  text: U Ondřeje jsem absolvoval dvě školení. Docker a GitLab CI v jednom a Kubernetes. Obě školení mi otevřely dveře a posunuli mě vpřed. Ondřej disponuje ohromně širokým záběrem znalostí, takže se s ním velmi dobře diskutuje. Získal jsem přehled co daný nástroj nabízí a co naopak dokáže vzít, díky výkladu člověka z praxe jsem dostal "best practice", na níž mohu stavět. Každopádně doporučuji jakýkoliv kurz z Ondrova portfolia.
+
+- id: ivo-hlavaty-ondrejsika-terraform
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-terraform
+  name: Ivo Hlavatý
+  role: System Engineer
+  company: Konica Minolta Business Solutions Czech
+  text: Absolvoval jsem online kurz Terraformu a moc se mi to líbilo. Ondřej byl dobře připraven s mnoha příklady v Githubu. Byl také ochoten najít konkrétní řešení na žádosti ostatních účastníků. Oceňuji také jeho nápady jak integrovat Terraform s dalšími nástroji (prometheus, gitlab, ..). Rozhodně doporučuji přihlásit se na jeho kurzy.
+
+- id: milan-skuhra-ondrejsika-terraform
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-terraform
+  name: Milan Skuhra
+  role: IT Architect
+  company:
+  text: Zúčastnil jsem se školení Docker a Kubernetes, protože jsme ve firmě chtěli tímto způsobem spravovat naše servery. Kvantum poznatků, které Ondřej dokázal za krátký čas odevzdat mě fascinovalo. Zajednali jsme s ním i spolupráci na rozjetí kubernetes clusteru (včetně CEPH) na našich serverech. Doufali jsme, že s Ondřejem to zvládneme za dva dny no udělali jsme to za jeden a naučili se také mnoho o administraci nového setupu. Po vynikajících zkušenostech jsem se zúčastnil dalšího školení - Terraform. Po jeho absolvování jsem mou několik denní nedokončenou práci mohl nahradit novým řešením hotovým za pár hodin. Vážím si jeho otevřenost a ochotu dělit se se svými zkušenostmi. Spolupráci s ním mohu jen vřele doporučit.
+
+- id: tomas-bartonicek-ondrejsika-gitlab-ci
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-gitlab-ci
+  name: Tomáš Bartoníček
+  role: IT Administrátor
+  company: Univerzita Pardubice
+  text: Ondra přijel k nám na Univerzitu Pardubice a velmi prakticky ukázal našemu různorodému týmu, jak lze využít Gitlab s CI. V průběhu také velmi ochotně reagoval na naše zvídavé dotazy a řešil s námi naše aktuální potřeby. Kolegové byli velmi spokojeni s průběhem školení a myslím, že u nás Ondra nebyl naposledy. Jednoznačně mohu Ondru doporučit, v technologiích se bravurně orientuje.
+
+- id: frantisek-vodslon-ondrejsika-gitlab-ci
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-gitlab-ci
+  name: František Vodsloň
+  role: Software Development Manager
+  company: NMS Market Research
+  text: Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností. Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma Dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd. Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo."
+
+- id: jiri-hlavaty-ondrejsika-ansible
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-ansible
+  name: Jiří Hlavatý
+  role: Unix System Administrator
+  company: Státní pokladna
+  text: Ondřeje vřele doporučuju jak na školení tak konzultaci v oblasti automatizace a DevOps procesů v prostředí linuxového světa. Github, Docker, Ansible..vše v malíčku, podpořeno praxi a nadšením pro opensource. No, možná by naučil i zalamování ve wordu, neptal jsem se..
+
+- id: ivo-hlavaty-ondrejsika-prometheus
+  lecturer_id: ondrejsika
+  course_id: ondrejsika-prometheus
+  name: Ivo Hlavatý
+  role: System Engineer
+  company: Konica Minolta Business Solutions Czech
+  text: Absolvoval jsem online kurz Terraformu a moc se mi to líbilo. Ondřej byl dobře připraven s mnoha příklady v Githubu. Byl také ochoten najít konkrétní řešení na žádosti ostatních účastníků. Oceňuji také jeho nápady jak integrovat Terraform s dalšími nástroji (prometheus, gitlab, ..). Rozhodně doporučuji přihlásit se na jeho kurzy.
+
+
