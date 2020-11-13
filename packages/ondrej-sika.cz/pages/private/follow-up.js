@@ -8,6 +8,7 @@ const Page = () => (
     markdown={`
 - [Git, O2, 11. 11. 2020](/follow-up/2020-11-11-o2-git)
 - [Gitlab CI, Mall, 9. 11. 2020](/follow-up/2020-11-09-mall-gitlab-ci)
+- [Kubernetes, Partners Group, 28. 10. 2020](/follow-up/2020-10-28-partners-group-kubernetes)
 - [Gitlab CI & Docker, Neeco, 22. 10. 2020](/follow-up/2020-10-22-neeco-gitlab-ci-docker)
 - [Kubernetes, Mavenir, 6. 10. 2020](/follow-up/2020-10-06-mavenir-kubernetes)
 - [Docker & Kubernetes, Eurosoftware, 29. 9. 2020](/follow-up/2020-09-29-eurosoftware-docker-kubernetes)
