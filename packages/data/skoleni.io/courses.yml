@@ -579,100 +579,100 @@
 
     ### Trénink pokrývá témata
 
-    Automatizované testy frontendu
-        - Automatizované testy v browseru
-        - Jak funguje browser
-        - Mobilní browser
-        - Jak fungují webové aplikace
-        - HTML (DOM), CSS Object Model (CSSOM), React (Mutace)
-        - Javascript v prohlížeči
-    Architektura test stacku
-        - TestCase jako konfigurace
-        - Systém pro správu revizí
-        - Test exekuce
-        - Environment test stacku (servery a browser)
-        - Komponenty pro logování a monitoring testu a testované aplikace.
-        - Další komponenty, např. dataservery.
-    Výběr nástroje
-        - Historie testování frontendu
-        - Konvenční frameworky
-    WebdriverIO
-        - about
-        - DigitalOcean
-        - Instalace WDIO
-    Psaní testů
-        - Psaní frontendových testů
-        - Běžně používané selektory, eventy a selektory trigrované eventy
-        - Architektura testů
-        - Vlastní příkazy
-        - Využití dataprovideru a znovupoužití packages
-    Spouštění testů
-        - Bash scripty
-        - Docker kontejnery
-        - CI/CD tooly
-        - Řízení na úrovní infrastruktury.
-    Integrační úroveň
-        - Automatizace rest-api
-        - Získání uživatelských dat pro automatizovaný test
-    Visual testing
-        - Testování na základě porovnávání snímků
-    Git bez GUI - verzování testů
-    Linux
-    Docker
-        - Seznámení s dockerem
-        - Používání WDIO v dockeru
-        - Spuštění připraveného WDIO stacku v dockeru
-    Jak funguje browser
-        - Infrastruktura, prostředí a komunikace
-        - Fáze a eventy
-    Javascript v browseru
-        - Integrace s dalšími javascriptovými knihovnami a využití v testech
-        - Využití javascriptových knihoven v browseru
-        - Injektáž javascriptu do browseru
-    API v browseru
-        - Využití Web API v automatizovaných testech
-        - Mutace DOMu
-        - Event handling
-        - Testování responses
-    Web Performance Testing
-        - Web Performance Testing (Dan slidy)
-        - Rychlost načítání Webu
-        - RUM, AMP, CrUX, Metriky
-        - Syntetické měření a NFR
-        - https://httparchive.org/
-        - CrUX https://g.co/chromeuxdash / https://crux.run/
-        - Nástroje
-            ◦ Lighthouse
-            ◦ https://speedcurve.com/
-            ◦ https://www.webpagetest.org/
-            ◦ https://search.google.com/test/mobile-friendly?id=W3KAzTwD4LLoglewG2Fclg
-        - Audit a Performance v browseru
-        - Psaní Web Performance testů
-        - Hero elements
-        - Javascript a priorita načítání zdrojů
-        - WPT Checklist
-    Rozšíření testu o analýzu frontendu
-        - Rychlost načítání webu
-        - Web Api
-        - Chyby a logy v browseru
-    Jak logovat / ukládat data
-        - Seznámení s Elasticsearch, Kibana, Beats
-        - Live logování testů a metrik z browseru
-        - Tvorba vizualizací a dashboardů
-        - Automatická tvorba reportů
-        - Canvasové reporty s firemní grafikou / kontinuální sledování stavu prostředí na televizy v open-space
-        - Další volitelné ukládání dat z testů
-    Investigace / Reporting
-        - Vyhodnocování funkcionálních a nefunkcionálních requirementů z nasbíraných dat
-        - Jaké metriky jsou důležité
-    Kubernetes
-        - Stavba prostředí pro live logování
-        - Seznámení s kubernetes
-        - Pattern 1:1:1
-        - Příprava WDIO stacku pro imutabilní a izolované spuštění v kubernetes
-        - Rotace automatizovaného testu v kubernetes
-    WDIO v cloudu
-    WDIO a CI/CD
+    ##### Automatizované testy frontendu
+    - Automatizované testy v browseru
+    - Jak funguje browser
+    - Mobilní browser
+    - Jak fungují webové aplikace
+    - HTML (DOM), CSS Object Model (CSSOM), React (Mutace)
+    - Javascript v prohlížeči
+    ##### Architektura test stacku
+    - TestCase jako konfigurace
+    - Systém pro správu revizí
+    - Test exekuce
+    - Environment test stacku (servery a browser)
+    - Komponenty pro logování a monitoring testu a testované aplikace.
+    - Další komponenty, např. dataservery.
+    ##### Výběr nástroje
+    - Historie testování frontendu
+    - Konvenční frameworky
+    ##### WebdriverIO
+    - about
+    - DigitalOcean
+    - Instalace WDIO
+    ##### Psaní testů
+    - Psaní frontendových testů
+    - Běžně používané selektory, eventy a selektory trigrované eventy
+    - Architektura testů
+    - Vlastní příkazy
+    - Využití dataprovideru a znovupoužití packages
+    ##### Spouštění testů
+    - Bash scripty
+    - Docker kontejnery
+    - CI/CD tooly
+    - Řízení na úrovní infrastruktury.
+    ##### Integrační úroveň
+    - Automatizace rest-api
+    - Získání uživatelských dat pro automatizovaný test
+    ##### Visual testing
+    - Testování na základě porovnávání snímků
+    ##### Git bez GUI - verzování testů
+    ##### Linux
+    ##### Docker
+    - Seznámení s dockerem
+    - Používání WDIO v dockeru
+    - Spuštění připraveného WDIO stacku v dockeru
+    ##### Jak funguje browser
+    - Infrastruktura, prostředí a komunikace
+    - Fáze a eventy
+    ##### Javascript v browseru
+    - Integrace s dalšími javascriptovými knihovnami a využití v testech
+    - Využití javascriptových knihoven v browseru
+    - Injektáž javascriptu do browseru
+    ##### API v browseru
+    - Využití Web API v automatizovaných testech
+    - Mutace DOMu
+    - Event handling
+    - Testování responses
+    ##### Web Performance Testing
+    - Web Performance Testing (Dan slidy)
+    - Rychlost načítání Webu
+    - RUM, AMP, CrUX, Metriky
+    - Syntetické měření a NFR
+    - https://httparchive.org/
+    - CrUX https://g.co/chromeuxdash / https://crux.run/
+    - Nástroje
+        ◦ Lighthouse
+        ◦ https://speedcurve.com/
+        ◦ https://www.webpagetest.org/
+        ◦ https://search.google.com/test/mobile-friendly?id=W3KAzTwD4LLoglewG2Fclg
+    - Audit a Performance v browseru
+    - Psaní Web Performance testů
+    - Hero elements
+    - Javascript a priorita načítání zdrojů
+    - WPT Checklist
+    ##### Rozšíření testu o analýzu frontendu
+    - Rychlost načítání webu
+    - Web Api
+    - Chyby a logy v browseru
+    ##### Jak logovat / ukládat data
+    - Seznámení s Elasticsearch, Kibana, Beats
+    - Live logování testů a metrik z browseru
+    - Tvorba vizualizací a dashboardů
+    - Automatická tvorba reportů
+    - Canvasové reporty s firemní grafikou / kontinuální sledování stavu prostředí na televizy v open-space
+    - Další volitelné ukládání dat z testů
+    ##### Investigace / Reporting
+    - Vyhodnocování funkcionálních a nefunkcionálních requirementů z nasbíraných dat
+    - Jaké metriky jsou důležité
+    ##### Kubernetes
+    - Stavba prostředí pro live logování
+    - Seznámení s kubernetes
+    - Pattern 1:1:1
+    - Příprava WDIO stacku pro imutabilní a izolované spuštění v kubernetes
+    - Rotace automatizovaného testu v kubernetes
+    ##### WDIO v cloudu
+    ##### WDIO a CI/CD
 
     ### Pro koho je školení určeno
 
