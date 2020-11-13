@@ -16,13 +16,21 @@
 
     ### Co Vás naučím
 
-    - Teoretický úvod do Dockeru
-    - Instalace Dockeru (pro ty kteří nenainstalovali doma)
-    - Práce s kontejnery
-    - Práce s obrazy
-    - Docker Compose - vicekontejnerove aplikace v Dockeru
-    - Deployment do Swarmu
-    - Ukázka deploymentu do Kubernetes
+    ##### Teoretický úvod do Dockeru
+      - Úvod do problematiky kontejneru
+      - Kde a jak použít Docker
+      - Výhody a nevýhody Dockeru
+    ##### Instalace Dockeru (pro ty kteří nenainstalovali doma)
+    ##### Práce s kontejnery
+    - ukážeme si jak pracovat s kontejnery
+    - správa docker serveru (cleanup, monitoring, …)
+    - práce s logy
+    - práce se sítí
+
+    ##### Práce s obrazy
+    ##### Docker Compose - vicekontejnerove aplikace v Dockeru
+    ##### Deployment do Swarmu
+    ##### Ukázka deploymentu do Kubernetes
 
     ### Pro koho je školení určeno
 
@@ -547,6 +555,140 @@
     - základní znalosti, jak funguje frontend a backend webové aplikace
     - základní znalosti práce s gitem a příkazovou řádkou
     - účet na GitHub.com pro sdílení kódu
+
+- id: rdpanek-webdriver-io
+  lecturer_id: rdpanek
+  technology_id: webdriver-io
+  name: Webdriver.io
+  price_open:
+  price_in_house:
+
+  description: |
+    ### Zaměření tréninku Webdriver.io
+
+    Cílem tréninku je prakticky provést testera (nováček / zkušený) od běžných požadavků na funkcionální test automatizaci po reálné nasazení až po early adopters požadavky jako jsou interakce automatizovaného testu s prohlížečem a měření NFR.
+
+    ### Jak školení probíhá
+
+    - Trénink je dvoudenní, vždy od 09h do 16h a probíhá pomocí Google Meets.
+    - Střídavě teorie s praktickým zapojením, výsledkem je funkční test stack, který můžete začít používat u vás ve firmě.
+    - Testuje se oproti připravené DEMO aplikaci.
+    - Po každé lekci bude debrief .
+    - Na konci tréninku získá každý účastník certifikát na základě ústní zkoušky.
+    - Každý z účastníků má možnost využít kdykoli později 1h konzultace.
+
+    ### Trénink pokrývá témata
+
+    Automatizované testy frontendu
+        - Automatizované testy v browseru
+        - Jak funguje browser
+        - Mobilní browser
+        - Jak fungují webové aplikace
+        - HTML (DOM), CSS Object Model (CSSOM), React (Mutace)
+        - Javascript v prohlížeči
+    Architektura test stacku
+        - TestCase jako konfigurace
+        - Systém pro správu revizí
+        - Test exekuce
+        - Environment test stacku (servery a browser)
+        - Komponenty pro logování a monitoring testu a testované aplikace.
+        - Další komponenty, např. dataservery.
+    Výběr nástroje
+        - Historie testování frontendu
+        - Konvenční frameworky
+    WebdriverIO
+        - about
+        - DigitalOcean
+        - Instalace WDIO
+    Psaní testů
+        - Psaní frontendových testů
+        - Běžně používané selektory, eventy a selektory trigrované eventy
+        - Architektura testů
+        - Vlastní příkazy
+        - Využití dataprovideru a znovupoužití packages
+    Spouštění testů
+        - Bash scripty
+        - Docker kontejnery
+        - CI/CD tooly
+        - Řízení na úrovní infrastruktury.
+    Integrační úroveň
+        - Automatizace rest-api
+        - Získání uživatelských dat pro automatizovaný test
+    Visual testing
+        - Testování na základě porovnávání snímků
+    Git bez GUI - verzování testů
+    Linux
+    Docker
+        - Seznámení s dockerem
+        - Používání WDIO v dockeru
+        - Spuštění připraveného WDIO stacku v dockeru
+    Jak funguje browser
+        - Infrastruktura, prostředí a komunikace
+        - Fáze a eventy
+    Javascript v browseru
+        - Integrace s dalšími javascriptovými knihovnami a využití v testech
+        - Využití javascriptových knihoven v browseru
+        - Injektáž javascriptu do browseru
+    API v browseru
+        - Využití Web API v automatizovaných testech
+        - Mutace DOMu
+        - Event handling
+        - Testování responses
+    Web Performance Testing
+        - Web Performance Testing (Dan slidy)
+        - Rychlost načítání Webu
+        - RUM, AMP, CrUX, Metriky
+        - Syntetické měření a NFR
+        - https://httparchive.org/
+        - CrUX https://g.co/chromeuxdash / https://crux.run/
+        - Nástroje
+            ◦ Lighthouse
+            ◦ https://speedcurve.com/
+            ◦ https://www.webpagetest.org/
+            ◦ https://search.google.com/test/mobile-friendly?id=W3KAzTwD4LLoglewG2Fclg
+        - Audit a Performance v browseru
+        - Psaní Web Performance testů
+        - Hero elements
+        - Javascript a priorita načítání zdrojů
+        - WPT Checklist
+    Rozšíření testu o analýzu frontendu
+        - Rychlost načítání webu
+        - Web Api
+        - Chyby a logy v browseru
+    Jak logovat / ukládat data
+        - Seznámení s Elasticsearch, Kibana, Beats
+        - Live logování testů a metrik z browseru
+        - Tvorba vizualizací a dashboardů
+        - Automatická tvorba reportů
+        - Canvasové reporty s firemní grafikou / kontinuální sledování stavu prostředí na televizy v open-space
+        - Další volitelné ukládání dat z testů
+    Investigace / Reporting
+        - Vyhodnocování funkcionálních a nefunkcionálních requirementů z nasbíraných dat
+        - Jaké metriky jsou důležité
+    Kubernetes
+        - Stavba prostředí pro live logování
+        - Seznámení s kubernetes
+        - Pattern 1:1:1
+        - Příprava WDIO stacku pro imutabilní a izolované spuštění v kubernetes
+        - Rotace automatizovaného testu v kubernetes
+    WDIO v cloudu
+    WDIO a CI/CD
+
+    ### Pro koho je školení určeno
+
+    - Nováčky v test automatizaci
+    - Zkušené testery, kteří chtějí switchnout technologii a dále se rozvíjet
+
+    #### Technické požadavky
+
+    - Musí umět obsluhovat svůj počítač a mít práva pro instalaci programů.
+    - Musí umět používat SSH.
+    - [__Docker__](https://www.zdrojak.cz/clanky/proc-pouzivat-docker/)
+    - [__Git__](https://git-scm.com/download/win) (volitelné)
+    - [__Putty__](https://www.putty.org/) (pro windows uživatele)
+    - Založte si účet na githubu: [__https://github.com/__](https://github.com/) a projděte si: [__https://www.root.cz/knihy/pro-git/__](https://www.root.cz/knihy/pro-git/)
+    - Zaregistrujte se na [__https://hub.docker.com/__](https://hub.docker.com/)
+    - Zaregistruj se na DigitalOcean
 
 # Jan Barasek
 

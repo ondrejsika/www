@@ -30,10 +30,11 @@
   twitter: vojtechmares_
 
 - id: rdpanek
-  name: Radim Daniel Panek
+  name: Radim Daniel Pánek
   courses:
     - rdpanek-test-automatizace
     - rdpanek-performance-testing
+    - rdpanek-webdriver-io
   bio: Dlouhá léta jsem pracoval jako vývojář a v posledních osmi letech se plně soustředím na výzkum v oblasti test automatizace. Působím v první linii od psaní testů přes správu infrastruktury pro automatizované testy až po evangelizaci test automatizace. Školím testery a měsíčně navštěvuju různé QA týmy, mentoruju a hodnotím jejich test stack.
   twitter: RDPanek
   linkedin: rdpanek
