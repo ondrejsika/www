@@ -126,3 +126,17 @@
     - Konfigurace flow alertů
   technologies:
     - alert manager
+- id: cloud-init
+  active: true
+  title: Uvod do Cloud Initu
+  date: ??. ??. 2021
+  time: "19:00"
+  about: |
+    Cloud Init je zpusob jak si zakladne nakonfigurovat VM bez nutnosti Ansiblu nebo SSH
+  points: |
+    - Co je Cloud Init a k cemu se pouziva
+    - Vyhody pouzivani Cloud Initu
+    - Ukazky ruznych Cloud Init konfiguraci
+    - Cloud Init a Terraform
+  technologies:
+    - cloud-init
