@@ -111,7 +111,6 @@
   technologies:
     - docker
     - prometheus
-    - alert manager
 - id: konfigurace-alertmanageru
   eventbrite: https://www.eventbrite.com/e/125533296469
   active: true
@@ -125,7 +124,7 @@
     - Konfigurace backendů (Email, Slack, Pager Duty, Telegram ...)
     - Konfigurace flow alertů
   technologies:
-    - alert manager
+    - prometheus
 - id: cloud-init
   active: true
   title: Uvod do Cloud Initu
