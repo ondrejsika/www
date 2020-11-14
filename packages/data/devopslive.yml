@@ -121,7 +121,7 @@
     Ukážeme si jak efektivně konfigurovat flow eventů v Alertmanageru.
   points: |
     - Rychlý úvod do Alertmanageru
-    - Konfigurace backendů (Email, Slack, Pager Duty, Telegram ...)
+    - Konfigurace backendů (Email, Slack, Pager Duty, ...)
     - Konfigurace flow alertů
   technologies:
     - prometheus
