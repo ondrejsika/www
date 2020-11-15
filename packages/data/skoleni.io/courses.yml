@@ -443,16 +443,150 @@
   lecturer_id: vojtechmares
   technology_id: git
   name: Git & Gitlab
+  price_open: 5 900 CZK
+  price_in_house: 25 000 CZK
+  description: |
+    ### Co je to Git a GitLab?
+
+    #### Git
+
+    Git je verzovací nástroj, který se stal "industry standardem". Používají ho denně jak jednotlivci tak firmy včetně korporátů. Git umožňuje snadnou spolupráci na jednom projektu ve více lidech bez toho, abyste si navzájem zasahovali do práce.
+
+    #### GitLab
+
+    GitLab je software (a taky platforma) který vám usnadní spolupráci na projektu (popř. projektech) ve více lidech. Od pouhého hostování vzdáleného Git repozitáře přes issue management, merge reqeusty až po nasazení aplikace do produkce a integrace CI/CD, ale o tom více na školení zaměřeném přímo na GitLab.
+
+    ### Jak školení probíhá
+
+    Školení probíhá formou workshopu. Vysvětlíme si co to Git je a proč je dobré jej používat, jak funguje a tzv. best practices (jak jej nejlépe používat). Ukážeme si jak Git nainstalovat a základní nastavení. Jak se pracuje v jedné větvi a jak ve více větvých s více lidmi pomocí různých strategií (merge a rebase) a jejich výhody a nevýhody. Nezapomeneme ani na nepříjemné situace a jak se z nich dostat, například "vše jsem si smazal, co teď" a další.
+
+    Dále si ukážeme základy práce s GitLabem jako tvorba issues a jejich reference v commit zprávách. Práci s větvemi a merge requesty.
+
+    ### Co si odnesete
+
+    - Konfigurace Gitu
+    - Tvorba repozitářů
+    - Základy pro práci s Gitem
+    - Práce v jedné větvi
+    - Práce ve více větvích (**rebase** a merge)
+    - Práce se vzdáleným repozitářem
+    - Záchrana ztracených dat
+    - Základy pro práci s GitLabem
+
+    ### Pro koho je školení vhodné
+
+    Školení je hlavně určeno pro vývojáře kteří vůbec neverzují nebo nepoužívají Git. Je ale však vhodné i pro ty, kteří nevužívají Git na plno (pouze pull, commit, push). Bez ohledu na velikost projektu (malý informační web až po velký internetový portál), Git si vždy najde svoje uplatnění. Dále je školení vhodné i pro ty, kteří nepíší kód moc často, ale čas od času potřebují něco zaverzovat, například skripty, databázové migrace nebo konfiguraci serveru. Git využijí i databázový administrátoři nebo DevOps indženýři.
+
+
+    #### Předchozí znalosti
+
+    - Základy programování
+    - Základy práce v terminálu výhodou
+    - Základní znalost Gitu výhodou
+
+    #### Technické prerekvizity
+
+    - Nainstalovaný Git
+    - Přístup na internet - ideálně bez firemní proxy popř. s proxy nastavenou v prohlížeči
+
 
 - id: vojtechmares-gitlab-ci
   lecturer_id: vojtechmares
   technology_id: gitlab-ci
   name: Gitlab CI
+  price_open: 5 900 CZK
+  price_in_house: 25 000 CZK
+  description: |
+    ### Co je to GitLab a Continuous Integration
+
+    #### GitLab
+
+    GitLab je software (a taky platforma) který vám usnadní spolupráci na projektu (popř. projektech) ve více lidech. Od pouhého hostování vzdáleného Git repozitáře přes issue management, merge reqeusty až po nasazení aplikace do produkce a integrace CI/CD.
+
+    #### Continuous Integration
+
+    Continuous Integration (zkráceně CI nebo někdy CI/CD) je praktika která vám umožní zrychlit práci týmu na projektu bez snížení výsledné kvality. Automatizovat rutiní úkoly jako například testování každé změny, nasazování aplikací do produkce.
+
+    GitLab má přímo integrované CI, které vám umožní spolupracovat na projektu a naplno využít této techniky k vývoji aplikací. GitLab podporuje kontejnerizaci přes Docker a díky tomu můžete velice dobre zautomatizovat celý proces od statické kontroly kódu, spouštění testů až po nasazení do produkce.
+
+    ### Jak školení probíhá
+
+    Školení probíhá formou workshopu. Vysvětlíme si proč je dobré používat CI. Ukážeme si možnosti GitLab CI a vytovříme si vlastní CI pipeline pro ukázkový projekt. Výskledkem bude pipeline která obsahuje joby od buildu, testů až po nasazení aplikace do produkce.
+
+    ### Co si odneste
+
+    - Úvod do GitLabu
+    - Úvod do CI
+    - Instalace GitLab CI runneru
+    - Práce s CI joby
+    - Práce s CI pipeline
+    - Automatické nasazení
+    - Docker a CI
+
+    ### Pro koho je školení vhodné
+
+    Školení je hlavně pro vývojáře využívající GitLab a chtějí se pustit do GitLab CI nebo může být GitLab CI důvodem přechodu na GitLab. Dále je vhodné pro DevOps, kterým ulehčí práci s automatizací a nasazováním aplikací.
+
+    #### Předchozí znalosti
+
+    - Základy práce s Linuxem
+    - Základy práce v terminálu výhodou
+    - Základní znalost Gitu výhodou
+    - Základní znalost Dockeru výhodou
+
+    #### Technické prerekvizity
+
+    - Nainstalovaný Git
+    - Přístup na internet - ideálně bez firemní proxy popř. s proxy nastavenou v prohlížeči
 
 - id: vojtechmares-docker
   lecturer_id: vojtechmares
   technology_id: docker
   name: Docker
+  price_open: 9 900 CZK
+  price_in_house: 50 000 CZK
+  description: |
+    ### Co je to Docker
+
+    Docker je technologie usnadňující vývoj, distribuci a provozování aplikací. Docker se stal tzv. "industry standardem" pro provozování aplikací.
+
+    Díky Dockeru máte plně pod kontrolou prostředí pro vývoj, testování i spouštění aplikace, aktualizaci závislostí řešíte v aplikaci a už ne na serveru. Už žádné "works on my machine".
+
+    ### Jak školení probíhá
+
+    Školení probíhá formou workshopu. Úvodem si vysvětlíme jak Docker funguje a ukážeme si jak s ním pracovat, od vytvoření vlastního kontejneru až po jeho provozování ve Swarmu s ukázkou Kubernetes. Vše si sami vyzkoušíte.
+
+    ### Co si odnesete
+
+    - Technický úvod do dockeru
+      - Úvod do problematiky kontejnerů
+      - Kde a jak použít docker
+      - Výhody a nevýhody dockeru
+    - Instalace dockeru (pro ty, kteří jej nenainstalovali doma)
+    - Práce s kontejnery
+      - Jak pracovat s kontejnery
+      - Správa docker server (clean up, monitoring, …)
+      - Práce s logy
+      - Práce se sítí
+    - Práce s obrazy (image)
+    - Docker Compose - vícekontejnerové aplikace
+    - Ukázka Docker Registry
+    - Deployment do Docker Swarmu
+    - Ukázka deploymentu do Kubernetes
+
+    ### Pro koho je školení vhodné
+
+    Školení je hlavně určeno pro ty, kteří s Dockerem nemají žádné nebo malé zkušenosti. Školení je nastaveno že nepředpokládá žádné předchozí znalosti Dockeru. Je vhodné pro vývojáře nebo DevOps (administrátory), kteří chtějí využívat Docker v praxi nebo mít přehled co Docker řeší a kde je možné jej využít.
+
+    #### Předchozí znalosti
+
+    - Základy práce s Linuxem
+    - Základy práce v terminálu
+
+    #### Technické prerekvizity
+
+    - Nainstalovaný Docker
+    - Přístup na internet - ideálně bez firemní proxy popř. s proxy nastavenou v prohlížeči
 
 # Radim Daniel Panek
 
