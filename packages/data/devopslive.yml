@@ -127,15 +127,15 @@
     - prometheus
 - id: cloud-init
   active: true
-  title: Uvod do Cloud Initu
-  date: ??. ??. 2021
+  title: Úvod do Cloud Initu
+  date: . 1. 2021
   time: "19:00"
   about: |
-    Cloud Init je zpusob jak si zakladne nakonfigurovat VM bez nutnosti Ansiblu nebo SSH
+    Cloud Init je způsob jak si základně nakonfigurovat VM bez nutnosti Ansiblu nebo SSH
   points: |
-    - Co je Cloud Init a k cemu se pouziva
-    - Vyhody pouzivani Cloud Initu
-    - Ukazky ruznych Cloud Init konfiguraci
+    - Co je Cloud Init a k čemu se používá
+    - Výhody používání Cloud Initu
+    - Ukázky různých Cloud Init konfigurací
     - Cloud Init a Terraform
   technologies:
     - cloud-init
