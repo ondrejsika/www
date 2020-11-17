@@ -3,8 +3,7 @@
   date: 17. 11. 2020
   ad: terraform
   tags:
-    - kubernetes
-    - gitlab-ci
+    - terraform
     - devopslive
   perex: |
     Záznanam z čtvrtého DevOps live streamu na téma Úvod do Terraformu
