@@ -57,7 +57,9 @@ const Margin = styled.div`
 const B = styled.span`
   font-weight: bold !important;
 `;
-
+const Text = styled.p`
+  color: white;
+`;
 const Page = () => {
   return (
     <>
@@ -116,7 +118,8 @@ const Page = () => {
               <TextBeige className="pt-4">
                 {events[0].date} od {events[0].time}
               </TextBeige>
-              <h3 className="pb-2 pt-1 bold">{events[0].title}</h3>
+              <h3 className="pt-1 bold">{events[0].title}</h3>
+              <Text className="">{events[0].about}</Text>
             </div>
             <Row>
               <Col md={6} className="pt-3">
