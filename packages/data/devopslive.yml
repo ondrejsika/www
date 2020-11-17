@@ -139,3 +139,17 @@
     - Cloud Init a Terraform
   technologies:
     - cloud-init
+- id: kubernetes-pomoci-rke
+  active: true
+  title: Kubernetes pomoci RKE (Rancher Kubernetes Engine)
+  date: . 1. 2021
+  time: "19:00"
+  about: |
+    RKE vam umozni velmi jednoduchy setup HA Kubernetes clusteru na cistych virtualnich serverech. Pustime Kubernetes cluster do 5 minut!
+  points: |
+    - Co je RKE a jake ma jeho pouziti vyhody
+    - Konfigurace a setup Kubernetes clusteru
+    - RKE v Terraformu
+  technologies:
+    - rke
+    - kubernetes
