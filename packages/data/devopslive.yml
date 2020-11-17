@@ -88,7 +88,7 @@
   date: 18.11.2020
   time: "19:00"
   about: |
-    Přesuńte své domény do Cloudflare. Získáte tím stabilní DNS, DDoS ochranu a CDN, to celé spravované Terraformem.
+    Přesuňte své domény do Cloudflare. Získáte tím stabilní DNS, DDoS ochranu a CDN, to celé spravované Terraformem.
   points: |
     - Setup domény v Cloudflare
     - Správa DNS a dalších funkcí
