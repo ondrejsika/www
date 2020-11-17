@@ -10,7 +10,7 @@ import recommendations_data from "@app/data/skoleni.io/recommendations.yml";
 import H3 from "@app/skoleni.io/components/H3";
 
 const InquiryBtn = styled.a`
-  border: 2px solid #1f1f1f;
+  border: 2px solid #131480;
   padding: 0.475rem 0.85rem;
   margin: 0.5em 0 1em 0;
   display: inline-block;
@@ -20,7 +20,9 @@ const InquiryBtn = styled.a`
   font-weight: bold;
   &:hover {
     background-color: #c8bfb0;
+    border: 2px solid #c8bfb0;
     cursor: pointer;
+    color: white;
   }
 `;
 
@@ -87,17 +89,15 @@ const Course = props => {
         <H3>Doporučení</H3>
         <ul>
           {getRecommendationsByCourse(course_id).map((recommendation, i) => {
-            return (
-              <li key={i}>
-                {recommendation.text}
-                <br />
-                --{" "}
-                <strong>
-                  {recommendation.name}, {recommendation.role},{" "}
-                  {recommendation.company}
-                </strong>
-              </li>
-            );
+            <li key={i}>
+              {recommendation.text}
+              <br />
+              --{" "}
+              <strong>
+                {recommendation.name}, {recommendation.role},{" "}
+                {recommendation.company}
+              </strong>
+            </li>;
           })}
         </ul>
       </Container>
