@@ -134,6 +134,7 @@
     "static-digitalocean.cz": "yarn --cwd packages/digitalocean.cz static",
     "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)",
     "deploy-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd cloudflare-workers/ondrej-sika.cz && ../../node_modules/.bin/wrangler publish)",
+    "surge-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && surge packages/ondrej-sika.cz/out ondrej-sika-cz-$(date +%s).surge.sh",
     "deploy-ondrej-sika.com": "yarn run static-ondrej-sika.com && (cd cloudflare-workers/ondrej-sika.com && ../../node_modules/.bin/wrangler publish)",
     "deploy-ondrejsika.is": "yarn run static-ondrejsika.is && (cd cloudflare-workers/ondrejsika.is && ../../node_modules/.bin/wrangler publish)",
     "deploy-ondrej-sika.de": "yarn run static-ondrej-sika.de && (cd cloudflare-workers/ondrej-sika.de && ../../node_modules/.bin/wrangler publish)",
