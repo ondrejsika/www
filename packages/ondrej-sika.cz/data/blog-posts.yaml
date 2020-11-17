@@ -1,3 +1,17 @@
+- id: zaznam-devops-live-3-integrace-gitlab-ci-a-kubernetes
+  title: "Záznam DevOps Live #3: Jednoduchá integrace Gitlab CI a Kubernetes"
+  date: 16. 11. 2020
+  ad: kubernetes
+  tags:
+    - kubernetes
+    - gitlab-ci
+    - devopslive
+  perex: |
+    Záznanam z třetího DevOps live streamu: Jednoduchá integrace Gitlab CI a Kubernetes
+  youtube: uRc1aFcy7CE
+  content: |
+    Pokud se chcete naučit pracovat s Gitlab CI a kubernetes, doporučuji Vám mé školení [__Gitlab CI__](/skoleni/gitlab-ci) a [__Kubernetres__](/skoleni/kubernetes), nebudete litovat.
+
 - id: terraform-a-gitlab-ci-14-meetup-cncf-sk
   title: "Terraform a Gitlab CI (14. meetup CNCF.sk)"
   date: 12. 11. 2020
