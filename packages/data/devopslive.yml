@@ -128,7 +128,7 @@
 - id: cloud-init
   active: true
   title: Úvod do Cloud Initu
-  date: . 1. 2021
+  date: 13. 1. 2021
   time: "19:00"
   about: |
     Cloud Init je způsob jak si základně nakonfigurovat VM bez nutnosti Ansiblu nebo SSH
@@ -141,13 +141,13 @@
     - cloud-init
 - id: kubernetes-pomoci-rke
   active: true
-  title: Kubernetes pomoci RKE (Rancher Kubernetes Engine)
-  date: . 1. 2021
+  title: Kubernetes pomocí RKE (Rancher Kubernetes Engine)
+  date: 27. 1. 2021
   time: "19:00"
   about: |
-    RKE vam umozni velmi jednoduchy setup HA Kubernetes clusteru na cistych virtualnich serverech. Pustime Kubernetes cluster do 5 minut!
+    RKE vám umožní velmi jednoduchý setup HA Kubernetes clusteru na čistých virtuálních serverech. Pustíme Kubernetes cluster do 5 minut!
   points: |
-    - Co je RKE a jake ma jeho pouziti vyhody
+    - Co je RKE a jaké má jeho použítí výhody
     - Konfigurace a setup Kubernetes clusteru
     - RKE v Terraformu
   technologies:
