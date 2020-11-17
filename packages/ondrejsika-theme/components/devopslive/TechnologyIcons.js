@@ -16,6 +16,7 @@ import kubernetes_b from "@app/data/pictures/courses/blue/kubernetes.svg";
 // TODO: Replace with white & blue
 import prometheus_tmp from "@app/data/pictures/courses/prometheus.png";
 import cloud_init_tmp from "@app/data/pictures/technologies/cloud-init-color.png";
+import rke_tmp from "@app/data/pictures/technologies/rke-color.png";
 
 const Img = styled.img`
   height: 100px;
@@ -35,7 +36,8 @@ const TechnologyIcons = props => {
               terraform: terraform_w,
               kubernetes: kubernetes_w,
               prometheus: prometheus_w,
-              "cloud-init": cloud_init_tmp
+              "cloud-init": cloud_init_tmp,
+              rke: rke_tmp
             }[props.icon]
           }
         />
@@ -50,7 +52,8 @@ const TechnologyIcons = props => {
               terraform: terraform_b,
               kubernetes: kubernetes_b,
               prometheus: prometheus_tmp,
-              "cloud-init": cloud_init_tmp
+              "cloud-init": cloud_init_tmp,
+              rke: rke_tmp
             }[props.icon]
           }
         />
