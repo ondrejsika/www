@@ -516,7 +516,7 @@
   name: Kubernetes
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: proxmox
