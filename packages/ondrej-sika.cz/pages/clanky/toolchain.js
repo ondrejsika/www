@@ -61,6 +61,7 @@ Na hodinkách využívám převážně tyto funkce, v pořadí jak jsou zde uved
 - __Psaní SMS__ - můžu odeslat SMS bez toho, abych musel hledat a vyndavat telefon. Zase super v autě.
 - Hledání telefonu
 - Zaznamenávání sportu - Lezení, běhání
+- Toggl - trackovani casu kdyz nejsem u PC
 
 
 ## G Suite (dříve Google Apps)
