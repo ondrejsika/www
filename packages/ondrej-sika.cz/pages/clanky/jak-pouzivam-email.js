@@ -5,21 +5,22 @@ const Page = () => (
   <Article
     title="Jak pouzivam email (adresy, pravidla, ...)"
     markdown={`
-__Na článku pracuji ...__
-
----
-
 Pouzivam vice emailu, skoro jako kazdy. Mam v tom ale poradek, coz rozhodne kazdy rict nemuze.
 
-Pouzivam emaily:
+Pouzivam tyto emaily (ucty):
 
 - Primarni - \`ondrej@os.com\`
 - Hromadny pro vetsinu sluzeb \`ondrejsika@os.com\` a nebo \`a+...@os.com\`
-- Pro komunikaci s urady - \`office@os.com\`
+- Pro komunikaci s urady - \`gov@os.com\`
 - Pracovni (freelance) - \`ondrej@sika.io\`
 - Pracovni (firma A) - \`ondrej@sikalabs.com\`
 - Pracovni (firma B) - \`ondrej@skoleni.io\`
 - Maildev - \`*@all.os.com\`
+- Archiv - \`archoved@os.com\`
+
+A tyto aliasy:
+
+- \`todo@os.com\` (alias emailu \`ondrejsika@ondrejsika.com\`) - Forward do Todoistu
 
 Ne vsechny emaily jsou zkutecne, ale struktura je takova jak ji pouzivam ;)
 
@@ -39,6 +40,29 @@ Hromadny email mam ve dvou formatech: \`ondrejsika@os.com\` a \`a+...@os.com\`
 
 To \`a+...\` je pouze alias a pouzivam to jako \`a+alza@os.com\`, \`a+swiss@os.com\` nebo \`a+rohlik@os.com\`. Vyhodou je ze pak muzu lepe pouzivat filtry v emailu. Nektere sluzby to plus v emailu neumi, pak pouzivm variantu \`ondrejsika@os.com\`.
 
+### Uredni email
+
+Email \`gov@os.com\` pouzivam pro komunikaci s urady jako je FU, CSSZ, zdravotni pojistovna. Vse co ma co docineni se statem.
+
+### Firemni emaily
+
+Asi jako kazdy, kdyz neco resim za danou firmu, pouzivam jeji email.
+
+### Maildev
+
+Maildev je skvela utilita ne jen pro vyvojare. Je to webova aplikace, ktera prijima jakekoliv emaily, ktere ji prijdou (na IP a port 25) a rovnou je zobrazuje na webu. Pokud mam na server nacilenou nejakou domenu, napriklad \`all.os.com\` tak pak tento server akceptuje emaily ve tvaru \`*@all.os.com\` (napriklad \`foo@all.os.com\`, \`bar@all.os.com\`, ...). Tohle pouzivam, kdyz chci vyzkouset nejakou sluzbu (klidne vicekrat) nebo kdyz chci projit email "pay wall". A samozrejme kdyz nekam posilam testovaci emaily pri vyvoji.
+
+Maildev je open source: <https://github.com/maildev/maildev>
+
+### Archiv
+
+Do toho emailu posilam dokumenty co chci archivovat. Vsechny smlouvy, uredni dopisy, potvrzeni o podani DPH, ... Zaroven tento email preposilam do DMS (documment managemet system), kde tyto soubory tridim a archivuji. Ale kdyz potrebuji, vse najdu v tomto inboxu.
+
+U nekolika lidi (kterym jsem nastavoval email flow), jsme misto dalsi schranky udelali jen alias k primarnimu mailboxu a pravidlo ze se to uklada do slozky \`archiveD\` (protoze \`archive\` je by default zabrana).
+
+### Todo
+
+Todo alias pouzivam tak, ze kdyz z nejakeho emailu chci udelat task v Todoistu, tak jej jednoduse preposlu. Nemusim si pamatovat generovanou adresu na kterou to mam posilat.
 `}
   />
 );
