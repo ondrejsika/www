@@ -6,6 +6,7 @@ const Page = () => (
     title="Follow Up Index"
     hideNewsletter={true}
     markdown={`
+- [Kubernetes, 16. 11. 2020](/follow-up/2020-11-16-kubernetes)
 - [Git, O2, 11. 11. 2020](/follow-up/2020-11-11-o2-git)
 - [Gitlab CI, Mall, 9. 11. 2020](/follow-up/2020-11-09-mall-gitlab-ci)
 - [Kubernetes, Partners Group, 28. 10. 2020](/follow-up/2020-10-28-partners-group-kubernetes)
