@@ -1,6 +1,7 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+let Page = () => (
   <Article
     title="Nástroje, které používám a zjednodušují mi práci a život"
     markdown={`
@@ -141,3 +142,5 @@ Málo důležitá hesla mám uložená v Apple a v Google. Je to prostě jednodu
 `}
   />
 );
+
+export default Page;
