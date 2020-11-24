@@ -78,4 +78,30 @@
   company: Konica Minolta Business Solutions Czech
   text: Absolvoval jsem online kurz Terraformu a moc se mi to líbilo. Ondřej byl dobře připraven s mnoha příklady v Githubu. Byl také ochoten najít konkrétní řešení na žádosti ostatních účastníků. Oceňuji také jeho nápady jak integrovat Terraform s dalšími nástroji (prometheus, gitlab, ..). Rozhodně doporučuji přihlásit se na jeho kurzy.
 
+- id: petr-burian-steida-react-javascript-basic
+  lecturer_id: steida
+  course_id: steida-react-javascript-basic
+  name: Petr Burian
+  role: CTO
+  company: Livesport.cz
+  text: JS školení od @steida bylo nad očekávání. Získal jsem cenný přehled technologií, postupů, názvosloví.
 
+- id: martin-maly-steida-react-javascript-advanced
+  lecturer_id: steida
+  course_id: steida-react-javascript-advanced
+  name: Martin Maly
+  role: Head of Digital and Innovation
+  company: CMI News
+  text: Dan Steigerwald je bez debat naprostá česká špička mezi programátory v JavaScriptu. Rozhledem i schopnostmi výrazně přesahuje "jen výborné" JavaScriptaře. Navíc dokáže o problematice mluvit, přednášet a psát nejen zasvěceně, ale i srozumitelně a s nadhledem, který českým IT odborníkům obvykle velmi bolestně chybí.
+
+- id: -steida-react-javascript-medium
+  lecturer_id: steida
+  course_id: steida-react-javascript-medium
+  name: Tomáš Novotný
+  text: Javascript skoleni u @steida je skvely a nekompromisni, vsichni tu vydrzi az do rana :)
+
+- id: pavel-sevcik-steida-typescript
+  lecturer_id: steida
+  course_id: steida-typescript
+  name: Pavel Ševčík
+  text: That said, musim uznat ze skoleni od @steida  mi otevrelo oci. Najednou React, Flux, functional programming atd. davaji smysl. Doporucuju

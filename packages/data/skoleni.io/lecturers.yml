@@ -67,10 +67,15 @@
 - id: steida
   name: Daniel Steigerwald
   courses:
-    - steida-react
+    - steida-react-javascript-basic
+    - steida-react-javascript-medium
+    - steida-react-javascript-advanced
     - steida-typescript
-  bio: Ancap & JS!
-  email: skoleni@skoleni.io
+  bio: Jmenuji se Daniel Steigerwald a všechna školení vedu osobně. Přes deset let pomáhám firmám i jednotlivcům tvořit lepší software. [__Napsal__](https://medium.com/@steida) jsem nemálo článků, [__přednášel__](https://www.youtube.com/results?search_query=daniel+steigerwald) na řadě konferencích a srazech. Za programátora ale hovoří jeho kód. Jsem autorem populárního [__React__](https://reactjs.org/) starter kitu [__Este.js__](https://github.com/este/este), který demonstruje mnohé techniky a praktiky vývoje webových aplikací. Postupem času jsem přišel na to, že lepší než předčítat slajdy nebo procházet příklady, je společně psát aplikaci. Teorii vysvětluji pouze na konkrétním kódu.
+  twitter: steida
+  linkedin: steigerwalddaniel
+  email: daniel@steigerwald.cz
+  phone: +420 775 326 783
   github: steida
 
 - id: marekbartik

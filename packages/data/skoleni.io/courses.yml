@@ -956,12 +956,129 @@
 - id: steida-typescript
   lecturer_id: steida
   technology_id: typescript
-  name: TypeScript
+  name: Školení funkcionálního programování v TypeScriptu
+  price_open:
+  price_in_house: 6 000 Kč / hodina konzultací a programování
+  description: |
+    ### Co je to funkcionální programování?
 
-- id: steida-react
+    Funkcionální programování je skoro jako jednorožec. Každý ví, jak takový jednorožec vypadá, ale doopravdy ho neviděl nikdo. Píšu skoro, protože funkcionální programování není jednorožec. Jednorožec je bájný tvor považovaný za symbol síly, čistoty, a krásy. Funkcionální programování není bájné, ne nutně.
+
+    Funkcionální programování je mentální model, který umožňuje psát aplikace rychleji, zábavněji, a s menším počtem chyb. Jakékoliv aplikace včetně těch nudných firemních. To je celkem odvážné tvrzení, a leckdo by mohl argumentovat, že špatný programátor prasí ve všem, zatímco dobrý programátor píše krásný kód v čemkoliv. Může být, ale je důvod, proč už nepíšeme běžné aplikace v assembleru ani v C.
+
+    Funkcionální programování je jiné, a na začátek se může zdát matoucí a nebude zřejmé, proč by měl člověk investovat svůj čas do něčeho takového. Proto je dobré začít postupně s praktickými příklady. Záhy však všechno začne dávat veliký smysl, a člověk už nebude chtít zpět. To vám garantuji, nebo vám vrátím peníze zpět.
+
+    ### Jak školení probíhá
+
+    Školení trvá dva dny. Začíná 9:30 a končí v 17:30. V ceně školení je možnost pozdější konzultace.
+
+    ### Co Vás naučím
+
+    Smyslem školení je zreplikovat cestu, kterou jsem se funkcionální programování učil já, avšak bez odboček a bloudění. Informací na internetu je spousta, ale převážně pro jiné jazyky než je TypeScript.
+
+    1. Basic functional programming: immutability, pure functions, map and reduce.
+    2. Ecosystem overview. Existing tools and libraries.
+    3. Domain modeling made functional with algebraic types.
+    4. How to never use null nor undefined again.
+    5. Basic fp-ts: interfaces, pipe, Eq, Ord, Option, Either, and more.
+    6. Realiable validations for forms, routing, endpoints, everything.
+    7. Async code with error handling and still readable code.
+    8. Advanced TypeScript: currying, advanced types, useful tips.
+    9. Advanced fp-ts structures and patterns like functional optics etc.
+
+    ### Pro koho je školení určeno
+
+    #### Předchozí znalosti
+
+    #### Technické požadavky
+
+- id: steida-react-javascript-basic
   lecturer_id: steida
   technology_id: react
-  name: React
+  name: Základy JavaScriptu a Reactu
+  price_open: 4 900 CZK (Studenti a plátci Bitcoinem mají 20 % slevu)
+  price_in_house: 4 900 Kč / hodina konzultací a programování
+  description: |
+    ### Jak školení probíhá
+
+    Kurz začíná v deset dopoledne a končí v šest večer. Všechna školení se konají v Praze v prostorách [__Jamm Club__](https://www.jammclub.cz/) (občerstvení je v ceně), nebo online.
+
+    ### Co Vás naučím
+
+    Budete překvapeni, co vše se lze naučit za jediný den. Napíšeme si jednoduchou SPA (single page application) a nasadíme ji do cloudu. Výsledný kód však půjde přidat i do existující PHP, .NET, Java aplikace.
+
+    Začneme přehledem moderního JavaScriptu, následně si projdeme [__React__](https://reactjs.org/). Poté si nainstalujeme [__Node.js__](https://nodejs.org/en/) a [__Next.js__](https://nextjs.org/), nastavíme [__VSCode editor__](https://code.visualstudio.com/), a začneme tvořit webovou aplikaci. Představím vám odzkoušené knihovny komponent, ale také jak si správně tvořit komponenty vlastní.
+
+    ### Pro koho je školení určeno
+
+    Školení je vhodné pro každého, kdo zná alespoň základy HTML, CSS, a JavaScriptu nebo podobného jazyka. Ideální i pro doposud pouze na server orientované programátory.
+
+    #### Technické požadavky
+
+    - vlastní notebook
+
+
+- id: steida-react-javascript-medium
+  lecturer_id: steida
+  technology_id: react
+  name: JavaScript a React pro mírně pokročilé
+  price_open: 4 900 CZK (Studenti a plátci Bitcoinem mají 20 % slevu)
+  price_in_house: 4 900 Kč / hodina konzultací a programování
+  description: |
+    ### Jak školení probíhá
+
+    Kurz začíná v deset dopoledne a končí v šest večer. Všechna školení se konají v Praze v prostorách [__Jamm Club__] (https://www.jammclub.cz/) (občerstvení je v ceně), nebo online.
+
+    ### Co Vás naučím
+
+    Nejprve si porovnáme různé přístupy ke stylování. Klasické stylopisy, CSS moduly, styly v JavaScriptu (CSS in JS), design systémy, atomické CSS.
+
+    Každá webová aplikace potřebuje pracovat s daty. Proto budeme pokračovat formulářem s validací, to často potrápí i zkušené programátory. Ukážeme si konzumaci klasického REST API, pak ale přejdeme na [__GraphQL__](https://graphql.org/) – fantastickou technologii dneška. Pro plné využití GraphQL je vhodné mít aplikace staticky typované. Proto se naučíme [__TypeScript__](https://www.typescriptlang.org/).
+
+    K večeru bude naše aplikace ukládat data do SQL databáze skrze revoluční službu [__Prisma__](https://www.prisma.io/).
+
+    Školení je plné praktických typů, dostanete pravidelně aktualizovaný seznam doporučené literatury a zdrojů (jen to nejnutnější), naučíme se jak odchytávat a ladit chyby.
+
+    ### Pro koho je školení určeno
+
+    Školení je vhodné pro každého, kdo zná alespoň základy HTML, CSS, a JavaScriptu nebo podobného jazyka. Ideální i pro doposud pouze na server orientované programátory.
+
+    #### Předchozí znalosti
+
+    Doporučuju absolvovat múj kurz Základy JavaScriptu a Reactu.
+
+    #### Technické požadavky
+
+    - vlastní notebook
+
+- id: steida-react-javascript-advanced
+  lecturer_id: steida
+  technology_id: react
+  name: JavaScript a React pro pokročilé
+  price_open: 4 900 CZK (Studenti a plátci Bitcoinem mají 20 % slevu)
+  price_in_house: 4 900 Kč / hodina konzultací a programování
+  description: |
+    ### Jak školení probíhá
+
+    Kurz začíná v deset dopoledne a končí v šest večer. Všechna školení se konají v Praze v prostorách [__Jamm Club__] (https://www.jammclub.cz/) (občerstvení je v ceně), nebo online.
+
+    ### Co Vás naučím
+
+    Toto školení je věnované všemu tomu, co potřebujeme, abychom mohli nasadit kvalitní aplikaci do produkce. Lokalizace, přístupnost, testování, reportování chyb, optimalizace rychlosti, a mnoho dalšího. Opět nečekejte suchou teorii, ale praxí ověřený kód.
+
+    V závěru se soustředíme na širší okolí. Mobilní nativní (iOS a Android) aplikace psané pomocí React Native a webové pomocí React Native Web. A jak sdílet kód na serveru, v prohlížeci, desktopu, či mobilu. Nikdo nechce psát validace nebo šablony více než jednou.
+
+    ### Pro koho je školení určeno
+
+    Školení je vhodné pro absolventy mého kurzu úvod do , kdo zná alespoň základy HTML, CSS, a JavaScriptu nebo podobného jazyka. Ideální i pro doposud pouze na server orientované programátory.
+
+    #### Předchozí znalosti
+
+    Doporučuju absolvovat moje kurzy Základy JavaScriptu a Reactu & JavaScript a React pro mírně pokročilé.
+
+    #### Technické požadavky
+
+    - vlastní notebook
 
 # Marek Bartik
 
