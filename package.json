@@ -141,6 +141,7 @@
     "deploy-skoleni.io": "yarn run static-skoleni.io && (cd cloudflare-workers/skoleni.io && ../../node_modules/.bin/wrangler publish)",
     "deploy-trainera.cz": "yarn run static-trainera.cz && (cd cloudflare-workers/trainera.cz && ../../node_modules/.bin/wrangler publish)",
     "deploy-trainera.de": "yarn run static-trainera.de && (cd cloudflare-workers/trainera.de && ../../node_modules/.bin/wrangler publish)",
+    "deploy-skoleni-git.cz": "yarn run static-skoleni-git.cz && statica skoleni-git.cz ./packages/skoleni-git.cz/out",
     "now-ccc.oxs.cz": "yarn run static-ccc.oxs.cz && (cd packages/ccc.oxs.cz/out && now --name ccc-oxs-cz)",
     "now-sika.work": "yarn run static-sika.work && cd packages/sika.work/out && now --name sika-work",
     "now-ondrejsika.io": "yarn run static-ondrejsika.io && cd packages/ondrejsika.io/out && now --name ondrejsika-io",

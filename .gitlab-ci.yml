@@ -17,3 +17,21 @@ pipeline:
       - artifact: .gitlab-ci.generated.yml
         job: generate
     strategy: depend
+
+# statica deployments
+
+generate-statica:
+  stage: generate
+  image: python:3.7
+  script: python generate-gitlab-ci-statica.py
+  artifacts:
+    paths:
+      - .gitlab-ci-statica.generated.yml
+
+pipeline-statica:
+  stage: pipeline
+  trigger:
+    include:
+      - artifact: .gitlab-ci-statica.generated.yml
+        job: generate-statica
+    strategy: depend
