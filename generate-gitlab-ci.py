@@ -116,15 +116,6 @@ PROD_SITES = {
     "kubernetes-schulung.de": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
-    "skoleni-docker.cz": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "skoleni-git.cz": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "skoleni-kubernetes.cz": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
     "skolenie-git.sk": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
@@ -140,15 +131,6 @@ PROD_SITES = {
     "salzburgdevops.com": {
         "dependencies": _DEFAULT_DEPENDENCIES,
     },
-    "skoleni-terraform.cz": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "skoleni-proxmox.cz": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "skoleni-prometheus.cz": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
     "docker-training.de": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
@@ -162,9 +144,6 @@ PROD_SITES = {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "git-training.nl": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "skoleni-rancher.cz": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ondrejsikalabs.com": {
