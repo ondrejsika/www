@@ -1108,12 +1108,1294 @@
 
 # Jiri Pinkas
 
-- id: jiripinkas-java
+- id: jiripinkas-java-basic
   lecturer_id: jiripinkas
   technology_id: java
-  name: Java
+  name: Základy Java programování
+  price_open: 17 400 CZK bez DPH
+  price_in_house: 48 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
 
-- id: jiripinkas-sql
+    Délka trvání je 3 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Úvod do programovacího jazyka Java
+    - Základy Mavenu (nejpoužívanější build nástroj)
+    - Přehled Java ekosystému, nejpoužívanější knihovny
+    - Jak "zůstat v obraze" v Java světě
+    - Objektově orientované programování (OOP)
+    - Klíčová slova, identifikátory a typy
+    - Výrazy, podmíněný příkaz, cykly
+    - Pole
+    - Návrh tříd - zapoudření, polymorfizmus a dědičnost
+    - Práce s API (Javadoc)
+    - Statické proměnné a metody, konstanty, Interface
+    - Kolekce - pole, seznam, ...
+    - Novinky z Java 8 - streamy, lambda výrazy
+    - Výjimky
+    - I/O proudy - čtení a zápis textového souboru
+
+    ### Pro koho je školení určeno
+
+    Tento kurz je určen pro všechny, kteří mají zájem programovat v jazyku Java, nepotřebují ale zatím žádné pokročilé technologie a vlastnosti jazyka Java. Java se používá zejména v každé větší firmě pro tvorbu intranetových (Java EE) aplikací, multiplatformních aplikací (Java SE), nebo aplikací pro mobilní telefony (Java ME, Android).
+
+    #### Předchozí znalosti
+
+    Orientační znalost programování v nějakém vyšším programovacím jazyce
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+
+- id: jiripinkas-java-advanced
   lecturer_id: jiripinkas
-  technology_id: sql
-  name: SQL
+  technology_id: java
+  name: Java programování
+  price_open: 29 000 CZK bez DPH
+  price_in_house: 80 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 5 dnů.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Úvod do programovacího jazyka Java
+    - Základy Mavenu (nejpoužívanější build nástroj)
+    - Přehled Java ekosystému, nejpoužívanější knihovny
+    - Jak "zůstat v obraze" v Java světě
+    - Objektově orientované programování (OOP)
+    - Klíčová slova, identifikátory a typy
+    - Výrazy, podmíněný příkaz, cykly
+    - Pole
+    - Návrh tříd - zapoudření, polymorfizmus a dědičnost
+    - Práce s API (Javadoc)
+    - Pokročilé vlastnosti tříd - vnitřní třídy, statické proměnné a metody, konstanty, interface
+    - Kolekce - pole, seznam, hash tabulka, ...
+    - Novinky z Java 8 - streamy, lambda výrazy
+    - Výjimky
+    - Tvorba konzolové aplikace
+    - Čtení a zápis textového souboru
+    - Přístup k databázi v Javě - JDBC
+    - Základy práce s JPA (Hibernate)
+    - Vlákna - tvorba vícevláknové aplikace
+    - Základy test driven development (TDD) s JUnit
+    - Základy tvorby web. aplikací případně základy Java FX nebo Swingu
+
+    ### Pro koho je školení určeno
+
+    Pro programátory, kteří již nějakou dobu programují, ale nyní by chtěli poznat nejpoužívanější programovací jazyk na světě - Java, který se používá zejména v každé větší firmě pro tvorbu intranetových (Java EE) aplikací, multiplatformních aplikací (Java SE), nebo aplikací pro mobilní telefony (Java ME, Android). Pokud navíc máte zájem o získání certifikátu SCJP (Sun Certified Java Programmer), pak Vám na tomto kurzu poradím jak na to.
+
+    #### Předchozí znalosti
+
+    Orientační znalost programování v nějakém vyšším programovacím jazyce
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+
+- id: jiripinkas-java-web
+  lecturer_id: jiripinkas
+  technology_id: java
+  name: Tvorba web. aplikací v Javě
+  price_open: 29 000 CZK bez DPH
+  price_in_house: 80 000 CZK bez DPH
+  description: |
+    ### Co je to Spring
+
+    Framework Spring je v poslední době standardem pro vývoj webových enterprise aplikací. Kurz se zaměřuje nejenom na základní funkce Spring Frameworku jako je Dependency Injection (Inversion of Control) nebo aspektově orientované programování, ale i pokročilejší serverové techniky jako je Spring Web MVC (tvorba REST endpointů) nebo práce s databází pomocí Spring Data JPA (Hibernate).
+
+    ### Jak školení probíhá
+
+    Délka trvání je 5 dnů.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    Jedná se o prakticky stejný kurz jako Kurz Spring, jenom je na vše více času.
+    Co se zde zejména více stíhá: Více věcí ze Spring Boot, Spring Security, pokročilejší věci z Hibernate & Spring Data JPA, části Spring Cloud
+
+    #### Předchozí znalosti
+
+    Orientační znalost programování v nějakém vyšším programovacím jazyce
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+
+- id: jiripinkas-spring
+  lecturer_id: jiripinkas
+  technology_id: spring
+  name: Spring
+  price_open: 17 400 CZK bez DPH
+  price_in_house: 48 000 CZK bez DPH
+  description: |
+    ### Co je to Spring
+
+    Framework Spring je v poslední době standardem pro vývoj webových enterprise aplikací. Kurz se zaměřuje nejenom na základní funkce Spring Frameworku jako je Dependency Injection (Inversion of Control) nebo aspektově orientované programování, ale i pokročilejší témata jako je Spring Web MVC (tvorba REST endpointů) nebo práce s databází pomocí Spring Data JPA (Hibernate).
+
+    ### Jak školení probíhá
+
+    Délka trvání je 3 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Úvod do Springu
+    - Spring Boot
+    - Inversion of Control (Dependency Injection)
+    - Zapojení vlastních tříd do Springu, životní cyklus třídy ve Springu
+    - Aspektově-orientované programování (AOP), async, scheduling, cache, transakce
+    - ORM (objektově relační mapování) a integrace JPA (Hibernate) se Spring Data JPA
+    - Spring Web MVC, REST architektura
+    - Integrace se Swagger
+    - Testování pomocí JUnit a Springu
+    - Spring Security
+
+    #### Předchozí znalosti
+
+    Orientační znalost programování v nějakém vyšším programovacím jazyce
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+
+- id: jiripinkas-hibernate
+  lecturer_id: jiripinkas
+  technology_id: hibernate
+  name: Hibernate (JPA)
+  price_open: 17 400 CZK bez DPH
+  price_in_house: 48 000 CZK bez DPH
+  description: |
+    ### Co je to Hibernate
+
+    Hibernate je nejpopulárnější a nejpoužívanější framework pro ORM (Objektově Relační Mapování). Přestože plně implementuje JPA (Java Persistence API) standard a v maximální míře je vhodné jej používat, má spoustu vlastních rozšíření, které se velice často používají.
+
+    ### Jak školení probíhá
+
+    Délka trvání je 3 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+
+    ### Co Vás naučím
+
+    - Java Persistence API 2 + Framework Hibernate
+    - Základní model entit, mapování atributů a vztahů pomocí anotací
+    - Generování tabulek v databázi pomocí hbm2ddl a liquibase
+    - Mapování uživatelských typů - enum, embedded
+    - Jednoduché a složené identifikátory entit
+    - Generování identifikátorů entit (SEQUENCE, IDENTITY, ...)
+    - Vztahy mezi entitami
+    - Dědičnost
+    - Životní cyklus entit
+    - Synchonizace entit s databází
+    - Transakce
+    - Prostředky pro dotazování
+    - Pojmenované dotazy, parametrizace dotazů
+    - Nativní SQL dotazy
+    - JPQL (Java Persistence Query Language), HQL (Hibernate Query Language), Criteria Query, Detached Criteria
+    - Pojmenované dotazy, parametrizace dotazů
+    - Nativní SQL dotazy
+    - Optimalizace query - eager/lazy, fetch, fetch depth
+    - Synchronizace entit s databází (flush proces)
+    - 1st a 2nd level cache, evict, clear
+    - Unit of Work, možnosti implementace
+    - Optimistická konkurence
+    - Interceptory
+    - Logování
+    - Integrace se Springem
+    - Spring Data JPA
+    - Spring Data REST
+
+    #### Předchozí znalosti
+
+    Orientační znalost programování v nějakém vyšším programovacím jazyce
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-hibernate-optimisation
+  lecturer_id: jiripinkas
+  technology_id: hibernate
+  name: Optimalizace JPA (Hibernate) & SQL
+  price_open: 11 600 CZK bez DPH
+  price_in_house: 32 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 2 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Optimalizace nastavení connection poolu (HikariCP)
+    - Optimalizace SQL, správný způsob stránkování, indexy, explain plan
+    - JDBC batch
+    - Optimalizace JPA - optimalizace vazeb, lazy fetching & join fetch, ...
+    - Caching
+    - Logování
+    - Profilovací nástroje (zejména JProfiler)
+
+    ### Pro koho je školení určeno
+
+    Máte pomalé SQL operace (SELECT, ale i INSERT / UPDATE / DELETE)? Nebo obecně pomalou odezvu aplikace pracující s databází nebo pomalé odezvy při větším množství současně pracujících klientů? Pak přijďte na toto školení zjistit jak to vyřešit.
+
+    #### Předchozí znalosti
+
+    Minimálně základní znalosti JPA (Hibernate) a SQL
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-microservices
+  lecturer_id: jiripinkas
+  technology_id: microservices
+  name: Microservices
+  price_open: 29 000 CZK bez DPH
+  price_in_house: 80 000 CZK bez DPH
+  description: |
+    ### Co jsou to Microservices?
+
+    V současné době jsou microservisy defacto standardem pro tvorbu webových aplikací. Jak na to se Spring Bootem, Dockerem & Kubernetes (plus Kafka, ELK stack, Prometheus a další)? Tak to se dozvíte na tomto školení :-)
+
+    ### Jak školení probíhá
+
+    Délka trvání je 5 dnů.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Bounded Context
+    - Spring Cloud Netflix: Gateway (Zuul), Open Feign, Eureka
+    - Docker & Kubernetes
+    - Přímé volání microservis
+    - Circuit Breaker, Retry mechanismus pomocí resilience4j
+    - Replikace dat přes Kafku
+    - Outbox Pattern
+    - Debezium
+    - Event Sourcing
+    - SAGA pattern: Choreography, Orchestrator
+    - Eventual Consistency
+    - Cachování
+    - Spring Cloud Config
+    - APM (tracing microservis): Elastic APM, Jaeger (Zipkin)
+    - Logování Microservis (MDC pattern)
+    - ELK (ElasticSearch, Logstash, Kibana, Filebeat)
+    - Actuator & Spring Boot Admin
+    - Metrics: Prometheus, Grafana, Micrometer
+    - OpenAPI (Swagger)
+
+    #### Předchozí znalosti
+
+    Očekává se, že máte alespoň základní znalosti Spring Bootu a Dockeru
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-spring-rest
+  lecturer_id: jiripinkas
+  technology_id: spring
+  name: Spring Boot Reactive REST
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Reaktivní programování se Spring Webflux
+    - Flux, Mono
+    - Práce s databází pomocí R2DBC, reaktivní repozitáře
+    - Klienti: WebClient, JS (Server-sent events, websocket)
+
+    ### Pro koho je školení určeno
+
+    Reaktivní programování není pro každého, ale pokud máte velkou zátěž na server a navyšujete session pool, nebo chcete lépe využít dostupné prostředky (typicky pokud Vaše aplikace běží na AWS / Azure), pak reaktivní programování může být to, co hledáte.
+
+    #### Předchozí znalosti
+
+    Minimálně základní znalosti Spring Boot
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-spring-monitoring
+  lecturer_id: jiripinkas
+  technology_id: spring
+  name: Spring Boot Monitoring
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Spring Boot 2 Actuator
+    - Spring Boot Admin
+    - Micrometer & Prometheus & AlertManager & Grafana
+    - Custom micrometer metrics
+    - Spring Boot & Docker HEALTHCHECK
+    - Nastavení Spring Security tak, aby Actuator používal Stateless session
+
+    ### Pro koho je školení určeno
+
+    Pro každého, koho zajímá jak správně nastavit monitorování Spring Boot aplikace.
+
+    #### Předchozí znalosti
+
+    Základní znalosti Spring Boot jsou určitě výhodou :-)
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-gitlab-ci
+  lecturer_id: jiripinkas
+  technology_id: gitlab-ci
+  name: Gitlab CI
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Úvod do Gitlab CI
+    - Instalace Gitlab CI Runneru
+    - .gitlab-ci.yml
+    - Práce s CI joby
+    - Tvorba CI pipelines
+    - Automatické nasazování
+    - ntegrace s Dockerem
+    - Tipy a triky
+
+    ### Pro koho je školení určeno
+
+    Pro všechny, kteří chtějí přejít na GitlLa (anebo již s Gitlab CI pracují a chtějí se dozvědět různé tipy a triky)
+
+    #### Předchozí znalosti
+
+    Nevyžaduje žádné.
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-docker
+  lecturer_id: jiripinkas
+  technology_id: docker
+  name: Docker
+  price_open: 11 600 CZK bez DPH
+  price_in_house: 32 000 CZK bez DPH
+  description: |
+    ### Co je to Docker
+
+    Docker je ultimátní "it works on my computer" :-) Bylo by krásné sestavit aplikaci se vším všudy (včetně Tomcatu / aplikačního serveru) a jednoduše ji nahrát na produkci, kde bude hned fungovat. Sci-Fi? Ne. Docker. :-)
+
+    ### Jak školení probíhá
+
+    Délka trvání je 2 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Použití na různých operačních systémech (Windows 10, Linux, Mac)
+    - Workflow s Dockerem (získání image, vytvoření containeru, práce s containerem a image)
+    - Jak se dostat dovnitř containeru & image
+    - Volumes, networking
+    - Tvorba vlastní Docker image pomocí Dockerfile, Union File System
+    - Docker Hub (Docker Store)
+    - Private Docker Registry
+    - Docker Compose
+    - Docker & Maven
+    - Docker & Gitlab
+    - Docker & Spring Boot
+    - JIB
+    - Základy clusteringu s Kubernetes
+    - Best practices
+
+    #### Předchozí znalosti
+
+    Nevyžaduje žádné.
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-designpatterns
+  lecturer_id: jiripinkas
+  technology_id: designpatterns
+  name:  Návrhové vzory
+  price_open: 11 600 CZK bez DPH
+  price_in_house: 32 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 2 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Třívrstvá architektura
+    - Dependency Injection & IoC
+    - Singleton
+    - Builder
+    - Proxy
+    - Aspekty, AOP
+    - Service Facade
+    - Reaktivní & funkcionální styly programování v Javě
+    - Návrhové vzory v době microservis
+
+    ### Pro koho je školení určeno
+
+    Jsou návrhové vzory, které jsou důležitější než kdy jindy a jsou návrhové vzory, které jsou v současnosti spíš anti-pattern, než pattern :-) Na tomto školení se podíváme na ty, které jsou v současnosti nejpoužívanější.
+
+    #### Předchozí znalosti
+
+    Alespoň základní znalost Java SE & Spring / Java EE je určitě dobrým předpokladem
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-elk
+  lecturer_id: jiripinkas
+  technology_id: elk
+  name: ELK stack - Elasticsearch, Logstash, Kibana
+  price_open: 11 600 CZK bez DPH
+  price_in_house: 32 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 2 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Elasticsearch - architektura, cluster, nody, indexy, nástoje pro práci s clusterem
+    - Beats - sběr aplikačních logů ze souborů, Filebeat
+    - Logstash - sběr dat, filtrování, propojení s Elastic
+    - Kibana - konfigurace, index patterns, vizualizace, dashboardy, vyhledávání v datech
+
+    ### Pro koho je školení určeno
+
+    Jak funguje Elasticsearch? Jak v něm vyhledávat přes API / Kibanu? Jak na načítání logů pomocí Logstash & Filebeat. Tento kurz je pro všechny, kdo chtějí z log souborů získat užitečná data a vizualizovat je pomocí Kibana
+
+    #### Předchozí znalosti
+
+    Základní znalost HTTP protokolu, JSON formátu a obecná znalost databázových systémů
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-rest
+  lecturer_id: jiripinkas
+  technology_id: rest
+  name: REST pokročilé
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - HATEOAS
+    - Stateless REST WS, Security
+    - Swagger 3 & Codegen
+    - Spring Data REST
+    - Postman & Newman
+    - Load testing
+
+    ### Pro koho je školení určeno
+
+    Na kurzu si představíme pokročilejší techniky pro práci s REST WS.
+
+    #### Předchozí znalosti
+
+    Minimálně základní znalosti REST architektury
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-performance
+  lecturer_id: jiripinkas
+  technology_id: performance
+  name: Performance Tuning
+  price_open: 11 600 CZK bez DPH
+  price_in_house: 32 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 2 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Monitoring, profiling a tuning Java aplikace
+    - Ladění Garbage Collectoru
+    - Na co si dávat pozor při psaní Java kódu
+    - Nástroje: Apache JMeter, Soap UI (opravdu) :-), JVisualVM, JProfiler, Java Mission Control & Flight Recorder
+    - Prometheus, Spring Boot Admin, Java Melody, Glowroot, Kibana APM
+    - Eclipse MAT
+    - Jaeger / Zipkin
+    - Tipy a triky pro zrychlení: Hibernate, JSON mapování pomocí Jacksona, proč používat MapStruct, HikariCP atd.
+    - Microbenchmarking (JMH)
+
+    ### Pro koho je školení určeno
+
+    Java není pomalá ... pokud se používá tak, jak má :-) Na co si dát pozor při psaní Java aplikace a jak vytunit stávající aplikaci se dozvíte na tomto školení.
+
+    #### Předchozí znalosti
+
+    Orientační znalost programování v nějakém vyšším programovacím jazyce
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-graalvm
+  lecturer_id: jiripinkas
+  technology_id: graalvm
+  name: GraalVM & Native Image
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - GraalVM
+    - Packaging Java aplikace do Native Image
+    - Micronaut, Quarkus, Helidon
+
+    ### Pro koho je školení určeno
+
+    Je možné spustit Java aplikaci za 0,05 vteřiny? Ano ... s GraalVM Native Image. Kdy se to hodí? Zejména při přechodu do cloudu (serverless, aplikace v Kubernetes atp.)
+
+    #### Předchozí znalosti
+
+    Žádné specifické :-)
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-maven
+  lecturer_id: jiripinkas
+  technology_id: maven
+  name: Maven
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Instalace a konfigurace Apache Maven
+    - Tvorba Maven projektu
+    - Soubor pom.xml
+    - Maven & Eclipse / NetBeans / IntelliJ Idea
+    - Kompilace a spouštění Maven aplikace
+    - Závislosti, tranzitivní závislosti, properties, scope, repozitáře
+    - Build fáze
+    - Profily
+    - Projekt skládající se z více modulů
+    - Parent project
+    - Nejčastěji používané pluginy
+    - Maven Release Plugin
+    - Instalace a použití Artifactory / Nexus repozitáře
+
+    ### Pro koho je školení určeno
+
+    Kurz seznamuje se základy frameworku Maven, s jeho instalací, nastavením a použití. Dále se zde dozvíte jak tvořit různé typy aplikací, instalace a nastavení vnitrofiremního repozitáře a best practices.
+
+    #### Předchozí znalosti
+
+    Alespoň základní znalosti o Java platformě
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-junit
+  lecturer_id: jiripinkas
+  technology_id: junit
+  name: Testování s JUnit
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Úvod do unit testů, Test Driven Development (TDD)
+    - JUnit 5
+    - JUnit + Maven
+    - JUnit + Intellij Idea / Eclipse, tipy a triky
+    - Testování v izolaci
+    - Mock, stub, skeleton
+    - AssertJ
+    - Mockito, PowerMock
+    - Best practices
+    - Integrační testy, testování databáze, Testcontainers
+    - JUnit & Spring
+    - Code coverage (pokrytí kódu testy)
+    - Continuous Integration (kontinuální integrace) + testy
+
+    ### Pro koho je školení určeno
+
+    Na kurzu se naučíte základní i pokročilou tvorbou unit testů na praktických příkladech (Java EE aplikace). Je určen pro všechny programátory, které už nebaví, že když se něco v pokročilejších fázích projektu změní, tak něco jiného přestane fungovat.
+
+    #### Předchozí znalosti
+
+    Orientační znalost programování v nějakém vyšším programovacím jazyce
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-java8
+  lecturer_id: jiripinkas
+  technology_id: java
+  name: Funkcionální programování v Java 8
+  price_open: 11 600 CZK bez DPH
+  price_in_house: 32 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 2 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Lambda výrazy
+    - Stream API
+    - Default a statické metody v interface
+    - Optional
+    - Refactoring stávajícího kódu
+    - Design patterns
+    - Best practices
+    - Hodně příkladů
+    - Date & Time API v Java 8
+
+    ### Pro koho je školení určeno
+
+    Pro všechny Java programátory.
+
+    #### Předchozí znalosti
+
+    Alespoň základní znalost Javy.
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-javascript-tools
+  lecturer_id: jiripinkas
+  technology_id: javascript
+  name: JavaScript nástroje
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Node.js, npm, yarn
+    - package.json
+    - Karma, Mocha, Chai
+    - Webpack, Gulp, Babel
+
+    ### Pro koho je školení určeno
+
+    I Java vývojář by měl v dnešní době znát základní JavaScript nástroje (i když nepracuje s JavaScriptem).
+
+    #### Předchozí znalosti
+
+    Žádné specifické
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-graphql
+  lecturer_id: jiripinkas
+  technology_id: graphql
+  name: GraphQL
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Co je to GraphQL
+
+    GraphQL je náhrada RESTových webových služeb a na některé věci je efektivnější a flexibilnější než REST.
+
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Principy GraphQL
+    - GraphQL & Spring Boot
+    - GraphQL & JavaScript
+    - GraphiQL, Voyager
+
+    #### Předchozí znalosti
+
+    Žádné specifické
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-minio
+  lecturer_id: jiripinkas
+  technology_id: minio
+  name: MinIO
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Co je to MinIO
+
+    MinIO je on-premise S3-compatible object storage. Co to je? Prakticky se jedná o datové úložiště, určené pro ukládání (a následné zpřístupnění) libovolných dat (obrázky, pdf, html soubory, logy apod.). Ke stejnému účelu slouží také S3 od Amazonu. MinIO nabízí to samé (dokonce s kompatibilním S3 rozhraním), ale dá se provozovat na vlastním serveru.
+
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Úvod do MinIO, S3
+    - MinIO & Docker / docker-compose
+    - MinIO client (mc)
+    - MinIO & Java
+    - MinIO & Prometheus
+
+    #### Předchozí znalosti
+
+    Žádné specifické
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-nginx
+  lecturer_id: jiripinkas
+  technology_id: nginx
+  name: NGINX
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Co je to NGINX
+
+    NGINX se používá jako reverse proxy server. Na tomto školení se podíváme na jeho konfiguraci, nastavení HTTPS a další důležité konfigurace (například http/2 a gzip), jak monitorovat NGINX pomocí Prometheus a další.
+
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - konfigurace web. serveru
+    - reverse proxy
+    - monitoring (Prometheus) a statistiky
+    - HTTPS + Let's encrypt
+    - HTTP/2
+    - GZIP komprese
+    - použití v Dockeru
+    - best practices
+
+    #### Předchozí znalosti
+
+    Žádné specifické
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-liquibase
+  lecturer_id: jiripinkas
+  technology_id: liquibase
+  name: Liquibase
+  price_open: 5 800 CZK bez DPH
+  price_in_house: 16 000 CZK bez DPH
+  description: |
+    ### Co je to Liquibase
+
+    Liquibase je něco jako GIT pro Vaši databázi. Většina aplikací pracuje s databází. Jak se postupně vytváří Vaše aplikace, tak se také obvykle vyvíjí (mění) databázové schéma. Pomocí Liquibase je možné tuto činnost dělat jednodušším a hlavně standardním způsobem, díky čemuž je možné dělat lehce změny v databázovém schématu na dev prostředí a pak tyto změny propagovat do testů i do produkce (ideálně přes CI/CD nástroj jako například Gitlab).
+
+    ### Jak školení probíhá
+
+    Délka trvání je 1 den.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Princip Evolutionary Database Design
+    - Konfigurace pomocí XML & SQL
+    - Liquibase Maven Plugin
+    - Liquibase & Spring Boot
+    - Liquibase & Docker
+    - Liquibase & CI/CD
+    - DB update, rollback, diff
+    - Best practices
+
+    #### Předchozí znalosti
+
+    Alespoň základní znalosti SQL, XML a Mavenu anebo Dockeru
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
+
+- id: jiripinkas-vue
+  lecturer_id: jiripinkas
+  technology_id: vue
+  name: Vue.js
+  price_open: 11 600 CZK bez DPH
+  price_in_house: 32 000 CZK bez DPH
+  description: |
+    ### Jak školení probíhá
+
+    Délka trvání je 2 dny.
+
+    U téměř všech mých školení je 40% času věnováno teorii a 60% praktické části.
+
+    Veřejná školení se konají vzhledem k aktuální situaci s Covid-19 online. Jinak na adrese Praha 1, Klimentská 1443/50 (poblíž stanice metra Florenc). [__mapa__](https://www.google.cz/maps/place/Klimentsk%C3%A1+1443%2F50,+Petrsk%C3%A1+%C4%8Dtvr%C5%A5,+110+00+Praha-Praha+1/@50.0924521,14.4325987,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94bf752d4b5b:0xe4e0ffba888768b9?hl=en). Občerstvení je samozřejmě v ceně.  A na oběd v posledních letech chodíme do výborné [__restaurace hotelu Opera__](https://www.zomato.com/cs/praha/restaurace-hotel-opera-nov%C3%A9-m%C4%9Bsto-praha-1) (a oběd je také v ceně školení).
+
+    Rozvrh se standardně skládá ze sedmi vyučovacích hodin denně. V případě firemního školení je samozřejmě možné rozvrh změnit.
+
+    - Dopoledne: 9:00 - 11:00
+    - Polední přestávka na oběd je kolem: 11:00 - 11:30
+    - Odpoledne: do 16:00
+
+    Na konci školení dostane každý účastník osvědčení o absolvování kurzu a materiály v elektronické podobě (obdobně jako u oficiálních Oracle školení)
+
+    Pokud si nevezmete vlastní notebook, pak Vám po dobu školení zapůjčím notebook z mé mobilní počítačové učebny.
+
+    Maximální počet účastníků na školení je vzhledem k prakticky pojatým školením sedm až osm. Velice často jsou ale na veřejných školení cca. čtyři účastníci. Díky tomu je dostatek času na rozšiřující dotazy a školení je daleko osobnější.
+
+    ### Co Vás naučím
+
+    - Vue vs React vs Angular
+    - Prohloubení znalostí o nových vlastnostech JavaScriptu: ES6 + Typescript
+    - Prohloubení znalostí o buildování JavaScript aplikací: Webpack, NPM, Yarn, Vue loader
+    - Vuex, Komunikace s REST API pomocí Axios
+    - Vue CLI
+    - Single file components (.vue soubory)
+    - Rozdělení aplikace do komponent
+    - Reaktivní principy
+    - Deployment aplikace do produkce
+
+    ### Pro koho je školení určeno
+
+    Dříve nebo později potřebujete naprogramovat UI. V současnosti existují tři možnosti: Angular, React nebo Vue. A toto školení je právě o Vue (mimochodem: výslovnost je stejná jako u slova "view"). Jo a jestli si ještě myslíte, že JavaScript je sračka, tak Vás na tomto školení přesvědčím o opaku :-)
+
+    #### Předchozí znalosti
+
+    Alespoň základní znalost HTML a JavaScriptu
+
+    #### Technické požadavky
+
+    Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).

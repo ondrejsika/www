@@ -107,8 +107,10 @@
   name: Jiří Pinkas
   bio: |
     Jsem hlavním (a v drtivé většině jediným) školitelem Java a SQL školení. V minulosti jsem pracoval pro pár známých i méně známých společností, na několika malých i velkých projektech a když nejsem na školení, tak tyto projekty obvykle dále rozšiřuji. Z hobby projektů bych v současnosti vyzdvihnul javalibs.com, což je online vyhledávač pro The Central Repository (hlavní Maven repozitář) a další Maven repozitáře s open-source knihovnami. Když nedělám nic z výše uvedeného, tak plním roli otce a manžela (a strašně rád vařím)
-  email: skoleni@skoleni.io
+  twitter: jirkapinkas
+  email: pinkas@seico.cz
   courses:
     - jiripinkas-java
     - jiripinkas-sql
+  phone:  +420 774 912 047
   github: jirkapinkas

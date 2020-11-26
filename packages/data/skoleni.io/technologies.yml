@@ -20,6 +20,7 @@
   courses:
     - ondrejsika-gitlab-ci
     - vojtechmares-gitlab-ci
+    - jiripinkas-gitlab-ci
 
 - id: docker
   name: Docker
@@ -30,6 +31,7 @@
   courses:
     - ondrejsika-docker
     - vojtechmares-docker
+    - jiripinkas-docker
 
 - id: kubernetes
   name: Kubernetes
@@ -132,7 +134,10 @@
   description: |
     Pracujeme na tom z plnych sil.
   courses:
-    - jiripinkas-java
+    - jiripinkas-java-basic
+    - jiripinkas-java-advanced
+    - jiripinkas-java-web
+    - jiripinkas-java8
 
 - id: sql
   name: SQL
@@ -140,6 +145,155 @@
     Pracujeme na tom z plnych sil.
   courses:
     - jiripinkas-sql
+
+- id: liquibase
+  name: Liquibase
+  description: |
+    Liquibase je něco jako GIT pro Vaši databázi. Většina aplikací pracuje s databází. Jak se postupně vytváří Vaše aplikace, tak se také obvykle vyvíjí (mění) databázové schéma.
+    Pomocí Liquibase je možné tuto činnost dělat jednodušším a hlavně standardním způsobem, díky čemuž je možné dělat lehce změny v databázovém schématu na dev prostředí a pak tyto změny propagovat do testů i do produkce (ideálně přes CI/CD nástroj jako například Gitlab).
+  courses:
+    - jiripinkas-liquibase
+
+- id: nginx
+  name: NGINX
+  description: |
+    NGINX se používá jako reverse proxy server.
+  courses:
+    - jiripinkas-nginx
+
+- id: minio
+  name: MinIO
+  description: |
+    MinIO je on-premise S3-compatible object storage. Co to je? Prakticky se jedná o datové úložiště, určené pro ukládání (a následné zpřístupnění) libovolných dat (obrázky, pdf, html soubory, logy apod.).
+    Ke stejnému účelu slouží také S3 od Amazonu. MinIO nabízí to samé (dokonce s kompatibilním S3 rozhraním), ale dá se provozovat na vlastním serveru.
+  courses:
+    - jiripinkas-minio
+
+- id: graphql
+  name: GraphQL
+  description: |
+    GraphQL je náhrada RESTových webových služeb a na některé věci je efektivnější a flexibilnější než REST.
+  courses:
+    - jiripinkas-graphql
+
+- id: javascript
+  name: JavaScript nástroje
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-javascript-tools
+
+- id: junit
+  name: Testování s JUnit
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-junit
+
+- id: maven
+  name: Maven
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-maven
+
+- id: graalvm
+  name: GraalVM & Native Image
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-graalvm
+
+- id: performance
+  name: Performance Tuning
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-performance
+
+- id: rest
+  name: Rest pokročilé
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-rest
+
+- id: designpatterns
+  name: Návrhové vzory
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-designpatterns
+
+- id: spring
+  name: Spring
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-spring
+
+- id: spring-monitoring
+  name: Spring Boot Monitoring
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-spring-monitoring
+
+- id: spring-rest
+  name: Spring Boot Reactive REST
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-spring-rest
+
+- id: microservices
+  name: Microservices
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-microservices
+
+- id: hibernate-optimisation
+  name: Optimalizace JPA (Hibernate) & SQL
+  description: |
+    Hibernate je nejpopulárnější a nejpoužívanější framework pro ORM (Objektově Relační Mapování).
+    Přestože plně implementuje JPA (Java Persistence API) standard a v maximální míře je vhodné jej používat, má spoustu vlastních rozšíření, které se velice často používají.
+  courses:
+    - jiripinkas-hibernate-optimisation
+
+- id: hibernate
+  name: Hibernate (JPA)
+  description: |
+    Hibernate je nejpopulárnější a nejpoužívanější framework pro ORM (Objektově Relační Mapování).
+    Přestože plně implementuje JPA (Java Persistence API) standard a v maximální míře je vhodné jej používat, má spoustu vlastních rozšíření, které se velice často používají.
+  courses:
+    - jiripinkas-hibernate
+
+- id: jpa
+  name: Hibernate (JPA)
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-jpa
+
+- id: jpa
+  name: Hibernate (JPA)
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-jpa
+
+- id: jpa
+  name: Hibernate (JPA)
+  description: |
+    Pracujeme na tom z plnych sil.
+  courses:
+    - jiripinkas-jpa
+
+
+
+
+
 
 - id: digitalocean
   name: Digital Ocean
@@ -149,11 +303,12 @@
     - ondrejsika-digitalocean
 
 - id: elk
-  name: ELK
+  name: ELK stack - Elasticsearch, Logstash, Kibana
   description: |
     Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-elk
+    - jiripinkas-elk
 
 - id: prometheus
   name: Prometheus
