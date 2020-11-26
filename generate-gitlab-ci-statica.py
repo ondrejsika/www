@@ -30,10 +30,17 @@ def gen_deps(deps, name):
 
 
 out = {
-    "stages": ["deploy"],
+    "stages": [
+        "start",
+        "deploy",
+    ],
     "image": "ondrejsika/ci-node-statica",
     "variables": {
         "GIT_CLEAN_FLAGS": "-ffdx -e node_modules",
+    },
+    "start": {
+        "stage": "start",
+        "script": 'echo "start job - you can\'t create empty child pipeline"',
     },
 }
 
