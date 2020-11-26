@@ -1319,30 +1319,30 @@
     cs: |
       ### Co je Django
 
-      Django je popularni webovy framework napsany v Pythonu, ktery pohani velke mnozstvi webu vsech velikosti. Django pokryva velke mnozstvi oblasti, ktere vyvojari resi: MVC, ORM, sablonovaci system, URLs, tvorbu API a dalsi. Django Vam pomuze psat weby a webove aplikace rychjeli a bezpecneji.
+      Django je populární webový framework napsaný v Pythonu, který pohání velké množství webů všech velikostí. Django pokrývá velké množství oblastí, které vývojáři řeší: MVC, ORM, šablonovací systém, URLs, tvorbu API a další. Django Vám pomůže psát weby a webové aplikace rychleji a bezpečněji.
 
       ### Jak školení probíhá
 
-      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak Django nainstalovat a vytvorit prvni projekt. Na nem si vsechny dulezite komponenety a workflow. Ukazeme si cely prubeh od vyvoje po nasazeni (Docker image).
+      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak Django nainstalovat a vytvořit první projekt. Na něm si ukážeme všechny důležité komponenety a workflow. Ukážeme si taky celý průběh od vývoje po nasazení (Docker image).
 
       ### Co Vás naučím
 
       - Co je Django
-      - Django a ostatni web frameworky (v Pythonu)
-      - Setup noveho projetu
-      - Prace s modely a databazi
-      - Prace s administraci
-      - Prace s formulari
-      - Prace s URL
-      - Prace s sablonami
-      - CSS a staticke soubory
-      - Vytvareni API
-      - Produkcni konfigurace Djanga
-      - Nasazeni v Dockeru
+      - Django a ostatní web frameworky (v Pythonu)
+      - Setup nového projektu
+      - Práce s modely a databází
+      - Práce s administrací
+      - Práce s formuláři
+      - Práce s URL
+      - Práce s šablonami
+      - CSS a statické soubory
+      - Vytváření API
+      - Produkční konfigurace Djanga
+      - Nasazení v Dockeru
 
       ### Pro koho je školení určeno
 
-      Školení je určeno pro vývojáře kteří chtejí začít používat webowý framework Django pro tvorbu webů nebo API.
+      Školení je určeno pro vývojáře kteří chtejí začít používat webový framework Django pro tvorbu webů nebo API.
 
       #### Předchozí znalosti
 
@@ -1350,6 +1350,7 @@
       - Základy práce v terminálu
 
       #### Technické požadavky
+      
       - Nainstalovaný Python a pipenv
       - Přístup na internet (ideálně bez korporátní proxy)
 
