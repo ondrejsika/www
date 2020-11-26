@@ -5,7 +5,7 @@ import json
 SITES = [
     {"name": "skoleni-git.cz"},
     {"name": "skoleni-docker.cz"},
-    {"name": "skoleni-kubernets.cz"},
+    {"name": "skoleni-kubernetes.cz"},
     {"name": "skoleni-proxmox.cz"},
     {"name": "skoleni-prometheus.cz"},
     {"name": "skoleni-terraform.cz"},
