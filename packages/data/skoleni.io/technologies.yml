@@ -336,7 +336,7 @@
 - id: django
   name: Django
   description: |
-    Pracujeme na tom z plnych sil.
+    Django je populární webový framework napsaný v Pythonu, který pohání velké množství webů všech velikostí. Django pokrývá velké množství oblastí, které vývojáři řeší: MVC, ORM, šablonovací systém, URLs, tvorbu API a další. Django Vám pomůže psát weby a webové aplikace rychleji a bezpečněji.
   courses:
     - ondrejsika-django
 

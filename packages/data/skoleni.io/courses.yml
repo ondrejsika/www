@@ -437,6 +437,50 @@
 
       Notebook s přístupem na internet. Nic víc není potřeba. Pokud máte nějaký testovací Proxmox, můžete využívat ten, ale pro absolvování kurzu není potřeba.
 
+- id: ondrejsika-django
+  lecturer_id: ondrejsika
+  technology_id: django
+  name: Django
+  price_open: 11 999 CZK
+  price_in_house: 50 000 CZK
+  description: |
+      ### Co je Django
+
+      Django je populární webový framework napsaný v Pythonu, který pohání velké množství webů všech velikostí. Django pokrývá velké množství oblastí, které vývojáři řeší: MVC, ORM, šablonovací systém, URLs, tvorbu API a další. Django Vám pomůže psát weby a webové aplikace rychleji a bezpečněji.
+
+      ### Jak školení probíhá
+
+      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak Django nainstalovat a vytvořit první projekt. Na něm si ukážeme všechny důležité komponenety a workflow. Ukážeme si taky celý průběh od vývoje po nasazení (Docker image).
+
+      ### Co Vás naučím
+
+      - Co je Django
+      - Django a ostatní web frameworky (v Pythonu)
+      - Setup nového projektu
+      - Práce s modely a databází
+      - Práce s administrací
+      - Práce s formuláři
+      - Práce s URL
+      - Práce s šablonami
+      - CSS a statické soubory
+      - Vytváření API
+      - Produkční konfigurace Djanga
+      - Nasazení v Dockeru
+
+      ### Pro koho je školení určeno
+
+      Školení je určeno pro vývojáře kteří chtejí začít používat webový framework Django pro tvorbu webů nebo API.
+
+      #### Předchozí znalosti
+
+      - Znalost Pythonu
+      - Základy práce v terminálu
+
+      #### Technické požadavky
+
+      - Nainstalovaný Python a pipenv
+      - Přístup na internet (ideálně bez korporátní proxy)
+
 # Vojtech Mares
 
 - id: vojtechmares-git

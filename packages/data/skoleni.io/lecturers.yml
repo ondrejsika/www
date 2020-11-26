@@ -11,6 +11,7 @@
     - ondrejsika-ansible
     - ondrejsika-rancher
     - ondrejsika-proxmox
+    - ondrejsika-django
   bio: Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím Vás používat prověřené nástroje a technologie, které povedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.
   twitter: ondrejsika
   linkedin: ondrejsika
