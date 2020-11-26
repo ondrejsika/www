@@ -65,6 +65,7 @@ for site in SITES:
                 "only": {
                     "changes": gen_deps(_COURSE_LANDING_DEPENDENCIES, name),
                 },
+                "needs": [],
             }
         }
     )
@@ -88,6 +89,7 @@ for site in SITES_DEV:
                 "only": {
                     "changes": gen_deps(_COURSE_LANDING_DEPENDENCIES, name),
                 },
+                "needs": [],
             }
         }
     )
