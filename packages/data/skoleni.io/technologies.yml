@@ -139,13 +139,6 @@
     - jiripinkas-java-web
     - jiripinkas-java8
 
-- id: sql
-  name: SQL
-  description: |
-    Pracujeme na tom z plnych sil.
-  courses:
-    - jiripinkas-sql
-
 - id: liquibase
   name: Liquibase
   description: |
@@ -268,32 +261,6 @@
     Přestože plně implementuje JPA (Java Persistence API) standard a v maximální míře je vhodné jej používat, má spoustu vlastních rozšíření, které se velice často používají.
   courses:
     - jiripinkas-hibernate
-
-- id: jpa
-  name: Hibernate (JPA)
-  description: |
-    Pracujeme na tom z plnych sil.
-  courses:
-    - jiripinkas-jpa
-
-- id: jpa
-  name: Hibernate (JPA)
-  description: |
-    Pracujeme na tom z plnych sil.
-  courses:
-    - jiripinkas-jpa
-
-- id: jpa
-  name: Hibernate (JPA)
-  description: |
-    Pracujeme na tom z plnych sil.
-  courses:
-    - jiripinkas-jpa
-
-
-
-
-
 
 - id: digitalocean
   name: Digital Ocean
