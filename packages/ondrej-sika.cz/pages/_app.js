@@ -39,12 +39,12 @@ const Navbar = (
           ["PROXMOX", "/skoleni/proxmox"],
           ["ELK / EFK", "/skoleni/elk"],
           ["DIGITAL OCEAN", "/skoleni/digitalocean"],
-          ["AWS", "/skoleni/aws"],
-          ["OPEN STACK", "/skoleni/openstack"],
-          ["GO (GOLANG)", "/skoleni/go"],
-          ["PYTHON", "/skoleni/python"],
+          // ["AWS", "/skoleni/aws"],
+          // ["OPEN STACK", "/skoleni/openstack"],
+          // ["GO (GOLANG)", "/skoleni/go"],
+          // ["PYTHON", "/skoleni/python"],
           ["DJANGO", "/skoleni/django"],
-          ["REACT & NEXT.JS", "/skoleni/react"],
+          // ["REACT & NEXT.JS", "/skoleni/react"],
           ["VIDEOKURZY", "/videokurzy"]
         ]
       ],
