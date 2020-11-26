@@ -110,7 +110,30 @@
   twitter: jirkapinkas
   email: pinkas@seico.cz
   courses:
-    - jiripinkas-java
-    - jiripinkas-sql
+    - jiripinkas-java-basic
+    - jiripinkas-java-advanced
+    - jiripinkas-java-web
+    - jiripinkas-spring
+    - jiripinkas-hibernate
+    - jiripinkas-hibernate-optimisation
+    - jiripinkas-microservices
+    - jiripinkas-spring-rest
+    - jiripinkas-spring-monitoring
+    - jiripinkas-gitlab-ci
+    - jiripinkas-docker
+    - jiripinkas-designpatterns
+    - jiripinkas-elk
+    - jiripinkas-rest
+    - jiripinkas-performance
+    - jiripinkas-graalvm
+    - jiripinkas-maven
+    - jiripinkas-junit
+    - jiripinkas-java8
+    - jiripinkas-javascript-tools
+    - jiripinkas-graphql
+    - jiripinkas-minio
+    - jiripinkas-nginx
+    - jiripinkas-liquibase
+    - jiripinkas-vue
   phone:  +420 774 912 047
   github: jirkapinkas
