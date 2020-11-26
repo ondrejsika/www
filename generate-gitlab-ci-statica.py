@@ -13,6 +13,22 @@ SITES = [
     {"name": "skoleni-rancher.cz"},
 ]
 
+_COURSE_LANDING_DEPENDENCIES = [
+    "packages/data/training/sessions.yml",
+    "packages/data/training/recommendations/**/*",
+    "packages/data/training/recommendations/**/*",
+    "packages/data/training/pictures/**/*",
+    "packages/common/**/*",
+    "packages/course-landing/**/*",
+    "packages/{{site}}/**/*",
+    "yarn.lock",
+]
+
+
+def gen_deps(deps, name):
+    return [dep.replace("{{site}}", name) for dep in deps]
+
+
 out = {
     "stages": ["deploy"],
     "image": "ondrejsika/ci-node-statica",
@@ -33,6 +49,9 @@ for site in SITES:
                     "yarn",
                     "yarn run deploy-%s" % name,
                 ],
+                "only": {
+                    "changes": gen_deps(_COURSE_LANDING_DEPENDENCIES, name),
+                },
             }
         }
     )
