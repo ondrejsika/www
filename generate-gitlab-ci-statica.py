@@ -90,6 +90,10 @@ for site in SITES_DEV:
                     "changes": gen_deps(_COURSE_LANDING_DEPENDENCIES, name),
                 },
                 "needs": [],
+                "environment": {
+                    "name": "test %s" % name,
+                    "url": "https://%s" % statica_domain,
+                },
             }
         }
     )
