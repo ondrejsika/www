@@ -76,7 +76,6 @@
     Pracujeme na tom z plnych sil.
   courses:
     - janbarasek-php
-    - adambisek-react
 
 - id: react
   name: React
