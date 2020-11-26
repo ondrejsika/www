@@ -1156,8 +1156,8 @@
   lecturer_id: jiripinkas
   technology_id: java
   name: Základy Java programování
-  price_open: 17 400 CZK bez DPH
-  price_in_house: 48 000 CZK bez DPH
+  price_open: 17 400 CZK
+  price_in_house: 48 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1214,8 +1214,8 @@
   lecturer_id: jiripinkas
   technology_id: java
   name: Java programování
-  price_open: 29 000 CZK bez DPH
-  price_in_house: 80 000 CZK bez DPH
+  price_open: 29 000 CZK
+  price_in_house: 80 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1278,8 +1278,8 @@
   lecturer_id: jiripinkas
   technology_id: java
   name: Tvorba web. aplikací v Javě
-  price_open: 29 000 CZK bez DPH
-  price_in_house: 80 000 CZK bez DPH
+  price_open: 29 000 CZK
+  price_in_house: 80 000 CZK
   description: |
     ### Co je to Spring
 
@@ -1323,8 +1323,8 @@
   lecturer_id: jiripinkas
   technology_id: spring
   name: Spring
-  price_open: 17 400 CZK bez DPH
-  price_in_house: 48 000 CZK bez DPH
+  price_open: 17 400 CZK
+  price_in_house: 48 000 CZK
   description: |
     ### Co je to Spring
 
@@ -1376,8 +1376,8 @@
   lecturer_id: jiripinkas
   technology_id: hibernate
   name: Hibernate (JPA)
-  price_open: 17 400 CZK bez DPH
-  price_in_house: 48 000 CZK bez DPH
+  price_open: 17 400 CZK
+  price_in_house: 48 000 CZK
   description: |
     ### Co je to Hibernate
 
@@ -1446,8 +1446,8 @@
   lecturer_id: jiripinkas
   technology_id: hibernate
   name: Optimalizace JPA (Hibernate) & SQL
-  price_open: 11 600 CZK bez DPH
-  price_in_house: 32 000 CZK bez DPH
+  price_open: 11 600 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1495,8 +1495,8 @@
   lecturer_id: jiripinkas
   technology_id: microservices
   name: Microservices
-  price_open: 29 000 CZK bez DPH
-  price_in_house: 80 000 CZK bez DPH
+  price_open: 29 000 CZK
+  price_in_house: 80 000 CZK
   description: |
     ### Co jsou to Microservices?
 
@@ -1556,8 +1556,8 @@
   lecturer_id: jiripinkas
   technology_id: spring
   name: Spring Boot Reactive REST
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1602,8 +1602,8 @@
   lecturer_id: jiripinkas
   technology_id: spring
   name: Spring Boot Monitoring
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1650,8 +1650,8 @@
   lecturer_id: jiripinkas
   technology_id: gitlab-ci
   name: Gitlab CI
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1686,7 +1686,7 @@
 
     ### Pro koho je školení určeno
 
-    Pro všechny, kteří chtějí přejít na GitlLa (anebo již s Gitlab CI pracují a chtějí se dozvědět různé tipy a triky)
+    Pro všechny, kteří chtějí přejít na GitlLab (anebo již s Gitlab CI pracují a chtějí se dozvědět různé tipy a triky)
 
     #### Předchozí znalosti
 
@@ -1700,8 +1700,8 @@
   lecturer_id: jiripinkas
   technology_id: docker
   name: Docker
-  price_open: 11 600 CZK bez DPH
-  price_in_house: 32 000 CZK bez DPH
+  price_open: 11 600 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Co je to Docker
 
@@ -1756,8 +1756,8 @@
   lecturer_id: jiripinkas
   technology_id: designpatterns
   name:  Návrhové vzory
-  price_open: 11 600 CZK bez DPH
-  price_in_house: 32 000 CZK bez DPH
+  price_open: 11 600 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1807,8 +1807,8 @@
   lecturer_id: jiripinkas
   technology_id: elk
   name: ELK stack - Elasticsearch, Logstash, Kibana
-  price_open: 11 600 CZK bez DPH
-  price_in_house: 32 000 CZK bez DPH
+  price_open: 11 600 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1853,8 +1853,8 @@
   lecturer_id: jiripinkas
   technology_id: rest
   name: REST pokročilé
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1901,8 +1901,8 @@
   lecturer_id: jiripinkas
   technology_id: performance
   name: Performance Tuning
-  price_open: 11 600 CZK bez DPH
-  price_in_house: 32 000 CZK bez DPH
+  price_open: 11 600 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1952,8 +1952,8 @@
   lecturer_id: jiripinkas
   technology_id: graalvm
   name: GraalVM & Native Image
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -1997,8 +1997,8 @@
   lecturer_id: jiripinkas
   technology_id: maven
   name: Maven
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -2052,8 +2052,8 @@
   lecturer_id: jiripinkas
   technology_id: junit
   name: Testování s JUnit
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -2107,8 +2107,8 @@
   lecturer_id: jiripinkas
   technology_id: java
   name: Funkcionální programování v Java 8
-  price_open: 11 600 CZK bez DPH
-  price_in_house: 32 000 CZK bez DPH
+  price_open: 11 600 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -2158,8 +2158,8 @@
   lecturer_id: jiripinkas
   technology_id: javascript
   name: JavaScript nástroje
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Jak školení probíhá
 
@@ -2204,8 +2204,8 @@
   lecturer_id: jiripinkas
   technology_id: graphql
   name: GraphQL
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Co je to GraphQL
 
@@ -2250,8 +2250,8 @@
   lecturer_id: jiripinkas
   technology_id: minio
   name: MinIO
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Co je to MinIO
 
@@ -2297,8 +2297,8 @@
   lecturer_id: jiripinkas
   technology_id: nginx
   name: NGINX
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Co je to NGINX
 
@@ -2347,8 +2347,8 @@
   lecturer_id: jiripinkas
   technology_id: liquibase
   name: Liquibase
-  price_open: 5 800 CZK bez DPH
-  price_in_house: 16 000 CZK bez DPH
+  price_open: 5 800 CZK
+  price_in_house: 16 000 CZK
   description: |
     ### Co je to Liquibase
 
@@ -2397,8 +2397,8 @@
   lecturer_id: jiripinkas
   technology_id: vue
   name: Vue.js
-  price_open: 11 600 CZK bez DPH
-  price_in_house: 32 000 CZK bez DPH
+  price_open: 11 600 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Jak školení probíhá
 
