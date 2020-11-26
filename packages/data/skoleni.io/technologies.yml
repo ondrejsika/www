@@ -84,7 +84,9 @@
     Pracujeme na tom z plnych sil.
   courses:
     - adambisek-react
-    - steida-react
+    - steida-react-javascript-basic
+    - steida-react-javascript-medium
+    - steida-react-javascript-advanced
 
 - id: vue
   name: Vue.js
