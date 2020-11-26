@@ -29,6 +29,7 @@ for site in SITES:
             % name: {
                 "stage": "deploy",
                 "script": [
+                    "rm -rf ./packages/%s/out" % name,
                     "yarn",
                     "yarn run deploy-%s" % name,
                 ],
