@@ -1301,12 +1301,58 @@
     cs: ["spel", "vse", "sit"]
   agenda:
     cs: |
-      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+      - Co je Django
+      - Django a ostatni web frameworky (v Pythonu)
+      - Setup noveho projetu
+      - Prace s modely a databazi
+      - Prace s administraci
+      - Prace s formulari
+      - Prace s URL
+      - Prace s sablonami
+      - CSS a staticke soubory
+      - Vytvareni API
+      - Produkcni konfigurace Djanga
+      - Nasazeni v Dockeru
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
   description:
     cs: |
-      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+      ### Co je Django
+
+      Django je popularni webovy framework napsany v Pythonu, ktery pohani velke mnozstvi webu vsech velikosti. Django pokryva velke mnozstvi oblasti, ktere vyvojari resi: MVC, ORM, sablonovaci system, URLs, tvorbu API a dalsi. Django Vam pomuze psat weby a webove aplikace rychjeli a bezpecneji.
+
+      ### Jak školení probíhá
+
+      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak Django nainstalovat a vytvorit prvni projekt. Na nem si vsechny dulezite komponenety a workflow. Ukazeme si cely prubeh od vyvoje po nasazeni (Docker image).
+
+      ### Co Vás naučím
+
+      - Co je Django
+      - Django a ostatni web frameworky (v Pythonu)
+      - Setup noveho projetu
+      - Prace s modely a databazi
+      - Prace s administraci
+      - Prace s formulari
+      - Prace s URL
+      - Prace s sablonami
+      - CSS a staticke soubory
+      - Vytvareni API
+      - Produkcni konfigurace Djanga
+      - Nasazeni v Dockeru
+
+      ### Pro koho je školení určeno
+
+      Školení je určeno pro vývojáře kteří chtejí začít používat webowý framework Django pro tvorbu webů nebo API.
+
+      #### Předchozí znalosti
+
+      - Znalost Pythonu
+      - Základy práce v terminálu
+
+      #### Technické požadavky
+      - Nainstalovaný Python a pipenv
+      - Přístup na internet (ideálně bez korporátní proxy)
+
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
