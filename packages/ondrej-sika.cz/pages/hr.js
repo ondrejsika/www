@@ -13,17 +13,22 @@ const Install = () => (
     <div className="container pt-4 pb-2 post-body">
       <Markdown
         source={`
-Dekuji za Vas zajem, ale na full time se nedohodneme, za uctuji se __25 000__ CZK bez DPH za MD.
+Děkuji za Váš zájem. Na full time práci se spolu nedomluvíme, ale nabízím externí formu spolupráce, která má následující benefity:
 
-Ale mohu Vam nabidnout jinou formu spoluprace:
+- Vy/klient neztratí několik měsíců času zbytečně čekáním na zkušené DevOps specialisty, kterých je zoufalý nedostatek
+- Vy/klient nasadí DevOps technologie rychle a efektivně v průběhu několika dnů/týdnů
+- vyškolím Vaše/klientove týmy v různých DevOps technologiích
+- nabídnu k tomu SLA support
 
-- __Skoleni__ - Delam popularni DevOps skoleni. Nejvetsi zajem je Docker, Kubernetes, Terraform a Gitlab CI. Muzete vase vyvojare poslat na otevreny termin nebo muzeme skoleni usporadat u Vas ve firme.
-- __Konzultace__ - Mohu Vam pomoci s konkretnim problemem jako pripravit infrastrukturu, migrace do Kubernetes, optimalizace gitlab CI pipeline. Vse budeme delat nad vasim kodem a vysledkem je okamzite pouzitelny.
-- __DevOps Support__ - Potrebujete aby nekdo dohlizel na vasi infrastrukturu v AWS nebo na Kubernetes? Ja a muj team se Vam o to postarame.
+Umím pomoct se širokou škálou open-source DevOps technologií, umím taky nastavit celou DevOps pipeline a umím to udělat rychle a efektivně. Konkrětně dělám:
+
+- __Školení__ - Dělám populární DevOps školení. Největší zájem je o Docker, Kubernetes, Terraform a Gitlab CI. Můžete vaše vývojáře poslat na otevřený termín nebo můžeme školení uspořádat u Vás ve firmě.
+- __Konzultace__ - Mohu Vám pomoci s konkrétním problémem jako připravit infrastrukturu, migrace do Kubernetes, optimalizace gitlab CI pipeline. Vše budeme dělat nad vaším kódem a výsledek je okamžitě použitelný.
+- __DevOps Support__ - Potřebujete, aby někdo dohlížel na vaši infrastrukturu v AWS nebo na Kubernetes? Já a můj team se Vám o to postaráme.
 
 ### DevOps Live
 
-Dale delam pravidelene live coding stremy [DevOps Live](/devopslive), pokud mate zajem o volne vstupeny pro vase vyvojare, dejte vedet.
+Dále dělám pravidelené live coding streamy [DevOps Live](/devopslive), pokud máte zájem o volné vstupenky pro kolegy nebo známé, dejte vědět.
 `}
       />
     </div>
