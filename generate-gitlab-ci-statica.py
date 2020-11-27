@@ -22,8 +22,8 @@ SITES = [
 SITES_DEV = [
     {"name": "ondrejsika.io", "deps": "default"},
     {"name": "skoleni.io", "deps": "default"},
-    {"name": "ondrej-sika.cz", "ondrejsika_theme"},
-    {"name": "ondrej-sika.uk", "ondrejsika_singlepage"},
+    {"name": "ondrej-sika.cz", "deps": "ondrejsika_theme"},
+    {"name": "ondrej-sika.uk", "deps": "ondrejsika_singlepage"},
 ]
 
 _DEFAULT_DEPENDENCIES = [
