@@ -124,6 +124,9 @@ for site in SITES:
                     "yarn run deploy-%s" % name,
                 ],
                 "only": {
+                    "refs": [
+                        "master",
+                    ],
                     "changes": gen_deps(deps, name),
                 },
                 "needs": [],
