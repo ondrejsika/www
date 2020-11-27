@@ -125,11 +125,9 @@ image: ondrejsika/ci
 
 stages:
   - start
-  - build_js_priority
   - build_docker_priority
   - deploy_dev_priority
   - deploy_prod_priority
-  - build_js
   - build_docker
   - deploy_dev
   - deploy_prod
@@ -166,37 +164,16 @@ for site in SITES:
     else:
         out.append(
             """
-%(site)s build js:
-  stage: build_js%(priority_suffix)s
-  image: node
+%(site)s build docker:
+  stage: build_docker%(priority_suffix)s
+  image: ondrejsika/ci-node-docker
+  needs: []
   variables:
     GIT_CLEAN_FLAGS: none
   script:
     - yarn
     - rm -rf packages/%(site)s/out
     - yarn run static-%(site)s
-  except:
-    variables:
-      - $EXCEPT_BUILD
-      - $EXCEPT_BUILD_JS
-  only:
-    changes:
-%(dependencies)s
-  artifacts:
-    name: %(site)s
-    paths:
-      - packages/%(site)s/out
-
-
-%(site)s build docker:
-  dependencies:
-    - %(site)s build js
-  needs:
-    - %(site)s build js
-  variables:
-    GIT_STRATEGY: none
-  stage: build_docker%(priority_suffix)s
-  script:
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/%(site)s/
     - docker build -t registry.sikahq.com/www/www/%(site)s:$CI_COMMIT_SHORT_SHA packages/%(site)s
