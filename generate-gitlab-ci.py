@@ -60,9 +60,6 @@ PROD_SITES = {
         "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
         "cloudflare_workers": True,
     },
-    "ansible-skoleni.cz": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
     "skolenie.kubernetes.sk": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },

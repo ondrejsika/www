@@ -145,6 +145,7 @@
     "deploy-skoleni-docker.cz": "./deploy-statica.sh skoleni-docker.cz",
     "deploy-skoleni-kubernetes.cz": "./deploy-statica.sh skoleni-kubernetes.cz",
     "deploy-gitlab-ci.cz": "./deploy-statica.sh gitlab-ci.cz",
+    "deploy-ansible-skoleni.cz": "./deploy-statica.sh ansible-skoleni.cz",
     "deploy-skoleni-rancher.cz": "./deploy-statica.sh skoleni-rancher.cz",
     "deploy-skoleni-terraform.cz": "./deploy-statica.sh skoleni-terraform.cz",
     "deploy-skoleni-prometheus.cz": "./deploy-statica.sh skoleni-prometheus.cz",
