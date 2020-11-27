@@ -241,7 +241,7 @@ for site in SITES:
     changes:
 %(dependencies)s
   environment:
-    name: prod %(site)s
+    name: k8s/prod/%(site)s
     url: https://%(site)s
   dependencies: []
 """
@@ -280,7 +280,7 @@ for site in SITES:
     changes:
 %(dependencies)s
   environment:
-    name: prod %(site)s
+    name: k8s/prod/%(site)s
     url: https://%(site)s
   dependencies: []
 """
