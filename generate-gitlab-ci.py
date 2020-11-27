@@ -63,9 +63,6 @@ PROD_SITES = {
     "skolenie.kubernetes.sk": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
-    "salzburgdevops.com": {
-        "dependencies": _DEFAULT_DEPENDENCIES,
-    },
     "ondrejsikalabs.com": {
         "dependencies": _DEFAULT_DEPENDENCIES,
     },

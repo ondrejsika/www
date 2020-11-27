@@ -171,6 +171,7 @@
     "deploy-skolenie-git.sk": "./deploy-statica.sh skolenie-git.sk",
     "deploy-skolenie-gitlab.sk": "./deploy-statica.sh docker-skolenie-gitlab.sk",
     "deploy-skolenie-docker.sk": "./deploy-statica.sh skolenie-docker.sk",
+    "deploy-salzburgdevops.com": "./deploy-statica.sh salzburgdevops.com",
     "now-ccc.oxs.cz": "yarn run static-ccc.oxs.cz && (cd packages/ccc.oxs.cz/out && now --name ccc-oxs-cz)",
     "now-sika.work": "yarn run static-sika.work && cd packages/sika.work/out && now --name sika-work",
     "now-ondrejsika.io": "yarn run static-ondrejsika.io && cd packages/ondrejsika.io/out && now --name ondrejsika-io",
