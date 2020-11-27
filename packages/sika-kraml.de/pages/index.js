@@ -12,7 +12,7 @@ import git_img from "@app/data/pictures/courses/git.svg";
 import kubernetes_img from "@app/data/pictures/courses/kubernetes.svg";
 import gitlab_img from "@app/data/pictures/courses/gitlab-ci.svg";
 import ansible_img from "@app/data/pictures/courses/ansible.svg";
-import sikaKraml from "@app/data/pictures/it.jpg";
+import sikaKraml from "@app/data/pictures/ondandnel.png";
 import LectureSectionMdSm from "@app/sika-kraml.de/components/LectureSectionMdSm";
 import LectureInnerMdSm from "@app/sika-kraml.de/components/LectureInnerMdSm";
 import { stripIndent } from "common-tags";
