@@ -60,21 +60,6 @@ PROD_SITES = {
         "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
         "cloudflare_workers": True,
     },
-    "git-training.uk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "docker-training.uk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "kubernetes-training.uk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "ansible-training.uk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "gitlab-training.uk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
     "ansible-schulung.de": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
@@ -82,9 +67,6 @@ PROD_SITES = {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "dockerschulung.de": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "gitlab-ci.cz": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "kubernetes-schulung.de": {
@@ -111,13 +93,7 @@ PROD_SITES = {
     "docker-training.ch": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
-    "docker-training.nl": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
     "docker-training.at": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "git-training.nl": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ondrejsikalabs.com": {
