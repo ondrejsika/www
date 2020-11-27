@@ -120,8 +120,7 @@ PRIORITY_SITES = (
     "trainera.de",
 )
 SUFFIX = ".panda.k8s.oxs.cz"
-with open("sites.txt") as f:
-    SITES = list(filter(None, f.read().split("\n")))
+SITES = ALL_SITES.keys()
 
 out = []
 out.append(
