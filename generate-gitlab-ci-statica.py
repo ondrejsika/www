@@ -3,6 +3,7 @@
 import json
 
 SITES = [
+    # CZ course landing pages
     {"name": "skoleni-git.cz"},
     {"name": "skoleni-docker.cz"},
     {"name": "skoleni-kubernetes.cz"},
@@ -11,6 +12,11 @@ SITES = [
     {"name": "skoleni-terraform.cz"},
     {"name": "skoleni-git.cz"},
     {"name": "skoleni-rancher.cz"},
+    # SE course landing pages
+    {"name": "ansible-utbildning.se"},
+    {"name": "docker-utbildning.se"},
+    {"name": "git-utbildning.se"},
+    {"name": "kubernetes-utbildning.se"},
 ]
 
 SITES_DEV = [

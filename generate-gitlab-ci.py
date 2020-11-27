@@ -55,21 +55,6 @@ PROD_SITES = {
         "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
         "cloudflare_workers": True,
     },
-    "ansible-utbildning.se": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "docker-utbildning.se": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "git-utbildning.se": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "gitlab-utbildning.se": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "kubernetes-utbildning.se": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
     "ondrej-sika.com": {
         "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
         "cloudflare_workers": True,
