@@ -27,6 +27,15 @@ SITES = [
     {"name": "kubernetes-training.uk"},
     {"name": "ansible-training.uk"},
     {"name": "gitlab-training.uk"},
+    # CH course landing pages
+    {"name": "docker-training.ch"},
+    # DE course landing pages
+    {"name": "docker-training.de"},
+    {"name": "dockerschulung.de"},
+    {"name": "kubernetes-schulung.de"},
+    {"name": "ansible-schulung.de"},
+    # AT course landing pages
+    {"name": "docker-training.at"},
 ]
 
 SITES_DEV = [

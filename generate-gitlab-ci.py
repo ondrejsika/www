@@ -60,16 +60,7 @@ PROD_SITES = {
         "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
         "cloudflare_workers": True,
     },
-    "ansible-schulung.de": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
     "ansible-skoleni.cz": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "dockerschulung.de": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "kubernetes-schulung.de": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "skolenie-git.sk": {
@@ -86,15 +77,6 @@ PROD_SITES = {
     },
     "salzburgdevops.com": {
         "dependencies": _DEFAULT_DEPENDENCIES,
-    },
-    "docker-training.de": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "docker-training.ch": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "docker-training.at": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
     "ondrejsikalabs.com": {
         "dependencies": _DEFAULT_DEPENDENCIES,
