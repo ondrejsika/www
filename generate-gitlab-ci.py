@@ -139,6 +139,7 @@ stages:
 
 variables:
   DOCKER_BUILDKIT: '1'
+  GIT_CLEAN_FLAGS: "-ffdx -e node_modules"
 
 start:
   stage: start
