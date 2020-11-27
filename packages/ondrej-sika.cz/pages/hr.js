@@ -9,7 +9,7 @@ const Install = () => (
     <Head>
       <title>Nehledám práci, hledám spolupráci - Ondrej Sika</title>
     </Head>
-    <MainBar header="Nehledám práci, hlednám spolupráci" />
+    <MainBar header="Nehledám práci, hledám spolupráci" />
     <div className="container pt-4 pb-2 post-body">
       <Markdown
         source={`
@@ -20,7 +20,7 @@ Děkuji za Váš zájem. Na full time práci se spolu nedomluvíme, ale nabízí
 - vyškolím Vaše/klientove týmy v různých DevOps technologiích
 - nabídnu k tomu SLA support
 
-Umím pomoct se širokou škálou open-source DevOps technologií, umím taky nastavit celou DevOps pipeline a umím to udělat rychle a efektivně. Konkrětně dělám:
+Umím pomoct se širokou škálou open-source DevOps technologií, umím taky nastavit celou DevOps pipeline a umím to udělat rychle a efektivně. Konkrétně dělám:
 
 - __Školení__ - Dělám populární DevOps školení. Největší zájem je o Docker, Kubernetes, Terraform a Gitlab CI. Můžete vaše vývojáře poslat na otevřený termín nebo můžeme školení uspořádat u Vás ve firmě.
 - __Konzultace__ - Mohu Vám pomoci s konkrétním problémem jako připravit infrastrukturu, migrace do Kubernetes, optimalizace gitlab CI pipeline. Vše budeme dělat nad vaším kódem a výsledek je okamžitě použitelný.
