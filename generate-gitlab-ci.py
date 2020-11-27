@@ -63,15 +63,6 @@ PROD_SITES = {
     "ansible-skoleni.cz": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
-    "skolenie-git.sk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "skolenie-gitlab.sk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "skolenie-docker.sk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
     "skolenie.kubernetes.sk": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },

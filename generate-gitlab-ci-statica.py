@@ -36,6 +36,11 @@ SITES = [
     {"name": "ansible-schulung.de"},
     # AT course landing pages
     {"name": "docker-training.at"},
+    # SK course landing pages
+    # TODO: buy & setup domains
+    # {"name": "skolenie-git.sk"},
+    # {"name": "skolenie-gitlab.sk"},
+    # {"name": "skolenie-docker.sk"},
 ]
 
 SITES_DEV = [
