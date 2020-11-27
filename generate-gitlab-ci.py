@@ -99,9 +99,6 @@ PROD_SITES = {
     "ondrejsikalabs.com": {
         "dependencies": _DEFAULT_DEPENDENCIES,
     },
-    "sika-kaplan.com": {
-        "dependencies": _DEFAULT_DEPENDENCIES,
-    },
     "training.kubernetes.is": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
