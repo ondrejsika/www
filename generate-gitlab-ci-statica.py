@@ -20,9 +20,18 @@ SITES = [
 ]
 
 SITES_DEV = [
-    {"name": "ondrejsika.io"},
-    {"name": "skoleni.io"},
-    {"name": "ondrej-sika.cz"},
+    {"name": "ondrejsika.io", "deps": "default"},
+    {"name": "skoleni.io", "deps": "default"},
+    {"name": "ondrej-sika.cz", "ondrejsika_theme"},
+    {"name": "ondrej-sika.uk", "ondrejsika_singlepage"},
+]
+
+_DEFAULT_DEPENDENCIES = [
+    "packages/data/**/*",
+    "packages/common/**/*",
+    "packages/course-landing/**/*",
+    "packages/{{site}}/**/*",
+    "yarn.lock",
 ]
 
 _COURSE_LANDING_DEPENDENCIES = [
@@ -34,6 +43,18 @@ _COURSE_LANDING_DEPENDENCIES = [
     "packages/course-landing/**/*",
     "packages/{{site}}/**/*",
     "yarn.lock",
+]
+
+_ONDREJSIKA_THEME_DEPENDENCIES = [
+    "packages/data/**/*",
+    "packages/common/**/*",
+    "packages/ondrejsika-theme/**/*",
+    "packages/{{site}}/**/*",
+    "yarn.lock",
+]
+
+_ONDREJSIKA_SINGLEPAGE_DEPENDENCIES = _ONDREJSIKA_THEME_DEPENDENCIES + [
+    "packages/ondrejsika-singlepage/**/*",
 ]
 
 
@@ -59,6 +80,12 @@ out = {
 
 for site in SITES:
     name = site["name"]
+    deps = {
+        "course_landing": _COURSE_LANDING_DEPENDENCIES,
+        "default": _DEFAULT_DEPENDENCIES,
+        "ondrejsika_theme": _ONDREJSIKA_THEME_DEPENDENCIES,
+        "ondrejsika_singlepage": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
+    }[site.get("deps", "course_landing")]
     out.update(
         {
             "deploy %s"
@@ -70,7 +97,7 @@ for site in SITES:
                     "yarn run deploy-%s" % name,
                 ],
                 "only": {
-                    "changes": gen_deps(_COURSE_LANDING_DEPENDENCIES, name),
+                    "changes": gen_deps(deps, name),
                 },
                 "needs": [],
             }

@@ -32,17 +32,6 @@ _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES = _ONDREJSIKA_THEME_DEPENDENCIES + [
     "packages/ondrejsika-singlepage/**/*",
 ]
 
-# DEV_SITES = {
-#     "ondrejsika.io": {
-#         "dependencies": _DEFAULT_DEPENDENCIES,
-#     },
-#     "skolenie-ansible.sk": {
-#         "dependencies": _COURSE_LANDING_DEPENDENCIES,
-#     },
-#     "ondrej-sika.uk": {
-#         "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
-#     },
-# }
 PROD_SITES = {
     "sikalabs.com": {
         "dependencies": {
