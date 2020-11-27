@@ -20,6 +20,7 @@ SITES = [
 ]
 
 SITES_DEV = [
+    {"name": "ondrejsika.io"},
     {"name": "skoleni.io"},
     {"name": "ondrej-sika.cz"},
 ]

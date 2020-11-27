@@ -32,17 +32,17 @@ _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES = _ONDREJSIKA_THEME_DEPENDENCIES + [
     "packages/ondrejsika-singlepage/**/*",
 ]
 
-DEV_SITES = {
-    "ondrejsika.io": {
-        "dependencies": _DEFAULT_DEPENDENCIES,
-    },
-    "skolenie-ansible.sk": {
-        "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "ondrej-sika.uk": {
-        "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
-    },
-}
+# DEV_SITES = {
+#     "ondrejsika.io": {
+#         "dependencies": _DEFAULT_DEPENDENCIES,
+#     },
+#     "skolenie-ansible.sk": {
+#         "dependencies": _COURSE_LANDING_DEPENDENCIES,
+#     },
+#     "ondrej-sika.uk": {
+#         "dependencies": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
+#     },
+# }
 PROD_SITES = {
     "sikalabs.com": {
         "dependencies": {
@@ -176,7 +176,6 @@ PROD_SITES = {
 
 ALL_SITES = {}
 ALL_SITES.update(PROD_SITES)
-ALL_SITES.update(DEV_SITES)
 
 PRIORITY_SITES = (
     "ondrej-sika.cz",
@@ -289,49 +288,6 @@ for site in SITES:
                 "dependencies": generate_dependencies(site),
             }
         )
-
-    if site in DEV_SITES:
-        if ALL_SITES[site].get("cloudflare_workers"):
-            pass
-        else:
-            out.append(
-                """
-%(site)s dev deploy k8s:
-  needs:
-    - %(site)s build docker
-  stage: deploy_dev%(priority_suffix)s
-  variables:
-    GIT_STRATEGY: none
-    KUBECONFIG: .kubeconfig
-  script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install %(name)s-dev ondrejsika/one-image --set host=%(site)s%(suffix)s --set image=$CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
-    - kubectl rollout status deploy %(name)s-dev
-  except:
-    - master
-  except:
-    variables:
-      - $EXCEPT_DEPLOY
-      - $EXCEPT_DEPLOY_K8S
-      - $EXCEPT_DEPLOY_DEV
-      - $EXCEPT_DEPLOY_DEV_K8S
-  only:
-    changes:
-%(dependencies)s
-  environment:
-    name: dev %(site)s
-    url: https://%(site)s%(suffix)s
-  dependencies: []
-"""
-                % {
-                    "site": site,
-                    "name": site.replace(".", "-"),
-                    "suffix": SUFFIX,
-                    "priority_suffix": "_priority" if site in PRIORITY_SITES else "",
-                    "dependencies": generate_dependencies(site),
-                }
-            )
 
     if site in PROD_SITES:
         if PROD_SITES[site].get("cloudflare_workers"):
