@@ -9,7 +9,7 @@
     Záznanam z čtvrtého DevOps live streamu na téma Úvod do Terraformu
   youtube: jNx0fnw6qP8
   content: |
-    Pokud se chcete naučit pracovat s Terraformrm, doporučujé mé školení [__Terraformu__](/skoleni/terraform), nebudete litovat.
+    Pokud se chcete naučit pracovat s Terraformem, doporučuji Vám mé školení [__Terraformu__](/skoleni/terraform), nebudete litovat.
 
 - id: zaznam-devops-live-3-integrace-gitlab-ci-a-kubernetes
   title: "Záznam DevOps Live #3: Jednoduchá integrace Gitlab CI a Kubernetes"
@@ -23,7 +23,7 @@
     Záznanam z třetího DevOps live streamu: Jednoduchá integrace Gitlab CI a Kubernetes
   youtube: uRc1aFcy7CE
   content: |
-    Pokud se chcete naučit pracovat s Gitlab CI a kubernetes, doporučuji Vám mé školení [__Gitlab CI__](/skoleni/gitlab-ci) a [__Kubernetres__](/skoleni/kubernetes), nebudete litovat.
+    Pokud se chcete naučit pracovat s Gitlab CI a Kubernetes, doporučuji Vám mé školení [__Gitlab CI__](/skoleni/gitlab-ci) a [__Kubernetres__](/skoleni/kubernetes), nebudete litovat.
 
 - id: terraform-a-gitlab-ci-14-meetup-cncf-sk
   title: "Terraform a Gitlab CI (14. meetup CNCF.sk)"
@@ -34,9 +34,9 @@
     - gitlab-ci
     - cncf-sk
   perex: |
-    Slides a repozitare z 14. meetupu Cloud Native - Kubernetes - Bratislava na tema Terraform a Gitlab CI
+    Slides a repozitáře z 14. meetupu Cloud Native - Kubernetes - Bratislava na tema Terraform a Gitlab CI
   content: |
-    Slides a repozitare z 14. meetupu Cloud Native - Kubernetes - Bratislava na tema Terraform a Gitlab CI
+    Slides a repozitáře z 14. meetupu Cloud Native - Kubernetes - Bratislava na tema Terraform a Gitlab CI
 
     Odkazy:
 
@@ -44,9 +44,9 @@
     - Repo: https://github.com/ondrejsika/example-terraform-gitlab-ci
     - Repo (se zmenamy): https://github.com/sika-training-examples/2020-11-12-terraform-gitlab-ci-example
 
-    Odkaz na zaznam pridam az bude k dispozici.
+    Odkaz na záznam přidám až bude k dispozici.
 
-    Pokud mate jakekoliv dotazy, napiste na <ondrej@sika.io>
+    Pokud máte jakékoliv dotazy, napište na <ondrej@sika.io>
 
 - id: zaznam-devops-live-2-docker-a-traefik-proxy
   title: "Záznam DevOps Live #2: Docker & Traefik Proxy"
