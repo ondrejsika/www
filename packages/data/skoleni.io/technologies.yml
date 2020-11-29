@@ -42,6 +42,7 @@
   courses:
     - ondrejsika-kubernetes
     - marekbartik-kubernetes-networking
+    - marekbartik-kubernetes-intro
 
 - id: terraform
   name: Terraform
@@ -57,6 +58,7 @@
     privátním cloudu, část ve veřejném).
   courses:
     - ondrejsika-terraform
+    - veroskaplan-terraform
 
 - id: test-automatizace
   name: Test Automatizace
@@ -272,10 +274,16 @@
 - id: elk
   name: ELK stack - Elasticsearch, Logstash, Kibana
   description: |
-    Pracujeme na tom z plnych sil.
+    Elastic Stack (dříve ELK stack) je sada nástrojů pro ukládání a zpracování logů.
+
+    Nástroje Elastic Stacku dokážou sbírat logy a provozní údaje z různých zdrojů, zpracovávat je
+    a ukládat do centrálního či distribuovaného úložiště. Logy pak je možné zpřístupnit z webového
+    rozhraní koncovým uživatelům.
+
   courses:
     - ondrejsika-elk
     - jiripinkas-elk
+    - veroskaplan-elastic-stack
 
 - id: prometheus
   name: Prometheus
@@ -285,6 +293,7 @@
     jako Kubernetes.
   courses:
     - ondrejsika-prometheus
+    - veroskaplan-prometheus
 
 - id: openstack
   name: Open Stack
@@ -299,6 +308,7 @@
     Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-python
+    - veroskaplan-python
 
 - id: django
   name: Django
@@ -321,3 +331,13 @@
     Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webové administrace, tak pomocí Terraformu.
   courses:
     - ondrejsika-rancher
+
+- id: icinga
+  name: Icinga
+  description: |
+    Icinga je nástroj na dohled infrastruktury. Volně navazuje na klasický monitorovací Nagios.
+
+    Podle definovaných pravidel dokáže sledovat servery 24x7 a v případě problémů upozornit zodpovědnou osobu,
+    případně rovnou zajistit opravu.
+  courses:
+    - veroskaplan-icinga

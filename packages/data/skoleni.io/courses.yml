@@ -1138,6 +1138,37 @@
   technology_id: ansible
   name: Ansible
 
+- id: veroskaplan-icinga
+  lecturer_id: veroskaplan
+  technology_id: icinga
+  name: Icinga Monitoring
+
+- id: veroskaplan-python-intro
+  lecturer_id: veroskaplan
+  technology_id: python
+  name: Úvod do Pythonu
+
+- id: veroskaplan-elastic-stack
+  lecturer_id: veroskaplan
+  technology_id: elastic stack
+  name: Správa logů s Elastic Stack
+
+- id: veroskaplan-terraform
+  lecturer_id: veroskaplan
+  technology_id: terraform
+  name: Terraform a Packer - Infrastructure As a Code
+
+- id: veroskaplan-prometheus
+  lecturer_id: veroskaplan
+  technology_id: prometheus
+  name: Prometheus
+
+- id: veroskaplan-kubernetes-intro
+  lecturer_id: veroskaplan
+  technology_id: kubernetes
+  name: kubernetes
+
+
 # David Karban
 
 - id: davidkarban-aws
