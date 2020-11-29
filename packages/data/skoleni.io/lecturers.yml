@@ -89,11 +89,24 @@
 
 - id: veroskaplan
   name: Veros Kaplan
-  bio: DevOps @ WF Tech
+  bio:
+    Jsem nájemný správce systémů a aplikací. Dohlížím na provoz a nasazení aplikací, snažím se ho připravit to tak, aby nasazování a údržba zabralo co nejméně práce.
+    Navrhuji infrastrukturu pro aplikace, pomáhám s vývojem, nasazením a dohledem - ať už do cloudu nebo pro nasazení ve vlastní infrastruktuře.
+    Věřím na DevOps přístup.
   courses:
     - veroskaplan-ansible
-  email: skoleni@skoleni.io
+    - veroskaplan-icinga
+    - veroskaplan-python-intro
+    - veroskaplan-elastic-stack
+    - veroskaplan-terraform
+    - veroskaplan-prometheus
+    - veroskaplan-kubernetes-intro
+  email: ahoj@veroskaplan.cz
   github: verosk
+  phone: +420 778 168 392
+  twitter: verosk
+  linkedin: verosk
+
 
 - id: davidkarban
   name: David Karban
