@@ -42,7 +42,7 @@
   courses:
     - ondrejsika-kubernetes
     - marekbartik-kubernetes-networking
-    - marekbartik-kubernetes-intro
+    - veroskaplan-kubernetes-intro
 
 - id: terraform
   name: Terraform
@@ -308,7 +308,7 @@
     Pracujeme na tom z plnych sil.
   courses:
     - ondrejsika-python
-    - veroskaplan-python
+    - veroskaplan-python-intro
 
 - id: django
   name: Django
