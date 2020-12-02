@@ -108,14 +108,14 @@
   linkedin: verosk
 
 
-- id: davidkarban
-  name: David Karban
-  bio: DevOps @ WF Tech
-  courses:
-    - davidkarban-aws
-    - davidkarban-mysql
-  email: skoleni@skoleni.io
-  github: davidkarban
+# - id: davidkarban
+#   name: David Karban
+#   bio: DevOps @ WF Tech
+#   courses:
+#     - davidkarban-aws
+#     - davidkarban-mysql
+#   email: skoleni@skoleni.io
+#   github: davidkarban
 
 - id: jiripinkas
   name: Jiří Pinkas

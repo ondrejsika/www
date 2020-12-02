@@ -122,14 +122,12 @@
   description: |
     Pracujeme na tom z plnych sil.
   courses:
-    - davidkarban-aws
 
 - id: mysql
   name: MySQL
   description: |
     Pracujeme na tom z plnych sil.
   courses:
-    - davidkarban-mysql
 
 - id: java
   name: Java
