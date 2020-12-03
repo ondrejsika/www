@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "workspaces": [
+    "themes/*",
+    "sites/*"
+  ],
+  "scripts": {
+    "ncu": "ncu -u --packageFile",
+    "dev-digitalocean.cz": "yarn --cwd sites/digitalocean.cz dev -p 4001",
+    "static-digitalocean.cz": "yarn --cwd sites/digitalocean.cz static",
+    "deploy-digitalocean.cz": "yarn run static-digitalocean.cz && statica digitalocean.cz ./sites/digitalocean.cz/out"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.21.5",
+    "npm-check-updates": "^10.2.2",
+    "prettier": "2.2.1"
+  },
+  "dependencies": {}
+}
