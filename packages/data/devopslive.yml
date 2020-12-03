@@ -96,21 +96,21 @@
 #   technologies:
 #     - cloudflare
 #     - terraform
-- id: docker-monitoring-pomoci-promethea-a-alert-manageru
-  eventbrite: https://www.eventbrite.com/e/125437885091/
-  active: true
-  title: Docker monitoring pomocí Promethea a Alertmanageru
-  date: 2.12.2020
-  time: "19:00"
-  about: |
-    Monitorujte své aplikace běžící v Docker pomocí moderního nástroje Prometheus.
-  points: |
-    - Minimální setup Promethea a Alertmanageru
-    - Docker metriky pomocí cAdvisoru
-    - Vytvoření vlastních alerting rules pro Prometheus
-  technologies:
-    - docker
-    - prometheus
+# - id: docker-monitoring-pomoci-promethea-a-alert-manageru
+#   eventbrite: https://www.eventbrite.com/e/125437885091/
+#   active: true
+#   title: Docker monitoring pomocí Promethea a Alertmanageru
+#   date: 2.12.2020
+#   time: "19:00"
+#   about: |
+#     Monitorujte své aplikace běžící v Docker pomocí moderního nástroje Prometheus.
+#   points: |
+#     - Minimální setup Promethea a Alertmanageru
+#     - Docker metriky pomocí cAdvisoru
+#     - Vytvoření vlastních alerting rules pro Prometheus
+#   technologies:
+#     - docker
+#     - prometheus
 - id: konfigurace-alertmanageru
   eventbrite: https://www.eventbrite.com/e/125533296469
   active: true
