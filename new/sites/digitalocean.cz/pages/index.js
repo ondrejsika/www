@@ -45,6 +45,14 @@ const Page = () => (
           </td>
         </tr>
       </Table>
+      <h3>Hledame Speakery</h3>
+      <p>
+        Chtel by jsi mit na meetupu prednasku nebo jen lightning talk? Budemem
+        moc radi. Dej nam vedet emailem na{" "}
+        <a href="mailto:ondrej@sika.io?subject=[Digital Ocean Czech Community] Chci prednaset">
+          ondrej@sika.io
+        </a>
+      </p>
       <h2>Newsletter</h2>
       <Button
         href="https://airtable.com/shrClmZoQgo9q2xn0"
