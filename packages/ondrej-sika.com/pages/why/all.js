@@ -13,7 +13,7 @@ export default function Page() {
 - [Ansible Berlin](/why/ansible-berlin)
 - [Docker Berlin](/why/docker-berlin)
 - [Kubernetes Berlin](/why/kubernetes-berlin)
-- [Digital Ocean Berlin](/why/digital-ocean-berlin)
+- [DigitalOcean Berlin](/why/digital-ocean-berlin)
 `}
     />
   );

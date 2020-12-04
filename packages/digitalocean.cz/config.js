@@ -8,7 +8,7 @@ const site = {
   google_analytics_site_id: "xx",
 
   x_course: "digitalocean",
-  x_site_claim: "Nejlepší školení Digital Oceanu v ČR",
+  x_site_claim: "Nejlepší školení DigitalOceanu v ČR",
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=digitalocean.cz",
   x_inquiry_url:

@@ -4,11 +4,11 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 export default function Page() {
   return (
     <Article
-      title="Digital Ocean - Simple Cloud Provider for You"
+      title="DigitalOcean - Simple Cloud Provider for You"
       subheader="Berlin, Germany"
       hideNewsletter={true}
       markdown={`
-## What is Digital Ocean?
+## What is DigitalOcean?
 
 TODO: Write an article
 
@@ -16,7 +16,7 @@ TODO: Write an article
 
 TODO: Write an article
 
-## Save your's team time with Digital Ocean and Terraform
+## Save your's team time with DigitalOcean and Terraform
 
 TODO: Write an article
 
@@ -24,7 +24,7 @@ TODO: Write an article
 
 TODO: Write an article
 
-## Learn more about Digital Ocean and Terraform
+## Learn more about DigitalOcean and Terraform
 
 TODO: Write an article (1 hour webinar or meetup)
 

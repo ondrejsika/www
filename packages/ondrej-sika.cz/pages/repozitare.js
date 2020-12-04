@@ -40,11 +40,11 @@ const Page = () => (
 
 #### Ukazky Infrastruktury
 
-- Kubernetes na Digital Ocean - https://github.com/ondrejsika/terraform-do-kubernetes-example
-- VMs & LB na Digital Ocean pro Bare Metal Kubernetes - https://github.com/ondrejsika/terraform-do-bare-metal-kubernetes-infra-example
-- Gitlab na Digital Ocean - https://github.com/ondrejsika/terraform-demo-gitlab
-- NFS na Digital Ocean - https://github.com/ondrejsika/terraform-demo-nfs
-- Droplet na Digital Ocean - https://github.com/ondrejsika/terraform-do-droplet-example
+- Kubernetes na DigitalOcean - https://github.com/ondrejsika/terraform-do-kubernetes-example
+- VMs & LB na DigitalOcean pro Bare Metal Kubernetes - https://github.com/ondrejsika/terraform-do-bare-metal-kubernetes-infra-example
+- Gitlab na DigitalOcean - https://github.com/ondrejsika/terraform-demo-gitlab
+- NFS na DigitalOcean - https://github.com/ondrejsika/terraform-demo-nfs
+- Droplet na DigitalOcean - https://github.com/ondrejsika/terraform-do-droplet-example
 - Jedna EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-example
 - Vice EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-many-example
 - Example infrastructure for Rook Ceph cluster - https://github.com/ondrejsika/terraform-do-rook-ceph-example
@@ -56,7 +56,7 @@ const Page = () => (
 
 #### My Modules
 
-- NFS server on Digital Ocean - https://github.com/ondrejsika/terraform-module-do-nfs
+- NFS server on DigitalOcean - https://github.com/ondrejsika/terraform-module-do-nfs
 - MySQL DB with user - https://github.com/ondrejsika/terraform-module-mysql-db-with-user
 
 [Vsechny repozitare tykajici se Terraformu na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=terraform&type=&language=)

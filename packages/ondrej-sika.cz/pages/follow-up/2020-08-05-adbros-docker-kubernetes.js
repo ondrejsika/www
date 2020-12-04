@@ -33,7 +33,7 @@ const Page = () => (
 ### Témata, které jsme nakousli
 
 - Terraform - Infrastructure as a code, [Školení Terraformu](/skoleni/terraform)
-- Digital Ocean - Cloudova Platforma, [Školení Digital Ocean](/skoleni/digitalocean)
+- DigitalOcean - Cloudova Platforma, [Školení DigitalOcean](/skoleni/digitalocean)
 - AWS - Cloudova Platforma, školení pripravuji
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:

@@ -263,7 +263,7 @@
     - jiripinkas-hibernate
 
 - id: digitalocean
-  name: Digital Ocean
+  name: DigitalOcean
   description: |
     Pracujeme na tom z plnych sil.
   courses:

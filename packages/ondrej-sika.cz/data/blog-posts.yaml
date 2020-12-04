@@ -499,7 +499,7 @@
 
     ## Setup Infrastruktury
 
-    Abychom mohli provozovat Ceph cluster, potřebujeme minimálně 3 Kubernetes nody s nejméně 4 GB RAM. Každý server musí mít nainstalované LVM (`apt install lvm2`) a nejake disky (eg: `/dev/sdb`), které použije Ceph pro svoji storage. My si to vytvoříme pomocí Terraformu na Digital Oceanu. Rovnou si připravíme i loadbalancer, který bude ukazovat na všechny nody a nasměřujeme na něj nějakou doménu.
+    Abychom mohli provozovat Ceph cluster, potřebujeme minimálně 3 Kubernetes nody s nejméně 4 GB RAM. Každý server musí mít nainstalované LVM (`apt install lvm2`) a nejake disky (eg: `/dev/sdb`), které použije Ceph pro svoji storage. My si to vytvoříme pomocí Terraformu na DigitalOceanu. Rovnou si připravíme i loadbalancer, který bude ukazovat na všechny nody a nasměřujeme na něj nějakou doménu.
 
     Můžete použít moji ukázku z Githubu [ondrejsika/terraform-do-rook-ceph-example](https://github.com/ondrejsika/terraform-do-rook-ceph-example).
 

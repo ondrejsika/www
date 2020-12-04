@@ -18,13 +18,13 @@ const Page = () => (
 
 - Terraform Infrastruktura Demo Gitlabu - https://github.com/ondrejsika/terraform-demo-gitlab
 - Traefik Ingress for Kubernets - https://github.com/ondrejsika/kubernetes-ingress-traefik
-- Demo Kubernetes Cluster on Digital Ocean - https://github.com/ondrejsika/terraform-do-kubernetes-example
+- Demo Kubernetes Cluster on DigitalOcean - https://github.com/ondrejsika/terraform-do-kubernetes-example
 - Prometheus on Kubernetes - https://github.com/ondrejsika/ondrejsika-k8s-prom
 
 ### Témata, které jsme nakousli
 
 - Terraform - Infrastructure as a code, [Školení Terraformu](/skoleni/terraform)
-- Digital Ocean - Cloudova Platforma, [Školení Digital Ocean](/skoleni/digitalocean)
+- DigitalOcean - Cloudova Platforma, [Školení DigitalOcean](/skoleni/digitalocean)
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
 

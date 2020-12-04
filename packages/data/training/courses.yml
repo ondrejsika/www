@@ -212,7 +212,7 @@
       Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
 
       ### Jak školení probíhá
-      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
 
       ### Co Vás naučím
       - Teoretický úvod do Kubernetes
@@ -240,7 +240,7 @@
       Kubernetes is one of the most used platforms for running your Docker containers and it is supported by key market leaders (Google, Amazon, Microsoft, etc.) via Cloud Native Computing Foundation. Kubernetes is being used by businesses of all scales, from startups to corporations.
 
       ### Course Description
-      This course is ran in the form of a two-day hands-on workshop where you will be able to practice everything you learn. You will be shown how to run Kubernetes locally (for development) and on a cloud platform, Digital Ocean. You will also find out the basic structure of Kubernetes, including its components. You will learn how to create a Kubernetes Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
+      This course is ran in the form of a two-day hands-on workshop where you will be able to practice everything you learn. You will be shown how to run Kubernetes locally (for development) and on a cloud platform, DigitalOcean. You will also find out the basic structure of Kubernetes, including its components. You will learn how to create a Kubernetes Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
 
       ### Course Outline
       - Theory introduction to Kubernetes
@@ -268,7 +268,7 @@
       Kubernetes je dnes najrozšírenejšou platformou na hostovanie Docker kontajnerov a je podporovaná velkými hráčmi na trhu (Google, Amazon, Microsoft) cez Cloud Native Computing Foundation. Kubernetes bežne používajú firmy rôznych veľkostí, od startupov až po korporácie.
 
       ### Ako školenie prebieha
-      Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ukážeme si ako spustiť Kubernetes lokálne (pre vývoj) a na cloudové platforme Digital Ocean. Povieme si o základnej štruktúre Kubernetes a prejdeme si jeho kompomenty. Naučíme sa ako napísať Kubernetes manifest a ako pomocou neho nasadiť aplikáciu v Dockeri. Ďalej si ukážeme ako pracovať s právami v Kubernetes a ako používať (a písať) Kubernetes balíčky v Helme.
+      Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ukážeme si ako spustiť Kubernetes lokálne (pre vývoj) a na cloudové platforme DigitalOcean. Povieme si o základnej štruktúre Kubernetes a prejdeme si jeho kompomenty. Naučíme sa ako napísať Kubernetes manifest a ako pomocou neho nasadiť aplikáciu v Dockeri. Ďalej si ukážeme ako pracovať s právami v Kubernetes a ako používať (a písať) Kubernetes balíčky v Helme.
 
       ### Čo Vás naučím
       - Teoretický úvod do Kubernetes
@@ -901,14 +901,14 @@
 
       #### Předchozí znalosti
 
-      - Základní znalost veřejných cloudů (AWS, Digital Ocean, Azure, ...)
+      - Základní znalost veřejných cloudů (AWS, DigitalOcean, Azure, ...)
       - Základy práce v terminálu
 
       #### Technické požadavky
 
       - Nainstalovaný Terraform
       - Přístup na internet (ideálně bez korporatni proxy)
-      - Vlastní účet v Digital Oceanu výhodou
+      - Vlastní účet v DigitalOceanu výhodou
     en: |
       ### What is Terraform
 
@@ -940,14 +940,14 @@
 
       #### Skill Requirements
 
-      - Basic knowledge of public clouds (AWS, Digital Ocean, Azure, ...)
+      - Basic knowledge of public clouds (AWS, DigitalOcean, Azure, ...)
       - Basics Terminal knowledge
 
       #### Technical Requirements
 
       - Terraform installed
       - Internet access (ideally without corporate proxy)
-      - Personal account in Digital Ocean is an advantage - [Get one with the registration credit + 50 USD] (https://sika.link/do-ref)
+      - Personal account in DigitalOcean is an advantage - [Get one with the registration credit + 50 USD] (https://sika.link/do-ref)
 
 - id: react
   ignore_for_partners: true
@@ -1350,7 +1350,7 @@
       - Základy práce v terminálu
 
       #### Technické požadavky
-      
+
       - Nainstalovaný Python a pipenv
       - Přístup na internet (ideálně bez korporátní proxy)
 
@@ -1432,9 +1432,9 @@
     name: digitalocean
     lecturer: ondrejsika
   name:
-    cs: Školení Digital Ocean
-    en: Digital Ocean Training
-    de: Digital Ocean Schulung
+    cs: Školení DigitalOcean
+    en: DigitalOcean Training
+    de: DigitalOcean Schulung
   lecturers:
     - ondrejsika
   length: 1
@@ -1457,11 +1457,11 @@
     cs: |
       ### Co Vás naučím
 
-      - Co je Digital Ocean
-      - Digital Ocean vs ostatni cloudy
-      - Prehled sluzeb Digital Oceanu
-      - Digital Ocean a Terraform
-      - Digital Ocean CLI
+      - Co je DigitalOcean
+      - DigitalOcean vs ostatni cloudy
+      - Prehled sluzeb DigitalOceanu
+      - DigitalOcean a Terraform
+      - DigitalOcean CLI
       - Compute (Virtualni Servery, Kubernetes)
       - Storage (Block Storage, S3)
       - Managed DB (Postgres, Mysql, Redis)
@@ -1472,11 +1472,11 @@
     en: |
       ### Course Outline
 
-      - What is Digital Ocean
-      - Digital Ocean vs others
+      - What is DigitalOcean
+      - DigitalOcean vs others
       - All resources overview
-      - Digital Ocean and Terraform
-      - Digital Ocean CLI
+      - DigitalOcean and Terraform
+      - DigitalOcean CLI
       - Compute (Virtualni Servery, Kubernetes)
       - Storage (Block Storage, S3)
       - Managed DB (Postgres, Mysql, Redis)
@@ -1487,17 +1487,17 @@
   description:
     cs: |
       ### Popis technologie
-      Digital Ocean je spolehlivý a jednoduchý cloud, kam můžete velmi rychle zmigrovat vaši stávající infrastrukturu nebo vytvořit novou pro nový projekt ve velmi krátkém čase a s velmi malou nutností údržby. Digital Ocean je o hodně jednodušší než AWS nebo GCP a je proto vhodný i pro ty, kteří nemají s cloudy žádné zkušenosti.
+      DigitalOcean je spolehlivý a jednoduchý cloud, kam můžete velmi rychle zmigrovat vaši stávající infrastrukturu nebo vytvořit novou pro nový projekt ve velmi krátkém čase a s velmi malou nutností údržby. DigitalOcean je o hodně jednodušší než AWS nebo GCP a je proto vhodný i pro ty, kteří nemají s cloudy žádné zkušenosti.
       ### Jak školení probíhá
-      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme si jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak s jeho pomocí nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme si jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak s jeho pomocí nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
 
       ### Co Vás naučím
 
-      - Co je Digital Ocean
-      - Digital Ocean vs ostatní cloudy
-      - Přehled služeb Digital Oceanu
-      - Digital Ocean a Terraform
-      - Digital Ocean CLI
+      - Co je DigitalOcean
+      - DigitalOcean vs ostatní cloudy
+      - Přehled služeb DigitalOceanu
+      - DigitalOcean a Terraform
+      - DigitalOcean CLI
       - Compute (Virtuální Servery, Kubernetes)
       - Storage (Block Storage, S3)
       - Managed DB (Postgres, Mysql, Redis)
@@ -1516,19 +1516,19 @@
       #### Technické požadavky
       - Nainstalovaný
         - Terraform
-        - Digital Ocean CLI (`doctl`)
-        - Účet na Digital Oceanu ([Registrace + 50 USD kredit](https://sika.link/do-ref))
+        - DigitalOcean CLI (`doctl`)
+        - Účet na DigitalOceanu ([Registrace + 50 USD kredit](https://sika.link/do-ref))
       - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
       ### Course Outline
 
-      - What is Digital Ocean
-      - Digital Ocean vs others
+      - What is DigitalOcean
+      - DigitalOcean vs others
       - All resources overview
-      - Digital Ocean and Terraform
-      - Digital Ocean CLI
+      - DigitalOcean and Terraform
+      - DigitalOcean CLI
       - Compute (Virtualni Servery, Kubernetes)
       - Storage (Block Storage, S3)
       - Managed DB (Postgres, Mysql, Redis)

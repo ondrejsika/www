@@ -209,7 +209,7 @@ const CourseBar = props => {
                       <Card
                         site={props.site}
                         lang={props.lang}
-                        courseName="Digital Ocean"
+                        courseName="DigitalOcean"
                         courseId="digitalocean"
                         courseImg={digitalocean}
                       />

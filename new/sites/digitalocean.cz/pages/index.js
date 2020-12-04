@@ -32,7 +32,7 @@ const Page = () => (
               <strong>Start DigitalOcean Czech Community</strong> (Ondrej Sika)
               10min
               <br />
-              Uvodni slovo ke startu StartDigital Ocean Czech Community a
+              Uvodni slovo ke startu StartDigitalOcean Czech Community a
               DigitalOceanu obecne.
             </p>
             <p>

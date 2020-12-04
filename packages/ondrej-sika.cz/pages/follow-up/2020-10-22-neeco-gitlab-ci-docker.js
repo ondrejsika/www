@@ -43,7 +43,7 @@ const Page = () => (
 
 - Kubernetes - Orchestrace kontejneru, [Školení Kubernetes](/skoleni/kubernetes)
 - Terraform - Infrastructure as a code, [Školení Terraformu](/skoleni/terraform)
-- Digital Ocean - Cloudova Platforma, [Školení Digital Ocean](/skoleni/digitalocean)
+- DigitalOcean - Cloudova Platforma, [Školení DigitalOcean](/skoleni/digitalocean)
 - AWS - Cloudová Platforma, školení pripravuji
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:

@@ -59,7 +59,7 @@
 
     ### Jak školení probíhá
 
-    Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+    Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
 
     ### Co Vás naučím
 
@@ -124,14 +124,14 @@
 
     #### Předchozí znalosti
 
-    - Základní znalost veřejných cloudů (AWS, Digital Ocean, Azure, ...)
+    - Základní znalost veřejných cloudů (AWS, DigitalOcean, Azure, ...)
     - Základy práce v terminálu
 
     #### Technické požadavky
 
     - Nainstalovaný Terraform
     - Přístup na internet (ideálně bez korporatni proxy)
-    - Vlastní účet v Digital Oceanu výhodou
+    - Vlastní účet v DigitalOceanu výhodou
 
 - id: ondrejsika-gitlab-ci
   lecturer_id: ondrejsika
@@ -215,25 +215,25 @@
 - id: ondrejsika-digitalocean
   lecturer_id: ondrejsika
   technology_id: digitalocean
-  name: Digital Ocean
+  name: DigitalOcean
   price_open: 11 900 CZK
   price_in_house: 50 000 CZK
   description: |
     ### Popis technologie
 
-    Digital Ocean je spolehlivý a jednoduchý cloud, kam můžete velmi rychle zmigrovat vaši stávající infrastrukturu nebo vytvořit novou pro nový projekt ve velmi krátkém čase a s velmi malou nutností údržby. Digital Ocean je o hodně jednodušší než AWS nebo GCP a je proto vhodný i pro ty, kteří nemají s cloudy žádné zkušenosti.
+    DigitalOcean je spolehlivý a jednoduchý cloud, kam můžete velmi rychle zmigrovat vaši stávající infrastrukturu nebo vytvořit novou pro nový projekt ve velmi krátkém čase a s velmi malou nutností údržby. DigitalOcean je o hodně jednodušší než AWS nebo GCP a je proto vhodný i pro ty, kteří nemají s cloudy žádné zkušenosti.
 
     ### Jak školení probíhá
 
-    Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme si jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak s jeho pomocí nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+    Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme si jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak s jeho pomocí nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
 
     ### Co Vás naučím
 
-    - Co je Digital Ocean
-    - Digital Ocean vs ostatní cloudy
-    - Přehled služeb Digital Oceanu
-    - Digital Ocean a Terraform
-    - Digital Ocean CLI
+    - Co je DigitalOcean
+    - DigitalOcean vs ostatní cloudy
+    - Přehled služeb DigitalOceanu
+    - DigitalOcean a Terraform
+    - DigitalOcean CLI
     - Compute (Virtuální Servery, Kubernetes)
     - Storage (Block Storage, S3)
     - Managed DB (Postgres, Mysql, Redis)
@@ -254,8 +254,8 @@
 
     - Nainstalovaný
       - Terraform
-      - Digital Ocean CLI (`doctl`)
-      - Účet na Digital Oceanu ([Registrace + 50 USD kredit](https://sika.link/do-ref))
+      - DigitalOcean CLI (`doctl`)
+      - Účet na DigitalOceanu ([Registrace + 50 USD kredit](https://sika.link/do-ref))
     - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
 
 - id: ondrejsika-elk
@@ -407,35 +407,35 @@
   price_open: 6 800 CZK
   price_in_house: 25 000 CZK
   description: |
-      ### Co je to Proxmox
+    ### Co je to Proxmox
 
-      Proxmox je open source nástavba KVM Virtualizace a LXC kontejnerů. Přináší enterprise virtualizaci a jednoduchou správu virtuálních strojů a kontejnerů na léty prověřený virtualizační stack na Linuxu.
+    Proxmox je open source nástavba KVM Virtualizace a LXC kontejnerů. Přináší enterprise virtualizaci a jednoduchou správu virtuálních strojů a kontejnerů na léty prověřený virtualizační stack na Linuxu.
 
-      ### Jak školení probíhá
+    ### Jak školení probíhá
 
-      Školení probíhá formou workshopu, vše si prakticky vyzkoušíme. Od instalace Proxmox serveru, po nastaveni HA pro virtuální servery.
+    Školení probíhá formou workshopu, vše si prakticky vyzkoušíme. Od instalace Proxmox serveru, po nastaveni HA pro virtuální servery.
 
-      ### Co Vás naučím
+    ### Co Vás naučím
 
-      - Úvod do Virtualizace, Kontejnerizace a Proxmoxu
-      - Nastavení Proxmoxu
-      - Nastavení storage
-      - Práce s KVM virtuálnímy servery
-      - Práce s LXC kontejnery (lightweight virtualizace)
-      - Backup, restore
-      - Migrace a HA
+    - Úvod do Virtualizace, Kontejnerizace a Proxmoxu
+    - Nastavení Proxmoxu
+    - Nastavení storage
+    - Práce s KVM virtuálnímy servery
+    - Práce s LXC kontejnery (lightweight virtualizace)
+    - Backup, restore
+    - Migrace a HA
 
-      ### Pro koho je školení určeno
+    ### Pro koho je školení určeno
 
-      Školení je primárně určeno administrátorům, kteří nemají s virtualizací a Proxmoxem žádné nebo jen malé zkušenosti.
+    Školení je primárně určeno administrátorům, kteří nemají s virtualizací a Proxmoxem žádné nebo jen malé zkušenosti.
 
-      #### Předchozí znalosti
+    #### Předchozí znalosti
 
-      Základní znalost administrace Linuxu.
+    Základní znalost administrace Linuxu.
 
-      #### Technické požadavky
+    #### Technické požadavky
 
-      Notebook s přístupem na internet. Nic víc není potřeba. Pokud máte nějaký testovací Proxmox, můžete využívat ten, ale pro absolvování kurzu není potřeba.
+    Notebook s přístupem na internet. Nic víc není potřeba. Pokud máte nějaký testovací Proxmox, můžete využívat ten, ale pro absolvování kurzu není potřeba.
 
 - id: ondrejsika-django
   lecturer_id: ondrejsika
@@ -444,42 +444,42 @@
   price_open: 11 999 CZK
   price_in_house: 50 000 CZK
   description: |
-      ### Co je Django
+    ### Co je Django
 
-      Django je populární webový framework napsaný v Pythonu, který pohání velké množství webů všech velikostí. Django pokrývá velké množství oblastí, které vývojáři řeší: MVC, ORM, šablonovací systém, URLs, tvorbu API a další. Django Vám pomůže psát weby a webové aplikace rychleji a bezpečněji.
+    Django je populární webový framework napsaný v Pythonu, který pohání velké množství webů všech velikostí. Django pokrývá velké množství oblastí, které vývojáři řeší: MVC, ORM, šablonovací systém, URLs, tvorbu API a další. Django Vám pomůže psát weby a webové aplikace rychleji a bezpečněji.
 
-      ### Jak školení probíhá
+    ### Jak školení probíhá
 
-      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak Django nainstalovat a vytvořit první projekt. Na něm si ukážeme všechny důležité komponenety a workflow. Ukážeme si taky celý průběh od vývoje po nasazení (Docker image).
+    Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak Django nainstalovat a vytvořit první projekt. Na něm si ukážeme všechny důležité komponenety a workflow. Ukážeme si taky celý průběh od vývoje po nasazení (Docker image).
 
-      ### Co Vás naučím
+    ### Co Vás naučím
 
-      - Co je Django
-      - Django a ostatní web frameworky (v Pythonu)
-      - Setup nového projektu
-      - Práce s modely a databází
-      - Práce s administrací
-      - Práce s formuláři
-      - Práce s URL
-      - Práce s šablonami
-      - CSS a statické soubory
-      - Vytváření API
-      - Produkční konfigurace Djanga
-      - Nasazení v Dockeru
+    - Co je Django
+    - Django a ostatní web frameworky (v Pythonu)
+    - Setup nového projektu
+    - Práce s modely a databází
+    - Práce s administrací
+    - Práce s formuláři
+    - Práce s URL
+    - Práce s šablonami
+    - CSS a statické soubory
+    - Vytváření API
+    - Produkční konfigurace Djanga
+    - Nasazení v Dockeru
 
-      ### Pro koho je školení určeno
+    ### Pro koho je školení určeno
 
-      Školení je určeno pro vývojáře kteří chtejí začít používat webový framework Django pro tvorbu webů nebo API.
+    Školení je určeno pro vývojáře kteří chtejí začít používat webový framework Django pro tvorbu webů nebo API.
 
-      #### Předchozí znalosti
+    #### Předchozí znalosti
 
-      - Znalost Pythonu
-      - Základy práce v terminálu
+    - Znalost Pythonu
+    - Základy práce v terminálu
 
-      #### Technické požadavky
+    #### Technické požadavky
 
-      - Nainstalovaný Python a pipenv
-      - Přístup na internet (ideálně bez korporátní proxy)
+    - Nainstalovaný Python a pipenv
+    - Přístup na internet (ideálně bez korporátní proxy)
 
 # Vojtech Mares
 
@@ -1061,7 +1061,6 @@
 
     - vlastní notebook
 
-
 - id: steida-react-javascript-medium
   lecturer_id: steida
   technology_id: react
@@ -1168,7 +1167,6 @@
   technology_id: kubernetes
   name: kubernetes
 
-
 # David Karban
 
 # - id: davidkarban-aws
@@ -1240,7 +1238,6 @@
 
     Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
 
-
 - id: jiripinkas-java-advanced
   lecturer_id: jiripinkas
   technology_id: java
@@ -1304,7 +1301,6 @@
 
     Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
 
-
 - id: jiripinkas-java-web
   lecturer_id: jiripinkas
   technology_id: java
@@ -1348,7 +1344,6 @@
     #### Technické požadavky
 
     Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
-
 
 - id: jiripinkas-spring
   lecturer_id: jiripinkas
@@ -1401,7 +1396,6 @@
     #### Technické požadavky
 
     Studijní materiály a pomůcky jsou v ceně. Řada lidí preferuje svoje vlastní notebooky, účastníci školení mohou používat vlastní počítačové vybavení. Na většině školení se obvykle používá vývojové prostředí IntelliJ Idea, ale v případě zájmu je možné použít i jiné (konkrétně Eclipse).
-
 
 - id: jiripinkas-hibernate
   lecturer_id: jiripinkas
@@ -1786,7 +1780,7 @@
 - id: jiripinkas-designpatterns
   lecturer_id: jiripinkas
   technology_id: designpatterns
-  name:  Návrhové vzory
+  name: Návrhové vzory
   price_open: 11 600 CZK
   price_in_house: 32 000 CZK
   description: |

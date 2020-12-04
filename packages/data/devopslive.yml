@@ -60,7 +60,7 @@
 #   points: |
 #     - Co je Terraform a jeho výhody
 #     - Instalace Terraformu a konfigurace Terraform Cloudu
-#     - Ukázka práce s infrastrukturou (Digital Ocean, Cloudflare)
+#     - Ukázka práce s infrastrukturou (DigitalOcean, Cloudflare)
 #   technologies:
 #     - terraform
 #     - digitaloceanu

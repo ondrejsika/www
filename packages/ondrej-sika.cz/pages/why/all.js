@@ -13,7 +13,7 @@ export default function Page() {
 - [Ansible](/why/ansible)
 - [Docker](/why/docker)
 - [Kubernetes](/why/kubernetes)
-- [Digital Ocean](/why/digital-ocean)
+- [DigitalOcean](/why/digital-ocean)
 `}
     />
   );
