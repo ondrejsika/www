@@ -6,15 +6,15 @@ import Button from "react-bootstrap/Button";
 
 const Page = () => (
   <>
-    <title>Digital Ocean Czech Community</title>
+    <title>DigitalOcean Czech Community</title>
     <Container className="pt-5 pb-5">
       <Alert variant="warning">
         Zaciname, na webu i dalsich vecech pracujeme :)
       </Alert>
       <div className="text-center">
-        <h1>Digital Ocean Czech Community</h1>
+        <h1>DigitalOcean Czech Community</h1>
         <p style={{ fontSize: "1.7em" }}>
-          Komunita lidi a firem co pouzivaji Digital Ocean
+          Komunita lidi a firem co pouzivaji DigitalOcean
         </p>
       </div>
       <h2>Meetupy</h2>
@@ -29,18 +29,18 @@ const Page = () => (
           <td>Online</td>
           <td>
             <p>
-              <strong>Start Digital Ocean Czech Community</strong> (Ondrej Sika)
+              <strong>Start DigitalOcean Czech Community</strong> (Ondrej Sika)
               10min
               <br />
-              Uvodni slovo ke startu Start Digital Ocean Czech Community a
-              Digital Oceanu obecne.
+              Uvodni slovo ke startu StartDigital Ocean Czech Community a
+              DigitalOceanu obecne.
             </p>
             <p>
               <strong>Z hostingu do cloudu</strong> (Ondrej Sika, Vojtech Mares)
               40min
               <br />
               Case study jak jsme migrovali firmu z (lepsiho) hostingu do
-              Digital Oceanu a jake nam to prineslo vyhody.
+              DigitalOceanu a jake nam to prineslo vyhody.
             </p>
           </td>
         </tr>
@@ -49,7 +49,7 @@ const Page = () => (
       <p>
         Chtel by jsi mit na meetupu prednasku nebo jen lightning talk? Budemem
         moc radi. Dej nam vedet emailem na{" "}
-        <a href="mailto:ondrej@sika.io?subject=[Digital Ocean Czech Community] Chci prednaset">
+        <a href="mailto:ondrej@sika.io?subject=[DigitalOcean Czech Community] Chci prednaset">
           ondrej@sika.io
         </a>
       </p>
@@ -63,7 +63,7 @@ const Page = () => (
       <h2>Dotazy</h2>
       <p>
         Zajima Vas neco? Napiste mi email na{" "}
-        <a href="mailto:ondrej@sika.io?subject=[Digital Ocean Czech Community] Dotaz">
+        <a href="mailto:ondrej@sika.io?subject=[DigitalOcean Czech Community] Dotaz">
           ondrej@sika.io
         </a>
       </p>
