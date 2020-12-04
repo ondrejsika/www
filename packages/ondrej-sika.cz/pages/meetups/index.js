@@ -6,6 +6,9 @@ const Page = () => (
     <p>Meetupy, které pořádám a spolupořádám</p>
     <ul>
       <li>
+        <a href="#digitalocean-czech-community">DigitalOcean Czech Community</a>
+      </li>
+      <li>
         <a href="#vercel-czech-community">Vercel Czech Community</a>
       </li>
       <li>
@@ -15,6 +18,10 @@ const Page = () => (
         <a href="#salzburg-devops-meetups">Salzburg DevOps Meetups</a>
       </li>
     </ul>
+    <h2 id="digitalocean-czech-community">DigitalOcean Czech Community</h2>
+    <p>
+      Website: <a href="https://digitalocean.cz">https://digitalocean.cz</a>
+    </p>
     <h2 id="vercel-czech-community">Vercel Czech Community</h2>
     <p>
       Website: <a href="https://vercel.cz">https://vercel.cz</a>
