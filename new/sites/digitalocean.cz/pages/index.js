@@ -11,10 +11,12 @@ const Page = () => (
       <Alert variant="warning">
         Zaciname, na webu i dalsich vecech pracujeme :)
       </Alert>
-      <h1>Digital Ocean Czech Community</h1>
-      <p style={{ fontSize: "1.7em" }}>
-        Komunita lidi a firem co pouzivaji Digital Ocean
-      </p>
+      <div className="text-center">
+        <h1>Digital Ocean Czech Community</h1>
+        <p style={{ fontSize: "1.7em" }}>
+          Komunita lidi a firem co pouzivaji Digital Ocean
+        </p>
+      </div>
       <h2>Meetupy</h2>
       <Table>
         <tr>
