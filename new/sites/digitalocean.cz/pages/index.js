@@ -63,7 +63,7 @@ const Page = () => (
       <h2>Dotazy</h2>
       <p>
         Zajima Vas neco? Napiste mi email na{" "}
-        <a href="mailto:ondrej@sika.io?subject=Digital Ocean Czech Community">
+        <a href="mailto:ondrej@sika.io?subject=[Digital Ocean Czech Community] Dotaz">
           ondrej@sika.io
         </a>
       </p>
