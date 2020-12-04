@@ -18,16 +18,29 @@ const Page = () => (
       <h2>Meetupy</h2>
       <Table>
         <tr>
-          <th>Datum</th>
-          <th>Misto</th>
-          <th>Tema</th>
-          <th>Speakeri</th>
+          <th>Kdy</th>
+          <th>Kde</th>
+          <th>Prednasky</th>
         </tr>
         <tr>
-          <td>20. 1. 2021</td>
+          <td>20. 1. 2021, 18:00</td>
           <td>Online</td>
-          <td>Z hostingu do cloudu</td>
-          <td>Ondrej Sika, Vojtech Mares</td>
+          <td>
+            <p>
+              <strong>Start Digital Ocean Czech Community</strong> (Ondrej Sika)
+              10min
+              <br />
+              Uvodni slovo ke startu Start Digital Ocean Czech Community a
+              Digital Oceanu obecne.
+            </p>
+            <p>
+              <strong>Z hostingu do cloudu</strong> (Ondrej Sika, Vojtech Mares)
+              40min
+              <br />
+              Case study jak jsme migrovali firmu z (lepsiho) hostingu do
+              Digital Oceanu a jake nam to prineslo vyhody.
+            </p>
+          </td>
         </tr>
       </Table>
       <h2>Newsletter</h2>
