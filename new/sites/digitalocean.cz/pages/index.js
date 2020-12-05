@@ -1,8 +1,11 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
 
 const Page = () => (
   <>
@@ -60,6 +63,50 @@ const Page = () => (
       >
         Chci dostavat novinky
       </Button>
+      <h2>Organizatori</h2>
+      <Row>
+        <Col>
+          <div className="text-center">
+            <Image
+              src="https://github.com/ondrejsika.png"
+              roundedCircle
+              style={{ maxWidth: "200px" }}
+            />
+            <h3>Ondrej Sika</h3>
+            <p>
+              <a href="https://twitter.com/ondrejsika">@ondrejsika</a>
+            </p>
+          </div>
+          <p>
+            Jsem freelance DevOps konzultant a lektor. Zlepšuji práci
+            vývojářských týmu zaváděním efektivních procesů ve vývoji. Naučím
+            Vás používat prověřené nástroje a technologie, které povedou k
+            rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.
+          </p>
+        </Col>
+        <Col>
+          <div className="text-center">
+            <Image
+              src="https://github.com/vojtechmares.png"
+              roundedCircle
+              style={{ maxWidth: "200px" }}
+            />
+            <h3>Vojtech Mares</h3>
+            <p>
+              <a href="https://twitter.com/vojtechmares_">@vojtechmares_</a>
+            </p>
+          </div>
+          <p>
+            Freelance software vývojář, DevOps konzultant a lektor. Pomůžu vám s
+            řešením infrastruktury, vývojem aplikace až po její nasazení do
+            cloudového prostředí například v Kubernetes nebo do serverless
+            prostředí. A s jejím následným monitoringem pro zajištění co
+            nejvyšší dostupnosti. Pomůžu vám s automatizací procesů pomocí
+            Continuous Integration a nasazením aplikace přído do produkce díky
+            Continuous Delivery metodice.
+          </p>
+        </Col>
+      </Row>
       <h2>Dotazy</h2>
       <p>
         Zajima Vas neco? Napiste mi email na{" "}
