@@ -30,20 +30,29 @@ const Background = styled.div`
   }
 `;
 
+const Number = styled.span`
+  font-size: 5em;
+  display: block;
+`;
+
+const Text = styled.p`
+  font-size: 1.3em;
+  font-weight: bolder;
+`;
+
 const StatisticBar = props => (
   <>
     {props.showBothDiagonalBackground && (
       <TriangleBottomRight site={props.site} />
     )}
-
     <Background site={props.site}>
       <div className="container">
-        <div className="row">
+        <div className="row pt-4 pb-4">
           <div className="col-4">
-            <h2 className="text-center text-white mb-0 text-huge">
+            <Number className="text-center text-white mb-0 text-huge">
               {props.NumberOfPeople}
-            </h2>
-            <p className="text-white text-center statistic-bottom">
+            </Number>
+            <Text className="text-white text-center statistic-bottom">
               {!props.NumberOfPeopleHeader ? (
                 <Translate
                   lang={props.lang || "cs"}
@@ -53,13 +62,13 @@ const StatisticBar = props => (
               ) : (
                 props.NumberOfPeopleHeader
               )}
-            </p>
+            </Text>
           </div>
           <div className="col-4">
-            <h2 className="text-white text-center mb-0 text-huge ">
+            <Number className="text-white text-center mb-0 text-huge ">
               {props.NumberOfCompanies}
-            </h2>
-            <p className="text-white text-center statistic-bottom">
+            </Number>
+            <Text className="text-white text-center statistic-bottom">
               {!props.NumberOfCompaniesHeader ? (
                 <Translate
                   lang={props.lang || "cs"}
@@ -69,13 +78,13 @@ const StatisticBar = props => (
               ) : (
                 props.NumberOfCompaniesHeader
               )}
-            </p>
+            </Text>
           </div>
           <div className="col-4">
-            <h2 className="text-center text-white mb-0 text-huge">
+            <Number className="text-center text-white mb-0 text-huge">
               {props.NumberOfLectures}
-            </h2>
-            <p className="text-white text-center statistic-bottom">
+            </Number>
+            <Text className="text-white text-center statistic-bottom">
               {!props.NumberOfLecturesHeader ? (
                 <Translate
                   lang={props.lang || "cs"}
@@ -85,7 +94,7 @@ const StatisticBar = props => (
               ) : (
                 props.NumberOfLecturesHeader
               )}
-            </p>
+            </Text>
           </div>
         </div>
       </div>
