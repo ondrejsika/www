@@ -15,7 +15,7 @@ const Header = styled.h1`
   padding: 0.5em 0;
 `;
 const Container = styled(BootstrapContainer)`
-  padding: 1.5em 0.8em;
+  padding: 1.5em 0.8em 3.5em 0.8em;
 `;
 
 const MainBarHomepage = props => {
