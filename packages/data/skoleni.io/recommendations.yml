@@ -94,7 +94,7 @@
   company: CMI News
   text: Dan Steigerwald je bez debat naprostá česká špička mezi programátory v JavaScriptu. Rozhledem i schopnostmi výrazně přesahuje "jen výborné" JavaScriptaře. Navíc dokáže o problematice mluvit, přednášet a psát nejen zasvěceně, ale i srozumitelně a s nadhledem, který českým IT odborníkům obvykle velmi bolestně chybí.
 
-- id: -steida-react-javascript-medium
+- id: tomas-novotny-steida-react-javascript-medium
   lecturer_id: steida
   course_id: steida-react-javascript-medium
   name: Tomáš Novotný
@@ -105,3 +105,73 @@
   course_id: steida-typescript
   name: Pavel Ševčík
   text: That said, musim uznat ze skoleni od @steida  mi otevrelo oci. Najednou React, Flux, functional programming atd. davaji smysl. Doporucuju
+
+- id: david-jiripinkas-junit
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-junit
+  name: David
+  company: Certicon
+  text: Školení mi pomohlo ujasnit si jak má správně probíhat testování kódu, představilo užitečné knihovny a nástroje. Vše bylo podáno zábavnou formou, takže nebyl problém udržet pozornost. Navíc byl výhodou dostatek času na dotazy ohledně probíraných témat.
+
+- id: jaroslav-jiripinkas-java-web
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-java-web
+  name: Jaroslav
+  company: Generali Česká pojišťovna
+  text: Jedno z nejlepších školení za poslední roky. Kromě seznámení se Springem apod. mě velmi příjemně překvapila hluboká znalost probírané látky a schopnost ji srozumitelně vysvětlit v případě ad hoc dotazů. Též oceňuji, že jsme se kromě probírané látky dozvěděli i spoustu dalších zajímavých věcí a trendů z IT. A důležitá byla také přátelská atmosféra školení.
+
+- id: jaromir-jiripinkas-junit
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-junit
+  name: Jaromír
+  company: Retia
+  text: Přestože jsem Cčkař, tak jsem se na školení JUnit dozvěděl nové věci. Zejména co se týče metodiky jednotkového testování a některých odborných termínů.
+
+- id: marek-jiripinkas-java-web
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-java-web
+  name: Marek
+  company: Generali Česká pojišťovna
+  text: Velmi jsem oceňoval různorodost školení a široký záběr z java světa + schopnost rychle reagovat na všechny otázky, ať se týkaly jakéhokoliv tématu v Javě. Také se mi líbili různé perličky, které se týkaly různých Java oblastí, díky kterým bylo školení příjemně odlehčeno.
+
+- id: vojtech-jiripinkas-java-web
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-java-web
+  name: Vojtěch
+  company: Generali Česká pojišťovna
+  text: uvolnena atmosfera. nekdo by si mozna myslel, ze az moc, ale mne to tak vyhovuje a paradoxne pomaha k soustredeni :) no a spousta zajimavosti, preci jen je citit, kdyz s tim nekdo dlouhodobe dela a sleduje novinky.
+
+- id: martin-jiripinkas-docker
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-docker
+  name: Martin
+  company: ON Semiconductor
+  text: Líbilo se mi celé pojetí kurzu - možná trošku netradiční, nicméně dělané ajťákem pro ajťáky. :-) ("normální" člověk, který by se na kurzu náhodou ocitl, by asi nechápal). Vše bylo dle mých představ a vyvážené - teorie, praktické příklady, zajímavá diskuse. Tvoje zkušenosti a přehled byly zřejmé a dokážeš je patřičně nejenom prodat, ale i předat. ;-)
+
+- id: jiri-jiripinkas-hibernate
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-hibernate
+  name: Jiří
+  company: LERIS
+  text: Školení pro nás bylo velice přínosné. Ocenil jsem zejména konzultace vhodnosti použití přímo nad reálnými problémy v našem projektu. Výklad byl plně customizovaný našim potřebám a znalostem. Celkově velká spokojenost. Děkujeme
+
+- id: zdenek-jiripinkas-docker
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-docker
+  name: Zdeněk
+  company: CGI
+  text: Školení se mi opravdu líbilo. Jako vždy bylo vidět, že pan Pinkas se v dané oblasti dobře orientuje a ví jak se Docker používá v praxi. Vysvětlení pojmů vždy prijde výstižné, nejedná se o výklad z manuálu. Díky, moc!
+
+- id: petr-jiripinkas-spring
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-spring
+  name: Petr
+  company: CGI
+  text: Splnilo to mé očekávání si zopakovat základy Spring framework. Je vidět že školení je dobře připravené, že tomu co školíte rozumíte, že vás to baví, vysvětlíte principy a je dobře vyvážená teorie a praktické úkoly. I informace o souvisejících technologiích bylo velmi přínosné. Rozhodně bych s Vámi absolvoval rád i další školení.
+
+- id: ondrej-jiripinkas-hibernate
+  lecturer_id: jiripinkas
+  course_id: jiripinkas-hibernate
+  name: Ondřej
+  company: LERIS
+  text: Školení mě obohatilo o spoustu nových užitečných informací. Jakožto člověk který se zatím s Hibernatem a JPA nesetkal jsem ocenil ukázky a best practices, které se použivají.
