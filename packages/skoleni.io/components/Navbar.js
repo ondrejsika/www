@@ -42,11 +42,11 @@ const Navbar = () => (
           <Link href="/kontakty">Kontakty</Link>
         </NavItem>
         <NavItem>
-          <Link href="/lektori">Lektori</Link>
+          <Link href="/lektori">Lektoři</Link>
         </NavItem>
         <NavItem>
           <Brand>
-            <Link href="/">Skoleni.io</Link>
+            <Link href="/">Školení.io</Link>
           </Brand>
         </NavItem>
       </Nav>

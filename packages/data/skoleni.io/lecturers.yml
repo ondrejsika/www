@@ -25,7 +25,7 @@
     - vojtechmares-git
     - vojtechmares-gitlab-ci
     - vojtechmares-docker
-  bio: Freelance software vývojář, DevOps konzultant a lektor. Pomůžu vám s řešením infrastruktury, vývojem aplikace až po její nasazení do cloudového prostředí například v Kubernetes nebo do serverless prostředí. A s jejím následným monitoringem pro zajištění co nejvyšší dostupnosti. Pomůžu vám s automatizací procesů pomocí Continuous Integration a nasazením aplikace přído do produkce díky Continuous Delivery metodice.
+  bio: Freelance software vývojář, DevOps konzultant a lektor. Pomůžu vám s řešením infrastruktury, vývojem aplikace až po její nasazení do cloudového prostředí například v Kubernetes nebo do serverless prostředí. A s jejím následným monitoringem pro zajištění co nejvyšší dostupnosti. Pomůžu vám s automatizací procesů pomocí Continuous Integration a nasazením aplikace přímo do produkce díky Continuous Delivery metodice.
   email: iam@vojtechmares.com
   github: vojtechmares
   twitter: vojtechmares_

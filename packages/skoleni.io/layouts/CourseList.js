@@ -35,7 +35,7 @@ const CourseList = props => {
       <Header header={technology.name} />
       <Container>
         <Markdown source={technology.description} />
-        <H3>Lektori</H3>
+        <H3>Lektoři</H3>
         <ul>
           {technology.courses.map((course_id, i) => {
             let course = getCourse(course_id);
