@@ -34,8 +34,8 @@ const Index = props => (
     </Head>
     <MainBarHomepage
       site={props.site}
-      header="IT &amp; DevOps Training in Germany"
-      text="Trainera is DevOps training agency aiming at open-source technologies."
+      header="Your's no.1 DevOps Training Partner"
+      text="Boost productivity and efficienci with propper tools &amp; training. We can help you."
     />
     <StatisticBar
       site={props.site}
