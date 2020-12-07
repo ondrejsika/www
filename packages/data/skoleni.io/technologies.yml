@@ -70,7 +70,8 @@
 - id: performance-testing
   name: Performance Testing
   description: |
-    Pracujeme na tom z plnych sil.
+    Doménová specializace Performance testera pokrývá témata jako jsou stavba infrastruktury perf-stacku pro exekuci PT, analýzu požadavků, design PT,
+    exekuci, investigaci a vyhodnocení, znalosti fungování backendových a frontendových systémů.
   courses:
     - rdpanek-performance-testing
 
@@ -84,7 +85,7 @@
 - id: react
   name: React
   description: |
-    Pracujeme na tom z plnych sil.
+    React je moderní knihovna pro vytváření robustního a moderního uživatelského rozhraní na webu i na mobilních zařízeních.
   courses:
     - adambisek-react
     - steida-react-javascript-basic
@@ -101,7 +102,8 @@
 - id: typescript
   name: TypeScript
   description: |
-    Pracujeme na tom z plnych sil.
+    Funkcionální programování je mentální model, který umožňuje psát aplikace rychleji, zábavněji, a s menším počtem chyb.
+    Jakékoliv aplikace včetně těch firemních.
   courses:
     - steida-typescript
 
@@ -132,7 +134,8 @@
 - id: java
   name: Java
   description: |
-    Pracujeme na tom z plnych sil.
+    JAVA je nejpoužívanější programovací jazyk na světě, který se používá zejména v každé větší firmě pro tvorbu intranetových
+    (Java EE) aplikací, multiplatformních aplikací (Java SE), nebo aplikací pro mobilní telefony (Java ME, Android).
   courses:
     - jiripinkas-java-basic
     - jiripinkas-java-advanced
@@ -172,7 +175,7 @@
 - id: javascript
   name: JavaScript nástroje
   description: |
-    Pracujeme na tom z plnych sil.
+    Node.js, npm, yarn, package.json, Karma, Mocha, Chai, Webpack, Gulp, Babel
   courses:
     - jiripinkas-javascript-tools
 
@@ -186,14 +189,18 @@
 - id: maven
   name: Maven
   description: |
-    Pracujeme na tom z plnych sil.
+    Maven je Java framework, který pomáhá programátorům pracovat s projekty (vytváření, sestavování, nasazování,…)
   courses:
     - jiripinkas-maven
 
 - id: graalvm
   name: GraalVM & Native Image
   description: |
-    Pracujeme na tom z plnych sil.
+    Native Image je technologie umožňující předem zkompilovat kód Java do samostatného spustitelného souboru, který se nazývá native image.
+    Tento spustitelný soubor zahrnuje třídy aplikací, třídy z jejích závislostí, třídy runtime knihovny a staticky propojený nativní kód z JDK.
+    Neběží na virtuálním počítači Java, ale zahrnuje nezbytné komponenty, jako je správa paměti, plánování podprocesů atd. z jiného runtime systému, který
+    se nazývá „Substrate VM“. Substrate VM je název runtime komponent (jako je deoptimizer, garbage collector, plánování podprocesů atd.).
+    Výsledný program má ve srovnání s JVM rychlejší čas spuštění a nižší režii runtime paměti.
   courses:
     - jiripinkas-graalvm
 
@@ -221,28 +228,28 @@
 - id: spring
   name: Spring
   description: |
-    Pracujeme na tom z plnych sil.
+    Framework Spring je v poslední době standardem pro vývoj webových enterprise aplikací.
   courses:
     - jiripinkas-spring
 
 - id: spring-monitoring
   name: Spring Boot Monitoring
   description: |
-    Pracujeme na tom z plnych sil.
+    Framework Spring je v poslední době standardem pro vývoj webových enterprise aplikací.
   courses:
     - jiripinkas-spring-monitoring
 
 - id: spring-rest
   name: Spring Boot Reactive REST
   description: |
-    Pracujeme na tom z plnych sil.
+    Framework Spring je v poslední době standardem pro vývoj webových enterprise aplikací. Reaktivní programování není pro každého, ale pokud máte velkou zátěž na server a navyšujete session pool, nebo chcete lépe využít dostupné prostředky (typicky pokud Vaše aplikace běží na AWS / Azure), pak reaktivní programování může být to, co hledáte.
   courses:
     - jiripinkas-spring-rest
 
 - id: microservices
   name: Microservices
   description: |
-    Pracujeme na tom z plnych sil.
+    V současné době jsou microservisy de facto standardem pro tvorbu webových aplikací. Jak na to se Spring Bootem, Dockerem & Kubernetes (plus Kafka, ELK stack, Prometheus a další)?
   courses:
     - jiripinkas-microservices
 
@@ -265,7 +272,7 @@
 - id: digitalocean
   name: DigitalOcean
   description: |
-    Pracujeme na tom z plnych sil.
+    DigitalOcean je spolehlivý a jednoduchý cloud, kam můžete velmi rychle zmigrovat vaši stávající infrastrukturu nebo vytvořit novou pro nový projekt ve velmi krátkém čase a s velmi malou nutností údržby. DigitalOcean je o hodně jednodušší než AWS nebo GCP a je proto vhodný i pro ty, kteří nemají s cloudy žádné zkušenosti.
   courses:
     - ondrejsika-digitalocean
 
