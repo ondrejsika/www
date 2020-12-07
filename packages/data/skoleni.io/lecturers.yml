@@ -80,7 +80,7 @@
   github: steida
 
 - id: marekbartik
-  name: Marek Bartik
+  name: Marek Bartík
   bio: Kubernetes @ Pipetail
   courses:
     - marekbartik-kubernetes-networking
@@ -88,7 +88,7 @@
   github: marekaf
 
 - id: veroskaplan
-  name: Veros Kaplan
+  name: Věroš Kaplan
   bio:
     Jsem nájemný správce systémů a aplikací. Dohlížím na provoz a nasazení aplikací, snažím se ho připravit to tak, aby nasazování a údržba zabralo co nejméně práce.
     Navrhuji infrastrukturu pro aplikace, pomáhám s vývojem, nasazením a dohledem - ať už do cloudu nebo pro nasazení ve vlastní infrastruktuře.

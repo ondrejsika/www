@@ -11,7 +11,7 @@ const P = styled.p`
 const Index = () => (
   <Container>
     <CourseBar />
-    <H3>Spoluprace</H3>
+    <H3>Spolupráce</H3>
     <P>
       Chcete inzerovat svá školení na našem webu? Napište email a určitě se
       domluvíme. Věřím ve svobodu a férovost a chci, ať si každý své kurzy promuje,
