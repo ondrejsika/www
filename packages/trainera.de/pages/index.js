@@ -39,7 +39,6 @@ const Index = props => (
     />
     <StatisticBar
       site={props.site}
-      showDiagonalBackground={true}
       NumberOfPeople="750+"
       NumberOfPeopleHeader={
         <Translate
