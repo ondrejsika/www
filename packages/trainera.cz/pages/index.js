@@ -70,7 +70,7 @@ const Index = props => (
       }
     />
     <Container>
-      <TraineraAbout />
+      <TraineraAbout site={props.site} />
     </Container>
     <CourseBar site={props.site} LectureImgHeader="Vyberte si školení" />
     <Container>
