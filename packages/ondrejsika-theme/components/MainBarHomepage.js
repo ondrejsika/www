@@ -3,7 +3,7 @@ import default_colors from "@app/ondrejsika-theme/config/colors";
 import styled from "styled-components";
 import { Container as BootstrapContainer } from "react-bootstrap";
 
-const Text = styled.h3`
+const TextBase = styled.h3`
   color: ${default_colors.WHITE};
   padding: 0;
   font-family: "IBM Plex Sans", sans-serif;
@@ -25,6 +25,12 @@ const MainBarHomepage = props => {
       props.site.colors.PRIMARY) ||
       default_colors.BLUE};
   `;
+  let Text = TextBase;
+  if (props.textSize) {
+    Text = styled(TextBase)`
+      font-size: ${props.textSize};
+    `;
+  }
   return (
     <Background>
       <Container>
