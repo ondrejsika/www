@@ -9,11 +9,11 @@
 - id: git
   course: git
   lecturer: vojtechmares
-  lecturer_name: "Vojtech Mares"
+  lecturer_name: "Vojtěch Mareš"
 - id: gitlab-ci
   course: gitlab ci
   lecturer: vojtechmares
-  lecturer_name: "Vojtech Mares"
+  lecturer_name: "Vojtěch Mareš"
 - id: proxmox
   course: proxmox
   lecturer: michaelkaplan

@@ -35,7 +35,7 @@
 
 - id: vojtechmares
   skoleniio: true
-  name: Vojtech Mares
+  name: Vojtěch Mareš
   bio:
     cs: Freelance IT architekt, konzultant a lektor se zamerenim na DevOps
     en: Freelance IT architect, consultant and lecturer focused on DevOps
@@ -76,5 +76,5 @@
     cs: Software Engineer @ IBM
     en: Software Engineer @ IBM
     de: Software Engineer @ IBM
-  bio_long: 
+  bio_long:
   courses:

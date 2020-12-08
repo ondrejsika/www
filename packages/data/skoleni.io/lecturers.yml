@@ -20,7 +20,7 @@
   github: ondrejsika
 
 - id: vojtechmares
-  name: Vojtech Mares
+  name: Vojtěch Mareš
   courses:
     - vojtechmares-git
     - vojtechmares-gitlab-ci
