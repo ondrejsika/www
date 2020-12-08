@@ -28,10 +28,10 @@
   abstract: Máš Python aplikaci, například Django. Potřebuješ jí někde provozovat a Kubernetes je ta pravá platforma. Ukážu ti, jak spustit Kubernetes v Cloudu, jak vytvořit Docker obrazy a Helm balíček (zdrojové kódy pro Kubernetes) Tvé aplikace. Potom to nasadíme, není to žádná věda.
   submissions:
     - pyconsk2020
-- id: zeit-serverless-deployments-cz
-  title: ZEIT, Serverless Deployments - nasazujte aplikace i bez serverů
+- id: vercel-serverless-deployments-cz
+  title: Vercel, Serverless Deployments - nasazujte aplikace i bez serverů
   bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
-  abstract: Máte web nebo aplikaci kterou chcete ukázat světu, ale nechcete se starat o servery nebo infrastrukturu? Odpovědí na tuto otázku je serverless platforma ZEIT. Aplikaci nasadíte pushem do master větve na Githubu nebo příkazem now.
+  abstract: Máte web nebo aplikaci kterou chcete ukázat světu, ale nechcete se starat o servery nebo infrastrukturu? Odpovědí na tuto otázku je serverless platforma Vercel. Aplikaci nasadíte pushem do master větve na Githubu nebo příkazem now.
   submissions:
     - installfest2020
 - id: modern-monitoring-stack-using-prometheus-aletmanager-and-grafana-cz
