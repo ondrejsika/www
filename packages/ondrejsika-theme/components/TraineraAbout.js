@@ -16,6 +16,13 @@ import {
 const CourseName = styled.a`
   font-size: 3em;
 `;
+
+const ResponsiveColumn = styled.div`
+  text-align: right;
+  @media (max-width: 767px) {
+    text-align: left;
+  }
+`;
 const Block = styled.div`
   margin: 2em 0;
 `;
@@ -24,6 +31,10 @@ const Hr = styled.hr`
   &:last-child {
     display: none;
   }
+`;
+
+const Date = styled.p`
+  margin-bottom: 0;
 `;
 
 const date_for_google_calendar_link = dd_mm_yyyy =>
@@ -37,7 +48,11 @@ const Page = props => {
   let link_site_prefix = props.link_site_prefix || "";
 
   const A = styled.a`
-    padding-left: 1.5em;
+    color: #088958;
+    padding-right: 1.5em;
+    &:last-child {
+      padding-right: 0 !important;
+    }
   `;
   let db = new StaticDB();
   db.add("sessions", sessions_file);
@@ -67,12 +82,12 @@ const Page = props => {
           <>
             <Block key={i}>
               <Row>
-                <Col md={8}>
-                  <p>
+                <Col md={8} sm={12}>
+                  <Date>
                     {course.date_from != course.date_to
                       ? course.date_from + ` - ` + course.date_to
                       : course.date_from}{" "}
-                  </p>
+                  </Date>
 
                   {props.show_session_link ? (
                     <Link
@@ -91,14 +106,10 @@ const Page = props => {
                       </CourseName>
                     </Link>
                   )}
-                  {/* <div style={{ alignSelf: "flex-end" }}> */}
-                  <p>
-                    <b>{course.price}</b>
-                  </p>
-                  {/* </div> */}
+                  <p>{course.price}</p>
                 </Col>
-                <Col md={4} style={{ textAlign: "end" }}>
-                  <div>
+                <Col md={4} sm={12}>
+                  <ResponsiveColumn>
                     {course.facebook_event && (
                       <A
                         href={course.facebook_event}
@@ -128,23 +139,23 @@ const Page = props => {
                         <FaRegCalendarPlus />
                       </AddToGoogleCalendar>
                     )}
-                  </div>
-                  <div className="mt-5">
-                    <Button
-                      site={props.site}
-                      size="big"
-                      href={`${link_site_prefix}/${session_page_prefix}/${course.id}#register`}
-                    >
-                      <Translate
-                        lang={props.site.lang}
-                        cs="Registrovat"
-                        sk="Registrovať"
-                        en="Register"
-                        de="Registrieren"
-                        se="Fråga efter en träning"
-                      />
-                    </Button>
-                  </div>
+                    <div className="mt-5">
+                      <Button
+                        site={props.site}
+                        size="big"
+                        href={`${link_site_prefix}/${session_page_prefix}/${course.id}#register`}
+                      >
+                        <Translate
+                          lang={props.site.lang}
+                          cs="Registrovat"
+                          sk="Registrovať"
+                          en="Register"
+                          de="Registrieren"
+                          se="Fråga efter en träning"
+                        />
+                      </Button>
+                    </div>
+                  </ResponsiveColumn>
                 </Col>
               </Row>
             </Block>
