@@ -361,12 +361,12 @@
   price_open: 11 900 CZK
   price_in_house: 50 000 CZK
 
-- id: ondrejsika-go
-  lecturer_id: ondrejsika
-  technology_id: go
-  name: Go (Golang)
-  price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+# - id: ondrejsika-go
+#   lecturer_id: ondrejsika
+#   technology_id: go
+#   name: Go (Golang)
+#   price_open: 11 900 CZK
+#   price_in_house: 50 000 CZK
 
 - id: ondrejsika-rancher
   lecturer_id: ondrejsika

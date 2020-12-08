@@ -119,17 +119,17 @@
     - veroskaplan-ansible
     - ondrejsika-ansible
 
-- id: aws
-  name: AWS
-  description: |
-    Pracujeme na tom z plnych sil.
-  courses: []
+# - id: aws
+#   name: AWS
+#   description: |
+#     Pracujeme na tom z plnych sil.
+#   courses: []
 
-- id: mysql
-  name: MySQL
-  description: |
-    Pracujeme na tom z plnych sil.
-  courses: []
+# - id: mysql
+#   name: MySQL
+#   description: |
+#     Pracujeme na tom z plnych sil.
+#   courses: []
 
 - id: java
   name: Java
@@ -322,12 +322,12 @@
   courses:
     - ondrejsika-django
 
-- id: go
-  name: Go (Golang)
-  description: |
-    Pracujeme na tom z plnych sil.
-  courses:
-    - ondrejsika-go
+# - id: go
+#   name: Go (Golang)
+#   description: |
+#     Pracujeme na tom z plnych sil.
+#   courses:
+#     - ondrejsika-go
 
 - id: rancher
   name: Rancher
