@@ -54,6 +54,10 @@ SITES_DEV = [
     {"name": "ondrej-sika.uk", "deps": "ondrejsika_singlepage"},
 ]
 
+SITES_NEW = [
+    {"name": "digitalocean.cz"},
+]
+
 _DEFAULT_DEPENDENCIES = [
     "packages/data/**/*",
     "packages/common/**/*",
@@ -85,6 +89,11 @@ _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES = _ONDREJSIKA_THEME_DEPENDENCIES + [
     "packages/ondrejsika-singlepage/**/*",
 ]
 
+_NEW_DEPENDENCIES = [
+    "new/sites/{{site}}/**/*",
+    "new/yarn.lock",
+]
+
 
 def gen_deps(deps, name):
     return [dep.replace("{{site}}", name) for dep in deps]
@@ -106,21 +115,16 @@ out = {
     },
 }
 
-for site in SITES:
+for site in SITES_NEW:
     name = site["name"]
-    deps = {
-        "course_landing": _COURSE_LANDING_DEPENDENCIES,
-        "default": _DEFAULT_DEPENDENCIES,
-        "ondrejsika_theme": _ONDREJSIKA_THEME_DEPENDENCIES,
-        "ondrejsika_singlepage": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
-    }[site.get("deps", "course_landing")]
+    deps = _NEW_DEPENDENCIES
     out.update(
         {
             "deploy %s"
             % name: {
                 "stage": "deploy",
                 "script": [
-                    "rm -rf ./packages/%s/out" % name,
+                    "rm -rf ./new/sites/%s/out" % name,
                     "yarn",
                     "yarn run deploy-%s" % name,
                 ],
@@ -159,6 +163,36 @@ for site in SITES_DEV:
                     "name": "test %s" % name,
                     "url": "https://%s" % statica_domain,
                 },
+            }
+        }
+    )
+
+for site in SITES:
+    name = site["name"]
+    deps = {
+        "course_landing": _COURSE_LANDING_DEPENDENCIES,
+        "default": _DEFAULT_DEPENDENCIES,
+        "ondrejsika_theme": _ONDREJSIKA_THEME_DEPENDENCIES,
+        "ondrejsika_singlepage": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
+    }[site.get("deps", "course_landing")]
+    out.update(
+        {
+            "deploy new %s"
+            % name: {
+                "stage": "deploy",
+                "script": [
+                    "cd new",
+                    "rm -rf ./sites/%s/out" % name,
+                    "yarn",
+                    "yarn run deploy-%s" % name,
+                ],
+                "only": {
+                    "refs": [
+                        "master",
+                    ],
+                    "changes": gen_deps(deps, name),
+                },
+                "needs": [],
             }
         }
     )
