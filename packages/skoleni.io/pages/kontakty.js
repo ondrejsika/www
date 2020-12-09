@@ -16,12 +16,12 @@ const Kontakty = () => (
     <Container>
       <H1>Kontakty</H1>
       <P>
-        Mate zajem o kurz? Napiste nam email na:
+        Máte zájem o kurz? Napište nám email na:
         <br />
         <a href="mailto:skoleni@skoleni.io">skoleni@skoleni.io</a>
         <br />
         <br />
-        Chcete s nami spolupracovat? Urcite se domluvime. Dejte vedet na:
+        Chcete s námi spolupracovat? Určitě se domluvíme. Dejte vědět na
         <br />
         <a href="mailto:spoluprace@skoleni.io">spoluprace@skoleni.io</a>
       </P>
