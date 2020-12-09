@@ -16,7 +16,7 @@ Pouzivam tyto emaily (ucty):
 - Pracovni (firma A) - \`ondrej@sikalabs.com\`
 - Pracovni (firma B) - \`ondrej@skoleni.io\`
 - Maildev - \`*@all.os.com\`
-- Archiv - \`archoved@os.com\`
+- Archiv - \`archived@os.com\`
 
 A tyto aliasy:
 
