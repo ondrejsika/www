@@ -6,6 +6,7 @@ import git_w from "@app/data/pictures/courses/white/git.svg";
 import terraform_w from "@app/data/pictures/courses/white/terraform.svg";
 import kubernetes_w from "@app/data/pictures/courses/white/kubernetes.svg";
 import cloudflare_w from "@app/data/pictures/courses/white/cloudflare.svg";
+import github_w from "@app/data/pictures/technologies/github-white.png";
 
 import gitlab_b from "@app/data/pictures/courses/blue/gitlab_ci.svg";
 import docker_b from "@app/data/pictures/courses/blue/docker.svg";
@@ -18,6 +19,7 @@ import cloudflare_b from "@app/data/pictures/courses/blue/cloudflare.svg";
 import prometheus_tmp from "@app/data/pictures/courses/prometheus.png";
 import cloud_init_tmp from "@app/data/pictures/technologies/cloud-init-color.png";
 import rke_tmp from "@app/data/pictures/technologies/rke-color.png";
+import github_b_tmp from "@app/data/pictures/technologies/github-black.png";
 
 const Img = styled.img`
   height: 100px;
@@ -39,7 +41,8 @@ const TechnologyIcons = props => {
               prometheus: prometheus_tmp,
               cloudflare: cloudflare_w,
               "cloud-init": cloud_init_tmp,
-              rke: rke_tmp
+              rke: rke_tmp,
+              github: github_w
             }[props.icon]
           }
         />
@@ -56,7 +59,8 @@ const TechnologyIcons = props => {
               prometheus: prometheus_tmp,
               cloudflare: cloudflare_b,
               "cloud-init": cloud_init_tmp,
-              rke: rke_tmp
+              rke: rke_tmp,
+              github: github_b_tmp
             }[props.icon]
           }
         />
