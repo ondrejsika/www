@@ -115,7 +115,7 @@ out = {
     },
 }
 
-for site in SITES_NEW:
+for site in SITES:
     name = site["name"]
     deps = _NEW_DEPENDENCIES
     out.update(
@@ -167,7 +167,7 @@ for site in SITES_DEV:
         }
     )
 
-for site in SITES:
+for site in SITES_NEW:
     name = site["name"]
     deps = {
         "course_landing": _COURSE_LANDING_DEPENDENCIES,
