@@ -158,29 +158,29 @@
 - id: uvod-do-gitlab-actions
   eventbrite:
   active: true
-  title: Uvod do Github Actions
-  date:
+  title: Úvod do Github Actions
+  date: 10. 2. 2021
   time: "19:00"
   about: |
-    Github Actions je CI/CD nastroj integrovany primo v Githubu. Uz nemusite pouzivat Travis CI, ukazeme si jak sprovoznit Github Actions na jednoduchem projektu. A pro Open Source jsou zdarma.
+    Github Actions je CI/CD nástroj integrovaný přímo v Githubu. Už nemusíte používat Travis CI, ukážeme si jak sprovoznit Github Actions na jednoduchém projektu. A pro Open Source jsou zdarma.
   points: |
-    - Uvod do Github Actions
-    - Ukazkove CI/CD v Githubu
-    - Porovnani s Gitlab CI
+    - Úvod do Github Actions
+    - Ukázkové CI/CD v Githubu
+    - Porovnání s Gitlab CI
   technologies:
     - github
     - ci
 - id: vlastni-terraform-provider
   eventbrite:
   active: true
-  title: Vlastni Terraform Provider
-  date:
+  title: Vlastní Terraform Provider
+  date: 24. 2. 2021
   time: "19:00"
   about: |
-    Terraform je idealni nastroj na spravu infrastruktury. Ale ne vsechno ma Terraform provider. My si ted ukazeme jak vytvorit vlastni.
+    Terraform je ideální nástroj na správu infrastruktury. Ale ne všechno má Terraform provider. My si teď ukážeme jak si vytvořit svůj vlastní.
   points: |
-    - Rychly uvod do Terraformu
+    - Rychlý úvod do Terraformu
     - Terraform Provider SDK
-    - Implementace jednoducheho provideru
+    - Implementace jednoduchého provideru
   technologies:
     - terraform
