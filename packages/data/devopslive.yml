@@ -155,3 +155,32 @@
   technologies:
     - rke
     - kubernetes
+- id: uvod-do-gitlab-actions
+  eventbrite:
+  active: true
+  title: Uvod do Github Actions
+  date:
+  time: "19:00"
+  about: |
+    Github Actions je CI/CD nastroj integrovany primo v Githubu. Uz nemusite pouzivat Travis CI, ukazeme si jak sprovoznit Github Actions na jednoduchem projektu. A pro Open Source jsou zdarma.
+  points: |
+    - Uvod do Github Actions
+    - Ukazkove CI/CD v Githubu
+    - Porovnani s Gitlab CI
+  technologies:
+    - github
+    - ci
+- id: vlastni-terraform-provider
+  eventbrite:
+  active: true
+  title: Vlastni Terraform Provider
+  date:
+  time: "19:00"
+  about: |
+    Terraform je idealni nastroj na spravu infrastruktury. Ale ne vsechno ma Terraform provider. My si ted ukazeme jak vytvorit vlastni.
+  points: |
+    - Rychly uvod do Terraformu
+    - Terraform Provider SDK
+    - Implementace jednoducheho provideru
+  technologies:
+    - terraform
