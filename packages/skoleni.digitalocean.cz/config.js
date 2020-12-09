@@ -1,7 +1,7 @@
 import logo from "@app/data/pictures/courses/digitalocean-w.png";
 
 const site = {
-  name: "digitalocean.cz",
+  name: "skoleni.digitalocean.cz",
   lang: "cs",
   location: "cz",
   gauges_site_id: "xx",
