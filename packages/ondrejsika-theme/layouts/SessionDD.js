@@ -84,7 +84,7 @@ const SessionDD = props => {
             <p>
               <Translate
                 lang={lang}
-                cs="Vice informaci naleznete zde -"
+                cs="Více informací naleznete zde -"
                 sk="Viac informácií nájdete tu -"
                 en="For more information go to -"
               />{" "}
