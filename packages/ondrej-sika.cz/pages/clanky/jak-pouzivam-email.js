@@ -10,7 +10,7 @@ Pouzivam vice emailu, skoro jako kazdy. Mam v tom ale poradek, coz rozhodne kazd
 Pouzivam tyto emaily (ucty):
 
 - Primarni - \`ondrej@os.com\`
-- Hromadny pro vetsinu sluzeb \`ondrejsika@os.com\` a nebo \`a+...@os.com\`
+- Hromadny pro vetsinu sluzeb \`os@os.com\` a nebo \`os+...@os.com\`
 - Pro komunikaci s urady - \`gov@os.com\`
 - Pracovni (freelance) - \`ondrej@sika.io\`
 - Pracovni (firma A) - \`ondrej@sikalabs.com\`
@@ -20,7 +20,7 @@ Pouzivam tyto emaily (ucty):
 
 A tyto aliasy:
 
-- \`todo@os.com\` (alias emailu \`ondrejsika@ondrejsika.com\`) - Forward do Todoistu
+- \`todo@os.com\` (alias emailu \`os@os.com\`) - Forward do Todoistu
 
 Ne vsechny emaily jsou zkutecne, ale struktura je takova jak ji pouzivam ;)
 
@@ -36,9 +36,9 @@ Ze sluzeb, ktere mam zaregistrovane na primarni email mi chodi notifikace (kalen
 
 Chci mit primarni email pouze na dulezitou komunikaci, typicky od lidi a proto vsechno co s nikym sdilet nemusim jako je napriklad ucet do Alzy, nebo kdyz kupuju letenky, pouzivam na to hromadny email.
 
-Hromadny email mam ve dvou formatech: \`ondrejsika@os.com\` a \`a+...@os.com\`
+Hromadny email pouzivam ve dvou variantach: \`os@os.com\` a \`os+...@os.com\`
 
-To \`a+...\` je pouze alias a pouzivam to jako \`a+alza@os.com\`, \`a+swiss@os.com\` nebo \`a+rohlik@os.com\`. Vyhodou je ze pak muzu lepe pouzivat filtry v emailu. Nektere sluzby to plus v emailu neumi, pak pouzivm variantu \`ondrejsika@os.com\`.
+To \`os+...\` je pouze alias a pouzivam to jako \`os+alza@os.com\`, \`os+swiss@os.com\` nebo \`os+rohlik@os.com\`. Vyhodou je ze pak muzu lepe pouzivat filtry v emailu. Nektere sluzby to plus v emailu neumi, pak pouzivm variantu \`os@os.com\`.
 
 ### Uredni email
 
