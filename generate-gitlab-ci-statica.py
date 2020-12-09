@@ -14,6 +14,7 @@ SITES = [
     {"name": "skoleni-rancher.cz"},
     {"name": "gitlab-ci.cz"},
     {"name": "ansible-skoleni.cz"},
+    {"name": "skoleni.digitalocean.cz"},
     # SE course landing pages
     {"name": "ansible-utbildning.se"},
     {"name": "docker-utbildning.se"},
