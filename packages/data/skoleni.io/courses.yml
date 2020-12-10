@@ -1001,8 +1001,8 @@
   lecturer_id: steida
   technology_id: typescript
   name: Školení funkcionálního programování v TypeScriptu
-  price_open:
-  price_in_house: 6 000 Kč / hodina konzultací a programování
+  price_open: 11 999 KČ
+  price_in_house: 50 000 Kč
   description: |
     ### Co je to funkcionální programování?
 
@@ -1041,7 +1041,7 @@
   technology_id: react
   name: Základy JavaScriptu a Reactu
   price_open: 4 900 CZK (Studenti a plátci Bitcoinem mají 20 % slevu)
-  price_in_house: 4 900 Kč / hodina konzultací a programování
+  price_in_house: 25 000 Kč
   description: |
     ### Jak školení probíhá
 
@@ -1066,7 +1066,7 @@
   technology_id: react
   name: JavaScript a React pro mírně pokročilé
   price_open: 4 900 CZK (Studenti a plátci Bitcoinem mají 20 % slevu)
-  price_in_house: 4 900 Kč / hodina konzultací a programování
+  price_in_house: 25 000 Kč
   description: |
     ### Jak školení probíhá
 
@@ -1099,7 +1099,7 @@
   technology_id: react
   name: JavaScript a React pro pokročilé
   price_open: 4 900 CZK (Studenti a plátci Bitcoinem mají 20 % slevu)
-  price_in_house: 4 900 Kč / hodina konzultací a programování
+  price_in_house: 25 000 Kč
   description: |
     ### Jak školení probíhá
 
