@@ -156,7 +156,7 @@
     - rke
     - kubernetes
 - id: uvod-do-gitlab-actions
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/132422738977
   active: true
   title: Úvod do Github Actions
   date: 10. 2. 2021
@@ -171,7 +171,7 @@
     - github
     - ci
 - id: vlastni-terraform-provider
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/32573034515
   active: true
   title: Vlastní Terraform Provider
   date: 24. 2. 2021
