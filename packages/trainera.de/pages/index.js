@@ -11,9 +11,6 @@ import Team from "@app/ondrejsika-theme/components/Team";
 import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
 import Translate from "@app/common/components/Translate";
 
-import ondrejsika from "@app/data/pictures/ondrejsika.png";
-import martinjurco from "@app/data/pictures/martinjurco.png";
-import zuzanajeschke from "@app/data/pictures/zuzanajeschke.png";
 import jirikraml from "@app/data/pictures/jirikraml.jpg";
 import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
 import michaelkaplan from "@app/data/pictures/michaelkaplan.png";
@@ -88,12 +85,11 @@ const Index = props => (
     </Container>
 
     <Team
-      teamMembersHeader="Our team"
-      teamMembers={[
-        [ondrejsika, "Ondrej Sika", "SoftwareArchitect"],
-        [zuzanajeschke, "Zuzana Jeschke", "Frontend"],
-        [martinjurco, "Martin Jurco", "Operations & Marketing"]
-      ]}
+      // teamMembersHeader="Our team"
+      // teamMembers={[
+      //   [ondrejsika, "Ondrej Sika", "SoftwareArchitect"],
+      //   [martinjurco, "Martin Jurco", "Operations & Marketing"]
+      // ]}
       mentorHeader="Lecturers"
       mentors={[
         [vojtechmares, "Vojtěch Mareš", "neco neco"],

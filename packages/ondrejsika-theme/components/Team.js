@@ -51,18 +51,22 @@ const Header = styled.h3`
 
 const Team = props => (
   <>
-    <Header>{props.teamMembersHeader}</Header>
-    <MyRow>
-      {props.teamMembers.map((teamMember, i) => (
-        <GaplesCol xl={4} md={6} sm={6} xs={12} key={i}>
-          <ImgWrapper>
-            <Img src={teamMember[0]} fluid />
-            <H4>{teamMember[1]}</H4>
-            <H5>{teamMember[2]}</H5>
-          </ImgWrapper>
-        </GaplesCol>
-      ))}
-    </MyRow>
+    {props.teamMembersHeader && props.teamMembers && (
+      <>
+        <Header>{props.teamMembersHeader}</Header>
+        <MyRow>
+          {props.teamMembers.map((teamMember, i) => (
+            <GaplesCol xl={4} md={6} sm={6} xs={12} key={i}>
+              <ImgWrapper>
+                <Img src={teamMember[0]} fluid />
+                <H4>{teamMember[1]}</H4>
+                <H5>{teamMember[2]}</H5>
+              </ImgWrapper>
+            </GaplesCol>
+          ))}
+        </MyRow>
+      </>
+    )}
     <Header>{props.mentorHeader}</Header>
     <MyRow>
       {props.mentors.map((mentor, i) => (
