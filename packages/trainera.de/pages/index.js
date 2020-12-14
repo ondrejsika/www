@@ -68,7 +68,11 @@ const Index = props => (
       }
     />
     <Container>
-      <TraineraAbout lang={props.site.lang} />
+      <TraineraAbout
+        site={props.site}
+        lang={props.site.lang}
+        location={props.site.location}
+      />
     </Container>
     <CourseBar
       site={props.site}
