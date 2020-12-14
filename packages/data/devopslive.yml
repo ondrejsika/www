@@ -171,7 +171,7 @@
     - github
     - ci
 - id: vlastni-terraform-provider
-  eventbrite: https://www.eventbrite.com/e/32573034515
+  eventbrite: https://www.eventbrite.com/e/132573034515
   active: true
   title: Vlastní Terraform Provider
   date: 24. 2. 2021
