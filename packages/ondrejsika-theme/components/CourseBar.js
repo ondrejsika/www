@@ -6,7 +6,7 @@ import docker from "@app/data/pictures/courses/white/docker.svg";
 import git from "@app/data/pictures/courses/white/git.svg";
 import gitlabci from "@app/data/pictures/courses/white/gitlab_ci.svg";
 import k8s from "@app/data/pictures/courses/white/kubernetes.svg";
-import react from "@app/data/pictures/courses/white/react.svg";
+import django from "@app/data/pictures/courses/white/django.svg";
 import terraform from "@app/data/pictures/courses/white/terraform.svg";
 import ansible from "@app/data/pictures/courses/white/ansible.svg";
 import rancher from "@app/data/pictures/courses/white/rancher.svg";
@@ -188,9 +188,9 @@ const CourseBar = props => {
                       <Card
                         site={props.site}
                         lang={props.lang}
-                        courseName="React"
-                        courseId="react"
-                        courseImg={react}
+                        courseName="Django"
+                        courseId="django"
+                        courseImg={django}
                       />
                       <Card
                         site={props.site}
