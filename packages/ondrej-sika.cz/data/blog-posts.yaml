@@ -1,3 +1,16 @@
+- id: zaznam-devops-live-6-proc-a-jak-pouzivat-cloudflare
+  title: "Záznam DevOps Live #6: Proč a jak používat Cloudflare"
+  date: 18. 11. 2020
+  ad: terraform
+  tags:
+    - cloudflare
+    - terraform
+  perex: |
+    Záznanam ze šestého DevOps live streamu na téma Proč a jak používat Cloudflare
+  youtube: 6C-Pyn3oTV4
+  content: |
+    Pokud se chcete naučit pracovat s Terraformem, doporučuji Vám mé školení [__Terraform__](/skoleni/terraform), nebudete litovat.
+
 - id: zaznam-devops-live-5-uvod-do-terraformu
   title: "Záznam DevOps Live #5: Novinky v Gitlab CI (listopad 2020)"
   date: 2. 12. 2020
