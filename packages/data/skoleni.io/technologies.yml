@@ -63,7 +63,9 @@
 - id: test-automatizace
   name: Test Automatizace
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - rdpanek-test-automatizace
 
@@ -78,7 +80,9 @@
 - id: php
   name: PHP
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - janbarasek-php
 
@@ -95,7 +99,9 @@
 - id: vue
   name: Vue.js
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - janbarasek-vue
 
@@ -122,13 +128,17 @@
 # - id: aws
 #   name: AWS
 #   description: |
-#     Pracujeme na tom z plnych sil.
+#     Na kurzu pracujeme z plných sil.
+
+#     Pokud vás i tak zajímá kontaktujte lektora/y:
 #   courses: []
 
 # - id: mysql
 #   name: MySQL
 #   description: |
-#     Pracujeme na tom z plnych sil.
+#     Na kurzu pracujeme z plných sil.
+
+#     Pokud vás i tak zajímá kontaktujte lektora/y:
 #   courses: []
 
 - id: java
@@ -182,7 +192,9 @@
 - id: junit
   name: Testování s JUnit
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - jiripinkas-junit
 
@@ -207,21 +219,27 @@
 - id: performance
   name: Performance Tuning
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - jiripinkas-performance
 
 - id: rest
   name: Rest pokročilé
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - jiripinkas-rest
 
 - id: designpatterns
   name: Návrhové vzory
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - jiripinkas-designpatterns
 
@@ -303,14 +321,18 @@
 - id: openstack
   name: Open Stack
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - ondrejsika-openstack
 
 - id: python
   name: Python
   description: |
-    Pracujeme na tom z plnych sil.
+    Na kurzu pracujeme z plných sil.
+
+    Pokud vás i tak zajímá kontaktujte lektora/y:
   courses:
     - ondrejsika-python
     - veroskaplan-python-intro
@@ -325,7 +347,9 @@
 # - id: go
 #   name: Go (Golang)
 #   description: |
-#     Pracujeme na tom z plnych sil.
+#     Na kurzu pracujeme z plných sil.
+
+#     Pokud vás i tak zajímá kontaktujte lektora/y:
 #   courses:
 #     - ondrejsika-go
 
