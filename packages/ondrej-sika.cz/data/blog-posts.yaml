@@ -1,3 +1,18 @@
+- id: zaznam-devops-live-7-docker-monitoring-pomoci-promethea-a-alertmanageru
+  title: "Záznam DevOps Live #7: Docker monitoring pomocí Promethea a Alertmanageru"
+  date: 2. 12. 2020
+  ad: prometheus
+  tags:
+    - prometheus
+    - docker
+    - alertmanager
+    - devopslive
+  perex: |
+    Záznanam ze sedmého DevOps live streamu na téma Docker monitoring pomocí Promethea a Alertmanageru
+  youtube: m3vogisBUxo
+  content: |
+    Pokud se chcete naučit pracovat s Prometheem, doporučuji Vám mé školení [__Prometheus__](/skoleni/prometheus), nebudete litovat.
+
 - id: zaznam-devops-live-6-proc-a-jak-pouzivat-cloudflare
   title: "Záznam DevOps Live #6: Proč a jak používat Cloudflare"
   date: 18. 11. 2020
