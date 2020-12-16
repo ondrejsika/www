@@ -717,7 +717,7 @@
   country: cz
   course_id: django
   date_from: 10.02.2021
-  date_to: 10.02.2021
+  date_to: 11.02.2021
   facebook_event: null
   id: django-online-10-02-2021
   lang: cs
@@ -1088,7 +1088,7 @@
   length: 1 den
   linkedin_event: null
   name: Ansible
-  price: 6 800 CZK
+  price: 11 999 CZK
   venue_id: null
 - active: true
   city: Brno
