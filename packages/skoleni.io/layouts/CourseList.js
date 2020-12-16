@@ -30,6 +30,15 @@ const CourseList = props => {
   db.filter("id", technology_id);
   let technology = db.getOne();
 
+  let num_of_courses_by_lecturer = {};
+  technology.courses.map(course_id => {
+    let course = getCourse(course_id);
+    if (!num_of_courses_by_lecturer[course.lecturer.id]) {
+      num_of_courses_by_lecturer[course.lecturer.id] = 0;
+    }
+    num_of_courses_by_lecturer[course.lecturer.id]++;
+  });
+
   return (
     <>
       <Header header={technology.name} />
@@ -41,9 +50,17 @@ const CourseList = props => {
             let course = getCourse(course_id);
             return (
               <Li key={i}>
-                <Link href={`/skoleni/${course.id}`}>
-                  <a>{course.lecturer.name}</a>
-                </Link>
+                {num_of_courses_by_lecturer[course.lecturer.id] > 1 ? (
+                  <Link href={`/skoleni/${course.id}`}>
+                    <a>
+                      {course.lecturer.name}: {course.name}
+                    </a>
+                  </Link>
+                ) : (
+                  <Link href={`/skoleni/${course.id}`}>
+                    <a>{course.lecturer.name}</a>
+                  </Link>
+                )}
               </Li>
             );
           })}
