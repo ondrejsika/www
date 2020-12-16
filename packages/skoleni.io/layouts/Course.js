@@ -8,6 +8,7 @@ import courses_data from "@app/data/skoleni.io/courses.yml";
 import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
 import recommendations_data from "@app/data/skoleni.io/recommendations.yml";
 import H3 from "@app/skoleni.io/components/H3";
+import Head from "next/head";
 
 const InquiryBtn = styled.a`
   border: 2px solid #131480;
@@ -64,6 +65,9 @@ const Course = props => {
   let lecturer_name = course.lecturer.name;
   return (
     <>
+      <Head>
+        <title>{course_name} - skoleni.io</title>
+      </Head>
       <Header
         site={props.site}
         header={course_name}

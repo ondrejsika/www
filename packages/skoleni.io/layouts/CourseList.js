@@ -9,6 +9,7 @@ import lecturers_data from "@app/data/skoleni.io/lecturers.yml";
 import H3 from "@app/skoleni.io/components/H3";
 import Li from "@app/skoleni.io/components/H3";
 import Markdown from "@app/common/components/Markdown";
+import Head from "next/head";
 
 const getCourse = course_id => {
   let db = new StaticDB();
@@ -41,6 +42,9 @@ const CourseList = props => {
 
   return (
     <>
+      <Head>
+        <title>{technology.name} - skoleni.io</title>
+      </Head>
       <Header header={technology.name} />
       <Container>
         <Markdown source={technology.description} />
