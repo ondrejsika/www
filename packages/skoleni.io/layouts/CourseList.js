@@ -69,6 +69,7 @@ const CourseList = props => {
             );
           })}
         </ul>
+        <div style={{ margin: "150px" }} />
       </Container>
     </>
   );
