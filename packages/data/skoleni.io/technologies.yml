@@ -63,9 +63,7 @@
 - id: test-automatizace
   name: Test Automatizace
   description: |
-    Na kurzu pracujeme z plných sil.
-
-    Pokud vás i tak zajímá kontaktujte lektora/y:
+    QA každé firmy má společný cíl a tím je chybám předcházet. Je ovšem často dost prapodivné, jakým způsobem se o to snaží a jaké metodiky a nástroje pro své snažení využívají. Někteří testeři ani prakticky nevědí, co vlastně testují a jaké mají možnosti. Misí Test Automation Basecampu je rozšíření obzoru testera a jeho/její nasměrování na dráhu doménového specialisty.
   courses:
     - rdpanek-test-automatizace
 
