@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import H3 from "@app/skoleni.io/components/H3";
 import lecturers_yaml from "@app/data/skoleni.io/lecturers.yml";
 import StaticDB from "@app/common/staticdb";
+import Head from "next/head";
 
 let db = new StaticDB();
 db.add("lecturers", lecturers_yaml);
@@ -12,6 +13,9 @@ let lecturers = db.get();
 
 const Lektori = () => (
   <>
+    <Head>
+      <title>Lektoři - skoleni.io</title>
+    </Head>
     <Container>
       <H3>Lektoři</H3>
     </Container>
