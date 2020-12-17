@@ -66,6 +66,7 @@ const Img = styled.img`
 
 const RoomyRow = styled(Row)`
   margin-bottom: 4em;
+  margin-right: 0;
 `;
 
 const H3 = styled.h3`
@@ -270,11 +271,11 @@ const BaseLandingPage = props => {
       </Background>
       <Background light_grey>
         <Section style={{ marginTop: "0" }}>
-          <RoomyRow style={{ marginRight: "0" }}>
+          <RoomyRow>
             <Col md={5} sm={12}>
               <Img src={ondrej_table} />
             </Col>
-            <Col md={7} sm={12}>
+            <Col md={7} sm={12} style={{ paddingLeft: "3em" }}>
               <SectionHeader>{props.sectionWhyMeHeader}</SectionHeader>
               <Point full point={props.point1} text={props.text1} />
               <Point full point={props.point2} text={props.text2} />
