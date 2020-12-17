@@ -222,6 +222,7 @@ const BaseLandingPage = props => {
                 <InquiryButton
                   site={props.site}
                   href="https://calendly.com/ondrejsika/evening-call"
+                  className="mb-3"
                 >
                   <IconBtn padding_right src={phone} className="mb-1" />
                   <B>{props.call}</B>
@@ -234,6 +235,7 @@ const BaseLandingPage = props => {
                   site={props.site}
                   size="huge"
                   href="mailto:ondrej@sika.io"
+                  className="mb-3"
                 >
                   <IconBtn padding_right src={mail_grey} className="mb-1" />
                   <B>{props.email}</B>
