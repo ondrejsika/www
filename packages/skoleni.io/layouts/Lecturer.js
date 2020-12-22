@@ -68,7 +68,9 @@ const Lecturer = props => (
               );
             })}
           </ul>
-          <H3>Doporučení</H3>
+          {getRecommendationsByLecturer(props.lecturer.id).length > 0 && (
+            <H3>Doporučení</H3>
+          )}
           <ul>
             {getRecommendationsByLecturer(props.lecturer.id).map(
               (recommendation, i) => {
