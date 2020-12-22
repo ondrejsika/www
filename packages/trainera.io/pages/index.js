@@ -6,11 +6,12 @@ import { Container, Row } from "react-bootstrap";
 
 const SiteMap = styled.div`
   background-color: #098958;
-  padding: 2em 0;
-`;
-
-const Wrapper = styled.div`
-  margin-top: 7em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10em;
 `;
 
 const Box = styled.div`
@@ -34,21 +35,6 @@ const Header = styled.a`
   &:hover {
     text-decoration: none;
   }
-`;
-
-const TriangleBottomRight = styled.div`
-  width: 100%;
-  height: 80px;
-  background: #088958;
-  clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
-  margin-bottom: -1px;
-`;
-
-const TriangleTopLeft = styled.div`
-  width: 100%;
-  height: 80px;
-  background: #088958;
-  clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
 `;
 
 const Center = styled(Row)`
@@ -76,23 +62,19 @@ const Index = () => (
       />
     </Head>
 
-    <Wrapper>
-      <TriangleBottomRight />
-      <SiteMap>
-        <H2>Trainera.io</H2>
-        <Container>
-          <Center>
-            <Box>
-              <Header href="https://trainera.cz">Trainera.cz</Header>
-            </Box>
-            <Box>
-              <Header href="https://trainera.cz">Trainera.de</Header>
-            </Box>
-          </Center>
-        </Container>
-      </SiteMap>
-      <TriangleTopLeft />
-    </Wrapper>
+    <SiteMap>
+      <H2>Trainera.io</H2>
+      <Container>
+        <Center>
+          <Box>
+            <Header href="https://trainera.cz">Trainera.cz</Header>
+          </Box>
+          <Box>
+            <Header href="https://trainera.cz">Trainera.de</Header>
+          </Box>
+        </Center>
+      </Container>
+    </SiteMap>
   </>
 );
 
