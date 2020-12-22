@@ -80,7 +80,8 @@ const Lecturer = props => (
                     <br />
                     --{" "}
                     <strong>
-                      {recommendation.name}, {recommendation.role},{" "}
+                      {recommendation.name ? `${recommendation.name}, ` : " "}
+                      {recommendation.role ? `${recommendation.role}, ` : " "}
                       {recommendation.company}
                     </strong>
                   </li>
