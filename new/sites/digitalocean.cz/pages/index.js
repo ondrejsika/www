@@ -50,8 +50,8 @@ const Page = () => (
       </Table>
       <h3>Hledáme Speakery</h3>
       <p>
-        Chtěl bys mít na meetupu přednášku nebo jen lightning talk? Budeme
-        moc rádi. Dej nám vědět emailem na{" "}
+        Chtěl bys mít na meetupu přednášku nebo jen lightning talk? Budeme moc
+        rádi. Dej nám vědět emailem na{" "}
         <a href="mailto:ondrej@sika.io?subject=[DigitalOcean Czech Community] Chci prednaset">
           ondrej@sika.io
         </a>
@@ -79,9 +79,7 @@ const Page = () => (
           </div>
           <p>
             Jsem freelance DevOps konzultant a lektor. Zlepšuji práci
-            vývojářských týmů zaváděním efektivních procesů ve vývoji. Naučím
-            Vás používat prověřené nástroje a technologie, které povedou k
-            rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.
+            vývojářských týmů zaváděním efektivních procesů ve vývoji.
           </p>
         </Col>
         <Col>
@@ -99,12 +97,22 @@ const Page = () => (
           <p>
             Freelance software vývojář, DevOps konzultant a lektor. Pomůžu vám s
             řešením infrastruktury, vývojem aplikace až po její nasazení do
-            cloudového prostředí například v Kubernetes nebo do serverless
-            prostředí. A s jejím následným monitoringem pro zajištění co
-            nejvyšší dostupnosti. Pomůžu vám s automatizací procesů pomocí
-            Continuous Integration a nasazením aplikace přímo do produkce díky
-            Continuous Delivery metodice.
+            cloudového prostředí například v Kubernetes.
           </p>
+        </Col>
+        <Col>
+          <div className="text-center">
+            <Image
+              src="https://github.com/martinjurco.png"
+              roundedCircle
+              style={{ maxWidth: "200px" }}
+            />
+            <h3>Martin Jurčo</h3>
+            <p>
+              <a href="https://twitter.com/martinjurco">@martinjurco</a>
+            </p>
+          </div>
+          <p>COO &amp; CMO @ SikaLabs.</p>
         </Col>
       </Row>
       <h2>Dotazy</h2>
