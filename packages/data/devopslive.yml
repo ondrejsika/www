@@ -184,3 +184,19 @@
     - Implementace jednoduchého provideru
   technologies:
     - terraform
+- id: vlastni-terraform-provider
+  eventbrite:
+  active: true
+  title: Longhorn - Jednoduchá on-premise storage pro Kubernetes
+  date: 17. 3. 2021
+  time: "19:00"
+  about: |
+    Longhorn je storage plugin pro Kubernetes, který vám umožní používat Persistent Volumes na vlastním Kubernetes.
+  points: |
+    - Rychlý úvod storage v Kubernetes
+    - Instalace a konfigurace Longhornu
+    - Používaní storage
+    - Backup & restore
+  technologies:
+    - kubernetes
+    - longhorn
