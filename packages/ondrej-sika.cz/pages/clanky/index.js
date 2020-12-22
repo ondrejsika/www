@@ -13,6 +13,7 @@ const Page = () => (
 - [Proč by každý měl mít svoji doménu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/)
 - [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene)
 - [Jak pouzivam email (adresy, pravidla, ...)](/clanky/jak-pouzivam-email/)
+- [Jak usetrit za emaily na Google](/clanky/jak-usetrit-za-emaily-na-google)
 - [Výběr osobní wiki](/clanky/vyber-osobni-wiki)
 - [Digitální Detox](/clanky/digitalni-detox/)
 - [Zajímavé osobní stránky](/clanky/zajimave-osobni-stranky)
