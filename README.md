@@ -22,7 +22,6 @@ You probably copy some course landing site (skoleni-docker.cz) or website (ondre
 
 - update package name in `package.json` located in site directory `packages/<site>/package.json`
 - add dev & build script into global `package.json`
-- add site to `sites.txt`
 - update just pages settings `packages/<site>/config.js` and headers (site name, title, ..) in first commit, content update in next one
 - add site to Locations of Sites Sources in README
 - Regenerate Gitlab CI Yaml using `./generate-gitlab-ci.sh`
