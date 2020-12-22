@@ -130,7 +130,7 @@ const Page = () => (
           </div>
         </Col>
       </Row>
-      <h2 className="text-center">Kdo stojí za Devospsaci.cz?</h2>
+      <h2 className="text-center">Kdo stojí za Devopsaci.cz?</h2>
       <Row>
         <Col>
           <div className="text-center">
