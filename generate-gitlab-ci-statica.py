@@ -58,6 +58,7 @@ SITES_NEW = [
     {"name": "digitalocean.cz"},
     {"name": "devopsnews.cz"},
     {"name": "hashicorp.cz"},
+    {"name": "devopsaci.cz"},
 ]
 
 _DEFAULT_DEPENDENCIES = [
