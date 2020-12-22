@@ -25,6 +25,8 @@
     Záznanam ze sedmého DevOps live streamu na téma Docker monitoring pomocí Promethea a Alertmanageru
   youtube: m3vogisBUxo
   content: |
+    Repozitář s ukázkou kódu je: <https://github.com/ondrejsika/example-docker-monitoring>
+
     Pokud se chcete naučit pracovat s Prometheem, doporučuji Vám mé školení [__Prometheus__](/skoleni/prometheus), nebudete litovat.
 
 - id: zaznam-devops-live-6-proc-a-jak-pouzivat-cloudflare
