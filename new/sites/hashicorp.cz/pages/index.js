@@ -121,6 +121,35 @@ const Page = () => (
           ondrej@sika.io
         </a>
       </p>
+      <h2>Sponzoři</h2>
+      <Row>
+        <Col lg={2}>
+          <div className="text-center">
+            <a href="https://sikalabs.com">
+              <Image
+                src="https://github.com/sikalabs.png"
+                style={{ maxWidth: "150px" }}
+              />
+            </a>
+          </div>
+        </Col>
+        <Col lg={2}>
+          <div className="text-center">
+            <a href="https://trainera.cz">
+              <Image
+                src="https://github.com/traineraio.png"
+                style={{ maxWidth: "150px" }}
+              />
+            </a>
+          </div>
+        </Col>
+      </Row>
+      <p className="pt-2">
+        Chcete podpořit meetupy? Napište na{" "}
+        <a href="mailto:ondrej@sika.io?subject=[DigitalOcean Czech Community] Sponzoring">
+          ondrej@sika.io
+        </a>
+      </p>
       <p className="mt-5 text-center" style={{ fontSize: "0.9em" }}>
         2020 <a href="https://sika.io">Ondřej Šika</a>&apos;s Project
       </p>
