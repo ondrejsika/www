@@ -57,7 +57,7 @@ const Page = () => (
       </p>
       <h2>Newsletter</h2>
       <Button
-        href="https://airtable.com/shrClmZoQgo9q2xn0"
+        href="https://airtable.com/shr0LR5JxxeGSnNPT"
         className="mt-3 mb-4"
       >
         Chci dostávat novinky
