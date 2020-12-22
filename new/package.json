@@ -8,10 +8,13 @@
     "ncu": "ncu -u --packageFile",
     "dev-digitalocean.cz": "yarn --cwd sites/digitalocean.cz dev -p 4001",
     "dev-devopsnews.cz": "yarn --cwd sites/devopsnews.cz dev -p 4002",
+    "dev-hashicorp.cz": "yarn --cwd sites/hashicorp.cz dev -p 4003",
     "static-digitalocean.cz": "yarn --cwd sites/digitalocean.cz static",
     "static-devopsnews.cz": "yarn --cwd sites/devopsnews.cz static",
+    "static-hashicorp.cz": "yarn --cwd sites/hashicorp.cz static",
     "deploy-digitalocean.cz": "yarn run static-digitalocean.cz && statica digitalocean.cz ./sites/digitalocean.cz/out",
-    "deploy-devopsnews.cz": "yarn run static-devopsnews.cz && statica devopsnews.cz ./sites/devopsnews.cz/out"
+    "deploy-devopsnews.cz": "yarn run static-devopsnews.cz && statica devopsnews.cz ./sites/devopsnews.cz/out",
+    "deploy-hashicorp.cz": "yarn run static-hashicorp.cz && statica hashicorp.cz ./sites/hashicorp.cz/out"
   },
   "devDependencies": {
     "eslint": "^7.14.0",
