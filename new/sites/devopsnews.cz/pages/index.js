@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
+import ReactMarkdown from "react-markdown";
+import devopsnews_yaml from "../data/devopsnews.yml";
 
 const Page = () => (
   <>
@@ -57,19 +59,16 @@ const Page = () => (
       </Row>
       <h2>Novinky</h2>
       <Table>
-        <tr>
-          <td>30. 5. 2020</td>
-          <td>
-            Longhorn (Kubernetes Storage) is GA v1.0.0{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/longhorn/longhorn/releases/tag/v1.0.0"
-            >
-              https://github.com/longhorn/longhorn/releases/tag/v1.0.0
-            </a>
-          </td>
-        </tr>
+        {devopsnews_yaml.map((news, i) => {
+          return (
+            <tr key={i}>
+              <td>{news.date}</td>
+              <td>
+                <ReactMarkdown source={news.message} />
+              </td>
+            </tr>
+          );
+        })}
       </Table>
       <p className="mt-5 text-center" style={{ fontSize: "0.9em" }}>
         2020{" "}
