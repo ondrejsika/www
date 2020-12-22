@@ -29,7 +29,7 @@ const Page = () => (
           <h2>Dotazy</h2>
           <p>
             Zajímá Vás něco? Napište mi email na{" "}
-            <a href="mailto:ondrej@sika.io?subject=[DigitalOcean Czech Community] Dotaz">
+            <a href="mailto:ondrej@sika.io?subject=[DevOpsNews.cz] Dotaz">
               ondrej@sika.io
             </a>
           </p>
