@@ -22,6 +22,7 @@ import cloud_init_tmp from "@app/data/pictures/technologies/cloud-init-color.png
 import rke_tmp from "@app/data/pictures/technologies/rke-color.png";
 import github_b_tmp from "@app/data/pictures/technologies/github-black.png";
 import skaffold_tmp from "@app/data/pictures/technologies/skaffold.png";
+import longhorn_tmp from "@app/data/pictures/technologies/longhorn.png";
 
 const Img = styled.img`
   height: 100px;
@@ -45,7 +46,8 @@ const TechnologyIcons = props => {
               "cloud-init": cloud_init_tmp,
               rke: rke_tmp,
               github: github_w,
-              skaffold: skaffold_w
+              skaffold: skaffold_w,
+              longhorn: longhorn_tmp
             }[props.icon]
           }
         />
@@ -64,7 +66,8 @@ const TechnologyIcons = props => {
               "cloud-init": cloud_init_tmp,
               rke: rke_tmp,
               github: github_b_tmp,
-              skaffold: skaffold_tmp
+              skaffold: skaffold_tmp,
+              longhorn: longhorn_tmp
             }[props.icon]
           }
         />
