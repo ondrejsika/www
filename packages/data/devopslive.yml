@@ -1,130 +1,134 @@
-# - id: sprava-gitlabu-a-githubu-pomoci-terraformu
-#   active: true
-#   eventbrite: https://www.eventbrite.com/e/117783428405
-#   title: Správa Gitlabu a Githubu pomocí Terraformu
-#   date: 2.9.2020
-#   time: "19:00"
-#   about: |
-#     Každý má v Gitlabu a Githubu hodně repozitářů s hromadou nastavení a správa přes GUI není nijak efektivní ani příjemná. Terraform umožňuje spravovat infrastrukturu jako kód a podporuje správu Gitlabu a Githubu.
-#   points: |
-#     - Správa repozitářů, uživatelů a skupin
-#     - Správa nastavení pro CI
-#     - Integrace s dalšími komponenty infrastruktury
-#     - Jak Gitlab konfiguruji já
-#   technologies:
-#     - gitlab
-#     - terraform
-#     - git
+- id: sprava-gitlabu-a-githubu-pomoci-terraformu
+  active: false
+  eventbrite: https://www.eventbrite.com/e/117783428405
+  title: Správa Gitlabu a Githubu pomocí Terraformu
+  date: 2.9.2020
+  time: "19:00"
+  about: |
+    Každý má v Gitlabu a Githubu hodně repozitářů s hromadou nastavení a správa přes GUI není nijak efektivní ani příjemná. Terraform umožňuje spravovat infrastrukturu jako kód a podporuje správu Gitlabu a Githubu.
+  points: |
+    - Správa repozitářů, uživatelů a skupin
+    - Správa nastavení pro CI
+    - Integrace s dalšími komponenty infrastruktury
+    - Jak Gitlab konfiguruji já
+  technologies:
+    - gitlab
+    - terraform
+    - git
 
-# - id: docker-a-traefik-proxy
-#   eventbrite: https://www.eventbrite.com/e/117834916407
-#   active: true
-#   title: Docker & Traefik Proxy
-#   date: 23.9.2020
-#   time: "19:00"
-#   about: |
-#     Traefik je populární proxy, která podporuje autodiscovery (nejen) Dockeru, což Vám umožňuje velmi jednoduše zpřístupnit světu více Docker kontejnerů na jednom serveru. Traefik se také stará o SSL certifikáty pomoci Let's Encrypt, metriky a mnoho dalšího.
-#   points: |
-#     - Co je Traefik
-#     - Autodiscovery, Let's Encrypt, Metrics & Monitoring
-#     - Konfigurace Traefiku s Dockerem
-#     - Ukázky z praxe
-#   technologies:
-#     - git
-#     - docker
+- id: docker-a-traefik-proxy
+  eventbrite: https://www.eventbrite.com/e/117834916407
+  active: false
+  title: Docker & Traefik Proxy
+  date: 23.9.2020
+  time: "19:00"
+  about: |
+    Traefik je populární proxy, která podporuje autodiscovery (nejen) Dockeru, což Vám umožňuje velmi jednoduše zpřístupnit světu více Docker kontejnerů na jednom serveru. Traefik se také stará o SSL certifikáty pomoci Let's Encrypt, metriky a mnoho dalšího.
+  points: |
+    - Co je Traefik
+    - Autodiscovery, Let's Encrypt, Metrics & Monitoring
+    - Konfigurace Traefiku s Dockerem
+    - Ukázky z praxe
+  technologies:
+    - git
+    - docker
 
-# - id: jednoducha-integrace-gitlab-ci-a-kubernetes
-#   eventbrite: https://www.eventbrite.com/e/117836685699/
-#   active: true
-#   title: Jednoduchá integrace Gitlab CI a Kubernetes
-#   date: 7.10.2020
-#   time: "19:00"
-#   about: |
-#     Gitlab umožňuje propojení s Kubernetes clusterem. Má to své výhody hlavně v CI. Ukážeme si jak na to.
-#   points: |
-#     - Nativní propojení Gitlab CI a Kubernetes clusteru
-#     - Více Kubernetes clusteru (nelze ve free variantě)
-#     - Více clusterů bez nativní integrace
-#   technologies:
-#     - gitlab
-#     - kubernetes
+- id: jednoducha-integrace-gitlab-ci-a-kubernetes
+  eventbrite: https://www.eventbrite.com/e/117836685699/
+  active: false
+  title: Jednoduchá integrace Gitlab CI a Kubernetes
+  date: 7.10.2020
+  time: "19:00"
+  about: |
+    Gitlab umožňuje propojení s Kubernetes clusterem. Má to své výhody hlavně v CI. Ukážeme si jak na to.
+  points: |
+    - Nativní propojení Gitlab CI a Kubernetes clusteru
+    - Více Kubernetes clusteru (nelze ve free variantě)
+    - Více clusterů bez nativní integrace
+  technologies:
+    - gitlab
+    - kubernetes
 
-# - id: uvod-do-terraformu
-#   eventbrite: "https://www.eventbrite.com/e/120441195859"
-#   active: true
-#   title: Úvod do Terraformu
-#   date: 21.10.2020
-#   time: "19:00"
-#   about: |
-#     Terraform je nástroj na správu infrastruktury formou kódu. Pojďme si ukázat jak na to.
-#   points: |
-#     - Co je Terraform a jeho výhody
-#     - Instalace Terraformu a konfigurace Terraform Cloudu
-#     - Ukázka práce s infrastrukturou (DigitalOcean, Cloudflare)
-#   technologies:
-#     - terraform
-#     - digitaloceanu
+- id: uvod-do-terraformu
+  eventbrite: "https://www.eventbrite.com/e/120441195859"
+  active: false
+  title: Úvod do Terraformu
+  date: 21.10.2020
+  time: "19:00"
+  about: |
+    Terraform je nástroj na správu infrastruktury formou kódu. Pojďme si ukázat jak na to.
+  points: |
+    - Co je Terraform a jeho výhody
+    - Instalace Terraformu a konfigurace Terraform Cloudu
+    - Ukázka práce s infrastrukturou (DigitalOcean, Cloudflare)
+  technologies:
+    - terraform
+    - digitaloceanu
 
-# - id: novinky-v-gitlab-ci-11-2020
-#   eventbrite: https://www.eventbrite.com/e/120943797153
-#   active: true
-#   title: Novinky v Gitlab CI (listopad 2020)
-#   date: 11.11.2020
-#   time: "19:00"
-#   about: |
-#     V Gitlab CI se událo za poslední rok hodně změn, řekneme si, co se od našeho školení změnilo a jaké funkce by Vás mohli zajímat.
-#   points: |
-#     - Lehký úvod do Gitlab CI
-#     - Více pipelines v jednom projektu
-#     - Vazby mezi projekty
-#     - Dynamicky generované pipelines
-#     - Praktická ukázka
-#   technologies:
-#     - gitlab
-# - id: proc-a-jak-pouzivat-cloudflare
-#   eventbrite: https://www.eventbrite.com/e/125436023523
-#   active: true
-#   title: Proč a jak používat Cloudflare
-#   date: 18.11.2020
-#   time: "19:00"
-#   about: |
-#     Přesuňte své domény do Cloudflare. Získáte tím stabilní DNS, DDoS ochranu a CDN, to celé spravované Terraformem.
-#   points: |
-#     - Setup domény v Cloudflare
-#     - Správa DNS a dalších funkcí
-#     - Integrace s Terraformem
-#   technologies:
-#     - cloudflare
-#     - terraform
-# - id: docker-monitoring-pomoci-promethea-a-alert-manageru
-#   eventbrite: https://www.eventbrite.com/e/125437885091/
-#   active: true
-#   title: Docker monitoring pomocí Promethea a Alertmanageru
-#   date: 2.12.2020
-#   time: "19:00"
-#   about: |
-#     Monitorujte své aplikace běžící v Docker pomocí moderního nástroje Prometheus.
-#   points: |
-#     - Minimální setup Promethea a Alertmanageru
-#     - Docker metriky pomocí cAdvisoru
-#     - Vytvoření vlastních alerting rules pro Prometheus
-#   technologies:
-#     - docker
-#     - prometheus
-# - id: konfigurace-alertmanageru
-#   eventbrite: https://www.eventbrite.com/e/125533296469
-#   active: true
-#   title: Konfigurace Alertmanageru
-#   date: 16.12.2020
-#   time: "19:00"
-#   about: |
-#     Ukážeme si jak efektivně konfigurovat flow eventů v Alertmanageru.
-#   points: |
-#     - Rychlý úvod do Alertmanageru
-#     - Konfigurace backendů (Email, Slack, Pager Duty, ...)
-#     - Konfigurace flow alertů
-#   technologies:
-#     - prometheus
+- id: novinky-v-gitlab-ci-11-2020
+  eventbrite: https://www.eventbrite.com/e/120943797153
+  active: false
+  title: Novinky v Gitlab CI (listopad 2020)
+  date: 11.11.2020
+  time: "19:00"
+  about: |
+    V Gitlab CI se událo za poslední rok hodně změn, řekneme si, co se od našeho školení změnilo a jaké funkce by Vás mohli zajímat.
+  points: |
+    - Lehký úvod do Gitlab CI
+    - Více pipelines v jednom projektu
+    - Vazby mezi projekty
+    - Dynamicky generované pipelines
+    - Praktická ukázka
+  technologies:
+    - gitlab
+
+- id: proc-a-jak-pouzivat-cloudflare
+  eventbrite: https://www.eventbrite.com/e/125436023523
+  active: false
+  title: Proč a jak používat Cloudflare
+  date: 18.11.2020
+  time: "19:00"
+  about: |
+    Přesuňte své domény do Cloudflare. Získáte tím stabilní DNS, DDoS ochranu a CDN, to celé spravované Terraformem.
+  points: |
+    - Setup domény v Cloudflare
+    - Správa DNS a dalších funkcí
+    - Integrace s Terraformem
+  technologies:
+    - cloudflare
+    - terraform
+
+- id: docker-monitoring-pomoci-promethea-a-alert-manageru
+  eventbrite: https://www.eventbrite.com/e/125437885091/
+  active: false
+  title: Docker monitoring pomocí Promethea a Alertmanageru
+  date: 2.12.2020
+  time: "19:00"
+  about: |
+    Monitorujte své aplikace běžící v Docker pomocí moderního nástroje Prometheus.
+  points: |
+    - Minimální setup Promethea a Alertmanageru
+    - Docker metriky pomocí cAdvisoru
+    - Vytvoření vlastních alerting rules pro Prometheus
+  technologies:
+    - docker
+    - prometheus
+
+- id: konfigurace-alertmanageru
+  eventbrite: https://www.eventbrite.com/e/125533296469
+  active: false
+  title: Konfigurace Alertmanageru
+  date: 16.12.2020
+  time: "19:00"
+  about: |
+    Ukážeme si jak efektivně konfigurovat flow eventů v Alertmanageru.
+  points: |
+    - Rychlý úvod do Alertmanageru
+    - Konfigurace backendů (Email, Slack, Pager Duty, ...)
+    - Konfigurace flow alertů
+  technologies:
+    - prometheus
+
 - id: cloud-init
   eventbrite: https://www.eventbrite.com/e/129864124091
   active: true
