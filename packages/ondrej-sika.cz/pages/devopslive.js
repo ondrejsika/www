@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
-import events from "@app/data/devopslive.yml";
+import events_yaml from "@app/data/devopslive.yml";
 import Markdown from "@app/common/components/Markdown";
 import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader";
 import Background from "@app/ondrejsika-theme/components/lp/LP-background";
@@ -18,6 +18,13 @@ import Sessions from "@app/ondrejsika-theme/components/devopslive/Sessions";
 import ColorBox from "@app/ondrejsika-theme/components/devopslive/ColorBox";
 import TechnologyIcons from "@app/ondrejsika-theme/components/devopslive/TechnologyIcons";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
+import StaticDB from "@app/common/staticdb";
+
+let db = new StaticDB();
+db.add("events", events_yaml);
+db.setCursor("events");
+db.filter("active", true);
+let events = db.get();
 
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
