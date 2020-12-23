@@ -200,3 +200,19 @@
   technologies:
     - kubernetes
     - longhorn
+- id: skaffold
+  eventbrite:
+  active: true
+  title: Skaffold - Local Kubernetes Development
+  date: 31. 3. 2021
+  time: "19:00"
+  about: |
+    Skaffold se stara o build, push a deploy vasi aplikace. Vy se venujte tomu, na cem zavisi nejvice - psani kodu.
+  points: |
+    - Co je Skaffold
+    - Instalace a konfigurace
+    - Vyvoj s pomoci Skaffold
+    - Skaffold a Helm
+  technologies:
+    - kubernetes
+    - skaffold
