@@ -184,7 +184,7 @@
     - Implementace jednoduchého provideru
   technologies:
     - terraform
-- id: vlastni-terraform-provider
+- id: longhorn
   eventbrite:
   active: true
   title: Longhorn - Jednoduchá on-premise storage pro Kubernetes
