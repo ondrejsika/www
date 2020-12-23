@@ -26,6 +26,12 @@ db.setCursor("events");
 db.filter("active", true);
 let events = db.get();
 
+let db2 = new StaticDB();
+db2.add("events", events_yaml);
+db2.setCursor("events");
+db2.filter("active", false);
+let past_events = db2.get();
+
 const MainTitle = styled.h1`
   font-family: "IBM Plex Mono", monospace;
   letter-spacing: 0px;
@@ -200,6 +206,14 @@ const Page = () => {
               />
             </Row>
           </Section>
+          <SectionHeader tight>Proběhlé streamy</SectionHeader>
+          {past_events.map((event, i) => {
+            return (
+              <div key={i}>
+                <Sessions event={event} past={true} />
+              </div>
+            );
+          })}
         </Container>
       </Background>
     </>
