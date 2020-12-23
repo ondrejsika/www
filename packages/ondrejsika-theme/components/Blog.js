@@ -16,6 +16,7 @@ const Blog = props => {
       <Background light_grey style={{ padding: "2em 0" }}>
         <Container>
           {props.posts.map((post, i) => {
+            if (post.hidden) return;
             return (
               <BlogBox key={i}>
                 <Link href={`/blog/${post.id}`}>
