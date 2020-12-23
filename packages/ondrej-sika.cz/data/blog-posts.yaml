@@ -1,3 +1,128 @@
+- id: zhodnoceni-roku-2020-a-plany-na-rok-2021
+  hidden: true
+  title: "Zhodnoceni roku 2020 a plany na rok 2021"
+  date: 1. 1. 2021
+  tags: []
+  perex: |
+    Záznanam ze osmého DevOps live streamu na téma Konfigurace Alertmanageru
+  content: |
+    ## Rok 2020
+
+    Dalsi uspesny a narocny rok je za mnou. Bez Vas bych to vsak nedokazal. Diky. A co se v roce 2020 delo?
+
+    - Nove kurzy
+    - DevOps Live
+    - Implementace DevOps
+
+    #### Nove kurzy 2020
+
+    Minuly rok jsem ke svym populrnim skoleni hlavne Gitlab CI, Dockeru, Kubernetes a Terraformu pridal dalsi a rozsiril jsem nabidku kurzu tak, ze pokryvaji celou DevOps pipeline.
+
+    Moje nove kurzy jsou:
+
+    - [Rancher](/skoleni/rancher) - On-premise Kubernetes
+    - [Prometheus Stack (Prometheus, Alertmanager, Grafana)](/skoleni/prometheus) - Nejen cloud native monitoring
+    - [Elastic Stack (drive ELK)](/skoleni/elk) - Log management
+    - [DigitalOcean](/skoleni/digitalocean) - Public cloud jednoduse
+    - [Proxmox](/skoleni/proxmox) - Open source virtualizace a on-premise  cloud platforma
+
+    Pokud mate zajem o nejake skoleni nebo jen dotaz, napiste mi na <ondrej@sika.io>.
+
+    #### DevOps Live
+
+    V polovine roku 2020 jsem zacal delat streamt live codingu DevOps Live a k dnesimu dni jsme meli 8 eventu na temata Dockeru, monitoringu, Terraformu, ... Souhrny blog post DevOps live streamu z 2020 je zde: [DevOps Live 2020](/???)
+
+    Streamy celkem sledovalo ??? lidi a proto v nich chci pokracovat i do budoucna. Kouknete na temata pro [rok 2020](/devopslive).
+
+    #### Implementace DevOps
+
+    V minulem roce jsem zacal vice pracovat na implementacich DevOps reseni u klientu. Zacali jsme (ja a muj [team](/team)) pracovat na vice dlouhodobych spoluprci a jako firma rosteme. Pokud mate zajem o spolupraci, napiste mi email na <ondrej@sika.io>.
+
+    ## Plany pro rok 2021
+
+    A co planuji do noveho roku? Je toho hodne, velkou cast projektu jsme zacli v roce 2020 a i drive. Toto nas ted ceka:
+
+    - Nove kurzy
+    - Skoleni.io
+    - Trainera
+    - Meetupty & Community
+    - Devopsaci.cz
+
+    #### Nove Kurzy 2021
+
+    Planuji kurzy na nove temata. Na techto kurzech pracuji a brzy budou k dispozici (Q1).
+
+    - Vault - Secret Management
+    - OpenStack (pro vyvojare) - Uvod do spravy infrastruktury v OpenStacku
+    - AWS (Úvod) - Uvod do cloudove platformy AWS
+    - Azure (Úvod) - Uvod do cloudove platformy Azure
+
+    Zaujali me 2 nove nastroje od HashiCorpu: Boundary a Waypoint. Musim si s nimi udelat nejakou zkusenost a pokud to bude davat smysl, vytvoril bych kurzy i na ne.
+
+    Pokud by Vas kurzy zaujali, dejte vedet.
+
+    #### Skoleni.io
+
+    Posledni 3 mesice v roce 2020 jsme pripravovali portal [Skoleni.io](/skoleniio). Skoleni.io je portal, kde muzou freelance lektori nabizet sve IT skoleni a workshopy. Pro firmy je jednodussi hledat skoleni na jednom miste. Velkou inspiraci mi byl portal Na Volne Noze od Roberta Vlacha.
+
+    Portal Skoleni.io spoustime v lednu 2020, na webu uz vsak mame 9 skvelych lektoru a 30+ kurzu. Doufam, ze dalsi budou casem pribyvat.
+
+    Pokud chcete nabizet svoje kurzy na portalu Skoleni.io, napiste na <spoluprace@skoleni.io>.
+
+    #### Trainera
+
+    Do ted jsem skolil jako freelancer. A melo to sve vyhody. Vlastne je to ma porad. Velkou vyhodou freelance lektora je to, ze firmy poptavaji primo jeho. Chteji konkretni skoleni od konkretniho cloveka.
+
+    Nevyhodou pak je to ze vse musim vyrizovat sam: od domuvy terminu po fakturace. A toho na me uz bylo moc. Zaroven poptavka po nekterych kurzech byla vysoka a muj kalendar se hodne plnil. Rozhodl jsem se rozsirit team a skoleni nabizet i pod brandem Trainera, primarne pro zahranici.
+
+    ##### Nemecko
+
+    Sve skoleni chci expandovat za hranice, konkretne do Nemecka. To co skolim a delam primarne v Cechach a na Slovensku chci posunout smerem na zapad a otevrit prvni trh a to je Nemecko.
+
+    Budu moc rad, pokud mi date nejake rady jak na to.
+
+    #### Meetupty & Community
+
+    V roce 2020 se moc meetupum a osobnim setkanim nedarilo, doufam ze se to v roce 2021 zlepsi. Ale i tak se mi uz nechce cekat a chci vykopnout meetupy a komunity, ktere pripravujeme. I kdyz budou meetupy ze zacatku online, nemuzu se dockat, az budou offline face-to-face.
+
+    - Vercel Czech Community
+    - DigitalOcean Czech Community
+    - Prague HashiCorp User Group
+
+    ##### Vercel Czech Community
+
+    Vercel meetupy organizuji spolecne s [Milanem Sulcem](https://sulc.dev) a prvni online meetup uz je za nami. Zaznam meetupu je na webu [vercel.cz](https://vercel.cz).
+
+    ##### DigitalOcean Czech Community
+
+    DigitalOcean pouzivam rad a rozhodne v Cechach nejsem jediny, chci se potkavat s dalsimi lidmi a sdilet zkusenosti s timto mensim cloudem. Verim, ze hodne lidem pomuze zlepsit jejich infrastrukturu, ktera obcas stoji na ne uplne kvalitnich poskytovatelich.
+
+    Pridejte se na [digitalocean.cz](https://digitalocean.cz)
+
+    ##### Prague HashiCorp User Group
+
+    Prague HashiCorp User Group a meetupy na temata Terraoformu, Valultu, ... a vlastne vsech nastroju HashiCorpu jsem chtel zacit delat minule jaro, bohuzel do toho prisla korona. Kdyz je vsechno online a lidi si zvykly, chci zacit hned.
+
+    Vice informaci na: [hashicorp.cz](https://hashicorp.cz)
+
+    #### Devopsaci.cz
+
+    A nejvetsi krok k budovani DevOps komunity v Cechach. Je tu hodne skvelych meetupu jako je Prague Containers, Cloud Native Prague, ... Ale jsou to jen meetupy, ne komunita jako jsou Frontendisti.cz, Backendisti.cz nebo Pehapkari.cz.
+
+    Proto jsem se rozhodl spojit DevOpsaky a zalozit Devopsaci.cz. Vim ze to nebude jednoduche, budu rad za jakoukoliv radu a pomoc. Diky.
+
+    Cilem komunity je spojit DevOpsaky do jedne skupiny, kde muzou resit sve problemy, postovat zajimave noviny a vzdelavat se.
+
+    Devopsaci, spojme se na [Devopsaci.cz](https://devopsaci.cz)
+
+    ---
+
+    Pevne verim, ze se situace uklidni a budeme se moci na skolenich potkavat osobne.
+
+    Hodne zdravi a energie do roku 2021,
+    <br />
+    O.
+
 - id: zaznam-devops-live-8-konfigurace-alertmanageru
   title: "Záznam DevOps Live #8: Konfigurace Alertmanageru"
   date: 22. 12. 2020
