@@ -108,7 +108,7 @@ const Page = () => {
       </Background>
       <Background light_grey style={{ paddingBottom: "2em" }}>
         <Container>
-          <SectionHeader tight>DevOps live - reálné případovky</SectionHeader>
+          <SectionHeader tight>Live coding streamy z DevOps</SectionHeader>
           <ColorBox white>
             DevOps live jsou streamy live codingu zajímavých témat z DevOps, kde
             ukážu jak si ušetřit práci a že to není tak složité. Za cca hodinu a
