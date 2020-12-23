@@ -181,31 +181,6 @@ const Page = () => {
               </div>
             );
           })}
-          {/* <Section>
-            <RoomyRow style={{ marginRight: "0" }}>
-              <Col md={5} sm={12}>
-                <Img src={ondrej_table} />
-              </Col>
-              <Col md={7} sm={12}>
-                <ColorBox white>
-                  <div className="pl-5">
-                    <SectionHeader>Archiv</SectionHeader>
-                    <Point fullBlue point="DevOps v praxi" datum="33.3.2020" />
-                    <Point fullBlue point="Základy Proxmox" datum="33.3.2020" />
-                    <Point
-                      fullBlue
-                      point="Rozdíly mezi jednotlivými programy"
-                      datum="33.3.2020"
-                    />
-                    <Text></Text>
-                    <Button huge href="/">
-                      ZOBRAZIT VŠE
-                    </Button>
-                  </div>
-                </ColorBox>
-              </Col>
-            </RoomyRow>
-          </Section> */}
           <Section className="d-none d-lg-block">
             <Row>
               <SocialBox
