@@ -1,3 +1,33 @@
+- id: puldenni-workshopy
+  hidden: true
+  title: "Puldenni workshopy - novy format skoleni"
+  date: 1. 1. 2021
+  tags:
+    - skoleni
+  perex: |
+    Zkousim novy format mych skoleni / workshopu. Ne kazde tema je tak obsahle, ze je potreba jednodenni skoleni, ale natolik zajimave, ze to chce workshop!
+  content: |
+    Zkousim novy format mych skoleni / workshopu - puldenni workshopy.
+
+    Ne kazde tema je tak obsahle, ze je potreba jednodenni skoleni, ale natolik zajimave, ze to chce workshop!
+
+    Napadaji me 2 varianty techtoo workshopu:
+
+    - Male ucelene tema
+    - Novinky ke skoleni
+
+    Pokusim se je pospsat trosku podrobneji.
+
+    ### Male ucelene tema
+
+    Pokud Vas zajima Cloudflare, Skaffold, Vercel, ... nejsou to temata pro jednodenni skoleni. Jsou moc male nebo specificke. Ale porad stoji za to se s temito nastroji naucit. Den je spousta casu, ale jedno patecni odpoledne venovat rozveji uz nezni tak zle? ;)
+
+    Proto jsem se rozhodl delat tyto mini skoleni na zajimava temata, jen trosku kratsi.
+
+    ### Novinky ke skoleni
+
+    Nastroje se vyvijeji, neco zastarava a nektere workflow se meni. I me skoleni se meni v case. Je zbytecne aby clovek sel na skoleni za rok znovu, i kdyz obcas neni na skodu si pripomenout i zaklady. Cilem kratkeho 4 hodinoveho workshopu je ukazat si co se zmenilo a tak byt porad v obraze.
+
 - id: zhodnoceni-roku-2020-a-plany-na-rok-2021
   hidden: true
   title: "Zhodnoceni roku 2020 a plany na rok 2021"
