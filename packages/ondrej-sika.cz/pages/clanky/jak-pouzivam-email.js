@@ -21,6 +21,7 @@ Pouzivam tyto emaily (ucty):
 A tyto aliasy:
 
 - \`todo@os.com\` (alias emailu \`os@os.com\`) - Forward do Todoistu
+- \`quick@os.com\` (alias emailu \`os@os.com\`) - Slozka pro rychly pristup k jizdenkam, bookingu, ...
 
 Ne vsechny emaily jsou zkutecne, ale struktura je takova jak ji pouzivam ;)
 
@@ -63,6 +64,10 @@ U nekolika lidi (kterym jsem nastavoval email flow), jsme misto dalsi schranky u
 ### Todo
 
 Todo alias pouzivam tak, ze kdyz z nejakeho emailu chci udelat task v Todoistu, tak jej jednoduse preposlu. Nemusim si pamatovat generovanou adresu na kterou to mam posilat.
+
+### Quick
+
+Alias \`quick@os.com\` mam nasmerovany do slozky \`quick\` v hromadnem uctu, kam si manualne preposilam jizdenky, letenky, ... vsechny emaily co potrebuju mit rychle k dispozici.
 `}
   />
 );
