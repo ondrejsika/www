@@ -90,7 +90,10 @@ const Course = props => {
         >
           Nezávazně poptat školení
         </InquiryBtn>
-        <H3>Doporučení</H3>
+        {/* <H3>Doporučení</H3> */}
+        {getRecommendationsByCourse(course_id.id).length > 0 && (
+          <H3>Doporučení</H3>
+        )}
         <ul>
           {getRecommendationsByCourse(course_id).map((recommendation, i) => {
             <li key={i}>
