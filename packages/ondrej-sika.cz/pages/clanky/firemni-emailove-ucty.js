@@ -16,13 +16,13 @@ Používám 2 domény: \`sl.com\` pro primární emaily (na Google Workspace) a 
 
 - \`os@sl.com\` - Interní email (komunikace interně v teamu)
 
-Klíčoví lidé (C level, foundeři, ...) mají veřejný email pouze jméno, ostatní jméno a příjmení. Tento veřejný email má někdo (například já) napojený do Pipedrive, což je CRM a k emailu má přístup asistentka, sales, ... Tento email má jen ten, kdo potřebuje veřejně komunikovat za firmu.
+Klíčoví lidé (C level, foundeři, ...) mají veřejný email pouze jméno, ostatní jméno a příjmení. Tento veřejný email má někdo (například já) napojený do Pipedrive, což je CRM a k emailu má přístup asistentka, sales, atd. Tento email má jen ten, kdo potřebuje veřejně komunikovat za firmu.
 
-Jinak každý člen teamu (zaměstnanec) má krátký email \`jp@...\` nebo \`jpr@...\` pokud nastal konflikt. Tyto emaily jsou pro vnitřní používání, registraci firemních služeb, ... Tyto emaily jsou osobní a nikdo je mezi sebou nesdílí. Pokud se dává email klientům nebo ven, tak v té první formě.
+Jinak každý člen teamu (zaměstnanec) má krátký email \`jp@...\` nebo \`jpr@...\` pokud nastal konflikt. Tyto emaily jsou pro vnitřní používání, registraci firemních služeb, atd. Jsou osobní a nikdo je mezi sebou nesdílí. Pokud se dává email klientům nebo ven, tak v té první formě.
 
 ### Web, produkty a služby
 
-Dělám různé věci, nabízím různé produkty a služby, a o každou se stará někdo jiný nebo jiný team. Každý produkt, na kterém spolupracuje více lidí má svůj emailový účet, tak aby měli přehled co je v jakém stavu. Některé z těchto účtu jsou také v Pipedrive.
+Dělám různé věci, nabízím různé produkty a služby, a o každou se stará někdo jiný nebo jiný team. Každý produkt, na kterém spolupracuje více lidí má svůj emailový účet, tak aby měli všichni přehled o tom, co je v jakém stavu. Některé z těchto účtů jsou také v Pipedrive.
 
 - \`hello@sl.com\` - Generický email, který je na webu. Líbí se mi to více než \`info@sl.com\`
 
@@ -40,7 +40,7 @@ Jsme IT & DevOps firma, máme na starosti produkční systémy naše i klientů.
 
 - \`mon-infra@...\`, \`mon-app1@...\`, \`mon-client1@...\` - Monitoring emaily pro různé teamy
 
-- \`mon-all@sl.com\` - Archív pro všechny monitoring eventy (forward z ostatních monitoring účtu)
+- \`mon-all@sl.com\` - Archiv pro všechny monitoring eventy (forward z ostatních monitoring účtů)
 
 ### Support
 
@@ -48,7 +48,7 @@ Monitoring emaily generuje monitoring, support emaily chodí od lidí. Support e
 
 - \`support@sl.com\` - Hromadný support email, který směřuje do Zendesku
 
-- \`joe-support@sl.com\` - Joe's email pro support systém u klientů. Typický jen alias k internímu emailu.
+- \`joe-support@sl.com\` - Joe's email pro support systém u klientů. Typicky jen alias k internímu emailu.
 
 ### Accounts
 
@@ -56,15 +56,15 @@ Pokud potřebujeme registrovat globálně nějakou službu jako je AWS, Twitter 
 
 - \`accounts@sl.com\` - Email pro registraci různých služeb
 
-- \`accounts-aws@...\`, \`accounts-twitter@...\`, ... - Email pro konkrétní důležitou službu, například AWS, Twitteru
+- \`accounts-aws@...\`, \`accounts-twitter@...\` - Email pro konkrétní důležitou službu, například AWS, Twitteru
 
-Máme jeden globální \`accounts@sl.com\` kam registrujeme všechny služby, ke kterým může mít přístup operations team (COO + assistentka).
+Máme jeden globální \`accounts@sl.com\` kam registrujeme všechny služby, ke kterým může mít přístup operations team (COO + asistentka).
 
-Pro služby kde to není možné, například Cloudflare (domény), AWS (kritická infrastruktura), vytváříme vlastní \`accounts-...@...\` a směřujeme to ke konkrétním lidem. Například AWS na CEO + CTO, Twitter na C level a team marketingu, ...
+Pro služby kde to není možné, například Cloudflare (domény), AWS (kritická infrastruktura), vytváříme vlastní \`accounts-...@...\` a směřujeme to ke konkrétním lidem. Například AWS na CEO + CTO, Twitter na C level a team marketingu.
 
 ### Client's Accounts
 
-Pokud potřebuji pro některého klienta založit účet na nějaké službě (například Cloudflare), vytvořím pro to speciální email účet.
+Pokud potřebuji pro některého klienta založit účet na nějaké službě, například Cloudflare, vytvořím pro to speciální email účet.
 
 - \`accounts-client1-aws@sl.com\` - Email pro klientovo AWS
 

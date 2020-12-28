@@ -3,71 +3,78 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
   <Article
-    title="Jak pouzivam email (adresy, pravidla, ...)"
+    title="Jak používám email (adresy, pravidla, ...)"
     markdown={`
-Pouzivam vice emailu, skoro jako kazdy. Mam v tom ale poradek, coz rozhodne kazdy rict nemuze.
+Používám více emailů, skoro jako každý. Mám v tom ale pořádek, což rozhodně každý říct nemůže.
+Používám tyto emaily (účty):
 
-Pouzivam tyto emaily (ucty):
+- Primární - \`ondrej@os.com\`
 
-- Primarni - \`ondrej@os.com\`
-- Hromadny pro vetsinu sluzeb \`os@os.com\` a nebo \`os+...@os.com\`
-- Pro komunikaci s urady - \`gov@os.com\`
-- Pracovni (freelance) - \`ondrej@sika.io\`
-- Pracovni (firma A) - \`ondrej@sikalabs.com\`
-- Pracovni (firma B) - \`ondrej@skoleni.io\`
+- Hromadný pro většinu služeb \`os@os.com\` a nebo \`os+...@os.com\`
+
+- Pro komunikaci s úřady - \`gov@os.com\`
+
+- Pracovní (freelance) - \`ondrej@sika.io\`
+
+- Pracovní (firma A) - \`ondrej@sikalabs.com\`
+
+- Pracovní (firma B) - \`ondrej@skoleni.io\`
+
 - Maildev - \`*@all.os.com\`
+
 - Archiv - \`archived@os.com\`
 
 A tyto aliasy:
 
 - \`todo@os.com\` (alias emailu \`os@os.com\`) - Forward do Todoistu
-- \`quick@os.com\` (alias emailu \`os@os.com\`) - Slozka pro rychly pristup k jizdenkam, bookingu, ...
 
-Ne vsechny emaily jsou zkutecne, ale struktura je takova jak ji pouzivam ;)
+- \`quick@os.com\` (alias emailu \`os@os.com\`) - Složka pro rychlý přístup k jízdenkám, bookingu, ...
 
-### Primarni email
+Ne všechny emaily jsou skutečné, ale struktura je taková jak ji používám ;)
 
-Primarni email pouzivam pro soukromou komunikaci.
+### Primární email
 
-Pouzivam jej take na registraci do sluzeb, kde me lide hledaji podle emailu a je to jeden ucet pro vice ucelu (soukromy, firma A, firma B), jako je napriklad Github, ClickUp nebo Notion. Vtechto sluzbach mam vice skupin nebo organizaci, ale vse registrovano pod jednim emailem. Pouzivam primarni, protoze lide me tam muzou hledat po emailu.
+Primární email používám pro soukromou komunikaci.
 
-Ze sluzeb, ktere mam zaregistrovane na primarni email mi chodi notifikace (kalendar, ClickUp, ...), ty ovsem nechci mit v primarnim inboxu, tak je preposilam do hromadneho.
+Používám jej také na registraci do služeb, kde mě lidé hledají podle emailu a je to jeden účet pro více účelů (soukromý, firma A, firma B), jako je například Github, ClickUp nebo Notion. V těchto službách mám více skupin nebo organizací, ale vše registrováno pod jedním emailem. Používám primární, protože lidé mě tam můžou hledat po emailu.
 
-### Hromadny email
+Ze služeb, které mám zaregistrované na primární email mi chodí notifikace (kalendář, ClickUp, ...), ty ovšem nechci mít v primárním inboxu, tak je přeposílám do hromadného.
 
-Chci mit primarni email pouze na dulezitou komunikaci, typicky od lidi a proto vsechno co s nikym sdilet nemusim jako je napriklad ucet do Alzy, nebo kdyz kupuju letenky, pouzivam na to hromadny email.
+### Hromadný email
 
-Hromadny email pouzivam ve dvou variantach: \`os@os.com\` a \`os+...@os.com\`
+Chci mít primární email pouze na důležitou komunikaci, typický od lidí a proto všechno co s nikým sdílet nemusím, jako je například účet do Alzy, nebo když kupuju letenky, používám na to hromadný email.
 
-To \`os+...\` je pouze alias a pouzivam to jako \`os+alza@os.com\`, \`os+swiss@os.com\` nebo \`os+rohlik@os.com\`. Vyhodou je ze pak muzu lepe pouzivat filtry v emailu. Nektere sluzby to plus v emailu neumi, pak pouzivm variantu \`os@os.com\`.
+Hromadný email používám ve dvou variantách: \`os@os.com\` a \`os+...@os.com\`
 
-### Uredni email
+To \`os+...\` je pouze alias a používám to jako \`os+alza@os.com\`, \`os+swiss@os.com\` nebo \`os+rohlík@os.com\`. Výhodou je, že pak mužů lépe používat filtry v emailu. Některé služby to ´plus´ v emailu neumí, pak používám variantu \`os@os.com\`.
 
-Email \`gov@os.com\` pouzivam pro komunikaci s urady jako je FU, CSSZ, zdravotni pojistovna. Vse co ma co docineni se statem.
+### Úřední email
 
-### Firemni emaily
+Email \`gov@os.com\` používám pro komunikaci s úřady jako je FU, CSSZ, zdravotní pojišťovna. Vše co má co do činění se státem.
 
-Asi jako kazdy, kdyz neco resim za danou firmu, pouzivam jeji email.
+### Firemní emaily
+
+Asi jako každý, když něco řeším za danou firmu, používám její email.
 
 ### Maildev
 
-Maildev je skvela utilita ne jen pro vyvojare. Je to webova aplikace, ktera prijima jakekoliv emaily, ktere ji prijdou (na IP a port 25) a rovnou je zobrazuje na webu. Pokud mam na server nacilenou nejakou domenu, napriklad \`all.os.com\` tak pak tento server akceptuje emaily ve tvaru \`*@all.os.com\` (napriklad \`foo@all.os.com\`, \`bar@all.os.com\`, ...). Tohle pouzivam, kdyz chci vyzkouset nejakou sluzbu (klidne vicekrat) nebo kdyz chci projit email "pay wall". A samozrejme kdyz nekam posilam testovaci emaily pri vyvoji.
+Maildev je skvělá utilita nejen pro vývojáře. Je to webová aplikace, která přijímá jakékoliv emaily, které ji přijdou (na IP a port 25) a rovnou je zobrazuje na webu. Pokud mám na server nacílenou nějakou doménu, například \`all.os.com\` tak pak tento server akceptuje emaily ve tvaru \`*@all.os.com\` (například \`foo@all.os.com\`, \`bar@all.os.com\`, ...). Tohle používám, když chci vyzkoušet nějakou službu (klidně vícekrát) nebo když chci projít email "pay wall". A samozřejmě když někam posílám testovací emaily při vývoji.
 
 Maildev je open source: <https://github.com/maildev/maildev>
 
 ### Archiv
 
-Do toho emailu posilam dokumenty co chci archivovat. Vsechny smlouvy, uredni dopisy, potvrzeni o podani DPH, ... Zaroven tento email preposilam do DMS (documment managemet system), kde tyto soubory tridim a archivuji. Ale kdyz potrebuji, vse najdu v tomto inboxu.
+Do toho emailu posílám dokumenty co chci archivovat. Všechny smlouvy, úřední dopisy, potvrzení o podání DPH, ... Zároveň tento email přeposílám do DMS (document managemet system), kde tyto soubory třídím a archivuji. Ale když potřebuji, vše najdu v tomto inboxu.
 
-U nekolika lidi (kterym jsem nastavoval email flow), jsme misto dalsi schranky udelali jen alias k primarnimu mailboxu a pravidlo ze se to uklada do slozky \`archiveD\` (protoze \`archive\` je by default zabrana).
+U několika lidí (kterým jsem nastavoval email flow), jsme místo další schránky udělali jen alias k primárnímu mailboxu a pravidlo že se to ukládá do složky \`archiveD\` (protože \`archive\` je by default zabraná).
 
 ### Todo
 
-Todo alias pouzivam tak, ze kdyz z nejakeho emailu chci udelat task v Todoistu, tak jej jednoduse preposlu. Nemusim si pamatovat generovanou adresu na kterou to mam posilat.
+Todo alias používám tak, že když z nějakého emailu chci udělat task v Todoistu, tak jej jednoduše přepošlu. Nemusím si pamatovat generovanou adresu na kterou to mám posílat.
 
 ### Quick
 
-Alias \`quick@os.com\` mam nasmerovany do slozky \`quick\` v hromadnem uctu, kam si manualne preposilam jizdenky, letenky, ... vsechny emaily co potrebuju mit rychle k dispozici.
+Alias \`quick@os.com\` mám nasměrovaný do složky \`quick\` v hromadném účtu, kam si manuálně přeposílám jízdenky, letenky, ... všechny emaily co potřebuju mít rychle k dispozici.
 `}
   />
 );
