@@ -1,3 +1,17 @@
+- id: port-forward-using-iptables
+  question: Port forward using iptables
+  answer: |
+    ```
+    PORT_FROM=443
+    PORT_TO=8443
+    iptables -t nat -A PREROUTING -p tcp --dport $PORT_FROM -j REDIRECT --to-ports $PORT_TO
+    iptables -t nat -A OUTPUT -p tcp --dport $PORT_FROM -o lo -j REDIRECT --to-port $PORT_TO
+    ```
+
+    First rule forward packets from outside, second rule forwarl loopback.
+
+    Zdroj: https://blog.frickjack.com/2012/01/iptables-nat-port-forward-443-https-to.html
+
 - id: add-extra-sans-to-rke-kubernetes-cluster
   question: Add extra SANS to RKE Kuberneres cluster
   answer: |
