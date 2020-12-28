@@ -50,7 +50,7 @@ const LandingPage = props => (
       <Translate
         lang={props.site.lang}
         en="Together, we will reduce IT costs, solve the technological debt and prepare your IT architecture for rapid scaling."
-        cs="Snížime spolu náklady na IT, vyřešíme technologický dluh a připravíme Vaši IT architekturu na rapidní škálování."
+        cs="Snížíme spolu náklady na IT, vyřešíme technologický dluh a připravíme Vaši IT architekturu na rapidní škálování."
       />
     }
     findOutMore={

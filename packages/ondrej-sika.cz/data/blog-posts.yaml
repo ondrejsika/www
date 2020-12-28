@@ -30,90 +30,91 @@
 
 - id: zhodnoceni-roku-2020-a-plany-na-rok-2021
   hidden: true
-  title: "Zhodnoceni roku 2020 a plany na rok 2021"
+  title: "Zhodnocení roku 2020 a plány na rok 2021"
   date: 1. 1. 2021
   tags: []
   perex: |
-    Záznanam ze osmého DevOps live streamu na téma Konfigurace Alertmanageru
+    Další úspěšný a náročný rok je za mnou. Bez Vás bych to však nedokázal. Díky. A co se v roce 2020 dělo?
+
   content: |
     ## Rok 2020
 
-    Dalsi uspesny a narocny rok je za mnou. Bez Vas bych to vsak nedokazal. Diky. A co se v roce 2020 delo?
+    Další úspěšný a náročný rok je za mnou. Bez Vás bych to však nedokázal. Díky. A co se v roce 2020 dělo?
 
-    - Nove kurzy
+    - Nové kurzy
     - DevOps Live
     - Implementace DevOps
 
-    #### Nove kurzy 2020
+    #### Nové kurzy 2020
 
-    Minuly rok jsem ke svym populrnim skoleni hlavne Gitlab CI, Dockeru, Kubernetes a Terraformu pridal dalsi a rozsiril jsem nabidku kurzu tak, ze pokryvaji celou DevOps pipeline.
+    Minulý rok jsem ke svým populárním školením Gitlab CI, Dockeru, Kubernetes a Terraformu přidal dalších 5 a rozšířil jsem nabídku kurzu tak, že pokrývají celou DevOps pipeline.
 
-    Moje nove kurzy jsou:
+    Moje nové kurzy jsou:
 
     - [Rancher](/skoleni/rancher) - On-premise Kubernetes
     - [Prometheus Stack (Prometheus, Alertmanager, Grafana)](/skoleni/prometheus) - Nejen cloud native monitoring
     - [Elastic Stack (drive ELK)](/skoleni/elk) - Log management
-    - [DigitalOcean](/skoleni/digitalocean) - Public cloud jednoduse
-    - [Proxmox](/skoleni/proxmox) - Open source virtualizace a on-premise  cloud platforma
+    - [DigitalOcean](/skoleni/digitalocean) - Public cloud jednoduše
+    - [Proxmox](/skoleni/proxmox) - Open source virtualizace a on-premise cloud platforma
 
-    Pokud mate zajem o nejake skoleni nebo jen dotaz, napiste mi na <ondrej@sika.io>.
+    Pokud máte zájem o nějaké školení nebo jen dotaz, napište mi na <ondrej@sika.io>.
 
     #### DevOps Live
 
-    V polovine roku 2020 jsem zacal delat streamt live codingu DevOps Live a k dnesimu dni jsme meli 8 eventu na temata Dockeru, monitoringu, Terraformu, ... Souhrny blog post DevOps live streamu z 2020 je zde: [DevOps Live 2020](/???)
+    V polovině roku 2020 jsem začal dělat streamy live codingu, DevOps Live, a k dnešnímu dni jsme měli 8 eventů na témata Dockeru, monitoringu, Terraformu, a dalších ... Souhrnný blog post DevOps live streamů z 2020 je zde: [DevOps Live 2020](/blog/devops-live-2020/)
 
-    Streamy celkem sledovalo ??? lidi a proto v nich chci pokracovat i do budoucna. Kouknete na temata pro [rok 2020](/devopslive).
+    Streamy celkem sledovalo ??? lidí, co považuju za velký úspěch a proto v nich chci pokračovat i do budoucna. Koukněte na témata pro [rok 2020](/devopslive).
 
     #### Implementace DevOps
 
-    V minulem roce jsem zacal vice pracovat na implementacich DevOps reseni u klientu. Zacali jsme (ja a muj [team](/team)) pracovat na vice dlouhodobych spoluprci a jako firma rosteme. Pokud mate zajem o spolupraci, napiste mi email na <ondrej@sika.io>.
+    V minulém roce jsem začal více pracovat na implementacích DevOps řešení u klientů. Začali jsme (já a můj [team](/team)) pracovat na více dlouhodobých implementacích komplexní DevOps pipeline a jako firma rosteme. Pokud máte zájem o spolupráci, napište mi email na <ondrej@sika.io>.
 
-    ## Plany pro rok 2021
+    ## Plány pro rok 2021
 
-    A co planuji do noveho roku? Je toho hodne, velkou cast projektu jsme zacli v roce 2020 a i drive. Toto nas ted ceka:
+    A co plánuji do nového roku? Je toho hodně, velkou část projektů jsme rozjeli v roce 2020 a i dříve. Teď nás čeká jejich rozvoj:
 
-    - Nove kurzy
+    - Nové kurzy
     - Skoleni.io
-    - Trainera
-    - Meetupty & Community
+    - Trainera.io
+    - Meetupy & Community
     - Devopsaci.cz
 
-    #### Nove Kurzy 2021
+    #### Nové Kurzy 2021
 
-    Planuji kurzy na nove temata. Na techto kurzech pracuji a brzy budou k dispozici (Q1).
+    Plánuji 4 nové kurzy na kterých teď pracuji a které budou brzy k dispozici (Q1).
 
     - Vault - Secret Management
-    - OpenStack (pro vyvojare) - Uvod do spravy infrastruktury v OpenStacku
-    - AWS (Úvod) - Uvod do cloudove platformy AWS
-    - Azure (Úvod) - Uvod do cloudove platformy Azure
+    - OpenStack (pro vývojáře) - Úvod do správy infrastruktury v OpenStacku
+    - AWS (Úvod) - Úvod do cloudové platformy AWS
+    - Azure (Úvod) - Úvod do cloudové platformy Azure
 
-    Zaujali me 2 nove nastroje od HashiCorpu: Boundary a Waypoint. Musim si s nimi udelat nejakou zkusenost a pokud to bude davat smysl, vytvoril bych kurzy i na ne.
+    Zaujali mě 2 nové nástroje od HashiCorpu: Boundary a Waypoint. Musím si je vyzkoušet a pokud to bude dávat smysl, vytvořil bych kurzy i na ně.
 
-    Pokud by Vas kurzy zaujali, dejte vedet.
+    Pokud by Vás kurzy zaujali, dejte vědět.
 
     #### Skoleni.io
 
-    Posledni 3 mesice v roce 2020 jsme pripravovali portal [Skoleni.io](/skoleniio). Skoleni.io je portal, kde muzou freelance lektori nabizet sve IT skoleni a workshopy. Pro firmy je jednodussi hledat skoleni na jednom miste. Velkou inspiraci mi byl portal Na Volne Noze od Roberta Vlacha.
+    Poslední 3 měsíce v roce 2020 jsme připravovali portál [Školení.io](/skoleniio). Školení.io je portál, kde můžou freelance lektoři nabízet své IT školení a workshopy. Pro firmy je jednodušší hledat školení na jednom místě. Velkou inspiraci mi byl portál Na Volné Noze od Roberta Vlacha.
 
-    Portal Skoleni.io spoustime v lednu 2020, na webu uz vsak mame 9 skvelych lektoru a 30+ kurzu. Doufam, ze dalsi budou casem pribyvat.
+    Portál Školení.io spouštíme v lednu 2020, na webu už však máme 9 skvělých lektorů a 30+ kurzů. Doufám, že další budou časem přibývat.
 
-    Pokud chcete nabizet svoje kurzy na portalu Skoleni.io, napiste na <spoluprace@skoleni.io>.
+    Pokud chcete nabízet svoje kurzy na portálu Školení.io, napište na <spoluprace@skoleni.io>.
 
     #### Trainera
 
-    Do ted jsem skolil jako freelancer. A melo to sve vyhody. Vlastne je to ma porad. Velkou vyhodou freelance lektora je to, ze firmy poptavaji primo jeho. Chteji konkretni skoleni od konkretniho cloveka.
+    Do teď jsem školil jako freelancer. A mělo to své výhody. Vlastně je to má pořád. Velkou výhodou freelance lektora je to, že firmy poptávají přímo jeho. Chtějí konkrétní školení od konkrétního člověka.
 
-    Nevyhodou pak je to ze vse musim vyrizovat sam: od domuvy terminu po fakturace. A toho na me uz bylo moc. Zaroven poptavka po nekterych kurzech byla vysoka a muj kalendar se hodne plnil. Rozhodl jsem se rozsirit team a skoleni nabizet i pod brandem Trainera, primarne pro zahranici.
+    Nevýhodou pak je to, že vše musím vyřizovat sám: od domluvy termínu po fakturace. A toho na mě už bylo moc. Zároveň poptávka po některých kurzech byla vysoká a můj kalendář se hodně plnil. Rozhodl jsem se rozšířit team a školení nabízet i pod brandem Trainera, primárně pro zahraničí.
 
-    ##### Nemecko
+    ##### Německo
 
-    Sve skoleni chci expandovat za hranice, konkretne do Nemecka. To co skolim a delam primarne v Cechach a na Slovensku chci posunout smerem na zapad a otevrit prvni trh a to je Nemecko.
+    Své školení chci expandovat za hranice, konkrétně do Německa. To co školím a dělám primárně v Čechách a na Slovensku chci posunout směrem na západ a otevřít první trh a to je Německo.
 
-    Budu moc rad, pokud mi date nejake rady jak na to.
+    Jestli máte někdo zkušenost, budu moc rád, pokud mi dáte rady jak na to.
 
-    #### Meetupty & Community
+    #### Meetupy & Community
 
-    V roce 2020 se moc meetupum a osobnim setkanim nedarilo, doufam ze se to v roce 2021 zlepsi. Ale i tak se mi uz nechce cekat a chci vykopnout meetupy a komunity, ktere pripravujeme. I kdyz budou meetupy ze zacatku online, nemuzu se dockat, az budou offline face-to-face.
+    V roce 2020 se moc meetupům a osobním setkáním nedařilo, doufám že se to v roce 2021 zlepší. Ale i tak se mi už nechce čekat a chci vykopnout meetupy a komunity, které připravujeme. I když budou meetupy ze začátku online, nemůžu se dočkat, až časem přejdeme do offline, face-to-face.
 
     - Vercel Czech Community
     - DigitalOcean Czech Community
@@ -121,35 +122,35 @@
 
     ##### Vercel Czech Community
 
-    Vercel meetupy organizuji spolecne s [Milanem Sulcem](https://sulc.dev) a prvni online meetup uz je za nami. Zaznam meetupu je na webu [vercel.cz](https://vercel.cz).
+    Vercel meetupy organizuji společně s [Milanem Šulcem](https://sulc.dev) a první online meetup už je za námi. Jeho záznam je na webu [vercel.cz](https://vercel.cz).
 
     ##### DigitalOcean Czech Community
 
-    DigitalOcean pouzivam rad a rozhodne v Cechach nejsem jediny, chci se potkavat s dalsimi lidmi a sdilet zkusenosti s timto mensim cloudem. Verim, ze hodne lidem pomuze zlepsit jejich infrastrukturu, ktera obcas stoji na ne uplne kvalitnich poskytovatelich.
+    DigitalOcean používám rád a rozhodně v Čechách nejsem jediný, chci se potkávat s dalšími lidmi a sdílet zkušenosti s tímto menším cloudem. Věřím, že hodně lidem pomůže zlepšit jejich infrastrukturu, která občas stojí na ne úplně kvalitních poskytovatelích.
 
-    Pridejte se na [digitalocean.cz](https://digitalocean.cz)
+    Přidejte se na [digitalocean.cz](https://digitalocean.cz)
 
     ##### Prague HashiCorp User Group
 
-    Prague HashiCorp User Group a meetupy na temata Terraoformu, Valultu, ... a vlastne vsech nastroju HashiCorpu jsem chtel zacit delat minule jaro, bohuzel do toho prisla korona. Kdyz je vsechno online a lidi si zvykly, chci zacit hned.
+    Prague HashiCorp User Group a meetupy na témata Terraformu, Vaultu, ... a vlastně všech nástrojů HashiCorpu jsem chtěl začít dělat minulé jaro, bohužel do toho přišla corona. Protože letos je všechno online a lidé si na to zvykli, chci začít hned.
 
-    Vice informaci na: [hashicorp.cz](https://hashicorp.cz)
+    Více informací na: [hashicorp.cz](https://hashicorp.cz)
 
     #### Devopsaci.cz
 
-    A nejvetsi krok k budovani DevOps komunity v Cechach. Je tu hodne skvelych meetupu jako je Prague Containers, Cloud Native Prague, ... Ale jsou to jen meetupy, ne komunita jako jsou Frontendisti.cz, Backendisti.cz nebo Pehapkari.cz.
+    Je to největší krok k budování DevOps komunity v Čechách. Je tu hodně skvělých meetupu jako je Prague Containers, Cloud Native Prague a další, ale jsou to jen izolované meetupy, ne komunita jako jsou Frontendisti.cz, Backendisti.cz nebo Pehapkari.cz.
 
-    Proto jsem se rozhodl spojit DevOpsaky a zalozit Devopsaci.cz. Vim ze to nebude jednoduche, budu rad za jakoukoliv radu a pomoc. Diky.
+    Proto jsem se rozhodl spojit DevOpsáky a založit Devopsaci.cz. Vím, že to nebude jednoduché, budu rád za jakoukoliv radu a pomoc. Díky.
 
-    Cilem komunity je spojit DevOpsaky do jedne skupiny, kde muzou resit sve problemy, postovat zajimave noviny a vzdelavat se.
+    Cílem komunity je spojit DevOpsaky do jedné skupiny, kde můžou řešit své problémy, postovat zajímavé novinky a vzdělávat se.
 
-    Devopsaci, spojme se na [Devopsaci.cz](https://devopsaci.cz)
+    Devopsáci, spojme se na [Devopsaci.cz](https://devopsaci.cz)
 
     ---
 
-    Pevne verim, ze se situace uklidni a budeme se moci na skolenich potkavat osobne.
+    Pevně věřím, že se v novém roce nepříznivá situace s covidem uklidní a my se budeme moci na školeních nebo na pivu zas potkávat osobně.
 
-    Hodne zdravi a energie do roku 2021,
+    Přeju Vám všem hodně zdraví a energie do roku 2021,
     <br />
     O.
 
@@ -159,22 +160,21 @@
   tags:
     - devopslive
   perex: |
-    Souhrn DevOps live streamu za rok 2020
+    Souhrn DevOps live streamů za rok 2020
   content: |
-    V polovine roku jsem zacal delat kratke livestreamy na temata z DevOps, zhruba kazdych 14 dni. Je konec roku a ja bych chtel shrnout, jak se jim darilo.
+    V polovině roku jsem začal dělat krátké livestreamy na témata z DevOps, pravidelně jednou za 14 dní vždy ve Středu v 19:00. Je konec roku a já bych chtěl shrnout, jak se jim dařilo.
+    Měli jsme jich celkem 8, z toho že 2 vzniktly články na blogu:
 
-    Meli jsme jich celkem 8, z toho ze 2 vzniktly clanky na blogu:
+    - Správa Gitlabu a Githubu pomocí Terraformu - [záznam](https://www.youtube.com/watch?v=2pbU11RoTRQ), [článek](/blog/sprava-gitlabu-pomoci-terraformu/)
+    - Docker & Traefik Proxy - [záznam](https://www.youtube.com/watch?v=C5r8MNys614)
+    - Jednoduchá integrace Gitlab CI a Kubernetes - [záznam](https://www.youtube.com/watch?v=uRc1aFcy7CE)
+    - Úvod do Terraformu - [záznam](https://www.youtube.com/watch?v=jNx0fnw6qP8)
+    - Novinky v Gitlab CI (listopad 2020) - [záznam](https://www.youtube.com/watch?v=vRYvEMiVvTw)
+    - Proč a jak používat Cloudflare - [záznam](https://www.youtube.com/watch?v=6C-Pyn3oTV4)
+    - Docker monitoring pomocí Prométhea a Alertmanageru - [záznam](https://www.youtube.com/watch?v=m3vogisBUxo)
+    - Konfigurace Alertmanageru - [záznam](https://www.youtube.com/watch?v=WBX6bSiZDjo), [článek](/blog/konfigurace-alertmanageru)
 
-    - Správa Gitlabu a Githubu pomocí Terraformu - [zaznam](https://www.youtube.com/watch?v=2pbU11RoTRQ), [clanek](/blog/sprava-gitlabu-pomoci-terraformu/)
-    - Docker & Traefik Proxy  - [zaznam](https://www.youtube.com/watch?v=C5r8MNys614)
-    - Jednoduchá integrace Gitlab CI a Kubernetes  - [zaznam](https://www.youtube.com/watch?v=uRc1aFcy7CE)
-    - Úvod do Terraformu - [zaznam](https://www.youtube.com/watch?v=jNx0fnw6qP8)
-    - Novinky v Gitlab CI (listopad 2020) - [zaznam](https://www.youtube.com/watch?v=vRYvEMiVvTw)
-    - Proč a jak používat Cloudflare - [zaznam](https://www.youtube.com/watch?v=6C-Pyn3oTV4)
-    - Docker monitoring pomocí Promethea a Alertmanageru - [zaznam](https://www.youtube.com/watch?v=m3vogisBUxo)
-    - Konfigurace Alertmanageru - [zaznam](https://www.youtube.com/watch?v=WBX6bSiZDjo), [clankek](/blog/konfigurace-alertmanageru)
-
-    Prumerne bylo na kazdem streamu 20 lidi, coz je super a je to pro me motivace pokracovat i v dalsim roce. Cekaji nas temata:
+    Průměrně bylo na každém streamu 20 lidí, což je super a je to pro mě motivace pokračovat i v dalším roce. Čekají nás témata:
 
     - Úvod do Cloud Initu
     - Kubernetes pomocí RKE (Rancher Kubernetes Engine)
@@ -183,9 +183,9 @@
     - Longhorn - Jednoduchá on-premise storage pro Kubernetes
     - Skaffold - Local Kubernetes Development
 
-    Prihlasit se na stream muzete zde: [ondrej-sika.cz/devopslive](/devopslive)
+    Přihlásit se na stream můžete zde: [ondrej-sika.cz/devopslive](/devopslive)
 
-    Pokud mate napad na zajimave tema, urcite mi dejte vedet na <ondrej@sika.io>.
+    Pokud máte nápad na zajímavé téma, určitě mi dejte vědět na <ondrej@sika.io> a domluvíme se.
 
 - id: konfigurace-alertmanageru
   hidden: true

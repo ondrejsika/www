@@ -8,7 +8,7 @@ const Page = () => (
     markdown={`
 ## O projektu Skoleni.io
 
-Napad na Skoleni.io vznikl jako platforma, kde se mohou naprimo propojovat lektori a firmy hledajici IT skoleni.
+Nápad na Školení.io vznikl jako platforma, kde se mohou napřímo propojovat lektoři a firmy hledající IT školení.
 `}
   />
 );
