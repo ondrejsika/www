@@ -38,12 +38,15 @@ const ArticleLayout = props => {
       />
       <Background light_grey style={{ padding: "2em 0" }}>
         <div className="container article-body">
-          <BlogBox>
-            {props.children}
+          {props.noBlogBoxContent}
+          {!props.noBlogBoxContent && (
+            <BlogBox>
+              {props.children}
 
-            {props.markdown && <Markdown source={props.markdown} />}
-            {props.after && props.after}
-          </BlogBox>
+              {props.markdown && <Markdown source={props.markdown} />}
+              {props.after && props.after}
+            </BlogBox>
+          )}
           {!props.hideFooter && (
             <BlogBox>
               <BlogPostFooter
