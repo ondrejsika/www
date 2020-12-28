@@ -1,2 +1,6 @@
+- date: 28. 12. 2020
+  message: |
+    FAQ: Jak pridat extra SANs (Subject Alternate Names) do RKE Kubernetes clusteru <https://ondrej-sika.cz/faq/jak-pridat-extra-sans-do-rke-kubernetes-clusteru/>
+
 - date: 30. 5. 2020
   message: Longhorn (Kubernetes Storage) is GA v1.0.0 <https://github.com/longhorn/longhorn/releases/tag/v1.0.0>
