@@ -153,6 +153,19 @@
     <br />
     O.
 
+- id: konfigurace-alertmanageru
+  hidden: true
+  title: "Konfigurace Alert Manageru"
+  date: 26. 12. 2020
+  ad: prometheus
+  tags:
+    - prometheus
+    - alertmanager
+  perex: |
+    Alert Manager je komponenta Prometheus monitoring stacku, ktera se stara o posilani alertu. V claku ukazu jak nastavit Alert Manager tak, aby spravne notifikace chodili spravnym teamum, jak seskupovat alerty a jak posilat jen to dulezite, kdyz vsechno pada.
+  content: |
+    Alert Manager je komponenta Prometheus monitoring stacku, ktera se stara o posilani alertu. V claku ukazu jak nastavit Alert Manager tak, aby spravne notifikace chodili spravnym teamum, jak seskupovat alerty a jak posilat jen to dulezite, kdyz vsechno pada.
+
 - id: zaznam-devops-live-8-konfigurace-alertmanageru
   title: "Záznam DevOps Live #8: Konfigurace Alertmanageru"
   date: 22. 12. 2020
