@@ -45,7 +45,8 @@ const Sessions = props => {
             <Col md={11}>
               <div onClick={handleShow}>
                 <TextBeige className="pt-4">
-                  {props.event.date} od {props.event.time}
+                  {props.event.date}{" "}
+                  {props.event.time && `od ${props.event.time}`}
                 </TextBeige>
                 <SectionHeader>{props.event.title}</SectionHeader>
               </div>
@@ -68,7 +69,8 @@ const Sessions = props => {
               <Col md={11}>
                 <div onClick={handleShow}>
                   <TextBeige className="pt-4">
-                    {props.event.date} od {props.event.time}
+                    {props.event.date}{" "}
+                    {props.event.time && `od ${props.event.time}`}
                   </TextBeige>
                   <SectionHeader>{props.event.title}</SectionHeader>
                 </div>
