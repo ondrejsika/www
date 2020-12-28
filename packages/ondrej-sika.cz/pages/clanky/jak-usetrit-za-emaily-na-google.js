@@ -3,21 +3,21 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
   <Article
-    title="Jak usetrit za emaily na Google"
+    title="Jak ušetřit za emaily na Google"
     markdown={`
-Pouzivam Google Workspace (drive G Suite), protoze je to stabilni poskytovatel u ktereho jsem si jisty ze me emaily dojdou a ze kdyz bude jakykoliv problem, kriticka infrastruktura jako email bude fungovat.
 
-Email na Google ovsem neni nejlevnejsi. Pokud potrebujete jeden ucet, cena 5 USD/mo je prakticky zdarma, pokud potrebujete uctu 50, najednou je cena 50 * 5 USD/mo = 250 USD/mo coz uz neni nejlevnejsi.
+Používám Google Workspace (dříve G Suite), protože je to stabilní poskytovatel u kterého jsem si jistý že mě emaily dojdou a že když bude jakýkoliv problém, kritická infrastruktura jako email bude fungovat.
+Email na Google ovšem není nejlevnější. Pokud potřebujete jeden účet, cena 5 USD/mo je prakticky zdarma, pokud potřebujete účtů 50, najednou je cena 50 * 5 USD/mo = 250 USD/mo což už není nejlevnější.
 
-Ukazu Vam reseni, ktere pouzivam.
+Ukážu Vám řešení, které používám.
 
-Pouzivam 2 domeny: \`sikalabs.com\` a \`sikalabs.cz\`. Domena \`sikalabs.com\` je na Google a \`sikalabs.cz\` na mem serveru ([poste.io](https://poste.io)).
+Používám 2 domény: \`sikalabs.com\` a \`sikalabs.cz\`. Doména \`sikalabs.com\` je na Google a \`sikalabs.cz\` na mém serveru ([poste.io](https://poste.io)).
 
-Primarni domenu na Googlu pouzivam pro klicova a kriticke ucty, svuj server potom na ty ostatni. Na mem serveru me netrapi pocet uctu a sprava je pro me vyrazne jednodussi.
+Primární doménu na Googlu používám pro klíčové a kritické účty, svůj server potom na ty ostatní. Na mém serveru mě netrápí počet účtů a správa je pro mě výrazně jednodušší.
 
-Ucty pro klicove lidi a sluzy mam na Google, napriklad \`ondrej@\`, \`sales@\`, ... a platim za ne. Naopak ostatni veci mam na svem serveru, napriklad \`externalteammember@\`, \`twitter@\`, \`invoice@\`, ...
+Účty pro klíčové lidi a služby mám na Google, například \`ondrej@\`, \`sales@\`, ... a platím za ně. Naopak ostatní věci mám na svém serveru, například \`externalteammember@\`, \`twitter@\`, \`invoice@\`, ...
 
-Pro ucty, ktere existuji na primarni domene a ne na te sekundarni mam nastavene preposilani, kdyz nekdo napise na \`ondrej@sikalabs.cz\`, email se automaticky preposle na \`ondrej@sikalabs.com\`.
+Pro účty, které existují na primární doméně a ne na té sekundární mám nastavené přeposílání, když někdo napíše na \`ondrej@sikalabs.cz\`, email se automaticky přepošle na \`ondrej@sikalabs.com\`.
 `}
   />
 );

@@ -197,7 +197,7 @@
   about: |
     Longhorn je storage plugin pro Kubernetes, který vám umožní používat Persistent Volumes na vlastním Kubernetes.
   points: |
-    - Rychlý úvod storage v Kubernetes
+    - Rychlý úvod - storage v Kubernetes
     - Instalace a konfigurace Longhornu
     - Používaní storage
     - Backup & restore
@@ -213,7 +213,7 @@
   about: |
     Skaffold se stará o build, push a deploy vaší aplikace. Vy se věnujte tomu, na čem záleží nejvíce - psaní kódu.
   points: |
-    - Co je Skaffold
+    - Co je to Skaffold
     - Instalace a konfigurace
     - Vývoj s pomocí Skaffold
     - Skaffold a Helm
@@ -224,15 +224,16 @@
   eventbrite:
   active: true
   title: GoReleaser a CI
-  # date:
-  # time:
+  date: 7. 4. 2021
+  time: "19:00"
   about: |
-    GoReleaser je nastroj, ktery velmi zjednodusuje distribuci Go binarek. Ukazeme si jak jej integrovat s Gitlab CI a Github Actions.
+    GoReleaser je nástroj, který velmi zjednodušuje distribuci Go binárek. Ukážeme si jak jej integrovat s Gitlab CI a Github Actions.
   points: |
-    - Rychly uvod co je GoReleaser
+    - Rychlý úvod - co je to GoReleaser
     - Konfigurace GoReleaseru
     - Integrace s Gitlabem
     - Integrace s Githubem
   technologies:
     - gitlab
     - github
+    - goreleaser

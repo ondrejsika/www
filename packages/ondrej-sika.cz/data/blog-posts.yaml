@@ -47,7 +47,7 @@
 
     #### Nové kurzy 2020
 
-    Minulý rok jsem ke svým populárním školením Gitlab CI, Dockeru, Kubernetes a Terraformu přidal dalších 5 a rozšířil jsem nabídku kurzu tak, že pokrývají celou DevOps pipeline.
+    Minulý rok jsem ke svým populárním školením Gitlab CI, Dockeru, Kubernetes a Terraformu přidal dalších 5 a rozšířil jsem nabídku kurzů tak, že pokrývají celou DevOps pipeline.
 
     Moje nové kurzy jsou:
 
@@ -163,7 +163,7 @@
     Souhrn DevOps live streamů za rok 2020
   content: |
     V polovině roku jsem začal dělat krátké livestreamy na témata z DevOps, pravidelně jednou za 14 dní vždy ve Středu v 19:00. Je konec roku a já bych chtěl shrnout, jak se jim dařilo.
-    Měli jsme jich celkem 8, z toho že 2 vzniktly články na blogu:
+    Měli jsme jich celkem 8, z toho vznikly i 2 rozšiřující články na blogu:
 
     - Správa Gitlabu a Githubu pomocí Terraformu - [záznam](https://www.youtube.com/watch?v=2pbU11RoTRQ), [článek](/blog/sprava-gitlabu-pomoci-terraformu/)
     - Docker & Traefik Proxy - [záznam](https://www.youtube.com/watch?v=C5r8MNys614)
@@ -174,7 +174,7 @@
     - Docker monitoring pomocí Prométhea a Alertmanageru - [záznam](https://www.youtube.com/watch?v=m3vogisBUxo)
     - Konfigurace Alertmanageru - [záznam](https://www.youtube.com/watch?v=WBX6bSiZDjo), [článek](/blog/konfigurace-alertmanageru)
 
-    Průměrně bylo na každém streamu 20 lidí, což je super a je to pro mě motivace pokračovat i v dalším roce. Čekají nás témata:
+    Sledovanost streamů byla skvělá, nečekal jsem zájem 20-30 začínajících programátorů ale i IT expertů na jednu session, což mě mile překvapilo. Je to super a pro mě je to skvělá motivace pokračovat i v dalším roce. Nenechte si ujít další zajímavá témata:
 
     - Úvod do Cloud Initu
     - Kubernetes pomocí RKE (Rancher Kubernetes Engine)
@@ -182,6 +182,7 @@
     - Vlastní Terraform Provider
     - Longhorn - Jednoduchá on-premise storage pro Kubernetes
     - Skaffold - Local Kubernetes Development
+    - GoReleaser a CI
 
     Přihlásit se na stream můžete zde: [ondrej-sika.cz/devopslive](/devopslive)
 
@@ -196,9 +197,10 @@
     - prometheus
     - alertmanager
   perex: |
-    Alert Manager je komponenta Prometheus monitoring stacku, ktera se stara o posilani alertu. V claku ukazu jak nastavit Alert Manager tak, aby spravne notifikace chodili spravnym teamum, jak seskupovat alerty a jak posilat jen to dulezite, kdyz vsechno pada.
+    Alert Manager je komponenta Prometheus monitoring stacku, která se stará o posílání alertů. V článku ukážu jak nastavit Alert Manager tak, aby se správné notifikace odesílali správným teamům, jak seskupovat alerty a jak posílat jen to důležité, když všechno padá.
   content: |
-    Alert Manager je komponenta Prometheus monitoring stacku, ktera se stara o posilani alertu. V claku ukazu jak nastavit Alert Manager tak, aby spravne notifikace chodili spravnym teamum, jak seskupovat alerty a jak posilat jen to dulezite, kdyz vsechno pada.
+    Alert Manager je komponenta Prometheus monitoring stacku, která se stará o posílání alertů. V článku ukážu jak nastavit Alert Manager tak, aby se správné notifikace odesílali správným teamům, jak seskupovat alerty a jak posílat jen to důležité, když všechno padá.
+
 
 - id: zaznam-devops-live-8-konfigurace-alertmanageru
   title: "Záznam DevOps Live #8: Konfigurace Alertmanageru"
@@ -1165,7 +1167,7 @@
 
     Založil jsem firmu Trainera s.r.o., pod kterou začínáme dělat školení pro větší společnosti a ve větším teamu. Pořád zůstávám jako freelancer a pořád Vám jsem schopný konzultovat a školit DevOps sám, ale mám po svých kurzech větší poptávku než stíhám obsloužit a proto jsem založil firmu abych nemusel výrazně zdražit a zaměřit se jen na banky a velké korporace. Rozšiřují team a snažím se ve více lidech školit ve stejné úrovni v jaké jsem školil do teď. Držte mi palce.
 
-    Můžete se podívat na nabídku kurzu od [Trainera.io](http://trainera.io), ale je to zatím de facto to co nabízím já. Pokud chcete spolupracovat výhradně se mnou, nic se pro Vás nemění.
+    Můžete se podívat na nabídku kurzů od [Trainera.io](http://trainera.io), ale je to zatím de facto to co nabízím já. Pokud chcete spolupracovat výhradně se mnou, nic se pro Vás nemění.
 
     ## Meetupy
 

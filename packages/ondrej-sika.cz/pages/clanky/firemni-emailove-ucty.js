@@ -3,67 +3,74 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
   <Article
-    title="Firemni emailove ucty"
+    title="Firemní emailové účty"
     markdown={`
-V clanku [Jak pouzivam email](/clanky/jak-pouzivam-email/) jsem popsal jak pouzivam email soukrome. Ted Vam ukazu jak jej pouzivam ve firme.
+    V článku [Jak používám email](/clanky/jak-pouzivam-email/) jsem popsal jak používám email soukromě. Teď Vám ukážu jak jej používám ve firmě.
+    Používám 2 domény: \`sl.com\` pro primární emaily (na Google Workspace) a \`sl.io\` pro méně důležité účty ([Poste.io](https://poste.io) na svém serveru). Více jsem o tom psal v článku [Jak ušetřit za emaily na Google](/clanky/jak-usetrit-za-emaily-na-google). Zde pro zjednodušení používám ukázky jen s \`sl.com\`.
 
-Pouzivam 2 domeny: \`sl.com\` pro primarni emaily (na Google Workspace) a \`sl.io\` pro ne tak dulezite ucty ([Poste.io](https://poste.io) na svem serveru). Vice jsem o tom psal v clanku [Jak usetrit za emaily na Google](/clanky/jak-usetrit-za-emaily-na-google). Zde pro zjednoduseni pouzivam ukazky jen s \`sl.com\`.
+    ### Lidé
 
-### Lide
+    - \`ondrej@sl.com\` - Veřejný email core lidí (komunikace se zákazníky, ...). Některé jsou napojené do Pipedrive.
 
-- \`ondrej@sl.com\` - Verejny email core lidi (komunikace se zakazniky, ...). Nektere jsou napojene do Pipedrive.
-- \`joedoe@sl.com\` - Verejny email ostatnich
-- \`os@sl.com\` - Interni email (komunikace interne v teamu)
+    - \`joedoe@sl.com\` - Veřejný email ostatních kolegů
 
-Klicovi lide (C level, founderi, ...) maji verejny email pouze jmeno, ostatni jmeno a prijmeni. Tento verejny email ma nekdo (napriklad ja) napojeny do Pipedrive, coz je CRM a k emailu ma pristup asistentka, sales, ... Tento email ma jen ten, kdo potrebuje verejne komunikovat za firmu.
+    - \`os@sl.com\` - Interní email (komunikace interně v teamu)
 
-Jinak kazdy clen teamu (zamestnanec) ma kratky email \`jp@...\` nebo \`jpr@...\` pokud nastal konflikt. Tyto emaily jsou pro vnitrni pouzivani, registraci firemnich sluzeb, ... Tyto emaily jsou osobni a nikdo je mezi sebou nesdili. Pokud se dava email klientum nebo ven, tak v te prvni forme.
+    Klíčoví lidé (C level, foundeři, ...) mají veřejný email pouze jméno, ostatní jméno a příjmení. Tento veřejný email má někdo (například já) napojený do Pipedrive, což je CRM a k emailu má přístup asistentka, sales, ... Tento email má jen ten, kdo potřebuje veřejně komunikovat za firmu.
 
-### Web, produkty a sluzby
+    Jinak každý člen teamu (zaměstnanec) má krátký email \`jp@...\` nebo \`jpr@...\` pokud nastal konflikt. Tyto emaily jsou pro vnitřní používání, registraci firemních služeb, ... Tyto emaily jsou osobní a nikdo je mezi sebou nesdílí. Pokud se dává email klientům nebo ven, tak v té první formě.
 
-Delam ruzne veci, nabizim ruzne produkty a sluzby, a o kazdou se stara nekdo jiny nebo jiny team. Kazdy produkt, na kterem spolupracuje vice lidi ma svuj emailovy ucet, tak aby meli predled co je v jakem stavu. Nektere z techto uctu jsou take v Pipedrive.
+    ### Web, produkty a služby
 
-- \`hello@sl.com\` - Genericky email, ktery je na webu. Libi se mi to vice nez \`info@sl.com\`
-- \`training@sl.com\` - Velka cast meho byznysu jsou skoleni, veci kolem nich chci resit na jednom miste
-- \`sales@sl.com\` - Sales email, ktery je napojeny do Pipedrive
-- \`community@sl.com\` - Ucet pro komunikaci kolem meetupu, konferenci, ..., ktere poradame
+    Dělám různé věci, nabízím různé produkty a služby, a o každou se stará někdo jiný nebo jiný team. Každý produkt, na kterém spolupracuje více lidí má svůj emailový účet, tak aby měli přehled co je v jakém stavu. Některé z těchto účtu jsou také v Pipedrive.
 
-### Monitoring
+    - \`hello@sl.com\` - Generický email, který je na webu. Líbí se mi to více než \`info@sl.com\`
 
-Jsme IT & DevOps firma, mame na starosti produkcni systemy nase i klientu. Proto mame celkem hezky vyresene emaily v monitoring systemu.
+    - \`training@sl.com\` - Velká část mého byznysu jsou školení, věci kolem nich chci řešit na jednom místě
 
-- \`mon@sl.com\` - Monitoring kritickych produkcnich systemu
-- \`mon-infra@...\`, \`mon-app1@...\`, \`mon-client1@...\` - Monitoring emaily pro ruzne teamy
-- \`mon-all@sl.com\` - Archiv pro vsechny monitoring eventy (forward z ostatnich monitoring uctu)
+    - \`sales@sl.com\` - Sales email, který je napojený do Pipedrive
 
-### Support
+    - \`community@sl.com\` - Účet pro komunikaci kolem meetupů a konferencí které pořádáme
 
-Monitoring emaily generuje monitoring, support emaily chodi od lidi. Support emaily pouze preposilame do Zendesku, kde je spravujeme.
+    ### Monitoring
 
-- \`support@sl.com\` - Hromadny support email, ktery smeruje do Zendesku
-- \`joe-support@sl.com\` - Joe's email pro support system u klientu. Typicky jen alias k internimu emailu.
+    Jsme IT & DevOps firma, máme na starosti produkční systémy naše i klientů. Proto máme celkem hezky vyřešené emaily v monitoring systému.
 
-### Accounts
+    - \`mon@sl.com\` - Monitoring kritických produkčních systému
 
-Pokud potrebujeme registrovat globalne nejakou sluzbu jako je AWS, Twitter nebo Cloudflare, registrujeme to na \`accounts...\`
+    - \`mon-infra@...\`, \`mon-app1@...\`, \`mon-client1@...\` - Monitoring emaily pro různé teamy
 
-- \`accounts@sl.com\` - Email pro registraci ruznych sluzeb
-- \`accounts-aws@...\`, \`accounts-twitter@...\`, ... - Email pro konkretni dulezitou sluzbu, napriklad AWS, Twitteru
+    - \`mon-all@sl.com\` - Archív pro všechny monitoring eventy (forward z ostatních monitoring účtu)
 
-Mame jeden globalni \`accounts@sl.com\` kam registrujeme vsechny sluzby, ke kterym muze mit pristup operations team (COO + assistentka).
+    ### Support
 
-Pro sluzby kde to neni mozne, napriklad Cloudflare (domeny), AWS (kriticka infrastruktura), vytvarime vlastni \`accounts-...@...\` a smerujeme to ke konkretnim lidem. Napriklad AWS na CEO + CTO, Twitter na C lever a team marketingu, ...
+    Monitoring emaily generuje monitoring, support emaily chodí od lidí. Support emaily pouze přeposíláme do Zendesku, kde je spravujeme.
 
-### Client's Accounts
+    - \`support@sl.com\` - Hromadný support email, který směřuje do Zendesku
 
-Pokud potebuji pro nektereho klienta zalozit ucet na nejake sluzbe (napriklad Cloudflare), vytvorim pro to specialni email ucet.
+    - \`joe-support@sl.com\` - Joe's email pro support systém u klientů. Typický jen alias k internímu emailu.
 
-- \`accounts-client1-aws@sl.com\` - Email pro klientovo AWS
+    ### Accounts
 
-### Maildev
+    Pokud potřebujeme registrovat globálně nějakou službu jako je AWS, Twitter nebo Cloudflare, registrujeme to na \`accounts...\`
 
-Stejne jako pouzivam soukromy Maildev, mam nastaveny i firemni na domene \`all.os.com\`, ktery zahrnuje emaily \`*@all.sl.com\` (\`foo@all.sl.com\`, \`bar@all.sl.com\`, ...).
+    - \`accounts@sl.com\` - Email pro registraci různých služeb
 
+    - \`accounts-aws@...\`, \`accounts-twitter@...\`, ... - Email pro konkrétní důležitou službu, například AWS, Twitteru
+
+    Máme jeden globální \`accounts@sl.com\` kam registrujeme všechny služby, ke kterým může mít přístup operations team (COO + assistentka).
+
+    Pro služby kde to není možné, například Cloudflare (domény), AWS (kritická infrastruktura), vytváříme vlastní \`accounts-...@...\` a směřujeme to ke konkrétním lidem. Například AWS na CEO + CTO, Twitter na C level a team marketingu, ...
+
+    ### Client's Accounts
+
+    Pokud potřebuji pro některého klienta založit účet na nějaké službě (například Cloudflare), vytvořím pro to speciální email účet.
+
+    - \`accounts-client1-aws@sl.com\` - Email pro klientovo AWS
+
+    ### Maildev
+
+    Stejně jako používám soukromý Maildev, mám nastavený i firemní na doméně \`all.os.com\`, který zahrnuje emaily \`*@all.sl.com\` (\`foo@all.sl.com\`, \`bar@all.sl.com\`, ...).
 `}
   />
 );
