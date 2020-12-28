@@ -153,6 +153,40 @@
     <br />
     O.
 
+- id: devops-live-2020
+  title: "DevOps Live 2020"
+  date: 28. 12. 2020
+  tags:
+    - devopslive
+  perex: |
+    Souhrn DevOps live streamu za rok 2020
+  content: |
+    V polovine roku jsem zacal delat kratke livestreamy na temata z DevOps, zhruba kazdych 14 dni. Je konec roku a ja bych chtel shrnout, jak se jim darilo.
+
+    Meli jsme jich celkem 8, z toho ze 2 vzniktly clanky na blogu:
+
+    - Správa Gitlabu a Githubu pomocí Terraformu - [zaznam](https://www.youtube.com/watch?v=2pbU11RoTRQ), [clanek](/blog/sprava-gitlabu-pomoci-terraformu/)
+    - Docker & Traefik Proxy  - [zaznam](https://www.youtube.com/watch?v=C5r8MNys614)
+    - Jednoduchá integrace Gitlab CI a Kubernetes  - [zaznam](https://www.youtube.com/watch?v=uRc1aFcy7CE)
+    - Úvod do Terraformu - [zaznam](https://www.youtube.com/watch?v=jNx0fnw6qP8)
+    - Novinky v Gitlab CI (listopad 2020) - [zaznam](https://www.youtube.com/watch?v=vRYvEMiVvTw)
+    - Proč a jak používat Cloudflare - [zaznam](https://www.youtube.com/watch?v=6C-Pyn3oTV4)
+    - Docker monitoring pomocí Promethea a Alertmanageru - [zaznam](https://www.youtube.com/watch?v=m3vogisBUxo)
+    - Konfigurace Alertmanageru - [zaznam](https://www.youtube.com/watch?v=WBX6bSiZDjo), [clankek](/blog/konfigurace-alertmanageru)
+
+    Prumerne bylo na kazdem streamu 20 lidi, coz je super a je to pro me motivace pokracovat i v dalsim roce. Cekaji nas temata:
+
+    - Úvod do Cloud Initu
+    - Kubernetes pomocí RKE (Rancher Kubernetes Engine)
+    - Úvod do Github Actions
+    - Vlastní Terraform Provider
+    - Longhorn - Jednoduchá on-premise storage pro Kubernetes
+    - Skaffold - Local Kubernetes Development
+
+    Prihlasit se na stream muzete zde: [ondrej-sika.cz/devopslive](/devopslive)
+
+    Pokud mate napad na zajimave tema, urcite mi dejte vedet na <ondrej@sika.io>.
+
 - id: konfigurace-alertmanageru
   hidden: true
   title: "Konfigurace Alert Manageru"
