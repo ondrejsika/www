@@ -192,7 +192,7 @@
   eventbrite:
   active: true
   title: Longhorn - Jednoduchá on-premise storage pro Kubernetes
-  date: 17. 3. 2021
+  date: 10. 3. 2021
   time: "19:00"
   about: |
     Longhorn je storage plugin pro Kubernetes, který vám umožní používat Persistent Volumes na vlastním Kubernetes.
@@ -208,14 +208,14 @@
   eventbrite:
   active: true
   title: Skaffold - Local Kubernetes Development
-  date: 31. 3. 2021
+  date: 24. 3. 2021
   time: "19:00"
   about: |
-    Skaffold se stara o build, push a deploy vasi aplikace. Vy se venujte tomu, na cem zavisi nejvice - psani kodu.
+    Skaffold se stará o build, push a deploy vaší aplikace. Vy se věnujte tomu, na čem záleží nejvíce - psaní kódu.
   points: |
     - Co je Skaffold
     - Instalace a konfigurace
-    - Vyvoj s pomoci Skaffold
+    - Vývoj s pomocí Skaffold
     - Skaffold a Helm
   technologies:
     - kubernetes
