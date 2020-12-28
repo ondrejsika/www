@@ -77,6 +77,19 @@ module.exports = {
           query: { id: news.id }
         };
       });
+
+      // remove default news page render (without session)
+      delete defaultPathMap["/faq/[id]"];
+
+      var faq_list = yaml.safeLoad(
+        fs.readFileSync("../data/faq-cs.yml", "utf8")
+      );
+      faq_list.forEach(function(faq) {
+        defaultPathMap[`/faq/${faq.id}`] = {
+          page: "/faq/[id]",
+          query: { id: faq.id }
+        };
+      });
     } catch (e) {
       console.log(e);
     }
