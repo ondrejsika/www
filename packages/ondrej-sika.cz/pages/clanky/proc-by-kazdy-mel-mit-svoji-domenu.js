@@ -4,7 +4,7 @@ export default () => (
   <Article
     title="Proc by kazdy mel mit svoji domenu"
     markdown={`
-Domena je základ pro osobní brand a svobodu online. O emailu na vlastní doméně jsem napsal článek [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene).
+Doména je základ pro osobní brand a svobodu online. O emailu na vlastní doméně jsem napsal článek [Proč mít email na vlastní doméně](/clanky/proc-mit-email-na-vlastni-domene).
 
 ### Jak si vybrat doménu anebo domény
 
@@ -25,7 +25,7 @@ Pokud je možnost koupit doménu \`prijmeni.com\` a i \`jmenoprijmeni.com\`, kup
 
 Stejně to platí i pokud máte možnost koupit \`.com\` i \`.cz\`. Ostatní kombinace asi nemá smysl kupovat dohromady.
 
-### Dalsi domény, pokud jsou všechny předchozí obsazené.
+### Další domény, pokud jsou všechny předchozí obsazené.
 
 Pokud je všechno obsazené, můžte si vybrat z těchto možností:
 
