@@ -1,0 +1,16 @@
+- id: add-extra-sans-to-rke-kubernetes-cluster
+  question: Add extra SANS to RKE Kuberneres cluster
+  answer: |
+    Add to `cluster.yml` this:
+
+    ```
+    authentication:
+      strategy: x509
+      sans:
+        # Extra IP
+        - "1.1.1.1"
+        # Extra Name
+        - "k8s.example.com"
+    ```
+
+    and run `rke up` to apply

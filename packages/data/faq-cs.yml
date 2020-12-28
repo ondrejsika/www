@@ -1,0 +1,16 @@
+- id: jak-pridat-extra-sans-do-rke-kubernetes-clusteru
+  question: Jak pridat extra SANs do RKE Kubernetes clusteru
+  answer: |
+    Pridejte do `cluster.yml`:
+
+    ```
+    authentication:
+      strategy: x509
+      sans:
+        # Extra IP
+        - "1.1.1.1"
+        # Extra Name
+        - "k8s.example.com"
+    ```
+
+    A puste `rke up` pro aplikaci zmen

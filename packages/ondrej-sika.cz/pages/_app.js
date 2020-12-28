@@ -57,7 +57,8 @@ const Navbar = (
           ["ČLÁNKY (RŮZNÉ)", "/clanky"],
           ["WEEKNOTES", "/blog/tag/weeknotes"],
           ["REPOZITÁŘE", "/repozitare"],
-          ["RESOURCES", "/resources"]
+          ["RESOURCES", "/resources"],
+          ["FAQ", "/faq"]
         ]
       ],
       ["KONTAKT", "/kontakt"]
