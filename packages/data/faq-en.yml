@@ -1,3 +1,14 @@
+- id: longhorn-on-centosu
+  question: Longhorn on CentOS
+  answer: |
+    If you want to use [Longhorn](https://longhorn.io) storage on Kuberetes running on CentOS, you have to install `iscsi-initiator-utils`.
+
+    ```
+    yum install iscsi-initiator-utils -y
+    ```
+
+    More at: https://rancher.com/docs/rancher/v2.x/en/cluster-admin/volumes-and-storage/iscsi-volumes/
+
 - id: port-forward-using-iptables
   question: Port forward using iptables
   answer: |
