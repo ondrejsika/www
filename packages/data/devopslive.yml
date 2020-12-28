@@ -220,3 +220,19 @@
   technologies:
     - kubernetes
     - skaffold
+- id: goreleaser-a-ci
+  eventbrite:
+  active: true
+  title: GoReleaser a CI
+  # date:
+  # time:
+  about: |
+    GoReleaser je nastroj, ktery velmi zjednodusuje distribuci Go binarek. Ukazeme si jak jej integrovat s Gitlab CI a Github Actions.
+  points: |
+    - Rychly uvod co je GoReleaser
+    - Konfigurace GoReleaseru
+    - Integrace s Gitlabem
+    - Integrace s Githubem
+  technologies:
+    - gitlab
+    - github
