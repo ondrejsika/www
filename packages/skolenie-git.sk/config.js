@@ -1,4 +1,4 @@
-import logo from "@app/data/pictures/courses/docker-w.svg";
+import logo from "@app/data/pictures/courses/git-w.svg";
 
 const site = {
   name: "skolenie-git.sk",
