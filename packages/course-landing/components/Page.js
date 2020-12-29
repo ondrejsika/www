@@ -1,8 +1,9 @@
 import React from "react";
+// import styled from "styled-components";
+
 import Header from "@app/course-landing/components/Header";
 import ButtonOutline from "@app/course-landing/components/ButtonOutline";
 import Bar from "@app/course-landing/components/Bar";
-import HeaderLink from "@app/course-landing/components/HeaderLink";
 import TextFrame from "@app/course-landing/components/TextFrame";
 import MyClients from "@app/course-landing/components/MyClients";
 import ThreeCol from "@app/course-landing/components/ThreeCol";
@@ -18,6 +19,7 @@ import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 
 import courses_file from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
+import Button from "@app/ondrejsika-theme/components/Button";
 
 const Page = props => {
   let site = props.site;
@@ -59,7 +61,7 @@ const Page = props => {
         byUrl={`https://ondrej-sika.cz/?x_source=${site.name}`}
         logoUrl={site.x_logo}
       >
-        <HeaderLink url={site.x_inquiry_url}>
+        <Button href={site.x_inquiry_url} type="outline-secondary">
           <Translate
             lang={site.lang}
             cs="Nezávazně poptat školení"
@@ -67,8 +69,10 @@ const Page = props => {
             de="Ask for the training"
             en="Ask for the training"
           />
-        </HeaderLink>
-        <HeaderLink url={site.x_contact_link}>
+        </Button>
+        <br />
+        <br />
+        <Button href={site.x_contact_link} type="outline-secondary">
           <Translate
             lang={site.lang}
             cs="Kontaktovat"
@@ -76,7 +80,7 @@ const Page = props => {
             de="Contact me"
             en="Contact me"
           />
-        </HeaderLink>
+        </Button>
       </Header>
       <div className="container">
         <h2>
