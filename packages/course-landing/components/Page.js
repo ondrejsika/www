@@ -1,9 +1,12 @@
 import React from "react";
-// import styled from "styled-components";
+import styled from "styled-components";
+
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 import Header from "@app/course-landing/components/Header";
 import ButtonOutline from "@app/course-landing/components/ButtonOutline";
-import Bar from "@app/course-landing/components/Bar";
 import TextFrame from "@app/course-landing/components/TextFrame";
 import MyClients from "@app/course-landing/components/MyClients";
 import ThreeCol from "@app/course-landing/components/ThreeCol";
@@ -13,6 +16,8 @@ import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
+import StatisticBar from "@app/ondrejsika-theme/components/StatisticBar";
+
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import Translate from "@app/common/components/Translate";
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
@@ -20,6 +25,10 @@ import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import courses_file from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 import Button from "@app/ondrejsika-theme/components/Button";
+
+const Center = styled.div`
+  text-align: center;
+`;
 
 const Page = props => {
   let site = props.site;
@@ -82,7 +91,7 @@ const Page = props => {
           />
         </Button>
       </Header>
-      <div className="container">
+      <Container>
         <h2>
           <Translate
             lang={site.lang}
@@ -100,20 +109,20 @@ const Page = props => {
           course_id={site.x_course}
           location={site.location}
         />
-        <div className="row">
-          <div className="col-7">
+        <Row>
+          <Col md={7} sm={12}>
             <Markdown source={description} />
-          </div>
-          <div className="col-5">
+          </Col>
+          <Col md={5} sm={12}>
             <TextFrame>
-              <div className="text-center">
+              <Center>
                 <img
                   src={ondrejsika}
                   className="img-fluid rounded-circle mb-3"
                   width="140"
                 />
                 <h4>Ondrej Sika</h4>
-              </div>
+              </Center>
               <p>
                 <Translate
                   lang={site.lang}
@@ -125,91 +134,89 @@ const Page = props => {
               </p>
             </TextFrame>
             <TextFrame>
-              <div className="">
+              <h3>
+                <Translate
+                  lang={lang}
+                  cs="Mám zájem o školení"
+                  sk="Mám záujem o školenie"
+                  de="I am interested in this training"
+                  en="I am interested in this training"
+                />
+              </h3>
+              <p>
+                <Translate
+                  lang={lang}
+                  cs="Pokud máte zájem o školení, vyberte si variantu a pošlete nezávaznou poptávku."
+                  sk="Ak máte záujem o školenie, neváhajte ma kontaktovať."
+                  de=""
+                  en=""
+                />
+              </p>
+              <Row className="text-center mt-4">
+                <Col md={6} sm={12}>
+                  <h5>
+                    <Translate
+                      lang={lang}
+                      cs="Otevřený termín"
+                      sk="Otvorený termín"
+                      de="Public session"
+                      en="Public session"
+                    />
+                  </h5>
+                  <div className="mb-2" style={{ fontSize: "1.3em" }}>
+                    {price_open}
+                  </div>
+                  <ButtonOutline btnUrl={site.x_inquiry_url}>
+                    <Translate
+                      lang={lang}
+                      cs="Nezávazně poptat"
+                      sk="Nezáväzne popýtať"
+                      de="Ask for the training"
+                      en="Ask for the training"
+                    />
+                  </ButtonOutline>
+                </Col>
+                <Col md={6}>
+                  <h5>
+                    <Translate
+                      lang={lang}
+                      cs="Firemní školení"
+                      sk="Firemné školenia"
+                      de="Company traning (in-house)"
+                      en="Company traning (in-house)"
+                    />
+                  </h5>
+                  <div className="mb-2" style={{ fontSize: "1.3em" }}>
+                    {price_in_house}
+                  </div>
+                  <ButtonOutline btnUrl={site.x_inquiry_url}>
+                    <Translate
+                      lang={lang}
+                      cs="Nezávazně poptat"
+                      sk="Nezáväzne popýtať"
+                      de="Ask for the training"
+                      en="Ask for the training"
+                    />
+                  </ButtonOutline>
+                </Col>
+              </Row>
+              <Col md={4} xs={12}>
                 <h3>
-                  <Translate
-                    lang={lang}
-                    cs="Mám zájem o školení"
-                    sk="Mám záujem o školenie"
-                    de="I am interested in this training"
-                    en="I am interested in this training"
-                  />
+                  <Translate lang={lang} cs="Dotazy" sk="Otázky" />
                 </h3>
-                <p>
-                  <Translate
-                    lang={lang}
-                    cs="Pokud máte zájem o školení, vyberte si variantu a pošlete nezávaznou poptávku."
-                    sk="Ak máte záujem o školenie, neváhajte ma kontaktovať."
-                    de=""
-                    en=""
-                  />
-                </p>
-                <div className="row text-center mt-4">
-                  <div className="col-6">
-                    <h5>
-                      <Translate
-                        lang={lang}
-                        cs="Otevřený termín"
-                        sk="Otvorený termín"
-                        de="Public session"
-                        en="Public session"
-                      />
-                    </h5>
-                    <div className="mb-2" style={{ fontSize: "1.3em" }}>
-                      {price_open}
-                    </div>
-                    <ButtonOutline btnUrl={site.x_inquiry_url}>
-                      <Translate
-                        lang={lang}
-                        cs="Nezávazně poptat"
-                        sk="Nezáväzne popýtať"
-                        de="Ask for the training"
-                        en="Ask for the training"
-                      />
-                    </ButtonOutline>
-                  </div>
-                  <div className="col-6">
-                    <h5>
-                      <Translate
-                        lang={lang}
-                        cs="Firemní školení"
-                        sk="Firemné školenia"
-                        de="Company traning (in-house)"
-                        en="Company traning (in-house)"
-                      />
-                    </h5>
-                    <div className="mb-2" style={{ fontSize: "1.3em" }}>
-                      {price_in_house}
-                    </div>
-                    <ButtonOutline btnUrl={site.x_inquiry_url}>
-                      <Translate
-                        lang={lang}
-                        cs="Nezávazně poptat"
-                        sk="Nezáväzne popýtať"
-                        de="Ask for the training"
-                        en="Ask for the training"
-                      />
-                    </ButtonOutline>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <h3>
-                    <Translate lang={lang} cs="Dotazy" sk="Otázky" />
-                  </h3>
-                  <Translate
-                    lang={lang}
-                    cs="Pokud máte jakýkoliv dotaz, naváhejte mi napsat na"
-                    sk="Ak máte záujem o školenie, neváhajte ma kontaktovať"
-                    de="If you have any question, let me know at"
-                    en="If you have any question, let me know at"
-                  />{" "}
-                  <a
-                    href={`mailto:ondrej@sika.io?subject=[${site.name}] Question about ${course_name}`}
-                  >
-                    ondrej@sika.io
-                  </a>
-                </div>
-              </div>
+                <Translate
+                  lang={lang}
+                  cs="Pokud máte jakýkoliv dotaz, naváhejte mi napsat na"
+                  sk="Ak máte záujem o školenie, neváhajte ma kontaktovať"
+                  de="If you have any question, let me know at"
+                  en="If you have any question, let me know at"
+                />{" "}
+                <a
+                  href={`mailto:ondrej@sika.io?subject=[${site.name}] Question about ${course_name}`}
+                >
+                  ondrej@sika.io
+                </a>
+              </Col>
             </TextFrame>
             {/* <TextFrame>
               <h3>Kontakt</h3>
@@ -224,64 +231,42 @@ const Page = props => {
             </TextFrame> */}
 
             {/* <Contact /> */}
-          </div>
-        </div>
-      </div>
-      <Bar>
-        <div className="text-center">
-          <h2 style={{ color: "white", fontSize: "2.4em" }}>
-            <Translate
-              lang={lang}
-              cs="Statistiky kurzu"
-              sk="Štatistiky kurzu"
-              de="Course statistics"
-              en="Course statistics"
-            />
-          </h2>
-        </div>
-        <div className="row">
-          <div className="col-4">
-            <h2 className="text-center text-white mb-0 text-huge">
-              {props.NumberOfPeople}150+
-            </h2>
-            <p className="text-white text-center statistic-bottom">
-              <Translate
-                lang={lang}
-                cs="Počet odškolených lidí"
-                sk="účastníkov"
-                de="Training attendees"
-                en="Training attendees"
-              />
-            </p>
-          </div>
-          <div className="col-4">
-            <h2 className="text-white text-center mb-0 text-huge ">
-              {props.NumberOfCompanies}15+
-            </h2>
-            <p className="text-white text-center statistic-bottom">
-              <Translate
-                lang={lang}
-                cs="firem proškoleno"
-                sk="firiem preškolených"
-                de="Companies trained"
-                en="Companies trained"
-              />
-            </p>
-          </div>
-          <div className="col-4">
-            <h2 className="text-center text-white mb-0 text-huge">20+</h2>
-            <p className="text-white text-center statistic-bottom">
-              <Translate
-                lang={lang}
-                cs="Počet uskutečněných školení"
-                sk="školení"
-                de="Training sessions"
-                en="Training sessions"
-              />
-            </p>
-          </div>
-        </div>
-      </Bar>
+          </Col>
+        </Row>
+      </Container>
+      <StatisticBar
+        site={site}
+        NumberOfPeople="150+"
+        NumberOfPeopleHeader={
+          <Translate
+            lang={lang}
+            cs="Počet odškolených lidí"
+            sk="Počet účastníkov"
+            de="Training attendees"
+            en="Training attendees"
+          />
+        }
+        NumberOfCompanies="15+"
+        NumberOfCompaniesHeader={
+          <Translate
+            lang={lang}
+            cs="firem proškoleno"
+            sk="firiem preškolených"
+            de="Companies trained"
+            en="Companies trained"
+          />
+        }
+        NumberOfLectures="20+"
+        NumberOfLecturesHeader={
+          <Translate
+            lang={lang}
+            cs="Počet uskutečněných školení"
+            sk="školení"
+            de="Training sessions"
+            en="Training sessions"
+          />
+        }
+      />
       <div className="container">
         <MyClients
           noBorder={true}
