@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 import Header from "@app/course-landing/components/Header";
 import ButtonOutline from "@app/course-landing/components/ButtonOutline";
@@ -70,26 +71,28 @@ const Page = props => {
         byUrl={`https://ondrej-sika.cz/?x_source=${site.name}`}
         logoUrl={site.x_logo}
       >
-        <Button href={site.x_inquiry_url} type="outline-secondary">
-          <Translate
-            lang={site.lang}
-            cs="Nezávazně poptat školení"
-            sk="Nezáväzne popýtať školenie"
-            de="Ask for the training"
-            en="Ask for the training"
-          />
-        </Button>
-        <br />
-        <br />
-        <Button href={site.x_contact_link} type="outline-secondary">
-          <Translate
-            lang={site.lang}
-            cs="Kontaktovat"
-            sk="Kontaktovať"
-            de="Contact me"
-            en="Contact me"
-          />
-        </Button>
+        <ButtonGroup>
+          <Button href={site.x_inquiry_url} type="outline-secondary">
+            <Translate
+              lang={site.lang}
+              cs="Nezávazně poptat školení"
+              sk="Nezáväzne popýtať školenie"
+              de="Ask for the training"
+              en="Ask for the training"
+            />
+          </Button>
+        </ButtonGroup>
+        <ButtonGroup className="ml-2">
+          <Button href={site.x_contact_link} type="outline-secondary">
+            <Translate
+              lang={site.lang}
+              cs="Kontaktovat"
+              sk="Kontaktovať"
+              de="Contact me"
+              en="Contact me"
+            />
+          </Button>
+        </ButtonGroup>
       </Header>
       <Container>
         <h2>
