@@ -7,7 +7,6 @@ import Row from "react-bootstrap/Row";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 import Header from "@app/course-landing/components/Header";
-import ButtonOutline from "@app/course-landing/components/ButtonOutline";
 import TextFrame from "@app/course-landing/components/TextFrame";
 import MyClients from "@app/course-landing/components/MyClients";
 import ThreeCol from "@app/course-landing/components/ThreeCol";
@@ -168,7 +167,7 @@ const Page = props => {
                   en=""
                 />
               </p>
-              <Row className="text-center mt-4">
+              <Row className="text-center mt-4 mb-3">
                 <Col lg={6} md={12}>
                   <h5>
                     <Translate
@@ -182,7 +181,7 @@ const Page = props => {
                   <div className="mb-2" style={{ fontSize: "1.3em" }}>
                     {price_open}
                   </div>
-                  <ButtonOutline btnUrl={site.x_inquiry_url}>
+                  <Button href={site.x_inquiry_url} type="outline-primary">
                     <Translate
                       lang={lang}
                       cs="Nezávazně poptat"
@@ -190,7 +189,7 @@ const Page = props => {
                       de="Ask for the training"
                       en="Ask for the training"
                     />
-                  </ButtonOutline>
+                  </Button>
                 </Col>
                 <Col lg={6} md={12}>
                   <h5>
@@ -205,7 +204,7 @@ const Page = props => {
                   <div className="mb-2" style={{ fontSize: "1.3em" }}>
                     {price_in_house}
                   </div>
-                  <ButtonOutline btnUrl={site.x_inquiry_url}>
+                  <Button href={site.x_inquiry_url} type="outline-primary">
                     <Translate
                       lang={lang}
                       cs="Nezávazně poptat"
@@ -213,7 +212,7 @@ const Page = props => {
                       de="Ask for the training"
                       en="Ask for the training"
                     />
-                  </ButtonOutline>
+                  </Button>
                 </Col>
               </Row>
               <Col lg={12}>
@@ -271,8 +270,8 @@ const Page = props => {
         NumberOfCompaniesHeader={
           <Translate
             lang={lang}
-            cs="firem proškoleno"
-            sk="firiem preškolených"
+            cs="Firem proškoleno"
+            sk="Firiem preškolených"
             de="Companies trained"
             en="Companies trained"
           />
