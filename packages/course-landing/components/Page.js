@@ -53,7 +53,7 @@ const Page = props => {
       `course-landing/component/Page requires more than 3 recommendations`
     );
   return (
-    <div>
+    <>
       <Head>
         <title>
           {course_name} - {site.x_site_claim}
@@ -270,7 +270,7 @@ const Page = props => {
           />
         }
       />
-      <div className="container">
+      <Container>
         <MyClients
           noBorder={true}
           HeaderClients={
@@ -283,10 +283,9 @@ const Page = props => {
             />
           }
         />
-        {(() => {
-          if (twitter_recommendations)
-            <TwitterRecommendations ids={twitter_recommendations} />;
-        })()}
+        {twitter_recommendations && (
+          <TwitterRecommendations ids={twitter_recommendations} />
+        )}
         <ThreeCol
           header={
             <Translate
@@ -300,9 +299,9 @@ const Page = props => {
           col2={<Recommendation id={recommendations[1]} lang={site.lang} />}
           col3={<Recommendation id={recommendations[2]} lang={site.lang} />}
         />
-      </div>
+      </Container>
       <FooterOndrejSika />
-    </div>
+    </>
   );
 };
 
