@@ -117,7 +117,7 @@ const Page = props => {
             <Translate
               lang={site.lang}
               cs="Žádné veřejné kurzy nebyly vypsány"
-              sk="Žádné veřejné kurzy nebyly vypsány"
+              sk="Žiadne verejné kurzy zatiaľ neboli vypísané"
               de="No public session scheduled yet"
               en="No public session scheduled yet"
             />
