@@ -95,7 +95,7 @@ const Page = props => {
         </ButtonGroup>
       </Header>
       <Container>
-        <h2>
+        <h2 className="mb-0">
           <Translate
             lang={site.lang}
             cs="Otevřené termíny"
@@ -104,14 +104,27 @@ const Page = props => {
             en="Public session"
           />
         </h2>
-        <UpcomingSessions
-          link_site_prefix="https://ondrej-sika.cz"
-          limit={3}
-          site_name={site.name}
-          lang={site.lang}
-          course_id={site.x_course}
-          location={site.location}
-        />
+        {props.show_session_link ? (
+          <UpcomingSessions
+            link_site_prefix="https://ondrej-sika.cz"
+            limit={3}
+            site_name={site.name}
+            lang={site.lang}
+            course_id={site.x_course}
+            location={site.location}
+          />
+        ) : (
+          <p>
+            <Translate
+              lang={site.lang}
+              cs="Žádné veřejné kurzy nebyly vypsány"
+              sk="Žádné veřejné kurzy nebyly vypsány"
+              de="No public session scheduled yet"
+              en="No public session scheduled yet"
+            />
+          </p>
+        )}
+
         <Row>
           <Col md={7} sm={12}>
             <Markdown source={description} />
@@ -156,7 +169,7 @@ const Page = props => {
                 />
               </p>
               <Row className="text-center mt-4">
-                <Col md={6} sm={12}>
+                <Col lg={6} md={12}>
                   <h5>
                     <Translate
                       lang={lang}
@@ -179,7 +192,7 @@ const Page = props => {
                     />
                   </ButtonOutline>
                 </Col>
-                <Col md={6}>
+                <Col lg={6} md={12}>
                   <h5>
                     <Translate
                       lang={lang}
@@ -203,9 +216,14 @@ const Page = props => {
                   </ButtonOutline>
                 </Col>
               </Row>
-              <Col md={4} xs={12}>
+              <Col lg={12}>
                 <h3>
-                  <Translate lang={lang} cs="Dotazy" sk="Otázky" />
+                  <Translate
+                    lang={lang}
+                    cs="Dotazy"
+                    sk="Otázky"
+                    en="Questions"
+                  />
                 </h3>
                 <Translate
                   lang={lang}
