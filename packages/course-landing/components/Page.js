@@ -283,7 +283,7 @@ const Page = props => {
             />
           }
         />
-        {twitter_recommendations && (
+        {twitter_recommendations && twitter_recommendations.length > 0 && (
           <TwitterRecommendations ids={twitter_recommendations} />
         )}
         <ThreeCol
