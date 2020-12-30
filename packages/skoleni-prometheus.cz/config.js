@@ -13,7 +13,12 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.cz/kontakt/?x_source=skoleni-prometheus.cz",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/prometheus?x_source=skoleni-prometheus.cz#form"
+    "https://ondrej-sika.cz/skoleni/prometheus?x_source=skoleni-prometheus.cz#form",
+  colors: {
+    PRIMARY: "#131480",
+    SECONDARY: "#c8bfb0",
+    SECONDARY_LIGHT: "#fff"
+  }
 };
 
 export default site;

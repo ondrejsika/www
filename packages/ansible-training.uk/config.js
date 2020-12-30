@@ -13,7 +13,12 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.com/contact/?x_source=ansible-training.uk",
   x_inquiry_url:
-    "https://ondrej-sika.com/training/ansible/?x_source=ansible-training.uk#form"
+    "https://ondrej-sika.com/training/ansible/?x_source=ansible-training.uk#form",
+  colors: {
+    PRIMARY: "#131480",
+    SECONDARY: "#c8bfb0",
+    SECONDARY_LIGHT: "#fff"
+  }
 };
 
 export default site;

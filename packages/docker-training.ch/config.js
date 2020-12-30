@@ -13,7 +13,12 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.com/contact/?x_source=docker-training.ch",
   x_inquiry_url:
-    "https://ondrej-sika.com/training/docker/inquiry/?x_source=docker-training.ch"
+    "https://ondrej-sika.com/training/docker/inquiry/?x_source=docker-training.ch",
+  colors: {
+    PRIMARY: "#131480",
+    SECONDARY: "#c8bfb0",
+    SECONDARY_LIGHT: "#fff"
+  }
 };
 
 export default site;

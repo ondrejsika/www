@@ -11,7 +11,12 @@ const site = {
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=skoleni-rancher.cz",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/git/?x_source=skoleni-rancher.cz#form"
+    "https://ondrej-sika.cz/skoleni/git/?x_source=skoleni-rancher.cz#form",
+  colors: {
+    PRIMARY: "#131480",
+    SECONDARY: "#c8bfb0",
+    SECONDARY_LIGHT: "#fff"
+  }
 };
 
 export default site;

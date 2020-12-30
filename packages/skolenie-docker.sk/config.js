@@ -12,7 +12,12 @@ const site = {
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=skolenie-docker.sk",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/docker/?x_source=skolenie-docker.sk#form"
+    "https://ondrej-sika.cz/skoleni/docker/?x_source=skolenie-docker.sk#form",
+  colors: {
+    PRIMARY: "#131480",
+    SECONDARY: "#c8bfb0",
+    SECONDARY_LIGHT: "#fff"
+  }
 };
 
 export default site;

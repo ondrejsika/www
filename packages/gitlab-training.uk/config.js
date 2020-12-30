@@ -13,7 +13,12 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.com/contact/?x_source=gitlab-training.uk",
   x_inquiry_url:
-    "https://ondrej-sika.com/training/gitlab-ci/inquiry/?x_source=gitlab-training.uk"
+    "https://ondrej-sika.com/training/gitlab-ci/inquiry/?x_source=gitlab-training.uk",
+  colors: {
+    PRIMARY: "#131480",
+    SECONDARY: "#c8bfb0",
+    SECONDARY_LIGHT: "#fff"
+  }
 };
 
 export default site;

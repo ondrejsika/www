@@ -13,7 +13,12 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.com/contact/?x_source=kubernetes-utbildning.se",
   x_inquiry_url:
-    "https://ondrej-sika.cz/training/kubernetes/inquiry/?x_source=kubernetes-utbildning.se"
+    "https://ondrej-sika.cz/training/kubernetes/inquiry/?x_source=kubernetes-utbildning.se",
+  colors: {
+    PRIMARY: "#131480",
+    SECONDARY: "#c8bfb0",
+    SECONDARY_LIGHT: "#fff"
+  }
 };
 
 export default site;
