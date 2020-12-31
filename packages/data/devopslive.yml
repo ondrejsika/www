@@ -189,7 +189,7 @@
   technologies:
     - terraform
 - id: longhorn
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/134515793359
   active: true
   title: Longhorn - Jednoduchá on-premise storage pro Kubernetes
   date: 10. 3. 2021
@@ -205,9 +205,9 @@
     - kubernetes
     - longhorn
 - id: skaffold
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/134673045705
   active: true
-  title: Skaffold - Local Kubernetes Development
+  title: Jak na lokální Kubernetes Development pomocí Skaffold
   date: 24. 3. 2021
   time: "19:00"
   about: |
@@ -221,9 +221,9 @@
     - kubernetes
     - skaffold
 - id: goreleaser-a-ci
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/134755486287
   active: true
-  title: GoReleaser a CI
+  title: Jednoduchá distribuce Go binárek pomocí GoReleaser a CI
   date: 7. 4. 2021
   time: "19:00"
   about: |
