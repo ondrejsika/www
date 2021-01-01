@@ -45,7 +45,7 @@ const Header = props => (
             <p>
               by{" "}
               <Link href={props.byUrl}>
-                <a>
+                <a style={{ color: "white" }}>
                   <b>{props.byName}</b>
                 </a>
               </Link>
