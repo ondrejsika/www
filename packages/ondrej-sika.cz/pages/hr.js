@@ -13,7 +13,7 @@ const Install = () => (
     <div className="container pt-4 pb-2 post-body">
       <Markdown
         source={`
-Děkuji za Váš zájem. Na full time práci se spolu nedomluvíme, ale nabízím externí formu spolupráce, která má následující benefity:
+Děkuji za Váš zájem. Moje cena je 25k CZK / MD, na full time práci se spolu asi nedomluvíme, ale nabízím externí formu spolupráce, která má následující benefity:
 
 - Vy/klient neztratí několik měsíců času zbytečně čekáním na zkušené DevOps specialisty, kterých je zoufalý nedostatek
 - Vy/klient nasadí DevOps technologie rychle a efektivně v průběhu několika dnů/týdnů
