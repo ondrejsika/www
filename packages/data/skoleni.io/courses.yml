@@ -1125,10 +1125,106 @@
 
 # Marek Bartik
 
-- id: marekbartik-kubernetes-networking
+- id: marekbartik-eks
   lecturer_id: marekbartik
   technology_id: kubernetes
-  name: Kubernetes Networking
+  name: Elastic Kubernetes Service (AWS)
+  price_open: 11 900 CZK
+  price_in_house: 48 000 CZK
+  description: |
+    ### Co je EKS a k čemu se používá?
+
+    Elastic Kubernetes Service (EKS) je Kubernetes-as-a-Service řešení na Amazon Web Services platformě.
+    EKS vám umožnuje flexibilně spouštět a škálovat Kubernetes aplikace v AWS na vysoce dostupných a zabezpečených kubernetes clusterech
+    bez nutnosti složitého patchování a zdlouhavého provisionování výpočetních uzlů.
+
+    ### Jak školení probíhá?
+
+    Školení trvá jeden celý den.
+
+    Vytvoříme si každý svůj vlastní EKS cluster pomocí terraformu. Nasadíme ukázkovou kompletní aplikaci.
+    Vše si prakticky osaháme a ozkoušíme v terminálu.
+
+    V druhé části školení si do podrobna probereme pokročilejší koncepty a best practices, už pouze teoreticky.
+
+    ### Co Vás naučím?
+
+    - základní provisioning clusteru pomocí terraform
+    - základní úkony s kubectl
+    - základní API - deployments, statefulset, daemonset, (cron)job
+    - návrh a konfigurace clusteru
+    - IAM/RBAC integraci
+    - resources requests / limits
+    - liveness / readiness probes
+    - ingress / egress setup
+    - taints / tolerations / affinities
+    - DNS / Service Discovery
+    - PodDisruptionBudget
+    - autoscaling - HPA, VPA, CA
+
+    ### Pro koho je školení určeno
+
+    Školení je určeno komukoliv kdo již má základní povědomí o kubernetes a AWS a hledá pokročilejší kurz, který jde více do hloubky.
+    Absolvent školení by měl mít jasnější představu o tom jak navrhnout EKS cluster a jak efektivně provozovat aplikace na EKS v produkci.
+
+    #### Předchozí znalosti
+
+    - základy s AWS
+    - základy práce v terminálu
+
+    #### Technické požadavky
+
+    - Nainstalovaný terraform
+    - AWS account
+    - Přístup na internet
+
+- id: marekbartik-terraform
+  lecturer_id: marekbartik
+  technology_id: terraform
+  name: Terraform for AWS
+  price_open: 11 900 CZK
+  price_in_house: 48 000 CZK
+  description: |
+    ### Co je terraform a k čemu se používá?
+
+    Terraform je Infrastructure as Code nástroj pomocí kterého je možné deklarativně provisionovat výpočetní prostředky a služby na GCP, AWS, Azure, DataDog, Cloudflare, apod.
+
+    ### Jak školení probíhá?
+
+    Školení trvá jeden celý den.
+
+    Vytvoříme si každý infrastrukturu na AWS dle zadání a budeme ji postupně společně vylepšovat a měnit.
+
+    V druhé části školení si do podrobna probereme pokročilejší koncepty a best practices, už pouze teoreticky.
+
+    ### Co Vás naučím?
+
+    - provisioning AWS infrastruktury pomocí terraform
+    - základní setup pro terraform + git + AWS
+    - terraform import
+    - terraform state
+    - terraform modules a registry
+    - managování secrets v terraformu a git repozitáři
+    - základy terragrunt
+    - spravování více verzí terraform binárek
+    - lintování terraformu
+    - best practices ohledně strukturalizace terraform repozitářů a state
+
+    ### Pro koho je školení určeno
+
+    Školení je určeno začátečníkům s terraform, kteří hledají intenzivní praktický kurz a best practices pro produkční infrastruktury.
+    Absolvent školení by měl mít jasnější představu o tom jak použít terraform k Infrastructure as Code na AWS.
+
+    #### Předchozí znalosti
+
+    - základy práce s AWS
+    - základy práce v terminálu
+
+    #### Technické požadavky
+
+    - Nainstalovaný terraform
+    - AWS account
+    - Přístup na internet
 
 # Veros Kaplan
 
