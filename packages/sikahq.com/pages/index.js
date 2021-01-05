@@ -6,11 +6,10 @@ const Index = () => (
     <Head>
       <title>SikaHQ.com</title>
     </Head>
-    <div className="container mt-4">
+    <div className="container-fluid mt-4">
       <h1>
-        Ondrej Sika&rsquo;s team for{" "}
-        <a href="https://sika.io">freelance training, consulting</a> and other
-        projects.
+        SikaHQ: Team behind <a href="https://sika.io">Ondrej Sika</a> &amp;{" "}
+        <a href="https://sikalabs.com">Sika Labs</a>
       </h1>
     </div>
   </div>
