@@ -81,11 +81,16 @@
 
 - id: marekbartik
   name: Marek Bartík
-  bio: Kubernetes @ Pipetail
+  bio:
+    Nabízím workshopy, konzultace a implementace, kterými pomáhám firmám navrhnout a postavit public cloud infrastruktury a platformy s využitím moderního, ale udržitelného toolingu.
+    Učím firmy Infrastructure as Code a CI/CD v kontejnerizovaných a serverless prostředí distribuovaných systémů.
   courses:
-    - marekbartik-kubernetes-networking
-  email: skoleni@skoleni.io
+    - marekbartik-eks
+    - marekbartik-terraform
+  email: marek.bartik@pipetail.io
   github: marekaf
+  twitter: MarekBartik
+  linkedin: marekbartik
 
 - id: veroskaplan
   name: Věroš Kaplan
