@@ -52,7 +52,7 @@ Pokud chcete koupit Bitcoin kartou přímo z Trezoru, jde to velmi jednoduše p�
 
 #### Směnárny
 
-Bitcoin se dá koupit i ve směnárnách, poplatky jsou cca 3 až 5 procent. Jako směnárnu doporučuju [Simple Coin](https://client.simplecoin.eu/cs).
+Bitcoin se dá koupit i ve směnárnách, poplatky jsou cca 3 až 5 procent. Jako směnárnu doporučuju [BTCex](https://btcex.cz) nebo [Simple Coin](https://client.simplecoin.eu/cs).
 
 #### Local Bitcoins
 
