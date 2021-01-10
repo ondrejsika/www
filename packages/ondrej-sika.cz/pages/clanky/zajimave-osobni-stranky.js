@@ -29,7 +29,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://clarkmoody.com/> ([source](https://github.com/clarkmoody/clarkmoody.com)
 - <https://chaoyizha.com/>
 - <https://regisfreyd.com/> ([source](https://github.com/djaiss/regisfreyd))
-
+- <https://marekbartik.com/> ([source](https://github.com/marekaf/marekbartik.com))
     `}
     />
   );
