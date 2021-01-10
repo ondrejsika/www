@@ -1655,43 +1655,44 @@
     cs: |
       ### Popis technologie
 
-      Elastic Stack (drive ELK nebo EFK), je sada modernich nastroju na praci s logy. Pokud chcete centralne sbirat logy, at uz z Kubernetes nebo z klasickych serveru, Elastic Stack je prave pro vas. Elastic Stack je postaveny na NoSQL databazi ElasticSearch, ktera se pouziva jako storage pro logy. Logy do ni posilame pomoci Beatu, hlavne tedy FileBeatu, ale zpusobu muze byt vice. A nakonec logy prohlizime ve webovem UI Kibana.
+      Elastic Stack (dříve ELK nebo EFK), je sada moderních nástrojů na práci s logy. Pokud chcete centrálně sbírat logy, ať už z Kubernetes nebo z klasických serverů, Elastic Stack je právě pro vás. Elastic Stack je postavený na NoSQL databázi ElasticSearch, která se používá jako storage pro logy. Logy do ní posíláme pomoci Beatu, hlavně tedy FileBeatu, ale způsobů může být více. A nakonec logy prohlížíme ve webovém UI Kibana.
+
 
       ### Co Vás naučím
 
       - Co je Elastic Stack
-      - Jak spravne logovat
+      - Jak správně logovat
       - Instalace a konfigurace Elastic Stacku
-        - Instalace na VM pomoci Dockeru
-        - Instalace do Kubernetes pomoci ECK
+        - Instalace na VM pomocí Dockeru
+        - Instalace do Kubernetes pomocí ECK
       - Instalace a konfigurace Beatu
         - FileBeat, MetricBeat
         - Instalace na VM
         - Instalace do Kubernetes
-      - Prace s logy v Beatech
-        - Filtrovani
-        - Parsovani dat z logu
-      - Prace s logy v Kibane
+      - Práce s logy v Beatech
+        - Filtrování
+        - Parsování dat z logu
+      - Práce s logy v Kibane
         - Kibana Query Language
         - Log View
-        - Vlastni Dashboardy
+        - Vlastní Dashboardy
         - Alerting
         - Log Retention Policy
 
       ### Pro koho je školení určeno
 
-      Školení je určeno pro vývojáře a DevOpsáky, kteri chteji centralne spravovat logy.
+      Školení je určeno pro vývojáře a DevOpsáky, kteří chtějí centrálně spravovat logy.
 
       #### Předchozí znalosti
       - Základy práce s Linuxem
       - Základy práce v terminálu
-      - Znalost Kubernetes vyhodou
+      - Znalost Kubernetes výhodou
 
       #### Technické požadavky
 
       - SSH klient
-      - Webovy prohlizec
-      - Pristup na internet
+      - Webový prohlížeč
+      - Přístup na internet
 
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
