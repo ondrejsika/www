@@ -1607,3 +1607,91 @@
       **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
+- id: elk
+  name:
+    cs: Školení ELK (Elastic Stack)
+    en: ELK (Elastic Srack) Training
+    de: ELK (Elastic Srack) Schulung
+  lecturers:
+    - ondrejsika
+  length: 2
+  price:
+    open:
+      cz: 11 999 CZK
+      de: 599 EUR
+      uk: 599 EUR
+    in_house:
+      cz: 50 000 CZK
+      de: 3999 EUR
+      uk: 3999 GBP
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  agenda:
+    cs: |
+      - Co je Elastic Stack
+      - Jak spravne logovat
+      - Instalace a konfigurace Elastic Stacku
+        - Instalace na VM pomoci Dockeru
+        - Instalace do Kubernetes pomoci ECK
+      - Instalace a konfigurace Beatu
+        - FileBeat, MetricBeat
+        - Instalace na VM
+        - Instalace do Kubernetes
+      - Prace s logy v Beatech
+        - Filtrovani
+        - Parsovani dat z logu
+      - Prace s logy v Kibane
+        - Kibana Query Language
+        - Log View
+        - Vlastni Dashboardy
+        - Alerting
+        - Log Retention Policy
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+  description:
+    cs: |
+      ### Popis technologie
+
+      Elastic Stack (drive ELK nebo EFK), je sada modernich nastroju na praci s logy. Pokud chcete centralne sbirat logy, at uz z Kubernetes nebo z klasickych serveru, Elastic Stack je prave pro vas. Elastic Stack je postaveny na NoSQL databazi ElasticSearch, ktera se pouziva jako storage pro logy. Logy do ni posilame pomoci Beatu, hlavne tedy FileBeatu, ale zpusobu muze byt vice. A nakonec logy prohlizime ve webovem UI Kibana.
+
+      ### Co Vás naučím
+
+      - Co je Elastic Stack
+      - Jak spravne logovat
+      - Instalace a konfigurace Elastic Stacku
+        - Instalace na VM pomoci Dockeru
+        - Instalace do Kubernetes pomoci ECK
+      - Instalace a konfigurace Beatu
+        - FileBeat, MetricBeat
+        - Instalace na VM
+        - Instalace do Kubernetes
+      - Prace s logy v Beatech
+        - Filtrovani
+        - Parsovani dat z logu
+      - Prace s logy v Kibane
+        - Kibana Query Language
+        - Log View
+        - Vlastni Dashboardy
+        - Alerting
+        - Log Retention Policy
+
+      ### Pro koho je školení určeno
+
+      Školení je určeno pro vývojáře a DevOpsáky, kteri chteji centralne spravovat logy.
+
+      #### Předchozí znalosti
+      - Základy práce s Linuxem
+      - Základy práce v terminálu
+      - Znalost Kubernetes vyhodou
+
+      #### Technické požadavky
+
+      - SSH klient
+      - Webovy prohlizec
+      - Pristup na internet
+
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
