@@ -29,7 +29,7 @@
     Nastroje se vyvijeji, neco zastarava a nektere workflow se meni. I me skoleni se meni v case. Je zbytecne aby clovek sel na skoleni za rok znovu, i kdyz obcas neni na skodu si pripomenout i zaklady. Cilem kratkeho 4 hodinoveho workshopu je ukazat si co se zmenilo a tak byt porad v obraze.
 
 - id: zhodnoceni-roku-2020-a-plany-na-rok-2021
-  hidden: true
+  hidden: false
   title: "Zhodnocení roku 2020 a plány na rok 2021"
   date: 1. 1. 2021
   tags: []
@@ -53,7 +53,7 @@
 
     - [Rancher](/skoleni/rancher) - On-premise Kubernetes
     - [Prometheus Stack (Prometheus, Alertmanager, Grafana)](/skoleni/prometheus) - Nejen cloud native monitoring
-    - [Elastic Stack (drive ELK)](/skoleni/elk) - Log management
+    - [Elastic Stack (dříve ELK)](/skoleni/elk) - Log management
     - [DigitalOcean](/skoleni/digitalocean) - Public cloud jednoduše
     - [Proxmox](/skoleni/proxmox) - Open source virtualizace a on-premise cloud platforma
 
