@@ -28,7 +28,7 @@ const Page = () => (
           <th>Přednášky</th>
         </tr>
         <tr>
-          <td>20. 1. 2021, 18:00</td>
+          <td>11. 3. 2021, 18:00</td>
           <td>Online</td>
           <td>
             <p>
