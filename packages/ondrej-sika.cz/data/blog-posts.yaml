@@ -201,6 +201,18 @@
   content: |
     Alert Manager je komponenta Prometheus monitoring stacku, která se stará o posílání alertů. V článku ukážu jak nastavit Alert Manager tak, aby se správné notifikace odesílali správným teamům, jak seskupovat alerty a jak posílat jen to důležité, když všechno padá.
 
+- id: zaznam-devops-live-9-uvod-do-cloud-initu
+  title: "Záznam DevOps Live #9: Úvod do Cloud Initu"
+  date: 13. 1. 2021
+  ad: terraform
+  tags:
+    - cloud-init
+    - terraform
+  perex: |
+    Záznanam z devátého DevOps live streamu na téma Úvod do Cloud Initu
+  youtube: hSyBBLWRXLs
+  content: |
+    Pokud se chcete naučit pracovat s Terraformem, doporučuji Vám mé školení [__Terraform__](/skoleni/terraform), nebudete litovat.
 
 - id: zaznam-devops-live-8-konfigurace-alertmanageru
   title: "Záznam DevOps Live #8: Konfigurace Alertmanageru"

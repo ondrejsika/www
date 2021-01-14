@@ -131,7 +131,7 @@
 
 - id: cloud-init
   eventbrite: https://www.eventbrite.com/e/129864124091
-  active: true
+  active: false
   title: Úvod do Cloud Initu
   date: 13. 1. 2021
   time: "19:00"
