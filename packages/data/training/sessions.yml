@@ -94,7 +94,7 @@
   length: 1 den
   linkedin_event: null
   name: Ansible
-  price: 6 800 CZK
+  price: 11 999 CZK
   venue_id: null
 - active: false
   city: Online
@@ -234,7 +234,7 @@
   length: 1 den
   linkedin_event: null
   name: Ansible
-  price: 6 800 CZK
+  price: 11 999 CZK
   venue_id: null
 - active: false
   city: Online
@@ -717,28 +717,28 @@
   country: cz
   course_id: django
   date_from: 10.02.2021
-  date_to: 10.02.2021
+  date_to: 11.02.2021
   facebook_event: null
   id: django-online-10-02-2021
   lang: cs
-  length: 1 den
+  length: 2 dny
   linkedin_event: null
   name: Django
-  price: 6 800 CZK
+  price: 11 999 CZK
   venue_id: null
 - active: true
   city: Prague
   country: cz
   course_id: ansible
   date_from: 18.02.2021
-  date_to: 18.02.2021
+  date_to: 19.02.2021
   facebook_event: null
   id: ansible-praha-18-02-2021
   lang: cs
-  length: 1 den
+  length: 2 dny
   linkedin_event: null
   name: Ansible
-  price: 6 800 CZK
+  price: 11 999 CZK
   venue_id: null
 - active: true
   city: Online
@@ -1081,14 +1081,14 @@
   country: cz
   course_id: ansible
   date_from: 16.09.2021
-  date_to: 16.09.2021
+  date_to: 17.09.2021
   facebook_event: null
   id: ansible-praha-16-09-2021
   lang: cs
-  length: 1 den
+  length: 2 dny
   linkedin_event: null
   name: Ansible
-  price: 6 800 CZK
+  price: 11 999 CZK
   venue_id: null
 - active: true
   city: Brno
