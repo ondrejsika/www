@@ -41,7 +41,7 @@
     velikosti firem, od startupu po korporace.
   courses:
     - ondrejsika-kubernetes
-    - marekbartik-kubernetes-networking
+    - marekbartik-eks
     - veroskaplan-kubernetes-intro
 
 - id: terraform
@@ -58,6 +58,7 @@
     privátním cloudu, část ve veřejném).
   courses:
     - ondrejsika-terraform
+    - marekbartik-terraform
     - veroskaplan-terraform
 
 - id: test-automatizace
