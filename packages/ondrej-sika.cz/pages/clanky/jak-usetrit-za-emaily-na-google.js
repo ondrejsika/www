@@ -11,13 +11,13 @@ Email na Google ovšem není nejlevnější. Pokud potřebujete jeden účet, ce
 
 Ukážu Vám řešení, které používám.
 
-Používám 2 domény: \`sikalabs.com\` a \`sikalabs.cz\`. Doména \`sikalabs.com\` je na Google a \`sikalabs.cz\` na mém serveru ([poste.io](https://poste.io)).
+Používám 2 domény: \`sikalabs.com\` a \`sikalabs.io\`. Doména \`sikalabs.com\` je na Google a \`sikalabs.io\` na mém serveru ([poste.io](https://poste.io)).
 
 Primární doménu na Googlu používám pro klíčové a kritické účty, svůj server potom na ty ostatní. Na mém serveru mě netrápí počet účtů a správa je pro mě výrazně jednodušší.
 
 Účty pro klíčové lidi a služby mám na Google, například \`ondrej@\`, \`sales@\`, ... a platím za ně. Naopak ostatní věci mám na svém serveru, například \`externalteammember@\`, \`twitter@\`, \`invoice@\`, ...
 
-Pro účty, které existují na primární doméně a ne na té sekundární mám nastavené přeposílání, když někdo napíše na \`ondrej@sikalabs.cz\`, email se automaticky přepošle na \`ondrej@sikalabs.com\`.
+Pro účty, které existují na primární doméně a ne na té sekundární mám nastavené přeposílání, když někdo napíše na \`ondrej@sikalabs.io\`, email se automaticky přepošle na \`ondrej@sikalabs.com\`.
 `}
   />
 );
