@@ -1,16 +1,24 @@
 - id: devops-skoleni-v-lednu-2021-01-21
-  title: "DevOps školení v Lednu"
+  title: "DevOps školení v Lednu a Únoru"
   date: 21. 1. 2021
   perex: |
     Gitlab CI, Docker, Kubernetes
   content: |
-    Zvu Vás na novou sérii DevOps školení poslední lednový týden od 25. 1. a online. Zlepšete se v těchto DevOps technologiích:
+    Zvu Vás na novou sérii kompletního balíku mých DevOps školení. Díký tomu, že všechny na sebe chytře chronologicky navazují si můžete vybrat buď jeden konkrétní, anebo libovolnou kombinaci.
+    Doporučuju kombinaci, protože za 2 kurzy Vám dám slevu 30% a v případě, že vezmete 3 a více dostanete 50% slevu.
+
+    Využijte tuhle příležitost a zlepšete se v krátkém čase v těchto DevOps technologiích:
 
     - Gitlab CI (25. 1.) -  [Informace o kurzu](/skoleni/gitlab-ci), [Registrace na školení](/verejne-terminy/gitlab-ci-praha-25-01-2021), cena: 6 800 CZK
     - Docker (26. - 27. 1.) -  [Informace o kurzu](/skoleni/docker), [Registrace na školení](/verejne-terminy/docker-praha-26-01-2021), cena: 11 999 CZK
     - Kubernetes (28. - 29. 1.) -  [Informace o kurzu](/skoleni/kubernetes), [Registrace na školení](/verejne-terminy/kubernetes-praha-28-01-2021), cena: 11 999 CZK
-
-    Pokud máte zájem o více kurzů nebo Vás půjde víc, napište mi email a domluvíme se na slevě 30%.
+    - Terraform (1. 2.) -  [Informace o kurzu](/skoleni/terraform), [Registrace na školení](/verejne-terminy/terraform-praha-01-02-2021), cena: 6 800 CZK
+    - Rancher (2. 2.) -  [Informace o kurzu](/skoleni/rancher), [Registrace na školení](/verejne-terminy/rancher-praha-02-02-2021), cena: 6 800 CZK
+    - Prometheus (3. 2.) -  [Informace o kurzu](/skoleni/prometheus), [Registrace na školení](/verejne-terminy/prometheus-praha-03-02-2021), cena: 6 800 CZK
+    - DigitalOcean (4. 2.) -  [Informace o kurzu](/skoleni/digitalocean), [Registrace na školení](/verejne-terminy/digitalocean-praha-04-02-2021/), cena: 6 800 CZK
+    - Proxmox (5. 2.) -  [Informace o kurzu](/skoleni/proxmox), [Registrace na školení](/verejne-terminy/proxmox-praha-05-02-2021), cena: 6 800 CZK
+    - Django (10. - 11.2.) -  [Informace o kurzu](/skoleni/django), [Registrace na školení](/verejne-terminy/django-online-10-02-2021/), cena: 11 999 CZK
+    - Ansible (18. - 19.2.) -  [Informace o kurzu](/skoleni/ansible), [Registrace na školení](/verejne-terminy/ansible-praha-18-02-2021/), cena: 11 999 CZ
 
     Pokud máte jakoukoliv otázku, neváhejte se zeptat na <ondrej@sika.io>
   twitter_recommendations:
