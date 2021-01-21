@@ -1,3 +1,25 @@
+- id: devops-skoleni-v-lednu-2021-01-21
+  title: "DevOps školení v Lednu"
+  date: 21. 1. 2021
+  perex: |
+    Gitlab CI, Docker, Kubernetes
+  content: |
+    Zvu Vás na novou sérii DevOps školení poslední lednový týden od 25. 1. a online. Zlepšete se v těchto DevOps technologiích:
+
+    - Gitlab CI (25. 1.) -  [Informace o kurzu](/skoleni/gitlab-ci), [Registrace na školení](/verejne-terminy/gitlab-ci-praha-25-01-2021), cena: 6 800 CZK
+    - Docker (26. - 27. 1.) -  [Informace o kurzu](/skoleni/docker), [Registrace na školení](/verejne-terminy/docker-praha-26-01-2021), cena: 11 999 CZK
+    - Kubernetes (28. - 29. 1.) -  [Informace o kurzu](/skoleni/kubernetes), [Registrace na školení](/verejne-terminy/kubernetes-praha-28-01-2021), cena: 11 999 CZK
+
+    Pokud máte zájem o více kurzů nebo Vás půjde víc, napište mi email a domluvíme se na slevě 30%.
+
+    Pokud máte jakoukoliv otázku, neváhejte se zeptat na <ondrej@sika.io>
+  twitter_recommendations:
+    - adam-bisek-docker
+    - petr-klobas-docker
+    - petr-todorov-kubernetes
+    - martin-sindelar-gitlab-ci
+    - jan-novotny-docker
+    - lubos-klokner-docker-2
 - id: devops-skoleni-v-zari-2020-09-14
   title: "DevOps školení v Září"
   date: 14. 9. 2020
