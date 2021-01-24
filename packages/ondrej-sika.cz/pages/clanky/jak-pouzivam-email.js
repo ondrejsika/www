@@ -9,25 +9,17 @@ Používám více emailů, skoro jako každý. Mám v tom ale pořádek, což ro
 Používám tyto emaily (účty):
 
 - Primární - \`ondrej@os.com\`
-
 - Hromadný pro většinu služeb \`os@os.com\` a nebo \`os+...@os.com\`
-
 - Pro komunikaci s úřady - \`gov@os.com\`
-
 - Pracovní (freelance) - \`ondrej@sika.io\`
-
 - Pracovní (firma A) - \`ondrej@sikalabs.com\`
-
 - Pracovní (firma B) - \`ondrej@skoleni.io\`
-
 - Maildev - \`*@all.os.com\`
-
 - Archiv - \`archived@os.com\`
 
 A tyto aliasy:
 
 - \`todo@os.com\` (alias emailu \`os@os.com\`) - Forward do Todoistu
-
 - \`quick@os.com\` (alias emailu \`os@os.com\`) - Složka pro rychlý přístup k jízdenkám, bookingu, ...
 
 Ne všechny emaily jsou skutečné, ale struktura je taková jak ji používám ;)
