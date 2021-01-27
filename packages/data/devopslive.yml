@@ -146,7 +146,7 @@
     - cloud-init
 - id: kubernetes-pomoci-rke
   eventbrite: https://www.eventbrite.com/e/129865764999
-  active: true
+  active: false
   title: Kubernetes pomocí RKE (Rancher Kubernetes Engine)
   date: 27. 1. 2021
   time: "19:00"
