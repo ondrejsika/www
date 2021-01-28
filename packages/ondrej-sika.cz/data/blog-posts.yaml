@@ -28,6 +28,33 @@
 
     Nastroje se vyvijeji, neco zastarava a nektere workflow se meni. I me skoleni se meni v case. Je zbytecne aby clovek sel na skoleni za rok znovu, i kdyz obcas neni na skodu si pripomenout i zaklady. Cilem kratkeho 4 hodinoveho workshopu je ukazat si co se zmenilo a tak byt porad v obraze.
 
+- id: zaznam-devops-live-10-kubernetes-pomoci-rke
+  title: "Záznam DevOps Live #10: Kubernetes pomocí RKE (Rancher Kubernetes Engine)"
+  date: 27. 1. 2021
+  ad: terraform
+  tags:
+    - rke
+    - terraform
+    - kubernetes
+  perex: |
+    Záznanam z desátého DevOps live streamu na téma Kubernetes pomocí RKE (Rancher Kubernetes Engine)
+  youtube: U9EoKACTUy0
+  content: |
+    Pokud se chcete naučit pracovat s Terraformem, doporučuji Vám mé školení [__Terraform__](/skoleni/terraform), nebudete litovat.
+
+- id: zaznam-devops-live-9-uvod-do-cloud-initu
+  title: "Záznam DevOps Live #9: Úvod do Cloud Initu"
+  date: 13. 1. 2021
+  ad: terraform
+  tags:
+    - cloud-init
+    - terraform
+  perex: |
+    Záznanam z devátého DevOps live streamu na téma Úvod do Cloud Initu
+  youtube: hSyBBLWRXLs
+  content: |
+    Pokud se chcete naučit pracovat s Terraformem, doporučuji Vám mé školení [__Terraform__](/skoleni/terraform), nebudete litovat.
+
 - id: zhodnoceni-roku-2020-a-plany-na-rok-2021
   hidden: false
   title: "Zhodnocení roku 2020 a plány na rok 2021"
@@ -200,19 +227,6 @@
     Alert Manager je komponenta Prometheus monitoring stacku, která se stará o posílání alertů. V článku ukážu jak nastavit Alert Manager tak, aby se správné notifikace odesílali správným teamům, jak seskupovat alerty a jak posílat jen to důležité, když všechno padá.
   content: |
     Alert Manager je komponenta Prometheus monitoring stacku, která se stará o posílání alertů. V článku ukážu jak nastavit Alert Manager tak, aby se správné notifikace odesílali správným teamům, jak seskupovat alerty a jak posílat jen to důležité, když všechno padá.
-
-- id: zaznam-devops-live-9-uvod-do-cloud-initu
-  title: "Záznam DevOps Live #9: Úvod do Cloud Initu"
-  date: 13. 1. 2021
-  ad: terraform
-  tags:
-    - cloud-init
-    - terraform
-  perex: |
-    Záznanam z devátého DevOps live streamu na téma Úvod do Cloud Initu
-  youtube: hSyBBLWRXLs
-  content: |
-    Pokud se chcete naučit pracovat s Terraformem, doporučuji Vám mé školení [__Terraform__](/skoleni/terraform), nebudete litovat.
 
 - id: zaznam-devops-live-8-konfigurace-alertmanageru
   title: "Záznam DevOps Live #8: Konfigurace Alertmanageru"
