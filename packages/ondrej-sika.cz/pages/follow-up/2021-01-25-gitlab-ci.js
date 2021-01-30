@@ -16,7 +16,7 @@ const Page = () => (
 
 ### Repozitáře, které jsme při školení vytvořili
 
-!!! TODO !!!
+https://github.com/sika-training-examples
 
 ### Další použité repozitáře
 
