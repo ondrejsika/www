@@ -7,7 +7,9 @@ const Page = () => (
     hideNewsletter={true}
     markdown={`
 <!--- PLACEHOLDER FOLLOW_UP_LINK (for create-follow-up.py script) --->
-- [gitlab-ci, 2021-01-11](/follow-up/2021-01-11-gitlab-ci)
+- [kubernetes, 2021-01-28](/follow-up/2021-01-28-kubernetes)
+- [docker, 2021-01-26](/follow-up/2021-01-26-docker)
+- [gitlab-ci, 2021-01-25](/follow-up/2021-01-25-gitlab-ci)
 - [Kubernetes, 16. 11. 2020](/follow-up/2020-11-16-kubernetes)
 - [Git, O2, 11. 11. 2020](/follow-up/2020-11-11-o2-git)
 - [Gitlab CI, Mall, 9. 11. 2020](/follow-up/2020-11-09-mall-gitlab-ci)
