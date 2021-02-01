@@ -30,6 +30,8 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://chaoyizha.com/>
 - <https://regisfreyd.com/> ([source](https://github.com/djaiss/regisfreyd))
 - <https://marekbartik.com/> ([source](https://github.com/marekaf/marekbartik.com))
+- <https://xdavidhu.me/> ([source](https://github.com/xdavidhu/xdavidhu.me))
+- <https://bugs.xdavidhu.me> ([source](https://github.com/xdavidhu/bugs.xdavidhu.me))
     `}
     />
   );
