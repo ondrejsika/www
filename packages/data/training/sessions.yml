@@ -642,34 +642,6 @@
   name: Kubernetes
   price: 11 999 CZK
   venue_id: null
-- active: false
-  city: Prague
-  country: cz
-  course_id: terraform
-  date_from: 01.02.2021
-  date_to: 01.02.2021
-  facebook_event: null
-  id: terraform-praha-01-02-2021
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Terraform
-  price: 6 800 CZK
-  venue_id: null
-- active: false
-  city: Prague
-  country: cz
-  course_id: rancher
-  date_from: 02.02.2021
-  date_to: 02.02.2021
-  facebook_event: null
-  id: rancher-praha-02-02-2021
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Rancher
-  price: 6 800 CZK
-  venue_id: null
 - active: true
   city: Prague
   country: cz
@@ -682,20 +654,6 @@
   length: 1 den
   linkedin_event: null
   name: Prometheus
-  price: 6 800 CZK
-  venue_id: null
-- active: false
-  city: Prague
-  country: cz
-  course_id: digitalocean
-  date_from: 04.02.2021
-  date_to: 04.02.2021
-  facebook_event: null
-  id: digitalocean-praha-04-02-2021
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: DigitalOcean
   price: 6 800 CZK
   venue_id: null
 - active: true
@@ -712,7 +670,7 @@
   name: Proxmox
   price: 6 800 CZK
   venue_id: null
-- active: false
+- active: true
   city: Online
   country: cz
   course_id: django
@@ -755,32 +713,46 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Brno
+  city: Prague
   country: cz
-  course_id: docker
+  course_id: terraform
   date_from: 06.04.2021
-  date_to: 07.04.2021
+  date_to: 06.04.2021
   facebook_event: null
-  id: docker-brno-06-04-2021
+  id: terraform-praha-01-02-2021
   lang: cs
-  length: 2 dny
+  length: 1 den
   linkedin_event: null
-  name: Docker
-  price: 11 999 CZK
+  name: Terraform
+  price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Brno
+  city: Prague
   country: cz
-  course_id: kubernetes
-  date_from: 08.04.2021
-  date_to: 09.04.2021
+  course_id: rancher
+  date_from: 07.04.2021
+  date_to: 07.04.2021
   facebook_event: null
-  id: kubernetes-brno-08-04-2021
+  id: rancher-praha-02-02-2021
   lang: cs
-  length: 2 dny
+  length: 1 den
   linkedin_event: null
-  name: Kubernetes
-  price: 11 999 CZK
+  name: Rancher
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: digitalocean
+  date_from: 08.04.2021
+  date_to: 08.04.2021
+  facebook_event: null
+  id: digitalocean-praha-04-02-2021
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: DigitalOcean
+  price: 6 800 CZK
   venue_id: null
 - active: true
   city: Brno
