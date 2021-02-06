@@ -144,6 +144,16 @@ const Page = () => (
             </a>
           </div>
         </Col>
+        <Col lg={2}>
+          <div className="text-center">
+            <a href="https://skoleni.io">
+              <Image
+                src="https://github.com/skoleniio.png"
+                style={{ maxWidth: "150px" }}
+              />
+            </a>
+          </div>
+        </Col>
       </Row>
       <p className="pt-2">
         Chcete podpořit meetupy? Napište na{" "}
