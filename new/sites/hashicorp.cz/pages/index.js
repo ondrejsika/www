@@ -3,17 +3,23 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
-import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
+import MainHeader from "../components/MainHeader";
 
 const Page = () => (
   <>
     <title>HashiCorp Czech Community</title>
+    <MainHeader
+      title={
+        <span>
+          <b>HashiCorp</b>
+          <br /> Czech Community
+        </span>
+      }
+    />
+
     <Container className="pt-5 pb-5">
-      <Alert variant="warning">
-        Začínáme, na webu i dalších věcech pracujeme :)
-      </Alert>
       <div className="text-center">
         <h1>HashiCorp Czech Community</h1>
         <p style={{ fontSize: "1.7em" }}>
