@@ -161,7 +161,7 @@
     - kubernetes
 - id: uvod-do-gitlab-actions
   eventbrite: https://www.eventbrite.com/e/132422738977
-  active: true
+  active: false
   title: Úvod do Github Actions
   date: 10. 2. 2021
   time: "19:00"
