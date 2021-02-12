@@ -1428,6 +1428,38 @@
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
+- id: packer
+  name:
+    cs: Školení Packer
+    en: Packer Training
+    de: Packer Schulung
+  lecturers:
+    - ondrejsika
+  length: 1
+  price:
+    open:
+      cz: 6 800 CZK
+      de: 299 EUR
+      uk: 299 EUR
+    in_house:
+      cz: 25 000 CZK
+      de: 1999 EUR
+      uk: 1999 GBP
+  twitter_recommendations:
+    cs: []
+  recommendations:
+    cs: ["spel", "vse", "sit"]
+  agenda:
+    cs: |
+      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+  description:
+    cs: |
+      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+    en: |
+      **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
 - id: digitalocean
   skoleniio:
     name: digitalocean
