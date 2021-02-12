@@ -31,7 +31,6 @@
 - id: zaznam-devops-live-11-uvod-do-github-actions
   title: "Záznam DevOps Live #11: Úvod do Github Actions"
   date: 10. 2. 2021
-  ad: gitlab-ci
   tags:
     - github
     - gitlab
@@ -39,8 +38,6 @@
   perex: |
     Záznanam z jedenáctného DevOps live streamu na téma Úvod do Github Actions
   youtube: TYwgCdUdQ20
-  content: |
-    Pokud se chcete naučit pracovat s CI v Gitlabu, doporučuji Vám mé školení [__Gitlab CI__](/skoleni/gitlab-ci), nebudete litovat.
 
 - id: zaznam-devops-live-10-kubernetes-pomoci-rke
   title: "Záznam DevOps Live #10: Kubernetes pomocí RKE (Rancher Kubernetes Engine)"
