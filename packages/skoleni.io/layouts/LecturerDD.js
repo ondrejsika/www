@@ -19,8 +19,21 @@ const LecturerDD = props => {
   let courses = lecturer.courses;
   let name = lecturer.name;
 
+  let image_url =
+    lecturer.github && `https://github.com/${lecturer.github}.png`;
+
+  if (lecturer.image_url) {
+    image_url = lecturer.image_url;
+  }
+
   return (
-    <Lecturer lecturer={lecturer} name={name} bio={bio} courses={courses} />
+    <Lecturer
+      lecturer={lecturer}
+      name={name}
+      bio={bio}
+      courses={courses}
+      image_url={image_url}
+    />
   );
 };
 
