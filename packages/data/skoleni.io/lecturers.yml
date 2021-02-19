@@ -21,6 +21,7 @@
 
 - id: vojtechmares
   name: Vojtěch Mareš
+  image_url: https://vojtechmares.com/images/me.jpg
   courses:
     - vojtechmares-git
     - vojtechmares-gitlab-ci
@@ -59,7 +60,7 @@
     - adambisek-react
     - adambisek-git
     - adambisek-prometheus
-  bio: 'Baví mně pomáhat ostatní kolegům v IT branži růst a rád pomohu i vám! Věřím, že kromě odbornosti je velmi důležitý i softskill (prezentace, způsob komunikace a empatie), a proto mi velmi záleží na pocitu účastníků a školení a na tom, co si odnesete. Pracuji přes 18 let jako fullstack developer a pevně věřím, že z mých téměř dvou dekád mé praxe vám mám co předat. Více informací o mně na LI: https://www.linkedin.com/in/adambisek/'
+  bio: "Baví mně pomáhat ostatní kolegům v IT branži růst a rád pomohu i vám! Věřím, že kromě odbornosti je velmi důležitý i softskill (prezentace, způsob komunikace a empatie), a proto mi velmi záleží na pocitu účastníků a školení a na tom, co si odnesete. Pracuji přes 18 let jako fullstack developer a pevně věřím, že z mých téměř dvou dekád mé praxe vám mám co předat. Více informací o mně na LI: https://www.linkedin.com/in/adambisek/"
   linkedin: adambisek
   email: adam.bisek@gmail.com
   phone: +420 773 050 556
@@ -112,7 +113,6 @@
   twitter: verosk
   linkedin: verosk
 
-
 # - id: davidkarban
 #   name: David Karban
 #   bio: DevOps @ WF Tech
@@ -154,5 +154,5 @@
     - jiripinkas-nginx
     - jiripinkas-liquibase
     - jiripinkas-vue
-  phone:  +420 774 912 047
+  phone: +420 774 912 047
   github: jirkapinkas
