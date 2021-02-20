@@ -79,14 +79,14 @@ module.exports = {
       });
 
       // remove default news page render (without session)
-      delete defaultPathMap["/faq/[id]"];
+      delete defaultPathMap["/devops-faq/[id]"];
 
       var faq_list = yaml.safeLoad(
         fs.readFileSync("../data/faq-cs.yml", "utf8")
       );
       faq_list.forEach(function(faq) {
-        defaultPathMap[`/faq/${faq.id}`] = {
-          page: "/faq/[id]",
+        defaultPathMap[`/devops-faq/${faq.id}`] = {
+          page: "/devops-faq/[id]",
           query: { id: faq.id }
         };
       });

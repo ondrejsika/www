@@ -58,7 +58,7 @@ const Navbar = (
           ["WEEKNOTES", "/blog/tag/weeknotes"],
           ["REPOZITÁŘE", "/repozitare"],
           ["RESOURCES", "/resources"],
-          ["FAQ", "/faq"]
+          ["DEVOPS FAQ", "/devops-faq"]
         ]
       ],
       ["KONTAKT", "/kontakt"]

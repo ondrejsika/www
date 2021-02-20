@@ -7,10 +7,10 @@ import faq_cz_yml from "@app/data/faq-cs.yml";
 
 const Page = () => (
   <Article
-    title="FAQ"
+    title="DevOps FAQ"
     noBlogBoxContent={faq_cz_yml.map((faq, i) => (
       <BlogBox key={i}>
-        <Link href={"/faq/" + faq.id}>
+        <Link href={"/devops-faq/" + faq.id}>
           <a style={{ color: "black" }}>
             <h2>{faq.question}</h2>
           </a>
