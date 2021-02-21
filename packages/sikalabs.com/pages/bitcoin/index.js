@@ -12,7 +12,7 @@ const Small = props => (
 const Index = () => (
   <div>
     <Head>
-      <title>SikaLabsBitcoin</title>
+      <title>SikaLabs Bitcoin</title>
     </Head>
     <h1>
       SikaLabs
