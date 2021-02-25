@@ -278,14 +278,19 @@
 
     ### Co Vás naučím
 
-    -	Úvod do Prometheus ekosystému
-    - Instalace Promethea a Alertmanageru
+    - Úvod do Prometheus ekosystému
+    - Instalace Promethea, Alertmanageru a Grafany
+    - Instace do Kubernetes Clusteru pomocí Prometheus Operatoru
     - Exportéry – získávání dat
     - Konfigurace Promethea a Alertmanageru
+    - Monitoring Dockeru a Docker kontejnerů v Prometheu
+    - Konfigurace sběru metrik a autodiscovery v Kubernetes 
     - Práce s PROMQL (dotazovací jazyk Promethea)
+    - Práce s předpřipravenými alerty v Prometheu
+    - Vytváření vlastních alertů v Prometheu
+    - Práce s Prometheus Pushgateway pro one-time tasky
     - Integrace s Grafanou
-    - Prometheus Pushgateway
-    - Integrace s Dockerem, Kubernetes a vlastní aplikací
+    - Vlastní Dashboardy v Grafane
 
     #### Pro koho je školení určeno
 
@@ -299,7 +304,8 @@
     #### Technické požadavky
 
     - Notebook s přístupem na internet
-    - Docker nebo nainstalovány Prométheus, Alert Manager, Push Gateway a Grafanu
+    - Přístup na SSH
+    - Docker nebo nainstalovány Prométheus, Alert Manager, Push Gateway a Grafana výhodou (není nutností)
 
 - id: ondrejsika-ansible
   lecturer_id: ondrejsika
