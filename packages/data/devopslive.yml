@@ -176,7 +176,7 @@
     - ci
 - id: vlastni-terraform-provider
   eventbrite: https://www.eventbrite.com/e/132573034515
-  active: true
+  active: false
   title: Vlastní Terraform Provider
   date: 24. 2. 2021
   time: "19:00"
