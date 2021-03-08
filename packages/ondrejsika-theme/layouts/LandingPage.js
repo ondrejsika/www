@@ -50,7 +50,7 @@ const LandingPage = props => (
       <Translate
         lang={props.site.lang}
         en="Together, we will reduce IT costs, solve the technological debt and prepare your IT architecture for rapid scaling."
-        cs="Snížíme spolu náklady na IT, vyřešíme technologický dluh a připravíme Vaši IT architekturu na rapidní škálování."
+        cs="Snížíme spolu náklady na IT, vyřešíme technologický dluh a připravíme vaši IT architekturu na rapidní škálování."
       />
     }
     findOutMore={
@@ -112,7 +112,7 @@ const LandingPage = props => (
       <Translate
         lang={props.site.lang}
         en="I will train your team so that they can create a DevOps pipeline and work with it effectively. They will learn everything at hands-on workshops, after which they will be able to safely manage and quickly develop your DevOps environment."
-        cs="Vyškolím Váš tým tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vaše DevOps prostředí."
+        cs="Vyškolím Váš tým tak, aby mohl sám a efektivně vytvořit DevOps pipeline a pracovat s ním. Vše si vyzkoušíme na hands-on workshopech, po jejichž absolvování budete schopni bezpečně spravovat a rychle rozvíjet Vaše DevOps prostředí."
       />
     }
     trainingHeader={
@@ -192,10 +192,10 @@ const LandingPage = props => (
             </p>
             <h4>Školení</h4>
             <p>
-              Také se hodně věnuji školení, všechny kurzy jsou formou workshopů
+              Také se hodně věnuji školení, všechny kurzy pořádám formou workshopů
               (hands-on) a stavím je na svých dlouholetých znalostech a
               zkušenostech z vývoje, testování a provozování softwarových
-              projektů. Všechny kurzy a školení dělám v českém nebo anglickém
+              projektů. Všechny kurzy a školení probíhají v českém nebo anglickém
               jazyce.
             </p>
           </>
@@ -234,7 +234,7 @@ const LandingPage = props => (
       <Translate
         lang={props.site.lang}
         en="I'll set up your DevOps pipeline utilizing following tech: Git, Gitlab CI, Ansible, Docker, Kubernetes, Prometheus, Sentry, ELK / EFK, Rancher, Terraform, Public Cloud: [AWS, DigitalOcean, Azure, GCP], Private Cloud: [Proxmox, OpenStack]."
-        cs="Na míru Vám poskládám DevOps pipeline z těchto technologií: Git, Gitlab CI, Ansible, Docker, Kubernetes, Prometheus, Sentry, ELK / EFK, Rancher, Terraform, Public Cloud: [AWS, DigitalOcean, Azure, GCP], Private Cloud: [Proxmox, OpenStack] ."
+        cs="Na míru Vám poskládám DevOps pipeline z těchto technologií: Git, Gitlab CI, Ansible, Docker, Kubernetes, Prometheus, Sentry, ELK / EFK, Rancher, Terraform, Public Cloud: [AWS, DigitalOcean, Azure, GCP], Private Cloud: [Proxmox, OpenStack]."
       />
     }
     point3={
