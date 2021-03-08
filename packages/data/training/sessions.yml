@@ -786,10 +786,10 @@
   city: Online
   country: cz
   course_id: prometheus
-  date_from: 20.04.2021
-  date_to: 21.04.2021
+  date_from: 26.04.2021
+  date_to: 27.04.2021
   facebook_event: null
-  id: prometheus-online-20-04-2021
+  id: prometheus-online-26-04-2021
   lang: cs
   length: 2 dny
   linkedin_event: null
@@ -800,10 +800,10 @@
   city: Online
   country: cz
   course_id: proxmox
-  date_from: 22.04.2021
-  date_to: 22.04.2021
+  date_from: 28.04.2021
+  date_to: 28.04.2021
   facebook_event: null
-  id: proxmox-online-22-04-2021
+  id: proxmox-online-28-04-2021
   lang: cs
   length: 1 den
   linkedin_event: null
