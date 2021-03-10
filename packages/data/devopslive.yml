@@ -190,7 +190,7 @@
     - terraform
 - id: longhorn
   eventbrite: https://www.eventbrite.com/e/134515793359
-  active: true
+  active: false
   title: Longhorn - Jednoduchá on-premise storage pro Kubernetes
   date: 10. 3. 2021
   time: "19:00"
