@@ -28,6 +28,20 @@
 
     Nastroje se vyvijeji, neco zastarava a nektere workflow se meni. I me skoleni se meni v case. Je zbytecne aby clovek sel na skoleni za rok znovu, i kdyz obcas neni na skodu si pripomenout i zaklady. Cilem kratkeho 4 hodinoveho workshopu je ukazat si co se zmenilo a tak byt porad v obraze.
 
+- id: zaznam-devops-live-13-longhorn-jednoducha-on-premise-storage-pro-kubernetes
+  title: "Záznam DevOps Live #13: Longhorn - Jednoduchá on-premise storage pro Kubernetes"
+  date: 10. 3. 2021
+  ad: kubernetes
+  tags:
+    - kubernetes
+    - longhorn
+    - devopslive
+  perex: |
+    Záznanam z třináctého live streamu: Longhorn - Jednoduchá on-premise storage pro Kubernetes
+  youtube: pfQG320_l2Q
+  content: |
+    Pokud se chcete naučit pracovat s Kubernetes, doporučuji Vám mé školení [__Kubernetres__](/skoleni/kubernetes), nebudete litovat.
+
 - id: zaznam-devops-live-12-vlastni-terraform-provider
   title: "Záznam DevOps Live #12: Vlastní Terraform provider"
   date: 24. 2. 2021
