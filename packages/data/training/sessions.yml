@@ -909,7 +909,7 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Prague
+  city: Online
   country: cz
   course_id: proxmox
   date_from: 23.06.2021
