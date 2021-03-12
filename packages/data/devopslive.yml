@@ -241,7 +241,7 @@
   eventbrite:
   active: true
   title: WireGuard - Jednoducha a spolehliva VPN
-  date: '??. ??. 2021'
+  date: '21. 4. 2021'
   time: "19:00"
   about: |
     WireGuard je extrémně jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpanVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
@@ -256,7 +256,7 @@
   eventbrite:
   active: true
   title: Ovladnete Makefile a zjednoduste si manualni tasky
-  date: '??. ??. 2021'
+  date: '5. 5. 2021'
   time: "19:00"
   about: |
     Make je provereny nastroj, krery lidem ulehcuje praci uz 44 let. Make Vam umoznuje misto psani shell scriptu spostet tasky jednodussim a cistsim zpusobem. Pojdme si ukazat jak na to.
@@ -271,7 +271,7 @@
   eventbrite:
   active: true
   title: Vytvarejte vlastni Dashboardy v Grafane
-  date: '??. ??. 2021'
+  date: '19. 5. 2021'
   time: "19:00"
   about: |
     Grafana je asi nejpopularnejsi nastroj pro nahled na metricke data ne jen z Prometheu. Existuje hodne pripravenych dashboardu, ale pro nasi aplikaci si musime vytvorit vlastni. Ukazu Vam, jak na to.
@@ -287,7 +287,7 @@
   eventbrite:
   active: true
   title: Nebojte se git rebase
-  date: '??. ??. 2021'
+  date: '2. 6. 2021'
   time: "19:00"
   about: |
     Hodne vyvojaru porad nepouziva `git rebase` a tak maji repozitare propletene ruznymi merge commity a vznika tak ne uplne prehledne "nadrazi". Pojdme si ukazat ze pouzivat rebase neni slozite a ze nam to praci ulehci, ne zkomplikuje.
@@ -304,7 +304,7 @@
   eventbrite:
   active: true
   title: Prometheus metriky ve vlastni aplikaci
-  date: '??. ??. 2021'
+  date: '16. 2. 2021'
   time: "19:00"
   about: |
     Prometheus je skvely nastroj na sber metrickych dat, pojdme si ukazat jak sbirat metriky z vasich aplikaci v Go a Pythonu.
