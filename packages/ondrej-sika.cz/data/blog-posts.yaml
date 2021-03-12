@@ -48,6 +48,7 @@
   ad: terraform
   tags:
     - terraform
+    - devopslive
   perex: |
     Záznanam z dvanáctého DevOps live streamu na téma Vlastní Terraform provider
   youtube: pJOVV_CEpzY
@@ -61,6 +62,7 @@
     - github
     - gitlab
     - gitlab-ci
+    - devopslive
   perex: |
     Záznanam z jedenáctného DevOps live streamu na téma Úvod do Github Actions
   youtube: TYwgCdUdQ20
@@ -73,6 +75,7 @@
     - rke
     - terraform
     - kubernetes
+    - devopslive
   perex: |
     Záznanam z desátého DevOps live streamu na téma Kubernetes pomocí RKE (Rancher Kubernetes Engine)
   youtube: U9EoKACTUy0
@@ -86,6 +89,7 @@
   tags:
     - cloud-init
     - terraform
+    - devopslive
   perex: |
     Záznanam z devátého DevOps live streamu na téma Úvod do Cloud Initu
   youtube: hSyBBLWRXLs
@@ -260,6 +264,7 @@
   tags:
     - prometheus
     - alertmanager
+    - devopslive
   perex: |
     Alert Manager je komponenta Prometheus monitoring stacku, která se stará o posílání alertů. V článku ukážu jak nastavit Alert Manager tak, aby se správné notifikace odesílali správným teamům, jak seskupovat alerty a jak posílat jen to důležité, když všechno padá.
   content: |
