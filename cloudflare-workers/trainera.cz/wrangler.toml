@@ -1,9 +1,9 @@
 name = "trainera-cz"
 type = "webpack"
-account_id = "8a5e13ad9edd5be4595027085cf61ce7"
+account_id = "a290be7c0d585e1151ca760b66b4f61b"
 workers_dev = false
 route = "trainera.cz/*"
-zone_id = "48fa247d581b00fa438d371da17c808f"
+zone_id = "b42b71c978c4188dea55bb757f742777"
 
 [site]
 bucket = "../../packages/trainera.cz/out/"
