@@ -268,7 +268,7 @@
   technologies:
     - make
 - id: vlastni-dashboardy-v-grafane
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/146499607269
   active: true
   title: Vytvářejte vlastní Dashboardy v Grafane
   date: "19. 5. 2021"
