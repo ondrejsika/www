@@ -40,7 +40,7 @@
   date: 7.10.2020
   time: "19:00"
   about: |
-    Gitlab umožňuje propojení s Kubernetes clusterem. Má to své výhody hlavně v CI. Ukážeme si jak na to.
+    Gitlab umožňuje propojení s Kubernetes clusterem. Má to své výhody hlavně v CI. Ukážeme si, jak na to.
   points: |
     - Nativní propojení Gitlab CI a Kubernetes clusteru
     - Více Kubernetes clusteru (nelze ve free variantě)
@@ -56,7 +56,7 @@
   date: 21.10.2020
   time: "19:00"
   about: |
-    Terraform je nástroj na správu infrastruktury formou kódu. Pojďme si ukázat jak na to.
+    Terraform je nástroj na správu infrastruktury formou kódu. Pojďme si ukázat, jak na to.
   points: |
     - Co je Terraform a jeho výhody
     - Instalace Terraformu a konfigurace Terraform Cloudu
@@ -121,7 +121,7 @@
   date: 16.12.2020
   time: "19:00"
   about: |
-    Ukážeme si jak efektivně konfigurovat flow eventů v Alertmanageru.
+    Ukážeme si, jak efektivně konfigurovat flow eventů v Alertmanageru.
   points: |
     - Rychlý úvod do Alertmanageru
     - Konfigurace backendů (Email, Slack, Pager Duty, ...)
@@ -136,7 +136,7 @@
   date: 13. 1. 2021
   time: "19:00"
   about: |
-    Cloud Init je způsob jak si základně nakonfigurovat VM bez nutnosti Ansiblu nebo SSH
+    Cloud Init je způsob, jak si základně nakonfigurovat VM bez nutnosti Ansiblu nebo SSH
   points: |
     - Co je Cloud Init a k čemu se používá
     - Výhody používání Cloud Initu
@@ -181,7 +181,7 @@
   date: 24. 2. 2021
   time: "19:00"
   about: |
-    Terraform je ideální nástroj na správu infrastruktury. Ale ne všechno má Terraform provider. My si teď ukážeme jak si vytvořit svůj vlastní.
+    Terraform je ideální nástroj na správu infrastruktury. Ale ne všechno má Terraform provider. My si teď ukážeme, jak si vytvořit svůj vlastní.
   points: |
     - Rychlý úvod do Terraformu
     - Terraform Provider SDK
@@ -240,11 +240,11 @@
 - id: wireguard
   eventbrite:
   active: true
-  title: WireGuard - Jednoducha a spolehliva VPN
+  title: WireGuard - Jednoduchá a spolehlivá VPN
   date: "21. 4. 2021"
   time: "19:00"
   about: |
-    WireGuard je extrémně jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpanVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
+    WireGuard je extrémně jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpenVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
   points: |
     - Co je WireGuard
     - Instalace WireGuard
@@ -255,31 +255,31 @@
 - id: makefile
   eventbrite:
   active: true
-  title: Ovladnete Makefile a zjednoduste si manualni tasky
+  title: Ovládněte Makefile a zjednodušte si manuální tasky
   date: "5. 5. 2021"
   time: "19:00"
   about: |
-    Make je provereny nastroj, krery lidem ulehcuje praci uz 44 let. Make Vam umoznuje misto psani shell scriptu spostet tasky jednodussim a cistsim zpusobem. Pojdme si ukazat jak na to.
+    Make je prověřený nástroj, který lidem ulehčuje práci už 44 let. Make Vám umožňuje místo psaní shell scriptu spouštět tasky jednodušším a čistším způsobem. Pojďme si ukazát, jak na to.
   points: |
-    - Uvod a instalace & konfigurace
-    - Zakladni pouzivani make
-    - Promenne, funcke & pokrocile nastaveni
+    - Úvod a instalace & konfigurace
+    - Základní používání make
+    - Proměnné, funkce & pokročilé nastavení
     - Make a CI
   technologies:
     - make
 - id: vlastni-dashboardy-v-grafane
   eventbrite:
   active: true
-  title: Vytvarejte vlastni Dashboardy v Grafane
+  title: Vytvářejte vlastní Dashboardy v Grafane
   date: "19. 5. 2021"
   time: "19:00"
   about: |
-    Grafana je asi nejpopularnejsi nastroj pro nahled na metricke data ne jen z Prometheu. Existuje hodne pripravenych dashboardu, ale pro nasi aplikaci si musime vytvorit vlastni. Ukazu Vam, jak na to.
+    Grafana je asi nejpopulárnější nástroj pro náhled na metrická data nejen z Promethea. Existuje hodně připravených dashboardů, ale pro naši aplikaci si musíme vytvořit vlastní. Ukážu Vám, jak na to.
   points: |
     - Setup Grafany (Prometheus Stack) na Kubernetes
-    - Uvod co je mozne v Grafane vytvorit
+    - Úvod, co je možné v Grafane vytvořit
     - Struktura Grafany
-    - Tvorba vlastnich Dashboardu a grafu
+    - Tvorba vlastních Dashboardu a grafů
   technologies:
     - grafana
     - prometheus
@@ -290,11 +290,11 @@
   date: "2. 6. 2021"
   time: "19:00"
   about: |
-    Hodne vyvojaru porad nepouziva `git rebase` a tak maji repozitare propletene ruznymi merge commity a vznika tak ne uplne prehledne "nadrazi". Pojdme si ukazat ze pouzivat rebase neni slozite a ze nam to praci ulehci, ne zkomplikuje.
+    Hodně vývojářů pořád nepoužívá `git rebase`, a tak mají repozitáře propletené ruznými merge commity a vzniká tak ne úplně přehledné "nádraží". Pojďme si ukázat, že používat rebase není složité a že nám to práci ulehčí, ne zkomplikuje.
   points: |
-    - Rozdil mezi merge a rebase
-    - Jak spravne rebasovat
-    - Problemy co muzou pri rebase nastat
+    - Rozdíl mezi merge a rebase
+    - Jak správně rebasovat
+    - Problémy, které mohou při rebase nastat
     - Rebase a Gitlab / Github
     - Disaster recovery
   technologies:
@@ -304,16 +304,16 @@
 - id: prometheus-metriky-ve-vlastni-aplikaci
   eventbrite:
   active: true
-  title: Prometheus metriky ve vlastni aplikaci
-  date: "16. 2. 2021"
+  title: Prometheus metriky ve vlastní aplikaci
+  date: "16. 6. 2021"
   time: "19:00"
   about: |
-    Prometheus je skvely nastroj na sber metrickych dat, pojdme si ukazat jak sbirat metriky z vasich aplikaci v Go a Pythonu.
+    Prometheus je skvělý nástroj na sběr metrických dat, pojďme si ukázat, jak sbírat metriky z vašich aplikací v Go a Pythonu.
   points: |
     - Intro do Promethea
     - Prometheus metriky v Go aplikaci
     - Prometheus metriky v Python aplikaci
-    - Nastaveni promethea pro sber vlastnich metrik
+    - Nastavení promethea pro sběr vlastních metrik
   technologies:
     - prometheus
     - go
