@@ -238,7 +238,7 @@
     - github
     - goreleaser
 - id: wireguard
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/145915068899
   active: true
   title: WireGuard - Jednoduchá a spolehlivá VPN
   date: "21. 4. 2021"
@@ -253,7 +253,7 @@
   technologies:
     - wireguard
 - id: makefile
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/146317432379
   active: true
   title: Ovládněte Makefile a zjednodušte si manuální tasky
   date: "5. 5. 2021"
