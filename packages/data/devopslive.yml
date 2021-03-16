@@ -284,7 +284,7 @@
     - grafana
     - prometheus
 - id: nebojte-se-git-rebase
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/146679334839
   active: true
   title: Nebojte se git rebase
   date: "2. 6. 2021"
