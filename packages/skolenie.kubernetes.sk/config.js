@@ -3,7 +3,7 @@ import logo from "@app/data/pictures/courses/kubernetes.svg";
 const site = {
   name: "skolenie.kubernetes.sk",
   lang: "sk",
-  location: "sk",
+  location: "cz",
   gauges_site_id: "5cefbe086dcfe06a8102e23b",
   google_analytics_site_id: "UA-39461955-43",
 
