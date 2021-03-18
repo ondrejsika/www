@@ -302,7 +302,7 @@
     - gitlab
     - github
 - id: prometheus-metriky-ve-vlastni-aplikaci
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/147016366911
   active: true
   title: Prometheus metriky ve vlastní aplikaci
   date: "16. 6. 2021"
