@@ -206,7 +206,7 @@
     - longhorn
 - id: skaffold
   eventbrite: https://www.eventbrite.com/e/134673045705
-  active: true
+  active: false
   title: Jak na lokální Kubernetes Development pomocí Skaffold
   date: 24. 3. 2021
   time: "19:00"
