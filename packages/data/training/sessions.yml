@@ -684,7 +684,7 @@
   name: Django
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: ansible
