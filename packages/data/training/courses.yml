@@ -209,10 +209,10 @@
   description:
     cs: |
       ### Popis technologie
-      Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
+      Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kubernetes pro provoz používají všechny velikosti firem, od startupu po korporace.
 
       ### Jak školení probíhá
-      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kubernetes lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
 
       ### Co Vás naučím
       - Teoretický úvod do Kubernetes
@@ -225,7 +225,7 @@
       - Psaní vlastního Helm balíčku
 
       ### Pro koho je školení určeno
-      Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.
+      Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kubernetes.
 
       #### Předchozí znalosti
       - Základy práce s Dockerem
@@ -321,11 +321,11 @@
       - Instalace Rancheru
       - Správa Rancheru (Uživatele, Práva, ...)
       - Správa Kubernetes clusteru v GUI (vytváření, aktualizace, ...)
-      - Správa Kuberneres clusteru pomocí Terraformu
+      - Správa Kubernetes clusteru pomocí Terraformu
   description:
     cs: |
       ### Popis technologie
-      Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webové administrace, tak pomocí Terraformu.
+      Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). Rancher Vám umožní jednoduše vytvářet a spravovat Kubernetes clustery jak z webové administrace, tak pomocí Terraformu.
 
       ### Jak školení probíhá
 
@@ -337,7 +337,7 @@
       - Instalace Rancheru
       - Správa Rancheru (Uživatele, Práva, ...)
       - Správa Kubernetes clusteru v GUI (vytváření, aktualizace, ...)
-      - Správa Kuberneres clusteru pomocí Terraformu
+      - Správa Kubernetes clusteru pomocí Terraformu
 
       ### Pro koho je školení určeno
 
@@ -353,7 +353,7 @@
       Požadavky na školení jsou na stránce
     en: |
       ### What is Rancher
-      Rancher is a tool for managing the Kubernetes cluster both on its own hardware and in the cloud (AWS, GCP, DigitalOcean). Rancher allows you to easily create and manage Kuberneres clusters from both web administration and Terraform.
+      Rancher is a tool for managing the Kubernetes cluster both on its own hardware and in the cloud (AWS, GCP, DigitalOcean). Rancher allows you to easily create and manage Kubernetes clusters from both web administration and Terraform.
 
       ### Course Description
       This course is ran in the form of a one-day hands-on workshop. We will try out and touch everything practically. Firstly, we will install Rancher togehter and I will show you how to manage it. Then we create Kubernets clusters in the cloud and on the premise virtuals. Both manually and using Terraform.
@@ -363,7 +363,7 @@
       - Rancher installation
       - Rancher Administration (Users, Rights, ...)
       - Kubernetes cluster administration in GUI (creation, update, ...)
-      - Kuberneres cluster management using Terraform
+      - Kubernetes cluster management using Terraform
 
       ### Who Should Attend
       Anyone managing Kubetnetes clusters and interested in more advanced DevOps setup.
@@ -1522,7 +1522,7 @@
       ### Popis technologie
       DigitalOcean je spolehlivý a jednoduchý cloud, kam můžete velmi rychle zmigrovat vaši stávající infrastrukturu nebo vytvořit novou pro nový projekt ve velmi krátkém čase a s velmi malou nutností údržby. DigitalOcean je o hodně jednodušší než AWS nebo GCP a je proto vhodný i pro ty, kteří nemají s cloudy žádné zkušenosti.
       ### Jak školení probíhá
-      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme si jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak s jeho pomocí nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
+      Školení probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme si jak spustit Kubernetes lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu Kubernetes a projdeme si jeho komponenty. Naučíme se jak napsat Kubernetes manifest a jak s jeho pomocí nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v Kubernetes a jak používat (a psát) Kubernetes balíčky v Helmu.
 
       ### Co Vás naučím
 

@@ -16,7 +16,7 @@ const Page = () => (
 
 ### Repozitáře, které jsme při školení vytvořili
 
-- https://github.com/sika-training-examples/gitlab-ci--2020-09-16--kuberneres-deployment-example
+- https://github.com/sika-training-examples/gitlab-ci--2020-09-16--Kubernetes-deployment-example
 - https://github.com/sika-training-examples/gitlab-ci--2020-09-16--example
 
 

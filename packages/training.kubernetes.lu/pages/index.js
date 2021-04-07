@@ -17,7 +17,7 @@ import Link from "next/link";
 const Index = () => (
   <div>
     <Head>
-      <title>Kuberneres Training, Ondrej Sika - training.kubernetes.lu</title>
+      <title>Kubernetes Training, Ondrej Sika - training.kubernetes.lu</title>
       <link
         href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
         rel="stylesheet"
@@ -25,7 +25,7 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Kuberneres Training 🇱🇺"
+      websiteHeader="Kubernetes Training 🇱🇺"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.com/lu/?x_source=training.kubernetes.lu"
       logoUrl="/static/kubernetes.png"

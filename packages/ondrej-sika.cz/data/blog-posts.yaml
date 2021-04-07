@@ -440,7 +440,7 @@
   content: |
     Tento blog post je shrnutím mého prvního live streamu [DevOps Live](/devopslive). DevOps Live je stream live codingu na nějaké DevOps téma, které typicky nepokrývám ve svých školeních. Tento stream byl o možnosti spravovat konfiguraci Gitlabu deklarativním přístupem, čili Terraformem.
 
-    Gitlab představovat nemusím, je to DevOps platforma: hosting Git repozitářů, CI, ... Terraform je nástroj "Infrastructure as a Code", čili na správu infrastrury formou kódu. Terraform se převážně používá na správu Virtuálních strojů, S3 bucketu a Kuberneres clusteru v cloudu, ale dá se použít i na správu Gitlabu (čehokoliv co má API). Jdeme na to.
+    Gitlab představovat nemusím, je to DevOps platforma: hosting Git repozitářů, CI, ... Terraform je nástroj "Infrastructure as a Code", čili na správu infrastrury formou kódu. Terraform se převážně používá na správu Virtuálních strojů, S3 bucketu a Kubernetes clusteru v cloudu, ale dá se použít i na správu Gitlabu (čehokoliv co má API). Jdeme na to.
 
     ## Setup Terraform konfigurace
 
@@ -842,7 +842,7 @@
 
     a laodbalancer, který ukazuje na všechny tyto nody na adrese `rook.sikademo.com` s CNAME `*.rook.sikademo.com`.
 
-    ## Instalace Kuberneres
+    ## Instalace Kubernetes
 
     Nejdřív potřebujeme nainstalovat Kubernetes. Můžeme použít `kubeadmin` nebo Rancher. Já jsem použil Rancher a postavil jsem cluster kde každý node je master i worker zároveň.
 

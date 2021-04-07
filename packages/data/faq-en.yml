@@ -24,7 +24,7 @@
     Zdroj: https://blog.frickjack.com/2012/01/iptables-nat-port-forward-443-https-to.html
 
 - id: add-extra-sans-to-rke-kubernetes-cluster
-  question: Add extra SANS to RKE Kuberneres cluster
+  question: Add extra SANS to RKE Kubernetes cluster
   answer: |
     Add to `cluster.yml` this:
 

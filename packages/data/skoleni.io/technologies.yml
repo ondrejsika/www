@@ -37,7 +37,7 @@
   name: Kubernetes
   description: |
     Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči
-    na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny
+    na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kubernetes pro provoz používají všechny
     velikosti firem, od startupu po korporace.
   courses:
     - ondrejsika-kubernetes
@@ -356,7 +356,7 @@
   name: Rancher
   description: |
     Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean).
-    Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webové administrace, tak pomocí Terraformu.
+    Rancher Vám umožní jednoduše vytvářet a spravovat Kubernetes clustery jak z webové administrace, tak pomocí Terraformu.
   courses:
     - ondrejsika-rancher
 

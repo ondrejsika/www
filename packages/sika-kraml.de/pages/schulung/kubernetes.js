@@ -16,10 +16,10 @@ export default props => (
     price_in_house="2600 EUR"
     description={stripIndent`
     ### Die Technologie
-    Kubernetes ist heutzutage die an weitesten verbreitete Plattform zum Hosten von Docker Containern. Es wird von allen großen Spielern auf dem Markt (Google, Amazon, Microsoft) über die Cloud Native Computing Foundation unterstützt. Kuberneres wird von Unternehmen jeder Größenordnung produktiv eingesetzt - vom Startup bis zum Weltkonzern.
+    Kubernetes ist heutzutage die an weitesten verbreitete Plattform zum Hosten von Docker Containern. Es wird von allen großen Spielern auf dem Markt (Google, Amazon, Microsoft) über die Cloud Native Computing Foundation unterstützt. Kubernetes wird von Unternehmen jeder Größenordnung produktiv eingesetzt - vom Startup bis zum Weltkonzern.
 
     ### Kursbeschreibung
-    Der Kurs hat die Form eines praktischen Hands-On-Workshops. Wir werden Kuberneres sowohl lokal (zum Entwickeln), als auch in der Cloud bei DigitalOcean aufsetzen. Nachdem wir uns eine Übersicht über die Grundstruktur verschafft haben, gehen wir die einzelnen Komponenten der Plattform durch. Wir lernen, wie man ein Kubernetes Manifest schreibt und wie man eine Dockeranwendung deployt. Des Weiteren sehen wir uns an, wie man in Kubernetes Rechte verwaltet und wie man Helm-Pakete schreibt und nutzt.
+    Der Kurs hat die Form eines praktischen Hands-On-Workshops. Wir werden Kubernetes sowohl lokal (zum Entwickeln), als auch in der Cloud bei DigitalOcean aufsetzen. Nachdem wir uns eine Übersicht über die Grundstruktur verschafft haben, gehen wir die einzelnen Komponenten der Plattform durch. Wir lernen, wie man ein Kubernetes Manifest schreibt und wie man eine Dockeranwendung deployt. Des Weiteren sehen wir uns an, wie man in Kubernetes Rechte verwaltet und wie man Helm-Pakete schreibt und nutzt.
 
     ### Ondrej Sika (englisch)
 

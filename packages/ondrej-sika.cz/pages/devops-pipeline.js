@@ -44,7 +44,7 @@ Docker je nastroj, který proces vývoje, testování a provozování softwaru v
 
 ## Kubernetes
 
-Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.
+Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kubernetes pro provoz používají všechny velikosti firem, od startupu po korporace.
 
 ## Prometheus, Alert Manager, Grafana
 
@@ -60,7 +60,7 @@ ELK nebo Elastic Stack je sada nástrojů ElasticSearch, Logstash (nebo Fluentd)
 
 ## Rancher, RKE
 
-Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). Rancher Vám umožní jednoduše vytvářet a spravovat Kuberneres clustery jak z webové administrace, tak pomocí Terraformu.
+Rancher je nástroj na správu Kubernetes clusteru jak na vlastním hardware, tak i v cloudu (AWS, GCP, DigitalOcean). Rancher Vám umožní jednoduše vytvářet a spravovat Kubernetes clustery jak z webové administrace, tak pomocí Terraformu.
 
 ## Terraform
 
