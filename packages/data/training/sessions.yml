@@ -726,7 +726,7 @@
   name: Terraform
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: rancher
@@ -740,7 +740,7 @@
   name: Rancher
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: digitalocean
