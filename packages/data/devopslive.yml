@@ -222,7 +222,7 @@
     - skaffold
 - id: goreleaser-a-ci
   eventbrite: https://www.eventbrite.com/e/134755486287
-  active: true
+  active: false
   title: Jednoduchá distribuce Go binárek pomocí GoReleaser a CI
   date: 7. 4. 2021
   time: "19:00"
