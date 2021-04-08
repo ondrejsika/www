@@ -28,6 +28,22 @@
 
     Nastroje se vyvijeji, neco zastarava a nektere workflow se meni. I me skoleni se meni v case. Je zbytecne aby clovek sel na skoleni za rok znovu, i kdyz obcas neni na skodu si pripomenout i zaklady. Cilem kratkeho 4 hodinoveho workshopu je ukazat si co se zmenilo a tak byt porad v obraze.
 
+- id: zaznam-devops-live-15-jednoducha-distribuce-go-binarek-pomoci-goreleaser-a-ci
+  title: "Záznam DevOps Live #15: Jednoduchá distribuce Go binárek pomocí GoReleaser a CI"
+  date: 7. 4. 2021
+  ad: gitlab-ci
+  tags:
+    - go
+    - goreleaser
+    - github
+    - ci
+    - devopslive
+  perex: |
+    Záznanam z patnáctého live streamu: Jednoduchá distribuce Go binárek pomocí GoReleaser a CI
+  youtube: A99IDxxKmL4
+  content: |
+    Pokud se chcete naučit pracovat s Gitlab CI, doporučuji Vám mé školení [__Gitlab CI__](/skoleni/gitlab-ci), nebudete litovat.
+
 - id: zaznam-devops-live-14-jak-na-lokalni-kubernetes-development-pomoci-skaffold
   title: "Záznam DevOps Live #14: Jak na lokální Kubernetes Development pomocí Skaffold"
   date: 24. 3. 2021
