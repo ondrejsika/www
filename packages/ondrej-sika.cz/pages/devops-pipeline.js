@@ -48,7 +48,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
 
 ## Prometheus, Alert Manager, Grafana
 
-Prométheus je moderní monitoringový nástroj a metrics server. Umožňuje sbírat metrická data z vaší aplikace a většiny komponent Váši infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prométheus spadá pod CNCF, stejně jako Kubernetes.
+Prometheus je moderní monitoringový nástroj a metrics server. Umožňuje sbírat metrická data z vaší aplikace a většiny komponent Váši infrastruktury a nad těmito daty dělat grafy (v Grafaně) a alerty. Prometheus spadá pod CNCF, stejně jako Kubernetes.
 
 ## Sentry
 

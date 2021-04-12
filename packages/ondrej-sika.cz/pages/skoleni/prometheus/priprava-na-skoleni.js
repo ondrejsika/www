@@ -10,7 +10,7 @@ Díky za Váš zájem o školení Promethea. Školení pokrývá práci s Promet
 Na školení Promethea potřebujete:
 
 - Vlastní notebook
-- Docker nebo nainstalovaný Prométheus, Alert Manager, Push Gateway a Grafanau
+- Docker nebo nainstalovaný Prometheus, Alert Manager, Push Gateway a Grafanau
 - Případně můžete pracovat v Cloudu přes SSH, ale dopodručuji lokální instalaci (Docker nebo nativní aplikace)
 
 Binárky (Linux, Mac, Windows) pro Prometheus, Alert Manager a Push Gateway naleznete zde: <https://prometheus.io/download/>
