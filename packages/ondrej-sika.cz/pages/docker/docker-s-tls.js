@@ -21,7 +21,7 @@ Pokud nemáte \`minica\` můžete jej nainstalovat pomocí \`brew install minica
 
 ## Spuštění Dockeru s TLS parametry
 
-Je potřeba spustit Docker s těmito parametry \`--tlsverify --tlscacert=/etc/docker/ca.pem --tlscert=/etc/docker/čert.pem --tlskey=/etc/docker/key.pem -H=0.0.0.0:2376\`. V systemd nastavte tyto parametry ke spouštění Dockeru.
+Je potřeba spustit Docker s těmito parametry \`--tlsverify --tlscacert=/etc/docker/ca.pem --tlscert=/etc/docker/cert.pem --tlskey=/etc/docker/key.pem -H=0.0.0.0:2376\`. V systemd nastavte tyto parametry ke spouštění Dockeru.
 
     dockerd \\
       --tlsverify \\
