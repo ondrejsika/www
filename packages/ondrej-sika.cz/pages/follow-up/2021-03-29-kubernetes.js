@@ -3,8 +3,8 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
   <Article
-    title="Follow Up: Kubernetes, 29. 03. 2021"
-    header="Follow Up: Kubernetes"
+    title="Follow Up: Docker &amp; Kubernetes, 29. 03. 2021"
+    header="Follow Up: Docker &amp; Kubernetes"
     subheader="29. 03. 2021"
     hideNewsletter={true}
     markdown={`
@@ -12,6 +12,7 @@ const Page = () => (
 
 ### Repozitář s kurzy
 
+- Docker - https://github.com/ondrejsika/docker-training/
 - Kubernetes - https://github.com/ondrejsika/kubernetes-training/
 
 ### Repozitáře, které jsme při školení vytvořili
@@ -22,13 +23,10 @@ const Page = () => (
 
 - Terraform Infrastruktura Demo Gitlabu - https://github.com/ondrejsika/terraform-demo-gitlab
 - Traefik Ingress for Kubernets - https://github.com/ondrejsika/kubernetes-ingress-traefik
-- Demo Kubernetes Cluster on DigitalOcean - https://github.com/ondrejsika/terraform-do-kubernetes-example
-- Prometheus on Kubernetes - https://github.com/ondrejsika/ondrejsika-k8s-prom
 
 ### Témata, které jsme nakousli
 
 - Terraform - Infrastructure as a code, [Školení Terraformu](/skoleni/terraform)
-- DigitalOcean - Cloudova Platforma, [Školení DigitalOcean](/skoleni/digitalocean)
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
 
