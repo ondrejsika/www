@@ -35,6 +35,7 @@ const Page = () => (
 ### Témata, které jsme nakousli
 
 - Terraform - Infrastructure as a code, [Školení Terraformu](/skoleni/terraform)
+- RKE & Rancher - On premise Kubernetes [Školení Rancheru](/skoleni/rancher)
 - DigitalOcean - Cloudova Platforma, [Školení DigitalOcean](/skoleni/digitalocean)
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
