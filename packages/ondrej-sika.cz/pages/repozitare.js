@@ -47,6 +47,7 @@ const Page = () => (
 - Droplet na DigitalOcean - https://github.com/ondrejsika/terraform-do-droplet-example
 - Jedna EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-example
 - Vice EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-many-example
+- Kubernetes na Azure - https://github.com/ondrejsika/example-azure-k8s
 - Example infrastructure for Rook Ceph cluster - https://github.com/ondrejsika/terraform-do-rook-ceph-example
 
 #### Custom Providers
@@ -58,6 +59,7 @@ const Page = () => (
 
 - NFS server on DigitalOcean - https://github.com/ondrejsika/terraform-module-do-nfs
 - MySQL DB with user - https://github.com/ondrejsika/terraform-module-mysql-db-with-user
+- Azure Kubernetes - https://github.com/ondrejsika/terraform-module-azure-k8s
 
 [Vsechny repozitare tykajici se Terraformu na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=terraform&type=&language=)
 
@@ -89,6 +91,11 @@ const Page = () => (
 
 - Jedna EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-example
 - Vice EC2 na AWS - https://github.com/ondrejsika/terraform-aws-ec2-many-example
+
+## Azure
+
+- Kubernetes na Azure - https://github.com/ondrejsika/example-azure-k8s
+- Azure Kubernetes Terraform Module- https://github.com/ondrejsika/terraform-module-azure-k8s
 `}
   />
 );
