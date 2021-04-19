@@ -166,7 +166,10 @@
       de: 3999 EUR
       uk: 2999 EUR
   twitter_recommendations:
-    cs: ["petr-todorov-kubernetes", "pavel-mattivi-kubernetes"]
+    cs:
+      - petr-todorov-kubernetes
+      - pavel-mattivi-kubernetes
+      - stanislav-kudlac-kubernetes
     en: ["petr-todorov-kubernetes", "lubos-klokner-docker-2"]
   recommendations:
     cs: ["apple", "radio", "notino"]
