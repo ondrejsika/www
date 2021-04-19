@@ -170,6 +170,7 @@
       - petr-todorov-kubernetes
       - pavel-mattivi-kubernetes
       - stanislav-kudlac-kubernetes
+      - filip-krajcovic-kubernetes
     en: ["petr-todorov-kubernetes", "lubos-klokner-docker-2"]
   recommendations:
     cs: ["apple", "radio", "notino"]
