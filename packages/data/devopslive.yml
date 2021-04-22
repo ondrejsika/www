@@ -239,7 +239,7 @@
     - goreleaser
 - id: wireguard
   eventbrite: https://www.eventbrite.com/e/145915068899
-  active: true
+  active: false
   title: WireGuard - Jednoduchá a spolehlivá VPN
   date: "21. 4. 2021"
   time: "19:00"
