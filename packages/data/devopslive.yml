@@ -254,7 +254,7 @@
     - wireguard
 - id: makefile
   eventbrite: https://www.eventbrite.com/e/146317432379
-  active: true
+  active: false
   title: Ovládněte Makefile a zjednodušte si manuální tasky
   date: "5. 5. 2021"
   time: "19:00"
