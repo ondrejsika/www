@@ -39,3 +39,20 @@
     ```
 
     and run `rke up` to apply
+
+    Here is a Terraform version:
+
+    ```
+    resource "rke_cluster" "main" {
+      ...
+
+      authentication {
+        sans = [
+          # Extra IP
+          "1.1.1.1",
+          # Extra Name
+          "k8s.example.com",
+        ]
+      }
+    }
+    ```

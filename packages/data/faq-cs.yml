@@ -39,3 +39,20 @@
     ```
 
     A puste `rke up` pro aplikaci zmen
+
+    V Terraformu to pak vypada takto:
+
+    ```
+    resource "rke_cluster" "main" {
+      ...
+
+      authentication {
+        sans = [
+          # Extra IP
+          "1.1.1.1",
+          # Extra Name
+          "k8s.example.com",
+        ]
+      }
+    }
+    ```
