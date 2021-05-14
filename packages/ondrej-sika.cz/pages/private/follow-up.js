@@ -7,6 +7,7 @@ const Page = () => (
     hideNewsletter={true}
     markdown={`
 <!--- PLACEHOLDER FOLLOW_UP_LINK (for create-follow-up.py script) --->
+- [kubernetes, 2021-05-10](/follow-up/2021-05-10-kubernetes)
 - [kubernetes, 2021-04-15](/follow-up/2021-04-15-kubernetes)
 - [kubernetes, 2021-03-29](/follow-up/2021-03-29-kubernetes)
 - [docker & kubernetes, 2021-02-09](/follow-up/2021-02-09-docker-a-kubernetes)
