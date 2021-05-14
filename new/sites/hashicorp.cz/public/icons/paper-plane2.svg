@@ -1,0 +1,17 @@
+<svg id="paper-plane2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="293" height="293.899" viewBox="0 0 293 293.899">
+  <defs>
+    <radialGradient id="radial-gradient" cx="-35.959" cy="0.124" r="1.575" gradientTransform="translate(-1.555 5.357) rotate(180) scale(0.858 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f88b93"/>
+      <stop offset="0.206" stop-color="#d76d8e"/>
+      <stop offset="0.573" stop-color="#a23d87"/>
+      <stop offset="0.849" stop-color="#811f82"/>
+      <stop offset="1" stop-color="#751480"/>
+    </radialGradient>
+  </defs>
+  <path id="Path_4" data-name="Path 4" d="M118.5,174.032,321.351,0,136.177,127.291Z" transform="translate(-28.352)" fill="url(#radial-gradient)"/>
+  <path id="Path_5" data-name="Path 5" d="M118.5,174.032,321.351,0,136.177,127.291Z" transform="translate(-28.352)" fill="#110c56"/>
+  <path id="Path_6" data-name="Path 6" d="M293,0,72.482,106.93,0,65.055Z" fill="#0b4cdd"/>
+  <path id="Path_7" data-name="Path 7" d="M326.909,0,141.735,127.291l72.352,41.875Z" transform="translate(-33.909)" fill="#0b4cdd"/>
+  <path id="Path_8" data-name="Path 8" d="M130.62,127.291,315.794,0,95.276,106.93l17.672,67.1Z" transform="translate(-22.794)" fill="#172b6f"/>
+  <path id="Path_9" data-name="Path 9" d="M260.781,235.328l-199,44.18,47,27.149h0l2.177,1.28,26.251-1.921,12.678,24.459L184.2,350.2Z" transform="translate(-14.78 -56.301)" fill="#22447c" opacity="0.3"/>
+</svg>
