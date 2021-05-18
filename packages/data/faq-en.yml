@@ -1,3 +1,10 @@
+- id: azure-disk-resize-ubuntu-no-space-left
+  question: "Azure Disk Resize Ubuntu: No Space Left on Device"
+  answer: |
+    When you fill your disk to 100% (`No Space Left on Device`), after you resize disk in Azure, filesystem will remain same sized. You have to free some space and reboot the VM. After the restart your filesystem will be automatically resized.
+
+    Source: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/resize-os-disk-gpt-partition#ubuntu
+
 - id: longhorn-on-centosu
   question: Longhorn on CentOS
   answer: |

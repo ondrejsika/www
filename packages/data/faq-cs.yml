@@ -1,3 +1,10 @@
+- id: azure-disk-resize-ubuntu-no-space-left
+  question: "Azure Disk Resize Ubuntu: No Space Left on Device"
+  answer: |
+    Pokud zaplnite disk na 100% (`No Space Left on Device`), tak po zvetseni disku v Azure se filesystem nezvetsi. Staci nejake misto uvolnit a restartovat VM a zvetseni filesystemu projde samo.
+
+    Zdroj: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/resize-os-disk-gpt-partition#ubuntu
+
 - id: longhorn-na-centosu
   question: Longhorn na CentOSu
   answer: |
