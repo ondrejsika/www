@@ -33,13 +33,6 @@ _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES = _ONDREJSIKA_THEME_DEPENDENCIES + [
 ]
 
 PROD_SITES = {
-    "sikalabs.com": {
-        "dependencies": {
-            "packages/common/**/*",
-            "packages/{{site}}/**/*",
-            "yarn.lock",
-        }
-    },
     "trainera.de": {
         "dependencies": _ONDREJSIKA_THEME_DEPENDENCIES,
         "cloudflare_workers": True,
@@ -62,9 +55,6 @@ PROD_SITES = {
     },
     "skolenie.kubernetes.sk": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
-    },
-    "ondrejsikalabs.com": {
-        "dependencies": _DEFAULT_DEPENDENCIES,
     },
     "training.kubernetes.is": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
