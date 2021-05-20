@@ -27,6 +27,18 @@
     ### Novinky ke skoleni
 
     Nastroje se vyvijeji, neco zastarava a nektere workflow se meni. I me skoleni se meni v case. Je zbytecne aby clovek sel na skoleni za rok znovu, i kdyz obcas neni na skodu si pripomenout i zaklady. Cilem kratkeho 4 hodinoveho workshopu je ukazat si co se zmenilo a tak byt porad v obraze.
+- id: zaznam-devops-live-18-vytvarejte-vlastni-dashboardy-v-grafane
+  hidden: true
+  title: "Vytvářejte vlastní Dashboardy v Grafane"
+  date: 19. 5. 2021
+  ad: prometheus
+  tags:
+    - prometheus
+    - devopslive
+  perex: |
+    Záznanam z osmnáctého live streamu: Vytvářejte vlastní Dashboardy v Grafane
+  content: |
+    Grafana je asi nejpopulárnější nástroj pro náhled na metrická data nejen z Promethea. Existuje hodně připravených dashboardů, ale pro naši aplikaci si musíme vytvořit vlastní. Ukážu Vám, jak na to.
 
 - id: zaznam-devops-live-17-ovladnete-makefile-a-zjednodusete-si-manualni-tasky
   title: "Záznam DevOps Live #17: Ovládněte Makefile a zjednodušte si manuální tasky"
