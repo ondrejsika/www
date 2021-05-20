@@ -28,6 +28,18 @@
   abstract: Máš Python aplikaci, například Django. Potřebuješ jí někde provozovat a Kubernetes je ta pravá platforma. Ukážu ti, jak spustit Kubernetes v Cloudu, jak vytvořit Docker obrazy a Helm balíček (zdrojové kódy pro Kubernetes) Tvé aplikace. Potom to nasadíme, není to žádná věda.
   submissions:
     - pyconsk2020
+- id: continuous-deployment-of-python-django-application-to-kubernetes-using-gitlab-ci-en
+  title: Continuous Deployment of Python (Django) Application to Kubernetes Using Gitlab CI
+  bio: I'm a DevOps engineer and consultant from Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable software products.
+  abstract: You have a Python application, for example Django. You need run your application somewhere and automatically deploy new releases. I'll show you, how setup Kubernetes, prepare Docker images and Helm package (packed Kubernetes sources) for your app, and how to deploy it into cluster using Gitlab CI. It's not a rocket science.
+  submissions:
+    - pyconsk2021-online
+- id: continuous-deployment-of-python-django-application-to-kubernetes-using-gitlab-ci-cz
+  title: Automatické nasazování Python (Django) aplikaci do Kubernetes pomocí Gitlab CI
+  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Máš Python aplikaci, například Django. Potřebuješ jí někde provozovat a automaticky nasazovat. Ukážu ti, jak spustit Kubernetes v Cloudu, jak vytvořit Docker obrazy, Helm balíček (zdrojové kódy pro Kubernetes) Tvé aplikace a jak to celé automaticky nasazovat pomocí Gitlab CI. Není to raketová věda.
+  submissions:
+    - pyconsk2021-online
 - id: vercel-serverless-deployments-cz
   title: Vercel, Serverless Deployments - nasazujte aplikace i bez serverů
   bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
