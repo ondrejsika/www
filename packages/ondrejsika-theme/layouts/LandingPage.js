@@ -192,11 +192,11 @@ const LandingPage = props => (
             </p>
             <h4>Školení</h4>
             <p>
-              Také se hodně věnuji školení, všechny kurzy pořádám formou workshopů
-              (hands-on) a stavím je na svých dlouholetých znalostech a
-              zkušenostech z vývoje, testování a provozování softwarových
-              projektů. Všechny kurzy a školení probíhají v českém nebo anglickém
-              jazyce.
+              Také se hodně věnuji školení, všechny kurzy pořádám formou
+              workshopů (hands-on) a stavím je na svých dlouholetých znalostech
+              a zkušenostech z vývoje, testování a provozování softwarových
+              projektů. Všechny kurzy a školení probíhají v českém nebo
+              anglickém jazyce.
             </p>
           </>
         }

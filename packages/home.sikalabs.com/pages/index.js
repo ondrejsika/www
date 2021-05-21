@@ -13,21 +13,13 @@ const Page = () => (
         <h2>Main Links</h2>
         <Links
           links={[
-            [
-              "Gitlab (gitlab.sikahq.com)",
-              "https://gitlab.sikahq.com"
-            ],
-            [
-              "Pipedrive",
-              "https://sika.pipedrive.com"
-            ],
+            ["Gitlab (gitlab.sikahq.com)", "https://gitlab.sikahq.com"],
+            ["Pipedrive", "https://sika.pipedrive.com"]
           ]}
         />
       </div>
-      <div className="col-md-4">
-      </div>
-      <div className="col-md-4">
-      </div>
+      <div className="col-md-4"></div>
+      <div className="col-md-4"></div>
     </div>
   </div>
 );

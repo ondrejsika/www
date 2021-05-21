@@ -3,8 +3,8 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = props => (
   <Article
-      title="Forma Komunikace"
-      markdown={`
+    title="Forma Komunikace"
+    markdown={`
 ## Primarne komunikujte emailem
 
 - <ondrej@sika.io> - Muj pracovni email
@@ -28,6 +28,6 @@ Slack nekontroluji pravidelne, mozna nemam zapnute notifikace. Pokud nebudu
 odpovidat, __poslete mail__.
 
 `}
-    />
+  />
 );
 export default Page;

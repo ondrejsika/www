@@ -19,34 +19,34 @@ export default props => {
   if (rec4)
     return (
       <>
-      <div className="container-flex mb-4 row">
-        <div className="col-lg-6 col-md-6 col-sm-12">
-          <TwitterTweetEmbed
-            tweetId={get_by_id(rec1).tweet_id}
-            options={{ conversation: "none" }}
-          />
+        <div className="container-flex mb-4 row">
+          <div className="col-lg-6 col-md-6 col-sm-12">
+            <TwitterTweetEmbed
+              tweetId={get_by_id(rec1).tweet_id}
+              options={{ conversation: "none" }}
+            />
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12">
+            <TwitterTweetEmbed
+              tweetId={get_by_id(rec2).tweet_id}
+              options={{ conversation: "none" }}
+            />
+          </div>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12">
-          <TwitterTweetEmbed
-            tweetId={get_by_id(rec2).tweet_id}
-            options={{ conversation: "none" }}
-          />
+        <div className="container-flex mb-4 row">
+          <div className="col-lg-6 col-md-6 col-sm-12">
+            <TwitterTweetEmbed
+              tweetId={get_by_id(rec3).tweet_id}
+              options={{ conversation: "none" }}
+            />
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12">
+            <TwitterTweetEmbed
+              tweetId={get_by_id(rec4).tweet_id}
+              options={{ conversation: "none" }}
+            />
+          </div>
         </div>
-      </div>
-      <div className="container-flex mb-4 row">
-        <div className="col-lg-6 col-md-6 col-sm-12">
-          <TwitterTweetEmbed
-            tweetId={get_by_id(rec3).tweet_id}
-            options={{ conversation: "none" }}
-          />
-        </div>
-        <div className="col-lg-6 col-md-6 col-sm-12">
-          <TwitterTweetEmbed
-            tweetId={get_by_id(rec4).tweet_id}
-            options={{ conversation: "none" }}
-          />
-        </div>
-      </div>
       </>
     );
   if (rec3)
