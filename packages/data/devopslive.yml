@@ -39,6 +39,7 @@
   title: Jednoduchá integrace Gitlab CI a Kubernetes
   date: 7.10.2020
   time: "19:00"
+  youtube: uRc1aFcy7CE
   about: |
     Gitlab umožňuje propojení s Kubernetes clusterem. Má to své výhody hlavně v CI. Ukážeme si, jak na to.
   points: |
