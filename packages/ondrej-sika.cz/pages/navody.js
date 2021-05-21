@@ -42,6 +42,7 @@ Pokud Vás zajímá Kubernetes, podívejte se na mé [Školení Kubernetes](/sko
 - [Instalace Terraformu](/terraform/instalace)
 - [Správa Cloudflare DNS pomocí Terraformu](/terraform/sprava-cloudflare-dns-pomoci-terraformu)
 - [Správa Gitlabu pomocí Terraformu](/blog/sprava-gitlabu-pomoci-terraformu/)
+- [Dočasně prostředí pro vývojáře spravované Terraformem](/blog/prostredi-pro-vyvojare-spravovane-terraformem) (blog post)
 
 Pokud Vás zajímá Terraform, podívejte se na mé [Školení Terraformu](/skoleni/terraform) (blog post)
 
