@@ -16,16 +16,16 @@
     Kolega Jakub po mě chtěl Kubernetes cluster, aby na něm mohl udělat demo ohledně ArgoCD. Já bych to standardně řešil tak, že bych si spustil moje demo Kubernetes na DigitalOceanu pomocí Terraformu, viz repo [ondrejsika/terraform-demo-k8s](https://github.com/ondrejsika/terraform-demo-k8s).
 
     Jenže ono to není tak jednoduché. Já už tohle repo naklonované mám, a taky mám připravený i soubor `terraform.auto.tfvars` se správně vyplněnými tokeny do Cloudflare a DigitalOceanu a v zásadě zapnutí toho clusteru mi nezabere žádný čas.
-    
+
     Ale v případě Jakuba je to něco jiného. On nemá ani repo, ani nastavené values a tokeny k dev infrastruktuře by musel hledat někde ve 1Passwordu. A to už není na chvilku, tenhle setup zabere mnohem víc času a musí se opakovat pro každý nový ukázkový repozitář.
 
     ## Řešení
 
     Řešení je mít jednoduchou možnost, jak si spustím resource, který aktuálně potřebuji co nejrychleji. A proto vznikly tyto 2 repozitáře [sikalabs/terraform-module-sikalabs-do-k8s](https://github.com/sikalabs/terraform-module-sikalabs-do-k8s) a `sikalabs/sl-infra-live-dev` (ten druhý je privátní).
-    
+
     Řešení je v zásadě jednoduché, místo různých stand alone Terraformích repozitářů uděláme moduly co nám jednoduše spustí to co potřebujeme - v našem případě se jedná o Kubernetes cluster včetně load balanceru a DNS záznamu. Ten pak pouze používáme s různou konfigurací v rámci jednoho repozitáře a vše co je v masteru toho `sikalabs/sl-infra-live-dev` repozitáře máme nasazené. Já mám nasazování masterů udělané automaticky pomocí integrace Terraform Cloudu s Githubem, ale i manuální spouštění nebo spouštění pomocí Gitlab CI je OK.
 
-    ## A jak to vlastně vypadá?   
+    ## A jak to vlastně vypadá?
 
     V repozitáři `sikalabs/sl-infra-live-dev` máme nastavený remote backend a v něm všechny tokeny, vývojáři nemusí mít žádné lokální nastavení. Pouze stačí být přihlášen k Terraform Cloudu (pomoci příkazu `terraform login`).
 
@@ -58,7 +58,7 @@
     }
     ```
 
-    Všechny "globální" soubory mám prefixované podtržítkem, abych je oddělil od těch dočasných, kde si příkazy zapíná a vypíná infrastruktura podle potřeby.
+    Všechny "globální" soubory mám prefixované podtržítkem, abych je oddělil od těch dočasných, kde si každý vytváří a maže podle potřeby.
 
     Takže to může vypadat takhle:
 
