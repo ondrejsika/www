@@ -1,5 +1,5 @@
 - id: prostredi-pro-vyvojare-spravovane-terraformem
-  title: "Dočasně prostředí pro vývojáře spravované Terraformem"
+  title: "Dočasné prostředí pro vývojáře spravované Terraformem"
   date: 20. 5. 2021
   ad: terraform
   tags:
@@ -7,27 +7,27 @@
     - terraform
     - cloud
   perex: |
-    Team se nam ve firme zvetsuje, najednou si vice lidi potrebuje vytvaret docasne testovaci a vyvojove prostredi, jako jsou Kubernetes clustery, virtualni stroje, ... A nejak to musime rozume spravovat.
+    Team se nám ve firmě zvětšuje, najednou si více lidí potřebuje vytvářet dočasné testovací a vývojové prostředí, jako jsou Kubernetes clustery, virtuální stroje, které musíme nějak rozumě spravovat.
   content: |
-    Team se nam ve firme zvetsuje, najednou si vice lidi potrebuje vytvaret docasne testovaci a vyvojove prostredi, jako jsou Kubernetes clustery, virtualni stroje, ... A nejak to musime rozume spravovat.
+    Team se nám ve firmě zvětšuje, najednou si více lidí potřebuje vytvářet dočasné testovací a vývojové prostředí, jako jsou Kubernetes clustery, virtuální stroje, které musíme nějak rozumě spravovat.
 
-    ## Problem
+    ## Problém
 
-    Jakub po me chtel nejaky Kubernetes cluster, aby na nem mohl udelat demo ohledne ArgoCD. Ja bych to standartne resil tak ze bych si spustil muje demo Kubernetes na DigitalOceanu pomoci Terraformu, viz repo [ondrejsika/terraform-demo-k8s](https://github.com/ondrejsika/terraform-demo-k8s).
+    Kolega Jakub po mě chtěl Kubernetes cluster, aby na něm mohl udělat demo ohledně ArgoCD. Já bych to standardně řešil tak, že bych si spustil moje demo Kubernetes na DigitalOceanu pomocí Terraformu, viz repo [ondrejsika/terraform-demo-k8s](https://github.com/ondrejsika/terraform-demo-k8s).
 
-    Jenze ono to neni tak jednoduche. Ja uz tohle repo naklonovane mam, mam pripraveny i soubor `terraform.auto.tfvars` se spravne vyplnenymi tokeny do Cloudflare a DigitalOceanu a v zasade zapnuti toho clusteru mi nezabere zadny cas.
+    Jenže ono to není tak jednoduché. Já už tohle repo naklonované mám, a taky mám připravený i soubor `terraform.auto.tfvars` se správně vyplněnými tokeny do Cloudflare a DigitalOceanu a v zásadě zapnutí toho clusteru mi nezabere žádný čas.
+    
+    Ale v případě Jakuba je to něco jiného. On nemá ani repo, ani nastavené values a tokeny k dev infrastruktuře by musel hledat někde ve 1Passwordu. A to už není na chvilku, tenhle setup zabere mnohem víc času a musí se opakovat pro každý nový ukázkový repozitář.
 
-    Ale v pripade Jakuba je to neco jineho. On nema ani repo, ani nastavene values a tokeny k dev infrastrukture by musel hledat nekde ve 1Passwordu. A to uz nenu na chvilku, tenhle setup uz je na dele a musi se opakovat pro kazdy novy ukazkovy repozitar.
+    ## Řešení
 
-    ## Reseni
+    Řešení je mít jednoduchou možnost, jak si spustím resource, který aktuálně potřebuji co nejrychleji. A proto vznikly tyto 2 repozitáře [sikalabs/terraform-module-sikalabs-do-k8s](https://github.com/sikalabs/terraform-module-sikalabs-do-k8s) a `sikalabs/sl-infra-live-dev` (ten druhý je privátní).
+    
+    Řešení je v zásadě jednoduché, místo různých stand alone Terraformích repozitářů uděláme moduly co nám jednoduše spustí to co potřebujeme - v našem případě se jedná o Kubernetes cluster včetně load balanceru a DNS záznamu. Ten pak pouze používáme s různou konfigurací v rámci jednoho repozitáře a vše co je v masteru toho `sikalabs/sl-infra-live-dev` repozitáře máme nasazené. Já mám nasazování masterů udělané automaticky pomocí integrace Terraform Cloudu s Githubem, ale i manuální spouštění nebo spouštění pomocí Gitlab CI je OK.
 
-    Reseni je mit jednoduchou moznost, jak si spustim resource, ktery aktualne potrebuji co nejrychleji. A proto vznikly tyto 2 repozitare [sikalabs/terraform-module-sikalabs-do-k8s](https://github.com/sikalabs/terraform-module-sikalabs-do-k8s) a `sikalabs/sl-infra-live-dev` (ten druhy je privatni).
+    ## A jak to vlastně vypadá?   
 
-    Reseni je v zasade jednoduche, misto ruznych stand alone Terraformich repoziraru udelejme moduly co nam jednoduse spusti to co potrebujeme - v nasem pripade se jedna o Kubernetes cluster vcetne load balanceru a DNS zaznamu. Ten pak pouze pouzivame s ruznou konfiguraci v ramci jednoho repozitare a vse co je v masteru toho `sikalabs/sl-infra-live-dev` repozitare mame nasazene. Ja mam nasazovani masteru udelane automaticky pomoci integrace Terraform Cloudu s Githubem, ale i manualni spousteni nebo spousteni pomoci Gitlab CI je OK.
-
-    ## A jak to vlastne vypada?
-
-    V repozitari `sikalabs/sl-infra-live-dev` mame nastaveny remote backend a v nem vsechny tokeny, vyvojari nemusi mit zadne lokalni nastaveni. Pouze staci byt prihlaseny k Terraform Cloudu (pomoci prikazu `terraform login`).
+    V repozitáři `sikalabs/sl-infra-live-dev` máme nastavený remote backend a v něm všechny tokeny, vývojáři nemusí mít žádné lokální nastavení. Pouze stačí být přihlášen k Terraform Cloudu (pomoci příkazu `terraform login`).
 
     ```tf
     // _backend.tf
@@ -42,7 +42,7 @@
     }
     ```
 
-    Protoze pouzivame remote execution, nastaveni promennych pro providery mame v Terraform Cloudu:
+    Protože používáme remote execution, nastavení proměnných pro providery máme v Terraform Cloudu:
 
     ```tf
     // _providers.tf
@@ -58,9 +58,9 @@
     }
     ```
 
-    Vsechny "globalni" souboru mam prefixovane podtrzitkem, abych je oddeli od tech docasnych, kde si kazy zapina a vypina infrastrukturu podle potreby.
+    Všechny "globální" soubory mám prefixované podtržítkem, abych je oddělil od těch dočasných, kde si příkazy zapíná a vypíná infrastruktura podle potřeby.
 
-    Takze to muze vypadat takhle:
+    Takže to může vypadat takhle:
 
     ```tf
     module "ondrejsika_k8s_foo" {
@@ -96,9 +96,9 @@
     }
     ```
 
-    Vidime, ze tady pouzivam Terraform modul ([sikalabs/terraform-module-sikalabs-do-k8s](https://github.com/sikalabs/terraform-module-sikalabs-do-k8s)), co mi vytvori Kubernetes cluster se vsim co bezne potrebuju (load balancer a DNS zaznamy).
+    Vidíme, že tady používám Terraform modul ([sikalabs/terraform-module-sikalabs-do-k8s](https://github.com/sikalabs/terraform-module-sikalabs-do-k8s)), co mi vytvoří Kubernetes cluster se vším co běžně potřebuju (load balancer a DNS záznamy).
 
-    A pak si kazdy kdo potrebuje neco v testovacim prostredi pustit pouze prida sve resources a commitne je a potom co uz je nepotrebuje je zase smaze a opet commitne.
+    A pak si každý kdo potřebuje něco v testovacím prostředí pustit pouze přidá své resources a commitne. Když už je nepotřebuje, zase je smaže a opět commitne.
 
 - id: puldenni-workshopy
   hidden: true
