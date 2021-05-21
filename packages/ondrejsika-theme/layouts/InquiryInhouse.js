@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 import Header from "@app/ondrejsika-theme/components/Header";
-import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 
 export default props => (
   <div>
@@ -11,8 +10,5 @@ export default props => (
     <Header
       websiteHeaderCenter={"Poptávka firemního " + props.course_name}
     ></Header>
-    <div className="container course-page">
-      <PipedriveContactForm lang={props.lang} />
-    </div>
   </div>
 );

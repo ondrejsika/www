@@ -2,7 +2,6 @@ import React from "react";
 
 import Head from "next/head";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
-import PipedriveContactForm from "@app/ondrejsika-theme/components/PipedriveContactForm";
 
 const Index = props => (
   <div>
@@ -92,7 +91,6 @@ const Index = props => (
           </table>
         </div>
       </div>
-      <PipedriveContactForm lang={props.lang} />
     </div>
   </div>
 );
