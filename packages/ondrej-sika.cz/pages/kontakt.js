@@ -27,6 +27,9 @@ const Index = props => (
               linkedin.com/in/ondrejsika
             </a>
           </p>
+          <p className="pb-4">
+            Datová schránka: <b>dcd68s8</b>
+          </p>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
           <h4>Fakturační údaje</h4>
