@@ -7,6 +7,7 @@ import arrow from "@app/data/pictures/arrow.svg";
 import TechnologyIcons from "@app/ondrejsika-theme/components/devopslive/TechnologyIcons";
 import Markdown from "@app/common/components/Markdown";
 import Button from "@app/ondrejsika-theme/components/Button";
+import YouTube from "react-youtube";
 
 const Hidden = styled(Row)``;
 const TextBeige = styled.span`
@@ -117,6 +118,19 @@ const Sessions = props => {
                   ))}
                 </Center>
               </Col>
+              <Center>
+                {props.event.youtube && (
+                  <>
+                    <YouTube
+                      videoId={props.event.youtube}
+                      opts={{
+                        width: "1024",
+                        height: "576"
+                      }}
+                    />
+                  </>
+                )}
+              </Center>
             </Hidden>
           </>
         )}
