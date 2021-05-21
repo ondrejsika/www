@@ -1,3 +1,6 @@
+commit-prettier-write:
+	git commit -m "[generated] refactor(style): Reformat using Prettier (yarn run prettier-write)"
+
 update-sessions-yml-from-training-crm:
 	curl -o packages/data/training/sessions.yml https://trainingcrm.sika.io/views/sessions_yaml/
 	git add packages/data/training/sessions.yml
