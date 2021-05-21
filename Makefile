@@ -26,3 +26,7 @@ endif
 	git add packages/ondrej-sika.cz/pages/private/follow-up.js
 	git add packages/ondrej-sika.cz/pages/follow-up/
 	git commit -m "feat(ondrej-sika.cz/follow-up): Add follow up for: $(COURSE) $(DATE)"
+
+setup-git-hooks:
+	rm -rf .git/hooks
+	(cd .git && ln -s ../.git-hooks hooks)
