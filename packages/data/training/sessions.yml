@@ -811,13 +811,13 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Prague
+  city: Online
   country: cz
   course_id: gitlab-ci
   date_from: 04.06.2021
   date_to: 04.06.2021
   facebook_event: null
-  id: gitlab-ci-praha-04-06-2021
+  id: gitlab-ci-online-04-06-2021
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -825,13 +825,13 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Prague
+  city: Online
   country: cz
   course_id: docker
   date_from: 07.06.2021
   date_to: 08.06.2021
   facebook_event: null
-  id: docker-praha-07-06-2021
+  id: docker-online-07-06-2021
   lang: cs
   length: 2 dny
   linkedin_event: null
@@ -839,13 +839,13 @@
   price: 11 999 CZK
   venue_id: null
 - active: true
-  city: Prague
+  city: Online
   country: cz
   course_id: kubernetes
   date_from: 09.06.2021
   date_to: 10.06.2021
   facebook_event: null
-  id: kubernetes-praha-09-06-2021
+  id: kubernetes-online-09-06-2021
   lang: cs
   length: 2 dny
   linkedin_event: null
@@ -853,13 +853,13 @@
   price: 11 999 CZK
   venue_id: null
 - active: true
-  city: Prague
+  city: Online
   country: cz
   course_id: terraform
   date_from: 15.06.2021
   date_to: 15.06.2021
   facebook_event: null
-  id: terraform-praha-15-06-2021
+  id: terraform-online-15-06-2021
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -867,13 +867,13 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Prague
+  city: Online
   country: cz
   course_id: rancher
   date_from: 16.06.2021
   date_to: 16.06.2021
   facebook_event: null
-  id: rancher-praha-16-06-2021
+  id: rancher-online-16-06-2021
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -881,13 +881,13 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
-  city: Prague
+  city: Online
   country: cz
   course_id: prometheus
   date_from: 17.06.2021
   date_to: 18.06.2021
   facebook_event: null
-  id: prometheus-praha-17-06-2021
+  id: prometheus-online-17-06-2021
   lang: cs
   length: 2 dny
   linkedin_event: null
