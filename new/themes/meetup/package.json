@@ -1,0 +1,13 @@
+{
+  "name": "@themes/meetup",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Ondrej Sika",
+  "author_email": "ondrej@ondrejsika.com",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1"
+  }
+}
