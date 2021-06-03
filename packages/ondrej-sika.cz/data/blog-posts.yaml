@@ -130,6 +130,21 @@
 
     Nastroje se vyvijeji, neco zastarava a nektere workflow se meni. I me skoleni se meni v case. Je zbytecne aby clovek sel na skoleni za rok znovu, i kdyz obcas neni na skodu si pripomenout i zaklady. Cilem kratkeho 4 hodinoveho workshopu je ukazat si co se zmenilo a tak byt porad v obraze.
 
+- id: zaznam-devops-live-19-nebojte-se-git-rebase
+  title: "Záznam DevOps Live #19: Nebojte se git rebase"
+  date: 2. 6. 2021
+  ad: gitlab-ci
+  tags:
+    - git
+    - gitlab
+    - github
+  perex: |
+    Záznam z devatenáctého live streamu: Ovládněte Makefile a zjednodušte si manuální tasky
+  youtube: avq2rQW6tHE
+  content: |
+    Pokud se chcete naučit pracovat kromě Git Rebase třeba i s Gitlab CI, doporučuji Vám mé školení [__Gitlab CI__](/skoleni/gitlab-ci), nebudete litovat.
+
+
 - id: zaznam-devops-live-18-vytvarejte-vlastni-dashboardy-v-grafane
   title: "Záznam DevOps Live #18: Vytvářejte vlastní Dashboardy v Grafane"
   date: 19. 5. 2021
