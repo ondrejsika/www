@@ -286,7 +286,7 @@
     - prometheus
 - id: nebojte-se-git-rebase
   eventbrite: https://www.eventbrite.com/e/146679334839
-  active: true
+  active: false
   title: Nebojte se git rebase
   date: "2. 6. 2021"
   time: "19:00"
