@@ -5,18 +5,18 @@ const Page = () => (
   <Article
     title="Příprava na Školení Kubernetes"
     markdown={`
-Na školení Kubernetes je potřeba mít nainstalovány:
+Na školení Kubernetes je potřeba mít nainstalovaný:
 
 
 - Git
-- Textový editor (doporučují VS Code)
+- Textový editor (doporučuji VS Code)
 - \`kubectl\`
 - \`helm\`
 - \`minikube\`.
 
 Návod na instalaci najdete v článku [Instalace Kubernetes pro lokální vývoj](/kubernetes/instalace).
 
-Po instalaci je dobře ověřit si zda minikube funguje:
+Po instalaci je dobré ověřit si zda minikube funguje:
 
 \`\`\`
 minikube start
