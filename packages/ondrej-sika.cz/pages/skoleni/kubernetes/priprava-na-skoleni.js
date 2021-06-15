@@ -3,26 +3,27 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
   <Article
-    title="Priprava na Skoleni Kubernetes"
+    title="Příprava na Školení Kubernetes"
     markdown={`
-Na skoleni Kubernetes je potreba mit nainstalovany:
+Na školení Kubernetes je potřeba mít nainstalovány:
+
 
 - Git
-- Textovy editor (doporucuji VS Code)
+- Textový editor (doporučují VS Code)
 - \`kubectl\`
 - \`helm\`
 - \`minikube\`.
 
-Navod na instalaci najdete v clanku [Instalace Kubernetes pro lokalni vyvoj](/kubernetes/instalace).
+Návod na instalaci najdete v článku [Instalace Kubernetes pro lokální vývoj](/kubernetes/instalace).
 
-Po instalaci je dobre overit si zda minikube funguje:
+Po instalaci je dobře ověřit si zda minikube funguje:
 
 \`\`\`
 minikube start
 kubectl get nodes
 \`\`\`
 
-Melo by to vypsat neco jako:
+Mělo by to vypsat něco jako:
 
 \`\`\`
 ondrej@sika-mac:~$ minikube start
@@ -47,7 +48,7 @@ etcd-0               Healthy   {"health":"true"}
 ondrej@sika-mac:~$
 \`\`\`
 
-Potom minikube pouze vypnete (at mate vse pripravene na skoleni)
+Potom minikube pouze vypněte (ať máte vše připravené na školení)
 
 \`\`\`
 minikube stop
