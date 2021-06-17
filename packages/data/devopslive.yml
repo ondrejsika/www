@@ -304,7 +304,7 @@
     - github
 - id: prometheus-metriky-ve-vlastni-aplikaci
   eventbrite: https://www.eventbrite.com/e/147016366911
-  active: true
+  active: false
   title: Prometheus metriky ve vlastní aplikaci
   date: "16. 6. 2021"
   time: "19:00"
