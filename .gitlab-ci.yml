@@ -1,40 +1,43 @@
+# You can override the included template(s) by including variable overrides
+# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 stages:
-  - generate
-  - pipeline
-
+- generate
+- pipeline
+- test
 variables:
-  GIT_CLEAN_FLAGS: -ffdx -e node_modules
-
+  GIT_CLEAN_FLAGS: "-ffdx -e node_modules"
 generate:
   stage: generate
   image: python:3.7-slim
   script: python generate-gitlab-ci.py
   artifacts:
     paths:
-      - .gitlab-ci.generated.yml
-
+    - ".gitlab-ci.generated.yml"
 pipeline:
   stage: pipeline
   trigger:
     include:
-      - artifact: .gitlab-ci.generated.yml
-        job: generate
+    - artifact: ".gitlab-ci.generated.yml"
+      job: generate
     strategy: depend
-
-# statica deployments
-
 generate-statica:
   stage: generate
   image: python:3.7-slim
   script: python generate-gitlab-ci-statica.py
   artifacts:
     paths:
-      - .gitlab-ci-statica.generated.yml
-
+    - ".gitlab-ci-statica.generated.yml"
 pipeline-statica:
   stage: pipeline
   trigger:
     include:
-      - artifact: .gitlab-ci-statica.generated.yml
-        job: generate-statica
+    - artifact: ".gitlab-ci-statica.generated.yml"
+      job: generate-statica
     strategy: depend
+sast:
+  stage: test
+include:
+- template: Security/SAST.gitlab-ci.yml
