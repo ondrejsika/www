@@ -349,6 +349,7 @@
     Go je populární programovací jazyk vhodný pro systémové programování a i pro DevOps tooling.
   courses:
     - ondrejsika-golang-intro
+    - ondrejsika-golang-cli
 
 - id: rancher
   name: Rancher
