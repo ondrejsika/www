@@ -284,7 +284,7 @@
     - Exportéry – získávání dat
     - Konfigurace Promethea a Alertmanageru
     - Monitoring Dockeru a Docker kontejnerů v Prometheu
-    - Konfigurace sběru metrik a autodiscovery v Kubernetes 
+    - Konfigurace sběru metrik a autodiscovery v Kubernetes
     - Práce s PROMQL (dotazovací jazyk Promethea)
     - Práce s předpřipravenými alerty v Prometheu
     - Vytváření vlastních alertů v Prometheu
@@ -367,12 +367,14 @@
   price_open: 11 900 CZK
   price_in_house: 50 000 CZK
 
-# - id: ondrejsika-go
-#   lecturer_id: ondrejsika
-#   technology_id: go
-#   name: Go (Golang)
-#   price_open: 11 900 CZK
-#   price_in_house: 50 000 CZK
+- id: ondrejsika-golang-intro
+  lecturer_id: ondrejsika
+  technology_id: golang
+  name: Úvod do jazyka Go
+  price_open: 11 900 CZK
+  price_in_house: 50 000 CZK
+  description: |
+    Na kurzu pracuji, pokud máte o školení zájem, dejte vědět.
 
 - id: ondrejsika-rancher
   lecturer_id: ondrejsika

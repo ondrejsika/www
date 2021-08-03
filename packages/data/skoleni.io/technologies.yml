@@ -343,14 +343,12 @@
   courses:
     - ondrejsika-django
 
-# - id: go
-#   name: Go (Golang)
-#   description: |
-#     Na kurzu pracujeme z plných sil.
-
-#     Pokud vás i tak zajímá kontaktujte lektora/y:
-#   courses:
-#     - ondrejsika-go
+- id: golang
+  name: Go (Golang)
+  description: |
+    Go je populární programovací jazyk vhodný pro systémové programování a i pro DevOps tooling.
+  courses:
+    - ondrejsika-golang-intro
 
 - id: rancher
   name: Rancher
