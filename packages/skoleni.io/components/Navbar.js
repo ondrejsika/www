@@ -42,6 +42,9 @@ const Navbar = () => (
           <Link href="/kontakty">Kontakty</Link>
         </NavItem>
         <NavItem>
+          <Link href="/skoleniio">O Projektu</Link>
+        </NavItem>
+        <NavItem>
           <Link href="/lektori">Lektoři</Link>
         </NavItem>
         <NavItem>
