@@ -73,7 +73,6 @@
     "dev-trainera.de": "yarn --cwd packages/trainera.de dev -p 3060",
     "dev-sikalabs.com": "yarn --cwd packages/sikalabs.com dev -p 3061",
     "dev-skoleni.digitalocean.cz": "yarn --cwd packages/skoleni.digitalocean.cz dev -p 3062",
-    "dev-home.sikalabs.com": "yarn --cwd packages/home.sikalabs.com dev -p 3063",
     "static-archetype-web": "yarn --cwd packages/archetype-web static",
     "static-skoleni-docker.cz": "yarn --cwd packages/skoleni-docker.cz static",
     "static-skoleni-kubernetes.cz": "yarn --cwd packages/skoleni-kubernetes.cz static",
