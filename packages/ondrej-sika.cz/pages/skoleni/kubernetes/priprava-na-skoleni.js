@@ -40,12 +40,6 @@ ondrej@sika-mac:~$ minikube start
 ondrej@sika-mac:~$ kubectl get nodes
 NAME       STATUS   ROLES    AGE   VERSION
 minikube   Ready    master   69s   v1.18.3
-ondrej@sika-mac:~$ kubectl get cs
-NAME                 STATUS    MESSAGE             ERROR
-controller-manager   Healthy   ok
-scheduler            Healthy   ok
-etcd-0               Healthy   {"health":"true"}
-ondrej@sika-mac:~$
 \`\`\`
 
 Potom minikube pouze vypněte (ať máte vše připravené na školení)
