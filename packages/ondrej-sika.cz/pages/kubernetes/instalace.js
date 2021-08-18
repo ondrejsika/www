@@ -17,14 +17,14 @@ Aby jste mohli pouzivat kubernetes lokalne, musite mit nainstalovane tyto nastro
 ### Kubectl on Mac
 
 \`\`\`
-brew install kubernetes-cli
+brew install kubectl
 \`\`\`
 
 Pokud nebude kubectl prikaz pracovat spravne, je mozne ze mate starou binarku z instalace Dockeru, timto chybu opravite
 
 \`\`\`
 rm /usr/local/bin/kubectl
-brew link --overwrite kubernetes-cli
+brew link --overwrite kubectl
 \`\`\`
 
 ### Helm on Mac
@@ -36,13 +36,7 @@ brew install helm
 ### Minikube on Mac
 
 \`\`\`
-brew cask install minikube
-\`\`\`
-
-Pokud nemate VirtualBox, muzete jej nainstalovat prez Brew
-
-\`\`\`
-brew cask install virtualbox
+brew install minikube
 \`\`\`
 
 ## Linux
@@ -54,7 +48,6 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 \`\`\`
 
 ### Helm on Linux
-
 
 Docs <https://helm.sh/docs/intro/install/>
 
@@ -91,16 +84,6 @@ Spustte takto:
 \`\`\`
 minikube start --vm-driver=none
 \`\`\`
-
-#### Microk8s.io on Linux (Linux in virtual machine)
-
-Pokud pouzivate Ubuntu (nebo jiny Linux s package managerem __snap__), muzete pouzit [microk8s.io](https://microk8s.io)
-
-\`\`\`
-sudo snap install microk8s --classic
-\`\`\`
-
-Vice informaci na <https://microk8s.io/docs/>
 
 ### k3s (minimalistic kubernetes for Linux)
 
