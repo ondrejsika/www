@@ -6,6 +6,11 @@ update-sessions-yml-from-training-crm:
 	git add packages/data/training/sessions.yml
 	git commit -m "[generated] content(data/training/sessions): Update sessions.yml from Training CRM"
 
+auto-update-sessions-yml-from-training-crm:
+	curl -o packages/data/training/sessions.yml https://trainingcrm.sika.io/views/sessions_yaml/
+	git add packages/data/training/sessions.yml
+	git commit -m "[auto] content(data/training/sessions): Update sessions.yml from Training CRM"
+
 create-follow-up:
 ifndef COURSE
 	$(error COURSE is undefined)
