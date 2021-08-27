@@ -25,5 +25,7 @@
     "npm-check-updates": "^10.2.2",
     "prettier": "2.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "next-transpile-modules": "^8.0.0"
+  }
 }
