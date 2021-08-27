@@ -922,7 +922,7 @@
   name: Proxmox
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: gitlab-ci
@@ -936,7 +936,7 @@
   name: Gitlab CI
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -950,7 +950,7 @@
   name: Docker
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
@@ -964,7 +964,7 @@
   name: Kubernetes
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -978,7 +978,7 @@
   name: Terraform
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: rancher
@@ -992,7 +992,7 @@
   name: Rancher
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: prometheus
