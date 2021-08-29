@@ -1,3 +1,6 @@
+fmt:
+	yarn prettier-write
+
 commit-prettier-write:
 	git commit -m "[generated] refactor(style): Reformat using Prettier (yarn run prettier-write)"
 
