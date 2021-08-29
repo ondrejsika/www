@@ -302,6 +302,7 @@
     - git
     - gitlab
     - github
+
 - id: prometheus-metriky-ve-vlastni-aplikaci
   eventbrite: https://www.eventbrite.com/e/147016366911
   active: false
@@ -319,3 +320,84 @@
     - prometheus
     - go
     - python
+
+- id: ceph-na-vlastnim-hardware
+  eventbrite: mailto:ondrej@sika.io?subject=Ceph na vlastnim hardware (RBD a CephFS)
+  active: true
+  title: Ceph na vlastnim hardware (RBD a CephFS)
+  date: "??. 9. 2021"
+  time: "19:00"
+  about: |
+    Ceph je robustni open source distribuovana storage platforma, ktera poskytuje storage as a service. Pojdme si ukazat jak na nej.
+  points: |
+    - Uvod do Cephu
+    - Instalce Cephu
+    - Vytvorini RBD a CephFS
+    - Prace s Ceph storage
+  technologies:
+    - ceph
+
+- id: externi-ceph-rbd-a-cephfs-v-kubernetes
+  eventbrite: mailto:ondrej@sika.io?subject=Externi Ceph RBD a CephFS v Kubernetes
+  active: true
+  title: Externi Ceph RBD a CephFS v Kubernetes
+  date: "??. 9. 2021"
+  time: "19:00"
+  about: |
+    Ukazeme si jak pouzivat externi Ceph v Kubernetes. Pouzijeme block storage RBD i CephFS
+  points: |
+    - Uvod do storage v Kubernetes
+    - Rychly setup Cephu (Terraformem)
+    - Instalace Ceph CSI pluginu (RBD a CephFS)
+    - Prace s Ceph storage v Kubernetes
+  technologies:
+    - ceph
+    - kubernetes
+
+- id: cli-tool-v-go
+  eventbrite: mailto:ondrej@sika.io?subject=CLI Tool v Go
+  active: true
+  title: CLI Tool v Go
+  date: "??. 9. 2021"
+  time: "19:00"
+  about: |
+    Go je skvely jazyk na psani toolingu ne jen pro DevOps/SRE. Pojdeme si ukazat, jak napsat jednoduchy CLI tool v Go a jak ho jednoduse distribuovat.
+  points: |
+    - Proc psat utility v Go
+    - Cobra - knihovna pro CLI
+    - Gorelease & Brew
+  technologies:
+    - go
+    - goreleaser
+
+- id: kubernetes-api-v-go
+  eventbrite: mailto:ondrej@sika.io?subject=Kubernetes API v Go
+  active: true
+  title: Kubernetes API v Go
+  date: "??. 9. 2021"
+  time: "19:00"
+  about: |
+    Pojdme si ukazat, jak s Kubernetes pracovat na primo z Go kodu. Neni to tak tezke, jak se na prvni pohled muze zdat.
+  points: |
+    - Uvod do Kubernetes API
+    - Konfigurace pripojeni ke clusteru
+    - Prace Kubernetes knihovnou
+  technologies:
+    - kubernetes
+
+- id: minio
+  eventbrite: mailto:ondrej@sika.io?subject=Minio - On premise S3
+  active: true
+  title: "Minio: On premise S3"
+  date: "??. 9. 2021"
+  time: "19:00"
+  about: |
+    Go je skvely jazyk na psani toolingu ne jen pro DevOps/SRE. Pojdeme si ukazat, jak napsat jednoduchy CLI tool v Go a jak ho jednoduse distribuovat.
+  points: |
+    - Co je AWS S3
+    - Co je Minio
+    - Instalace a konfigurace
+    - Pouziti Minia
+  technologies:
+    - s3
+    - minio
