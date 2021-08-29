@@ -39,8 +39,6 @@
       - Práce s kontejnery
       - Práce s obrazy
       - Docker Compose - vicekontejnerove aplikace v Dockeru
-      - Deployment do Swarmu
-      - Ukázka deploymentu do Kubernetes
     en: |
       ### Course outline
 
@@ -49,8 +47,6 @@
       - Basics of Containerisation
       - Basics of Images
       - Docker Compose - multi-container applications
-      - Deployment to Swarm
-      - Preview of deployment to Kubernetes
   description:
     cs: |
       ### Co je to Docker
@@ -58,7 +54,7 @@
 
       ### Jak školení probíhá
 
-      Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
+      Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování na serveru. Vše si prakticky vyzkoušíme a osaháme.
 
       ### Co Vás naučím
 
@@ -67,8 +63,6 @@
       - Práce s kontejnery
       - Práce s obrazy
       - Docker Compose - vicekontejnerove aplikace v Dockeru
-      - Deployment do Swarmu
-      - Ukázka deploymentu do Kubernetes
 
       ### Pro koho je školení určeno
 
@@ -90,7 +84,7 @@
 
       ### Ako školenie prebieha
 
-      Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s Dockerom pracovať od vytvorenia vlastných kontajnerov až po jeho prevádzku v Swarme. Všetko si aj prakticky vyskúšame.
+      Na školení Úvod do práce s Dockerom si ukážeme všetko dôležité, ako s Dockerom pracovať od vytvorenia vlastných kontajnerov až po jeho prevádzku na serveri. Všetko si aj prakticky vyskúšame.
 
       ### Čo Vás naučím
 
@@ -99,8 +93,6 @@
       - Prácu s kontajnermi
       - Prácu s obrazmi
       - Docker Compose - viackontajnerové aplikácie v Dockeri
-      - Deployment do Swarmu
-      - Ukážka deploymentu do Kubernetes
 
       ### Pre koho je školenie určené
 
@@ -120,7 +112,7 @@
       Docker can make your life easier through simplifying the process of R&D, testing, and software usage in your business. Run everything, everywhere. Don’t lose your time waiting for server setups or random library updates. Have the environment as a part of your application.
 
       ### Course Description
-      During the two-day workshop, you’ll be shown everything you need to know to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
+      During the two-day workshop, you’ll be shown everything you need to know to be able to use Docker - from creating a custom container image to running on the server. This course is very hands-on, and you will be able to practice everything you learn.
 
       ### Course outline
       - Theory introduction to containers & Docker
@@ -128,8 +120,6 @@
       - Basics of Containerisation
       - Basics of Images
       - Docker Compose - multi-container applications
-      - Deployment to Swarm
-      - Preview of deployment to Kubernetes
 
       ### Who Should Attend
       This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it is something they can implement.
