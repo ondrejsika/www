@@ -61,6 +61,13 @@
     - marekbartik-terraform
     - veroskaplan-terraform
 
+- id: argocd
+  name: "ArgoCD"
+  description: |
+    ArgoCD je GitOps conrinuous delivery tool pro Kubernetes. Nasazuje deklarativni konfiguraci z Git repozitare do jednoho ci vice Kuberneres clusteru.
+  courses:
+    - ondrejsika-argocd
+
 - id: test-automatizace
   name: Test Automatizace
   description: |

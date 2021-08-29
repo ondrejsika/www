@@ -5,6 +5,7 @@
     - ondrejsika-kubernetes
     - ondrejsika-terraform
     - ondrejsika-gitlab-ci
+    - ondrejsika-argocd
     - ondrejsika-git
     - ondrejsika-digitalocean
     - ondrejsika-prometheus
