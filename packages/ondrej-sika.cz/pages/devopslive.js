@@ -125,68 +125,72 @@ const Page = () => {
             nebo Průša3d. Připojte se k nim a rozvíjejme společně Vaše znalosti
             a Vaše DevOps.
           </ColorBox>
-          <SectionHeader tight>příští TERMÍN</SectionHeader>
-          <ColorBox blue>
-            <div style={{ maxWidth: "500px" }}>
-              <TextBeige className="pt-4">
-                {events[0].date} od {events[0].time}
-              </TextBeige>
-              <h3 className="pt-1 bold">{events[0].title}</h3>
-              <Text className="">{events[0].about}</Text>
-            </div>
-            <Row>
-              <Col md={6} className="pt-3">
-                <p className="pb-4">
-                  <Markdown
-                    source={events[0].points}
-                    styled={{ paddingLeft: "40px", marginTop: "20px" }}
-                  />
-                </p>
-              </Col>
-              <Col md={6}>
-                <Center>
-                  {events[0].technologies.map((technology, i) => (
-                    <TechnologyIcons white key={i} icon={technology} />
-                  ))}
-                </Center>
-              </Col>
-              <Col md={6}>
-                <Center>
-                  <Margin>
-                    <Button
-                      type="landing-page"
-                      size="huge"
-                      href={events[0].eventbrite}
-                    >
-                      <B>Přihlásit</B>
-                    </Button>
-                  </Margin>
-                </Center>
-              </Col>
-              <Col md={6} className="pt-3">
-                <Center>
-                  <h3
-                    className="pt-3"
-                    style={{
-                      color: "#c8bfb0"
-                    }}
-                  >
-                    200 Kč
-                  </h3>
-                </Center>
-              </Col>
-            </Row>
-          </ColorBox>
-          <SectionHeader tight>Nadcházející témata</SectionHeader>
+          {events.length != 0 && (
+            <div>
+              <SectionHeader tight>příští TERMÍN</SectionHeader>
+              <ColorBox blue>
+                <div style={{ maxWidth: "500px" }}>
+                  <TextBeige className="pt-4">
+                    {events[0].date} od {events[0].time}
+                  </TextBeige>
+                  <h3 className="pt-1 bold">{events[0].title}</h3>
+                  <Text className="">{events[0].about}</Text>
+                </div>
+                <Row>
+                  <Col md={6} className="pt-3">
+                    <p className="pb-4">
+                      <Markdown
+                        source={events[0].points}
+                        styled={{ paddingLeft: "40px", marginTop: "20px" }}
+                      />
+                    </p>
+                  </Col>
+                  <Col md={6}>
+                    <Center>
+                      {events[0].technologies.map((technology, i) => (
+                        <TechnologyIcons white key={i} icon={technology} />
+                      ))}
+                    </Center>
+                  </Col>
+                  <Col md={6}>
+                    <Center>
+                      <Margin>
+                        <Button
+                          type="landing-page"
+                          size="huge"
+                          href={events[0].eventbrite}
+                        >
+                          <B>Přihlásit</B>
+                        </Button>
+                      </Margin>
+                    </Center>
+                  </Col>
+                  <Col md={6} className="pt-3">
+                    <Center>
+                      <h3
+                        className="pt-3"
+                        style={{
+                          color: "#c8bfb0"
+                        }}
+                      >
+                        200 Kč
+                      </h3>
+                    </Center>
+                  </Col>
+                </Row>
+              </ColorBox>
+              <SectionHeader tight>Nadcházející témata</SectionHeader>
 
-          {events.map((event, i) => {
-            if (i == 0 && i < 3) return;
-            return (
-              <div key={i}>
-                <Sessions event={event} />
-              </div>
-            );
-          })}
+              {events.map((event, i) => {
+                if (i == 0 && i < 3) return;
+                return (
+                  <div key={i}>
+                    <Sessions event={event} />
+                  </div>
+                );
+              })}
+            </div>
+          )}
           <Section className="d-none d-lg-block">
             <Row>
               <SocialBox
