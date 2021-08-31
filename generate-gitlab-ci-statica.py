@@ -16,19 +16,19 @@ SITES = [
     {"name": "ansible-skoleni.cz"},
     {"name": "skoleni.digitalocean.cz"},
     # SE course landing pages
-    {"name": "ansible-utbildning.se"},
-    {"name": "docker-utbildning.se"},
-    {"name": "git-utbildning.se"},
-    {"name": "kubernetes-utbildning.se"},
+    # {"name": "ansible-utbildning.se"},
+    # {"name": "docker-utbildning.se"},
+    # {"name": "git-utbildning.se"},
+    # {"name": "kubernetes-utbildning.se"},
     # NL course landing pages
     {"name": "docker-training.nl"},
     {"name": "git-training.nl"},
     # UK course landing pages
-    {"name": "git-training.uk"},
-    {"name": "docker-training.uk"},
-    {"name": "kubernetes-training.uk"},
-    {"name": "ansible-training.uk"},
-    {"name": "gitlab-training.uk"},
+    # {"name": "git-training.uk"},
+    # {"name": "docker-training.uk"},
+    # {"name": "kubernetes-training.uk"},
+    # {"name": "ansible-training.uk"},
+    # {"name": "gitlab-training.uk"},
     # CH course landing pages
     {"name": "docker-training.ch"},
     # DE course landing pages
