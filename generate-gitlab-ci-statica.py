@@ -54,9 +54,9 @@ SITES_DEV = [
     {"name": "ondrej-sika.uk", "deps": "ondrejsika_singlepage"},
 ]
 
-SITES_NEW = [
+SITES_SITES20 = [
     {"name": "digitalocean.cz"},
-    {"name": "devopsnews.cz"},
+    {"name": "devopssites20s.cz"},
     {"name": "hashicorp.cz"},
     {"name": "devopsaci.cz"},
 ]
@@ -92,9 +92,9 @@ _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES = _ONDREJSIKA_THEME_DEPENDENCIES + [
     "packages/ondrejsika-singlepage/**/*",
 ]
 
-_NEW_DEPENDENCIES = [
-    "new/sites/{{site}}/**/*",
-    "new/yarn.lock",
+_SITES20_DEPENDENCIES = [
+    "sites20/sites/{{site}}/**/*",
+    "sites20/yarn.lock",
 ]
 
 
@@ -120,14 +120,14 @@ out = {
 
 for site in SITES:
     name = site["name"]
-    deps = _NEW_DEPENDENCIES
+    deps = _SITES20_DEPENDENCIES
     out.update(
         {
             "deploy %s"
             % name: {
                 "stage": "deploy",
                 "script": [
-                    "rm -rf ./new/sites/%s/out" % name,
+                    "rm -rf ./sites20/sites/%s/out" % name,
                     "yarn",
                     "yarn run deploy-%s" % name,
                 ],
@@ -170,7 +170,7 @@ for site in SITES_DEV:
         }
     )
 
-for site in SITES_NEW:
+for site in SITES_SITES20:
     name = site["name"]
     deps = {
         "course_landing": _COURSE_LANDING_DEPENDENCIES,
@@ -180,11 +180,11 @@ for site in SITES_NEW:
     }[site.get("deps", "course_landing")]
     out.update(
         {
-            "deploy new %s"
+            "deploy sites20 %s"
             % name: {
                 "stage": "deploy",
                 "script": [
-                    "cd new",
+                    "cd sites20",
                     "rm -rf ./sites/%s/out" % name,
                     "yarn",
                     "yarn run deploy-%s" % name,
