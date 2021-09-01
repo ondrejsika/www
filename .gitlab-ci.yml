@@ -54,5 +54,5 @@ auto_update_sessions_yml_from_training_crm:
   script:
     - env
     - make auto-update-sessions-yml-from-training-crm
-    - git remote set-url origin https://ci-bot:$GITLAB_TOKEN_CI_BOT@gitlab.sikahq.com/www/www.git
-    - git push
+    - git remote set-url origin https://ci-bot:$GITLAB_TOKEN_CI_BOT@$CI_SERVER_HOST/$CI_PROJECT_PATH.git
+    - git push origin HEAD:$CI_COMMIT_BRANCH
