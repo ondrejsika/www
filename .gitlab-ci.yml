@@ -52,6 +52,7 @@ auto_update_sessions_yml_from_training_crm:
     GIT_COMMITTER_EMAIL: ci-bot@sikalabs.io
     GIT_AUTHOR_EMAIL: ci-bot@sikalabs.io
   script:
+    - env
     - make auto-update-sessions-yml-from-training-crm
     - git remote set-url origin https://ci-bot:$GITLAB_TOKEN_CI_BOT@gitlab.sikahq.com/www/www.git
     - git push
