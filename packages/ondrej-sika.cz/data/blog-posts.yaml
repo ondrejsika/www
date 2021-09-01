@@ -1309,7 +1309,7 @@
 
     ## Start
 
-    Když chceme na Linuxu Wireguard zapnout, stačí nám k tomu `wg-quick up wg0`. `wg0`, co je název interface a zároveň jméno souboru v `/etc/wireguard/`. Pokud jej chceme vypnout, použijeme `wg-quick up wg0`. V případě potřeby spouštění při startu systému je ideální použít `systemctl enable wg-quick@wg0`, tímto zapneme službu. Tímto příkazem `systemctl start wg-quick@wg0` službu spustíme, a tímto příkazem zase zjistíme status služby `systemctl status wg-quick@wg0` Pokud soubor změníme, musíme vždy Wiregurd vypnout a pak zapnout.
+    Když chceme na Linuxu Wireguard zapnout, stačí nám k tomu `wg-quick up wg0`. `wg0`, co je název interface a zároveň jméno souboru v `/etc/wireguard/`. Pokud jej chceme vypnout, použijeme `wg-quick down wg0`. V případě potřeby spouštění při startu systému je ideální použít `systemctl enable wg-quick@wg0`, tímto zapneme službu. Tímto příkazem `systemctl start wg-quick@wg0` službu spustíme, a tímto příkazem zase zjistíme status služby `systemctl status wg-quick@wg0` Pokud soubor změníme, musíme vždy Wiregurd vypnout a pak zapnout.
 
     Na Macu a v telefonu to znamená jen připojit se do profilu VPN.
 
