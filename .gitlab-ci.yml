@@ -1,7 +1,7 @@
 stages:
+  - schedule
   - generate
   - pipeline
-  - schedule
 
 variables:
   GIT_CLEAN_FLAGS: -ffdx -e node_modules
