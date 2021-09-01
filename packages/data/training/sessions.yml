@@ -1020,7 +1020,7 @@
   name: DigitalOcean
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: proxmox
