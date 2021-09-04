@@ -1,3 +1,180 @@
+- id: slu
+  title: "slu: Tool, ktery mi zjednodusuje praci"
+  date: 4. 9. 2021
+  ad: kubernetes
+  tags:
+    - tooling
+    - go
+    - devops
+  perex: |
+    Kazdy resime nejake rutijni tasky, ktere si chceme nejak zjednodusit. Kazdy to dela jinak, nekdo pouziva aliasy, nekdo si pise tooling v bash scriptech a nekdo treba Python. Nech utilitek je vetsinou hodne a jsou hodne ruznorode. Ja jsem se po nejakem case michani bash aliasu, Bash a Python skriptu jsem se rozhodl pro prepsani do jednoho Go toolu a nelituji.
+  content: |
+    Kazdy resime nejake rutijni tasky, ktere si chceme nejak zjednodusit. Kazdy to dela jinak, nekdo pouziva aliasy, nekdo si pise tooling v bash scriptech a nekdo treba Python. Nech utilitek je vetsinou hodne a jsou hodne ruznorode. Ja jsem se po nejakem case michani bash aliasu, Bash a Python skriptu jsem se rozhodl pro prepsani do jednoho Go toolu a nelituji.
+
+    Kdyz jsem se rozhodoval ze napisu tool, bylo jasne ze to bude open source a ze chci aby to mohlo pouzivat vice lidi a abych si mohl zjednodusovat praci na klientskych projektech. Uz me nebavilo porad vytvaret a mazat databaze v CI pomoci bash scriptu, nebo zjistovat token s ServiceAccountu v Kubernetes pomoci 2 sub shellu a nekolik pipes.
+
+    ## Proc v Go
+
+    Kdyz jsem se rozhodoval pro technologii, mel jsem tyto pozadavky:
+
+    - Multiplatformni
+    - Jednoduchy na vyvoj
+    - Malo zavislosti
+
+    Mam na vyber asi mezi bashem (je vsude), Pythonem (muzu ho nainstalovat vsude) a Go (staticke binarky). Pokud ale vezmu druhy pozadavek, psani v Bashi je peklo, pokud se nejedna o sadu prikazu, ktere je potreba vykonat po sobe.
+
+    Rozhodoval jsem se mezi Go a Pythonem. S Pythonem mam mnohem vetsi zkusenosti nez s Go, ale opriti Go ma 2 nevyhody. Za prve, potrebuju mit nainstalovany Python a za druhe, potrebuju mit nainstalovane knihovny. Neni to tak hrozne, ale porad stahnout jednu binarku, ktera umi vsechno je mnohem jednodussi.
+
+    Navice existuje skvely tool [GoReleaser](https://goreleaser.com), ktery se stara o build a distribuci aplikace. A to uplne skvele, vcetne vytvareni brew balicku.
+
+    ## CLI pomoci knihovny Cobra
+
+    V Go je jeste jedna skvela vec, a to je knihovna [Cobra](https://github.com/spf13/cobra). Pomoci ni se daji delat CLI tooly velmi jednoduse, vcetne autocomplete a generovani dokumentace. To je na tom .blog/2018/plzensky-barcamp-lightning-network-aneb-bitcoin-2.0
+
+    ## slu: SikaLabs Utils
+
+    Tooling jsem pojmenoval `slu`, at je to hezky kratke. V jeho subcommandech je potom pestra smes nastroju, ktere mi zjednodusuji vyvoj i praci s infrastrukturou.
+
+    ## Instalace slu
+
+    Diky GoReleaseru je distribuce a instalace jednoducha.
+
+    #### Instalace na Macu
+
+    Na Macu je instalace jednoducha, staci:
+
+    ```
+    brew install sikalabs/tap/slu
+    ```
+
+    #### Instalace na Linux AMD64 (pomoci install-slu)
+
+    Na Linuxu staci stahnout binarku, rozbalit ji a dat ji do path. Udelal jsem ale i [install-slu](https://github.com/sikalabs/install-slu) tool, ktery jednou nainstaluju a pak jim muzu jednoduse upgradovat verze `slu`.
+
+    ```bash
+    VERSION=v0.1.0 && \
+    OS=linux && \
+    ARCH=amd64 && \
+    BIN=install-slu && \
+    curl -L https://github.com/sikalabs/${BIN}/releases/download/${VERSION}/${BIN}_${VERSION}_${OS}_${ARCH}.tar.gz -o ${BIN}_${VERSION}_${OS}_${ARCH}.tar.gz && \
+    tar -xvzf ${BIN}_${VERSION}_${OS}_${ARCH}.tar.gz && \
+    rm ${BIN}_${VERSION}_${OS}_${ARCH}.tar.gz && \
+    mv ${BIN} /usr/local/bin/
+    ```
+
+    Pak uz staci jen
+
+    ```
+    install-slu i
+    ```
+
+    a je to.
+
+
+    #### Instalace na Linux AMD64 (na primo)
+
+    Samozrejme muzeme `slu` nainstalovat primo pomoci:
+
+    ```bash
+    VERSION=v0.13.0 && \
+    OS=linux && \
+    ARCH=amd64 && \
+    BIN=slu && \
+    curl -L https://github.com/sikalabs/${BIN}/releases/download/${VERSION}/${BIN}_${VERSION}_${OS}_${ARCH}.tar.gz -o ${BIN}_${VERSION}_${OS}_${ARCH}.tar.gz && \
+    tar -xvzf ${BIN}_${VERSION}_${OS}_${ARCH}.tar.gz && \
+    rm ${BIN}_${VERSION}_${OS}_${ARCH}.tar.gz && \
+    mv ${BIN} /usr/local/bin/
+    ```
+
+    ## Ukazka pouziti
+
+    Kdyz si dnes vypisu help, jsou tam tyto subcommandy:
+
+    ```
+    ondrej@sika-mac:~$ slu --help
+    SikaLabs Utils, v0.13.0
+
+    Usage:
+      slu [command]
+
+    Available Commands:
+      completion       generate the autocompletion script for the specified shell
+      expand           Expand environment variables in files and strings
+      file-templates   Create common files from templates
+      generate-docs    Generate Markdown docs
+      gitlab-ci        Utils for Gitlab CI
+      go-code          Utils for writing Go code
+      help             Help about any command
+      install-bin      Install Binary
+      install-bin-tool Install preconfigured binary tool like Terraform, Vault, ...
+      ip               Get my current IP address (using checkip.amazonaws.com)
+      k8s              Utils for Kubernetes
+      mysql            MySQL Utils
+      postgres         Postgres Utils
+      proxy            Proxy Utils
+      tls              TLS Utils
+      version          Prints version
+
+    Flags:
+      -h, --help   help for slu
+          --json   Formatu output to JSON
+
+    Use "slu [command] --help" for more information about a command.
+    ```
+
+    K dnesnimu dni `slu` obsahuje tooling pro variable expansion, praci s TLS certifikaty, ziskani IP, proxy, ...
+
+    Pojdme si ukazat alespon nejake ukazky, vice urcite bude v nasledujicich poskytovatelích.
+
+    #### Get public IP address
+
+    [docs](https://github.com/sikalabs/slu-cli-docs/blob/master/slu_ip.md)
+
+    ```
+    ondrej@sika-mac:~$ slu ip
+    111.44.56.39
+    ondrej@sika-mac:~$
+    ```
+
+    #### Create Postgres Database
+
+    [docs](https://github.com/sikalabs/slu-cli-docs/blob/master/slu_postgres_create.md)
+
+    ```
+    ondrej@sika-mac:~$ slu postgres -H localhost -P 5432 -u postgres -p pg create -n foo
+    ondrej@sika-mac:~$
+    ```
+
+    ### Version bump in Go code
+
+    [docs](https://github.com/sikalabs/slu-cli-docs/blob/master/slu_go-code_version-bump.md)
+
+    ```
+    ondrej@sika-mac:~$ slu go-code version-bump -v 0.33.1 -t
+    ondrej@sika-mac:~$
+    ```
+
+    ### Install Terraform
+
+    [docs](https://github.com/sikalabs/slu-cli-docs/blob/master/slu_install-bin-tool_terraform.md)
+
+    ```
+    ondrej@sika-mac:~$ slu install-bin-tool terraform
+    ondrej@sika-mac:~$
+    ```
+
+    ## Zaver
+
+    Zdrojove kody jsou samozrejme na Githubu:
+
+    - slu - https://github.com/sikalabs/slu
+    - install-slu - https://github.com/sikalabs/install-slu
+
+    Dokumentace je take na Githubu v repozitari [sikalabs/slu-cli-docs](https://github.com/sikalabs/slu-cli-docs/blob/master/slu.md#slu).
+
+    Budu rad, kdyz Vam tool ulehci praci, dejte mi vedet na Twitteru [@ondrejsika](https://twitter.com/ondrejsika) jak se Vam slu libi. Pokud budete chtit neco pridat, poslete issue nebo pull request.
+
+
 - id: prostredi-pro-vyvojare-spravovane-terraformem
   title: "Dočasné prostředí pro vývojáře spravované Terraformem"
   date: 20. 5. 2021
