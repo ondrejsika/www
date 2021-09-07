@@ -166,10 +166,10 @@ for site in SITES:
     - yarn run static-%(site)s
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/%(site)s/
-    - docker build -t registry.sikahq.com/www/www/%(site)s:$CI_COMMIT_SHORT_SHA packages/%(site)s
+    - docker build -t $CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA packages/%(site)s
     - rm packages/%(site)s/Dockerfile
     - rm packages/%(site)s/nginx-site.conf
-    - docker push registry.sikahq.com/www/www/%(site)s:$CI_COMMIT_SHORT_SHA
+    - docker push $CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA
   except:
     variables:
       - $EXCEPT_BUILD
