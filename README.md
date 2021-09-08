@@ -2,13 +2,13 @@
 
     2019 Ondrej Sika <ondrej@ondrejsika.com>
     https://github.com/ondrejsika/www
-    https://gitlab.sikahq.com/www/www
+    https://gitlab.sikalabs.com/www/www
 
 ## Development Guide
 
-Development is on Gitlab - <https://gitlab.sikahq.com/www/www>
+Development is on Gitlab - <https://gitlab.sikalabs.com/www/www>
 
-- [Issues](https://gitlab.sikahq.com/www/www/issues)
+- [Issues](https://gitlab.sikalabs.com/www/www/issues)
 
 ### Run in Development Mode
 
