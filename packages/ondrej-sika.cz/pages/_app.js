@@ -4,8 +4,6 @@ import site from "@app/ondrej-sika.cz/config";
 import Link from "next/link";
 import styled from "styled-components";
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
-import Head from "next/head";
-import OndrejSika from "@app/data/pictures/ondrejsika.png";
 
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
 import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
@@ -183,14 +181,6 @@ class MyApp extends App {
     pageProps.site = this.site;
     return (
       <>
-        <Head>
-          <meta
-            property="og:title"
-            content="Ondrej Sika - IT Školení, konzultace a workshopy"
-          />
-          <meta property="og:type" content="website" />
-          <meta property="og:image" content={OndrejSika} />
-        </Head>
         <Layout Navbar={Navbar} Footer={Footer} {...pageProps}>
           <Component lang={site.lang} {...pageProps} />
         </Layout>
