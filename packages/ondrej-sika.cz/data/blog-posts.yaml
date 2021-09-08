@@ -29,7 +29,7 @@
 
     ## CLI pomoci knihovny Cobra
 
-    V Go je jeste jedna skvela vec, a to je knihovna [Cobra](https://github.com/spf13/cobra). Pomoci ni se daji delat CLI tooly velmi jednoduse, vcetne autocomplete a generovani dokumentace. To je na tom .blog/2018/plzensky-barcamp-lightning-network-aneb-bitcoin-2.0
+    V Go je jeste jedna skvela vec, a to je knihovna [Cobra](https://github.com/spf13/cobra). Pomoci ni se daji delat CLI tooly velmi jednoduse, vcetne autocomplete a generovani dokumentace.
 
     ## slu: SikaLabs Utils
 
