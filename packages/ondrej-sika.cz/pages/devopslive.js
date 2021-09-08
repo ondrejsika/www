@@ -173,7 +173,7 @@ const Page = () => {
                           color: "#c8bfb0"
                         }}
                       >
-                        200 Kč
+                        300 Kč
                       </h3>
                     </Center>
                   </Col>
