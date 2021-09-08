@@ -401,3 +401,19 @@
   technologies:
     - s3
     - minio
+
+- id: git-subtree
+  eventbrite: mailto:ondrej@sika.io?subject=Git Subtree
+  active: true
+  title: "Git Subtree a Monorepo"
+  date: "??. 9. 2021"
+  time: "19:00"
+  about: |
+    Git subtree je prikaz, ktery dokaze synchronizovat slozky z monorepa s dalsimi repozitari a to obema smery. Ukazeme si jak to funguje i prakticke ukazky pouziti.
+  points: |
+    - Uvod do monorepa
+    - Uvod do Git Subtree
+    - Obousmerna synchronizace commitu
+    - Ukazky pouziti z praxe
+  technologies:
+    - git
