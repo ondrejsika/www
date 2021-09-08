@@ -417,3 +417,20 @@
   technologies:
     - s3
     - minio
+
+- id: cloudflare-access
+  eventbrite: mailto:ondrej@sika.io?subject=DevOps Live - Cloudflare Access
+  active: true
+  title: "Cloudflare Access"
+  date: "??. 9. 2021"
+  time: "19:00"
+  about: |
+    Cloudflare Access je jednoduchy zpusob jak pridat bezpecnou authetifikaci Vasich cloudovych sluzeb na urovni Cloudflare proxy. Muzete tak jednoduse pridal autentifikaci pomoci emailu, LDAPu nebo Google uctu. Vse samozrejme Terraformem.
+  points: |
+    - Uvod do Cloudflare a Cloudflare Access
+    - Vyhody pouziti Cloudflare Access
+    - Authentifikacni metody
+    - Ukazka a prikady z praxe
+  technologies:
+    - cloudflare
+    - terraform
