@@ -1079,6 +1079,20 @@
 - active: true
   city: Online
   country: cz
+  course_id: argocd
+  date_from: 07.10.2021
+  date_to: 07.10.2021
+  facebook_event: null
+  id: argocd-7-10-2021
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
   course_id: kubernetes
   date_from: 12.10.2021
   date_to: 13.10.2021
