@@ -322,64 +322,64 @@
     - python
 
 - id: ceph-na-vlastnim-hardware
-  eventbrite: mailto:ondrej@sika.io?subject=Ceph na vlastnim hardware (RBD a CephFS)
+  eventbrite: https://www.eventbrite.com/e/169786844021
   active: true
   title: Ceph na vlastnim hardware (RBD a CephFS)
-  date: "??. 9. 2021"
+  date: "22. 9. 2021"
   time: "19:00"
   about: |
-    Ceph je robustni open source distribuovana storage platforma, ktera poskytuje storage as a service. Pojdme si ukazat jak na nej.
+    Ceph je robustní open source distribuovaná storage platforma, která poskytuje storage as a service. Pojďme si ukazát, jak na něj.
   points: |
-    - Uvod do Cephu
+    - Úvod do Cephu
     - Instalce Cephu
-    - Vytvorini RBD a CephFS
-    - Prace s Ceph storage
+    - Vytvoření RBD a CephFS
+    - Práce s Ceph storage
   technologies:
     - ceph
 
 - id: externi-ceph-rbd-a-cephfs-v-kubernetes
-  eventbrite: mailto:ondrej@sika.io?subject=Externi Ceph RBD a CephFS v Kubernetes
+  eventbrite: https://www.eventbrite.com/e/170402871576
   active: true
-  title: Externi Ceph RBD a CephFS v Kubernetes
-  date: "??. 9. 2021"
+  title: Externí Ceph RBD a CephFS v Kubernetes
+  date: "6. 10. 2021"
   time: "19:00"
   about: |
-    Ukazeme si jak pouzivat externi Ceph v Kubernetes. Pouzijeme block storage RBD i CephFS
+    Ukážeme si, jak používat externí Ceph v Kubernetes. Použijeme block storage RBD i CephFS
   points: |
-    - Uvod do storage v Kubernetes
-    - Rychly setup Cephu (Terraformem)
+    - Úvod do storage v Kubernetes
+    - Rychlý setup Cephu (Terraformem)
     - Instalace Ceph CSI pluginu (RBD a CephFS)
-    - Prace s Ceph storage v Kubernetes
+    - Práce s Ceph storage v Kubernetes
   technologies:
     - ceph
     - kubernetes
 
 - id: git-subtree
-  eventbrite: mailto:ondrej@sika.io?subject=Git Subtree
+  eventbrite: https://www.eventbrite.com/e/170403732150
   active: true
   title: "Git Subtree a Monorepo"
-  date: "??. 9. 2021"
+  date: "20.10. 2021"
   time: "19:00"
   about: |
-    Git subtree je prikaz, ktery dokaze synchronizovat slozky z monorepa s dalsimi repozitari a to obema smery. Ukazeme si jak to funguje i prakticke ukazky pouziti.
+    Git subtree je příkaz, který dokáže synchronizovat složky z monorepa s dalšími repozitáři a to oběma směry. Ukážeme si, jak to funguje, včetně  praktické ukázky použití.
   points: |
-    - Uvod do monorepa
-    - Uvod do Git Subtree
-    - Obousmerna synchronizace commitu
-    - Ukazky pouziti z praxe
+    - Úvod do monorepa
+    - Úvod do Git Subtree
+    - Obousměrná synchronizace commitu
+    - Ukázky použití z praxe
   technologies:
     - git
 
 - id: cli-tool-v-go
-  eventbrite: mailto:ondrej@sika.io?subject=CLI Tool v Go
+  eventbrite: https://www.eventbrite.com/e/170404562634
   active: true
   title: CLI Tool v Go
-  date: "??. 9. 2021"
+  date: "3.11. 2021"
   time: "19:00"
   about: |
-    Go je skvely jazyk na psani toolingu ne jen pro DevOps/SRE. Pojdeme si ukazat, jak napsat jednoduchy CLI tool v Go a jak ho jednoduse distribuovat.
+    Go je skvělý jazyk na psaní toolingu nejen pro DevOps/SRE. Pojďme si ukázat, jak napsat jednoduchý CLI tool v Go a jak ho jednoduše distribuovat.
   points: |
-    - Proc psat utility v Go
+    - Proč psát utility v Go
     - Cobra - knihovna pro CLI
     - Gorelease & Brew
   technologies:
@@ -387,50 +387,50 @@
     - goreleaser
 
 - id: kubernetes-api-v-go
-  eventbrite: mailto:ondrej@sika.io?subject=Kubernetes API v Go
+  eventbrite: https://www.eventbrite.com/e/170406016984
   active: true
   title: Kubernetes API v Go
-  date: "??. 9. 2021"
+  date: "17. 11. 2021"
   time: "19:00"
   about: |
-    Pojdme si ukazat, jak s Kubernetes pracovat na primo z Go kodu. Neni to tak tezke, jak se na prvni pohled muze zdat.
+    Pojďme si ukázat, jak s Kubernetes pracovat na přímo z Go kódu. Není to tak težké, jak se na první pohled můze zdát.
   points: |
-    - Uvod do Kubernetes API
-    - Konfigurace pripojeni ke clusteru
-    - Prace Kubernetes knihovnou
+    - Úvod do Kubernetes API
+    - Konfigurace připojení ke clusteru
+    - Práce Kubernetes knihovnou
   technologies:
     - kubernetes
 
 - id: minio
-  eventbrite: mailto:ondrej@sika.io?subject=Minio - On premise S3
+  eventbrite: https://www.eventbrite.com/e/170407507442
   active: true
   title: "Minio: On premise S3"
-  date: "??. 9. 2021"
+  date: "1. 12. 2021"
   time: "19:00"
   about: |
-    Go je skvely jazyk na psani toolingu ne jen pro DevOps/SRE. Pojdeme si ukazat, jak napsat jednoduchy CLI tool v Go a jak ho jednoduse distribuovat.
+    Go je skvelý jazyk na psaní toolingu a ne jen pro DevOps/SRE. Pojďme si ukázat, jak napsat jednoduchý CLI tool v Go a jak ho jednoduše distribuovat.
   points: |
     - Co je AWS S3
     - Co je Minio
     - Instalace a konfigurace
-    - Pouziti Minia
+    - Použití Minia
   technologies:
     - s3
     - minio
 
 - id: cloudflare-access
-  eventbrite: mailto:ondrej@sika.io?subject=DevOps Live - Cloudflare Access
+  eventbrite: https://www.eventbrite.com/e/170408604724
   active: true
   title: "Cloudflare Access"
-  date: "??. 9. 2021"
+  date: "15. 12. 2021"
   time: "19:00"
   about: |
-    Cloudflare Access je jednoduchy zpusob jak pridat bezpecnou authetifikaci Vasich cloudovych sluzeb na urovni Cloudflare proxy. Muzete tak jednoduse pridal autentifikaci pomoci emailu, LDAPu nebo Google uctu. Vse samozrejme Terraformem.
+    Cloudflare Access je jednoduchý způsob, jak přidat bezpečnou authetifikaci Vašich cloudových služeb na úrovni Cloudflare proxy. Můzete tak jednoduše přidat autentifikaci pomocí emailu, LDAPu nebo Google účtu. Vše samozřejmě Terraformem.
   points: |
-    - Uvod do Cloudflare a Cloudflare Access
-    - Vyhody pouziti Cloudflare Access
-    - Authentifikacni metody
-    - Ukazka a prikady z praxe
+    - Úvod do Cloudflare a Cloudflare Access
+    - Výhody použití Cloudflare Access
+    - Authentifikačni metody
+    - Ukázka a příkady z praxe
   technologies:
     - cloudflare
     - terraform
