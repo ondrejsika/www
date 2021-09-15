@@ -33,6 +33,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://xdavidhu.me/> ([source](https://github.com/xdavidhu/xdavidhu.me))
 - <https://bugs.xdavidhu.me> ([source](https://github.com/xdavidhu/bugs.xdavidhu.me))
 - <https://austinlouden.com/>
+- https://karpathy.ai/ ([web.archive.org](https://web.archive.org/web/20210909140101/https://karpathy.ai/))
     `}
     />
   );
