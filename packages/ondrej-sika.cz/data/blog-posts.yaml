@@ -72,6 +72,7 @@
     - tooling
     - go
     - devops
+    - slu
   perex: |
     Kazdy resime nejake rutijni tasky, ktere si chceme nejak zjednodusit. Kazdy to dela jinak, nekdo pouziva aliasy, nekdo si pise tooling v bash scriptech a nekdo treba Python. Nech utilitek je vetsinou hodne a jsou hodne ruznorode. Ja jsem se po nejakem case michani bash aliasu, Bash a Python skriptu jsem se rozhodl pro prepsani do jednoho Go toolu a nelituji.
   content: |
