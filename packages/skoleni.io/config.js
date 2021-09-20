@@ -9,8 +9,8 @@ const site = {
       : process.env.SITE_ORIGIN || "https://skoleni.io",
   name: "skoleni.io",
   lang: "cs",
-  gauges_site_id: "xx",
-  google_analytics_site_id: "xx",
+  gauges_site_id: "61483a20e6dc4f2f7507c1d8",
+  google_analytics_site_id: "G-3LJZDSZTCB",
   colors: {
     PRIMARY: "#202020",
     PRIMARY_LIGHT: "#565656",
