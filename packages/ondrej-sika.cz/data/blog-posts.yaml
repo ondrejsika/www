@@ -1,3 +1,69 @@
+- id: slu-v0.16.0
+  title: "slu v0.16.0: Mail, Random & Git IF Utils"
+  date: 20. 9. 2021
+  ad: kubernetes
+  tags:
+    - tooling
+    - go
+    - devops
+    - slu
+  perex: |
+    Verze v0.16.0 naseho toolu `slu` je venku a zde jsou novinky co prinasi.
+  content: |
+    Novinky v `slu` v0.16.0 jsou:
+
+    - Posilani mailu (prez SMTP server) z terminalu
+    - Generovani nahodnych stringu
+    - IF tooling for Git
+
+    ## Posilani emailu
+
+    Ukazka poslani emailu z CLI prez SMTP server
+
+    ```
+    slu mail send -H mail.acme.com -P 587 \
+      -f alice@acme.com -p alicepwd \
+      -t bob@acme.com \
+      -s Hello \
+      -m "Hello Bob, this is Alice."
+    ```
+
+    ## Generovani nahodnych stringu
+
+    Pro generovani se pouziva PRG (pseudo random generator) ktery ma seed z unix microseconds.
+
+    ```
+    ondrej@sika-mac-air:~$ slu random string
+    3tb3xgaqueg69dfj
+    ondrej@sika-mac-air:~$ slu random string --length 20
+    z95ka4j0f3bx6l85nlu9
+    ```
+
+    ## Git IF
+
+    Pridal jsem tooling pro jedoduche podminkovani v shellu. Vychazi to z koncepce:
+
+    ```
+    ondrej@sika-mac-air:~$ true && echo true || echo false ; echo $?
+    true
+    0
+    ondrej@sika-mac-air:~$ false && echo true || echo false ; echo $?
+    false
+    0
+    ```
+
+    Pokud mam nejake soubory pripravene ke commitu, tak muzu pouzit
+
+    ```
+    slu git if staged && git commit -m "Message ..." || echo nothing to commit
+    ```
+
+    Mam to pouzite napriklad zde: https://github.com/ondrejsika/www/commit/2882159c883aac79a9275c3f55c5c4c51f89af74
+
+    ## Release na Githubu
+
+    https://github.com/sikalabs/slu/releases/tag/v0.16.0
+
 - id: slu
   title: "slu: Tool, ktery mi zjednodusuje praci"
   date: 4. 9. 2021
