@@ -1,3 +1,9 @@
+- id: skaffold-introduction-cz
+  title: Continuous development v Kubernetes pomoci nástroje Skaffold
+  bio: I'm a DevOps engineer and consultant from Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable software products.
+  abstract: Skaffold je nástroj, který nám umožňuje vyvíjet aplikaci v lokálním prostředí a automaticky k ní sestavovat Docker image a nasazovat do Kubernetes. Vše se děje automaticky, vy píšete jen zdrojové kódy aplikace a nebo Kubernetes. Zároveň můžete Skaffold integrovat s Gitlab CI a tak automatizovat nasazování do development prostředí.
+  submissions:
+    - javadays2021online
 - id: terraform-introduction
   title: Manage your infrastructure as a code with Terraform
   bio: I'm a DevOps engineer and consultant from Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable software products.
