@@ -323,7 +323,7 @@
 
 - id: ceph-na-vlastnim-hardware
   eventbrite: https://www.eventbrite.com/e/169786844021
-  active: true
+  active: false
   title: Ceph na vlastnim hardware (RBD a CephFS)
   date: "22. 9. 2021"
   time: "19:00"
@@ -339,7 +339,7 @@
 
 - id: externi-ceph-rbd-a-cephfs-v-kubernetes
   eventbrite: https://www.eventbrite.com/e/170402871576
-  active: true
+  active: false
   title: Externí Ceph RBD a CephFS v Kubernetes
   date: "6. 10. 2021"
   time: "19:00"
