@@ -150,7 +150,7 @@ const BaseLandingPage = props => {
       <Head>
         <title>{props.title}</title>
       </Head>
-      <FloatingBtn href="mailto:ondrej@sika.io">
+      <FloatingBtn href={`mailto:${props.mainEmail || "ondrej@sika.io"}`}>
         <FloatingSvg src={mail_grey} />
       </FloatingBtn>
       <Background blue paddingBottom="0">
@@ -201,93 +201,101 @@ const BaseLandingPage = props => {
         </Background>
       )}
       <Container>
-        <Section>
-          <Row>
-            <Col md={6}>
-              <Img src={ondrej_training} />
-            </Col>
-            <Col md={6}>
-              <Center>
-                <SectionHeader>{props.sectionMyClientsHeader}</SectionHeader>
-              </Center>
-              <Companies />
-            </Col>
-          </Row>
-        </Section>
-        <Section>
-          <SectionHeader>{props.sectionContactMeHeader}</SectionHeader>
-          <RoomyRow>
-            <Col lg={5} md={12}>
-              <ButtonGroup className="pt-sm-3">
-                <InquiryButton
-                  site={props.site}
-                  href="https://calendly.com/ondrejsika/evening-call"
-                  className="mb-3"
-                >
-                  <IconBtn padding_right src={phone} className="mb-1" />
-                  <B>{props.call}</B>
-                </InquiryButton>
-              </ButtonGroup>
-            </Col>
-            <Col lg={5} md={12}>
-              <ButtonGroup className="pt-sm-3">
-                <InquiryButton
-                  site={props.site}
-                  size="huge"
-                  href="mailto:ondrej@sika.io"
-                  className="mb-3"
-                >
-                  <IconBtn padding_right src={mail_grey} className="mb-1" />
-                  <B>{props.email}</B>
-                </InquiryButton>
-              </ButtonGroup>
-            </Col>
-          </RoomyRow>
-        </Section>
+        {!props.hideMyClients && (
+          <Section>
+            <Row>
+              <Col md={6}>
+                <Img src={ondrej_training} />
+              </Col>
+              <Col md={6}>
+                <Center>
+                  <SectionHeader>{props.sectionMyClientsHeader}</SectionHeader>
+                </Center>
+                <Companies />
+              </Col>
+            </Row>
+          </Section>
+        )}
+        {!props.hideContactMe && (
+          <Section>
+            <SectionHeader>{props.sectionContactMeHeader}</SectionHeader>
+            <RoomyRow>
+              <Col lg={5} md={12}>
+                <ButtonGroup className="pt-sm-3">
+                  <InquiryButton
+                    site={props.site}
+                    href="https://calendly.com/ondrejsika/evening-call"
+                    className="mb-3"
+                  >
+                    <IconBtn padding_right src={phone} className="mb-1" />
+                    <B>{props.call}</B>
+                  </InquiryButton>
+                </ButtonGroup>
+              </Col>
+              <Col lg={5} md={12}>
+                <ButtonGroup className="pt-sm-3">
+                  <InquiryButton
+                    site={props.site}
+                    size="huge"
+                    href="mailto:ondrej@sika.io"
+                    className="mb-3"
+                  >
+                    <IconBtn padding_right src={mail_grey} className="mb-1" />
+                    <B>{props.email}</B>
+                  </InquiryButton>
+                </ButtonGroup>
+              </Col>
+            </RoomyRow>
+          </Section>
+        )}
       </Container>
-      <Background blue style={{ position: "relative" }}>
-        <Container>
-          <Row className="mt-3 mb-5">
-            <Col lg={9} md={12}>
-              <SectionHeader white tight>
-                {props.sectionMyStoryHeader}
-              </SectionHeader>
-            </Col>
-            <Col lg={8} md={12}>
-              <Text white>{props.MyStoryText}</Text>
-            </Col>
-          </Row>
-        </Container>
-        <Col
-          className="d-none d-lg-block"
-          lg={4}
-          style={{
-            position: "absolute",
-            right: "0",
-            bottom: "0",
-            overflowX: "hidden"
-          }}
-        >
-          <img src={ondrej_mac} style={{ height: "800px", zIndex: "2" }} />
-        </Col>
-      </Background>
-      <Background light_grey>
-        <Section style={{ marginTop: "0" }}>
-          <RoomyRow>
-            <Col md={5} sm={12}>
-              <Img src={ondrej_table} />
-            </Col>
-            <Col md={7} sm={12} style={{ paddingLeft: "3em" }}>
-              <SectionHeader>{props.sectionWhyMeHeader}</SectionHeader>
-              <Point full point={props.point1} text={props.text1} />
-              <Point full point={props.point2} text={props.text2} />
-              <Point full point={props.point3} text={props.text3} />
-              <Point full point={props.point4} text={props.text4} />
-              <Text></Text>
-            </Col>
-          </RoomyRow>
-        </Section>
-      </Background>
+      {!props.hideMyStory && (
+        <Background blue style={{ position: "relative" }}>
+          <Container>
+            <Row className="mt-3 mb-5">
+              <Col lg={9} md={12}>
+                <SectionHeader white tight>
+                  {props.sectionMyStoryHeader}
+                </SectionHeader>
+              </Col>
+              <Col lg={8} md={12}>
+                <Text white>{props.MyStoryText}</Text>
+              </Col>
+            </Row>
+          </Container>
+          <Col
+            className="d-none d-lg-block"
+            lg={4}
+            style={{
+              position: "absolute",
+              right: "0",
+              bottom: "0",
+              overflowX: "hidden"
+            }}
+          >
+            <img src={ondrej_mac} style={{ height: "800px", zIndex: "2" }} />
+          </Col>
+        </Background>
+      )}
+      {!props.hideWhyMe && (
+        <Background light_grey>
+          <Section style={{ marginTop: "0" }}>
+            <RoomyRow>
+              <Col md={5} sm={12}>
+                <Img src={ondrej_table} />
+              </Col>
+              <Col md={7} sm={12} style={{ paddingLeft: "3em" }}>
+                <SectionHeader>{props.sectionWhyMeHeader}</SectionHeader>
+                <Point full point={props.point1} text={props.text1} />
+                <Point full point={props.point2} text={props.text2} />
+                <Point full point={props.point3} text={props.text3} />
+                <Point full point={props.point4} text={props.text4} />
+                <Text></Text>
+              </Col>
+            </RoomyRow>
+          </Section>
+        </Background>
+      )}
       {/* <Container>
         <Section>
           <Center>
@@ -391,7 +399,7 @@ const BaseLandingPage = props => {
                 <Button
                   type="outline-secondary"
                   size="huge"
-                  href="mailto:ondrej@sika.io"
+                  href={`mailto:${props.mainEmail || "ondrej@sika.io"}`}
                 >
                   <B>{props.writeMe}</B>
                 </Button>
