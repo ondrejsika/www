@@ -356,7 +356,7 @@
 
 - id: git-subtree
   eventbrite: https://www.eventbrite.com/e/170403732150
-  active: true
+  active: false
   title: "Git Subtree a Monorepo"
   date: "20.10. 2021"
   time: "19:00"
@@ -372,7 +372,7 @@
 
 - id: cli-tool-v-go
   eventbrite: https://www.eventbrite.com/e/170404562634
-  active: true
+  active: false
   title: CLI Tool v Go
   date: "3.11. 2021"
   time: "19:00"
