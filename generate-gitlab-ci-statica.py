@@ -29,7 +29,7 @@ SITES_DEV = [
 
 SITES_SITES20 = [
     {"name": "digitalocean.cz"},
-    {"name": "devopssites20s.cz"},
+    {"name": "devopsnews.cz"},
     {"name": "hashicorp.cz"},
     {"name": "devopsaci.cz"},
 ]
