@@ -1,3 +1,17 @@
+- id: devops-skoleni-v-listopadu-2021-11-16
+  title: "DevOps školení v listopadu"
+  date: 16. 11. 2021
+  perex: |
+    Gitlab CI, Docker, Kubernetes
+  content: |
+    Zvu Vás na poslední školení roku 2021.
+
+    - Gitlab CI (18. 11.) -  [Informace o kurzu](/skoleni/gitlab-ci), [Registrace na školení](/verejne-terminy/gitlab-ci-online-18-11-2021/), cena: 6 800 CZK
+    - Docker (22. - 23. 11.) -  [Informace o kurzu](/skoleni/docker), [Registrace na školení](/verejne-terminy/docker-praha-22-11-2021/), cena: 11 999 CZK
+    - Kubernetes (25. - 26. 11.) -  [Informace o kurzu](/skoleni/kubernetes), [Registrace na školení](/verejne-terminy/docker-praha-25-11-2021/), cena: 11 999 CZK
+
+    Pokud máte jakoukoliv otázku, neváhejte se zeptat na <ondrej@sika.io>
+
 - id: devops-skoleni-v-lednu-2021-01-21
   title: "DevOps školení v Lednu a Únoru"
   date: 21. 1. 2021
