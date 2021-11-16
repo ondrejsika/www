@@ -15,8 +15,6 @@ SITES = [
     {"name": "gitlab-ci.cz"},
     {"name": "ansible-skoleni.cz"},
     {"name": "skoleni.digitalocean.cz"},
-    # Meetup Sites
-    {"name": "salzburgdevops.com"},
 ]
 
 SITES_DEV = [
