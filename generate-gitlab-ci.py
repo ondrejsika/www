@@ -62,9 +62,6 @@ PROD_SITES = {
     "training.kubernetes.lu": {
         "dependencies": _COURSE_LANDING_DEPENDENCIES,
     },
-    "sika-kraml.de": {
-        "dependencies": _DEFAULT_DEPENDENCIES,
-    },
     "sika-training.com": {
         "dependencies": _DEFAULT_DEPENDENCIES,
     },
