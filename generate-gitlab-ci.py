@@ -190,7 +190,7 @@ for site in SITES:
             out.append(
                 """
 %(site)s prod deploy cloudflare:
-  image: node
+  image: node:16
   stage: deploy_prod%(priority_suffix)s
   script:
     - yarn
