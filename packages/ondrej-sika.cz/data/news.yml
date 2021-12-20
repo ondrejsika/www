@@ -1,3 +1,25 @@
+- id: pf2022
+  title: "PF 2022"
+  date: 20. 12. 2021
+  perex: |
+    Gitlab CI, Docker, Kubernetes
+  content: |
+    Dekuji za spolupraci v roce 2021 a doufam, ze bude pokracovat i v roce 2022.
+
+    Preji Vam pohodove svatky, hodne zdravi a pohody do noveho roku. At se Vam dari v osobnim i pracovnim zivote.
+
+    Jako podekovani za spolupraci pro Vas mam 5 otevrenych webinaru na temata:
+
+    - [Gitlab CI: Automatizujte pri vyvoji a nasazovani software](https://stream.sika.io/stream/c/ajonjhuwkrecigrv/tkshmfgzdqzicsty)
+    - [Kubernetes: Vyhody prechodu do Kubernetes a sjednoceni platformy pro provoz aplikaci](https://stream.sika.io/stream/c/ecudlqqamnifhyme/lbowlmuqhkgtdelk)
+    - [Terraform: Infrastruktura formou kodu a GitOps](https://stream.sika.io/stream/c/dwndterrorlptrtu/alwtmyeyvdugatap)
+    - [ArgoCD: Uvod do GitOps v Kubernetes](https://stream.sika.io/stream/c/thrboqolyknxxkjm/zuspnnxxhqfnmshv)
+    - [Migrace z Docker Compose do Kubernetes](https://stream.sika.io/stream/c/adbwbblrwtzegwyo/vzrzlnuqzrkvznan)
+
+    <div style="height: 2em"></div>
+
+    ![PF2022](/content/pf2022_800px.jpg)
+
 - id: devops-skoleni-v-listopadu-2021-11-16
   title: "DevOps školení v listopadu"
   date: 16. 11. 2021
