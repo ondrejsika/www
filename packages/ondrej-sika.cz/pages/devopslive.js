@@ -211,7 +211,7 @@ const Page = () => {
             </Row>
           </Section>
           <SectionHeader tight>Proběhlé streamy</SectionHeader>
-          {past_events.map((event, i) => {
+          {past_events.reverse().map((event, i) => {
             return (
               <div key={i}>
                 <Sessions event={event} past={true} />
