@@ -249,6 +249,8 @@ for site in SITES:
   environment:
     name: k8s/prod/%(site)s
     url: https://%(site)s
+    kubernetes:
+        namespace: default
   dependencies: []
 """
                 % {
