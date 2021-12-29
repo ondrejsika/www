@@ -191,6 +191,7 @@ for site in SITES:
     - yarn add @cloudflare/wrangler -W
     - rm -rf packages/%(site)s/out
     - mkdir -p packages/%(site)s/public/api
+    - git status
     - slu static-api version > packages/%(site)s/public/api/version.json
     - yarn run deploy-%(site)s
   except:
