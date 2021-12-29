@@ -128,9 +128,9 @@ for site in SITES_DEV:
                 "script": [
                     "rm -rf ./packages/%s/out" % name,
                     "yarn",
-                    "yarn run static-%s" % name,
                     "mkdir -p packages/%s/public/api" % name,
                     "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%s/public/api/version.json" % name,
+                    "yarn run static-%s" % name,
                     "statica %s ./packages/%s/out" % (statica_domain, name),
                 ],
                 "only": {
@@ -159,11 +159,11 @@ for site in SITES_SITES20:
             % name: {
                 "stage": "deploy",
                 "script": [
+                    "mkdir -p sites20/sites/%s/public/api" % name,
+                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > sites20/sites/%s/public/api/version.json" % name,
                     "cd sites20",
                     "rm -rf ./sites/%s/out" % name,
                     "yarn",
-                    "mkdir -p packages/%s/public/api" % name,
-                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%s/public/api/version.json" % name,
                     "yarn run deploy-%s" % name,
                 ],
                 "only": {
