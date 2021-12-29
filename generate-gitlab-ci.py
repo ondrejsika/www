@@ -150,7 +150,7 @@ for site in SITES:
             """
 %(site)s build docker:
   stage: build_docker%(priority_suffix)s
-  image: ondrejsika/ci-node-docker
+  image: sikalabs/extra:node-with-slu-docker
   needs: []
   variables:
     GIT_CLEAN_FLAGS: none
@@ -160,6 +160,8 @@ for site in SITES:
     - yarn run static-%(site)s
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
     - cp ci/docker/* packages/%(site)s/
+    - mkdir -p packages/%(site)s/public/api
+    - slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%(site)s/public/api/version.json
     - docker build -t $CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA packages/%(site)s
     - rm packages/%(site)s/Dockerfile
     - rm packages/%(site)s/nginx-site.conf
