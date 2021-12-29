@@ -188,7 +188,6 @@ for site in SITES:
   stage: deploy_prod%(priority_suffix)s
   script:
     - yarn
-    - yarn add @cloudflare/wrangler -W
     - rm -rf packages/%(site)s/out
     - mkdir -p packages/%(site)s/public/api
     - git status
