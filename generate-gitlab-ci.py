@@ -184,12 +184,14 @@ for site in SITES:
             out.append(
                 """
 %(site)s prod deploy cloudflare:
-  image: node:16
+  image: sikalabs/extra:node-with-slu
   stage: deploy_prod%(priority_suffix)s
   script:
     - yarn
     - yarn add @cloudflare/wrangler -W
     - rm -rf packages/%(site)s/out
+    - mkdir -p packages/%(site)s/public/api
+    - slu static-api version > packages/%(site)s/public/api/version.json
     - yarn run deploy-%(site)s
   except:
     variables:
