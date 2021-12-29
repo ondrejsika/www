@@ -119,6 +119,6 @@
     "prettier": "1.19.1"
   },
   "dependencies": {
-    "@cloudflare/wrangler": "^1.15.0"
+    "@cloudflare/wrangler": "^1.19.6"
   }
 }
