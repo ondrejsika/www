@@ -191,7 +191,7 @@ for site in SITES:
     - rm -rf packages/%(site)s/out
     - mkdir -p packages/%(site)s/public/api
     - git status
-    - slu static-api version > packages/%(site)s/public/api/version.json
+    - slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%(site)s/public/api/version.json
     - yarn run deploy-%(site)s
   except:
     variables:
