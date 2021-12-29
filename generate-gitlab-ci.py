@@ -233,7 +233,7 @@ for site in SITES:
   script:
     - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
     - helm repo add ondrejsika https://helm.oxs.cz
-    - helm upgrade --install %(name)s ondrejsika/one-image --set host=%(site)s --set image=$CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID
+    - helm upgrade --install %(name)s ondrejsika/one-image --set host=%(site)s --set image=$CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID --set CI_PROJECT_PATH_SLUG=$CI_PROJECT_PATH_SLUG --set CI_ENVIRONMENT_SLUG=$CI_ENVIRONMENT_SLUG
     - kubectl rollout status deploy %(name)s
   except:
     variables:
