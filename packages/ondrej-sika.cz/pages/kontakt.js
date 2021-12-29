@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
-const Index = props => (
+const Index = () => (
   <div>
     <Head>
       <title>Kontakty - Ondřej Šika</title>
@@ -19,6 +19,10 @@ const Index = props => (
             <br />
             <a href="mailto:ondrej@sika.io?subject=Poptavka skoleni">
               ondrej@sika.io
+            </a>
+            <br />
+            <a href="mailto:skoleni@sika.io?subject=Poptavka skoleni">
+              skoleni@sika.io
             </a>
           </p>
           <p className="pb-4">
