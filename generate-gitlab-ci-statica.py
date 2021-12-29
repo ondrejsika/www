@@ -79,7 +79,7 @@ out = {
         "deploy",
         "deploy test",
     ],
-    "image": "sikalabs/extra:node-with-statica",
+    "image": "sikalabs/ci-node",
     "variables": {
         "GIT_CLEAN_FLAGS": "-ffdx -e node_modules",
     },

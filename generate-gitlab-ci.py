@@ -150,7 +150,7 @@ for site in SITES:
             """
 %(site)s build docker:
   stage: build_docker%(priority_suffix)s
-  image: sikalabs/extra:node-with-slu-docker
+  image: sikalabs/ci-node
   needs: []
   variables:
     GIT_CLEAN_FLAGS: none
@@ -186,7 +186,7 @@ for site in SITES:
             out.append(
                 """
 %(site)s prod deploy cloudflare:
-  image: sikalabs/extra:node-with-slu
+  image: sikalabs/ci-node
   stage: deploy_prod%(priority_suffix)s
   script:
     - yarn
