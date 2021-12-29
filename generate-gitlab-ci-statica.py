@@ -81,7 +81,7 @@ out = {
     ],
     "image": "sikalabs/ci-node",
     "variables": {
-        "GIT_CLEAN_FLAGS": "-ffdx -e node_modules",
+        "GIT_CLEAN_FLAGS": "-ffdx -e node_modules -e .yarn-cache",
     },
     "start": {
         "stage": "start",

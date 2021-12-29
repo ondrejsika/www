@@ -118,7 +118,7 @@ stages:
 
 variables:
   DOCKER_BUILDKIT: '1'
-  GIT_CLEAN_FLAGS: "-ffdx -e node_modules"
+  GIT_CLEAN_FLAGS: "-ffdx -e node_modules -e .yarn-cache"
 
 start:
   stage: start
@@ -153,7 +153,7 @@ for site in SITES:
   image: sikalabs/ci-node
   needs: []
   variables:
-    GIT_CLEAN_FLAGS: none
+    GIT_CLEAN_FLAGS: -ffdx -e node_modules -e .yarn-cache
   script:
     - yarn  --cache-folder .yarn-cache
     - rm -rf packages/%(site)s/out
