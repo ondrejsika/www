@@ -155,7 +155,7 @@ for site in SITES:
   variables:
     GIT_CLEAN_FLAGS: none
   script:
-    - yarn
+    - yarn  --cache-folder .yarn-cache
     - rm -rf packages/%(site)s/out
     - mkdir -p packages/%(site)s/public/api
     - slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%(site)s/public/api/version.json
@@ -189,7 +189,7 @@ for site in SITES:
   image: sikalabs/ci-node
   stage: deploy_prod%(priority_suffix)s
   script:
-    - yarn
+    - yarn --cache-folder .yarn-cache
     - rm -rf packages/%(site)s/out
     - mkdir -p packages/%(site)s/public/api
     - git status

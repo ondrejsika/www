@@ -99,7 +99,7 @@ for site in SITES:
                 "stage": "deploy",
                 "script": [
                     "rm -rf ./sites20/sites/%s/out" % name,
-                    "yarn",
+                    "yarn --cache-folder .yarn-cache",
                     "mkdir -p packages/%s/public/api" % name,
                     "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%s/public/api/version.json" % name,
                     "yarn run deploy-%s" % name,
@@ -127,7 +127,7 @@ for site in SITES_DEV:
                 "stage": "deploy test",
                 "script": [
                     "rm -rf ./packages/%s/out" % name,
-                    "yarn",
+                    "yarn  --cache-folder .yarn-cache",
                     "mkdir -p packages/%s/public/api" % name,
                     "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%s/public/api/version.json" % name,
                     "yarn run static-%s" % name,
@@ -163,7 +163,7 @@ for site in SITES_SITES20:
                     "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > sites20/sites/%s/public/api/version.json" % name,
                     "cd sites20",
                     "rm -rf ./sites/%s/out" % name,
-                    "yarn",
+                    "yarn --cache-folder .yarn-cache",
                     "yarn run deploy-%s" % name,
                 ],
                 "only": {
