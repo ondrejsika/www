@@ -101,7 +101,7 @@ for site in SITES:
                     "rm -rf ./sites20/sites/%s/out" % name,
                     "yarn --cache-folder .yarn-cache",
                     "mkdir -p packages/%s/public/api" % name,
-                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%s/public/api/version.json" % name,
+                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME  -e CI_PIPELINE_ID=$CI_PIPELINE_ID -e \"GITLAB_USER_LOGIN=$GITLAB_USER_LOGIN\" > packages/%s/public/api/version.json" % name,
                     "yarn run deploy-%s" % name,
                 ],
                 "only": {
@@ -129,7 +129,7 @@ for site in SITES_DEV:
                     "rm -rf ./packages/%s/out" % name,
                     "yarn  --cache-folder .yarn-cache",
                     "mkdir -p packages/%s/public/api" % name,
-                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > packages/%s/public/api/version.json" % name,
+                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME -e CI_PIPELINE_ID=$CI_PIPELINE_ID -e \"GITLAB_USER_LOGIN=$GITLAB_USER_LOGIN\" > packages/%s/public/api/version.json" % name,
                     "yarn run static-%s" % name,
                     "statica %s ./packages/%s/out" % (statica_domain, name),
                 ],
@@ -160,7 +160,7 @@ for site in SITES_SITES20:
                 "stage": "deploy",
                 "script": [
                     "mkdir -p sites20/sites/%s/public/api" % name,
-                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME > sites20/sites/%s/public/api/version.json" % name,
+                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME -e CI_PIPELINE_ID=$CI_PIPELINE_ID -e \"GITLAB_USER_LOGIN=$GITLAB_USER_LOGIN\" > sites20/sites/%s/public/api/version.json" % name,
                     "cd sites20",
                     "rm -rf ./sites/%s/out" % name,
                     "yarn --cache-folder .yarn-cache",
