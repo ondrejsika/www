@@ -388,7 +388,7 @@
 
 - id: kubernetes-api-v-go
   eventbrite: https://www.eventbrite.com/e/170406016984
-  active: true
+  active: false
   title: Kubernetes API v Go
   date: "17. 11. 2021"
   time: "19:00"
@@ -403,7 +403,7 @@
 
 - id: minio
   eventbrite: https://www.eventbrite.com/e/170407507442
-  active: true
+  active: false
   title: "Minio: On premise S3"
   date: "1. 12. 2021"
   time: "19:00"
@@ -422,7 +422,7 @@
   eventbrite: https://www.eventbrite.com/e/170408604724
   active: true
   title: "Cloudflare Access"
-  date: "15. 12. 2021"
+  date: "5. 1. 2022"
   time: "19:00"
   about: |
     Cloudflare Access je jednoduchý způsob, jak přidat bezpečnou authetifikaci Vašich cloudových služeb na úrovni Cloudflare proxy. Můzete tak jednoduše přidat autentifikaci pomocí emailu, LDAPu nebo Google účtu. Vše samozřejmě Terraformem.
