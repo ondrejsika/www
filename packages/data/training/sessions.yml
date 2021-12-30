@@ -1048,7 +1048,7 @@
   name: Ansible
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: gitlab-ci
@@ -1062,7 +1062,7 @@
   name: Gitlab CI
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -1076,7 +1076,7 @@
   name: Docker
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: argocd
@@ -1090,7 +1090,7 @@
   name: ArgoCD
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
@@ -1104,7 +1104,7 @@
   name: Kubernetes
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -1118,7 +1118,7 @@
   name: Terraform
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: rancher
@@ -1132,7 +1132,7 @@
   name: Rancher
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: prometheus
@@ -1146,7 +1146,7 @@
   name: Prometheus
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: digitalocean
@@ -1160,7 +1160,7 @@
   name: DigitalOcean
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: proxmox
@@ -1174,7 +1174,7 @@
   name: Proxmox
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: gitlab-ci
@@ -1188,7 +1188,7 @@
   name: Gitlab CI
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: docker
@@ -1202,7 +1202,7 @@
   name: Docker
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: kubernetes
@@ -1216,7 +1216,7 @@
   name: Kubernetes
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -1230,7 +1230,7 @@
   name: Terraform
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: rancher
@@ -1244,7 +1244,7 @@
   name: Rancher
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: prometheus
@@ -1258,7 +1258,7 @@
   name: Prometheus
   price: 11 999 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: digitalocean
@@ -1272,7 +1272,7 @@
   name: DigitalOcean
   price: 6 800 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: proxmox
@@ -1280,6 +1280,20 @@
   date_to: 15.12.2021
   facebook_event: null
   id: proxmox-online-15-12-2021
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: proxmox
+  date_from: 31.01.2022
+  date_to: 31.01.2022
+  facebook_event: null
+  id: proxmox-2022-01-31
   lang: cs
   length: 1 den
   linkedin_event: null
