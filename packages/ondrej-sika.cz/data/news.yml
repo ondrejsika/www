@@ -1,3 +1,15 @@
+- id: otevrene-webinare-v-lednu-2022
+  title: "Otevrene webinare v Lednu 2022"
+  date: 3. 1. 2022
+  perex: |
+    Temata Gitlab CI, Dokcer, Kubernetes, Terraform, GitOps, ArgoCD, ...
+  content: |
+    - [Gitlab CI: Automatizujte pri vyvoji a nasazovani software](https://stream.sika.io/stream/c/ajonjhuwkrecigrv/tkshmfgzdqzicsty)
+    - [Kubernetes: Vyhody prechodu do Kubernetes a sjednoceni platformy pro provoz aplikaci](https://stream.sika.io/stream/c/ecudlqqamnifhyme/lbowlmuqhkgtdelk)
+    - [Terraform: Infrastruktura formou kodu a GitOps](https://stream.sika.io/stream/c/dwndterrorlptrtu/alwtmyeyvdugatap)
+    - [ArgoCD: Uvod do GitOps v Kubernetes](https://stream.sika.io/stream/c/thrboqolyknxxkjm/zuspnnxxhqfnmshv)
+    - [Migrace z Docker Compose do Kubernetes](https://stream.sika.io/stream/c/adbwbblrwtzegwyo/vzrzlnuqzrkvznan)
+
 - id: pf2022
   title: "PF 2022"
   date: 20. 12. 2021
