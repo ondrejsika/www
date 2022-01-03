@@ -38,6 +38,7 @@ const Navbar = (
           ["PROXMOX", "/skoleni/proxmox"],
           ["ELK / EFK", "/skoleni/elk"],
           ["DIGITAL OCEAN", "/skoleni/digitalocean"],
+          ["PACKER", "/skoleni/packer"],
           // ["AWS", "/skoleni/aws"],
           // ["OPEN STACK", "/skoleni/openstack"],
           // ["GO (GOLANG)", "/skoleni/go"],
