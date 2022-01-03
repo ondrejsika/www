@@ -1,3 +1,16 @@
+- id: nove-kurzy-v-lednu-2022
+  title: "Nove kurzy v Lednu 2022"
+  date: 5. 1. 2022
+  perex: |
+    Packer, Vault, ArgoCD, Django a dalsi ...
+  content: |
+    Pripravil jsem tyto nove kurzy:
+
+    - [Packer](/skoleni/packer)
+    - [Vault](/skoleni/vault)
+    - [ArgoCD](/skoleni/argocd)
+    - [Django](/skoleni/django)
+
 - id: otevrene-webinare-v-lednu-2022
   title: "Otevrene webinare v Lednu 2022"
   date: 3. 1. 2022
