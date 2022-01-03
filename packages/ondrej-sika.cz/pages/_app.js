@@ -39,6 +39,7 @@ const Navbar = (
           ["ELK / EFK", "/skoleni/elk"],
           ["DIGITAL OCEAN", "/skoleni/digitalocean"],
           ["PACKER", "/skoleni/packer"],
+          ["VAULT", "/skoleni/vault"],
           // ["AWS", "/skoleni/aws"],
           // ["OPEN STACK", "/skoleni/openstack"],
           // ["GO (GOLANG)", "/skoleni/go"],
