@@ -1300,3 +1300,17 @@
   name: Proxmox
   price: 6 800 CZK
   venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: kubernetes
+  date_from: 07.03.2022
+  date_to: 08.03.2022
+  facebook_event: null
+  id: kubernetes-2022-03-07
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 11 999 CZK
+  venue_id: null
