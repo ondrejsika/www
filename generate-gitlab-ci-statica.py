@@ -30,6 +30,7 @@ SITES_SITES20 = [
     {"name": "devopsnews.cz"},
     {"name": "hashicorp.cz"},
     {"name": "devopsaci.cz"},
+    {"name": "sikahosting.com"},
 ]
 
 _DEFAULT_DEPENDENCIES = [
