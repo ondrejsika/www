@@ -1141,6 +1141,7 @@
       - Installed Docker or Prometheus, Alertmanager, Pushgateway and Grafana
 
 - id: go
+  new: true
   skoleniio:
     name: go
     lecturer: ondrejsika
@@ -1235,6 +1236,7 @@
       - Synchronized Communication
 
 - id: django
+  new: true
   skoleniio:
     name: django
     lecturer: ondrejsika
@@ -1317,6 +1319,7 @@
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
 - id: vault
+  new: true
   name:
     cs: Školení Hashicorp Vault
     en: Hashicorp Vault Training
@@ -1353,6 +1356,7 @@
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
 - id: packer
+  new: true
   name:
     cs: Školení Packer
     en: Packer Training
@@ -1494,6 +1498,7 @@
       - Backups
 
 - id: aws
+  new: true
   skoleniio:
     name: aws
     lecturer: ondrejsika
@@ -1531,6 +1536,7 @@
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
 - id: openstack
+  new: true
   skoleniio:
     name: openstack
     lecturer: ondrejsika
@@ -1655,6 +1661,7 @@
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
 - id: argocd
+  new: true
   name:
     cs: "Školení ArgoCD: GitOps pro Kubernetes"
     en: "ArgoCD Training: GitOps for Kubernetes"
