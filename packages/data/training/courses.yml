@@ -1349,9 +1349,40 @@
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
   description:
     cs: |
-      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+      ## Co je Hashicorp Vault a proc jej pouzivat
 
       Hashicorp Vault je nastroj na spravu hesel, klicu a citlivych dat. Vault zaroven umoznuje nastavovat jednorazove pristupy s kratkou platnosti pro jeste lepsi zabezpeceni. Vse bezi bezpecne v HA.
+
+      ### Jak školení probíhá
+
+      Skoleni probiha formou workshopu. Vše si prakticky vyzkoušíme a osaháme. Po skoleni budete odchazet s hands-on zkusenosti jak Vault funguje, jak jej produkcne nasetupovat a jak s nim pracovat.
+
+      ### Co Vás naučím
+
+      - Teoretický úvod do Vaultu
+      - Instalace Vaultu (lokani i produkcni)
+      - Zakladni prace a koncepty Vaultu
+      - Produkcni setup Vaultu
+      - Konfigurace Vaultu
+      - Prace se Secret engines
+      - Auth Methods
+      - Vault Agent
+      - Ukazka production ready pouziti Vaultu
+
+      ### Pro koho je školení určeno
+
+      Skoleni je urceno pro vyvojare a [devopsaky](https://devopsaci.cz), kteri chteji bezpecne ukladat secrets.
+
+      #### Předchozí znalosti
+
+      - Základy práce s Linuxem
+      - Základy práce v terminálu
+      - Zkusenosti s cloudem vyhodou
+
+      #### Technické požadavky
+
+      - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+      - Nainstalovany Vault vyhodou
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
