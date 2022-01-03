@@ -1379,12 +1379,56 @@
     cs: ["spel", "vse", "sit"]
   agenda:
     cs: |
-      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+      ### Co Vás naučím
+
+      - Teoretický úvod do Packeru
+      - Instalace Packeru (pro ty kteří nenainstalovali doma)
+      - Machine image build process
+      - Uvod do HCL (konfiguracni jazyk)
+      - Builders (AWS, DigitalOcean, OpenStack, Proxmox, ...)
+      - Provisioners (Ansible, Shell, File, ...)
+      - Postprocessors
+      - Ukazka production ready CI/CD Packer pipeline
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
   description:
     cs: |
-      **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
+      ## Co je Packer a proc jej pouzivat
+
+      Packer je nastroj na automatizovane vytvareni machine images pro verejne i privatni cloudy (AWS, DigitalOcean, OpenStack, Proxmox, KVM, ...) od spolecnosti HashiCorp.
+
+      Diky Packeru muzeme automatizovane (v CI/CD) a formou kodu pripravovat obrazy pro virtualni stroje se vsim co potrebujeme pro beh nasich aplikaci v cloudu (public i private). Uz nemusime pouzivat zadne Ansible nebo setup skripty, VM bude hned po spusteni pripravene k pouziti vcetne vsech dulezitych komponent.
+
+      ### Jak školení probíhá
+
+      Skoleni probiha formou workshopu. Vše si prakticky vyzkoušíme a osaháme. Po skoleni budete odchazet s hands-on zkusenosti jak Packer funguje a jak s nim pracovat.
+
+      ### Co Vás naučím
+
+      - Teoretický úvod do Packeru
+      - Instalace Packeru (pro ty kteří nenainstalovali doma)
+      - Machine image build process
+      - Uvod do HCL (konfiguracni jazyk)
+      - Builders (AWS, DigitalOcean, OpenStack, Proxmox, ...)
+      - Provisioners (Ansible, Shell, File, ...)
+      - Postprocessors
+      - Ukazka production ready CI/CD Packer pipeline
+
+      ### Pro koho je školení určeno
+
+      Skoleni je urceno pro vyvojare a [devopsaky](https://devopsaci.cz), kteri chteji zefektivnit a automatozovat tvorbu machine images. Take pro ty, kteri preferuji Infrastracture as Code a nechteji nic delat rucne.
+
+      #### Předchozí znalosti
+
+      - Základy práce s Linuxem
+      - Základy práce v terminálu
+      - Zakladni znalosti cloudoveho nebo virtualizacniho reseni (AWS, VMWare, ...)
+
+      #### Technické požadavky
+
+      - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+      - Nainstalovany Packer vyhodou
+
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
