@@ -27,6 +27,7 @@ const Page = props => (
               <Link href={`/private/pro-partnery/${course.id}`}>
                 <a>{course.name[props.site.lang]}</a>
               </Link>
+              {course.new && " (new)"}
             </td>
             <td>
               {course.length} {course.length == 1 ? "den" : "dny"}
