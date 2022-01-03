@@ -1,0 +1,12 @@
+{
+  "name": "@themes/zuzjes",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Zuzana Jeschke",
+  "author_email": "zuz@zuzjes.com",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  }
+}
