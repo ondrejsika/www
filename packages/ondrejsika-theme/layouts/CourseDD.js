@@ -2,6 +2,7 @@ import React from "react";
 import Course from "@app/ondrejsika-theme/layouts/Course";
 import courses_yaml from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
+import Page404 from "@app/ondrejsika-theme/components/Page404";
 
 const CourseDD = props => {
   let course_id = props.course_id;
@@ -16,6 +17,10 @@ const CourseDD = props => {
   db.setCursor("courses");
   db.filter("id", course_id);
   let course = db.getOne();
+
+  if (!course) {
+    return <Page404 site={props.site} />;
+  }
 
   let course_name = course.name[lang];
   let price_open = course.price.open[location];
