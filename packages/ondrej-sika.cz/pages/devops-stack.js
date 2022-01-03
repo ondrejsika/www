@@ -3,10 +3,10 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
   <Article
-    title="Open source DevOps pipeline"
+    title="Open source DevOps Stack"
     subheader="DevOps je sada nástrojů a technik, díky kterým budete doručovat novou fukncionalitu a změny k zakazníkům automaticky, rychleji a bezstarostně. DevOps Vám umožní trávit více času vývojem než nasazováním a provozováním a vy se můžete zaměřit na jádro vašeho byznysu. Zavedením DevOps také eliminujete nutnost ručních zásahů a ušetříte náklady na tuto manuální práci a vyhnete se chybám."
     markdown={`
-Já používám tyto nástroje jak ve své pipepline tak v DevOps pipeline pro klienty.
+Já používám tyto nástroje jak ve svém DevOps stacku tak u klientů.
 
 - Git - Verzovací systém
 - Gitlab - Kolaborativní a DevOps Platforma

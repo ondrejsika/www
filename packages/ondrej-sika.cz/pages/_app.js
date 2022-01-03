@@ -156,8 +156,8 @@ const Footer = (
           <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/devops-pipeline">
-          <ThemeFooter.A href="#">DevOps pipeline</ThemeFooter.A>
+        <Link href="/devops-stack">
+          <ThemeFooter.A href="#">DevOps Stack</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/seznam-skoleni">

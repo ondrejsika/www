@@ -1,3 +1,4 @@
+/devops-pipeline /devops-stack
 /blog/2019/terraform-prednaska-linuxdays-2019 /blog/terraform-prednaska-linuxdays-2019
 /blog/2019/react-next-workshop-linuxdays-2019 /blog/react-next-workshop-linuxdays-2019
 /blog/2019/terminy-skoleni-podzim-2019/ /blog/terminy-skoleni-podzim-2019
