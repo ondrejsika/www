@@ -32,11 +32,15 @@ const CourseDD = props => {
         Diky.
       </p>
       <h2>Moje cena za osobu na otevrenem skoleni</h2>
-      <Markdown source={price_open} />
+      <div className="mb-5">
+        <Markdown source={price_open} />
+      </div>
       <h2>Moje cena za firmu na in-house skoleni</h2>
-      <Markdown source={price_in_house} />
+      <div className="mb-5">
+        <Markdown source={price_in_house} />
+      </div>
       <h2>Lektor</h2>
-      <div className="border p-1">
+      <div className="border p-4 mt-3 mb-5">
         <h4>Ondrej Sika</h4>
         <p>
           Jsem freelance DevOps konzultant a lektor. Zlepšuji práci vývojářských
@@ -54,7 +58,7 @@ const CourseDD = props => {
       </div>
 
       <h2>Osnova a detailni popis</h2>
-      <div className="border p-1">
+      <div className="border p-4 mt-3">
         <Markdown source={description} />
       </div>
     </Article>
