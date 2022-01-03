@@ -4,6 +4,7 @@ import * as Sentry from "@sentry/browser";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
+import DevelopmentBarFooter from "@app/common/components/DevelopmentBarFooter";
 import BootstrapJS from "@app/common/components/BootstrapJS";
 import GoogleTagManager from "@app/common/google_tag_manager/GoogleTagManager";
 import { createGlobalStyle } from "styled-components";
@@ -53,6 +54,7 @@ let Layout = props => {
       <GoogleAnalytics
         google_analytics_site_id={props.site.google_analytics_site_id}
       />
+      <DevelopmentBarFooter />
     </div>
   );
 };
