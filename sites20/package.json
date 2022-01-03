@@ -10,6 +10,7 @@
     "dev-devopsnews.cz": "yarn --cwd sites/devopsnews.cz dev -p 4002",
     "dev-hashicorp.cz": "yarn --cwd sites/hashicorp.cz dev -p 4003",
     "dev-devopsaci.cz": "yarn --cwd sites/devopsaci.cz dev -p 4004",
+    "dev-sikahosting.com": "yarn --cwd sites/sikahosting.com dev -p 4005",
     "static-digitalocean.cz": "yarn --cwd sites/digitalocean.cz static",
     "static-devopsnews.cz": "yarn --cwd sites/devopsnews.cz static",
     "static-hashicorp.cz": "yarn --cwd sites/hashicorp.cz static",
