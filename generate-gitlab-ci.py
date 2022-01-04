@@ -231,10 +231,10 @@ for site in SITES:
     GIT_STRATEGY: none
     KUBECONFIG: .kubeconfig
   script:
-    - echo $KUBECONFIG_FILECONTENT | base64 --decode > .kubeconfig
-    - helm repo add sikalabs https://helm.sikalabs.io
-    - helm upgrade --install %(name)s sikalabs/one-image --set host=%(site)s --set image=$CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA --set changeCause=job-$CI_JOB_ID --set CI_PROJECT_PATH_SLUG=$CI_PROJECT_PATH_SLUG --set CI_ENVIRONMENT_SLUG=$CI_ENVIRONMENT_SLUG --set replicas=2
-    - kubectl rollout status deploy %(name)s
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - docker pull $CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA
+    - docker tag $CI_REGISTRY_IMAGE/%(site)s:$CI_COMMIT_SHORT_SHA $CI_REGISTRY_IMAGE/%(site)s
+    - docker push $CI_REGISTRY_IMAGE/%(site)s
   except:
     variables:
       - $EXCEPT_DEPLOY
