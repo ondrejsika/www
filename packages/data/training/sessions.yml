@@ -1301,6 +1301,20 @@
   price: 6 800 CZK
   venue_id: null
 - active: true
+  city: Online
+  country: cz
+  course_id: terraform
+  date_from: 01.02.2022
+  date_to: 01.02.2022
+  facebook_event: null
+  id: terraform-online-2022-02-01
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 6 800 CZK
+  venue_id: null
+- active: true
   city: Prague
   country: cz
   course_id: kubernetes
