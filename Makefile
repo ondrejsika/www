@@ -4,6 +4,13 @@ fmt:
 commit-prettier-write:
 	git commit -m "[generated] refactor(style): Reformat using Prettier (yarn run prettier-write)"
 
+commit-yarn-lock:
+	git add yarn.lock
+	git commit -n -m "[generated] Update yarn.lock"
+
+commit-ncu-all:
+	git commit -n -m "[generated] yarn run ncu-all - upgrade all dependencies"
+
 update-sessions-yml-from-training-crm:
 	curl -o packages/data/training/sessions.yml https://trainingcrm.sika.io/views/sessions_yaml/
 	git add packages/data/training/sessions.yml
