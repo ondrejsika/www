@@ -17,11 +17,11 @@
   perex: |
     Temata Gitlab CI, Dokcer, Kubernetes, Terraform, GitOps, ArgoCD, ...
   content: |
-    - [Gitlab CI: Automatizujte pri vyvoji a nasazovani software](https://stream.sika.io/stream/c/ajonjhuwkrecigrv/tkshmfgzdqzicsty)
-    - [Kubernetes: Vyhody prechodu do Kubernetes a sjednoceni platformy pro provoz aplikaci](https://stream.sika.io/stream/c/ecudlqqamnifhyme/lbowlmuqhkgtdelk)
-    - [Terraform: Infrastruktura formou kodu a GitOps](https://stream.sika.io/stream/c/dwndterrorlptrtu/alwtmyeyvdugatap)
-    - [ArgoCD: Uvod do GitOps v Kubernetes](https://stream.sika.io/stream/c/thrboqolyknxxkjm/zuspnnxxhqfnmshv)
-    - [Migrace z Docker Compose do Kubernetes](https://stream.sika.io/stream/c/adbwbblrwtzegwyo/vzrzlnuqzrkvznan)
+    - [Gitlab CI: Automatizujte pri vyvoji a nasazovani software](https://stream.sika.io/stream/c/ajonjhuwkrecigrv/tkshmfgzdqzicsty) (28. 1. 9:00 - 11:00)
+    - [Kubernetes: Vyhody prechodu do Kubernetes a sjednoceni platformy pro provoz aplikaci](https://stream.sika.io/stream/c/ecudlqqamnifhyme/lbowlmuqhkgtdelk) (4. 2. 9:00 - 11:00)
+    - [Terraform: Infrastruktura formou kodu a GitOps](https://stream.sika.io/stream/c/dwndterrorlptrtu/alwtmyeyvdugatap) (11. 2. 9:00 - 11:00)
+    - [ArgoCD: Uvod do GitOps v Kubernetes](https://stream.sika.io/stream/c/thrboqolyknxxkjm/zuspnnxxhqfnmshv) (18. 2. 9:00 - 11:00)
+    - [Migrace z Docker Compose do Kubernetes](https://stream.sika.io/stream/c/adbwbblrwtzegwyo/vzrzlnuqzrkvznan) (25. 2. 9:00 - 11:00)
 
 - id: pf2022
   title: "PF 2022"
@@ -35,11 +35,11 @@
 
     Jako podekovani za spolupraci pro Vas mam 5 otevrenych webinaru na temata:
 
-    - [Gitlab CI: Automatizujte pri vyvoji a nasazovani software](https://stream.sika.io/stream/c/ajonjhuwkrecigrv/tkshmfgzdqzicsty)
-    - [Kubernetes: Vyhody prechodu do Kubernetes a sjednoceni platformy pro provoz aplikaci](https://stream.sika.io/stream/c/ecudlqqamnifhyme/lbowlmuqhkgtdelk)
-    - [Terraform: Infrastruktura formou kodu a GitOps](https://stream.sika.io/stream/c/dwndterrorlptrtu/alwtmyeyvdugatap)
-    - [ArgoCD: Uvod do GitOps v Kubernetes](https://stream.sika.io/stream/c/thrboqolyknxxkjm/zuspnnxxhqfnmshv)
-    - [Migrace z Docker Compose do Kubernetes](https://stream.sika.io/stream/c/adbwbblrwtzegwyo/vzrzlnuqzrkvznan)
+    - [Gitlab CI: Automatizujte pri vyvoji a nasazovani software](https://stream.sika.io/stream/c/ajonjhuwkrecigrv/tkshmfgzdqzicsty) (28. 1. 9:00 - 11:00)
+    - [Kubernetes: Vyhody prechodu do Kubernetes a sjednoceni platformy pro provoz aplikaci](https://stream.sika.io/stream/c/ecudlqqamnifhyme/lbowlmuqhkgtdelk) (4. 2. 9:00 - 11:00)
+    - [Terraform: Infrastruktura formou kodu a GitOps](https://stream.sika.io/stream/c/dwndterrorlptrtu/alwtmyeyvdugatap) (11. 2. 9:00 - 11:00)
+    - [ArgoCD: Uvod do GitOps v Kubernetes](https://stream.sika.io/stream/c/thrboqolyknxxkjm/zuspnnxxhqfnmshv) (18. 2. 9:00 - 11:00)
+    - [Migrace z Docker Compose do Kubernetes](https://stream.sika.io/stream/c/adbwbblrwtzegwyo/vzrzlnuqzrkvznan) (25. 2. 9:00 - 11:00)
 
     <div style="height: 2em"></div>
 
