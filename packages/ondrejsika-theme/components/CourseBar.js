@@ -6,7 +6,6 @@ import docker from "@app/data/pictures/courses/white/docker.svg";
 import git from "@app/data/pictures/courses/white/git.svg";
 import gitlabci from "@app/data/pictures/courses/white/gitlab_ci.svg";
 import k8s from "@app/data/pictures/courses/white/kubernetes.svg";
-import django from "@app/data/pictures/courses/white/django.svg";
 import terraform from "@app/data/pictures/courses/white/terraform.svg";
 import ansible from "@app/data/pictures/courses/white/ansible.svg";
 import rancher from "@app/data/pictures/courses/white/rancher.svg";
@@ -14,6 +13,7 @@ import prometheus from "@app/data/pictures/courses/white/prometheus.svg";
 import proxmox from "@app/data/pictures/courses/white/proxmox.svg";
 import elk from "@app/data/pictures/courses/white/elk.svg";
 import digitalocean from "@app/data/pictures/courses/digitalocean-w.png";
+import argocd from "@app/data/pictures/courses/white/argocd-large.png";
 
 import default_colors from "@app/ondrejsika-theme/config/colors";
 import { Row, Col, Container } from "react-bootstrap";
@@ -188,9 +188,9 @@ const CourseBar = props => {
                       <Card
                         site={props.site}
                         lang={props.lang}
-                        courseName="Django"
-                        courseId="django"
-                        courseImg={django}
+                        courseName="ArgoCD"
+                        courseId="argocd"
+                        courseImg={argocd}
                       />
                       <Card
                         site={props.site}
