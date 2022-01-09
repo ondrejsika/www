@@ -12,6 +12,7 @@ import {
   FaLinkedinIn,
   FaFacebookSquare
 } from "react-icons/fa";
+import WaitingListForm from "@app/ondrejsika-theme/layouts/WaitingListForm";
 
 const DesktopView = styled.div`
   @media (max-width: 768px) {
@@ -70,6 +71,20 @@ const UpcomingSessions = props => {
     en: "upcoming-sessions",
     de: "termine"
   }[props.lang || "cs"];
+
+  if (sessions.length == 0) {
+    return (
+      <>
+        <div className="text-center alert-warning p-4 mt-4 rounded">
+          <h4>Bohužel nejsou žádné termíny vypsanené</h4>
+          <p>Zanechte mi email a já se Vám ozvu až termín otevřu</p>
+          <div className="row justify-content-center align-items-center">
+            <WaitingListForm site={props.site} course_slug={props.course_id} />
+          </div>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
