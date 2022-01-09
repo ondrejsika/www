@@ -18,7 +18,7 @@
       de: 799 EUR
       uk: "799 EUR"
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       sk: 1990 EUR
       de: 3999 EUR
       uk: "2999 EUR"
@@ -151,7 +151,7 @@
       de: 799 EUR
       uk: 799 EUR
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       sk: 1999 EUR
       de: 3999 EUR
       uk: 2999 EUR
@@ -301,7 +301,7 @@
     open:
       cz: 6 800 CZK
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
   twitter_recommendations:
     cs: []
   recommendations:
@@ -394,7 +394,7 @@
       uk: 449 EUR
       se: "??? SEK"
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
       sk: 999 EUR
       nl: "??? EUR"
       de: 1999 EUR
@@ -543,7 +543,7 @@
       uk: 449 EUR
       se: "??? SEK"
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
       sk: 999 EUR
       nl: "??? EUR"
       de: 1999 EUR
@@ -688,7 +688,7 @@
       uk: 799 EUR
       se: "??? SEK"
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       sk: 1999 EUR
       nl: "??? EUR"
       de: 3999 EUR
@@ -842,7 +842,7 @@
       uk: 799 EUR
       se: "??? SEK"
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
   twitter_recommendations:
     cs:
       - radim-daniel-panek-terraform
@@ -977,7 +977,7 @@
     open:
       cz: 6 800 CZK
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1056,7 +1056,7 @@
       de: 449 EUR
       uk: 449 EUR
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
       de: 1999 EUR
       uk: 1999 EUR
   twitter_recommendations:
@@ -1158,7 +1158,7 @@
       de: 599 EUR
       uk: 599 EUR
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       de: 3999 EUR
       uk: 3999 GBP
   twitter_recommendations:
@@ -1253,7 +1253,7 @@
       de: 599 EUR
       uk: 599 EUR
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       de: 3999 EUR
       uk: 3999 GBP
   twitter_recommendations:
@@ -1333,7 +1333,7 @@
       de: 299 EUR
       uk: 299 EUR
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
       de: 1999 EUR
       uk: 1999 GBP
   twitter_recommendations:
@@ -1401,7 +1401,7 @@
       de: 299 EUR
       uk: 299 EUR
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
       de: 1999 EUR
       uk: 1999 GBP
   twitter_recommendations:
@@ -1480,7 +1480,7 @@
       de: 299 EUR
       uk: 299 EUR
     in_house:
-      cz: 25 000 CZK
+      cz: 29 000 CZK
       de: 1999 EUR
       uk: 1999 GBP
   twitter_recommendations:
@@ -1590,7 +1590,7 @@
       de: 599 EUR
       uk: 599 EUR
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       de: 3999 EUR
       uk: 3999 GBP
   twitter_recommendations:
@@ -1628,7 +1628,7 @@
       de: 599 EUR
       uk: 599 EUR
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       de: 3999 EUR
       uk: 3999 GBP
   twitter_recommendations:
@@ -1660,7 +1660,7 @@
       de: 599 EUR
       uk: 599 EUR
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       de: 3999 EUR
       uk: 3999 GBP
   twitter_recommendations:
@@ -1750,7 +1750,7 @@
       de: 599 EUR
       uk: 599 EUR
     in_house:
-      cz: 50 000 CZK
+      cz: 58 000 CZK
       de: 3999 EUR
       uk: 3999 GBP
   twitter_recommendations:

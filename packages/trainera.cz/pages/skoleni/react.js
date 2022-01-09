@@ -12,7 +12,7 @@ const Page = props => (
     logo={logo}
     price_self_funded="11 999 CZK"
     price_company_funded="14 999 CZK"
-    price_in_house="50 000 CZK"
+    price_in_house="58 000 CZK"
     location="cz"
     hide_prices={true}
   >

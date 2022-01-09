@@ -26,7 +26,7 @@ const Install = () => (
         source={`
 Nabízím možnost spolupráce jako Váš externí lektor. Mohu pro Vás školit své stávající kurzy a workshopy, mohu pro Vás připravit kurz na přání nebo školit nějaký Váš stávající kurz.
 
-Moje cena je 25 000 CZK za den školení, ale jsem otevřen diskuzi.
+Moje cena je 29 000 CZK za den školení, ale jsem otevřen diskuzi.
 
 Mám zkušenosti v oblastech:
 

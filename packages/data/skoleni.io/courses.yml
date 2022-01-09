@@ -5,7 +5,7 @@
   technology_id: docker
   name: Docker
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
   description: |
     ### Co je to Docker
     Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
@@ -51,7 +51,7 @@
   technology_id: kubernetes
   name: Kubernetes
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
   description: |
     ### Co je to Kubernetes
 
@@ -92,7 +92,7 @@
   technology_id: terraform
   name: Terraform
   price_open: 6 800 CZK
-  price_in_house: 25 000 CZK
+  price_in_house: 29 000 CZK
   description: |
     ### Co to je Terraform a k čemu se používá?
 
@@ -138,7 +138,7 @@
   technology_id: gitlab-ci
   name: Gitlab CI
   price_open: 6 800 CZK
-  price_in_house: 25 000 CZK
+  price_in_house: 29 000 CZK
   description: |
     ### Co je to Continuous Integration?
 
@@ -177,7 +177,7 @@
   technology_id: argocd
   name: "ArgoCD: GitOps pro Kubernetes"
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
   description: |
    ### Popis technologie
 
@@ -214,7 +214,7 @@
   technology_id: git
   name: Git
   price_open: 6 800 CZK
-  price_in_house: 25 000 CZK
+  price_in_house: 29 000 CZK
   description: |
     ### Co je to Git?
 
@@ -254,7 +254,7 @@
   technology_id: digitalocean
   name: DigitalOcean
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
   description: |
     ### Popis technologie
 
@@ -300,14 +300,14 @@
   technology_id: elk
   name: ELK
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
 
 - id: ondrejsika-prometheus
   lecturer_id: ondrejsika
   technology_id: prometheus
   name: Prometheus
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
   description: |
     ### Co je to Prometheus
 
@@ -349,7 +349,7 @@
   technology_id: ansible
   name: Ansible
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
   description: |
     ### K čemu se používá?
 
@@ -388,28 +388,28 @@
   technology_id: openstack
   name: Open Stack
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
 
 - id: ondrejsika-python
   lecturer_id: ondrejsika
   technology_id: python
   name: Python
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
 
 - id: ondrejsika-django
   lecturer_id: ondrejsika
   technology_id: django
   name: Django
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
 
 - id: ondrejsika-golang-intro
   lecturer_id: ondrejsika
   technology_id: golang
   name: Úvod do jazyka Go
   price_open: 11 900 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
   description: |
     Na kurzu pracuji, pokud máte o školení zájem, dejte vědět.
 
@@ -418,7 +418,7 @@
   technology_id: golang
   name: CLI aplikace v Go
   price_open: 6 900 CZK
-  price_in_house: 25 000 CZK
+  price_in_house: 29 000 CZK
   description: |
     Na kurzu pracuji, pokud máte o školení zájem, dejte vědět.
 
@@ -427,7 +427,7 @@
   technology_id: rancher
   name: Rancher
   price_open: 6 800 CZK
-  price_in_house: 25 000 CZK
+  price_in_house: 29 000 CZK
   description: |
     ### Popis technologie
 
@@ -459,7 +459,7 @@
   technology_id: proxmox
   name: Proxmox
   price_open: 6 800 CZK
-  price_in_house: 25 000 CZK
+  price_in_house: 29 000 CZK
   description: |
     ### Co je to Proxmox
 
@@ -496,7 +496,7 @@
   technology_id: django
   name: Django
   price_open: 11 999 CZK
-  price_in_house: 50 000 CZK
+  price_in_house: 58 000 CZK
   description: |
     ### Co je Django
 
