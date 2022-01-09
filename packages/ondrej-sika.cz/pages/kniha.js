@@ -1,6 +1,6 @@
 import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
-import img from "@app/data/pictures/kniha/kniha_v1.jpg";
+import img from "@app/data/pictures/kniha/kniha_v1_400px.jpg";
 
 import Head from "next/head";
 
