@@ -22,7 +22,7 @@ const Install = () => (
             .
           </p>
           <p className="h2 mt-5">
-            Pokud máte o knihu zajem přijímam předobjednávky emailem na{" "}
+            Pokud máte o knihu zájem přijímam předobjednávky emailem na{" "}
             <a href="mailto:ondrej@sika.io?subject=Kniha" className="h2">
               ondrej@sika.io
             </a>
