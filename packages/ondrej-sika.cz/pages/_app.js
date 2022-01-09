@@ -22,6 +22,7 @@ const Navbar = (
   <ThemeNavbar
     NavName="Ondřej Šika"
     links={[
+      ["KNIHA", "/kniha", "new"],
       ["DEVOPS LIVE", "/devopslive"],
       [
         "KURZY",
