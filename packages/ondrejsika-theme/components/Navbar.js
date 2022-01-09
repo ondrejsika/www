@@ -73,6 +73,16 @@ const Navbar = props => {
                         <Link href={link[1]}>
                           <NavLink href="#" className="nav-link">
                             {link[0]}
+                            <span
+                              style={{
+                                fontSize: "0.8em",
+                                verticalAlign: "top",
+                                color: "#C6BEAF"
+                              }}
+                            >
+                              {" "}
+                              {link[2]}
+                            </span>
                           </NavLink>
                         </Link>
                       </li>
