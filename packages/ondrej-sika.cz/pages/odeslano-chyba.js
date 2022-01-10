@@ -11,8 +11,8 @@ const Sent = () => (
     </Head>
     <MainBar
       header={
-        <span style={{ color: "red" }}>
-          !! Při odesílání formuláře nastala chyba !!
+        <span style={{ backgroundColor: "red" }}>
+          Při odesílání formuláře nastala chyba!
         </span>
       }
     />
