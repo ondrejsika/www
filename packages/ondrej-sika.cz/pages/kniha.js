@@ -14,7 +14,7 @@ const Install = () => (
       <div className="row">
         <div className="col-lg-8 mb-5">
           <p className="h2">
-            Píši Knihu o DevOps, brzy bude více informací. Pokud chcete dostávat
+            Píši knihu o DevOps, brzy bude více informací. Pokud chcete dostávat
             novinky nejen novinky o knize, přihlaste se do mého{" "}
             <a href="https://sika.link/newsletter" className="h2">
               newsletteru
