@@ -1,6 +1,6 @@
 import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
-import img from "@app/data/pictures/kniha/kniha_v1_400px.jpg";
+import img from "@app/data/pictures/kniha/kniha_v1.jpg";
 
 import Head from "next/head";
 
@@ -12,7 +12,7 @@ const Install = () => (
     <MainBar header="DevOps Kniha" />
     <div className="container pt-5 pb-4 ">
       <div className="row">
-        <div className="col-8">
+        <div className="col-lg-8 mb-5">
           <p className="h2">
             Píši Knihu o DevOps, brzy bude více informací. Pokud chcete dostávat
             novinky nejen novinky o knize, přihlaste se do mého{" "}
@@ -30,7 +30,7 @@ const Install = () => (
           </p>
         </div>
 
-        <div className="col-4">
+        <div className="col-lg-4">
           <img src={img} className="img img-fluid pb-5" />
         </div>
       </div>
