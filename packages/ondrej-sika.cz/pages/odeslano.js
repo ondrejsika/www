@@ -1,5 +1,6 @@
 import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
+import SentPageAd from "@app/ondrejsika-theme/components/SentPageAd";
 import Markdown from "@app/common/components/Markdown";
 import Head from "next/head";
 
@@ -17,6 +18,8 @@ Brzy se Vám ozvu.
 V případě jakýchkoliv dotazů pište na <ondrej@sika.io>.
 `}
       />
+      <div style={{ height: "50px" }}></div>
+      <SentPageAd />
       <div style={{ height: "100px" }}></div>
     </div>
   </div>
