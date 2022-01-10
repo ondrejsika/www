@@ -3,8 +3,9 @@ import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import SentPageAd from "@app/ondrejsika-theme/components/SentPageAd";
 import Markdown from "@app/common/components/Markdown";
 import Head from "next/head";
+import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 
-const Sent = () => (
+const Sent = props => (
   <div>
     <Head>
       <title>Odesláno - Ondřej Šika</title>
@@ -20,8 +21,15 @@ V případě jakýchkoliv dotazů pište na <ondrej@sika.io>.
       />
       <div style={{ height: "50px" }}></div>
       <SentPageAd />
-      <div style={{ height: "100px" }}></div>
+      <div style={{ height: "50px" }}></div>
     </div>
+    <CourseBar
+      hiddenTop
+      hiddenBottom
+      site={props.site}
+      hidden={true}
+      LectureImgHeader="Vyberte si další školení"
+    />
   </div>
 );
 
