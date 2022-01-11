@@ -421,7 +421,7 @@
 
 - id: cloudflare-access
   eventbrite: https://www.eventbrite.com/e/170408604724
-  active: true
+  active: false
   title: "Cloudflare Access"
   date: "5. 1. 2022"
   time: "19:00"
