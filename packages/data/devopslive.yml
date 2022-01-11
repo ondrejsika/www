@@ -435,3 +435,21 @@
   technologies:
     - cloudflare
     - terraform
+
+- id: argocd-intro
+  eventbrite:
+  active: true
+  title: "Uvod do ArgoCD: GitOps v Kubernetes"
+  date: "2. 2. 2022"
+  time: "19:00"
+  about: |
+    ArgoCD je nastroj na GitOps deployment do Kubernetes
+  points: |
+    - Úvod do GitOps & ArgoCD
+    - Rozdil mezi Gitlab CI/CD a ArgoCD
+    - Deployment & aktualizace pomoci ArgoCD
+    - Integrace Gitlab CI/CD a ArgoCD
+  technologies:
+    - argocd
+    - gitlab
+    - git
