@@ -1,6 +1,6 @@
 import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
-import img from "@app/data/pictures/kniha/kniha_v1.jpg";
+import img from "@app/data/pictures/kniha/kniha_v2_400px.png";
 import ChciKnihuForm from "@app/ondrejsika-theme/components/ChciKnihuForm";
 
 import Head from "next/head";
