@@ -437,7 +437,7 @@
     - terraform
 
 - id: argocd-intro
-  eventbrite:
+  eventbrite: https://stream.sika.io/stream/c/omwvpykzebwubexm/nqyjysytiviziwej/
   active: true
   title: "Uvod do ArgoCD: GitOps v Kubernetes"
   date: "2. 2. 2022"
