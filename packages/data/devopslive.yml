@@ -436,6 +436,23 @@
     - cloudflare
     - terraform
 
+- id: cloudflare-tunnel
+  eventbrite: https://stream.sika.io/stream/c/rnumhxfwyfvahlub/owwikxjpfvyssmbb/
+  active: true
+  title: "Cloudflare Tunnel"
+  date: "19. 1. 2022"
+  time: "19:00"
+  about: |
+    CLoudflare Tunnel umoznuje vystavit webove sluzby prez Cloudflare svetu aniz by musela byt exponovana vase infrastruktura. Z vasi inrastruktury si otevrete spojeni do Cloudflare, nikoliv obracene.
+  points: |
+    - Úvod do Cloudflare a Cloudflare Tunnel
+    - Výhody použití Cloudflare Tunnelu
+    - Ukazka pouziti na localhostu nebo VM
+    - Ukázka pouziti v Kubernetes
+  technologies:
+    - cloudflare
+    - terraform
+
 - id: argocd-intro
   eventbrite: https://stream.sika.io/stream/c/omwvpykzebwubexm/nqyjysytiviziwej/
   active: true
