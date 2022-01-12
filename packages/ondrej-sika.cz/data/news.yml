@@ -1,15 +1,14 @@
 - id: nove-kurzy-v-lednu-2022
-  title: "Nove kurzy v Lednu 2022"
+  title: "Nove DevOps kurzy v Lednu 2022"
   date: 5. 1. 2022
   perex: |
     Packer, Vault, ArgoCD, Django a dalsi ...
   content: |
     Pripravil jsem tyto nove kurzy:
 
-    - [Packer](/skoleni/packer)
-    - [Vault](/skoleni/vault)
-    - [ArgoCD](/skoleni/argocd)
-    - [Django](/skoleni/django)
+    - [Packer](/skoleni/packer) - Vytvareni obrazu pro virtualni servery v public i private cloudech
+    - [Vault](/skoleni/vault) - Bezpecne misto pro ukladani secrets
+    - [ArgoCD](/skoleni/argocd) - GitOps pro Kubernetes
 
 - id: otevrene-webinare-v-lednu-2022
   title: "Otevrene webinare v Lednu 2022"
