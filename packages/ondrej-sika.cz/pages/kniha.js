@@ -5,6 +5,10 @@ import ChciKnihuForm from "@app/ondrejsika-theme/components/ChciKnihuForm";
 
 import Head from "next/head";
 
+const liStyle = {
+  fontSize: "1.7rem"
+};
+
 const Install = props => (
   <div>
     <Head>
@@ -34,14 +38,29 @@ const Install = props => (
             </a>
             . */}
           </p>
-          <div className="text-center alert-success p-4 mt-4 mb-4 rounded">
+          <div className="text-center alert-success p-4 mt-5 mb-4 rounded">
             <p>Zanechte mi email a já vám budu posílat update ke knize</p>
             <div className="row justify-content-center align-items-center">
               <ChciKnihuForm site={props.site} />
             </div>
           </div>
-
+          <h1 className="mt-5">Obsah</h1>
           <p className="h2 mt-4">
+            <ul>
+              <li style={liStyle}>Úvod do DevOps a proč by Vás mělo zajímat</li>
+              <li style={liStyle}>Kultura DevOps</li>
+              <li style={liStyle}>Moderní DevOps Stack</li>
+              <li style={liStyle}>Jak navrhnout moderní DevOps architekturu</li>
+              <li style={liStyle}>
+                Kontejnery, Kubernetes, Terraform, ... deep dive
+              </li>
+              <li style={liStyle}>Vyhody public cloudů i on-premise</li>
+              <li style={liStyle}>Automatizace a GitOps</li>
+              <li style={liStyle}>Mnoho příkladů a ukázek</li>
+            </ul>
+          </p>
+          <h1 className="mt-5">Objednat</h1>
+          <p className="h2 mt-2">
             Pokud máte o knihu zájem,
             <br />
             přijímam předobjednávky emailem na{" "}
