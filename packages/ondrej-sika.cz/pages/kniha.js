@@ -10,7 +10,13 @@ const Install = props => (
     <Head>
       <title>DevOps Kniha - Ondrej Sika</title>
     </Head>
-    <MainBar header="DevOps Kniha" />
+    <MainBar
+      header={
+        <center>
+          První česká kniha o <b style={{ color: "#c8bfb0" }}>DevOps</b>
+        </center>
+      }
+    />
     <div className="container pt-5 pb-4 ">
       <div className="row">
         <div className="col-lg-4">
