@@ -1806,3 +1806,71 @@
 
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
+
+- id: cloudflare
+  skoleniio:
+    name: cloudflare
+    lecturer: ondrejsika
+  name:
+    cs: Školení Cloudflare
+    en: Cloudflare Training
+    de: Cloudflare Schulung
+  length: 1
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 8 900 CZK
+      sk: 449 EUR
+      nl: "??? EUR"
+      de: 799 EUR
+      uk: 799 EUR
+      se: "??? SEK"
+    in_house:
+      cz: 29 000 CZK
+  twitter_recommendations:
+    cs:
+      - radim-daniel-panek-terraform
+  recommendations:
+    cs: ["konica", "milanskuhra", "jakubschimer"]
+    en: ["konica", "milanskuhra", "jakubschimer"]
+    sk: ["konica", "milanskuhra", "jakubschimer"]
+  agenda:
+    cs: |
+      ### Co Vás naučím
+
+      - Uvod do Cloudflare
+      - DNS
+      - CDN
+      - Cloudflare Tunnel
+      - Cloudflare Access
+      - Cloudflare Workers
+  description:
+    cs: |
+      ### Co to je Cloudflare?
+
+      Cloudflare je DNS provider, CDN, DDoS ochrana, Edge Cloud Computing a mnoho dalsiho. Zkratka je to neco co by Vas melo zajimat.
+
+      Na skoleni si ukazeme jak Vam Cloudfare dokaze pomoci a vyresit nektere Vase problemy s infrastrukturou efektivne a zdarma nebo velmi levne.
+
+      ### Jak školení probíhá
+
+      Školení je formou workshopu, všechno si podrobně vyzkoušíme a vysvětlíme. Cloudflare si vyzkousime v praxy, vse podstatne si vlastnorucne osahame jak z UI tak pomoci Terraformu.
+
+      ### Co Vás naučím
+
+      - Uvod do Cloudflare
+      - DNS
+      - CDN
+      - Cloudflare Tunnel
+      - Cloudflare Access
+      - Cloudflare Workers
+
+      ### Pro koho je školení určeno
+
+      Školení je určeno pro [Devopsaky](https://devopsaci.cz), vyvojare a adminy, kteří chtějí potrebuji lepsi DNS a veci kolem edge accessu do sve infrastruktury. Cloudflare se hodi kazdemu, neprehanim.
+
+      #### Technické požadavky
+
+      - Přístup na internet (ideálně bez korporatni proxy)
+      - Nainstalovany Terraform vyhodou

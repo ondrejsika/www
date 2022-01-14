@@ -35,6 +35,7 @@ const Navbar = (
           ["RANCHER", "/skoleni/rancher"],
           ["ANSIBLE", "/skoleni/ansible"],
           ["TERRAFORM", "/skoleni/terraform"],
+          ["CLOUDFLARE", "/skoleni/cloudflare", "new"],
           ["PROMETHEUS", "/skoleni/prometheus"],
           ["PROXMOX", "/skoleni/proxmox"],
           ["ELK / EFK", "/skoleni/elk"],
