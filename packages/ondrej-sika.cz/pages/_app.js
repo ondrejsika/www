@@ -31,6 +31,7 @@ const Navbar = (
           ["GITLAB CI", "/skoleni/gitlab-ci"],
           ["DOCKER", "/skoleni/docker"],
           ["KUBERNETES", "/skoleni/kubernetes"],
+          ["OPENSHIFT", "/skoleni/openshift", "new"],
           ["ARGOCD", "/skoleni/argocd", "new"],
           ["RANCHER", "/skoleni/rancher"],
           ["ANSIBLE", "/skoleni/ansible"],

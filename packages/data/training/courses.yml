@@ -1874,3 +1874,157 @@
 
       - Přístup na internet (ideálně bez korporatni proxy)
       - Nainstalovany Terraform vyhodou
+
+- id: openshift
+  skoleniio:
+    name: openshift
+    lecturer: ondrejsika
+  name:
+    cs: Školení OpenShift
+    sk: Školenie OpenShift
+    en: OpenShift Training
+    de: OpenShift Schulung
+  lecturers:
+    - ondrejsika
+  length: 2
+  price:
+    open:
+      cz: 11 999 CZK
+      sk: 449 EUR
+      de: 799 EUR
+      uk: 799 EUR
+    in_house:
+      cz: 58 000 CZK
+      sk: 1999 EUR
+      de: 3999 EUR
+      uk: 2999 EUR
+  twitter_recommendations:
+    cs:
+      - petr-todorov-kubernetes
+      - pavel-mattivi-kubernetes
+      - stanislav-kudlac-kubernetes
+      - filip-krajcovic-kubernetes
+    en: ["petr-todorov-kubernetes", "lubos-klokner-docker-2"]
+  recommendations:
+    cs: ["apple", "radio", "notino"]
+    sk: ["apple", "radio", "notino"]
+    en: ["apple", "radio", "notino"]
+  agenda:
+    cs: |
+      ### Co Vás naučím
+
+      - Teoretický úvod do OpenShift
+      - Instalace Minishift a oc (pro ty kteří nenainstalovali doma)
+      - Popis OpenShift komponent
+      - Deployment do OpenShift
+      - Práce s právy v OpenShift clusteru
+      - Teoretický úvod do Helm balíčku
+      - Instalace / Deployment pomocí Helmu
+      - Psaní vlastního Helm balíčku
+    sk: |
+      ### Čo Vás naučím
+
+      - Teoretický úvod do OpenShift
+      - Inštalácia Minishift a oc (tých, ktorí ho nenainštalovali doma)
+      - Popis OpenShift komponentov
+      - Deployment do OpenShift
+      - Pracovať s právami v OpenShift clusteri
+      - Teoretický úvod do Helm balíčku
+      - Inštalácia / Deployment pomocí Helmu
+      - Písanie vlastného Helm balíčku
+    en: |
+      ### Course Outline
+
+      - Theory introduction to OpenShift
+      - How to install locally (minikube and kubectl)
+      - Description of OpenShift components
+      - Deployment to OpenShift
+      - Working with permissions in the OpenShift cluster
+      - Theory introduction to Helm packages
+      - Installation/Deployment using Helm
+      - Creating a custom Helm package
+  description:
+    cs: |
+      ### Popis technologie
+      OpenShift jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. OpenShift pro provoz používají všechny velikosti firem, od startupu po korporace.
+
+      ### Jak školení probíhá
+      Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit OpenShift lokálně (pro vývoj) a na cloudové platformě DigitalOcean. Dozvíme se základní strukturu OpenShift a projdeme si jeho komponenty. Naučíme se jak napsat OpenShift manifest a jak jim nasadit aplikaci v Dockeru. Dále si ukážeme jak pracovat s právama v OpenShift a jak používat (a psát) OpenShift balíčky v Helmu.
+
+      ### Co Vás naučím
+      - Teoretický úvod do OpenShift
+      - Instalace Minishift a oc (pro ty kteří nenainstalovali doma)
+      - Popis OpenShift komponent
+      - Deployment do OpenShift
+      - Práce s právy v OpenShift clusteru
+      - Teoretický úvod do Helm balíčku
+      - Instalace / Deployment pomocí Helmu
+      - Psaní vlastního Helm balíčku
+
+      ### Pro koho je školení určeno
+      Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v OpenShift.
+
+      #### Předchozí znalosti
+      - Základy práce s Dockerem
+      - Základy práce s Linuxem
+      - Základy práce v terminálu
+
+      #### Technické požadavky
+      - Nainstalovaný OpenShift
+      - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+    en: |
+      ### What is OpenShift
+      OpenShift is one of the most used platforms for running your Docker containers and it is supported by key market leaders (Google, Amazon, Microsoft, etc.) via Cloud Native Computing Foundation. OpenShift is being used by businesses of all scales, from startups to corporations.
+
+      ### Course Description
+      This course is ran in the form of a two-day hands-on workshop where you will be able to practice everything you learn. You will be shown how to run OpenShift locally (for development) and on a cloud platform, DigitalOcean. You will also find out the basic structure of OpenShift, including its components. You will learn how to create a OpenShift Manifest and setup application in Docker. Also, you will be shown how to work with permissions and how to use (and create) packages in Helm.
+
+      ### Course Outline
+      - Theory introduction to OpenShift
+      - How to install locally (minikube and kubectl)
+      - Description of OpenShift components
+      - Deployment to OpenShift
+      - Working with permissions in the OpenShift cluster
+      - Theory introduction to Helm packages
+      - Installation/Deployment using Helm
+      - Creating a custom Helm package
+
+      ### Who Should Attend
+      This course is primarily aimed at people (developers & DevOps), who want to maintain their applications in OpenShift.
+
+      #### Skill Requirements
+      - Basic Docker knowledge
+      - Basic Linux knowledge
+      - Basic Terminal knowledge
+
+      #### Technical Requirements
+      - Have OpenShift installed & running
+      - Access to the internet - ideally without corporate proxy
+    sk: |
+      ### Popis technológie
+      OpenShift je dnes najrozšírenejšou platformou na hostovanie Docker kontajnerov a je podporovaná velkými hráčmi na trhu (Google, Amazon, Microsoft) cez Cloud Native Computing Foundation. OpenShift bežne používajú firmy rôznych veľkostí, od startupov až po korporácie.
+
+      ### Ako školenie prebieha
+      Školenie prebieha formou workshopu, všetko si prakticky vyskúšame. Ukážeme si ako spustiť OpenShift lokálne (pre vývoj) a na cloudové platforme DigitalOcean. Povieme si o základnej štruktúre OpenShift a prejdeme si jeho kompomenty. Naučíme sa ako napísať OpenShift manifest a ako pomocou neho nasadiť aplikáciu v Dockeri. Ďalej si ukážeme ako pracovať s právami v OpenShift a ako používať (a písať) OpenShift balíčky v Helme.
+
+      ### Čo Vás naučím
+      - Teoretický úvod do OpenShift
+      - Inštalácia Minishift a oc (tých, ktorí ho nenainštalovali doma)
+      - Popis OpenShift komponentov
+      - Deployment do OpenShift
+      - Pracovať s právami v OpenShift clusteri
+      - Teoretický úvod do Helm balíčku
+      - Inštalácia / Deployment pomocí Helmu
+      - Písanie vlastného Helm balíčku
+
+      ### Pre koho je školenie určené
+      Školenie je určené pre ľudí (vývojárov a DevOps), ktorí majú záujem prevádzkovať svoje Docker aplikácie v OpenShift.
+
+      #### Predchádzajúce znalosti
+      - Základy práce s Dockerom
+      - Základy práce s Linuxom
+      - Základy práce v terminále
+
+      #### Technické požiadavky
+      - Nainštalovaný OpenShift
+      - Přístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
