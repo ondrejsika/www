@@ -10,7 +10,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -24,7 +24,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -66,7 +66,7 @@
   length: 1 den
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -94,7 +94,7 @@
   length: 1 den
   linkedin_event: null
   name: Ansible
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -136,7 +136,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -150,7 +150,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -178,7 +178,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -220,7 +220,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -234,7 +234,7 @@
   length: 1 den
   linkedin_event: null
   name: Ansible
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -248,7 +248,7 @@
   length: 1 den
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -290,7 +290,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -304,7 +304,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -318,7 +318,7 @@
   length: 1 den
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -360,7 +360,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -374,7 +374,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -388,7 +388,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -416,7 +416,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -444,7 +444,7 @@
   length: 1 den
   linkedin_event: null
   name: DigitalOcean
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -458,7 +458,7 @@
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6701470338565316608/
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -486,7 +486,7 @@
   length: 2 dny
   linkedin_event: https://www.linkedin.com/events/6699296409071456256/
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -500,7 +500,7 @@
   length: 2 dny
   linkedin_event: https://www.linkedin.com/events/6701122873815257088/
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -514,7 +514,7 @@
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6699588615283978240/
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -542,7 +542,7 @@
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6699291594736050176/
   name: DigitalOcean
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -570,7 +570,7 @@
   length: 2 dny
   linkedin_event: https://www.linkedin.com/events/6699293927184318464/
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -584,7 +584,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -626,7 +626,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -640,7 +640,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -654,7 +654,7 @@
   length: 1 den
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -668,7 +668,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -682,7 +682,7 @@
   length: 2 dny
   linkedin_event: null
   name: Django
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -696,7 +696,7 @@
   length: 2 dny
   linkedin_event: null
   name: Ansible
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -752,7 +752,7 @@
   length: 1 den
   linkedin_event: null
   name: DigitalOcean
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -766,7 +766,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -780,7 +780,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -794,7 +794,7 @@
   length: 2 dny
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -808,7 +808,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -836,7 +836,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -850,7 +850,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -892,7 +892,7 @@
   length: 2 dny
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -906,7 +906,7 @@
   length: 1 den
   linkedin_event: null
   name: DigitalOcean
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -920,7 +920,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -948,7 +948,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -962,7 +962,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1004,7 +1004,7 @@
   length: 2 dny
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1018,7 +1018,7 @@
   length: 1 den
   linkedin_event: null
   name: DigitalOcean
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1032,7 +1032,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1046,7 +1046,7 @@
   length: 2 dny
   linkedin_event: null
   name: Ansible
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1074,7 +1074,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1088,7 +1088,7 @@
   length: 1 den
   linkedin_event: null
   name: ArgoCD
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1102,7 +1102,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1144,7 +1144,7 @@
   length: 2 dny
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1158,7 +1158,7 @@
   length: 1 den
   linkedin_event: null
   name: DigitalOcean
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1172,7 +1172,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1200,7 +1200,7 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1214,7 +1214,7 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1256,7 +1256,7 @@
   length: 2 dny
   linkedin_event: null
   name: Prometheus
-  price: 11 999 CZK
+  price: 15 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1270,7 +1270,7 @@
   length: 1 den
   linkedin_event: null
   name: DigitalOcean
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1284,7 +1284,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -1298,7 +1298,7 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -1317,14 +1317,420 @@
 - active: true
   city: Prague
   country: cz
-  course_id: kubernetes
-  date_from: 07.03.2022
-  date_to: 08.03.2022
+  course_id: gitlab-ci
+  date_from: 07.02.2022
+  date_to: 07.02.2022
   facebook_event: null
-  id: kubernetes-2022-03-07
+  id: GitlabCI-2022-02-07
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 08.02.2022
+  date_to: 09.02.2022
+  facebook_event: null
+  id: Docker-02-08
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 14.02.2022
+  date_to: 15.02.2022
+  facebook_event: null
+  id: kubernetes-2022-02-14
   lang: cs
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 11 999 CZK
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: cloudflare
+  date_from: 09.03.2022
+  date_to: 09.03.2022
+  facebook_event: null
+  id: Cloudflare-03-09
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Cloudflare
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: rancher
+  date_from: 14.03.2022
+  date_to: 14.03.2022
+  facebook_event: null
+  id: Rancher-2022-03-14
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Rancher
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: prometheus
+  date_from: 21.03.2022
+  date_to: 21.03.2022
+  facebook_event: null
+  id: prometheus-2022-03-21
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Prometheus
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: vault
+  date_from: 23.03.2022
+  date_to: 23.03.2022
+  facebook_event: null
+  id: vault-2022-03-23
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Vault
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: aws
+  date_from: 04.04.2022
+  date_to: 05.04.2022
+  facebook_event: null
+  id: zakladyaws-2022-04-04
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "Z\xE1klady AWS"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: argocd
+  date_from: 11.04.2022
+  date_to: 12.04.2022
+  facebook_event: null
+  id: argocd-2022-04-11
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: ArgoCD
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: terraform
+  date_from: 13.04.2022
+  date_to: 13.04.2022
+  facebook_event: null
+  id: terraform-
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: openstack
+  date_from: 25.04.2022
+  date_to: 26.04.2022
+  facebook_event: null
+  id: OpenStack-pro-vyvojare
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: packer
+  date_from: 02.05.2022
+  date_to: 02.05.2022
+  facebook_event: null
+  id: packer-2022-05-02
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Packer
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: proxmox
+  date_from: 09.05.2022
+  date_to: 09.05.2022
+  facebook_event: null
+  id: proxmox-2022-05-09
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 23.05.2022
+  date_to: 24.05.2022
+  facebook_event: null
+  id: Docker-2022-05-23
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 30.05.2022
+  date_to: 31.05.2022
+  facebook_event: null
+  id: kubernetes-2022-05-30
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: go
+  date_from: 06.06.2022
+  date_to: 07.06.2022
+  facebook_event: null
+  id: uvod-do-go-golang-2022-06-06
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "\xDAvod do Go (Golang)"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: openshift
+  date_from: 15.06.2022
+  date_to: 15.06.2022
+  facebook_event: null
+  id: openshift-okd-2022-06-15
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: OpenShift a OKD
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: packer
+  date_from: 12.09.2022
+  date_to: 12.09.2022
+  facebook_event: null
+  id: Packer-2022-09-12
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Packer
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: go
+  date_from: 19.09.2022
+  date_to: 20.09.2022
+  facebook_event: null
+  id: Uvod-do-go-golang-2022-09-19
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "\xDAvod do Go (Golang)"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: openstack
+  date_from: 26.09.2022
+  date_to: 27.09.2022
+  facebook_event: null
+  id: OpenStack-pro-vyvojare-2022-09-26
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 10.10.2022
+  date_to: 11.10.2022
+  facebook_event: null
+  id: docker-2022-10-10
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 17.10.2022
+  date_to: 18.10.2022
+  facebook_event: null
+  id: kubernetes-2022-10-17
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: openshift
+  date_from: 19.10.2022
+  date_to: 19.10.2022
+  facebook_event: null
+  id: OpenStack-pro-vyvojare-2022-10-19
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: OpenShift a OKD
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: argocd
+  date_from: 31.10.2022
+  date_to: 01.11.2022
+  facebook_event: null
+  id: argocd-2022-10-31
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: ArgoCD
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: terraform
+  date_from: 07.11.2022
+  date_to: 07.11.2022
+  facebook_event: null
+  id: terraform-2022-11-07
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 6 800 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: aws
+  date_from: 14.11.2022
+  date_to: 15.11.2022
+  facebook_event: null
+  id: zakladyaws-2022-11-14
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "Z\xE1klady AWS"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: prometheus
+  date_from: 21.11.2022
+  date_to: 21.11.2022
+  facebook_event: null
+  id: prometheus-2022-11-21
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Prometheus
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: vault
+  date_from: 05.12.2022
+  date_to: 05.12.2022
+  facebook_event: null
+  id: vault-2022-12-05
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Vault
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: proxmox
+  date_from: 12.12.2022
+  date_to: 12.12.2022
+  facebook_event: null
+  id: proxmox-2022-12-12
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: rancher
+  date_from: 19.12.2022
+  date_to: 19.12.2022
+  facebook_event: null
+  id: rancher-2022-12-19
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Rancher
+  price: 6 800 CZK
   venue_id: null
