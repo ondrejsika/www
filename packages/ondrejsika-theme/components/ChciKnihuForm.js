@@ -7,11 +7,11 @@ const SessionRegisterForm = props => {
   const { handleSubmit, register } = useForm();
   const onSubmit = values => {
     let data = {
-      course_slug: "kniha",
+      topic_slug: "kniha",
       email: values.email
     };
     console.log(data);
-    fetch(props.site.trainingcrm_url + "/api/waitinglist/", {
+    fetch(props.site.trainingcrm_url + "/api/subscribe/", {
       method: "post",
       headers: {
         Accept: "application/json",
