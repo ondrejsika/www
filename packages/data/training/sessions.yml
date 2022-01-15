@@ -38,7 +38,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -52,7 +52,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -80,7 +80,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -108,7 +108,7 @@
   length: 1 den
   linkedin_event: null
   name: Git
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -122,7 +122,7 @@
   length: 1 den
   linkedin_event: null
   name: Git
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -164,7 +164,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -192,7 +192,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -206,7 +206,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -262,7 +262,7 @@
   length: 1 den
   linkedin_event: null
   name: Git
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -276,7 +276,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -332,7 +332,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -346,7 +346,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -402,7 +402,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -430,7 +430,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -472,7 +472,7 @@
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6699295534529683458/
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -528,7 +528,7 @@
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6699591210727698432/
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -556,7 +556,7 @@
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6701798854485938176/
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -598,7 +598,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -612,7 +612,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -710,7 +710,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -724,7 +724,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -738,7 +738,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -822,7 +822,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -864,7 +864,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -878,7 +878,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -934,7 +934,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -976,7 +976,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -990,7 +990,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1060,7 +1060,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1116,7 +1116,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1130,7 +1130,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1186,7 +1186,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1228,7 +1228,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1242,7 +1242,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1312,7 +1312,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -1326,7 +1326,7 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -1382,7 +1382,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -1452,7 +1452,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -1662,7 +1662,7 @@
   length: 1 den
   linkedin_event: null
   name: Terraform
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -1732,5 +1732,5 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 6 800 CZK
+  price: 8 900 CZK
   venue_id: null
