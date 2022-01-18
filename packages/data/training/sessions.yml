@@ -1387,16 +1387,16 @@
 - active: true
   city: Prague
   country: cz
-  course_id: prometheus
+  course_id: argocd
   date_from: 21.03.2022
   date_to: 21.03.2022
   facebook_event: null
-  id: prometheus-2022-03-21
+  id: Argocd-2022-03-21
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: Prometheus
-  price: 15 900 CZK
+  name: ArgoCD
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -1429,16 +1429,16 @@
 - active: true
   city: Prague
   country: cz
-  course_id: argocd
+  course_id: prometheus
   date_from: 11.04.2022
   date_to: 12.04.2022
   facebook_event: null
-  id: argocd-2022-04-11
+  id: prometheus-2022-04-11
   lang: cs
   length: 2 dny
   linkedin_event: null
-  name: ArgoCD
-  price: 8 900 CZK
+  name: Prometheus
+  price: 15 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -1457,15 +1457,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: openstack
+  course_id: openshift
   date_from: 25.04.2022
   date_to: 26.04.2022
   facebook_event: null
-  id: OpenStack-pro-vyvojare
+  id: openshift-a-okd-2022-04-25
   lang: cs
   length: 2 dny
   linkedin_event: null
-  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
+  name: OpenShift a OKD
   price: 15 900 CZK
   venue_id: null
 - active: true
@@ -1541,15 +1541,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: openshift
+  course_id: openstack
   date_from: 15.06.2022
   date_to: 15.06.2022
   facebook_event: null
-  id: openshift-okd-2022-06-15
+  id: openstack-pro-vycojare-2022-06-15
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: OpenShift a OKD
+  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
   price: 15 900 CZK
   venue_id: null
 - active: true
@@ -1583,15 +1583,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: openstack
+  course_id: openshift
   date_from: 26.09.2022
   date_to: 27.09.2022
   facebook_event: null
-  id: OpenStack-pro-vyvojare-2022-09-26
+  id: openshift-a-okd-2022-09-26
   lang: cs
   length: 2 dny
   linkedin_event: null
-  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
+  name: OpenShift a OKD
   price: 15 900 CZK
   venue_id: null
 - active: true
@@ -1625,7 +1625,7 @@
 - active: true
   city: Prague
   country: cz
-  course_id: openshift
+  course_id: openstack
   date_from: 19.10.2022
   date_to: 19.10.2022
   facebook_event: null
@@ -1633,22 +1633,22 @@
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: OpenShift a OKD
+  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
   price: 15 900 CZK
   venue_id: null
 - active: true
   city: Prague
   country: cz
-  course_id: argocd
+  course_id: prometheus
   date_from: 31.10.2022
   date_to: 01.11.2022
   facebook_event: null
-  id: argocd-2022-10-31
+  id: prometheus-2022-10-31
   lang: cs
   length: 2 dny
   linkedin_event: null
-  name: ArgoCD
-  price: 8 900 CZK
+  name: Prometheus
+  price: 15 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -1681,16 +1681,16 @@
 - active: true
   city: Prague
   country: cz
-  course_id: prometheus
+  course_id: argocd
   date_from: 21.11.2022
   date_to: 21.11.2022
   facebook_event: null
-  id: prometheus-2022-11-21
+  id: ArgoCD-2022-11-21
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: Prometheus
-  price: 15 900 CZK
+  name: ArgoCD
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
