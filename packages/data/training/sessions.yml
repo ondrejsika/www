@@ -1555,15 +1555,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: packer
+  course_id: terraform
   date_from: 12.09.2022
   date_to: 12.09.2022
   facebook_event: null
-  id: Packer-2022-09-12
+  id: Terraform-2022-09-12
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: Packer
+  name: Terraform
   price: 8 900 CZK
   venue_id: null
 - active: true
@@ -1653,15 +1653,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: terraform
+  course_id: packer
   date_from: 07.11.2022
   date_to: 07.11.2022
   facebook_event: null
-  id: terraform-2022-11-07
+  id: packer-2022-11-07
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: Terraform
+  name: Packer
   price: 8 900 CZK
   venue_id: null
 - active: true
