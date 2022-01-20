@@ -33,3 +33,9 @@ You probably copy some course landing site (skoleni-docker.cz) or website (ondre
 ```
 make update-sessions-yml-from-training-crm
 ```
+
+## Data Sources
+
+### DevOps Live
+
+Edit [packages/data/devopslive.yml](https://gitlab.sikalabs.com/www/www/-/blob/master/packages/data/devopslive.yml)
