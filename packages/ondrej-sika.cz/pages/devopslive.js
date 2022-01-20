@@ -109,25 +109,12 @@ const Page = () => {
       <Background light_grey style={{ paddingBottom: "2em" }}>
         <Container>
           <SectionHeader tight>Live coding streamy z DevOps</SectionHeader>
-          <ColorBox white>
-            DevOps live jsou streamy live codingu zajímavých témat z DevOps, kde
-            ukážu jak si ušetřit práci a že to není tak složité. Za cca hodinu a
-            půl si ukážeme jak nasadit nějakou technologii nebo zlepšit
-            konkrétní workflow.
-            <br />
-            <br />
-            Livestreamy probíhají podobně jako mé školení, budu živě ukazovat
-            jak to dělám a zároveň komentovat. Každý stream bude nahrávaný a z
-            některých vznikne i blogpost.
-            <br />
-            <br />
-            To co budu ukazovat jsem nasazoval u firem jako je o2, LandisGyr
-            nebo Průša3d. Připojte se k nim a rozvíjejme společně Vaše znalosti
-            a Vaše DevOps.
-          </ColorBox>
+          <p style={{ fontSize: "2.3rem" }}>
+            DevOps live jsou streamy live codingu zajímavých témat z DevOps,
+            novinky nebo témata, na která se při školeních nedostanu.
+          </p>
           {events.length != 0 && (
             <div>
-              <SectionHeader tight>příští TERMÍN</SectionHeader>
               <ColorBox blue>
                 <div style={{ maxWidth: "500px" }}>
                   <TextBeige className="pt-4">
