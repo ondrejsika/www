@@ -487,3 +487,20 @@
   technologies:
     - tergum
     - kubernetes
+
+- id: rke2-intro
+  eventbrite:
+  active: true
+  title: "RKE2: Novy Rancher Kubernetes Engine"
+  date: "2. 3. 2022"
+  time: "19:00"
+  about: |
+    RKE2 je pokracovani RKE (Rancher Kubernetes Enginu), ktery vyuziva k3s a nema zavislost na Dockeru.
+  points: |
+    - Uvod do RKE a RKE2
+    - Rozdily mezi RKE a RKE2
+    - Instalace RKE2 clusteru
+    - Zakladni operace s clusterem
+  technologies:
+    - rancher
+    - kubernetes
