@@ -438,7 +438,7 @@
 
 - id: cloudflare-tunnel
   eventbrite: https://stream.sika.io/stream/c/rnumhxfwyfvahlub/owwikxjpfvyssmbb/
-  active: true
+  active: false
   title: "Cloudflare Tunnel"
   date: "19. 1. 2022"
   time: "19:00"
