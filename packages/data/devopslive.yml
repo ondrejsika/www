@@ -470,3 +470,20 @@
     - argocd
     - gitlab
     - git
+
+- id: tergum-intro
+  eventbrite:
+  active: true
+  title: "Tergum: Deklarativni backupy"
+  date: "16. 2. 2022"
+  time: "19:00"
+  about: |
+    Tergum je nastroj, ktery jsem vyvynul pro jednoduchou praci se zalohami. Umoznuje zalohovat ruzne zdroje dat (databaze, soubory, ...) a ukladat je do ruznych destinaci jako je s3 nebo do souboru.
+  points: |
+    - Motivace proc vytvorit Tergum
+    - Zakladni vlastnosti Tergumu
+    - Konfigurace Tergumu
+    - Tergum a Kubernetes
+  technologies:
+    - tergum
+    - kubernetes
