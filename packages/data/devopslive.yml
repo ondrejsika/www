@@ -520,3 +520,20 @@
   technologies:
     - kind
     - kubernetes
+
+- id: helm-tips-and-trics
+  eventbrite:
+  active: true
+  title: "Helm: Tips & Tricks"
+  date: "30. 3. 2022"
+  time: "19:00"
+  about: |
+    Pojdme se ponorit do moznosti Helmu a templatovaciho jazyka Go Templates. Ukazeme si jake mozne i nemozne veci jdou v Helmu udelat.
+  points: |
+    - Rychly uvod do Helmu
+    - Helm zavyslosti
+    - Library Charts
+    - Go Templates v Helmu
+  technologies:
+    - helm
+    - kubernetes
