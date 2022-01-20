@@ -569,3 +569,19 @@
     - proxmox
     - packer
     - terraform
+
+- id: dockerizace-php-aplikace
+  eventbrite:
+  active: true
+  title: "Dockerizace PHP aplikace"
+  date: "11. 5. 2022"
+  time: "19:00"
+  about: |
+    Pojdme spolecne zdockerizovat PHP aplikaci a pustit ji V Kubernetes. Neni to tak tezke.
+  points: |
+    - Uvod do Dockeru a Kubernetes
+    - Dockerizace PHP aplikace
+    - Nasazeni do Kubernetes
+  technologies:
+    - docker
+    - kubernetes
