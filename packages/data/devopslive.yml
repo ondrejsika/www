@@ -585,3 +585,20 @@
   technologies:
     - docker
     - kubernetes
+
+- id: prometheus-operator
+  eventbrite:
+  active: true
+  title: "Prometheus Operator"
+  date: "25. 5. 2022"
+  time: "19:00"
+  about: |
+    Nasazujme Prometheus do Kubernetes rychle a jednoduse. K tomu nam pomuze Prometheus Operator.
+  points: |
+    - Uvod do Promethea
+    - Uvod do Prometheus Operatoru
+    - Nasazeni Promethea pro monitoring clusteru
+    - Nasazeni Promethea pro externi pouziti
+  technologies:
+    - prometheus
+    - kubernetes
