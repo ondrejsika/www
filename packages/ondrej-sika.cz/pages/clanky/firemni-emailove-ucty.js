@@ -11,9 +11,7 @@ Používám 2 domény: \`sl.com\` pro primární emaily (na Google Workspace) a 
 ### Lidé
 
 - \`ondrej@sl.com\` - Veřejný email core lidí (komunikace se zákazníky, ...). Některé jsou napojené do Pipedrive.
-
 - \`joedoe@sl.com\` - Veřejný email ostatních kolegů
-
 - \`os@sl.com\` - Interní email (komunikace interně v teamu)
 
 Klíčoví lidé (C level, foundeři, ...) mají veřejný email pouze jméno, ostatní jméno a příjmení. Tento veřejný email má někdo (například já) napojený do Pipedrive, což je CRM a k emailu má přístup asistentka, sales, atd. Tento email má jen ten, kdo potřebuje veřejně komunikovat za firmu.
@@ -25,11 +23,8 @@ Jinak každý člen teamu (zaměstnanec) má krátký email \`jp@...\` nebo \`jp
 Dělám různé věci, nabízím různé produkty a služby, a o každou se stará někdo jiný nebo jiný team. Každý produkt, na kterém spolupracuje více lidí má svůj emailový účet, tak aby měli všichni přehled o tom, co je v jakém stavu. Některé z těchto účtů jsou také v Pipedrive.
 
 - \`hello@sl.com\` - Generický email, který je na webu. Líbí se mi to více než \`info@sl.com\`
-
 - \`training@sl.com\` - Velká část mého byznysu jsou školení, věci kolem nich chci řešit na jednom místě
-
 - \`sales@sl.com\` - Sales email, který je napojený do Pipedrive
-
 - \`community@sl.com\` - Účet pro komunikaci kolem meetupů a konferencí které pořádáme
 
 ### Monitoring
@@ -37,9 +32,7 @@ Dělám různé věci, nabízím různé produkty a služby, a o každou se star
 Jsme IT & DevOps firma, máme na starosti produkční systémy naše i klientů. Proto máme celkem hezky vyřešené emaily v monitoring systému.
 
 - \`mon@sl.com\` - Monitoring kritických produkčních systému
-
 - \`mon-infra@...\`, \`mon-app1@...\`, \`mon-client1@...\` - Monitoring emaily pro různé teamy
-
 - \`mon-all@sl.com\` - Archiv pro všechny monitoring eventy (forward z ostatních monitoring účtů)
 
 ### Support
@@ -47,7 +40,6 @@ Jsme IT & DevOps firma, máme na starosti produkční systémy naše i klientů.
 Monitoring emaily generuje monitoring, support emaily chodí od lidí. Support emaily pouze přeposíláme do Zendesku, kde je spravujeme.
 
 - \`support@sl.com\` - Hromadný support email, který směřuje do Zendesku
-
 - \`joe-support@sl.com\` - Joe's email pro support systém u klientů. Typicky jen alias k internímu emailu.
 
 ### Accounts
@@ -55,7 +47,6 @@ Monitoring emaily generuje monitoring, support emaily chodí od lidí. Support e
 Pokud potřebujeme registrovat globálně nějakou službu jako je AWS, Twitter nebo Cloudflare, registrujeme to na \`accounts...\`
 
 - \`accounts@sl.com\` - Email pro registraci různých služeb
-
 - \`accounts-aws@...\`, \`accounts-twitter@...\` - Email pro konkrétní důležitou službu, například AWS, Twitteru
 
 Máme jeden globální \`accounts@sl.com\` kam registrujeme všechny služby, ke kterým může mít přístup operations team (COO + asistentka).
