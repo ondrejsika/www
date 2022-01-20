@@ -537,3 +537,18 @@
   technologies:
     - helm
     - kubernetes
+
+- id: ministack-intro
+  eventbrite:
+  active: true
+  title: "Ministack: OpenStack rychle a jednoduse"
+  date: "13. 4. 2022"
+  time: "19:00"
+  about: |
+    Ministack je distribuce OpenStacku, ktery muzete velmi jednoduse nainstalovat pomoci Snapu. Ukazeme si jak.
+  points: |
+    - Uvod do OpenStacku
+    - Instalace MiniStacku
+    - Ukazka prace s komponenty MiniStacku
+  technologies:
+    - openstack
