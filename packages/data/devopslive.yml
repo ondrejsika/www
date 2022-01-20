@@ -602,3 +602,20 @@
   technologies:
     - prometheus
     - kubernetes
+
+- id: loki
+  eventbrite:
+  active: true
+  title: "Loki: Logy v Grafane"
+  date: "xx. xx. 2022"
+  time: "19:00"
+  about: |
+    Loki je novy zpusob, jak sbirat logy nejen v Kubernetes a mit je k dispozici v Grafane. Loki si nainstalujeme a ukazeme si jak s nim pracovat.
+  points: |
+    - Uvod do Grafany a Loki
+    - Instalace Loki
+    - Instalace Promtailu (sber logu)
+    - Zakladni prace s logy v Grafane
+  technologies:
+    - prometheus
+    - kubernetes
