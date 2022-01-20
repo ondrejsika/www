@@ -552,3 +552,20 @@
     - Ukazka prace s komponenty MiniStacku
   technologies:
     - openstack
+
+- id: iac-on-proxmox
+  eventbrite:
+  active: true
+  title: "IaC on Proxmox: Vytvarime infrastrukturu pomoci Proxmoxu, Terraformu a Packeru"
+  date: "27. 4. 2022"
+  time: "19:00"
+  about: |
+    Pojdme si ukazat jak pracovat s IaC na platforme Proxmox. Vytvorme si vlastni machine images a deklartivne je nasazujme.
+  points: |
+    - Uvod do Terraformu, Packeru a Proxmoxu
+    - Vytvoreni vlastniho machine image pro Proxmoxu
+    - Postaveni infrastruktury pomoci Terraformu
+  technologies:
+    - proxmox
+    - packer
+    - terraform
