@@ -1,3 +1,29 @@
+- id: skoleni-v-unoru-a-breznu-2022
+  title: "Skoleni v unoru a breznu 2022"
+  date: 23. 1. 2022
+  perex: |
+    Gitlab CI, Docker, Kubernetes, Rancher, ArgoCD, ...
+  content: |
+    Prijdte na me DevOps kurzy v unoru a breznu:
+
+    - [Gitlab CI](/verejne-terminy/GitlabCI-2022-02-07/) 7. 2.
+    - [Docker](/verejne-terminy/Docker-02-08/) 8. - 9. 2.
+    - [Kubernetes](/verejne-terminy/kubernetes-2022-02-14/) 14. - 15. 2.
+    - [Cloudflare](/verejne-terminy/Cloudflare-03-09/) 9. 3.
+    - [Rancher](/verejne-terminy/Rancher-2022-03-14/) 14. 3.
+    - [Argo CD](/verejne-terminy/Argocd-2022-03-21/) 21. 3.
+    - [Vault](/verejne-terminy/vault-2022-03-23/) 23. 3.
+
+    Zaroven jsem pripravil zcela nove kurzy:
+
+    - [Packer](/skoleni/packer) - Vytvareni obrazu pro virtualni servery v public i private cloudech
+    - [Vault](/skoleni/vault) - Bezpecne misto pro ukladani secrets
+    - [ArgoCD](/skoleni/argocd) - GitOps pro Kubernetes
+    - [Cloudflare](/skoleni/cloudflare) - DNS, CDN,  DDoS ochrana a mnohem vice
+    - [Openshift a OKD](/skoleni/openshift) - Kubernetes based platforma pro provoz software
+
+    Pokud mate zajem nebo jakykoliv dotaz, nevahejte napsat mail na [ondrej@sika.io](mailto:ondrej@sika.io?subject=Skoleni_unor_brezen_2022)
+
 - id: nove-kurzy-v-lednu-2022
   title: "Nove DevOps kurzy v Lednu 2022"
   date: 5. 1. 2022
@@ -9,6 +35,8 @@
     - [Packer](/skoleni/packer) - Vytvareni obrazu pro virtualni servery v public i private cloudech
     - [Vault](/skoleni/vault) - Bezpecne misto pro ukladani secrets
     - [ArgoCD](/skoleni/argocd) - GitOps pro Kubernetes
+    - [Cloudflare](/skoleni/cloudflare) - DNS, CDN,  DDoS ochrana a mnohem vice
+    - [Openshift a OKD](/skoleni/openshift) - Kubernetes based platforma pro provoz software
 
 - id: otevrene-webinare-v-lednu-2022
   title: "Otevrene webinare v Lednu 2022"
