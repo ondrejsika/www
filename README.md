@@ -39,3 +39,7 @@ make update-sessions-yml-from-training-crm
 ### DevOps Live
 
 Edit [packages/data/devopslive.yml](https://gitlab.sikalabs.com/www/www/-/blob/master/packages/data/devopslive.yml)
+
+### ondrej-sika.cz/news
+
+Edit [packages/ondrej-sika.cz/data/news.yml](https://gitlab.sikalabs.com/www/www/-/blob/master/packages/ondrej-sika.cz/data/news.yml)
