@@ -1043,7 +1043,7 @@
   skoleniio:
     name: prometheus
     lecturer: ondrejsika
-  length: 1
+  length: 2
   name:
     cs: Školení Prometheus
     en: Prometheus Training
@@ -1052,13 +1052,13 @@
     - ondrejsika
   price:
     open:
-      cz: 6 800 CZK
-      de: 449 EUR
-      uk: 449 EUR
+      cz: 15 900 CZK
+      de: 650 EUR
+      uk: 650 EUR
     in_house:
-      cz: 29 000 CZK
-      de: 1999 EUR
-      uk: 1999 EUR
+      cz: 58 000 CZK
+      de: 2400 EUR
+      uk: 3400 EUR
   twitter_recommendations:
     cs: []
   recommendations:
