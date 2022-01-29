@@ -199,6 +199,7 @@ for site in SITES:
   except:
     variables:
       - $EXCEPT_DEPLOY
+      - $EXCEPT_DEPLOY_CLOUDFLARE
       - $EXCEPT_DEPLOY_K8S
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
