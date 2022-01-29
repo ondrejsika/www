@@ -95,6 +95,7 @@ const Page = props => {
           lang={site.lang}
           course_id={site.x_course}
           location={site.location}
+          site={props.site}
         />
         <div className="row">
           <div className="col-7">
