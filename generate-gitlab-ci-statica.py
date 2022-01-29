@@ -93,7 +93,12 @@ out = {
 
 for site in SITES:
     name = site["name"]
-    deps = _SITES20_DEPENDENCIES
+    deps = {
+        "course_landing": _COURSE_LANDING_DEPENDENCIES,
+        "default": _DEFAULT_DEPENDENCIES,
+        "ondrejsika_theme": _ONDREJSIKA_THEME_DEPENDENCIES,
+        "ondrejsika_singlepage": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
+    }[site.get("deps", "course_landing")]
     out.update(
         {
             "deploy %s"
@@ -172,12 +177,7 @@ for site in SITES_DEV:
 
 for site in SITES_SITES20:
     name = site["name"]
-    deps = {
-        "course_landing": _COURSE_LANDING_DEPENDENCIES,
-        "default": _DEFAULT_DEPENDENCIES,
-        "ondrejsika_theme": _ONDREJSIKA_THEME_DEPENDENCIES,
-        "ondrejsika_singlepage": _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES,
-    }[site.get("deps", "course_landing")]
+    deps = _SITES20_DEPENDENCIES
     out.update(
         {
             "deploy sites20 %s"
