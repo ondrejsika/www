@@ -6,6 +6,10 @@ const site = {
   location: "cz",
   gauges_site_id: "5cefbe086dcfe06a8102e23b",
   google_analytics_site_id: "UA-39461955-43",
+  trainingcrm_url:
+    process.env.NODE_ENV == "development"
+      ? "https://trainingcrm-demo.sika.io"
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
 
   x_course: "kubernetes",
   x_site_claim: "Najlepšie školenie Kubernetes v SR",

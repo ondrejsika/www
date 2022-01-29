@@ -5,6 +5,10 @@ const site = {
   location: "cz",
   gauges_site_id: "5da6a304c129fd782225c7da",
   google_analytics_site_id: "UA-39461955-45",
+  trainingcrm_url:
+    process.env.NODE_ENV == "development"
+      ? "https://trainingcrm-demo.sika.io"
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
 
   x_course: "terraform",
   x_site_claim: "Nejlepší školení Terraformu v ČR",

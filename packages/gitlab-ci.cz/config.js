@@ -6,6 +6,10 @@ const site = {
   location: "cz",
   gauges_site_id: "5c2f2cec8d21955f797331fa",
   google_analytics_site_id: "UA-39461955-20",
+  trainingcrm_url:
+    process.env.NODE_ENV == "development"
+      ? "https://trainingcrm-demo.sika.io"
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
 
   x_course: "gitlab-ci",
   x_site_claim: "Skoleni Gilab CI",

@@ -6,6 +6,10 @@ const site = {
   location: "cz",
   gauges_site_id: "5cecd2020c3be10989c5bffc",
   google_analytics_site_id: "UA-39461955-26",
+  trainingcrm_url:
+    process.env.NODE_ENV == "development"
+      ? "https://trainingcrm-demo.sika.io"
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
 
   x_course: "ansible",
   x_site_claim: "Školení Ansible v ČR",

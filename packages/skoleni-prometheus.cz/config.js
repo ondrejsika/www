@@ -6,6 +6,10 @@ const site = {
   location: "cz",
   gauges_site_id: "???",
   google_analytics_site_id: "???",
+  trainingcrm_url:
+    process.env.NODE_ENV == "development"
+      ? "https://trainingcrm-demo.sika.io"
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
 
   x_course: "prometheus",
   x_site_claim: "Školení Promethea v ČR",

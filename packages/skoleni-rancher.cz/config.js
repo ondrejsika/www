@@ -5,6 +5,10 @@ const site = {
   location: "cz",
   gauges_site_id: "XXX",
   google_analytics_site_id: "XXX",
+  trainingcrm_url:
+    process.env.NODE_ENV == "development"
+      ? "https://trainingcrm-demo.sika.io"
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
 
   x_course: "rancher",
   x_site_claim: "Nejlepší školení Rancheru v ČR",

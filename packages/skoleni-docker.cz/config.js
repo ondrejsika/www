@@ -6,6 +6,10 @@ const site = {
   location: "cz",
   gauges_site_id: "5a0582e9bad3a73e7400e710",
   google_analytics_site_id: "UA-39461955-7",
+  trainingcrm_url:
+    process.env.NODE_ENV == "development"
+      ? "https://trainingcrm-demo.sika.io"
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
 
   x_course: "docker",
   x_site_claim: "Nejlepší školení Dockeru v ČR",
