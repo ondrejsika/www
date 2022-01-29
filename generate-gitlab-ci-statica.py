@@ -79,6 +79,7 @@ out = {
         "start",
         "deploy",
         "deploy test",
+        "deploy validate",
     ],
     "image": "sikalabs/ci-node",
     "variables": {
@@ -113,6 +114,28 @@ for site in SITES:
                     "changes": gen_deps(deps, name),
                 },
                 "needs": [],
+            }
+        }
+    )
+    out.update(
+        {
+            "validate %s"
+            % name: {
+                "stage": "deploy validate",
+                "script": [
+                    "COMMIT=$(curl -fsSL https://%s/api/version.json | jq -r .git_commit)" % name,
+                    "[ $COMMIT == $CI_COMMIT_SHA ]",
+                ],
+                "only": {
+                    "refs": [
+                        "master",
+                        "master-ci",
+                    ],
+                    "changes": gen_deps(deps, name),
+                },
+                "needs": [
+                    "deploy %s" % name,
+                ],
             }
         }
     )
@@ -176,6 +199,28 @@ for site in SITES_SITES20:
                     "changes": gen_deps(deps, name),
                 },
                 "needs": [],
+            }
+        }
+    )
+    out.update(
+        {
+            "validate %s"
+            % name: {
+                "stage": "deploy validate",
+                "script": [
+                    "COMMIT=$(curl -fsSL https://%s/api/version.json | jq -r .git_commit)" % name,
+                    "[ $COMMIT == $CI_COMMIT_SHA ]",
+                ],
+                "only": {
+                    "refs": [
+                        "master",
+                        "master-ci",
+                    ],
+                    "changes": gen_deps(deps, name),
+                },
+                "needs": [
+                    "deploy sites20 %s" % name,
+                ],
             }
         }
     )
