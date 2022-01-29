@@ -108,6 +108,7 @@ for site in SITES:
                 "only": {
                     "refs": [
                         "master",
+                        "master-ci",
                     ],
                     "changes": gen_deps(deps, name),
                 },
@@ -170,6 +171,7 @@ for site in SITES_SITES20:
                 "only": {
                     "refs": [
                         "master",
+                        "master-ci",
                     ],
                     "changes": gen_deps(deps, name),
                 },
