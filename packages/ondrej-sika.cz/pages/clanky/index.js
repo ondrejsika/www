@@ -8,6 +8,7 @@ const Page = () => (
 
   Zde jsou mé články a eseje na různá témata od osobního rozvoje, přes minimalismus po správu osobní IT ifrastruktury. Jsou určené pro široké publikum, ne jako zbytek mého webu, který je primárně určen pro lidi, kteří řeší vývoj a provozování software.
 
+- [Gmail na vlatni domene konci, co ted?](/clanky/gmail-na-vlastni-domene-konci-co-ted)
 - [Z emailu do Slacku](/clanky/z-emailu-do-slacku)
 - [Nástroje, které používám a zjednodušují mi práci a život](/clanky/toolchain)
 - [Proč by každý měl mít svoji doménu](/clanky/proc-by-kazdy-mel-mit-svoji-domenu/)
