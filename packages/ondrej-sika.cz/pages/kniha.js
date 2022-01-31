@@ -2,7 +2,7 @@ import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import img from "@app/data/pictures/kniha/kniha_v2_400px.png";
 import ChciKnihuForm from "@app/ondrejsika-theme/components/ChciKnihuForm";
-
+import updates from "@app/ondrej-sika.cz/data/kniha-updates.yml";
 import Head from "next/head";
 
 const liStyle = {
@@ -69,6 +69,16 @@ const Install = props => (
             </a>
             .
           </p>
+          <h2 className="mt-5">Aktualizace</h2>
+          {updates.map((update, i) => (
+            <div key={i}>
+              <p style={{ fontSize: "1.2rem" }}>
+                <strong>{update.date_text}</strong>
+                <br />
+                {update.title}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
