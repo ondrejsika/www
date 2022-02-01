@@ -8,9 +8,7 @@ const Page = () => (
 
 # TLDR
 
-__Zaplatit.__
-
-Ale v clanku to rozvedu ...
+__Zaplatit.__ Tedy alespon ja ho zaplatim. Ale v clanku to rozvedu ...
 
 ## Google konci s free verzi Google Workspace
 
@@ -21,6 +19,8 @@ A mam tech Google Workspacu vice.
 Google jiz dlouho limitoval pridavani dalsich domen do uctu, takze jsem musel
 segry Google Workspace account presunout do te placene verze pri jeji svatbe.
 A take do toho sveho 50 uctoveho accountu jsem nemohl dat firemni domenu.
+
+Neni to prvnu Google Workspace, ktery platim.
 
 ## Alternativy k Google Workspace
 
