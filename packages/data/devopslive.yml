@@ -22,6 +22,7 @@
   title: Docker & Traefik Proxy
   date: 23.9.2020
   time: "19:00"
+  youtube:
   about: |
     Traefik je populární proxy, která podporuje autodiscovery (nejen) Dockeru, což Vám umožňuje velmi jednoduše zpřístupnit světu více Docker kontejnerů na jednom serveru. Traefik se také stará o SSL certifikáty pomoci Let's Encrypt, metriky a mnoho dalšího.
   points: |
@@ -73,6 +74,7 @@
   title: Novinky v Gitlab CI (listopad 2020)
   date: 11.11.2020
   time: "19:00"
+  youtube:
   about: |
     V Gitlab CI se událo za poslední rok hodně změn, řekneme si, co se od našeho školení změnilo a jaké funkce by Vás mohli zajímat.
   points: |
@@ -90,6 +92,7 @@
   title: Proč a jak používat Cloudflare
   date: 18.11.2020
   time: "19:00"
+  youtube:
   about: |
     Přesuňte své domény do Cloudflare. Získáte tím stabilní DNS, DDoS ochranu a CDN, to celé spravované Terraformem.
   points: |
@@ -106,6 +109,7 @@
   title: Docker monitoring pomocí Promethea a Alertmanageru
   date: 2.12.2020
   time: "19:00"
+  youtube:
   about: |
     Monitorujte své aplikace běžící v Docker pomocí moderního nástroje Prometheus.
   points: |
@@ -122,6 +126,7 @@
   title: Konfigurace Alertmanageru
   date: 16.12.2020
   time: "19:00"
+  youtube:
   about: |
     Ukážeme si, jak efektivně konfigurovat flow eventů v Alertmanageru.
   points: |
@@ -137,6 +142,7 @@
   title: Úvod do Cloud Initu
   date: 13. 1. 2021
   time: "19:00"
+  youtube:
   about: |
     Cloud Init je způsob, jak si základně nakonfigurovat VM bez nutnosti Ansiblu nebo SSH
   points: |
@@ -152,6 +158,7 @@
   title: Kubernetes pomocí RKE (Rancher Kubernetes Engine)
   date: 27. 1. 2021
   time: "19:00"
+  youtube:
   about: |
     RKE vám umožní velmi jednoduchý setup HA Kubernetes clusteru na čistých virtuálních serverech. Pustíme Kubernetes cluster do 5 minut!
   points: |
@@ -167,6 +174,7 @@
   title: Úvod do Github Actions
   date: 10. 2. 2021
   time: "19:00"
+  youtube:
   about: |
     Github Actions je CI/CD nástroj integrovaný přímo v Githubu. Už nemusíte používat Travis CI, ukážeme si jak sprovoznit Github Actions na jednoduchém projektu. A pro Open Source jsou zdarma.
   points: |
@@ -182,6 +190,7 @@
   title: Vlastní Terraform Provider
   date: 24. 2. 2021
   time: "19:00"
+  youtube:
   about: |
     Terraform je ideální nástroj na správu infrastruktury. Ale ne všechno má Terraform provider. My si teď ukážeme, jak si vytvořit svůj vlastní.
   points: |
@@ -196,6 +205,7 @@
   title: Longhorn - Jednoduchá on-premise storage pro Kubernetes
   date: 10. 3. 2021
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=pfQG320_l2Q
   about: |
     Longhorn je storage plugin pro Kubernetes, který vám umožní používat Persistent Volumes na vlastním Kubernetes.
   points: |
@@ -212,6 +222,7 @@
   title: Jak na lokální Kubernetes Development pomocí Skaffold
   date: 24. 3. 2021
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=5SDaFLAHHlE
   about: |
     Skaffold se stará o build, push a deploy vaší aplikace. Vy se věnujte tomu, na čem záleží nejvíce - psaní kódu.
   points: |
@@ -228,6 +239,7 @@
   title: Jednoduchá distribuce Go binárek pomocí GoReleaser a CI
   date: 7. 4. 2021
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=A99IDxxKmL4
   about: |
     GoReleaser je nástroj, který velmi zjednodušuje distribuci Go binárek. Ukážeme si jak jej integrovat s Gitlab CI a Github Actions.
   points: |
@@ -245,6 +257,7 @@
   title: WireGuard - Jednoduchá a spolehlivá VPN
   date: "21. 4. 2021"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=PqezaZGOcH0
   about: |
     WireGuard je extrémně jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpenVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
   points: |
@@ -260,6 +273,7 @@
   title: Ovládněte Makefile a zjednodušte si manuální tasky
   date: "5. 5. 2021"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=hBNFiqUS33k
   about: |
     Make je prověřený nástroj, který lidem ulehčuje práci už 44 let. Make Vám umožňuje místo psaní shell scriptu spouštět tasky jednodušším a čistším způsobem. Pojďme si ukazát, jak na to.
   points: |
@@ -275,6 +289,7 @@
   title: Vytvářejte vlastní Dashboardy v Grafane
   date: "19. 5. 2021"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=KyYqqpFWCpE
   about: |
     Grafana je asi nejpopulárnější nástroj pro náhled na metrická data nejen z Promethea. Existuje hodně připravených dashboardů, ale pro naši aplikaci si musíme vytvořit vlastní. Ukážu Vám, jak na to.
   points: |
@@ -291,6 +306,7 @@
   title: Nebojte se git rebase
   date: "2. 6. 2021"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=avq2rQW6tHE
   about: |
     Hodně vývojářů pořád nepoužívá `git rebase`, a tak mají repozitáře propletené ruznými merge commity a vzniká tak ne úplně přehledné "nádraží". Pojďme si ukázat, že používat rebase není složité a že nám to práci ulehčí, ne zkomplikuje.
   points: |
@@ -310,6 +326,7 @@
   title: Prometheus metriky ve vlastní aplikaci
   date: "16. 6. 2021"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=HdFiLeCaAEY
   about: |
     Prometheus je skvělý nástroj na sběr metrických dat, pojďme si ukázat, jak sbírat metriky z vašich aplikací v Go a Pythonu.
   points: |
@@ -328,6 +345,7 @@
   title: Ceph na vlastnim hardware (RBD a CephFS)
   date: "22. 9. 2021"
   time: "19:00"
+  youtube:
   about: |
     Ceph je robustní open source distribuovaná storage platforma, která poskytuje storage as a service. Pojďme si ukazát, jak na něj.
   points: |
@@ -344,6 +362,7 @@
   title: Externí Ceph RBD a CephFS v Kubernetes
   date: "6. 10. 2021"
   time: "19:00"
+  youtube:
   about: |
     Ukážeme si, jak používat externí Ceph v Kubernetes. Použijeme block storage RBD i CephFS
   points: |
@@ -361,6 +380,7 @@
   title: "Git Subtree a Monorepo"
   date: "20.10. 2021"
   time: "19:00"
+  youtube: 
   about: |
     Git subtree je příkaz, který dokáže synchronizovat složky z monorepa s dalšími repozitáři a to oběma směry. Ukážeme si, jak to funguje, včetně  praktické ukázky použití.
   points: |
@@ -377,6 +397,7 @@
   title: CLI Tool v Go
   date: "3.11. 2021"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=BSEVXHQxFPU
   about: |
     Go je skvělý jazyk na psaní toolingu nejen pro DevOps/SRE. Pojďme si ukázat, jak napsat jednoduchý CLI tool v Go a jak ho jednoduše distribuovat.
   points: |
@@ -393,6 +414,7 @@
   title: Kubernetes API v Go
   date: "17. 11. 2021"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=MVScbc6D2Qk
   about: |
     Pojďme si ukázat, jak s Kubernetes pracovat na přímo z Go kódu. Není to tak težké, jak se na první pohled můze zdát.
   points: |
@@ -408,6 +430,7 @@
   title: "Minio: On premise S3"
   date: "1. 12. 2021"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=-jg-dPdU_bc
   about: |
     Go je skvelý jazyk na psaní toolingu a ne jen pro DevOps/SRE. Pojďme si ukázat, jak napsat jednoduchý CLI tool v Go a jak ho jednoduše distribuovat.
   points: |
@@ -425,6 +448,7 @@
   title: "Cloudflare Access"
   date: "5. 1. 2022"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=A58Lnbz2trk
   about: |
     Cloudflare Access je jednoduchý způsob, jak přidat bezpečnou authetifikaci Vašich cloudových služeb na úrovni Cloudflare proxy. Můzete tak jednoduše přidat autentifikaci pomocí emailu, LDAPu nebo Google účtu. Vše samozřejmě Terraformem.
   points: |
@@ -442,6 +466,7 @@
   title: "Cloudflare Tunnel"
   date: "19. 1. 2022"
   time: "19:00"
+  youtube: https://www.youtube.com/watch?v=e8iZyO6h94k
   about: |
     CLoudflare Tunnel umoznuje vystavit webove sluzby prez Cloudflare svetu aniz by musela byt exponovana vase infrastruktura. Z vasi inrastruktury si otevrete spojeni do Cloudflare, nikoliv obracene.
   points: |
@@ -459,6 +484,7 @@
   title: "Uvod do ArgoCD: GitOps v Kubernetes"
   date: "2. 2. 2022"
   time: "19:00"
+  youtube:
   about: |
     ArgoCD je nastroj na GitOps deployment do Kubernetes
   points: |
@@ -472,16 +498,17 @@
     - git
 
 - id: tergum-intro
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/260939486027
   active: true
-  title: "Tergum: Deklarativni backupy"
+  title: "Tergum: Deklarativní backupy"
   date: "16. 2. 2022"
   time: "19:00"
+  youtube:
   about: |
-    Tergum je nastroj, ktery jsem vyvynul pro jednoduchou praci se zalohami. Umoznuje zalohovat ruzne zdroje dat (databaze, soubory, ...) a ukladat je do ruznych destinaci jako je s3 nebo do souboru.
+    Tergum je nástroj, který jsem vyvinul pro jednoduchou práci se zálohami. Umožňuje zálohovat různé zdroje dat (databáze, soubory, ...) a ukládat je do různých destinací jako je s3 nebo do souboru.
   points: |
-    - Motivace proc vytvorit Tergum
-    - Zakladni vlastnosti Tergumu
+    - Motivace, proč vytvorit Tergum
+    - Základní vlastnosti Tergumu
     - Konfigurace Tergumu
     - Tergum a Kubernetes
   technologies:
@@ -494,6 +521,7 @@
   title: "RKE2: Novy Rancher Kubernetes Engine"
   date: "2. 3. 2022"
   time: "19:00"
+  youtube:
   about: |
     RKE2 je pokracovani RKE (Rancher Kubernetes Enginu), ktery vyuziva k3s a nema zavislost na Dockeru.
   points: |
@@ -511,6 +539,7 @@
   title: "Kind: Testovaci multi-node clustery v Dockeru"
   date: "16. 3. 2022"
   time: "19:00"
+  youtube:
   about: |
     Kind je nastroj, pomoci ktereho muzeme jednoduse vytvaret multi-node i multi-master Kubernetes cluster. Ukazeme si jak na to.
   points: |
@@ -527,6 +556,7 @@
   title: "Helm: Tips & Tricks"
   date: "30. 3. 2022"
   time: "19:00"
+  youtube:
   about: |
     Pojdme se ponorit do moznosti Helmu a templatovaciho jazyka Go Templates. Ukazeme si jake mozne i nemozne veci jdou v Helmu udelat.
   points: |
@@ -544,6 +574,7 @@
   title: "Ministack: OpenStack rychle a jednoduse"
   date: "13. 4. 2022"
   time: "19:00"
+  youtube:
   about: |
     Ministack je distribuce OpenStacku, ktery muzete velmi jednoduse nainstalovat pomoci Snapu. Ukazeme si jak.
   points: |
@@ -559,6 +590,7 @@
   title: "IaC on Proxmox: Vytvarime infrastrukturu pomoci Proxmoxu, Terraformu a Packeru"
   date: "27. 4. 2022"
   time: "19:00"
+  youtube:
   about: |
     Pojdme si ukazat jak pracovat s IaC na platforme Proxmox. Vytvorme si vlastni machine images a deklartivne je nasazujme.
   points: |
@@ -576,6 +608,7 @@
   title: "Dockerizace PHP aplikace"
   date: "11. 5. 2022"
   time: "19:00"
+  youtube:
   about: |
     Pojdme spolecne zdockerizovat PHP aplikaci a pustit ji V Kubernetes. Neni to tak tezke.
   points: |
@@ -592,6 +625,7 @@
   title: "Prometheus Operator"
   date: "25. 5. 2022"
   time: "19:00"
+  youtube:
   about: |
     Nasazujme Prometheus do Kubernetes rychle a jednoduse. K tomu nam pomuze Prometheus Operator.
   points: |
@@ -609,6 +643,7 @@
   title: "Loki: Logy v Grafane"
   date: "xx. xx. 2022"
   time: "19:00"
+  youtube:
   about: |
     Loki je novy zpusob, jak sbirat logy nejen v Kubernetes a mit je k dispozici v Grafane. Loki si nainstalujeme a ukazeme si jak s nim pracovat.
   points: |
