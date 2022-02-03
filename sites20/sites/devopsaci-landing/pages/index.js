@@ -38,6 +38,29 @@ const Page = () => (
         <Image src={logo} loader={DummyLoader} />
       </CenterInner>
     </CenterOuter>
+    <div
+      style={{
+        position: "fixed",
+        bottom: "0px",
+        right: "2rem",
+        backgroundColor: "#100146",
+        border: "2px solid white",
+        color: "white",
+        padding: "0.2rem 0.5rem",
+        borderBottom: "0px"
+      }}
+    >
+      by{" "}
+      <a
+        href="https://sika.io"
+        style={{
+          color: "white",
+          fontWeight: "bold"
+        }}
+      >
+        Ondrej Sika
+      </a>
+    </div>
   </>
 );
 export default Page;
