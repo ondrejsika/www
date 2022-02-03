@@ -34,6 +34,7 @@ SITES_SITES20 = [
 ]
 
 SITES_SITES20_DEV = [
+    {"name": "devopsaci-landing"},
     {"name": "devopsaci.cz"},
 ]
 
