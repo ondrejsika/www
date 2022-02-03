@@ -29,8 +29,12 @@ SITES_SITES20 = [
     {"name": "digitalocean.cz"},
     {"name": "devopsnews.cz"},
     {"name": "hashicorp.cz"},
-    {"name": "devopsaci.cz"},
+    {"name": "devopsaci-landing", "domain": "devopsaci.cz"},
     {"name": "sikahosting.com"},
+]
+
+SITES_SITES20_DEV = [
+    {"name": "devopsaci.cz"},
 ]
 
 _DEFAULT_DEPENDENCIES = [
@@ -178,6 +182,7 @@ for site in SITES_DEV:
 for site in SITES_SITES20:
     name = site["name"]
     deps = _SITES20_DEPENDENCIES
+    domain = site.get("domain", name)
     out.update(
         {
             "deploy sites20 %s"
@@ -208,7 +213,7 @@ for site in SITES_SITES20:
             % name: {
                 "stage": "deploy validate",
                 "script": [
-                    "COMMIT=$(curl -fsSL https://%s/api/version.json | jq -r .git_commit)" % name,
+                    "COMMIT=$(curl -fsSL https://%s/api/version.json | jq -r .git_commit)" % domain,
                     "[ $COMMIT == $CI_COMMIT_SHA ]",
                 ],
                 "only": {
@@ -220,6 +225,52 @@ for site in SITES_SITES20:
                 },
                 "needs": [
                     "deploy sites20 %s" % name,
+                ],
+            }
+        }
+    )
+
+for site in SITES_SITES20_DEV:
+    name = site["name"]
+    deps = _SITES20_DEPENDENCIES
+    statica_domain = (
+        "test-" + name.replace(".", "-") + "-$CI_COMMIT_REF_SLUG.$STATICA_BASE_DOMAIN"
+    )
+    out.update(
+        {
+            "deploy dev sites20 %s"
+            % name: {
+                "stage": "deploy test",
+                "script": [
+                    "mkdir -p sites20/sites/%s/public/api" % name,
+                    "slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME -e CI_PIPELINE_ID=$CI_PIPELINE_ID -e \"GITLAB_USER_LOGIN=$GITLAB_USER_LOGIN\" -e \"CI_COMMIT_TITLE=$CI_COMMIT_TITLE\" > sites20/sites/%s/public/api/version.json" % name,
+                    "cd sites20",
+                    "rm -rf ./sites/%s/out" % name,
+                    "yarn --cache-folder .yarn-cache",
+                    "yarn static-%s" % name,
+                    "statica %s ./sites/%s/out" % (statica_domain, name)
+                ],
+                "only": {
+                    "changes": gen_deps(deps, name),
+                },
+                "needs": [],
+            }
+        }
+    )
+    out.update(
+        {
+            "validate dev %s"
+            % name: {
+                "stage": "deploy validate",
+                "script": [
+                    "COMMIT=$(curl -fsSL https://%s/api/version.json | jq -r .git_commit)" % statica_domain,
+                    "[ $COMMIT == $CI_COMMIT_SHA ]",
+                ],
+                "only": {
+                    "changes": gen_deps(deps, name),
+                },
+                "needs": [
+                    "deploy dev sites20 %s" % name,
                 ],
             }
         }
