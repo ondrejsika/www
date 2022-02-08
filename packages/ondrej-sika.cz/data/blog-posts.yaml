@@ -90,7 +90,7 @@
 
     Mam na vyber asi mezi bashem (je vsude), Pythonem (muzu ho nainstalovat vsude) a Go (staticke binarky). Pokud ale vezmu druhy pozadavek, psani v Bashi je peklo, pokud se nejedna o sadu prikazu, ktere je potreba vykonat po sobe.
 
-    Rozhodoval jsem se mezi Go a Pythonem. S Pythonem mam mnohem vetsi zkusenosti nez s Go, ale opriti Go ma 2 nevyhody. Za prve, potrebuju mit nainstalovany Python a za druhe, potrebuju mit nainstalovane knihovny. Neni to tak hrozne, ale porad stahnout jednu binarku, ktera umi vsechno je mnohem jednodussi.
+    Rozhodoval jsem se mezi Go a Pythonem. S Pythonem mam mnohem vetsi zkusenosti nez s Go, ale oproti Go ma 2 nevyhody. Za prve, potrebuju mit nainstalovany Python a za druhe, potrebuju mit nainstalovane knihovny. Neni to tak hrozne, ale porad stahnout jednu binarku, ktera umi vsechno je mnohem jednodussi.
 
     Navice existuje skvely tool [GoReleaser](https://goreleaser.com), ktery se stara o build a distribuci aplikace. A to uplne skvele, vcetne vytvareni brew balicku.
 
