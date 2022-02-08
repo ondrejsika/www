@@ -480,7 +480,7 @@
 
 - id: argocd-intro
   eventbrite: https://stream.sika.io/stream/c/omwvpykzebwubexm/nqyjysytiviziwej/
-  active: true
+  active: false
   title: "Uvod do ArgoCD: GitOps v Kubernetes"
   date: "2. 2. 2022"
   time: "19:00"
