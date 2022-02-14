@@ -1,0 +1,5 @@
+node_modules/
+out/
+.next/
+cloudflare-workers/*/dist/worker.js
+cloudflare-workers/_static-site/worker/script.js
