@@ -9,11 +9,9 @@ import ThreeCol from "@app/course-landing/components/ThreeCol";
 import Recommendation from "@app/course-landing/components/Recommendation";
 import TwoCol from "@app/course-landing/components/TwoCol";
 import Navigation from "@app/course-landing/components/Navigation";
-import Contact from "@app/course-landing/components/Contact";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 import site from "@app/training.kubernetes.is/config";
-import Link from "next/link";
 
 const Index = () => (
   <div>
