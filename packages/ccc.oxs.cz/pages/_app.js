@@ -4,9 +4,6 @@ import site from "../config";
 
 import Layout from "../layouts/Layout";
 
-// Imported CSS
-import "../css";
-
 class MyApp extends App {
   constructor(...args) {
     super(...args);
