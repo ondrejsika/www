@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "@app/bootstrap-theme/layouts/Layout";
 
 export default props => (

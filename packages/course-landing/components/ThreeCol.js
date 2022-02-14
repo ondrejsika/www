@@ -1,3 +1,5 @@
+import React from "react";
+
 const ThreeCol = props => (
   <div className="container-flex mb-4">
     <div className="card p-3">

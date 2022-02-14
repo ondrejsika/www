@@ -1,3 +1,5 @@
+import React from "react";
+
 export default props => (
   <div className="container section mb-3">
     <h2>{props.heading}</h2>

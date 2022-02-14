@@ -1,3 +1,5 @@
+import React from "react";
+
 const GoogleAnalytics = props => (
   <script
     type="text/javascript"

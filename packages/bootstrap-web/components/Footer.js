@@ -1,3 +1,4 @@
+import React from "react";
 import Former2 from "@app/common/components/Former2";
 import site from "@app/sika-kaplan.com/config";
 

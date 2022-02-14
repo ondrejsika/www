@@ -1,3 +1,5 @@
+import React from "react";
+
 const Header = props => (
   <div>
     <div className="bar-header">

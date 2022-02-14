@@ -1,3 +1,4 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
 export default () => (

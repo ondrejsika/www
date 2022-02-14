@@ -1,3 +1,5 @@
+import React from "react";
+
 const style = {
   padding: 10,
   border: "3px solid red"

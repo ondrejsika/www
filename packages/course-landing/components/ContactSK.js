@@ -1,3 +1,4 @@
+import React from "react";
 import ThreeCol from "@app/course-landing/components/ThreeCol";
 import Markdown from "@app/common/components/Markdown";
 

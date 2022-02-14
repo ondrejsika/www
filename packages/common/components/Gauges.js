@@ -1,3 +1,5 @@
+import React from "react";
+
 const Gauges = props => (
   <script
     type="text/javascript"

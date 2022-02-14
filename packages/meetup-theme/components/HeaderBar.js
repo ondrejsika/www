@@ -1,3 +1,5 @@
+import React from "react";
+
 export default props => (
   <div className="container headerbar text-right monospace">
     <h3>

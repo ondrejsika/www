@@ -1,3 +1,4 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 

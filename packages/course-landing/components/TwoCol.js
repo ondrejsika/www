@@ -1,3 +1,5 @@
+import React from "react";
+
 const TwoCol = props => (
   <div className="d-flex flex-row row pt-3">
     <div className="col-lg-6 col-md-6 col-sm-12 karta1">

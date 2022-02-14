@@ -1,3 +1,4 @@
+import React from "react";
 import termo_fish from "./MyClients/thermo_fish.jpg";
 import aaa_auto from "./MyClients/aaa_auto.png";
 import kb from "./MyClients/kb.png";

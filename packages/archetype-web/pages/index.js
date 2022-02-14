@@ -1,3 +1,4 @@
+import React from "react";
 import "../css";
 import Footer from "@app/archetype-theme/components/Footer";
 import Alert from "@app/archetype-theme/components/Alert";

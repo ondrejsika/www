@@ -1,3 +1,4 @@
+import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import Link from "next/link";
 import { FaYoutube } from "react-icons/fa";

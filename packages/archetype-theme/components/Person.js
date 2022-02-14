@@ -1,3 +1,5 @@
+import React from "react";
+
 const Person = props => (
   <div>
     <img src={props.imgSrc} />

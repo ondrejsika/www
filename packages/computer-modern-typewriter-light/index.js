@@ -1,3 +1,4 @@
+import React from "react";
 // Import Fonts
 import cmunbtl_eot from "./fonts/computer-modern-typewriter-light/cmunbtl.eot";
 import cmunbtl_svg from "./fonts/computer-modern-typewriter-light/cmunbtl.svg";

@@ -1,3 +1,5 @@
+import React from "react";
+
 const TextFrameWithImage = props => (
   <div className="card p-3 mb-4">
     <h3>{props.header}</h3>
