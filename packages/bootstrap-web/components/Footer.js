@@ -135,6 +135,8 @@ const Footer = props => (
           <a
             href="https://zuzjes.com"
             target="_blank"
+            without
+            rel="noopener noreferrer"
             className="fs-11 text a-underline"
           >
             Zuzana Jeschke

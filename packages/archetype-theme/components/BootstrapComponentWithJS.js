@@ -1,6 +1,6 @@
 import React from "react";
 
-const BootstrapComponentWithJS = props => (
+const BootstrapComponentWithJS = () => (
   <div>
     <p>
       <a

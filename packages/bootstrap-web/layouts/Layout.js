@@ -1,12 +1,14 @@
 import React from "react";
-import Layout from "@app/bootstrap-theme/layouts/Layout";
+import { Layout as ThemeLayout } from "@app/bootstrap-theme/layouts/Layout";
 
-export default props => (
-  <Layout>
+let Layout = props => (
+  <ThemeLayout>
     <div className="container">
       <h1>Simple Bootrstap Web</h1>
       {props.children}
       <p>2019 (c) Simple Bootstrap Web</p>
     </div>
-  </Layout>
+  </ThemeLayout>
 );
+
+export default Layout;

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default props => {
+let Header = props => {
   let site_name = props.site_name;
   let menu_links = props.menu_links;
   return (
@@ -13,8 +13,9 @@ export default props => {
       </div>
       <nav className="site-nav">
         <ul>
-          {menu_links.map(link => (
+          {menu_links.map((link, i) => (
             <li
+              key={i}
               className="ml-4"
               style={{ display: "inline-block", fontSize: "1.1em" }}
             >
@@ -53,3 +54,5 @@ export default props => {
     </header>
   );
 };
+
+export default Header;
