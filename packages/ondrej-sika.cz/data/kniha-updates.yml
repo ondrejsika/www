@@ -1,3 +1,7 @@
+- id: 2022-02-14
+  date_text: "14. 2. 2022"
+  title: "Dnes jsem napsal uvodni kapitolu k Prometheu - Prometheus: Uvod do monitoring stacku"
+
 - id: 2022-02-08
   date_text: "8. 2. 2022"
   title: "Dnes jsem napsal uvodni kapitolu ke Kubernetes, jake jsou vyhody Kubernetes a proc jej pouzivat."
