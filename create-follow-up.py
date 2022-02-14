@@ -2,7 +2,6 @@
 
 import argparse
 import datetime
-import sys
 
 
 COURSES = (
