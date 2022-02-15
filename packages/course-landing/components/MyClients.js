@@ -8,7 +8,7 @@ import ceska_pojistovna from "./MyClients/ceska_pojistovna.jpg";
 
 import Translate from "@app/common/components/Translate";
 
-const MyClients = props => (
+const MyClients = (props) => (
   <div>
     <div className={props.noBorder ? "p-3 mb-4" : "card p-3 mb-4"}>
       <h3>

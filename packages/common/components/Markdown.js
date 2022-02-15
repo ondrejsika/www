@@ -25,15 +25,15 @@ function LinkRenderer(props) {
   );
 }
 
-const ReactComponent = props => <>{props.children}</>;
-const TwitterComponent = props => (
+const ReactComponent = (props) => <>{props.children}</>;
+const TwitterComponent = (props) => (
   <TwitterTweetEmbed
     tweetId={props.tweet_id}
     options={{ conversation: "none" }}
   />
 );
 
-const ReactRenderer = props => {
+const ReactRenderer = (props) => {
   return (
     <JsxParser
       jsx={props.value}
@@ -45,7 +45,7 @@ const ReactRenderer = props => {
   );
 };
 
-let Markdown = props => {
+let Markdown = (props) => {
   return (
     <ReactMarkdown
       source={props.source}

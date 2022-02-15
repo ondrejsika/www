@@ -41,7 +41,7 @@ const About = styled.p`
   font: Regular IBM Plex Sans;
   font-size: 20px;
   letter-spacing: 0px;
-  ${props =>
+  ${(props) =>
     props.white &&
     css`
       color: white;
@@ -72,7 +72,7 @@ const RoomyRow = styled(Row)`
 const H3 = styled.h3`
   font-size: 1.75rem;
   color: #131480;
-  ${props =>
+  ${(props) =>
     props.white &&
     css`
       color: white !important;
@@ -84,10 +84,10 @@ const FloatingSvg = styled.img`
   height: 20px;
 `;
 
-const BaseLandingPage = props => {
+const BaseLandingPage = (props) => {
   const HeaderBox = styled.div`
     padding: 5em 0 6em 0;
-    ${props =>
+    ${(props) =>
       props.big &&
       css`
         padding: 6em 0 6em 0 !important;
@@ -98,12 +98,12 @@ const BaseLandingPage = props => {
     margin-bottom: 2px;
     vertical-align: center;
     height: 20px;
-    ${props =>
+    ${(props) =>
       props.padding_right &&
       css`
         padding-right: 10px;
       `}
-    ${props =>
+    ${(props) =>
       props.padding_left &&
       css`
         padding-left: 10px;
@@ -121,17 +121,17 @@ const BaseLandingPage = props => {
     border: 1px solid
       ${props.site && props.site.colors && props.site.colors.PRIMARY};
     background-color: ${props.site &&
-      props.site.colors &&
-      props.site.colors.PRIMARY};
+    props.site.colors &&
+    props.site.colors.PRIMARY};
     color: ${props.site &&
-      props.site.colors &&
-      props.site.colors.SECONDARY_LIGHT};
+    props.site.colors &&
+    props.site.colors.SECONDARY_LIGHT};
     &:hover {
       border: 1px solid
         ${props.site && props.site.colors && props.site.colors.PRIMARY};
       background: ${props.site &&
-        props.site.colors &&
-        props.site.colors.SECONDARY_LIGHT};
+      props.site.colors &&
+      props.site.colors.SECONDARY_LIGHT};
       color: ${props.site && props.site.colors && props.site.colors.PRIMARY};
       text-decoration: none;
     }
@@ -240,7 +240,11 @@ const BaseLandingPage = props => {
                     href="mailto:ondrej@sika.io"
                     className="mb-3"
                   >
-                    <IconBtn padding_right src={mail_grey.src} className="mb-1" />
+                    <IconBtn
+                      padding_right
+                      src={mail_grey.src}
+                      className="mb-1"
+                    />
                     <B>{props.email}</B>
                   </InquiryButton>
                 </ButtonGroup>
@@ -273,7 +277,10 @@ const BaseLandingPage = props => {
               overflowX: "hidden"
             }}
           >
-            <img src={ondrej_mac.src} style={{ height: "800px", zIndex: "2" }} />
+            <img
+              src={ondrej_mac.src}
+              style={{ height: "800px", zIndex: "2" }}
+            />
           </Col>
         </Background>
       )}

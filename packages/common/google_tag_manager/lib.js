@@ -17,6 +17,6 @@ export const event = ({ action, category, label, value }) => {
   });
 };
 
-export const init = gtm_id => {
-  Router.events.on("routeChangeComplete", url => pageview(gtm_id, url));
+export const init = (gtm_id) => {
+  Router.events.on("routeChangeComplete", (url) => pageview(gtm_id, url));
 };

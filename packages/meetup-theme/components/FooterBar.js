@@ -1,6 +1,6 @@
 import React from "react";
 
-const FooterBar = props => (
+const FooterBar = (props) => (
   <div className="container footerbar monospace text-center mt-5">
     <p>
       2019 - 2020 &copy; <strong>Salzburg DevOps Meetups</strong> by{" "}

@@ -10,7 +10,7 @@ db.setCursor("courses");
 db.filterIn("lecturers", "ondrejsika");
 let courses = db.get();
 
-const Page = props => (
+const Page = (props) => (
   <Article title="Seznam všech mých školení" hideNewsletter={true}>
     <table className="table">
       <tr>

@@ -19,7 +19,7 @@ import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import courses_file from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
-const Page = props => {
+const Page = (props) => {
   let site = props.site;
   let lang = props.site.lang;
   let location = props.site.location;

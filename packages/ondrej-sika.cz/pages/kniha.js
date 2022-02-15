@@ -9,7 +9,7 @@ const liStyle = {
   fontSize: "1.7rem"
 };
 
-const Install = props => (
+const Install = (props) => (
   <div>
     <Head>
       <title>DevOps Kniha - Ondrej Sika</title>

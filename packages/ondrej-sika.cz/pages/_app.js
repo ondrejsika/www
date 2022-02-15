@@ -13,7 +13,6 @@ import Button from "@app/ondrejsika-theme/components/Button";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "../css/index.sass";
 
-
 const Hide = styled.div`
   @media (max-width: 600px) {
     display: none;

@@ -10,9 +10,9 @@ import Translate from "@app/common/components/Translate";
 
 const recaptchaRef = React.createRef();
 
-const SessionRegisterForm = props => {
+const SessionRegisterForm = (props) => {
   const { handleSubmit, register, errors } = useForm();
-  const onSubmit = values => {
+  const onSubmit = (values) => {
     let data = {
       organizer_id: props.organizer_id,
       organizer_slug: props.organizer_slug,
@@ -33,7 +33,7 @@ const SessionRegisterForm = props => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(data)
-    }).then(res => {
+    }).then((res) => {
       console.log(res);
       if (res.status == 200) Router.push("/odeslano");
       else Router.push("/odeslano-chyba");

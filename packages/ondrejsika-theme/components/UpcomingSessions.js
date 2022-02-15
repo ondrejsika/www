@@ -35,21 +35,21 @@ const CourseName = styled.h3`
 const MarginTop = styled.div`
   padding-top: 1.5em;
 `;
-const date_for_google_calendar_link = dd_mm_yyyy =>
+const date_for_google_calendar_link = (dd_mm_yyyy) =>
   dd_mm_yyyy
     .split(".")
     .reverse()
-    .map(x => (x.length == 1 ? `0${x}` : x))
+    .map((x) => (x.length == 1 ? `0${x}` : x))
     .join("");
 
-const UpcomingSessions = props => {
+const UpcomingSessions = (props) => {
   var hide_prices = props.hide_prices;
   let link_site_prefix = props.link_site_prefix || "";
 
   const A = styled.a`
     padding-left: 1.5em;
     color: ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
-      default_colors.BLUE};
+    default_colors.BLUE};
   `;
 
   let db = new StaticDB();

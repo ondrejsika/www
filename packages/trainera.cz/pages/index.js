@@ -17,7 +17,7 @@ import jirikraml from "@app/data/pictures/jirikraml.jpg";
 import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
 import michaelkaplan from "@app/data/pictures/michaelkaplan.png";
 
-const Index = props => (
+const Index = (props) => (
   <div>
     <Head>
       <title>Ondrej Sika - IT Školení, konzultace a workshopy</title>

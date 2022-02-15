@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-const FloatingBtn = props => {
+const FloatingBtn = (props) => {
   const WrapperButton = styled.a`
     position: fixed;
     width: 60px;

@@ -6,7 +6,7 @@ import Translate from "@app/common/components/Translate";
 const TriangleBottomRight = styled.div`
   width: 100%;
   height: 80px;
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.PRIMARY) || "grey"};
   clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
   margin-bottom: -1px;
@@ -16,13 +16,13 @@ const TriangleTopLeft = styled.div`
   width: 100%;
   height: 80px;
   margin-bottom: -80px;
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.PRIMARY) || "grey"};
   clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
 `;
 
 const Background = styled.div`
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.PRIMARY) || "grey"};
 `;
 const Text = styled.div`
@@ -33,14 +33,14 @@ const Text = styled.div`
 
 const Header = styled.h3`
   padding-top: 2em;
-  color: ${props =>
+  color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.SECONDARY) ||
     "white"};
   font-size: 1.8em;
   font-weight: bold;
 `;
 
-const ConvinceYourBoss = props => (
+const ConvinceYourBoss = (props) => (
   <>
     <TriangleBottomRight site={props.site} />
     <Background site={props.site}>

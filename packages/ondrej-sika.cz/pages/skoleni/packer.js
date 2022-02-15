@@ -1,7 +1,7 @@
 import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
 
-const Page = props => (
+const Page = (props) => (
   <CourseDD
     site={props.site}
     course_id="packer"

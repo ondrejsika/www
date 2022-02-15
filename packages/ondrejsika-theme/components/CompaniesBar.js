@@ -26,14 +26,14 @@ const Header = styled.h3`
   font-weight: 700;
   padding-top: 1em;
   padding-bottom: 0.5em;
-  ${props =>
+  ${(props) =>
     props.align == "center" &&
     css`
       text-align: center;
     `}
 `;
 
-const CompaniesBar = props => (
+const CompaniesBar = (props) => (
   <div className="pb-2" align={props.align}>
     <Header>
       {props.myClients || (

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = props => (
+const Header = (props) => (
   <div>
     <div className="bar-header">
       <div className="container">

@@ -8,7 +8,7 @@ import kubernetes from "@app/data/pictures/courses/video/kubernetes-screenshot-6
 import terraform from "@app/data/pictures/courses/video/terraform-screenshot-600.png";
 import gitlabCi from "@app/data/pictures/courses/video/gitlab-ci-screenshot-600.png";
 
-const Page = props => (
+const Page = (props) => (
   <Article
     site={props.site}
     title="Videokurzy"

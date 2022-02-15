@@ -4,7 +4,7 @@ import courses_yaml from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 import Page404 from "@app/ondrejsika-theme/components/Page404";
 
-const CourseDD = props => {
+const CourseDD = (props) => {
   let course_id = props.course_id;
   let lang = props.lang;
   let location = props.location;

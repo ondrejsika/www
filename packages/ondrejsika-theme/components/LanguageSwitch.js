@@ -7,12 +7,12 @@ const White = styled.a`
   color: white !important;
 `;
 
-const LanguageSwitch = props => {
+const LanguageSwitch = (props) => {
   const Wrapper = styled.div`
     background: ${(props.site &&
       props.site.colors &&
       props.site.colors.PRIMARY) ||
-      default_colors.BLUE};
+    default_colors.BLUE};
     text-align: right;
     padding-top: 0.5em;
     color: white;

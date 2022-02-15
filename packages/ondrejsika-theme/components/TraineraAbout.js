@@ -37,14 +37,14 @@ const Date = styled.p`
   margin-bottom: 0;
 `;
 
-const date_for_google_calendar_link = dd_mm_yyyy =>
+const date_for_google_calendar_link = (dd_mm_yyyy) =>
   dd_mm_yyyy
     .split(".")
     .reverse()
-    .map(x => (x.length == 1 ? `0${x}` : x))
+    .map((x) => (x.length == 1 ? `0${x}` : x))
     .join("");
 
-const Page = props => {
+const Page = (props) => {
   let link_site_prefix = props.link_site_prefix || "";
 
   const A = styled.a`

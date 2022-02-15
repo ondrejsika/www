@@ -31,7 +31,7 @@ const Img = styled.img`
   padding: 0 2em;
 `;
 
-const TechnologyIcons = props => {
+const TechnologyIcons = (props) => {
   return (
     <>
       {props.white && (

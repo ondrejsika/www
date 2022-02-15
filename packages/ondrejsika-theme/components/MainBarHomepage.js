@@ -18,12 +18,12 @@ const Container = styled(BootstrapContainer)`
   padding: 1.5em 0.8em 3.5em 0.8em;
 `;
 
-const MainBarHomepage = props => {
+const MainBarHomepage = (props) => {
   const Background = styled.div`
     background-color: ${(props.site &&
       props.site.colors &&
       props.site.colors.PRIMARY) ||
-      default_colors.BLUE};
+    default_colors.BLUE};
   `;
   let Text = TextBase;
   if (props.textSize) {

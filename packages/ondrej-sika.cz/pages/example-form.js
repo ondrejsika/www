@@ -7,9 +7,9 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const recaptchaRef = React.createRef();
 
-const ExampleForm = props => {
+const ExampleForm = (props) => {
   const { handleSubmit, register, errors } = useForm();
-  const onSubmit = values => {
+  const onSubmit = (values) => {
     console.log(recaptchaRef.current.getValue());
     let out = [
       `name: ${values.name}`,
@@ -92,7 +92,7 @@ const ExampleForm = props => {
   );
 };
 
-const Index = props => (
+const Index = (props) => (
   <div className="container">
     <ExampleForm site={props.site} />
   </div>

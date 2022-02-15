@@ -6,7 +6,7 @@ import Head from "next/head";
 
 import site from "@app/ondrej-sika.cz/config";
 
-const Index = props => (
+const Index = (props) => (
   <div>
     <Head>
       <title>Veřejné termíny - Ondrej Sika</title>

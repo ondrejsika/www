@@ -28,7 +28,7 @@ const FooterButton = styled.a`
   }
 `;
 
-const Newsletter = props => (
+const Newsletter = (props) => (
   <>
     <H3_white>{props.header}</H3_white>
     <P>{props.text}</P>

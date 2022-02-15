@@ -11,7 +11,7 @@ import Li from "@app/skoleni.io/components/H3";
 import Markdown from "@app/common/components/Markdown";
 import Head from "next/head";
 
-const getCourse = course_id => {
+const getCourse = (course_id) => {
   let db = new StaticDB();
   db.add("courses", courses_data);
   db.add("lecturers", lecturers_data);
@@ -22,7 +22,7 @@ const getCourse = course_id => {
   return course;
 };
 
-const CourseList = props => {
+const CourseList = (props) => {
   let technology_id = props.technology_id;
 
   let db = new StaticDB();
@@ -32,7 +32,7 @@ const CourseList = props => {
   let technology = db.getOne();
 
   let num_of_courses_by_lecturer = {};
-  technology.courses.map(course_id => {
+  technology.courses.map((course_id) => {
     let course = getCourse(course_id);
     if (!num_of_courses_by_lecturer[course.lecturer.id]) {
       num_of_courses_by_lecturer[course.lecturer.id] = 0;

@@ -26,7 +26,7 @@ const H4 = styled.h4`
 `;
 
 const Trainera = styled.div`
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.PRIMARY) ||
     default_colors.BLUE};
 `;
@@ -45,12 +45,12 @@ const Box = styled.div`
   border: 2px solid transparent;
   border-radius: 2px;
   margin-bottom: 5px;
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.PRIMARY) ||
     default_colors.BLUE};
   &:hover {
     border: 2px solid
-      ${props =>
+      ${(props) =>
         (props.site && props.site.colors && props.site.colors.SECONDARY) ||
         default_colors.WHITE};
   }
@@ -70,12 +70,12 @@ const TriangleBottomRight = styled.div`
   width: 100%;
   height: 80px;
   /* background: #088958; */
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.PRIMARY) ||
     default_colors.BLUE};
   clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
   margin-bottom: -1px;
-  ${props =>
+  ${(props) =>
     props.hiddenTop &&
     css`
       display: none;
@@ -86,18 +86,18 @@ const TriangleTopLeft = styled.div`
   width: 100%;
   height: 80px;
   /* background: #088958; */
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.PRIMARY) ||
     default_colors.BLUE};
   clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
-  ${props =>
+  ${(props) =>
     props.hiddenBottom &&
     css`
       display: none;
     `}
 `;
 
-const Card = props => {
+const Card = (props) => {
   let training = { en: "training", cs: "skoleni" }[props.lang || "cs"];
 
   return (
@@ -116,7 +116,7 @@ const Card = props => {
   );
 };
 
-const CourseBar = props => {
+const CourseBar = (props) => {
   return (
     <>
       <TriangleBottomRight hiddenTop={props.hiddenTop} site={props.site} />

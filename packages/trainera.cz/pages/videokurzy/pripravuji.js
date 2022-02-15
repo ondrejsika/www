@@ -2,7 +2,7 @@ import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import { FaYoutube } from "react-icons/fa";
 
-const Page = props => (
+const Page = (props) => (
   <Article
     site={props.site}
     title="Videokurzy"

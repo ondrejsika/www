@@ -7,7 +7,7 @@ const Border = styled.div`
   border-radius: 5px;
 `;
 
-const Price = props => (
+const Price = (props) => (
   <Border>
     <div className="price bg-grey pb-3">
       <div className="container">

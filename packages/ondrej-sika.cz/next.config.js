@@ -7,7 +7,7 @@ module.exports = {
     TRAININGCRM_URL: process.env.TRAININGCRM_URL
   },
   trailingSlash: true,
-  exportPathMap: function(defaultPathMap) {
+  exportPathMap: function (defaultPathMap) {
     // remove default blog page render (without post)
     delete defaultPathMap["/blog/[id]"];
 
@@ -16,7 +16,7 @@ module.exports = {
       var posts = yaml.safeLoad(
         fs.readFileSync("data/blog-posts.yaml", "utf8")
       );
-      posts.forEach(function(post) {
+      posts.forEach(function (post) {
         if (post.nostatic) return;
         defaultPathMap[`/blog/${post.id}`] = {
           page: "/blog/[id]",
@@ -26,14 +26,14 @@ module.exports = {
 
       // export blog tags
       var tags = new Set();
-      posts.forEach(function(post) {
+      posts.forEach(function (post) {
         if (post.tags)
-          post.tags.forEach(function(tag) {
+          post.tags.forEach(function (tag) {
             tags.add(tag);
           });
       });
 
-      tags.forEach(function(tag) {
+      tags.forEach(function (tag) {
         defaultPathMap[`/blog/tag/${tag}`] = {
           page: "/blog/tag/[id]",
           query: { id: tag }
@@ -46,7 +46,7 @@ module.exports = {
       var sessions = yaml.safeLoad(
         fs.readFileSync("../data/training/sessions.yml", "utf8")
       );
-      sessions.forEach(function(session) {
+      sessions.forEach(function (session) {
         defaultPathMap[`/verejne-terminy/${session.id}`] = {
           page: "/verejne-terminy/[id]",
           query: { id: session.id }
@@ -59,7 +59,7 @@ module.exports = {
       var courses = yaml.safeLoad(
         fs.readFileSync("../data/training/courses.yml", "utf8")
       );
-      courses.forEach(function(course) {
+      courses.forEach(function (course) {
         if (course.ignore_for_partners) return;
         defaultPathMap[`/private/pro-partnery/${course.id}`] = {
           page: "/private/pro-partnery/[id]",
@@ -71,7 +71,7 @@ module.exports = {
       delete defaultPathMap["/news/[id]"];
 
       var news_list = yaml.safeLoad(fs.readFileSync("data/news.yml", "utf8"));
-      news_list.forEach(function(news) {
+      news_list.forEach(function (news) {
         defaultPathMap[`/news/${news.id}`] = {
           page: "/news/[id]",
           query: { id: news.id }
@@ -84,7 +84,7 @@ module.exports = {
       var faq_list = yaml.safeLoad(
         fs.readFileSync("../data/faq-cs.yml", "utf8")
       );
-      faq_list.forEach(function(faq) {
+      faq_list.forEach(function (faq) {
         defaultPathMap[`/devops-faq/${faq.id}`] = {
           page: "/devops-faq/[id]",
           query: { id: faq.id }
@@ -96,7 +96,7 @@ module.exports = {
 
     return defaultPathMap;
   },
-  webpack: function(config) {
+  webpack: function (config) {
     config.plugins.push(
       new CopyPlugin([
         {
@@ -114,14 +114,14 @@ module.exports = {
       ])
     );
     return config;
-  },
+  }
 };
 
 const withTM = require("next-transpile-modules")([
   "@app/ondrejsika-theme",
   "@app/common",
   "@app/course-landing",
-  "@app/data",
+  "@app/data"
 ]);
 module.exports = withTM(module.exports);
 

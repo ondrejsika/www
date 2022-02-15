@@ -10,7 +10,7 @@ const Border = styled.div`
   margin-bottom: 1em;
 `;
 
-const AboutLecturer = props => (
+const AboutLecturer = (props) => (
   <Border>
     <div className="text-center p-3">
       <img

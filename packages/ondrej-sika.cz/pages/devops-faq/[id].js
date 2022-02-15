@@ -9,7 +9,7 @@ faq_cz_yml.map((element, i) => {
   faq_cz_yml_id_map[element.id] = i;
 });
 
-const Page = props => {
+const Page = (props) => {
   if (!props.faq_id) {
     return <div></div>;
   }
@@ -26,7 +26,7 @@ const Page = props => {
   );
 };
 
-Page.getInitialProps = async function(context) {
+Page.getInitialProps = async function (context) {
   return { faq_id: context.query.id };
 };
 

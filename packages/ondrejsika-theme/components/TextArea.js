@@ -5,7 +5,7 @@ const P = styled.p`
   font-size: 18px;
 `;
 
-const TextArea = props => (
+const TextArea = (props) => (
   <div>
     <h2 className="pt-4 pb-2">{props.TextHeader}</h2>
     {(() => {

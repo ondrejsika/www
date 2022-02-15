@@ -23,7 +23,7 @@ const Margin = styled.div`
   padding: 2em 0;
 `;
 
-const SocialBox = props => (
+const SocialBox = (props) => (
   <>
     <Col md={6}>
       <FlexBox href={props.href} style={{ textDecoration: "none" }}>

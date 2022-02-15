@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 
-const Field = props => {
+const Field = (props) => {
   let name = props.name;
   let as = props.as;
   let label = props.label;

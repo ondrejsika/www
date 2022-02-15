@@ -7,12 +7,12 @@ import Button from "@app/ondrejsika-theme/components/Button";
 const Container = styled(BootstrapContainer)`
   padding: 1.5em 0.8em;
 `;
-const Header = props => {
+const Header = (props) => {
   const Background = styled.div`
     background-color: ${(props.site &&
       props.site.colors &&
       props.site.colors.PRIMARY) ||
-      default_colors.BLUE};
+    default_colors.BLUE};
   `;
 
   return (
@@ -36,7 +36,10 @@ const Header = props => {
               </div>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-4 col-4 p-4">
-              <img src={props.logo && props.logo.src} className="img-fluid align-right" />
+              <img
+                src={props.logo && props.logo.src}
+                className="img-fluid align-right"
+              />
             </div>
           </div>
         )}

@@ -11,7 +11,7 @@ posts.map((element, i) => {
   posts_id_map[element.id] = i;
 });
 
-let Post = props => {
+let Post = (props) => {
   let post = posts[posts_id_map[props.post_id]];
   return (
     <div>
@@ -27,7 +27,7 @@ let Post = props => {
   );
 };
 
-Post.getInitialProps = async function(context) {
+Post.getInitialProps = async function (context) {
   return { post_id: context.query.id };
 };
 

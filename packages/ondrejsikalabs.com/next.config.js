@@ -2,12 +2,12 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   trailingSlash: true,
-  exportPathMap: function() {
+  exportPathMap: function () {
     return {
       "/": { page: "/" }
     };
   },
-  webpack: function(config) {
+  webpack: function (config) {
     config.plugins.push(
       new CopyPlugin([
         {

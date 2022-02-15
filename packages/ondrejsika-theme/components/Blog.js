@@ -6,7 +6,7 @@ import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import { Container } from "react-bootstrap";
 import BlogBox from "@app/ondrejsika-theme/components/BlogBox";
 
-const Blog = props => {
+const Blog = (props) => {
   return (
     <div>
       <Head>

@@ -16,7 +16,7 @@ import vojtechmares from "@app/data/pictures/vojtechmares.jpg";
 import michaelkaplan from "@app/data/pictures/michaelkaplan.png";
 import ondandnela from "@app/data/pictures/ondandnel.png";
 
-const Index = props => (
+const Index = (props) => (
   <div>
     <Head>
       <title>Trainera.de - IT &amp; DevOps Training</title>

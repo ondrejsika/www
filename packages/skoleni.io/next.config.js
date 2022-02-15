@@ -4,7 +4,7 @@ const fs = require("fs");
 
 module.exports = {
   trailingSlash: true,
-  exportPathMap: function(defaultPathMap) {
+  exportPathMap: function (defaultPathMap) {
     // remove default lecturer render (without post)
     delete defaultPathMap["/lektor/[id]"];
 
@@ -13,7 +13,7 @@ module.exports = {
       var lecturers = yaml.safeLoad(
         fs.readFileSync("../data/skoleni.io/lecturers.yml", "utf8")
       );
-      lecturers.forEach(function(obj) {
+      lecturers.forEach(function (obj) {
         defaultPathMap[`/lektor/${obj.id}`] = {
           page: "/lektor/[id]",
           query: { id: obj.id }
@@ -31,7 +31,7 @@ module.exports = {
       var courses = yaml.safeLoad(
         fs.readFileSync("../data/skoleni.io/courses.yml", "utf8")
       );
-      courses.forEach(function(obj) {
+      courses.forEach(function (obj) {
         defaultPathMap[`/skoleni/${obj.id}`] = {
           page: "/skoleni/[id]",
           query: { id: obj.id }
@@ -49,7 +49,7 @@ module.exports = {
       var technologies = yaml.safeLoad(
         fs.readFileSync("../data/skoleni.io/technologies.yml", "utf8")
       );
-      technologies.forEach(function(obj) {
+      technologies.forEach(function (obj) {
         defaultPathMap[`/seznam-skoleni/${obj.id}`] = {
           page: "/seznam-skoleni/[id]",
           query: { id: obj.id }
@@ -61,7 +61,7 @@ module.exports = {
 
     return defaultPathMap;
   },
-  webpack: function(config) {
+  webpack: function (config) {
     config.plugins.push(
       new CopyPlugin([
         {
@@ -79,7 +79,7 @@ module.exports = {
       ])
     );
     return config;
-  },
+  }
 };
 
 const withTM = require("next-transpile-modules")([
@@ -87,7 +87,7 @@ const withTM = require("next-transpile-modules")([
   "@app/ondrejsika-singlepage",
   "@app/common",
   "@app/course-landing",
-  "@app/data",
+  "@app/data"
 ]);
 module.exports = withTM(module.exports);
 

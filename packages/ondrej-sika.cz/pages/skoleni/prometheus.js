@@ -2,7 +2,7 @@ import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
 import logo from "@app/data/pictures/courses/prometheus-white.png";
 
-const Page = props => (
+const Page = (props) => (
   <CourseDD
     site={props.site}
     course_id="prometheus"

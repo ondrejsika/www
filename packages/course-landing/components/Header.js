@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Header = props => (
+const Header = (props) => (
   <div>
     <div className="container-fluid header-container">
       <div className="header mt-0">

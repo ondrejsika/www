@@ -3,7 +3,7 @@ import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import Button from "@app/ondrejsika-theme/components/Button";
 import { Row, Col, ButtonGroup } from "react-bootstrap";
 
-const BlogPostFooter = props => {
+const BlogPostFooter = (props) => {
   return (
     <Row className="pt-3 pb-2">
       <Col md={2}>

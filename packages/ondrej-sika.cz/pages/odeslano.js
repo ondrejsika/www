@@ -5,7 +5,7 @@ import Markdown from "@app/common/components/Markdown";
 import Head from "next/head";
 import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 
-const Sent = props => (
+const Sent = (props) => (
   <div>
     <Head>
       <title>Odesláno - Ondřej Šika</title>

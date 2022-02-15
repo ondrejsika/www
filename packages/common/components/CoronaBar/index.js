@@ -6,7 +6,7 @@ import Link from "next/link";
 import bar from "./coronavirus3.jpg";
 import close from "./close.svg";
 
-let KoronaBar = props => {
+let KoronaBar = (props) => {
   const [hideBar, setHideBar] = useCookie("CoronaBarHide");
 
   let lang = props.lang || "cs";

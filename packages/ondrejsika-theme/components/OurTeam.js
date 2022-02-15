@@ -20,7 +20,7 @@ const ImgWrapper = styled.div`
   }
 `;
 
-const OurTeam = props => (
+const OurTeam = (props) => (
   <>
     <Row>
       {props.lecturers.map((lector, i) => (

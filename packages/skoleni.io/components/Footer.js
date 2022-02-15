@@ -23,7 +23,7 @@ const H3l = styled(H3)`
   text-transform: none;
 `;
 
-const Footer = props => (
+const Footer = (props) => (
   <Bg>
     <Container className="pb-5">
       <Row>

@@ -15,13 +15,13 @@ const Hide = styled.div`
   }
 `;
 
-const Footer = props => {
+const Footer = (props) => {
   const Background = styled.div`
     padding: 1em 0;
     background-color: ${(props.site &&
       props.site.colors &&
       props.site.colors.PRIMARY) ||
-      default_colors.BLUE};
+    default_colors.BLUE};
   `;
   return (
     <Background>

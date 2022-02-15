@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Navbar = props => (
+const Navbar = (props) => (
   <div>
     <div className="container-fluid">
       <div className="container pt-2 pb-2">

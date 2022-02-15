@@ -5,7 +5,7 @@ import courses_yaml from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 import Markdown from "@app/common/components/Markdown";
 
-const CourseDD = props => {
+const CourseDD = (props) => {
   let course_id = props.course_id;
   let lang = props.lang;
   let location = props.location;

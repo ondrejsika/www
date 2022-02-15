@@ -6,7 +6,7 @@ let style = {
   margin: "0"
 };
 
-const Footer = props => (
+const Footer = (props) => (
   <div>
     <div className="container-fluid bg">
       <div className="container">

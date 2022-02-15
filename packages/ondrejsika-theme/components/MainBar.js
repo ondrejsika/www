@@ -5,12 +5,12 @@ import { Container as BootstrapContainer } from "react-bootstrap";
 
 const Container = styled(BootstrapContainer)``;
 
-const MainBar = props => {
+const MainBar = (props) => {
   const Background = styled.div`
     background-color: ${(props.site &&
       props.site.colors &&
       props.site.colors.PRIMARY) ||
-      default_colors.BLUE};
+    default_colors.BLUE};
   `;
   return (
     <Background>

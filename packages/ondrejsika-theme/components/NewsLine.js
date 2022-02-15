@@ -16,7 +16,7 @@ const A = styled.a`
   font-size: 1.2em;
 `;
 
-const NewsLine = props => (
+const NewsLine = (props) => (
   <Background>
     <P className="text-center">
       <Link href={props.href} passHref>

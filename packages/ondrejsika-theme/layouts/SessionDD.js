@@ -26,7 +26,7 @@ sessions.map((element, i) => {
   session_id_map[element.id] = i;
 });
 
-const SessionDD = props => {
+const SessionDD = (props) => {
   let lang = props.site.lang || "cs";
   let hide_prices = props.hide_prices;
 

@@ -3,7 +3,7 @@ import Blog from "@app/ondrejsika-theme/components/Blog";
 import all_posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
 import StaticDB from "@app/common/staticdb";
 
-let BlogPage = props => {
+let BlogPage = (props) => {
   let db = new StaticDB();
   db.add("posts", all_posts);
   db.setCursor("posts");
@@ -14,7 +14,7 @@ let BlogPage = props => {
   );
 };
 
-BlogPage.getInitialProps = async function(context) {
+BlogPage.getInitialProps = async function (context) {
   return { tag_id: context.query.id };
 };
 

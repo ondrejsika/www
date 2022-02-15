@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import bar from "./bar2.jpg";
 
-let AustraliaFiresBar = props => {
+let AustraliaFiresBar = (props) => {
   const [hideBar, setHideBar] = useCookie("AustraliaFiresBarhideBar");
 
   let post_link = props.local_link

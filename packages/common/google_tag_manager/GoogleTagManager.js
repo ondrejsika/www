@@ -1,6 +1,6 @@
 import React from "react";
 
-const GoogleTagManager = props => (
+const GoogleTagManager = (props) => (
   <>
     <script
       async

@@ -5,10 +5,10 @@ module.exports = {
     TRAININGCRM_URL: process.env.TRAININGCRM_URL
   },
   trailingSlash: true,
-  exportPathMap: function(defaultPathMap) {
+  exportPathMap: function (defaultPathMap) {
     return defaultPathMap;
   },
-  webpack: function(config) {
+  webpack: function (config) {
     config.plugins.push(
       new CopyPlugin([
         {

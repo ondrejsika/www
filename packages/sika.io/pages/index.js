@@ -7,7 +7,7 @@ import Head from "next/head";
 import site from "@app/sika.io/config";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
 
-const Index = props => (
+const Index = (props) => (
   <>
     <Head>
       <title>Ondrej Sika | sika.io</title>

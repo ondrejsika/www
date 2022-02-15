@@ -6,14 +6,14 @@ const doc = yaml.safeLoad(
   fs.readFileSync("../data/training/sessions.yml", "utf8")
 );
 
-const loadYAMLDate = dd_mm_yyyy =>
+const loadYAMLDate = (dd_mm_yyyy) =>
   dd_mm_yyyy
     .split(".")
     .reverse()
-    .map(x => (x.length == 1 ? `0${x}` : x))
+    .map((x) => (x.length == 1 ? `0${x}` : x))
     .join("");
 
-const parseDate = dateString => {
+const parseDate = (dateString) => {
   var year = dateString.substring(0, 4);
   var month = dateString.substring(4, 6);
   var day = dateString.substring(6, 8);
@@ -24,7 +24,7 @@ const parseDate = dateString => {
 
 function getCal() {
   let events = [];
-  doc.map(event => {
+  doc.map((event) => {
     if (!event.active) return;
 
     let d = parseDate(loadYAMLDate(event.date_from));

@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
-const Index = props => (
+const Index = (props) => (
   <div>
     <Head>
       <title>Kontakty - Trainera s.r.o.</title>

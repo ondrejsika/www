@@ -5,7 +5,7 @@ import Recommendation from "@app/course-landing/components/Recommendation";
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import recommendation_file from "@app/data/training/recommendations/recommendations.yaml";
 
-export const TwitterLinkedin = props => (
+export const TwitterLinkedin = (props) => (
   <Article title="Doporučení z Twiteru a LinkedInu">
     <div className="row">
       <div className="col-6">

@@ -34,7 +34,7 @@ const DropIcon = styled.img`
 const Margin = styled.div`
   padding: 2em 0;
 `;
-const Sessions = props => {
+const Sessions = (props) => {
   const [showNextSession, setNextSession] = useState(false);
   const handleShow = () => setNextSession(true);
   const handleClose = () => setNextSession(false);

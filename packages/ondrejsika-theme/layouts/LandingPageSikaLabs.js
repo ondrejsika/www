@@ -9,7 +9,7 @@ const A = styled.a`
   text-decoration: underline;
 `;
 
-const LandingPage = props => (
+const LandingPage = (props) => (
   <BaseLandingPage
     site={props.site}
     hideTrainingSection={true}

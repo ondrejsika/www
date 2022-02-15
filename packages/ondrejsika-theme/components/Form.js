@@ -2,7 +2,7 @@ import React from "react";
 import Former2 from "@app/common/components/Former2";
 import site from "@app/ondrej-sika.cz/config";
 
-const Form = props => (
+const Form = (props) => (
   <div id="form">
     <Former2 site={site} name="Course inquiry" redirect_path="/odeslano">
       <input type="hidden" value={props.course} name="course" />

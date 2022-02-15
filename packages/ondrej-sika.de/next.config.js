@@ -2,7 +2,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   trailingSlash: true,
-  webpack: function(config) {
+  webpack: function (config) {
     config.plugins.push(
       new CopyPlugin([
         {
@@ -20,7 +20,7 @@ module.exports = {
       ])
     );
     return config;
-  },
+  }
 };
 
 const withTM = require("next-transpile-modules")([
@@ -28,7 +28,7 @@ const withTM = require("next-transpile-modules")([
   "@app/ondrejsika-singlepage",
   "@app/common",
   "@app/course-landing",
-  "@app/data",
+  "@app/data"
 ]);
 module.exports = withTM(module.exports);
 

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const parseDate = dateString => {
+const parseDate = (dateString) => {
   var year = dateString.substring(0, 4);
   var month = dateString.substring(4, 6);
   var day = dateString.substring(6, 8);
@@ -22,7 +22,7 @@ function formatDate(date) {
   return [year, month, day].join("");
 }
 
-const AddToGoogleCalendar = props => {
+const AddToGoogleCalendar = (props) => {
   let name = props.name;
   let from = props.from;
 

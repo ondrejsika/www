@@ -1,6 +1,6 @@
 import React from "react";
 
-export default props => {
+export default (props) => {
   return props.links.map((link, i) => {
     let name = link[0];
     let url = link[1];

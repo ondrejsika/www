@@ -7,13 +7,13 @@ const Li = styled.li`
   list-style: none;
   padding: 1em 1em 0 0em;
   :after {
-    ${props =>
+    ${(props) =>
       props.grey &&
       css`
         color: #c8bfb0;
         content: "▲";
       `}
-    ${props =>
+    ${(props) =>
       props.fullBlue &&
       css`
         color: #141480 !important;
@@ -38,7 +38,7 @@ const Datum = styled.p`
   color: #131480;
   font-size: 20px;
 `;
-const Point = props => (
+const Point = (props) => (
   <>
     <Width>
       <Li white={props.white} fullBlue={props.fullBlue}>

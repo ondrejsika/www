@@ -1,5 +1,5 @@
 import React from "react";
-const Translate = props => {
+const Translate = (props) => {
   return <>{props[props.lang] || (props.default && props[props.default])}</>;
 };
 

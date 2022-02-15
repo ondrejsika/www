@@ -6,7 +6,7 @@ import Background from "@app/ondrejsika-theme/components/lp/LP-background";
 import BlogBox from "@app/ondrejsika-theme/components/BlogBox";
 import Head from "next/head";
 
-const ArticleLayout = props => {
+const ArticleLayout = (props) => {
   let trainingButtonLink = null;
   let trainingButtonText = null;
 

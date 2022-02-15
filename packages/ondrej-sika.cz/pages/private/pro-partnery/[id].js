@@ -1,7 +1,7 @@
 import React from "react";
 import CourseForPartnersDD from "@app/ondrejsika-theme/layouts/CourseForPartnersDD";
 
-const Page = props => (
+const Page = (props) => (
   <CourseForPartnersDD
     site={props.site}
     course_id={props.course_id}
@@ -10,7 +10,7 @@ const Page = props => (
   />
 );
 
-Page.getInitialProps = async function(context) {
+Page.getInitialProps = async function (context) {
   return { course_id: context.query.id };
 };
 

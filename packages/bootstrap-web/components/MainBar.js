@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainBar = props => (
+const MainBar = (props) => (
   <div>
     <div className="bar-grey">
       <div className="container pt-4 pb-4">

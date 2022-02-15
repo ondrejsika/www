@@ -4,7 +4,7 @@ const fs = require("fs");
 
 module.exports = {
   trailingSlash: true,
-  exportPathMap: function(defaultPathMap) {
+  exportPathMap: function (defaultPathMap) {
     try {
       // remove default session page render (without session)
       delete defaultPathMap["/verejne-terminy/[id]"];
@@ -12,7 +12,7 @@ module.exports = {
       var sessions = yaml.safeLoad(
         fs.readFileSync("../data/training/sessions.yml", "utf8")
       );
-      sessions.forEach(function(session) {
+      sessions.forEach(function (session) {
         defaultPathMap[`/verejne-terminy/${session.id}`] = {
           page: "/verejne-terminy/[id]",
           query: { id: session.id }
@@ -24,7 +24,7 @@ module.exports = {
 
     return defaultPathMap;
   },
-  webpack: function(config) {
+  webpack: function (config) {
     config.plugins.push(
       new CopyPlugin([
         {
@@ -42,7 +42,7 @@ module.exports = {
       ])
     );
     return config;
-  },
+  }
 };
 
 const withTM = require("next-transpile-modules")([
@@ -50,7 +50,7 @@ const withTM = require("next-transpile-modules")([
   "@app/ondrejsika-singlepage",
   "@app/common",
   "@app/course-landing",
-  "@app/data",
+  "@app/data"
 ]);
 module.exports = withTM(module.exports);
 

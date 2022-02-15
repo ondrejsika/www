@@ -12,7 +12,7 @@ const FontSize = styled.div`
     font-size: 24px;
   }
 `;
-const Page404 = props => (
+const Page404 = (props) => (
   <>
     <Head>
       <title>

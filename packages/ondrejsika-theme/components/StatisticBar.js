@@ -5,7 +5,7 @@ import styled from "styled-components";
 const TriangleBottomRight = styled.div`
   width: 100%;
   height: 80px;
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.SECONDARY) || "grey"};
   clip-path: polygon(-1px 100%, 100% -1px, 100% 100%);
   margin-bottom: -1px;
@@ -14,7 +14,7 @@ const TriangleBottomRight = styled.div`
 const TriangleTopLeft = styled.div`
   width: 100%;
   height: 80px;
-  background: ${props =>
+  background: ${(props) =>
     (props.site && props.site.colors && props.site.colors.SECONDARY) || "grey"};
   clip-path: polygon(-1px 100%, 100% -1px, -1px -1px);
   @media (max-width: 600px) {
@@ -23,7 +23,7 @@ const TriangleTopLeft = styled.div`
 `;
 
 const Background = styled.div`
-  background-color: ${props =>
+  background-color: ${(props) =>
     (props.site && props.site.colors && props.site.colors.SECONDARY) || "grey"};
   @media (max-width: 600px) {
     display: none;
@@ -40,7 +40,7 @@ const Text = styled.p`
   font-weight: bolder;
 `;
 
-const StatisticBar = props => (
+const StatisticBar = (props) => (
   <>
     {props.showBothDiagonalBackground && (
       <TriangleBottomRight site={props.site} />

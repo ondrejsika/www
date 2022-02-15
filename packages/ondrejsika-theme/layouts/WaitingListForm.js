@@ -3,9 +3,9 @@ import { useForm } from "react-hook-form";
 import fetch from "isomorphic-unfetch";
 import Router from "next/router";
 
-const SessionRegisterForm = props => {
+const SessionRegisterForm = (props) => {
   const { handleSubmit, register } = useForm();
-  const onSubmit = values => {
+  const onSubmit = (values) => {
     let data = {
       course_slug: props.course_slug,
       email: values.email
@@ -18,7 +18,7 @@ const SessionRegisterForm = props => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(data)
-    }).then(res => {
+    }).then((res) => {
       console.log(res);
       if (res.status == 200) Router.push("/odeslano");
       else Router.push("/odeslano-chyba");

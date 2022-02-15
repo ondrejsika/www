@@ -3,7 +3,7 @@ import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 import Head from "next/head";
 
-const Index = props => (
+const Index = (props) => (
   <div>
     <Head>
       <title>Upcoming Sessions - Ondrej Sika</title>

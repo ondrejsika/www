@@ -1,6 +1,6 @@
 import React from "react";
 
-const Gauges = props => (
+const Gauges = (props) => (
   <script
     type="text/javascript"
     dangerouslySetInnerHTML={{

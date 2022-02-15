@@ -23,7 +23,7 @@ const Li = styled.li`
   text-transform: uppercase;
 `;
 
-const getCourse = course_id => {
+const getCourse = (course_id) => {
   let db = new StaticDB();
   db.add("courses", courses_data);
   db.add("lecturers", lecturers_data);
@@ -34,7 +34,7 @@ const getCourse = course_id => {
   return course;
 };
 
-const getRecommendationsByLecturer = lecturer_id => {
+const getRecommendationsByLecturer = (lecturer_id) => {
   let db = new StaticDB();
   db.add("recommendations", recommendations_data);
   db.setCursor("recommendations");
@@ -43,7 +43,7 @@ const getRecommendationsByLecturer = lecturer_id => {
   return recommendations;
 };
 
-const Lecturer = props => (
+const Lecturer = (props) => (
   <>
     <Head>
       <title>{props.name} - lektor</title>

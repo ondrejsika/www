@@ -33,7 +33,7 @@ const Wrapper = styled.div`
   padding-top: 1em;
 `;
 
-const getCourse = course_id => {
+const getCourse = (course_id) => {
   let db = new StaticDB();
   db.add("courses", courses_data);
   db.add("lecturers", lecturers_data);
@@ -44,7 +44,7 @@ const getCourse = course_id => {
   return course;
 };
 
-const getRecommendationsByCourse = course_id => {
+const getRecommendationsByCourse = (course_id) => {
   let db = new StaticDB();
   db.add("recommendations", recommendations_data);
   db.setCursor("recommendations");
@@ -53,7 +53,7 @@ const getRecommendationsByCourse = course_id => {
   return recommendations;
 };
 
-const Course = props => {
+const Course = (props) => {
   let course_id = props.course_id;
   let course = getCourse(course_id);
 

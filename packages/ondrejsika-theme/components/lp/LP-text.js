@@ -5,7 +5,7 @@ const Text = styled.p`
   font: Regular IBM Plex Sans;
   font-size: 1em;
   letter-spacing: 0px;
-  ${props =>
+  ${(props) =>
     props.white &&
     css`
       color: white;

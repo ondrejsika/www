@@ -2,7 +2,7 @@ import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 
-const TweetWrapper = props => (
+const TweetWrapper = (props) => (
   <div
     className="mb-3 mr-3"
     style={{ display: "inline-block", verticalAlign: "top" }}

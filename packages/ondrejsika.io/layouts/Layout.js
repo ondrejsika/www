@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@app/knuth-theme/layouts/Layout";
 import Gauges from "@app/common/components/Gauges";
 
-export default props => (
+export default (props) => (
   <Layout
     site_name="ondrejsika.io"
     site_footer="2020 (c) Ondrej Sika"

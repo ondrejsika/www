@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-let Layout = props => {
+let Layout = (props) => {
   if (props.site.gtm_id) gtm_init(props.site.gtm_id);
 
   if (props.site.sentry_dsn)

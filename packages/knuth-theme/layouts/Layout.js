@@ -10,7 +10,7 @@ import Font from "@app/computer-modern-typewriter-light";
 
 import Header from "../components/Header";
 
-export default props => {
+export default (props) => {
   let site_name = props.site_name;
   let menu_links = props.menu_links;
   let site_footer = props.site_footer;

@@ -17,7 +17,7 @@ import AboutLecturer from "@app/ondrejsika-theme/components/AboutLecturer";
 import CourseInquiryForm from "@app/ondrejsika-theme/layouts/CourseInquiryForm";
 import ConvinceYourBoss from "@app/ondrejsika-theme/components/ConvinceYourBoss";
 
-const Course = props => (
+const Course = (props) => (
   <div>
     <Head>
       <title>

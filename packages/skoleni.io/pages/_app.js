@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Layout = props => <div>{props.children}</div>;
+const Layout = (props) => <div>{props.children}</div>;
 
 class MyApp extends App {
   render() {

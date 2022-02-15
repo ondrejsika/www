@@ -4,7 +4,7 @@ import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions"
 
 import Head from "next/head";
 
-const Index = props => (
+const Index = (props) => (
   <div>
     <Head>
       <title>Public Sessions - Trainera.de</title>

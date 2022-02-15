@@ -7,7 +7,7 @@ import Markdown from "@app/common/components/Markdown";
 
 let speaker_image = "https://static.sika.io/files/photos/ondrejsika4.jpg";
 
-let Page = props => (
+let Page = (props) => (
   <Article title="Talks &amp; Workshops, I Can Do on Your Event">
     <ul>
       <li>

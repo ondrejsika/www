@@ -49,7 +49,7 @@ const Header = styled.h3`
   text-align: center;
 `;
 
-const Team = props => (
+const Team = (props) => (
   <>
     {props.teamMembersHeader && props.teamMembers && (
       <>

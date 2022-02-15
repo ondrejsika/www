@@ -10,7 +10,7 @@ const Lecturer = styled.span`
 
 const H3 = styled.h3``;
 
-const Header = props => (
+const Header = (props) => (
   <>
     <Container>
       <p>

@@ -5,7 +5,7 @@ import FooterBar from "@app/meetup-theme/components/FooterBar";
 import HeaderLarge from "@app/meetup-theme/components/HeaderLarge";
 import Section from "@app/meetup-theme/components/Section";
 
-const MeetupPage = props => {
+const MeetupPage = (props) => {
   return (
     <div>
       <Head>

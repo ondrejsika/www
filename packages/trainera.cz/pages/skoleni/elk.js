@@ -2,7 +2,7 @@ import React from "react";
 import Course from "@app/ondrejsika-theme/layouts/Course";
 import logo from "@app/data/pictures/courses/elk-color.png";
 
-const Page = props => (
+const Page = (props) => (
   <Course
     site={props.site}
     course_id="react"

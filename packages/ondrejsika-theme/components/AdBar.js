@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@app/ondrejsika-theme/components/Button";
 
-const AdBar = props => {
+const AdBar = (props) => {
   let ads = {
     git: {
       about: "Git",

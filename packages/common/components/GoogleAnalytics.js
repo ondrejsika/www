@@ -1,6 +1,6 @@
 import React from "react";
 
-const GoogleAnalytics = props => (
+const GoogleAnalytics = (props) => (
   <script
     type="text/javascript"
     dangerouslySetInnerHTML={{

@@ -38,7 +38,7 @@ const Number = styled.div`
   font-size: 2em;
 `;
 
-const Box = props => {
+const Box = (props) => {
   return (
     <Flex>
       <Header>{props.header}</Header>

@@ -2,7 +2,7 @@ import React from "react";
 import Former2 from "@app/common/components/Former2";
 import site from "@app/sika-kaplan.com/config";
 
-const Footer = props => (
+const Footer = (props) => (
   <div>
     <div className="footer mt-4">
       <div className="container pt-4 pb-4">

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default props => (
+export default (props) => (
   <div className="container section mb-3">
     <h2>{props.heading}</h2>
     <div>{props.children}</div>

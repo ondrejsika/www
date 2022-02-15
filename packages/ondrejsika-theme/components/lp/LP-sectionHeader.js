@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 const Wrapper = styled.div`
   padding: 4em 0;
-  ${props =>
+  ${(props) =>
     props.tight &&
     css`
       padding: 3em 0 2em 0;
@@ -18,14 +18,14 @@ const Header = styled.h3`
   box-sizing: border-box;
   display: inline;
   text-transform: uppercase;
-  ${props =>
+  ${(props) =>
     props.white &&
     css`
       color: white;
     `}
 `;
 
-const SectionHeader = props => (
+const SectionHeader = (props) => (
   <>
     <Wrapper tight={props.tight}>
       <Header white={props.white}>{props.children}</Header>

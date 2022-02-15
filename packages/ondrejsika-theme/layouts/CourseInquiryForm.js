@@ -10,9 +10,9 @@ import Translate from "@app/common/components/Translate";
 
 const recaptchaRef = React.createRef();
 
-const CourseInquiryForm = props => {
+const CourseInquiryForm = (props) => {
   const { handleSubmit, register, errors } = useForm();
-  const onSubmit = values => {
+  const onSubmit = (values) => {
     let data = {
       course_slug: props.course_slug,
       recaptcha: recaptchaRef.current.getValue(),
@@ -31,7 +31,7 @@ const CourseInquiryForm = props => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(data)
-    }).then(res => {
+    }).then((res) => {
       console.log(res);
       if (res.status == 200) Router.push("/odeslano");
       else Router.push("/odeslano-chyba");

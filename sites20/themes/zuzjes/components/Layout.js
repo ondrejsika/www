@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Layout = props => (
+const Layout = (props) => (
   <>
     <GlobalStyle />
     <Container>{props.children}</Container>

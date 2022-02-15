@@ -9,7 +9,7 @@ news_list.map((element, i) => {
 import twitter_recommendation_file from "@app/data/training/recommendations/twitter_recommendation.yml";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 
-let Page = props => {
+let Page = (props) => {
   let news = news_list[news_id_map[props.post_id]];
   return (
     <Article
@@ -40,7 +40,7 @@ let Page = props => {
   );
 };
 
-Page.getInitialProps = async function(context) {
+Page.getInitialProps = async function (context) {
   return { post_id: context.query.id };
 };
 

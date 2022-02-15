@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderLarge = props => (
+const HeaderLarge = (props) => (
   <div className="container headerlarge">
     <div className="text-center">
       {props.logo && <img src={props.logo.src} width="200" />}

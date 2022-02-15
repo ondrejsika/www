@@ -12,7 +12,7 @@ function get_by_id(id) {
   return db.get()[0];
 }
 
-let TwitterRecommendations = props => {
+let TwitterRecommendations = (props) => {
   let rec1 = props.ids[0];
   let rec2 = props.ids[1];
   let rec3 = props.ids[2];

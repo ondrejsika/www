@@ -4,7 +4,7 @@ import lecturers_yaml from "@app/data/skoleni.io/lecturers.yml";
 import courses_yaml from "@app/data/skoleni.io/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
-const LecturerDD = props => {
+const LecturerDD = (props) => {
   let lecturer_id = props.lecturer_id;
 
   let db = new StaticDB();

@@ -7,7 +7,7 @@ import Link from "@app/skoleni.io/components/MyLink";
 const Wrapper = styled.div`
   margin-bottom: 10em;
 `;
-const OurTeam = props => (
+const OurTeam = (props) => (
   <Wrapper>
     <Container>
       {props.lecturers.map((lecturer, i) => (

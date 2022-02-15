@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Layout from "@app/bootstrap-theme/layouts/Layout";
 
-export default props => (
+export default (props) => (
   <Layout>
     <Head>
       <link

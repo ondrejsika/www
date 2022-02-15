@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-let Header = props => {
+let Header = (props) => {
   let site_name = props.site_name;
   let menu_links = props.menu_links;
   return (
