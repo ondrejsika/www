@@ -151,7 +151,7 @@ const BaseLandingPage = props => {
         <title>{props.title}</title>
       </Head>
       <FloatingBtn href={`mailto:${props.mainEmail || "ondrej@sika.io"}`}>
-        <FloatingSvg src={mail_grey} />
+        <FloatingSvg src={mail_grey.src} />
       </FloatingBtn>
       <Background blue paddingBottom="0">
         <Container>
@@ -227,7 +227,7 @@ const BaseLandingPage = props => {
                     href="https://calendly.com/ondrejsika/evening-call"
                     className="mb-3"
                   >
-                    <IconBtn padding_right src={phone} className="mb-1" />
+                    <IconBtn padding_right src={phone.src} className="mb-1" />
                     <B>{props.call}</B>
                   </InquiryButton>
                 </ButtonGroup>
@@ -240,7 +240,7 @@ const BaseLandingPage = props => {
                     href="mailto:ondrej@sika.io"
                     className="mb-3"
                   >
-                    <IconBtn padding_right src={mail_grey} className="mb-1" />
+                    <IconBtn padding_right src={mail_grey.src} className="mb-1" />
                     <B>{props.email}</B>
                   </InquiryButton>
                 </ButtonGroup>
