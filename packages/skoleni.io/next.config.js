@@ -3,7 +3,7 @@ const yaml = require("js-yaml");
 const fs = require("fs");
 
 module.exports = {
-  exportTrailingSlash: true,
+  trailingSlash: true,
   exportPathMap: function(defaultPathMap) {
     // remove default lecturer render (without post)
     delete defaultPathMap["/lektor/[id]"];

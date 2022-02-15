@@ -6,7 +6,7 @@ module.exports = {
   env: {
     TRAININGCRM_URL: process.env.TRAININGCRM_URL
   },
-  exportTrailingSlash: true,
+  trailingSlash: true,
   exportPathMap: function(defaultPathMap) {
     // remove default blog page render (without post)
     delete defaultPathMap["/blog/[id]"];
