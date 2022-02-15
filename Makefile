@@ -22,13 +22,11 @@ auto-update-sessions-yml-from-training-crm:
 	slu git if staged && git commit -m "[auto] content(data/training/sessions): Update sessions.yml from Training CRM" || echo No changes
 
 auto-ncu-update:
-	./node_modules/.bin/ncu -t patch
 	./node_modules/.bin/ncu -t patch -u
 	yarn
 	git add package.json yarn.lock
 	slu git if staged && git commit -m "[auto] deps: Upgrade patch versions of deps using ncu (npm-check-update)" || echo No changes
 
-	./node_modules/.bin/ncu -t minor
 	./node_modules/.bin/ncu -t minor -u
 	yarn
 	git add package.json yarn.lock
