@@ -13,7 +13,8 @@ import Twitter from "@app/data/pictures/social-networks/twitter_sq.svg";
 import Linkedin from "@app/data/pictures/social-networks/linkedin_sq.svg";
 
 // Imported CSS
-import "@app/ondrej-sika.cz/css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "../css/index.sass";
 
 const Hide = styled.div`
   @media (max-width: 600px) {
