@@ -108,7 +108,7 @@ const Card = props => {
             <H4>
               <span>{props.courseName}</span>
             </H4>
-            <Img src={props.courseImg} />
+            <Img src={props.courseImg.src} />
           </a>
         </Link>
       </Box>

@@ -29,7 +29,7 @@ const Header = props => (
             </div>
             <div className="col-md-3 ">
               <img
-                src={props.logoUrl}
+                src={props.logoUrl.src}
                 className="img-responsive d-none d-lg-block"
               />
             </div>

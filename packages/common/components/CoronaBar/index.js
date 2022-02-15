@@ -25,7 +25,7 @@ let KoronaBar = props => {
           <div className="container pt-3 pb-3">
             <div className="">
               <a href="#" className="close" onClick={() => setHideBar(true)}>
-                <img src={close} className="close" />
+                <img src={close.src} className="close" />
               </a>
             </div>
             <div className="text-center">

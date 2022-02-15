@@ -29,7 +29,7 @@ class References extends React.Component {
                 })()}
                 <div className="row p-3">
                   <div className="col-1 pt-2 d-none d-lg-block d-xl-block">
-                    <img src={img} className="img-fluid rounded-circle" />
+                    <img src={img.src} className="img-fluid rounded-circle" />
                   </div>
                   <div className="col-3">
                     <h4 className="pt-2">

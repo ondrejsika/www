@@ -87,7 +87,7 @@ const Page = () => {
           <Row>
             <Col md={2}>
               <img
-                src={devops}
+                src={devops.src}
                 className="pt-md-5 img-fluid"
                 style={{ height: "280px" }}
               />
@@ -101,7 +101,7 @@ const Page = () => {
               </MainTitle>
             </Col>
             <Col lg={4}>
-              <Img src={ondrej_chair} />
+              <Img src={ondrej_chair.src} />
             </Col>
           </Row>
         </Container>

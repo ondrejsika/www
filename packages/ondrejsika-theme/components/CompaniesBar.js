@@ -57,19 +57,19 @@ const CompaniesBar = props => (
           kb,
           cgi,
           homecredit,
-          cznic,
+          cznic.src,
           konica_minolta,
           eltodo
         ].map((img, i) => (
           <div key={i} className="col-lg-2 col-md-2 col-sm-4 col-4 p-3">
-            <img src={img} className="img-fluid bw" alt="default" />
+            <img src={img.src} className="img-fluid bw" alt="default" />
           </div>
         ))}
 
       {props.lang != "cs" &&
         [eon, storaenso, tmobile, dborse, generalli, cgi].map((img, i) => (
           <div key={i} className="col-lg-2 col-md-2 col-sm-4 col-4 p-3">
-            <img src={img} className="img-fluid bw" alt="default" />
+            <img src={img.src} className="img-fluid bw" alt="default" />
           </div>
         ))}
     </div>

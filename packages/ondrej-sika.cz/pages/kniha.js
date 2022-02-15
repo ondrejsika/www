@@ -24,7 +24,7 @@ const Install = props => (
     <div className="container pt-5 pb-4 ">
       <div className="row">
         <div className="col-lg-4">
-          <img src={img} className="img img-fluid pb-5" />
+          <img src={img.src} className="img img-fluid pb-5" />
         </div>
         <div className="col-lg-8 mb-5">
           <p className="h2">
