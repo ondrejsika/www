@@ -22,7 +22,7 @@ const Companies = () => (
     <Row>
       {[prusa, eon, kb, cznic, o2, SL, cs, zoot, cgi].map((img, i) => (
         <Col md={4} sm={4} xs={6} key={i}>
-          <Img src={img} className="img-fluid" alt="default" />
+          <Img src={img.src} className="img-fluid" alt="default" />
         </Col>
       ))}
     </Row>

@@ -58,7 +58,7 @@ const Team = props => (
           {props.teamMembers.map((teamMember, i) => (
             <GaplesCol xl={4} md={6} sm={6} xs={12} key={i}>
               <ImgWrapper>
-                <Img src={teamMember[0]} fluid />
+                <Img src={teamMember[0].src} fluid />
                 <H4>{teamMember[1]}</H4>
                 <H5>{teamMember[2]}</H5>
               </ImgWrapper>
@@ -72,7 +72,7 @@ const Team = props => (
       {props.mentors.map((mentor, i) => (
         <GaplesCol xl={3} md={6} sm={6} xs={12} key={i}>
           <ImgWrapper>
-            <Img src={mentor[0]} fluid />
+            <Img src={mentor[0].src} fluid />
             <H4>{mentor[1]}</H4>
             <H5>{mentor[2]}</H5>
           </ImgWrapper>

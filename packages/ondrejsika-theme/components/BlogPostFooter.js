@@ -7,7 +7,7 @@ const BlogPostFooter = props => {
   return (
     <Row className="pt-3 pb-2">
       <Col md={2}>
-        <img src={ondrejsika} className="img-fluid mb-3" />
+        <img src={ondrejsika.src} className="img-fluid mb-3" />
       </Col>
       <Col md={10}>
         <h4>Ondřej Šika</h4>

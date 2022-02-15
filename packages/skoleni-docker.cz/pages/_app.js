@@ -3,7 +3,7 @@ import App from "next/app";
 import site from "../config";
 
 // Imported CSS
-import "../css";
+// import "../css";
 
 class MyApp extends App {
   render() {

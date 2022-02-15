@@ -21,22 +21,22 @@ const MyClients = props => (
       </h3>
       <div className="d-flex row text-center pt-3 pb-3">
         <div className="col-lg-2 col-md-4 col-sm-4 col-6">
-          <img src={termo_fish} className="img-fluid" alt="default" />
+          <img src={termo_fish.src} className="img-fluid" alt="default" />
         </div>
         <div className="col-lg-2 col-md-4 col-sm-4 col-6">
-          <img src={aaa_auto} className="img-fluid" alt="default" />
+          <img src={aaa_auto.src} className="img-fluid" alt="default" />
         </div>
         <div className="col-lg-2 col-md-4 col-sm-4 col-6">
-          <img src={kb} className="img-fluid" alt="default" />
+          <img src={kb.src} className="img-fluid" alt="default" />
         </div>
         <div className="col-lg-2 col-md-4 col-sm-4 col-6">
-          <img src={fio} className="img-fluid" alt="default" />
+          <img src={fio.src} className="img-fluid" alt="default" />
         </div>
         <div className="col-lg-2 col-md-4 col-sm-4 col-6">
-          <img src={o2} className="img-fluid" alt="default" />
+          <img src={o2.src} className="img-fluid" alt="default" />
         </div>
         <div className="col-lg-2 col-md-4 col-sm-4 col-6">
-          <img src={ceska_pojistovna} className="img-fluid" alt="default" />
+          <img src={ceska_pojistovna.src} className="img-fluid" alt="default" />
         </div>
       </div>
     </div>

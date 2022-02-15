@@ -38,19 +38,19 @@ const TechnologyIcons = props => {
         <Img
           src={
             {
-              gitlab: gitlab_w,
-              docker: docker_w,
-              git: git_w,
-              terraform: terraform_w,
-              kubernetes: kubernetes_w,
-              prometheus: prometheus_tmp,
-              cloudflare: cloudflare_w,
-              "cloud-init": cloud_init_tmp,
-              rke: rke_tmp,
-              github: github_w,
-              skaffold: skaffold_w,
-              longhorn: longhorn_tmp,
-              argocd: argocd_w
+              gitlab: gitlab_w.src,
+              docker: docker_w.src,
+              git: git_w.src,
+              terraform: terraform_w.src,
+              kubernetes: kubernetes_w.src,
+              prometheus: prometheus_tmp.src,
+              cloudflare: cloudflare_w.src,
+              "cloud-init": cloud_init_tmp.src,
+              rke: rke_tmp.src,
+              github: github_w.src,
+              skaffold: skaffold_w.src,
+              longhorn: longhorn_tmp.src,
+              argocd: argocd_w.src
             }[props.icon]
           }
         />

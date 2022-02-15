@@ -26,7 +26,7 @@ const OurTeam = props => (
       {props.lecturers.map((lector, i) => (
         <Col md={2} xs={4} key={i}>
           <ImgWrapper>
-            <Img src={lector[0]} fluid />
+            <Img src={lector[0].src} fluid />
             <H4>{lector[1]}</H4>
           </ImgWrapper>
         </Col>

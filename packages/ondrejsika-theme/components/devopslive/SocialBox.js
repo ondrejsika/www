@@ -29,7 +29,7 @@ const SocialBox = props => (
       <FlexBox href={props.href} style={{ textDecoration: "none" }}>
         <Background>
           <Center>
-            <img src={props.icon} className="p-5" width="183" />
+            <img src={props.icon.src} className="p-5" width="183" />
           </Center>
           <h3>{props.header}</h3>
           <p>{props.text}</p>

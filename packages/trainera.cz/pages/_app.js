@@ -85,13 +85,13 @@ const Footer = (
           <Row>
             <ThemeFooter.A href="https://twitter.com/traineraio">
               <Icon>
-                <Img src={Twitter} />
+                <Img src={Twitter.src} />
               </Icon>
             </ThemeFooter.A>
             <br />
             <ThemeFooter.A href="https://www.linkedin.com/company/traineraio">
               <Icon>
-                <Img src={Linkedin} />
+                <Img src={Linkedin.src} />
               </Icon>
             </ThemeFooter.A>
           </Row>

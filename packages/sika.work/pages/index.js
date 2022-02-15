@@ -22,7 +22,7 @@ const Index = () => (
         <br />
         <a href="/resume.pdf">resume.pdf</a>
       </p>
-      <img src={img} height="400" />
+      <img src={img.src} height="400" />
     </div>
   </>
 );

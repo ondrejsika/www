@@ -105,7 +105,7 @@ const Page = props => {
             <TextFrame>
               <div className="text-center">
                 <img
-                  src={ondrejsika}
+                  src={ondrejsika.src}
                   className="img-fluid rounded-circle mb-3"
                   width="140"
                 />
