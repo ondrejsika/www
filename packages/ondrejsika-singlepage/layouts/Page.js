@@ -8,9 +8,6 @@ import LandingPage from "@app/ondrejsika-theme/layouts/LandingPage";
 import ContactSection from "@app/ondrejsika-singlepage/components/ContactSection";
 import Head from "next/head";
 
-// Imported CSS
-import "@app/ondrej-sika.cz/css";
-
 const Page = props => {
   const Navbar = (
     <ThemeNavbar

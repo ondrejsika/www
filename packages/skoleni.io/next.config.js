@@ -3,7 +3,7 @@ const yaml = require("js-yaml");
 const fs = require("fs");
 
 module.exports = {
-  exportTrailingSlash: true,
+  trailingSlash: true,
   exportPathMap: function(defaultPathMap) {
     // remove default lecturer render (without post)
     delete defaultPathMap["/lektor/[id]"];
@@ -80,17 +80,16 @@ module.exports = {
     );
     return config;
   },
-  transpileModules: ["@app"]
 };
 
-const withCSS = require("@zeit/next-css");
-module.exports = withCSS(module.exports);
-
-const withTM = require("next-transpile-modules");
+const withTM = require("next-transpile-modules")([
+  "@app/ondrejsika-theme",
+  "@app/ondrejsika-singlepage",
+  "@app/common",
+  "@app/course-landing",
+  "@app/data",
+]);
 module.exports = withTM(module.exports);
-
-const withImages = require("next-images");
-module.exports = withImages(module.exports);
 
 const withYAML = require("next-yaml");
 module.exports = withYAML(module.exports);

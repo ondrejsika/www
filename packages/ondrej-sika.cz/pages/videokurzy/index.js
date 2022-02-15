@@ -37,7 +37,7 @@ export default () => (
         <p className="text-center">
           Cena: <span>1000 CZK</span>
         </p>
-        <img src={docker} className="img-fluid" />
+        <img src={docker.src} className="img-fluid" />
         <div
           style={{
             position: "absolute",
@@ -58,7 +58,7 @@ export default () => (
         <p className="text-center">
           Cena: <span>1000 CZK</span>
         </p>
-        <img src={kubernetes} className="img-fluid" />
+        <img src={kubernetes.src} className="img-fluid" />
         <div
           style={{
             position: "absolute",
@@ -80,7 +80,7 @@ export default () => (
         <p className="text-center">
           Cena: <span>1000 CZK</span>
         </p>
-        <img src={terraform} className="img-fluid" />
+        <img src={terraform.src} className="img-fluid" />
         <div
           style={{
             position: "absolute",
@@ -102,7 +102,7 @@ export default () => (
         <p className="text-center">
           Cena: <span>1000 CZK</span>
         </p>
-        <img src={gitlabCi} className="img-fluid" />
+        <img src={gitlabCi.src} className="img-fluid" />
         <div
           style={{
             position: "absolute",

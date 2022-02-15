@@ -13,7 +13,8 @@ import Twitter from "@app/data/pictures/social-networks/twitter_sq.svg";
 import Linkedin from "@app/data/pictures/social-networks/linkedin_sq.svg";
 
 // Imported CSS
-import "@app/ondrej-sika.cz/css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "../css/index.sass";
 
 const Hide = styled.div`
   @media (max-width: 600px) {
@@ -85,13 +86,13 @@ const Footer = (
           <Row>
             <ThemeFooter.A href="https://twitter.com/traineraio">
               <Icon>
-                <Img src={Twitter} />
+                <Img src={Twitter.src} />
               </Icon>
             </ThemeFooter.A>
             <br />
             <ThemeFooter.A href="https://www.linkedin.com/company/traineraio">
               <Icon>
-                <Img src={Linkedin} />
+                <Img src={Linkedin.src} />
               </Icon>
             </ThemeFooter.A>
           </Row>

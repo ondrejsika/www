@@ -55,11 +55,11 @@ const Sessions = props => {
             <Col md={1}>
               {!showNextSession ? (
                 <span onClick={handleShow}>
-                  <DropIcon src={arrow} />
+                  <DropIcon src={arrow.src} />
                 </span>
               ) : (
                 <span onClick={handleClose}>
-                  <DropIcon src={close} />
+                  <DropIcon src={close.src} />
                 </span>
               )}
             </Col>
@@ -79,11 +79,11 @@ const Sessions = props => {
               <Col md={1}>
                 {!showNextSession ? (
                   <span onClick={handleShow}>
-                    <DropIcon src={arrow} />
+                    <DropIcon src={arrow.src} />
                   </span>
                 ) : (
                   <span onClick={handleClose}>
-                    <DropIcon src={close} />
+                    <DropIcon src={close.src} />
                   </span>
                 )}
               </Col>

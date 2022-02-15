@@ -38,19 +38,19 @@ const TechnologyIcons = props => {
         <Img
           src={
             {
-              gitlab: gitlab_w,
-              docker: docker_w,
-              git: git_w,
-              terraform: terraform_w,
-              kubernetes: kubernetes_w,
-              prometheus: prometheus_tmp,
-              cloudflare: cloudflare_w,
-              "cloud-init": cloud_init_tmp,
-              rke: rke_tmp,
-              github: github_w,
-              skaffold: skaffold_w,
-              longhorn: longhorn_tmp,
-              argocd: argocd_w
+              gitlab: gitlab_w.src,
+              docker: docker_w.src,
+              git: git_w.src,
+              terraform: terraform_w.src,
+              kubernetes: kubernetes_w.src,
+              prometheus: prometheus_tmp.src,
+              cloudflare: cloudflare_w.src,
+              "cloud-init": cloud_init_tmp.src,
+              rke: rke_tmp.src,
+              github: github_w.src,
+              skaffold: skaffold_w.src,
+              longhorn: longhorn_tmp.src,
+              argocd: argocd_w.src
             }[props.icon]
           }
         />
@@ -59,19 +59,19 @@ const TechnologyIcons = props => {
         <Img
           src={
             {
-              gitlab: gitlab_b,
-              docker: docker_b,
-              git: git_b,
-              terraform: terraform_b,
-              kubernetes: kubernetes_b,
-              prometheus: prometheus_tmp,
-              cloudflare: cloudflare_b,
-              "cloud-init": cloud_init_tmp,
-              rke: rke_tmp,
-              github: github_b_tmp,
-              skaffold: skaffold_tmp,
-              longhorn: longhorn_tmp,
-              argocd: argocd_tmp
+              gitlab: gitlab_b.src,
+              docker: docker_b.src,
+              git: git_b.src,
+              terraform: terraform_b.src,
+              kubernetes: kubernetes_b.src,
+              prometheus: prometheus_tmp.src,
+              cloudflare: cloudflare_b.src,
+              "cloud-init": cloud_init_tmp.src,
+              rke: rke_tmp.src,
+              github: github_b_tmp.src,
+              skaffold: skaffold_tmp.src,
+              longhorn: longhorn_tmp.src,
+              argocd: argocd_tmp.src
             }[props.icon]
           }
         />

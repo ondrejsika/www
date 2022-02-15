@@ -27,7 +27,7 @@ export default function InvitePage() {
           </p>
         </div>
         <div className="col-4">
-          <img src={martin} className="img-fluid" />
+          <img src={martin.src} className="img-fluid" />
         </div>
       </div>
     </Article>

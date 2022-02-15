@@ -10,7 +10,7 @@ const TextFrameWithImage = props => (
             <p className="align-middle">{props.children}</p>
           </div>
           <div className="col-2 d-none d-lg-block">
-            <img src={props.imgUrl} className="img-fluid rounded-circle" />
+            <img src={props.imgUrl.src} className="img-fluid rounded-circle" />
           </div>
         </div>
       </div>

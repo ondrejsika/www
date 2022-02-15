@@ -10,7 +10,9 @@ import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
 import Button from "@app/ondrejsika-theme/components/Button";
 
 // Imported CSS
-import "@app/ondrej-sika.cz/css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "../css/index.sass";
+
 
 const Hide = styled.div`
   @media (max-width: 600px) {

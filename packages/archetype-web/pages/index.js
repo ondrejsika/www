@@ -1,5 +1,5 @@
 import React from "react";
-import "../css";
+// import "../css";
 import Footer from "@app/archetype-theme/components/Footer";
 import Alert from "@app/archetype-theme/components/Alert";
 import Person from "@app/archetype-theme/components/Person";

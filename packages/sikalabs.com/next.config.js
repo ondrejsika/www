@@ -4,7 +4,7 @@ module.exports = {
   env: {
     TRAININGCRM_URL: process.env.TRAININGCRM_URL
   },
-  exportTrailingSlash: true,
+  trailingSlash: true,
   exportPathMap: function(defaultPathMap) {
     return defaultPathMap;
   },

@@ -11,7 +11,7 @@ const TextWithImg = props => (
         <p>{props.children}</p>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-9 col-9">
-        <img src={props.image || image} className="img-fluid img-size-90" />
+        <img src={props.image.src || image.src} className="img-fluid img-size-90" />
       </div>
     </div>
   </div>

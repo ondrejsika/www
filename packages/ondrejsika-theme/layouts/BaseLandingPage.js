@@ -151,7 +151,7 @@ const BaseLandingPage = props => {
         <title>{props.title}</title>
       </Head>
       <FloatingBtn href={`mailto:${props.mainEmail || "ondrej@sika.io"}`}>
-        <FloatingSvg src={mail_grey} />
+        <FloatingSvg src={mail_grey.src} />
       </FloatingBtn>
       <Background blue paddingBottom="0">
         <Container>
@@ -167,7 +167,7 @@ const BaseLandingPage = props => {
               </div> */}
             </Col>
             <Col lg={5}>
-              <Img src={ondrej_chair} />
+              <Img src={ondrej_chair.src} />
             </Col>
           </Row>
         </Container>
@@ -205,7 +205,7 @@ const BaseLandingPage = props => {
           <Section>
             <Row>
               <Col md={6}>
-                <Img src={ondrej_training} />
+                <Img src={ondrej_training.src} />
               </Col>
               <Col md={6}>
                 <Center>
@@ -227,7 +227,7 @@ const BaseLandingPage = props => {
                     href="https://calendly.com/ondrejsika/evening-call"
                     className="mb-3"
                   >
-                    <IconBtn padding_right src={phone} className="mb-1" />
+                    <IconBtn padding_right src={phone.src} className="mb-1" />
                     <B>{props.call}</B>
                   </InquiryButton>
                 </ButtonGroup>
@@ -240,7 +240,7 @@ const BaseLandingPage = props => {
                     href="mailto:ondrej@sika.io"
                     className="mb-3"
                   >
-                    <IconBtn padding_right src={mail_grey} className="mb-1" />
+                    <IconBtn padding_right src={mail_grey.src} className="mb-1" />
                     <B>{props.email}</B>
                   </InquiryButton>
                 </ButtonGroup>
@@ -273,7 +273,7 @@ const BaseLandingPage = props => {
               overflowX: "hidden"
             }}
           >
-            <img src={ondrej_mac} style={{ height: "800px", zIndex: "2" }} />
+            <img src={ondrej_mac.src} style={{ height: "800px", zIndex: "2" }} />
           </Col>
         </Background>
       )}
@@ -282,7 +282,7 @@ const BaseLandingPage = props => {
           <Section style={{ marginTop: "0" }}>
             <RoomyRow>
               <Col md={5} sm={12}>
-                <Img src={ondrej_table} />
+                <Img src={ondrej_table.src} />
               </Col>
               <Col md={7} sm={12} style={{ paddingLeft: "3em" }}>
                 <SectionHeader>{props.sectionWhyMeHeader}</SectionHeader>
@@ -342,7 +342,7 @@ const BaseLandingPage = props => {
               </PaddingTop>
             </Col>
             <Col md={5}>
-              <Img src={ondrej_consulting}></Img>
+              <Img src={ondrej_consulting.src}></Img>
             </Col>
             <Col md={12}>
               <Center>
@@ -381,7 +381,7 @@ const BaseLandingPage = props => {
               <HeaderBox big>
                 <H3 white>Máte zájem o moje služby?</H3>
                 <Button inverse huge href="mailto:ondrej@sika.io">
-                  {false && <img src={mail} />}
+                  {false && <img src={mail.src} />}
                   Napište mi
                 </Button>
               </HeaderBox>

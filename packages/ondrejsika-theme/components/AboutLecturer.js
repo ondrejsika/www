@@ -14,7 +14,7 @@ const AboutLecturer = props => (
   <Border>
     <div className="text-center p-3">
       <img
-        src={ondrejsika}
+        src={ondrejsika.src}
         className="img-fluid rounded-circle mb-3"
         width="140"
       />

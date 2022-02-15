@@ -111,7 +111,7 @@ const SessionDD = props => {
               </Col>
               <Col md={3}>
                 <img
-                  src={ondrejsika}
+                  src={ondrejsika.src}
                   className="img-fluid rounded-circle"
                   width="130"
                 />

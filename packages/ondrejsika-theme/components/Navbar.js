@@ -61,7 +61,7 @@ const Navbar = props => {
             </a>
             <Button data-toggle="collapse" data-target="#navbarNavDropdownaa">
               <HamburgerMenu>
-                <img src={hamburgerMenu} />
+                <img src={hamburgerMenu.src} />
               </HamburgerMenu>
             </Button>
             <div className="collapse navbar-collapse" id="navbarNavDropdownaa">
