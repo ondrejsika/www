@@ -9,8 +9,5 @@
     "build": "next build",
     "export": "next export",
     "static": "yarn run build && yarn run export"
-  },
-  "dependencies": {
-    "@app/course-landing": "^0.0.0"
   }
 }

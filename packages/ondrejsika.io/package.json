@@ -9,10 +9,5 @@
     "build": "next build",
     "export": "next export",
     "static": "yarn run build && yarn run export"
-  },
-  "dependencies": {
-    "@app/bootstrap-theme": "^0.0.0",
-    "@app/computer-modern-typewriter-light": "^0.0.0",
-    "next-fonts": "^0.19.0"
   }
 }

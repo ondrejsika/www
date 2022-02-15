@@ -4,8 +4,5 @@
   "version": "0.0.0",
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",
-  "license": "MIT",
-  "dependencies": {
-    "next-fonts": "^0.19.0"
-  }
+  "license": "MIT"
 }

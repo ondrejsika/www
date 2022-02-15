@@ -4,13 +4,5 @@
   "version": "0.0.0",
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",
-  "license": "MIT",
-  "dependencies": {
-    "@use-hook/use-cookie": "^0.1.4",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.0.0-beta.16",
-    "react-dom": "^16.12.0",
-    "react-hook-form": "^4.9.8",
-    "react-jsx-parser": "^1.23.0"
-  }
+  "license": "MIT"
 }

@@ -7,10 +7,5 @@
   "scripts": {
     "dev": "NODE_ENV=development node server.js",
     "static": "rm -rf ./out && node static.js"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "ics": "^2.18.0",
-    "js-yaml": "^3.13.1"
   }
 }

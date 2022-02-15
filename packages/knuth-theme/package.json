@@ -3,10 +3,5 @@
   "private": true,
   "version": "0.0.0",
   "author": "Ondrej Sika",
-  "author_email": "ondrej@ondrejsika.com",
-  "dependencies": {
-    "@app/course-landing": "^0.0.0",
-    "next-yaml": "^1.0.1",
-    "popper.js": "^1.16.0"
-  }
+  "author_email": "ondrej@ondrejsika.com"
 }
