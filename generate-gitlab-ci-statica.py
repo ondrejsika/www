@@ -23,6 +23,18 @@ SITES_DEV = [
     {"name": "ondrej-sika.cz", "deps": "ondrejsika_theme"},
     {"name": "sikalabs.com", "deps": "ondrejsika_theme"},
     {"name": "ondrej-sika.uk", "deps": "ondrejsika_singlepage"},
+
+    {"name": "skoleni-git.cz"},
+    {"name": "skoleni-docker.cz"},
+    {"name": "skoleni-kubernetes.cz"},
+    {"name": "skoleni-proxmox.cz"},
+    {"name": "skoleni-prometheus.cz"},
+    {"name": "skoleni-terraform.cz"},
+    {"name": "skoleni-git.cz"},
+    {"name": "skoleni-rancher.cz"},
+    {"name": "gitlab-ci.cz"},
+    {"name": "ansible-skoleni.cz"},
+    {"name": "skoleni.digitalocean.cz"},
 ]
 
 SITES_SITES20 = [
