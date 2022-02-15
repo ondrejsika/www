@@ -4,7 +4,7 @@ import Markdown from "@app/common/components/Markdown";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 import Head from "next/head";
-import site from "@app/archetype-web/config";
+import site from "@app/sika.io/config";
 import DevelopmentBar from "@app/common/components/DevelopmentBar";
 
 const Index = props => (
