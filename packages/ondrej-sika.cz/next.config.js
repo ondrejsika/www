@@ -3,7 +3,6 @@ const yaml = require("js-yaml");
 const fs = require("fs");
 
 module.exports = {
-  fileExtensions: ["jpg", "jpeg", "png", "gif"],
   env: {
     TRAININGCRM_URL: process.env.TRAININGCRM_URL
   },
@@ -116,27 +115,15 @@ module.exports = {
     );
     return config;
   },
-  disableStaticImages: true,
 };
-
-// const withCSS = require("@zeit/next-css");
-// module.exports = withCSS(module.exports);
-
-// const withSass = require("@zeit/next-sass");
-// module.exports = withSass(module.exports);
 
 const withTM = require("next-transpile-modules")([
   "@app/ondrejsika-theme",
-  "@app/archetype-theme",
-  "@app/bootstrap-theme",
   "@app/common",
   "@app/course-landing",
   "@app/data",
 ]);
 module.exports = withTM(module.exports);
-
-// const withImages = require("next-images");
-// module.exports = withImages(module.exports);
 
 const withYAML = require("next-yaml");
 module.exports = withYAML(module.exports);

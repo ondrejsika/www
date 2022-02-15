@@ -3,7 +3,8 @@ import App from "next/app";
 import site from "../config";
 
 // Imported CSS
-import "../css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "../css/index.sass";
 
 class MyApp extends App {
   render() {
