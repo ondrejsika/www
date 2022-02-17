@@ -1597,6 +1597,20 @@
 - active: true
   city: Prague
   country: cz
+  course_id: gitlab-ci
+  date_from: 03.10.2022
+  date_to: 03.10.2022
+  facebook_event: null
+  id: GitlabCI-2022-10-03
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
   course_id: docker
   date_from: 10.10.2022
   date_to: 11.10.2022
