@@ -111,7 +111,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.28.0",
     "now": "^16.7.0",
-    "npm-check-updates": "^12.3.0",
+    "npm-check-updates": "^12.3.1",
     "prettier": "2.5.1"
   },
   "dependencies": {
@@ -136,13 +136,13 @@
     "react-markdown": "^4.3.1",
     "react-twitter-embed": "^4.0.4",
     "next-fonts": "^1.5.1",
-    "@sentry/browser": "^6.17.8",
+    "@sentry/browser": "^6.17.9",
     "react-youtube": "^7.14.0",
     "bootstrap": "^4.6.1",
     "copy-webpack-plugin": "^5.1.2",
     "jquery": "^3.6.0",
     "js-yaml-loader": "^1.2.2",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "ics": "^2.35.0",
     "js-yaml": "^3.14.1"
   }
