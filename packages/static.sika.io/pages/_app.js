@@ -5,7 +5,7 @@ import site from "../config";
 import Layout from "../layouts/Layout";
 
 // Imported CSS
-import "../css";
+import "bootstrap-css-only/css/bootstrap.min.css";
 
 class MyApp extends App {
   constructor(...args) {

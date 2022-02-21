@@ -1,6 +1,5 @@
 import React from "react";
 
-import "../css";
 import Head from "next/head";
 import Markdown from "@app/common/components/Markdown";
 
