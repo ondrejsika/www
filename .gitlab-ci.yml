@@ -1,4 +1,5 @@
 stages:
+  - push-to-github
   - schedule1
   - schedule2
   - generate
@@ -6,6 +7,18 @@ stages:
 
 variables:
   GIT_CLEAN_FLAGS: -ffdx -e node_modules -e .yarn-cache
+
+push-to-github:
+  image: sikalabs/ci
+  stage: push-to-github
+  script:
+  - mkdir -p ~/.ssh
+  - cp $GITHUB_PUSH_SSH_KEY_PRIV ~/.ssh/id_rsa
+  - chmod 700 -R ~/.ssh
+  - ssh-keyscan github.com >> ~/.ssh/known_hosts
+  - git remote add github-$CI_PIPELINE_ID git@github.com:ondrejsika/www.git
+  - git push github-$CI_PIPELINE_ID $CI_COMMIT_SHA:$CI_COMMIT_BRANCH -f
+
 
 generate:
   stage: generate
@@ -16,6 +29,7 @@ generate:
       - .gitlab-ci.generated.yml
   except:
     - schedule
+  needs: []
 
 pipeline:
   stage: pipeline
@@ -26,6 +40,8 @@ pipeline:
     strategy: depend
   except:
     - schedule
+  needs:
+    - generate
 
 # statica deployments
 
@@ -38,6 +54,7 @@ generate-statica:
       - .gitlab-ci-statica.generated.yml
   except:
     - schedule
+  needs: []
 
 pipeline-statica:
   stage: pipeline
@@ -48,6 +65,8 @@ pipeline-statica:
     strategy: depend
   except:
     - schedule
+  needs:
+    - generate-statica
 
 # schedule jobs
 
