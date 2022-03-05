@@ -28,8 +28,7 @@ const LandingPage = (props) => (
             <BaseLandingPage.TextBeige>Ondrej Sika</BaseLandingPage.TextBeige>{" "}
             <br />
             and I will help you with{" "}
-            <BaseLandingPage.TextBeige>DevOps</BaseLandingPage.TextBeige>{" "}
-            pipeline.
+            <BaseLandingPage.TextBeige>DevOps</BaseLandingPage.TextBeige> stack.
           </>
         }
         cs={
