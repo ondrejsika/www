@@ -46,6 +46,22 @@ Aliases for \`ondrejsika4*\`
 - [ondrejsika_200px.jpg](/files/photos/ondrejsika_200px.jpg) - \`https://static.sika.io/files/photos/ondrejsika_200px.jpg\`
 - [ondrejsika_32px.jpg](/files/photos/ondrejsika_32px.jpg) - \`https://static.sika.io/files/photos/ondrejsika_32px.jpg\`
 - [ondrejsika_32px.png](/files/photos/ondrejsika_32px.png) - \`https://static.sika.io/files/photos/ondrejsika3_32px.png\`
+
+Ondrej Sika DevOps
+
+- [ondrejsikadevops1_blue_on_transparent.png](/files/logos/ondrejsikadevops1_blue_on_transparent.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_blue_on_transparent.png\`
+- [ondrejsikadevops1_blue_on_transparent_square.png](/files/logos/ondrejsikadevops1_blue_on_transparent_square.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_blue_on_transparent_square.png\`
+- [ondrejsikadevops1_blue_on_white.png](/files/logos/ondrejsikadevops1_blue_on_white.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_blue_on_white.png\`
+- [ondrejsikadevops1_blue_on_white_square.png](/files/logos/ondrejsikadevops1_blue_on_white_square.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_blue_on_white_square.png\`
+- [ondrejsikadevops1_color_on_transparent.png](/files/logos/ondrejsikadevops1_color_on_transparent.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_color_on_transparent.png\`
+- [ondrejsikadevops1_color_on_transparent_square.png](/files/logos/ondrejsikadevops1_color_on_transparent_square.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_color_on_transparent_square.png\`
+- [ondrejsikadevops1_color_on_white.png](/files/logos/ondrejsikadevops1_color_on_white.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_color_on_white.png\`
+- [ondrejsikadevops1_color_on_white_square.png](/files/logos/ondrejsikadevops1_color_on_white_square.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_color_on_white_square.png\`
+- [ondrejsikadevops1_white_on_blue.png](/files/logos/ondrejsikadevops1_white_on_blue.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_white_on_blue.png\`
+- [ondrejsikadevops1_white_on_blue_square.png](/files/logos/ondrejsikadevops1_white_on_blue_square.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_white_on_blue_square.png\`
+- [ondrejsikadevops1_white_on_transparent.png](/files/logos/ondrejsikadevops1_white_on_transparent.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_white_on_transparent.png\`
+- [ondrejsikadevops1_white_on_transparent_square.png](/files/logos/ondrejsikadevops1_white_on_transparent_square.png) - \`https://static.sika.io/files/logos/ondrejsikadevops1_white_on_transparent_square.png\`
+
 `}
       />
     </div>
