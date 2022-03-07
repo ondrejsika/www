@@ -519,7 +519,7 @@
   eventbrite: https://www.eventbrite.com/e/265217080427
   active: true
   title: "RKE2: Nový Rancher Kubernetes Engine"
-  date: "2. 3. 2022"
+  date: "16. 3. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -537,7 +537,7 @@
   eventbrite: https://www.eventbrite.com/e/274052918657
   active: true
   title: "Kind: Testovací multi-node clustery v Dockeru"
-  date: "16. 3. 2022"
+  date: "30. 3. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -554,7 +554,7 @@
   eventbrite:
   active: true
   title: "Helm: Tips & Tricks"
-  date: "30. 3. 2022"
+  date: "13. 4. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -572,7 +572,7 @@
   eventbrite:
   active: true
   title: "Ministack: OpenStack rychle a jednoduše"
-  date: "13. 4. 2022"
+  date: "27. 4. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -588,7 +588,7 @@
   eventbrite:
   active: true
   title: "IaC on Proxmox: Vytváříme infrastrukturu pomocí Proxmoxu, Terraformu a Packeru"
-  date: "27. 4. 2022"
+  date: "11. 5. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -606,7 +606,7 @@
   eventbrite:
   active: true
   title: "Dockerizace PHP aplikace"
-  date: "11. 5. 2022"
+  date: "25. 5. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -623,7 +623,7 @@
   eventbrite:
   active: true
   title: "Prometheus Operator"
-  date: "25. 5. 2022"
+  date: "8. 6. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -641,7 +641,7 @@
   eventbrite:
   active: true
   title: "Loki: Logy v Grafane"
-  date: 8.6. 2022"
+  date: ??.??. 2022"
   time: "19:00"
   youtube:
   about: |
