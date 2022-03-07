@@ -588,7 +588,7 @@
   eventbrite:
   active: true
   title: "IaC on Proxmox: Vytváříme infrastrukturu pomocí Proxmoxu, Terraformu a Packeru"
-  date: "11. 5. 2022"
+  date: "25. 5. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -606,7 +606,7 @@
   eventbrite:
   active: true
   title: "Dockerizace PHP aplikace"
-  date: "25. 5. 2022"
+  date: "8. 6. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -623,7 +623,7 @@
   eventbrite:
   active: true
   title: "Prometheus Operator"
-  date: "8. 6. 2022"
+  date: "7. 9. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -641,7 +641,7 @@
   eventbrite:
   active: true
   title: "Loki: Logy v Grafane"
-  date: ??.??. 2022"
+  date: 21.9. 2022"
   time: "19:00"
   youtube:
   about: |
