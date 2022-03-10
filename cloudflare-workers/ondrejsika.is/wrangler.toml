@@ -4,6 +4,7 @@ account_id = "8a5e13ad9edd5be4595027085cf61ce7"
 workers_dev = false
 route = "ondrejsika.is/*"
 zone_id = "e066bcb1a917dd60ad7454638429e52b"
+compatibility_date = "2022-03-10"
 
 [site]
 bucket = "../../packages/ondrejsika.is/out/"

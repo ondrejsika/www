@@ -4,6 +4,7 @@ account_id = "8a5e13ad9edd5be4595027085cf61ce7"
 workers_dev = false
 route = "skoleni.io/*"
 zone_id = "6ba2f1dc94f6d3f04ef8cb3f38f398b7"
+compatibility_date = "2022-03-10"
 
 [site]
 bucket = "../../packages/skoleni.io/out/"

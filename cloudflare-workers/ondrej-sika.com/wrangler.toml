@@ -4,6 +4,7 @@ account_id = "8a5e13ad9edd5be4595027085cf61ce7"
 workers_dev = false
 route = "ondrej-sika.com/*"
 zone_id = "c5705bb389c4c486cea7a1c9a7890acd"
+compatibility_date = "2022-03-10"
 
 [site]
 bucket = "../../packages/ondrej-sika.com/out/"

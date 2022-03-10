@@ -4,6 +4,7 @@ account_id = "a290be7c0d585e1151ca760b66b4f61b"
 workers_dev = false
 route = "trainera.cz/*"
 zone_id = "b42b71c978c4188dea55bb757f742777"
+compatibility_date = "2022-03-10"
 
 [site]
 bucket = "../../packages/trainera.cz/out/"
