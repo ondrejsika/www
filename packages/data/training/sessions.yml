@@ -1483,17 +1483,31 @@
   price: 8 900 CZK
   venue_id: null
 - active: true
-  city: Prague
+  city: Online
   country: cz
   course_id: proxmox
-  date_from: 09.05.2022
-  date_to: 09.05.2022
+  date_from: 03.05.2022
+  date_to: 03.05.2022
   facebook_event: null
-  id: proxmox-2022-05-09
+  id: proxmox-2022-05-03
   lang: cs
   length: 1 den
   linkedin_event: null
   name: Proxmox
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: gitlab-ci
+  date_from: 04.05.2022
+  date_to: 04.05.2022
+  facebook_event: null
+  id: GitlabCI-2022-05-04
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
   price: 8 900 CZK
   venue_id: null
 - active: true
