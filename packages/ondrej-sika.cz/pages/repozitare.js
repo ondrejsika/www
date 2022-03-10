@@ -11,13 +11,11 @@ const Page = () => (
 
 - Traefik proxy s Let's Encrypt pro Docker - https://github.com/ondrejsika/traefik-le
 - Docker Registry za Traefik proxy - https://github.com/ondrejsika/docker-registry-traefik
-- Ukazky ke [Skoleni Dockeru](/skoleni/docker) - https://github.com/ondrejsika/docker-training
 - HA Docker Cluster pomocí Swarmu a Cephu - https://github.com/ondrejsika/ha-docker-cluster-with-swarm-and-ceph
 
 
 ## Gitlab CI
 
-- [Skoleni Gitlab CI](/skoleni/gitlab-ci) - https://github.com/ondrejsika/gitlab-ci-training
 - Skripty na vytvoreni Gitlab Runneru v Dockeru (s Docker executorem) - https://github.com/ondrejsika/gitlab-ci-runner
 - Image \`ondrejsika/ci\` - https://github.com/ondrejsika/ondrejsika-ci-docker
 
@@ -28,7 +26,6 @@ const Page = () => (
 
 ## Kubernetes
 
-- [Skoleni Kubernetes](/skoleni/kubernetes) - https://github.com/ondrejsika/kubernetes-training
 - Jak nainstalovat Kubernetes na bare metal - https://github.com/ondrejsika/bare-metal-kubernetes
 - Kubernetes Ingress pomocí Traefiku - https://github.com/ondrejsika/kubernetes-ingress-traefik
 - Jednoduchy HELM balicek - https://github.com/ondrejsika/one-image-helm
@@ -67,13 +64,11 @@ const Page = () => (
 
 - Ukazkovy osobni web v Next.js a Reactu ([live](https://next-simple-website.ondrejsika.now.sh/)) - <https://github.com/ondrejsika/next-simple-website>
 - Ukazkovy web naseho psa Nely (pro React workshop) ([live](https://jsemnela.ondrejsika.now.sh/)) - https://github.com/ondrejsika/jsemnela
-- Skoleni Reactu (in progress) - https://github.com/ondrejsika/react-training
 - Ukazkovy React & Next.js projekt ke skoleni - https://github.com/ondrejsika/react-example
 - Repozitar mych webu (monorepo) v Next.js - https://github.com/ondrejsika/ondrejsikawebs
 
 ## Ansible
 
-- [Skoleni Ansible](/skoleni/ansible) - https://github.com/ondrejsika/ansible-training
 - Ukazka Ansible konfigurace v Monorepu - https://github.com/ondrejsika/example-ansible-monorepo
 - Docker Compose deployment pomocí Ansible - https://github.com/ondrejsika/ansible-docker-compose--example
 
