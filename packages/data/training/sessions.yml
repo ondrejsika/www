@@ -1541,6 +1541,20 @@
 - active: true
   city: Prague
   country: cz
+  course_id: cloudflare
+  date_from: 01.06.2022
+  date_to: 01.06.2022
+  facebook_event: null
+  id: Cloudflare-2022-06-01
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Cloudflare
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
   course_id: go
   date_from: 06.06.2022
   date_to: 07.06.2022
