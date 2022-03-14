@@ -1370,7 +1370,7 @@
   name: Cloudflare
   price: 8 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: rancher
