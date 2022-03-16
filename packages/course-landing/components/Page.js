@@ -19,8 +19,6 @@ import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import courses_file from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";
 
-import Ukraine from "@app/common/components/Ukraine";
-
 const Page = (props) => {
   let site = props.site;
   let lang = props.site.lang;
@@ -53,7 +51,6 @@ const Page = (props) => {
           rel="stylesheet"
         />
       </Head>
-      <Ukraine />
       <Navigation wide={true} location={site.location} />
       <Header
         wide={true}
