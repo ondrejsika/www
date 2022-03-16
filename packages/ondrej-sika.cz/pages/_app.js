@@ -9,8 +9,6 @@ import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
 import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
 import Button from "@app/ondrejsika-theme/components/Button";
 
-import Ukraine from "@app/common/components/Ukraine";
-
 // Imported CSS
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "../css/index.sass";
@@ -188,7 +186,6 @@ class MyApp extends App {
     pageProps.site = this.site;
     return (
       <>
-        <Ukraine />
         <Layout Navbar={Navbar} Footer={Footer} {...pageProps}>
           <Component lang={site.lang} {...pageProps} />
         </Layout>
