@@ -80,6 +80,10 @@ const Footer = (
             ondrej@sika.io
           </ThemeFooter.A>
           <br />
+          <ThemeFooter.A href="mailto:skoleni@sika.io">
+            skoleni@sika.io
+          </ThemeFooter.A>
+          <br />
           <ThemeFooter.A href="tel:+420773452376">
             +420 773 452 376
           </ThemeFooter.A>
