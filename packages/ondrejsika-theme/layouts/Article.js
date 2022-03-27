@@ -42,7 +42,7 @@ const ArticleLayout = (props) => {
           {!props.noBlogBoxContent && (
             <BlogBox>
               {props.children}
-
+              {props.before && props.before}
               {props.markdown && <Markdown source={props.markdown} />}
               {props.after && props.after}
             </BlogBox>
