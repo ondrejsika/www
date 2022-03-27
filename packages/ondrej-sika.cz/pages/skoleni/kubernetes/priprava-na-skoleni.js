@@ -23,6 +23,11 @@ Na školení Kubernetes je potřeba mít nainstalovaný:
 - \`helm\`
 - \`minikube\`
 
+Pokud chcete, muzete si nainstalovat tyto nastroje, ktere Vam ulehci praci:
+
+- \`slu\` - SikaLabs Utils - https://github.com/sikalabs/slu
+- \`training-cli\` - My training utils - https://github.com/ondrejsika/training-cli
+
 Návod na instalaci najdete v článku [Instalace Kubernetes pro lokální vývoj](/kubernetes/instalace).
 
 Po instalaci je dobré ověřit si zda minikube funguje:
