@@ -9,8 +9,8 @@ const Page = () => (
 Aby jste mohli pouzivat kubernetes lokalne, musite mit nainstalovane tyto nastroje:
 
 - __kubectl__ - Kubernetes client [oficialni navod na instalaci](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-- __helm__ - Kubernetes package manager (neni nutny) [oficialni navod na instalaci](https://github.com/helm/helm/blob/master/docs/install.md)
-- __minikube__ - Nastoj na vytvareni lokalnich Kubernernes clusteru ve virtualnich strojich [oficialni navod na instalaci](https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube)
+- __helm__ - Kubernetes package manager (neni nutny) [oficialni navod na instalaci](https://helm.sh/docs/intro/install/)
+- __minikube__ - Nastoj na vytvareni lokalnich Kubernernes clusteru ve virtualnich strojich [oficialni navod na instalaci](https://minikube.sigs.k8s.io/docs/start/#install-minikube)
 
 ## Mac
 
@@ -51,46 +51,17 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 
 Docs <https://helm.sh/docs/intro/install/>
 
-Pomoci package manageru snap:
-
-\`\`\`
-sudo snap install helm --classic
-\`\`\`
-
 Nebo:
 
 \`\`\`
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 \`\`\`
 
-### Minikube on Linux (Linux on host)
-
-Potrebujete [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
+### Minikube on Linux
 
 \`\`\`
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo cp minikube /usr/local/bin/ && rm minikube
 \`\`\`
-
-### Minikube on Linux (Linux in virtual machine)
-
-Pokud instalujete Kubernetes do virtualniho serveru, nepotrebujete (nemuzete) pouzit VirtualBox, muzete specifikovat VM driver none pri vytvareni Kubernetes clusteru.
-
-\`\`\`
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo cp minikube /usr/local/bin/ && rm minikube
-\`\`\`
-
-Spustte takto:
-
-\`\`\`
-minikube start --vm-driver=none
-\`\`\`
-
-### k3s (minimalistic kubernetes for Linux)
-
-Pokud nemuzete spustit __minikube__ (s VirtualBoxem nebo VM driverem none) nebo __microk8s__, muzete zkusit __k3s__.
-
-Vice informaci na <https://k3s.io/>
-
 
 ## Windows
 
