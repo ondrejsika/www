@@ -4,9 +4,18 @@ import Article from "@app/ondrejsika-theme/layouts/Article";
 const Page = () => (
   <Article
     title="Příprava na Školení Kubernetes"
+    before={
+      <div className="alert alert-warning mb-4">
+        <p className="mb-0">
+          Pokud se Vam nepovede neco nainstalovat, nevadi, udelame to spolu.
+          Pripadne mam pro kazdeho ucastnika pripravene VM kde je vse
+          pripraveno. Pokud mate jakykoliv dotaz, napiste mi email na:{" "}
+          <a href="mailto:ondrej@sika.io">ondrej@sika.io</a>.
+        </p>
+      </div>
+    }
     markdown={`
 Na školení Kubernetes je potřeba mít nainstalovaný:
-
 
 - Git
 - Textový editor (doporučuji VS Code)
