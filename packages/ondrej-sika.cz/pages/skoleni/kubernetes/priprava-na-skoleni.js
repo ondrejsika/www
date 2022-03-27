@@ -12,7 +12,7 @@ Na školení Kubernetes je potřeba mít nainstalovaný:
 - Textový editor (doporučuji VS Code)
 - \`kubectl\`
 - \`helm\`
-- \`minikube\`.
+- \`minikube\`
 
 Návod na instalaci najdete v článku [Instalace Kubernetes pro lokální vývoj](/kubernetes/instalace).
 
