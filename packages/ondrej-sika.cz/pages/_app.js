@@ -79,15 +79,24 @@ const Footer = (
         <p>
           <ThemeFooter.A href="mailto:ondrej@sika.io">
             ondrej@sika.io
-          </ThemeFooter.A>
+          </ThemeFooter.A>{" "}
+          <CopyToClipboard text="ondrej@sika.io">
+            <span style={{ cursor: "pointer" }}>📋</span>
+          </CopyToClipboard>
           <br />
           <ThemeFooter.A href="mailto:skoleni@sika.io">
             skoleni@sika.io
-          </ThemeFooter.A>
+          </ThemeFooter.A>{" "}
+          <CopyToClipboard text="skoleni@sika.io">
+            <span style={{ cursor: "pointer" }}>📋</span>
+          </CopyToClipboard>
           <br />
           <ThemeFooter.A href="tel:+420773452376">
             +420 773 452 376
-          </ThemeFooter.A>
+          </ThemeFooter.A>{" "}
+          <CopyToClipboard text="+420773452376">
+            <span style={{ cursor: "pointer" }}>📋</span>
+          </CopyToClipboard>
         </p>
         <p>
           <span style={{ fontSize: "0.7em" }}>Company ID</span>
