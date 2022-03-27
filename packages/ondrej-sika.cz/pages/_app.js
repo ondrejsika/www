@@ -4,6 +4,7 @@ import site from "@app/ondrej-sika.cz/config";
 import Link from "next/link";
 import styled from "styled-components";
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
 import ThemeFooter from "@app/ondrejsika-theme/components/Footer";
@@ -91,12 +92,18 @@ const Footer = (
         <p>
           <span style={{ fontSize: "0.7em" }}>Company ID</span>
           <br />
-          88114163
+          88114163{" "}
+          <CopyToClipboard text="88114163">
+            <span style={{ cursor: "pointer" }}>📋</span>
+          </CopyToClipboard>
         </p>
         <p>
           <span style={{ fontSize: "0.7em" }}>VAT ID</span>
           <br />
-          CZ9302252102
+          CZ9302252102{" "}
+          <CopyToClipboard text="CZ9302252102">
+            <span style={{ cursor: "pointer" }}>📋</span>
+          </CopyToClipboard>
         </p>
       </ThemeFooter.Wrapper>
     }
