@@ -111,12 +111,12 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.29.4",
     "now": "^16.7.0",
-    "npm-check-updates": "^12.5.4",
-    "prettier": "2.6.1"
+    "npm-check-updates": "^12.5.7",
+    "prettier": "2.6.2"
   },
   "dependencies": {
     "@cloudflare/wrangler": "^1.19.11",
-    "@sentry/browser": "^6.19.3",
+    "@sentry/browser": "^6.19.4",
     "@use-hook/use-cookie": "^0.1.4",
     "bootstrap": "^4.6.1",
     "bootstrap-css-only": "^4.4.1",
@@ -134,7 +134,7 @@
     "node-sass": "6.0.1",
     "popper.js": "^1.16.0",
     "react": "^17.0.2",
-    "react-bootstrap": "^2.2.2",
+    "react-bootstrap": "^2.2.3",
     "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "^17.0.2",
     "react-google-recaptcha": "^2.1.0",
