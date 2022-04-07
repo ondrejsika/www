@@ -111,7 +111,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.29.4",
     "now": "^16.7.0",
-    "npm-check-updates": "^12.5.7",
+    "npm-check-updates": "^12.5.8",
     "prettier": "2.6.2"
   },
   "dependencies": {
