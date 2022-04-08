@@ -116,7 +116,7 @@
   },
   "dependencies": {
     "@cloudflare/wrangler": "^1.19.11",
-    "@sentry/browser": "^6.19.4",
+    "@sentry/browser": "^6.19.6",
     "@use-hook/use-cookie": "^0.1.4",
     "bootstrap": "^4.6.1",
     "bootstrap-css-only": "^4.4.1",
