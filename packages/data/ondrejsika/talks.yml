@@ -64,3 +64,9 @@
   abstract: Prometheus je moderní monitoringový nástroj, který sbírá metriky z aplikaci a na jejich základě může posílat notifikace. Prometheus nativně podporuje monitoring Kubernetes, serverů, databázi a mnoho dalšího. Také může monitorovat metriky z Váší aplikace, díky kterým můžete ohdalit problémy v jejich zárodku. Pojďme si ukázat jak toho docílit v Pythonu za pomoci oficiálního Python klienta. Ukážeme si to na třech příkladech, aplikace v Djangu, ve Flasku a vlatni aplikaci v Pythonu.
   submissions:
     - pyconsk2020
+- id: infrastructure-as-code-a-gitpps-pomoci-terraformu
+  title: Infrastructure as Code a GitOps pomocí Terraformu
+  bio: Jsem DevOps lektor, engineer and konzultant z Prahy. Školím, konzultuji a pomáhám firmám zavádět a zlepšovat jejich DevOps. Mým cílem je zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Cloudy mají mnoho výhod. Jednou z nich je že umožnili spravovat infrastrukturu formou kodu. I bez cloudů jsme tyto možnosti měli, a však značne omezené. Pokud dnes používáme cloud (veřejný i privátní), máme v něm možnost veškeré komponenty nasazovat nástroji IaC, konkrétně Terraformem. Terraform je nástroj, umožnující nám deklarativně spravovat všechny cloudy (AWS, Azure, VMware) s využitím principů GitOps - co je v kódu, to je nasazené. Ukážeme si že začít s Terraformem není obtížné a že nám velmi pomůže při malý i velkých projektech.
+  submissions:
+    - konference-cloud-2022
