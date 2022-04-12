@@ -619,23 +619,23 @@
     - docker
     - kubernetes
 
-- id: prometheus-operator
-  eventbrite:
-  active: true
-  title: "Prometheus Operator"
-  date: "5. 10. 2022"
-  time: "19:00"
-  youtube:
-  about: |
-    Nasazujme Prometheus do Kubernetes rychle a jednoduše. K tomu nám pomůže Prometheus Operator.
-  points: |
-    - Úvod do Promethea
-    - Úvod do Prometheus Operatoru
-    - Nasazení Promethea pro monitoring clusteru
-    - Nasazení Promethea pro externí použití
-  technologies:
-    - prometheus
-    - kubernetes
+# - id: prometheus-operator
+#   eventbrite:
+#   active: true
+#   title: "Prometheus Operator"
+#   date: "5. 10. 2022"
+#   time: "19:00"
+#   youtube:
+#   about: |
+#     Nasazujme Prometheus do Kubernetes rychle a jednoduše. K tomu nám pomůže Prometheus Operator.
+#   points: |
+#     - Úvod do Promethea
+#     - Úvod do Prometheus Operatoru
+#     - Nasazení Promethea pro monitoring clusteru
+#     - Nasazení Promethea pro externí použití
+#   technologies:
+#     - prometheus
+#     - kubernetes
 
 - id: loki
   eventbrite:
