@@ -1511,7 +1511,7 @@
   price: 8 900 CZK
   venue_id: null
 - active: true
-  city: Online
+  city: Prague
   country: cz
   course_id: argocd
   date_from: 05.05.2022
@@ -1569,6 +1569,20 @@
 - active: true
   city: Prague
   country: cz
+  course_id: terraform
+  date_from: 02.06.2022
+  date_to: 02.06.2022
+  facebook_event: null
+  id: Terraform-2022-06-02
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
   course_id: go
   date_from: 06.06.2022
   date_to: 07.06.2022
@@ -1606,6 +1620,20 @@
   length: 2 dny
   linkedin_event: null
   name: "OpenStack pro v\xFDvoj\xE1\u0159e"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: prometheus
+  date_from: 20.06.2022
+  date_to: 21.06.2022
+  facebook_event: null
+  id: Prometheus-2022-06-20
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Prometheus
   price: 15 900 CZK
   venue_id: null
 - active: true
