@@ -1511,6 +1511,20 @@
   price: 8 900 CZK
   venue_id: null
 - active: true
+  city: Online
+  country: cz
+  course_id: argocd
+  date_from: 05.05.2022
+  date_to: 05.05.2022
+  facebook_event: null
+  id: ArgoCD-2022-05-05
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 8 900 CZK
+  venue_id: null
+- active: true
   city: Prague
   country: cz
   course_id: docker
@@ -1565,6 +1579,20 @@
   linkedin_event: null
   name: "\xDAvod do Go (Golang)"
   price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: rancher
+  date_from: 09.06.2022
+  date_to: 09.06.2022
+  facebook_event: null
+  id: Rancher-2022-06-09
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Rancher
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
