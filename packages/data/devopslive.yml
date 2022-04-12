@@ -515,24 +515,6 @@
     - tergum
     - kubernetes
 
-- id: rke2-intro
-  eventbrite: https://www.eventbrite.com/e/265217080427
-  active: true
-  title: "RKE2: Nový Rancher Kubernetes Engine"
-  date: "13. 4. 2022"
-  time: "19:00"
-  youtube:
-  about: |
-    RKE2 je pokračování RKE (Rancher Kubernetes Enginu), který využívá k3s a nemá závislost na Dockeru.
-  points: |
-    - Úvod do RKE a RKE2
-    - Rozdíly mezi RKE a RKE2
-    - Instalace RKE2 clusteru
-    - Základní operace s clusterem
-  technologies:
-    - rancher
-    - kubernetes
-
 # - id: kind-intro
 #   eventbrite: https://www.eventbrite.com/e/274052918657
 #   active: true
@@ -585,10 +567,10 @@
 #     - openstack
 
 - id: iac-on-proxmox
-  eventbrite:
+  eventbrite: mailto:ondrej@sika.io?subject=iac-on-proxmox
   active: true
   title: "IaC on Proxmox: Vytváříme infrastrukturu pomocí Proxmoxu, Terraformu a Packeru"
-  date: "7. 9. 2022"
+  date: "24. 7. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -606,7 +588,7 @@
   eventbrite:
   active: true
   title: "Dockerizace PHP aplikace"
-  date: "21. 9. 2022"
+  date: "11. 5. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -637,11 +619,29 @@
 #     - prometheus
 #     - kubernetes
 
+- id: rke2-intro
+  eventbrite: https://www.eventbrite.com/e/265217080427
+  active: true
+  title: "RKE2: Nový Rancher Kubernetes Engine"
+  date: "24. 5. 2022"
+  time: "19:00"
+  youtube:
+  about: |
+    RKE2 je pokračování RKE (Rancher Kubernetes Enginu), který využívá k3s a nemá závislost na Dockeru.
+  points: |
+    - Úvod do RKE a RKE2
+    - Rozdíly mezi RKE a RKE2
+    - Instalace RKE2 clusteru
+    - Základní operace s clusterem
+  technologies:
+    - rancher
+    - kubernetes
+
 - id: loki
   eventbrite:
   active: true
   title: "Loki: Logy v Grafane"
-  date: 19.10. 2022"
+  date: "8. 6. 2022"
   time: "19:00"
   youtube:
   about: |
