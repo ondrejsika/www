@@ -69,16 +69,20 @@ const Install = (props) => (
             </a>
             .
           </p>
-          <h2 className="mt-5">Aktualizace</h2>
-          {updates.map((update, i) => (
-            <div key={i}>
-              <p style={{ fontSize: "1.2rem" }}>
-                <strong>{update.date_text}</strong>
-                <br />
-                {update.title}
-              </p>
-            </div>
-          ))}
+          {false && (
+            <>
+              <h2 className="mt-5">Aktualizace</h2>
+              {updates.map((update, i) => (
+                <div key={i}>
+                  <p style={{ fontSize: "1.2rem" }}>
+                    <strong>{update.date_text}</strong>
+                    <br />
+                    {update.title}
+                  </p>
+                </div>
+              ))}
+            </>
+          )}
         </div>
       </div>
     </div>
