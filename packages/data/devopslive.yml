@@ -205,7 +205,7 @@
   title: Longhorn - Jednoduchá on-premise storage pro Kubernetes
   date: 10. 3. 2021
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=pfQG320_l2Q
+  youtube: pfQG320_l2Q
   about: |
     Longhorn je storage plugin pro Kubernetes, který vám umožní používat Persistent Volumes na vlastním Kubernetes.
   points: |
@@ -222,7 +222,7 @@
   title: Jak na lokální Kubernetes Development pomocí Skaffold
   date: 24. 3. 2021
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=5SDaFLAHHlE
+  youtube: 5SDaFLAHHlE
   about: |
     Skaffold se stará o build, push a deploy vaší aplikace. Vy se věnujte tomu, na čem záleží nejvíce - psaní kódu.
   points: |
@@ -239,7 +239,7 @@
   title: Jednoduchá distribuce Go binárek pomocí GoReleaser a CI
   date: 7. 4. 2021
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=A99IDxxKmL4
+  youtube: A99IDxxKmL4
   about: |
     GoReleaser je nástroj, který velmi zjednodušuje distribuci Go binárek. Ukážeme si jak jej integrovat s Gitlab CI a Github Actions.
   points: |
@@ -257,7 +257,7 @@
   title: WireGuard - Jednoduchá a spolehlivá VPN
   date: "21. 4. 2021"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=PqezaZGOcH0
+  youtube: PqezaZGOcH0
   about: |
     WireGuard je extrémně jednoduchá a rychlá VPN. Vlastně náhrada IPSecu a OpenVPN v jednom. Běží všude, v kernelu je jako network modul a má klienta pro Mac, iOS, Android, Windows ...
   points: |
@@ -273,7 +273,7 @@
   title: Ovládněte Makefile a zjednodušte si manuální tasky
   date: "5. 5. 2021"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=hBNFiqUS33k
+  youtube: hBNFiqUS33k
   about: |
     Make je prověřený nástroj, který lidem ulehčuje práci už 44 let. Make Vám umožňuje místo psaní shell scriptu spouštět tasky jednodušším a čistším způsobem. Pojďme si ukazát, jak na to.
   points: |
@@ -289,7 +289,7 @@
   title: Vytvářejte vlastní Dashboardy v Grafane
   date: "19. 5. 2021"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=KyYqqpFWCpE
+  youtube: KyYqqpFWCpE
   about: |
     Grafana je asi nejpopulárnější nástroj pro náhled na metrická data nejen z Promethea. Existuje hodně připravených dashboardů, ale pro naši aplikaci si musíme vytvořit vlastní. Ukážu Vám, jak na to.
   points: |
@@ -306,7 +306,7 @@
   title: Nebojte se git rebase
   date: "2. 6. 2021"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=avq2rQW6tHE
+  youtube: avq2rQW6tHE
   about: |
     Hodně vývojářů pořád nepoužívá `git rebase`, a tak mají repozitáře propletené ruznými merge commity a vzniká tak ne úplně přehledné "nádraží". Pojďme si ukázat, že používat rebase není složité a že nám to práci ulehčí, ne zkomplikuje.
   points: |
@@ -326,7 +326,7 @@
   title: Prometheus metriky ve vlastní aplikaci
   date: "16. 6. 2021"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=HdFiLeCaAEY
+  youtube: HdFiLeCaAEY
   about: |
     Prometheus je skvělý nástroj na sběr metrických dat, pojďme si ukázat, jak sbírat metriky z vašich aplikací v Go a Pythonu.
   points: |
@@ -380,7 +380,7 @@
   title: "Git Subtree a Monorepo"
   date: "20.10. 2021"
   time: "19:00"
-  youtube: 
+  youtube:
   about: |
     Git subtree je příkaz, který dokáže synchronizovat složky z monorepa s dalšími repozitáři a to oběma směry. Ukážeme si, jak to funguje, včetně  praktické ukázky použití.
   points: |
@@ -397,7 +397,7 @@
   title: CLI Tool v Go
   date: "3.11. 2021"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=BSEVXHQxFPU
+  youtube: BSEVXHQxFPU
   about: |
     Go je skvělý jazyk na psaní toolingu nejen pro DevOps/SRE. Pojďme si ukázat, jak napsat jednoduchý CLI tool v Go a jak ho jednoduše distribuovat.
   points: |
@@ -414,7 +414,7 @@
   title: Kubernetes API v Go
   date: "17. 11. 2021"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=MVScbc6D2Qk
+  youtube: MVScbc6D2Qk
   about: |
     Pojďme si ukázat, jak s Kubernetes pracovat na přímo z Go kódu. Není to tak težké, jak se na první pohled můze zdát.
   points: |
@@ -430,7 +430,7 @@
   title: "Minio: On premise S3"
   date: "1. 12. 2021"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=-jg-dPdU_bc
+  youtube: -jg-dPdU_bc
   about: |
     Go je skvelý jazyk na psaní toolingu a ne jen pro DevOps/SRE. Pojďme si ukázat, jak napsat jednoduchý CLI tool v Go a jak ho jednoduše distribuovat.
   points: |
@@ -448,7 +448,7 @@
   title: "Cloudflare Access"
   date: "5. 1. 2022"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=A58Lnbz2trk
+  youtube: A58Lnbz2trk
   about: |
     Cloudflare Access je jednoduchý způsob, jak přidat bezpečnou authetifikaci Vašich cloudových služeb na úrovni Cloudflare proxy. Můzete tak jednoduše přidat autentifikaci pomocí emailu, LDAPu nebo Google účtu. Vše samozřejmě Terraformem.
   points: |
@@ -466,7 +466,7 @@
   title: "Cloudflare Tunnel"
   date: "19. 1. 2022"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=e8iZyO6h94k
+  youtube: e8iZyO6h94k
   about: |
     CLoudflare Tunnel umoznuje vystavit webove sluzby prez Cloudflare svetu aniz by musela byt exponovana vase infrastruktura. Z vasi inrastruktury si otevrete spojeni do Cloudflare, nikoliv obracene.
   points: |
@@ -484,7 +484,7 @@
   title: "Uvod do ArgoCD: GitOps v Kubernetes"
   date: "2. 2. 2022"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=U-v75ECMUrw
+  youtube: U-v75ECMUrw
   about: |
     ArgoCD je nastroj na GitOps deployment do Kubernetes
   points: |
@@ -499,11 +499,11 @@
 
 - id: tergum-intro
   eventbrite: https://www.eventbrite.com/e/260939486027
-  active: true
+  active: false
   title: "Tergum: Deklarativní backupy"
   date: "16. 2. 2022"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=YChjbc2EdsQ
+  youtube: YChjbc2EdsQ
   about: |
     Tergum je nástroj, který jsem vyvinul pro jednoduchou práci se zálohami. Umožňuje zálohovat různé zdroje dat (databáze, soubory, ...) a ukládat je do různých destinací jako je s3 nebo do souboru.
   points: |
