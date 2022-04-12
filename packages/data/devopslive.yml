@@ -550,23 +550,23 @@
 #     - kind
 #     - kubernetes
 
-- id: helm-tips-and-trics
-  eventbrite:
-  active: true
-  title: "Helm: Tips & Tricks"
-  date: "25. 5. 2022"
-  time: "19:00"
-  youtube:
-  about: |
-    Pojďme se ponořit do možnosti Helmu a templatovacího jazyka Go Templates. Ukážeme si, jaké možné i nemožné věci jdou v Helmu udělat.
-  points: |
-    - Rychlý úvod do Helmu
-    - Helm závislosti
-    - Library Charts
-    - Go Templates v Helmu
-  technologies:
-    - helm
-    - kubernetes
+# - id: helm-tips-and-trics
+#   eventbrite:
+#   active: true
+#   title: "Helm: Tips & Tricks"
+#   date: "25. 5. 2022"
+#   time: "19:00"
+#   youtube:
+#   about: |
+#     Pojďme se ponořit do možnosti Helmu a templatovacího jazyka Go Templates. Ukážeme si, jaké možné i nemožné věci jdou v Helmu udělat.
+#   points: |
+#     - Rychlý úvod do Helmu
+#     - Helm závislosti
+#     - Library Charts
+#     - Go Templates v Helmu
+#   technologies:
+#     - helm
+#     - kubernetes
 
 # - id: ministack-intro
 #   eventbrite:
