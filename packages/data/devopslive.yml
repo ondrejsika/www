@@ -533,22 +533,22 @@
     - rancher
     - kubernetes
 
-- id: kind-intro
-  eventbrite: https://www.eventbrite.com/e/274052918657
-  active: true
-  title: "Kind: Testovací multi-node clustery v Dockeru"
-  date: "27. 4. 2022"
-  time: "19:00"
-  youtube:
-  about: |
-    Kind je nástroj, pomocí kterého můžeme jednoduše vytvářet multi-node i multi-master Kubernetes cluster. Ukážeme si jak na to.
-  points: |
-    - Co je Kind
-    - Setup jednoduchého clusteru
-    - Možnosti vytváření clusteru (multi-node, multi-master)
-  technologies:
-    - kind
-    - kubernetes
+# - id: kind-intro
+#   eventbrite: https://www.eventbrite.com/e/274052918657
+#   active: true
+#   title: "Kind: Testovací multi-node clustery v Dockeru"
+#   date: "27. 4. 2022"
+#   time: "19:00"
+#   youtube:
+#   about: |
+#     Kind je nástroj, pomocí kterého můžeme jednoduše vytvářet multi-node i multi-master Kubernetes cluster. Ukážeme si jak na to.
+#   points: |
+#     - Co je Kind
+#     - Setup jednoduchého clusteru
+#     - Možnosti vytváření clusteru (multi-node, multi-master)
+#   technologies:
+#     - kind
+#     - kubernetes
 
 - id: helm-tips-and-trics
   eventbrite:
@@ -568,21 +568,21 @@
     - helm
     - kubernetes
 
-- id: ministack-intro
-  eventbrite:
-  active: true
-  title: "Ministack: OpenStack rychle a jednoduše"
-  date: "8. 6. 2022"
-  time: "19:00"
-  youtube:
-  about: |
-    Ministack je distribuce OpenStacku, který můžete velmi jednoduše nainstalovat pomocí Snapu. Ukážeme si jakna to.
-  points: |
-    - Úvod do OpenStacku
-    - Instalace MiniStacku
-    - Ukázka práce s komponenty MiniStacku
-  technologies:
-    - openstack
+# - id: ministack-intro
+#   eventbrite:
+#   active: true
+#   title: "Ministack: OpenStack rychle a jednoduše"
+#   date: "8. 6. 2022"
+#   time: "19:00"
+#   youtube:
+#   about: |
+#     Ministack je distribuce OpenStacku, který můžete velmi jednoduše nainstalovat pomocí Snapu. Ukážeme si jakna to.
+#   points: |
+#     - Úvod do OpenStacku
+#     - Instalace MiniStacku
+#     - Ukázka práce s komponenty MiniStacku
+#   technologies:
+#     - openstack
 
 - id: iac-on-proxmox
   eventbrite:
