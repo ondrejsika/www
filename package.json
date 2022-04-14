@@ -111,7 +111,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.29.4",
     "now": "^16.7.0",
-    "npm-check-updates": "^12.5.8",
+    "npm-check-updates": "^12.5.9",
     "prettier": "2.6.2"
   },
   "dependencies": {
@@ -127,7 +127,7 @@
     "jquery": "^3.6.0",
     "js-yaml": "^3.14.1",
     "js-yaml-loader": "^1.2.2",
-    "next": "^12.1.4",
+    "next": "^12.1.5",
     "next-fonts": "^1.5.1",
     "next-transpile-modules": "^9.0.0",
     "next-yaml": "^1.0.1",
