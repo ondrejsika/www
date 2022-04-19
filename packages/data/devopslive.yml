@@ -567,7 +567,7 @@
 #     - openstack
 
 - id: iac-on-proxmox
-  eventbrite: mailto:ondrej@sika.io?subject=iac-on-proxmox
+  eventbrite: https://www.eventbrite.com/e/321678598347
   active: true
   title: "IaC on Proxmox: Vytváříme infrastrukturu pomocí Proxmoxu, Terraformu a Packeru"
   date: "27. 4. 2022"
@@ -588,7 +588,7 @@
   eventbrite:
   active: true
   title: "Dockerizace PHP aplikace"
-  date: "11. 5. 2022"
+  date: "25. 5. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -623,7 +623,7 @@
   eventbrite: https://www.eventbrite.com/e/265217080427
   active: true
   title: "RKE2: Nový Rancher Kubernetes Engine"
-  date: "24. 5. 2022"
+  date: "8. 6. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -641,7 +641,7 @@
   eventbrite:
   active: true
   title: "Loki: Logy v Grafane"
-  date: "8. 6. 2022"
+  date: "22. 6. 2022"
   time: "19:00"
   youtube:
   about: |
