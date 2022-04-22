@@ -18,6 +18,8 @@ const Page = () => (
 
 - [DevOps Live](/devopslive) - Live streamy na témata z DevOps
 - [Kubernetes na mém blogu](/blog/tag/kubernetes/)
+- [slu](https://github.com/sikalabs/slu) - SikaLabs Utils
+- [training-cli](https://github.com/sikalabs/training-cli) - CLI for help during training
 - [https://ondrej-sika.cz/repozitare/](/repozitare) - Seznam zajímavých repozitářů
 - https://github.com/ondrejsika - Všechny mé repozitáře na Githubu
 

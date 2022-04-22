@@ -40,6 +40,8 @@ Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
 
 # Ostatní zajímavé repozitáře
 
+- [slu](https://github.com/sikalabs/slu) - SikaLabs Utils
+- [training-cli](https://github.com/sikalabs/training-cli) - CLI for help during training
 - [https://ondrej-sika.cz/repozitare/](/repozitare) - Seznam zajímavých repozitářů
 - https://github.com/ondrejsika - Všechny mé repozitáře na Githubu
 
