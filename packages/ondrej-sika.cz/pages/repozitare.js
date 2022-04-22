@@ -16,7 +16,7 @@ const Page = () => (
 
 ## Gitlab CI
 
-- Skripty na vytvoreni Gitlab Runneru v Dockeru (s Docker executorem) - https://github.com/ondrejsika/gitlab-ci-runner
+- Skripty na vytvoreni Gitlab Runneru v Dockeru (s Docker executorem) - https://github.com/sikalabs/sikalabs-gitlab-runner
 - Image \`sikalabs/ci\` - https://github.com/sikalabs/sikalabs-container-images/tree/master/ci
 
 #### Examples
