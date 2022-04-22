@@ -1,3 +1,7 @@
+- id: 2022-04-22
+  date_text: "22. 4. 2022"
+  title: "Dnes jsem napsal kapitolu SSL Certifikaty - Cloudflare, Let's Encrypt, ZeroSSL, ..."
+
 - id: 2022-02-14
   date_text: "14. 2. 2022"
   title: "Dnes jsem napsal uvodni kapitolu k Prometheu - Prometheus: Uvod do monitoring stacku"
