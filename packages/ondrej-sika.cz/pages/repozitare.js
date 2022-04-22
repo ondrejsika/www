@@ -28,7 +28,7 @@ const Page = () => (
 
 - Jak nainstalovat Kubernetes na bare metal - https://github.com/ondrejsika/bare-metal-kubernetes
 - Kubernetes Ingress pomocí Traefiku - https://github.com/ondrejsika/kubernetes-ingress-traefik
-- Jednoduchy HELM balicek - https://github.com/ondrejsika/one-image-helm
+- Jednoduchy HELM balicek (sikalabs/hello-world) - https://github.com/sikalabs/charts/tree/master/charts/hello-world
 
 [Vsechny repozitare tykajici se Kubernetes na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=kubernetes&type=&language=)
 
