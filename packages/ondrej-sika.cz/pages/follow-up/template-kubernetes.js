@@ -30,9 +30,9 @@ const Page = () => (
 ### Další použité repozitáře
 
 - Terraform Infrastruktura Demo Gitlabu - https://github.com/ondrejsika/terraform-demo-gitlab
-- Traefik Ingress for Kubernets - https://github.com/ondrejsika/kubernetes-ingress-traefik
 - Demo Kubernetes Cluster on DigitalOcean - https://github.com/ondrejsika/terraform-do-kubernetes-example
-- Prometheus on Kubernetes - https://github.com/ondrejsika/ondrejsika-k8s-prom
+- Public ArgoCD repo with apps - https://github.com/ondrejsika/argocd-apps-public
+- Prometheus on Kubernetes - https://github.com/sikalabs/sikalabs-kubernetes-prometheus
 
 ### Témata, které jsme nakousli
 
