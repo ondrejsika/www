@@ -23,7 +23,7 @@ const Page = (props) => (
 
 #### Gitlab CI
 
-- Image for CI runner \`ondrejsika/ci\` - https://github.com/ondrejsika/ondrejsika-ci-docker
+- Image for CI runner \`sikalabs/ci\` - https://github.com/sikalabs/sikalabs-container-images/tree/master/ci
 - Example Deployment to Kubernetes using Gitlab CI - https://github.com/ondrejsika/gitlab-ci-example-kubernetes/
 
 #### Prometheus

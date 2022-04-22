@@ -1997,7 +1997,7 @@
 
     Setup of Gitlab Runner in Docker: [https://github.com/ondrejsika/gitlab-ci-runner](https://github.com/ondrejsika/gitlab-ci-runner)
     Run Traefik with SSL: [https://github.com/ondrejsika/traefik-ssl](https://github.com/ondrejsika/traefik-ssl)
-    Docker image ondrejsika/ci: [https://github.com/ondrejsika/ondrejsika-ci-docker](https://github.com/ondrejsika/ondrejsika-ci-docker)
+    Docker image sikalabs/ci: [https://github.com/sikalabs/sikalabs-container-images/tree/master/ci](https://github.com/sikalabs/sikalabs-container-images/tree/master/ci)
 - id: talk-uvod-do-pouzivani-dockeru-teched-2018
   url: /blog/2019/talk-uvod-do-pouzivani-dockeru-teched-2018
   ad: docker
