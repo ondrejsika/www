@@ -115,7 +115,7 @@
     "prettier": "2.6.2"
   },
   "dependencies": {
-    "@cloudflare/wrangler": "^1.19.11",
+    "@cloudflare/wrangler": "^1.19.12",
     "@sentry/browser": "^6.19.6",
     "@use-hook/use-cookie": "^0.1.4",
     "bootstrap": "^4.6.1",
