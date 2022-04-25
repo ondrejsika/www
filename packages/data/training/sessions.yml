@@ -1469,20 +1469,6 @@
   price: 15 900 CZK
   venue_id: null
 - active: true
-  city: Prague
-  country: cz
-  course_id: packer
-  date_from: 02.05.2022
-  date_to: 02.05.2022
-  facebook_event: null
-  id: packer-2022-05-02
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Packer
-  price: 8 900 CZK
-  venue_id: null
-- active: true
   city: Online
   country: cz
   course_id: proxmox
