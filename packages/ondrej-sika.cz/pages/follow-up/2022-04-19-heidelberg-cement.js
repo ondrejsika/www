@@ -32,6 +32,15 @@ const Page = () => (
 
 Pokud se Vám bude něco líbit, budu rád za hvězdičky. Díky.
 
+## Tergum
+
+Vcera jsem naimplementoval podporu Azure Blob do Tergumu, takze kdyz by jste to chteli vyzkouset, dejte vedet.
+Pokud to budete chtit pouzivat, radi Vam ze zacatku poskytnem podporu a pokud budete chtit nejakou custom funkcionalitu, radi to probereme.
+
+- [Tergum](https://github.com/sikalabs/tergum)
+- [Azure Blob config example](https://github.com/sikalabs/tergum/blob/master/misc/example/config/tergum-azure-v3.EXAMPLE.yaml)
+- [all config examples](https://github.com/sikalabs/tergum/tree/master/misc/example/config)
+
 ## DevOps Live
 
 Začal jsem streamovat live coding na témata z DevOps, pokud by Vás to zajímalo více, koukněte na stránku [DevOps Live](/devopslive).
