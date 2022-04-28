@@ -1,3 +1,15 @@
+- id: skoleni-pristi-tyden-03-05-2022
+  title: "Skoleni pristi tyden"
+  date: 28. 4. 2022
+  perex: |
+    Proxmox, Gitlab CI, ArgoCD, ...
+  content: |
+    Kurzy pristi tyden:
+
+    - [Proxmox](/verejne-terminy/proxmox-2022-05-03/) 3. 5.
+    - [Gitlab CI](verejne-terminy/GitlabCI-2022-05-04/) 4. 5.
+    - [Argo CD](/verejne-terminy/ArgoCD-2022-05-05/) 5. 5.
+
 - id: skoleni-v-unoru-a-breznu-2022
   title: "Skoleni v unoru a breznu 2022"
   date: 23. 1. 2022
