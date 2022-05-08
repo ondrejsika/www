@@ -1,3 +1,7 @@
+- id: ignore-hsts-chrome
+  question: How to ignore HSTS in Google Chrome?
+  answer: Just type "thisisunsafe".
+
 - id: azure-disk-resize-ubuntu-no-space-left
   question: "Azure Disk Resize Ubuntu: No Space Left on Device"
   answer: |

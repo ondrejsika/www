@@ -1,3 +1,7 @@
+- id: ignore-hsts-chrome
+  question: Jak ignorovat HSTS v Google Chrome i kdyz tam na to neni tlacitko?
+  answer: Staci pouze napsat "thisisunsafe". Piste kamkoliv v okne, i kdyz se to nebude zobrazovat.
+
 - id: azure-disk-resize-ubuntu-no-space-left
   question: "Azure Disk Resize Ubuntu: No Space Left on Device"
   answer: |
