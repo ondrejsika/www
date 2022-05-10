@@ -1,0 +1,5 @@
+- id: 2022-05-12-infrastructure-as-code-a-gitops-pomoci-terraformu
+  title: "Infrastructure as Code a GitOps pomocí Terraformu"
+  date: 12. 5. 2022
+  ad: terraform
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2022-05-12/2022-05-12_Infrastructure_as_Code_a_GitOps_pomoci_Terraformu.pdf
