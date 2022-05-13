@@ -14,14 +14,14 @@
   price:
     open:
       cz: 15 900 CZK
-      sk: 449 EUR
-      de: 799 EUR
-      uk: "799 EUR"
+      sk: 640 EUR
+      de: 900 EUR
+      uk: "900 EUR"
     in_house:
       cz: 58 000 CZK
-      sk: 1990 EUR
-      de: 3999 EUR
-      uk: "2999 EUR"
+      sk: 2340 EUR
+      de: 3290 EUR
+      uk: "3290 EUR"
   twitter_recommendations:
     cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
     sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
@@ -147,14 +147,14 @@
   price:
     open:
       cz: 15 900 CZK
-      sk: 449 EUR
-      de: 799 EUR
-      uk: 799 EUR
+      sk: 640 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      sk: 1999 EUR
-      de: 3999 EUR
-      uk: 2999 EUR
+      sk: 2340 EUR
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs:
       - petr-todorov-kubernetes
@@ -388,17 +388,17 @@
   price:
     open:
       cz: 8 900 CZK
-      sk: 249 EUR
+      sk: 390 EUR
       nl: "??? EUR"
-      de: 449 EUR
-      uk: 449 EUR
+      de: 540 EUR
+      uk: 540 EUR
       se: "??? SEK"
     in_house:
       cz: 29 000 CZK
-      sk: 999 EUR
+      sk: 1190 EUR
       nl: "??? EUR"
-      de: 1999 EUR
-      en: 1999 EUR
+      de: 1690 EUR
+      en: 1690 EUR
       se: "??? SEK"
   twitter_recommendations:
     cs: []
@@ -537,17 +537,17 @@
   price:
     open:
       cz: 8 900 CZK
-      sk: 249 EUR
+      sk: 390 EUR
       nl: "??? EUR"
-      de: 449 EUR
-      uk: 449 EUR
+      de: 540 EUR
+      uk: 540 EUR
       se: "??? SEK"
     in_house:
       cz: 29 000 CZK
-      sk: 999 EUR
+      sk: 1190 EUR
       nl: "??? EUR"
-      de: 1999 EUR
-      uk: 1999 EUR
+      de: 1690 EUR
+      uk: 1690 EUR
       se: "??? SEK"
   twitter_recommendations:
     cs: []
@@ -682,17 +682,17 @@
   price:
     open:
       cz: 15 900 CZK
-      sk: 449 EUR
+      sk: 640 EUR
       nl: "??? EUR"
-      de: 799 EUR
-      uk: 799 EUR
+      de: 900 EUR
+      uk: 900 EUR
       se: "??? SEK"
     in_house:
       cz: 58 000 CZK
-      sk: 1999 EUR
+      sk: 2340 EUR
       nl: "??? EUR"
-      de: 3999 EUR
-      uk: 3999 EUR
+      de: 3290 EUR
+      uk: 3290 EUR
       se: "??? SEK"
   twitter_recommendations:
     cs: []
@@ -836,10 +836,10 @@
   price:
     open:
       cz: 8 900 CZK
-      sk: 449 EUR
+      sk: 390 EUR
       nl: "??? EUR"
-      de: 799 EUR
-      uk: 799 EUR
+      de: 540 EUR
+      uk: 540 EUR
       se: "??? SEK"
     in_house:
       cz: 29 000 CZK
@@ -1053,12 +1053,12 @@
   price:
     open:
       cz: 15 900 CZK
-      de: 650 EUR
-      uk: 650 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      de: 2400 EUR
-      uk: 3400 EUR
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1155,12 +1155,12 @@
   price:
     open:
       cz: 15 900 CZK
-      de: 599 EUR
-      uk: 599 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      de: 3999 EUR
-      uk: 3999 GBP
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1250,12 +1250,12 @@
   price:
     open:
       cz: 15 900 CZK
-      de: 599 EUR
-      uk: 599 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      de: 3999 EUR
-      uk: 3999 GBP
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1330,12 +1330,12 @@
   price:
     open:
       cz: 8 900 CZK
-      de: 299 EUR
-      uk: 299 EUR
+      de: 540 EUR
+      uk: 540 EUR
     in_house:
       cz: 29 000 CZK
-      de: 1999 EUR
-      uk: 1999 GBP
+      de: 1690 EUR
+      uk: 1690 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1398,12 +1398,12 @@
   price:
     open:
       cz: 8 900 CZK
-      de: 299 EUR
-      uk: 299 EUR
+      de: 540 EUR
+      uk: 540 EUR
     in_house:
       cz: 29 000 CZK
-      de: 1999 EUR
-      uk: 1999 GBP
+      de: 1690 EUR
+      uk: 1690 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1477,12 +1477,12 @@
   price:
     open:
       cz: 8 900 CZK
-      de: 299 EUR
-      uk: 299 EUR
+      de: 540 EUR
+      uk: 540 EUR
     in_house:
       cz: 29 000 CZK
-      de: 1999 EUR
-      uk: 1999 GBP
+      de: 1690 EUR
+      uk: 1690 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1587,12 +1587,12 @@
   price:
     open:
       cz: 15 900 CZK
-      de: 599 EUR
-      uk: 599 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      de: 3999 EUR
-      uk: 3999 GBP
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1625,12 +1625,12 @@
   price:
     open:
       cz: 15 900 CZK
-      de: 599 EUR
-      uk: 599 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      de: 3999 EUR
-      uk: 3999 GBP
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1657,12 +1657,12 @@
   price:
     open:
       cz: 15 900 CZK
-      de: 599 EUR
-      uk: 599 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      de: 3999 EUR
-      uk: 3999 GBP
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1747,12 +1747,12 @@
   price:
     open:
       cz: 15 900 CZK
-      de: 599 EUR
-      uk: 599 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      de: 3999 EUR
-      uk: 3999 GBP
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1821,10 +1821,10 @@
   price:
     open:
       cz: 8 900 CZK
-      sk: 449 EUR
+      sk: 390 EUR
       nl: "??? EUR"
-      de: 799 EUR
-      uk: 799 EUR
+      de: 540 EUR
+      uk: 540 EUR
       se: "??? SEK"
     in_house:
       cz: 29 000 CZK
@@ -1890,14 +1890,14 @@
   price:
     open:
       cz: 15 900 CZK
-      sk: 449 EUR
-      de: 799 EUR
-      uk: 799 EUR
+      sk: 640 EUR
+      de: 900 EUR
+      uk: 900 EUR
     in_house:
       cz: 58 000 CZK
-      sk: 1999 EUR
-      de: 3999 EUR
-      uk: 2999 EUR
+      sk: 2340 EUR
+      de: 3290 EUR
+      uk: 3290 EUR
   twitter_recommendations:
     cs:
       - petr-todorov-kubernetes
