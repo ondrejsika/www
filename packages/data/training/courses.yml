@@ -13,7 +13,7 @@
     - martinstudna
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       sk: 449 EUR
       de: 799 EUR
       uk: "799 EUR"
@@ -146,7 +146,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       sk: 449 EUR
       de: 799 EUR
       uk: 799 EUR
@@ -299,7 +299,7 @@
   length: 1
   price:
     open:
-      cz: 6 800 CZK
+      cz: 8 900 CZK
     in_house:
       cz: 29 000 CZK
   twitter_recommendations:
@@ -387,7 +387,7 @@
   length: 1
   price:
     open:
-      cz: 6 800 CZK
+      cz: 8 900 CZK
       sk: 249 EUR
       nl: "??? EUR"
       de: 449 EUR
@@ -536,7 +536,7 @@
     - ondrejsika
   price:
     open:
-      cz: 6 800 CZK
+      cz: 8 900 CZK
       sk: 249 EUR
       nl: "??? EUR"
       de: 449 EUR
@@ -681,7 +681,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       sk: 449 EUR
       nl: "??? EUR"
       de: 799 EUR
@@ -835,7 +835,7 @@
     - ondrejsika
   price:
     open:
-      cz: 6 800 CZK
+      cz: 8 900 CZK
       sk: 449 EUR
       nl: "??? EUR"
       de: 799 EUR
@@ -975,7 +975,7 @@
     - ondrejsika
   price:
     open:
-      cz: 6 800 CZK
+      cz: 8 900 CZK
     in_house:
       cz: 29 000 CZK
   twitter_recommendations:
@@ -1154,7 +1154,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       de: 599 EUR
       uk: 599 EUR
     in_house:
@@ -1249,7 +1249,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       de: 599 EUR
       uk: 599 EUR
     in_house:
@@ -1329,7 +1329,7 @@
   length: 1
   price:
     open:
-      cz: 6 800 CZK
+      cz: 8 900 CZK
       de: 299 EUR
       uk: 299 EUR
     in_house:
@@ -1397,7 +1397,7 @@
   length: 1
   price:
     open:
-      cz: 6 800 CZK
+      cz: 8 900 CZK
       de: 299 EUR
       uk: 299 EUR
     in_house:
@@ -1476,7 +1476,7 @@
   length: 1
   price:
     open:
-      cz: 6 800 CZK
+      cz: 8 900 CZK
       de: 299 EUR
       uk: 299 EUR
     in_house:
@@ -1586,7 +1586,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       de: 599 EUR
       uk: 599 EUR
     in_house:
@@ -1624,7 +1624,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       de: 599 EUR
       uk: 599 EUR
     in_house:
@@ -1656,7 +1656,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       de: 599 EUR
       uk: 599 EUR
     in_house:
@@ -1746,7 +1746,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       de: 599 EUR
       uk: 599 EUR
     in_house:
@@ -1889,7 +1889,7 @@
   length: 2
   price:
     open:
-      cz: 11 999 CZK
+      cz: 15 900 CZK
       sk: 449 EUR
       de: 799 EUR
       uk: 799 EUR
