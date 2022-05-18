@@ -1597,20 +1597,6 @@
 - active: true
   city: Prague
   country: cz
-  course_id: openstack
-  date_from: 15.06.2022
-  date_to: 16.06.2022
-  facebook_event: null
-  id: openstack-pro-vycojare-2022-06-15
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
-  price: 15 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: prometheus
   date_from: 20.06.2022
   date_to: 21.06.2022
