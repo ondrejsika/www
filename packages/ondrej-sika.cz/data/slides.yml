@@ -1,3 +1,9 @@
+- id: 2022-05-28_migrace-pickey-z-vps-do-kubernetes-v-cloudu
+  title: "Migrace Pickey.cz z VPS do Kubernetes v cloudu"
+  date: 28. 5. 2022
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2022-05-28/2022-05-28_Migrace_Pickey_z_VPS_do_Kubernetes_v_cloudu.pdf
+
 - id: 2022-05-12-infrastructure-as-code-a-gitops-pomoci-terraformu
   title: "Infrastructure as Code a GitOps pomocí Terraformu"
   date: 12. 5. 2022
