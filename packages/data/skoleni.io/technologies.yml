@@ -44,6 +44,13 @@
     - marekbartik-eks
     - veroskaplan-kubernetes-intro
 
+- id: kubernetes-deployment-strategies
+  name: Kubernetes Deployment Strategies
+  description: |
+    TODO
+  courses:
+    - vojtechmares-kubernetes-deployment-strategies
+
 - id: terraform
   name: Terraform
   description: |
