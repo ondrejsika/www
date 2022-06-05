@@ -29,6 +29,7 @@ const Navbar = (
       [
         "KURZY",
         [
+          ["META SKOLENI", "/skoleni/meta", "new"],
           ["GIT", "/skoleni/git"],
           ["GITLAB CI", "/skoleni/gitlab-ci"],
           ["DOCKER", "/skoleni/docker"],
