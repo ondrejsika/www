@@ -2028,3 +2028,86 @@
       #### Technické požiadavky
       - Nainštalovaný OpenShift
       - Přístup na internet - ideálne bez korporátnej proxy, prípadne nastavenú proxy v prehliadači
+
+- id: meta
+  skoleniio:
+    name: Docker
+    lecturer: ondrejsika
+  name:
+    cs: Meta Školení
+    en: Meta Training
+    de: Meta Schulung
+    sk: Meta Školenie
+  length: 1
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 8 900 CZK
+      sk: 390 EUR
+      nl: "??? EUR"
+      de: 540 EUR
+      uk: 540 EUR
+      se: "??? SEK"
+    in_house:
+      cz: 29 000 CZK
+  twitter_recommendations:
+    cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
+    sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
+    en: ["adam-bisek-docker", "petr-klobas-docker", "radomir-sohlich-docker"]
+  recommendations:
+    cs: ["zoot", "Digiteq", "cz-nic"]
+    sk: ["zoot", "Digiteq", "cz-nic"]
+    en: ["zoot", "Digiteq", "cz-nic"]
+  agenda:
+    cs: |
+      ### Co Vás naučím
+
+      - Efektivni prace v command line
+      - Efektivni prace s VSCode
+      - Tipy a tricky v Gitu
+      - Prace s WSL (Windows Subsystem for Linux)
+      - Vlastni CLI utility
+      - Efektivni prace s MacOS
+      - Efektivni prace s Windows
+    en: |
+      ### Course outline
+
+      - Efficient work with command line
+      - Efficient work with VSCode
+      - Git's tips & tricks
+      - WSL (Windows Subsystem for Linux)
+      - Own CLI utils
+      - Efficient work with MacOS
+      - Efficient work with Windows
+  description:
+    cs: |
+      ### Co je to Meta Školení
+
+      Meta skoleni ma za cil srovnat a posunout zakladni skill set vyvojare a zvysit mu timto produktivitu a efektivitu. Jde o sadu znalosti a nastroju, ktere se vetsine vyvojaru a devoopsakum hodi na denni bazy.
+
+      ### Jak školení probíhá
+
+      Skoleni probiha formou workshopu, vse si vyzkousime a prakticky osahame. Budete odchazet s plne nakonfigurovanym prostredim a zakladni znalosti a zkusenosti jak v nem efektivne pracovat.
+
+      ### Co Vás naučím
+
+      - Efektivni prace v command line
+      - Efektivni prace s VSCode
+      - Tipy a tricky v Gitu
+      - Prace s WSL (Windows Subsystem for Linux)
+      - Vlastni CLI utility
+      - Efektivni prace s MacOS
+      - Efektivni prace s Windows
+
+      ### Pro koho je školení určeno
+
+      Skoleni je urceno vsem vyvvojarum a devoopsakum, kteri chteji pracovat efektivneji. Je to dobry zaklad pro vsechny me dalsi skoleni, jelikoz efektivni prace je dobrym zakladem dalsiho rozvoje.
+
+      #### Předchozí znalosti
+
+      Zadne predchozi znalosti nejsou nutne, vyhodou je znalost prace v command line.
+
+      #### Technické požadavky
+
+      - Vlastni pocitac (idealne s admin pristupem)
