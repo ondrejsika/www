@@ -1566,7 +1566,7 @@
   name: Terraform
   price: 8 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: go
@@ -1584,10 +1584,10 @@
   city: Online
   country: cz
   course_id: rancher
-  date_from: 09.06.2022
-  date_to: 09.06.2022
+  date_from: 08.08.2022
+  date_to: 08.08.2022
   facebook_event: null
-  id: Rancher-2022-06-09
+  id: Rancher-2022-08-08
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -1598,10 +1598,10 @@
   city: Prague
   country: cz
   course_id: prometheus
-  date_from: 20.06.2022
-  date_to: 21.06.2022
+  date_from: 22.08.2022
+  date_to: 23.08.2022
   facebook_event: null
-  id: Prometheus-2022-06-20
+  id: Prometheus-2022-08-22
   lang: cs
   length: 2 dny
   linkedin_event: null
