@@ -30,6 +30,8 @@ const Index = () => (
         source={`
 - [ondrejsika5.jpg](/files/photos/ondrejsika5.jpg) (Notion style avatar) - \`https://static.sika.io/files/photos/ondrejsika5.jpg\`
 - [ondrejsika5_transparent.png](/files/photos/ondrejsika5_transparent.png) (Notion style avatar) - \`https://static.sika.io/files/photos/ondrejsika5_transparent.png\`
+- [ondrejsika5_transparent_white.png](/files/photos/ondrejsika5_transparent_white.png) (Notion style avatar) - \`https://static.sika.io/files/photos/ondrejsika5_transparent_white.png\`
+- [ondrejsika5_transparent_white_no_borders.png](/files/photos/ondrejsika5_transparent_white_no_borders.png) (Notion style avatar) - \`https://static.sika.io/files/photos/ondrejsika5_transparent_white_no_borders.png\`
 - [ondrejsika4.jpg](/files/photos/ondrejsika4.jpg) - \`https://static.sika.io/files/photos/ondrejsika4.jpg\`
 - [ondrejsika4_print.jpg](/files/photos/ondrejsika4_print.jpg) - \`https://static.sika.io/files/photos/ondrejsika4_print.jpg\`
 - [ondrejsika4_grayscale.jpg](/files/photos/ondrejsika4_grayscale.jpg) - \`https://static.sika.io/files/photos/ondrejsika4_grayscale.jpg\`
