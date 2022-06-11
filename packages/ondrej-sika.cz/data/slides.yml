@@ -1,3 +1,9 @@
+- id: 2022-06-11-nahrada-shell-scriptu-pomoci-cli-toolu-v-go
+  title: Nahrada shell scriptu pomoci CLI toolu v Go
+  date: 11. 6. 2022
+  ad: go
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2022-06-11/2022-06-11_Nahrada_shell_scriptu_pomoci_CLI_toolu_v_Go.pdf
+
 - id: 2022-05-28_migrace-pickey-z-vps-do-kubernetes-v-cloudu
   title: "Migrace Pickey.cz z VPS do Kubernetes v cloudu"
   date: 28. 5. 2022
