@@ -1,3 +1,9 @@
+- id: nahrada-shell-scriptu-pomoci-cli-toolu-v-go-cz
+  title: Nahrada shell scriptu pomoci CLI toolu v Go
+  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Kazdy, kdo si chtel nekdy ulehcit praci, si urcite napsal nejake shell scripty. Ale shell scripty maji hodne nevyhod. Napsat v nich slozitejsi vec je peklo ... Mozna jste si tedy psali nejake Python scripty. Ty zase potrebuji Python a ruzne knihovny ... Takze jaka je alternativa? Pojdme si ukazat jak si udelat efektivni CLI utilitu v Go, jake to ma vyhody a zkusenosti s prechodem z hromady shell scriptu k jedne staticky linkovane binarce v Go.
+  submissions:
+    - installfest2022
 - id: skaffold-introduction-cz
   title: Continuous development v Kubernetes pomoci nástroje Skaffold
   bio: I'm a DevOps engineer and consultant from Prague. I help companies to set up or improve DevOps to deliver easier, faster and more reliable software products.

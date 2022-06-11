@@ -1,3 +1,20 @@
+- id: vytvorte-si-cli-nastroj-v-go-cz
+  title: Vytvorte si CLI nastroj V Go
+  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: |
+    Na workshopu si ukazeme ze vytvorit vlastni CLI tool v GO neni vubec slozite. Vytvorime si aplikaci uplne od nuly po pouzitelnu tool vcetne distribuce pomoci package manageru.
+
+    Tento workshop navazuje na moji prednasku CLI najtroje v Go. Cilem workshopu je naucit se vytvorit zaklad jednoducheho toolu, vcetne vseho co je potreba pro jeho jednoduche pouzivani.
+
+    Vytvorime si CLI tool postaveny na knihovne spf13/cobra, udelame si BASH/ZSH autocomplete, a pomoci goreleaseru si vytvorime binarky pro vsechny platformy + jak je efektivne distribuovat pomoci brew, snap, nebo windows scoop package manageru.
+  requirements: |
+    - Visual Studio Code
+    - Go
+    - Goreleaser
+    - Github Account
+  submissions:
+    - installfest2022
+
 - id: own-terraform-provider-in-go-cz
   title: Vlastní Terraform Provider v Go
   bio: Jsem DevOps engineer a konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
