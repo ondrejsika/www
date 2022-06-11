@@ -128,37 +128,9 @@ const CourseBar = (props) => {
               <Card
                 site={props.site}
                 lang={props.lang}
-                courseName="Docker"
-                courseId="docker"
-                courseImg={docker}
-              />
-              <Card
-                site={props.site}
-                lang={props.lang}
                 courseName="Kubernetes"
                 courseId="kubernetes"
                 courseImg={k8s}
-              />
-              <Card
-                site={props.site}
-                lang={props.lang}
-                courseName="Git"
-                courseId="git"
-                courseImg={git}
-              />
-              <Card
-                site={props.site}
-                lang={props.lang}
-                courseName="Gitlab CI"
-                courseId="gitlab-ci"
-                courseImg={gitlabci}
-              />
-              <Card
-                site={props.site}
-                lang={props.lang}
-                courseName="Prometheus"
-                courseId="prometheus"
-                courseImg={prometheus}
               />
               <Card
                 site={props.site}
@@ -170,9 +142,37 @@ const CourseBar = (props) => {
               <Card
                 site={props.site}
                 lang={props.lang}
+                courseName="Docker"
+                courseId="docker"
+                courseImg={docker}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Gitlab CI"
+                courseId="gitlab-ci"
+                courseImg={gitlabci}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Git"
+                courseId="git"
+                courseImg={git}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
                 courseName="Ansible"
                 courseId="ansible"
                 courseImg={ansible}
+              />
+              <Card
+                site={props.site}
+                lang={props.lang}
+                courseName="Prometheus"
+                courseId="prometheus"
+                courseImg={prometheus}
               />
               <Card
                 site={props.site}
@@ -202,16 +202,16 @@ const CourseBar = (props) => {
                       <Card
                         site={props.site}
                         lang={props.lang}
-                        courseName="Proxmox"
-                        courseId="proxmox"
-                        courseImg={proxmox}
+                        courseName="DigitalOcean"
+                        courseId="digitalocean"
+                        courseImg={digitalocean}
                       />
                       <Card
                         site={props.site}
                         lang={props.lang}
-                        courseName="DigitalOcean"
-                        courseId="digitalocean"
-                        courseImg={digitalocean}
+                        courseName="Proxmox"
+                        courseId="proxmox"
+                        courseImg={proxmox}
                       />
                     </>
                   );
