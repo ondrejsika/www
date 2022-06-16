@@ -1765,25 +1765,11 @@
 - active: true
   city: Prague
   country: cz
-  course_id: vault
-  date_from: 05.12.2022
-  date_to: 05.12.2022
-  facebook_event: null
-  id: vault-2022-12-05
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Vault
-  price: 8 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: proxmox
-  date_from: 12.12.2022
-  date_to: 12.12.2022
+  date_from: 28.11.2022
+  date_to: 28.11.2022
   facebook_event: null
-  id: proxmox-2022-12-12
+  id: proxmox-2022-11-28
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -1794,13 +1780,27 @@
   city: Prague
   country: cz
   course_id: rancher
-  date_from: 19.12.2022
-  date_to: 19.12.2022
+  date_from: 29.11.2022
+  date_to: 29.11.2022
   facebook_event: null
-  id: rancher-2022-12-19
+  id: rancher-2022-11-29
   lang: cs
   length: 1 den
   linkedin_event: null
   name: Rancher
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: vault
+  date_from: 05.12.2022
+  date_to: 05.12.2022
+  facebook_event: null
+  id: vault-2022-12-05
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Vault
   price: 8 900 CZK
   venue_id: null
