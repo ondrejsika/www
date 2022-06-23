@@ -1,3 +1,9 @@
+- id: 2022-06-23-ovladejte-tanzu-pomoci-kubernetes-cluster-api
+  title: Ovládejte Tanzu pomocí Kubernetes Cluster API
+  date: 23. 6. 2022
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2022-06-23/2022-06-23_Ovladejte_Tanzu_pomoci_Kubernetes_Cluster_API.pdf
+
 - id: 2022-06-11-nahrada-shell-scriptu-pomoci-cli-toolu-v-go
   title: Nahrada shell scriptu pomoci CLI toolu v Go
   date: 11. 6. 2022
