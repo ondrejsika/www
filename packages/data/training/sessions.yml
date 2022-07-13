@@ -1611,6 +1611,20 @@
 - active: true
   city: Prague
   country: cz
+  course_id: meta
+  date_from: 24.08.2022
+  date_to: 24.08.2022
+  facebook_event: null
+  id: meta-2022-08-24
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Meta
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
   course_id: terraform
   date_from: 12.09.2022
   date_to: 12.09.2022
