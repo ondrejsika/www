@@ -1639,20 +1639,6 @@
 - active: true
   city: Prague
   country: cz
-  course_id: go
-  date_from: 19.09.2022
-  date_to: 20.09.2022
-  facebook_event: null
-  id: Uvod-do-go-golang-2022-09-19
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: "\xDAvod do Go (Golang)"
-  price: 15 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: openshift
   date_from: 26.09.2022
   date_to: 27.09.2022
@@ -1662,6 +1648,20 @@
   length: 2 dny
   linkedin_event: null
   name: OpenShift a OKD
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: go
+  date_from: 29.09.2022
+  date_to: 30.09.2022
+  facebook_event: null
+  id: Uvod-do-go-golang-2022-09-29
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "\xDAvod do Go (Golang)"
   price: 15 900 CZK
   venue_id: null
 - active: true
