@@ -87,7 +87,7 @@ auto_update_sessions_yml_from_training_crm:
 
 auto_ncu_update:
   stage: schedule2
-  image: sikalabs/ci-node
+  image: sikalabs/ci-node:18
   variables:
     GIT_AUTHOR_NAME: SikaLabs CI Bot
     GIT_COMMITTER_NAME: SikaLabs CI Bot

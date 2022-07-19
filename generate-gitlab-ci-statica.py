@@ -86,7 +86,7 @@ out = {
         "deploy test",
         "deploy validate",
     ],
-    "image": "sikalabs/ci-node",
+    "image": "sikalabs/ci-node:18",
     "variables": {
         "GIT_CLEAN_FLAGS": "-ffdx -e node_modules -e .yarn-cache",
     },

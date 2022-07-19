@@ -150,7 +150,7 @@ for site in SITES:
             """
 %(site)s build docker:
   stage: build_docker%(priority_suffix)s
-  image: sikalabs/ci-node
+  image: sikalabs/ci-node:18
   needs: []
   variables:
     GIT_CLEAN_FLAGS: -ffdx -e node_modules -e .yarn-cache
@@ -186,7 +186,7 @@ for site in SITES:
             out.append(
                 """
 %(site)s prod deploy cloudflare:
-  image: sikalabs/ci-node
+  image: sikalabs/ci-node:18
   stage: deploy_prod%(priority_suffix)s
   script:
     - yarn --cache-folder .yarn-cache
