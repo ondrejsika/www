@@ -1709,20 +1709,6 @@
 - active: true
   city: Prague
   country: cz
-  course_id: openstack
-  date_from: 19.10.2022
-  date_to: 20.10.2022
-  facebook_event: null
-  id: OpenStack-pro-vyvojare-2022-10-19
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
-  price: 15 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: prometheus
   date_from: 31.10.2022
   date_to: 01.11.2022
@@ -1760,6 +1746,20 @@
   length: 2 dny
   linkedin_event: null
   name: "Z\xE1klady AWS"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: openstack
+  date_from: 16.11.2022
+  date_to: 16.11.2022
+  facebook_event: null
+  id: OpenStack-pro-vyvojare-2022-11-16
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
   price: 15 900 CZK
   venue_id: null
 - active: true
