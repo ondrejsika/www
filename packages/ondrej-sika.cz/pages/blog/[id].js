@@ -33,7 +33,8 @@ let Post = (props) => {
       react: "Školení Reactu",
       "gitlab-ci": "Školení Gitlab CI",
       rancher: "Školení Rancheru",
-      prometheus: "Školení Promethea"
+      prometheus: "Školení Promethea",
+      vault: "Školení Vaultu"
     }[post.ad];
     technology = {
       git: "Git",
@@ -43,7 +44,8 @@ let Post = (props) => {
       react: "React",
       "gitlab-ci": "Gitlab CI",
       rancher: "Rancher",
-      prometheus: "Prometheus"
+      prometheus: "Prometheus",
+      vault: "Vault"
     }[post.ad];
   }
 

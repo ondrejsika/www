@@ -30,6 +30,10 @@ const AdBar = (props) => {
     rancher: {
       about: "Rancher",
       course_name: "Školení Rancheru"
+    },
+    vault: {
+      about: "Vault",
+      course_name: "Školení Vaultu"
     }
   };
   return (
