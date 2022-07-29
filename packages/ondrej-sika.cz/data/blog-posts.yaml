@@ -46,6 +46,12 @@
     tergum backup --config tergum.yml
     ```
 
+    ### Odkazy
+
+    - https://github.com/sikalabs/tergum
+    - https://github.com/sikalabs/tergum/releases/tag/v0.30.0
+    - https://twitter.com/tergumbackup
+
 - id: slu-v0.16.0
   title: "slu v0.16.0: Mail, Random & Git IF Utils"
   date: 20. 9. 2021
