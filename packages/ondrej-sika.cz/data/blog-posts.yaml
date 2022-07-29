@@ -1,3 +1,51 @@
+- id: tergum-v0.30.0
+  title: "Tergum v0.30.0: Zalohovani Vaultu"
+  date: 29. 7. 2022
+  ad: vault
+  tags:
+    - tergum
+    - tooling
+    - go
+    - devops
+    - vault
+  perex: |
+    Tergum nove podporuje zalohovani Hashicorp Vaultu.
+  content: |
+    Posledni novinkou je moznost zalohovat Vault primo z Tergumu diky novemu Vault backup open-source.
+
+    Konfigurace je jednoducha, staci pouze adresa vaultu a token, ktery muze backup provest.
+
+    Idelni je si ve Vaultu udelat uzivatele s touto policy
+
+    ```
+    path "sys/storage/raft/snapshot" {
+      capabilities = ["read"]
+    }
+    ```
+
+    Pak static vytvorit konfiguracni soubor `tergum.yml`
+
+    ```
+    Meta:
+      SchemaVersion: 3
+    Backups:
+      - ID: vault
+        Source:
+          Vault:
+            Addr: https://vault.company.com
+            Token: xxx
+        Targets:
+          - ID: file
+            FilePath:
+              Path: ./tergum-backup.snap
+    ```
+
+    A pustit Tergum
+
+    ```
+    tergum backup --config tergum.yml
+    ```
+
 - id: slu-v0.16.0
   title: "slu v0.16.0: Mail, Random & Git IF Utils"
   date: 20. 9. 2021
