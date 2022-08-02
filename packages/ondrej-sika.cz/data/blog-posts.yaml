@@ -8,6 +8,9 @@
     - go
     - devops
     - vault
+  release:
+    project: tergum
+    version: v0.30.0
   perex: |
     Tergum nove podporuje zalohovani Hashicorp Vaultu.
   content: |
