@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Index = () => (
   <div>
@@ -32,10 +31,7 @@ const Index = () => (
             </a>
           </p>
           <p className="pb-4">
-            Datová schránka: <b>dcd68s8</b>{" "}
-            <CopyToClipboard text="dcd68s8">
-              <span style={{ cursor: "pointer" }}>📋</span>
-            </CopyToClipboard>
+            Datová schránka: <b>dcd68s8</b>
           </p>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
@@ -51,30 +47,15 @@ const Index = () => (
             <tbody>
               <tr>
                 <td>IČ:</td>
-                <td>
-                  88114163{" "}
-                  <CopyToClipboard text="88114163">
-                    <span style={{ cursor: "pointer" }}>📋</span>
-                  </CopyToClipboard>
-                </td>
+                <td>88114163</td>
               </tr>
               <tr>
                 <td>DIČ:</td>
-                <td>
-                  CZ9302252102{" "}
-                  <CopyToClipboard text="CZ9302252102">
-                    <span style={{ cursor: "pointer" }}>📋</span>
-                  </CopyToClipboard>
-                </td>
+                <td>CZ9302252102</td>
               </tr>
               <tr>
                 <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-                <td>
-                  2301432033/2010 (Fio){" "}
-                  <CopyToClipboard text="2301432033/2010">
-                    <span style={{ cursor: "pointer" }}>📋</span>
-                  </CopyToClipboard>
-                </td>
+                <td>2301432033/2010 (Fio)</td>
               </tr>
             </tbody>
           </table>
