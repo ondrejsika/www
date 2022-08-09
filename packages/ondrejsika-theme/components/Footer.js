@@ -72,6 +72,15 @@ Footer.A = styled.a`
   }
 `;
 
+Footer.SpanA = styled.span`
+  color: white;
+  text-decoration: underline;
+  &:hover {
+    color: white;
+    text-decoration: underline white;
+  }
+`;
+
 Footer.H4 = styled.h4`
   color: white;
 `;
