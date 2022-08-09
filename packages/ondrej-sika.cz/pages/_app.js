@@ -170,7 +170,7 @@ const Footer = (
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/doporucte-me-prosim">
-          <ThemeFooter.A href="#">Doporučte mě prosím</ThemeFooter.A>
+          <ThemeFooter.A href="#">Doporučte mě</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/book-me">
@@ -192,7 +192,7 @@ const Footer = (
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/seznam-skoleni">
-          <ThemeFooter.A href="#">Seznam Všech Školení</ThemeFooter.A>
+          <ThemeFooter.A href="#">Všechny Školení</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/hr">
