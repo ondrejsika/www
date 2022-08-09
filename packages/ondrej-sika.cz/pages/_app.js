@@ -177,6 +177,12 @@ const Footer = (
           <ThemeFooter.A href="#">Book Me</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
+        <Link href="/slides">
+          <a>
+            <ThemeFooter.SpanA>Slides</ThemeFooter.SpanA>
+          </a>
+        </Link>
+        <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/invite">
           <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
         </Link>
