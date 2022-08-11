@@ -35,6 +35,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://austinlouden.com/>
 - https://karpathy.ai/ ([web.archive.org](https://web.archive.org/web/20210909140101/https://karpathy.ai/))
 - <https://medv.io/>
+- <https://ahmet.im/>
     `}
     />
   );
