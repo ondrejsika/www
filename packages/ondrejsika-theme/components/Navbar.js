@@ -12,7 +12,7 @@ const NavLink = styled.a`
 `;
 
 const Nav = styled.nav`
-  border-bottom: 1px solid ${default_colors.WHITE};
+  border-bottom: 0px solid ${default_colors.WHITE};
 `;
 
 const NavName = styled.strong`
