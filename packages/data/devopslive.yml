@@ -568,7 +568,7 @@
 
 - id: iac-on-proxmox
   eventbrite: https://www.eventbrite.com/e/321678598347
-  active: true
+  active: false
   title: "IaC on Proxmox: Vytváříme infrastrukturu pomocí Proxmoxu, Terraformu a Packeru"
   date: "27. 4. 2022"
   time: "19:00"
@@ -586,7 +586,7 @@
 
 - id: dockerizace-php-aplikace
   eventbrite:
-  active: true
+  active: false
   title: "Dockerizace PHP aplikace"
   date: "25. 5. 2022"
   time: "19:00"
@@ -621,7 +621,7 @@
 
 - id: rke2-intro
   eventbrite: https://www.eventbrite.com/e/265217080427
-  active: true
+  active: false
   title: "RKE2: Nový Rancher Kubernetes Engine"
   date: "8. 6. 2022"
   time: "19:00"
@@ -639,7 +639,7 @@
 
 - id: loki
   eventbrite:
-  active: true
+  active: false
   title: "Loki: Logy v Grafane"
   date: "22. 6. 2022"
   time: "19:00"
