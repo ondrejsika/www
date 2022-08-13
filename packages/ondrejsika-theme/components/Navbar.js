@@ -59,7 +59,11 @@ const Navbar = (props) => {
                 {props.NavUnderheader}
               </NavUnderheader>
             </a>
-            <Button data-toggle="collapse" data-target="#navbarNavDropdownaa">
+            <Button
+              data-toggle="collapse"
+              data-target="#navbarNavDropdownaa"
+              style={{ paddingRight: "0" }}
+            >
               <HamburgerMenu>
                 <img src={hamburgerMenu.src} />
               </HamburgerMenu>
