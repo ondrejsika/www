@@ -81,7 +81,7 @@ const Page = () => (
       <Col>
         <div className="text-center">
           <Image
-            src="https://vojtechmares.com/images/me.jpg"
+            src="https://github.com/vojtechmares.png"
             roundedCircle
             style={{ maxWidth: "200px" }}
           />
