@@ -166,7 +166,10 @@ const Page = () => {
                   </Col>
                 </Row>
               </ColorBox>
-              <SectionHeader tight>Nadcházející témata</SectionHeader>
+
+              {events.length > 1 && (
+                <SectionHeader tight>Nadcházející témata</SectionHeader>
+              )}
 
               {events.map((event, i) => {
                 if (i == 0 && i < 3) return;
