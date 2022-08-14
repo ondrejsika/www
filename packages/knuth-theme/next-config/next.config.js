@@ -26,6 +26,8 @@ module.exports = {
 const withTM = require("next-transpile-modules")([
   "@app/ondrejsika-theme",
   "@app/ondrejsika-singlepage",
+  "@app/knuth-theme",
+  "@app/computer-modern-typewriter-light",
   "@app/common",
   "@app/course-landing",
   "@app/data"
