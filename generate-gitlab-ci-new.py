@@ -81,6 +81,9 @@ def gen_deps(deps, name):
 
 out = {
     "stages": [
+        "push-to-github",
+        "schedule1",
+        "schedule2",
         "start",
         "deploy",
         "deploy test",
@@ -94,6 +97,56 @@ out = {
         "stage": "start",
         "script": 'echo "start job - you can\'t create empty child pipeline"',
     },
+    "push-to-github": {
+        "image": "sikalabs/ci",
+        "stage": "push-to-github",
+        "script": [
+            "mkdir -p ~/.ssh",
+            "cp $GITHUB_PUSH_SSH_KEY_PRIV ~/.ssh/id_rsa",
+            "chmod 700 -R ~/.ssh",
+            "ssh-keyscan github.com >> ~/.ssh/known_hosts",
+            "git remote add github-$CI_PIPELINE_ID git@github.com:ondrejsika/www.git",
+            "git push github-$CI_PIPELINE_ID $CI_COMMIT_SHA:$CI_COMMIT_BRANCH -f",
+        ]
+    },
+    "auto_update_sessions_yml_from_training_crm": {
+        "stage": "schedule1",
+        "image": "sikalabs/ci",
+        "variables": {
+            "GIT_AUTHOR_NAME": "SikaLabs CI Bot",
+            "GIT_COMMITTER_NAME": "SikaLabs CI Bot",
+            "GIT_COMMITTER_EMAIL": "ci-bot@sikalabs.io",
+            "GIT_AUTHOR_EMAIL": "ci-bot@sikalabs.io"
+        },
+        "script": [
+            "make auto-update-sessions-yml-from-training-crm",
+            "git remote set-url origin https://ci-bot:$GITLAB_TOKEN_CI_BOT@$CI_SERVER_HOST/$CI_PROJECT_PATH.git",
+            "git push origin HEAD:$CI_COMMIT_BRANCH"
+        ],
+        "only": [
+            "schedule"
+        ]
+    },
+    "auto_ncu_update": {
+        "stage": "schedule2",
+        "image": "sikalabs/ci-node",
+        "variables": {
+            "GIT_AUTHOR_NAME": "SikaLabs CI Bot",
+            "GIT_COMMITTER_NAME": "SikaLabs CI Bot",
+            "GIT_COMMITTER_EMAIL": "ci-bot@sikalabs.io",
+            "GIT_AUTHOR_EMAIL": "ci-bot@sikalabs.io"
+        },
+        "script": [
+            "yarn",
+            "make auto-ncu-update",
+            "cd sites20 && make auto-ncu-update",
+            "git remote set-url origin https://ci-bot:$GITLAB_TOKEN_CI_BOT@$CI_SERVER_HOST/$CI_PROJECT_PATH.git",
+            "git push origin HEAD:$CI_COMMIT_BRANCH"
+        ],
+        "only": [
+            "schedule"
+        ]
+    }
 }
 
 for site in STATICA_SITES:
