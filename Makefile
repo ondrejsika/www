@@ -1,6 +1,11 @@
 fmt:
 	yarn prettier-write
 
+generate-gitlab-ci:
+	python3 generate-gitlab-ci.py
+	git add .gitlab-ci.yml
+	git commit -m "[generated] ci: Update generated .gitlab-ci.yml by generate-gitlab-ci.py" .gitlab-ci.yml
+
 commit-prettier-write:
 	git commit -m "[generated] refactor(style): Reformat using Prettier (yarn run prettier-write)"
 
