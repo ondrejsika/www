@@ -193,7 +193,6 @@ for site in SITES:
     - yarn --cache-folder .yarn-cache add @cloudflare/wrangler -W
     - rm -rf packages/%(site)s/out
     - mkdir -p packages/%(site)s/public/api
-    - git status
     - slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME -e CI_PIPELINE_ID=$CI_PIPELINE_ID -e "GITLAB_USER_LOGIN=$GITLAB_USER_LOGIN" -e "CI_COMMIT_TITLE=$CI_COMMIT_TITLE"  > packages/%(site)s/public/api/version.json
     - yarn run deploy-%(site)s
   except:
