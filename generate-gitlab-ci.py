@@ -277,5 +277,5 @@ for site in SITES_SITES20_DEV:
         }
     )
 
-with open(".gitlab-ci-statica.generated.yml", "w") as f:
+with open(".gitlab-ci.yml", "w") as f:
     f.write(json.dumps(out))
