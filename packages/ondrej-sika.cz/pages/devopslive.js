@@ -145,7 +145,11 @@ const Page = () => {
                         <Button
                           type="landing-page"
                           size="huge"
-                          href={events[0].eventbrite}
+                          href={
+                            events[0].eventbrite ||
+                            "mailto:ondrej@sika.io?subject=Mam zajem o DevOps Live: " +
+                              events[0].title
+                          }
                         >
                           <B>Přihlásit</B>
                         </Button>
