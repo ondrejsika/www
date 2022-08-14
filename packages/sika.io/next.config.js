@@ -10,6 +10,7 @@ module.exports = {
 const withTM = require("next-transpile-modules")([
   "@app/ondrejsika-theme",
   "@app/ondrejsika-singlepage",
+  "@app/simple-theme",
   "@app/common",
   "@app/course-landing",
   "@app/data"
