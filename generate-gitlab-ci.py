@@ -429,7 +429,7 @@ for site in DOCKER_SITES:
                     "docker build --platform linux/amd64 -t $CI_REGISTRY_IMAGE/%s:$CI_COMMIT_SHORT_SHA packages/%s" % (name, name),
                     "rm packages/%s/Dockerfile" % name,
                     "rm packages/%s/nginx-site.conf" % name,
-                    "docker push $CI_REGISTRY_IMAGE/%s:$CI_COMMIT_SHORT_SHA",
+                    "docker push $CI_REGISTRY_IMAGE/%s:$CI_COMMIT_SHORT_SHA" % name,
 
                     "docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD",
                     "docker pull $CI_REGISTRY_IMAGE/%s:$CI_COMMIT_SHORT_SHA" % name,
