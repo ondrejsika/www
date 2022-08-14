@@ -2,7 +2,7 @@
 
 import json
 
-SITES = [
+STATICA_SITES = [
     # CZ course landing pages
     {"name": "skoleni-git.cz"},
     {"name": "skoleni-docker.cz"},
@@ -17,7 +17,7 @@ SITES = [
     {"name": "skoleni.digitalocean.cz"},
 ]
 
-SITES_DEV = [
+STATICA_SITES_DEV = [
     {"name": "ondrejsika.io", "deps": "default"},
     {"name": "skoleni.io", "deps": "default"},
     {"name": "ondrej-sika.cz", "deps": "ondrejsika_theme"},
@@ -25,7 +25,7 @@ SITES_DEV = [
     {"name": "ondrej-sika.uk", "deps": "ondrejsika_singlepage"},
 ]
 
-SITES_SITES20 = [
+STATICA_SITES_STATICA_SITES20 = [
     {"name": "digitalocean.cz"},
     {"name": "devopsnews.cz"},
     {"name": "hashicorp.cz"},
@@ -33,7 +33,7 @@ SITES_SITES20 = [
     {"name": "sikahosting.com"},
 ]
 
-SITES_SITES20_DEV = [
+STATICA_SITES_STATICA_SITES20_DEV = [
     {"name": "devopsaci-landing"},
     {"name": "devopsaci.cz"},
 ]
@@ -69,7 +69,7 @@ _ONDREJSIKA_SINGLEPAGE_DEPENDENCIES = _ONDREJSIKA_THEME_DEPENDENCIES + [
     "packages/ondrejsika-singlepage/**/*",
 ]
 
-_SITES20_DEPENDENCIES = [
+_STATICA_SITES20_DEPENDENCIES = [
     "sites20/sites/{{site}}/**/*",
     "sites20/yarn.lock",
 ]
@@ -96,7 +96,7 @@ out = {
     },
 }
 
-for site in SITES:
+for site in STATICA_SITES:
     name = site["name"]
     deps = {
         "course_landing": _COURSE_LANDING_DEPENDENCIES,
@@ -150,7 +150,7 @@ for site in SITES:
         }
     )
 
-for site in SITES_DEV:
+for site in STATICA_SITES_DEV:
     name = site["name"]
     statica_domain = (
         "test-" + name.replace(".", "-") + "-$CI_COMMIT_REF_SLUG.$STATICA_BASE_DOMAIN"
@@ -180,9 +180,9 @@ for site in SITES_DEV:
         }
     )
 
-for site in SITES_SITES20:
+for site in STATICA_SITES_STATICA_SITES20:
     name = site["name"]
-    deps = _SITES20_DEPENDENCIES
+    deps = _STATICA_SITES20_DEPENDENCIES
     domain = site.get("domain", name)
     out.update(
         {
@@ -231,9 +231,9 @@ for site in SITES_SITES20:
         }
     )
 
-for site in SITES_SITES20_DEV:
+for site in STATICA_SITES_STATICA_SITES20_DEV:
     name = site["name"]
-    deps = _SITES20_DEPENDENCIES
+    deps = _STATICA_SITES20_DEPENDENCIES
     statica_domain = (
         "test-" + name.replace(".", "-") + "-$CI_COMMIT_REF_SLUG.$STATICA_BASE_DOMAIN"
     )
