@@ -4,9 +4,14 @@ module.exports = {
     return {
       "/": { page: "/" }
     };
-  },
-  transpileModules: ["@app"]
+  }
 };
 
-const withTM = require("next-transpile-modules");
+const withTM = require("next-transpile-modules")([
+  "@app/ondrejsika-theme",
+  "@app/ondrejsika-singlepage",
+  "@app/common",
+  "@app/course-landing",
+  "@app/data"
+]);
 module.exports = withTM(module.exports);
