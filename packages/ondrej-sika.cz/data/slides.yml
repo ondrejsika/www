@@ -21,3 +21,9 @@
   date: 12. 5. 2022
   ad: terraform
   pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2022-05-12/2022-05-12_Infrastructure_as_Code_a_GitOps_pomoci_Terraformu.pdf
+
+- id: 2022-02-22/2022-02-22_Kubernetes_jako_jednotna_platforma_pro_provoz_aplikaci
+  title: "Kubernetes jako jednotna platforma pro provoz aplikaci"
+  date: 22. 2. 2022
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2022-02-22/2022-02-22_Kubernetes_jako_jednotna_platforma_pro_provoz_aplikaci.pdf
