@@ -2064,12 +2064,40 @@
       ### Co Vás naučím
 
       - Efektivni prace v command line
+          - Klavesove zkratky v Bash / ZSH
+          - Zaklady prace ve Vimu
+          - Terminalove utility co musite znat
+          - Aliasy + zjednodusovani prace
+          - Dotfiles
+          - Moje prostredi na vsech serverech
       - Efektivni prace s VSCode
+          - VS Code - moderni editor pro kazdeho
+          - Klavesove zkratky a konfigurace
+          - Pluginy ktere musite znat
+          - Remote SSH
+      - EditorConfig
       - Tipy a tricky v Gitu
+          - Ovladani Gitu z Terminalu
+          - Git Rebase + Interactive Rebase
+          - Pokrocile nastaveni a prikazy v Gitu
       - Prace s WSL (Windows Subsystem for Linux)
+          - Co je WSL a proc jej pouzivat
+          - Instalace WSL
+          - Konfigurace WSL
+      - Make, Makefile
+          - Jak si zjednodusit praci diky Make
+          - Jak funguje Make
+          - Pokrocila konfigurace Makefile
       - Vlastni CLI utility
-      - Efektivni prace s MacOS
-      - Efektivni prace s Windows
+          - Proc + Vyhody vlastni CLI utility (v Go)
+          - slu - ukazka nasi verze interni firemni utility (open source)
+          - Strucny uvod do Go
+          - Intro do vyvoje vlastni CLI utility
+          - Distribude vlastni CLI utilitu
+      - Efektivni prace s MacOS & Windows
+          - Aplikace, ktere chcete pouzivat
+          - Nastaveni systemu pro jednodussi a rychlejsi praci
+          - Package Managery
     en: |
       ### Course outline
 
@@ -2093,12 +2121,40 @@
       ### Co Vás naučím
 
       - Efektivni prace v command line
+          - Klavesove zkratky v Bash / ZSH
+          - Zaklady prace ve Vimu
+          - Terminalove utility co musite znat
+          - Aliasy + zjednodusovani prace
+          - Dotfiles
+          - Moje prostredi na vsech serverech
       - Efektivni prace s VSCode
+          - VS Code - moderni editor pro kazdeho
+          - Klavesove zkratky a konfigurace
+          - Pluginy ktere musite znat
+          - Remote SSH
+      - EditorConfig
       - Tipy a tricky v Gitu
+          - Ovladani Gitu z Terminalu
+          - Git Rebase + Interactive Rebase
+          - Pokrocile nastaveni a prikazy v Gitu
       - Prace s WSL (Windows Subsystem for Linux)
+          - Co je WSL a proc jej pouzivat
+          - Instalace WSL
+          - Konfigurace WSL
+      - Make, Makefile
+          - Jak si zjednodusit praci diky Make
+          - Jak funguje Make
+          - Pokrocila konfigurace Makefile
       - Vlastni CLI utility
-      - Efektivni prace s MacOS
-      - Efektivni prace s Windows
+          - Proc + Vyhody vlastni CLI utility (v Go)
+          - slu - ukazka nasi verze interni firemni utility (open source)
+          - Strucny uvod do Go
+          - Intro do vyvoje vlastni CLI utility
+          - Distribude vlastni CLI utilitu
+      - Efektivni prace s MacOS & Windows
+          - Aplikace, ktere chcete pouzivat
+          - Nastaveni systemu pro jednodussi a rychlejsi praci
+          - Package Managery
 
       ### Pro koho je školení určeno
 
