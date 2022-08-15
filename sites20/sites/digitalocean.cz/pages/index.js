@@ -96,20 +96,6 @@ const Page = () => (
           cloudového prostředí například v Kubernetes.
         </p>
       </Col>
-      <Col>
-        <div className="text-center">
-          <Image
-            src="https://github.com/martinjurco.png"
-            roundedCircle
-            style={{ maxWidth: "200px" }}
-          />
-          <h3>Martin Jurčo</h3>
-          <p>
-            <a href="https://twitter.com/martinjurco">@martinjurco</a>
-          </p>
-        </div>
-        <p>COO &amp; CMO @ SikaLabs.</p>
-      </Col>
     </Row>
     <h2>Dotazy</h2>
     <p>
