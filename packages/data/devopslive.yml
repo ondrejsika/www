@@ -654,3 +654,19 @@
   technologies:
     - prometheus
     - kubernetes
+
+- id: uvod-do-boundary
+  eventbrite:
+  active: true
+  title: "Uvod do Hashicorp Boundary"
+  date: "7. 9. 2022"
+  time: "19:00"
+  youtube:
+  about: |
+    Boundary poskytuje velmi granularne nastavitelny pristup k sluzbam a VM bez nutnosti VPN.
+  points: |
+    - Úvod do Hashicorp Boundary
+    - Instalace Boundady
+    - Konfigurace
+    - Demo
+  technologies: []
