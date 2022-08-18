@@ -655,11 +655,29 @@
     - prometheus
     - kubernetes
 
+- id: keycloak
+  eventbrite:
+  active: true
+  title: "Keycloak: Open source identity management"
+  date: "7. 9. 2022"
+  time: "19:00"
+  youtube:
+  about: |
+    Keycloak je open source identity a access management reseni.
+    Pojdme si ukazat jak jej zprovoznit a jake nam prinese vyhody.
+  points: |
+    - Uvod do identity managementu
+    - Instalace Keycloaku
+    - Konfigurace
+    - Demo
+  technologies:
+    - keycloak
+
 - id: uvod-do-boundary
   eventbrite:
   active: true
   title: "Uvod do Hashicorp Boundary"
-  date: "7. 9. 2022"
+  date: "21. 9. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -676,7 +694,7 @@
   eventbrite:
   active: true
   title: "Github Script"
-  date: "21. 9. 2022"
+  date: "5. 10. 2022"
   time: "19:00"
   youtube:
   about: |
@@ -689,21 +707,3 @@
   technologies:
     - github
     - github-actions
-
-- id: keycloak
-  eventbrite:
-  active: true
-  title: "Keycloak: Open source identity management"
-  date: "5. 10. 2022"
-  time: "19:00"
-  youtube:
-  about: |
-    Keycloak je open source identity a access management reseni.
-    Pojdme si ukazat jak jej zprovoznit a jake nam prinese vyhody.
-  points: |
-    - Uvod do identity managementu
-    - Instalace Keycloaku
-    - Konfigurace
-    - Demo
-  technologies:
-    - keycloak
