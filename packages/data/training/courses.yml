@@ -2208,3 +2208,44 @@
       Pokud chcete kurz objednat, prosim, vyplne formular pripadne mi zanechte email.
 
       Pokud mate jakykoliv dotaz, napiste mi email na <ondrej@sika.io>.
+
+- id: keycloak
+  skoleniio:
+    name: Keycloak Školení
+    lecturer: ondrejsika
+  name:
+    cs: Keycloak Školení
+    en: Keycloak Training
+    de: Keycloak Schulung
+    sk: Keycloak Školenie
+  length: 1
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 8 900 CZK
+      sk: 390 EUR
+      nl: "??? EUR"
+      de: 540 EUR
+      uk: 540 EUR
+      se: "??? SEK"
+    in_house:
+      cz: 29 000 CZK
+  twitter_recommendations:
+    cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
+    sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
+    en: ["adam-bisek-docker", "petr-klobas-docker", "radomir-sohlich-docker"]
+  recommendations:
+    cs: ["zoot", "Digiteq", "cz-nic"]
+    sk: ["zoot", "Digiteq", "cz-nic"]
+    en: ["zoot", "Digiteq", "cz-nic"]
+  agenda:
+    cs: ""
+    en: ""
+  description:
+    cs: |
+      ### Kurz Keycloaku teprve pripravuji
+
+      Pokud chcete kurz objednat, prosim, vyplne formular pripadne mi zanechte email.
+
+      Pokud mate jakykoliv dotaz, napiste mi email na <ondrej@sika.io>.
