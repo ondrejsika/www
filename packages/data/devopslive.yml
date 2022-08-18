@@ -689,3 +689,21 @@
   technologies:
     - github
     - github-actions
+
+- id: keycloak
+  eventbrite:
+  active: true
+  title: "Keycloak: Open source identity management"
+  date: "5. 10. 2022"
+  time: "19:00"
+  youtube:
+  about: |
+    Keycloak je open source identity a access management reseni.
+    Pojdme si ukazat jak jej zprovoznit a jake nam prinese vyhody.
+  points: |
+    - Uvod do identity managementu
+    - Instalace Keycloaku
+    - Konfigurace
+    - Demo
+  technologies:
+    - keycloak
