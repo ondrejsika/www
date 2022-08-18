@@ -669,4 +669,5 @@
     - Instalace Boundady
     - Konfigurace
     - Demo
-  technologies: []
+  technologies:
+    - boundary
