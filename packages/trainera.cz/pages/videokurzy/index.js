@@ -36,7 +36,7 @@ const Page = (props) => (
       <div className="col-6">
         <h2 className="text-center">Úvod od Dockeru</h2>
         <p className="text-center">
-          Cena: <span>1000 CZK</span>
+          Cena: <span>3000 CZK</span>
         </p>
         <img src={docker.src} className="img-fluid" />
         <div
@@ -57,7 +57,7 @@ const Page = (props) => (
       <div className="col-6">
         <h2 className="text-center">Úvod od Kubernetes</h2>
         <p className="text-center">
-          Cena: <span>1000 CZK</span>
+          Cena: <span>3000 CZK</span>
         </p>
         <img src={kubernetes.src} className="img-fluid" />
         <div
@@ -79,7 +79,7 @@ const Page = (props) => (
         {" "}
         <h2 className="text-center">Úvod od Terraformu</h2>
         <p className="text-center">
-          Cena: <span>1000 CZK</span>
+          Cena: <span>3000 CZK</span>
         </p>
         <img src={terraform.src} className="img-fluid" />
         <div
@@ -101,7 +101,7 @@ const Page = (props) => (
         {" "}
         <h2 className="text-center">Úvod od Gitlab CI</h2>
         <p className="text-center">
-          Cena: <span>1000 CZK</span>
+          Cena: <span>3000 CZK</span>
         </p>
         <img src={gitlabCi.src} className="img-fluid" />
         <div
