@@ -668,10 +668,11 @@
   points: |
     - Uvod do identity managementu
     - Instalace Keycloaku
-    - Konfigurace
+    - Konfigurace Terraformem
     - Demo
   technologies:
     - keycloak
+    - terraform
 
 - id: uvod-do-boundary
   eventbrite:
@@ -685,10 +686,11 @@
   points: |
     - Úvod do Hashicorp Boundary
     - Instalace Boundady
-    - Konfigurace
+    - Konfigurace Terraformem
     - Demo
   technologies:
     - boundary
+    - terraform
 
 - id: github-script
   eventbrite:
