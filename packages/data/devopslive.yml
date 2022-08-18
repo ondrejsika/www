@@ -671,3 +671,21 @@
     - Demo
   technologies:
     - boundary
+
+- id: github-script
+  eventbrite:
+  active: true
+  title: "Github Script"
+  date: "21. 9. 2022"
+  time: "19:00"
+  youtube:
+  about: |
+    Pojdme si ukazat jak jednoduse pracovat s Github API z Actions pomoci JavaScriptu
+  points: |
+    - Uvod do Github Actions
+    - Úvod do Github API
+    - Moznosti Github Scriptu
+    - Demo
+  technologies:
+    - github
+    - github-actions
