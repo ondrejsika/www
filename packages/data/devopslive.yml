@@ -572,7 +572,7 @@
   title: "IaC on Proxmox: Vytváříme infrastrukturu pomocí Proxmoxu, Terraformu a Packeru"
   date: "27. 4. 2022"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=OB14BPBzShM
+  youtube: OB14BPBzShM
   about: |
     Pojďme si ukázat, jak pracovat s IaC na platformě Proxmox. Vytvořme si vlastní machine images a deklarativně je nasazujme.
   points: |
@@ -625,7 +625,7 @@
   title: "RKE2: Nový Rancher Kubernetes Engine"
   date: "8. 6. 2022"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=hBacB6gmvvI
+  youtube: hBacB6gmvvI
   about: |
     RKE2 je pokračování RKE (Rancher Kubernetes Enginu), který využívá k3s a nemá závislost na Dockeru.
   points: |
@@ -643,7 +643,7 @@
   title: "Loki: Logy v Grafane"
   date: "22. 6. 2022"
   time: "19:00"
-  youtube: https://www.youtube.com/watch?v=HJm7cLl7kxA
+  youtube: HJm7cLl7kxA
   about: |
     Loki je nový způsob, jak sbírat logy nejen v Kubernetes a mít je k dispozici v Grafane. Loki si nainstalujeme a ukážeme si jak s nim pracovat.
   points: |
