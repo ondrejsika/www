@@ -29,6 +29,7 @@ import longhorn_tmp from "@app/data/pictures/technologies/longhorn.png";
 import argocd_tmp from "@app/data/pictures/courses/argocd-black-large.png";
 import boundary_tmp from "@app/data/pictures/technologies/boundary.png";
 import github_actions_tmp from "@app/data/pictures/technologies/github-actions.png";
+import keycloak_tmp from "@app/data/pictures/technologies/keycloak.png";
 
 const Img = styled.img`
   height: 100px;
@@ -56,7 +57,8 @@ const TechnologyIcons = (props) => {
               longhorn: longhorn_tmp.src,
               argocd: argocd_w.src,
               boundary: boundary_w.src,
-              "github-actions": github_actions_w.src
+              "github-actions": github_actions_w.src,
+              keycloak: keycloak_tmp.src
             }[props.icon]
           }
         />
@@ -79,7 +81,8 @@ const TechnologyIcons = (props) => {
               longhorn: longhorn_tmp.src,
               argocd: argocd_tmp.src,
               boundary: boundary_tmp.src,
-              "github-actions": github_actions_tmp.src
+              "github-actions": github_actions_tmp.src,
+              keycloak: keycloak_tmp.src
             }[props.icon]
           }
         />
