@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "@app/bootstrap-theme/layouts/Layout";
 
-export default (props) => (
+const Page = (props) => (
   <Layout>
     <div className="container">
       <p>
@@ -16,3 +16,5 @@ export default (props) => (
     </div>
   </Layout>
 );
+
+export default Page;
