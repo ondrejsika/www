@@ -655,6 +655,25 @@
     - prometheus
     - kubernetes
 
+- id: infracost
+  eventbrite:
+  active: true
+  title: "Infracost: Odhad ceny z Terraform pro kazdy pull request"
+  date: "7. 9. 2022"
+  time: "19:00"
+  youtube:
+  about: |
+    Infracost na zaklade Terraform zrojaku odhadne jaka bude cena provozu reseni v cloudu. Pojdme si ukazat jak to vyuzit v praxi a jak mit v kazdem pull requstu o kolik se cena zmeni.
+  points: |
+    - Rychly uvod do Terraformu
+    - Zakladni koncep Infracostu
+    - Analyza ceny z Terraformu
+    - Infracost Dashboard
+    - Jak pridat info o zmene ceny do pull requestu
+  technologies:
+    - infracost
+    - terraform
+
 - id: keycloak
   eventbrite:
   active: true
