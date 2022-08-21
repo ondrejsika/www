@@ -16,7 +16,7 @@ Já používám tyto nástroje jak ve svém DevOps stacku tak u klientů.
 - Kubernetes - Container Orchestrator
 - Prometheus, Alert Manager, Grafana - Monitoring & Alerting
 - Sentry - Error Tracking
-- ELK / EFK - Log Management
+- Loki - Sprava logu v Grafane
 - Rancher, RKE - On Premise Kubernetes
 - Terraform - Infrastructure Management
 - Public Cloud: AWS, DigitalOcean, Azure, GCP
@@ -54,9 +54,9 @@ Prometheus je moderní monitoringový nástroj a metrics server. Umožňuje sbí
 
 Sentry je nástroj na agregování chyb z aplikace. Podporuje všechny možné jazyky od Pythonu po JavaScript v browseru. Sentry dokáže uložit kompletní stack trace, takže následné ladení chyb je o hodně jednodušší.
 
-## ELK / EFK
+## Loki
 
-ELK nebo Elastic Stack je sada nástrojů ElasticSearch, Logstash (nebo Fluentd) a Kibana, které agregují logy na jedno místo a umožní nad nimi full text vyhledávání a alerting.
+Loki je moderni nastroj, ktery umoznuje centralizovane sbirani a analyzu logu. Loki je od Grafany, takze logy muzete prohlizet primo v Grafane a filtrovat je muzete pomoci LogQL, coz je obdoba PromQL, ktery se pouziva pro praci s metrickymi daty.
 
 ## Rancher, RKE
 
