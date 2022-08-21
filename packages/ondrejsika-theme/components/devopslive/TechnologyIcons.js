@@ -30,6 +30,7 @@ import argocd_tmp from "@app/data/pictures/courses/argocd-black-large.png";
 import boundary_tmp from "@app/data/pictures/technologies/boundary.png";
 import github_actions_tmp from "@app/data/pictures/technologies/github-actions.png";
 import keycloak_tmp from "@app/data/pictures/technologies/keycloak.png";
+import infracost_tmp from "@app/data/pictures/technologies/infracost.png";
 
 const Img = styled.img`
   height: 100px;
@@ -58,7 +59,8 @@ const TechnologyIcons = (props) => {
               argocd: argocd_w.src,
               boundary: boundary_w.src,
               "github-actions": github_actions_w.src,
-              keycloak: keycloak_tmp.src
+              keycloak: keycloak_tmp.src,
+              infracost: infracost_tmp.src
             }[props.icon]
           }
         />
@@ -82,7 +84,8 @@ const TechnologyIcons = (props) => {
               argocd: argocd_tmp.src,
               boundary: boundary_tmp.src,
               "github-actions": github_actions_tmp.src,
-              keycloak: keycloak_tmp.src
+              keycloak: keycloak_tmp.src,
+              infracost: infracost_tmp.src
             }[props.icon]
           }
         />
