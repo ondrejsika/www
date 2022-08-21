@@ -5,8 +5,7 @@ const Page = (props) => (
   <Layout>
     <div className="container">
       <p>
-        <strong>ccc.oxs.cz</strong> - Ondrej Sika's links &amp; resources around
-        CCC
+        <strong>ccc.oxs.cz</strong>
       </p>
       {props.children}
       <p className="mt-5">
