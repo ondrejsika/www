@@ -674,6 +674,26 @@
     - infracost
     - terraform
 
+- id: terraform-modules-monorepo
+  eventbrite:
+  active: true
+  title: "Terraform moduly v monorepu"
+  date: "??? 2022"
+  time: "19:00"
+  youtube:
+  about: |
+    Ukazeme si jak efektivne spravov monorepo s Terraform moduly a jak je publikovat pomoci Gitu, Gitlabu a Terrafrom registry.
+  points: |
+    - Rychly uvod do monorepa a Terraformu
+    - Uvod do Terraform modulu
+    - Terraform moduly v Gitu
+    - Terraform moduly pomoci Gitlabu
+    - Terraform moduly pomoci Terraform Registry
+  technologies:
+    - terraform
+    - git
+    - gitlab
+
 - id: keycloak
   eventbrite:
   active: true
