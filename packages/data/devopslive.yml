@@ -658,18 +658,18 @@
 - id: infracost
   eventbrite:
   active: true
-  title: "Infracost: Odhad ceny z Terraform pro kazdy pull request"
-  date: "7. 9. 2022"
+  title: "Infracost: Odhad ceny z Terraform pro každý pull request"
+  date: "21. 9. 2022"
   time: "19:00"
   youtube:
   about: |
-    Infracost na zaklade Terraform zrojaku odhadne jaka bude cena provozu reseni v cloudu. Pojdme si ukazat jak to vyuzit v praxi a jak mit v kazdem pull requstu o kolik se cena zmeni.
+    Infracost na základě Terraform zdrojáku odhadne, jaká bude cena provozu řešení v cloudu. Pojďme si ukázat, jak to využít v praxi a jak mít v každém pull requstu, o kolik se cena změní.
   points: |
-    - Rychly uvod do Terraformu
-    - Zakladni koncep Infracostu
-    - Analyza ceny z Terraformu
+    - Rychlý úvod do Terraformu
+    - Zakladní koncept Infracostu
+    - Analýza ceny z Terraformu
     - Infracost Dashboard
-    - Jak pridat info o zmene ceny do pull requestu
+    - Jak přidat info o zmeně ceny do pull requestu
   technologies:
     - infracost
     - terraform
@@ -678,17 +678,17 @@
   eventbrite:
   active: true
   title: "Terraform moduly v monorepu"
-  date: "??? 2022"
+  date: "5.10.2022"
   time: "19:00"
   youtube:
   about: |
-    Ukazeme si jak efektivne spravov monorepo s Terraform moduly a jak je publikovat pomoci Gitu, Gitlabu a Terrafrom registry.
+    Ukážeme si, jak efektivně spravov monorepo s Terraform moduly a jak je publikovat pomocí Gitu, Gitlabu a Terrafrom registry.
   points: |
-    - Rychly uvod do monorepa a Terraformu
-    - Uvod do Terraform modulu
+    - Rychlý úvod do monorepa a Terraformu
+    - Úvod do Terraform modulu
     - Terraform moduly v Gitu
-    - Terraform moduly pomoci Gitlabu
-    - Terraform moduly pomoci Terraform Registry
+    - Terraform moduly pomocí Gitlabu
+    - Terraform moduly pomocí Terraform Registry
   technologies:
     - terraform
     - git
@@ -698,14 +698,14 @@
   eventbrite:
   active: true
   title: "Keycloak: Open source identity management"
-  date: "??? 2022"
+  date: "2.11.2022"
   time: "19:00"
   youtube:
   about: |
-    Keycloak je open source identity a access management reseni.
-    Pojdme si ukazat jak jej zprovoznit a jake nam prinese vyhody.
+    Keycloak je open source identity a access management řešení.
+    Pojďme si ukázat, jak jej zprovoznit a jaké nám přinese výhody.
   points: |
-    - Uvod do identity managementu
+    - Úvod do identity managementu
     - Instalace Keycloaku
     - Konfigurace Terraformem
     - Demo
@@ -716,12 +716,12 @@
 - id: uvod-do-boundary
   eventbrite:
   active: true
-  title: "Uvod do Hashicorp Boundary"
-  date: "??? 2022"
+  title: "Úvod do Hashicorp Boundary"
+  date: "16.11.2022"
   time: "19:00"
   youtube:
   about: |
-    Boundary poskytuje velmi granularne nastavitelny pristup k sluzbam a VM bez nutnosti VPN.
+    Boundary poskytuje velmi granularne nastavitelný přístup k službám a VM bez nutnosti VPN.
   points: |
     - Úvod do Hashicorp Boundary
     - Instalace Boundady
@@ -735,15 +735,15 @@
   eventbrite:
   active: true
   title: "Github Script"
-  date: "??? 2022"
+  date: "30.11.2022"
   time: "19:00"
   youtube:
   about: |
-    Pojdme si ukazat jak jednoduse pracovat s Github API z Actions pomoci JavaScriptu
+    Pojďme si ukázat, jak jednoduše pracovat s Github API z Actions pomocí JavaScriptu
   points: |
-    - Uvod do Github Actions
+    - Úvod do Github Actions
     - Úvod do Github API
-    - Moznosti Github Scriptu
+    - Možnosti Github Scriptu
     - Demo
   technologies:
     - github
