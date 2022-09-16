@@ -1611,20 +1611,6 @@
 - active: true
   city: Prague
   country: cz
-  course_id: terraform
-  date_from: 12.09.2022
-  date_to: 12.09.2022
-  facebook_event: null
-  id: Terraform-2022-09-12
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Terraform
-  price: 8 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: openshift
   date_from: 26.09.2022
   date_to: 27.09.2022
@@ -1634,20 +1620,6 @@
   length: 2 dny
   linkedin_event: null
   name: OpenShift a OKD
-  price: 15 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
-  course_id: go
-  date_from: 29.09.2022
-  date_to: 30.09.2022
-  facebook_event: null
-  id: Uvod-do-go-golang-2022-09-29
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: "\xDAvod do Go (Golang)"
   price: 15 900 CZK
   venue_id: null
 - active: true
@@ -1816,5 +1788,19 @@
   length: 1 den
   linkedin_event: null
   name: Vault
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: terraform
+  date_from: 12.12.2022
+  date_to: 12.12.2022
+  facebook_event: null
+  id: Terraform-2022-12-12
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
   price: 8 900 CZK
   venue_id: null
