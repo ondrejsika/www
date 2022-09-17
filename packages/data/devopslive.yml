@@ -748,3 +748,20 @@
   technologies:
     - github
     - github-actions
+
+- id: devcontainers
+  eventbrite:
+  active: true
+  title: "Development Containers (devcontainers.json)"
+  date: "???"
+  time: "19:00"
+  youtube:
+  about: |
+    Predkonfigurovane vyvojove prostredi v kontejneru
+  points: |
+    - Úvod do Devcontainers
+    - Priprava prostredi
+    - Demo
+  technologies:
+    - vscode
+    - devcontainers
