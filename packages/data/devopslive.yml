@@ -657,7 +657,7 @@
 
 - id: infracost
   eventbrite:
-  active: true
+  active: false
   title: "Infracost: Odhad ceny z Terraform pro každý pull request"
   date: "21. 9. 2022"
   time: "19:00"
