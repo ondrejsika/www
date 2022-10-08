@@ -1,3 +1,9 @@
+- id: 2022-10-08-vlastni-cli-tooly-v-go
+  title: Vlastní CLI tooly v Go
+  date: 8. 10. 2022
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2022-10-08/2022-10-08_Vlastni_CLI_tooly_v_Go.pdf
+
 - id: 2022-06-23-ovladejte-tanzu-pomoci-kubernetes-cluster-api
   title: Ovládejte Tanzu pomocí Kubernetes Cluster API
   date: 23. 6. 2022
