@@ -129,7 +129,7 @@
     "js-yaml-loader": "^1.2.2",
     "next": "^12.3.1",
     "next-fonts": "^1.5.1",
-    "next-transpile-modules": "^9.0.0",
+    "next-transpile-modules": "^9.1.0",
     "next-yaml": "^1.0.1",
     "node-sass": "6.0.1",
     "popper.js": "^1.16.0",
