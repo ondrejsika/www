@@ -44,7 +44,7 @@ const Navbar = (
           ["PROXMOX", "/skoleni/proxmox"],
           ["ELK / EFK", "/skoleni/elk"],
           ["DIGITAL OCEAN", "/skoleni/digitalocean"],
-          ["PACKER", "/skoleni/packer", "new"],
+          // ["PACKER", "/skoleni/packer", "new"],
           ["VAULT", "/skoleni/vault", "new"],
           // ["AWS", "/skoleni/aws"],
           // ["OPEN STACK", "/skoleni/openstack"],
