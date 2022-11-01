@@ -698,7 +698,7 @@
   eventbrite:
   active: true
   title: "Keycloak: Open source identity management"
-  date: "2.11.2022"
+  date: "16.11.2022"
   time: "19:00"
   youtube:
   about: |
@@ -717,7 +717,7 @@
   eventbrite:
   active: true
   title: "Úvod do Hashicorp Boundary"
-  date: "16.11.2022"
+  date: "30.11.2022"
   time: "19:00"
   youtube:
   about: |
@@ -735,7 +735,7 @@
   eventbrite:
   active: true
   title: "Github Script"
-  date: "30.11.2022"
+  date: "14.12.2022"
   time: "19:00"
   youtube:
   about: |
