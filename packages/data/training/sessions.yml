@@ -1776,3 +1776,423 @@
   name: Terraform
   price: 8 900 CZK
   venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 30.01.2023
+  date_to: 31.01.2023
+  facebook_event: null
+  id: docker-2023-01-30
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: terraform
+  date_from: 06.02.2023
+  date_to: 07.02.2023
+  facebook_event: null
+  id: Terraform-2023-02-06
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Terraform
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 20.02.2023
+  date_to: 21.02.2023
+  facebook_event: null
+  id: kubernetes-2023-02-20
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 20.02.2023
+  date_to: 21.02.2023
+  facebook_event: null
+  id: kubernetes-2023-02-20
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: cloudflare
+  date_from: 27.02.2023
+  date_to: 27.02.2023
+  facebook_event: null
+  id: cloudflare-2023-02-27
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Cloudflare
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: argocd
+  date_from: 28.02.2023
+  date_to: 28.02.2023
+  facebook_event: null
+  id: ArgoCD-2023-02-28
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: openshift
+  date_from: 06.03.2023
+  date_to: 07.03.2023
+  facebook_event: null
+  id: Openshift-a-okd-2023-03-06
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: OpenShift a OKD
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: prometheus
+  date_from: 13.03.2023
+  date_to: 14.03.2023
+  facebook_event: null
+  id: Prometheus-2023-03-13
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Prometheus
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: vault
+  date_from: 27.03.2023
+  date_to: 27.03.2023
+  facebook_event: null
+  id: Vault-2023-03-27
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Vault
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: packer
+  date_from: 28.03.2023
+  date_to: 28.03.2023
+  facebook_event: null
+  id: Packer-2023-03-28
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Packer
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: django
+  date_from: 17.04.2023
+  date_to: 18.04.2023
+  facebook_event: null
+  id: Django-2023-04-17
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Django
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: aws
+  date_from: 24.04.2023
+  date_to: 25.04.2023
+  facebook_event: null
+  id: ZakladyAWS-2023-04-24
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "Z\xE1klady AWS"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: rancher
+  date_from: 02.05.2023
+  date_to: 02.05.2023
+  facebook_event: null
+  id: Rancher-2023-05-02
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Rancher
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: gitlab-ci
+  date_from: 09.05.2023
+  date_to: 09.05.2023
+  facebook_event: null
+  id: GitlabCI-2023-05-09
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 15.05.2023
+  date_to: 16.05.2023
+  facebook_event: null
+  id: Docker-2023-05-15
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: go
+  date_from: 29.05.2023
+  date_to: 30.05.2023
+  facebook_event: null
+  id: uvod-do-go-golang-2023-05-29
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "\xDAvod do Go (Golang)"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: proxmox
+  date_from: 05.06.2023
+  date_to: 05.06.2023
+  facebook_event: null
+  id: proxmox-2023-06-05
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 12.06.2023
+  date_to: 13.06.2023
+  facebook_event: null
+  id: kubernetes-2023-06-12
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: aws
+  date_from: 11.09.2023
+  date_to: 12.09.2023
+  facebook_event: null
+  id: zakladyaws-2023-09-11
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "Z\xE1klady AWS"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: go
+  date_from: 18.09.2023
+  date_to: 19.09.2023
+  facebook_event: null
+  id: uvod-do-go-golang-2023-09-18
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "\xDAvod do Go (Golang)"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: rancher
+  date_from: 25.09.2023
+  date_to: 25.09.2023
+  facebook_event: null
+  id: rancher-2023-09-25
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Rancher
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 02.10.2023
+  date_to: 03.10.2023
+  facebook_event: null
+  id: docker-2023-10-02
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: openshift
+  date_from: 09.10.2023
+  date_to: 10.10.2023
+  facebook_event: null
+  id: openshift-a-okd-2023-10-09
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: OpenShift a OKD
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: prometheus
+  date_from: 16.10.2023
+  date_to: 17.10.2023
+  facebook_event: null
+  id: prometheus-2023-10-16
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Prometheus
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 30.10.2023
+  date_to: 31.10.2023
+  facebook_event: null
+  id: kubernetes-2023-10-30
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: terraform
+  date_from: 06.11.2023
+  date_to: 06.11.2023
+  facebook_event: null
+  id: terraform--2023-11-06
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: openstack
+  date_from: 13.11.2023
+  date_to: 14.11.2023
+  facebook_event: null
+  id: openStack-pro-vyvojare-2023-11-13
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: "OpenStack pro v\xFDvoj\xE1\u0159e"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: argocd
+  date_from: 20.11.2023
+  date_to: 20.11.2023
+  facebook_event: null
+  id: ArgoCd-2023-11-20
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: cloudflare
+  date_from: 21.11.2023
+  date_to: 21.11.2023
+  facebook_event: null
+  id: clouddflare-2023-11-21
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Cloudflare
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: django
+  date_from: 04.12.2023
+  date_to: 05.12.2023
+  facebook_event: null
+  id: Django-2023-12-04
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Django
+  price: 15 900 CZK
+  venue_id: null
