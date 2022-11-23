@@ -680,7 +680,7 @@
   title: "Terraform moduly v monorepu"
   date: "5.10.2022"
   time: "19:00"
-  youtube:
+  youtube: 5-jG7kvAKm8
   about: |
     Ukážeme si, jak efektivně spravov monorepo s Terraform moduly a jak je publikovat pomocí Gitu, Gitlabu a Terrafrom registry.
   points: |
@@ -700,7 +700,7 @@
   title: "Keycloak: Open source identity management"
   date: "16.11.2022"
   time: "19:00"
-  youtube:
+  youtube: ziUcizfpRok
   about: |
     Keycloak je open source identity a access management řešení.
     Pojďme si ukázat, jak jej zprovoznit a jaké nám přinese výhody.
