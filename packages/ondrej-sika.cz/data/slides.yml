@@ -1,3 +1,9 @@
+- id: 2022-02-22-dns-cz-kubernetes-jako-jednotna-platforma-pro-provoz-aplikaci
+  title: "DNS.cz: Kubernetes jako jednotna platforma pro provoz aplikaci"
+  date: 23. 11. 2022
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2022-02-22/2022-02-22_Kubernetes_jako_jednotna_platforma_pro_provoz_aplikaci.pdf
+
 - id: 2022-10-08-vlastni-cli-tooly-v-go
   title: Vlastní CLI tooly v Go
   date: 8. 10. 2022
