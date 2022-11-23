@@ -12,3 +12,4 @@ deploy-now.env.sh
 .kubeconfig
 cloudflare-workers/**/dist
 .gitlab-ci*.generated.yml
+*.swp
