@@ -676,7 +676,7 @@
 
 - id: terraform-modules-monorepo
   eventbrite:
-  active: true
+  active: false
   title: "Terraform moduly v monorepu"
   date: "5.10.2022"
   time: "19:00"
@@ -696,7 +696,7 @@
 
 - id: keycloak
   eventbrite:
-  active: true
+  active: false
   title: "Keycloak: Open source identity management"
   date: "16.11.2022"
   time: "19:00"
