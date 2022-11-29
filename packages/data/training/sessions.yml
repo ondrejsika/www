@@ -1720,7 +1720,7 @@
   name: ArgoCD
   price: 8 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: proxmox
@@ -1734,8 +1734,8 @@
   name: Proxmox
   price: 8 900 CZK
   venue_id: null
-- active: true
-  city: Prague
+- active: false
+  city: Online
   country: cz
   course_id: rancher
   date_from: 29.11.2022
