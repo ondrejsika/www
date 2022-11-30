@@ -112,7 +112,7 @@
     "eslint-plugin-react": "^7.31.11",
     "now": "^16.7.0",
     "npm-check-updates": "^12.5.12",
-    "prettier": "2.7.1"
+    "prettier": "2.8.0"
   },
   "dependencies": {
     "@cloudflare/wrangler": "^1.20.0",
@@ -139,7 +139,7 @@
     "react-dom": "^17.0.2",
     "react-google-recaptcha": "^2.1.0",
     "react-hook-form": "^4.10.2",
-    "react-icons": "^4.6.0",
+    "react-icons": "^4.7.1",
     "react-instagram-embed": "^3.0.0",
     "react-jsx-parser": "^1.29.0",
     "react-markdown": "^4.3.1",
