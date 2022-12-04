@@ -715,7 +715,7 @@
 
 - id: uvod-do-boundary
   eventbrite:
-  active: true
+  active: false
   title: "Úvod do Hashicorp Boundary"
   date: "30.11.2022"
   time: "19:00"
