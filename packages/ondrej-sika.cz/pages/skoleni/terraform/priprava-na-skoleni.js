@@ -9,7 +9,7 @@ const Page = () => (
 Na školení Terraformu je potřeba:
 
 - Nainstalovaný Terraform - [návod na instalaci](/terraform/instalace)
-- Účet na DigitalOcean (Pokud nemáte můžete použít můj referral: [Registrace + 50 USD kredit](https://sika.link/do-ref))
+- Účet na DigitalOcean (Pokud nemáte můžete použít můj referral: [Registrace + 50 USD kredit](https://sika.link/do-ref)) - Pouze pro otevrena skoleni (neni potreba na skoleni ve firmach)
 `}
   />
 );
