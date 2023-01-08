@@ -12,18 +12,21 @@
     "dev-devopsaci.cz": "yarn --cwd sites/devopsaci.cz dev -p 4004",
     "dev-sikahosting.com": "yarn --cwd sites/sikahosting.com dev -p 4005",
     "dev-devopsaci-landing": "yarn --cwd sites/devopsaci-landing dev -p 4006",
+    "dev-teamsika.com": "yarn --cwd sites/teamsika.com dev -p 4007",
     "static-digitalocean.cz": "yarn --cwd sites/digitalocean.cz static",
     "static-devopsnews.cz": "yarn --cwd sites/devopsnews.cz static",
     "static-hashicorp.cz": "yarn --cwd sites/hashicorp.cz static",
     "static-devopsaci.cz": "yarn --cwd sites/devopsaci.cz static",
     "static-sikahosting.com": "yarn --cwd sites/sikahosting.com static",
     "static-devopsaci-landing": "yarn --cwd sites/devopsaci-landing static",
+    "static-teamsika.com": "yarn --cwd sites/teamsika.com static",
     "deploy-digitalocean.cz": "yarn run static-digitalocean.cz && statica digitalocean.cz ./sites/digitalocean.cz/out",
     "deploy-devopsnews.cz": "yarn run static-devopsnews.cz && statica devopsnews.cz ./sites/devopsnews.cz/out",
     "deploy-hashicorp.cz": "yarn run static-hashicorp.cz && statica hashicorp.cz ./sites/hashicorp.cz/out",
     "deploy-devopsaci.cz": "yarn run static-devopsaci.cz && statica devopsaci.cz ./sites/devopsaci.cz/out",
     "deploy-sikahosting.com": "yarn run static-sikahosting.com && statica sikahosting.com ./sites/sikahosting.com/out",
-    "deploy-devopsaci-landing": "yarn run static-devopsaci-landing && statica devopsaci.cz ./sites/devopsaci-landing/out"
+    "deploy-devopsaci-landing": "yarn run static-devopsaci-landing && statica devopsaci.cz ./sites/devopsaci-landing/out",
+    "deploy-teamsika.com": "echo 'Not implemented yet' && exit 1"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
