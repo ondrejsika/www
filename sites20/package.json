@@ -29,7 +29,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.31.11",
     "npm-check-updates": "^10.3.1",
-    "prettier": "2.8.1"
+    "prettier": "2.8.2"
   },
   "dependencies": {
     "next-transpile-modules": "^8.0.0"
