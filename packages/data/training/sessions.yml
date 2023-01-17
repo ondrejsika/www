@@ -1877,6 +1877,20 @@
 - active: true
   city: Prague
   country: cz
+  course_id: django
+  date_from: 20.03.2023
+  date_to: 21.03.2023
+  facebook_event: null
+  id: Django-2023-03-20
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Django
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
   course_id: vault
   date_from: 27.03.2023
   date_to: 27.03.2023
@@ -1901,20 +1915,6 @@
   linkedin_event: null
   name: Packer
   price: 8 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
-  course_id: django
-  date_from: 17.04.2023
-  date_to: 18.04.2023
-  facebook_event: null
-  id: Django-2023-04-17
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: Django
-  price: 15 900 CZK
   venue_id: null
 - active: true
   city: Online
