@@ -12,6 +12,7 @@ import argocd_w from "@app/data/pictures/courses/white/argocd-large.png";
 import boundary_w from "@app/data/pictures/technologies/boundary-w.png";
 import github_actions_w from "@app/data/pictures/technologies/github-actions-w.png";
 import vscode_w from "@app/data/pictures/technologies/vscode-w.png";
+import metallb_w from "@app/data/pictures/technologies/metallb-w.png";
 
 import gitlab_b from "@app/data/pictures/courses/blue/gitlab_ci.svg";
 import docker_b from "@app/data/pictures/courses/blue/docker.svg";
@@ -33,6 +34,7 @@ import github_actions_tmp from "@app/data/pictures/technologies/github-actions.p
 import keycloak_tmp from "@app/data/pictures/technologies/keycloak.png";
 import infracost_tmp from "@app/data/pictures/technologies/infracost.png";
 import vscode_tmp from "@app/data/pictures/technologies/vscode.png";
+import metallb_tmp from "@app/data/pictures/technologies/metallb.png";
 
 const Img = styled.img`
   height: 100px;
@@ -63,7 +65,8 @@ const TechnologyIcons = (props) => {
               "github-actions": github_actions_w.src,
               keycloak: keycloak_tmp.src,
               infracost: infracost_tmp.src,
-              vscode: vscode_w.src
+              vscode: vscode_w.src,
+              metallb: metallb_w.src
             }[props.icon]
           }
         />
@@ -89,7 +92,8 @@ const TechnologyIcons = (props) => {
               "github-actions": github_actions_tmp.src,
               keycloak: keycloak_tmp.src,
               infracost: infracost_tmp.src,
-              vscode: vscode_tmp.src
+              vscode: vscode_tmp.src,
+              metallb: metallb_tmp.src
             }[props.icon]
           }
         />
