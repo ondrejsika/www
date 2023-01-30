@@ -27,6 +27,7 @@ const Page = () => (
 
 ## Kubernetes
 
+- Sikalabs Helm Charts - https://github.com/sikalabs/charts
 - Jak nainstalovat Kubernetes na bare metal - https://github.com/ondrejsika/bare-metal-kubernetes
 - Jednoduchy HELM balicek (sikalabs/hello-world) - https://github.com/sikalabs/charts/tree/master/charts/hello-world
 
