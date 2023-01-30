@@ -63,6 +63,10 @@ const Page = () => (
 
 [Vsechny repozitare tykajici se Terraformu na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=terraform&type=&language=)
 
+## ArgoCD
+
+- ArgoCD Apps (nasazene) - https://github.com/ondrejsika/argocd-apps-public
+
 ## React & Next.js
 
 - Ukazkovy osobni web v Next.js a Reactu ([live](https://next-simple-website.ondrejsika.now.sh/)) - <https://github.com/ondrejsika/next-simple-website>
