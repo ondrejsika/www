@@ -34,6 +34,8 @@ const Page = () => (
 
 ## Terraform
 
+- Teraform Examples (sem postupne migruju vsechny ukazky) - https://github.com/ondrejsika/terraform-examples
+
 #### Ukazky Infrastruktury
 
 - Kubernetes na DigitalOcean - https://github.com/ondrejsika/terraform-do-kubernetes-example
