@@ -98,6 +98,12 @@ const Page = () => (
 
 - Kubernetes na Azure - https://github.com/ondrejsika/example-azure-k8s
 - Azure Kubernetes Terraform Module- https://github.com/ondrejsika/terraform-module-azure-k8s
+
+## Golang Tools & Utils
+
+- slu (SikaLabs Utils) - https://github.com/sikalabs/slu
+- tergum (backup tool) - https://github.com/sikalabs/tergum
+- training-cli (training helper utility) - https://github.com/ondrejsika/training-cli
 `}
   />
 );
