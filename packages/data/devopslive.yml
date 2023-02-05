@@ -92,7 +92,7 @@
   title: Proč a jak používat Cloudflare
   date: 18.11.2020
   time: "19:00"
-  youtube:
+  youtube: hSyBBLWRXLs
   about: |
     Přesuňte své domény do Cloudflare. Získáte tím stabilní DNS, DDoS ochranu a CDN, to celé spravované Terraformem.
   points: |
