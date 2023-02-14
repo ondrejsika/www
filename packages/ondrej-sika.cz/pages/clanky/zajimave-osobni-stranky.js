@@ -39,6 +39,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://www.raphaelmichel.de/>
 - <https://filiph.net/> ([source](https://github.com/filiph/filiphnet), [fork](https://github.com/ondrejsika-inspiration/filiphnet))
 - <https://robinpokorny.com/> ([source](https://github.com/robinpokorny/robinpokorny.com), [fork](https://github.com/ondrejsika-inspiration/robinpokorny.com))
+- <https://filippo.io/>
     `}
     />
   );
