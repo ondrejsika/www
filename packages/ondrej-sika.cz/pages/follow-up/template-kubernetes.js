@@ -8,37 +8,34 @@ const Page = () => (
     subheader="%%%DATE_HUMAN%%%"
     hideNewsletter={true}
     markdown={`
-## Materiály
-
-### Repozitář s kurzy
+## Repozitář s kurzem
 
 - Kubernetes - https://github.com/ondrejsika/kubernetes-training/
 
-### Další zajímavé odkazy a repozitáře
+## Další zajímavé odkazy a repozitáře
 
 - [DevOps Live](/devopslive) - Live streamy na témata z DevOps
-- [Kubernetes na mém blogu](/blog/tag/kubernetes/)
 - [slu](https://github.com/sikalabs/slu) - SikaLabs Utils
-- [training-cli](https://github.com/sikalabs/training-cli) - CLI for help during training
 - [https://ondrej-sika.cz/repozitare/](/repozitare) - Seznam zajímavých repozitářů
 - https://github.com/ondrejsika - Všechny mé repozitáře na Githubu
 
-### Repozitáře, které jsme při školení vytvořili
+## Repozitáře, které jsme při školení vytvořili
 
 - https://github.com/sika-training-examples
 
-### Další použité repozitáře
+## Další použité nebo related repozitáře
 
 - Terraform Infrastruktura Demo Gitlabu - https://github.com/ondrejsika/terraform-demo-gitlab
-- Demo Kubernetes Cluster on DigitalOcean - https://github.com/ondrejsika/terraform-do-kubernetes-example
+- Demo Kubernetes Cluster on DigitalOcean - https://github.com/ondrejsika/terraform-demo-k8s
 - Public ArgoCD repo with apps - https://github.com/ondrejsika/argocd-apps-public
 - Prometheus on Kubernetes - https://github.com/sikalabs/sikalabs-kubernetes-prometheus
 
-### Témata, které jsme nakousli
+## Témata, které jsme nakousli
 
 - Terraform - Infrastructure as a code, [Školení Terraformu](/skoleni/terraform)
-- RKE & Rancher - On premise Kubernetes [Školení Rancheru](/skoleni/rancher)
+- RKE & Rancher - On premise Kubernetes, [Školení Rancheru](/skoleni/rancher)
 - DigitalOcean - Cloudova Platforma, [Školení DigitalOcean](/skoleni/digitalocean)
+- ArgoCD - GitOps, [Školení ArgoCD](/skoleni/argocd)
 
 Pokud byste měli zájem o nějaké další školení, můžete si vybrat zde:
 
