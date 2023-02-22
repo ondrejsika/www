@@ -1,3 +1,9 @@
+- id: 2023-02-22-Vyhody-kontejneru-pri-distribuci-softwaru-i-v-enterprise-prostredi
+  title: "Výhody kontejnerů při distribuci softwaru i v enterprise prostředí"
+  date: 22. 2. 2022
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2023-02-22/2023-02-22_Vyhody_kontejneru_pri_distribuci_softwaru_i_v_enterprise_prostredi.pdf
+
 - id: 2022-02-22-dns-cz-kubernetes-jako-jednotna-platforma-pro-provoz-aplikaci
   title: "DNS.cz: Kubernetes jako jednotna platforma pro provoz aplikaci"
   date: 23. 11. 2022
