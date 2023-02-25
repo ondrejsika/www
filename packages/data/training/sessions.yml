@@ -1947,20 +1947,6 @@
 - active: true
   city: Prague
   country: cz
-  course_id: gitlab-ci
-  date_from: 09.05.2023
-  date_to: 09.05.2023
-  facebook_event: null
-  id: GitlabCI-2023-05-09
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Gitlab CI
-  price: 8 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: docker
   date_from: 15.05.2023
   date_to: 16.05.2023
@@ -2004,15 +1990,29 @@
   city: Prague
   country: cz
   course_id: kubernetes
-  date_from: 12.06.2023
-  date_to: 13.06.2023
+  date_from: 06.06.2023
+  date_to: 07.06.2023
   facebook_event: null
-  id: kubernetes-2023-06-12
+  id: kubernetes-2023-06-06
   lang: cs
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
   price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: gitlab-ci
+  date_from: 19.06.2023
+  date_to: 19.06.2023
+  facebook_event: null
+  id: GitlabCI-2023-06-19
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
