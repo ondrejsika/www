@@ -21,6 +21,8 @@ const Page = () => (
 - [Čaje](/clanky/caje)
 - [Prvni kroky ve Fronted vývoji](/clanky/prvni-kroky-ve-frontend-vyvoji)
 - [Bitcoin](/bitcoin)
+- [ChatGPT](/chat-gpt)
+- [Github Copilot](/github-copilot)
 `}
   />
 );
