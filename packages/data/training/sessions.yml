@@ -1849,20 +1849,6 @@
 - active: true
   city: Prague
   country: cz
-  course_id: openshift
-  date_from: 06.03.2023
-  date_to: 07.03.2023
-  facebook_event: null
-  id: Openshift-a-okd-2023-03-06
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: OpenShift a OKD
-  price: 15 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: prometheus
   date_from: 13.03.2023
   date_to: 14.03.2023
@@ -1900,20 +1886,6 @@
   length: 1 den
   linkedin_event: null
   name: Vault
-  price: 8 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
-  course_id: packer
-  date_from: 28.03.2023
-  date_to: 28.03.2023
-  facebook_event: null
-  id: Packer-2023-03-28
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Packer
   price: 8 900 CZK
   venue_id: null
 - active: true
@@ -2068,20 +2040,6 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
-  price: 15 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
-  course_id: openshift
-  date_from: 09.10.2023
-  date_to: 10.10.2023
-  facebook_event: null
-  id: openshift-a-okd-2023-10-09
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: OpenShift a OKD
   price: 15 900 CZK
   venue_id: null
 - active: true
