@@ -92,7 +92,7 @@
   technology_id: terraform
   name: Terraform
   price_open: 6 800 CZK
-  price_in_house: 29 000 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Co to je Terraform a k čemu se používá?
 
@@ -138,7 +138,7 @@
   technology_id: gitlab-ci
   name: Gitlab CI
   price_open: 6 800 CZK
-  price_in_house: 29 000 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Co je to Continuous Integration?
 
@@ -214,7 +214,7 @@
   technology_id: git
   name: Git
   price_open: 6 800 CZK
-  price_in_house: 29 000 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Co je to Git?
 
@@ -418,7 +418,7 @@
   technology_id: golang
   name: CLI aplikace v Go
   price_open: 6 900 CZK
-  price_in_house: 29 000 CZK
+  price_in_house: 32 000 CZK
   description: |
     Na kurzu pracuji, pokud máte o školení zájem, dejte vědět.
 
@@ -427,7 +427,7 @@
   technology_id: rancher
   name: Rancher
   price_open: 6 800 CZK
-  price_in_house: 29 000 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Popis technologie
 
@@ -459,7 +459,7 @@
   technology_id: proxmox
   name: Proxmox
   price_open: 6 800 CZK
-  price_in_house: 29 000 CZK
+  price_in_house: 32 000 CZK
   description: |
     ### Co je to Proxmox
 
@@ -1392,7 +1392,7 @@
   lecturer_id: jiripinkas
   technology_id: java
   name: Java programování
-  price_open: 29 000 CZK
+  price_open: 32 000 CZK
   price_in_house: 80 000 CZK
   description: |
     ### Jak školení probíhá
@@ -1455,7 +1455,7 @@
   lecturer_id: jiripinkas
   technology_id: java
   name: Tvorba web. aplikací v Javě
-  price_open: 29 000 CZK
+  price_open: 32 000 CZK
   price_in_house: 80 000 CZK
   description: |
     ### Co je to Spring
@@ -1670,7 +1670,7 @@
   lecturer_id: jiripinkas
   technology_id: microservices
   name: Microservices
-  price_open: 29 000 CZK
+  price_open: 32 000 CZK
   price_in_house: 80 000 CZK
   description: |
     ### Co jsou to Microservices?

@@ -301,7 +301,7 @@
     open:
       cz: 8 900 CZK
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
   twitter_recommendations:
     cs: []
   recommendations:
@@ -394,7 +394,7 @@
       uk: 540 EUR
       se: "??? SEK"
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
       sk: 1190 EUR
       nl: "??? EUR"
       de: 1690 EUR
@@ -543,7 +543,7 @@
       uk: 540 EUR
       se: "??? SEK"
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
       sk: 1190 EUR
       nl: "??? EUR"
       de: 1690 EUR
@@ -842,7 +842,7 @@
       uk: 540 EUR
       se: "??? SEK"
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
   twitter_recommendations:
     cs:
       - radim-daniel-panek-terraform
@@ -977,7 +977,7 @@
     open:
       cz: 8 900 CZK
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
   twitter_recommendations:
     cs: []
   recommendations:
@@ -1333,7 +1333,7 @@
       de: 540 EUR
       uk: 540 EUR
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
       de: 1690 EUR
       uk: 1690 EUR
   twitter_recommendations:
@@ -1401,7 +1401,7 @@
       de: 540 EUR
       uk: 540 EUR
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
       de: 1690 EUR
       uk: 1690 EUR
   twitter_recommendations:
@@ -1480,7 +1480,7 @@
       de: 540 EUR
       uk: 540 EUR
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
       de: 1690 EUR
       uk: 1690 EUR
   twitter_recommendations:
@@ -1827,7 +1827,7 @@
       uk: 540 EUR
       se: "??? SEK"
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
   twitter_recommendations:
     cs:
       - radim-daniel-panek-terraform
@@ -2050,7 +2050,7 @@
       uk: 540 EUR
       se: "??? SEK"
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
   twitter_recommendations:
     cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
     sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
@@ -2189,7 +2189,7 @@
       uk: 540 EUR
       se: "??? SEK"
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
   twitter_recommendations:
     cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
     sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
@@ -2230,7 +2230,7 @@
       uk: 540 EUR
       se: "??? SEK"
     in_house:
-      cz: 29 000 CZK
+      cz: 32 000 CZK
   twitter_recommendations:
     cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
     sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
