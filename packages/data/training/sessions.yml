@@ -2140,3 +2140,17 @@
   name: Django
   price: 15 900 CZK
   venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: vault
+  date_from: 18.12.2023
+  date_to: 18.12.2023
+  facebook_event: null
+  id: vault-2023-12-18
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Vault
+  price: 8 900 CZK
+  venue_id: null
