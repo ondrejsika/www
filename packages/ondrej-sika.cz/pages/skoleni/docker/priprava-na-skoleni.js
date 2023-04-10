@@ -1,3 +1,5 @@
+// http://localhost:3010/skoleni/docker/priprava-na-skoleni/
+
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
