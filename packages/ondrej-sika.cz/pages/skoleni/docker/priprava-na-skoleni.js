@@ -23,7 +23,7 @@ Na školení Dockeru potřebujete
 - Git
 - Textovy editor (doporucuji VS Code)
 - Nainstalovaný Docker - [návod na instalaci](/docker/instalace)
-- Přístup na internet ideálně __bez korporátní proxy__, případne nastavenou proxy v Docker Desktop (na Mac stačí mít nastavenou systémovou proxy)
+- Přístup na internet
 
 Doporučuji ješte doma (nebo na dobrém internetu) stáhnout Docker images, které budeme používat. Je to cca 5 GB a občas to bývá při stahování na školení na wifi hodně. Na tomto odkazu je seznam příkazů jak je stáhnout: <https://gist.github.com/ondrejsika/e9748d49120cb1a656d39558ad379f45>
 
