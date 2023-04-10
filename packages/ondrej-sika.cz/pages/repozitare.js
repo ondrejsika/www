@@ -14,7 +14,6 @@ const Page = () => (
 - Traefik v1 proxy s Let's Encrypt pro Docker - https://github.com/ondrejsika/traefik-le
 - Docker Compose Examples - https://github.com/ondrejsika/docker-compose-examples
 - Docker Registry za Traefik proxy - https://github.com/ondrejsika/docker-registry-traefik
-- HA Docker Cluster pomocí Swarmu a Cephu - https://github.com/ondrejsika/ha-docker-cluster-with-swarm-and-ceph
 
 
 ## Gitlab CI
@@ -83,10 +82,6 @@ const Page = () => (
 - Terraform Provider for Vercel - https://github.com/ondrejsika/terraform-provider-vercel
 - Vercel API Mock server - https://github.com/ondrejsika/vercel-api-mock
 - Go client for Vercel API - https://github.com/ondrejsika/vercel-go
-
-## Ceph
-
-- HA Docker Cluster pomocí Swarmu a Cephu - https://github.com/ondrejsika/ha-docker-cluster-with-swarm-and-ceph
 
 ## AWS
 
