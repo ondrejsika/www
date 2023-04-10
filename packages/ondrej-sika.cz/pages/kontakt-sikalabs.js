@@ -1,4 +1,5 @@
 import React from "react";
+
 import Head from "next/head";
 import Link from "next/link";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
@@ -6,40 +7,28 @@ import MainBar from "@app/ondrejsika-theme/components/MainBar";
 const Index = () => (
   <div>
     <Head>
-      <title>Kontakty - Ondřej Šika</title>
+      <title>Kontakty - SikaLabs s.r.o.</title>
     </Head>
-    <MainBar header="Kontakt" />
+    <MainBar header="Kontakt na SikaLabs s.r.o." />
     <div className="container">
-      <h3 className="pt-4 pb-2">Ondřej Šika</h3>
+      <h3 className="pt-4 pb-2">SikaLabs s.r.o.</h3>
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-          <p className="">
-            <a href="tel:+420773452376">+420 773 452 376</a> (
-            <a href="https://t.me/ondrejsika">Telegram</a>)
-            <br />
-            <a href="mailto:ondrej@sika.io?subject=Poptavka skoleni">
-              ondrej@sika.io
-            </a>
-            <br />
-            <a href="mailto:skoleni@sika.io?subject=Poptavka skoleni">
-              skoleni@sika.io
-            </a>
+          <p>
+            <a href="mailto:hi@trainera.io">hi@sikalabs.com</a>
           </p>
           <p className="pb-4">
-            <a href="https://linkedin.com/in/ondrejsika">
-              linkedin.com/in/ondrejsika
+            <a href="https://www.linkedin.com/company/sikalabs">
+              linkedin.com/company/sikalabs
             </a>
-          </p>
-          <p className="pb-4">
-            Datová schránka: <b>dcd68s8</b>
           </p>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
           <h4>Fakturační údaje</h4>
           <p>
-            Klatovská třída 1532/71
+            Varšavská 715/36
             <br />
-            301 00 Plzeň
+            120 00 Praha 2
             <br />
             Česká Republika
           </p>
@@ -47,15 +36,15 @@ const Index = () => (
             <tbody>
               <tr>
                 <td>IČ:</td>
-                <td>88114163</td>
+                <td>19168993</td>
               </tr>
               <tr>
                 <td>DIČ:</td>
-                <td>CZ9302252102</td>
+                <td>CZ19168993 (neplatce DPH)</td>
               </tr>
               <tr>
                 <td>Účet:&nbsp;&nbsp;&nbsp;</td>
-                <td>2301432033/2010 (Fio)</td>
+                <td>2202527221/2010 (Fio)</td>
               </tr>
             </tbody>
           </table>
@@ -66,15 +55,15 @@ const Index = () => (
             <tbody>
               <tr>
                 <td>ČR (CZK):</td>
-                <td>2301432033 / 2010</td>
+                <td>2202527221 / 2010</td>
               </tr>
               <tr>
                 <td>SK (EUR):</td>
-                <td>2301432033 / 8330</td>
+                <td>2202527221 / 8330</td>
               </tr>
               <tr>
                 <td>IBAN:</td>
-                <td>CZ0820100000002301432033</td>
+                <td>CZ4720100000002202527221</td>
               </tr>
               <tr>
                 <td>BIC / SWIFT:</td>
@@ -100,8 +89,8 @@ const Index = () => (
       </div>
       <p>
         Kontakt na{" "}
-        <Link href="/kontakt-sikalabs">
-          <a>SikaLabs s.r.o.</a>
+        <Link href="/kontakt">
+          <a>Ondřej Šika</a>
         </Link>
         ,{" "}
         <Link href="/kontakt-trainera">

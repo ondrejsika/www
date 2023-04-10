@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
-const Index = (props) => (
+const Index = () => (
   <div>
     <Head>
       <title>Kontakty - Trainera s.r.o.</title>
@@ -96,6 +96,10 @@ const Index = (props) => (
         Kontakt na{" "}
         <Link href="/kontakt">
           <a>Ondřej Šika</a>
+        </Link>
+        ,{" "}
+        <Link href="/kontakt-sikalabs">
+          <a>SikaLabs s.r.o.</a>
         </Link>
       </p>
     </div>
