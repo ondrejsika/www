@@ -24,7 +24,12 @@ Na školení Dockeru potřebujete
 - Vlastní notebook
 - Git
 - Textovy editor (doporucuji VS Code)
-- Nainstalovaný Docker - [návod na instalaci](/docker/instalace)
+- Nainstalovaný Docker - https://docs.docker.com/get-docker/
+  - Windows, Mac - Docker Desktop - <https://docs.docker.com/get-docker/>
+  - Linux (Docker Engine or Docker Desktop)
+    - Docker Engine -  <https://docs.docker.com/engine/install/>
+    - Docker Desktop - <https://docs.docker.com/get-docker/>
+    - Rozdil mezi Docker Engine a Docker Desktop - <https://docs.docker.com/desktop/faqs/linuxfaqs/#what-is-the-difference-between-docker-desktop-for-linux-and-docker-engine>
 - Přístup na internet
 
 Doporučuji ješte doma (nebo na dobrém internetu) stáhnout Docker images, které budeme používat. Je to cca 5 GB a občas to bývá při stahování na školení na wifi hodně. Na tomto odkazu je seznam příkazů jak je stáhnout: <https://gist.github.com/ondrejsika/e9748d49120cb1a656d39558ad379f45>
