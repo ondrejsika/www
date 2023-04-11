@@ -15,7 +15,7 @@ const Index = () => (
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
           <p>
-            <a href="mailto:hi@trainera.io">hi@sikalabs.com</a>
+            <a href="mailto:hi@sikalabs.com">hi@sikalabs.com</a>
           </p>
           <p className="pb-4">
             <a href="https://www.linkedin.com/company/sikalabs">
