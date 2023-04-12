@@ -41,6 +41,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://robinpokorny.com/> ([source](https://github.com/robinpokorny/robinpokorny.com), [fork](https://github.com/ondrejsika-inspiration/robinpokorny.com))
 - <https://filippo.io/>
 - <https://jirm.cz/>
+- <https://danfarrelly.com>
     `}
     />
   );
