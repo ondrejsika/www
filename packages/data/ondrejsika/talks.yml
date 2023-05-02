@@ -1,3 +1,9 @@
+- id: vyhody-a-nevyhody-ruznych-cloudovych-reseni
+  title: Vyhody a nevyhody ruznych cloudovych reseni
+  bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
+  abstract: Public nebo private? Multicloud nebo hybridni reseni? Velky cloud (AWS, Azure, GCP), mensi cloud (DigitalOcean, Hetzner, Linode) lokalni provider (CRA, HomeAtCloud) nebo privatni cloud on-premise (VMWare, OpenStack)? Pojdme si projit tyto variaty, popsat vyhody a nevyhody jednotlivych reseni a zjistit, ktere reseni je vhodne pro Vas use case.
+  submissions:
+    - cloudkonference2023
 - id: nahrada-shell-scriptu-pomoci-cli-toolu-v-go-cz
   title: Nahrada shell scriptu pomoci CLI toolu v Go
   bio: Jsem DevOps engineer and konzultant z Prahy. Pomáhám firmám zavádět a zlepšovat DevOps, aby zefektivnili proces vývoje, automatizovali nasazování software a zvýšili stabilitu při jeho provozování.
