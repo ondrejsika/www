@@ -42,6 +42,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://filippo.io/>
 - <https://jirm.cz/>
 - <https://danfarrelly.com>
+- <https://yurimilner.com/>
     `}
     />
   );
