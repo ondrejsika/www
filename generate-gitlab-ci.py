@@ -35,6 +35,7 @@ STATICA_SITES_STATICA_SITES20 = [
 
 STATICA_SITES_STATICA_SITES20_DEV = [
     {"name": "devopsaci-landing"},
+    {"name": "sikalabs-landing"},
     {"name": "devopsaci.cz"},
 ]
 
