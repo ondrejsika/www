@@ -1916,20 +1916,6 @@
   name: Rancher
   price: 8 900 CZK
   venue_id: null
-- active: false
-  city: Prague
-  country: cz
-  course_id: docker
-  date_from: 15.05.2023
-  date_to: 16.05.2023
-  facebook_event: null
-  id: Docker-2023-05-15
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: Docker
-  price: 15 900 CZK
-  venue_id: null
 - active: true
   city: Prague
   country: cz
@@ -1961,15 +1947,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: kubernetes
+  course_id: docker
   date_from: 06.06.2023
   date_to: 07.06.2023
   facebook_event: null
-  id: kubernetes-2023-06-06
+  id: Docker-2023-06-06
   lang: cs
   length: 2 dny
   linkedin_event: null
-  name: Kubernetes
+  name: Docker
   price: 15 900 CZK
   venue_id: null
 - active: true
