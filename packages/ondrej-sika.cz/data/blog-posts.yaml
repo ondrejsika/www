@@ -1,3 +1,18 @@
+- id: kcd-cz-sk-2023-opensource-kubernetes-stack
+  title: "Slides z  Open Source Kubernetes Stack"
+  date: 19. 5. 2023
+  ad: kubernetes
+  tags:
+    - kubernetes
+    - kcd
+  perex: |
+    Slides z me prednasky o Open Source Kubernetes Stacku na Kubernetes Community Days Czech & Slovak 2023
+  content: |
+    Slides z me prednasky o Open Source Kubernetes Stacku na Kubernetes Community Days Czech & Slovak 2023
+
+    - Google Slides - <https://docs.google.com/presentation/d/1jidM_zr-lt6w6hNV1ysHAkGQkYzBduEKqmmmtrKwb5Y/edit>
+    - PDF - <https://raw.githubusercontent.com/ondrejsika/slides/master/2023-05-19/2023-05-19_KCD_CZ_SK_2023_OpenSource_Kubernetes_Stack.pdf>
+
 - id: tergum-v0.30.0
   title: "Tergum v0.30.0: Zalohovani Vaultu"
   date: 29. 7. 2022
