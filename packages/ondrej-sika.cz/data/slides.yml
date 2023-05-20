@@ -1,3 +1,9 @@
+- id: 2023-05-20-kcd-cz-sk-2023-nepiste-shell-scripty-pouzijte-go
+  title: "Kubernetes Community Days Czech & Slovak 2023: Nepište shell scripty, použijte Go!"
+  date: 20. 5. 2023
+  ad: kubernetes
+  pdf: https://docs.google.com/presentation/d/1OwYtyzGL8JnIGb1MIbk6BR-hE4ugMakep_6pe9P6s_c/view
+
 - id: 2023-05-19-kcd-cz-sk-2023-opensource-kubernetes-stack
   title: "Kubernetes Community Days Czech & Slovak 2023: Open Source Kubernetes Stack"
   date: 19. 5. 2023
