@@ -1,4 +1,10 @@
 - id: 2023-05-20-kcd-cz-sk-2023-nepiste-shell-scripty-pouzijte-go
+  title: "Cloud Computing Conference 2023: Výhody a nevýhody různých cloudových řešení"
+  date: 20. 5. 2023
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2023-05-23/2023-05-23_Cloud_Computing_Conference_2023_Vyhody_a_nevyhody_ruznych_cloudovych_reseni.pdf
+
+- id: 2023-05-20-kcd-cz-sk-2023-nepiste-shell-scripty-pouzijte-go
   title: "Kubernetes Community Days Czech & Slovak 2023: Nepište shell scripty, použijte Go!"
   date: 20. 5. 2023
   ad: kubernetes
