@@ -1,4 +1,10 @@
 - id: 2023-05-20-kcd-cz-sk-2023-nepiste-shell-scripty-pouzijte-go
+  title: "Vojtech Mares: Cloud Computing Conference 2023: Managed vs Self-Hosted Solution"
+  date: 23. 5. 2023
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/vojtechmares/slides/master/slides/2023-05-23-cloud-konference-exponet/self-hosted-vs-managed-solutions.pdf
+
+- id: 2023-05-20-kcd-cz-sk-2023-nepiste-shell-scripty-pouzijte-go
   title: "Cloud Computing Conference 2023: Výhody a nevýhody různých cloudových řešení"
   date: 20. 5. 2023
   ad: kubernetes
