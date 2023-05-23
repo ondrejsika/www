@@ -1169,71 +1169,174 @@
     cs: |
       ### Co Vás naučím
 
-      - Proc Go
-      -	Uvod do jazyka Go
-      - Nastaveni vyvojoveho prostredi
-      - Zakladni datove typy
-      - Kompozitni datove typy
-      - Protokoly a formaty
-      - Funkce a organizace kodu
-      - OOP v GO
-      - Interfaces a abstrakce
-      - Zaklady konkurence
-      - Vlakna v Go
+      - Introduction to Go
+        - Brief history of Go
+        - Why Go
+      - Setup development environment (Linux, Mac, Windows)
+        - Install Go
+        - Configure VS Code
+        - Code organization & Structure
+      - Getting Started
+        - Compiling (go build) and Running Go Applications (go run)
+        - Go Packages and Modules
+        - Formatting Go Source Code (gofmt)
+      - Go Basics
+        - Variables, Contstanst
+        - Types and Zero Values
+        - Naming Conventions in Go
+        - Package fmt (print)
+        - Comparison and Logical Operators
+        - Flow Control (if, for, switch)
+        - Arrays
+        - Maps
+        - Slices
+        - Structs
+        - Pointers
+        - Functions
+        - Working with files
+        - Packages & Modules
+        - Goroutines & Channels
+      - CLI Apps in GO
+        - Cobra (CLI)
+        - Viper (config)
+      - Web Servers in Go
+        - Basic server
+        - REST API
+        - Gorm - DB integration
+        - Gin - Web framework
+      - Goreleaser
+        - Go app distribution
+        - Releasing using Goreleaser
 
     en: |
       ### Course Outline
 
-      - Why Go
-      -	Go Introduction
-      - Development Environment Setup for Go
-      - Basic Data Types
-      - Composite Data Types
-      - Protocols and Formats
-      - Functions and Code Organization
-      - Function Types
-      - Object Orientation in Go
-      - Interfaces
-      - Why Use Concurrency?
-      - Concureny Basics
-      - Threads in Go
-      - Synchronized Communication
+      - Introduction to Go
+        - Brief history of Go
+        - Why Go
+      - Setup development environment (Linux, Mac, Windows)
+        - Install Go
+        - Configure VS Code
+        - Code organization & Structure
+      - Getting Started
+        - Compiling (go build) and Running Go Applications (go run)
+        - Go Packages and Modules
+        - Formatting Go Source Code (gofmt)
+      - Go Basics
+        - Variables, Contstanst
+        - Types and Zero Values
+        - Naming Conventions in Go
+        - Package fmt (print)
+        - Comparison and Logical Operators
+        - Flow Control (if, for, switch)
+        - Arrays
+        - Maps
+        - Slices
+        - Structs
+        - Pointers
+        - Functions
+        - Working with files
+        - Packages & Modules
+        - Goroutines & Channels
+      - CLI Apps in GO
+        - Cobra (CLI)
+        - Viper (config)
+      - Web Servers in Go
+        - Basic server
+        - REST API
+        - Gorm - DB integration
+        - Gin - Web framework
+      - Goreleaser
+        - Go app distribution
+        - Releasing using Goreleaser
   description:
     cs: |
       **Na tomto kurzu momentálně pracuji. V případě jakéhokoli dotazu mě pošlete email (<ondrej@sika.io>).**
 
       ### Co Vás naučím
 
-      - Proc Go
-      -	Uvod do jazyka Go
-      - Nastaveni vyvojoveho prostredi
-      - Zakladni datove typy
-      - Kompozitni datove typy
-      - Protokoly a formaty
-      - Funkce a organizace kodu
-      - OOP v GO
-      - Interfaces a abstrakce
-      - Zaklady konkurence
-      - Vlakna v Go
+
+      - Introduction to Go
+        - Brief history of Go
+        - Why Go
+      - Setup development environment (Linux, Mac, Windows)
+        - Install Go
+        - Configure VS Code
+        - Code organization & Structure
+      - Getting Started
+        - Compiling (go build) and Running Go Applications (go run)
+        - Go Packages and Modules
+        - Formatting Go Source Code (gofmt)
+      - Go Basics
+        - Variables, Contstanst
+        - Types and Zero Values
+        - Naming Conventions in Go
+        - Package fmt (print)
+        - Comparison and Logical Operators
+        - Flow Control (if, for, switch)
+        - Arrays
+        - Maps
+        - Slices
+        - Structs
+        - Pointers
+        - Functions
+        - Working with files
+        - Packages & Modules
+        - Goroutines & Channels
+      - CLI Apps in GO
+        - Cobra (CLI)
+        - Viper (config)
+      - Web Servers in Go
+        - Basic server
+        - REST API
+        - Gorm - DB integration
+        - Gin - Web framework
+      - Goreleaser
+        - Go app distribution
+        - Releasing using Goreleaser
     en: |
       **This course is in progress. Send me email (<ondrej@sika.io>) for any questions.**
 
       ### Course Outline
 
-      - Why Go
-      -	Go Introduction
-      - Development Environment Setup for Go
-      - Basic Data Types
-      - Composite Data Types
-      - Protocols and Formats
-      - Functions and Code Organization
-      - Function Types
-      - Object Orientation in Go
-      - Interfaces
-      - Why Use Concurrency?
-      - Concureny Basics
-      - Threads in Go
-      - Synchronized Communication
+      - Introduction to Go
+        - Brief history of Go
+        - Why Go
+      - Setup development environment (Linux, Mac, Windows)
+        - Install Go
+        - Configure VS Code
+        - Code organization & Structure
+      - Getting Started
+        - Compiling (go build) and Running Go Applications (go run)
+        - Go Packages and Modules
+        - Formatting Go Source Code (gofmt)
+      - Go Basics
+        - Variables, Contstanst
+        - Types and Zero Values
+        - Naming Conventions in Go
+        - Package fmt (print)
+        - Comparison and Logical Operators
+        - Flow Control (if, for, switch)
+        - Arrays
+        - Maps
+        - Slices
+        - Structs
+        - Pointers
+        - Functions
+        - Working with files
+        - Packages & Modules
+        - Goroutines & Channels
+      - CLI Apps in GO
+        - Cobra (CLI)
+        - Viper (config)
+      - Web Servers in Go
+        - Basic server
+        - REST API
+        - Gorm - DB integration
+        - Gin - Web framework
+      - Goreleaser
+        - Go app distribution
+        - Releasing using Goreleaser
 
 - id: django
   new: true
