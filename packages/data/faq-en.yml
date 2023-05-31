@@ -1,3 +1,13 @@
+- id: install-specific-gitlab-package
+  question: How to install specific GitLab package?
+  answer: |
+    ```
+    apt-get install gitlab-ce=15.11.6-ce.0
+    ```
+
+    Source: https://packages.gitlab.com/gitlab/gitlab-ce
+
+
 - id: ignore-hsts-chrome
   question: How to ignore HSTS in Google Chrome?
   answer: Just type "thisisunsafe".
