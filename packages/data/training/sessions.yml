@@ -1933,20 +1933,6 @@
 - active: true
   city: Prague
   country: cz
-  course_id: proxmox
-  date_from: 05.06.2023
-  date_to: 05.06.2023
-  facebook_event: null
-  id: proxmox-2023-06-05
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Proxmox
-  price: 8 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: docker
   date_from: 06.06.2023
   date_to: 07.06.2023
@@ -2012,6 +1998,20 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: proxmox
+  date_from: 27.09.2023
+  date_to: 27.09.2023
+  facebook_event: null
+  id: proxmox-2023-09-27
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
   price: 8 900 CZK
   venue_id: null
 - active: true
