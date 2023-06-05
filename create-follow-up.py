@@ -10,6 +10,7 @@ COURSES = (
     "kubernetes",
     "prometheus",
     "proxmox",
+    "go",
 )
 TEMPLATE_FILE = "packages/ondrej-sika.cz/pages/follow-up/template-{course}.js"
 OUTPUT_FILE = "packages/ondrej-sika.cz/pages/follow-up/{date}-{course}.js"
