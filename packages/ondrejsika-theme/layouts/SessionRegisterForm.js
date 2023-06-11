@@ -22,7 +22,8 @@ const SessionRegisterForm = (props) => {
       name: values.name,
       company: values.company,
       email: values.email,
-      phone: values.phone
+      phone: values.phone,
+      notes: values.notes
     };
     console.log(recaptchaRef.current.getValue());
     console.log(data);
@@ -73,6 +74,8 @@ const SessionRegisterForm = (props) => {
         register={register}
         errors={errors}
       />
+
+      <Field name="notes" label="Notes" register={register} errors={errors} />
       <ReCAPTCHA ref={recaptchaRef} sitekey={props.site.recaptcha_site_key} />
 
       <div className="pt-5">
