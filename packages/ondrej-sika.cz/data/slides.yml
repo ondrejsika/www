@@ -1,3 +1,9 @@
+- id: cloud-native-prague-3-terraform-provider-and-monorepo
+  title: "Cloud Native Prague #3: Terraform Provider and Monorepo"
+  date: 19. 6. 2023
+  ad: kubernetes
+  pdf: https://docs.google.com/presentation/d/1nA6hz6tmy89_cZWB3vj3TwIaWjdQPGPc3xwLjV8WLmM/edit
+
 - id: 2023-05-23-vojtech-mares-cloud-computing-conference-2023-managed-vs-self-hosted-solution
   title: "Vojtech Mares: Cloud Computing Conference 2023: Managed vs Self-Hosted Solution"
   date: 23. 5. 2023
