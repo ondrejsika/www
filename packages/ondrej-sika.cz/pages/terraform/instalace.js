@@ -6,21 +6,32 @@ const Page = () => (
     title="Instalace Terraformu"
     ad="terraform"
     markdown={`
+Oficialni navod na instalaci Terraformu
+
+https://developer.hashicorp.com/terraform/downloads
+
 ## Mac
 
 Na Macu nainstalujete Terraform pomocí [brew](/navody/brew)
 
     brew install terraform
 
-## Linux
-
-Na Linuxu si stáhněte (<https://www.terraform.io/downloads.html>) build v ZIPu a zkopírujte \`terraform\` binárku do \`/usr/local/bin\`.
-
 ## Windows
+
+Pomoci Winget
+
+    winget install -e --id Hashicorp.Terraform
 
 Na Windows naistalujete Terrafrom pomocí [chocolatey](/návody/chocolatey)
 
     choco install terraform
+
+## Linux
+
+Pomoci [slu](https://github.com/sikalabs/slu)
+
+    slu install-bin terraform
+
 `}
   />
 );
