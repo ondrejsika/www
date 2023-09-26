@@ -765,3 +765,18 @@
   technologies:
     - vscode
     - devcontainers
+
+- id: sprava-grafany-pomoci-terraformu
+  eventbrite:
+  active: true
+  title: "Sprava Grafany pomoci Terraformu"
+  date: "???"
+  time: "19:00"
+  youtube:
+  about: |
+    Pojdme si ukazat jak spravovat Grafanu pomoci principu GitOps. Pouzijeme k tomu Terraform. Ukazeme si praci s uzivateli, pridame datasource a vytvorime dashboard.
+  points: |
+    Pojdme si ukazat jak spravovat Grafanu pomoci principu GitOps. Pouzijeme k tomu Terraform. Ukazeme si praci s uzivateli, pridame datasource a vytvorime dashboard.
+  technologies:
+    - grafana
+    - terraform
