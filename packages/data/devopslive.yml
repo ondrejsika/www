@@ -780,3 +780,19 @@
   technologies:
     - grafana
     - terraform
+
+- id: sealed-secrets
+  eventbrite:
+  active: true
+  title: "Sealed Secrets"
+  date: "???"
+  time: "19:00"
+  youtube:
+  about: |
+    Sealed secrets je velmi jednoduchy zpusob, jak bezpecne ukladat sensitivni data v Gitu a GitOps. Ukazeme si jak Seald secrets funguji, jak je nasadit a jak pouzivat.
+  points: |
+    Sealed secrets je velmi jednoduchy zpusob, jak bezpecne ukladat sensitivni data v Gitu a GitOps. Ukazeme si jak Seald secrets funguji, jak je nasadit a jak pouzivat.
+  technologies:
+    - sealed-secrets
+    - kubernetes
+    - git
