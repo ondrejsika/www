@@ -733,7 +733,7 @@
 
 - id: github-script
   eventbrite:
-  active: true
+  active: false
   title: "Github Script"
   date: "14.12.2022"
   time: "19:00"
