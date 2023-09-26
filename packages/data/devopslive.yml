@@ -796,3 +796,19 @@
     - sealed-secrets
     - kubernetes
     - git
+
+- id: zerossl
+  eventbrite:
+  active: true
+  title: "ZeroSSL - alternativa k Let's Encrypt"
+  date: "???"
+  time: "19:00"
+  youtube:
+  about: |
+    ZeroSSL je poskytovatel certifikatu podobne jako Let's Encrypt. Je to placena sluzba s free verzi, ktera ma o proti Let's Encrypt tu vyhodu ze nelimituje pocet vystavenych certifikatu - o proti tomu ma Let's Encrypt limit 35 certifikatu tydne. ZeroSSL je proto vhodne na testovaci prostredi. Zaroven nas muze zachranit, kdyz z nejakeho duvodu dostaneme od Let's Encrypt ban - typicky za nevalidni pozadavky na verifikaci. Zachranit nas muze i free varianta. Ukazeme si pouziti s Cert Managerem a CLI toolem lego.
+  points: |
+    ZeroSSL je poskytovatel certifikatu podobne jako Let's Encrypt. Je to placena sluzba s free verzi, ktera ma o proti Let's Encrypt tu vyhodu ze nelimituje pocet vystavenych certifikatu - o proti tomu ma Let's Encrypt limit 35 certifikatu tydne. ZeroSSL je proto vhodne na testovaci prostredi. Zaroven nas muze zachranit, kdyz z nejakeho duvodu dostaneme od Let's Encrypt ban - typicky za nevalidni pozadavky na verifikaci. Zachranit nas muze i free varianta. Ukazeme si pouziti s Cert Managerem a CLI toolem lego.
+  technologies:
+    - letsencrypt
+    - zerossl
+    - kubernetes
