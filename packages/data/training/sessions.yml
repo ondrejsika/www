@@ -2127,6 +2127,20 @@
   price: 15 900 CZK
   venue_id: null
 - active: true
+  city: Online
+  country: cz
+  course_id: gitlab-ci
+  date_from: 06.12.2023
+  date_to: 06.12.2023
+  facebook_event: null
+  id: gitlabci-2023-12-06
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 8 900 CZK
+  venue_id: null
+- active: true
   city: Prague
   country: cz
   course_id: vault
