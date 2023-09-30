@@ -2129,11 +2129,25 @@
 - active: true
   city: Online
   country: cz
-  course_id: gitlab-ci
+  course_id: git
   date_from: 06.12.2023
   date_to: 06.12.2023
   facebook_event: null
-  id: gitlabci-2023-12-06
+  id: Git-2023-12-06
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Git
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: gitlab-ci
+  date_from: 07.12.2023
+  date_to: 07.12.2023
+  facebook_event: null
+  id: Gitlabci-2023-12-07
   lang: cs
   length: 1 den
   linkedin_event: null
