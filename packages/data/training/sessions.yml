@@ -2115,15 +2115,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: django
+  course_id: docker
   date_from: 04.12.2023
   date_to: 05.12.2023
   facebook_event: null
-  id: Django-2023-12-04
+  id: Docker-2023-12-04
   lang: cs
   length: 2 dny
   linkedin_event: null
-  name: Django
+  name: Docker
   price: 15 900 CZK
   venue_id: null
 - active: true
