@@ -3,6 +3,7 @@
   date: 7. 10. 2023
   ad: kubernetes
   pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2023-10-07_jOpenSpace/jOpenSpace_2023__VPNs_in_2023__2023-10-07.pdf
+  googleSlides: https://docs.google.com/presentation/d/1GgoO_LKk4W-b62cqbCNVL5HyW2aZjB2OHzpWtQIyx9M/edit
 
 - id: cloud-native-prague-3-terraform-provider-and-monorepo
   title: "Cloud Native Prague #3: Terraform Provider and Monorepo"
