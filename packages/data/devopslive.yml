@@ -767,16 +767,16 @@
     - devcontainers
 
 - id: sprava-grafany-pomoci-terraformu
-  eventbrite:
+  eventbrite:  "1.11.2023"
   active: true
-  title: "Sprava Grafany pomoci Terraformu"
+  title: "Správa Grafany pomocí Terraformu"
   date: "???"
   time: "19:00"
   youtube:
   about: |
-    Pojdme si ukazat jak spravovat Grafanu pomoci principu GitOps. Pouzijeme k tomu Terraform. Ukazeme si praci s uzivateli, pridame datasource a vytvorime dashboard.
+    Pojďme si ukázat, jak spravovat Grafanu pomocí principu GitOps. Použijeme k tomu Terraform. Ukážeme si práci s uživateli, přidááme datasource a vytvoříme dashboard.
   points: |
-    Pojdme si ukazat jak spravovat Grafanu pomoci principu GitOps. Pouzijeme k tomu Terraform. Ukazeme si praci s uzivateli, pridame datasource a vytvorime dashboard.
+    Pojďme si ukázat, jak spravovat Grafanu pomocí principu GitOps. Použijeme k tomu Terraform. Ukážeme si práci s uživateli, přidááme datasource a vytvoříme dashboard.
   technologies:
     - grafana
     - terraform
@@ -785,13 +785,13 @@
   eventbrite:
   active: true
   title: "Sealed Secrets"
-  date: "???"
+  date: "22.11.2023"
   time: "19:00"
   youtube:
   about: |
-    Sealed secrets je velmi jednoduchy zpusob, jak bezpecne ukladat sensitivni data v Gitu a GitOps. Ukazeme si jak Seald secrets funguji, jak je nasadit a jak pouzivat.
+    Sealed secrets je velmi jednoduchý způsob, jak bezpečně ukládat sensitivní data v Gitu a GitOps. Ukážeme si, jak Seald secrets fungujíí, jak je nasadit a jak používat.
   points: |
-    Sealed secrets je velmi jednoduchy zpusob, jak bezpecne ukladat sensitivni data v Gitu a GitOps. Ukazeme si jak Seald secrets funguji, jak je nasadit a jak pouzivat.
+    Sealed secrets je velmi jednoduchý způsob, jak bezpečně ukládat sensitivní data v Gitu a GitOps. Ukážeme si, jak Seald secrets fungujíí, jak je nasadit a jak používat.
   technologies:
     - sealed-secrets
     - kubernetes
@@ -801,13 +801,13 @@
   eventbrite:
   active: true
   title: "ZeroSSL - alternativa k Let's Encrypt"
-  date: "???"
+  date: "6.12.2023"
   time: "19:00"
   youtube:
   about: |
-    ZeroSSL je poskytovatel certifikatu podobne jako Let's Encrypt. Je to placena sluzba s free verzi, ktera ma o proti Let's Encrypt tu vyhodu ze nelimituje pocet vystavenych certifikatu - o proti tomu ma Let's Encrypt limit 35 certifikatu tydne. ZeroSSL je proto vhodne na testovaci prostredi. Zaroven nas muze zachranit, kdyz z nejakeho duvodu dostaneme od Let's Encrypt ban - typicky za nevalidni pozadavky na verifikaci. Zachranit nas muze i free varianta. Ukazeme si pouziti s Cert Managerem a CLI toolem lego.
+    ZeroSSL je poskytovatel certifikátu podobně jako Let's Encrypt. Je to placená služba s free verzí, která má o proti Let's Encrypt tu výhodu, že nelimituje počet vystavených certifikátů - o proti tomu má Let's Encrypt limit 35 certifikátů týdně. ZeroSSL je proto vhodné na testovacíí prostředí. Zároveň nás může zachránit, když z nějakého důvodu dostaneme od Let's Encrypt ban - typicky za nevalidní požadavky na verifikaci. Zachránit náš může i free varianta. Ukážeme si použití s Cert Managerem a CLI toolem lego.
   points: |
-    ZeroSSL je poskytovatel certifikatu podobne jako Let's Encrypt. Je to placena sluzba s free verzi, ktera ma o proti Let's Encrypt tu vyhodu ze nelimituje pocet vystavenych certifikatu - o proti tomu ma Let's Encrypt limit 35 certifikatu tydne. ZeroSSL je proto vhodne na testovaci prostredi. Zaroven nas muze zachranit, kdyz z nejakeho duvodu dostaneme od Let's Encrypt ban - typicky za nevalidni pozadavky na verifikaci. Zachranit nas muze i free varianta. Ukazeme si pouziti s Cert Managerem a CLI toolem lego.
+    ZeroSSL je poskytovatel certifikátu podobně jako Let's Encrypt. Je to placená služba s free verzí, která má o proti Let's Encrypt tu výhodu, že nelimituje počet vystavených certifikátů - o proti tomu má Let's Encrypt limit 35 certifikátů týdně. ZeroSSL je proto vhodné na testovacíí prostředí. Zároveň nás může zachránit, když z nějakého důvodu dostaneme od Let's Encrypt ban - typicky za nevalidní požadavky na verifikaci. Zachránit náš může i free varianta. Ukážeme si použití s Cert Managerem a CLI toolem lego.
   technologies:
     - letsencrypt
     - zerossl
@@ -816,13 +816,13 @@
 - id: uvod-do-tailscale-vpn
   eventbrite:
   active: true
-  title: "Uvod do Tailscale VPN"
-  date: "???"
+  title: "Úvod do Tailscale VPN"
+  date: "20.12.2023"
   time: "19:00"
   youtube:
   about: |
-    Tailscale je moderni VPN reseni, ktere je daleko pred ostatnimi co se tyka UX, pouzitelnosti a jednoduchosti setupu. Prihlaseni pomoci Vaseho SSO je by default in. Je to skvela komercni alternativka k OpenVPN, ale i k Fortigate, AnyConnectu nebo Checkpointu. Tailscale je managed reseni postavene nad WireGuardem.
+    Tailscale je moderní VPN řešení, které je daleko před ostatními, co se týká UX, použitelnosti a jednoduchosti setupu. Přihlášení pomocí Vašeho SSO je by default in. Je to skvělá komerční alternativka k OpenVPN, ale i k Fortigate, AnyConnectu nebo Checkpointu. Tailscale je managed řešení postavené nad WireGuardem.
   points: |
-    Tailscale je moderni VPN reseni, ktere je daleko pred ostatnimi co se tyka UX, pouzitelnosti a jednoduchosti setupu. Prihlaseni pomoci Vaseho SSO je by default in. Je to skvela komercni alternativka k OpenVPN, ale i k Fortigate, AnyConnectu nebo Checkpointu. Tailscale je managed reseni postavene nad WireGuardem.
+    Tailscale je moderní VPN řešení, které je daleko před ostatními, co se týká UX, použitelnosti a jednoduchosti setupu. Přihlášení pomocí Vašeho SSO je by default in. Je to skvělá komerční alternativka k OpenVPN, ale i k Fortigate, AnyConnectu nebo Checkpointu. Tailscale je managed řešení postavené nad WireGuardem.
   technologies:
     - tailscile
