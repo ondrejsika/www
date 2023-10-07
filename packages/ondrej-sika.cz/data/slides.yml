@@ -1,3 +1,9 @@
+- id: 2023-10-07-jopenspace-vpn-in-2023
+  title: "jOpenSpace: VPN in 2023"
+  date: 7. 10. 2023
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2023-10-07_jOpenSpace/jOpenSpace_2023__VPNs_in_2023__2023-10-07.pdf
+
 - id: cloud-native-prague-3-terraform-provider-and-monorepo
   title: "Cloud Native Prague #3: Terraform Provider and Monorepo"
   date: 19. 6. 2023
