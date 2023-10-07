@@ -572,7 +572,7 @@
   title: "IaC on Proxmox: Vytváříme infrastrukturu pomocí Proxmoxu, Terraformu a Packeru"
   date: "27. 4. 2022"
   time: "19:00"
-  youtube: OB14BPBzShM
+  youtube: https://www.youtube.com/watch?v=OB14BPBzShM
   about: |
     Pojďme si ukázat, jak pracovat s IaC na platformě Proxmox. Vytvořme si vlastní machine images a deklarativně je nasazujme.
   points: |
@@ -625,7 +625,7 @@
   title: "RKE2: Nový Rancher Kubernetes Engine"
   date: "8. 6. 2022"
   time: "19:00"
-  youtube: hBacB6gmvvI
+  youtube: https://www.youtube.com/watch?v=hBacB6gmvvI
   about: |
     RKE2 je pokračování RKE (Rancher Kubernetes Enginu), který využívá k3s a nemá závislost na Dockeru.
   points: |
@@ -643,7 +643,7 @@
   title: "Loki: Logy v Grafane"
   date: "22. 6. 2022"
   time: "19:00"
-  youtube: HJm7cLl7kxA
+  youtube: https://www.youtube.com/watch?v=HJm7cLl7kxA
   about: |
     Loki je nový způsob, jak sbírat logy nejen v Kubernetes a mít je k dispozici v Grafane. Loki si nainstalujeme a ukážeme si jak s nim pracovat.
   points: |
@@ -661,7 +661,7 @@
   title: "Infracost: Odhad ceny z Terraform pro každý pull request"
   date: "21. 9. 2022"
   time: "19:00"
-  youtube:
+  youtube: https://www.youtube.com/watch?v=gxR-pDF58B8
   about: |
     Infracost na základě Terraform zdrojáku odhadne, jaká bude cena provozu řešení v cloudu. Pojďme si ukázat, jak to využít v praxi a jak mít v každém pull requstu, o kolik se cena změní.
   points: |
@@ -680,7 +680,7 @@
   title: "Terraform moduly v monorepu"
   date: "5.10.2022"
   time: "19:00"
-  youtube: 5-jG7kvAKm8
+  youtube: https://www.youtube.com/watch?v=5-jG7kvAKm8
   about: |
     Ukážeme si, jak efektivně spravov monorepo s Terraform moduly a jak je publikovat pomocí Gitu, Gitlabu a Terrafrom registry.
   points: |
@@ -700,7 +700,7 @@
   title: "Keycloak: Open source identity management"
   date: "16.11.2022"
   time: "19:00"
-  youtube: ziUcizfpRok
+  youtube: https://www.youtube.com/watch?v=ziUcizfpRok
   about: |
     Keycloak je open source identity a access management řešení.
     Pojďme si ukázat, jak jej zprovoznit a jaké nám přinese výhody.
@@ -719,7 +719,7 @@
   title: "Úvod do Hashicorp Boundary"
   date: "30.11.2022"
   time: "19:00"
-  youtube:
+  youtube: https://www.youtube.com/watch?v=b00lO6URLZ4
   about: |
     Boundary poskytuje velmi granularne nastavitelný přístup k službám a VM bez nutnosti VPN.
   points: |
@@ -737,7 +737,7 @@
   title: "Github Script"
   date: "14.12.2022"
   time: "19:00"
-  youtube:
+  youtube:  https://www.youtube.com/watch?v=ACd2Cvct9H4
   about: |
     Pojďme si ukázat, jak jednoduše pracovat s Github API z Actions pomocí JavaScriptu
   points: |
@@ -750,12 +750,12 @@
     - github-actions
 
 - id: devcontainers
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/733375765657?aff=oddtdtcreator
   active: true
   title: "Development Containers (devcontainers.json)"
-  date: "???"
+  date: "18.10.2023"
   time: "19:00"
-  youtube:
+  youtube: 
   about: |
     Predkonfigurovane vyvojove prostredi v kontejneru
   points: |
