@@ -767,10 +767,10 @@
     - devcontainers
 
 - id: sprava-grafany-pomoci-terraformu
-  eventbrite:  "1.11.2023"
+  eventbrite:  
   active: true
   title: "Správa Grafany pomocí Terraformu"
-  date: "???"
+  date: "1.11.2023"
   time: "19:00"
   youtube:
   about: |
