@@ -2045,20 +2045,6 @@
 - active: true
   city: Prague
   country: cz
-  course_id: kubernetes
-  date_from: 30.10.2023
-  date_to: 31.10.2023
-  facebook_event: null
-  id: kubernetes-2023-10-30
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: Kubernetes
-  price: 15 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
   course_id: terraform
   date_from: 06.11.2023
   date_to: 06.11.2023
@@ -2082,6 +2068,20 @@
   length: 2 dny
   linkedin_event: null
   name: "OpenStack pro v\xFDvoj\xE1\u0159e"
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 13.11.2023
+  date_to: 14.11.2023
+  facebook_event: null
+  id: kubernetes-2023-11-13
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
   price: 15 900 CZK
   venue_id: null
 - active: true
