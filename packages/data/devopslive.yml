@@ -755,7 +755,7 @@
   title: "Development Containers (devcontainers.json)"
   date: "18.10.2023"
   time: "19:00"
-  youtube: 
+  youtube:
   about: |
     Predkonfigurovane vyvojove prostredi v kontejneru
   points: |
@@ -767,7 +767,7 @@
     - devcontainers
 
 - id: sprava-grafany-pomoci-terraformu
-  eventbrite:  
+  eventbrite:
   active: true
   title: "Správa Grafany pomocí Terraformu"
   date: "1.11.2023"
@@ -776,7 +776,9 @@
   about: |
     Pojďme si ukázat, jak spravovat Grafanu pomocí principu GitOps. Použijeme k tomu Terraform. Ukážeme si práci s uživateli, přidááme datasource a vytvoříme dashboard.
   points: |
-    Pojďme si ukázat, jak spravovat Grafanu pomocí principu GitOps. Použijeme k tomu Terraform. Ukážeme si práci s uživateli, přidááme datasource a vytvoříme dashboard.
+    - Úvod do GitOps, Grafany a Terraformu
+    - Prace s uzivateli, datasource a dashboardy
+    - Demo na lokálním Kubernetes i Grafana Cloudu
   technologies:
     - grafana
     - terraform
@@ -791,7 +793,9 @@
   about: |
     Sealed secrets je velmi jednoduchý způsob, jak bezpečně ukládat sensitivní data v Gitu a GitOps. Ukážeme si, jak Seald secrets fungujíí, jak je nasadit a jak používat.
   points: |
-    Sealed secrets je velmi jednoduchý způsob, jak bezpečně ukládat sensitivní data v Gitu a GitOps. Ukážeme si, jak Seald secrets fungujíí, jak je nasadit a jak používat.
+    - Uvod od problematiky seacrets v Kubernetes
+    - Co jsou Sealed Secrets
+    - Ukazky pouziti a prace se Sealed Secrets
   technologies:
     - sealed-secrets
     - kubernetes
@@ -807,7 +811,10 @@
   about: |
     ZeroSSL je poskytovatel certifikátu podobně jako Let's Encrypt. Je to placená služba s free verzí, která má o proti Let's Encrypt tu výhodu, že nelimituje počet vystavených certifikátů - o proti tomu má Let's Encrypt limit 35 certifikátů týdně. ZeroSSL je proto vhodné na testovacíí prostředí. Zároveň nás může zachránit, když z nějakého důvodu dostaneme od Let's Encrypt ban - typicky za nevalidní požadavky na verifikaci. Zachránit náš může i free varianta. Ukážeme si použití s Cert Managerem a CLI toolem lego.
   points: |
-    ZeroSSL je poskytovatel certifikátu podobně jako Let's Encrypt. Je to placená služba s free verzí, která má o proti Let's Encrypt tu výhodu, že nelimituje počet vystavených certifikátů - o proti tomu má Let's Encrypt limit 35 certifikátů týdně. ZeroSSL je proto vhodné na testovacíí prostředí. Zároveň nás může zachránit, když z nějakého důvodu dostaneme od Let's Encrypt ban - typicky za nevalidní požadavky na verifikaci. Zachránit náš může i free varianta. Ukážeme si použití s Cert Managerem a CLI toolem lego.
+    - Uvod do problematiky kolem certifikatu a Let's encrypt
+    - Vyhody a vlastnosti ZeroSSL
+    - Pouziti ZeroSSL s Cert Managerem
+    - Pouziti ZeroSSL s lego CLI
   technologies:
     - letsencrypt
     - zerossl
@@ -823,6 +830,9 @@
   about: |
     Tailscale je moderní VPN řešení, které je daleko před ostatními, co se týká UX, použitelnosti a jednoduchosti setupu. Přihlášení pomocí Vašeho SSO je by default in. Je to skvělá komerční alternativka k OpenVPN, ale i k Fortigate, AnyConnectu nebo Checkpointu. Tailscale je managed řešení postavené nad WireGuardem.
   points: |
-    Tailscale je moderní VPN řešení, které je daleko před ostatními, co se týká UX, použitelnosti a jednoduchosti setupu. Přihlášení pomocí Vašeho SSO je by default in. Je to skvělá komerční alternativka k OpenVPN, ale i k Fortigate, AnyConnectu nebo Checkpointu. Tailscale je managed řešení postavené nad WireGuardem.
+    - Uvod od problematiky VPN
+    - Co je Tailscale a Wireguard
+    - Ukazka co vsechno Tailscale umi
+    - Vyhody, nevyhody a alternativy k Tailscile
   technologies:
     - tailscile
