@@ -784,18 +784,18 @@
     - terraform
 
 - id: sealed-secrets
-  eventbrite:
+  eventbrite: https://www.eventbrite.com/e/sealed-secrets-tickets-753103822807?aff=oddtdtcreator
   active: true
   title: "Sealed Secrets"
   date: "22.11.2023"
   time: "19:00"
   youtube:
   about: |
-    Sealed secrets je velmi jednoduchý způsob, jak bezpečně ukládat sensitivní data v Gitu a GitOps. Ukážeme si, jak Seald secrets fungujíí, jak je nasadit a jak používat.
+    Sealed secrets je velmi jednoduchý způsob, jak bezpečně ukládat sensitivní data v Gitu a GitOps. Ukážeme si, jak Sealed secrets fungují, jak je nasadit a jak používat.
   points: |
-    - Uvod od problematiky seacrets v Kubernetes
+    - Úvod do problematiky sealed secrets v Kubernetes
     - Co jsou Sealed Secrets
-    - Ukazky pouziti a prace se Sealed Secrets
+    - Ukázky použití a práce se Sealed Secrets
   technologies:
     - sealed-secrets
     - kubernetes
