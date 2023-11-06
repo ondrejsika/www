@@ -751,7 +751,7 @@
 
 - id: devcontainers
   eventbrite: https://www.eventbrite.com/e/733375765657?aff=oddtdtcreator
-  active: true
+  active: false
   title: "Development Containers (devcontainers.json)"
   date: "18.10.2023"
   time: "19:00"
@@ -768,7 +768,7 @@
 
 - id: sprava-grafany-pomoci-terraformu
   eventbrite:
-  active: true
+  active: false
   title: "Správa Grafany pomocí Terraformu"
   date: "1.11.2023"
   time: "19:00"
