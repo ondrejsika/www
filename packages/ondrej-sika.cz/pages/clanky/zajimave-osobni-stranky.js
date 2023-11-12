@@ -43,6 +43,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://jirm.cz/>
 - <https://danfarrelly.com>
 - <https://yurimilner.com/>
+- <https://arne.me/> ([source](https://github.com/bahlo/arne.me), [fork](https://github.com/ondrejsika-inspiration/arne.me))
     `}
     />
   );
