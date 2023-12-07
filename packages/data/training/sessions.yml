@@ -2098,7 +2098,7 @@
   name: Cloudflare
   price: 8 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: argocd
@@ -2112,7 +2112,7 @@
   name: ArgoCD
   price: 8 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: docker
@@ -2126,7 +2126,7 @@
   name: Docker
   price: 15 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: git
@@ -2140,7 +2140,7 @@
   name: Git
   price: 8 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: gitlab-ci
@@ -2167,4 +2167,18 @@
   linkedin_event: null
   name: Vault
   price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 22.01.2024
+  date_to: 23.01.2024
+  facebook_event: null
+  id: Docker-2024-01-22
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
   venue_id: null
