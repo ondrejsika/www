@@ -2182,3 +2182,325 @@
   name: Docker
   price: 15 900 CZK
   venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 05.02.2024
+  date_to: 06.02.2024
+  facebook_event: null
+  id: kubernetes-2024-02-05
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: argocd
+  date_from: 19.02.2024
+  date_to: 19.02.2024
+  facebook_event: null
+  id: ArgoCD-2024-02-19
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: terraform
+  date_from: 20.02.2024
+  date_to: 20.02.2024
+  facebook_event: null
+  id: Terraform-2024-02-20
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: prometheus
+  date_from: 04.03.2024
+  date_to: 05.03.2024
+  facebook_event: null
+  id: Prometheus-2024-03-04
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Prometheus
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: git
+  date_from: 11.03.2024
+  date_to: 11.03.2024
+  facebook_event: null
+  id: Git-2024-03-11
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Git
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: gitlab-ci
+  date_from: 12.03.2024
+  date_to: 12.03.2024
+  facebook_event: null
+  id: Gitlabci-2024-03-12
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: proxmox
+  date_from: 30.04.2024
+  date_to: 30.04.2024
+  facebook_event: null
+  id: proxmox-2024-04-30
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: keycloak
+  date_from: 06.05.2024
+  date_to: 07.05.2024
+  facebook_event: null
+  id: Keycloak-2024-05-06
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Keycloak
+  price: '8900'
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: Githubaction
+  date_from: 20.05.2024
+  date_to: 20.05.2024
+  facebook_event: null
+  id: Githubaction-2024-05-20
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Github action
+  price: '---price-Githubaction---'
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: cloudflare
+  date_from: 21.05.2024
+  date_to: 21.05.2024
+  facebook_event: null
+  id: Cloudflare-2024-05-21
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Cloudflare
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: LoadtestypomociGrafanak6
+  date_from: 03.06.2024
+  date_to: 03.06.2024
+  facebook_event: null
+  id: loadtestypomociGrafanak6-2024-06-03
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: "Load testy pomoc\xED Grafana k6"
+  price: '---price-LoadtestypomociGrafanak6---'
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: rancher
+  date_from: 17.06.2024
+  date_to: 18.06.2024
+  facebook_event: null
+  id: rancher-2024-06-17
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Rancher
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 16.09.2024
+  date_to: 17.09.2024
+  facebook_event: null
+  id: docker-2024-09-16
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: argocd
+  date_from: 30.09.2024
+  date_to: 30.09.2024
+  facebook_event: null
+  id: ArgoCD-2024-09-30
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: kubernetes
+  date_from: 14.10.2024
+  date_to: 15.10.2024
+  facebook_event: null
+  id: kubernetes-2024-10-14
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: proxmox
+  date_from: 04.11.2024
+  date_to: 04.11.2024
+  facebook_event: null
+  id: proxmox-2024-11-04
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: terraform
+  date_from: 11.11.2024
+  date_to: 11.11.2024
+  facebook_event: null
+  id: terraform-2024-11-11
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: cloudflare
+  date_from: 12.11.2024
+  date_to: 12.11.2024
+  facebook_event: null
+  id: cloudflare-2024-11-12
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Cloudflare
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: rancher
+  date_from: 25.11.2024
+  date_to: 26.11.2024
+  facebook_event: null
+  id: rancher-2024-11-25
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Rancher
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 02.12.2024
+  date_to: 03.12.2024
+  facebook_event: null
+  id: docker-2024-12-02
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 02.12.2024
+  date_to: 03.12.2024
+  facebook_event: null
+  id: docker-2024-12-02
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: git
+  date_from: 16.12.2024
+  date_to: 16.12.2024
+  facebook_event: null
+  id: git-2024-12-16
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Git
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: gitlab-ci
+  date_from: 17.12.2024
+  date_to: 17.12.2024
+  facebook_event: null
+  id: gitlabci-2024-12-17
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 8 900 CZK
+  venue_id: null
