@@ -38,6 +38,10 @@ const SessionDD = (props) => {
   db.filter("id", session.course_id);
   let course = db.getOne();
 
+  if (!course) {
+    return <></>;
+  }
+
   if (!session) {
     return <></>;
   }
