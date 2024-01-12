@@ -2292,7 +2292,7 @@
   length: 2 dny
   linkedin_event: null
   name: Keycloak
-  price: '8900'
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -2306,7 +2306,7 @@
   length: 1 den
   linkedin_event: null
   name: Github action
-  price: '---price-Githubaction---'
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -2325,16 +2325,44 @@
 - active: true
   city: Prague
   country: cz
-  course_id: LoadtestypomociGrafanak6
-  date_from: 03.06.2024
-  date_to: 03.06.2024
+  course_id: elk
+  date_from: 27.05.2024
+  date_to: 28.05.2024
   facebook_event: null
-  id: loadtestypomociGrafanak6-2024-06-03
+  id: ELK-2024-05-27
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: ELK
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: loki
+  date_from: 03.06.2024
+  date_to: 04.06.2024
+  facebook_event: null
+  id: Loki-2024-06-03
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Loki
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: LoadtestypomociGrafanak6
+  date_from: 10.06.2024
+  date_to: 10.06.2024
+  facebook_event: null
+  id: loadtestypomociGrafanak6-2024-06-10
   lang: cs
   length: 1 den
   linkedin_event: null
   name: "Load testy pomoc\xED Grafana k6"
-  price: '---price-LoadtestypomociGrafanak6---'
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -2381,6 +2409,20 @@
 - active: true
   city: Prague
   country: cz
+  course_id: proxmox
+  date_from: 01.10.2024
+  date_to: 01.10.2024
+  facebook_event: null
+  id: proxmox-2024-10-01
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 8 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
   course_id: kubernetes
   date_from: 14.10.2024
   date_to: 15.10.2024
@@ -2395,16 +2437,16 @@
 - active: true
   city: Prague
   country: cz
-  course_id: proxmox
+  course_id: elk
   date_from: 04.11.2024
-  date_to: 04.11.2024
+  date_to: 05.11.2024
   facebook_event: null
-  id: proxmox-2024-11-04
+  id: elk-2024-11-04
   lang: cs
-  length: 1 den
+  length: 2 dny
   linkedin_event: null
-  name: Proxmox
-  price: 8 900 CZK
+  name: ELK
+  price: 15 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -2474,6 +2516,20 @@
   length: 2 dny
   linkedin_event: null
   name: Docker
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: loki
+  date_from: 09.12.2024
+  date_to: 10.12.2024
+  facebook_event: null
+  id: loki-2024-12-09
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Loki
   price: 15 900 CZK
   venue_id: null
 - active: true
