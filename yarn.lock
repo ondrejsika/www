@@ -5405,10 +5405,10 @@ sass@^1.69.7:
     immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
 
-save-ukraine@^0.18.10:
-  version "0.18.10"
-  resolved "https://registry.yarnpkg.com/save-ukraine/-/save-ukraine-0.18.10.tgz#75efba904448d58cb0fd65ca3cfd7e198a555b9f"
-  integrity sha512-vK6P+4gKNZuiBlkOhDmm+4YFSyqV+ubVe1Tc4fbpHQGMyYjObt5iHMz1js2YUO664vuIQxdluJrg5XhKuuwACA==
+save-ukraine@^0.18.13:
+  version "0.18.13"
+  resolved "https://registry.yarnpkg.com/save-ukraine/-/save-ukraine-0.18.13.tgz#4a546df3900411b7e401fc791846928b8ed8d295"
+  integrity sha512-/R23ASAcpinyrPUsguhLD8VRdrPSVxCJv8+ZREAxMDCFOI7GffwKvlQBtBcxRTHQQNn6+KT/aqCPVcWlQGlNbA==
 
 scheduler@^0.19.1:
   version "0.19.1"
