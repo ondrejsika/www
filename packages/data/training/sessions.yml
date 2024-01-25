@@ -2168,14 +2168,14 @@
   name: Vault
   price: 8 900 CZK
   venue_id: null
-- active: false
+- active: true
   city: Prague
   country: cz
   course_id: docker
-  date_from: 22.01.2024
-  date_to: 23.01.2024
+  date_from: 29.01.2024
+  date_to: 30.01.2024
   facebook_event: null
-  id: Docker-2024-01-22
+  id: Docker-2024-01-29
   lang: cs
   length: 2 dny
   linkedin_event: null
