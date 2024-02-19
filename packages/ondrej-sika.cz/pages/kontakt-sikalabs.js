@@ -40,7 +40,7 @@ const Index = () => (
               </tr>
               <tr>
                 <td>DIČ:</td>
-                <td>CZ19168993 (neplatce DPH)</td>
+                <td>CZ19168993 (platce DPH)</td>
               </tr>
               <tr>
                 <td>Účet:&nbsp;&nbsp;&nbsp;</td>
