@@ -1,3 +1,10 @@
+- id: 2024-02-27-kontejnery-v-praxi-kubernetes-v-draznim-uradu
+  title: "Kontejnery v Praxi: Jak Kubernetes zrychlilo nasazování aplikací do Drážního Úřadu a zjednodušilo jejich provoz"
+  date: 27. 2. 2024
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2024-02-27_Kontejnery_v_praxy/2024-02-27_Kubernetes_v_DU_Kontejnery_v_praxy.pdf
+  googleSlides: https://docs.google.com/presentation/d/1NxY0P5hTapks4IxKqLoBTU2a_A7n5rm9FSpS1_rmT30/edit
+
 - id: 2023-10-08-linuxdays-keycloak
   title: "LinuxDays: Keycloak - Open Source Single Sign On (SSO) pro každého"
   date: 8. 10. 2023
