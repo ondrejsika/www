@@ -2210,7 +2210,7 @@
   name: Terraform
   price: 9 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: prometheus
@@ -2224,7 +2224,7 @@
   name: Prometheus
   price: 15 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: git
@@ -2238,7 +2238,7 @@
   name: Git
   price: 8 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: gitlab-ci
