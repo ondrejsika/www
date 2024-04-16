@@ -2367,15 +2367,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: LoadtestypomociGrafanak6
+  course_id: proxmox
   date_from: 10.06.2024
   date_to: 10.06.2024
   facebook_event: null
-  id: loadtestypomociGrafanak6-2024-06-10
+  id: proxmox-2024-06-10
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: "Load testy pomoc\xED Grafana k6"
+  name: Proxmox
   price: 8 900 CZK
   venue_id: null
 - active: true
