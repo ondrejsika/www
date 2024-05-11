@@ -5524,19 +5524,19 @@ sass-graph@2.2.5:
     scss-tokenizer "^0.2.3"
     yargs "^13.3.2"
 
-sass@^1.77.0:
-  version "1.77.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.77.0.tgz#e736c69aff9fae4a4e6dae60a979eee9c942f321"
-  integrity sha512-eGj4HNfXqBWtSnvItNkn7B6icqH14i3CiCGbzMKs3BAPTq62pp9NBYsBgyN4cA+qssqo9r26lW4JSvlaUUWbgw==
+sass@^1.77.1:
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.77.1.tgz#018cdfb206afd14724030c02e9fefd8f30a76cd0"
+  integrity sha512-OMEyfirt9XEfyvocduUIOlUSkWOXS/LAt6oblR/ISXCTukyavjex+zQNm51pPCOiFKY1QpWvEH1EeCkgyV3I6w==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
 
-save-ukraine@^0.18.44:
-  version "0.18.44"
-  resolved "https://registry.yarnpkg.com/save-ukraine/-/save-ukraine-0.18.44.tgz#b0e924a2af1e4c13831d9a82149da642942b7b08"
-  integrity sha512-vdcOUTDL4Ga0iLeEthc6BMhAkZ4k4gtRS25Rmy/gn6gJN/Q8MwHFJ5kbV4fBv3VCmL/3S6BqdlvlUlRHAFqNrQ==
+save-ukraine@^0.18.45:
+  version "0.18.45"
+  resolved "https://registry.yarnpkg.com/save-ukraine/-/save-ukraine-0.18.45.tgz#3febeec480a675c1cf149120d3b9ed2a5167ff45"
+  integrity sha512-u7Pk4pY1fubEsWSYwvUn8x+i06OSgHjZ2SOHi1C1a4PHe2DDTFeMNZ/PfCr2GglUnDlxNH0tUqYDuOcbXD7WQQ==
 
 scheduler@^0.19.1:
   version "0.19.1"
