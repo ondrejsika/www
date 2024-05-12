@@ -13,8 +13,8 @@ const Index = () => (
       DevOps; Development;
     </h2>
     <h3>Contact</h3>
-    <a href="mailto:hello@sikalabs.com" className="button">
-      hello@sikalabs.com
+    <a href="mailto:hi@sikalabs.com" className="button">
+      hi@sikalabs.com
     </a>
   </div>
 );
