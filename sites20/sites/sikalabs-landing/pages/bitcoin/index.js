@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
 
-const BitcoinOrange = props => (
+const BitcoinOrange = (props) => (
   <span style={{ color: "#FF9900" }}>{props.children}</span>
 );
 
-const Small = props => (
+const Small = (props) => (
   <span style={{ fontSize: "0.7em" }}>{props.children}</span>
 );
 
