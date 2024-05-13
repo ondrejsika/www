@@ -11,7 +11,7 @@ const Page = () => (
           <li key={i}>
             <Link href={s.pdf}>
               <a target="_blank" rel="noopener noreferrer">
-                <span className="bold">{s.title}</span>
+                <span className="bold">{s.titleShort || s.title}</span>
               </a>
             </Link>{" "}
             ({s.date})
