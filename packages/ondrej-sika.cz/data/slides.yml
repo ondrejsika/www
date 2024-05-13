@@ -1,5 +1,6 @@
 - id: 2024-05-15-kontejnery-v-praxi-sk-kubernetes-v-draznim-uradu
   title: "Kontejnery v Praxi, SK: Jak Kubernetes zrychlilo nasazování aplikací do Drážního Úřadu a zjednodušilo jejich provoz"
+  titleShort: "Kontejnery v Praxi, SK: Jak Kubernetes zrychlilo nasazování aplikací do Drážního Úřadu"
   date: 15. 5. 2024
   ad: kubernetes
   pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2024-05-15_Kontejnery_v_praxy_SK/2024-05-15_Kubernetes_v_DU_Kontejnery_v_praxy.pdf
@@ -7,6 +8,7 @@
 
 - id: 2024-02-27-kontejnery-v-praxi-kubernetes-v-draznim-uradu
   title: "Kontejnery v Praxi: Jak Kubernetes zrychlilo nasazování aplikací do Drážního Úřadu a zjednodušilo jejich provoz"
+  titleShort: "Kontejnery v Praxi: Jak Kubernetes zrychlilo nasazování aplikací do Drážního Úřadu"
   date: 27. 2. 2024
   ad: kubernetes
   pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2024-02-27_Kontejnery_v_praxy/2024-02-27_Kubernetes_v_DU_Kontejnery_v_praxy.pdf
