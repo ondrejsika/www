@@ -1,4 +1,4 @@
-IMAGE = ghcr.io/sikalabs/sikalabs-landing
+IMAGE = ghcr.io/ondrejsika/sikalabs-landing
 
 default: build-and-push
 
