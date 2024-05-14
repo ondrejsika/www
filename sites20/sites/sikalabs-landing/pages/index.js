@@ -41,6 +41,14 @@ const Index = () => (
         </tr>
       </tbody>
     </table>
+    <h3>Office</h3>
+    <p>
+      Odlehlá 24, 190 00 Praha 9 (
+      <a target="_blank" href="https://sika.link/odlehla24">
+        Google Map
+      </a>
+      )
+    </p>
   </div>
 );
 
