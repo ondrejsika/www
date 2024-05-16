@@ -26,9 +26,9 @@ const Index = () => (
         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
           <h4>Fakturační údaje</h4>
           <p>
-            Varšavská 715/36
+            Odlehlá 471/24
             <br />
-            120 00 Praha 2
+            190 00 Praha 9
             <br />
             Česká Republika
           </p>

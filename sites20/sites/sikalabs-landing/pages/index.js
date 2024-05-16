@@ -19,9 +19,9 @@ const Index = () => (
     <div style={{ height: "2em" }}></div>
     <h3>SikaLabs s.r.o.</h3>
     <p>
-      Varšavská 715/36
+      Odlehlá 471/24
       <br />
-      120 00 Praha 2
+      190 00 Praha 9
       <br />
       Česká Republika
     </p>
