@@ -3,7 +3,7 @@
   titleShort: "Cloud Computing Conference: On-premise vs Cloud: Kde začít s migrací"
   date: 22. 5. 2024
   ad: kubernetes
-  pdf: https://docs.google.com/presentation/d/1WX-WUl6WqDNIDyPhEwIqySV1J7io4uRQRg27Gr7xKWM/edit
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2024-05-22_Cloud_Computing_Conference/2024-05-22_on-premise_vs_cloud_kde_zacit.pdf
   googleSlides: https://docs.google.com/presentation/d/1WX-WUl6WqDNIDyPhEwIqySV1J7io4uRQRg27Gr7xKWM/edit
 
 - id: 2024-05-15-kontejnery-v-praxi-sk-kubernetes-v-draznim-uradu
