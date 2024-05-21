@@ -1,3 +1,11 @@
+- id: 2024-05-22-cloud-computing-conference-on-premise-vs-cloud-kde-zacit-s-migraci
+  title: "Cloud Computing Conference: On-premise vs Cloud: Kde začít s migrací, jaké jsou pro a proti a čemu se vyvarovat"
+  titleShort: "Cloud Computing Conference: On-premise vs Cloud: Kde začít s migrací"
+  date: 22. 5. 2024
+  ad: kubernetes
+  pdf: https://docs.google.com/presentation/d/1WX-WUl6WqDNIDyPhEwIqySV1J7io4uRQRg27Gr7xKWM/edit
+  googleSlides: https://docs.google.com/presentation/d/1WX-WUl6WqDNIDyPhEwIqySV1J7io4uRQRg27Gr7xKWM/edit
+
 - id: 2024-05-15-kontejnery-v-praxi-sk-kubernetes-v-draznim-uradu
   title: "Kontejnery v Praxi, SK: Jak Kubernetes zrychlilo nasazování aplikací do Drážního Úřadu a zjednodušilo jejich provoz"
   titleShort: "Kontejnery v Praxi, SK: Jak Kubernetes zrychlilo nasazování aplikací do Drážního Úřadu"
