@@ -2322,7 +2322,7 @@
   name: Github action
   price: 8 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: cloudflare
@@ -2395,25 +2395,25 @@
 - active: true
   city: Prague
   country: cz
-  course_id: docker
+  course_id: proxmox
   date_from: 16.09.2024
-  date_to: 17.09.2024
+  date_to: 16.09.2024
   facebook_event: null
-  id: docker-2024-09-16
+  id: proxmox-2024-09-16
   lang: cs
-  length: 2 dny
+  length: 1 den
   linkedin_event: null
-  name: Docker
-  price: 15 900 CZK
+  name: Proxmox
+  price: 8 900 CZK
   venue_id: null
 - active: true
   city: Prague
   country: cz
   course_id: argocd
-  date_from: 30.09.2024
-  date_to: 30.09.2024
+  date_from: 17.09.2024
+  date_to: 17.09.2024
   facebook_event: null
-  id: ArgoCD-2024-09-30
+  id: ArgoCD-2024-09-17
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -2423,16 +2423,16 @@
 - active: true
   city: Prague
   country: cz
-  course_id: proxmox
-  date_from: 01.10.2024
-  date_to: 01.10.2024
+  course_id: docker
+  date_from: 24.09.2024
+  date_to: 25.09.2024
   facebook_event: null
-  id: proxmox-2024-10-01
+  id: docker-2024-09-24
   lang: cs
-  length: 1 den
+  length: 2 dny
   linkedin_event: null
-  name: Proxmox
-  price: 8 900 CZK
+  name: Docker
+  price: 15 900 CZK
   venue_id: null
 - active: true
   city: Prague
@@ -2479,15 +2479,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: cloudflare
+  course_id: proxmox
   date_from: 12.11.2024
   date_to: 12.11.2024
   facebook_event: null
-  id: cloudflare-2024-11-12
+  id: proxmox-2024-11-12
   lang: cs
   length: 1 den
   linkedin_event: null
-  name: Cloudflare
+  name: Proxmox
   price: 8 900 CZK
   venue_id: null
 - active: true
@@ -2503,20 +2503,6 @@
   linkedin_event: null
   name: Rancher
   price: 8 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
-  course_id: docker
-  date_from: 02.12.2024
-  date_to: 03.12.2024
-  facebook_event: null
-  id: docker-2024-12-02
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: Docker
-  price: 15 900 CZK
   venue_id: null
 - active: true
   city: Prague
