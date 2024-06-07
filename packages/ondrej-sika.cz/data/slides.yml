@@ -1,3 +1,10 @@
+- id: 2024-06-07-kcd-uvod-do-monitoringu-pomoci-promethea
+  title: "KCD CZSK 2024: Úvod do monitoringu pomocí Promethea"
+  date: 7. 6. 2024
+  ad: prometheus
+  pdf: https://docs.google.com/presentation/d/11UDn0zZ_yvQkZ5M0pfGMqqfplawuWiaR3NDxpW8KaH0/edit
+  googleSlides: https://docs.google.com/presentation/d/11UDn0zZ_yvQkZ5M0pfGMqqfplawuWiaR3NDxpW8KaH0/edit
+
 - id: 2024-05-22-cloud-computing-conference-on-premise-vs-cloud-kde-zacit-s-migraci
   title: "Cloud Computing Conference: On-premise vs Cloud: Kde začít s migrací, jaké jsou pro a proti a čemu se vyvarovat"
   titleShort: "Cloud Computing Conference: On-premise vs Cloud: Kde začít s migrací"
