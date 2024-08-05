@@ -2336,7 +2336,7 @@
   name: Cloudflare
   price: 9 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: elk
@@ -2350,7 +2350,7 @@
   name: ELK
   price: 15 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: loki
@@ -2364,7 +2364,7 @@
   name: Loki
   price: 15 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: proxmox
@@ -2378,7 +2378,7 @@
   name: Proxmox
   price: 9 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: vault
@@ -2392,7 +2392,7 @@
   name: Vault
   price: 9 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: rancher
@@ -2404,6 +2404,20 @@
   length: 2 dny
   linkedin_event: null
   name: Rancher
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: elk
+  date_from: 02.09.2024
+  date_to: 03.09.2024
+  facebook_event: null
+  id: elk-2024-09-02
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: ELK
   price: 15 900 CZK
   venue_id: null
 - active: true
@@ -2535,15 +2549,15 @@
 - active: true
   city: Prague
   country: cz
-  course_id: loki
+  course_id: kubernetes
   date_from: 09.12.2024
   date_to: 10.12.2024
   facebook_event: null
-  id: loki-2024-12-09
+  id: kubernetes-2024-12-09
   lang: cs
   length: 2 dny
   linkedin_event: null
-  name: Loki
+  name: Kubernetes
   price: 15 900 CZK
   venue_id: null
 - active: true
