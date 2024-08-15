@@ -54,7 +54,6 @@ DOCKER_SITES =  [
     {"name": "training.kubernetes.is", "deps": "course_landing"},
     {"name": "training.kubernetes.lu", "deps": "course_landing"},
     {"name": "cal-api.sika.io", "deps": "default"},
-    {"name": "ccc.oxs.cz", "deps": "default"},
     {"name": "sika.blog", "deps": "default"},
     {"name": "static.sika.io", "deps": "default"},
     {"name": "sikahq.com", "deps": "default"},
