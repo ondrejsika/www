@@ -5,7 +5,7 @@
     curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server --no-deploy traefik" sh
     ```
 
-    Source: https://github.com/k3s-io/k3s/issues/1160#issuecomment-562742130
+    Source: https://github.com/k3s-io/k3s/issues/1160#issuecomment-623041562, https://github.com/k3s-io/k3s/issues/1160#issuecomment-562742130
 
 - id: install-specific-gitlab-package
   question: How to install specific GitLab package?
