@@ -2479,6 +2479,20 @@
 - active: true
   city: Prague
   country: cz
+  course_id: loki
+  date_from: 29.10.2024
+  date_to: 30.10.2024
+  facebook_event: null
+  id: loki-2024-10-29
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Loki
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
   course_id: elk
   date_from: 04.11.2024
   date_to: 05.11.2024
