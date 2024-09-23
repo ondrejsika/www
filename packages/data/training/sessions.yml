@@ -2406,7 +2406,7 @@
   name: Rancher
   price: 15 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: elk
@@ -2420,7 +2420,7 @@
   name: ELK
   price: 15 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: proxmox
@@ -2434,7 +2434,7 @@
   name: Proxmox
   price: 9 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Prague
   country: cz
   course_id: argocd
@@ -2474,20 +2474,6 @@
   length: 2 dny
   linkedin_event: null
   name: Kubernetes
-  price: 15 900 CZK
-  venue_id: null
-- active: true
-  city: Prague
-  country: cz
-  course_id: loki
-  date_from: 29.10.2024
-  date_to: 30.10.2024
-  facebook_event: null
-  id: loki-2024-10-29
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: Loki
   price: 15 900 CZK
   venue_id: null
 - active: true
@@ -2549,11 +2535,25 @@
 - active: true
   city: Prague
   country: cz
-  course_id: docker
-  date_from: 02.12.2024
-  date_to: 03.12.2024
+  course_id: loki
+  date_from: 27.11.2024
+  date_to: 28.11.2024
   facebook_event: null
-  id: docker-2024-12-02
+  id: loki-2024-11-27
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Loki
+  price: 15 900 CZK
+  venue_id: null
+- active: true
+  city: Prague
+  country: cz
+  course_id: docker
+  date_from: 04.12.2024
+  date_to: 05.12.2024
+  facebook_event: null
+  id: docker-2024-12-04
   lang: cs
   length: 2 dny
   linkedin_event: null
