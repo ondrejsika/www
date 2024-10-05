@@ -9,7 +9,7 @@
   title: "KCD CZSK 2024: Úvod do monitoringu pomocí Promethea"
   date: 7. 6. 2024
   ad: prometheus
-  pdf: https://docs.google.com/presentation/d/11UDn0zZ_yvQkZ5M0pfGMqqfplawuWiaR3NDxpW8KaH0/edit
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2024-06-07_KCD/2024-06-07_KCD2024_Prometheus.pdf
   googleSlides: https://docs.google.com/presentation/d/11UDn0zZ_yvQkZ5M0pfGMqqfplawuWiaR3NDxpW8KaH0/edit
 
 - id: 2024-05-22-cloud-computing-conference-on-premise-vs-cloud-kde-zacit-s-migraci
