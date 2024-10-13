@@ -1,4 +1,11 @@
 - id:
+  title: "LinuxDays 2024: VPNs in 2024"
+  date: 12. 10. 2024
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2024-10-12_LinuxDays/2024-10-12_LinuxDays_VPNs_in_2024.pdf
+  googleSlides: https://docs.google.com/presentation/d/1HtXQsSidFjDx6c3SYsOJwNlNMDBSlc4GN2qIJCMzKgg/edit
+
+- id:
   title: "jOpenSpace: CNPG (Cloud Native Postgres)"
   date: 5. 10. 2024
   ad: kubernetes
