@@ -8,7 +8,7 @@ const Index = () => (
     <Head>
       <title>Doporučte mě prosím - Ondrej Sika</title>
     </Head>
-    <MainBar header="Doporučte mně prosím" />
+    <MainBar header="Doporučte mě prosím" />
     <div className="container pt-4">
       <Markdown
         source={`
