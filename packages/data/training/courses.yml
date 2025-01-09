@@ -299,7 +299,7 @@
   length: 1
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
     in_house:
       cz: 32 000 CZK
   twitter_recommendations:
@@ -387,7 +387,7 @@
   length: 1
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       sk: 390 EUR
       nl: "??? EUR"
       de: 540 EUR
@@ -536,7 +536,7 @@
     - ondrejsika
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       sk: 390 EUR
       nl: "??? EUR"
       de: 540 EUR
@@ -835,7 +835,7 @@
     - ondrejsika
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       sk: 390 EUR
       nl: "??? EUR"
       de: 540 EUR
@@ -975,7 +975,7 @@
     - ondrejsika
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
     in_house:
       cz: 32 000 CZK
   twitter_recommendations:
@@ -1432,7 +1432,7 @@
   length: 1
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       de: 540 EUR
       uk: 540 EUR
     in_house:
@@ -1500,7 +1500,7 @@
   length: 1
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       de: 540 EUR
       uk: 540 EUR
     in_house:
@@ -1579,7 +1579,7 @@
   length: 1
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       de: 540 EUR
       uk: 540 EUR
     in_house:
@@ -1923,7 +1923,7 @@
     - ondrejsika
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       sk: 390 EUR
       nl: "??? EUR"
       de: 540 EUR
@@ -2146,7 +2146,7 @@
     - ondrejsika
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       sk: 390 EUR
       nl: "??? EUR"
       de: 540 EUR
@@ -2285,7 +2285,7 @@
     - ondrejsika
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       sk: 390 EUR
       nl: "??? EUR"
       de: 540 EUR
@@ -2326,7 +2326,7 @@
     - ondrejsika
   price:
     open:
-      cz: 9 900 CZK
+      cz: 12 900 CZK
       sk: 390 EUR
       nl: "??? EUR"
       de: 540 EUR
