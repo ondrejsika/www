@@ -101,6 +101,10 @@ const Index = () => (
         <Link href="/kontakt-sikalabs">
           <a>SikaLabs s.r.o.</a>
         </Link>
+        ,{" "}
+        <Link href="/kontakt-devopsa">
+          <a>Devopsa s.r.o.</a>
+        </Link>
       </p>
     </div>
   </div>

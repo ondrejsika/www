@@ -104,6 +104,10 @@ const Index = () => (
           <a>SikaLabs s.r.o.</a>
         </Link>
         ,{" "}
+        <Link href="/kontakt-devopsa">
+          <a>Devopsa s.r.o.</a>
+        </Link>
+        ,{" "}
         <Link href="/kontakt-trainera">
           <a>Trainera s.r.o.</a>
         </Link>
