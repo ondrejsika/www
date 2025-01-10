@@ -95,6 +95,7 @@ const Page = () => (
 ## Golang Tools & Utils
 
 - slu (SikaLabs Utils) - https://github.com/sikalabs/slu
+- slr (SikaLabs Random Utils) - https://github.com/sikalabs/slr
 - tergum (backup tool) - https://github.com/sikalabs/tergum
 - gobble (like ansible but in Go) - https://github.com/sikalabs/gobble
 - training-cli (training helper utility) - https://github.com/ondrejsika/training-cli
