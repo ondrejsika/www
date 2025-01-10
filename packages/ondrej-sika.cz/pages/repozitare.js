@@ -48,6 +48,7 @@ const Page = () => (
 
 #### Custom Providers
 
+- Terraform Provider for sikalabs/slu utils - https://github.com/sikalabsx/terraform-provider-slu
 - Terraform Provider for Vercel - https://github.com/ondrejsika/terraform-provider-vercel
 - Extra Terraform Provider for Linode - https://github.com/ondrejsika/terraform-provider-linodex
 
