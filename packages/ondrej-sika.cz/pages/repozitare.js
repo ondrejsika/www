@@ -29,7 +29,6 @@ const Page = () => (
 ## Kubernetes
 
 - Sikalabs Helm Charts - https://github.com/sikalabs/charts
-- Jak nainstalovat Kubernetes na bare metal - https://github.com/ondrejsika/bare-metal-kubernetes
 - Jednoduchy HELM balicek (sikalabs/hello-world) - https://github.com/sikalabs/charts/tree/master/charts/hello-world
 
 [Vsechny repozitare tykajici se Kubernetes na mem Githubu](https://github.com/ondrejsika?utf8=%E2%9C%93&tab=repositories&q=kubernetes&type=&language=)
@@ -42,7 +41,6 @@ const Page = () => (
 #### Ukazky Infrastruktury
 
 - Kubernetes na DigitalOcean - https://github.com/ondrejsika/terraform-do-kubernetes-example
-- VMs & LB na DigitalOcean pro Bare Metal Kubernetes - https://github.com/ondrejsika/terraform-do-bare-metal-kubernetes-infra-example
 - Gitlab na DigitalOcean - https://github.com/ondrejsika/terraform-demo-gitlab
 - NFS na DigitalOcean - https://github.com/ondrejsika/terraform-demo-nfs
 - Kubernetes na Azure - https://github.com/ondrejsika/example-azure-k8s
