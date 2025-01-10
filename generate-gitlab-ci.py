@@ -42,7 +42,7 @@ STATICA_SITES_STATICA_SITES20_DEV = [
 CLOUDFLARE_SITES =  [
     {"name": "trainera.de", "deps": "ondrejsika_theme"},
     {"name": "ondrej-sika.com", "deps": "ondrejsika_theme"},
-    {"name": "ondrej-sika.cz", "deps": "ondrejsika_theme"},
+    # {"name": "ondrej-sika.cz", "deps": "ondrejsika_theme"},
     {"name": "ondrej-sika.de", "deps": "ondrejsika_singlepage"},
     {"name": "ondrejsika.is", "deps": "ondrejsika_singlepage"},
     {"name": "trainera.cz", "deps": "ondrejsika_theme"},
