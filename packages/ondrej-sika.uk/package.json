@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "NODE_ENV=development next",
     "build": "next build",
