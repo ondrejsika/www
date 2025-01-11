@@ -111,7 +111,7 @@ out = {
         "docker build and deploy",
         "docker deploy validate",
     ],
-    "image": "sikalabs/ci-node",
+    "image": "sikalabs/ci-node:18",
     "variables": {
         "DOCKER_BUILDKIT": '1',
         "GIT_CLEAN_FLAGS": "-ffdx -e node_modules -e .yarn-cache",
@@ -148,7 +148,7 @@ out = {
     },
     "auto_ncu_update": {
         "stage": "schedule2",
-        "image": "sikalabs/ci-node",
+        "image": "sikalabs/ci-node:18",
         "variables": {
             "GIT_AUTHOR_NAME": "SikaLabs CI Bot",
             "GIT_COMMITTER_NAME": "SikaLabs CI Bot",
