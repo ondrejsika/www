@@ -2616,7 +2616,7 @@
   name: Gitlab CI
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -2630,7 +2630,7 @@
   name: Docker
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
@@ -2649,11 +2649,11 @@
   country: cz
   course_id: keycloak
   date_from: 10.02.2025
-  date_to: 11.02.2025
+  date_to: 10.02.2025
   facebook_event: null
   id: keycloak-2025-02-10
   lang: cs
-  length: 2 dny
+  length: 1 den
   linkedin_event: null
   name: Keycloak
   price: 12 900 CZK
@@ -2662,10 +2662,10 @@
   city: Online
   country: cz
   course_id: argocd
-  date_from: 03.03.2025
-  date_to: 03.03.2025
+  date_from: 10.03.2025
+  date_to: 10.03.2025
   facebook_event: null
-  id: argocd-2025-03-03
+  id: argocd-2025-03-10
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -2676,10 +2676,10 @@
   city: Online
   country: cz
   course_id: terraform
-  date_from: 04.03.2025
-  date_to: 04.03.2025
+  date_from: 11.03.2025
+  date_to: 11.03.2025
   facebook_event: null
-  id: terraform-2025-03-04
+  id: terraform-2025-03-11
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -2703,34 +2703,6 @@
 - active: true
   city: Online
   country: cz
-  course_id: git
-  date_from: 31.03.2025
-  date_to: 31.03.2025
-  facebook_event: null
-  id: git-2025-03-31
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Git
-  price: 12 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: gitlab-ci
-  date_from: 01.04.2025
-  date_to: 01.04.2025
-  facebook_event: null
-  id: GitlabCI-2025-04-01
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Gitlab CI
-  price: 12 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
   course_id: prometheus
   date_from: 07.04.2025
   date_to: 08.04.2025
@@ -2741,6 +2713,34 @@
   linkedin_event: null
   name: Prometheus
   price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: git
+  date_from: 09.04.2025
+  date_to: 09.04.2025
+  facebook_event: null
+  id: git-2025-04-09
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Git
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: gitlab-ci
+  date_from: 10.04.2025
+  date_to: 10.04.2025
+  facebook_event: null
+  id: GitlabCI-2025-04-10
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 12 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -2788,10 +2788,10 @@
   city: Online
   country: cz
   course_id: kubernetes
-  date_from: 12.05.2025
-  date_to: 13.05.2025
+  date_from: 05.05.2025
+  date_to: 06.05.2025
   facebook_event: null
-  id: kubernetes-2025-05-12
+  id: kubernetes-2025-05-05
   lang: cs
   length: 2 dny
   linkedin_event: null
@@ -2830,10 +2830,10 @@
   city: Online
   country: cz
   course_id: terraform
-  date_from: 27.05.2025
-  date_to: 27.05.2025
+  date_from: 28.05.2025
+  date_to: 28.05.2025
   facebook_event: null
-  id: terraform-2025-05-27
+  id: terraform-2025-05-28
   lang: cs
   length: 1 den
   linkedin_event: null
