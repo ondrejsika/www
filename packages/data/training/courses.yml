@@ -2352,3 +2352,79 @@
       Pokud chcete kurz objednat, prosim, vyplne formular pripadne mi zanechte email.
 
       Pokud mate jakykoliv dotaz, napiste mi email na <ondrej@sika.io>.
+
+- id: loki
+  skoleniio:
+    name: Loki Školení
+    lecturer: ondrejsika
+  name:
+    cs: Loki Školení
+    en: Loki Training
+    de: Loki Schulung
+    sk: Loki Školenie
+  length: 1
+  lecturers:
+    - ondrejsika
+  price:
+    open:
+      cz: 19 900 CZK
+      sk: 640 EUR
+      de: 900 EUR
+      uk: "900 EUR"
+    in_house:
+      cz: 64 000 CZK
+      sk: 2340 EUR
+      de: 3290 EUR
+      uk: "3290 EUR"
+  twitter_recommendations:
+    cs: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
+    sk: ["jan-novotny-docker", "tomas-ligenza-docker", "lubos-klokner-docker"]
+    en: ["adam-bisek-docker", "petr-klobas-docker", "radomir-sohlich-docker"]
+  recommendations:
+    cs: ["zoot", "Digiteq", "cz-nic"]
+    sk: ["zoot", "Digiteq", "cz-nic"]
+    en: ["zoot", "Digiteq", "cz-nic"]
+  agenda:
+    cs: ""
+    en: ""
+  description:
+    cs: |
+      ### Co Vás naučím
+
+      #### Úvod do log managementu
+
+      - Představení Lokiho jako nástroje na sběr, ukládání a prohlížení logů
+      - Integrace Lokiho s Grafanou
+      - Nasazení Loki Stacku
+
+      #### Instalace a konfigurace Lokiho, Grafany a Promtailu
+
+      - Sběr a ukládání logů pomocí Lokiho
+      - Konfigurace retence logů
+      - Práce s logy v Loki
+
+      #### Prohledávání logů v Loki
+      - Vytváření dashboardů pro analýzu logů
+      - Nastavení alertů na základě dat z logů
+
+      Shrnutí a možnosti dalšího rozvoje v oblasti log managementu s Lokiho a Grafanou
+
+      ### Jak školení probíhá
+
+      Skoleni probiha formou workshopu, vse si vyzkousime a prakticky osahame. Budete odchazet s plne nakonfigurovanym prostredim a zakladni znalosti a zkusenosti jak v nem efektivne pracovat.
+
+      ### Pro koho je školení určeno
+
+      Skoleni je urceno vsem vyvvojarum a devoopsakum, kteri chteji pracovat efektivneji.
+
+      #### Předchozí znalosti
+
+      Zadne predchozi znalosti nejsou nutne.
+
+      #### Technické požadavky
+
+      - Vlastni pocitac s pristupem na internet. Pro vsechny ucastniky mam pripravene laby dostupne z browseru.
+
+      ### Dotazy
+
+      Pokud mate jakykoliv dotaz, napiste mi email na <ondrej@sika.io>.
