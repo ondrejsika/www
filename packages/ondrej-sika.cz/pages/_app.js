@@ -124,7 +124,9 @@ const Footer = (
           {[
             ["Docker", "/skoleni/docker"],
             ["Kubernetes", "/skoleni/kubernetes"],
+            ["ArgoCD", "/skoleni/argocd"],
             ["Gitlab CI", "/skoleni/gitlab-ci"],
+            ["Proxmox", "/skoleni/proxmox"],
             ["Terraform", "/skoleni/terraform"],
             ["Prometheus", "/skoleni/prometheus"],
             ["Rancher", "/skoleni/rancher"]
