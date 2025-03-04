@@ -191,7 +191,7 @@ const Page = () => {
                 icon={slack}
                 href="https://sikapublic.slack.com/archives/C018ULJEJMD"
                 header="DevOps live community"
-                text="Zapojte se do online komunity programátorů, přes veřejný Slack kanál."
+                text="Zapojte se do online komunity devopsáku a programátorů, přes veřejný Slack kanál."
                 button="https://sikapublic.slack.com/archives/C018ULJEJMD"
               />
 
