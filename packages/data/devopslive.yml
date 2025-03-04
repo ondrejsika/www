@@ -823,16 +823,17 @@
 - id: uvod-do-tailscale-vpn
   eventbrite:
   active: true
-  title: "Úvod do Tailscale VPN"
+  title: "Úvod do Tailscale a Headcale VPN"
   date: "10.1.2024"
   time: "19:00"
   youtube:
   about: |
-    Tailscale je moderní VPN řešení, které je daleko před ostatními, co se týká UX, použitelnosti a jednoduchosti setupu. Přihlášení pomocí Vašeho SSO je by default in. Je to skvělá komerční alternativka k OpenVPN, ale i k Fortigate, AnyConnectu nebo Checkpointu. Tailscale je managed řešení postavené nad WireGuardem.
+    Tailscale je moderní VPN řešení, které je daleko před ostatními, co se týká UX, použitelnosti a jednoduchosti setupu. Přihlášení pomocí Vašeho SSO je by default in. Je to skvělá komerční alternativka k OpenVPN, ale i k Fortigate, AnyConnectu nebo Checkpointu. Tailscale je managed řešení postavené nad WireGuardem. Je zde i moznost self-hosted open source varianty Headscale.
   points: |
     - Uvod od problematiky VPN
     - Co je Tailscale a Wireguard
     - Ukazka co vsechno Tailscale umi
-    - Vyhody, nevyhody a alternativy k Tailscile
+    - Vyhody a nevyhody Tailscile
+    - Headscale - open source Tailscale
   technologies:
     - tailscile
