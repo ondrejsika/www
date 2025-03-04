@@ -24,7 +24,8 @@ const Navbar = (
   <ThemeNavbar
     NavName="Ondřej Šika"
     links={[
-      ["KNIHA", "/kniha", "new"],
+      ["JSEM V KURZU", "/jsemvkurzu", "new"],
+      ["KNIHA", "/kniha"],
       ["DEVOPS LIVE", "/devopslive"],
       [
         "KURZY",
@@ -56,7 +57,7 @@ const Navbar = (
       ],
       ["TERMÍNY", "/verejne-terminy"],
       [
-        "NÁVODY & ČLÁNKY",
+        "ČLÁNKY",
         [
           ["BLOG", "/blog"],
           ["NÁVODY (TECHNICKÉ)", "/navody"],
