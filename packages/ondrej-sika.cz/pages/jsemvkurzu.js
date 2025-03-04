@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export const ObchodniSpoluprace = () => (
+export const JsemVKurzu = () => (
   <Article
     title="JSEM V KURZU"
     hideNewsletter={false}
@@ -13,4 +13,4 @@ Pro vice informaci k programu **Jsem v kurzu** mi napiste na [ondrej@sika.io](ma
   />
 );
 
-export default ObchodniSpoluprace;
+export default JsemVKurzu;
