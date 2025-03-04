@@ -837,3 +837,22 @@
     - Headscale - open source Tailscale
   technologies:
     - tailscile
+
+- id: uvod-do-vaultu
+  eventbrite:
+  active: true
+  title: "Úvod do Hashicorp Vaultu"
+  date: "10.1.2024"
+  time: "19:00"
+  youtube:
+  about: |
+    Hashicorp Vault je enterprise ready reseni na spravu secretu. Muzeme jej vyuzivat v Kubernetes ale i be nej. Je to bezpecne, robusni a univerzalni reseni secret managementu v projektech vsech velikosti.
+  points: |
+    - Uvod do secret managementu
+    - Uvod do Hashicorp Vaultu
+    - Instalace a setup Vaultu
+    - Sprava Vaultu pomoci Terraformu
+    - Sprava secretu ve Vaultu
+    - Integrace s Kubernetes
+  technologies:
+    - vault
