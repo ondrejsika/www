@@ -49,7 +49,7 @@ const Navbar = (
           // ["AWS", "/skoleni/aws"],
           // ["OPEN STACK", "/skoleni/openstack"],
           // ["GO (GOLANG)", "/skoleni/go"],
-          ["DJANGO", "/skoleni/django"],
+          // ["DJANGO", "/skoleni/django"],
           // ["REACT & NEXT.JS", "/skoleni/react"],
           ["VIDEOKURZY", "/videokurzy"]
         ]
