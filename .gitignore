@@ -13,3 +13,4 @@ deploy-now.env.sh
 cloudflare-workers/**/dist
 .gitlab-ci*.generated.yml
 *.swp
+*.local.txt
