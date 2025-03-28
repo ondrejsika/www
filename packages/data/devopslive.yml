@@ -856,3 +856,22 @@
     - Integrace s Kubernetes
   technologies:
     - vault
+
+- id: uvod-do-thanosu
+  eventbrite:
+  active: true
+  title: "Úvod do Thanosu"
+  date: "10.1.2024"
+  time: "19:00"
+  youtube:
+  about: |
+    Thanos je nastroj ktery sbira metriky z vice instanci Promethea, uklada je do S3 a umoznuje nad
+  points: |
+    - Uvod do secret managementu
+    - Uvod do Hashicorp Vaultu
+    - Instalace a setup Vaultu
+    - Sprava Vaultu pomoci Terraformu
+    - Sprava secretu ve Vaultu
+    - Integrace s Kubernetes
+  technologies:
+    - vault
