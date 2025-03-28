@@ -2644,7 +2644,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: keycloak
@@ -2658,7 +2658,7 @@
   name: Keycloak
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: argocd
@@ -2672,7 +2672,7 @@
   name: ArgoCD
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -2686,7 +2686,7 @@
   name: Terraform
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: ansible
@@ -2890,6 +2890,34 @@
   date_to: 23.09.2025
   facebook_event: null
   id: kubernetes-2025-09-22
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: docker
+  date_from: 03.11.2025
+  date_to: 04.11.2025
+  facebook_event: null
+  id: docker-2025-11-03
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: kubernetes
+  date_from: 10.11.2025
+  date_to: 11.11.2025
+  facebook_event: null
+  id: kubernetes-2025-11-10
   lang: cs
   length: 2 dny
   linkedin_event: null
