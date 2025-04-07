@@ -45,6 +45,7 @@ Můj seznam zajímavých osobních webů obsahem i formou. Průběžne aktualizu
 - <https://yurimilner.com/>
 - <https://arne.me/> ([source](https://github.com/bahlo/arne.me), [fork](https://github.com/ondrejsika-inspiration/arne.me))
 - <https://jma.dev/> ([source](https://github.com/imjma/jma.dev), [fork](https://github.com/ondrejsika-inspiration/jma.dev))
+- <https://eurekalabs.ai/> ([source](https://github.com/ondrejsika/wget-eurekalabs.ai))
     `}
     />
   );
