@@ -1,4 +1,11 @@
 - id:
+  title: "Gophercamp 2025: Own CLI tooling in Go"
+  date: 25. 4. 2025
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2025-05-25_Gophercamp_2025/Gophercamp_2025_Own_CLI_tooling_in_Go.pdf
+  googleSlides: https://docs.google.com/presentation/d/1n8r-1XXkANU3bWIGrT4w4isiJ7QbHK8wzBSQGyoYxeA/edit
+
+- id:
   title: "LinuxDays 2024: VPNs in 2024"
   date: 12. 10. 2024
   ad: kubernetes
