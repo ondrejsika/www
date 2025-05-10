@@ -99,6 +99,7 @@ const Page = () => (
 - tergum (backup tool) - https://github.com/sikalabs/tergum
 - gobble (like ansible but in Go) - https://github.com/sikalabs/gobble
 - signpost (jednoduchy rozcestnik definovany v YAMLu) - https://github.com/sikalabs/signpost
+- dogsay (like cowsay but with doggo) - https://github.com/sikalabs/dogsay
 - training-cli (training helper utility) - https://github.com/ondrejsika/training-cli
 `}
   />
