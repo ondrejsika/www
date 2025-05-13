@@ -1,4 +1,11 @@
 - id:
+  title: "Cloud Computing Conference: Cloud vendor lock-in a jak se mu vyhnout"
+  date: 13. 5. 2025
+  ad: kubernetes
+  pdf: https://docs.google.com/presentation/d/18cajFogYhn23MMV_NLfkNJBbFMDoL-diyMUAWwJHHVI/edit
+  googleSlides: https://docs.google.com/presentation/d/18cajFogYhn23MMV_NLfkNJBbFMDoL-diyMUAWwJHHVI/edit
+
+- id:
   title: "Gophercamp 2025: Own CLI tooling in Go"
   date: 25. 4. 2025
   ad: kubernetes
