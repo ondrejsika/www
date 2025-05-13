@@ -1,4 +1,11 @@
 - id:
+  title: "Cloud Computing Conference: Infrastructure as Code a GitOps pomocí Terraformu"
+  date: 13. 5. 2025
+  ad: kubernetes
+  pdf: https://docs.google.com/presentation/d/1jMWEqz82kcWbmNs4qE4IRS4NeiSyuz7i4w3jr_qfg0o/edit
+  googleSlides: https://docs.google.com/presentation/d/1jMWEqz82kcWbmNs4qE4IRS4NeiSyuz7i4w3jr_qfg0o/edit
+
+- id:
   title: "Cloud Computing Conference: Cloud vendor lock-in a jak se mu vyhnout"
   date: 13. 5. 2025
   ad: kubernetes
