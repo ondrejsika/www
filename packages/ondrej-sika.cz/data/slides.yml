@@ -1,4 +1,11 @@
 - id:
+  title: "Kontejnery v praxi SK: Cloud Computing Conference: Standardizace Infrastruktury pomocí Kubernetes a kontejneru"
+  date: 27. 5. 2025
+  ad: kubernetes
+  pdf: https://docs.google.com/presentation/d/1RKmAUxsEOPEUJU00_d2nGcxGkc57KD6TzfY8Ulu7IiI/edit
+  googleSlides: https://docs.google.com/presentation/d/1RKmAUxsEOPEUJU00_d2nGcxGkc57KD6TzfY8Ulu7IiI/edit
+
+- id:
   title: "Cloud Computing Conference: Infrastructure as Code a GitOps pomocí Terraformu"
   date: 13. 5. 2025
   ad: kubernetes
