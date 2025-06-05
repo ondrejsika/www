@@ -1,4 +1,11 @@
 - id:
+  title: "KCD 2025: Single Sign On v Cloud Native prostredi"
+  date: 5. 6. 2025
+  ad: kubernetes
+  pdf: https://docs.google.com/presentation/d/1fpYBHPwFsmFkHMdk0Zu5LjuxeFW1xdR2E83Z-zC7AII/edit
+  googleSlides: https://docs.google.com/presentation/d/1fpYBHPwFsmFkHMdk0Zu5LjuxeFW1xdR2E83Z-zC7AII/edit
+
+- id:
   title: "Kontejnery v praxi SK: CloudNativePG - PostgreSQL nativne v Kubernetes"
   date: 27. 5. 2025
   ad: kubernetes
