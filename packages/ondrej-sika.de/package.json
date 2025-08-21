@@ -5,7 +5,7 @@
   "author": "Ondrej Sika",
   "author_email": "ondrej@ondrejsika.com",
   "engines": {
-    "node": "18.x"
+    "node": ">=18"
   },
   "scripts": {
     "dev": "NODE_ENV=development next",
