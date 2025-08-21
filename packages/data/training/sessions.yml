@@ -2798,7 +2798,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: elk
@@ -2812,7 +2812,7 @@
   name: ELK
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: argocd
@@ -2826,7 +2826,7 @@
   name: ArgoCD
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -2840,7 +2840,7 @@
   name: Terraform
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: proxmox
@@ -2854,7 +2854,7 @@
   name: Proxmox
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: rancher
@@ -2867,34 +2867,6 @@
   linkedin_event: null
   name: Rancher
   price: 19 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: terraform
-  date_from: 15.09.2025
-  date_to: 15.09.2025
-  facebook_event: null
-  id: terraform--2025-09-15
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Terraform
-  price: 12 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: proxmox
-  date_from: 16.09.2025
-  date_to: 16.09.2025
-  facebook_event: null
-  id: proxmox-2025-09-16
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Proxmox
-  price: 12 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -2922,6 +2894,34 @@
   length: 1 den
   linkedin_event: null
   name: ArgoCD
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: terraform
+  date_from: 01.10.2025
+  date_to: 01.10.2025
+  facebook_event: null
+  id: terraform--2025-10-01
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: proxmox
+  date_from: 02.10.2025
+  date_to: 02.10.2025
+  facebook_event: null
+  id: proxmox-2025-10-02
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
   price: 12 900 CZK
   venue_id: null
 - active: true
