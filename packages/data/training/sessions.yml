@@ -2941,44 +2941,30 @@
 - active: true
   city: Online
   country: cz
-  course_id: git
+  course_id: docker
   date_from: 20.10.2025
-  date_to: 20.10.2025
-  facebook_event: null
-  id: git-2025-10-20
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Git
-  price: 12 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: gitlab-ci
-  date_from: 21.10.2025
   date_to: 21.10.2025
   facebook_event: null
-  id: gitlabci-2025-10-21
+  id: docker-2025-10-20
   lang: cs
-  length: 1 den
+  length: 2 dny
   linkedin_event: null
-  name: Gitlab CI
-  price: 12 900 CZK
+  name: Docker
+  price: 19 900 CZK
   venue_id: null
 - active: true
   city: Online
   country: cz
-  course_id: argocd
+  course_id: kubernetes
   date_from: 24.11.2025
-  date_to: 24.11.2025
+  date_to: 25.11.2025
   facebook_event: null
-  id: argocd-2025-11-24
+  id: kubernetes-2025-11-24
   lang: cs
-  length: 1 den
+  length: 2 dny
   linkedin_event: null
-  name: ArgoCD
-  price: 12 900 CZK
+  name: Kubernetes
+  price: 19 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -2997,11 +2983,39 @@
 - active: true
   city: Online
   country: cz
+  course_id: docker
+  date_from: 03.12.2025
+  date_to: 04.12.2025
+  facebook_event: null
+  id: docker-2025-12-03
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
   course_id: kubernetes
   date_from: 08.12.2025
   date_to: 09.12.2025
   facebook_event: null
   id: kubernetes-2025-12-08
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: kubernetes
+  date_from: 10.12.2025
+  date_to: 11.12.2025
+  facebook_event: null
+  id: kubernetes-2025-12-10
   lang: cs
   length: 2 dny
   linkedin_event: null
