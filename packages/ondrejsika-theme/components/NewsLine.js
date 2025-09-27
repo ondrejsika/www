@@ -19,7 +19,7 @@ const A = styled.a`
 const NewsLine = (props) => (
   <Background>
     <P className="text-center">
-      <Link href={props.href} passHref>
+      <Link href={props.href} passHref legacyBehavior>
         <A>{props.children}</A>
       </Link>
     </P>

@@ -20,7 +20,7 @@ function HeadingRenderer(props) {
 function LinkRenderer(props) {
   return (
     <Link href={props.href}>
-      <a>{props.children}</a>
+      {props.children}
     </Link>
   );
 }

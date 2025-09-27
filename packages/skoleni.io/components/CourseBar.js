@@ -23,8 +23,8 @@ const CourseBar = () => (
           <div key={i}>
             <Courses>
               <H1>
-                <Link href={`seznam-skoleni/${technology.id}`}>
-                  <a>{technology.name} </a>
+                <Link href={`seznam-skoleni/${technology.id}`} legacyBehavior>
+                  {technology.name}
                 </Link>
               </H1>
               {/* <Lecturer>

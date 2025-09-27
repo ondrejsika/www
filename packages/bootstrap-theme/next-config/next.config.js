@@ -23,11 +23,11 @@ module.exports = {
   }
 };
 
-const withTM = require("next-transpile-modules")([
+// Transpile packages using Next.js 15 built-in support
+module.exports.transpilePackages = [
   "@app/common",
   "@app/bootstrap-theme"
-]);
-module.exports = withTM(module.exports);
+];
 
 const withYAML = require("next-yaml");
 module.exports = withYAML(module.exports);

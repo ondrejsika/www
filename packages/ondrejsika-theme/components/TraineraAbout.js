@@ -92,7 +92,7 @@ const Page = (props) => {
                   {props.show_session_link ? (
                     <Link
                       href={`${link_site_prefix}/${session_page_prefix}/${course.id}`}
-                    >
+                      legacyBehavior>
                       <CourseName>
                         {course.name} {flag}
                       </CourseName>
@@ -100,7 +100,7 @@ const Page = (props) => {
                   ) : (
                     <Link
                       href={`${link_site_prefix}/${course_page_prefix}/${course.course_id}`}
-                    >
+                      legacyBehavior>
                       <CourseName>
                         {course.name} {flag}
                       </CourseName>

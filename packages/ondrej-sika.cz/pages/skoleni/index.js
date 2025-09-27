@@ -40,9 +40,9 @@ const Index = () => (
         return (
           <div key={i}>
             <Link href={link[1]}>
-              <a>
-                <h1>{link[0]}</h1>
-              </a>
+
+              <h1>{link[0]}</h1>
+
             </Link>
           </div>
         );

@@ -6,16 +6,16 @@ const FooterOndrejSika = () => (
   <Footer>
     <p>
       2019{" "}
-      <Link href="https://sika-kraml.de">
-        <a className="text-white">
-          <strong>Sika Kraml Schulungen GbR.</strong>
-        </a>
+      <Link href="https://sika-kraml.de" className="text-white">
+
+        <strong>Sika Kraml Schulungen GbR.</strong>
+
       </Link>
       <br />
-      <Link href="https://ondrej-sika.de">
-        <a className="text-white">
-          <strong>Ondrej Sika</strong>
-        </a>
+      <Link href="https://ondrej-sika.de" className="text-white">
+
+        <strong>Ondrej Sika</strong>
+
       </Link>{" "}
       &amp; Jiri Kraml
     </p>

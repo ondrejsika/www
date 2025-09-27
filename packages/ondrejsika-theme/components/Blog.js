@@ -19,10 +19,10 @@ const Blog = (props) => {
             if (post.hidden) return;
             return (
               <BlogBox key={i}>
-                <Link href={`/blog/${post.id}`}>
-                  <a style={{ color: "black" }}>
-                    <h3 className="pt-4 bold">{post.title}</h3>
-                  </a>
+                <Link href={`/blog/${post.id}`} style={{ color: "black" }}>
+
+                  <h3 className="pt-4 bold">{post.title}</h3>
+
                 </Link>
                 <p className="pt-2">
                   {post.date}{" "}
@@ -32,7 +32,7 @@ const Blog = (props) => {
                       return (
                         <span key={i}>
                           <Link href={`/blog/tag/${tag}`}>
-                            <a>#{tag}</a>
+                            #{tag}
                           </Link>{" "}
                         </span>
                       );
@@ -41,7 +41,7 @@ const Blog = (props) => {
                 <p className="pb-2 pt-2">
                   {post.perex}{" "}
                   <Link href={`/blog/${post.id}`}>
-                    <a>číst dále</a>
+                    číst dále
                   </Link>
                 </p>
               </BlogBox>

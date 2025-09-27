@@ -25,7 +25,7 @@ let AustraliaFiresBar = (props) => {
               </a>
             </div>
             <div className="text-center">
-              <Link href={post_link}>
+              <Link href={post_link} legacyBehavior>
                 <a className="main">
                   Přispěte na pomoc Austrálii 🐨🦘❤️, <br />
                   dostanete slevu na školení nebo konzultaci ve výši daru.

@@ -21,7 +21,7 @@ const Page = () => (
       ].map((link, i) => (
         <li key={i}>
           <Link href={link[1]}>
-            <a>{link[0]}</a>
+            {link[0]}
           </Link>
         </li>
       ))}

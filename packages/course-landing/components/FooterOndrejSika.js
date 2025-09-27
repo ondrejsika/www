@@ -6,10 +6,10 @@ const FooterOndrejSika = () => (
   <Footer>
     <p>
       2019{" "}
-      <Link href="https://ondrej-sika.cz">
-        <a className="text-white">
-          <strong>Ondrej Sika</strong>
-        </a>
+      <Link href="https://ondrej-sika.cz" className="text-white">
+
+        <strong>Ondrej Sika</strong>
+
       </Link>
     </p>
   </Footer>

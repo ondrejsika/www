@@ -55,14 +55,12 @@ const CourseList = (props) => {
             return (
               <Li key={i}>
                 {num_of_courses_by_lecturer[course.lecturer.id] > 1 ? (
-                  <Link href={`/skoleni/${course.id}`}>
-                    <a>
+                  <Link href={`/skoleni/${course.id}`} legacyBehavior>
                       {course.lecturer.name}: {course.name}
-                    </a>
                   </Link>
                 ) : (
-                  <Link href={`/skoleni/${course.id}`}>
-                    <a>{course.lecturer.name}</a>
+                  <Link href={`/skoleni/${course.id}`} legacyBehavior>
+                    {course.lecturer.name}
                   </Link>
                 )}
               </Li>

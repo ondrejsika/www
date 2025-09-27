@@ -119,10 +119,8 @@ const Footer = (
           ].map((el, i) => {
             return (
               <ThemeFooter.Li key={i}>
-                <Link href={el[1]}>
-                  <ThemeFooter.A href={el[1]} className="a-underline">
+                <Link href={el[1]} className="a-underline" legacyBehavior>
                     {el[0]}
-                  </ThemeFooter.A>
                 </Link>
               </ThemeFooter.Li>
             );

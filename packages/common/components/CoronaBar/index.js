@@ -32,7 +32,7 @@ let KoronaBar = (props) => {
               <Translate
                 lang={lang}
                 cs={
-                  <Link href={post_link}>
+                  <Link href={post_link} legacyBehavior>
                     <a className="main ibm-mono">
                       Vzhledem k epidemii COVID19,
                       <br /> nabízím všechna školení v on-line formě. 😷🦠
@@ -40,7 +40,7 @@ let KoronaBar = (props) => {
                   </Link>
                 }
                 en={
-                  <Link href={post_link}>
+                  <Link href={post_link} legacyBehavior>
                     <a className="main ibm-mono">
                       Due to COVID19, <br />
                       I&apos;ve turned all my training online. 😷🦠

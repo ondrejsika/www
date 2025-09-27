@@ -1,5 +1,4 @@
 import React from "react";
-import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
 import Link from "next/link";
 import styled from "styled-components";
@@ -14,7 +13,7 @@ import Button from "@app/ondrejsika-theme/components/Button";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "../css/index.sass";
 
-const Hide = styled.div`
+const Hide = styled.span`
   @media (max-width: 600px) {
     display: none;
   }
@@ -134,7 +133,7 @@ const Footer = (
           ].map((el, i) => {
             return (
               <ThemeFooter.Li key={i}>
-                <Link href={el[1]}>
+                <Link href={el[1]} legacyBehavior>
                   <ThemeFooter.A href="#">{el[0]}</ThemeFooter.A>
                 </Link>
               </ThemeFooter.Li>
@@ -160,45 +159,43 @@ const Footer = (
     }
     center={
       <Hide>
-        <Link href="/news" passHref>
+        <Link href="/news" passHref legacyBehavior>
           <ThemeFooter.A>News</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/obchodni-spoluprace">
+        <Link href="/obchodni-spoluprace" legacyBehavior>
           <ThemeFooter.A href="#">Obchodní Spolupráce</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/doporuceni">
+        <Link href="/doporuceni" legacyBehavior>
           <ThemeFooter.A href="#">Doporučení</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/doporucte-me-prosim">
+        <Link href="/doporucte-me-prosim" legacyBehavior>
           <ThemeFooter.A href="#">Doporučte mě</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/book-me">
+        <Link href="/book-me" legacyBehavior>
           <ThemeFooter.A href="#">Book Me</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
         <Link href="/slides">
-          <a>
-            <ThemeFooter.SpanA>Slides</ThemeFooter.SpanA>
-          </a>
+          <ThemeFooter.SpanA>Slides</ThemeFooter.SpanA>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/invite">
+        <Link href="/invite" legacyBehavior>
           <ThemeFooter.A href="#">Připojte se</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/devops-stack">
+        <Link href="/devops-stack" legacyBehavior>
           <ThemeFooter.A href="#">DevOps Stack</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/seznam-skoleni">
+        <Link href="/seznam-skoleni" legacyBehavior>
           <ThemeFooter.A href="#">Všechna Školení</ThemeFooter.A>
         </Link>
         <span className="text-white">&nbsp;|&nbsp;</span>
-        <Link href="/hr">
+        <Link href="/hr" legacyBehavior>
           <ThemeFooter.A href="#">HR</ThemeFooter.A>
         </Link>
       </Hide>
@@ -206,22 +203,13 @@ const Footer = (
   />
 );
 
-class MyApp extends App {
-  constructor(...args) {
-    super(...args);
-    this.site = site;
-  }
-  render() {
-    const { Component, pageProps } = this.props;
-    pageProps.site = this.site;
-    return (
-      <>
-        <Layout Navbar={Navbar} Footer={Footer} {...pageProps}>
-          <Component lang={site.lang} {...pageProps} />
-        </Layout>
-      </>
-    );
-  }
+export default function MyApp({ Component, pageProps }) {
+  pageProps.site = site;
+  return (
+    <>
+      <Layout Navbar={Navbar} Footer={Footer} {...pageProps}>
+        <Component lang={site.lang} {...pageProps} />
+      </Layout>
+    </>
+  );
 }
-
-export default MyApp;

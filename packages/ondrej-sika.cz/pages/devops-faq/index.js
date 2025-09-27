@@ -10,10 +10,10 @@ const Page = () => (
     title="DevOps FAQ"
     noBlogBoxContent={faq_cz_yml.map((faq, i) => (
       <BlogBox key={i}>
-        <Link href={"/devops-faq/" + faq.id}>
-          <a style={{ color: "black" }}>
-            <h2>{faq.question}</h2>
-          </a>
+        <Link href={"/devops-faq/" + faq.id} style={{ color: "black" }}>
+
+          <h2>{faq.question}</h2>
+
         </Link>
         <Markdown source={faq.answer} />
       </BlogBox>

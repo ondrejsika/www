@@ -14,10 +14,10 @@ const Footer = (props) => (
           {props.children}
           <p style={style}>
             Website by{" "}
-            <Link href="https://zuzjes.com">
-              <a className="text-white">
-                <strong>Zuzana Jeschke</strong>
-              </a>
+            <Link href="https://zuzjes.com" className="text-white">
+
+              <strong>Zuzana Jeschke</strong>
+
             </Link>
           </p>
         </div>

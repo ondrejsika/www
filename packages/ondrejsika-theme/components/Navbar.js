@@ -74,7 +74,7 @@ const Navbar = (props) => {
                   if (typeof link[1] == "string") {
                     return (
                       <li className="nav-item" key={i}>
-                        <Link href={link[1]}>
+                        <Link href={link[1]} legacyBehavior>
                           <NavLink href="#" className="nav-link">
                             {link[0]}
                             <span
@@ -111,20 +111,20 @@ const Navbar = (props) => {
                         >
                           {link[1].map((sub_link, i) => {
                             return (
-                              <Link key={i} href={sub_link[1]}>
-                                <a className="dropdown-item">
-                                  {sub_link[0]}
-                                  {` `}
-                                  <span
-                                    style={{
-                                      fontSize: "0.8em",
-                                      verticalAlign: "top",
-                                      color: "red"
-                                    }}
-                                  >
-                                    {sub_link[2]}
-                                  </span>
-                                </a>
+                              <Link key={i} href={sub_link[1]} className="dropdown-item">
+
+                                {sub_link[0]}
+                                {` `}
+                                <span
+                                  style={{
+                                    fontSize: "0.8em",
+                                    verticalAlign: "top",
+                                    color: "red"
+                                  }}
+                                >
+                                  {sub_link[2]}
+                                </span>
+
                               </Link>
                             );
                           })}

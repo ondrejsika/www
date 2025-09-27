@@ -165,9 +165,9 @@ const UpcomingSessions = (props) => {
                           <Link
                             href={`${link_site_prefix}/${session_page_prefix}/${course.id}`}
                           >
-                            <a>
-                              {course.name} {flag}
-                            </a>
+
+                            {course.name} {flag}
+
                           </Link>
                         );
                       if (props.show_course_link)
@@ -175,9 +175,9 @@ const UpcomingSessions = (props) => {
                           <Link
                             href={`${link_site_prefix}/${course_page_prefix}/${course.course_id}`}
                           >
-                            <a>
-                              {course.name} {flag}
-                            </a>
+
+                            {course.name} {flag}
+
                           </Link>
                         );
                       return (
@@ -252,7 +252,6 @@ const UpcomingSessions = (props) => {
           </tbody>
         </table>
       </DesktopView>
-
       <MobileView>
         {sessions.map((course, i) => {
           return (
@@ -265,14 +264,14 @@ const UpcomingSessions = (props) => {
                         <>
                           <CourseName>{course.name}</CourseName>
                           <Link href={`/${session_page_prefix}/${course.id}`}>
-                            <a>
-                              <Translate
-                                lang={props.lang}
-                                cs="Více o kurzu"
-                                sk="Viac o kurze"
-                                en="About the training"
-                              />
-                            </a>
+
+                            <Translate
+                              lang={props.lang}
+                              cs="Více o kurzu"
+                              sk="Viac o kurze"
+                              en="About the training"
+                            />
+
                           </Link>
                         </>
                       );
@@ -281,7 +280,7 @@ const UpcomingSessions = (props) => {
                         <Link
                           href={`${link_site_prefix}/${course_page_prefix}/${course.course_id}`}
                         >
-                          <a>{course.name}</a>
+                          {course.name}
                         </Link>
                       );
                     return <span>{course.name}</span>;

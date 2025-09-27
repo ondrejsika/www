@@ -25,7 +25,7 @@ const FloatingBtn = (props) => {
 
   return (
     <>
-      <Link href={props.href}>
+      <Link href={props.href} legacyBehavior>
         <WrapperButton href={props.href}>{props.children}</WrapperButton>
       </Link>
     </>

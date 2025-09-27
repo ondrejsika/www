@@ -93,7 +93,7 @@ let Post = (props) => {
                       Zaujal Vás {technology}? Chcete se dozvědět více? Přijďte
                       na mé{" "}
                       <Link href={trainingButtonLink}>
-                        <a>{trainingButtonText}</a>
+                        {trainingButtonText}
                       </Link>
                       !
                     </b>
@@ -101,7 +101,7 @@ let Post = (props) => {
                   <p>
                     Případně si můžete vybrat z nabídky{" "}
                     <Link href="/verejne-terminy">
-                      <a>otevřených kurzů</a>
+                      otevřených kurzů
                     </Link>
                     .
                   </p>

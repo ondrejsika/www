@@ -85,15 +85,15 @@ const Index = () => (
       <p>
         Kontakt na{" "}
         <Link href="/kontakt">
-          <a>Ondřej Šika</a>
+          Ondřej Šika
         </Link>
         ,{" "}
         <Link href="/kontakt-sikalabs">
-          <a>SikaLabs s.r.o.</a>
+          SikaLabs s.r.o.
         </Link>
         ,{" "}
         <Link href="/kontakt-trainera">
-          <a>Trainera s.r.o.</a>
+          Trainera s.r.o.
         </Link>
       </p>
     </div>

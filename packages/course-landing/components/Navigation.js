@@ -171,52 +171,52 @@ class Navigation extends React.Component {
               <p>
                 <li>
                   <Link href={links.docker[location]}>
-                    <a>Docker</a>
+                    Docker
                   </Link>
                 </li>
                 <li>
                   <Link href={links.kubernetes[location]}>
-                    <a>Kubernetes</a>
+                    Kubernetes
                   </Link>
                 </li>
                 <li>
                   <Link href={links.terraform[location]}>
-                    <a>Terraform</a>
+                    Terraform
                   </Link>
                 </li>
                 <li>
                   <Link href={links.ansible[location]}>
-                    <a>Ansible</a>
+                    Ansible
                   </Link>
                 </li>
                 <li>
                   <Link href={links.git[location]}>
-                    <a>Git</a>
+                    Git
                   </Link>
                 </li>
                 <li>
                   <Link href={links.gitlabci[location]}>
-                    <a>Gitlab CI</a>
+                    Gitlab CI
                   </Link>
                 </li>
                 <li>
                   <Link href={links.prometheus[location]}>
-                    <a>Prometheus</a>
+                    Prometheus
                   </Link>
                 </li>
                 <li>
                   <Link href={links.proxmox[location]}>
-                    <a>Proxmox</a>
+                    Proxmox
                   </Link>
                 </li>
                 <li>
                   <Link href={links.rancher[location]}>
-                    <a>Rancher</a>
+                    Rancher
                   </Link>
                 </li>
                 <li>
                   <Link href={links.react[location]}>
-                    <a>React</a>
+                    React
                   </Link>
                 </li>
               </p>

@@ -47,10 +47,8 @@ const Page = (props) => (
             transform: "translate(-50%, -50%)"
           }}
         >
-          <Link href="/videokurzy/pripravuji">
-            <a>
+          <Link href="/videokurzy/pripravuji" legacyBehavior>
               <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-            </a>
           </Link>
         </div>
       </div>
@@ -68,10 +66,8 @@ const Page = (props) => (
             transform: "translate(-50%, -50%)"
           }}
         >
-          <Link href="/videokurzy/pripravuji">
-            <a>
+          <Link href="/videokurzy/pripravuji" legacyBehavior>
               <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-            </a>
           </Link>
         </div>
       </div>
@@ -90,10 +86,8 @@ const Page = (props) => (
             transform: "translate(-50%, -50%)"
           }}
         >
-          <Link href="/videokurzy/pripravuji">
-            <a>
+          <Link href="/videokurzy/pripravuji" legacyBehavior>
               <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-            </a>
           </Link>
         </div>
       </div>
@@ -112,10 +106,8 @@ const Page = (props) => (
             transform: "translate(-50%, -50%)"
           }}
         >
-          <Link href="/videokurzy/pripravuji">
-            <a>
+          <Link href="/videokurzy/pripravuji" legacyBehavior>
               <FaYoutube style={{ fontSize: "5em", color: "black" }} />
-            </a>
           </Link>
         </div>
       </div>

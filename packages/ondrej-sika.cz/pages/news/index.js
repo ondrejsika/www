@@ -10,11 +10,10 @@ const Page = () => (
         return (
           <li key={i}>
             <Link href={`/news/${news.id}`}>
-              <a>
-                <span className="bold">{news.title}</span>
-              </a>
-            </Link>{" "}
-            ({news.date}): {news.perex}
+
+              <span className="bold">{news.title}</span>
+
+            </Link>{" "}({news.date}): {news.perex}
           </li>
         );
       })}

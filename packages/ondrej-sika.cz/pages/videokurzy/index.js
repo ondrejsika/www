@@ -47,9 +47,9 @@ const Page = () => (
           }}
         >
           <Link href="/videokurzy/pripravuji">
-            <a>
-              <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-            </a>
+
+            <FaYoutube style={{ fontSize: "5em", color: "white" }} />
+
           </Link>
         </div>
       </div>
@@ -68,9 +68,9 @@ const Page = () => (
           }}
         >
           <Link href="/videokurzy/pripravuji">
-            <a>
-              <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-            </a>
+
+            <FaYoutube style={{ fontSize: "5em", color: "white" }} />
+
           </Link>
         </div>
       </div>
@@ -90,9 +90,9 @@ const Page = () => (
           }}
         >
           <Link href="/videokurzy/pripravuji">
-            <a>
-              <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-            </a>
+
+            <FaYoutube style={{ fontSize: "5em", color: "white" }} />
+
           </Link>
         </div>
       </div>
@@ -112,9 +112,9 @@ const Page = () => (
           }}
         >
           <Link href="/videokurzy/pripravuji">
-            <a>
-              <FaYoutube style={{ fontSize: "5em", color: "black" }} />
-            </a>
+
+            <FaYoutube style={{ fontSize: "5em", color: "black" }} />
+
           </Link>
         </div>
       </div>

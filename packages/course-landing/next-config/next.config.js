@@ -7,13 +7,13 @@ module.exports = {
   }
 };
 
-const withTM = require("next-transpile-modules")([
+// Transpile packages using Next.js 15 built-in support
+module.exports.transpilePackages = [
   "@app/ondrejsika-theme",
   "@app/common",
   "@app/course-landing",
   "@app/data"
-]);
-module.exports = withTM(module.exports);
+];
 
 const withYAML = require("next-yaml");
 module.exports = withYAML(module.exports);

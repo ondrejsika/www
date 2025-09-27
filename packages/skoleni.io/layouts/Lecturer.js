@@ -63,7 +63,7 @@ const Lecturer = (props) => (
               let course = getCourse(course_id);
               return (
                 <Li key={i}>
-                  <Link href={`/skoleni/${course.id}`}>{course.name}</Link>
+                  <Link href={`/skoleni/${course.id}`} legacyBehavior>{course.name}</Link>
                 </Li>
               );
             })}

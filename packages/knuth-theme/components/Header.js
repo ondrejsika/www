@@ -19,8 +19,8 @@ let Header = (props) => {
               className="ml-4"
               style={{ display: "inline-block", fontSize: "1.1em" }}
             >
-              <Link href={link[1]}>
-                <a>{link[0]}</a>
+              <Link href={link[1]} legacyBehavior>
+                {link[0]}
               </Link>
             </li>
           ))}

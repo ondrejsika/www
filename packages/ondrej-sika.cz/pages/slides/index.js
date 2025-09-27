@@ -9,13 +9,12 @@ const Page = () => (
       {slides_list.map((s, i) => {
         return (
           <li key={i}>
-            <Link href={s.pdf}>
-              <a target="_blank" rel="noopener noreferrer">
-                <span className="bold">{s.titleShort || s.title}</span>
-              </a>
-            </Link>{" "}
-            ({s.date})
-          </li>
+            <Link href={s.pdf} target="_blank" rel="noopener noreferrer">
+
+              <span className="bold">{s.titleShort || s.title}</span>
+
+            </Link>{" "}({s.date})
+                      </li>
         );
       })}
     </ul>

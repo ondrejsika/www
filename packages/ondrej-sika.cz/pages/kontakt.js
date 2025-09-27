@@ -101,15 +101,15 @@ const Index = () => (
       <p>
         Kontakt na{" "}
         <Link href="/kontakt-sikalabs">
-          <a>SikaLabs s.r.o.</a>
+          SikaLabs s.r.o.
         </Link>
         ,{" "}
         <Link href="/kontakt-devopsa">
-          <a>Devopsa s.r.o.</a>
+          Devopsa s.r.o.
         </Link>
         ,{" "}
         <Link href="/kontakt-trainera">
-          <a>Trainera s.r.o.</a>
+          Trainera s.r.o.
         </Link>
       </p>
     </div>

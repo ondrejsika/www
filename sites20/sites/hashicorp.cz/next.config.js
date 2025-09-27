@@ -2,5 +2,5 @@ module.exports = {
   trailingSlash: true
 };
 
-const withTM = require("next-transpile-modules")(["@themes/meetup"]);
-module.exports = withTM(module.exports);
+// Transpile packages using Next.js 15 built-in support
+module.exports.transpilePackages = ["@themes/meetup"];

@@ -12,7 +12,6 @@ class Blog extends React.Component {
           <title>Blog - Ondrej Sika</title>
         </Head>
         <MainBar header="Blog"></MainBar>
-
         <div className="container">
           {posts.map((post, i) => {
             return (
@@ -22,16 +21,14 @@ class Blog extends React.Component {
                     return <hr className="hr-black" />;
                   }
                 })()}
-                <Link href={`/blog/${post.id}`}>
-                  <a style={{ color: "black" }}>
+                <Link href={`/blog/${post.id}`} style={{ color: "black" }} legacyBehavior>
                     <h3 className="pt-4 bold">{post.title}</h3>
-                  </a>
                 </Link>
                 <p>{post.date}</p>
                 <p className="pb-4">
                   {post.perex}{" "}
                   <Link href={`/blog/${post.id}`}>
-                    <a>číst dále</a>
+                    číst dále
                   </Link>
                 </p>
               </div>

@@ -88,8 +88,8 @@ const Footer = (
           ].map((el, i) => {
             return (
               <li key={i}>
-                <Link href={el[1]}>
-                  <ThemeFooter.A href="#">{el[0]}</ThemeFooter.A>
+                <Link href={el[1]} legacyBehavior>
+                  {el[0]}
                 </Link>
               </li>
             );

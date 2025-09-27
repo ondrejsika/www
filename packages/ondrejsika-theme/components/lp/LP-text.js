@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const Text = styled.p`
+const Text = styled.div`
   color: black;
   font: Regular IBM Plex Sans;
   font-size: 1em;

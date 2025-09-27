@@ -193,7 +193,7 @@ const Button = (props) => {
   `;
   return (
     <>
-      <Link href={props.href}>
+      <Link href={props.href} legacyBehavior>
         <WrapperButton
           site={props.site}
           href={props.href}

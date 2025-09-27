@@ -52,7 +52,7 @@ const CourseDD = (props) => {
         <p>
           Vsechny fotky najdete zde{" "}
           <Link href="/media">
-            <a>https://ondrej-sika.cz/media</a>
+            https://ondrej-sika.cz/media
           </Link>
         </p>
       </div>

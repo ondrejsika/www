@@ -32,14 +32,12 @@ const ExampleForm = (props) => {
         register={register}
         errors={errors}
       />
-
       <Field
         name="company"
         label="Company"
         register={register}
         errors={errors}
       />
-
       <Field
         name="email"
         label="Email"
@@ -49,14 +47,12 @@ const ExampleForm = (props) => {
         validation_pattern={/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i}
         validation_pattern_message="Your email is not valid"
       />
-
       <Field
         name="phone"
         label="Phone Number"
         register={register}
         errors={errors}
       />
-
       <Field
         name="course"
         as="select"
@@ -70,7 +66,6 @@ const ExampleForm = (props) => {
         <option>Kubernetes</option>
         <option>Gitlab CI</option>
       </Field>
-
       <Field
         name="session"
         as="select"

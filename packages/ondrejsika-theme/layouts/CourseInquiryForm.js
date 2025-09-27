@@ -48,7 +48,6 @@ const CourseInquiryForm = (props) => {
           de="Non-binding Inquiry"
         />
       </h2>
-
       <Field
         name="name"
         label="Name"
@@ -56,14 +55,12 @@ const CourseInquiryForm = (props) => {
         register={register}
         errors={errors}
       />
-
       <Field
         name="company"
         label="Company"
         register={register}
         errors={errors}
       />
-
       <Field
         name="email"
         label="Email"
@@ -73,7 +70,6 @@ const CourseInquiryForm = (props) => {
         validation_pattern={/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i}
         validation_pattern_message="Your email is not valid"
       />
-
       <Field
         name="phone"
         label="Phone Number"
@@ -81,7 +77,6 @@ const CourseInquiryForm = (props) => {
         errors={errors}
       />
       <ReCAPTCHA ref={recaptchaRef} sitekey={props.site.recaptcha_site_key} />
-
       <div className="pt-5">
         <button site={props.site}>
           <Translate lang={props.site.lang} cs="Odeslat" en="Submit" />

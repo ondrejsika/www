@@ -12,12 +12,12 @@ const Index = () => (
     <p>
       04. 01. 2019{" "}
       <Link href="/blog/proof-of-concept-for-zeit-terraform-provider">
-        <a>Proof of Concept for ZEIT Terraform Provider</a>
+        Proof of Concept for ZEIT Terraform Provider
       </Link>
       <br />
       01. 01. 2019{" "}
       <Link href="/blog/terraform-state-in-git">
-        <a>Terraform State in Git</a>
+        Terraform State in Git
       </Link>
     </p>
   </div>

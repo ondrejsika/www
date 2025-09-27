@@ -23,7 +23,7 @@ const Page = (props) => (
         <tr key={i}>
           <td>
             <Link href={`/skoleni/${course.id}`}>
-              <a>{course.name[props.site.lang]}</a>
+              {course.name[props.site.lang]}
             </Link>
           </td>
           <td>

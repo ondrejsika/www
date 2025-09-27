@@ -11,17 +11,17 @@ const Header = (props) => (
               <div className="header-inner">
                 <span className="site-header">
                   <Link href="/">
-                    <a>
-                      <h1 className="mb-0">{props.websiteHeader}</h1>
-                    </a>
+
+                    <h1 className="mb-0">{props.websiteHeader}</h1>
+
                   </Link>
                 </span>
                 <p>
                   by{" "}
                   <Link href={props.byUrl}>
-                    <a>
-                      <b>{props.byName}</b>
-                    </a>
+
+                    <b>{props.byName}</b>
+
                   </Link>
                 </p>
                 {props.children}
