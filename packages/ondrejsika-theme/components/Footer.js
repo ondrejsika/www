@@ -41,12 +41,30 @@ const Footer = (props) => {
           <CenterP>
             Website by{" "}
             <a
+              href="https://matejkamenicky.eu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fs-11 text a-underline text-white"
+            >
+              Matej Kamenicky
+            </a>
+            ,{" "}
+            <a
               href="https://zuzjes.com"
               target="_blank"
               rel="noopener noreferrer"
               className="fs-11 text a-underline text-white"
             >
               Zuzana Jeschke
+            </a>
+            , and{" "}
+            <a
+              href="https://claude.com/claude-code"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fs-11 text a-underline text-white"
+            >
+              Claude Code
             </a>
           </CenterP>
         </Hide>
