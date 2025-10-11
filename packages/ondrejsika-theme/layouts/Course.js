@@ -37,9 +37,9 @@ const Course = (props) => (
       }
       logo={props.logo}
     />
-    <div className="container course-page" style={{ marginTop: "3rem" }}>
+    <div className="container course-page" style={{ marginTop: "1rem" }}>
       {props.show_sessions && (
-        <div style={{ marginBottom: "3rem" }}>
+        <div style={{ marginBottom: "1rem" }}>
           <h2
             style={{
               marginBottom: "1.5rem",
@@ -71,7 +71,7 @@ const Course = (props) => (
     </div>
     <div
       className="container"
-      style={{ marginBottom: "4rem", marginTop: "4rem" }}
+      style={{ marginBottom: "4rem", marginTop: "2rem" }}
     >
       <Row>
         <Col md={7}>

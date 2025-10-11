@@ -77,9 +77,9 @@ const UpcomingSessions = (props) => {
         <div
           style={{
             background: "linear-gradient(135deg, #fff9e6 0%, #fff 100%)",
-            border: "2px solid #ffc107",
+            border: "1px solid #ffc107",
             borderRadius: "12px",
-            padding: "2.5rem",
+            padding: "2rem 2.5rem 1.5rem 2.5rem",
             marginTop: "1.5rem",
             textAlign: "center",
             boxShadow: "0 4px 12px rgba(255, 193, 7, 0.15)",
