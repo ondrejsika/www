@@ -126,7 +126,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.34.4",
+    "eslint-plugin-react": "^7.37.5",
     "now": "^16.7.0",
     "npm-check-updates": "^12.5.12",
     "prettier": "2.8.8"
@@ -138,7 +138,7 @@
     "bootstrap": "^4.6.2",
     "bootstrap-css-only": "^4.4.1",
     "copy-webpack-plugin": "^5.1.2",
-    "express": "^4.19.2",
+    "express": "^4.21.2",
     "ics": "^2.44.0",
     "isomorphic-unfetch": "^3.1.0",
     "jquery": "^3.7.1",
@@ -160,7 +160,7 @@
     "react-markdown": "^4.3.1",
     "react-twitter-embed": "^4.0.4",
     "react-youtube": "^7.14.0",
-    "sass": "^1.77.8",
+    "sass": "^1.93.2",
     "save-ukraine": "^0.18.133",
     "styled-components": "4.4.1"
   }
