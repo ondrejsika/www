@@ -32,6 +32,7 @@ export const Manuals = () => (
           <img
             height="400"
             src={`https://raw.githubusercontent.com/ondrejsika/ondrejsika-media/master/Photos/${el}`}
+            alt={`Ondrej Sika Photo ${i + 1}`}
           />
         </a>
       </div>

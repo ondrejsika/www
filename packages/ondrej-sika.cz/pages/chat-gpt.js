@@ -8,6 +8,7 @@ const Page = () => (
       <div key={i}>
         <img
           src={img.src}
+          alt="Chat GPT Example"
           className="img img-fluid"
           style={{ margin: "1em" }}
         />

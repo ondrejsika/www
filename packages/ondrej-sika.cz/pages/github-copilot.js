@@ -10,6 +10,7 @@ const Page = () => (
       <div key={i}>
         <img
           src={img.src}
+          alt="GitHub Copilot Example"
           className="img img-fluid"
           style={{ margin: "1em" }}
         />

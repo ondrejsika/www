@@ -28,6 +28,7 @@ module.exports = {
     "@next/next/no-html-link-for-pages": "off",
     "@next/next/no-sync-scripts": "warn",
     "@next/next/no-document-import-in-page": "off",
+    "@next/next/no-img-element": "off",
   },
   settings: {
     react: {

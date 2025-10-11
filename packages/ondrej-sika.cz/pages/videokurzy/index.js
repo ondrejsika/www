@@ -36,7 +36,7 @@ const Page = () => (
         <p className="text-center">
           Cena: <span>3000 CZK</span>
         </p>
-        <img src={docker.src} className="img-fluid" />
+        <img src={docker.src} alt="Docker Video Course" className="img-fluid" />
         <div
           style={{
             position: "absolute",
@@ -55,7 +55,11 @@ const Page = () => (
         <p className="text-center">
           Cena: <span>3000 CZK</span>
         </p>
-        <img src={kubernetes.src} className="img-fluid" />
+        <img
+          src={kubernetes.src}
+          alt="Kubernetes Video Course"
+          className="img-fluid"
+        />
         <div
           style={{
             position: "absolute",
@@ -75,7 +79,11 @@ const Page = () => (
         <p className="text-center">
           Cena: <span>3000 CZK</span>
         </p>
-        <img src={terraform.src} className="img-fluid" />
+        <img
+          src={terraform.src}
+          alt="Terraform Video Course"
+          className="img-fluid"
+        />
         <div
           style={{
             position: "absolute",
@@ -95,7 +103,11 @@ const Page = () => (
         <p className="text-center">
           Cena: <span>3000 CZK</span>
         </p>
-        <img src={gitlabCi.src} className="img-fluid" />
+        <img
+          src={gitlabCi.src}
+          alt="GitLab CI Video Course"
+          className="img-fluid"
+        />
         <div
           style={{
             position: "absolute",

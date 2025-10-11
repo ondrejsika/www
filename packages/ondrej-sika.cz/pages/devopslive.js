@@ -87,6 +87,7 @@ const Page = () => {
             <Col md={2}>
               <img
                 src={devops.src}
+                alt="DevOps Live Logo"
                 className="pt-md-5 img-fluid"
                 style={{ height: "280px" }}
               />
