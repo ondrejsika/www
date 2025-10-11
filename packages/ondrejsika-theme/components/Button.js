@@ -9,7 +9,13 @@ const Button = (props) => {
     cursor: pointer;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 
     ${(props) =>
       props.size == "small" &&
@@ -38,7 +44,7 @@ const Button = (props) => {
       ${(props) =>
       props.type == "outline-primary" &&
       css`
-        border: 1px solid
+        border: 2px solid
           ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
           default_colors.BLUE};
 
@@ -46,12 +52,12 @@ const Button = (props) => {
           props.site.colors &&
           props.site.colors.PRIMARY) ||
         default_colors.BLUE};
+        background: ${default_colors.WHITE};
+
         &:hover {
-          border: 1px solid
-            ${(props.site &&
-              props.site.colors &&
-              props.site.colors.SECONDARY_LIGHT) ||
-            default_colors.WHITE};
+          border: 2px solid
+            ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
           color: ${(props.site &&
             props.site.colors &&
             props.site.colors.SECONDARY_LIGHT) ||
@@ -61,9 +67,12 @@ const Button = (props) => {
             props.site.colors.PRIMARY) ||
           default_colors.BLUE};
           text-decoration: none;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
         &:focus {
-          box-shadow: 0 0 0 3px green, 0 0 0px 5px red;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
           outline: none;
         }
       `}
@@ -71,7 +80,7 @@ const Button = (props) => {
     ${(props) =>
       props.type == "outline-secondary" &&
       css`
-        border: 1px solid
+        border: 2px solid
           ${(props.site &&
             props.site.colors &&
             props.site.colors.SECONDARY_LIGHT) ||
@@ -81,11 +90,14 @@ const Button = (props) => {
           props.site.colors &&
           props.site.colors.SECONDARY_LIGHT) ||
         default_colors.WHITE};
+        background: transparent;
 
         &:hover {
-          border: 1px solid
-            ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
-            default_colors.BLUE};
+          border: 2px solid
+            ${(props.site &&
+              props.site.colors &&
+              props.site.colors.SECONDARY_LIGHT) ||
+            default_colors.WHITE};
           color: ${(props.site &&
             props.site.colors &&
             props.site.colors.PRIMARY) ||
@@ -95,13 +107,12 @@ const Button = (props) => {
             props.site.colors.SECONDARY_LIGHT) ||
           default_colors.WHITE};
           text-decoration: none;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
         &:focus {
-          box-shadow: 0 0 0 3px #141480,
-            0 0 0px 5px
-              ${props.site &&
-              props.site.colors &&
-              props.site.colors.SECONDARY_LIGHT};
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
           outline: none;
         }
       `}
@@ -109,7 +120,7 @@ const Button = (props) => {
     ${(props) =>
       props.type == "primary" &&
       css`
-        border: 1px solid
+        border: 2px solid
           ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
           default_colors.BLUE};
         background: ${(props.site &&
@@ -122,26 +133,22 @@ const Button = (props) => {
         default_colors.WHITE};
 
         &:hover {
-          border: 1px solid
+          border: 2px solid
             ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
             default_colors.BLUE};
-          color: ${(props.site &&
+          color: ${default_colors.WHITE};
+          background: ${(props.site &&
             props.site.colors &&
             props.site.colors.PRIMARY) ||
           default_colors.BLUE};
-          background: ${(props.site &&
-            props.site.colors &&
-            props.site.colors.SECONDARY_LIGHT) ||
-          default_colors.WHITE};
           text-decoration: none;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          opacity: 0.9;
         }
         &:focus {
-          box-shadow: 0 0 0 3px white,
-            0 0 0px 5px
-              ${(props.site &&
-                props.site.colors &&
-                props.site.colors.PRIMARY) ||
-              default_colors.BLUE};
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
           outline: none;
         }
       `}
@@ -149,13 +156,13 @@ const Button = (props) => {
     ${(props) =>
       props.type == "secondary" &&
       css`
-        border: 1px solid
+        border: 2px solid
           ${(props.site && props.site.colors && props.site.colors.SECONDARY) ||
-          default_colors.BLUE};
+          default_colors.LIGHT_GREY};
         color: ${(props.site &&
           props.site.colors &&
           props.site.colors.SECONDARY) ||
-        default_colors.BLUE};
+        default_colors.DARK_GREY};
         background: ${(props.site &&
           props.site.colors &&
           props.site.colors.SECONDARY_LIGHT) ||
@@ -166,27 +173,38 @@ const Button = (props) => {
             props.site.colors &&
             props.site.colors.PRIMARY) ||
           default_colors.BLUE};
+          border: 2px solid
+            ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
+            default_colors.BLUE};
           color: ${(props.site &&
             props.site.colors &&
             props.site.colors.SECONDARY_LIGHT) ||
           default_colors.WHITE};
           text-decoration: none;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
       `}
       ${(props) =>
       props.type == "landing-page" &&
       css`
-        font-weight: bold;
-        background: #c8bfb0;
-        box-shadow: 9px 9px 6px #00000029;
-        border-radius: 54px;
-        color: #131480;
+        font-weight: 600;
+        background: ${default_colors.BROWN};
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        border: 2px solid ${default_colors.BROWN};
+        color: ${default_colors.BLUE};
 
         &:hover {
-          background: #707070;
-          color: #141480;
+          background: ${default_colors.DARK_GREY};
+          border: 2px solid ${default_colors.DARK_GREY};
+          color: ${default_colors.WHITE};
           text-decoration: none;
-          border: none;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
       `};
   `;

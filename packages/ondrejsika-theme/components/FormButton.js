@@ -8,7 +8,13 @@ const FormButton = (props) => {
     cursor: pointer;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 
     ${(props) =>
       props.size == "small" &&
@@ -110,7 +116,7 @@ const FormButton = (props) => {
     ${(props) =>
       props.type == "primary" &&
       css`
-        border: 1px solid
+        border: 2px solid
           ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
           default_colors.BLUE};
         background: ${(props.site &&
@@ -123,26 +129,22 @@ const FormButton = (props) => {
         default_colors.WHITE};
 
         &:hover {
-          border: 1px solid
+          border: 2px solid
             ${(props.site && props.site.colors && props.site.colors.PRIMARY) ||
             default_colors.BLUE};
-          color: ${(props.site &&
+          color: ${default_colors.WHITE};
+          background: ${(props.site &&
             props.site.colors &&
             props.site.colors.PRIMARY) ||
           default_colors.BLUE};
-          background: ${(props.site &&
-            props.site.colors &&
-            props.site.colors.SECONDARY_LIGHT) ||
-          default_colors.WHITE};
           text-decoration: none;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          opacity: 0.9;
         }
         &:focus {
-          box-shadow: 0 0 0 3px white,
-            0 0 0px 5px
-              ${(props.site &&
-                props.site.colors &&
-                props.site.colors.PRIMARY) ||
-              default_colors.BLUE};
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
           outline: none;
         }
       `}

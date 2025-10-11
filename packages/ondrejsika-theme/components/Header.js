@@ -8,27 +8,46 @@ const Container = styled(BootstrapContainer)`
 `;
 const Header = (props) => {
   const Background = styled.div`
-    background-color: ${(props.site &&
+    background: ${(props.site &&
       props.site.colors &&
       props.site.colors.PRIMARY) ||
     default_colors.BLUE};
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(
+        circle at 20% 50%,
+        rgba(255, 255, 255, 0.05) 0%,
+        transparent 50%
+      );
+    }
   `;
 
   return (
     <Background>
       <Container>
         {props.websiteHeaderCenter && (
-          <div className="pt-4 pb-4">
-            <h1 className="text-white pt-3 pb-2 text-center">
+          <div className="pt-5 pb-5">
+            <h1
+              className="text-white pt-4 pb-3 text-center"
+              style={{ position: "relative", zIndex: 1 }}
+            >
               {props.websiteHeaderCenter}
             </h1>
           </div>
         )}
         {!props.websiteHeaderCenter && (
-          <div className="row">
+          <div className="row" style={{ position: "relative", zIndex: 1 }}>
             <div className="col-lg-10 col-md-9 col-sm-8 col-8">
-              <div className="pt-4 pb-4">
-                <h1 className="text-white pt-3 pb-2">{props.websiteHeader}</h1>
+              <div className="pt-5 pb-5">
+                <h1 className="text-white pt-4 pb-3">{props.websiteHeader}</h1>
                 <Button site={props.site} type="outline-secondary" href="#form">
                   {props.text}
                 </Button>
@@ -38,6 +57,7 @@ const Header = (props) => {
               <img
                 src={props.logo && props.logo.src}
                 className="img-fluid align-right"
+                style={{ filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))" }}
               />
             </div>
           </div>

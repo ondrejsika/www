@@ -5,8 +5,15 @@ import hamburgerMenu from "@app/data/pictures/hamburger-menu.svg";
 
 const NavLink = styled.a`
   color: ${default_colors.WHITE} !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px;
+
   &:hover {
-    color: ${default_colors.BROWN} !important;
+    color: ${default_colors.WHITE} !important;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
   }
 `;
 
@@ -16,10 +23,14 @@ const Nav = styled.nav`
 
 const NavName = styled.strong`
   color: ${default_colors.WHITE};
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
 `;
 
 const NavUnderheader = styled.div`
-  color: ${default_colors.WHITE};
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  font-weight: 300;
 `;
 
 const HamburgerMenu = styled.span`
