@@ -40,8 +40,23 @@ let Page = (props) => {
   );
 };
 
-Page.getInitialProps = async function (context) {
-  return { post_id: context.query.id };
-};
+export async function getStaticProps(context) {
+  return {
+    props: {
+      post_id: context.params.id
+    }
+  };
+}
+
+export async function getStaticPaths() {
+  const paths = news_list.map((news) => ({
+    params: { id: news.id }
+  }));
+
+  return {
+    paths,
+    fallback: false
+  };
+}
 
 export default Page;

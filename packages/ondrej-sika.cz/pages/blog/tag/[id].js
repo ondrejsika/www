@@ -14,8 +14,32 @@ let BlogPage = (props) => {
   );
 };
 
-BlogPage.getInitialProps = async function (context) {
-  return { tag_id: context.query.id };
-};
+export async function getStaticProps(context) {
+  return {
+    props: {
+      tag_id: context.params.id
+    }
+  };
+}
+
+export async function getStaticPaths() {
+  const tags = new Set();
+  all_posts.forEach((post) => {
+    if (post.tags) {
+      post.tags.forEach((tag) => {
+        tags.add(tag);
+      });
+    }
+  });
+
+  const paths = Array.from(tags).map((tag) => ({
+    params: { id: tag }
+  }));
+
+  return {
+    paths,
+    fallback: false
+  };
+}
 
 export default BlogPage;

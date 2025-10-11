@@ -123,8 +123,25 @@ let Post = (props) => {
   );
 };
 
-Post.getInitialProps = async function (context) {
-  return { post_id: context.query.id };
-};
+export async function getStaticProps(context) {
+  return {
+    props: {
+      post_id: context.params.id
+    }
+  };
+}
+
+export async function getStaticPaths() {
+  const paths = posts
+    .filter((post) => !post.nostatic)
+    .map((post) => ({
+      params: { id: post.id }
+    }));
+
+  return {
+    paths,
+    fallback: false
+  };
+}
 
 export default Post;

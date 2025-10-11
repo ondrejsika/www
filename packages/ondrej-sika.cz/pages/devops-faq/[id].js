@@ -26,8 +26,23 @@ const Page = (props) => {
   );
 };
 
-Page.getInitialProps = async function (context) {
-  return { faq_id: context.query.id };
-};
+export async function getStaticProps(context) {
+  return {
+    props: {
+      faq_id: context.params.id
+    }
+  };
+}
+
+export async function getStaticPaths() {
+  const paths = faq_cz_yml.map((faq) => ({
+    params: { id: faq.id }
+  }));
+
+  return {
+    paths,
+    fallback: false
+  };
+}
 
 export default Page;
