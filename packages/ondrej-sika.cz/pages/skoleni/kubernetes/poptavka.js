@@ -1,6 +1,8 @@
 import React from "react";
 import InquiryInhouse from "@app/ondrejsika-theme/layouts/InquiryInhouse";
 
-export default (props) => (
+const KubernetesPoptavka = (props) => (
   <InquiryInhouse lang={props.lang} course_name="Skoleni Kubernetes" />
 );
+
+export default KubernetesPoptavka;

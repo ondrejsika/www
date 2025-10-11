@@ -1,14 +1,8 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
-import Link from "next/link";
 import { FaYoutube } from "react-icons/fa";
 
-import docker from "@app/data/pictures/courses/video/docker-screenshot.png";
-import kubernetes from "@app/data/pictures/courses/video/kubernetes-screenshot.png";
-import terraform from "@app/data/pictures/courses/video/terraform-screenshot.png";
-import gitlabCi from "@app/data/pictures/courses/video/gitlab-ci-screenshot.png";
-
-export default () => (
+const Pripravuji = () => (
   <Article
     title="Videokurzy"
     header={
@@ -34,3 +28,5 @@ export default () => (
     </p>
   </Article>
 );
+
+export default Pripravuji;

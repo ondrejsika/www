@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const DigitalniDetox = () => (
   <Article
     title="Digitalni Detox"
     markdown={`
@@ -9,3 +9,5 @@ Na článku pracuji ...
     `}
   />
 );
+
+export default DigitalniDetox;

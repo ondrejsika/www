@@ -1,6 +1,8 @@
 import React from "react";
 import InquiryInhouse from "@app/ondrejsika-theme/layouts/InquiryInhouse";
 
-export default (props) => (
+const GitPoptavka = (props) => (
   <InquiryInhouse lang={props.lang} course_name="Skoleni Gitu" />
 );
+
+export default GitPoptavka;

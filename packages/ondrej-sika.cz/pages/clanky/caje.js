@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Caje = () => (
   <Article
     title="Čaje"
     markdown={`
@@ -24,3 +24,5 @@ export default () => (
 `}
   />
 );
+
+export default Caje;

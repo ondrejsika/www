@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const InstalaceKubernetesClusteruPomociRancheruNaVlastnimHardware = () => (
   <Article
     title="Instalace Kubernetes clusteru pomocí Rancheru na vlastním hardware"
     ad="rancher"
@@ -10,3 +10,5 @@ Na článku pracuji.
 `}
   />
 );
+
+export default InstalaceKubernetesClusteruPomociRancheruNaVlastnimHardware;

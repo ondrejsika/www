@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const ProcByKazdyMelMitSvojiDomenu = () => (
   <Article
     title="Proc by kazdy mel mit svoji domenu"
     markdown={`
@@ -41,3 +41,5 @@ Za mě bych asi zase postupoval ze shora dolů.
 `}
   />
 );
+
+export default ProcByKazdyMelMitSvojiDomenu;

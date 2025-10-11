@@ -11,7 +11,7 @@ const TweetWrapper = (props) => (
   </div>
 );
 
-export default () => (
+const AustraliaOnFire = () => (
   <Article title="Pomozte Austrálii 🐨🦘❤️">
     <p>
       Dnes ráno jsem viděl na Twitteru{" "}
@@ -73,3 +73,5 @@ export default () => (
     </div>
   </Article>
 );
+
+export default AustraliaOnFire;

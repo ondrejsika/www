@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const InstalaceRancheru = () => (
   <Article
     title="Instalace Rancheru"
     ad="rancher"
@@ -22,3 +22,5 @@ docker-compose up -d
 `}
   />
 );
+
+export default InstalaceRancheru;

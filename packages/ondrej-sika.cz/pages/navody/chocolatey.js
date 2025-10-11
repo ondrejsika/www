@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const Chocolatey = () => (
   <Article
     title="Chocolatey - Package Manager pro Windows"
     markdown={`
@@ -17,7 +17,7 @@ Pokud chcete nainstalovat Chcoco jedním příkazem, pusťte CMD nebo PowerShell
 
 #### CMD
 
-    @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+    @"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin"
 
 #### Powershell
 
@@ -36,3 +36,5 @@ Například
 `}
   />
 );
+
+export default Chocolatey;

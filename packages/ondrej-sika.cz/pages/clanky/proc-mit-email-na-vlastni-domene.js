@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
-export default () => (
+const ProcMitEmailNaVlastniDomene = () => (
   <Article
     title="Proč mít email na vlastní doméně"
     markdown={`
@@ -37,3 +37,5 @@ Závěrem chci zdůraznit, že vlastní email je jistá forma svobody a vypadá 
 `}
   />
 );
+
+export default ProcMitEmailNaVlastniDomene;
