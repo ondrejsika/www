@@ -17,7 +17,7 @@ Pokud Vás zajímá Docker, podívejte se na mé [Školení Dockeru](/skoleni/do
 
 ### Kubernetes
 
-- [Instalace](/kubernetes/instalace)
+- [Instalace (pro skoleni)](/kubernetes/instalace)
 - [Přidání Kubernetes clusteru do Gitlabu](/kubernetes/pridani-kubernetes-clusteru-do-gitlabu)
 - [Příprava na školení Kubernetes](/skoleni/kubernetes/priprava-na-skoleni) - více informací o školení [zde](/skoleni/kubernetes)
 - [Novinky v Helm 3](/blog/helm3) (blog post)
