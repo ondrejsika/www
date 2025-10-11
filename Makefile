@@ -2,11 +2,11 @@ fmt:
 	yarn prettier-write
 
 generate-gitlab-ci:
-	python3 generate-gitlab-ci.py
+	python3 scripts/generate-gitlab-ci.py
 	git add .gitlab-ci.yml
 	git commit \
 		--author "SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
-		-m "[generated] ci: Update generated .gitlab-ci.yml by generate-gitlab-ci.py" \
+		-m "[generated] ci: Update generated .gitlab-ci.yml by scripts/generate-gitlab-ci.py" \
 		-m "Co-Authored-By: SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
 		.gitlab-ci.yml
 
@@ -77,7 +77,7 @@ endif
 ifndef DATE
 	$(error DATE is undefined)
 endif
-	./create-follow-up.py --course=$(COURSE) --date $(DATE)
+	./scripts/create-follow-up.py --course=$(COURSE) --date $(DATE)
 
 commit-follow-up:
 ifndef COURSE

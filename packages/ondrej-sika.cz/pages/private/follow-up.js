@@ -5,7 +5,7 @@ const Page = () => (
     title="Follow Up Index"
     hideNewsletter={true}
     markdown={`
-<!--- PLACEHOLDER FOLLOW_UP_LINK (for create-follow-up.py script) --->
+<!--- PLACEHOLDER FOLLOW_UP_LINK (for scripts/create-follow-up.py script) --->
 - [go, 2023-05-29](/follow-up/2023-05-29-go)
 - [kubernetes, 2023-02-19](/follow-up/2023-02-19-kubernetes)
 - [gitlab-ci, 2022-10-03](/follow-up/2022-10-03-gitlab-ci)

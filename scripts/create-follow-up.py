@@ -16,7 +16,7 @@ TEMPLATE_FILE = "packages/ondrej-sika.cz/pages/follow-up/template-{course}.js"
 OUTPUT_FILE = "packages/ondrej-sika.cz/pages/follow-up/{date}-{course}.js"
 INDEX_FILE = "packages/ondrej-sika.cz/pages/private/follow-up.js"
 INDEX_LINE_PLACEHOLDER = (
-    "<!--- PLACEHOLDER FOLLOW_UP_LINK (for create-follow-up.py script) --->"
+    "<!--- PLACEHOLDER FOLLOW_UP_LINK (for scripts/create-follow-up.py script) --->"
 )
 INDEX_LINE_TEMPLATE = (
     INDEX_LINE_PLACEHOLDER + "\n- [{course}, {date}](/follow-up/{date}-{course})"
