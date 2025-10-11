@@ -1,5 +1,5 @@
 # syntax = docker/dockerfile:experimental
-FROM node:18 as build
+FROM node:22-slim as build
 WORKDIR /app
 COPY . .
 RUN --mount=type=cache,target=/app/node_modules yarn install
