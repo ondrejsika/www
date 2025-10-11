@@ -1,6 +1,8 @@
 const CopyPlugin = require("copy-webpack-plugin");
+const path = require("path");
 
 module.exports = {
+  outputFileTracingRoot: path.join(__dirname, '../../'),
   env: {
     TRAININGCRM_URL: process.env.TRAININGCRM_URL
   },

@@ -1,9 +1,11 @@
 const CopyPlugin = require("copy-webpack-plugin");
 const yaml = require("js-yaml");
 const fs = require("fs");
+const path = require("path");
 
 module.exports = {
   output: 'export',
+  outputFileTracingRoot: path.join(__dirname, '../../'),
   env: {
     TRAININGCRM_URL: process.env.TRAININGCRM_URL
   },

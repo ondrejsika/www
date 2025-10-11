@@ -1,8 +1,10 @@
 const CopyPlugin = require("copy-webpack-plugin");
 const yaml = require("js-yaml");
 const fs = require("fs");
+const path = require("path");
 
 module.exports = {
+  outputFileTracingRoot: path.join(__dirname, '../../'),
   trailingSlash: true,
   exportPathMap: function (defaultPathMap) {
     try {
