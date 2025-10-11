@@ -3,5 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "author": "Ondrej Sika",
-  "author_email": "ondrej@ondrejsika.com"
+  "author_email": "ondrej@ondrejsika.com",
+  "engines": {
+    "node": ">=22"
+  }
 }

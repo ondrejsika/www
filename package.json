@@ -163,5 +163,8 @@
     "sass": "^1.93.2",
     "save-ukraine": "^0.18.133",
     "styled-components": "4.4.1"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
