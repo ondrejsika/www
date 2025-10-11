@@ -1,4 +1,3 @@
-import React from "react";
 import StaticDB from "@app/common/staticdb";
 import Header from "@app/skoleni.io/components/Header";
 import { Container } from "react-bootstrap";

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import BaseLandingPage from "@app/ondrejsika-theme/layouts/BaseLandingPage";
 import Translate from "@app/common/components/Translate";
@@ -16,7 +15,7 @@ const LandingPage = (props) => (
     title={
       {
         en: "Ondrej Sika - IT Training, Consulting and Workshops in Europe",
-        cs: "Ondrej Sika - IT Školení, konzultace a workshopy"
+        cs: "Ondrej Sika - IT Školení, konzultace a workshopy",
       }[props.site.lang || "en"]
     }
     headerText={

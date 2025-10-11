@@ -1,5 +1,3 @@
-import React from "react";
-import Link from "next/link";
 import Head from "next/head";
 
 // Imported CSS
@@ -10,7 +8,7 @@ import Font from "@app/computer-modern-typewriter-light";
 
 import Header from "../components/Header";
 
-export default (props) => {
+const Layout = (props) => {
   let site_name = props.site_name;
   let menu_links = props.menu_links;
   let site_footer = props.site_footer;
@@ -36,3 +34,7 @@ export default (props) => {
     </div>
   );
 };
+
+Layout.displayName = "Layout";
+
+export default Layout;

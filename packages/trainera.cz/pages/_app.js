@@ -1,4 +1,3 @@
-import React from "react";
 import App from "next/app";
 import site from "@app/trainera.cz/config";
 import Link from "next/link";
@@ -59,11 +58,11 @@ const Navbar = (
           ["PROXMOX", "/skoleni/proxmox"],
           ["ELK / EFK", "/skoleni/elk"],
           ["REACT & NEXT.JS", "/skoleni/react"],
-          ["VIDEOKURZY", "/videokurzy"]
-        ]
+          ["VIDEOKURZY", "/videokurzy"],
+        ],
       ],
       ["TERMÍNY", "/verejne-terminy"],
-      ["KONTAKT", "/kontakt"]
+      ["KONTAKT", "/kontakt"],
     ]}
   />
 );
@@ -127,12 +126,12 @@ const Footer = (
             ["Gitlab CI", "/skoleni/gitlab-ci"],
             ["Terraform", "/skoleni/terraform"],
             ["Prometheus", "/skoleni/prometheus"],
-            ["Rancher", "skoleni/rancher"]
+            ["Rancher", "skoleni/rancher"],
           ].map((el, i) => {
             return (
               <ThemeFooter.Li key={i}>
                 <Link href={el[1]} className="a-underline" legacyBehavior>
-                    {el[0]}
+                  {el[0]}
                 </Link>
               </ThemeFooter.Li>
             );

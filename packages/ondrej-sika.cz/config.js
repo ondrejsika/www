@@ -20,12 +20,12 @@ const site = {
   colors: {
     PRIMARY: "#131480",
     SECONDARY: "#c8bfb0",
-    SECONDARY_LIGHT: "#fff"
+    SECONDARY_LIGHT: "#fff",
   },
   sentry_dsn:
     process.env.NODE_ENV == "development"
       ? "https://2221aad8fc3e442e97db0fdb5c69f0d9@sentry.sikahq.com/3" // dev
-      : "https://4cd544d697294d15917033597439064c@sentry.sikahq.com/4" // prod
+      : "https://4cd544d697294d15917033597439064c@sentry.sikahq.com/4", // prod
 };
 
 export default site;

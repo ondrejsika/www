@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import BlogBox from "@app/ondrejsika-theme/components/BlogBox";
 import Markdown from "@app/common/components/Markdown";
@@ -20,7 +19,7 @@ const Page = (props) => {
       noBlogBoxContent={[
         <BlogBox key={0}>
           <Markdown source={faq.answer} />
-        </BlogBox>
+        </BlogBox>,
       ]}
     />
   );
@@ -29,19 +28,19 @@ const Page = (props) => {
 export async function getStaticProps(context) {
   return {
     props: {
-      faq_id: context.params.id
-    }
+      faq_id: context.params.id,
+    },
   };
 }
 
 export async function getStaticPaths() {
   const paths = faq_cz_yml.map((faq) => ({
-    params: { id: faq.id }
+    params: { id: faq.id },
   }));
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 

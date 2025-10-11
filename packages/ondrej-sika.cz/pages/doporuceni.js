@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import TwitterRecommendations from "@app/course-landing/components/TwitterRecommendations";
 import Recommendation from "@app/course-landing/components/Recommendation";

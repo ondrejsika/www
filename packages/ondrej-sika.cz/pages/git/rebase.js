@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
@@ -48,7 +47,7 @@ Výsledek pak vypadá takto:
        .container img {
         width: 30%;
       }
-    `
+    `,
       }}
     />
   </Article>

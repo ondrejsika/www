@@ -1,5 +1,3 @@
-import React from "react";
-
 import Translate from "@app/common/components/Translate";
 
 import eon from "@app/data/pictures/companies/eon.png";
@@ -34,8 +32,8 @@ const Header = styled.h3`
 `;
 
 const CompaniesBar = (props) => (
-  <div className="pb-2" align={props.align}>
-    <Header>
+  <div className="pb-2">
+    <Header align={props.align}>
       {props.myClients || (
         <Translate
           lang={props.lang || "cs"}
@@ -59,7 +57,7 @@ const CompaniesBar = (props) => (
           homecredit,
           cznic.src,
           konica_minolta,
-          eltodo
+          eltodo,
         ].map((img, i) => (
           <div key={i} className="col-lg-2 col-md-2 col-sm-4 col-4 p-3">
             <img src={img.src} className="img-fluid bw" alt="default" />

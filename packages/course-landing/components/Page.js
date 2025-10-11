@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "@app/course-landing/components/Header";
 import ButtonOutline from "@app/course-landing/components/ButtonOutline";
 import Bar from "@app/course-landing/components/Bar";

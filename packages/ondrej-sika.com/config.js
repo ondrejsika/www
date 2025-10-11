@@ -7,8 +7,8 @@ const site = {
   colors: {
     PRIMARY: "#131480",
     SECONDARY: "#c8bfb0",
-    SECONDARY_LIGHT: "#fff"
-  }
+    SECONDARY_LIGHT: "#fff",
+  },
 };
 
 export default site;

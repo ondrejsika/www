@@ -1,6 +1,4 @@
-import React from "react";
-
-export default (props) => (
+const Section = (props) => (
   <div className="container section mb-3">
     <h2>{props.heading}</h2>
     <div>{props.children}</div>
@@ -11,3 +9,7 @@ export default (props) => (
     `}</style>
   </div>
 );
+
+Section.displayName = "Section";
+
+export default Section;

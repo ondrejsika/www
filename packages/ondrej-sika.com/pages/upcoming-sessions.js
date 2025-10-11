@@ -1,4 +1,3 @@
-import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import UpcomingSessions from "@app/ondrejsika-theme/components/UpcomingSessions";
 import Head from "next/head";

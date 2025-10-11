@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import HeaderBar from "@app/meetup-theme/components/HeaderBar";
 import FooterBar from "@app/meetup-theme/components/FooterBar";

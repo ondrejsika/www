@@ -1,5 +1,3 @@
-import React from "react";
-
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
 
 import ThemeNavbar from "@app/ondrejsika-theme/components/Navbar";
@@ -16,7 +14,7 @@ const Page = (props) => {
       links={[
         ["HOME", "#home"],
         ["PUBLIC SESSIONS", "#upcomming"],
-        ["CONTACT", "#contact"]
+        ["CONTACT", "#contact"],
       ]}
     />
   );
@@ -55,7 +53,7 @@ const Page = (props) => {
               ["LinkedIn", "https://linkedin.com/in/ondrejsika"],
               ["Twitter", "https://linkedin.com/in/twitter"],
               ["Facebook", "https://facebook.com/sikaondrej"],
-              ["Instagram", "https://instagram.com/ondrejsika"]
+              ["Instagram", "https://instagram.com/ondrejsika"],
             ].map((el, i) => {
               return (
                 <ThemeFooter.Li key={i}>

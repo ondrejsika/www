@@ -1,5 +1,3 @@
-import React from "react";
-
 const Bar = (props) => (
   <div>
     <div className="container-fluid header-container">

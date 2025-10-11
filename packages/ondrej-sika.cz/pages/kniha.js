@@ -1,4 +1,3 @@
-import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import img from "@app/data/pictures/kniha/kniha_v2_400px.png";
 import ChciKnihuForm from "@app/ondrejsika-theme/components/ChciKnihuForm";
@@ -6,7 +5,7 @@ import updates from "@app/ondrej-sika.cz/data/kniha-updates.yml";
 import Head from "next/head";
 
 const liStyle = {
-  fontSize: "1.7rem"
+  fontSize: "1.7rem",
 };
 
 const Install = (props) => (

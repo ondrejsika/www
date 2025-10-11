@@ -1,4 +1,3 @@
-import React from "react";
 import image from "@app/data/pictures/lecturers/ondrejsika/ondrejsika4x_steave_vertical.jpg";
 
 const TextWithImg = (props) => (

@@ -1,5 +1,3 @@
-import React from "react";
-
 const GoogleAnalytics = (props) => (
   <script
     type="text/javascript"
@@ -15,7 +13,7 @@ const GoogleAnalytics = (props) => (
         props.google_analytics_site_id +
         `', 'auto');
     ga('send', 'pageview');
-`
+`,
     }}
   />
 );

@@ -1,4 +1,3 @@
-import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
 
 const Page = (props) => (

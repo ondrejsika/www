@@ -18,9 +18,10 @@ class StaticDB {
       if (f_id_map[foreign_id]) f_id_map[el[foreign_id]].push(el);
       else f_id_map[el[foreign_id]] = [el];
     }
-    for (var el of this._db[source_name]) {
-      if (f_id_map[el[source_id]]) el[as] = f_id_map[el[source_id]];
-      else el[as] = [];
+    for (var sourceEl of this._db[source_name]) {
+      if (f_id_map[sourceEl[source_id]])
+        sourceEl[as] = f_id_map[sourceEl[source_id]];
+      else sourceEl[as] = [];
     }
   }
   lookupOne(source_name, foreign_name, source_id, foreign_id, as) {
@@ -37,17 +38,17 @@ class StaticDB {
     return this._cursor[0];
   }
   filter(key, val) {
-    return (this._cursor = this._cursor.filter((el, i, array) => {
+    return (this._cursor = this._cursor.filter((el, _i, _array) => {
       return el[key] == val;
     }));
   }
   filterIn(key, val) {
-    return (this._cursor = this._cursor.filter((el, i, array) => {
+    return (this._cursor = this._cursor.filter((el, _i, _array) => {
       return el[key] && el[key].includes(val);
     }));
   }
   filterExists(key) {
-    return (this._cursor = this._cursor.filter((el, i, array) => {
+    return (this._cursor = this._cursor.filter((el, _i, _array) => {
       return el[key];
     }));
   }

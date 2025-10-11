@@ -1,5 +1,3 @@
-import React from "react";
-
 const Index = () => (
   <div>
     <h2>O nas</h2>

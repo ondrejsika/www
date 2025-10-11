@@ -1,4 +1,3 @@
-import React from "react";
 import Course from "@app/ondrejsika-theme/layouts/Course";
 import courses_yaml from "@app/data/training/courses.yml";
 import StaticDB from "@app/common/staticdb";

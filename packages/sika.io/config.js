@@ -5,7 +5,7 @@ const site = {
       : process.env.SITE_ORIGIN || "https://sika.io",
   name: "sika.io",
   gauges_site_id: "GAUGES-XXX-DEMO",
-  google_analytics_site_id: "GOOGLE-ANALYTICS-XXX-DEMO"
+  google_analytics_site_id: "GOOGLE-ANALYTICS-XXX-DEMO",
 };
 
 export default site;

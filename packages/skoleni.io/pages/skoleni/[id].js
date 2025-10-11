@@ -1,4 +1,3 @@
-import React from "react";
 import Course from "@app/skoleni.io/layouts/Course";
 
 const Page = (props) => (

@@ -4,10 +4,10 @@ const fs = require("fs");
 const path = require("path");
 
 module.exports = {
-  output: 'export',
-  outputFileTracingRoot: path.join(__dirname, '../../'),
+  output: "export",
+  outputFileTracingRoot: path.join(__dirname, "../../"),
   env: {
-    TRAININGCRM_URL: process.env.TRAININGCRM_URL
+    TRAININGCRM_URL: process.env.TRAININGCRM_URL,
   },
   trailingSlash: true,
   compiler: {
@@ -26,7 +26,7 @@ module.exports = {
         if (post.nostatic) return;
         defaultPathMap[`/blog/${post.id}`] = {
           page: "/blog/[id]",
-          query: { id: post.id }
+          query: { id: post.id },
         };
       });
 
@@ -42,7 +42,7 @@ module.exports = {
       tags.forEach(function (tag) {
         defaultPathMap[`/blog/tag/${tag}`] = {
           page: "/blog/tag/[id]",
-          query: { id: tag }
+          query: { id: tag },
         };
       });
 
@@ -55,7 +55,7 @@ module.exports = {
       sessions.forEach(function (session) {
         defaultPathMap[`/verejne-terminy/${session.id}`] = {
           page: "/verejne-terminy/[id]",
-          query: { id: session.id }
+          query: { id: session.id },
         };
       });
 
@@ -69,7 +69,7 @@ module.exports = {
         if (course.ignore_for_partners) return;
         defaultPathMap[`/private/pro-partnery/${course.id}`] = {
           page: "/private/pro-partnery/[id]",
-          query: { id: course.id }
+          query: { id: course.id },
         };
       });
 
@@ -80,7 +80,7 @@ module.exports = {
       news_list.forEach(function (news) {
         defaultPathMap[`/news/${news.id}`] = {
           page: "/news/[id]",
-          query: { id: news.id }
+          query: { id: news.id },
         };
       });
 
@@ -93,7 +93,7 @@ module.exports = {
       faq_list.forEach(function (faq) {
         defaultPathMap[`/devops-faq/${faq.id}`] = {
           page: "/devops-faq/[id]",
-          query: { id: faq.id }
+          query: { id: faq.id },
         };
       });
     } catch (e) {
@@ -108,21 +108,21 @@ module.exports = {
         patterns: [
           {
             from: "../../node_modules/bootstrap/dist/js/bootstrap.js",
-            to: "./static/bootstrap.js"
+            to: "./static/bootstrap.js",
           },
           {
             from: "../../node_modules/jquery/dist/jquery.js",
-            to: "./static/jquery.js"
+            to: "./static/jquery.js",
           },
           {
             from: "../../node_modules/popper.js/dist/umd/popper.js",
-            to: "./static/popper.js"
-          }
-        ]
+            to: "./static/popper.js",
+          },
+        ],
       })
     );
     return config;
-  }
+  },
 };
 
 // Transpile packages using Next.js 15 built-in support
@@ -130,7 +130,7 @@ module.exports.transpilePackages = [
   "@app/ondrejsika-theme",
   "@app/common",
   "@app/course-landing",
-  "@app/data"
+  "@app/data",
 ];
 
 const withYAML = require("next-yaml");

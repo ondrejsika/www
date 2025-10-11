@@ -1,5 +1,3 @@
-import React from "react";
-
 const MainBar = (props) => (
   <div>
     <div className="bar-grey">

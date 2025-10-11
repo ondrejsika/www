@@ -1,4 +1,3 @@
-import React from "react";
 import Blog from "@app/ondrejsika-theme/components/Blog";
 import all_posts from "@app/ondrej-sika.cz/data/blog-posts.yaml";
 import StaticDB from "@app/common/staticdb";
@@ -17,8 +16,8 @@ let BlogPage = (props) => {
 export async function getStaticProps(context) {
   return {
     props: {
-      tag_id: context.params.id
-    }
+      tag_id: context.params.id,
+    },
   };
 }
 
@@ -33,12 +32,12 @@ export async function getStaticPaths() {
   });
 
   const paths = Array.from(tags).map((tag) => ({
-    params: { id: tag }
+    params: { id: tag },
   }));
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 

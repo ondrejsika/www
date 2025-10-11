@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import courses_yaml from "@app/data/training/courses.yml";
@@ -51,9 +50,7 @@ const CourseDD = (props) => {
         <h4>Fotografie</h4>
         <p>
           Vsechny fotky najdete zde{" "}
-          <Link href="/media">
-            https://ondrej-sika.cz/media
-          </Link>
+          <Link href="/media">https://ondrej-sika.cz/media</Link>
         </p>
       </div>
 

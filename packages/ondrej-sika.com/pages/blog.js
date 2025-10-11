@@ -21,15 +21,16 @@ class Blog extends React.Component {
                     return <hr className="hr-black" />;
                   }
                 })()}
-                <Link href={`/blog/${post.id}`} style={{ color: "black" }} legacyBehavior>
-                    <h3 className="pt-4 bold">{post.title}</h3>
+                <Link
+                  href={`/blog/${post.id}`}
+                  style={{ color: "black" }}
+                  legacyBehavior
+                >
+                  <h3 className="pt-4 bold">{post.title}</h3>
                 </Link>
                 <p>{post.date}</p>
                 <p className="pb-4">
-                  {post.perex}{" "}
-                  <Link href={`/blog/${post.id}`}>
-                    číst dále
-                  </Link>
+                  {post.perex} <Link href={`/blog/${post.id}`}>číst dále</Link>
                 </p>
               </div>
             );

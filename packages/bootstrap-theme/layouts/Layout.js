@@ -1,7 +1,10 @@
-import React from "react";
 // Imported CSS
 // import "bootstrap-css-only/css/bootstrap.min.css";
 
-export default (props) => {
+const Layout = (props) => {
   return <div>{props.children}</div>;
 };
+
+Layout.displayName = "Layout";
+
+export default Layout;

@@ -1,4 +1,3 @@
-import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Head from "next/head";
 import Link from "next/link";
@@ -20,9 +19,7 @@ const Blog = (props) => {
             return (
               <BlogBox key={i}>
                 <Link href={`/blog/${post.id}`} style={{ color: "black" }}>
-
                   <h3 className="pt-4 bold">{post.title}</h3>
-
                 </Link>
                 <p className="pt-2">
                   {post.date}{" "}
@@ -31,18 +28,13 @@ const Blog = (props) => {
                     post.tags.map((tag, i) => {
                       return (
                         <span key={i}>
-                          <Link href={`/blog/tag/${tag}`}>
-                            #{tag}
-                          </Link>{" "}
+                          <Link href={`/blog/tag/${tag}`}>#{tag}</Link>{" "}
                         </span>
                       );
                     })}
                 </p>
                 <p className="pb-2 pt-2">
-                  {post.perex}{" "}
-                  <Link href={`/blog/${post.id}`}>
-                    číst dále
-                  </Link>
+                  {post.perex} <Link href={`/blog/${post.id}`}>číst dále</Link>
                 </p>
               </BlogBox>
             );

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { Col, Row, Container } from "react-bootstrap";
 import Link from "next/link";
@@ -63,7 +62,9 @@ const Lecturer = (props) => (
               let course = getCourse(course_id);
               return (
                 <Li key={i}>
-                  <Link href={`/skoleni/${course.id}`} legacyBehavior>{course.name}</Link>
+                  <Link href={`/skoleni/${course.id}`} legacyBehavior>
+                    {course.name}
+                  </Link>
                 </Li>
               );
             })}

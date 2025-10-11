@@ -1,4 +1,3 @@
-import React from "react";
 import Lecturer from "@app/skoleni.io/layouts/Lecturer";
 import lecturers_yaml from "@app/data/skoleni.io/lecturers.yml";
 import courses_yaml from "@app/data/skoleni.io/courses.yml";

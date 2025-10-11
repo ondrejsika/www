@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Translate from "@app/common/components/Translate";
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";

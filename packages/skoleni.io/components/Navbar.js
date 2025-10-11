@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Link from "@app/skoleni.io/components/MyLink";
 import { Container } from "react-bootstrap";

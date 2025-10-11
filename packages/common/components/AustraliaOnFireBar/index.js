@@ -1,4 +1,3 @@
-import React from "react";
 import { useCookie } from "./useCookie";
 
 import Link from "next/link";

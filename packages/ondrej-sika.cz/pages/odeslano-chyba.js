@@ -1,4 +1,3 @@
-import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import SentPageAd from "@app/ondrejsika-theme/components/SentPageAd";
 import Markdown from "@app/common/components/Markdown";

@@ -1,4 +1,3 @@
-import React from "react";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import StaticDB from "@app/common/staticdb";
 

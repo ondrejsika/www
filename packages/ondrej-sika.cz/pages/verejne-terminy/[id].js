@@ -1,4 +1,3 @@
-import React from "react";
 import SessionDD from "@app/ondrejsika-theme/layouts/SessionDD";
 const yaml = require("js-yaml");
 const fs = require("fs");
@@ -10,8 +9,8 @@ let Page = (props) => (
 export async function getStaticProps(context) {
   return {
     props: {
-      session_id: context.params.id
-    }
+      session_id: context.params.id,
+    },
   };
 }
 
@@ -21,12 +20,12 @@ export async function getStaticPaths() {
   );
 
   const paths = sessions.map((session) => ({
-    params: { id: session.id }
+    params: { id: session.id },
   }));
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 

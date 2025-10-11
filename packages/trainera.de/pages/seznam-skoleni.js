@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import Link from "next/link";
 
@@ -17,12 +16,10 @@ const Page = () => (
         ["PROXMOX", "/skoleni/proxmox"],
         ["ELK / EFK", "/skoleni/elk"],
         ["REACT & NEXT.JS", "/skoleni/react"],
-        ["VIDEOKURZY", "/videokurzy"]
+        ["VIDEOKURZY", "/videokurzy"],
       ].map((link, i) => (
         <li key={i}>
-          <Link href={link[1]}>
-            {link[0]}
-          </Link>
+          <Link href={link[1]}>{link[0]}</Link>
         </li>
       ))}
     </ul>

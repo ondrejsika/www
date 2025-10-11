@@ -1,4 +1,3 @@
-import React from "react";
 import CourseDD from "@app/ondrejsika-theme/layouts/CourseDD";
 import boundary_w from "@app/data/pictures/technologies/boundary-w.png";
 

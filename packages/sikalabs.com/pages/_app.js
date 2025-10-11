@@ -1,4 +1,3 @@
-import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
 import Layout from "@app/ondrejsika-theme/layouts/Layout";

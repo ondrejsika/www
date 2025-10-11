@@ -1,7 +1,6 @@
 // dev: http://localhost:3010/skoleni/aks/priprava-na-skoleni-en/
 // prod: https://ondrej-sika.cz/skoleni/aks/priprava-na-skoleni-en/
 
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (

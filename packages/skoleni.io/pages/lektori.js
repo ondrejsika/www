@@ -1,4 +1,3 @@
-import React from "react";
 import OurTeam from "@app/skoleni.io/components/OurTeam";
 import { Container } from "react-bootstrap";
 import H3 from "@app/skoleni.io/components/H3";

@@ -1,4 +1,3 @@
-import React from "react";
 import Translate from "@app/common/components/Translate";
 import styled from "styled-components";
 

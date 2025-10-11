@@ -1,4 +1,3 @@
-import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
 import Head from "next/head";
@@ -26,7 +25,7 @@ let links = [
   // ["GO (GOLANG)", "/skoleni/go"],
   ["DJANGO", "/skoleni/django"],
   // ["REACT & NEXT.JS", "/skoleni/react"],
-  ["VIDEOKURZY", "/videokurzy"]
+  ["VIDEOKURZY", "/videokurzy"],
 ];
 
 const Index = () => (
@@ -40,9 +39,7 @@ const Index = () => (
         return (
           <div key={i}>
             <Link href={link[1]}>
-
               <h1>{link[0]}</h1>
-
             </Link>
           </div>
         );

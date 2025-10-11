@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 const Navbar = (props) => (
@@ -54,7 +53,11 @@ const Navbar = (props) => (
                       >
                         {link[1].map((sub_link, i) => {
                           return (
-                            <Link key={i} href={sub_link[1]} className="dropdown-item">
+                            <Link
+                              key={i}
+                              href={sub_link[1]}
+                              className="dropdown-item"
+                            >
                               {sub_link[0]}
                             </Link>
                           );

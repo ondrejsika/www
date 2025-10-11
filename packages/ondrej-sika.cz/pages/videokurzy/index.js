@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import Link from "next/link";
 import { FaYoutube } from "react-icons/fa";
@@ -43,13 +42,11 @@ const Page = () => (
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: "translate(-50%, -50%)"
+            transform: "translate(-50%, -50%)",
           }}
         >
           <Link href="/videokurzy/pripravuji">
-
             <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-
           </Link>
         </div>
       </div>
@@ -64,13 +61,11 @@ const Page = () => (
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: "translate(-50%, -50%)"
+            transform: "translate(-50%, -50%)",
           }}
         >
           <Link href="/videokurzy/pripravuji">
-
             <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-
           </Link>
         </div>
       </div>
@@ -86,13 +81,11 @@ const Page = () => (
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: "translate(-50%, -50%)"
+            transform: "translate(-50%, -50%)",
           }}
         >
           <Link href="/videokurzy/pripravuji">
-
             <FaYoutube style={{ fontSize: "5em", color: "white" }} />
-
           </Link>
         </div>
       </div>
@@ -108,13 +101,11 @@ const Page = () => (
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: "translate(-50%, -50%)"
+            transform: "translate(-50%, -50%)",
           }}
         >
           <Link href="/videokurzy/pripravuji">
-
             <FaYoutube style={{ fontSize: "5em", color: "black" }} />
-
           </Link>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import default_colors from "@app/ondrejsika-theme/config/colors";
 import styled from "styled-components";
 import Link from "next/link";
@@ -81,7 +80,7 @@ const Navbar = (props) => {
                               style={{
                                 fontSize: "0.8em",
                                 verticalAlign: "top",
-                                color: "#C6BEAF"
+                                color: "#C6BEAF",
                               }}
                             >
                               {" "}
@@ -111,20 +110,22 @@ const Navbar = (props) => {
                         >
                           {link[1].map((sub_link, i) => {
                             return (
-                              <Link key={i} href={sub_link[1]} className="dropdown-item">
-
+                              <Link
+                                key={i}
+                                href={sub_link[1]}
+                                className="dropdown-item"
+                              >
                                 {sub_link[0]}
                                 {` `}
                                 <span
                                   style={{
                                     fontSize: "0.8em",
                                     verticalAlign: "top",
-                                    color: "red"
+                                    color: "red",
                                   }}
                                 >
                                   {sub_link[2]}
                                 </span>
-
                               </Link>
                             );
                           })}

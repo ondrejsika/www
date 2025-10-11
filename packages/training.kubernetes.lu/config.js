@@ -6,7 +6,7 @@ const site = {
   trainingcrm_url:
     process.env.NODE_ENV == "development"
       ? "https://trainingcrm-demo.sika.io"
-      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io"
+      : process.env.TRAININGCRM_URL || "https://trainingcrm.sika.io",
 };
 
 export default site;

@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import slides_list from "@app/ondrej-sika.cz/data/slides.yml";
 import Article from "@app/ondrejsika-theme/layouts/Article";
@@ -10,11 +9,10 @@ const Page = () => (
         return (
           <li key={i}>
             <Link href={s.pdf} target="_blank" rel="noopener noreferrer">
-
               <span className="bold">{s.titleShort || s.title}</span>
-
-            </Link>{" "}({s.date})
-                      </li>
+            </Link>{" "}
+            ({s.date})
+          </li>
         );
       })}
     </ul>

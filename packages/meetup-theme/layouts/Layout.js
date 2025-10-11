@@ -1,8 +1,7 @@
-import React from "react";
 import Head from "next/head";
 import Layout from "@app/bootstrap-theme/layouts/Layout";
 
-export default (props) => (
+const MeetupLayout = (props) => (
   <Layout>
     <Head>
       <link
@@ -25,3 +24,7 @@ export default (props) => (
     {props.children}
   </Layout>
 );
+
+MeetupLayout.displayName = "MeetupLayout";
+
+export default MeetupLayout;

@@ -18,11 +18,7 @@ function HeadingRenderer(props) {
 }
 
 function LinkRenderer(props) {
-  return (
-    <Link href={props.href}>
-      {props.children}
-    </Link>
-  );
+  return <Link href={props.href}>{props.children}</Link>;
 }
 
 const ReactComponent = (props) => <>{props.children}</>;
@@ -39,7 +35,7 @@ const ReactRenderer = (props) => {
       jsx={props.value}
       components={{
         React: ReactComponent,
-        Twitter: TwitterComponent
+        Twitter: TwitterComponent,
       }}
     />
   );
@@ -53,7 +49,7 @@ let Markdown = (props) => {
       renderers={{
         heading: HeadingRenderer,
         link: LinkRenderer,
-        html: ReactRenderer
+        html: ReactRenderer,
       }}
     />
   );

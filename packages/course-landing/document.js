@@ -1,4 +1,3 @@
-import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
@@ -9,7 +8,7 @@ let DevelopmentBar = () => {
       <div
         style={{
           backgroundColor: "red",
-          height: "0.2em"
+          height: "0.2em",
         }}
       ></div>
     );

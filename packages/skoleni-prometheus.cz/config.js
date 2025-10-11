@@ -17,7 +17,7 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.cz/kontakt/?x_source=skoleni-prometheus.cz",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/prometheus?x_source=skoleni-prometheus.cz#form"
+    "https://ondrej-sika.cz/skoleni/prometheus?x_source=skoleni-prometheus.cz#form",
 };
 
 export default site;

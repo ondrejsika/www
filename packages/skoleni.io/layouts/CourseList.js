@@ -1,4 +1,3 @@
-import React from "react";
 import StaticDB from "@app/common/staticdb";
 import Header from "@app/skoleni.io/components/Header";
 import { Container } from "react-bootstrap";
@@ -56,7 +55,7 @@ const CourseList = (props) => {
               <Li key={i}>
                 {num_of_courses_by_lecturer[course.lecturer.id] > 1 ? (
                   <Link href={`/skoleni/${course.id}`} legacyBehavior>
-                      {course.lecturer.name}: {course.name}
+                    {course.lecturer.name}: {course.name}
                   </Link>
                 ) : (
                   <Link href={`/skoleni/${course.id}`} legacyBehavior>

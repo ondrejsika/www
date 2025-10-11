@@ -1,4 +1,3 @@
-import React from "react";
 import site from "@app/ondrej-sika.cz/config";
 import Link from "next/link";
 import styled from "styled-components";
@@ -51,8 +50,8 @@ const Navbar = (
           // ["GO (GOLANG)", "/skoleni/go"],
           // ["DJANGO", "/skoleni/django"],
           // ["REACT & NEXT.JS", "/skoleni/react"],
-          ["VIDEOKURZY", "/videokurzy"]
-        ]
+          ["VIDEOKURZY", "/videokurzy"],
+        ],
       ],
       ["TERMÍNY", "/verejne-terminy"],
       [
@@ -64,10 +63,10 @@ const Navbar = (
           ["WEEKNOTES", "/blog/tag/weeknotes"],
           ["REPOZITÁŘE", "/repozitare"],
           ["RESOURCES", "/resources"],
-          ["DEVOPS FAQ", "/devops-faq"]
-        ]
+          ["DEVOPS FAQ", "/devops-faq"],
+        ],
       ],
-      ["KONTAKT", "/kontakt"]
+      ["KONTAKT", "/kontakt"],
     ]}
   />
 );
@@ -129,7 +128,7 @@ const Footer = (
             ["Proxmox", "/skoleni/proxmox"],
             ["Terraform", "/skoleni/terraform"],
             ["Prometheus", "/skoleni/prometheus"],
-            ["Rancher", "/skoleni/rancher"]
+            ["Rancher", "/skoleni/rancher"],
           ].map((el, i) => {
             return (
               <ThemeFooter.Li key={i}>

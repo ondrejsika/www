@@ -1,4 +1,3 @@
-import React from "react";
 import site from "@app/ondrejsika.is/config";
 import Page from "@app/ondrejsika-singlepage/layouts/Page";
 

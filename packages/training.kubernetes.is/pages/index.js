@@ -1,4 +1,3 @@
-import React from "react";
 import FooterOndrejSika from "@app/course-landing/components/FooterOndrejSika";
 import Header from "@app/course-landing/components/Header";
 import HeaderLink from "@app/course-landing/components/HeaderLink";

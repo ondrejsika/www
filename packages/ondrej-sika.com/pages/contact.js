@@ -1,8 +1,7 @@
-import React from "react";
 import Head from "next/head";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 
-const Index = (props) => (
+const Index = (_props) => (
   <div>
     <Head>
       <title>Contact - Ondrej Sika</title>

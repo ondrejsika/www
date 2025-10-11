@@ -2,7 +2,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  outputFileTracingRoot: path.join(__dirname, '../../'),
+  outputFileTracingRoot: path.join(__dirname, "../../"),
   trailingSlash: true,
   webpack: function (config) {
     config.plugins.push(
@@ -10,21 +10,21 @@ module.exports = {
         patterns: [
           {
             from: "../../node_modules/bootstrap/dist/js/bootstrap.js",
-            to: "./static/bootstrap.js"
+            to: "./static/bootstrap.js",
           },
           {
             from: "../../node_modules/jquery/dist/jquery.js",
-            to: "./static/jquery.js"
+            to: "./static/jquery.js",
           },
           {
             from: "../../node_modules/popper.js/dist/umd/popper.js",
-            to: "./static/popper.js"
-          }
-        ]
+            to: "./static/popper.js",
+          },
+        ],
       })
     );
     return config;
-  }
+  },
 };
 
 // Transpile packages using Next.js 15 built-in support
@@ -33,7 +33,7 @@ module.exports.transpilePackages = [
   "@app/ondrejsika-singlepage",
   "@app/common",
   "@app/course-landing",
-  "@app/data"
+  "@app/data",
 ];
 
 const withYAML = require("next-yaml");

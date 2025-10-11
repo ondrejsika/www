@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
 const Page = () => (
@@ -64,7 +63,7 @@ Zdroje:
    .article img {
     width: 60%;
   }
-`
+`,
       }}
     />
   </Article>

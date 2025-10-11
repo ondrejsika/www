@@ -40,7 +40,7 @@ function getCal() {
       url: "https://sika.io",
       status: "CONFIRMED",
       busyStatus: "BUSY",
-      organizer: { name: "Ondrej Sika", email: "ondrej@sika.io" }
+      organizer: { name: "Ondrej Sika", email: "ondrej@sika.io" },
     });
   });
   const { error, value } = ics.createEvents(events);

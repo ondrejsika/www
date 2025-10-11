@@ -1,4 +1,3 @@
-import React from "react";
 import Markdown from "@app/common/components/Markdown";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";

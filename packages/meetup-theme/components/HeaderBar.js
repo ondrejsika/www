@@ -1,6 +1,4 @@
-import React from "react";
-
-export default (props) => (
+const HeaderBar = (props) => (
   <div className="container headerbar text-right monospace">
     <h3>
       Project of{" "}
@@ -23,3 +21,7 @@ export default (props) => (
     `}</style>
   </div>
 );
+
+HeaderBar.displayName = "HeaderBar";
+
+export default HeaderBar;

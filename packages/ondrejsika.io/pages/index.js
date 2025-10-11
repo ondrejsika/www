@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 // import Markdown from "@app/common/components/Markdown";
@@ -16,9 +15,7 @@ const Index = () => (
       </Link>
       <br />
       01. 01. 2019{" "}
-      <Link href="/blog/terraform-state-in-git">
-        Terraform State in Git
-      </Link>
+      <Link href="/blog/terraform-state-in-git">Terraform State in Git</Link>
     </p>
   </div>
 );

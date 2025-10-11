@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
 
@@ -125,7 +125,7 @@ const Sessions = (props) => {
                       videoId={props.event.youtube}
                       opts={{
                         width: "1024",
-                        height: "576"
+                        height: "576",
                       }}
                     />
                   </>

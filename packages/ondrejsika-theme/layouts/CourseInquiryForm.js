@@ -19,7 +19,7 @@ const CourseInquiryForm = (props) => {
       name: values.name,
       company: values.company,
       email: values.email,
-      phone: values.phone
+      phone: values.phone,
     };
     console.log(recaptchaRef.current.getValue());
     console.log(data);
@@ -28,9 +28,9 @@ const CourseInquiryForm = (props) => {
       method: "post",
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
     }).then((res) => {
       console.log(res);
       if (res.status == 200) Router.push("/odeslano");
@@ -78,7 +78,7 @@ const CourseInquiryForm = (props) => {
       />
       <ReCAPTCHA ref={recaptchaRef} sitekey={props.site.recaptcha_site_key} />
       <div className="pt-5">
-        <button site={props.site}>
+        <button>
           <Translate lang={props.site.lang} cs="Odeslat" en="Submit" />
         </button>
       </div>

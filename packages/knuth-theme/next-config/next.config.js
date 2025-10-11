@@ -8,21 +8,21 @@ module.exports = {
         patterns: [
           {
             from: "../../node_modules/bootstrap/dist/js/bootstrap.js",
-            to: "./static/bootstrap.js"
+            to: "./static/bootstrap.js",
           },
           {
             from: "../../node_modules/jquery/dist/jquery.js",
-            to: "./static/jquery.js"
+            to: "./static/jquery.js",
           },
           {
             from: "../../node_modules/popper.js/dist/umd/popper.js",
-            to: "./static/popper.js"
-          }
-        ]
+            to: "./static/popper.js",
+          },
+        ],
       })
     );
     return config;
-  }
+  },
 };
 
 // Transpile packages using Next.js 15 built-in support
@@ -33,7 +33,7 @@ module.exports.transpilePackages = [
   "@app/computer-modern-typewriter-light",
   "@app/common",
   "@app/course-landing",
-  "@app/data"
+  "@app/data",
 ];
 
 const withYAML = require("next-yaml");

@@ -1,5 +1,3 @@
-import React from "react";
-
 const GoogleTagManager = (props) => (
   <>
     <script
@@ -15,7 +13,7 @@ const GoogleTagManager = (props) => (
             gtag('config', '${props.gtm_id}', {
               page_path: window.location.pathname,
             });
-          `
+          `,
       }}
     />
   </>

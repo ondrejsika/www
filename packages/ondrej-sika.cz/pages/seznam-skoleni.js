@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import Link from "next/link";
 import StaticDB from "@app/common/staticdb";

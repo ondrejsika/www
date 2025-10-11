@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import styled, { css } from "styled-components";
 
@@ -104,12 +103,10 @@ const Card = (props) => {
     <MyCol md={2} sm={4} xs={6}>
       <Box site={props.site}>
         <Link href={`/${training}/${props.courseId}`} className="course-header">
-
           <H4>
             <span>{props.courseName}</span>
           </H4>
           <Img src={props.courseImg.src} />
-
         </Link>
       </Box>
     </MyCol>

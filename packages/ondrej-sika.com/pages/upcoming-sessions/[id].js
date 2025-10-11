@@ -1,4 +1,3 @@
-import React from "react";
 import SessionDD from "@app/ondrejsika-theme/layouts/SessionDD";
 
 let Page = (props) => (

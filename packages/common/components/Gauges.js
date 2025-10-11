@@ -1,5 +1,3 @@
-import React from "react";
-
 const Gauges = (props) => (
   <script
     type="text/javascript"
@@ -20,7 +18,7 @@ const Gauges = (props) => (
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(t, s);
       })();
-`
+`,
     }}
   />
 );

@@ -1,5 +1,3 @@
-import React from "react";
-
 import TraineraAbout from "@app/ondrejsika-theme/components/TraineraAbout";
 import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
@@ -89,7 +87,7 @@ const Index = (props) => (
         [vojtechmares, "Vojtěch Mareš", "neco neco"],
         [ondandnela, "Ondrej Sika", "SoftwareArchitect"],
         [jirikraml, "Jiří Kraml", "neconeconeconeco"],
-        [michaelkaplan, "Michael Kaplan", "neco"]
+        [michaelkaplan, "Michael Kaplan", "neco"],
       ]}
     ></Team>
 

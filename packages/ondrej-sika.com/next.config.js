@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 module.exports = {
-  outputFileTracingRoot: path.join(__dirname, '../../'),
+  outputFileTracingRoot: path.join(__dirname, "../../"),
   trailingSlash: true,
   exportPathMap: function (defaultPathMap) {
     // remove default blog page render (without post)
@@ -19,7 +19,7 @@ module.exports = {
         if (post.nostatic) return;
         defaultPathMap[`/blog/${post.id}`] = {
           page: "/blog/[id]",
-          query: { id: post.id }
+          query: { id: post.id },
         };
       });
 
@@ -32,7 +32,7 @@ module.exports = {
       sessions.forEach(function (session) {
         defaultPathMap[`/upcoming-sessions/${session.id}`] = {
           page: "/upcoming-sessions/[id]",
-          query: { id: session.id }
+          query: { id: session.id },
         };
       });
     } catch (e) {
@@ -47,21 +47,21 @@ module.exports = {
         patterns: [
           {
             from: "../../node_modules/bootstrap/dist/js/bootstrap.js",
-            to: "./static/bootstrap.js"
+            to: "./static/bootstrap.js",
           },
           {
             from: "../../node_modules/jquery/dist/jquery.js",
-            to: "./static/jquery.js"
+            to: "./static/jquery.js",
           },
           {
             from: "../../node_modules/popper.js/dist/umd/popper.js",
-            to: "./static/popper.js"
-          }
-        ]
+            to: "./static/popper.js",
+          },
+        ],
       })
     );
     return config;
-  }
+  },
 };
 
 // Transpile packages using Next.js 15 built-in support
@@ -69,7 +69,7 @@ module.exports.transpilePackages = [
   "@app/ondrejsika-theme",
   "@app/common",
   "@app/course-landing",
-  "@app/data"
+  "@app/data",
 ];
 
 const withYAML = require("next-yaml");

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import default_colors from "@app/ondrejsika-theme/config/colors";
 import { Container as BootstrapContainer } from "react-bootstrap";

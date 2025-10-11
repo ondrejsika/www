@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import Markdown from "@app/common/components/Markdown";
 
@@ -24,7 +23,7 @@ export const Manuals = () => (
       "2020-02-14_Sinagl/Web/ondrejsika4x_portrait.jpg",
       "2020-02-14_Sinagl/Web/ondrejsika4x_portrait_grayscale.jpg",
       "2020-02-14_Sinagl/Web/ondrejsika4x_steave.jpg",
-      "2020-02-14_Sinagl/Web/ondrejsika4x_steave_grayscale.jpg"
+      "2020-02-14_Sinagl/Web/ondrejsika4x_steave_grayscale.jpg",
     ].map((el, i) => (
       <div key={i} className="mb-5">
         <a

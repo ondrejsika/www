@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
 import { Row, Col, Container } from "react-bootstrap";
@@ -161,7 +160,7 @@ const Page = () => {
                       <h3
                         className="pt-3"
                         style={{
-                          color: "#c8bfb0"
+                          color: "#c8bfb0",
                         }}
                       >
                         300 Kč

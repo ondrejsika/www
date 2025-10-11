@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { css } from "styled-components";
 import { Row, Col, Container, ButtonGroup } from "react-bootstrap";
 import Head from "next/head";
@@ -274,7 +273,7 @@ const BaseLandingPage = (props) => {
               position: "absolute",
               right: "0",
               bottom: "0",
-              overflowX: "hidden"
+              overflowX: "hidden",
             }}
           >
             <img

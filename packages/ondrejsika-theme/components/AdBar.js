@@ -1,40 +1,39 @@
-import React from "react";
 import Button from "@app/ondrejsika-theme/components/Button";
 
 const AdBar = (props) => {
   let ads = {
     git: {
       about: "Git",
-      course_name: "Školení Gitu"
+      course_name: "Školení Gitu",
     },
     docker: {
       about: "Docker",
-      course_name: "Školení Dockeru"
+      course_name: "Školení Dockeru",
     },
     kubernetes: {
       about: "Kubernetes",
-      course_name: "Školení Kubernetes"
+      course_name: "Školení Kubernetes",
     },
     terraform: {
       about: "Terraform",
-      course_name: "Školení Terraformu"
+      course_name: "Školení Terraformu",
     },
     react: {
       about: "React",
-      course_name: "Školení Reactu"
+      course_name: "Školení Reactu",
     },
     "gitlab-ci": {
       about: "Gitlab CI",
-      course_name: "Školení Gitlab CI"
+      course_name: "Školení Gitlab CI",
     },
     rancher: {
       about: "Rancher",
-      course_name: "Školení Rancheru"
+      course_name: "Školení Rancheru",
     },
     vault: {
       about: "Vault",
-      course_name: "Školení Vaultu"
-    }
+      course_name: "Školení Vaultu",
+    },
   };
   return (
     <div className="alert alert-primary mt-5 text-center" role="alert">

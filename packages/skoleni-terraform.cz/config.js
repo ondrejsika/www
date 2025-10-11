@@ -16,7 +16,7 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.cz/kontakt/?x_source=skoleni-terraform.cz",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/terraform?x_source=skoleni-terraform.cz#form"
+    "https://ondrej-sika.cz/skoleni/terraform?x_source=skoleni-terraform.cz#form",
 };
 
 export default site;

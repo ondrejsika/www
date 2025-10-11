@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeaderLarge = (props) => (
   <div className="container headerlarge">
     <div className="text-center">

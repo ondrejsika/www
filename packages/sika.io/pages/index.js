@@ -1,4 +1,3 @@
-import React from "react";
 // import "../css";
 import Markdown from "@app/common/components/Markdown";
 import Gauges from "@app/common/components/Gauges";
@@ -13,12 +12,11 @@ const Index = (props) => (
       <title>Ondrej Sika | sika.io</title>
       {(() => {
         if (!process.env.NODE_ENV == "development") {
-          return <meta http-equiv="refresh" content="3; url=https://sika.io" />;
+          return <meta httpEquiv="refresh" content="3; url=https://sika.io" />;
         } else {
           return <DevelopmentBar />;
         }
       })()}
-      }
       <meta
         name="google-site-verification"
         content="KKm2K2qwgCk2Pc9F5eefmYl6UYoATpMPSBRzpa78w4Q"

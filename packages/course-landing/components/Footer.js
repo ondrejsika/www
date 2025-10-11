@@ -1,9 +1,8 @@
-import React from "react";
 import Link from "next/link";
 
 let style = {
   fontSize: "0.8em",
-  margin: "0"
+  margin: "0",
 };
 
 const Footer = (props) => (
@@ -15,9 +14,7 @@ const Footer = (props) => (
           <p style={style}>
             Website by{" "}
             <Link href="https://zuzjes.com" className="text-white">
-
               <strong>Zuzana Jeschke</strong>
-
             </Link>
           </p>
         </div>

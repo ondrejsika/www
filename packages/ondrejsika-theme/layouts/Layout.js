@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import * as Sentry from "@sentry/browser";
 import Gauges from "@app/common/components/Gauges";
@@ -24,7 +23,7 @@ let Layout = (props) => {
 
   if (props.site.sentry_dsn)
     Sentry.init({
-      dsn: props.site.sentry_dsn
+      dsn: props.site.sentry_dsn,
     });
   return (
     <div>

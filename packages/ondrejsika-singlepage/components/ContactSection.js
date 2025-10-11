@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import SectionHeader from "@app/ondrejsika-theme/components/lp/LP-sectionHeader";
 const Center = styled.div`

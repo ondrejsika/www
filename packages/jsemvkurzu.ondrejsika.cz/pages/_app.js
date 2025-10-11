@@ -1,4 +1,3 @@
-import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.cz/config";
 import Layout from "@app/ondrejsika-theme/layouts/Layout";
@@ -71,7 +70,7 @@ const Footer = (
             ["Terraform", "https://ondrej-sika.cz/skoleni/terraform"],
             ["Prometheus", "https://ondrej-sika.cz/skoleni/prometheus"],
             ["Proxmox", "https://ondrej-sika.cz/skoleni/proxmox"],
-            ["Rancher", "https://ondrej-sika.cz/skoleni/rancher"]
+            ["Rancher", "https://ondrej-sika.cz/skoleni/rancher"],
           ].map((el, i) => {
             return (
               <ThemeFooter.Li key={i}>

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import gitlab_w from "@app/data/pictures/courses/white/gitlab_ci.svg";
 import docker_w from "@app/data/pictures/courses/white/docker.svg";
@@ -66,7 +65,7 @@ const TechnologyIcons = (props) => {
               keycloak: keycloak_tmp.src,
               infracost: infracost_tmp.src,
               vscode: vscode_w.src,
-              metallb: metallb_w.src
+              metallb: metallb_w.src,
             }[props.icon]
           }
         />
@@ -93,7 +92,7 @@ const TechnologyIcons = (props) => {
               keycloak: keycloak_tmp.src,
               infracost: infracost_tmp.src,
               vscode: vscode_tmp.src,
-              metallb: metallb_tmp.src
+              metallb: metallb_tmp.src,
             }[props.icon]
           }
         />

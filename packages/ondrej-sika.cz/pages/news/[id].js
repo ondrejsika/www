@@ -1,4 +1,3 @@
-import React from "react";
 import news_list from "@app/ondrej-sika.cz/data/news.yml";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 
@@ -43,19 +42,19 @@ let Page = (props) => {
 export async function getStaticProps(context) {
   return {
     props: {
-      post_id: context.params.id
-    }
+      post_id: context.params.id,
+    },
   };
 }
 
 export async function getStaticPaths() {
   const paths = news_list.map((news) => ({
-    params: { id: news.id }
+    params: { id: news.id },
   }));
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 

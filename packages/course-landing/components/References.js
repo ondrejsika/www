@@ -1,5 +1,3 @@
-import React from "react";
-
 const References = (props) => (
   <>
     <p>{props.reference}</p>

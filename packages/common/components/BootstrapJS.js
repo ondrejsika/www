@@ -1,4 +1,3 @@
-import React from "react";
 const BootstrapJS = () => (
   <>
     <script src="/_next/static/jquery.js"></script>

@@ -1,4 +1,3 @@
-import React from "react";
 import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBarHomepage from "@app/ondrejsika-theme/components/MainBarHomepage";
 import CompaniesBar from "@app/ondrejsika-theme/components/CompaniesBar";
@@ -96,7 +95,7 @@ const Index = (props) => (
         [ondandnela, "Ondrej Sikaa", "SoftwaareArchitect"],
 
         [jirikraml, "Jiří Kraml", "neconeconeconeco"],
-        [michaelkaplan, "Michael Kaplan", "neco"]
+        [michaelkaplan, "Michael Kaplan", "neco"],
       ]}
     ></Team>
     <div className="container">

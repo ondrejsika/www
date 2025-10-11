@@ -15,8 +15,8 @@ const site = {
     PRIMARY: "#202020",
     PRIMARY_LIGHT: "#565656",
     SECONDARY: "#7fcd91",
-    SECONDARY_LIGHT: "white"
-  }
+    SECONDARY_LIGHT: "white",
+  },
 };
 
 export default site;

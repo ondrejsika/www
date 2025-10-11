@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import martin from "@app/data/pictures/martinjurco_portrait.jpg";
 

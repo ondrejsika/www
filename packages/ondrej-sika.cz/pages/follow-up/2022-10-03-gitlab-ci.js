@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "@app/ondrejsika-theme/layouts/Article";
 import BlogBox from "@app/ondrejsika-theme/components/BlogBox";
 import Markdown from "@app/common/components/Markdown";

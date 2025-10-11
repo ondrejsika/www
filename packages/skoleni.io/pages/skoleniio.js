@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { Container } from "react-bootstrap";
 import H1 from "@app/skoleni.io/components/H1";

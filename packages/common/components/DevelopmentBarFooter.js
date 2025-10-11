@@ -1,12 +1,10 @@
-import React from "react";
-
-export default () => {
+const DevelopmentBarFooter = () => {
   if (process.env.NODE_ENV == "development") {
     return (
       <div
         className="p-1"
         style={{
-          border: "0.2em solid red"
+          border: "0.2em solid red",
         }}
       >
         <center>
@@ -18,3 +16,7 @@ export default () => {
     return <></>;
   }
 };
+
+DevelopmentBarFooter.displayName = "DevelopmentBarFooter";
+
+export default DevelopmentBarFooter;

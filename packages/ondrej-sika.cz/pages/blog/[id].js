@@ -1,4 +1,3 @@
-import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 import BlogPostFooter from "@app/ondrejsika-theme/components/BlogPostFooter";
@@ -34,7 +33,7 @@ let Post = (props) => {
       "gitlab-ci": "Školení Gitlab CI",
       rancher: "Školení Rancheru",
       prometheus: "Školení Promethea",
-      vault: "Školení Vaultu"
+      vault: "Školení Vaultu",
     }[post.ad];
     technology = {
       git: "Git",
@@ -45,7 +44,7 @@ let Post = (props) => {
       "gitlab-ci": "Gitlab CI",
       rancher: "Rancher",
       prometheus: "Prometheus",
-      vault: "Vault"
+      vault: "Vault",
     }[post.ad];
   }
 
@@ -75,7 +74,7 @@ let Post = (props) => {
                     videoId={post.youtube}
                     opts={{
                       width: "1024",
-                      height: "576"
+                      height: "576",
                     }}
                   />
                 </div>
@@ -100,10 +99,7 @@ let Post = (props) => {
                   </p>
                   <p>
                     Případně si můžete vybrat z nabídky{" "}
-                    <Link href="/verejne-terminy">
-                      otevřených kurzů
-                    </Link>
-                    .
+                    <Link href="/verejne-terminy">otevřených kurzů</Link>.
                   </p>
                 </div>
               </center>
@@ -126,8 +122,8 @@ let Post = (props) => {
 export async function getStaticProps(context) {
   return {
     props: {
-      post_id: context.params.id
-    }
+      post_id: context.params.id,
+    },
   };
 }
 
@@ -135,12 +131,12 @@ export async function getStaticPaths() {
   const paths = posts
     .filter((post) => !post.nostatic)
     .map((post) => ({
-      params: { id: post.id }
+      params: { id: post.id },
     }));
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 

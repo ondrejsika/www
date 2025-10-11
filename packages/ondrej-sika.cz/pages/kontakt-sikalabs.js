@@ -1,5 +1,3 @@
-import React from "react";
-
 import Head from "next/head";
 import Link from "next/link";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
@@ -88,18 +86,9 @@ const Index = () => (
         </div>
       </div>
       <p>
-        Kontakt na{" "}
-        <Link href="/kontakt">
-          Ondřej Šika
-        </Link>
-        ,{" "}
-        <Link href="/kontakt-devopsa">
-          Devopsa s.r.o.
-        </Link>
-        ,{" "}
-        <Link href="/kontakt-trainera">
-          Trainera s.r.o.
-        </Link>
+        Kontakt na <Link href="/kontakt">Ondřej Šika</Link>,{" "}
+        <Link href="/kontakt-devopsa">Devopsa s.r.o.</Link>,{" "}
+        <Link href="/kontakt-trainera">Trainera s.r.o.</Link>
       </p>
     </div>
   </div>

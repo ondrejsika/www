@@ -1,4 +1,3 @@
-import React from "react";
 import CourseBar from "@app/ondrejsika-theme/components/CourseBar";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 

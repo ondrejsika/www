@@ -1,4 +1,3 @@
-import React from "react";
 import App from "next/app";
 import site from "@app/ondrej-sika.com/config";
 import Link from "next/link";
@@ -28,9 +27,9 @@ const Navbar = (
           ["KUBERNETES", "/training/kubernetes"],
           ["ANSIBLE", "/training/ansible"],
           ["PROMETHEUS", "/training/prometheus"],
-          ["TERRAFORM", "/training/terraform"]
+          ["TERRAFORM", "/training/terraform"],
           // ["REACT & NEXT.JS", "/training/react"]
-        ]
+        ],
       ],
       ["UPCOMING SESSIONS", "/upcoming-sessions"],
       // [
@@ -42,7 +41,7 @@ const Navbar = (
       //     ["REPOSITORIES", "/repozitare"]
       //   ]
       // ],
-      ["CONTACT", "/contact"]
+      ["CONTACT", "/contact"],
     ]}
   />
 );
@@ -82,7 +81,7 @@ const Footer = (
             ["GITLAB CI", "/training/gitlab-ci"],
             ["DOCKER", "/training/docker"],
             ["KUBERNETES", "/training/kubernetes"],
-            ["ANSIBLE", "/training/ansible"]
+            ["ANSIBLE", "/training/ansible"],
             // ["TERRAFORM", "/training/terraform"],
             // ["REACT & NEXT.JS", "/training/react"]
           ].map((el, i) => {

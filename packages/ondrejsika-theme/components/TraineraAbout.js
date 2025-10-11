@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
 import StaticDB from "@app/common/staticdb";
@@ -10,7 +9,7 @@ import Link from "next/link";
 import {
   FaRegCalendarPlus,
   FaLinkedinIn,
-  FaFacebookSquare
+  FaFacebookSquare,
 } from "react-icons/fa";
 
 const CourseName = styled.a`
@@ -66,12 +65,12 @@ const Page = (props) => {
   let course_page_prefix = {
     cs: "skoleni",
     en: "training",
-    de: "schulung"
+    de: "schulung",
   }[props.lang || "cs"];
   let session_page_prefix = {
     cs: "verejne-terminy",
     en: "upcoming-sessions",
-    de: "termine"
+    de: "termine",
   }[props.lang || "cs"];
 
   return (
@@ -92,7 +91,8 @@ const Page = (props) => {
                   {props.show_session_link ? (
                     <Link
                       href={`${link_site_prefix}/${session_page_prefix}/${course.id}`}
-                      legacyBehavior>
+                      legacyBehavior
+                    >
                       <CourseName>
                         {course.name} {flag}
                       </CourseName>
@@ -100,7 +100,8 @@ const Page = (props) => {
                   ) : (
                     <Link
                       href={`${link_site_prefix}/${course_page_prefix}/${course.course_id}`}
-                      legacyBehavior>
+                      legacyBehavior
+                    >
                       <CourseName>
                         {course.name} {flag}
                       </CourseName>

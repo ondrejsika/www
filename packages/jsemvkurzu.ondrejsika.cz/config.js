@@ -7,7 +7,7 @@ const site = {
   lang: "en",
   location: "is",
   gauges_site_id: "XXX",
-  google_analytics_site_id: "XXX"
+  google_analytics_site_id: "XXX",
 };
 
 export default site;

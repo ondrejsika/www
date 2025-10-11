@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import StaticDB from "@app/common/staticdb";
 import Translate from "@app/common/components/Translate";
@@ -10,7 +9,7 @@ import Button from "@app/ondrejsika-theme/components/Button";
 import {
   FaRegCalendarPlus,
   FaLinkedinIn,
-  FaFacebookSquare
+  FaFacebookSquare,
 } from "react-icons/fa";
 import WaitingListForm from "@app/ondrejsika-theme/layouts/WaitingListForm";
 
@@ -64,12 +63,12 @@ const UpcomingSessions = (props) => {
   let course_page_prefix = {
     cs: "skoleni",
     en: "training",
-    de: "schulung"
+    de: "schulung",
   }[props.lang || "cs"];
   let session_page_prefix = {
     cs: "verejne-terminy",
     en: "upcoming-sessions",
-    de: "termine"
+    de: "termine",
   }[props.lang || "cs"];
 
   if (sessions.length == 0) {
@@ -165,9 +164,7 @@ const UpcomingSessions = (props) => {
                           <Link
                             href={`${link_site_prefix}/${session_page_prefix}/${course.id}`}
                           >
-
                             {course.name} {flag}
-
                           </Link>
                         );
                       if (props.show_course_link)
@@ -175,9 +172,7 @@ const UpcomingSessions = (props) => {
                           <Link
                             href={`${link_site_prefix}/${course_page_prefix}/${course.course_id}`}
                           >
-
                             {course.name} {flag}
-
                           </Link>
                         );
                       return (
@@ -264,14 +259,12 @@ const UpcomingSessions = (props) => {
                         <>
                           <CourseName>{course.name}</CourseName>
                           <Link href={`/${session_page_prefix}/${course.id}`}>
-
                             <Translate
                               lang={props.lang}
                               cs="Více o kurzu"
                               sk="Viac o kurze"
                               en="About the training"
                             />
-
                           </Link>
                         </>
                       );

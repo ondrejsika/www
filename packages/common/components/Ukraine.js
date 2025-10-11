@@ -1,4 +1,3 @@
-import React from "react";
 import BaseUkraine from "save-ukraine";
 
 const Ukraine = () => {
@@ -8,7 +7,7 @@ const Ukraine = () => {
         if (element) {
           BaseUkraine.save({
             element: element,
-            moreInfoUrl: `https://ukrajina.ondrejsika.com`
+            moreInfoUrl: `https://ukrajina.ondrejsika.com`,
           });
         }
       }}

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import App from "next/app";
 import site from "@app/trainera.de/config";
@@ -50,14 +49,14 @@ const Navbar = (
           ["RANCHER", "/training/rancher"],
           ["ANSIBLE", "/training/ansible"],
           ["TERRAFORM", "/training/terraform"],
-          ["PROMETHEUS", "/training/prometheus"]
+          ["PROMETHEUS", "/training/prometheus"],
           // ["PROXMOX", "/training/proxmox"],
           // ["ELK / EFK", "/training/elk"],
           // ["REACT & NEXT.JS", "/training/react"]
-        ]
+        ],
       ],
       ["PUBLIC SESSIONS", "/public-sessions"],
-      ["CONTACT", "/contact"]
+      ["CONTACT", "/contact"],
     ]}
   />
 );
@@ -115,12 +114,12 @@ const Footer = (
             ["Gitlab CI", "/training/gitlab-ci"],
             ["Terraform", "/training/terraform"],
             ["Rancher", "/training/rancher"],
-            ["Prometheus", "/training/prometheus"]
+            ["Prometheus", "/training/prometheus"],
           ].map((el, i) => {
             return (
               <ThemeFooter.Li key={i}>
                 <Link href={el[1]} className="a-underline" legacyBehavior>
-                    {el[0]}
+                  {el[0]}
                 </Link>
               </ThemeFooter.Li>
             );

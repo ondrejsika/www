@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { css } from "styled-components";
 import BaseLandingPage from "@app/ondrejsika-theme/layouts/BaseLandingPage";
 import Text from "@app/ondrejsika-theme/components/lp/LP-text";

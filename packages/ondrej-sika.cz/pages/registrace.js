@@ -1,4 +1,3 @@
-import React from "react";
 import "@app/ondrej-sika.cz/css";
 
 import Header from "@app/ondrejsika-theme/components/Header";
@@ -75,7 +74,7 @@ export const Registration = () => (
             dangerouslySetInnerHTML={{
               __html: `
             document.getElementById("form-session").value = location.search;
-          `
+          `,
             }}
           />
         </Former2>

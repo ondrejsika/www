@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 const Header = (props) => (
@@ -11,17 +10,13 @@ const Header = (props) => (
               <div className="header-inner">
                 <span className="site-header">
                   <Link href="/">
-
                     <h1 className="mb-0">{props.websiteHeader}</h1>
-
                   </Link>
                 </span>
                 <p>
                   by{" "}
                   <Link href={props.byUrl}>
-
                     <b>{props.byName}</b>
-
                   </Link>
                 </p>
                 {props.children}

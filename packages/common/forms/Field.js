@@ -1,4 +1,3 @@
-import React from "react";
 import { Form } from "react-bootstrap";
 
 const Field = (props) => {
@@ -21,7 +20,7 @@ const Field = (props) => {
   if (validation_pattern) {
     validation.pattern = {
       value: validation_pattern,
-      message: validation_pattern_message
+      message: validation_pattern_message,
     };
   }
 

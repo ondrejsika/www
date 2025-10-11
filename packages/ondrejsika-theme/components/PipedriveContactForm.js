@@ -14,7 +14,7 @@ export default class PipedriveContactForm extends React.Component {
           dangerouslySetInnerHTML={{
             __html: `
           <iframe src="https://pipedrivewebforms.com/form/${formId}?embeded=1&amp" scrolling="no" style="border: none; overflow: hidden; width: 100%; max-width: 768px; min-width: 320px; height: 1319px; position: relative;"></iframe>
-        `
+        `,
           }}
         />
       </div>

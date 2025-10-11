@@ -1,4 +1,3 @@
-import React from "react";
 import ondrejsika from "@app/data/pictures/ondrejsika.jpg";
 import Button from "@app/ondrejsika-theme/components/Button";
 import { Row, Col, ButtonGroup } from "react-bootstrap";

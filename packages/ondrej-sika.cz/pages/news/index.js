@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import news_list from "@app/ondrej-sika.cz/data/news.yml";
 import Article from "@app/ondrejsika-theme/layouts/Article";
@@ -10,10 +9,9 @@ const Page = () => (
         return (
           <li key={i}>
             <Link href={`/news/${news.id}`}>
-
               <span className="bold">{news.title}</span>
-
-            </Link>{" "}({news.date}): {news.perex}
+            </Link>{" "}
+            ({news.date}): {news.perex}
           </li>
         );
       })}

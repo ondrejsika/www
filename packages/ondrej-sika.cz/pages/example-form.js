@@ -18,7 +18,7 @@ const ExampleForm = (props) => {
       `phone: ${values.phone || "--"}`,
       `course: ${values.course}`,
       `session: ${values.session}`,
-      recaptchaRef.current.getValue()
+      recaptchaRef.current.getValue(),
     ];
     alert(out.join(", "));
   };

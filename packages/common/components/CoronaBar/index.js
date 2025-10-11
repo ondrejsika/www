@@ -1,4 +1,3 @@
-import React from "react";
 import { useCookie } from "./useCookie";
 import Translate from "@app/common/components/Translate";
 

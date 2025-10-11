@@ -1,9 +1,8 @@
-import React from "react";
 import Layout from "@app/bootstrap-theme/layouts/Layout";
 import Gauges from "@app/common/components/Gauges";
 import GoogleAnalytics from "@app/common/components/GoogleAnalytics";
 
-export default (props) => (
+const StaticSikaLayout = (props) => (
   <Layout>
     <div className="container">{props.children}</div>
     <Gauges gauges_site_id={props.site.gauges_site_id} />
@@ -12,3 +11,7 @@ export default (props) => (
     />
   </Layout>
 );
+
+StaticSikaLayout.displayName = "StaticSikaLayout";
+
+export default StaticSikaLayout;

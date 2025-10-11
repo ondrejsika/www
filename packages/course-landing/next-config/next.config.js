@@ -2,9 +2,9 @@ module.exports = {
   trailingSlash: true,
   exportPathMap: function () {
     return {
-      "/": { page: "/" }
+      "/": { page: "/" },
     };
-  }
+  },
 };
 
 // Transpile packages using Next.js 15 built-in support
@@ -12,7 +12,7 @@ module.exports.transpilePackages = [
   "@app/ondrejsika-theme",
   "@app/common",
   "@app/course-landing",
-  "@app/data"
+  "@app/data",
 ];
 
 const withYAML = require("next-yaml");

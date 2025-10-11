@@ -1,9 +1,8 @@
-import React from "react";
 import Head from "next/head";
 
 import Header from "@app/ondrejsika-theme/components/Header";
 
-export default (props) => (
+const InquiryInhouse = (props) => (
   <div>
     <Head>
       <title>Poptávka firemního {props.course_name} - Ondřej Šika</title>
@@ -13,3 +12,7 @@ export default (props) => (
     ></Header>
   </div>
 );
+
+InquiryInhouse.displayName = "InquiryInhouse";
+
+export default InquiryInhouse;

@@ -16,11 +16,11 @@ async function handleEvent(event) {
     try {
       let notFoundResponse = await getAssetFromKV(event, {
         mapRequestToAsset: (req) =>
-          new Request(`${new URL(req.url).origin}/404/index.html`, req)
+          new Request(`${new URL(req.url).origin}/404/index.html`, req),
       });
       return new Response(notFoundResponse.body, {
         ...notFoundResponse,
-        status: 404
+        status: 404,
       });
     } catch (e) {
       return new Response(e.message || e.toString(), { status: 500 });

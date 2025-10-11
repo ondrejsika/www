@@ -1,4 +1,3 @@
-import React from "react";
 import { Layout as ThemeLayout } from "@app/bootstrap-theme/layouts/Layout";
 
 let Layout = (props) => (

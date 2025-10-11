@@ -1,4 +1,3 @@
-import React from "react";
 import Former2 from "@app/common/components/Former2";
 import site from "@app/sika-kaplan.com/config";
 
@@ -135,7 +134,6 @@ const Footer = (props) => (
           <a
             href="https://zuzjes.com"
             target="_blank"
-            without
             rel="noopener noreferrer"
             className="fs-11 text a-underline"
           >

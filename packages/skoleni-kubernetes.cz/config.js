@@ -16,7 +16,7 @@ const site = {
   x_contact_link:
     "https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/kubernetes/?x_source=skoleni-kubernetes.cz#form"
+    "https://ondrej-sika.cz/skoleni/kubernetes/?x_source=skoleni-kubernetes.cz#form",
 };
 
 export default site;

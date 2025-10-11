@@ -20,12 +20,12 @@ const site = {
   colors: {
     PRIMARY: "#131480",
     SECONDARY: "#c8bfb0",
-    SECONDARY_LIGHT: "#fff"
+    SECONDARY_LIGHT: "#fff",
   },
   sentry_dsn:
     process.env.NODE_ENV == "development"
       ? "xxx" // dev
-      : "xxx" // prod
+      : "xxx", // prod
 };
 
 export default site;

@@ -1,4 +1,3 @@
-import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 
@@ -17,7 +16,7 @@ const Install = () => (
        .post-body img {
         width: 30%;
       }
-    `
+    `,
       }}
     />
 

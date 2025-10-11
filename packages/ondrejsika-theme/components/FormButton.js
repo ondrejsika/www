@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { css } from "styled-components";
 import default_colors from "@app/ondrejsika-theme/config/colors";
 

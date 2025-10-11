@@ -17,7 +17,7 @@ const links = {
     uk: "https://git-training.uk",
     se: "https://git-utbildning.se",
     ch: "https://git-training.ch",
-    nl: "https://git-training.nl"
+    nl: "https://git-training.nl",
   },
   gitlabci: {
     cz: "https://ondrej-sika.cz/skoleni/gitlab-ci?x_source=headline",
@@ -32,7 +32,7 @@ const links = {
     lu: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline",
     de: "https://gitlab-schulung.de",
     uk: "https://gitlab-training.uk",
-    se: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline"
+    se: "https://ondrej-sika.com/training/gitlab-ci?x_source=headline",
   },
   docker: {
     cz: "https://ondrej-sika.cz/skoleni/docker?x_source=headline",
@@ -50,7 +50,7 @@ const links = {
     se: "https://docker-utbildning.se",
     at: "https://docker-training.at",
     ch: "https://docker-training.ch",
-    nl: "https://docker-training.nl"
+    nl: "https://docker-training.nl",
   },
   kubernetes: {
     cz: "https://ondrej-sika.cz/skoleni/kubernetes?x_source=headline",
@@ -65,7 +65,7 @@ const links = {
     se: "https://kubernetes-utbildning.se",
     at: "https://ondrej-sika.com/training/kubernetes?x_source=headline",
     ch: "https://ondrej-sika.com/training/kubernetes?x_source=headline",
-    nl: "https://ondrej-sika.com/training/kubernetes?x_source=headline"
+    nl: "https://ondrej-sika.com/training/kubernetes?x_source=headline",
   },
   ansible: {
     cz: "https://ondrej-sika.cz/skoleni/ansible?x_source=headline",
@@ -80,7 +80,7 @@ const links = {
     is: "https://ondrej-sika.com/training/ansible?x_source=headline",
     lu: "https://ondrej-sika.com/training/ansible?x_source=headline",
     ch: "https://ondrej-sika.com/training/ansible?x_source=headline",
-    nl: "https://ondrej-sika.com/training/ansible?x_source=headline"
+    nl: "https://ondrej-sika.com/training/ansible?x_source=headline",
   },
   terraform: {
     cz: "https://ondrej-sika.cz/skoleni/terraform?x_source=headline",
@@ -95,7 +95,7 @@ const links = {
     is: "https://ondrej-sika.com/training/terraform?x_source=headline",
     lu: "https://ondrej-sika.com/training/terraform?x_source=headline",
     ch: "https://ondrej-sika.com/training/terraform?x_source=headline",
-    nl: "https://ondrej-sika.com/training/terraform?x_source=headline"
+    nl: "https://ondrej-sika.com/training/terraform?x_source=headline",
   },
   prometheus: {
     cz: "https://ondrej-sika.cz/skoleni/prometheus?x_source=headline",
@@ -110,7 +110,7 @@ const links = {
     is: "https://ondrej-sika.com/training/prometheus?x_source=headline",
     lu: "https://ondrej-sika.com/training/prometheus?x_source=headline",
     ch: "https://ondrej-sika.com/training/prometheus?x_source=headline",
-    nl: "https://ondrej-sika.com/training/prometheus?x_source=headline"
+    nl: "https://ondrej-sika.com/training/prometheus?x_source=headline",
   },
   proxmox: {
     cz: "https://ondrej-sika.cz/skoleni/proxmox?x_source=headline",
@@ -125,7 +125,7 @@ const links = {
     is: "https://ondrej-sika.com/training/proxmox?x_source=headline",
     lu: "https://ondrej-sika.com/training/proxmox?x_source=headline",
     ch: "https://ondrej-sika.com/training/proxmox?x_source=headline",
-    nl: "https://ondrej-sika.com/training/proxmox?x_source=headline"
+    nl: "https://ondrej-sika.com/training/proxmox?x_source=headline",
   },
   react: {
     cz: "https://ondrej-sika.cz/skoleni/react?x_source=headline",
@@ -140,7 +140,7 @@ const links = {
     is: "https://ondrej-sika.com/training/react?x_source=headline",
     lu: "https://ondrej-sika.com/training/react?x_source=headline",
     ch: "https://ondrej-sika.com/training/react?x_source=headline",
-    nl: "https://ondrej-sika.com/training/react?x_source=headline"
+    nl: "https://ondrej-sika.com/training/react?x_source=headline",
   },
   rancher: {
     cz: "https://ondrej-sika.cz/skoleni/rancher?x_source=headline",
@@ -152,8 +152,8 @@ const links = {
     is: "https://ondrej-sika.com/training/rancher?x_source=headline",
     lu: "https://ondrej-sika.com/training/rancher?x_source=headline",
     ch: "https://ondrej-sika.com/training/rancher?x_source=headline",
-    nl: "https://ondrej-sika.com/training/rancher?x_source=headline"
-  }
+    nl: "https://ondrej-sika.com/training/rancher?x_source=headline",
+  },
 };
 
 class Navigation extends React.Component {
@@ -170,54 +170,34 @@ class Navigation extends React.Component {
             <ul className="mt-2 mb-2">
               <p>
                 <li>
-                  <Link href={links.docker[location]}>
-                    Docker
-                  </Link>
+                  <Link href={links.docker[location]}>Docker</Link>
                 </li>
                 <li>
-                  <Link href={links.kubernetes[location]}>
-                    Kubernetes
-                  </Link>
+                  <Link href={links.kubernetes[location]}>Kubernetes</Link>
                 </li>
                 <li>
-                  <Link href={links.terraform[location]}>
-                    Terraform
-                  </Link>
+                  <Link href={links.terraform[location]}>Terraform</Link>
                 </li>
                 <li>
-                  <Link href={links.ansible[location]}>
-                    Ansible
-                  </Link>
+                  <Link href={links.ansible[location]}>Ansible</Link>
                 </li>
                 <li>
-                  <Link href={links.git[location]}>
-                    Git
-                  </Link>
+                  <Link href={links.git[location]}>Git</Link>
                 </li>
                 <li>
-                  <Link href={links.gitlabci[location]}>
-                    Gitlab CI
-                  </Link>
+                  <Link href={links.gitlabci[location]}>Gitlab CI</Link>
                 </li>
                 <li>
-                  <Link href={links.prometheus[location]}>
-                    Prometheus
-                  </Link>
+                  <Link href={links.prometheus[location]}>Prometheus</Link>
                 </li>
                 <li>
-                  <Link href={links.proxmox[location]}>
-                    Proxmox
-                  </Link>
+                  <Link href={links.proxmox[location]}>Proxmox</Link>
                 </li>
                 <li>
-                  <Link href={links.rancher[location]}>
-                    Rancher
-                  </Link>
+                  <Link href={links.rancher[location]}>Rancher</Link>
                 </li>
                 <li>
-                  <Link href={links.react[location]}>
-                    React
-                  </Link>
+                  <Link href={links.react[location]}>React</Link>
                 </li>
               </p>
             </ul>

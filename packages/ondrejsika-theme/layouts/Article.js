@@ -1,4 +1,3 @@
-import React from "react";
 import MainBar from "@app/ondrejsika-theme/components/MainBar";
 import Markdown from "@app/common/components/Markdown";
 import BlogPostFooter from "@app/ondrejsika-theme/components/BlogPostFooter";
@@ -20,7 +19,7 @@ const ArticleLayout = (props) => {
       react: "Školení Reactu",
       "gitlab-ci": "Školení Gitlab CI",
       rancher: "Školení Rancheru",
-      prometheus: "Školení Promethea"
+      prometheus: "Školení Promethea",
     }[props.ad];
   }
 

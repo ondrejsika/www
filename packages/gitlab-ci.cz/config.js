@@ -16,7 +16,7 @@ const site = {
   x_logo: logo,
   x_contact_link: "https://ondrej-sika.cz/kontakt/?x_source=gitlab-ci.cz",
   x_inquiry_url:
-    "https://ondrej-sika.cz/skoleni/gitlab-ci/?x_source=gitlab-ci.cz#form"
+    "https://ondrej-sika.cz/skoleni/gitlab-ci/?x_source=gitlab-ci.cz#form",
 };
 
 export default site;
