@@ -56,6 +56,7 @@ const Header = (props) => {
             <div className="col-lg-2 col-md-3 col-sm-4 col-4 p-4">
               <img
                 src={props.logo && props.logo.src}
+                alt="Logo"
                 className="img-fluid align-right"
                 style={{ filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))" }}
               />

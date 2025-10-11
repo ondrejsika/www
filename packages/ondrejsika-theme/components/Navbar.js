@@ -75,7 +75,7 @@ const Navbar = (props) => {
               style={{ paddingRight: "0" }}
             >
               <HamburgerMenu>
-                <img src={hamburgerMenu.src} />
+                <img src={hamburgerMenu.src} alt="Menu" />
               </HamburgerMenu>
             </Button>
             <div className="collapse navbar-collapse" id="navbarNavDropdownaa">
