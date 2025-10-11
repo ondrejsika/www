@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "NODE_ENV=development next",
     "build": "next build",
-    "export": "next export",
-    "static": "yarn run build && yarn run export"
+    "export": "next build",
+    "static": "yarn run build"
   },
   "engines": {
     "node": ">=22"
