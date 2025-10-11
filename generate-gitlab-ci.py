@@ -132,10 +132,10 @@ out = {
         "stage": "schedule1",
         "image": "sikalabs/ci",
         "variables": {
-            "GIT_AUTHOR_NAME": "SikaLabs CI Bot",
-            "GIT_COMMITTER_NAME": "SikaLabs CI Bot",
-            "GIT_COMMITTER_EMAIL": "ci-bot@sikalabs.io",
-            "GIT_AUTHOR_EMAIL": "ci-bot@sikalabs.io"
+            "GIT_AUTHOR_NAME": "SikaLabs[bot]",
+            "GIT_COMMITTER_NAME": "SikaLabs[bot]",
+            "GIT_COMMITTER_EMAIL": "sikalabsbot@sikalabs.com",
+            "GIT_AUTHOR_EMAIL": "sikalabsbot@sikalabs.com"
         },
         "script": [
             "make auto-update-sessions-yml-from-training-crm",
@@ -150,10 +150,10 @@ out = {
         "stage": "schedule2",
         "image": "sikalabs/ci-node:18",
         "variables": {
-            "GIT_AUTHOR_NAME": "SikaLabs CI Bot",
-            "GIT_COMMITTER_NAME": "SikaLabs CI Bot",
-            "GIT_COMMITTER_EMAIL": "ci-bot@sikalabs.io",
-            "GIT_AUTHOR_EMAIL": "ci-bot@sikalabs.io"
+            "GIT_AUTHOR_NAME": "SikaLabs[bot]",
+            "GIT_COMMITTER_NAME": "SikaLabs[bot]",
+            "GIT_COMMITTER_EMAIL": "sikalabsbot@sikalabs.com",
+            "GIT_AUTHOR_EMAIL": "sikalabsbot@sikalabs.com"
         },
         "script": [
             "yarn",
