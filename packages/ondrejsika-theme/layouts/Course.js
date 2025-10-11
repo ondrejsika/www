@@ -77,11 +77,23 @@ const Course = (props) => (
         <Col md={7}>
           <div
             style={{
-              background: "#ffffff",
+              background: "linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)",
+              border: "2px solid #e1e1e1",
               borderRadius: "12px",
               padding: "2.5rem",
-              boxShadow: "0 2px 12px rgba(0, 0, 0, 0.08)",
+              boxShadow: "0 4px 16px rgba(0, 0, 0, 0.08)",
               marginBottom: "2rem",
+              transition: "all 0.3s ease",
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.boxShadow =
+                "0 8px 24px rgba(0, 0, 0, 0.12)";
+              e.currentTarget.style.transform = "translateY(-2px)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.boxShadow =
+                "0 4px 16px rgba(0, 0, 0, 0.08)";
+              e.currentTarget.style.transform = "translateY(0)";
             }}
           >
             <Markdown source={props.description} />
