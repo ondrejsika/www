@@ -37,10 +37,16 @@ const Course = (props) => (
       }
       logo={props.logo}
     />
-    <div className="container course-page mt-3">
+    <div className="container course-page" style={{ marginTop: "3rem" }}>
       {props.show_sessions && (
-        <>
-          <h2>
+        <div style={{ marginBottom: "3rem" }}>
+          <h2
+            style={{
+              marginBottom: "1.5rem",
+              fontSize: "1.875rem",
+              fontWeight: "700",
+            }}
+          >
             <Translate
               lang={props.lang}
               cs="Vypsané termíny"
@@ -59,14 +65,27 @@ const Course = (props) => (
             show_session_link={true}
             hide_prices={props.hide_prices}
           />
-        </>
+        </div>
       )}
       {props.children}
     </div>
-    <div className="container mb-4 mt-4">
+    <div
+      className="container"
+      style={{ marginBottom: "4rem", marginTop: "4rem" }}
+    >
       <Row>
         <Col md={7}>
-          <Markdown source={props.description} />
+          <div
+            style={{
+              background: "#ffffff",
+              borderRadius: "12px",
+              padding: "2.5rem",
+              boxShadow: "0 2px 12px rgba(0, 0, 0, 0.08)",
+              marginBottom: "2rem",
+            }}
+          >
+            <Markdown source={props.description} />
+          </div>
           {props.col1 && props.col2 && (
             <TwoCol
               col1={<Markdown source={props.col1} />}
