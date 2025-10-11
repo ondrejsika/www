@@ -74,9 +74,23 @@ const UpcomingSessions = (props) => {
   if (sessions.length == 0) {
     return (
       <>
-        <div className="text-center alert-warning p-4 mt-4 rounded">
-          <h4>Bohužel nejsou žádné termíny vypsanené</h4>
-          <p>Zanechte mi email a já se Vám ozvu až termín otevřu</p>
+        <div
+          style={{
+            background: "linear-gradient(135deg, #fff9e6 0%, #fff 100%)",
+            border: "2px solid #ffc107",
+            borderRadius: "12px",
+            padding: "2.5rem",
+            marginTop: "1.5rem",
+            textAlign: "center",
+            boxShadow: "0 4px 12px rgba(255, 193, 7, 0.15)",
+          }}
+        >
+          <h4 style={{ marginBottom: "1rem", fontWeight: "700" }}>
+            Bohužel nejsou žádné termíny vypsanené
+          </h4>
+          <p style={{ marginBottom: "1.5rem", fontSize: "1.05rem" }}>
+            Zanechte mi email a já se Vám ozvu až termín otevřu
+          </p>
           <div className="row justify-content-center align-items-center">
             <WaitingListForm site={props.site} course_slug={props.course_id} />
           </div>
