@@ -10,7 +10,6 @@ const recaptchaRef = React.createRef();
 const ExampleForm = (props) => {
   const { handleSubmit, register, errors } = useForm();
   const onSubmit = (values) => {
-    console.log(recaptchaRef.current.getValue());
     let out = [
       `name: ${values.name}`,
       `company: ${values.company || "--"}`,
