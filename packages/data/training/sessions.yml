@@ -2868,7 +2868,7 @@
   name: Rancher
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -2882,7 +2882,7 @@
   name: Docker
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: argocd
@@ -2896,7 +2896,7 @@
   name: ArgoCD
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -2910,7 +2910,7 @@
   name: Terraform
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: proxmox
@@ -2924,7 +2924,7 @@
   name: Proxmox
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
