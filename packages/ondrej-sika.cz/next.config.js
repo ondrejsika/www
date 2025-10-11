@@ -3,6 +3,7 @@ const yaml = require("js-yaml");
 const fs = require("fs");
 
 module.exports = {
+  output: 'export',
   env: {
     TRAININGCRM_URL: process.env.TRAININGCRM_URL
   },
