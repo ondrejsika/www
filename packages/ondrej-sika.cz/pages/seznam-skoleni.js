@@ -1,43 +1,11 @@
-import Article from "@app/ondrejsika-theme/layouts/Article";
-import Link from "next/link";
-import StaticDB from "@app/common/staticdb";
-import courses_yaml from "@app/data/training/courses.yml";
-
-let db = new StaticDB();
-db.add("courses", courses_yaml);
-db.setCursor("courses");
-db.filterIn("lecturers", "ondrejsika");
-let courses = db.get();
+import CourseListPage from "@app/ondrejsika-theme/components/CourseListPage";
 
 const Page = (props) => (
-  <Article title="Seznam všech mých školení" hideNewsletter={true}>
-    <table className="table">
-      <tr>
-        <th>Školení</th>
-        <th>Délka</th>
-        <th>Cena (otevřený termín)</th>
-        <th>Cena (in house)</th>
-      </tr>
-      {courses.map((course, i) => (
-        <tr key={i}>
-          <td>
-            <Link href={`/skoleni/${course.id}`}>
-              {course.name[props.site.lang]}
-            </Link>
-          </td>
-          <td>
-            {course.length} {course.length == 1 ? "den" : "dny"}
-          </td>
-          <td>
-            {course.price ? course.price.open["cz"] + " (za osobu)" : "--"}
-          </td>
-          <td>
-            {course.price ? course.price.in_house["cz"] + " (celkem)" : "--"}
-          </td>
-        </tr>
-      ))}
-    </table>
-  </Article>
+  <CourseListPage
+    lecturer="ondrejsika"
+    lang={props.site.lang}
+    title="Seznam všech mých školení"
+  />
 );
 
 export default Page;
