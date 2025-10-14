@@ -17,6 +17,7 @@ Pokud Vás zajímá Docker, podívejte se na mé [Školení Dockeru](/skoleni/do
 
 ### Kubernetes
 
+- [Lokalni Instalace Kubernetes](/navody/lokalni-instalace-kubernetes)
 - [Instalace (pro skoleni)](/kubernetes/instalace)
 - [Přidání Kubernetes clusteru do Gitlabu](/kubernetes/pridani-kubernetes-clusteru-do-gitlabu)
 - [Příprava na školení Kubernetes](/skoleni/kubernetes/priprava-na-skoleni) - více informací o školení [zde](/skoleni/kubernetes)
