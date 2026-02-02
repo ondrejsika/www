@@ -112,7 +112,7 @@ out = {
         "docker build and deploy",
         "docker deploy validate",
     ],
-    "image": "sikalabs/ci-node:18",
+    "image": "sikalabs/ci-node:22",
     "variables": {
         "DOCKER_BUILDKIT": '1',
         "GIT_CLEAN_FLAGS": "-ffdx -e node_modules -e .yarn-cache",
