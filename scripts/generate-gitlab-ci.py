@@ -50,6 +50,7 @@ CLOUDFLARE_SITES =  [
 ]
 
 DOCKER_SITES =  [
+    {"name": "ondrej-sika.cz", "deps": "ondrejsika_theme"},
     {"name": "skolenie.kubernetes.sk", "deps": "course_landing"},
     {"name": "training.kubernetes.is", "deps": "course_landing"},
     {"name": "training.kubernetes.lu", "deps": "course_landing"},
