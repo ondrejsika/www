@@ -2938,7 +2938,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -2952,7 +2952,7 @@
   name: Docker
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
@@ -2966,7 +2966,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -2980,7 +2980,7 @@
   name: Docker
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -2994,7 +2994,7 @@
   name: Docker
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
@@ -3008,7 +3008,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
@@ -3022,7 +3022,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -3036,7 +3036,7 @@
   name: Terraform
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: proxmox
@@ -3044,6 +3044,342 @@
   date_to: 16.12.2025
   facebook_event: null
   id: proxmox-2025-12-16
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 12 900 CZK
+  venue_id: null
+- active: false
+  city: Online
+  country: cz
+  course_id: docker
+  date_from: 26.01.2026
+  date_to: 27.01.2026
+  facebook_event: null
+  id: docker-2026-01-26
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: kubernetes
+  date_from: 02.02.2026
+  date_to: 03.02.2026
+  facebook_event: null
+  id: kubernetes-2026-02-02
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: argocd
+  date_from: 09.03.2026
+  date_to: 09.03.2026
+  facebook_event: null
+  id: argocd-2026-03-09
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: proxmox
+  date_from: 20.04.2026
+  date_to: 20.04.2026
+  facebook_event: null
+  id: proxmox-2026-04-20
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Proxmox
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: gitlab-ci
+  date_from: 27.04.2026
+  date_to: 27.04.2026
+  facebook_event: null
+  id: gitlabcl-2026-04-27
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: vault
+  date_from: 04.05.2026
+  date_to: 04.05.2026
+  facebook_event: null
+  id: vault-2026-05-04
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Vault
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: prometheus
+  date_from: 11.05.2026
+  date_to: 12.05.2026
+  facebook_event: null
+  id: prometheus-2026-05-11
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Prometheus
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: terraform
+  date_from: 18.05.2026
+  date_to: 18.05.2026
+  facebook_event: null
+  id: terraform-2026-05-18
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: openshift
+  date_from: 25.05.2026
+  date_to: 26.05.2026
+  facebook_event: null
+  id: openshift-2026-05-25
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: OpenShift a OKD
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: elk
+  date_from: 02.06.2026
+  date_to: 03.06.2026
+  facebook_event: null
+  id: elk-2026-06-02
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: ELK
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: docker
+  date_from: 08.06.2026
+  date_to: 09.06.2026
+  facebook_event: null
+  id: docker-2026-06-08
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: kubernetes
+  date_from: 15.06.2026
+  date_to: 16.06.2026
+  facebook_event: null
+  id: kubernetes-2026-06-15
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: docker
+  date_from: 14.09.2026
+  date_to: 15.09.2026
+  facebook_event: null
+  id: docker-2026-09-14
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: loki
+  date_from: 21.09.2026
+  date_to: 22.09.2026
+  facebook_event: null
+  id: loki-2026-09-21
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Loki
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: rancher
+  date_from: 29.09.2026
+  date_to: 29.09.2026
+  facebook_event: null
+  id: rancher-2026-09-29
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Rancher
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: kubernetes
+  date_from: 05.10.2026
+  date_to: 06.10.2026
+  facebook_event: null
+  id: kubernetes-2026-10-05
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: packer
+  date_from: 12.10.2026
+  date_to: 12.10.2026
+  facebook_event: null
+  id: packer-2026-10-12
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Packer
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: gitlab-ci
+  date_from: 19.10.2026
+  date_to: 19.10.2026
+  facebook_event: null
+  id: gitlabcl-2026-10-19
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: keycloak
+  date_from: 26.10.2026
+  date_to: 26.10.2026
+  facebook_event: null
+  id: keycloak-2026-10-26
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Keycloak
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: docker
+  date_from: 09.11.2026
+  date_to: 10.11.2026
+  facebook_event: null
+  id: docker-2026-11-09
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Docker
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: terraform
+  date_from: 16.11.2026
+  date_to: 16.11.2026
+  facebook_event: null
+  id: terraform-2026-11-16
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: kubernetes
+  date_from: 23.11.2026
+  date_to: 24.11.2026
+  facebook_event: null
+  id: kubernetes-2026-11-23
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Kubernetes
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: argocd
+  date_from: 07.12.2026
+  date_to: 07.12.2026
+  facebook_event: null
+  id: argocd-2026-12-07
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: proxmox
+  date_from: 08.12.2026
+  date_to: 08.12.2026
+  facebook_event: null
+  id: proxmox-2026-12-08
   lang: cs
   length: 1 den
   linkedin_event: null
