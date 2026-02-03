@@ -1,4 +1,5 @@
 module.exports = {
+  output: "export",
   trailingSlash: true,
   exportPathMap: function () {
     return {
