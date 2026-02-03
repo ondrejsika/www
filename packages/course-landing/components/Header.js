@@ -24,7 +24,7 @@ const Header = (props) => (
             </div>
             <div className="col-md-3 ">
               <img
-                src={props.logoUrl.src}
+                src={typeof props.logoUrl === "string" ? props.logoUrl : props.logoUrl.src}
                 className="img-responsive d-none d-lg-block"
               />
             </div>

@@ -16,5 +16,13 @@ module.exports.transpilePackages = [
   "@app/data",
 ];
 
+module.exports.webpack = (config) => {
+  config.module.rules.push({
+    test: /\.(svg|png|jpe?g|gif|ico|webp)$/i,
+    type: "asset/resource",
+  });
+  return config;
+};
+
 const withYAML = require("next-yaml");
 module.exports = withYAML(module.exports);
