@@ -10,15 +10,16 @@ function flatten(text, child) {
     : React.Children.toArray(child.props.children).reduce(flatten, text);
 }
 
-function HeadingRenderer(props) {
-  var children = React.Children.toArray(props.children);
-  var text = children.reduce(flatten, "");
+function HeadingRenderer({ node, children, ...props }) {
+  var childArray = React.Children.toArray(children);
+  var text = childArray.reduce(flatten, "");
   var slug = text.toLowerCase().replace(/\W/g, "-");
-  return React.createElement("h" + props.level, { id: slug }, props.children);
+  var tag = node.tagName || "h1";
+  return React.createElement(tag, { ...props, id: slug }, children);
 }
 
-function LinkRenderer(props) {
-  return <Link href={props.href}>{props.children}</Link>;
+function LinkRenderer({ node, children, ...props }) {
+  return <Link href={props.href}>{children}</Link>;
 }
 
 const ReactComponent = (props) => <>{props.children}</>;
@@ -44,12 +45,15 @@ const ReactRenderer = (props) => {
 let Markdown = (props) => {
   return (
     <ReactMarkdown
-      source={props.source}
-      escapeHtml={false}
-      renderers={{
-        heading: HeadingRenderer,
-        link: LinkRenderer,
-        html: ReactRenderer,
+      children={props.source}
+      components={{
+        h1: HeadingRenderer,
+        h2: HeadingRenderer,
+        h3: HeadingRenderer,
+        h4: HeadingRenderer,
+        h5: HeadingRenderer,
+        h6: HeadingRenderer,
+        a: LinkRenderer,
       }}
     />
   );
