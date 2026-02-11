@@ -1,4 +1,11 @@
 - id:
+  title: "Kontejnery v praxi: Benefity přechodu do kontejneru, Kubernetes a OpenShiftu"
+  date: 12. 2. 2026
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2026-02-12_Kontejnery_v_praxi/2026-02-12_Ondrej_Sika_Benefity_prechodu_do_kontejneru_kubernetes_a_openshiftu.pdf
+  googleSlides: https://docs.google.com/presentation/d/1oq9hYtjTsSVvUe3d8o6IrmQLB5iTUrp2kyvJPJsybws/edit
+
+- id:
   title: "KCD 2025: Single Sign On v Cloud Native prostredi"
   date: 5. 6. 2025
   ad: kubernetes
