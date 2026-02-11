@@ -48,7 +48,7 @@ const Install = (props) => (
             </div>
           </div>
           <h1 className="mt-5">Obsah</h1>
-          <p className="h2 mt-4">
+          <div className="h2 mt-4">
             <ul>
               <li style={liStyle}>Úvod do DevOps a proč by Vás mělo zajímat</li>
               <li style={liStyle}>Kultura DevOps</li>
@@ -61,7 +61,7 @@ const Install = (props) => (
               <li style={liStyle}>Automatizace a GitOps</li>
               <li style={liStyle}>Mnoho příkladů a ukázek</li>
             </ul>
-          </p>
+          </div>
           <h1 className="mt-5">Objednat</h1>
           <p className="h2 mt-2">
             Pokud máte o knihu zájem,

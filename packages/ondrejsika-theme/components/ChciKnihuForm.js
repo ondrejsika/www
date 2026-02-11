@@ -29,10 +29,9 @@ const SessionRegisterForm = (props) => {
       <div className="form-group mx-sm-3 mb-2 align-items-center">
         <input
           type="email"
-          name="email"
           placeholder="Email"
           className="form-control"
-          ref={register({})}
+          {...register("email")}
         />
       </div>
       <button type="submit" className="btn btn-primary mb-2">
