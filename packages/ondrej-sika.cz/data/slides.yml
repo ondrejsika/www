@@ -1,4 +1,11 @@
 - id:
+  title: "Cloud Computing Conference: Benefity přechodu do kontejneru, Kubernetes a OpenShiftu"
+  date: 12. 5. 2026
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2026-05-12_Cloud_Computing_Conference/2026-05-12_Ondrej_Sika_Identita_v_cloudovem_prostredi_aneb_jak_se_zbavit_hesel.pdf
+  googleSlides: https://docs.google.com/presentation/d/1B8gac-BpwaIn8MUiGbfEASjMi8nyWU96z0myEq6hvVQ/edit
+
+- id:
   title: "Kontejnery v praxi: Benefity přechodu do kontejneru, Kubernetes a OpenShiftu"
   date: 12. 2. 2026
   ad: kubernetes
