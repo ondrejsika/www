@@ -3078,7 +3078,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: argocd
@@ -3092,7 +3092,7 @@
   name: ArgoCD
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: proxmox
@@ -3105,48 +3105,6 @@
   linkedin_event: null
   name: Proxmox
   price: 12 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: gitlab-ci
-  date_from: 27.04.2026
-  date_to: 27.04.2026
-  facebook_event: null
-  id: gitlabcl-2026-04-27
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Gitlab CI
-  price: 12 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: vault
-  date_from: 04.05.2026
-  date_to: 04.05.2026
-  facebook_event: null
-  id: vault-2026-05-04
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Vault
-  price: 12 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: prometheus
-  date_from: 11.05.2026
-  date_to: 12.05.2026
-  facebook_event: null
-  id: prometheus-2026-05-11
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: Prometheus
-  price: 19 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -3193,6 +3151,20 @@
 - active: true
   city: Online
   country: cz
+  course_id: prometheus
+  date_from: 04.06.2026
+  date_to: 05.06.2026
+  facebook_event: null
+  id: prometheus-2026-06-04
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Prometheus
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
   course_id: docker
   date_from: 08.06.2026
   date_to: 09.06.2026
@@ -3217,6 +3189,48 @@
   linkedin_event: null
   name: Kubernetes
   price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: vault
+  date_from: 17.06.2026
+  date_to: 17.06.2026
+  facebook_event: null
+  id: vault-2026-06-17
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Vault
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: argocd
+  date_from: 19.06.2026
+  date_to: 19.06.2026
+  facebook_event: null
+  id: argocd-2026-06-19
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: ArgoCD
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: gitlab-ci
+  date_from: 23.06.2026
+  date_to: 23.06.2026
+  facebook_event: null
+  id: gitlabcl-2026-06-23
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Gitlab CI
+  price: 12 900 CZK
   venue_id: null
 - active: true
   city: Online
