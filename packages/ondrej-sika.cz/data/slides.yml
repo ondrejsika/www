@@ -1,4 +1,11 @@
 - id:
+  title: "KCD 2026: Passwords and Secrets in Kubernetes, How to Do It Right"
+  date: 21. 5. 2026
+  ad: kubernetes
+  pdf: https://raw.githubusercontent.com/ondrejsika/slides/master/2026-05-21_KCD2026/2026-05-21_Ondrej_Sika_KCD2026_Passwords_and_Secrets_in_Kubernetes.pdf
+  googleSlides: https://docs.google.com/presentation/d/1KowObrgwG6lVClSaIt-gOB-5NKUwm27LO1F56bs8hmg/edit
+
+- id:
   title: "Cloud Computing Conference: Benefity přechodu do kontejneru, Kubernetes a OpenShiftu"
   date: 12. 5. 2026
   ad: kubernetes
