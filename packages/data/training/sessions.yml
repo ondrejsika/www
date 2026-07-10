@@ -80,7 +80,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -332,7 +332,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -556,7 +556,7 @@
   length: 1 den
   linkedin_event: https://www.linkedin.com/events/6701798854485938176/
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -738,7 +738,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -878,7 +878,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -990,7 +990,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1130,7 +1130,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -1242,7 +1242,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1382,7 +1382,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1592,7 +1592,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1746,7 +1746,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1914,7 +1914,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -1998,7 +1998,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Prague
@@ -2404,7 +2404,7 @@
   length: 2 dny
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -2544,7 +2544,7 @@
   length: 2 dny
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -2866,7 +2866,7 @@
   length: 2 dny
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: false
   city: Online
@@ -3106,7 +3106,7 @@
   name: Proxmox
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -3120,7 +3120,7 @@
   name: Terraform
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: openshift
@@ -3134,7 +3134,7 @@
   name: OpenShift a OKD
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: elk
@@ -3148,7 +3148,7 @@
   name: ELK
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: prometheus
@@ -3162,7 +3162,7 @@
   name: Prometheus
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: docker
@@ -3176,7 +3176,7 @@
   name: Docker
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
@@ -3190,7 +3190,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: vault
@@ -3204,7 +3204,7 @@
   name: Vault
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: argocd
@@ -3218,7 +3218,7 @@
   name: ArgoCD
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: gitlab-ci
@@ -3272,7 +3272,7 @@
   length: 1 den
   linkedin_event: null
   name: Rancher
-  price: 19 900 CZK
+  price: 12 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -3305,6 +3305,20 @@
 - active: true
   city: Online
   country: cz
+  course_id: elk
+  date_from: 13.10.2026
+  date_to: 14.10.2026
+  facebook_event: null
+  id: elk-2026-10-13
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: ELK
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
   course_id: gitlab-ci
   date_from: 19.10.2026
   date_to: 19.10.2026
@@ -3314,6 +3328,20 @@
   length: 1 den
   linkedin_event: null
   name: Gitlab CI
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: vault
+  date_from: 20.10.2026
+  date_to: 20.10.2026
+  facebook_event: null
+  id: vault-2026-10-20
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Vault
   price: 12 900 CZK
   venue_id: null
 - active: true
