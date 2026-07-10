@@ -133,7 +133,6 @@
     "prettier": "2.8.8"
   },
   "dependencies": {
-    "@cloudflare/wrangler": "^1.20.0",
     "@sentry/browser": "^6.19.7",
     "@use-hook/use-cookie": "^0.1.4",
     "bootstrap": "^4.6.2",
