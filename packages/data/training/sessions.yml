@@ -3236,43 +3236,15 @@
   city: Online
   country: cz
   course_id: docker
-  date_from: 14.09.2026
-  date_to: 15.09.2026
+  date_from: 15.09.2026
+  date_to: 16.09.2026
   facebook_event: null
-  id: docker-2026-09-14
+  id: docker-2026-09-15
   lang: cs
   length: 2 dny
   linkedin_event: null
   name: Docker
   price: 19 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: loki
-  date_from: 21.09.2026
-  date_to: 22.09.2026
-  facebook_event: null
-  id: loki-2026-09-21
-  lang: cs
-  length: 2 dny
-  linkedin_event: null
-  name: Loki
-  price: 19 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: rancher
-  date_from: 29.09.2026
-  date_to: 29.09.2026
-  facebook_event: null
-  id: rancher-2026-09-29
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Rancher
-  price: 12 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -3287,20 +3259,6 @@
   linkedin_event: null
   name: Kubernetes
   price: 19 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: packer
-  date_from: 12.10.2026
-  date_to: 12.10.2026
-  facebook_event: null
-  id: packer-2026-10-12
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Packer
-  price: 12 900 CZK
   venue_id: null
 - active: true
   city: Online
@@ -3347,11 +3305,39 @@
 - active: true
   city: Online
   country: cz
-  course_id: keycloak
-  date_from: 26.10.2026
-  date_to: 26.10.2026
+  course_id: rancher
+  date_from: 21.10.2026
+  date_to: 21.10.2026
   facebook_event: null
-  id: keycloak-2026-10-26
+  id: rancher-2026-10-21
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Rancher
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: terraform
+  date_from: 03.11.2026
+  date_to: 03.11.2026
+  facebook_event: null
+  id: terraform-2026-11-03
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Terraform
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: keycloak
+  date_from: 04.11.2026
+  date_to: 04.11.2026
+  facebook_event: null
+  id: keycloak-2026-11-04
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -3362,10 +3348,10 @@
   city: Online
   country: cz
   course_id: docker
-  date_from: 09.11.2026
-  date_to: 10.11.2026
+  date_from: 10.11.2026
+  date_to: 11.11.2026
   facebook_event: null
-  id: docker-2026-11-09
+  id: docker-2026-11-10
   lang: cs
   length: 2 dny
   linkedin_event: null
@@ -3375,25 +3361,11 @@
 - active: true
   city: Online
   country: cz
-  course_id: terraform
-  date_from: 16.11.2026
-  date_to: 16.11.2026
-  facebook_event: null
-  id: terraform-2026-11-16
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Terraform
-  price: 12 900 CZK
-  venue_id: null
-- active: true
-  city: Online
-  country: cz
   course_id: kubernetes
-  date_from: 23.11.2026
-  date_to: 24.11.2026
+  date_from: 18.11.2026
+  date_to: 19.11.2026
   facebook_event: null
-  id: kubernetes-2026-11-23
+  id: kubernetes-2026-11-18
   lang: cs
   length: 2 dny
   linkedin_event: null
@@ -3403,11 +3375,25 @@
 - active: true
   city: Online
   country: cz
-  course_id: argocd
-  date_from: 07.12.2026
-  date_to: 07.12.2026
+  course_id: loki
+  date_from: 24.11.2026
+  date_to: 25.11.2026
   facebook_event: null
-  id: argocd-2026-12-07
+  id: loki-2026-11-24
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Loki
+  price: 19 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: argocd
+  date_from: 01.12.2026
+  date_to: 01.12.2026
+  facebook_event: null
+  id: argocd-2026-12-01
   lang: cs
   length: 1 den
   linkedin_event: null
@@ -3418,13 +3404,27 @@
   city: Online
   country: cz
   course_id: proxmox
-  date_from: 08.12.2026
-  date_to: 08.12.2026
+  date_from: 02.12.2026
+  date_to: 02.12.2026
   facebook_event: null
-  id: proxmox-2026-12-08
+  id: proxmox-2026-12-02
   lang: cs
   length: 1 den
   linkedin_event: null
   name: Proxmox
   price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: prometheus
+  date_from: 08.12.2026
+  date_to: 09.12.2026
+  facebook_event: null
+  id: Prometheus-2026-12-08
+  lang: cs
+  length: 2 dny
+  linkedin_event: null
+  name: Prometheus
+  price: 19 900 CZK
   venue_id: null
