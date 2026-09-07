@@ -1,0 +1,18 @@
+# Školení Dockeru
+
+> skoleni-docker.cz je jednostránkový landing page nabízející Docker školení v ČR ("Nejlepší školení Dockeru v ČR"), pořádané Ondřejem Šikou / SikaLabs.
+
+Stránka obsahuje popis kurzu, reference klientů, nadcházející termíny a formulář pro poptávku školení. Detailní informace o kurzu, osnova a rezervace jsou na hlavním webu ondrej-sika.cz.
+
+## Školení
+
+- [Docker školení – detail kurzu a poptávka](https://ondrej-sika.cz/skoleni/docker/): Osnova kurzu, termíny a poptávkový formulář
+- [Veřejné termíny](https://ondrej-sika.cz/verejne-terminy): Přehled veřejných termínů školení
+
+## Kontakt
+
+- [Kontakt](https://ondrej-sika.cz/kontakt/): Kontaktní informace na lektora
+
+## Optional
+
+- [Bio lektora](https://ondrej-sika.cz/bio): Ondřej Šika – lektor a DevOps konzultant
