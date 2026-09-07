@@ -1,0 +1,33 @@
+# Ondřej Šika
+
+> Ondřej Šika is a DevOps trainer, consultant, and open-source engineer based in the Czech Republic, offering IT training, consulting, and workshops in Europe focused on the DevOps stack (Docker, Kubernetes, Terraform, Git, CI/CD, Rancher, Prometheus).
+
+Ondřej Šika (ondrej-sika.cz) is the personal site of Ondřej Šika, founder of [SikaLabs](https://sikalabs.com) and [DevOpsAci.com](https://devopsaci.com). The site is primarily in Czech and covers training courses, public workshops, consulting services, articles, and a devops resource library.
+
+## Training and consulting
+
+- [Školení](https://ondrej-sika.cz/skoleni): Overview of DevOps training courses
+- [Veřejné termíny](https://ondrej-sika.cz/verejne-terminy): Public training dates
+- [Konzultace](https://ondrej-sika.cz/obchodni-spoluprace): Business and consulting cooperation
+- [Poptávka školení](https://ondrej-sika.cz/poptavka): Request a training quote
+
+## Technology guides
+
+- [Docker](https://ondrej-sika.cz/docker): Docker guides and tutorials
+- [Kubernetes](https://ondrej-sika.cz/kubernetes): Kubernetes guides and tutorials
+- [Terraform](https://ondrej-sika.cz/terraform): Terraform guides and tutorials
+- [Git](https://ondrej-sika.cz/git): Git guides and tutorials
+- [Prometheus](https://ondrej-sika.cz/prometheus): Prometheus guides and tutorials
+- [Rancher](https://ondrej-sika.cz/rancher): Rancher guides and tutorials
+- [Návody](https://ondrej-sika.cz/navody): General how-to guides
+
+## About
+
+- [Bio](https://ondrej-sika.cz/bio): About Ondřej Šika
+- [Kontakt](https://ondrej-sika.cz/kontakt): Contact information
+
+## Optional
+
+- [Blog](https://ondrej-sika.cz/blog): Blog posts
+- [Články](https://ondrej-sika.cz/clanky): Articles
+- [Kniha](https://ondrej-sika.cz/kniha): Book by Ondřej Šika
