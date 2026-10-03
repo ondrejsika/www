@@ -1,3 +1,0 @@
-Contact: mailto:ondrej@ondrejsika.com
-Encryption: https://ondrejsika.com/pgp.txt
-Preferred-Languages: en, cz
