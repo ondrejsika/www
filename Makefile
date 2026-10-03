@@ -1,15 +1,6 @@
 fmt:
 	yarn prettier-write
 
-generate-gitlab-ci:
-	python3 scripts/generate-gitlab-ci.py
-	git add .gitlab-ci.yml
-	git commit \
-		--author "SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
-		-m "[generated] ci: Update generated .gitlab-ci.yml by scripts/generate-gitlab-ci.py" \
-		-m "Co-Authored-By: SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
-		.gitlab-ci.yml
-
 commit-prettier-write:
 	git commit \
 		--author "SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
