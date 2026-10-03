@@ -49,27 +49,6 @@ auto-update-sessions-yml-from-training-crm:
 			-m "Co-Authored-By: SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
 			|| echo No changes
 
-auto-ncu-update:
-	./node_modules/.bin/ncu -t patch -u
-	yarn
-	git add package.json yarn.lock
-	slu git if staged && \
-		git commit \
-			--author "SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
-			-m "[auto] deps: Upgrade patch versions of deps using ncu (npm-check-update)" \
-			-m "Co-Authored-By: SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
-			|| echo No changes
-
-	./node_modules/.bin/ncu -t minor -u
-	yarn
-	git add package.json yarn.lock
-	slu git if staged && \
-		git commit \
-			--author "SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
-			-m "[auto] deps: Upgrade minor versions of deps using ncu (npm-check-update)" \
-			-m "Co-Authored-By: SikaLabs[bot] <sikalabsbot@sikalabs.com>" \
-			|| echo No changes
-
 create-follow-up:
 ifndef COURSE
 	$(error COURSE is undefined)
