@@ -1,0 +1,18 @@
+# Školenie Kubernetes
+
+> skolenie.kubernetes.sk je jednostránková landing page ponúkajúca najlepšie školenie Kubernetes v SR, ktoré organizuje Ondřej Šika / SikaLabs.
+
+Kubernetes je najrozšírenejšia platforma na prevádzku Docker kontajnerov. Stránka obsahuje popis kurzu, referencie klientov, nadchádzajúce termíny a formulár na dopyt školenia. Detailné informácie o kurze, osnova a rezervácia sú na hlavnom webe ondrej-sika.cz.
+
+## Školenie
+
+- [Kubernetes školenie – detail kurzu a dopyt](https://ondrej-sika.cz/skoleni/kubernetes/): Osnova kurzu, termíny a dopytový formulár
+- [Verejné termíny](https://ondrej-sika.cz/verejne-terminy): Prehľad verejných termínov školení
+
+## Kontakt
+
+- [Kontakt](https://ondrej-sika.cz/kontakt/): Kontaktné informácie na lektora
+
+## Optional
+
+- [Bio lektora](https://ondrej-sika.cz/bio): Ondřej Šika – lektor a DevOps konzultant
