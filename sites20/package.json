@@ -21,14 +21,7 @@
     "static-sikahosting.com": "yarn --cwd sites/sikahosting.com static",
     "static-devopsaci-landing": "yarn --cwd sites/devopsaci-landing static",
     "static-teamsika.com": "yarn --cwd sites/teamsika.com static",
-    "static-sikalabs-landing": "yarn --cwd sites/sikalabs-landing static",
-    "deploy-digitalocean.cz": "yarn run static-digitalocean.cz && statica digitalocean.cz ./sites/digitalocean.cz/out",
-    "deploy-devopsnews.cz": "yarn run static-devopsnews.cz && statica devopsnews.cz ./sites/devopsnews.cz/out",
-    "deploy-hashicorp.cz": "yarn run static-hashicorp.cz && statica hashicorp.cz ./sites/hashicorp.cz/out",
-    "deploy-devopsaci.cz": "yarn run static-devopsaci.cz && statica devopsaci.cz ./sites/devopsaci.cz/out",
-    "deploy-sikahosting.com": "yarn run static-sikahosting.com && statica sikahosting.com ./sites/sikahosting.com/out",
-    "deploy-devopsaci-landing": "yarn run static-devopsaci-landing && statica devopsaci.cz ./sites/devopsaci-landing/out",
-    "deploy-teamsika.com": "echo 'Not implemented yet' && exit 1"
+    "static-sikalabs-landing": "yarn --cwd sites/sikalabs-landing static"
   },
   "devDependencies": {
     "eslint": "^8.57.0",

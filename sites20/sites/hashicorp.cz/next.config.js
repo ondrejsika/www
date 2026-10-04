@@ -1,9 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  outputFileTracingRoot: path.join(__dirname, '../../../'),
-  trailingSlash: true
+  output: "export",
+  outputFileTracingRoot: path.join(__dirname, "../.."),
+  eslint: { ignoreDuringBuilds: true },
+  trailingSlash: true,
+  transpilePackages: ["@themes/meetup"],
 };
-
-// Transpile packages using Next.js 15 built-in support
-module.exports.transpilePackages = ["@themes/meetup"];

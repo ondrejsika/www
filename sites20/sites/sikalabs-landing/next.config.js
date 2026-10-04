@@ -1,8 +1,8 @@
 const path = require("path");
 
 module.exports = {
-  outputFileTracingRoot: path.join(__dirname, '../../../'),
-  images: {
-    loader: "custom"
-  }
+  output: "export",
+  outputFileTracingRoot: path.join(__dirname, "../.."),
+  eslint: { ignoreDuringBuilds: true },
+  images: { unoptimized: true },
 };

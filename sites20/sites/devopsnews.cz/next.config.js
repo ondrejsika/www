@@ -1,4 +1,8 @@
 const path = require("path");
 const withYAML = require("next-yaml");
-module.exports = withYAML();
-module.exports.outputFileTracingRoot = path.join(__dirname, '../../../');
+
+module.exports = withYAML({
+  output: "export",
+  outputFileTracingRoot: path.join(__dirname, "../.."),
+  eslint: { ignoreDuringBuilds: true },
+});
