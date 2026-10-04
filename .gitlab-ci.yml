@@ -3,7 +3,7 @@ stages:
   - schedule
   - build
 
-image: sikalabs/ci
+image: ghcr.io/sikalabs/ci
 
 variables:
   DOCKER_BUILDKIT: "1"
