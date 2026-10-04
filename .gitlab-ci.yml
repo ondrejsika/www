@@ -3,14 +3,12 @@ stages:
   - schedule
   - build
 
-image: sikalabs/ci-node:22
+image: sikalabs/ci
 
 variables:
   DOCKER_BUILDKIT: "1"
-  GIT_CLEAN_FLAGS: -ffdx -e node_modules -e .yarn-cache
 
 push-to-github:
-  image: sikalabs/ci
   stage: push-to-github
   script:
     - mkdir -p ~/.ssh
@@ -22,7 +20,6 @@ push-to-github:
 
 auto_update_sessions_yml_from_training_crm:
   stage: schedule
-  image: sikalabs/ci
   variables:
     GIT_AUTHOR_NAME: SikaLabs[bot]
     GIT_AUTHOR_EMAIL: sikalabsbot@sikalabs.com
@@ -38,14 +35,14 @@ auto_update_sessions_yml_from_training_crm:
 .build:
   stage: build
   needs: []
+  variables:
+    WORKSPACE: .
+    SITE_DIR: packages/$SITE
   script:
-    - yarn --cache-folder .yarn-cache
-    - mkdir -p packages/$SITE/public/api
-    - slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME -e CI_PIPELINE_ID=$CI_PIPELINE_ID -e "GITLAB_USER_LOGIN=$GITLAB_USER_LOGIN" -e "CI_COMMIT_TITLE=$CI_COMMIT_TITLE" > packages/$SITE/public/api/version.json
-    - yarn run static-$SITE
-    - cp ci/docker/* packages/$SITE/
+    - mkdir -p $SITE_DIR/public/api
+    - slu static-api version --set-git-clean --set-git-ref $CI_COMMIT_REF_NAME -e CI_PIPELINE_ID=$CI_PIPELINE_ID -e "GITLAB_USER_LOGIN=$GITLAB_USER_LOGIN" -e "CI_COMMIT_TITLE=$CI_COMMIT_TITLE" > $SITE_DIR/public/api/version.json
     - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker build --platform linux/amd64 -t $CI_REGISTRY_IMAGE/$SITE:$CI_COMMIT_SHORT_SHA -t $CI_REGISTRY_IMAGE/$SITE packages/$SITE
+    - docker build --platform linux/amd64 --build-arg WORKSPACE=$WORKSPACE --build-arg SITE=$SITE --build-arg SITE_DIR=$SITE_DIR -t $CI_REGISTRY_IMAGE/$SITE:$CI_COMMIT_SHORT_SHA -t $CI_REGISTRY_IMAGE/$SITE .
     - docker push --all-tags $CI_REGISTRY_IMAGE/$SITE
 
 .build-default:
@@ -57,6 +54,7 @@ auto_update_sessions_yml_from_training_crm:
         - packages/data/**/*
         - packages/common/**/*
         - packages/course-landing/**/*
+        - Dockerfile
         - ci/docker/*
         - yarn.lock
 
@@ -71,6 +69,7 @@ auto_update_sessions_yml_from_training_crm:
         - packages/data/training/pictures/**/*
         - packages/common/**/*
         - packages/course-landing/**/*
+        - Dockerfile
         - ci/docker/*
         - yarn.lock
 
@@ -83,6 +82,7 @@ auto_update_sessions_yml_from_training_crm:
         - packages/data/**/*
         - packages/common/**/*
         - packages/ondrejsika-theme/**/*
+        - Dockerfile
         - ci/docker/*
         - yarn.lock
 

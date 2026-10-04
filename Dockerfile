@@ -1,11 +1,20 @@
-# syntax = docker/dockerfile:experimental
-FROM node:22-slim as build
+# syntax=docker/dockerfile:1
+FROM node:26 AS build
+# yarn workspace to install & build in (. or sites20)
+ARG WORKSPACE=.
+ARG SITE
+ARG SITE_DIR=packages/$SITE
 WORKDIR /app
 COPY . .
-RUN --mount=type=cache,target=/app/node_modules yarn install
-ARG SITE
-RUN --mount=type=cache,target=/app/node_modules yarn run static-$SITE
+RUN --mount=type=cache,target=/usr/local/share/.cache/yarn \
+  cd $WORKSPACE && \
+  yarn install --frozen-lockfile && \
+  yarn run static-$SITE
+RUN mv $SITE_DIR/out /out
 
 FROM nginx:alpine
-ARG SITE
-COPY --from=build /app/packages/$SITE/out /usr/share/nginx/html
+COPY ci/docker/entrypoint.sh /
+COPY ci/docker/nginx-site.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /out /usr/share/nginx/html
+ENTRYPOINT [ "/entrypoint.sh" ]
+CMD ["nginx", "-g", "daemon off;"]
