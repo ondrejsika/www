@@ -129,6 +129,34 @@ build skoleni-proxmox.cz:
   extends: .build-course-landing
   variables: { SITE: skoleni-proxmox.cz }
 
+build skoleni-git.cz:
+  extends: .build-course-landing
+  variables: { SITE: skoleni-git.cz }
+
+build skoleni-prometheus.cz:
+  extends: .build-course-landing
+  variables: { SITE: skoleni-prometheus.cz }
+
+build skoleni-terraform.cz:
+  extends: .build-course-landing
+  variables: { SITE: skoleni-terraform.cz }
+
+build skoleni-rancher.cz:
+  extends: .build-course-landing
+  variables: { SITE: skoleni-rancher.cz }
+
+build gitlab-ci.cz:
+  extends: .build-course-landing
+  variables: { SITE: gitlab-ci.cz }
+
+build ansible-skoleni.cz:
+  extends: .build-course-landing
+  variables: { SITE: ansible-skoleni.cz }
+
+build skoleni.digitalocean.cz:
+  extends: .build-course-landing
+  variables: { SITE: skoleni.digitalocean.cz }
+
 build cal-api.sika.io:
   extends: .build-default
   variables: { SITE: cal-api.sika.io }
