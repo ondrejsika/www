@@ -4,6 +4,7 @@ FROM node:26 AS build
 ARG WORKSPACE=.
 ARG SITE
 ARG SITE_DIR=packages/$SITE
+RUN npm install -g yarn@1
 WORKDIR /app
 COPY . .
 RUN --mount=type=cache,target=/usr/local/share/.cache/yarn \
