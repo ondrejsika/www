@@ -86,6 +86,21 @@ auto_update_sessions_yml_from_training_crm:
         - ci/docker/*
         - yarn.lock
 
+.build-sites20:
+  extends: .build
+  variables:
+    WORKSPACE: sites20
+    SITE_DIR: sites20/sites/$SITE
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master" && $CI_PIPELINE_SOURCE != "schedule"
+      changes:
+        - sites20/sites/$SITE/**/*
+        - sites20/themes/**/*
+        - sites20/package.json
+        - sites20/yarn.lock
+        - Dockerfile
+        - ci/docker/*
+
 build ondrej-sika.cz:
   extends: .build-ondrejsika-theme
   variables: { SITE: ondrej-sika.cz }
@@ -129,3 +144,35 @@ build static.sika.io:
 build sikahq.com:
   extends: .build-default
   variables: { SITE: sikahq.com }
+
+build devopsaci-landing:
+  extends: .build-sites20
+  variables: { SITE: devopsaci-landing }
+
+build devopsaci.cz:
+  extends: .build-sites20
+  variables: { SITE: devopsaci.cz }
+
+build devopsnews.cz:
+  extends: .build-sites20
+  variables: { SITE: devopsnews.cz }
+
+build digitalocean.cz:
+  extends: .build-sites20
+  variables: { SITE: digitalocean.cz }
+
+build hashicorp.cz:
+  extends: .build-sites20
+  variables: { SITE: hashicorp.cz }
+
+build sikahosting.com:
+  extends: .build-sites20
+  variables: { SITE: sikahosting.com }
+
+build sikalabs-landing:
+  extends: .build-sites20
+  variables: { SITE: sikalabs-landing }
+
+build teamsika.com:
+  extends: .build-sites20
+  variables: { SITE: teamsika.com }
