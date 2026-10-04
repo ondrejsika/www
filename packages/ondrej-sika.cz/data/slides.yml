@@ -1,4 +1,10 @@
 - id:
+  title: "jOpenSpace: 70.3"
+  date: 4. 10. 2026
+  pdf: https://docs.google.com/presentation/d/1dly7G79f6f1SUHmMwKImvWIMpq5HbdhaFIuOM8vXseU/edit
+  googleSlides: https://docs.google.com/presentation/d/1dly7G79f6f1SUHmMwKImvWIMpq5HbdhaFIuOM8vXseU/edit
+
+- id:
   title: "KCD 2026: Passwords and Secrets in Kubernetes, How to Do It Right"
   date: 21. 5. 2026
   ad: kubernetes
