@@ -537,6 +537,15 @@
 
 # Vojtech Mares
 
+- id: vojtechmares-kubernetes-deployment-strategies
+  lecturer_id: vojtechmares
+  technology_id: kubernetes-deployment-strategies
+  name: Kubernetes Deployment Strategies
+  price_open: TBD
+  price_in_house: TBD
+  description: |
+    TODO
+
 - id: vojtechmares-git
   lecturer_id: vojtechmares
   technology_id: git
