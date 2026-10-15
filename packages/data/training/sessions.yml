@@ -3246,7 +3246,7 @@
   name: Docker
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: kubernetes
@@ -3260,7 +3260,7 @@
   name: Kubernetes
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: elk
