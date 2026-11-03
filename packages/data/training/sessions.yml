@@ -3274,7 +3274,7 @@
   name: ELK
   price: 19 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: gitlab-ci
@@ -3288,7 +3288,7 @@
   name: Gitlab CI
   price: 12 900 CZK
   venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: vault
@@ -3302,21 +3302,7 @@
   name: Vault
   price: 12 900 CZK
   venue_id: null
-- active: true
-  city: Online
-  country: cz
-  course_id: rancher
-  date_from: 21.10.2026
-  date_to: 21.10.2026
-  facebook_event: null
-  id: rancher-2026-10-21
-  lang: cs
-  length: 1 den
-  linkedin_event: null
-  name: Rancher
-  price: 12 900 CZK
-  venue_id: null
-- active: true
+- active: false
   city: Online
   country: cz
   course_id: terraform
@@ -3412,6 +3398,20 @@
   length: 1 den
   linkedin_event: null
   name: Proxmox
+  price: 12 900 CZK
+  venue_id: null
+- active: true
+  city: Online
+  country: cz
+  course_id: rancher
+  date_from: 03.12.2026
+  date_to: 03.12.2026
+  facebook_event: null
+  id: rancher-2026-12-03
+  lang: cs
+  length: 1 den
+  linkedin_event: null
+  name: Rancher
   price: 12 900 CZK
   venue_id: null
 - active: true
