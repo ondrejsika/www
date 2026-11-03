@@ -128,7 +128,9 @@ const Page = (props) => {
             <TextFrame>
               <div className="text-center">
                 <img
-                  src={typeof ondrejsika === "string" ? ondrejsika : ondrejsika.src}
+                  src={
+                    typeof ondrejsika === "string" ? ondrejsika : ondrejsika.src
+                  }
                   className="img-fluid rounded-circle mb-3"
                   width="140"
                 />
